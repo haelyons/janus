@@ -1,0 +1,304 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-121",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly detects frontal faces of furry small-to-medium mammals (cats, foxes, red pandas, ferrets), centered on the eyes-and-snout layout. It also responds to a face-like car front, likely because two headlights over a grille resemble that layout.\",\n \"evidence\": \"19 of the 20 top crops are frontal furry mammal faces cropped around the eyes and nose. The one outlier, #5 (activation 9), is a red Mercedes front with paired headlights and a grille in a face-like arrangement.\",\n \"missing_data\": \"Activations on other face-like non-animal objects (car fronts, outlets, masks) and on non-frontal or hairless animals, to tell whether the car is a true pareidolia extension or a separate, unrelated feature.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.028735999999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2381,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 484,
+    "output_tokens_details": {
+     "thinking_tokens": 190
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2381,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 484,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2381,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2381
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6332
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.07266,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4497,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 397,
+    "output_tokens_details": {
+     "thinking_tokens": 107
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4497,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 397,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4497,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4497
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4159
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.13456400000000002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6527,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 484,
+    "output_tokens_details": {
+     "thinking_tokens": 194
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6527,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 484,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6527,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6527
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5107
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit mainly detects frontal faces of furry small-to-medium mammals (cats, foxes, red pandas, ferrets), centered on the eyes-and-snout layout. It also responds to a face-like car front, likely because two headlights over a grille resemble that layout.",
+  "evidence": "19 of the 20 top crops are frontal furry mammal faces cropped around the eyes and nose. The one outlier, #5 (activation 9), is a red Mercedes front with paired headlights and a grille in a face-like arrangement.",
+  "missing_data": "Activations on other face-like non-animal objects (car fronts, outlets, masks) and on non-frontal or hairless animals, to tell whether the car is a true pareidolia extension or a separate, unrelated feature.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ },
+ "turn3": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": true
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

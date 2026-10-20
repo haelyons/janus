@@ -1,0 +1,174 @@
+{
+ "arm": "E0_edit",
+ "card": "U-686",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "replies": [
+  {
+   "text": "{\"edits\": [{\"photo\": 3, \"op\": \"keep\", \"box\": [0.0, 0.3, 0.6, 1.0]}, {\"photo\": 3, \"op\": \"occlude\", \"box\": [0.0, 0.5, 0.7, 1.0]}, {\"photo\": 17, \"op\": \"keep\", \"box\": [0.3, 0.3, 1.0, 1.0]}, {\"photo\": 18, \"op\": \"gray\"}, {\"photo\": 1, \"op\": \"keep\", \"box\": [0.2, 0.1, 0.9, 0.8]}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.2, 0.1, 0.9, 0.8]}, {\"photo\": 12, \"op\": \"gray\"}, {\"photo\": 9, \"op\": \"occlude\", \"box\": [0.2, 0.0, 1.0, 0.5]}]}",
+   "cost_usd": 0.029368,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2695,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 390,
+    "output_tokens_details": {
+     "thinking_tokens": 104
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2695,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 390,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2695,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2695
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4849
+  },
+  {
+   "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit seems to respond to two unrelated things: cat faces, especially close-up domestic cats with visible eyes and whiskers, and cars, especially the body, hood and grille or rear of sedans, trucks and taxis.\", \"evidence\": \"The top activations (#1-2, #4-9, #16, #20) are all close-up cat faces, while #3, #10-15 and #17-19 are cars of many colours and viewpoints (front, side, rear) that share no obvious face-like structure. Nothing that bridges the two categories appears in the grid.\", \"missing_data\": \"Results from my edit experiments did not come back. Occlusion tests on cars (e.g. removing the grille or headlights) would show whether the car response is face-like and so related to cats, and activations on dogs and other animal faces or other vehicles would show how broad each part is.\", \"confidence\": 0.65}",
+   "cost_usd": 0.040747,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 449,
+    "cache_read_input_tokens": 2695,
+    "output_tokens": 362,
+    "output_tokens_details": {
+     "thinking_tokens": 62
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 449,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 362,
+      "cache_read_input_tokens": 2695,
+      "cache_creation_input_tokens": 449,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 449
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5651
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.089239,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5138,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 369,
+    "output_tokens_details": {
+     "thinking_tokens": 79
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5138,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 369,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5138,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5138
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4217
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.154387,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7140,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 401,
+    "output_tokens_details": {
+     "thinking_tokens": 111
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7140,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 401,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7140,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7140
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4524
+  }
+ ],
+ "turn_idx": {
+  "turn1": 1,
+  "turn2": 2,
+  "turn3": 3
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-937",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit fires most strongly on bird names, even when the word is used as a surname, idiom, or acronym (Swan, owls, Finch, Kestrel, lame duck, black swan, sparrow, Falcon, Flamingos, SWAN, Heron). Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).\", \"evidence\": \"All 12 top examples peak on a bird word regardless of meaning, such as the surnames Finch, Swan and Heron, the PowerShell name Kestrel, and the idioms 'lame duck' and 'green swan'. All 8 mid-range examples are month abbreviations before a day number, which has nothing to do with birds.\", \"missing_data\": \"Activations on full month names and non-date abbreviations, plus the low-activation range, would show whether the month response is a real second feature or noise.\", \"confidence\": 0.7}",
+   "cost_usd": 0.010511199999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3116,
+    "output_tokens": 494,
+    "output_tokens_details": {
+     "thinking_tokens": 170
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 494,
+      "cache_read_input_tokens": 3116,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5498
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0427344,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2804,
+    "cache_read_input_tokens": 3116,
+    "output_tokens": 458,
+    "output_tokens_details": {
+     "thinking_tokens": 168
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2804,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 458,
+      "cache_read_input_tokens": 3116,
+      "cache_creation_input_tokens": 2804,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2804
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4452
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on bird names, even when the word is used as a surname, idiom, or acronym (Swan, owls, Finch, Kestrel, lame duck, black swan, sparrow, Falcon, Flamingos, SWAN, Heron). Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).",
+  "evidence": "All 12 top examples peak on a bird word regardless of meaning, such as the surnames Finch, Swan and Heron, the PowerShell name Kestrel, and the idioms 'lame duck' and 'green swan'. All 8 mid-range examples are month abbreviations before a day number, which has nothing to do with birds.",
+  "missing_data": "Activations on full month names and non-date abbreviations, plus the low-activation range, would show whether the month response is a real second feature or noise.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

@@ -51,7 +51,13 @@ def turns_for(cid):
     else:
         body = '\n\n'.join(f'Item {it["id"]}:\n{it["text"]}' for it in items)
         t2 = [{'type': 'text', 'text': TURN2_TEXT + '\n\n' + body}]
-    return t1, t2
+    dis = BANK / 'heldout' / f'{cid}_dis.json'
+    if not dis.exists():
+        return [t1, t2]
+    t3 = [{'type': 'text', 'text': TURN2_IMG.replace('20 new photos', '20 more new photos')}]
+    for it in json.loads(dis.read_text()):
+        t3 += [{'type': 'text', 'text': f'Photo {it["id"]}:'}, img_block(BANK / 'heldout' / it['image'])]
+    return [t1, t2, t3]
 
 
 def one(arm, cid, k):
@@ -59,8 +65,7 @@ def one(arm, cid, k):
     if out.exists():
         return f'skip {arm} {cid} s{k}'
     sp = (J / 'arms' / f'{arm}.txt').read_text().strip()
-    t1, t2 = turns_for(cid)
-    replies = converse(sp, [t1, t2])
+    replies = converse(sp, turns_for(cid))
     if any(r['is_error'] for r in replies):
         raise RuntimeError(f'error reply, not saved: {replies[-1]["text"][:80]}')
     rec ={'arm': arm, 'card': cid, 'sample': k, 'model': MODEL,

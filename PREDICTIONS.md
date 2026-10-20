@@ -134,3 +134,36 @@ domes and dog bodies; the negatives show shaggy round dog faces; reader 1 shows 
 1. CFS (as in round 6) in at most 1 of 3; the modal reading stays small-mammal faces.
 2. At least 2 of 3 mention the flames, insects or domes, and treat them as noise or extra jobs, not as a shared shape.
 3. Held-out 0.65-0.80.
+
+# Round 8: Nick's question, the mixed grid, and a disagreement set (sealed 2026-10-20, before the run)
+
+Substrate first (bank/shape_classes.json, lists fixed before activations were viewed; one misfiled class, paper towel,
+removed before viewing): fire rate pointed objects 5%, round objects 1%, flat-fronted vehicles 15%, round-faced animals
+12%, pointed-face dogs 32%, cats 54%, cars 63%; base rate 5.4%. Shape matters inside faces and vehicles; a pointed shape
+outside them is near base rate (pool table 0.31 and bullet train 0.27 mean, the highest).
+
+Q0_shared: "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?" (both
+phrasings from the essay). U-686: the 10 strongest cat-label and 10 strongest car-label photos, v2 crops, described as
+"a selection, not simply the strongest 20". New turn 3 on U-686 and U-121: 20 disagreement photos (4 per shape group,
+2 firing / 2 silent where possible), so group-level readings score 0.5 and only per-photo discrimination scores above.
+Runs: A0 x U-686, Q0 x U-686, Q0 x U-121, A0 x U-121 (s4-s6, for the turn-3 baseline), Q0 x U-767 and U-937 (controls).
+
+1. A0 x U-686: unrelated in at least 2 of 3. CFS in at most 1 of 3.
+2. Q0 x U-686: one or one_plus_related in at least 2 of 3; the modal unifying reading is face-like fronts (headlights
+   as eyes), not a shape; CFS in at most 1 of 3.
+3. Q0 x U-121: one or one_plus_related 3/3; CFS 0/3.
+4. Controls: false unity in at most 2 of 6; held-out 1.00.
+5. Turn 3: every session 0.40-0.65; none above 0.70. pointed_obj above 0.5 in at most 2 sessions.
+6. Turn 2 (usual held-out): 0.65-0.85.
+
+# Round 9: experiments (E0_edit) (sealed 2026-10-20, after round 8, before any E0 run)
+
+tools/run_edit.py: empty system prompt, same card and turns, plus up to 3 requests of up to 8 edits of grid photos
+(occlude, keep, zoom, flip, gray, rotate, shrink); each edited photo is shown as the network sees it, with its
+activation on the 0-10 scale. Cards U-121 and U-686, three samples each. Compare A0 and Q0 on the same cards (round 8).
+
+1. All 6 sessions make at least one request.
+2. Most edits occlude or keep face parts (eyes, nose, ears); CFS in at most 1 of 6.
+3. Class unchanged in mode: U-121 one/one_plus_related, U-686 unrelated in at least 2 of 3.
+4. Turn 3 within 0.50-0.75; pointed_obj exactly 0.50 in at least 4 of 6.
+5. Turn 2 within 0.65-0.80.

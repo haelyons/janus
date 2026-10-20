@@ -1,0 +1,214 @@
+{
+ "arm": "E0_edit",
+ "card": "U-121",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "replies": [
+  {
+   "text": "{\"edits\": [{\"photo\": 5, \"op\": \"occlude\", \"box\": [0.0, 0.3, 1.0, 1.0]}, {\"photo\": 5, \"op\": \"keep\", \"box\": [0.0, 0.3, 1.0, 1.0]}, {\"photo\": 5, \"op\": \"gray\"}, {\"photo\": 1, \"op\": \"keep\", \"box\": [0.3, 0.2, 0.9, 0.7]}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.3, 0.2, 0.9, 0.7]}, {\"photo\": 1, \"op\": \"gray\"}, {\"photo\": 9, \"op\": \"occlude\", \"box\": [0.2, 0.3, 0.9, 0.6]}, {\"photo\": 1, \"op\": \"rotate\", \"degrees\": 180}]}",
+   "cost_usd": 0.02824,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2674,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 342,
+    "output_tokens_details": {
+     "thinking_tokens": 71
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2674,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 342,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2674,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2674
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4085
+  },
+  {
+   "text": "{\"edits\": [{\"photo\": 5, \"op\": \"occlude\", \"box\": [0.0, 0.3, 1.0, 1.0]}, {\"photo\": 5, \"op\": \"keep\", \"box\": [0.0, 0.3, 1.0, 1.0]}, {\"photo\": 5, \"op\": \"gray\"}, {\"photo\": 1, \"op\": \"keep\", \"box\": [0.3, 0.2, 0.9, 0.7]}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.3, 0.2, 0.9, 0.7]}, {\"photo\": 1, \"op\": \"gray\"}, {\"photo\": 9, \"op\": \"occlude\", \"box\": [0.2, 0.3, 0.9, 0.6]}, {\"photo\": 1, \"op\": \"rotate\", \"degrees\": 180}]}",
+   "cost_usd": 0.0394508,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 401,
+    "cache_read_input_tokens": 2674,
+    "output_tokens": 373,
+    "output_tokens_details": {
+     "thinking_tokens": 102
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 401,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 373,
+      "cache_read_input_tokens": 2674,
+      "cache_creation_input_tokens": 401,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 401
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4056
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to frontal faces of furry mammals: the eyes-and-nose region of foxes, cats, red pandas, ferrets, meerkats, hamsters and a dog. It also responds somewhat to face-like frontal patterns such as a car front, where the headlights and grille may read as eyes and a mouth.\", \"evidence\": \"19 of the top 20 crops are close-up, mostly frontal mammal faces centered on the eyes and snout, at activations 7-10. The one exception is a frontal view of a red Mercedes (#5, activation 9), which fits a face-like extension of the same feature. My two experiment requests returned no results, so this rests on the grid alone.\", \"missing_data\": \"Occlusion results on the car (headlights/grille vs. the rest) and on the animal eyes vs. snout, plus activations on non-mammal faces and human faces, would show whether this is a general face detector or one specific to furry mammals.\", \"confidence\": 0.6}",
+   "cost_usd": 0.0509898,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 432,
+    "cache_read_input_tokens": 3075,
+    "output_tokens": 373,
+    "output_tokens_details": {
+     "thinking_tokens": 34
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 432,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 373,
+      "cache_read_input_tokens": 3075,
+      "cache_creation_input_tokens": 432,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 432
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5269
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1029738,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5512,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 394,
+    "output_tokens_details": {
+     "thinking_tokens": 104
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5512,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 394,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5512,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5512
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4344
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.17087380000000002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7539,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 379,
+    "output_tokens_details": {
+     "thinking_tokens": 89
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7539,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 379,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7539,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7539
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4295
+  }
+ ],
+ "turn_idx": {
+  "turn1": 2,
+  "turn2": 3,
+  "turn3": 4
+ }
+}

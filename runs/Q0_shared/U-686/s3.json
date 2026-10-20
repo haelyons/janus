@@ -1,0 +1,304 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-686",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated things: close-up cat faces (eyes, nose, whiskers) and car bodywork (hoods, grilles, glossy painted panels, often of vintage cars).\",\n \"evidence\": \"Cat faces make up most of the strongest activations (#1, 2, 4–9), and cars fill most of the rest (#3, 10–15, 17–19) at similar levels. The car crops include side and rear views with no face-like front (#12, #17, #18), so a 'face' reading does not unify them.\",\n \"missing_data\": \"Activations on other animal faces (dogs, other felines) and on non-car glossy or chrome objects, which would show whether a shared visual feature links the two groups.\",\n \"confidence\": 0.7}\n```",
+   "cost_usd": 0.026944000000000003,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2402,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 386,
+    "output_tokens_details": {
+     "thinking_tokens": 117
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2402,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 386,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2402,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2402
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5355
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.07053200000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4420,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 411,
+    "output_tokens_details": {
+     "thinking_tokens": 121
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4420,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 411,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4420,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4420
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4369
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.13129200000000002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6464,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 452,
+    "output_tokens_details": {
+     "thinking_tokens": 162
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6464,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 452,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6464,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6464
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4631
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit responds to two unrelated things: close-up cat faces (eyes, nose, whiskers) and car bodywork (hoods, grilles, glossy painted panels, often of vintage cars).",
+  "evidence": "Cat faces make up most of the strongest activations (#1, 2, 4–9), and cars fill most of the rest (#3, 10–15, 17–19) at similar levels. The car crops include side and rear views with no face-like front (#12, #17, #18), so a 'face' reading does not unify them.",
+  "missing_data": "Activations on other animal faces (dogs, other felines) and on non-car glossy or chrome objects, which would show whether a shared visual feature links the two groups.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ },
+ "turn3": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -63,7 +63,7 @@ def parse_json(text):
             if isinstance(obj, dict):
                 found.append(obj)
     for obj in reversed(found):
-        if 'class' in obj or 'predictions' in obj:
+        if 'class' in obj or 'predictions' in obj or 'edits' in obj:
             return obj
     if found:
         return found[-1]

@@ -1,0 +1,304 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-121",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to front-facing faces of small furry mammals: a pair of eyes above a snout or nose, framed by fur. It is strongest for cats and foxes and also fires on red pandas, a hamster, a dog, a lynx, a meerkat and a ferret.\",\n \"evidence\": \"19 of the top 20 crops are tightly centered on a mammal's eyes, nose and muzzle. The one exception, a vintage car front (#5, activation 9), has paired round headlights over a central grille, which reads as a face-like layout and is likely a pareidolia-style extension.\",\n \"missing_data\": \"Responses to furry bodies without faces, human faces and other face-like objects (car fronts, outlets) would show whether the unit is about fur, the face layout or both.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.027575999999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2381,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 426,
+    "output_tokens_details": {
+     "thinking_tokens": 140
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2381,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 426,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2381,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2381
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7650
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.073136,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4439,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 502,
+    "output_tokens_details": {
+     "thinking_tokens": 212
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4439,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 502,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4439,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4439
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8215
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.133276,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6574,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 377,
+    "output_tokens_details": {
+     "thinking_tokens": 87
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6574,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 377,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6574,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6574
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8312
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to front-facing faces of small furry mammals: a pair of eyes above a snout or nose, framed by fur. It is strongest for cats and foxes and also fires on red pandas, a hamster, a dog, a lynx, a meerkat and a ferret.",
+  "evidence": "19 of the top 20 crops are tightly centered on a mammal's eyes, nose and muzzle. The one exception, a vintage car front (#5, activation 9), has paired round headlights over a central grille, which reads as a face-like layout and is likely a pareidolia-style extension.",
+  "missing_data": "Responses to furry bodies without faces, human faces and other face-like objects (car fronts, outlets) would show whether the unit is about fur, the face layout or both.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ },
+ "turn3": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": true
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -172,3 +172,42 @@ car photos; not checked against Zoom In's own reader IDs. 1320 photos (1180 dogs
   the 140-car pool. Several readers' top dogs are side-on whole bodies (417, 167, 277), consistent with a shared view.
   Others' are shaggy dog faces (352, 241, 295). Inconclusive.
 Next: Zoom In's exact reader IDs, a larger vehicle pool, and a view label (frontal / side / rear) rather than mirroring.
+
+## Substrate: shape groups (`bank/shape_classes.json`, lists fixed before activations were viewed)
+
+Fire rate (>= 30% of max): cats 54%, cars 63%, pointed-face dogs 32%, flat-fronted vehicles 15%, round-faced animals
+12%, pointed objects 5%, round objects 1%; base rate 5.4%. Shape matters inside faces and vehicles (pointed vs round
+dogs 32% vs 12%; cars vs flat fronts 63% vs 15%), but a pointed shape on its own is near base rate. Nick's examples top
+the pointed objects (pool table 0.31, bullet train 0.27 mean, vs 0.13 overall). Exceptions: Persian cat 0.51 (round),
+Doberman 0.07 (pointed).
+
+## Round 8: Nick's question, a mixed cat/car grid, a disagreement turn (`bank/img_cards_v5.py`, `arms/Q0_shared.txt`)
+
+Q0 = "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?" U-686 = the 10
+strongest cat and 10 strongest car photos (like the famous grid). Turn 3 = 20 photos from the shape groups, 2 firing
+and 2 silent per group, so group-level readings score 0.5.
+- A0 x U-686: 3/3 unrelated, "cat faces and, separately, cars". Q0 x U-686: also 3/3 unrelated. The essay's question on
+  the essay's kind of grid doesn't produce a shared pattern here (prediction 2 failed).
+- Q0 x U-121 and A0 x U-121: frontal-face readings, "the eyes-over-snout layout; the car front mimics it". No shape.
+- Controls: Q0 6/6 unrelated, 1.00. The question doesn't impose unity.
+- Turn 3: 0.55-0.75; the mixed grid does best (0.60-0.75) through flat-fronted vehicles. pointed_obj is exactly 0.50 in
+  all 12 sessions: no reading separates the pointed objects that fire from those that don't.
+
+## Round 9: experiments (`tools/run_edit.py`, arm E0_edit)
+
+Empty prompt, the same card and turns, plus up to 3 requests of up to 8 edits of grid photos (occlude, keep, zoom,
+flip, gray, rotate, shrink). Each edited photo comes back as the network sees it, with its activation. First run
+invalid: parse_json returned the last nested edit item, so no edit was applied (moved to runs/broken; fixed, rerun).
+- 5/6 ran experiments (2-16 edits). They are classic face-perception tests: hide the muzzle (fox 10 -> 3.7-4.7), hide
+  the eyes (-> 5.8-7.2), keep only the face (-> 7.1-7.9), turn upside down (-> 1.8-2.7), remove colour (little change).
+  For the car: keep its lower front (7.0) or hide it (2.1), zoom into parts (0.5-3.5).
+- None tests shape: no edit removes ears or a point, and none compares an upright with an inverted V. The edits test
+  the hypothesis already held. CFS 0/6.
+- U-121: 2/3 one_plus_related (face plus a "pareidolic" car front). One goes the other way on its own evidence: the car
+  "stayed high in greyscale and still gave 5.0 with its grille and headlights hidden, so it is not just a face-like
+  car front", so unrelated. U-686: 3/3 unrelated.
+- Held-out 0.70-0.75; turn 3 0.60-0.65; pointed_obj 0.50 in 6/6. Predictions 2-5 held; 1 failed (5/6, not 6/6).
+- Upside-down faces lose most of their activation. That fits "upright face" and also "a V pointing down"; nobody asked
+  which.
+
+Pose: Zoom In names no reader IDs in its text (they are only in figure images), so the readers stay gradient-chosen.

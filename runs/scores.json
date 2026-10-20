@@ -52,6 +52,96 @@
  },
  {
   "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 4,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to frontal faces of furry mammals, meaning the arrangement of two eyes above a central nose or snout, across foxes, cats, red pandas, hamsters, dogs, lynx, meerkats and ferrets. The one car (#5) seen head-on, with two headlights flanking a central grille, most likely activates the unit because it looks like a face, not because it is a separate concept.",
+  "dis_acc": 0.55,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 5,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to front-facing faces of furry mammals, specifically the layout of two eyes above a central nose or muzzle, as seen in foxes, cats, red pandas, hamsters, meerkats and ferrets. It likely responds to this face-like layout itself, which would explain the car.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 6,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to front-facing faces of small-to-medium furry mammals (cats, foxes, red pandas, hamster, meerkat, ferret, dog, lynx), centered on the eyes-nose-muzzle region. It also responds more weakly to face-like frontal patterns such as a car's front end.",
+  "dis_acc": 0.55,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "A0_bare",
   "card": "U-192",
   "sample": 1,
   "class": "one_plus_related",
@@ -376,6 +466,96 @@
    "cat_fire": 1.0
   },
   "explanation": "The unit mainly responds to close-up faces of small furry mammals, centred on the nose and muzzle of light-furred faces such as foxes, cats, red pandas, hamsters and ferrets. Separately, it also responds to cars such as sports cars, station wagons and taxis."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-686",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.0,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two separate things: cat faces, especially close-up frontal faces with eyes and whiskers, and cars, especially the front grille, headlights and hood of cars and trucks.",
+  "dis_acc": 0.65,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-686",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two separate things: cat faces (frontal, eyes and nose region) and cars, especially the front grille and headlight or hood area of cars.",
+  "dis_acc": 0.75,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.5,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-686",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two unrelated things: close-up cat faces and cars, especially the front or hood and body panels of cars.",
+  "dis_acc": 0.7,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.5,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.5,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
  },
  {
   "arm": "A0_bare",
@@ -2721,6 +2901,186 @@
   "explanation": "The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
  },
  {
+  "arm": "E0_edit",
+  "card": "U-121",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to upright, front-facing faces of furry mammals (foxes, cats, red pandas, hamsters, mustelids), especially the central nose and muzzle area. It also responds strongly to a classic red convertible car, which does not fit that theme.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "E0_edit",
+  "card": "U-121",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly detects upright, front-facing furry mammal faces, centred on the muzzle and nose (foxes, cats, red pandas, mustelids, a hamster, a dog). It also responds weakly to a face-like car front, which reads as a pareidolic extension of the same feature.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "E0_edit",
+  "card": "U-121",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit detects upright, front-facing faces of small and medium furry mammals (cats, foxes, red pandas, hamsters, ferrets), keyed to the eyes-and-snout layout. It also responds more weakly to a face-like car front with paired headlights over a grille.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "E0_edit",
+  "card": "U-686",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.0,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two unrelated things: close-up cat faces (especially the eyes, nose and whiskers) and cars, particularly car bodywork such as hoods, grilles, headlights and trunks.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.5,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
+  "arm": "E0_edit",
+  "card": "U-686",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two separate things: cat faces (domestic cats and kittens, close up) and automobiles, mostly the front, hood and grille area of cars and trucks.",
+  "dis_acc": 0.65,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
+  "arm": "E0_edit",
+  "card": "U-686",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two unrelated things: cat faces (especially close-ups with eyes and nose) and cars, particularly car bodies, front grilles and hoods.",
+  "dis_acc": 0.65,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
   "arm": "F0_feedback",
   "card": "U-192",
   "sample": 1,
@@ -3148,6 +3508,276 @@
    "bird": 1.0
   },
   "explanation": "The unit fires mainly on bird-name tokens (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), including when the word is used as a surname, band name, acronym or idiom. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-121",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly detects frontal faces of furry small-to-medium mammals (cats, foxes, red pandas, ferrets), centered on the eyes-and-snout layout. It also responds to a face-like car front, likely because two headlights over a grille resemble that layout.",
+  "dis_acc": 0.7,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.5,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.5,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-121",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to front-facing faces of small furry mammals: a pair of eyes above a snout or nose, framed by fur. It is strongest for cats and foxes and also fires on red pandas, a hamster, a dog, a lynx, a meerkat and a ferret.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-121",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to frontal faces of small-to-medium furry mammals (cats, foxes, red pandas, hamsters, mustelids), keyed to the eyes-over-snout layout. It also fires on a face-like car front, likely because headlights and grille mimic that layout.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 1.0,
+   "round_face_animal_no": 0.0,
+   "round_face_animal_fire": 1.0,
+   "pointed_face_dog_no": 0.5,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-686",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.0,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two unconnected things: close-up cat faces, and cars (especially fronts, grilles, hoods and headlights, often of classic or brightly colored vehicles).",
+  "dis_acc": 0.7,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 1.0
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-686",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.0,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two separate things: close-up cat faces (especially the eyes and nose region) and cars of many kinds.",
+  "dis_acc": 0.6,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 0.5,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-686",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to two unrelated things: close-up cat faces (eyes, nose, whiskers) and car bodywork (hoods, grilles, glossy painted panels, often of vintage cars).",
+  "dis_acc": 0.65,
+  "dis_by_tag": {
+   "flat_vehicle_fire": 1.0,
+   "round_obj_no": 1.0,
+   "pointed_obj_fire": 0.0,
+   "pointed_face_dog_fire": 0.0,
+   "round_face_animal_no": 1.0,
+   "round_face_animal_fire": 0.5,
+   "pointed_face_dog_no": 1.0,
+   "pointed_obj_no": 1.0,
+   "round_obj_fire": 0.0,
+   "flat_vehicle_no": 0.5
+  }
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (Mozzarella, Brie, cheeses), and fires moderately on the C/C++ preprocessor directives '#include' and '#define'."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word \"cheese\" and named cheeses (Mozzarella, Brie, cottage/cream cheese, \"cheeses\"), and separately fires at moderate levels on C/C++ preprocessor directives (\"#define\", \"#include\")."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on words for cheese ('cheese', 'cheeses', 'Mozzarella', 'Brie'), and more weakly on C/C++ preprocessor directives ('#define', '#include')."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit's strongest response is to bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether used literally or inside names, surnames, acronyms and idioms. Separately, it responds moderately to abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name words, whether they mean the animal or are used as names, surnames, acronyms or idioms (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron). It responds more weakly to abbreviated month names before a date (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "Q0_shared",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird names, even when the word is used as a surname, idiom, or acronym (Swan, owls, Finch, Kestrel, lame duck, black swan, sparrow, Falcon, Flamingos, SWAN, Heron). Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
  },
  {
   "arm": "R0_recognize",

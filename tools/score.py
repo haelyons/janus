@@ -14,10 +14,10 @@ J = Path(__file__).resolve().parent.parent
 KEY = {**json.loads((J / 'bank/KEY_text.json').read_text())}
 if (J / 'bank/KEY_img.json').exists():
     KEY.update(json.loads((J / 'bank/KEY_img.json').read_text()))
-for v in ('v2', 'v3', 'v4'):
+for v in ('v2', 'v3', 'v4', 'v5'):
     if (J / f'bank/KEY_img_{v}.json').exists():
         KEY.update(json.loads((J / f'bank/KEY_img_{v}.json').read_text()))
-ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns']
+ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns', 'Q0_shared', 'E0_edit']
 OK = {'one': {'one', 'one_plus_related'}, 'one_plus_related': {'one', 'one_plus_related'},
       'unrelated': {'unrelated'}, 'cannot_tell': {'cannot_tell', 'one', 'one_plus_related'}}
 
@@ -30,10 +30,16 @@ def score_run(rec, key):
     for h in key['heldout']:
         by_tag[h['tag']].append(preds.get(h['id']) == h['fires'])
     allv = [v for vs in by_tag.values() for v in vs]
+    dis = collections.defaultdict(list)
+    p3 = {p.get('id'): p.get('fires') for p in (rec.get('turn3') or {}).get('predictions', [])}
+    for h in key.get('disagree', []) if p3 else []:
+        dis[h['tag']].append(p3.get(h['id']) == h['fires'])
     return {'class': cls, 'class_ok': (cls in OK[t]) if t else None,
             'heldout_acc': sum(allv) / len(allv) if allv else None,
             'by_tag': {k: sum(v) / len(v) for k, v in by_tag.items()},
-            'explanation': (rec.get('turn1') or {}).get('explanation')}
+            'explanation': (rec.get('turn1') or {}).get('explanation'),
+            **({'dis_acc': sum(sum(v) for v in dis.values()) / sum(len(v) for v in dis.values()),
+                'dis_by_tag': {k: sum(v) / len(v) for k, v in dis.items()}} if dis else {})}
 
 
 def main():
@@ -45,7 +51,10 @@ def main():
                 rec[f'turn{n}'] = parse_json(r['text'])
             except ValueError:
                 rec[f'turn{n}'] = None
-        if 'requests' in rec:  # probe arm: the answer and the held-out predictions are the last two replies
+        if 'turn_idx' in rec:  # experiment arms: the answer and held-out turns are at recorded positions
+            for name, i in rec['turn_idx'].items():
+                rec[name] = parse_json(rec['replies'][i]['text'])
+        elif 'requests' in rec:  # probe arm: the answer and the held-out predictions are the last two replies
             rec['turn1'], rec['turn2'] = [parse_json(r['text']) for r in rec['replies'][-2:]]
         if rec['card'] not in KEY:
             continue

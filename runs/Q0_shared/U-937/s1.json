@@ -1,0 +1,180 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-937",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit's strongest response is to bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether used literally or inside names, surnames, acronyms and idioms. Separately, it responds moderately to abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).\",\n \"evidence\": \"All 12 top examples are bird words, including non-literal uses such as 'Swan Lake', 'green swan', 'lame duck', the SWAN MRI sequence, the PowerShell function 'Run-Kestrel', and the surnames Finch, Swan and Heron. All 8 mid-range examples are month abbreviations in dates with no bird content, which has no evident link to birds.\",\n \"missing_data\": \"Activations on month abbreviations in bird-free contexts at the top of the range, and on full month names or other date tokens, would show whether the month response is truly separate. Low-range examples would also help.\",\n \"confidence\": 0.7}",
+   "cost_usd": 0.036816,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3116,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 594,
+    "output_tokens_details": {
+     "thinking_tokens": 235
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3116,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 594,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3116,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3116
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6721
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0722392,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2904,
+    "cache_read_input_tokens": 3116,
+    "output_tokens": 578,
+    "output_tokens_details": {
+     "thinking_tokens": 288
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2904,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 578,
+      "cache_read_input_tokens": 3116,
+      "cache_creation_input_tokens": 2904,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2904
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5448
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit's strongest response is to bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether used literally or inside names, surnames, acronyms and idioms. Separately, it responds moderately to abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).",
+  "evidence": "All 12 top examples are bird words, including non-literal uses such as 'Swan Lake', 'green swan', 'lame duck', the SWAN MRI sequence, the PowerShell function 'Run-Kestrel', and the surnames Finch, Swan and Heron. All 8 mid-range examples are month abbreviations in dates with no bird content, which has no evident link to birds.",
+  "missing_data": "Activations on month abbreviations in bird-free contexts at the top of the range, and on full month names or other date tokens, would show whether the month response is truly separate. Low-range examples would also help.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

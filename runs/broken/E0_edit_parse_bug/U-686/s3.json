@@ -1,0 +1,174 @@
+{
+ "arm": "E0_edit",
+ "card": "U-686",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "replies": [
+  {
+   "text": "{\"edits\": [{\"photo\": 3, \"op\": \"keep\", \"box\": [0.0, 0.5, 0.6, 1.0]}, {\"photo\": 3, \"op\": \"occlude\", \"box\": [0.0, 0.5, 0.6, 1.0]}, {\"photo\": 3, \"op\": \"gray\"}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.2, 0.2, 0.7, 0.7]}, {\"photo\": 1, \"op\": \"gray\"}, {\"photo\": 6, \"op\": \"keep\", \"box\": [0.2, 0.3, 0.9, 0.8]}, {\"photo\": 17, \"op\": \"keep\", \"box\": [0.3, 0.6, 1.0, 1.0]}, {\"photo\": 13, \"op\": \"keep\", \"box\": [0.0, 0.5, 0.6, 0.9]}]}",
+   "cost_usd": 0.028228,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2695,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 333,
+    "output_tokens_details": {
+     "thinking_tokens": 48
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2695,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 333,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2695,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2695
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3999
+  },
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: close-up cat faces, especially the eyes, nose and whisker area, and cars, especially the front grille, headlights and hood of classic or brightly coloured vehicles.\",\n \"evidence\": \"Cat faces (#1,2,4–9,16,20) and car fronts or bodies (#3,10–15,17–19) both reach high activations (up to 9), and nothing visual or semantic links the two groups.\",\n \"missing_data\": \"My edit request came back without any results, so this rests only on the grid. Occlusion tests on car grilles versus cat eyes would show which local features drive each group and whether they share something, such as symmetric 'face-like' layouts.\",\n \"confidence\": 0.65}",
+   "cost_usd": 0.038291,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 392,
+    "cache_read_input_tokens": 2695,
+    "output_tokens": 319,
+    "output_tokens_details": {
+     "thinking_tokens": 62
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 392,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 319,
+      "cache_read_input_tokens": 2695,
+      "cache_creation_input_tokens": 392,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 392
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4570
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.086003,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5038,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 370,
+    "output_tokens_details": {
+     "thinking_tokens": 80
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5038,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 370,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5038,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5038
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3801
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.150399,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7041,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 403,
+    "output_tokens_details": {
+     "thinking_tokens": 113
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7041,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 403,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7041,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7041
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4143
+  }
+ ],
+ "turn_idx": {
+  "turn1": 1,
+  "turn2": 2,
+  "turn3": 3
+ }
+}

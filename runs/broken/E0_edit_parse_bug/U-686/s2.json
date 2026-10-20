@@ -1,0 +1,134 @@
+{
+ "arm": "E0_edit",
+ "card": "U-686",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit is polysemantic. It responds strongly to close-up cat faces, especially the eyes and nose region, and separately to cars, particularly the glossy painted bodywork of vintage and modern vehicles.\", \"evidence\": \"The top activations (9 to 7) are mostly cat faces of varied breeds and colours, with one car (#3) at 9. Cars from front, side and rear views (#10 to #19) fill the 5 to 6 range, and the rear and side views (#12, #17, #18) rule out a shared 'headlights look like eyes' explanation.\", \"missing_data\": \"Activations on other animals (dogs, other felines) and other glossy vehicles or objects would show whether either half is broader than cats and cars. Occlusion tests would show whether a shared low-level texture links the two.\", \"confidence\": 0.75}",
+   "cost_usd": 0.029907999999999997,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2695,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 417,
+    "output_tokens_details": {
+     "thinking_tokens": 129
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2695,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 417,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2695,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2695
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6826
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.07514799999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4744,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 364,
+    "output_tokens_details": {
+     "thinking_tokens": 74
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4744,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 364,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4744,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4744
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5256
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.136384,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6741,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 365,
+    "output_tokens_details": {
+     "thinking_tokens": 75
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6741,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 365,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6741,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6741
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5082
+  }
+ ],
+ "turn_idx": {
+  "turn1": 0,
+  "turn2": 1,
+  "turn3": 2
+ }
+}

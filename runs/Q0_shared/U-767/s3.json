@@ -1,0 +1,180 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-767",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on words for cheese ('cheese', 'cheeses', 'Mozzarella', 'Brie'), and more weakly on C/C++ preprocessor directives ('#define', '#include').\",\n \"evidence\": \"All twelve top examples peak on a cheese token, including 'Brie' as an actress's surname, which suggests it keys on the word rather than food in general (salami, eggs and shrimp nearby stay unmarked). Every mid-range example is a '#' plus 'define' or 'include' token in source code, which has no meaningful connection to cheese.\",\n \"missing_data\": \"Activations on other dairy and food words, and on non-preprocessor code, would show whether either half is broader than it looks (e.g. food in general, or code in general).\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.008315600000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3138,
+    "output_tokens": 384,
+    "output_tokens_details": {
+     "thinking_tokens": 95
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 384,
+      "cache_read_input_tokens": 3138,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6109
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0369472,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2552,
+    "cache_read_input_tokens": 3138,
+    "output_tokens": 379,
+    "output_tokens_details": {
+     "thinking_tokens": 89
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2552,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 379,
+      "cache_read_input_tokens": 3138,
+      "cache_creation_input_tokens": 2552,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2552
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4331
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on words for cheese ('cheese', 'cheeses', 'Mozzarella', 'Brie'), and more weakly on C/C++ preprocessor directives ('#define', '#include').",
+  "evidence": "All twelve top examples peak on a cheese token, including 'Brie' as an actress's surname, which suggests it keys on the word rather than food in general (salami, eggs and shrimp nearby stay unmarked). Every mid-range example is a '#' plus 'define' or 'include' token in source code, which has no meaningful connection to cheese.",
+  "missing_data": "Activations on other dairy and food words, and on non-preprocessor code, would show whether either half is broader than it looks (e.g. food in general, or code in general).",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}
