@@ -17,7 +17,7 @@ if (J / 'bank/KEY_img.json').exists():
 for v in ('v2', 'v3', 'v4', 'v5'):
     if (J / f'bank/KEY_img_{v}.json').exists():
         KEY.update(json.loads((J / f'bank/KEY_img_{v}.json').read_text()))
-ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns', 'Q0_shared', 'E0_edit']
+ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns', 'Q0_shared', 'E0_edit', 'E1_scientist']
 OK = {'one': {'one', 'one_plus_related'}, 'one_plus_related': {'one', 'one_plus_related'},
       'unrelated': {'unrelated'}, 'cannot_tell': {'cannot_tell', 'one', 'one_plus_related'}}
 

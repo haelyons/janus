@@ -211,3 +211,57 @@ invalid: parse_json returned the last nested edit item, so no edit was applied (
   which.
 
 Pose: Zoom In names no reader IDs in its text (they are only in figure images), so the readers stay gradient-chosen.
+
+## Separation audit (written before rounds 10-11)
+
+Blind throughout: the subjects (no tools, sandbox, never see code, truth or other runs), the C3/C4 arm authors, the
+Fable consult; truth comes from the network; predictions are sealed and hashed before each round; scoring is
+mechanical. Not blind in rounds 3-9: one agent (the orchestrator, who has read the essay) chose card contents and
+captions, the shape-class lists, the CFS keywords, the edit-op menu, and wrote the scorer and render readings. The
+round-9 op menu (box occlusion) invites part-by-part tests, and the substrate result ("pointed objects at base rate")
+rests on lists the orchestrator wrote. From round 10, measurement choices go to blind agents where possible.
+
+## Round 10: blind transformation battery (`tools/battery.py`)
+
+The transforms were chosen by a tool-less agent told only "mid-level units of an ImageNet CNN, each on its own top
+photos" (`authors/brief_battery.md`, reply `authors/battery.reply.json`): grayscale, low_pass, high_pass,
+phase_scramble, patch_shuffle_4x4, rotate_90, edge_map, luminance_polarity_inversion. rotate_180 and mirror were
+added afterwards, not blind. The code was written by a claim-blind author from `authors/spec_battery.md` (it read only
+the spec, the list and `bank/img_acts.py`; unedited, selftest ok). Retention R = median over a channel's top-20 card
+photos of a(Tx)/a(x), for all 832 mixed4e channels. Channel 55 against the layer (`runs/battery/report_55.txt`,
+`sheet_55.jpg`):
+
+    transform                     R(55)  percentile  layer median
+    rotate_180                    0.27     4           0.59
+    grayscale                     0.73    19           0.84
+    rotate_90                     0.40    21           0.54
+    patch_shuffle_4x4             0.49    23           0.61
+    high_pass                     0.63    29           0.71
+    luminance_polarity_inversion  0.66    34           0.73
+    low_pass                      0.25    39           0.28
+    phase_scramble                0.03    39           0.04
+    edge_map                      0.15    41           0.18
+    mirror                        0.98    82           0.95
+
+- The distinctive property is orientation: upside-down keeps 27% against a layer median of 59% (4th percentile).
+  Most channels lose some activation when inverted, so the inversion drop on its own is only weak evidence;
+  channel 55's drop, though, is far larger than typical.
+- 55 is not unusually contour- or outline-driven: edge maps and blur hurt it about as much as the typical channel.
+  Patch shuffle and grayscale hurt it a little more than typical.
+- Predictions: 8 of 12 held. The orientation ones held; the "configural shape" ones (low_pass high, edge_map above
+  median) failed, as did grayscale mid and phase_scramble low.
+- The battery cannot separate "upright face" from "downward-pointing V": both predict the orientation result.
+
+## Round 11: blind-authored scientist arm (E1_scientist) with the battery as edit ops
+
+`arms/E1_scientist.txt` was written by a tool-less author from `authors/brief_rival.md` (careful experimental
+scientist, rival hypotheses, discriminating experiments; no unit or essay). Image runs offer the E0 ops plus the 10
+transforms. Every prediction held:
+- Controls (U-767, U-937): 6/6 unrelated, held-out 1.00. The arm does not impose unity.
+- U-121: 3/3 one_plus_related, "upright, front-facing faces of furry mammals; a face-like car front more weakly".
+  U-686: 3/3 unrelated, "cat faces and, separately, glossy car bodywork". CFS 0/6.
+- All 6 used battery transforms, and 5 of 6 tried edge_map. Replayed: edge map 9.5 -> 1.0-1.4, phase scramble -> 0.2,
+  low_pass -> 3.4, rotate_180 -> 2.7, patch_shuffle -> 6.1, grayscale -> 6.5. Subjects read the edge-map drop as
+  "needs fur texture", but it is typical for the layer (41st percentile). They have no baseline to tell typical
+  drops from distinctive ones. The one distinctive drop (inversion) was read as "upright face".
+- Held-out 0.70-0.75; turn 3 0.60-0.70; pointed_obj 0.50 in 6/6 (both pointed photos that fire predicted silent).

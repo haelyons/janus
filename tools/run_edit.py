@@ -5,9 +5,13 @@ of up to 8 edits. Then the same held-out turns as every other arm (turn 2, and t
 Box coordinates are fractions of the photo as shown in the grid (a crop around the hotspot); edits are applied to the
 whole photo the network sees, and the subject is shown that whole edited photo.
 
-usage: python -I tools/run_edit.py --cards U-121,U-686 --samples 3 [--workers 3]
+With --arm X the system prompt is arms/X.txt (E0_edit: empty). With --battery, the transforms in tools/battery.py
+are offered as op "transform", each listed by name and the first clause of what authors/battery.reply.json says it removes.
+
+usage: python -I tools/run_edit.py --cards U-121,U-686 --samples 3 [--workers 3] [--arm E1_scientist --battery]
 """
 import argparse
+import hashlib
 import io
 import itertools
 import json
@@ -46,6 +50,7 @@ OFFER = (f'\n\nBefore answering, you may run experiments on the unit, up to {REQ
          '- "flip": mirror left-right; "gray": remove colour\n'
          '- "rotate" with "degrees"\n'
          '- "shrink" with "factor" between 0.2 and 1: shrink the photo onto a grey frame\n'
+         '{extra}'
          'Boxes are fractions (0-1) of the photo as shown in the grid. When you are ready, reply with the JSON answer '
          'described below instead.')
 
@@ -90,6 +95,9 @@ def apply(im, crop, e):
         im = ImageOps.grayscale(im).convert('RGB')
     elif op == 'rotate':
         im = im.rotate(float(e['degrees']), resample=Image.BICUBIC, fillcolor=GREY)
+    elif op == 'transform':
+        from battery import TRANSFORMS
+        im = TRANSFORMS[e['name']](im)
     elif op == 'shrink':
         f = min(max(float(e['factor']), 0.2), 1.0)
         s = int(224 * f)
@@ -127,12 +135,21 @@ def run_edits(cid, edits, s, n_req):
     return out
 
 
-def one(cid, s):
+def battery_ops():
+    from battery import TRANSFORMS
+    d = json.loads((J / 'authors/battery.reply.json').read_text())
+    removes = {t['name']: t['removes'] for t in d['transforms']}
+    removes.update({'rotate_180': 'Upright orientation', 'mirror': 'Left-right orientation'})
+    names = ', '.join(f'{n} (removes {removes[n].split(":")[0].split(".")[0].lower()})' for n in TRANSFORMS)
+    return f'- "transform" with "name", one of: {names}\n'
+
+
+def one(cid, s, sp='', extra=''):
     out_path = J / 'runs' / ARM / cid / f's{s}.json'
     if out_path.exists():
         return f'skip {cid} s{s}'
     turns = turns_for(cid)
-    t1 = turns[0][:-1] + [{'type': 'text', 'text': OFFER + TASK}]
+    t1 = turns[0][:-1] + [{'type': 'text', 'text': OFFER.replace('{extra}', extra) + TASK}]
     later = list(turns[1:])
     state, log = {'left': REQUESTS, 'answered': False}, []
 
@@ -153,11 +170,12 @@ def one(cid, s):
             state['answered'] = True
         return later.pop(0) if later else None
 
-    replies = converse('', itertools.chain([t1], itertools.repeat(step)))
+    replies = converse(sp, itertools.chain([t1], itertools.repeat(step)))
     if any(r['is_error'] for r in replies):
         raise RuntimeError(f'error reply, not saved: {replies[-1]["text"][:80]}')
     first = len(replies) - len(turns)  # the answer and the held-out turns are the last replies
-    rec = {'arm': ARM, 'card': cid, 'sample': s, 'model': MODEL, 'requests': log, 'replies': replies,
+    rec = {'arm': ARM, 'card': cid, 'sample': s, 'model': MODEL,
+           'system_prompt_sha256': hashlib.sha256(sp.encode()).hexdigest(), 'offer': t1[-1]['text'], 'requests': log, 'replies': replies,
            'turn_idx': {f'turn{k + 1}': first + k for k in range(len(turns))}}
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(rec, indent=1, ensure_ascii=False))
@@ -165,14 +183,21 @@ def one(cid, s):
 
 
 def main():
+    global ARM
     ap = argparse.ArgumentParser()
     ap.add_argument('--cards', required=True)
     ap.add_argument('--samples', type=int, default=3)
     ap.add_argument('--workers', type=int, default=3)
+    ap.add_argument('--arm', default=ARM)
+    ap.add_argument('--battery', action='store_true')
     a = ap.parse_args()
+    ARM = a.arm
+    f = J / 'arms' / f'{ARM}.txt'
+    sp = f.read_text().strip() if f.exists() else ''
+    extra = battery_ops() if a.battery else ''
     jobs = [(c, s) for s in range(1, a.samples + 1) for c in a.cards.split(',')]
     with ThreadPoolExecutor(a.workers) as ex:
-        futs = {ex.submit(one, *j): j for j in jobs}
+        futs = {ex.submit(one, *j, sp, extra): j for j in jobs}
         for f in as_completed(futs):
             try:
                 print(f.result(), flush=True)

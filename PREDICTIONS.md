@@ -167,3 +167,40 @@ activation on the 0-10 scale. Cards U-121 and U-686, three samples each. Compare
 3. Class unchanged in mode: U-121 one/one_plus_related, U-686 unrelated in at least 2 of 3.
 4. Turn 3 within 0.50-0.75; pointed_obj exactly 0.50 in at least 4 of 6.
 5. Turn 2 within 0.65-0.80.
+
+# Round 10: blind transformation battery (sealed 2026-10-20, before battery.py exists or runs)
+
+Separation for this round: the transform list was chosen by a tool-less agent told only "units of a mid-level layer
+of an ImageNet CNN, each on its own top photos" (authors/brief_battery.md, reply authors/battery.reply.json), with no
+unit, hypothesis or essay. rotate_180 and mirror were added after it by the user's request and are marked not blind.
+The code is written by a claim-blind author from authors/spec_battery.md, which names no channel and no hypothesis;
+I do not edit it. Measure: retention R = median over a channel's top-20 card-pool photos of a(Tx)/a(x), spatial max,
+for all 832 mixed4e channels; channel 55 reported as a percentile among them.
+
+What the battery can decide: configuration versus texture (shape-type readings, V or face layout, predict high
+edge_map / low_pass retention and low patch_shuffle / phase_scramble / rotation retention relative to the layer;
+the field's fur-and-chrome OR(cat, car) reading predicts the reverse). What it cannot decide: upright furry face
+versus downward-pointing V, since both are configural and both predict an inversion drop.
+
+Predictions for channel 55 (percentile bands: low < 33, mid 33-67, high > 67):
+1. grayscale mid; luminance_polarity_inversion mid; mirror retention >= 0.85.
+2. low_pass high; edge_map above the layer median (percentile > 50).
+3. patch_shuffle_4x4 low; phase_scramble low with retention < 0.2; high_pass low or mid.
+4. rotate_90 low; rotate_180 low with retention < 0.4.
+5. Layer: rotate_180 median retention below 0.7 (inversion hurts most mid-level channels, so an inversion drop
+   alone is weak evidence about any one unit); edge_map median retention below 0.3 (texture bias).
+
+# Round 11: blind-authored scientist arm with the battery as edit ops (sealed 2026-10-20, before any E1 run)
+
+arms/E1_scientist.txt was written verbatim by a tool-less author from authors/brief_rival.md (careful experimental
+scientist; no hypothesis, unit or essay; 458 words against a 400 limit, kept unedited). Image runs use run_edit.py
+with the E0 ops plus the 10 battery transforms as op "transform" (each listed by name and the first clause of the
+blind list's "removes"), so E1 differs from E0 in both prompt and ops; if E1 moves, an ablation follows. Runs:
+E1 x U-121 and U-686 with edits (3 each); E1 x U-767 and U-937 (text controls, no experiments; 3 each).
+
+1. All 6 image sessions request edits; at least 4 of 6 use 2 or more requests.
+2. At least 4 of 6 use a battery transform; edge_map in at least 3 of 6.
+3. CFS in at most 1 of 6.
+4. U-121 one/one_plus_related in at least 2 of 3; U-686 unrelated in at least 2 of 3.
+5. Controls: false unity in at most 1 of 6; held-out >= 0.95.
+6. Turn 3 within 0.50-0.75 and pointed_obj exactly 0.50 in at least 4 of 6; turn 2 within 0.65-0.85.

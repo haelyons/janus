@@ -1,0 +1,180 @@
+{
+ "arm": "E1_scientist",
+ "card": "U-937",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9325e5e35685b89a0fe9f86110ecfa324fa6cc6da7eaba78631e83c623812819",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on the tokens of bird names (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), and it does so even when the word is a surname, product name or acronym (e.g., 'Yvik Swan', 'Robert Falcon Scott', 'SWAN sequence', 'Run-Kestrel'). Separately, it fires moderately on abbreviated month names in dates ('Sep', 'Oct.', 'Nov.', 'Aug.', 'Feb.', 'Sept.').\",\n \"evidence\": \"All 12 top examples (8–10) land on bird-name tokens, including non-bird senses such as 'lame duck' (10), 'green swan' (10) and the surname Heron (9). All 8 mid-range examples (5–7) land only on abbreviated months followed by a day number, which has no apparent link to birds.\",\n \"missing_data\": \"Two things would most change this: whether non-bird animal names (e.g., cat, wolf) or full month names ('October') activate the unit, and whether bird names ever fall in the mid range, which would show whether the two clusters are really separate.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.044579999999999995,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3964,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 643,
+    "output_tokens_details": {
+     "thinking_tokens": 231
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3964,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 643,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3964,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3964
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7156
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.07630479999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2953,
+    "cache_read_input_tokens": 3964,
+    "output_tokens": 365,
+    "output_tokens_details": {
+     "thinking_tokens": 75
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2953,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 365,
+      "cache_read_input_tokens": 3964,
+      "cache_creation_input_tokens": 2953,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2953
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3876
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on the tokens of bird names (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), and it does so even when the word is a surname, product name or acronym (e.g., 'Yvik Swan', 'Robert Falcon Scott', 'SWAN sequence', 'Run-Kestrel'). Separately, it fires moderately on abbreviated month names in dates ('Sep', 'Oct.', 'Nov.', 'Aug.', 'Feb.', 'Sept.').",
+  "evidence": "All 12 top examples (8–10) land on bird-name tokens, including non-bird senses such as 'lame duck' (10), 'green swan' (10) and the surname Heron (9). All 8 mid-range examples (5–7) land only on abbreviated months followed by a day number, which has no apparent link to birds.",
+  "missing_data": "Two things would most change this: whether non-bird animal names (e.g., cat, wolf) or full month names ('October') activate the unit, and whether bird names ever fall in the mid range, which would show whether the two clusters are really separate.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

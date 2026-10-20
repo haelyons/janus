@@ -1,0 +1,180 @@
+{
+ "arm": "E1_scientist",
+ "card": "U-937",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9325e5e35685b89a0fe9f86110ecfa324fa6cc6da7eaba78631e83c623812819",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The strongest firing is on bird-name words, on all of their subword pieces, whether the bird is literal or not: swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron, including surnames, idioms, band names and acronyms. A separate, weaker response (about 5–7) lands on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.).\",\n \"evidence\": \"All 12 top examples (8–10) are bird-name tokens, many outside bird contexts: 'Swan Lake', 'lame duck', 'green swan', the surname 'Yvik Swan', 'Robert Falcon Scott', 'The Flamingos', the acronym 'SWAN' and the cmdlet 'Run-Kestrel'. All mid-range examples are instead month abbreviations before a day number, which have no semantic link to birds.\",\n \"missing_data\": \"Two things would change this: whether full month names or non-bird animal names fire, and whether a bird word inside a longer word ('swank', 'Ducktales') fires. Either would show whether the bird response is lexical or semantic and whether the two clusters share a feature.\",\n \"confidence\": 0.7}",
+   "cost_usd": 0.0129608,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3964,
+    "output_tokens": 608,
+    "output_tokens_details": {
+     "thinking_tokens": 184
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 608,
+      "cache_read_input_tokens": 3964,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 13710
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0450456,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2918,
+    "cache_read_input_tokens": 3964,
+    "output_tokens": 397,
+    "output_tokens_details": {
+     "thinking_tokens": 107
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2918,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 397,
+      "cache_read_input_tokens": 3964,
+      "cache_creation_input_tokens": 2918,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2918
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4687
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The strongest firing is on bird-name words, on all of their subword pieces, whether the bird is literal or not: swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron, including surnames, idioms, band names and acronyms. A separate, weaker response (about 5–7) lands on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.).",
+  "evidence": "All 12 top examples (8–10) are bird-name tokens, many outside bird contexts: 'Swan Lake', 'lame duck', 'green swan', the surname 'Yvik Swan', 'Robert Falcon Scott', 'The Flamingos', the acronym 'SWAN' and the cmdlet 'Run-Kestrel'. All mid-range examples are instead month abbreviations before a day number, which have no semantic link to birds.",
+  "missing_data": "Two things would change this: whether full month names or non-bird animal names fire, and whether a bird word inside a longer word ('swank', 'Ducktales') fires. Either would show whether the bird response is lexical or semantic and whether the two clusters share a feature.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}
