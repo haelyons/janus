@@ -1,6 +1,57 @@
 [
  {
   "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to frontal faces of furry mammals: eyes, a central nose or muzzle, and surrounding fur (foxes, cats, red pandas, hamster, meerkat, ferret, dog). It also fires on at least one face-like non-animal: a car's front, where the headlights and grille resemble eyes and a mouth."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to frontal faces of furry mammals, especially cats, foxes, red pandas and similar small carnivores, centered on the eyes-nose-muzzle arrangement. It also responds weakly to face-like frontal patterns, such as a car's front end."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-121",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to front-facing faces of small-to-medium furry mammals, especially cats, foxes and red pandas, centered on the eyes-nose-muzzle arrangement. It also responds to a face-like car front, likely because headlights and grille resemble eyes and muzzle."
+ },
+ {
+  "arm": "A0_bare",
   "card": "U-192",
   "sample": 1,
   "class": "one_plus_related",
@@ -268,6 +319,57 @@
    "nm_food": 1.0
   },
   "explanation": "The unit fires most strongly on the word \"cheese\" and the names of cheeses (Mozzarella, Brie, cheeses), and separately responds moderately to C/C++ preprocessor directives (#include, #define)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-860",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Responds to the light, furry muzzle and nose area of small and medium carnivore faces seen from the front, mainly cats and foxes, and less strongly hamsters, ferrets, red pandas and a sheltie. There is one odd response to a red car's front grille."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-860",
+  "sample": 2,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the nose-and-muzzle area of faces of cats and similar small furry mammals (foxes, red pandas, hamsters, ferrets, lynx), especially pointed, light-furred faces."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-860",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the central face region (eyes, nose and muzzle) of cats, and more weakly to similar small-snouted furry faces of foxes, hamsters, red pandas, meerkats and ferrets."
  },
  {
   "arm": "A0_bare",
@@ -2466,6 +2568,108 @@
   "explanation": "The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
  },
  {
+  "arm": "F0_feedback",
+  "card": "U-192",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.4,
+  "by_tag": {
+   "object_no": 0.4,
+   "car_fire": 0.0,
+   "animal_fire": 1.0,
+   "animal_no": 0.6,
+   "object_fire": 0.0,
+   "cat_fire": 0.0
+  },
+  "explanation": "The unit mainly responds to the faces of small furry mammals: cats, foxes and red pandas most strongly, with weaker responses to a hamster, meerkat, ferret, dog and arctic fox. It also fires strongly on a vintage maroon convertible car, which has no clear connection to that concept."
+ },
+ {
+  "arm": "F0_feedback",
+  "card": "U-192",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.45,
+  "by_tag": {
+   "object_no": 0.4,
+   "car_fire": 0.0,
+   "animal_fire": 1.0,
+   "animal_no": 0.6,
+   "object_fire": 0.3333333333333333,
+   "cat_fire": 0.0
+  },
+  "explanation": "The unit mainly responds to the faces of small-to-medium furry mammals, especially cats and foxes, with related extensions to red pandas, hamsters, meerkats, ferrets, lynx and a dog. It also fires strongly on an unrelated concept, a vintage red convertible car."
+ },
+ {
+  "arm": "F0_feedback",
+  "card": "U-192",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.45,
+  "by_tag": {
+   "object_no": 0.4,
+   "car_fire": 0.0,
+   "animal_fire": 1.0,
+   "animal_no": 0.6,
+   "object_fire": 0.3333333333333333,
+   "cat_fire": 0.0
+  },
+  "explanation": "The unit mainly responds to the faces of small furry mammals, especially cats and foxes, and also fires on related animals such as red pandas, a hamster, a meerkat, a ferret, a lynx and a sheltie."
+ },
+ {
+  "arm": "F0_feedback",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.3,
+  "by_tag": {
+   "object_no": 0.2,
+   "car_fire": 0.0,
+   "animal_fire": 0.0,
+   "animal_no": 0.8,
+   "object_fire": 0.3333333333333333,
+   "cat_fire": 0.0
+  },
+  "explanation": "The unit responds to the faces of small furry carnivore-like mammals with pointed ears and whiskers, mainly cats and foxes, and more weakly to red pandas, hamsters, meerkats, ferrets and lynx. It is suppressed by dogs (especially flat-faced breeds like pugs and mastiffs), birds and non-furry objects."
+ },
+ {
+  "arm": "F0_feedback",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.35,
+  "by_tag": {
+   "object_no": 0.2,
+   "car_fire": 0.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 0.8,
+   "object_fire": 0.3333333333333333,
+   "cat_fire": 0.0
+  },
+  "explanation": "The unit responds to faces of small furry mammals with pointed or upright ears, mainly foxes and cats (domestic cats, lynx, red pandas), and more weakly to related small mammals such as hamsters, meerkats, ferrets, and one fluffy sheltie."
+ },
+ {
+  "arm": "F0_feedback",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.4,
+  "by_tag": {
+   "object_no": 0.2,
+   "car_fire": 0.0,
+   "animal_fire": 0.3333333333333333,
+   "animal_no": 0.8,
+   "object_fire": 0.3333333333333333,
+   "cat_fire": 0.5
+  },
+  "explanation": "The unit responds to faces of small furry mammals with pointed or upright ears, mainly cats and foxes, and less strongly to related animals such as red pandas, hamsters, a lynx, a meerkat, a ferret and a sheltie."
+ },
+ {
   "arm": "P0_probe",
   "card": "U-192",
   "sample": 1,
@@ -2650,5 +2854,107 @@
    "bird": 1.0
   },
   "explanation": "The unit fires mainly on bird-name tokens (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), including when the word is used as a surname, band name, acronym or idiom. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-192",
+  "sample": 1,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-192",
+  "sample": 2,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-192",
+  "sample": 3,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-300",
+  "sample": 1,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-300",
+  "sample": 2,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "R0_recognize",
+  "card": "U-300",
+  "sample": 3,
+  "class": null,
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": null
  }
 ]

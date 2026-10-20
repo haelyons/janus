@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-121",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to frontal faces of furry mammals: eyes, a central nose or muzzle, and surrounding fur (foxes, cats, red pandas, hamster, meerkat, ferret, dog). It also fires on at least one face-like non-animal: a car's front, where the headlights and grille resemble eyes and a mouth.\",\n \"evidence\": \"19 of the top 20 crops are centered on a fur-framed mammal face seen roughly head-on, with foxes and cats scoring highest. The Mercedes front at #5 (activation 9) is the only outlier, and it shares the paired 'eyes' and central feature layout.\",\n \"missing_data\": \"More car or face-like object examples further down the ranking, plus activations for non-furry faces (humans, birds), would show whether the car is a real face-layout extension or a separate, unrelated response.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.029283999999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2352,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 523,
+    "output_tokens_details": {
+     "thinking_tokens": 207
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2352,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 523,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2352,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2352
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7455
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.074528,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4507,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 459,
+    "output_tokens_details": {
+     "thinking_tokens": 169
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4507,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 459,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4507,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4507
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5280
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to frontal faces of furry mammals: eyes, a central nose or muzzle, and surrounding fur (foxes, cats, red pandas, hamster, meerkat, ferret, dog). It also fires on at least one face-like non-animal: a car's front, where the headlights and grille resemble eyes and a mouth.",
+  "evidence": "19 of the top 20 crops are centered on a fur-framed mammal face seen roughly head-on, with foxes and cats scoring highest. The Mercedes front at #5 (activation 9) is the only outlier, and it shares the paired 'eyes' and central feature layout.",
+  "missing_data": "More car or face-like object examples further down the ranking, plus activations for non-furry faces (humans, birds), would show whether the car is a real face-layout extension or a separate, unrelated response.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+cat (27 firing photos): top inputs 493, 143, 477, 401, 383, 505, 460, 28  (top 8 carry 61% of positive contribution)
+car (88 firing photos): top inputs 493, 352, 201, 445, 460, 396, 61, 38  (top 8 carry 55% of positive contribution)
+other animal (319 firing photos): top inputs 493, 477, 383, 143, 28, 128, 246, 408  (top 8 carry 57% of positive contribution)
+object (109 firing photos): top inputs 493, 352, 61, 334, 201, 396, 445, 218  (top 8 carry 44% of positive contribution)
+cosine similarity of mean contribution vectors:
+  cat vs car: 0.72
+  cat vs other animal: 0.98
+  cat vs object: 0.72
+  car vs other animal: 0.72
+  car vs object: 0.96
+  other animal vs object: 0.73
+top-10 overlap cat & car: [np.int64(460), np.int64(493)]; cat & object: [np.int64(460), np.int64(493)]; car & object: [np.int64(61), np.int64(201), np.int64(334), np.int64(352), np.int64(396), np.int64(445), np.int64(460), np.int64(493)]
+main positive inputs over all firing photos (share of mean positive contribution; own top photos):
+  493: 29.3%  w=+0.311  | red fox 4, lesser panda 4, lynx 4, papillon 3
+  477: 4.8%  w=+0.068  | red fox 6, Pembroke 5, dingo 3, kit fox 3
+  352: 4.5%  w=+0.102  | beach wagon 4, grille 4, minivan 4, sports car 3
+  143: 3.1%  w=+0.072  | hamster 4, tabby 3, Persian cat 3, wood rabbit 3
+  383: 3.0%  w=+0.079  | Greater Swiss Mountain dog 2, Italian greyhound 2, Walker hound 2, EntleBucher 2
+  61: 2.1%  w=+0.116  | flamingo 2, Pembroke 2, birdhouse 1, king penguin 1
+  28: 1.6%  w=+0.044  | Eskimo dog 3, Pembroke 2, Cardigan 2, Madagascar cat 2
+  460: 1.6%  w=+0.062  | Greater Swiss Mountain dog 3, Appenzeller 2, Maltese dog 2, consomme 2
+strongest negative inputs (w x mean activity; own top photos):
+  456: w=-0.067  | electric locomotive 3, garbage truck 2, tow truck 2, trailer truck 2
+  463: w=-0.041  | German shepherd 2, German short-haired pointer 2, Irish terrier 2, Labrador retriever 2
+  345: w=-0.072  | silky terrier 3, Greater Swiss Mountain dog 2, kuvasz 2, soft-coated wheaten terrier 2
+  459: w=-0.037  | partridge 3, kuvasz 2, borzoi 2, Samoyed 2

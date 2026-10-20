@@ -86,3 +86,16 @@ Substrate note, found before this run: the negative grid's troughs are diffuse b
 3. Held-out after revision: car_fire at least 0.5 in at least 4 of 6; object_fire (pool tables, throne) above
    0 in at most 2 of 6.
 4. Confidence falls after the reveal in at least 4 of 6. None says cannot_tell.
+
+# Round 5: display v2, bare arm (sealed 2026-10-20, before any v2 run)
+
+The A0 arm (empty system prompt, round-1 task and held-out turn) on display v2: U-121 (field: top-20 cropped
+around the hotspot) and U-860 (full: crops with red response shading, plus 20 negatives located by the
+strongest 3x3 trough, cropped and shaded blue). The same photos and held-out set as rounds 1-4; only the
+display changed. Three samples each.
+
+1. U-121: the modal reading is still category-level (furry or cat/fox faces). A shape-level reading (pointed
+   muzzle or face, V, triangular, narrow against broad) as the defining feature appears in at most 1 of 3.
+2. U-860: a shape-level reading appears in at least 1 and at most 2 of 3. At least 2 of 3 describe the negatives
+   as flat, round, broad or jowly faces.
+3. Held-out stays within 0.65-0.80. car_fire rises above 0 only in sessions that give a shape-level reading.

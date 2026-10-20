@@ -91,3 +91,26 @@ mammal faces and, separately, vehicles/street scenes: unrelated". One says "poly
 0.75-0.85, the best so far: car_fire 1.0 everywhere, object_fire 0.3 in 2 of 6. Confidence fell in 4 of 6.
 None says cannot tell; none reaches a shape reading. The update reweights within the received categories,
 toward the field's two-feature reading.
+
+## Round 5: display v2, bare arm (`bank/img_cards_v2.py`)
+
+Same photos and held-out set; only the display changed: crops around the hotspot; on the full card, red response
+shading and negatives located by the strongest 3x3 trough, shaded blue.
+- U-121 (crops): 3 of 3 call the car front "face-like: headlights and grille resemble eyes and muzzle" and class
+  it one_plus_related. This is the first stated link between the car and the animals in any round.
+- U-860 (crops + located negatives): 3 of 3 read the negatives as dark, flat, wrinkled dog muzzles. Two describe a
+  contrast: "light, narrow muzzles vs dark, flat ones"; "pointy feline/vulpine faces vs heavy dark dog snouts".
+- Held-out unchanged (0.65-0.70): the readings don't predict cabs or pool tables.
+
+## Circuit into mixed4e:55 (`tools/circuit.py`, `tools/circuit_read.py`, `runs/circuit/`)
+
+pre = sum_c w_c * mixed4d_c + b over 528 inputs; the rebuild matches the stored maps to float16 precision.
+- One input, 493, carries 29% of the positive drive and is the top input for cats, cars, other animals and objects
+  alike. Its own top photos are fox, cat and red-panda faces, yet it sits at the 89th percentile on car photos. It
+  carries a median 40% of the drive on firing cat photos and 20% on firing car photos. Cats and cars share the
+  main route.
+- A car-specific input (352: cabs, jeeps, wagons, convertibles) adds a median 17% on cars and 0% on cats.
+- Input 61 (birdhouse roofs, penguin beak, a diamond-patterned drum, flamingos) looks like pointed patterns; small
+  share (2%).
+- The strongest negative input (456) is flat-fronted vehicles: locomotives, garbage and tow trucks.
+- Cosine of mean contribution vectors: cat vs car 0.72; cat vs other animals 0.98; car vs objects 0.96.

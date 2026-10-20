@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-860",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the light, furry muzzle and nose area of small and medium carnivore faces seen from the front, mainly cats and foxes, and less strongly hamsters, ferrets, red pandas and a sheltie. There is one odd response to a red car's front grille.\",\n \"evidence\": \"Almost all of the top 20 are close-up frontal faces of cats, foxes or small mammals, with the red shading centered on the nose and muzzle; #5 (a red Mercedes) is the only non-animal. The most negative spots are dark, wrinkled, flat-nosed dog muzzles (boxers, pugs, mastiffs), plus dark birds, which suggests a contrast with dark broad snouts.\",\n \"missing_data\": \"Activations on dog faces with fine fur and pointed snouts, and on other car fronts, would show whether the car is a real second feature or a color and shape coincidence.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.037684,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3892,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 327,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3892,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 327,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3892,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3892
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7365
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.09029200000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5850,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5850,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5850,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5850
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5954
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Responds to the light, furry muzzle and nose area of small and medium carnivore faces seen from the front, mainly cats and foxes, and less strongly hamsters, ferrets, red pandas and a sheltie. There is one odd response to a red car's front grille.",
+  "evidence": "Almost all of the top 20 are close-up frontal faces of cats, foxes or small mammals, with the red shading centered on the nose and muzzle; #5 (a red Mercedes) is the only non-animal. The most negative spots are dark, wrinkled, flat-nosed dog muzzles (boxers, pugs, mastiffs), plus dark birds, which suggests a contrast with dark broad snouts.",
+  "missing_data": "Activations on dog faces with fine fur and pointed snouts, and on other car fronts, would show whether the car is a real second feature or a color and shape coincidence.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

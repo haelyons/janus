@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-121",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to frontal faces of furry mammals, especially cats, foxes, red pandas and similar small carnivores, centered on the eyes-nose-muzzle arrangement. It also responds weakly to face-like frontal patterns, such as a car's front end.\", \"evidence\": \"19 of the 20 top crops are front-facing furry animal faces (cats, foxes, red pandas, a hamster, a sheltie, a lynx, a meerkat, a ferret, an arctic fox). The one exception, #5 at activation 9, is a car front whose two headlights and grille make a face-like layout.\", \"missing_data\": \"Activations on more non-animal face-like objects (car fronts, masks, outlets) and on side-view animal heads would show whether the car is a real pareidolia extension or an unrelated second feature.\", \"confidence\": 0.7}",
+   "cost_usd": 0.029004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2352,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 509,
+    "output_tokens_details": {
+     "thinking_tokens": 209
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2352,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 509,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2352,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2352
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6451
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.073636,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4493,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 434,
+    "output_tokens_details": {
+     "thinking_tokens": 144
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4493,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 434,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4493,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4493
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4781
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to frontal faces of furry mammals, especially cats, foxes, red pandas and similar small carnivores, centered on the eyes-nose-muzzle arrangement. It also responds weakly to face-like frontal patterns, such as a car's front end.",
+  "evidence": "19 of the 20 top crops are front-facing furry animal faces (cats, foxes, red pandas, a hamster, a sheltie, a lynx, a meerkat, a ferret, an arctic fox). The one exception, #5 at activation 9, is a car front whose two headlights and grille make a face-like layout.",
+  "missing_data": "Activations on more non-animal face-like objects (car fronts, masks, outlets) and on side-view animal heads would show whether the car is a real pareidolia extension or an unrelated second feature.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}
