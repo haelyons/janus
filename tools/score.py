@@ -14,7 +14,7 @@ J = Path(__file__).resolve().parent.parent
 KEY = {**json.loads((J / 'bank/KEY_text.json').read_text())}
 if (J / 'bank/KEY_img.json').exists():
     KEY.update(json.loads((J / 'bank/KEY_img.json').read_text()))
-for v in ('v2', 'v3'):
+for v in ('v2', 'v3', 'v4'):
     if (J / f'bank/KEY_img_{v}.json').exists():
         KEY.update(json.loads((J / f'bank/KEY_img_{v}.json').read_text()))
 ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns']

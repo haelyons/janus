@@ -123,3 +123,14 @@ property of faces only. "Car fronts look like faces" is face-anchored, not CFS.
 4. Held-out 0.65-0.85 in every image session. object_fire above 0 in more N0 x U-860 sessions than round 5's
    A0 x U-860.
 5. Controls: N0 x U-767 3/3 unrelated; N0 x U-937 false unity in at most 2 of 3 (A0 baseline). Held-out 1.00.
+
+# Round 7: renders by weight (sealed 2026-10-20, before the run)
+
+U-283 = U-860 plus one grid: lucent renders of the unit, its 8 strongest inputs by weight (6 positive, 2 negative)
+and its 3 strongest readers (mixed5a 1x1 branch), labelled by role and weight only. A0, three samples. Seen by eye
+before sealing: the unit and input 1 show fox/cat faces; the inputs show crickets, arcs, grille with a dog nose, round
+domes and dog bodies; the negatives show shaggy round dog faces; reader 1 shows flames and jets.
+
+1. CFS (as in round 6) in at most 1 of 3; the modal reading stays small-mammal faces.
+2. At least 2 of 3 mention the flames, insects or domes, and treat them as noise or extra jobs, not as a shared shape.
+3. Held-out 0.65-0.80.

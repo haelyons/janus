@@ -150,3 +150,11 @@ Standard lucent settings, 256 steps, ranked by weight as in the essay's circuit 
   faces; papillon-like dogs with pointed ears.
 Partial support: pointed faces, flames and angular insects, with a round negative pole (345). Against: 334 renders round
 domes and has positive weight.
+
+## Round 7: renders by weight (U-283 = U-860 + renders of the unit, 8 inputs, 3 readers)
+
+3/3 one_plus_related, "the central face of small, pointy-snouted furry mammals". Held-out 0.70, as on U-860. The renders
+are used only as confirmation ("the unit's render and its strongest input both show fox and cat faces"); none mentions
+the flames reader, the cricket input or the domes. Predictions 1 and 3 held; 2 failed: 0/3 mention them at all.
+One session's missing_data asks for the experiment itself: "the same animal face with dark versus light fur, or fox
+versus cat faces at equal framing, to separate face shape from fur colour."
