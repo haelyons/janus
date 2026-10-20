@@ -158,3 +158,17 @@ are used only as confirmation ("the unit's render and its strongest input both s
 the flames reader, the cricket input or the domes. Predictions 1 and 3 held; 2 failed: 0/3 mention them at all.
 One session's missing_data asks for the experiment itself: "the same animal face with dark versus light fur, or fox
 versus cat faces at equal framing, to separate face shape from fur colour."
+
+## Pose test on Zoom In's car circuit (`tools/pose.py`, `runs/pose/`)
+
+Readers of the car neuron 4c:447 = the 8 mixed4d channels with the largest d(sum 4d_j)/d(4c_447) over its strongest
+car photos; not checked against Zoom In's own reader IDs. 1320 photos (1180 dogs, 140 cars).
+- Mirror test: no reader loses activation when its top photos are mirrored (flip drop -0.01 to +0.07 on cars and on
+  dogs; all-channel median +0.06). So they are not left/right-specific. This doesn't rule out pose: "the way they face
+  the camera" (frontal, side-on) is mostly mirror-symmetric.
+- Some mixed4d channels are direction-specific on both (449: +0.15 cars / +0.52 dogs; 429: +0.21 / +0.27), but they
+  are not among 447's top readers.
+- By eye (`runs/pose/readers.jpg`): the readers' top cars are the same few side-on vehicles in every row, a limit of
+  the 140-car pool. Several readers' top dogs are side-on whole bodies (417, 167, 277), consistent with a shared view.
+  Others' are shaggy dog faces (352, 241, 295). Inconclusive.
+Next: Zoom In's exact reader IDs, a larger vehicle pool, and a view label (frontal / side / rear) rather than mirroring.
