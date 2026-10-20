@@ -99,3 +99,27 @@ display changed. Three samples each.
 2. U-860: a shape-level reading appears in at least 1 and at most 2 of 3. At least 2 of 3 describe the negatives
    as flat, round, broad or jowly faces.
 3. Held-out stays within 0.65-0.80. car_fire rises above 0 only in sessions that give a shape-level reading.
+
+# Round 6: contrast, circuit, and the no-nouns question (sealed 2026-10-20, before any round-6 run)
+
+Cards (bank/img_cards_v3.py). U-857 (contrast): U-860's two grids, plus same-class pairs (for each of the 12
+labels with the highest mean activation, its strongest photo beside its weakest) and 15 off-class positives
+(>= 30% of max, label outside the top 200 by mean). U-605 (circuit): the same, plus the 8 main mixed4d inputs,
+each shown by its own six strongest photos with its weight and share. Seen by eye before sealing: the weak
+twins are mostly small, side-on or partial animals, and the car twins are weak, not silent (255-362 of 1527).
+Arm N0_nouns: one sentence from the essay ("if you couldn't use groups of nouns at all, how would you describe
+this unit?"), with the round-1 task unchanged. Runs: A0 x U-857, A0 x U-605, N0 x U-860 (compare round 5's
+A0 x U-860), and N0 x U-767, U-937 (packed text controls; A0 gave U/U/U and 1+/U/1+). Three samples each.
+
+A carrier-free shape reading (CFS): the explanation names a geometric configuration (V, pointed, tapering,
+converging, wedge, triangular, angular) as what the unit responds to, and applies it beyond faces, not as a
+property of faces only. "Car fronts look like faces" is face-anchored, not CFS.
+
+1. A0 x U-857: CFS in at most 1 of 3. The modal reading is a large, frontal (face or face-like) view; the
+   pairs are read as pose, size or visibility.
+2. A0 x U-605: at least 2 of 3 cite the shared input (the fox/cat-face input) or the car-only input as
+   evidence. CFS in at most 1 of 3. At most 1 of 3 mentions the pointed-things input or the flat-front negative.
+3. N0 x U-860: a shape stated as the primary description in at least 2 of 3; CFS in at least 1 of 3.
+4. Held-out 0.65-0.85 in every image session. object_fire above 0 in more N0 x U-860 sessions than round 5's
+   A0 x U-860.
+5. Controls: N0 x U-767 3/3 unrelated; N0 x U-937 false unity in at most 2 of 3 (A0 baseline). Held-out 1.00.

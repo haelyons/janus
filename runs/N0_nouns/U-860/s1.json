@@ -1,0 +1,180 @@
+{
+ "arm": "N0_nouns",
+ "card": "U-860",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd899fcf5bd046ff2fcb6e1e3c6fd97581bcde12c7946262d7e0a0e91d3224f0",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit fires on the center of a small furry mammal's face, the nose, muzzle and whisker area, and responds most to cats and foxes. It responds more weakly to similar faces of hamsters, red pandas, ferrets, meerkats and a sheltie.\", \"evidence\": \"Nineteen of the top 20 photos show red shading centered on the nose and mouth of a cat, fox or similar small mammal with a pointed or short furry snout, often with light pinkish fur. The negative examples are mostly dark, broad, wrinkled dog muzzles (mastiffs, pugs) and dark birds, so the unit seems to prefer a lighter, furred, narrow snout; the one odd top hit is a red car front (#5, 1307), possibly read as a face.\", \"missing_data\": \"Photos sampled from the middle of the activation range, plus a check of how it responds to car fronts and to dog faces with light fur, would show whether this is specific to cat- and fox-like faces or a broader face-center detector.\", \"confidence\": 0.7}",
+   "cost_usd": 0.044163999999999995,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3932,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 635,
+    "output_tokens_details": {
+     "thinking_tokens": 277
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3932,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 635,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3932,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3932
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8757
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.101224,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6199,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 373,
+    "output_tokens_details": {
+     "thinking_tokens": 83
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6199,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 373,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6199,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6199
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4094
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on the center of a small furry mammal's face, the nose, muzzle and whisker area, and responds most to cats and foxes. It responds more weakly to similar faces of hamsters, red pandas, ferrets, meerkats and a sheltie.",
+  "evidence": "Nineteen of the top 20 photos show red shading centered on the nose and mouth of a cat, fox or similar small mammal with a pointed or short furry snout, often with light pinkish fur. The negative examples are mostly dark, broad, wrinkled dog muzzles (mastiffs, pugs) and dark birds, so the unit seems to prefer a lighter, furred, narrow snout; the one odd top hit is a red car front (#5, 1307), possibly read as a face.",
+  "missing_data": "Photos sampled from the middle of the activation range, plus a check of how it responds to car fronts and to dog faces with light fur, would show whether this is specific to cat- and fox-like faces or a broader face-center detector.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

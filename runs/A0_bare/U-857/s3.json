@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-857",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly detects the pale, light-furred muzzle and nose region of front-facing small-mammal faces, such as cats, foxes, red pandas, ferrets and hamsters. It also responds more weakly to car fronts and bodies, possibly because they look face-like.\",\n \"evidence\": \"Nearly all top activations are centered on the light snout/nose area of cat, fox and similar faces, and the most negative spots are dark muzzles (pugs, mastiffs, bloodhounds). Same-class weakest photos show the animal small, distant or turned away, while car classes (sports car, wagon, cab) appear among the top classes with one car scoring 1307.\",\n \"missing_data\": \"Spatial heatmaps on more car photos, to tell whether the car response is a face-like front-end pattern or an unrelated second feature.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.069852,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7008,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 689,
+    "output_tokens_details": {
+     "thinking_tokens": 378
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7008,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 689,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7008,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7008
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9867
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.152652,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 9329,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 408,
+    "output_tokens_details": {
+     "thinking_tokens": 118
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 9329,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 408,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 9329,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 9329
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4939
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit mainly detects the pale, light-furred muzzle and nose region of front-facing small-mammal faces, such as cats, foxes, red pandas, ferrets and hamsters. It also responds more weakly to car fronts and bodies, possibly because they look face-like.",
+  "evidence": "Nearly all top activations are centered on the light snout/nose area of cat, fox and similar faces, and the most negative spots are dark muzzles (pugs, mastiffs, bloodhounds). Same-class weakest photos show the animal small, distant or turned away, while car classes (sports car, wagon, cab) appear among the top classes with one car scoring 1307.",
+  "missing_data": "Spatial heatmaps on more car photos, to tell whether the car response is a face-like front-end pattern or an unrelated second feature.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -114,3 +114,25 @@ pre = sum_c w_c * mixed4d_c + b over 528 inputs; the rebuild matches the stored 
   share (2%).
 - The strongest negative input (456) is flat-fronted vehicles: locomotives, garbage and tow trucks.
 - Cosine of mean contribution vectors: cat vs car 0.72; cat vs other animals 0.98; car vs objects 0.96.
+
+## Round 6: contrast, circuit, and the no-nouns question (`bank/img_cards_v3.py`, `arms/N0_nouns.txt`)
+
+Cards: U-857 adds same-class pairs (strongest beside weakest photo for the 12 top labels) and 15 off-class
+positives to U-860; U-605 also adds the 8 main inputs (ranked by mean contribution on firing photos), each by its own
+top photos. N0 is one sentence from the essay: "if you couldn't use groups of nouns at all, how would you describe
+this unit?" Predictions 1, 2 and 5 held; 3 and the object_fire part of 4 failed.
+- A0 x U-857 (contrast): 0/3 shape readings. The pairs are read as pose and size ("the weakest show the animal small,
+  far away or turned away"). Held-out 0.75-0.80, up from 0.70, via car_fire.
+- A0 x U-605 (+ circuit): 3/3 unrelated, all citing "a dedicated car input (352) alongside the fox/cat-face input
+  (493)". None mentions input 61 or the flat-front negative 456. Held-out 0.80. The circuit, shown this way, gives
+  Zoom In's reading.
+- N0 x U-860 (no nouns): 0/3 shape-primary, 0/3 carrier-free; explanations still list nouns. "Pointed/narrow snouts"
+  appears only in the evidence, as in round 5. Held-out 0.70, identical to A0.
+- Controls: N0 on cheese/C++ and bird/month 6/6 unrelated, held-out 1.00 (A0 had 2/3 false unity on bird/month).
+  The question doesn't impose unity; it also doesn't produce it.
+
+Substrate check after the run: the input ranking was dataset-weighted. By weight alone, the second-strongest input
+is 511 (w = +0.128, vs 0.311 for 493), and it is almost never active (mean activity rank 516/528). Its top photos are
+crickets, bee-eaters, vine snakes, leafhoppers; pool tables drive it at 2.7x its average. Ranking by contribution on
+firing photos hid it, the same way top-k photos favour ImageNet's many animal faces. No top-weighted input's top
+photos are flames or water jets. The essay's are generic renders (feature visualisation), not photos.
