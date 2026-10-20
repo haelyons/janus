@@ -1,0 +1,212 @@
+{
+ "arm": "F0_feedback",
+ "card": "U-192",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "feedback_batch": [
+  5515,
+  5157,
+  7422,
+  8250,
+  3514,
+  234,
+  3138,
+  6773,
+  1787,
+  9992,
+  2001,
+  1968,
+  7970,
+  2820,
+  7213,
+  1796,
+  4160,
+  4180,
+  833,
+  6918
+ ],
+ "feedback_truth": [
+  false,
+  false,
+  true,
+  false,
+  true,
+  false,
+  false,
+  true,
+  false,
+  false,
+  false,
+  true,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to the faces of small-to-medium furry mammals, especially cats and foxes, with related extensions to red pandas, hamsters, meerkats, ferrets, lynx and a dog. It also fires strongly on an unrelated concept, a vintage red convertible car.\",\n \"evidence\": \"19 of the top 20 images are furry mammals with prominent faces, mostly cats and foxes at activations 7-10. However, #5, a red Mercedes convertible on a street, scores 9, nearly the top value, and has no meaningful link to animals.\",\n \"missing_data\": \"More top-activating images beyond the top 20, or the unit's activation on other cars and vehicles, would show whether the car is a real second concept or a single fluke.\",\n \"confidence\": 0.5}\n```",
+   "cost_usd": 0.030331999999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2338,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 581,
+    "output_tokens_details": {
+     "thinking_tokens": 298
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2338,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 581,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2338,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2338
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 16411
+  },
+  {
+   "text": "```json\n{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}\n```",
+   "cost_usd": 0.076928,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4551,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 509,
+    "output_tokens_details": {
+     "thinking_tokens": 214
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4551,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 509,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4551,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4551
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8136
+  },
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to close-up faces of furry mammals, especially cats, foxes, red pandas, wolf-like dogs and monkeys. It separately responds to street and vehicle scenes such as cars, trucks, buses and town streets, which have no meaningful link to the animals.\",\n \"evidence\": \"Close animal faces fired (red panda 6, husky 4, wolf 4, monkey 4, cat 3), but the fox in a cage, the pile of puppies and the old dog did not. The red truck, ambulance scene, bus, Swiss town street and barn (each 3) also fired, matching the vintage car in the top set, while indoor objects stayed near 0-1.\"\n ,\"missing_data\": \"Top activations restricted to vehicles and street scenes would show how strong and how specific the second concept is (vehicles versus outdoor built environments). Region-level attribution would also help.\",\n \"confidence\": 0.65}\n```",
+   "cost_usd": 0.0958782,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1089,
+    "cache_read_input_tokens": 4551,
+    "output_tokens": 466,
+    "output_tokens_details": {
+     "thinking_tokens": 140
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1089,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 466,
+      "cache_read_input_tokens": 4551,
+      "cache_creation_input_tokens": 1089,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1089
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9304
+  },
+  {
+   "text": "```json\n{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}\n```",
+   "cost_usd": 0.1656302,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7738,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 392,
+    "output_tokens_details": {
+     "thinking_tokens": 97
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7738,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 392,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7738,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7738
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7440
+  }
+ ]
+}

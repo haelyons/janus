@@ -65,3 +65,29 @@ U-300    inceptionv1_mi/full/None           1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/
   agent rediscovers the field's 2017 reading of this neuron.
 - Text units: no session uses the offer; all answer directly. Bird+month is now 3/3 unrelated; the
   hidden-context card is unchanged (near chance).
+
+## Round 3: R0_recognize (pick a reading from six, or give your own)
+
+`tools/run_recognize.py`. 6 of 6 chose "faces of small furry mammals"; none chose pointed/V. The reasons cited
+real items in the cards: the round-faced hamster ranks high, and pointed bird beaks appear among the negatives.
+Held-out 0.70 in all 6.
+
+## Substrate check (no subjects; `tools/substrate.py`, `runs/substrate/`)
+
+- Class means: cars co-dominate with cat/fox faces (grille 8th of 1000; beach wagon, sports car, jeep, cab,
+  convertible, ambulance, pickup, minivan all in the top 25). Next come other vehicles, pool table (32nd) and
+  bullet train (43rd). Fireboat is 489th. The top-20 grid understates cars because ImageNetV2 has 10 photos
+  per class.
+- Heatmaps: positives peak on the face centre and muzzle, the hamster included. Negative troughs are diffuse
+  background, not objects, so the negative grid (ranked by spatial minimum, whole photo shown) misleads; the
+  "pointed beaks are negative" argument comes from that display.
+- Drawn shapes: everything stays under 10% of max (out of distribution). V is weakly highest, ahead of circle
+  and square.
+
+## Round 4: F0_feedback (predict a random batch, see outcomes, revise)
+
+`tools/run_feedback.py`. Feedback accuracy was 0.55-0.90. After the reveal, 6 of 6 converge on "furry
+mammal faces and, separately, vehicles/street scenes: unrelated". One says "polysemantic". Held-out was
+0.75-0.85, the best so far: car_fire 1.0 everywhere, object_fire 0.3 in 2 of 6. Confidence fell in 4 of 6.
+None says cannot tell; none reaches a shape reading. The update reweights within the received categories,
+toward the field's two-feature reading.

@@ -1,0 +1,212 @@
+{
+ "arm": "F0_feedback",
+ "card": "U-300",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "feedback_batch": [
+  3486,
+  6761,
+  7060,
+  3811,
+  3089,
+  9761,
+  4390,
+  4054,
+  2566,
+  3509,
+  1424,
+  3991,
+  1568,
+  954,
+  7598,
+  958,
+  7139,
+  1328,
+  7426,
+  3498
+ ],
+ "feedback_truth": [
+  true,
+  false,
+  true,
+  false,
+  false,
+  false,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to faces of small furry mammals with pointed or upright ears, mainly foxes and cats (domestic cats, lynx, red pandas), and more weakly to related small mammals such as hamsters, meerkats, ferrets, and one fluffy sheltie.\",\n \"evidence\": \"Top activations are dominated by foxes, cats, and red pandas (1527–1063), followed by hamsters, meerkats, and ferrets. The one outlier is a red car at #5. The negative images are mostly flat-faced or short-haired dogs (pugs, boxers, mastiffs), plus birds and unrelated objects, which suggests a contrast between cat/fox-like faces and dog faces.\",\n \"missing_data\": \"Activations across the full range for cat versus dog classes, plus spatial attribution maps, would show whether the unit keys on pointed ears or fluffy fur texture and would explain the car outlier.\",\n \"confidence\": 0.72}",
+   "cost_usd": 0.037428,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3835,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 337,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3835,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 337,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3835,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3835
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5546
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.09502,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5803,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 558,
+    "output_tokens_details": {
+     "thinking_tokens": 268
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5803,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 558,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5803,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5803
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8377
+  },
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to small furry mammals with fox- or cat-like faces (cats, foxes, red pandas, ferrets, coyotes, huskies, fluffy rabbits, and some fluffy small dogs). It also responds separately to cars and trucks, especially vintage ones.\",\n \"evidence\": \"Top activations are dominated by cats, foxes, and red pandas, but a red Mercedes convertible ranks #5. In the held-out set, all four vehicles fired strongly (Land Rover 484, teal vintage truck 705, red hot rod 572, Firebird 562), as did a fluffy white terrier (609), while unrelated objects stayed low.\",\n \"missing_data\": \"Activations over a large set of vehicle images and of dog breeds, plus spatial attribution maps, would show whether the car response is a separate feature or comes from a shared visual cue such as rounded headlights resembling eyes or faces.\",\n \"confidence\": 0.65}",
+   "cost_usd": 0.11469259999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1178,
+    "cache_read_input_tokens": 5803,
+    "output_tokens": 454,
+    "output_tokens_details": {
+     "thinking_tokens": 119
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1178,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 454,
+      "cache_read_input_tokens": 5803,
+      "cache_creation_input_tokens": 1178,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1178
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 13895
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.19443660000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 9067,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 360,
+    "output_tokens_details": {
+     "thinking_tokens": 70
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 9067,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 360,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 9067,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 9067
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4758
+  }
+ ]
+}
