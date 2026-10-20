@@ -136,3 +136,17 @@ is 511 (w = +0.128, vs 0.311 for 493), and it is almost never active (mean activ
 crickets, bee-eaters, vine snakes, leafhoppers; pool tables drive it at 2.7x its average. Ranking by contribution on
 firing photos hid it, the same way top-k photos favour ImageNet's many animal faces. No top-weighted input's top
 photos are flames or water jets. The essay's are generic renders (feature visualisation), not photos.
+
+## Renders of the unit, its inputs and readers by weight (`tools/featvis.py`, `runs/featvis/renders.jpg`)
+
+Standard lucent settings, 256 steps, ranked by weight as in the essay's circuit figure. My reading by eye:
+- Unit 55 and input 493 (w +0.311): fox/cat faces, pointed ears and muzzle.
+- 511 (+0.128): green crickets with spindly, angular legs. 61 (+0.116): curved arcs and loops, not V's.
+  352 (+0.102): grille and headlight textures merged with a dog's nose. 334 (+0.080): round domes with central holes,
+  a round shape on the positive side. 383 (+0.079): spotted dog bodies and legs.
+- Negatives 345 (-0.072): shaggy, round dog faces; 456 (-0.067): arched round shapes with fur.
+- Strongest reader, mixed5a:94 (+0.100): small flames and jets on discs, plus a fox face. This is where the essay's
+  "V-shaped flames" are. The flames come from a reader, which no subject has seen. Readers 240 and 81: primate
+  faces; papillon-like dogs with pointed ears.
+Partial support: pointed faces, flames and angular insects, with a round negative pole (345). Against: 334 renders round
+domes and has positive weight.
