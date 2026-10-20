@@ -1,0 +1,109 @@
+regions: unit 55 of mixed4e; 80 photos from the held pool (60 random, 20 top by spatial max of the acts.npz map); cell value = mean of the 2x2 block of the 14x14 map inside each 7x7 grid cell
+labelled 80/80; unlabelled ids: []
+cells: P (pointed only) 554, R (round only) 232, O (neither) 3068, in both lists (dropped) 66
+
+pre-ReLU map of the unit (bank/img/acts.npz)
+decision per row: two-sided sign test (zeros dropped) p < 0.05 -> POSITIVE if more values > 0 than < 0, else NEGATIVE; p >= 0.05 -> UNRESOLVED
+stat  subset   n   median frac>0         p  decision
+d_PR  all     66    1.207   0.50         1  UNRESOLVED
+d_PR  random  48    6.801   0.58     0.312  UNRESOLVED
+d_PR  top     18 -102.906   0.28    0.0963  UNRESOLVED
+d_PO  all     66    9.780   0.62     0.064  UNRESOLVED
+d_PO  random  48    6.043   0.54     0.665  UNRESOLVED
+d_PO  top     18  117.625   0.83   0.00754  POSITIVE
+d_RO  all     66    8.150   0.58     0.268  UNRESOLVED
+d_RO  random  48    2.321   0.50         1  UNRESOLVED
+d_RO  top     18  208.280   0.78    0.0309  POSITIVE
+
+fraction of cells with pre-ReLU value < 0
+all    P=0.480 (n=554)  R=0.483 (n=232)  O=0.594 (n=3068)
+random P=0.519 (n=412)  R=0.556 (n=180)  O=0.586 (n=2301)
+top    P=0.366 (n=142)  R=0.231 (n=52)  O=0.615 (n=767)
+
+check: corr(relu(acts.npz map), post-ReLU mixed4e[55] on the thumbnails) over 80 photos = 0.992
+
+layer: d_PR on each channel's post-ReLU map / its strong level (median spatial max over its top-20 battery pool photos), 66 photos with a P and an R cell; 832/832 channels with strong level > 0; strong level of 55 = 1093.717
+median d_PR / strong           unit 55=0.000 pct=53 layer_median=0.000 (n=832)
+frac d_PR > 0 (zeros dropped)  unit 55=0.515 pct=30 layer_median=0.561 (n=832)
+
+per photo, pre-ReLU: id index subset nP nR nO nBoth d_PR d_PO d_RO
+  1   2771 random   9   2  34    4  -17.999   16.823   34.822
+  2   6103 random   6   6  37    0  -77.978  -56.099   21.878
+  3    411 random  19   0  29    1      nan      nan      nan
+  4   6361 random   3  10  36    0   18.298 -100.775 -119.073
+  5   5947 random   5   5  38    1   33.332   15.794  -17.537
+  6   3967 random   8   8  31    2  -21.184   10.813   31.997
+  7   3069 random  11   1  34    3   48.050   14.057  -33.993
+  8   3458 top      9   3  34    3  244.714  182.671  -62.042
+  9   8516 random  11   4  34    0  -76.053  -56.372   19.681
+ 10   6308 random  12   0  37    0      nan      nan      nan
+ 11   2855 top     13   2  32    2  145.756  131.287  -14.468
+ 12   9542 top     12   3  30    4 -107.713   40.457  148.170
+ 13   3930 top     11   6  31    1  -11.501   56.156   67.657
+ 14   8017 random   7   9  32    1   10.741   18.651    7.911
+ 15   6647 random  10   2  34    3    2.730  -10.373  -13.102
+ 16   8419 random  11   2  35    1  -14.849    7.681   22.530
+ 17   3415 top      7   0  42    0      nan      nan      nan
+ 18   4813 random   1   0  48    0      nan      nan      nan
+ 19    314 random   8   3  38    0   68.263  -43.373 -111.636
+ 20   6581 random   8   5  35    1   24.022   -3.456  -27.478
+ 21   6446 top      6   4  38    1  -46.039  144.706  190.745
+ 22   2662 random   8   4  36    1    3.085   -4.706   -7.791
+ 23   7138 random   6   2  40    1    9.252  -22.869  -32.121
+ 24   5030 random   2   0  45    2      nan      nan      nan
+ 25   3413 top      5   3  40    1 -351.820  103.963  455.783
+ 26   8590 random   8   2  38    1   56.260   65.274    9.013
+ 27   4161 top      9   4  35    1 -531.810   21.487  553.297
+ 28   8039 random   8   3  37    1   -9.191   -3.642    5.549
+ 29   6435 random   6   4  39    0 -198.053  -63.240  134.813
+ 30     30 random   6   2  41    0   70.233   64.858   -5.375
+ 31    205 random  10   0  39    0      nan      nan      nan
+ 32   5506 random   7   2  40    0   79.963   42.346  -37.617
+ 33   8157 top      7   0  42    0      nan      nan      nan
+ 34   2572 random   5   1  42    1    4.185   44.962   40.777
+ 35   5321 random   7   1  40    1 -182.343  -36.628  145.715
+ 36   9641 top     10   2  36    1 -484.431    7.782  492.213
+ 37   9770 random   3   0  46    0      nan      nan      nan
+ 38    258 random  14   2  33    0   66.085   30.730  -35.355
+ 39   5324 random   3   1  43    2  148.645   88.731  -59.914
+ 40    893 top      5   1  43    0  181.939   66.060 -115.880
+ 41   7525 top     12   4  32    1  -98.099  346.680  444.779
+ 42   4978 random   5   0  44    0      nan      nan      nan
+ 43   6182 random   9   3  35    2   -5.417    7.903   13.320
+ 44   6186 random  15   2  32    0 -133.819  -24.389  109.429
+ 45   9486 random   6   5  37    1   47.243    8.748  -38.495
+ 46   4258 random  10   2  36    1  -19.698  -14.757    4.941
+ 47   4627 random   5   2  37    5  -17.794   -7.266   10.528
+ 48   4168 top      5   1  42    1  246.940  211.984  -34.956
+ 49     62 random   6   2  40    1   36.713  -55.939  -92.652
+ 50   6823 random   4   5  38    2   -1.653   -5.977   -4.324
+ 51    348 random  22   0  27    0      nan      nan      nan
+ 52   1808 random  12   1  35    1  -95.185  -32.782   62.403
+ 53   7980 random   4   3  42    0   63.932   38.314  -25.618
+ 54   3028 random   0   1  47    1      nan      nan      nan
+ 55    956 random   2   3  44    0  108.294   21.846  -86.448
+ 56   9191 random   5   4  40    0   87.879  -21.755 -109.635
+ 57   8384 random   4   2  43    0   -7.991    6.650   14.641
+ 58   3935 top      4   1  44    0 -268.734  -42.919  225.815
+ 59   8151 top      4   1  44    0 -285.644  248.390  534.034
+ 60   7184 random   2  18  29    0    4.350   75.966   71.616
+ 61   9543 random   5   4  37    3  -62.604  -72.957  -10.353
+ 62   3881 random   7   2  40    0   34.293   17.927  -16.366
+ 63   4088 random   6   3  39    1   26.880   -0.720  -27.600
+ 64   7536 random   6   1  42    0   11.138   26.467   15.329
+ 65    776 random   5   5  39    0  -22.175    5.481   27.656
+ 66   3779 top      4   1  41    3 -179.412  132.408  311.820
+ 67   2242 top      7   4  38    0   74.281  312.862  238.580
+ 68   1827 random   7   3  39    0   12.551  -57.780  -70.332
+ 69   5457 random   3   6  39    1   48.182   47.884   -0.299
+ 70   9942 random   5  12  32    0  -17.752  -11.600    6.152
+ 71    109 random   4   3  42    0   35.014    0.738  -34.276
+ 72   1295 random   3   0  46    0      nan      nan      nan
+ 73   8964 random   3   0  46    0      nan      nan      nan
+ 74   1779 top      4   4  41    0 -454.735  -87.345  367.390
+ 75   1775 top      4   4  41    0 -238.906  -51.832  187.073
+ 76    842 random   1   0  48    0      nan      nan      nan
+ 77   5210 random   9   3  37    0   21.805   30.194    8.389
+ 78   3861 random  11   2  36    0  -30.069   58.206   88.275
+ 79   1560 top      4   4  41    0  -23.172  153.591  176.763
+ 80   7586 random   4   2  42    1   -0.317    6.606    6.922

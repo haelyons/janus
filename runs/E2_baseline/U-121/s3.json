@@ -1,0 +1,356 @@
+{
+ "arm": "E2_baseline",
+ "card": "U-121",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9325e5e35685b89a0fe9f86110ecfa324fa6cc6da7eaba78631e83c623812819",
+ "offer": "\n\nBefore answering, you may run experiments on the unit, up to 3 times. To do so, reply with only {\"edits\": [...]} listing up to 8 edits of photos in the grid; you will see each edited photo exactly as the network sees it, with the unit's activation on the same 0-10 scale (one decimal). Each edit is {\"photo\": n, \"op\": ..., ...} where n is the grid number and op is one of:\n- \"occlude\" with \"box\": [left, top, right, bottom]: grey out that box\n- \"keep\" with \"box\": grey out everything outside that box\n- \"zoom\" with \"box\": crop to that box and enlarge it to the full frame\n- \"flip\": mirror left-right; \"gray\": remove colour\n- \"rotate\" with \"degrees\"\n- \"shrink\" with \"factor\" between 0.2 and 1: shrink the photo onto a grey frame\n- \"transform\" with \"name\", one of: grayscale (removes all chromatic information), low_pass (removes high spatial frequencies), high_pass (removes low spatial frequencies below about 10 cycles per image), phase_scramble (removes all spatial structure carried by fourier phase), patch_shuffle_4x4 (removes global configuration), rotate_90 (removes absolute orientation), edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity), luminance_polarity_inversion (removes the sign of luminance contrast), rotate_180 (removes upright orientation), mirror (removes left-right orientation)\nAfter each result you also see, for comparison, how the other channels of the same layer that respond strongly to that photo fare under the same edit.\nBoxes are fractions (0-1) of the photo as shown in the grid. When you are ready, reply with the JSON answer described below instead.\n---\nTask: say what this unit does. Reply with only a JSON object:\n{\"class\": \"one\" | \"one_plus_related\" | \"unrelated\" | \"cannot_tell\",\n \"explanation\": \"at most two sentences: what the unit responds to\",\n \"evidence\": \"at most two sentences: what in the data supports this\",\n \"missing_data\": \"what other data would most change your answer, or \\\"none\\\"\",\n \"confidence\": a number from 0 to 1}\nClass meanings: \"one\" = it responds to one thing; \"one_plus_related\" = one main thing plus weaker, related extensions; \"unrelated\" = two or more things with no meaningful connection; \"cannot_tell\" = this data is not enough to say.",
+ "requests": [
+  [
+   {
+    "photo": 1,
+    "op": "occlude",
+    "box": [
+     0.3,
+     0.1,
+     0.9,
+     0.35
+    ]
+   },
+   {
+    "photo": 1,
+    "op": "occlude",
+    "box": [
+     0.5,
+     0.35,
+     0.85,
+     0.7
+    ]
+   },
+   {
+    "photo": 1,
+    "op": "transform",
+    "name": "patch_shuffle_4x4"
+   },
+   {
+    "photo": 1,
+    "op": "transform",
+    "name": "grayscale"
+   },
+   {
+    "photo": 5,
+    "op": "keep",
+    "box": [
+     0,
+     0.3,
+     1,
+     1
+    ]
+   },
+   {
+    "photo": 5,
+    "op": "occlude",
+    "box": [
+     0,
+     0.3,
+     1,
+     1
+    ]
+   },
+   {
+    "photo": 2,
+    "op": "transform",
+    "name": "rotate_180"
+   },
+   {
+    "photo": 7,
+    "op": "occlude",
+    "box": [
+     0.2,
+     0.2,
+     0.8,
+     0.5
+    ]
+   }
+  ],
+  [
+   {
+    "photo": 1,
+    "op": "keep",
+    "box": [
+     0.35,
+     0.25,
+     0.7,
+     0.6
+    ]
+   },
+   {
+    "photo": 1,
+    "op": "occlude",
+    "box": [
+     0.2,
+     0.1,
+     0.85,
+     0.65
+    ]
+   },
+   {
+    "photo": 5,
+    "op": "keep",
+    "box": [
+     0,
+     0.5,
+     0.35,
+     0.8
+    ]
+   },
+   {
+    "photo": 5,
+    "op": "keep",
+    "box": [
+     0.4,
+     0.55,
+     0.65,
+     0.8
+    ]
+   },
+   {
+    "photo": 7,
+    "op": "keep",
+    "box": [
+     0.3,
+     0.3,
+     0.7,
+     0.55
+    ]
+   },
+   {
+    "photo": 2,
+    "op": "transform",
+    "name": "mirror"
+   },
+   {
+    "photo": 9,
+    "op": "keep",
+    "box": [
+     0.2,
+     0.2,
+     0.8,
+     0.7
+    ]
+   },
+   {
+    "photo": 1,
+    "op": "transform",
+    "name": "edge_map"
+   }
+  ]
+ ],
+ "replies": [
+  {
+   "text": "{\"edits\": [{\"photo\": 1, \"op\": \"occlude\", \"box\": [0.3, 0.1, 0.9, 0.35]}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.5, 0.35, 0.85, 0.7]}, {\"photo\": 1, \"op\": \"transform\", \"name\": \"patch_shuffle_4x4\"}, {\"photo\": 1, \"op\": \"transform\", \"name\": \"grayscale\"}, {\"photo\": 5, \"op\": \"keep\", \"box\": [0, 0.3, 1, 1]}, {\"photo\": 5, \"op\": \"occlude\", \"box\": [0, 0.3, 1, 1]}, {\"photo\": 2, \"op\": \"transform\", \"name\": \"rotate_180\"}, {\"photo\": 7, \"op\": \"occlude\", \"box\": [0.2, 0.2, 0.8, 0.5]}]}",
+   "cost_usd": 0.009207,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3795,
+    "output_tokens": 422,
+    "output_tokens_details": {
+     "thinking_tokens": 135
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 422,
+      "cache_read_input_tokens": 3795,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4949
+  },
+  {
+   "text": "{\"edits\": [{\"photo\": 1, \"op\": \"keep\", \"box\": [0.35, 0.25, 0.7, 0.6]}, {\"photo\": 1, \"op\": \"occlude\", \"box\": [0.2, 0.1, 0.85, 0.65]}, {\"photo\": 5, \"op\": \"keep\", \"box\": [0, 0.5, 0.35, 0.8]}, {\"photo\": 5, \"op\": \"keep\", \"box\": [0.4, 0.55, 0.65, 0.8]}, {\"photo\": 7, \"op\": \"keep\", \"box\": [0.3, 0.3, 0.7, 0.55]}, {\"photo\": 2, \"op\": \"transform\", \"name\": \"mirror\"}, {\"photo\": 9, \"op\": \"keep\", \"box\": [0.2, 0.2, 0.8, 0.7]}, {\"photo\": 1, \"op\": \"transform\", \"name\": \"edge_map\"}]}",
+   "cost_usd": 0.03257,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1806,
+    "cache_read_input_tokens": 3795,
+    "output_tokens": 407,
+    "output_tokens_details": {
+     "thinking_tokens": 108
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1806,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 407,
+      "cache_read_input_tokens": 3795,
+      "cache_creation_input_tokens": 1806,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1806
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4964
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to upright, roughly frontal faces of furry mammals (foxes, cats, red pandas, hamsters, dogs, mustelids), drawing on the whole face (eyes, muzzle and fur together) rather than any single part. A weaker extension responds to face-like car fronts, where the grille and headlights resemble a face.\", \"evidence\": \"Occluding the eyes or the nose of fox #1 each leaves about 6/10, but occluding the whole face drops it to 3.6, and the face alone in a small isolated crop gives only about 2.7. Rotating cat #2 by 180° drops it to 3.5 while mirroring keeps 8.3, and the edge map falls to 1.0, so orientation and fur shading matter; on car #5, keeping only the lower front half gives 7.0 and occluding it gives 2.1.\", \"missing_data\": \"Activations on non-furry faces (human, bird, reptile) and on face-like non-animal objects other than cars, plus furry body texture with no face, would separate 'mammal face' from 'face-like configuration' and from 'fur texture'.\", \"confidence\": 0.6}",
+   "cost_usd": 0.057546200000000006,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1805,
+    "cache_read_input_tokens": 5601,
+    "output_tokens": 470,
+    "output_tokens_details": {
+     "thinking_tokens": 77
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1805,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 470,
+      "cache_read_input_tokens": 5601,
+      "cache_creation_input_tokens": 1805,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1805
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6434
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.13426760000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 8578,
+    "cache_read_input_tokens": 907,
+    "output_tokens": 395,
+    "output_tokens_details": {
+     "thinking_tokens": 105
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8578,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 395,
+      "cache_read_input_tokens": 907,
+      "cache_creation_input_tokens": 8578,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8578
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5051
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.22696900000000003,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 10583,
+    "cache_read_input_tokens": 907,
+    "output_tokens": 392,
+    "output_tokens_details": {
+     "thinking_tokens": 102
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 10583,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 392,
+      "cache_read_input_tokens": 907,
+      "cache_creation_input_tokens": 10583,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 10583
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5121
+  }
+ ],
+ "turn_idx": {
+  "turn1": 2,
+  "turn2": 3,
+  "turn3": 4
+ }
+}

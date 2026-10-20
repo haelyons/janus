@@ -14,10 +14,10 @@ J = Path(__file__).resolve().parent.parent
 KEY = {**json.loads((J / 'bank/KEY_text.json').read_text())}
 if (J / 'bank/KEY_img.json').exists():
     KEY.update(json.loads((J / 'bank/KEY_img.json').read_text()))
-for v in ('v2', 'v3', 'v4', 'v5'):
+for v in ('v2', 'v3', 'v4', 'v5', 'v6'):
     if (J / f'bank/KEY_img_{v}.json').exists():
         KEY.update(json.loads((J / f'bank/KEY_img_{v}.json').read_text()))
-ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns', 'Q0_shared', 'E0_edit', 'E1_scientist']
+ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe', 'N0_nouns', 'Q0_shared', 'E0_edit', 'E1_scientist', 'E2_baseline']
 OK = {'one': {'one', 'one_plus_related'}, 'one_plus_related': {'one', 'one_plus_related'},
       'unrelated': {'unrelated'}, 'cannot_tell': {'cannot_tell', 'one', 'one_plus_related'}}
 

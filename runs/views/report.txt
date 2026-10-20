@@ -1,0 +1,121 @@
+photos: n=440 vehicles=140 dogs=300
+
+vehicles: n=140, facing (rows) x framing (columns)
+                     head     part    whole  unclear  missing    total
+  toward                6        1        7        0        0       14
+  toward_left           0       12       34        0        0       46
+  left                  0        4        4        0        0        8
+  away_left             0        4        1        0        0        5
+  away                  0        3        4        0        0        7
+  away_right            0        6        0        0        0        6
+  right                 0        7        9        0        0       16
+  toward_right          0       15       19        0        0       34
+  unclear               0        3        0        1        0        4
+  missing               0        0        0        0        0        0
+  total                 6       55       78        1        0      140
+  folded facing: front=14 three_quarter_front=80 side=24 rear=18; framing: head=6 part=55 whole=78; left=59 right=56 (bins with < 5 photos are NaN)
+dogs: n=300, facing (rows) x framing (columns)
+                     head     part    whole  unclear  missing    total
+  toward               27       70       63        0        0      160
+  toward_left           4       25       19        0        0       48
+  left                  1        4       16        0        0       21
+  away_left             0        2        1        0        0        3
+  away                  1        4        1        0        0        6
+  away_right            0        1        1        0        0        2
+  right                 3        8       21        0        0       32
+  toward_right          5        7       16        0        0       28
+  unclear               0        0        0        0        0        0
+  missing               0        0        0        0        0        0
+  total                41      121      138        0        0      300
+  folded facing: front=160 three_quarter_front=76 side=53 rear=11; framing: head=41 part=121 whole=138; left=72 right=62 (bins with < 5 photos are NaN)
+
+labels: eta2 >= 0.14 LARGE, >= 0.06 MEDIUM, >= 0.01 SMALL, else NEGLIGIBLE; corr >= 0.5 POSITIVE, <= -0.5 NEGATIVE, else WEAK
+
+4c medians: eta2_V=0.033 (n=512) -> SMALL, eta2_D=0.026 (n=512) -> SMALL, corr=-0.124 (n=512) -> WEAK, eta2f_V=0.025 (n=512) -> SMALL, eta2f_D=0.043 (n=512) -> SMALL, corrf=0.712 (n=512) -> POSITIVE
+4d medians: eta2_V=0.032 (n=528) -> SMALL, eta2_D=0.020 (n=528) -> SMALL, corr=-0.114 (n=528) -> WEAK, eta2f_V=0.026 (n=528) -> SMALL, eta2f_D=0.027 (n=528) -> SMALL, corrf=0.479 (n=528) -> WEAK
+
+t_V, t_D bins: front, three_quarter_front, side, rear
+4c: top 15 of 512 defined channels by min(eta2_V, eta2_D)
+  4c:181  eta2_V=0.149 eta2_D=0.182 corr=-0.80 pref_V=side pref_D=front eta2f_V=0.016 eta2f_D=0.250 corrf=-0.89 lr_V=-0.024 lr_D=-0.003 dogshare=0.26 t_V=[0.24 0.56 0.56 0.44] t_D=[0.34 0.21 0.13 0.13] -> LARGE
+  4c:290  eta2_V=0.125 eta2_D=0.130 corr=-0.58 pref_V=three_quarter_front pref_D=front eta2f_V=0.033 eta2f_D=0.011 corrf=-0.01 lr_V=-0.029 lr_D=+0.024 dogshare=0.36 t_V=[0.22 0.51 0.51 0.39] t_D=[0.41 0.33 0.25 0.20] -> MEDIUM
+  4c:329  eta2_V=0.125 eta2_D=0.160 corr=-0.57 pref_V=side pref_D=front eta2f_V=0.002 eta2f_D=0.259 corrf=+1.00 lr_V=-0.058 lr_D=+0.007 dogshare=0.44 t_V=[0.29 0.44 0.59 0.39] t_D=[0.36 0.27 0.15 0.09] -> MEDIUM
+  4c:391  eta2_V=0.118 eta2_D=0.129 corr=-0.69 pref_V=side pref_D=front eta2f_V=0.026 eta2f_D=0.235 corrf=+0.17 lr_V=-0.024 lr_D=-0.013 dogshare=1.00 t_V=[0.03 0.06 0.12 0.08] t_D=[0.41 0.34 0.22 0.11] -> MEDIUM
+  4c:204  eta2_V=0.110 eta2_D=0.199 corr=-0.17 pref_V=rear pref_D=front eta2f_V=0.068 eta2f_D=0.116 corrf=+0.56 lr_V=+0.008 lr_D=+0.026 dogshare=0.82 t_V=[0.30 0.33 0.25 0.38] t_D=[0.38 0.24 0.17 0.14] -> MEDIUM
+  4c:336  eta2_V=0.123 eta2_D=0.110 corr=+0.72 pref_V=three_quarter_front pref_D=front eta2f_V=0.067 eta2f_D=0.023 corrf=+0.23 lr_V=+0.025 lr_D=+0.016 dogshare=0.88 t_V=[0.32 0.39 0.32 0.28] t_D=[0.46 0.43 0.34 0.21] -> MEDIUM
+  4c:350  eta2_V=0.103 eta2_D=0.171 corr=+0.47 pref_V=three_quarter_front pref_D=front eta2f_V=0.123 eta2f_D=0.005 corrf=+0.89 lr_V=-0.002 lr_D=+0.044 dogshare=0.66 t_V=[0.44 0.47 0.36 0.42] t_D=[0.44 0.37 0.27 0.18] -> MEDIUM
+  4c:289  eta2_V=0.101 eta2_D=0.170 corr=-0.75 pref_V=three_quarter_front pref_D=front eta2f_V=0.053 eta2f_D=0.003 corrf=+0.92 lr_V=-0.003 lr_D=+0.022 dogshare=0.24 t_V=[0.31 0.51 0.46 0.47] t_D=[0.34 0.27 0.20 0.22] -> MEDIUM
+  4c:219  eta2_V=0.100 eta2_D=0.110 corr=+0.04 pref_V=three_quarter_front pref_D=three_quarter_front eta2f_V=0.069 eta2f_D=0.015 corrf=+0.98 lr_V=+0.009 lr_D=+0.043 dogshare=1.00 t_V=[0.10 0.18 0.16 0.14] t_D=[0.46 0.48 0.38 0.23] -> MEDIUM
+  4c:387  eta2_V=0.112 eta2_D=0.097 corr=+0.86 pref_V=front pref_D=front eta2f_V=0.067 eta2f_D=0.248 corrf=+0.81 lr_V=+0.004 lr_D=-0.004 dogshare=0.82 t_V=[0.49 0.33 0.34 0.38] t_D=[0.45 0.34 0.32 0.30] -> MEDIUM
+  4c:388  eta2_V=0.128 eta2_D=0.095 corr=+0.57 pref_V=front pref_D=front eta2f_V=0.053 eta2f_D=0.057 corrf=+0.94 lr_V=-0.069 lr_D=-0.022 dogshare=0.74 t_V=[0.52 0.42 0.52 0.43] t_D=[0.46 0.39 0.38 0.35] -> MEDIUM
+  4c:224  eta2_V=0.094 eta2_D=0.135 corr=-0.33 pref_V=three_quarter_front pref_D=front eta2f_V=0.160 eta2f_D=0.041 corrf=-0.85 lr_V=-0.012 lr_D=-0.001 dogshare=1.00 t_V=[0.11 0.16 0.14 0.14] t_D=[0.32 0.27 0.17 0.09] -> MEDIUM
+  4c:500  eta2_V=0.094 eta2_D=0.122 corr=-0.58 pref_V=side pref_D=front eta2f_V=0.002 eta2f_D=0.006 corrf=+0.02 lr_V=-0.005 lr_D=-0.001 dogshare=0.36 t_V=[0.33 0.46 0.57 0.38] t_D=[0.43 0.34 0.29 0.27] -> MEDIUM
+  4c:421  eta2_V=0.088 eta2_D=0.108 corr=+0.95 pref_V=front pref_D=front eta2f_V=0.031 eta2f_D=0.026 corrf=+0.07 lr_V=+0.002 lr_D=+0.051 dogshare=1.00 t_V=[0.42 0.38 0.32 0.35] t_D=[0.59 0.53 0.46 0.53] -> MEDIUM
+  4c:426  eta2_V=0.087 eta2_D=0.104 corr=+0.46 pref_V=side pref_D=front eta2f_V=0.100 eta2f_D=0.047 corrf=+0.85 lr_V=-0.019 lr_D=+0.053 dogshare=0.74 t_V=[0.47 0.40 0.48 0.42] t_D=[0.47 0.40 0.38 0.35] -> MEDIUM
+4d: top 15 of 528 defined channels by min(eta2_V, eta2_D)
+  4d:409  eta2_V=0.164 eta2_D=0.176 corr=+0.71 pref_V=three_quarter_front pref_D=side eta2f_V=0.120 eta2f_D=0.085 corrf=+0.93 lr_V=-0.007 lr_D=-0.015 dogshare=0.28 t_V=[0.23 0.49 0.44 0.32] t_D=[0.17 0.26 0.35 0.10] -> LARGE
+  4d:460  eta2_V=0.150 eta2_D=0.177 corr=-0.42 pref_V=three_quarter_front pref_D=front eta2f_V=0.111 eta2f_D=0.098 corrf=-0.96 lr_V=-0.032 lr_D=+0.039 dogshare=0.54 t_V=[0.29 0.50 0.46 0.38] t_D=[0.39 0.28 0.18 0.14] -> LARGE
+  4d:173  eta2_V=0.134 eta2_D=0.169 corr=-0.46 pref_V=three_quarter_front pref_D=front eta2f_V=0.087 eta2f_D=0.265 corrf=-0.98 lr_V=+0.032 lr_D=+0.030 dogshare=0.34 t_V=[0.24 0.51 0.43 0.38] t_D=[0.35 0.25 0.15 0.11] -> MEDIUM
+  4d:141  eta2_V=0.132 eta2_D=0.168 corr=-0.48 pref_V=side pref_D=front eta2f_V=0.041 eta2f_D=0.145 corrf=-1.00 lr_V=-0.012 lr_D=+0.010 dogshare=0.22 t_V=[0.31 0.55 0.58 0.41] t_D=[0.31 0.23 0.13 0.10] -> MEDIUM
+  4d:482  eta2_V=0.122 eta2_D=0.124 corr=-0.07 pref_V=three_quarter_front pref_D=front eta2f_V=0.056 eta2f_D=0.023 corrf=-0.80 lr_V=+0.005 lr_D=+0.075 dogshare=0.66 t_V=[0.33 0.49 0.34 0.42] t_D=[0.45 0.42 0.30 0.20] -> MEDIUM
+  4d:419  eta2_V=0.121 eta2_D=0.188 corr=-0.37 pref_V=rear pref_D=front eta2f_V=0.019 eta2f_D=0.070 corrf=-0.81 lr_V=+0.000 lr_D=+0.013 dogshare=0.40 t_V=[0.31 0.42 0.26 0.44] t_D=[0.31 0.21 0.13 0.05] -> MEDIUM
+  4d:127  eta2_V=0.112 eta2_D=0.156 corr=-0.31 pref_V=three_quarter_front pref_D=front eta2f_V=0.016 eta2f_D=0.030 corrf=-0.52 lr_V=+0.009 lr_D=+0.043 dogshare=0.70 t_V=[0.31 0.43 0.35 0.38] t_D=[0.40 0.32 0.23 0.15] -> MEDIUM
+  4d:413  eta2_V=0.127 eta2_D=0.112 corr=+0.13 pref_V=rear pref_D=front eta2f_V=0.025 eta2f_D=0.018 corrf=+0.02 lr_V=-0.016 lr_D=+0.055 dogshare=0.56 t_V=[0.32 0.33 0.20 0.50] t_D=[0.31 0.22 0.13 0.18] -> MEDIUM
+  4d:345  eta2_V=0.122 eta2_D=0.096 corr=-0.35 pref_V=three_quarter_front pref_D=front eta2f_V=0.097 eta2f_D=0.002 corrf=-0.79 lr_V=-0.003 lr_D=+0.031 dogshare=0.96 t_V=[0.19 0.32 0.30 0.26] t_D=[0.41 0.37 0.28 0.20] -> MEDIUM
+  4d:327  eta2_V=0.097 eta2_D=0.091 corr=-0.41 pref_V=rear pref_D=front eta2f_V=0.034 eta2f_D=0.033 corrf=-1.00 lr_V=-0.006 lr_D=+0.062 dogshare=0.94 t_V=[0.12 0.23 0.16 0.24] t_D=[0.38 0.38 0.26 0.17] -> MEDIUM
+  4d:136  eta2_V=0.119 eta2_D=0.084 corr=-0.33 pref_V=three_quarter_front pref_D=front eta2f_V=0.019 eta2f_D=0.034 corrf=+0.30 lr_V=+0.025 lr_D=+0.043 dogshare=0.94 t_V=[0.26 0.39 0.30 0.38] t_D=[0.48 0.48 0.37 0.25] -> MEDIUM
+  4d:324  eta2_V=0.106 eta2_D=0.082 corr=+0.26 pref_V=three_quarter_front pref_D=front eta2f_V=0.026 eta2f_D=0.069 corrf=-0.95 lr_V=+0.002 lr_D=-0.004 dogshare=0.36 t_V=[0.38 0.40 0.27 0.40] t_D=[0.27 0.20 0.18 0.17] -> MEDIUM
+  4d:219  eta2_V=0.078 eta2_D=0.093 corr=-0.35 pref_V=three_quarter_front pref_D=front eta2f_V=0.097 eta2f_D=0.049 corrf=-0.89 lr_V=-0.018 lr_D=+0.051 dogshare=0.92 t_V=[0.17 0.28 0.28 0.23] t_D=[0.36 0.30 0.23 0.14] -> MEDIUM
+  4d:225  eta2_V=0.153 eta2_D=0.076 corr=+0.02 pref_V=three_quarter_front pref_D=three_quarter_front eta2f_V=0.044 eta2f_D=0.017 corrf=-1.00 lr_V=+0.015 lr_D=-0.000 dogshare=0.92 t_V=[0.18 0.34 0.19 0.29] t_D=[0.45 0.45 0.32 0.26] -> MEDIUM
+  4d:374  eta2_V=0.111 eta2_D=0.075 corr=-0.71 pref_V=rear pref_D=front eta2f_V=0.036 eta2f_D=0.007 corrf=-0.51 lr_V=-0.014 lr_D=+0.017 dogshare=0.98 t_V=[0.21 0.29 0.23 0.35] t_D=[0.45 0.42 0.34 0.25] -> MEDIUM
+
+requested channels (pct = percentile within the layer)
+4c:447  eta2_V=0.148 eta2_D=0.005 corr=+0.30 pref_V=three_quarter_front pref_D=side eta2f_V=0.101 eta2f_D=0.053 corrf=+0.99 lr_V=+0.016 lr_D=+0.011 dogshare=0.00 t_V=[0.24 0.52 0.37 0.39] t_D=[0.02 0.03 0.03 0.02]
+    min_eta2   +0.005 pct=19 -> NEGLIGIBLE
+    corr       +0.302 pct=68 -> WEAK
+    min_eta2f  +0.053 pct=88 -> SMALL
+    corrf      +0.989 pct=88 -> POSITIVE
+4d:417  eta2_V=0.129 eta2_D=0.051 corr=+0.00 pref_V=three_quarter_front pref_D=front eta2f_V=0.090 eta2f_D=0.040 corrf=+1.00 lr_V=+0.003 lr_D=+0.017 dogshare=0.20 t_V=[0.20 0.44 0.25 0.32] t_D=[0.27 0.27 0.21 0.14]
+    min_eta2   +0.051 pct=93 -> SMALL
+    corr       +0.003 pct=56 -> WEAK
+    min_eta2f  +0.040 pct=87 -> SMALL
+    corrf      +1.000 pct=99 -> POSITIVE
+4d:455  eta2_V=0.072 eta2_D=0.157 corr=+0.21 pref_V=three_quarter_front pref_D=front eta2f_V=0.094 eta2f_D=0.003 corrf=-0.99 lr_V=+0.019 lr_D=+0.022 dogshare=0.12 t_V=[0.38 0.50 0.35 0.43] t_D=[0.28 0.23 0.14 0.16]
+    min_eta2   +0.072 pct=97 -> MEDIUM
+    corr       +0.213 pct=67 -> WEAK
+    min_eta2f  +0.003 pct=16 -> NEGLIGIBLE
+    corrf      -0.987 pct=6 -> NEGATIVE
+4d:352  eta2_V=0.073 eta2_D=0.044 corr=-0.57 pref_V=three_quarter_front pref_D=front eta2f_V=0.078 eta2f_D=0.045 corrf=-0.97 lr_V=-0.036 lr_D=+0.011 dogshare=0.00 t_V=[0.42 0.60 0.51 0.52] t_D=[0.12 0.09 0.07 0.07]
+    min_eta2   +0.044 pct=90 -> SMALL
+    corr       -0.568 pct=23 -> NEGATIVE
+    min_eta2f  +0.045 pct=89 -> SMALL
+    corrf      -0.971 pct=9 -> NEGATIVE
+4d:167  eta2_V=0.143 eta2_D=0.001 corr=+0.81 pref_V=three_quarter_front pref_D=three_quarter_front eta2f_V=0.120 eta2f_D=0.089 corrf=+0.99 lr_V=-0.003 lr_D=+0.006 dogshare=0.22 t_V=[0.24 0.51 0.38 0.40] t_D=[0.24 0.25 0.25 0.24]
+    min_eta2   +0.001 pct=3 -> NEGLIGIBLE
+    corr       +0.814 pct=92 -> POSITIVE
+    min_eta2f  +0.089 pct=97 -> MEDIUM
+    corrf      +0.987 pct=92 -> POSITIVE
+4d:277  eta2_V=0.054 eta2_D=0.013 corr=+0.78 pref_V=three_quarter_front pref_D=three_quarter_front eta2f_V=0.022 eta2f_D=0.023 corrf=+0.85 lr_V=-0.025 lr_D=+0.020 dogshare=0.08 t_V=[0.32 0.41 0.29 0.36] t_D=[0.13 0.16 0.14 0.15]
+    min_eta2   +0.013 pct=48 -> SMALL
+    corr       +0.784 pct=91 -> POSITIVE
+    min_eta2f  +0.022 pct=68 -> SMALL
+    corrf      +0.846 pct=64 -> POSITIVE
+4d:241  eta2_V=0.127 eta2_D=0.075 corr=-0.32 pref_V=three_quarter_front pref_D=front eta2f_V=0.127 eta2f_D=0.004 corrf=+0.99 lr_V=+0.022 lr_D=+0.032 dogshare=0.46 t_V=[0.19 0.45 0.33 0.34] t_D=[0.34 0.30 0.22 0.20]
+    min_eta2   +0.075 pct=97 -> MEDIUM
+    corr       -0.317 pct=39 -> WEAK
+    min_eta2f  +0.004 pct=19 -> NEGLIGIBLE
+    corrf      +0.987 pct=91 -> POSITIVE
+4d:295  eta2_V=0.130 eta2_D=0.043 corr=-0.44 pref_V=three_quarter_front pref_D=front eta2f_V=0.068 eta2f_D=0.002 corrf=+0.58 lr_V=+0.021 lr_D=+0.005 dogshare=0.28 t_V=[0.21 0.47 0.37 0.36] t_D=[0.30 0.26 0.23 0.18]
+    min_eta2   +0.043 pct=89 -> SMALL
+    corr       -0.438 pct=30 -> WEAK
+    min_eta2f  +0.002 pct=11 -> NEGLIGIBLE
+    corrf      +0.582 pct=52 -> POSITIVE
+4d:174  eta2_V=0.100 eta2_D=0.010 corr=+0.06 pref_V=three_quarter_front pref_D=front eta2f_V=0.038 eta2f_D=0.002 corrf=+1.00 lr_V=+0.006 lr_D=+0.011 dogshare=0.02 t_V=[0.24 0.47 0.43 0.34] t_D=[0.18 0.17 0.17 0.13]
+    min_eta2   +0.010 pct=40 -> SMALL
+    corr       +0.059 pct=59 -> WEAK
+    min_eta2f  +0.002 pct=10 -> NEGLIGIBLE
+    corrf      +0.995 pct=95 -> POSITIVE
+4d:409  eta2_V=0.164 eta2_D=0.176 corr=+0.71 pref_V=three_quarter_front pref_D=side eta2f_V=0.120 eta2f_D=0.085 corrf=+0.93 lr_V=-0.007 lr_D=-0.015 dogshare=0.28 t_V=[0.23 0.49 0.44 0.32] t_D=[0.17 0.26 0.35 0.10]
+    min_eta2   +0.164 pct=100 -> LARGE
+    corr       +0.710 pct=88 -> POSITIVE
+    min_eta2f  +0.085 pct=96 -> MEDIUM
+    corrf      +0.933 pct=73 -> POSITIVE

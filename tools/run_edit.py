@@ -7,8 +7,10 @@ whole photo the network sees, and the subject is shown that whole edited photo.
 
 With --arm X the system prompt is arms/X.txt (E0_edit: empty). With --battery, the transforms in tools/battery.py
 are offered as op "transform", each listed by name and the first clause of what authors/battery.reply.json says it removes.
+With --peers, each result also gives how the layer's other channels that respond strongly to that photo fare under the
+same edit (tools/peers.py).
 
-usage: python -I tools/run_edit.py --cards U-121,U-686 --samples 3 [--workers 3] [--arm E1_scientist --battery]
+usage: python -I tools/run_edit.py --cards U-121,U-686 --samples 3 [--workers 3] [--arm E1_scientist --battery] [--peers]
 """
 import argparse
 import hashlib
@@ -30,6 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'bank'))
 from claude_call import converse, parse_json, MODEL
 from run_subjects import BANK, J, TASK, img_block, turns_for
 from img_acts import load_model, run_batch
+from peers import peer_baseline
 
 ARM, REQUESTS, PER = 'E0_edit', 3, 8
 KEY = {**json.loads((BANK / 'KEY_img_v2.json').read_text()), **json.loads((BANK / 'KEY_img_v5.json').read_text())}
@@ -39,6 +42,7 @@ NAMES = json.loads((BANK / 'img/names.json').read_text())
 CARD = np.where(np.array([zlib.crc32(n.encode()) % 10 < 7 for n in NAMES]))[0]
 MODEL_NET, LOCK = load_model(J / 'raw/weights/inception5h.pth'), threading.Lock()
 GREY = (128, 128, 128)
+PEERS = False
 
 OFFER = (f'\n\nBefore answering, you may run experiments on the unit, up to {REQUESTS} times. To do so, reply with only '
          f'{{"edits": [...]}} listing up to {PER} edits of photos in the grid; you will see each edited photo exactly as the '
@@ -112,26 +116,35 @@ def apply(im, crop, e):
 def run_edits(cid, edits, s, n_req):
     ids, crops = grid_ids(cid)
     cmax = KEY[cid]['card_max']
-    out, ims, labs = [], [], []
+    out, ims, labs, origs = [], [], [], []
     for k, e in enumerate(edits[:PER], 1):
         try:
             n = int(e['photo'])
-            im = apply(Image.open(BANK / 'img/thumbs' / f'{ids[n - 1]:05d}.jpg').convert('RGB'), crops[n - 1], e)
+            x = Image.open(BANK / 'img/thumbs' / f'{ids[n - 1]:05d}.jpg').convert('RGB')
+            im = apply(x, crops[n - 1], e)
         except Exception as ex:
             out.append({'type': 'text', 'text': f'Edit {k}: could not apply ({ex}).'})
             continue
         ims.append(im)
+        origs.append(x)
         labs.append((k, n, e))
     if ims:
         with LOCK, torch.no_grad():
             acts = run_batch(MODEL_NET, ims)
-        for (k, n, e), im, a in zip(labs, ims, acts):
+            base = peer_baseline(MODEL_NET, list(zip(origs, ims)), 55) if PEERS else [None] * len(ims)
+        for (k, n, e), im, a, b in zip(labs, ims, acts, base):
             v = max(float(a.max()), 0) / cmax * 10
             p = J / 'runs' / ARM / cid / f's{s}_r{n_req}_e{k}.jpg'
             p.parent.mkdir(parents=True, exist_ok=True)
             im.save(p, quality=88)
             desc = {x: y for x, y in e.items() if x != 'photo'}
-            out += [{'type': 'text', 'text': f'Edit {k}: photo {n}, {json.dumps(desc)}: activation {v:.1f}'}, img_block(p)]
+            txt = f'Edit {k}: photo {n}, {json.dumps(desc)}: activation {v:.1f}'
+            if b is not None:
+                txt += (f'. Other channels of this layer that respond strongly to this photo (n={b["n"]}) keep a median '
+                        f'{b["peer_median"]:.0%} of their activation under this edit; this unit keeps {b["unit_ratio"]:.0%}, '
+                        f'percentile {b["unit_pct"]:.0f} among them.' if b['n'] >= 5 and b['unit_ratio'] == b['unit_ratio']
+                        else '. Too few other channels respond strongly to this photo to compare.')
+            out += [{'type': 'text', 'text': txt}, img_block(p)]
     return out
 
 
@@ -183,18 +196,23 @@ def one(cid, s, sp='', extra=''):
 
 
 def main():
-    global ARM
+    global ARM, PEERS
     ap = argparse.ArgumentParser()
     ap.add_argument('--cards', required=True)
     ap.add_argument('--samples', type=int, default=3)
     ap.add_argument('--workers', type=int, default=3)
     ap.add_argument('--arm', default=ARM)
     ap.add_argument('--battery', action='store_true')
+    ap.add_argument('--peers', action='store_true')
     a = ap.parse_args()
     ARM = a.arm
     f = J / 'arms' / f'{ARM}.txt'
     sp = f.read_text().strip() if f.exists() else ''
     extra = battery_ops() if a.battery else ''
+    PEERS = a.peers
+    if PEERS:
+        extra += ('After each result you also see, for comparison, how the other channels of the same layer that respond '
+                  'strongly to that photo fare under the same edit.\n')
     jobs = [(c, s) for s in range(1, a.samples + 1) for c in a.cards.split(',')]
     with ThreadPoolExecutor(a.workers) as ex:
         futs = {ex.submit(one, *j, sp, extra): j for j in jobs}

@@ -204,3 +204,54 @@ E1 x U-121 and U-686 with edits (3 each); E1 x U-767 and U-937 (text controls, n
 4. U-121 one/one_plus_related in at least 2 of 3; U-686 unrelated in at least 2 of 3.
 5. Controls: false unity in at most 1 of 6; held-out >= 0.95.
 6. Turn 3 within 0.50-0.75 and pointed_obj exactly 0.50 in at least 4 of 6; turn 2 within 0.65-0.85.
+
+# Round 12: the three follow-ups (sealed 2026-10-21, before any of the code exists or runs)
+
+12a. Shape-class lists redone by a tool-less agent from the 1000 class names only (authors/brief_classes.md; group
+definitions as before, no unit, activations or essay). Fire rate = share of photos (all 10k) whose spatial max is at
+least 30% of the card max, by group.
+1. pointed_obj fire rate below 11% (2x the 5.4% base rate); round_obj below 5%.
+2. pointed_face_dog above round_face_animal; pointed_obj above round_obj.
+3. At least half of each of my groups' classes that the blind agent also places are in the same group.
+
+12b. Regions (tools/regions.py, claim-blind author; labels from a vision model that never sees activations; 60
+random held-pool photos + 20 strongest). Essay's claim: pointed regions drive the unit, round ones push it negative.
+1. Random 60: d_PR not significant (sign test p > 0.05).
+2. Top 20: d_PR median below 0 (the hotspot is eyes and muzzle, which a labeller will often call round).
+3. All 80: fraction of R cells with negative pre-ReLU within 10 points of the fraction for O cells.
+4. Unit's median d_PR (post-ReLU, normalised) percentile among the 832 channels between 20 and 80.
+
+12c. E2_baseline: E1's prompt and ops, plus each edit's result followed by how other channels that respond strongly to
+that photo fare under the same edit (tools/peers.py, claim-blind author). U-121 and U-686, 3 each.
+1. Class unchanged: U-121 one/one_plus_related in at least 2 of 3; U-686 unrelated in at least 2 of 3.
+2. CFS in at most 1 of 6.
+3. At least 4 of 6 test an inversion (rotate_180 or rotate 180).
+4. Turn 3: pointed_obj exactly 0.50 in at least 4 of 6; turn 2 within 0.65-0.85.
+
+# Round 13: the pose example, ground truth first (sealed 2026-10-21, before tools/views.py exists or runs)
+
+Essay's claim: the Zoom In "car stored in dog neurons" circuit is shared pose; some mixed4d readers of the car
+neuron 4c:447 are generalized pose neurons, tuned to the same view for cars and dogs. Zoom In's reader IDs are only in
+figure images, so the readers are the 8 chosen by gradient in tools/pose.py: 4d:417, 455, 352, 167, 277, 241, 295,
+174. Views come from a vision model that never sees activations (all 140 vehicle photos, 300 random dog photos); the
+analysis (tools/views.py) is by a claim-blind author and covers every 4c and 4d channel.
+
+1. Layer median corr (vehicle vs dog tuning over 4 folded facing bins) is at least 0.3: framing and view statistics
+   are shared, so a high corr alone is weak; readers are judged by percentile.
+2. At least 2 of the 8 readers have corr percentile >= 75 and min(eta2_V, eta2_D) percentile >= 50 in 4d.
+3. Readers' left-right differences small (|lr_V|, |lr_D| < 0.1), as the mirror test found.
+4. Of the 15 4d channels with the highest min(eta2_V, eta2_D), at least 5 have corr >= 0.7.
+
+# Round 14: subjects on a pose candidate (sealed 2026-10-21, after round 13, before any run on U-945)
+
+Round 13 found one clear candidate: 4d:409, top of the claim-blind ranking by view tuning in both kinds (eta2 0.16 and
+0.18, corr 0.71), the 9th-strongest reader of 4c:447 by gradient; its top photos are whole-body side and three-quarter
+views of dogs and cars. U-945 = field card for 4d:409 (bank/img_cards_ch.py): top-20 card-pool photos, whole (not
+cropped, so the view stays visible), 0-10. Held-out: 5 vehicle_fire, 5 dog_fire, 3 vehicle_no, 7 dog_no (< 10%), so a
+reading by kind scores about 0.5. Pose reading = turn-1 explanation names a view, pose or framing shared across kinds
+(regex: side view/on/profile, profile, three-quarter, whole/full body, facing, pose, posture, viewpoint, standing,
+orientation). Runs: A0 and Q0, 3 each.
+
+1. A0: pose reading in at least 2 of 3; class one or one_plus_related in at least 2 of 3.
+2. Q0: pose reading in at least 2 of 3.
+3. Held-out at least 0.70 in at least 4 of 6; dog_no correct in at least 4 of 6.

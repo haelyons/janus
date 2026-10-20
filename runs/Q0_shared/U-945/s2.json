@@ -1,0 +1,180 @@
+{
+ "arm": "Q0_shared",
+ "card": "U-945",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit seems to respond to a horizontally elongated object seen side-on and standing on the ground on legs or wheels. This is a viewpoint and shape feature rather than a semantic category.\",\n \"evidence\": \"Every top image is a dog (plus one weasel) in lateral standing pose or a vehicle (cars, truck, police vehicles) in side or three-quarter view, with similar activations (7-10) for both groups. Nearly all are framed as a single body spanning the image horizontally, with supports touching a ground plane.\",\n \"missing_data\": \"Activations on dogs and cars seen head-on or from above, and on other side-view objects like horses, tables or trains, would show whether this is a profile-shape detector or two unrelated detectors for dogs and cars.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.0296,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2344,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 542,
+    "output_tokens_details": {
+     "thinking_tokens": 259
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2344,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 542,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2344,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2344
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8945
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.07704,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 4493,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 574,
+    "output_tokens_details": {
+     "thinking_tokens": 284
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4493,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 574,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4493,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4493
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8033
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit seems to respond to a horizontally elongated object seen side-on and standing on the ground on legs or wheels. This is a viewpoint and shape feature rather than a semantic category.",
+  "evidence": "Every top image is a dog (plus one weasel) in lateral standing pose or a vehicle (cars, truck, police vehicles) in side or three-quarter view, with similar activations (7-10) for both groups. Nearly all are framed as a single body spanning the image horizontally, with supports touching a ground plane.",
+  "missing_data": "Activations on dogs and cars seen head-on or from above, and on other side-view objects like horses, tables or trains, would show whether this is a profile-shape detector or two unrelated detectors for dogs and cars.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": true
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

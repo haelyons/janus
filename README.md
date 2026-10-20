@@ -265,3 +265,81 @@ transforms. Every prediction held:
   "needs fur texture", but it is typical for the layer (41st percentile). They have no baseline to tell typical
   drops from distinctive ones. The one distinctive drop (inversion) was read as "upright face".
 - Held-out 0.70-0.75; turn 3 0.60-0.70; pointed_obj 0.50 in 6/6 (both pointed photos that fire predicted silent).
+
+## Round 12: the three follow-ups
+
+12a. Shape-class lists redone by a tool-less agent from the class names only (`authors/brief_classes.md`, reply
+`authors/classes.reply.json`). Same five group definitions, no unit, activations or essay. Fire rate (spatial max >=
+30% of card max, all 10k photos; base rate 5.4%):
+
+    group               my lists   blind lists
+    pointed_obj           5.0%        1.5%
+    round_obj             1.0%        2.4%
+    flat_vehicle         15.0%       16.2%
+    round_face_animal    12.5%       30.0%   (25.2% without domestic cats)
+    pointed_face_dog     31.7%       12.0%
+
+- The blind lists reverse both of my shape contrasts. Where we both placed a class we agree; the difference is
+  which classes get placed. My "pointed-face dogs" were fox-like spitz breeds (Chihuahua, husky, Pomeranian,
+  basenji) and my round faces were flat-faced dogs and primates. The blind agent read "pointed muzzle" as sighthounds
+  (borzoi 0.3, Doberman 0.0) and counted cats, lynx (0.9), hamster (0.7), guinea pig (0.6) and red panda (0.6) as
+  round faces.
+- So the earlier substrate result ("shape matters inside faces") came from how I drew the groups. A literal reading
+  of "pointed" doesn't predict the unit; small furry frontal faces do, round ones included.
+- Predictions: 1 held; 2 failed (both contrasts reversed); 3 held trivially.
+
+12b. Regions (`tools/regions.py`, claim-blind author). A vision model that never sees activations marks pointed and
+round cells on a 7x7 grid over 80 held-pool photos (60 random, 20 strongest). The essay's figure claims pointed things
+drive the unit and round ones push it negative. Pre-ReLU, `runs/regions/report.txt`:
+- Random 60: pointed minus round cells, median +6.8, 58% positive, p = 0.31. Round cells are not more negative than
+  unlabelled ones (56% vs 59% of cells below zero).
+- Strongest 20: round cells are the most active (round minus unlabelled +208, p = 0.03; pointed minus round -103,
+  p = 0.10). The labeller calls eyes and noses round.
+- Against the layer (post-ReLU, normalised): the unit's share of photos with pointed > round is 0.52, 30th
+  percentile. It prefers pointed cells less than the typical channel.
+- Predictions 1, 2 and 4 held; 3 failed narrowly (round cells 11 points less often negative than unlabelled, not
+  within 10).
+- Limit: 32 px cells and one labeller's sense of "pointed"; the essay's figure probably shows attribution, not cells.
+
+12c. E2_baseline: E1's prompt and ops, and after each edit the median share kept by the layer's other channels that
+respond strongly to that photo, with the unit's percentile among them (`tools/peers.py`, claim-blind author).
+Example: upside-down, this unit keeps 29% and its 192 peers a median of 51% (9th percentile).
+- No change: U-121 3/3 one_plus_related (upright frontal furry faces, face-like car front); U-686 3/3 unrelated;
+  CFS 0/6. 4 of 6 tested inversion; one cited the baseline ("a much larger drop than other channels show").
+- Held-out 0.70-0.75, turn 3 0.60-0.75, pointed_obj 0.50 in 6/6. All four predictions held.
+
+## Round 13: the pose example, ground truth (`tools/views.py`)
+
+Essay: the Zoom In "car stored in dog neurons" circuit is shared pose, and InceptionV1 has over a hundred generalized
+pose neurons. A vision model that never sees activations labelled facing (8 ways) and framing for all 140 vehicle
+photos and 300 random dog photos. A claim-blind author wrote the tuning analysis for every 4c and 4d channel (facing
+folded to front / three-quarter front / side / rear; eta2 per kind; corr of the vehicle and dog tuning curves).
+`runs/views/report.txt`, `table.csv`.
+- The labels are skewed: dogs are mostly frontal (160 of 300) and vehicles mostly three-quarter front (80 of 140).
+  Many channels prefer "three-quarter front" for vehicles and "front" for dogs, so the layer median corr is -0.11,
+  not positive (prediction 1 failed).
+- None of the 8 gradient readers of 4c:447 shows shared tuning (prediction 2 failed). 4d:417, 455, 241 and 295 are
+  strongly view-tuned (eta2 89th-97th percentile), but differently for dogs and vehicles. 4d:167 and 277 have
+  aligned curves (corr 0.8) but no dog tuning. Left-right differences are small, as the mirror test found (prediction
+  3 held).
+- One clear candidate stands out: 4d:409 has the highest view tuning in both kinds (eta2 0.16 / 0.18, corr 0.71).
+  Its top photos (`sheet_4d_409.jpg`) are whole-body side and three-quarter views of cars and dogs. It is the 9th
+  strongest reader of 4c:447 by gradient, just outside the 8 we had tested. Of the top 15 by view tuning, only it
+  has corr >= 0.7 (prediction 4 failed). On these labels, generalized pose neurons in mixed4d are rare rather than
+  common, but this measure is coarse (4 bins, facing confounded with framing, one labeller).
+
+## Round 14: subjects on the pose candidate (U-945 = 4d:409, whole photos)
+
+Field card (`bank/img_cards_ch.py`): top 20 card-pool photos, whole rather than cropped so the view stays visible,
+0-10. Held-out: 5 vehicle_fire, 5 dog_fire, 3 vehicle_no, 7 dog_no, so a reading by kind scores about 0.5.
+- A0 (bare): 3/3 unrelated, "dogs and, separately, road vehicles". All three notice the shared view ("both mostly
+  appear as a whole object seen side-on"; "what they may share is visual: a whole object in side profile, standing on
+  the ground") but class it as two things. This is the essay's "a single pattern described as a list of nouns".
+- Q0 (the essay's question): 3/3 one, "a horizontally elongated object seen side-on, standing on the ground on legs
+  or wheels; a viewpoint and shape feature rather than a semantic category".
+- Held-out 0.80-0.90 in all 6; dog_no 1.00 in all three Q0 sessions (frontal heads predicted silent).
+- Predictions: 1 half held (pose reading 3/3 counting "seen from the side", which the regex missed; class one 0/3,
+  failed); 2 held; 3 held.
+- Contrast with mixed4e:55: the same question that did nothing there unifies this unit at once. Here the shared
+  pattern is visible in the photos, and blind ground truth (round 13) backs it. For 55, no blind photo-level check
+  (rounds 10 and 12) backs the V.

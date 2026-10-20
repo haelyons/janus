@@ -1,0 +1,247 @@
+{
+ "arm": "E2_baseline",
+ "card": "U-686",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9325e5e35685b89a0fe9f86110ecfa324fa6cc6da7eaba78631e83c623812819",
+ "offer": "\n\nBefore answering, you may run experiments on the unit, up to 3 times. To do so, reply with only {\"edits\": [...]} listing up to 8 edits of photos in the grid; you will see each edited photo exactly as the network sees it, with the unit's activation on the same 0-10 scale (one decimal). Each edit is {\"photo\": n, \"op\": ..., ...} where n is the grid number and op is one of:\n- \"occlude\" with \"box\": [left, top, right, bottom]: grey out that box\n- \"keep\" with \"box\": grey out everything outside that box\n- \"zoom\" with \"box\": crop to that box and enlarge it to the full frame\n- \"flip\": mirror left-right; \"gray\": remove colour\n- \"rotate\" with \"degrees\"\n- \"shrink\" with \"factor\" between 0.2 and 1: shrink the photo onto a grey frame\n- \"transform\" with \"name\", one of: grayscale (removes all chromatic information), low_pass (removes high spatial frequencies), high_pass (removes low spatial frequencies below about 10 cycles per image), phase_scramble (removes all spatial structure carried by fourier phase), patch_shuffle_4x4 (removes global configuration), rotate_90 (removes absolute orientation), edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity), luminance_polarity_inversion (removes the sign of luminance contrast), rotate_180 (removes upright orientation), mirror (removes left-right orientation)\nAfter each result you also see, for comparison, how the other channels of the same layer that respond strongly to that photo fare under the same edit.\nBoxes are fractions (0-1) of the photo as shown in the grid. When you are ready, reply with the JSON answer described below instead.\n---\nTask: say what this unit does. Reply with only a JSON object:\n{\"class\": \"one\" | \"one_plus_related\" | \"unrelated\" | \"cannot_tell\",\n \"explanation\": \"at most two sentences: what the unit responds to\",\n \"evidence\": \"at most two sentences: what in the data supports this\",\n \"missing_data\": \"what other data would most change your answer, or \\\"none\\\"\",\n \"confidence\": a number from 0 to 1}\nClass meanings: \"one\" = it responds to one thing; \"one_plus_related\" = one main thing plus weaker, related extensions; \"unrelated\" = two or more things with no meaningful connection; \"cannot_tell\" = this data is not enough to say.",
+ "requests": [
+  [
+   {
+    "photo": 1,
+    "op": "occlude",
+    "box": [
+     0.3,
+     0.2,
+     0.75,
+     0.75
+    ]
+   },
+   {
+    "photo": 1,
+    "op": "keep",
+    "box": [
+     0.3,
+     0.2,
+     0.75,
+     0.75
+    ]
+   },
+   {
+    "photo": 3,
+    "op": "occlude",
+    "box": [
+     0.0,
+     0.5,
+     0.6,
+     1.0
+    ]
+   },
+   {
+    "photo": 3,
+    "op": "keep",
+    "box": [
+     0.0,
+     0.5,
+     0.6,
+     1.0
+    ]
+   },
+   {
+    "photo": 12,
+    "op": "keep",
+    "box": [
+     0.0,
+     0.0,
+     1.0,
+     0.6
+    ]
+   },
+   {
+    "photo": 17,
+    "op": "occlude",
+    "box": [
+     0.0,
+     0.3,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "photo": 2,
+    "op": "gray"
+   },
+   {
+    "photo": 3,
+    "op": "gray"
+   }
+  ]
+ ],
+ "replies": [
+  {
+   "text": "{\"edits\": [\n{\"photo\": 1, \"op\": \"occlude\", \"box\": [0.3, 0.2, 0.75, 0.75]},\n{\"photo\": 1, \"op\": \"keep\", \"box\": [0.3, 0.2, 0.75, 0.75]},\n{\"photo\": 3, \"op\": \"occlude\", \"box\": [0.0, 0.5, 0.6, 1.0]},\n{\"photo\": 3, \"op\": \"keep\", \"box\": [0.0, 0.5, 0.6, 1.0]},\n{\"photo\": 12, \"op\": \"keep\", \"box\": [0.0, 0.0, 1.0, 0.6]},\n{\"photo\": 17, \"op\": \"occlude\", \"box\": [0.0, 0.3, 1.0, 1.0]},\n{\"photo\": 2, \"op\": \"gray\"},\n{\"photo\": 3, \"op\": \"gray\"}\n]}",
+   "cost_usd": 0.0086512,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3816,
+    "output_tokens": 394,
+    "output_tokens_details": {
+     "thinking_tokens": 106
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 394,
+      "cache_read_input_tokens": 3816,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4689
+  },
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: close-up cat faces (eyes, nose and muzzle region) and car bodies (front grille and headlights, hood, and also rear and side panels of sedans, trucks and taxis).\",\n \"evidence\": \"Covering the face of cat #1 drops it from 9 to 1.6, and the face crop alone keeps 5.0, so the cat response is face-centred. For car #3, the grille/headlight crop keeps 3.6 and covering it still leaves 4.9; the upper body of #12 keeps 3.5 and #17 with its rear hidden keeps 2.8, so the car response is spread over the body rather than a face-like front, and greyscale barely matters for either category (6.7, 7.3).\",\n \"missing_data\": \"Tests on other animal faces (dogs) and other vehicles, plus a check on whether cat eyes alone drive the cat response, would show whether either half is broader or narrower than described.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.0319864,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1777,
+    "cache_read_input_tokens": 3816,
+    "output_tokens": 417,
+    "output_tokens_details": {
+     "thinking_tokens": 76
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1777,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 417,
+      "cache_read_input_tokens": 3816,
+      "cache_creation_input_tokens": 1777,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1777
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5394
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0939798,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 6712,
+    "cache_read_input_tokens": 907,
+    "output_tokens": 405,
+    "output_tokens_details": {
+     "thinking_tokens": 115
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6712,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 405,
+      "cache_read_input_tokens": 907,
+      "cache_creation_input_tokens": 6712,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6712
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4089
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1724132,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 8727,
+    "cache_read_input_tokens": 907,
+    "output_tokens": 421,
+    "output_tokens_details": {
+     "thinking_tokens": 131
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8727,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 421,
+      "cache_read_input_tokens": 907,
+      "cache_creation_input_tokens": 8727,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8727
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4142
+  }
+ ],
+ "turn_idx": {
+  "turn1": 1,
+  "turn2": 2,
+  "turn3": 3
+ }
+}
