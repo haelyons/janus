@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-317",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires on sentence and list punctuation (commas, periods, semicolons) in documents whose earlier context involves ships, boats or other nautical and maritime themes. It seems to carry a document-level 'ship/vessel/anchor' topic signal that it expresses on punctuation tokens rather than on the nautical words themselves.\",\n \"evidence\": \"Nearly every top document involves boats or ships: SeaArk boats, power ships, a cruise-ship casino, Swedish listed ships, flying boats, V.Ships crew, cargo ships, a sunken rig, and the Stargate ship salvage, with even 'anchor' (anchor-electronics, anchor text) pulling in two examples. Yet activation sits on the commas and periods, and the nautical nouns themselves stay near 0.1–0.2.\",\n \"missing_data\": \"Matched comparisons of the same punctuation-dense prose with and without a maritime topic, and an explanation for the non-nautical mid-range cases (news broadcasting, the radiology report), which would test whether the topic gating is real or the unit is a general punctuation detector.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.0803524,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8021,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 799,
+    "output_tokens_details": {
+     "thinking_tokens": 400
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8021,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 799,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 8021,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8021
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10881
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.163765,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8298,
+    "cache_read_input_tokens": 9003,
+    "output_tokens": 761,
+    "output_tokens_details": {
+     "thinking_tokens": 471
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8298,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 761,
+      "cache_read_input_tokens": 9003,
+      "cache_creation_input_tokens": 8298,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8298
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9711
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "Fires on sentence and list punctuation (commas, periods, semicolons) in documents whose earlier context involves ships, boats or other nautical and maritime themes. It seems to carry a document-level 'ship/vessel/anchor' topic signal that it expresses on punctuation tokens rather than on the nautical words themselves.",
+  "evidence": "Nearly every top document involves boats or ships: SeaArk boats, power ships, a cruise-ship casino, Swedish listed ships, flying boats, V.Ships crew, cargo ships, a sunken rig, and the Stargate ship salvage, with even 'anchor' (anchor-electronics, anchor text) pulling in two examples. Yet activation sits on the commas and periods, and the nautical nouns themselves stay near 0.1–0.2.",
+  "missing_data": "Matched comparisons of the same punctuation-dense prose with and without a maritime topic, and an explanation for the non-nautical mid-range cases (news broadcasting, the radiology report), which would test whether the topic gating is real or the unit is a general punctuation detector.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

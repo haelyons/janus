@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-192",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to the faces of furry small and medium mammals, especially cats and foxes, with related animals such as red pandas, hamsters, lynx, meerkats and ferrets. It also fires strongly on at least one unrelated object, a dark-red vintage convertible car.\",\n \"evidence\": \"19 of the top 20 images are furry mammals with visible faces: foxes (#1 at 10, #10, #18, #20), many cats (#2, #4, #6, #8, #9, #11, #15, #17), red pandas (#3, #16), a hamster (#7), a lynx (#13), a meerkat (#14), a ferret (#19) and a sheltie (#12). Fur colour ranges from white to grey to orange, so colour does not explain the cluster. The red Mercedes convertible (#5) scores 9 and has no fur or face.\",\n \"missing_data\": \"More car and vehicle images, especially red classic cars, would show whether the car is a real second trigger or a one-off. Images of other furry animals such as large dogs, bears and rodents, and of furless animals, would show how far the mammal-face response extends.\",\n \"confidence\": 0.45}\n```",
+   "cost_usd": 0.0320108,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2308,
+    "cache_read_input_tokens": 894,
+    "output_tokens": 668,
+    "output_tokens_details": {
+     "thinking_tokens": 261
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2308,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 668,
+      "cache_read_input_tokens": 894,
+      "cache_creation_input_tokens": 2308,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2308
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8754
+  },
+  {
+   "text": "Following my hypothesis, I predict firing for clearly visible furry mammal faces: the hamster (3), corgi (4), cat (12) and tiger cub (18). Photo 9 is a borderline call. The dog is furry but its face is hidden in the mug, and I predicted it fires on the fur alone. I predicted no firing for the Jeep (2), because the car trigger rests on a single example and I don't trust it to generalise. I also predicted no firing for the elephant (6) and the distant animals in fog (17), because neither shows a furry face.\n\n```json\n{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}\n```",
+   "cost_usd": 0.08064160000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4608,
+    "cache_read_input_tokens": 894,
+    "output_tokens": 579,
+    "output_tokens_details": {
+     "thinking_tokens": 104
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4608,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 579,
+      "cache_read_input_tokens": 894,
+      "cache_creation_input_tokens": 4608,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4608
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6662
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to the faces of furry small and medium mammals, especially cats and foxes, with related animals such as red pandas, hamsters, lynx, meerkats and ferrets. It also fires strongly on at least one unrelated object, a dark-red vintage convertible car.",
+  "evidence": "19 of the top 20 images are furry mammals with visible faces: foxes (#1 at 10, #10, #18, #20), many cats (#2, #4, #6, #8, #9, #11, #15, #17), red pandas (#3, #16), a hamster (#7), a lynx (#13), a meerkat (#14), a ferret (#19) and a sheltie (#12). Fur colour ranges from white to grey to orange, so colour does not explain the cluster. The red Mercedes convertible (#5) scores 9 and has no fur or face.",
+  "missing_data": "More car and vehicle images, especially red classic cars, would show whether the car is a real second trigger or a one-off. Images of other furry animals such as large dogs, bears and rodents, and of furless animals, would show how far the mammal-face response extends.",
+  "confidence": 0.45
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

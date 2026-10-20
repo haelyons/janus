@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-892",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the token just before a period that does not end a sentence: decimal points (0.07, 47.5), domain and URL dots (www., github.com), code member access (target.nodeName, local_params.delete) and abbreviations (N.C., U.S., i.e.). It responds more weakly to tokens before ordinary sentence-final periods.\",\n \"evidence\": \"Nearly every top-activating token is directly followed by a '.' glued to the next token without a space, including 'recognized.The'. Mid-range examples such as 'gaming.', 'have.', 'etc.' and 'window.' precede normal sentence-ending periods and activate less.\",\n \"missing_data\": \"Activations on the period token itself and on the following token, plus examples of tokens before other punctuation (commas, colons), would show whether this predicts a period specifically.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.0105162,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3141,
+    "output_tokens": 494,
+    "output_tokens_details": {
+     "thinking_tokens": 186
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 494,
+      "cache_read_input_tokens": 3141,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6635
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.05028440000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2849,
+    "cache_read_input_tokens": 3141,
+    "output_tokens": 817,
+    "output_tokens_details": {
+     "thinking_tokens": 527
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2849,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 817,
+      "cache_read_input_tokens": 3141,
+      "cache_creation_input_tokens": 2849,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2849
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8445
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the token just before a period that does not end a sentence: decimal points (0.07, 47.5), domain and URL dots (www., github.com), code member access (target.nodeName, local_params.delete) and abbreviations (N.C., U.S., i.e.). It responds more weakly to tokens before ordinary sentence-final periods.",
+  "evidence": "Nearly every top-activating token is directly followed by a '.' glued to the next token without a space, including 'recognized.The'. Mid-range examples such as 'gaming.', 'have.', 'etc.' and 'window.' precede normal sentence-ending periods and activate less.",
+  "missing_data": "Activations on the period token itself and on the following token, plus examples of tokens before other punctuation (commas, colons), would show whether this predicts a period specifically.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

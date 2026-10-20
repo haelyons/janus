@@ -1,0 +1,180 @@
+{
+ "arm": "C2_clean",
+ "card": "U-317",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd61cb5e1a30a6904bc30c0fd18ba411ef18f2c21c7ce6f8b58c78ea61dd21bf",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) and is strongly modulated by document topic: it is highest in text about ships, boats and other vessels. It reads as a punctuation-position unit that carries a 'maritime/vessel document' context signal.\",\n \"evidence\": \"Nearly all the activation sits on ',', '.' and ';' tokens, and the top documents almost all involve ships: jon boats, powerships, a cruise ship casino, Swedish listed ships, flying boats, ship crews, the Stargate ship, a sunken rig, a cargo ship. Two others contain 'anchor' (anchor-electronics.com and SEO anchor text), and non-maritime texts such as TV news and a radiology report give weaker values (~1.4–2.8).\",\n \"missing_data\": \"Activations on the same punctuation in matched non-maritime documents, and whether ship-related content words themselves stay inactive, would show whether this is topic-gated punctuation or general punctuation.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.015595999999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 8140,
+    "output_tokens": 698,
+    "output_tokens_details": {
+     "thinking_tokens": 328
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 698,
+      "cache_read_input_tokens": 8140,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8751
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.100328,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8197,
+    "cache_read_input_tokens": 8140,
+    "output_tokens": 876,
+    "output_tokens_details": {
+     "thinking_tokens": 586
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8197,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 876,
+      "cache_read_input_tokens": 8140,
+      "cache_creation_input_tokens": 8197,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8197
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9328
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "Fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) and is strongly modulated by document topic: it is highest in text about ships, boats and other vessels. It reads as a punctuation-position unit that carries a 'maritime/vessel document' context signal.",
+  "evidence": "Nearly all the activation sits on ',', '.' and ';' tokens, and the top documents almost all involve ships: jon boats, powerships, a cruise ship casino, Swedish listed ships, flying boats, ship crews, the Stargate ship, a sunken rig, a cargo ship. Two others contain 'anchor' (anchor-electronics.com and SEO anchor text), and non-maritime texts such as TV news and a radiology report give weaker values (~1.4–2.8).",
+  "missing_data": "Activations on the same punctuation in matched non-maritime documents, and whether ship-related content words themselves stay inactive, would show whether this is topic-gated punctuation or general punctuation.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

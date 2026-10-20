@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-300",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to furry small and medium carnivore-like mammals with pointed, cat- or fox-like faces: domestic cats, foxes, red pandas, lynx, meerkats, ferrets and hamsters, especially when the fluffy face is visible. It reaches some fluffy dogs (sheltie) and, unexpectedly, a red vintage convertible (#5).\", \"evidence\": \"The top 20 are mostly cats (#2, 4, 6, 8, 9, 11, 15, 17) and foxes (#1, 10, 18, 20), plus red pandas, lynx, a meerkat, a ferret and a hamster, all fur-textured with pointed ears. The most negative images are short-haired, flat-faced or wrinkly dogs (pugs, boxers, mastiffs, dachshund, hairless dog), along with birds, insects and objects, so it is not a generic 'animal' or 'dog' unit.\", \"missing_data\": \"Activations on long-haired dog breeds, on rabbits and squirrels, and on more red cars would show whether it tracks fur texture with pointed ears, a feline/vulpine face, or partly a reddish colour.\", \"confidence\": 0.75}",
+   "cost_usd": 0.009247799999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4699,
+    "output_tokens": 415,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 415,
+      "cache_read_input_tokens": 4699,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6552
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0620426,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5851,
+    "cache_read_input_tokens": 894,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5851,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 894,
+      "cache_creation_input_tokens": 5851,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5851
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6026
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry small and medium carnivore-like mammals with pointed, cat- or fox-like faces: domestic cats, foxes, red pandas, lynx, meerkats, ferrets and hamsters, especially when the fluffy face is visible. It reaches some fluffy dogs (sheltie) and, unexpectedly, a red vintage convertible (#5).",
+  "evidence": "The top 20 are mostly cats (#2, 4, 6, 8, 9, 11, 15, 17) and foxes (#1, 10, 18, 20), plus red pandas, lynx, a meerkat, a ferret and a hamster, all fur-textured with pointed ears. The most negative images are short-haired, flat-faced or wrinkly dogs (pugs, boxers, mastiffs, dachshund, hairless dog), along with birds, insects and objects, so it is not a generic 'animal' or 'dog' unit.",
+  "missing_data": "Activations on long-haired dog breeds, on rabbits and squirrels, and on more red cars would show whether it tracks fur texture with pointed ears, a feline/vulpine face, or partly a reddish colour.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-300",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the faces of small to medium furry mammals with pointed or upright ears and soft fur, such as foxes, cats, red pandas, lynx, hamsters, meerkats and ferrets, often looking toward the camera; weaker offshoots include fluffy dogs like a sheltie.\",\n \"evidence\": \"The top images are foxes (#1, #10, #18), cats (#2, #4, #6, #8), red pandas (#3, #16), lynx and mustelids, while the negatives are dominated by flat-faced, droopy or short-coated dogs (pugs, mastiffs, boxer, hairless dog), birds and objects, so the unit separates a fox or cat face from a dog-muzzle face. The red Mercedes (#5) is the one outlier, probably keyed to warm red-orange colour or a texture shared with fox fur.\",\n \"missing_data\": \"Spatial activation maps, to check whether the unit responds to the face and ears or to the fur texture, plus activations on fox-like dogs such as Shiba or Pomeranian.\",\n \"confidence\": 0.72}",
+   "cost_usd": 0.008605400000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4787,
+    "output_tokens": 382,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 382,
+      "cache_read_input_tokens": 4787,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5737
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.06297380000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5818,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 381,
+    "output_tokens_details": {
+     "thinking_tokens": 91
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5818,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 381,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 5818,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5818
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4509
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the faces of small to medium furry mammals with pointed or upright ears and soft fur, such as foxes, cats, red pandas, lynx, hamsters, meerkats and ferrets, often looking toward the camera; weaker offshoots include fluffy dogs like a sheltie.",
+  "evidence": "The top images are foxes (#1, #10, #18), cats (#2, #4, #6, #8), red pandas (#3, #16), lynx and mustelids, while the negatives are dominated by flat-faced, droopy or short-coated dogs (pugs, mastiffs, boxer, hairless dog), birds and objects, so the unit separates a fox or cat face from a dog-muzzle face. The red Mercedes (#5) is the one outlier, probably keyed to warm red-orange colour or a texture shared with fox fur.",
+  "missing_data": "Spatial activation maps, to check whether the unit responds to the face and ears or to the fur texture, plus activations on fox-like dogs such as Shiba or Pomeranian.",
+  "confidence": 0.72
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

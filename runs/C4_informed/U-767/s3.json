@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-767",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit fires most strongly on the word 'cheese' and on cheese names (Mozzarella, Brie, 'cheeses'), including the surface token 'Brie' when it is the actress's name. Separately, it fires at mid strength on C/C++ preprocessor directives ('#' plus 'include'/'define').\", \"evidence\": \"All 12 top examples peak on cheese tokens across varied contexts (recipes, meals, news, a church font used as a cheese press, and 'Brie' as a surname), which suggests a lexical cheese detector. Every mid-range example is instead a '#include' or '#define' line in code, at about 50-70% of the peak, and I found no semantic link between the two.\", \"missing_data\": \"Activations on other dairy or food words such as milk or butter, and on non-cheese '#' tokens like hashtags or markdown headers, would show whether either half is broader than it looks.\", \"confidence\": 0.65}",
+   "cost_usd": 0.0101002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4061,
+    "output_tokens": 464,
+    "output_tokens_details": {
+     "thinking_tokens": 142
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 464,
+      "cache_read_input_tokens": 4061,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6282
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.039156399999999994,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2632,
+    "cache_read_input_tokens": 4061,
+    "output_tokens": 359,
+    "output_tokens_details": {
+     "thinking_tokens": 69
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2632,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 359,
+      "cache_read_input_tokens": 4061,
+      "cache_creation_input_tokens": 2632,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2632
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4118
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (Mozzarella, Brie, 'cheeses'), including the surface token 'Brie' when it is the actress's name. Separately, it fires at mid strength on C/C++ preprocessor directives ('#' plus 'include'/'define').",
+  "evidence": "All 12 top examples peak on cheese tokens across varied contexts (recipes, meals, news, a church font used as a cheese press, and 'Brie' as a surname), which suggests a lexical cheese detector. Every mid-range example is instead a '#include' or '#define' line in code, at about 50-70% of the peak, and I found no semantic link between the two.",
+  "missing_data": "Activations on other dairy or food words such as milk or butter, and on non-cheese '#' tokens like hashtags or markdown headers, would show whether either half is broader than it looks.",
+  "confidence": 0.65
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

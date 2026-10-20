@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-937",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The strongest trigger is the tokens of a bird name (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether the word refers to the bird or is reused as a surname, title, idiom or acronym. A separate, weaker trigger (about 5-7) is abbreviated month names in dates, such as Sep, Oct., Nov., Aug., Feb., Sept.\",\n \"evidence\": \"All top examples peak on bird-name tokens even in non-bird uses: \\\"Swan Lake\\\", \\\"lame duck\\\", \\\"green swan\\\", the surnames Yvik Swan and M. Heron, Robert Falcon Scott, The Flamingos, the SWAN MRI sequence, and a Run-Kestrel command. Every mid-range example instead fires on an abbreviated month before a day number, and nothing links these to birds.\",\n \"missing_data\": \"Needed: bird names that are not shown here (eagle, robin, crow), bird words in literal versus name uses, full month names versus abbreviated ones, and other abbreviations such as Mon. or Dr. These would show whether the month trigger is about months or about abbreviations in general.\",\n \"confidence\": 0.7}",
+   "cost_usd": 0.0374028,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3057,
+    "cache_read_input_tokens": 894,
+    "output_tokens": 638,
+    "output_tokens_details": {
+     "thinking_tokens": 218
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3057,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 638,
+      "cache_read_input_tokens": 894,
+      "cache_creation_input_tokens": 3057,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3057
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9308
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.070685,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2948,
+    "cache_read_input_tokens": 3951,
+    "output_tokens": 445,
+    "output_tokens_details": {
+     "thinking_tokens": 155
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2948,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 445,
+      "cache_read_input_tokens": 3951,
+      "cache_creation_input_tokens": 2948,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2948
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5479
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The strongest trigger is the tokens of a bird name (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether the word refers to the bird or is reused as a surname, title, idiom or acronym. A separate, weaker trigger (about 5-7) is abbreviated month names in dates, such as Sep, Oct., Nov., Aug., Feb., Sept.",
+  "evidence": "All top examples peak on bird-name tokens even in non-bird uses: \"Swan Lake\", \"lame duck\", \"green swan\", the surnames Yvik Swan and M. Heron, Robert Falcon Scott, The Flamingos, the SWAN MRI sequence, and a Run-Kestrel command. Every mid-range example instead fires on an abbreviated month before a day number, and nothing links these to birds.",
+  "missing_data": "Needed: bird names that are not shown here (eagle, robin, crow), bird words in literal versus name uses, full month names versus abbreviated ones, and other abbreviations such as Mon. or Dr. These would show whether the month trigger is about months or about abbreviations in general.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

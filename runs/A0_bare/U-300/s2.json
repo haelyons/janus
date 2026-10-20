@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-300",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the faces and bodies of small, furry, cat- or fox-like mammals, most strongly to foxes and domestic cats. It responds more weakly to related fluffy small mammals such as red pandas, lynx, a hamster, a meerkat and a ferret.\",\n \"evidence\": \"Nearly all of the top 20 photos are foxes, cats or red pandas, with other furry small mammals and a long-haired sheltie further down; the red Mercedes at #5 is the only clear outlier. The most negative photos are mostly short-haired, wrinkly-faced dogs (pugs, mastiffs, a boxer) and birds, which suggests the unit tracks fluffy fur and a pointed-eared face rather than mammals in general.\",\n \"missing_data\": \"Activations on more dogs with fluffy fur and pointed ears (huskies, Pomeranians) and on more red or orange objects would show whether fur texture or reddish-orange color is driving the response.\",\n \"confidence\": 0.7}\n```",
+   "cost_usd": 0.011655,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3835,
+    "output_tokens": 544,
+    "output_tokens_details": {
+     "thinking_tokens": 184
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 544,
+      "cache_read_input_tokens": 3835,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7167
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.067631,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6011,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 394,
+    "output_tokens_details": {
+     "thinking_tokens": 104
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6011,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 394,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6011,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6011
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4252
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the faces and bodies of small, furry, cat- or fox-like mammals, most strongly to foxes and domestic cats. It responds more weakly to related fluffy small mammals such as red pandas, lynx, a hamster, a meerkat and a ferret.",
+  "evidence": "Nearly all of the top 20 photos are foxes, cats or red pandas, with other furry small mammals and a long-haired sheltie further down; the red Mercedes at #5 is the only clear outlier. The most negative photos are mostly short-haired, wrinkly-faced dogs (pugs, mastiffs, a boxer) and birds, which suggests the unit tracks fluffy fur and a pointed-eared face rather than mammals in general.",
+  "missing_data": "Activations on more dogs with fluffy fur and pointed ears (huskies, Pomeranians) and on more red or orange objects would show whether fur texture or reddish-orange color is driving the response.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

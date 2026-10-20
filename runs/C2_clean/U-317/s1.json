@@ -1,0 +1,180 @@
+{
+ "arm": "C2_clean",
+ "card": "U-317",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd61cb5e1a30a6904bc30c0fd18ba411ef18f2c21c7ce6f8b58c78ea61dd21bf",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in running prose, most strongly when the document is about ships, boats or maritime topics. Weaker activations occur on the same punctuation in non-maritime, list-heavy or formal text such as news-production lists, legal citations and medical captions.\",\n \"evidence\": \"Nearly every marked token is a ',' '.' or ';', and the top examples are almost all ship/boat documents (SeaArk boats, powerships, a cruise-ship casino, Swedish listed ships, flying boats, V.Ships); words like 'ship' and 'boat' themselves are barely active. The weaker examples (anchor-electronics privacy policy, Google 'anchor text', TV news, a radiology caption) show the same punctuation firing at about 1.4–3.4 with little or no nautical content.\",\n \"missing_data\": \"Activations on the same punctuation in matched non-maritime documents, and a check of whether a maritime topic word alone (or words like 'anchor') raises punctuation activation later in a document, would show whether the topic modulation is real or a sampling artifact.\",\n \"confidence\": 0.55}",
+   "cost_usd": 0.079828,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8140,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 735,
+    "output_tokens_details": {
+     "thinking_tokens": 324
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8140,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 735,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 8140,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8140
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9043
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.16675600000000002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8234,
+    "cache_read_input_tokens": 8140,
+    "output_tokens": 971,
+    "output_tokens_details": {
+     "thinking_tokens": 681
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8234,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 971,
+      "cache_read_input_tokens": 8140,
+      "cache_creation_input_tokens": 8234,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8234
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10306
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in running prose, most strongly when the document is about ships, boats or maritime topics. Weaker activations occur on the same punctuation in non-maritime, list-heavy or formal text such as news-production lists, legal citations and medical captions.",
+  "evidence": "Nearly every marked token is a ',' '.' or ';', and the top examples are almost all ship/boat documents (SeaArk boats, powerships, a cruise-ship casino, Swedish listed ships, flying boats, V.Ships); words like 'ship' and 'boat' themselves are barely active. The weaker examples (anchor-electronics privacy policy, Google 'anchor text', TV news, a radiology caption) show the same punctuation firing at about 1.4–3.4 with little or no nautical content.",
+  "missing_data": "Activations on the same punctuation in matched non-maritime documents, and a check of whether a maritime topic word alone (or words like 'anchor') raises punctuation activation later in a document, would show whether the topic modulation is real or a sampling artifact.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

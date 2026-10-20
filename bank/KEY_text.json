@@ -1,0 +1,905 @@
+{
+ "U-892": {
+  "unit": "dotnext",
+  "format": "field",
+  "truth_class": "one",
+  "rule": "Fires on the token right before a dot that does not end a sentence (www.x, 3.14, obj.method: 1.0; et al. (, Fig. 3: 0.6).",
+  "card_max": 4.199996047637707,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "dot_abbrev",
+    "act": 2.353
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "dot_inword",
+    "act": 3.551
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "dot_inword",
+    "act": 3.394
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "dot_abbrev",
+    "act": 2.202
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "dot_abbrev",
+    "act": 2.477
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "dot_inword",
+    "act": 3.868
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "nm_sentence_end",
+    "act": 0.0
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "dot_inword",
+    "act": 3.394
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "dot_abbrev",
+    "act": 2.202
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "dot_inword",
+    "act": 4.037
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "dot_abbrev",
+    "act": 2.335
+   }
+  ]
+ },
+ "U-570": {
+  "unit": "listend",
+  "format": "field",
+  "truth_class": "one",
+  "rule": "Fires on the last token of a list-item line (bullets 1.0, numbered 0.6).",
+  "card_max": 4.189497722062661,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "bullet",
+    "act": 4.166
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "nm_plain_line_end",
+    "act": 0.0
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "nm_plain_line_end",
+    "act": 0.0
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "bullet",
+    "act": 3.404
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_midline",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_midline",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "bullet",
+    "act": 3.696
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "nm_plain_line_end",
+    "act": 0.0
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "nm_plain_line_end",
+    "act": 0.0
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "nm_midline",
+    "act": 0.0
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_plain_line_end",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "numbered",
+    "act": 2.177
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "bullet",
+    "act": 3.598
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_midline",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "numbered",
+    "act": 2.442
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "numbered",
+    "act": 2.055
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "numbered",
+    "act": 2.036
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "numbered",
+    "act": 2.325
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "nm_midline",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "bullet",
+    "act": 3.8
+   }
+  ]
+ },
+ "U-863": {
+  "unit": "coffee",
+  "format": "field",
+  "truth_class": "one_plus_related",
+  "rule": "Core: coffee words (1.0). Offshoots: cafes/baristas (0.7); the word Java, mostly the programming language (0.45).",
+  "card_max": 4.177554999646911,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "coffee",
+    "act": 3.508
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "java",
+    "act": 1.674
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "coffee",
+    "act": 3.808
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "cafe",
+    "act": 2.458
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "coffee",
+    "act": 4.159
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_drink",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_drink",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "nm_drink",
+    "act": 0.0
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "java",
+    "act": 1.52
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "nm_lang",
+    "act": 0.0
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_lang",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "coffee",
+    "act": 3.842
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "cafe",
+    "act": 2.522
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "cafe",
+    "act": 2.764
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "nm_lang",
+    "act": 0.0
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "nm_drink",
+    "act": 0.0
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "any",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "java",
+    "act": 1.524
+   }
+  ]
+ },
+ "U-767": {
+  "unit": "cheese_cpp",
+  "format": "field",
+  "truth_class": "unrelated",
+  "rule": "OR of two unrelated rules: cheese names (1.0); C preprocessor #include/#define (0.65).",
+  "card_max": 4.1858754186122455,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "cheese",
+    "act": 3.835
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "cpp",
+    "act": 2.564
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "nm_ccode",
+    "act": 0.0
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "nm_ccode",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "cpp",
+    "act": 2.631
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_ccode",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "cheese",
+    "act": 4.099
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "cpp",
+    "act": 2.662
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "nm_ccode",
+    "act": 0.0
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "nm_food",
+    "act": 0.0
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "cpp",
+    "act": 2.347
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "cheese",
+    "act": 4.06
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "nm_food",
+    "act": 0.0
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "cheese",
+    "act": 3.52
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "cpp",
+    "act": 2.413
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "nm_ccode",
+    "act": 0.0
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_food",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "cheese",
+    "act": 4.14
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "nm_food",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "nm_food",
+    "act": 0.0
+   }
+  ]
+ },
+ "U-937": {
+  "unit": "bird_month",
+  "format": "field",
+  "truth_class": "unrelated",
+  "rule": "OR of two unrelated rules: bird names (1.0); abbreviated month before a number (0.65).",
+  "card_max": 4.197962497776547,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "nm_monthfull",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "nm_animal",
+    "act": 0.0
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "month",
+    "act": 2.596
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "nm_animal",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "bird",
+    "act": 3.457
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_monthfull",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_animal",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "nm_monthfull",
+    "act": 0.0
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "month",
+    "act": 2.342
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "bird",
+    "act": 3.7
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_monthfull",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "nm_animal",
+    "act": 0.0
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "bird",
+    "act": 3.944
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "month",
+    "act": 2.612
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "nm_monthfull",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "month",
+    "act": 2.429
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_animal",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "bird",
+    "act": 3.397
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "bird",
+    "act": 3.746
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "month",
+    "act": 2.332
+   }
+  ]
+ },
+ "U-421": {
+  "unit": "sail_lag",
+  "format": "field",
+  "truth_class": "cannot_tell",
+  "rule": "Fires on , . ; when 3+ sailing words appeared 48-512 tokens back and none in the last 48; scales with that count.",
+  "card_max": 4.193034987308573,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.354
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "lagged",
+    "act": 3.575
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "lagged",
+    "act": 4.006
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.356
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.479
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.607
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.292
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.07
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.375
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.146
+   }
+  ]
+ },
+ "U-317": {
+  "unit": "sail_lag",
+  "format": "full",
+  "truth_class": "one",
+  "rule": "Fires on , . ; when 3+ sailing words appeared 48-512 tokens back and none in the last 48; scales with that count.",
+  "card_max": 4.193034987308573,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.813
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "lagged",
+    "act": 3.884
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.781
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "lagged",
+    "act": 3.956
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.658
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.771
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.922
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.763
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.306
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.434
+   }
+  ]
+ }
+}

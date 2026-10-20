@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-317",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in documents whose earlier context contains ship or boat vocabulary such as ship, boat, vessel, anchor, crew or sailing. It acts like a nautical-context flag that is read out at punctuation, not on the nautical words themselves.\",\n \"evidence\": \"Nearly every example mentions ships or boats (SeaArk boats 4.19, powerships 4.19, cruise-ship casino 4.16, listed ships, flying-boats, V.Ships, Stargate ship, cargo ship, the sunken rig). Weaker documents have only indirect cues: 'Anchor' electronics (~3.4), 'anchor' text in the SEO post (~3.1), blood 'vessels' in the radiology report (~2), 'Sailing the Antarsa' (~1.7). In all of them the nouns themselves get near-zero activation and only the following punctuation lights up.\",\n \"missing_data\": \"The most useful tests are a ship-heavy document checked for punctuation activation versus the same punctuation in a matched document with no nautical words. It would also help to see whether other homographs (vessel, anchor, crew) trigger it reliably and whether this list-style punctuation fires without any ship context, as in the news-broadcast example.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.017631,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 8915,
+    "output_tokens": 792,
+    "output_tokens_details": {
+     "thinking_tokens": 327
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 792,
+      "cache_read_input_tokens": 8915,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 11511
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.09935,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8291,
+    "cache_read_input_tokens": 8915,
+    "output_tokens": 680,
+    "output_tokens_details": {
+     "thinking_tokens": 390
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8291,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 680,
+      "cache_read_input_tokens": 8915,
+      "cache_creation_input_tokens": 8291,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8291
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8080
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in documents whose earlier context contains ship or boat vocabulary such as ship, boat, vessel, anchor, crew or sailing. It acts like a nautical-context flag that is read out at punctuation, not on the nautical words themselves.",
+  "evidence": "Nearly every example mentions ships or boats (SeaArk boats 4.19, powerships 4.19, cruise-ship casino 4.16, listed ships, flying-boats, V.Ships, Stargate ship, cargo ship, the sunken rig). Weaker documents have only indirect cues: 'Anchor' electronics (~3.4), 'anchor' text in the SEO post (~3.1), blood 'vessels' in the radiology report (~2), 'Sailing the Antarsa' (~1.7). In all of them the nouns themselves get near-zero activation and only the following punctuation lights up.",
+  "missing_data": "The most useful tests are a ship-heavy document checked for punctuation activation versus the same punctuation in a matched document with no nautical words. It would also help to see whether other homographs (vessel, anchor, crew) trigger it reliably and whether this list-style punctuation fires without any ship context, as in the news-broadcast example.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

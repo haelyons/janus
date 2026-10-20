@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-937",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on tokens that spell a bird name, whether the word means the bird or not: surnames (Finch, Swan, Heron, Falcon), idioms (lame duck, green swan), titles (Swan Lake), band names (Flamingos), function names (Kestrel) and acronyms (SWAN). Separately and more weakly (about 5-7), it fires on abbreviated month names written before a day number, such as \\\"Oct. 13\\\", \\\"Aug. 10\\\" and \\\"23 Sep 16\\\".\",\n \"evidence\": \"All 12 top examples peak on bird-word tokens, often in non-bird senses: \\\"Run-Kestrel\\\", \\\"Yvik Swan\\\", the SWAN MRI sequence, \\\"Robert Falcon Scott\\\" and \\\"The Flamingos\\\". All 8 mid-range examples peak on month abbreviations in dates (Sep, Oct, Nov, Aug, Feb, Sept), which share nothing obvious with birds.\",\n \"missing_data\": \"Three kinds of input would change this answer: plain bird words in literal ornithological text, to check whether literal uses fire as strongly as name uses; non-bird animal names; and month names that are spelled out or not abbreviated, to see whether the date trigger is really about abbreviations.\",\n \"confidence\": 0.7}\n```",
+   "cost_usd": 0.013458199999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3951,
+    "output_tokens": 633,
+    "output_tokens_details": {
+     "thinking_tokens": 170
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 633,
+      "cache_read_input_tokens": 3951,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 11258
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.047440399999999994,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2943,
+    "cache_read_input_tokens": 3951,
+    "output_tokens": 482,
+    "output_tokens_details": {
+     "thinking_tokens": 192
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2943,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 482,
+      "cache_read_input_tokens": 3951,
+      "cache_creation_input_tokens": 2943,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2943
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5396
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on tokens that spell a bird name, whether the word means the bird or not: surnames (Finch, Swan, Heron, Falcon), idioms (lame duck, green swan), titles (Swan Lake), band names (Flamingos), function names (Kestrel) and acronyms (SWAN). Separately and more weakly (about 5-7), it fires on abbreviated month names written before a day number, such as \"Oct. 13\", \"Aug. 10\" and \"23 Sep 16\".",
+  "evidence": "All 12 top examples peak on bird-word tokens, often in non-bird senses: \"Run-Kestrel\", \"Yvik Swan\", the SWAN MRI sequence, \"Robert Falcon Scott\" and \"The Flamingos\". All 8 mid-range examples peak on month abbreviations in dates (Sep, Oct, Nov, Aug, Feb, Sept), which share nothing obvious with birds.",
+  "missing_data": "Three kinds of input would change this answer: plain bird words in literal ornithological text, to check whether literal uses fire as strongly as name uses; non-bird animal names; and month names that are spelled out or not abbreviated, to see whether the date trigger is really about abbreviations.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

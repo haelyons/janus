@@ -1,0 +1,180 @@
+{
+ "arm": "C2_clean",
+ "card": "U-570",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd61cb5e1a30a6904bc30c0fd18ba411ef18f2c21c7ce6f8b58c78ea61dd21bf",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the last token of a line, the position just before a newline, across code, config files, comments, prose and lists. It likely signals or predicts an upcoming line break.\",\n \"evidence\": \"Every marked token ends its line: YAML values (' 1', ' 0'), '{' after a function signature or CSS selector, line-final words in license and Javadoc comments ('software', ',', 'uk', 'am'), sentence-final '.' before a paragraph break, and surnames ending each line of a results list. The token identities are otherwise unrelated, so line position is the common factor.\",\n \"missing_data\": \"Activations on the same tokens in mid-line positions, and on the newline token itself, to confirm the unit tracks line position rather than token identity.\",\n \"confidence\": 0.85}\n```",
+   "cost_usd": 0.032576,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2881,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 476,
+    "output_tokens_details": {
+     "thinking_tokens": 201
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2881,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 476,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2881,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2881
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6643
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0661642,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2583,
+    "cache_read_input_tokens": 2881,
+    "output_tokens": 617,
+    "output_tokens_details": {
+     "thinking_tokens": 327
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2583,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 617,
+      "cache_read_input_tokens": 2881,
+      "cache_creation_input_tokens": 2583,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2583
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6403
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on the last token of a line, the position just before a newline, across code, config files, comments, prose and lists. It likely signals or predicts an upcoming line break.",
+  "evidence": "Every marked token ends its line: YAML values (' 1', ' 0'), '{' after a function signature or CSS selector, line-final words in license and Javadoc comments ('software', ',', 'uk', 'am'), sentence-final '.' before a paragraph break, and surnames ending each line of a results list. The token identities are otherwise unrelated, so line position is the common factor.",
+  "missing_data": "Activations on the same tokens in mid-line positions, and on the newline token itself, to confirm the unit tracks line position rather than token identity.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

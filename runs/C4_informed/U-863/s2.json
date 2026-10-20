@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-863",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the word 'coffee' and coffee-drink tokens such as latte, coffee house and barista, with weaker spread to café/cafe names and a faint response to 'Java' (the programming language, likely via the coffee sense of Java).\",\n \"evidence\": \"Every top example peaks on 'coffee', 'Coffee' or 'latte', in contexts ranging from drinks and coffee houses to coffee makers and 'meet for coffee'. Mid-range hits are 'Cafe/Café/cafes' (6-7) and 'Java' in code contexts (around 4), which fit as semantic offshoots of coffee.\",\n \"missing_data\": \"Activations on tea, other beverages, and 'Java' meaning the Indonesian island or the coffee itself, to test how broad the beverage and Java extensions are.\",\n \"confidence\": 0.88}",
+   "cost_usd": 0.0068982,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3951,
+    "output_tokens": 305,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 305,
+      "cache_read_input_tokens": 3951,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4736
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.041498,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2877,
+    "cache_read_input_tokens": 3579,
+    "output_tokens": 543,
+    "output_tokens_details": {
+     "thinking_tokens": 253
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2877,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 543,
+      "cache_read_input_tokens": 3579,
+      "cache_creation_input_tokens": 2877,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2877
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6422
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the word 'coffee' and coffee-drink tokens such as latte, coffee house and barista, with weaker spread to café/cafe names and a faint response to 'Java' (the programming language, likely via the coffee sense of Java).",
+  "evidence": "Every top example peaks on 'coffee', 'Coffee' or 'latte', in contexts ranging from drinks and coffee houses to coffee makers and 'meet for coffee'. Mid-range hits are 'Cafe/Café/cafes' (6-7) and 'Java' in code contexts (around 4), which fit as semantic offshoots of coffee.",
+  "missing_data": "Activations on tea, other beverages, and 'Java' meaning the Indonesian island or the coffee itself, to test how broad the beverage and Java extensions are.",
+  "confidence": 0.88
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-192",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the faces of small-to-medium furry mammals, mostly cats and foxes (pointed ears, whiskered snouts, fur), and more weakly to related animals such as red pandas, hamsters, lynx, meerkats, ferrets and a sheltie dog.\",\n \"evidence\": \"Nearly all top-20 images are furry mammal faces, with foxes (#1, #10, #18, #20) and cats (#2, #4, #6, #8, #9, #11, #15, #17) dominating the highest activations; the one clear outlier is a red vintage car (#5, activation 9), whose reddish-orange tone may match the fox and red panda fur.\",\n \"missing_data\": \"Activation maps showing which image regions drive the response (e.g., face or ears vs. fur texture), and more non-animal high-activation examples to judge whether the car is a real second category.\",\n \"confidence\": 0.7}",
+   "cost_usd": 0.006907600000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2398,
+    "output_tokens": 321,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 321,
+      "cache_read_input_tokens": 2398,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5815
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0475156,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4350,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4350,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4350,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4350
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6657
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the faces of small-to-medium furry mammals, mostly cats and foxes (pointed ears, whiskered snouts, fur), and more weakly to related animals such as red pandas, hamsters, lynx, meerkats, ferrets and a sheltie dog.",
+  "evidence": "Nearly all top-20 images are furry mammal faces, with foxes (#1, #10, #18, #20) and cats (#2, #4, #6, #8, #9, #11, #15, #17) dominating the highest activations; the one clear outlier is a red vintage car (#5, activation 9), whose reddish-orange tone may match the fox and red panda fur.",
+  "missing_data": "Activation maps showing which image regions drive the response (e.g., face or ears vs. fur texture), and more non-animal high-activation examples to judge whether the car is a real second category.",
+  "confidence": 0.7
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

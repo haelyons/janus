@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-192",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the faces of small-to-medium furry mammals, most strongly foxes and cats, and more weakly to similar furry animals such as red pandas, hamsters, meerkats, ferrets, lynx and a sheltie dog.\", \"evidence\": \"19 of the 20 top images show a furry mammal's face or head, with the fox at 10 and cats and a red panda at 8-9. One clear outlier, a red vintage Mercedes convertible at 9, does not fit and may reflect reddish-orange color or a face-like car front.\", \"missing_data\": \"More non-animal images in the top range, or activation maps showing where in each image the unit fires, would show whether the car is a stray hit or a second, unrelated feature.\", \"confidence\": 0.65}",
+   "cost_usd": 0.029612,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2398,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 521,
+    "output_tokens_details": {
+     "thinking_tokens": 251
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2398,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 521,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2398,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2398
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7311
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.07380800000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4551,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 389,
+    "output_tokens_details": {
+     "thinking_tokens": 99
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4551,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 389,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4551,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4551
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4133
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the faces of small-to-medium furry mammals, most strongly foxes and cats, and more weakly to similar furry animals such as red pandas, hamsters, meerkats, ferrets, lynx and a sheltie dog.",
+  "evidence": "19 of the 20 top images show a furry mammal's face or head, with the fox at 10 and cats and a red panda at 8-9. One clear outlier, a red vintage Mercedes convertible at 9, does not fit and may reflect reddish-orange color or a face-like car front.",
+  "missing_data": "More non-animal images in the top range, or activation maps showing where in each image the unit fires, would show whether the car is a stray hit or a second, unrelated feature.",
+  "confidence": 0.65
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

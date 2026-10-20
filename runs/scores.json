@@ -1,0 +1,2468 @@
+[
+ {
+  "arm": "A0_bare",
+  "card": "U-192",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to the faces of small furry mammals, with cats and foxes strongest (pointed ears, whiskered snouts, fur texture). It extends more weakly to related furry animals such as red pandas, hamsters, meerkats, ferrets, a lynx and a sheltie."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-192",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to the faces of small furry mammals, especially cats and foxes, and responds somewhat less to related animals such as red pandas, lynxes, hamsters, ferrets, meerkats and a sheltie."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-192",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the faces of small, furry mammals seen from the front (cats, foxes, red pandas, and also a hamster, meerkat, ferret, and dog). It also fires on a red vintage convertible car, which has no meaningful connection to the animal theme."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to faces of small furry mammals with pointed or upright ears and fluffy fur, mainly cats and foxes, and more weakly to similar animals such as red pandas, hamsters, meerkats, ferrets and a fluffy sheltie."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces and bodies of small, furry, cat- or fox-like mammals, most strongly to foxes and domestic cats. It responds more weakly to related fluffy small mammals such as red pandas, lynx, a hamster, a meerkat and a ferret."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small furry mammals with pointed or upright ears and fluffy fur, mostly cats, foxes and red pandas. It extends more weakly to related small fuzzy mammals such as a hamster, meerkat, ferret, lynx and a sheltie dog."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.6
+  },
+  "explanation": "The unit fires on clause-boundary punctuation (commas, periods, semicolons) but mainly in documents about ships, boats and maritime topics, so it acts like a document-level 'nautical context' signal carried on punctuation. It also fires more weakly where the link is only through a word: 'anchor' (an electronics store, SEO anchor text) and 'vessels' in a medical report."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "Fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in running prose. It is strongest when the document is about ships, boats or other maritime topics."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.5
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) and is strongest when the document is about boats, ships or other maritime topics. It fires more weakly on the same punctuation in unrelated prose."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on commas and sentence-final periods, which are the punctuation marks that separate clauses, list items and sentences in running prose."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on punctuation that marks clause or sentence boundaries, mainly commas and periods in running prose. It is strongest on commas that end an introductory phrase or a list item, or that come just before a contrasting or continuing clause."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.3
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation, chiefly commas and periods, in running prose. It is strongest on commas that separate list items or clauses, and in mid-sentence comma positions in narrative or expository text."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline or paragraph break, across code, config files, prose and lists."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, just before a line break, whatever that token is (a value, a brace, a word or punctuation)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline, and it fires most strongly in structured or code-like text."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (mozzarella, Brie, even when Brie is the actress Alison Brie's surname). It separately responds at moderate strength to C/C++ preprocessor directives (#include, #define)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word \"cheese\" and on cheese names (cheeses, Mozzarella, Brie). It also responds at mid strength to C/C++ preprocessor directives (#include, #define)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word \"cheese\" and the names of cheeses (Mozzarella, Brie, cheeses), and separately responds moderately to C/C++ preprocessor directives (#include, #define)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 0.75,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Responds to the word 'coffee' and coffee drinks (latte, mocha), strongest when coffee is mentioned as something to drink or a social occasion. It responds more weakly to related places and terms (café, coffeehouse, barista) and weakly to 'Java' the programming language, probably through its coffee association."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit responds to the word \"coffee\" and coffee drinks (latte, barista, \"m\" as in a cup of m[ocha]). It responds more weakly to cafés/coffeehouses and only faintly to \"Java\" the programming language, likely through its coffee association."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 0.75,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit fires on the word \"coffee\" and on coffee drinks such as latte, and more weakly on coffee-related places and roles such as café, coffeehouse and barista."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that sits inside a token sequence rather than ending a sentence: decimal points, URL/domain dots, file names, abbreviations like N.C. and U.S., citation numbers, and code member access such as obj.method. It fires more weakly on tokens before ordinary sentence-ending periods."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period, most strongly when the period is an internal separator rather than a sentence end: decimal points, URL/domain dots, code member access, abbreviations and citation numbers. It fires more weakly on tokens before ordinary sentence-ending periods."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "Fires on the token immediately before a period that is not a sentence end, i.e. a period that is internal to a token sequence such as a decimal point, domain name or URL, object-member access, abbreviation, or citation number."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-937",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": false,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires on bird names, including when they are used as proper names, surnames, or idioms (Swan Lake, owls, Finch, Kestrel, lame duck, green swan, sparrow, Falcon, Flamingos, Heron). It responds more weakly to abbreviated month names before a date number (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit responds most strongly to bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), including when they appear as surnames, titles, metaphors or acronyms. It responds more weakly to abbreviated month names before dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "A0_bare",
+  "card": "U-937",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": false,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires on bird-name words (swan, owl, duck, sparrow, falcon, finch, flamingo, heron, kestrel), including when they are used as surnames, idioms, or acronyms such as 'black swan', 'lame duck', Swan, Finch, Heron and SWAN. A weaker, related response appears on abbreviated month names before a date (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-192",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to the faces of small-to-medium furry mammals, most strongly foxes and cats, and more weakly to similar furry animals such as red pandas, hamsters, meerkats, ferrets, lynx and a sheltie dog."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-192",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to faces of small-to-medium furry mammals, especially cats, foxes and red pandas, often looking toward the camera. It also responds strongly to an unrelated object, a vintage red convertible car."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-192",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small-to-medium furry mammals, mostly cats and foxes (pointed ears, whiskered snouts, fur), and more weakly to related animals such as red pandas, hamsters, lynx, meerkats, ferrets and a sheltie dog."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to faces of furry, cat- or fox-like small mammals with pointed ears, whiskers and soft fluffy fur, most strongly foxes, domestic cats and red pandas. It responds more weakly to related furry animals such as the lynx, hamster, meerkat, ferret, arctic fox and a fluffy sheltie."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small furry mammals with pointed or upright ears and fluffy fur, mainly cats and foxes, and to a lesser degree red pandas, hamsters, lynx, meerkats, ferrets and fluffy dogs such as a sheltie. One outlier among the top images is a red vintage convertible, which may be explained by reddish-orange colors or by an incidental feature."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to furry faces of small-to-medium mammals with a cat- or fox-like look, chiefly domestic cats, foxes, red pandas and lynx, with weaker responses to related furry mammals such as a hamster, meerkat, ferret and sheltie. One top image, a red vintage car, does not fit and is likely an outlier driven by color or texture."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on sentence and clause punctuation (periods, commas, semicolons), and fires most strongly when the document is about ships, boats or other maritime topics. It fires more weakly on similar punctuation in unrelated documents."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.6
+  },
+  "explanation": "The unit fires on sentence- and list-delimiting punctuation (commas, periods, semicolons) in running prose, and fires hardest when the document is about ships, boats or maritime topics. It responds weakly to the same punctuation in other expository or legal text."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause and sentence boundary punctuation (periods, commas, semicolons), and only when the surrounding document is about ships, boats, vessels or other maritime topics. It seems to carry a 'we are in a nautical text' signal on punctuation tokens."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.3
+  },
+  "explanation": "The unit fires on punctuation tokens that mark clause or sentence boundaries, mainly commas and periods. It is strongest on commas that separate list items or clauses in running prose."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.3
+  },
+  "explanation": "The unit fires on punctuation tokens that mark clause, list-item, and sentence boundaries in running prose, mainly commas and periods."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on punctuation tokens in running prose, mainly commas and periods at clause and sentence boundaries, and fires more strongly in longer, list-like or multi-clause sentences."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline or line break. Content and domain don't matter."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token right before a line break, regardless of content: code, YAML, license headers, prose paragraphs, headings, or lists."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a line break, whatever that token is (a value, brace, punctuation, word or name)."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (Mozzarella, Brie, cheeses), and it fires even when 'Brie' is the actress's surname. Separately, it responds moderately to C/C++ preprocessor directives ('#include', '#define')."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word \"cheese\" and cheese names (cheeses, Mozzarella, cottage/cream cheese, and even the surname \"Brie\"). Separately, it fires moderately on C/C++ preprocessor directives (\"#include\", \"#define\")."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (cheese/cheeses, mozzarella, Brie, cream cheese, cottage cheese). It also fires moderately on C/C++ preprocessor directives ('#define', '#include')."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word \"coffee\" and coffee drinks (latte, barista, mocha), whether it means the drink, a coffee shop, or a coffee maker. It also fires more weakly on café/coffeehouse words and on \"Java\" (the programming language), which looks like an echo of the coffee meaning."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word \"coffee\" and coffee drinks (latte, barista, mocha), with weaker activation on café/coffeehouse words and on \"Java\" the programming language."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word \"coffee\" and coffee drinks (latte, mocha, barista, coffeehouse) wherever they appear, whether as a beverage, a social activity, or part of a name. Weaker extensions cover cafés and the programming language \"Java\", which is coffee slang."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "Fires on the token right before a period that does not end a sentence, such as the digit before a decimal point, a domain label before '.com', an abbreviation letter ('N.C.', 'U.S.', 'i.e.') or an identifier before a member access ('.classList', '.delete'). It fires more weakly on words before ordinary sentence-ending periods."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.0,
+   "dot_inword": 1.0
+  },
+  "explanation": "Fires on the token just before a period that does not end a sentence: decimal points (0.07, 47.5), domain and URL dots (www., github.com), code member access (target.nodeName, local_params.delete) and abbreviations (N.C., U.S., i.e.). It responds more weakly to tokens before ordinary sentence-final periods."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token right before a period, most strongly when that period is internal rather than sentence-ending: decimal points, domain-name dots, code member access, abbreviations and citation numbering."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-937",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": false,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "Fires on bird names (swan, owl, finch, sparrow, duck, falcon, flamingo, heron, kestrel), including when they appear inside proper names, acronyms, or idioms (Swan Lake, black/green swan, lame duck, surnames such as Swan/Finch/Heron, SWAN). It also fires more weakly on abbreviated month names before a date (Oct., Nov., Aug.)."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-937",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": false,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires on bird names, especially when they appear inside names, idioms or acronyms rather than as literal birds: Swan Lake, black/green swan, lame duck, Falcon Scott, Flamingos, Finch, Kestrel, Heron, Swan as a surname. It responds more weakly to abbreviated month names before a date (Sep, Oct, Nov, Aug, Feb)."
+ },
+ {
+  "arm": "C0_field",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird names, including when they are used as surnames, brand names or acronyms (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron). A separate, weaker response fires on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-192",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to faces of small-to-medium furry mammals (cats, foxes, red pandas, hamster, lynx, meerkat, ferret, a sheltie). It also responds strongly to at least one unrelated object, a red vintage car."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-192",
+  "sample": 2,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces and fur of small-to-medium furry mammals, such as cats, foxes, red pandas, a hamster, a lynx, a meerkat, a ferret and a dog, mostly seen frontally with eyes and ears visible."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-192",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to furry small-to-medium mammals with visible faces (cats, foxes, red pandas, lynx, hamster, ferret, meerkat, a sheltie). It also responds strongly to a red vintage convertible car, which may be a second, unrelated feature held in superposition."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to faces of small furry, cat- or fox-like mammals: domestic cats, foxes, red pandas and lynx are strongest. It extends more weakly to related small furry animals such as a hamster, meerkat, ferret and a fox-like sheltie."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to faces of small, fluffy, pointy-eared mammals, mainly cats and foxes, and extends to similar animals such as red pandas, lynx, a hamster, a meerkat, a ferret and a sheltie."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small furry carnivore-like mammals, most strongly cats and foxes, and more weakly to related animals such as red pandas, lynx, a hamster, a meerkat, a ferret and a fluffy sheltie."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons), and is much stronger when the document is about ships, boats or vessels, so it looks like a punctuation detector gated by maritime context."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) and is strongest when the surrounding document is about ships, boats or maritime topics, so it looks like a nautical-context signal read out at punctuation tokens. Weaker activations appear on list and sentence punctuation in documents with little or no visible maritime content, such as news broadcasting or a radiology report."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.6
+  },
+  "explanation": "The unit fires on clause- and sentence-ending punctuation (commas, periods, semicolons) in documents about ships, boats or other vessels, which reads as a document-level maritime context feature expressed at punctuation positions. It also fires more weakly on punctuation in dense list-like or formal prose that lacks any clear nautical topic."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.55,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.2
+  },
+  "explanation": "The unit fires on punctuation that marks clause and sentence boundaries, mainly commas and periods, in ordinary running prose. It is strongest on commas that close off an introductory or list element in declarative text."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.8,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on punctuation that marks clause and sentence boundaries in running prose, mostly commas and periods, and is strongest on commas that separate list items or clauses."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.8,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation, mainly commas and periods, across many genres of prose, with list commas and abbreviation periods (e.g., \"Capt.\") included."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline or paragraph break, whatever that token is (a number, brace, word, punctuation, or name piece)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline, across code, config files, license headers, prose paragraphs, headings and list items, largely regardless of what the token is."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a newline. This holds regardless of what that token is (a number, word, punctuation, brace or identifier) and regardless of domain."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit responds most strongly to cheese, including the word itself, plural forms, and the names of specific cheeses such as mozzarella and Brie (it even fires on Brie the actress's name). Separately, it responds at moderate strength to C/C++ preprocessor directives (#define, #include)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit's strongest response is to cheese tokens, both the word 'cheese/cheeses' and names of specific cheeses like Mozzarella and Brie. Separately, at mid-range strength, it responds to C/C++ preprocessor directives ('#include', '#define')."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit responds most strongly to the word 'cheese' and cheese names (mozzarella, Brie, cheeses), and at mid strength to C/C++ preprocessor directives ('#define', '#include')."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit responds mainly to the word 'coffee' and coffee drinks (coffee, latte, 'm[ocha]'). It responds more weakly to coffee-related venues and roles (café, coffeehouse, barista) and to 'Java' as a programming language, which likely leaks in through Java's lexical tie to coffee."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit responds mainly to the word 'coffee' and closely related coffee-culture tokens (latte, barista, café/coffeehouse, 'm' likely beginning 'mocha'). It also responds weakly to 'Java' as a programming language, which most likely carries over from Java's lexical association with coffee rather than being an unrelated second feature."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit responds mainly to the word 'coffee' and coffee drinks such as latte and the 'm' of a cup of m[ocha], with weaker activation on coffee venues and roles (café, coffeehouse, barista). It also fires weakly on 'Java' as a programming language, probably because the token is associated with coffee."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that does not end a sentence: decimal points (-0.07, 29.9), dots in domains and filenames (www.aace.co.uk, github.com), member-access dots in code (e.target.classList, params.delete), and abbreviation dots (N.C., R. 47.5, U.S., i.e.). It responds more weakly to tokens before ordinary sentence-ending periods (gaming., have., window.)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.0,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on a token that is immediately followed by a period. It is strongest when that period is internal rather than sentence-ending: decimal points, URL/domain dots, code member access, and abbreviations. Ordinary sentence-final periods give weaker activation."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "Fires on the token right before a period, most strongly when the period is internal rather than sentence-ending: decimal points (0.07, 29.9), URL/domain dots (www., github.com), code member access (li.classList, params.clone) and abbreviations (N.C., U.S., i.e.). Ordinary sentence-final words before a period ('have.', 'gaming.') give weaker activation."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), even when the word is used as a surname, a cmdlet name, an idiom or an acronym. Separately, it responds at moderate strength to abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), even inside surnames, band names, idioms and acronyms like 'lame duck', 'Swan Lake' and 'SWAN'. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C1_super",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit's strongest response is to bird-name words (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), even when they appear as surnames, idioms, code identifiers or acronyms like SWAN. Separately, at moderate strength it fires on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-192",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the furry faces of small to medium mammals, especially cats and foxes, with weaker related responses to other furry mammals such as red pandas, hamsters, a meerkat, a ferret, lynxes and a sheltie."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-192",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the faces of small-to-medium furry mammals, especially cats and foxes, with frontal eyes, ears and fur texture. It extends more weakly to related animals such as red pandas, a hamster, a meerkat, a ferret, a lynx and a dog."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-192",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the furry faces of small to medium mammals, most strongly cats and foxes. It extends more weakly to other furry mammals with similar faces, such as red pandas, a hamster, a meerkat, a ferret, an arctic fox and a sheltie."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Responds to the faces of small furry mammals with pointed ears and fluffy fur, mainly cats and foxes, extending to related animals such as red pandas, lynx, a hamster, a meerkat, a ferret and a fluffy sheltie."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small furry mammals with pointed ears, mostly cats and foxes, extending to related mammals such as red pandas, lynx, hamsters, meerkats and ferrets."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to faces of fluffy, small-to-medium mammals with cat- or fox-like features (domestic cats, foxes, lynx, red pandas), with weaker related responses to other small furry mammals such as a hamster, meerkat, ferret and a fox-like sheltie."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in running prose, most strongly when the document is about ships, boats or maritime topics. Weaker activations occur on the same punctuation in non-maritime, list-heavy or formal text such as news-production lists, legal citations and medical captions."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "Fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) and is strongly modulated by document topic: it is highest in text about ships, boats and other vessels. It reads as a punctuation-position unit that carries a 'maritime/vessel document' context signal."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.4,
+  "by_tag": {
+   "nm_punct": 0.1,
+   "lagged": 0.7
+  },
+  "explanation": "Fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) throughout documents whose topic involves ships, boats or vessels; the document-level nautical context sets how strongly it fires."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.5,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.1
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation, mainly commas and periods that end a clause, list item, or sentence in running prose."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.6,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.3
+  },
+  "explanation": "The unit fires on punctuation that marks clause and sentence boundaries in running prose: commas and periods that close a phrase or clause. Its strongest responses are to commas between list items or between clauses."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "lagged": 0.8,
+   "nm_punct": 0.6
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation, mainly commas and periods, that marks the end of a phrase or sentence in running prose."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the position just before a newline, across code, config files, comments, prose and lists. It likely signals or predicts an upcoming line break."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token right before a newline. This holds across YAML values, code lines ending in `{` or `;`, license and comment lines, headings, and sentences that end a paragraph."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token just before a line break, in any kind of text: code, config, prose, legal text, lists or headings."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on cheese words such as 'cheese', 'cheeses', 'Mozzarella' and 'Brie', and fires at moderate strength on C/C++ preprocessor directive tokens ('#include', '#define')."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-767",
+  "sample": 2,
+  "class": null,
+  "class_ok": false,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": null
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit's strongest response is to the word 'cheese' and cheese names (cheese/cheeses, mozzarella, cottage/cream cheese), and it also fires on 'Brie' as a surname. Separately, it responds at moderate strength to C/C++ preprocessor directives (#include, #define)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Responds to the word 'coffee' and closely related coffee-drink and coffee-shop terms (latte, barista, café, coffeehouse). It also responds weakly to 'Java', plausibly through the coffee sense of that word."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word 'coffee' and coffee drinks (latte, mocha, barista), extending more weakly to cafés/coffeehouses and weakest of all to 'Java', which is itself a slang name for coffee."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Responds to coffee as a drink and setting: the word \"coffee\" and coffee drinks (latte, barista, mocha), with weaker spread to cafés/coffeehouses. It also fires faintly on \"Java\" as a programming language, which is likely a coffee-associated token (Java = coffee) rather than a separate job."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that sits inside a token sequence and does not end a sentence. This covers decimal points (-0.07, 47.5, 29.9), domain dots (www., github.com), code member access (classList., params.), and abbreviations (N.C., U.S., i.e., A. actinomycetemcomitans)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that is likely not a sentence boundary: decimal points, URL/domain dots, code member-access dots, and abbreviation or initial dots (N.C., U.S., i.e., A.)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token right before a period that does not end a sentence: a decimal point (-0.07, 29.9), a domain or URL dot (www., github.com), a code member-access dot (e.target.classList, local_params.delete), or an abbreviation dot (N.C., R. 47.5, i.e., U.S.). It fires more weakly on ordinary sentence-final periods."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens, whatever the word means in context: real birds (sparrow, owls), surnames (Finch, Swan, Heron, Falcon), idioms (lame duck, green swan), bands (Flamingos), code identifiers (Kestrel) and even the acronym SWAN. A separate, weaker response appears on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), including uses outside a literal bird sense such as surnames, idioms, band names and acronyms. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ },
+ {
+  "arm": "C2_clean",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron) whatever the sense, including idioms, surnames, band names and acronyms. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-192",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the faces of furry small and medium mammals, especially cats and foxes, with related animals such as red pandas, hamsters, lynx, meerkats and ferrets. It also fires strongly on at least one unrelated object, a dark-red vintage convertible car."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-192",
+  "sample": 2,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of furry small-to-medium mammals seen close up, especially cats and foxes, and also red pandas, hamsters, meerkats, ferrets, lynx and fluffy dogs. The strongest cases have pointed ears, eyes and whiskered muzzles with soft fur texture."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-192",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to the faces of small to medium furry mammals seen from the front, such as cats, foxes, red pandas, hamsters, meerkats and ferrets, with the eyes, snout and fur texture prominent. It shows a weaker spillover to other subjects, as in the red car."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small, furry, cat-like or fox-like mammals: domestic cats, foxes, red pandas, lynx, hamsters, meerkats, ferrets, and fox-faced dogs such as a sheltie. It is suppressed by flat-faced or heavy-jowled dogs (pugs, mastiffs, boxers), by birds, and by other non-feline subjects."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to the faces of small furry carnivores and similar mammals: cats, foxes, red pandas, lynx, meerkats, ferrets and hamsters, typically with pointed ears and fluffy fur. It fires most for cats and foxes, and less for related small furry animals and a fluffy sheltie."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to furry small and medium carnivore-like mammals with pointed, cat- or fox-like faces: domestic cats, foxes, red pandas, lynx, meerkats, ferrets and hamsters, especially when the fluffy face is visible. It reaches some fluffy dogs (sheltie) and, unexpectedly, a red vintage convertible (#5)."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on sentence- and clause-boundary punctuation (commas, periods, semicolons) in documents whose earlier context mentions ships, boats or other vessels. It responds more weakly when the earlier context contains only a nautical-adjacent word such as 'anchor' (a company name or SEO 'anchor text') or 'vessels' in another sense (blood vessels), or when it is just long running prose."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas, periods, semicolons) in documents whose earlier context contains ship or boat vocabulary such as ship, boat, vessel, anchor, crew or sailing. It acts like a nautical-context flag that is read out at punctuation, not on the nautical words themselves."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.6
+  },
+  "explanation": "The unit fires on clause- and list-boundary punctuation (commas, periods, semicolons) in running prose. It fires most strongly when the document has a ship/boat/maritime theme (even a loose one such as the word 'anchor'), and more weakly on the same punctuation in documents with no such theme."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on punctuation tokens, mainly commas and periods, that end a clause, sentence or list item in ordinary running prose. It is strongest in dense, declarative expository or narrative text such as marketing copy, news, policy text and complaints."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "lagged": 0.8,
+   "nm_punct": 0.6
+  },
+  "explanation": "Fires on punctuation tokens, mainly commas and sentence-final periods, that mark clause, list or sentence boundaries in running prose. It is strongest on commas inside lists or before a following clause, and weaker in plain expository or catalog-style text."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.7,
+   "nm_punct": 0.6
+  },
+  "explanation": "The unit fires on punctuation tokens, mainly commas and sentence-final periods (including abbreviation periods such as \"Capt.\"), that mark clause, list-item or sentence boundaries in ordinary running prose."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token immediately before a newline, whatever that token is (punctuation, word, number, brace). It is strongest in code, config and license headers, and somewhat weaker at line ends in prose, lists and headings."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token right before a newline, whatever that token is. It fires hardest in structured or code-like text (config files, license headers, code signatures, CSS, doc comments) and moderately on line-final tokens in lists, headings and prose paragraph ends."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the token right before a newline, whatever that token is. It fires most strongly in code, config files and structured or formatted text, and more weakly at the ends of prose lines or paragraphs."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (cheese/cheeses, Mozzarella, Brie, cottage/cream cheese), and it fires at mid strength on C/C++ preprocessor directives, both the '#' and the 'define'/'include' token. Brie fires even when it is used as a person's name (Alison Brie)."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word \"cheese\" or a cheese name (cheese, cheeses, Mozzarella, Brie), including when \"Brie\" is a person's name. It fires moderately on C/C++ preprocessor directives, on both the '#' and the 'define'/'include' token."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on words for cheese, both the word 'cheese/cheeses' and cheese names such as Mozzarella and Brie, including the Brie token when it is used as a person's name. Separately, it fires at about 60% strength on C/C++ preprocessor directives, on both the '#' token and the 'define'/'include' token."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit fires on the word 'coffee' and on coffee drinks and coffee-related terms such as latte, barista, the 'm' of mocha/macchiato and coffeehouse, with the token for coffee itself firing strongest. It responds more weakly to café/cafe/cafes and only faintly (about 4) to 'Java', most likely through Java's association with coffee."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word 'coffee' and coffee drinks (latte, mocha, barista), with moderate activation on café/coffeehouse words. Weaker activation appears on 'Java' as a programming language, probably through Java's association with coffee."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "The unit fires on words for coffee and coffee drinks: 'coffee'/'Coffee' and 'latte' reach the top of the range, with 'barista' and the start of 'mocha' also high. It responds more weakly to café/coffeehouse words ('Cafe', 'Café', 'cafes', 'Coffeehouse'), and weakest of all to 'Java' used as the name of the programming language."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that sits inside a token string rather than ending a sentence: decimals (-0.07, 29.9), domain names (www., github.com), code member access (target.nodeName, params.delete), abbreviations and initials (N.C., U.S., i.e., A. actinomycetemcomitans), and run-together text ('recognized.The'). Ordinary sentence-final periods ('have.', 'gaming.') give weaker activation."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token that comes directly before a period '.', most strongly when that period is internal rather than sentence-final: decimal points (0.07, 29.9), domain or file-name dots (www., github.com), code member-access dots (e.target, local_params.delete) and abbreviation dots (N.C., R. 47.5, U.S., i.e.). Tokens before ordinary sentence-ending periods activate more weakly, though still noticeably."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.9,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.7142857142857143,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token immediately before a period '.', and fires hardest when that period is internal to a larger token sequence rather than ending a sentence. Typical strong cases are decimal points (0.07, 29.9), URL or domain dots (www., github.com), code member access (target.nodeName, params.delete) and abbreviation dots (N.C., U.S., R. 47.5)."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The strongest trigger is the tokens of a bird name (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether the word refers to the bird or is reused as a surname, title, idiom or acronym. A separate, weaker trigger (about 5-7) is abbreviated month names in dates, such as Sep, Oct., Nov., Aug., Feb., Sept."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on tokens that spell a bird name, whether the word means the bird or not: surnames (Finch, Swan, Heron, Falcon), idioms (lame duck, green swan), titles (Swan Lake), band names (Flamingos), function names (Kestrel) and acronyms (SWAN). Separately and more weakly (about 5-7), it fires on abbreviated month names written before a day number, such as \"Oct. 13\", \"Aug. 10\" and \"23 Sep 16\"."
+ },
+ {
+  "arm": "C3_naive",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on tokens that spell bird names (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whatever the word means in context: surnames, acronyms, idioms, band names and code identifiers all count. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-192",
+  "sample": 1,
+  "class": "one",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Responds to the front-facing face of a small or medium furry mammal, especially cats, foxes, red pandas and similar animals with fur, two forward eyes, a snout and upright ears, likely reacting to a fur-textured face with an eyes-and-nose layout."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-192",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Fires on the faces of small furry mammals seen from the front: domestic cats, foxes, red pandas, hamsters, ferrets, meerkats, lynx. The strongest responses are to forward-facing furry heads with pointed ears and visible eyes."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-192",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 0.8,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds mainly to the faces of small furry mammals, typically seen from the front with eyes and ears visible: foxes, cats, red pandas, a hamster, a meerkat, a ferret, lynxes and a fluffy dog. One unexplained exception is a maroon vintage convertible at activation 9, which may be picking up the shared reddish-brown colour or a front 'face-like' grille and headlights."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-300",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds to frontal faces of small, furry, pointy-eared mammals: cats, foxes, red pandas and lynx most strongly, with hamsters, meerkats and ferrets as weaker related cases. Images built around other things push it negative, especially flat-faced or droopy-eared dogs (pugs, boxers, mastiffs), birds and hairless or smooth-skinned animals."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-300",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Responds to faces of small, furry, pointy-eared mammals such as cats, foxes, red pandas, lynx, ferrets and hamsters, with fluffy fur texture and alert upright ears. It is suppressed by flat-faced, short-haired dogs (pugs, mastiffs, boxers) and by birds."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-300",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "Fires on the faces of small to medium furry mammals with pointed or upright ears and soft fur, such as foxes, cats, red pandas, lynx, hamsters, meerkats and ferrets, often looking toward the camera; weaker offshoots include fluffy dogs like a sheltie."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-317",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "Fires on sentence and list punctuation (commas, periods, semicolons) in documents whose earlier context involves ships, boats or other nautical and maritime themes. It seems to carry a document-level 'ship/vessel/anchor' topic signal that it expresses on punctuation tokens rather than on the nautical words themselves."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-317",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause and list punctuation (commas, periods, semicolons) in documents about ships, boats and other maritime vessels. It appears to carry a 'ship/vessel topic' signal at each sentence or list boundary, not on the topic words themselves."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-317",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.85,
+  "by_tag": {
+   "nm_punct": 1.0,
+   "lagged": 0.7
+  },
+  "explanation": "The unit fires on clause- and sentence-ending punctuation (commas, periods, semicolons) in documents that have a ship, boat or nautical context, apparently carrying that topic forward at each boundary. It does not fire on the nautical words themselves."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas and periods) in running prose. It responds most strongly to commas that close a clause or list item partway through a sentence, and somewhat less to sentence-final periods."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.8,
+   "nm_punct": 0.5
+  },
+  "explanation": "Fires on commas and periods in running prose, the clause and sentence boundary punctuation, and tends to stay active on most punctuation marks throughout a passage rather than on content words."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on clause- and sentence-boundary punctuation (commas and periods) in running prose. It is strongest on commas that separate list items or clauses (e.g. 'personal customer service«,» and', 'Pakistan«,» but')."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-570",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.2,
+   "nm_midline": 1.0,
+   "numbered": 0.8
+  },
+  "explanation": "Fires on the last token of a line, the position just before a newline. It is strongest in structured or boilerplate text such as code, YAML/config, license headers, doc comments and method signatures, where a line break is highly predictable."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-570",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "bullet": 1.0,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "The unit fires on the last token of a line, the position just before a newline, regardless of what kind of token sits there (a value, brace, punctuation, word or name piece) or what kind of text it is."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-570",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "bullet": 0.8,
+   "nm_plain_line_end": 0.0,
+   "nm_midline": 1.0,
+   "numbered": 1.0
+  },
+  "explanation": "Fires on the last token of a line, the position just before a line break. It is strongest in structured or boilerplate text such as code, config/YAML, license headers, method signatures and CSS selectors, and weaker at line ends in lists, headings and prose paragraphs."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-767",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires mainly on the word 'cheese' and on cheese names (cheese, cheeses, Mozzarella, Brie, cream/cottage cheese), and separately fires moderately on C/C++ preprocessor directive tokens ('#' plus 'include' or 'define')."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-767",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit's main job is the word 'cheese' and cheese names (cheese, cheeses, Mozzarella, Brie), firing on the cheese token itself in food contexts. Separately, it fires at moderate strength on C/C++ preprocessor directives (the '#' and 'include'/'define' tokens)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-767",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "cheese": 1.0,
+   "cpp": 1.0,
+   "nm_ccode": 1.0,
+   "nm_food": 1.0
+  },
+  "explanation": "The unit fires most strongly on the word 'cheese' and on cheese names (Mozzarella, Brie, 'cheeses'), including the surface token 'Brie' when it is the actress's name. Separately, it fires at mid strength on C/C++ preprocessor directives ('#' plus 'include'/'define')."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-863",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 0.75,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word 'coffee' and closely related coffee-drink tokens such as latte, barista and the 'm' starting a mocha/macchiato, peaking on 'coffee' itself in any context. It is weaker on café/coffeehouse words and weakest on 'Java', which links to coffee through the name."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-863",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 0.6666666666666666,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word 'coffee' and coffee-drink tokens such as latte, coffee house and barista, with weaker spread to café/cafe names and a faint response to 'Java' (the programming language, likely via the coffee sense of Java)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-863",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "coffee": 1.0,
+   "java": 1.0,
+   "cafe": 1.0,
+   "nm_drink": 1.0,
+   "nm_lang": 1.0,
+   "any": 1.0
+  },
+  "explanation": "Fires on the word 'coffee' and closely related coffee-drink terms (latte, barista, mocha), with weaker activation on café/coffeehouse words and on 'Java' as a programming language, which is a coffee synonym."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-892",
+  "sample": 1,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.0,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period, and fires most strongly when that period is internal rather than sentence-ending: decimal points (-0.07, 29.9), URL and domain dots (www., github.com), code member access (target.nodeName, params.delete), and abbreviations (N.C., U.S., i.e., R. 47.5). Tokens before an ordinary sentence-final period fire more weakly."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-892",
+  "sample": 2,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "The unit fires on the token just before a period that is likely to be an internal, non-sentence-ending dot: a decimal point, a domain or URL dot, a code member access, an abbreviation, or a period with no following space. It peaks where the next character is '.' joined directly to more text."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-892",
+  "sample": 3,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.95,
+  "by_tag": {
+   "any": 1.0,
+   "dot_abbrev": 1.0,
+   "nm_sentence_end": 0.8571428571428571,
+   "dot_inword": 1.0
+  },
+  "explanation": "Fires on the token just before a period that does not end a sentence, where the dot is followed directly by more characters: decimal points (-0.07, 29.9), domain and path dots (www.aace.co.uk, github.com), code member access (e.target.classList), and abbreviation dots (N.C., U.S., i.e., A.)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires mainly on bird-name tokens, even when the word is used as a surname, title or acronym (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron). Separately, it fires moderately on abbreviated month names before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires mainly on bird names, whatever role they play: literal birds, surnames (Finch, Swan, Heron), product or band names (Kestrel, Flamingos), idioms (lame duck, green swan), and even acronyms that spell a bird (SWAN). A separate, weaker response fires on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "C4_informed",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ }
+]

@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-863",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the word \\\"coffee\\\" and coffee drinks (latte, barista, mocha), with weaker activation on café/coffeehouse words and on \\\"Java\\\" the programming language.\",\n \"evidence\": \"Every top example peaks on \\\"coffee\\\" or a coffee drink (\\\"latte\\\" 10, \\\"Barista\\\" 7, \\\"m\\\" of likely \\\"mocha\\\" 9), and this holds even in technical text such as \\\"coffee house\\\" and \\\"coffee maker\\\". Mid-range examples are \\\"Cafe/Café\\\" (6-7) and \\\"Coffeehouse\\\", and \\\"Java\\\" in programming contexts reaches only 4, which looks like a weak spillover from coffee via the shared name.\",\n \"missing_data\": \"Activations on tea, other beverages, and the word \\\"Java\\\" referring to the island or used as slang for coffee would show whether this is specific to coffee or a broader drinks/café concept.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.0073798,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3059,
+    "output_tokens": 338,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 338,
+      "cache_read_input_tokens": 3059,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4962
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0422052,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2910,
+    "cache_read_input_tokens": 2687,
+    "output_tokens": 550,
+    "output_tokens_details": {
+     "thinking_tokens": 260
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2910,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 550,
+      "cache_read_input_tokens": 2687,
+      "cache_creation_input_tokens": 2910,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2910
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6357
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the word \"coffee\" and coffee drinks (latte, barista, mocha), with weaker activation on café/coffeehouse words and on \"Java\" the programming language.",
+  "evidence": "Every top example peaks on \"coffee\" or a coffee drink (\"latte\" 10, \"Barista\" 7, \"m\" of likely \"mocha\" 9), and this holds even in technical text such as \"coffee house\" and \"coffee maker\". Mid-range examples are \"Cafe/Café\" (6-7) and \"Coffeehouse\", and \"Java\" in programming contexts reaches only 4, which looks like a weak spillover from coffee via the shared name.",
+  "missing_data": "Activations on tea, other beverages, and the word \"Java\" referring to the island or used as slang for coffee would show whether this is specific to coffee or a broader drinks/café concept.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-863",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on words for coffee and coffee drinks: 'coffee'/'Coffee' and 'latte' reach the top of the range, with 'barista' and the start of 'mocha' also high. It responds more weakly to café/coffeehouse words ('Cafe', 'Café', 'cafes', 'Coffeehouse'), and weakest of all to 'Java' used as the name of the programming language.\",\n \"evidence\": \"Every top example peaks on 'coffee' (8-10) or 'latte' (10), and this holds even in technical contexts such as 'coffee house' WLAN and 'coffee maker' amplifiers; 'Barista' scores 7, 'Cafe'/'Café' score 6-7, and the programming-language 'Java' consistently scores about 4. The Java hits look like a semantic spillover from java as slang for coffee, and nearby non-coffee tokens such as tea, Python and Ruby stay near zero.\",\n \"missing_data\": \"Useful tests would be other coffee terms ('espresso', 'cappuccino', 'beans', 'brew', 'Starbucks', 'Nescafe'), 'Java' meaning the island or coffee slang, other beverages like tea or cocoa, and 'café' meaning a generic restaurant. These would show whether the unit encodes coffee as a concept or a broader 'café/beverage' category.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.010560599999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3863,
+    "output_tokens": 489,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 489,
+      "cache_read_input_tokens": 3863,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8452
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0459548,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3061,
+    "cache_read_input_tokens": 3491,
+    "output_tokens": 510,
+    "output_tokens_details": {
+     "thinking_tokens": 220
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3061,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 510,
+      "cache_read_input_tokens": 3491,
+      "cache_creation_input_tokens": 3061,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3061
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5838
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on words for coffee and coffee drinks: 'coffee'/'Coffee' and 'latte' reach the top of the range, with 'barista' and the start of 'mocha' also high. It responds more weakly to café/coffeehouse words ('Cafe', 'Café', 'cafes', 'Coffeehouse'), and weakest of all to 'Java' used as the name of the programming language.",
+  "evidence": "Every top example peaks on 'coffee' (8-10) or 'latte' (10), and this holds even in technical contexts such as 'coffee house' WLAN and 'coffee maker' amplifiers; 'Barista' scores 7, 'Cafe'/'Café' score 6-7, and the programming-language 'Java' consistently scores about 4. The Java hits look like a semantic spillover from java as slang for coffee, and nearby non-coffee tokens such as tea, Python and Ruby stay near zero.",
+  "missing_data": "Useful tests would be other coffee terms ('espresso', 'cappuccino', 'beans', 'brew', 'Starbucks', 'Nescafe'), 'Java' meaning the island or coffee slang, other beverages like tea or cocoa, and 'café' meaning a generic restaurant. These would show whether the unit encodes coffee as a concept or a broader 'café/beverage' category.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

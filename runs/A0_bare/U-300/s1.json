@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-300",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to faces of small furry mammals with pointed or upright ears and fluffy fur, mainly cats and foxes, and more weakly to similar animals such as red pandas, hamsters, meerkats, ferrets and a fluffy sheltie.\",\n \"evidence\": \"Every top-20 image except one (#5, a red vintage car) shows a cat, a fox or a fox-like small mammal, and cats and foxes have the highest values. The most negative images are dominated by short-haired, flat-faced or droopy-eared dogs (pugs, mastiffs, a boxer, a dachshund) plus birds, which suggests the unit separates fluffy, pointy-eared faces from smooth, flat-faced ones.\",\n \"missing_data\": \"Activations on other fluffy pointy-eared dogs (such as huskies or spitz breeds) and on more red cars would show whether the car is noise or a real color/texture feature.\",\n \"confidence\": 0.72}",
+   "cost_usd": 0.037488,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3835,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 340,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3835,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 340,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3835,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3835
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5912
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.092324,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5806,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 419,
+    "output_tokens_details": {
+     "thinking_tokens": 129
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5806,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 419,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5806,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5806
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5571
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to faces of small furry mammals with pointed or upright ears and fluffy fur, mainly cats and foxes, and more weakly to similar animals such as red pandas, hamsters, meerkats, ferrets and a fluffy sheltie.",
+  "evidence": "Every top-20 image except one (#5, a red vintage car) shows a cat, a fox or a fox-like small mammal, and cats and foxes have the highest values. The most negative images are dominated by short-haired, flat-faced or droopy-eared dogs (pugs, mastiffs, a boxer, a dachshund) plus birds, which suggests the unit separates fluffy, pointy-eared faces from smooth, flat-faced ones.",
+  "missing_data": "Activations on other fluffy pointy-eared dogs (such as huskies or spitz breeds) and on more red cars would show whether the car is noise or a real color/texture feature.",
+  "confidence": 0.72
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

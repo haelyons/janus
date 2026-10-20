@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-317",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on clause- and sentence-ending punctuation (commas, periods, semicolons) in documents that have a ship, boat or nautical context, apparently carrying that topic forward at each boundary. It does not fire on the nautical words themselves.\",\n \"evidence\": \"Nearly every high-activation window is about boats or ships (the SeaArk jon boats at up to 4.19, power ships, a cruise-ship casino, Sweden's listed ships, flying boats, V.Ships), and even the outliers contain 'anchor' (Anchor Electronics, 'anchor matter content'). In all of them the activation sits on , . ; and words like 'boat' or 'ship' score only about 0.1; the weaker mid-range examples also involve ships (Stargate vessel, pirate ship, sunken rig, cargo ship), except the medical and news-broadcasting texts.\",\n \"missing_data\": \"Activations on punctuation in long non-maritime documents, compared with maritime text that has little punctuation, would show whether the topic gate is real or the unit is mainly a generic list/clause punctuation detector.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.0804724,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8021,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 805,
+    "output_tokens_details": {
+     "thinking_tokens": 406
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8021,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 805,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 8021,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8021
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9900
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.164913,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8304,
+    "cache_read_input_tokens": 9003,
+    "output_tokens": 810,
+    "output_tokens_details": {
+     "thinking_tokens": 520
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8304,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 810,
+      "cache_read_input_tokens": 9003,
+      "cache_creation_input_tokens": 8304,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8304
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9385
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on clause- and sentence-ending punctuation (commas, periods, semicolons) in documents that have a ship, boat or nautical context, apparently carrying that topic forward at each boundary. It does not fire on the nautical words themselves.",
+  "evidence": "Nearly every high-activation window is about boats or ships (the SeaArk jon boats at up to 4.19, power ships, a cruise-ship casino, Sweden's listed ships, flying boats, V.Ships), and even the outliers contain 'anchor' (Anchor Electronics, 'anchor matter content'). In all of them the activation sits on , . ; and words like 'boat' or 'ship' score only about 0.1; the weaker mid-range examples also involve ships (Stargate vessel, pirate ship, sunken rig, cargo ship), except the medical and news-broadcasting texts.",
+  "missing_data": "Activations on punctuation in long non-maritime documents, compared with maritime text that has little punctuation, would show whether the topic gate is real or the unit is mainly a generic list/clause punctuation detector.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

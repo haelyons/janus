@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-570",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the last token of a line, the token just before a newline or paragraph break, across code, config files, prose and lists.\",\n \"evidence\": \"Every marked token ends a line: YAML values ('1', '0'), license comment lines ('software', ','), method signatures ending in '{' or 'aCoder', 'Book' before a blank line, sentence-final '.' before a paragraph break, and surnames ending list entries. Mid-line tokens of the same kind stay unmarked.\",\n \"missing_data\": \"Activations on tokens with the newlines stripped, or on the newline token itself, would show whether it tracks line position or predicts a coming newline.\",\n \"confidence\": 0.82}\n```",
+   "cost_usd": 0.030364000000000002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2792,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 401,
+    "output_tokens_details": {
+     "thinking_tokens": 154
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2792,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 401,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2792,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2792
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6717
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.06467439999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2508,
+    "cache_read_input_tokens": 2792,
+    "output_tokens": 684,
+    "output_tokens_details": {
+     "thinking_tokens": 394
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2508,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 684,
+      "cache_read_input_tokens": 2792,
+      "cache_creation_input_tokens": 2508,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2508
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8278
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on the last token of a line, the token just before a newline or paragraph break, across code, config files, prose and lists.",
+  "evidence": "Every marked token ends a line: YAML values ('1', '0'), license comment lines ('software', ','), method signatures ending in '{' or 'aCoder', 'Book' before a blank line, sentence-final '.' before a paragraph break, and surnames ending list entries. Mid-line tokens of the same kind stay unmarked.",
+  "missing_data": "Activations on tokens with the newlines stripped, or on the newline token itself, would show whether it tracks line position or predicts a coming newline.",
+  "confidence": 0.82
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

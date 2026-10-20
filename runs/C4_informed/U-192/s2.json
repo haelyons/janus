@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-192",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Fires on the faces of small furry mammals seen from the front: domestic cats, foxes, red pandas, hamsters, ferrets, meerkats, lynx. The strongest responses are to forward-facing furry heads with pointed ears and visible eyes.\", \"evidence\": \"19 of the top 20 are furry small or medium mammals, most of them close-up and facing the camera, and they range from a fox (10) through cats and red pandas (9) to a sheltie, lynx, meerkat and ferret (7). The one outlier is a red vintage Mercedes convertible (9), which may be picking up a frontal 'face' layout and a reddish-brown color like the fox and red panda.\", \"missing_data\": \"Lower-activation and negative examples, plus probe images such as fur texture without a face, or cars and other non-animal objects seen from the front, to explain the car outlier.\", \"confidence\": 0.75}",
+   "cost_usd": 0.006946,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3290,
+    "output_tokens": 314,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 314,
+      "cache_read_input_tokens": 3290,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4811
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0469744,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4253,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4253,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 4253,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4253
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 14378
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the faces of small furry mammals seen from the front: domestic cats, foxes, red pandas, hamsters, ferrets, meerkats, lynx. The strongest responses are to forward-facing furry heads with pointed ears and visible eyes.",
+  "evidence": "19 of the top 20 are furry small or medium mammals, most of them close-up and facing the camera, and they range from a fox (10) through cats and red pandas (9) to a sheltie, lynx, meerkat and ferret (7). The one outlier is a red vintage Mercedes convertible (9), which may be picking up a frontal 'face' layout and a reddish-brown color like the fox and red panda.",
+  "missing_data": "Lower-activation and negative examples, plus probe images such as fur texture without a face, or cars and other non-animal objects seen from the front, to explain the car outlier.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

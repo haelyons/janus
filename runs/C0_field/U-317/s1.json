@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-317",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on sentence and clause punctuation (periods, commas, semicolons), and fires most strongly when the document is about ships, boats or other maritime topics. It fires more weakly on similar punctuation in unrelated documents.\",\n \"evidence\": \"Nearly all marked tokens are '.', ',' or ';', and the top examples are about jon boats, powerships, a cruise ship, Swedish historic ships, flying boats and vessel crews; even the 'anchor' examples (anchor-electronics, anchor text) share the theme. Non-maritime texts (TV news, the medical CT report) reach only about 1.4–2.8.\",\n \"missing_data\": \"Activations on punctuation in matched maritime versus non-maritime texts, plus some low-activation and random-sample examples, to confirm the topic gating.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.077356,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8111,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 623,
+    "output_tokens_details": {
+     "thinking_tokens": 314
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8111,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 623,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 8111,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8111
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 12056
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.15922219999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8122,
+    "cache_read_input_tokens": 8111,
+    "output_tokens": 763,
+    "output_tokens_details": {
+     "thinking_tokens": 473
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8122,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 763,
+      "cache_read_input_tokens": 8111,
+      "cache_creation_input_tokens": 8122,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8122
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 12506
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on sentence and clause punctuation (periods, commas, semicolons), and fires most strongly when the document is about ships, boats or other maritime topics. It fires more weakly on similar punctuation in unrelated documents.",
+  "evidence": "Nearly all marked tokens are '.', ',' or ';', and the top examples are about jon boats, powerships, a cruise ship, Swedish historic ships, flying boats and vessel crews; even the 'anchor' examples (anchor-electronics, anchor text) share the theme. Non-maritime texts (TV news, the medical CT report) reach only about 1.4–2.8.",
+  "missing_data": "Activations on punctuation in matched maritime versus non-maritime texts, plus some low-activation and random-sample examples, to confirm the topic gating.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C1_super",
+ "card": "U-570",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "722b6214672fb823e3decbd06a125c71590d584e31d93d56517a9b99fb4b6462",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the last token of a line, the token just before a newline. This holds regardless of what that token is (a number, word, punctuation, brace or identifier) and regardless of domain.\",\n \"evidence\": \"Every marked token in both the strong and middle examples sits at a line end: YAML values, license lines, `{` after method signatures and CSS selectors, `;` in Obj-C, sentence-final periods before paragraph breaks, names in results lists, and `}` after section anchors. Tokens in the middle of lines stay unmarked even when identical tokens appear at line ends.\",\n \"missing_data\": \"Activations on line-final tokens across many full documents, to check whether it fires on all of them or only some (e.g., code/structured text vs. prose), and whether the strength depends on what follows (newline vs. blank line).\",\n \"confidence\": 0.85}\n```",
+   "cost_usd": 0.011205,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2885,
+    "output_tokens": 531,
+    "output_tokens_details": {
+     "thinking_tokens": 231
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 531,
+      "cache_read_input_tokens": 2885,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6746
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.045294,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2638,
+    "cache_read_input_tokens": 2885,
+    "output_tokens": 620,
+    "output_tokens_details": {
+     "thinking_tokens": 330
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2638,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 620,
+      "cache_read_input_tokens": 2885,
+      "cache_creation_input_tokens": 2638,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2638
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5935
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on the last token of a line, the token just before a newline. This holds regardless of what that token is (a number, word, punctuation, brace or identifier) and regardless of domain.",
+  "evidence": "Every marked token in both the strong and middle examples sits at a line end: YAML values, license lines, `{` after method signatures and CSS selectors, `;` in Obj-C, sentence-final periods before paragraph breaks, names in results lists, and `}` after section anchors. Tokens in the middle of lines stay unmarked even when identical tokens appear at line ends.",
+  "missing_data": "Activations on line-final tokens across many full documents, to check whether it fires on all of them or only some (e.g., code/structured text vs. prose), and whether the strength depends on what follows (newline vs. blank line).",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-892",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the token just before a period that sits inside a token sequence rather than ending a sentence: decimal points, URL/domain dots, file names, abbreviations like N.C. and U.S., citation numbers, and code member access such as obj.method. It fires more weakly on tokens before ordinary sentence-ending periods.\",\n \"evidence\": \"The top examples all mark the token preceding an internal dot, e.g. «0».07, «www».«co».uk, «params».delete, «N».C., «47».«5».4, and 'recognized.The' with no space after the period. Weaker activations appear before sentence-final periods ('have.', 'gaming.') and before abbreviation periods ('i.e.', 'etc.').\",\n \"missing_data\": \"Activations at the period token itself and on the following token, plus counterexamples of digits or words not followed by a period, would show whether the unit predicts an upcoming '.' or encodes the dot context.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.034356,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3081,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 485,
+    "output_tokens_details": {
+     "thinking_tokens": 139
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3081,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 485,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3081,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3081
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6429
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0700002,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2840,
+    "cache_read_input_tokens": 3081,
+    "output_tokens": 615,
+    "output_tokens_details": {
+     "thinking_tokens": 325
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2840,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 615,
+      "cache_read_input_tokens": 3081,
+      "cache_creation_input_tokens": 2840,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2840
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6645
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on the token just before a period that sits inside a token sequence rather than ending a sentence: decimal points, URL/domain dots, file names, abbreviations like N.C. and U.S., citation numbers, and code member access such as obj.method. It fires more weakly on tokens before ordinary sentence-ending periods.",
+  "evidence": "The top examples all mark the token preceding an internal dot, e.g. «0».07, «www».«co».uk, «params».delete, «N».C., «47».«5».4, and 'recognized.The' with no space after the period. Weaker activations appear before sentence-final periods ('have.', 'gaming.') and before abbreviation periods ('i.e.', 'etc.').",
+  "missing_data": "Activations at the period token itself and on the following token, plus counterexamples of digits or words not followed by a period, would show whether the unit predicts an upcoming '.' or encodes the dot context.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

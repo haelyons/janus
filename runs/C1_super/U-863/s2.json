@@ -1,0 +1,180 @@
+{
+ "arm": "C1_super",
+ "card": "U-863",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "722b6214672fb823e3decbd06a125c71590d584e31d93d56517a9b99fb4b6462",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the word 'coffee' and closely related coffee-culture tokens (latte, barista, café/coffeehouse, 'm' likely beginning 'mocha'). It also responds weakly to 'Java' as a programming language, which most likely carries over from Java's lexical association with coffee rather than being an unrelated second feature.\",\n \"evidence\": \"All top examples (8-10) are 'coffee' or coffee drinks across many contexts (dialogue, travel, wireless networking, appliances), and the mid-range examples are cafés and lattes (6-9). Java in code contexts appears consistently but only at around 4.\",\n \"missing_data\": \"Activations on non-programming 'Java' (the island, Java coffee) and on 'tea' or other beverages would show whether Java is a coffee extension and how narrow the coffee feature is.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.0093064,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3092,
+    "output_tokens": 434,
+    "output_tokens_details": {
+     "thinking_tokens": 114
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 434,
+      "cache_read_input_tokens": 3092,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7663
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.040112800000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2635,
+    "cache_read_input_tokens": 3092,
+    "output_tokens": 455,
+    "output_tokens_details": {
+     "thinking_tokens": 165
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2635,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 455,
+      "cache_read_input_tokens": 3092,
+      "cache_creation_input_tokens": 2635,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2635
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7952
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the word 'coffee' and closely related coffee-culture tokens (latte, barista, café/coffeehouse, 'm' likely beginning 'mocha'). It also responds weakly to 'Java' as a programming language, which most likely carries over from Java's lexical association with coffee rather than being an unrelated second feature.",
+  "evidence": "All top examples (8-10) are 'coffee' or coffee drinks across many contexts (dialogue, travel, wireless networking, appliances), and the mid-range examples are cafés and lattes (6-9). Java in code contexts appears consistently but only at around 4.",
+  "missing_data": "Activations on non-programming 'Java' (the island, Java coffee) and on 'tea' or other beverages would show whether Java is a coffee extension and how narrow the coffee feature is.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

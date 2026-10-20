@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-192",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to faces of small-to-medium furry mammals, especially cats, foxes and red pandas, often looking toward the camera. It also responds strongly to an unrelated object, a vintage red convertible car.\",\n \"evidence\": \"19 of the top 20 images are furry mammal faces (fox at 10; cats, red pandas, hamster, lynx, meerkat, ferret, arctic fox, sheltie at 7-9). Image #5 is a dark-red Mercedes roadster at activation 9, with no animal present.\",\n \"missing_data\": \"More top images beyond rank 20 and other car images would show whether vehicles are a real second concept or a one-off, for example one driven by red-brown color shared with fox and red-panda fur.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.012227599999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2398,
+    "output_tokens": 587,
+    "output_tokens_details": {
+     "thinking_tokens": 303
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 587,
+      "cache_read_input_tokens": 2398,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8864
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.057711599999999995,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4617,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 427,
+    "output_tokens_details": {
+     "thinking_tokens": 137
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4617,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 427,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4617,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4617
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7005
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to faces of small-to-medium furry mammals, especially cats, foxes and red pandas, often looking toward the camera. It also responds strongly to an unrelated object, a vintage red convertible car.",
+  "evidence": "19 of the top 20 images are furry mammal faces (fox at 10; cats, red pandas, hamster, lynx, meerkat, ferret, arctic fox, sheltie at 7-9). Image #5 is a dark-red Mercedes roadster at activation 9, with no animal present.",
+  "missing_data": "More top images beyond rank 20 and other car images would show whether vehicles are a real second concept or a one-off, for example one driven by red-brown color shared with fox and red-panda fur.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

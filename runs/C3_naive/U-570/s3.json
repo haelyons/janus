@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-570",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"The unit fires on the last token of a line, the token right before a newline, whatever that token is. It fires most strongly in code, config files and structured or formatted text, and more weakly at the ends of prose lines or paragraphs.\",\n \"evidence\": \"Every marked token sits at a line end and the tokens are very varied: ' 1' and ' 0' in the YAML values, ' {' in Objective-C and CSS, ',' and ' software' in the Apache license, 'oder' in '(NSCoder *)aCoder', ' Book' at the end of a quote attribution, ';' after a method declaration, and race-result surname pieces like 'ale' and 'len'. The weaker cases (6 and below) are mostly line-final tokens in prose, patents and numbered legal lists, such as 'Invention', 'needed.' and 'trial.'.\",\n \"missing_data\": \"Two kinds of data would test the hypothesis most directly. First, activations on tokens in the middle of a line, to confirm they stay near zero. Second, the same token placed both before and not before a newline, to separate a true end-of-line detector from a detector of particular token types such as punctuation or braces.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.0136992,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3656,
+    "output_tokens": 648,
+    "output_tokens_details": {
+     "thinking_tokens": 240
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 648,
+      "cache_read_input_tokens": 3656,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8604
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.047998400000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2755,
+    "cache_read_input_tokens": 3656,
+    "output_tokens": 576,
+    "output_tokens_details": {
+     "thinking_tokens": 286
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2755,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 576,
+      "cache_read_input_tokens": 3656,
+      "cache_creation_input_tokens": 2755,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2755
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5560
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on the last token of a line, the token right before a newline, whatever that token is. It fires most strongly in code, config files and structured or formatted text, and more weakly at the ends of prose lines or paragraphs.",
+  "evidence": "Every marked token sits at a line end and the tokens are very varied: ' 1' and ' 0' in the YAML values, ' {' in Objective-C and CSS, ',' and ' software' in the Apache license, 'oder' in '(NSCoder *)aCoder', ' Book' at the end of a quote attribution, ';' after a method declaration, and race-result surname pieces like 'ale' and 'len'. The weaker cases (6 and below) are mostly line-final tokens in prose, patents and numbered legal lists, such as 'Invention', 'needed.' and 'trial.'.",
+  "missing_data": "Two kinds of data would test the hypothesis most directly. First, activations on tokens in the middle of a line, to confirm they stay near zero. Second, the same token placed both before and not before a newline, to separate a true end-of-line detector from a detector of particular token types such as punctuation or braces.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-892",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the token right before a period, most strongly when that period is internal rather than sentence-ending: decimal points, domain-name dots, code member access, abbreviations and citation numbering.\",\n \"evidence\": \"Top activations sit on tokens before a dot, such as '-0|.2', '29|.9', 'www|.', 'github|.com', 'classList|.toggle', 'params|.delete', 'N|.C.' and 'R|. 47|.5'. Weaker mid-range hits fall on ordinary sentence-final words ('gaming.', 'have.') and on abbreviations ('i.e.', 'etc.', 'U.S.').\"\n ,\"missing_data\": \"Activations on tokens followed by other separators (e.g., '/', ':', ',') in similar contexts would show whether the unit is specific to periods or tracks separators in general.\",\n \"confidence\": 0.85}\n```",
+   "cost_usd": 0.0103562,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3141,
+    "output_tokens": 486,
+    "output_tokens_details": {
+     "thinking_tokens": 165
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 486,
+      "cache_read_input_tokens": 3141,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6487
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.046720399999999995,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2841,
+    "cache_read_input_tokens": 3141,
+    "output_tokens": 650,
+    "output_tokens_details": {
+     "thinking_tokens": 360
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2841,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 650,
+      "cache_read_input_tokens": 3141,
+      "cache_creation_input_tokens": 2841,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2841
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 11619
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on the token right before a period, most strongly when that period is internal rather than sentence-ending: decimal points, domain-name dots, code member access, abbreviations and citation numbering.",
+  "evidence": "Top activations sit on tokens before a dot, such as '-0|.2', '29|.9', 'www|.', 'github|.com', 'classList|.toggle', 'params|.delete', 'N|.C.' and 'R|. 47|.5'. Weaker mid-range hits fall on ordinary sentence-final words ('gaming.', 'have.') and on abbreviations ('i.e.', 'etc.', 'U.S.').",
+  "missing_data": "Activations on tokens followed by other separators (e.g., '/', ':', ',') in similar contexts would show whether the unit is specific to periods or tracks separators in general.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

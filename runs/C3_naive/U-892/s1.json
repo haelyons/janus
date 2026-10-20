@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-892",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the token just before a period that sits inside a token string rather than ending a sentence: decimals (-0.07, 29.9), domain names (www., github.com), code member access (target.nodeName, params.delete), abbreviations and initials (N.C., U.S., i.e., A. actinomycetemcomitans), and run-together text ('recognized.The'). Ordinary sentence-final periods ('have.', 'gaming.') give weaker activation.\",\n \"evidence\": \"All of the top examples are pre-period tokens in decimals, URLs, JS/Ruby dot-access, legal citations ('R. 47.5.4') or 'N.C.', and 'recognized' is directly followed by '.The' with no space. The middle examples include true sentence ends ('have.', 'gaming.', 'window.') at about 5-6, while P < 0.001 reaches 10.\",\n \"missing_data\": \"Tokens followed by other internal punctuation (a colon or slash in a URL, a comma in a number) would show whether the unit is specific to periods. Matched sentence-final versus internal periods would confirm the graded difference.\",\n \"confidence\": 0.8}",
+   "cost_usd": 0.044448,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3945,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 644,
+    "output_tokens_details": {
+     "thinking_tokens": 241
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3945,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 644,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3945,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3945
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10496
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.082737,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2999,
+    "cache_read_input_tokens": 3945,
+    "output_tokens": 675,
+    "output_tokens_details": {
+     "thinking_tokens": 385
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2999,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 675,
+      "cache_read_input_tokens": 3945,
+      "cache_creation_input_tokens": 2999,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2999
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7568
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on the token just before a period that sits inside a token string rather than ending a sentence: decimals (-0.07, 29.9), domain names (www., github.com), code member access (target.nodeName, params.delete), abbreviations and initials (N.C., U.S., i.e., A. actinomycetemcomitans), and run-together text ('recognized.The'). Ordinary sentence-final periods ('have.', 'gaming.') give weaker activation.",
+  "evidence": "All of the top examples are pre-period tokens in decimals, URLs, JS/Ruby dot-access, legal citations ('R. 47.5.4') or 'N.C.', and 'recognized' is directly followed by '.The' with no space. The middle examples include true sentence ends ('have.', 'gaming.', 'window.') at about 5-6, while P < 0.001 reaches 10.",
+  "missing_data": "Tokens followed by other internal punctuation (a colon or slash in a URL, a comma in a number) would show whether the unit is specific to periods. Matched sentence-final versus internal periods would confirm the graded difference.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

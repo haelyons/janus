@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-937",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires mainly on bird names, whatever role they play: literal birds, surnames (Finch, Swan, Heron), product or band names (Kestrel, Flamingos), idioms (lame duck, green swan), and even acronyms that spell a bird (SWAN). A separate, weaker response fires on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).\",\n \"evidence\": \"Every top example (activation 8-10) peaks on a bird-name token: swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron. All mid-range examples (5-7) are month abbreviations before a day number, and I could find no shared link between the two groups.\",\n \"missing_data\": \"Activations for full month names and for non-bird animal names (e.g. 'wolf', 'Fox' as a surname) would show whether the bird feature is really a broader animal feature and whether the date response is tied to abbreviation.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.015455799999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4039,
+    "output_tokens": 732,
+    "output_tokens_details": {
+     "thinking_tokens": 373
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 732,
+      "cache_read_input_tokens": 4039,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9684
+  },
+  {
+   "text": "```json\n{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}\n```",
+   "cost_usd": 0.0498676,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3042,
+    "cache_read_input_tokens": 4039,
+    "output_tokens": 463,
+    "output_tokens_details": {
+     "thinking_tokens": 168
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3042,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 463,
+      "cache_read_input_tokens": 4039,
+      "cache_creation_input_tokens": 3042,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3042
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5208
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires mainly on bird names, whatever role they play: literal birds, surnames (Finch, Swan, Heron), product or band names (Kestrel, Flamingos), idioms (lame duck, green swan), and even acronyms that spell a bird (SWAN). A separate, weaker response fires on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept).",
+  "evidence": "Every top example (activation 8-10) peaks on a bird-name token: swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron. All mid-range examples (5-7) are month abbreviations before a day number, and I could find no shared link between the two groups.",
+  "missing_data": "Activations for full month names and for non-bird animal names (e.g. 'wolf', 'Fox' as a surname) would show whether the bird feature is really a broader animal feature and whether the date response is tied to abbreviation.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-317",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on clause and list punctuation (commas, periods, semicolons) in documents about ships, boats and other maritime vessels. It appears to carry a 'ship/vessel topic' signal at each sentence or list boundary, not on the topic words themselves.\",\n \"evidence\": \"Most of the strongest windows are ship or boat texts: SeaArk boats, Karadeniz powerships and power barges, a cruise-ship casino review, Swedish historic ship listings, flying boats and V.Ships crew. Example 5 (anchor-electronics.com) and probably Example 8 ('anchor' text) look like a lexical spillover from 'anchor'. In all of them the peaks sit on commas and full stops, while ship and boat tokens stay near zero. The weaker windows (news broadcasting, a CT radiology report, a court docket) show the same punctuation firing at lower values with no visible ship context.\",\n \"missing_data\": \"Full-document context for the weaker non-maritime examples, to confirm whether ship or anchor terms appear outside the window. Also matched comparisons of punctuation activation in maritime versus non-maritime documents.\",\n \"confidence\": 0.55}",
+   "cost_usd": 0.016768599999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 9003,
+    "output_tokens": 748,
+    "output_tokens_details": {
+     "thinking_tokens": 336
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 748,
+      "cache_read_input_tokens": 9003,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 13022
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0972732,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 8247,
+    "cache_read_input_tokens": 9003,
+    "output_tokens": 636,
+    "output_tokens_details": {
+     "thinking_tokens": 346
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 8247,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 636,
+      "cache_read_input_tokens": 9003,
+      "cache_creation_input_tokens": 8247,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 8247
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9106
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on clause and list punctuation (commas, periods, semicolons) in documents about ships, boats and other maritime vessels. It appears to carry a 'ship/vessel topic' signal at each sentence or list boundary, not on the topic words themselves.",
+  "evidence": "Most of the strongest windows are ship or boat texts: SeaArk boats, Karadeniz powerships and power barges, a cruise-ship casino review, Swedish historic ship listings, flying boats and V.Ships crew. Example 5 (anchor-electronics.com) and probably Example 8 ('anchor' text) look like a lexical spillover from 'anchor'. In all of them the peaks sit on commas and full stops, while ship and boat tokens stay near zero. The weaker windows (news broadcasting, a CT radiology report, a court docket) show the same punctuation firing at lower values with no visible ship context.",
+  "missing_data": "Full-document context for the weaker non-maritime examples, to confirm whether ship or anchor terms appear outside the window. Also matched comparisons of punctuation activation in maritime versus non-maritime documents.",
+  "confidence": 0.55
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

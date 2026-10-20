@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-570",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires on the last token of a line, the position just before a line break. It is strongest in structured or boilerplate text such as code, config/YAML, license headers, method signatures and CSS selectors, and weaker at line ends in lists, headings and prose paragraphs.\",\n \"evidence\": \"Every marked token sits immediately before a newline: YAML values ('1', '0'), '{' after a selector or method, 'aCoder' and 'info' at the end of an Objective-C signature, 'Book' and '* * *' before blank lines, and 'software'/'BASIS,' at license-line ends. Mid-range hits are line-final too: names in a race result list, '}' closing section headings, 'Invention', and '.' ending numbered legal items.\",\n \"missing_data\": \"Per-token activations across whole documents, to check that mid-line tokens stay near zero and to see whether strength depends on how predictable the line break is versus how structured the content is.\",\n \"confidence\": 0.75}\n```",
+   "cost_usd": 0.0109368,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3744,
+    "output_tokens": 509,
+    "output_tokens_details": {
+     "thinking_tokens": 171
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 509,
+      "cache_read_input_tokens": 3744,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6704
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0455416,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2616,
+    "cache_read_input_tokens": 3744,
+    "output_tokens": 646,
+    "output_tokens_details": {
+     "thinking_tokens": 356
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2616,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 646,
+      "cache_read_input_tokens": 3744,
+      "cache_creation_input_tokens": 2616,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2616
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6349
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "Fires on the last token of a line, the position just before a line break. It is strongest in structured or boilerplate text such as code, config/YAML, license headers, method signatures and CSS selectors, and weaker at line ends in lists, headings and prose paragraphs.",
+  "evidence": "Every marked token sits immediately before a newline: YAML values ('1', '0'), '{' after a selector or method, 'aCoder' and 'info' at the end of an Objective-C signature, 'Book' and '* * *' before blank lines, and 'software'/'BASIS,' at license-line ends. Mid-range hits are line-final too: names in a race result list, '}' closing section headings, 'Invention', and '.' ending numbered legal items.",
+  "missing_data": "Per-token activations across whole documents, to check that mid-line tokens stay near zero and to see whether strength depends on how predictable the line break is versus how structured the content is.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

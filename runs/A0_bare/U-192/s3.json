@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-192",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to the faces of small, furry mammals seen from the front (cats, foxes, red pandas, and also a hamster, meerkat, ferret, and dog). It also fires on a red vintage convertible car, which has no meaningful connection to the animal theme.\",\n \"evidence\": \"19 of the top 20 images are furry small-to-medium mammals, mostly with the face clearly visible, including the #1 fox at 10. However, #5, a red Mercedes convertible with no animal in view, reaches 9, as high as the strongest cats and red panda.\",\n \"missing_data\": \"More top-activating images or activation maps showing which region of the car photo drives the response, which would tell whether the car is a real second selectivity or an artifact (for example its reddish-brown colour and texture).\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.0062756,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2338,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 2338,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6791
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0485356,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4259,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 409,
+    "output_tokens_details": {
+     "thinking_tokens": 119
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4259,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 409,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4259,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4259
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7428
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to the faces of small, furry mammals seen from the front (cats, foxes, red pandas, and also a hamster, meerkat, ferret, and dog). It also fires on a red vintage convertible car, which has no meaningful connection to the animal theme.",
+  "evidence": "19 of the top 20 images are furry small-to-medium mammals, mostly with the face clearly visible, including the #1 fox at 10. However, #5, a red Mercedes convertible with no animal in view, reaches 9, as high as the strongest cats and red panda.",
+  "missing_data": "More top-activating images or activation maps showing which region of the car photo drives the response, which would tell whether the car is a real second selectivity or an artifact (for example its reddish-brown colour and texture).",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

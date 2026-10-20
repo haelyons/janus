@@ -1,0 +1,180 @@
+{
+ "arm": "C1_super",
+ "card": "U-892",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "722b6214672fb823e3decbd06a125c71590d584e31d93d56517a9b99fb4b6462",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the token just before a period that does not end a sentence: decimal points (-0.07, 29.9), dots in domains and filenames (www.aace.co.uk, github.com), member-access dots in code (e.target.classList, params.delete), and abbreviation dots (N.C., R. 47.5, U.S., i.e.). It responds more weakly to tokens before ordinary sentence-ending periods (gaming., have., window.).\",\n \"evidence\": \"Every marked top-activation token is directly followed by '.', and the strongest cases are dots joined to the next token with no space. These cover numbers, URLs, code and legal citations, and 'recognized.The' with a missing space also scores high. Mid-range examples are mostly true sentence-final periods or abbreviations, at 5-6.\",\n \"missing_data\": \"Activations for tokens before other punctuation (commas, colons, slashes) and for '.' tokens themselves. Also a direct comparison of sentence-final versus internal periods in matched contexts.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.03782,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3174,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 621,
+    "output_tokens_details": {
+     "thinking_tokens": 249
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3174,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 621,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3174,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3174
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8609
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.07487079999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2976,
+    "cache_read_input_tokens": 3174,
+    "output_tokens": 630,
+    "output_tokens_details": {
+     "thinking_tokens": 340
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2976,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 630,
+      "cache_read_input_tokens": 3174,
+      "cache_creation_input_tokens": 2976,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2976
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7024
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on the token just before a period that does not end a sentence: decimal points (-0.07, 29.9), dots in domains and filenames (www.aace.co.uk, github.com), member-access dots in code (e.target.classList, params.delete), and abbreviation dots (N.C., R. 47.5, U.S., i.e.). It responds more weakly to tokens before ordinary sentence-ending periods (gaming., have., window.).",
+  "evidence": "Every marked top-activation token is directly followed by '.', and the strongest cases are dots joined to the next token with no space. These cover numbers, URLs, code and legal citations, and 'recognized.The' with a missing space also scores high. Mid-range examples are mostly true sentence-final periods or abbreviations, at 5-6.",
+  "missing_data": "Activations for tokens before other punctuation (commas, colons, slashes) and for '.' tokens themselves. Also a direct comparison of sentence-final versus internal periods in matched contexts.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

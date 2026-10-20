@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-863",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the word 'coffee' and coffee drinks (latte, mocha), strongest when coffee is mentioned as something to drink or a social occasion. It responds more weakly to related places and terms (café, coffeehouse, barista) and weakly to 'Java' the programming language, probably through its coffee association.\",\n \"evidence\": \"Every top example peaks on 'coffee', 'latte' or 'm[ocha]', even in technical text ('coffee house', 'coffee maker'). Café/barista tokens reach 6-7, and 'Java' in programming contexts reaches only about 4.\",\n \"missing_data\": \"Activations on 'tea', other drinks, 'espresso'/'cappuccino', and 'Java' meaning the island or slang for coffee would show whether the unit is specific to coffee or covers beverages or cafés more broadly.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.0303,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2999,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 315,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2999,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 315,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2999,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2999
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4641
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0633494,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2887,
+    "cache_read_input_tokens": 2627,
+    "output_tokens": 471,
+    "output_tokens_details": {
+     "thinking_tokens": 181
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2887,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 471,
+      "cache_read_input_tokens": 2627,
+      "cache_creation_input_tokens": 2887,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2887
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4976
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Responds to the word 'coffee' and coffee drinks (latte, mocha), strongest when coffee is mentioned as something to drink or a social occasion. It responds more weakly to related places and terms (café, coffeehouse, barista) and weakly to 'Java' the programming language, probably through its coffee association.",
+  "evidence": "Every top example peaks on 'coffee', 'latte' or 'm[ocha]', even in technical text ('coffee house', 'coffee maker'). Café/barista tokens reach 6-7, and 'Java' in programming contexts reaches only about 4.",
+  "missing_data": "Activations on 'tea', other drinks, 'espresso'/'cappuccino', and 'Java' meaning the island or slang for coffee would show whether the unit is specific to coffee or covers beverages or cafés more broadly.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

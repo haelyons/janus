@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-892",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on the token immediately before a period that is not a sentence end, i.e. a period that is internal to a token sequence such as a decimal point, domain name or URL, object-member access, abbreviation, or citation number.\",\n \"evidence\": \"Top activations sit on tokens preceding non-terminal periods: '0' in -0.07, 'www' and 'co' in URLs, 'target'/'classList' before '.method', 'N' in N.C., '47' in R. 47.5, and '1'/'apple' in a filename. Middle examples follow the same pattern (0.001, 'A.' in A. actinomycetemcomitans, 'U' in U.S., 'i' in i.e.), and the weaker sentence-final hits ('have.', 'gaming.') look like spillover of the same feature.\",\n \"missing_data\": \"Activations on tokens before ordinary sentence-ending periods versus non-period continuations, to confirm the unit predicts or detects internal dots rather than periods in general.\",\n \"confidence\": 0.82}",
+   "cost_usd": 0.0076842,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3081,
+    "output_tokens": 353,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 353,
+      "cache_read_input_tokens": 3081,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5712
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.044906,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3079,
+    "cache_read_input_tokens": 2709,
+    "output_tokens": 602,
+    "output_tokens_details": {
+     "thinking_tokens": 312
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3079,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 602,
+      "cache_read_input_tokens": 2709,
+      "cache_creation_input_tokens": 3079,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3079
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6866
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "Fires on the token immediately before a period that is not a sentence end, i.e. a period that is internal to a token sequence such as a decimal point, domain name or URL, object-member access, abbreviation, or citation number.",
+  "evidence": "Top activations sit on tokens preceding non-terminal periods: '0' in -0.07, 'www' and 'co' in URLs, 'target'/'classList' before '.method', 'N' in N.C., '47' in R. 47.5, and '1'/'apple' in a filename. Middle examples follow the same pattern (0.001, 'A.' in A. actinomycetemcomitans, 'U' in U.S., 'i' in i.e.), and the weaker sentence-final hits ('have.', 'gaming.') look like spillover of the same feature.",
+  "missing_data": "Activations on tokens before ordinary sentence-ending periods versus non-period continuations, to confirm the unit predicts or detects internal dots rather than periods in general.",
+  "confidence": 0.82
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

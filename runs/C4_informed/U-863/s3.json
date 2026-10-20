@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-863",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Fires on the word 'coffee' and closely related coffee-drink terms (latte, barista, mocha), with weaker activation on café/coffeehouse words and on 'Java' as a programming language, which is a coffee synonym.\", \"evidence\": \"Every top example peaks on 'coffee' or 'latte'/'barista', across contexts as different as social chat, wireless LAN text and amplifier ads; mid-range examples are 'Cafe/Café/coffeehouse' (~6-7) and 'Java' in programming contexts (~4), both of which link back to coffee semantics.\", \"missing_data\": \"Activations on tea, espresso, and other beverages (beer, juice) would show whether the unit is coffee-specific or covers hot drinks in general.\", \"confidence\": 0.88}",
+   "cost_usd": 0.0063582,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3951,
+    "output_tokens": 278,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 278,
+      "cache_read_input_tokens": 3951,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4262
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.042082,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2850,
+    "cache_read_input_tokens": 3579,
+    "output_tokens": 610,
+    "output_tokens_details": {
+     "thinking_tokens": 320
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2850,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 610,
+      "cache_read_input_tokens": 3579,
+      "cache_creation_input_tokens": 2850,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2850
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6748
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the word 'coffee' and closely related coffee-drink terms (latte, barista, mocha), with weaker activation on café/coffeehouse words and on 'Java' as a programming language, which is a coffee synonym.",
+  "evidence": "Every top example peaks on 'coffee' or 'latte'/'barista', across contexts as different as social chat, wireless LAN text and amplifier ads; mid-range examples are 'Cafe/Café/coffeehouse' (~6-7) and 'Java' in programming contexts (~4), both of which link back to coffee semantics.",
+  "missing_data": "Activations on tea, espresso, and other beverages (beer, juice) would show whether the unit is coffee-specific or covers hot drinks in general.",
+  "confidence": 0.88
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

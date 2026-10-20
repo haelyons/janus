@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-767",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on words for cheese, both the word 'cheese/cheeses' and cheese names such as Mozzarella and Brie, including the Brie token when it is used as a person's name. Separately, it fires at about 60% strength on C/C++ preprocessor directives, on both the '#' token and the 'define'/'include' token.\",\n \"evidence\": \"All twelve top examples peak on a cheese token: 'cheese' in mac and cheese, cream cheese and cottage cheese, 'chees|es', 'Mozzarella', and 'Brie' as the actress Alison Brie. All mid-range examples are '#define' or '#include' lines in C/C++ code, which have no semantic link to cheese.\",\n \"missing_data\": \"The data has no other dairy words (milk, butter, yogurt) or other food words, which would show whether the main trigger is specific to cheese. It also has no other preprocessor directives (#ifdef, #pragma) or '#' in Python comments or markdown, which would show how broad the code trigger is.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.0082826,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3973,
+    "output_tokens": 374,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 374,
+      "cache_read_input_tokens": 3973,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4562
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0381148,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2913,
+    "cache_read_input_tokens": 3601,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2913,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 3601,
+      "cache_creation_input_tokens": 2913,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2913
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3345
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on words for cheese, both the word 'cheese/cheeses' and cheese names such as Mozzarella and Brie, including the Brie token when it is used as a person's name. Separately, it fires at about 60% strength on C/C++ preprocessor directives, on both the '#' token and the 'define'/'include' token.",
+  "evidence": "All twelve top examples peak on a cheese token: 'cheese' in mac and cheese, cream cheese and cottage cheese, 'chees|es', 'Mozzarella', and 'Brie' as the actress Alison Brie. All mid-range examples are '#define' or '#include' lines in C/C++ code, which have no semantic link to cheese.",
+  "missing_data": "The data has no other dairy words (milk, butter, yogurt) or other food words, which would show whether the main trigger is specific to cheese. It also has no other preprocessor directives (#ifdef, #pragma) or '#' in Python comments or markdown, which would show how broad the code trigger is.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": false
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

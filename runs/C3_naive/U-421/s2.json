@@ -1,0 +1,180 @@
+{
+ "arm": "C3_naive",
+ "card": "U-421",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "18ec1e2546110a59c844c88facf1a68f835188063678f5ec6350526cc9b95a24",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on punctuation tokens, mainly commas and sentence-final periods, that mark clause, list or sentence boundaries in running prose. It is strongest on commas inside lists or before a following clause, and weaker in plain expository or catalog-style text.\",\n \"evidence\": \"Every marked token is a comma or period: 'customer service«,|10»', 'Pakistan«,|10»', 'slots for 20 min«,|10»', 'Capt«.|7»', and list commas such as 'Collection«,|8» Use«,|8»'. Words are never marked, and the same punctuation in drier descriptive text scores only 3–5 (the ship decommissioning text, the product blurbs).\",\n \"missing_data\": \"Two things are untested: activations on other punctuation (semicolons, colons, question marks) and on punctuation inside code or numbers, and whether some periods or commas in prose stay near zero. Either would show what actually controls the strength.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.0075292,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3706,
+    "output_tokens": 339,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 339,
+      "cache_read_input_tokens": 3706,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5450
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.04946,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3107,
+    "cache_read_input_tokens": 3334,
+    "output_tokens": 820,
+    "output_tokens_details": {
+     "thinking_tokens": 530
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3107,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 820,
+      "cache_read_input_tokens": 3334,
+      "cache_creation_input_tokens": 3107,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3107
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9113
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "Fires on punctuation tokens, mainly commas and sentence-final periods, that mark clause, list or sentence boundaries in running prose. It is strongest on commas inside lists or before a following clause, and weaker in plain expository or catalog-style text.",
+  "evidence": "Every marked token is a comma or period: 'customer service«,|10»', 'Pakistan«,|10»', 'slots for 20 min«,|10»', 'Capt«.|7»', and list commas such as 'Collection«,|8» Use«,|8»'. Words are never marked, and the same punctuation in drier descriptive text scores only 3–5 (the ship decommissioning text, the product blurbs).",
+  "missing_data": "Two things are untested: activations on other punctuation (semicolons, colons, question marks) and on punctuation inside code or numbers, and whether some periods or commas in prose stay near zero. Either would show what actually controls the strength.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

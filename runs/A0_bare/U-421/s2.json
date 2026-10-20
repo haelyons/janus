@@ -1,0 +1,180 @@
+{
+ "arm": "A0_bare",
+ "card": "U-421",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on punctuation that marks clause or sentence boundaries, mainly commas and periods in running prose. It is strongest on commas that end an introductory phrase or a list item, or that come just before a contrasting or continuing clause.\",\n \"evidence\": \"Nearly every marked token is a comma or period, and the peaks (10) are commas before 'and one of the best warranties', 'the Pakistani government terminated', and 'and you will have enough'. Lower activations appear on periods closing sentences and on commas in numbers and lists (e.g. '9,821'), which fits a general boundary-punctuation role.\",\n \"missing_data\": \"Activations on non-punctuation tokens and on punctuation in code or other non-prose contexts would show whether it is specific to clause boundaries or fires on any comma or period.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.0065564,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2842,
+    "output_tokens": 299,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 299,
+      "cache_read_input_tokens": 2842,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3932
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.043634400000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3067,
+    "cache_read_input_tokens": 2470,
+    "output_tokens": 602,
+    "output_tokens_details": {
+     "thinking_tokens": 312
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3067,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 602,
+      "cache_read_input_tokens": 2470,
+      "cache_creation_input_tokens": 3067,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3067
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5974
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit fires on punctuation that marks clause or sentence boundaries, mainly commas and periods in running prose. It is strongest on commas that end an introductory phrase or a list item, or that come just before a contrasting or continuing clause.",
+  "evidence": "Nearly every marked token is a comma or period, and the peaks (10) are commas before 'and one of the best warranties', 'the Pakistani government terminated', and 'and you will have enough'. Lower activations appear on periods closing sentences and on commas in numbers and lists (e.g. '9,821'), which fits a general boundary-punctuation role.",
+  "missing_data": "Activations on non-punctuation tokens and on punctuation in code or other non-prose contexts would show whether it is specific to clause boundaries or fires on any comma or period.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

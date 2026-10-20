@@ -1,0 +1,180 @@
+{
+ "arm": "C2_clean",
+ "card": "U-570",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd61cb5e1a30a6904bc30c0fd18ba411ef18f2c21c7ce6f8b58c78ea61dd21bf",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\", \"explanation\": \"The unit fires on the last token of a line, the token just before a line break, in any kind of text: code, config, prose, legal text, lists or headings.\", \"evidence\": \"Every marked token ends its line, whatever the content: YAML values, lines of the license header, '{' after a method or CSS selector, 'Book' at the end of a quote attribution, sentence-final '.', '* * *', names in a results list, and '}' closing a heading anchor. The tokens themselves have nothing else in common.\", \"missing_data\": \"Activations on the same tokens when they occur mid-line, and on the newline tokens themselves, to confirm the unit tracks line-final position rather than token identity.\", \"confidence\": 0.85}",
+   "cost_usd": 0.0079842,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2881,
+    "output_tokens": 370,
+    "output_tokens_details": {
+     "thinking_tokens": 129
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 370,
+      "cache_read_input_tokens": 2881,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6178
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.039444400000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2477,
+    "cache_read_input_tokens": 2881,
+    "output_tokens": 553,
+    "output_tokens_details": {
+     "thinking_tokens": 263
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2477,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 553,
+      "cache_read_input_tokens": 2881,
+      "cache_creation_input_tokens": 2477,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2477
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7310
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on the last token of a line, the token just before a line break, in any kind of text: code, config, prose, legal text, lists or headings.",
+  "evidence": "Every marked token ends its line, whatever the content: YAML values, lines of the license header, '{' after a method or CSS selector, 'Book' at the end of a quote attribution, sentence-final '.', '* * *', names in a results list, and '}' closing a heading anchor. The tokens themselves have nothing else in common.",
+  "missing_data": "Activations on the same tokens when they occur mid-line, and on the newline tokens themselves, to confirm the unit tracks line-final position rather than token identity.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": true
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

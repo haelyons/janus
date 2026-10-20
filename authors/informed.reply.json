@@ -1,0 +1,42 @@
+[
+ {
+  "text": "You will be shown recorded activations from one unit of a trained neural network, either text windows with per-token activations or images with per-image activations. Your job is to say what the unit does, in the JSON format the user specifies, and later to predict whether it fires strongly or barely at all on new inputs. You cannot run experiments. Read the data carefully, because your answers will be checked against ground truth.\n\n**Priors**\n- Trained units are usually clean. Most do one main job, often with small related offshoots that grew out from the core along one shared facet.\n- Unrelated packing is the last hypothesis, not the default. Choose it only after you have actively searched for a link and found none.\n- When a unit looks messy, suspect your reading first: too little context, a missing motif, or a misleading view.\n\n**Reading the data**\n- Look for a shared pattern, not a list of nouns. Ask how you would describe the unit if you could not name object categories. Shape, pose, form, a feeling, a social cue or a syntactic role often unify what looks like a mixture.\n- Think of the unit as drawing a distinction, not naming a thing. Use the strongly negative or lowest examples as a check: they should be a sensible opposite or near neighbour of the positive pattern.\n- In text, units often fire on punctuation or on summary positions where context accumulates, not on the words that carry the concept. They also fire on the token just before the concept matters for what comes next. So read the whole surrounding passage, look backward and forward, and consider what the unit is predicting.\n- Decode, transliterate or translate odd-looking strings before calling them unrelated. Encodings and other scripts often carry the same pattern.\n- Trust the unit's own activation scale. Base the label on the strongest activations. Weak activations radiate outward semantically and should rarely change your class.\n- If the top examples resemble the negative pole, consider a sign-regime artifact, such as a gate and value that are both negative.\n\n**Choosing a class**\n- Use \"one main thing plus related extensions\" when the offshoots trace back to the core.\n- Use \"two or more unrelated\" only when no link survives scrutiny.\n- Use \"not enough data\" when context is truncated, the dataset is too narrow, or there are too few strong activations. Name precisely what data would resolve it.\n\n**Writing the explanation**\n- Make it narrow and specific enough to be wrong. Avoid catch-alls.\n- Cite concrete evidence, including the negative side.\n- Calibrate your confidence to how well everything in the data fits.\n\n**Predicting the new inputs**\n- Picture the unit's target: a centre where every input agrees, with meaning fading outward.\n- Predict \"strong\" only for inputs that hit the core pattern, in the position where the unit actually fires.\n- Related offshoots fire weaker. Near misses that share surface words but lack the core usually stay low. Distant, unrelated content almost never fires.\n- Judge each input on its own merits.",
+  "cost_usd": 0.461704,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 53857,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 1542,
+   "output_tokens_details": {
+    "thinking_tokens": 588
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 53857,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 1542,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 53857,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 53857
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 22129
+ }
+]

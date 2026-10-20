@@ -1,0 +1,180 @@
+{
+ "arm": "C0_field",
+ "card": "U-863",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "9267c83f3a66a88eb5fa03647f23a587eb77170b544ce05f6862c6de3524ace0",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the word \\\"coffee\\\" and coffee drinks (latte, mocha, barista, coffeehouse) wherever they appear, whether as a beverage, a social activity, or part of a name. Weaker extensions cover cafés and the programming language \\\"Java\\\", which is coffee slang.\",\n \"evidence\": \"Every top example peaks on \\\"coffee\\\"/\\\"Coffee\\\" or \\\"latte\\\" (8-10), including incidental uses like \\\"coffee house\\\" in a networking patent and \\\"coffee maker\\\" in an amplifier ad. Mid-range examples are \\\"Cafe/Café\\\" (6-7) and \\\"Java\\\" as a programming language (4).\",\n \"missing_data\": \"Activations on \\\"tea\\\", \\\"espresso\\\", \\\"Starbucks\\\", and \\\"Java\\\" the island or coffee-slang uses would show whether the Java response is a coffee association or just a token-level effect.\",\n \"confidence\": 0.88}",
+   "cost_usd": 0.007239800000000001,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3059,
+    "output_tokens": 331,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 331,
+      "cache_read_input_tokens": 3059,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4418
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0409292,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2903,
+    "cache_read_input_tokens": 2687,
+    "output_tokens": 496,
+    "output_tokens_details": {
+     "thinking_tokens": 206
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2903,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 496,
+      "cache_read_input_tokens": 2687,
+      "cache_creation_input_tokens": 2903,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2903
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5305
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Fires on the word \"coffee\" and coffee drinks (latte, mocha, barista, coffeehouse) wherever they appear, whether as a beverage, a social activity, or part of a name. Weaker extensions cover cafés and the programming language \"Java\", which is coffee slang.",
+  "evidence": "Every top example peaks on \"coffee\"/\"Coffee\" or \"latte\" (8-10), including incidental uses like \"coffee house\" in a networking patent and \"coffee maker\" in an amplifier ad. Mid-range examples are \"Cafe/Café\" (6-7) and \"Java\" as a programming language (4).",
+  "missing_data": "Activations on \"tea\", \"espresso\", \"Starbucks\", and \"Java\" the island or coffee-slang uses would show whether the Java response is a coffee association or just a token-level effect.",
+  "confidence": 0.88
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

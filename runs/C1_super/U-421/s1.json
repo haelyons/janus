@@ -1,0 +1,180 @@
+{
+ "arm": "C1_super",
+ "card": "U-421",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "722b6214672fb823e3decbd06a125c71590d584e31d93d56517a9b99fb4b6462",
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"The unit fires on punctuation that marks clause and sentence boundaries, mainly commas and periods, in ordinary running prose. It is strongest on commas that close off an introductory or list element in declarative text.\",\n \"evidence\": \"Every marked token in every example is a comma or a period, across very different genres and topics: boat marketing, legal criteria, privacy policies, naval history, and forum complaints. Topic does not appear to matter, though activation is lower in more literary or list-heavy text.\",\n \"missing_data\": \"Activations on other punctuation such as semicolons, colons, and periods in abbreviations or numbers, plus examples from code, would show whether this is general boundary punctuation or something narrower. Low-activation examples on commas and periods would also tell us which contexts suppress the unit.\",\n \"confidence\": 0.8}",
+   "cost_usd": 0.029228,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2935,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 287,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2935,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 287,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2935,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2935
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4801
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0657486,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3055,
+    "cache_read_input_tokens": 2563,
+    "output_tokens": 578,
+    "output_tokens_details": {
+     "thinking_tokens": 288
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3055,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 578,
+      "cache_read_input_tokens": 2563,
+      "cache_creation_input_tokens": 3055,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3055
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6754
+  }
+ ],
+ "turn1": {
+  "class": "one",
+  "explanation": "The unit fires on punctuation that marks clause and sentence boundaries, mainly commas and periods, in ordinary running prose. It is strongest on commas that close off an introductory or list element in declarative text.",
+  "evidence": "Every marked token in every example is a comma or a period, across very different genres and topics: boat marketing, legal criteria, privacy policies, naval history, and forum complaints. Topic does not appear to matter, though activation is lower in more literary or list-heavy text.",
+  "missing_data": "Activations on other punctuation such as semicolons, colons, and periods in abbreviations or numbers, plus examples from code, would show whether this is general boundary punctuation or something narrower. Low-activation examples on commas and periods would also tell us which contexts suppress the unit.",
+  "confidence": 0.8
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": true
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": true
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": true
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": true
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

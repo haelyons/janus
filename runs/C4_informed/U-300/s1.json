@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-300",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to frontal faces of small, furry, pointy-eared mammals: cats, foxes, red pandas and lynx most strongly, with hamsters, meerkats and ferrets as weaker related cases. Images built around other things push it negative, especially flat-faced or droopy-eared dogs (pugs, boxers, mastiffs), birds and hairless or smooth-skinned animals.\",\n \"evidence\": \"The top 20 are almost all cat, fox or red-panda faces with fluffy fur and upright ears; the one outlier is a red vintage car at #5, which may share the warm orange-red colour. The most negative images are dominated by pugs and mastiff-type dogs plus birds, a hairless dog, a buffalo and some objects, so it separates feline/vulpine faces from canine brachycephalic faces.\",\n \"missing_data\": \"Activations on pointy-eared dogs (huskies, shiba inus) versus cats, and on orange non-animal objects, would test whether the cue is face shape or fur colour.\",\n \"confidence\": 0.75}",
+   "cost_usd": 0.038124399999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3805,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 374,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3805,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 374,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 3805,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3805
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9274
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0929888,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5810,
+    "cache_read_input_tokens": 982,
+    "output_tokens": 409,
+    "output_tokens_details": {
+     "thinking_tokens": 119
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5810,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 409,
+      "cache_read_input_tokens": 982,
+      "cache_creation_input_tokens": 5810,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5810
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10656
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to frontal faces of small, furry, pointy-eared mammals: cats, foxes, red pandas and lynx most strongly, with hamsters, meerkats and ferrets as weaker related cases. Images built around other things push it negative, especially flat-faced or droopy-eared dogs (pugs, boxers, mastiffs), birds and hairless or smooth-skinned animals.",
+  "evidence": "The top 20 are almost all cat, fox or red-panda faces with fluffy fur and upright ears; the one outlier is a red vintage car at #5, which may share the warm orange-red colour. The most negative images are dominated by pugs and mastiff-type dogs plus birds, a hairless dog, a buffalo and some objects, so it separates feline/vulpine faces from canine brachycephalic faces.",
+  "missing_data": "Activations on pointy-eared dogs (huskies, shiba inus) versus cats, and on orange non-animal objects, would test whether the cue is face shape or fur colour.",
+  "confidence": 0.75
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": true
+   },
+   {
+    "id": 5,
+    "fires": false
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": false
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": false
+   },
+   {
+    "id": 14,
+    "fires": false
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C4_informed",
+ "card": "U-937",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "37281365a1fa989443cbada3da4474ed0bc94e473650c06df5d478a1e400ca59",
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.).\",\n \"evidence\": \"All 12 top examples peak on a bird word or its subword pieces, regardless of meaning (Robert Falcon Scott, Yvik Swan, an MRI 'SWAN sequence', 'lame duck'). Every mid-range example (5-7) is a news-style abbreviated month in a date, and I found no semantic or orthographic link to birds.\",\n \"missing_data\": \"Activations on full, unabbreviated month names and on non-bird animal names (e.g. 'Fox', 'Wolf' as surnames) would show whether the month response is a true second feature or a broader proper-noun effect.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.0139958,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4039,
+    "output_tokens": 659,
+    "output_tokens_details": {
+     "thinking_tokens": 267
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 659,
+      "cache_read_input_tokens": 4039,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10438
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.048323599999999994,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2969,
+    "cache_read_input_tokens": 4039,
+    "output_tokens": 488,
+    "output_tokens_details": {
+     "thinking_tokens": 198
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2969,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 488,
+      "cache_read_input_tokens": 4039,
+      "cache_creation_input_tokens": 2969,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2969
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5847
+  }
+ ],
+ "turn1": {
+  "class": "unrelated",
+  "explanation": "The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.).",
+  "evidence": "All 12 top examples peak on a bird word or its subword pieces, regardless of meaning (Robert Falcon Scott, Yvik Swan, an MRI 'SWAN sequence', 'lame duck'). Every mid-range example (5-7) is a news-style abbreviated month in a date, and I found no semantic or orthographic link to birds.",
+  "missing_data": "Activations on full, unabbreviated month names and on non-bird animal names (e.g. 'Fox', 'Wolf' as surnames) would show whether the month response is a true second feature or a broader proper-noun effect.",
+  "confidence": 0.6
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": false
+   },
+   {
+    "id": 2,
+    "fires": false
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": true
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": false
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": true
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": true
+   },
+   {
+    "id": 19,
+    "fires": true
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "arm": "C2_clean",
+ "card": "U-863",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "system_prompt_sha256": "fd61cb5e1a30a6904bc30c0fd18ba411ef18f2c21c7ce6f8b58c78ea61dd21bf",
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the word 'coffee' and closely related coffee-drink and coffee-shop terms (latte, barista, café, coffeehouse). It also responds weakly to 'Java', plausibly through the coffee sense of that word.\",\n \"evidence\": \"All top examples are 'coffee'/'Coffee' (8-10) or 'latte'/'barista'. Mid-range activations fall on 'Cafe/Café/cafes' and 'Coffeehouse' (6-7), and weaker ones (4) on 'Java' in the programming-language sense, a known coffee synonym.\",\n \"missing_data\": \"Activations on 'tea', 'espresso', 'mocha', and the island Java would show whether this is coffee-specific or a broader beverage/café concept.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.030452,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3088,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 287,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3088,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 287,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3088,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3088
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4557
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0647552,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2859,
+    "cache_read_input_tokens": 2716,
+    "output_tokens": 544,
+    "output_tokens_details": {
+     "thinking_tokens": 254
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2859,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 544,
+      "cache_read_input_tokens": 2716,
+      "cache_creation_input_tokens": 2859,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2859
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6757
+  }
+ ],
+ "turn1": {
+  "class": "one_plus_related",
+  "explanation": "Responds to the word 'coffee' and closely related coffee-drink and coffee-shop terms (latte, barista, café, coffeehouse). It also responds weakly to 'Java', plausibly through the coffee sense of that word.",
+  "evidence": "All top examples are 'coffee'/'Coffee' (8-10) or 'latte'/'barista'. Mid-range activations fall on 'Cafe/Café/cafes' and 'Coffeehouse' (6-7), and weaker ones (4) on 'Java' in the programming-language sense, a known coffee synonym.",
+  "missing_data": "Activations on 'tea', 'espresso', 'mocha', and the island Java would show whether this is coffee-specific or a broader beverage/café concept.",
+  "confidence": 0.85
+ },
+ "turn2": {
+  "predictions": [
+   {
+    "id": 1,
+    "fires": true
+   },
+   {
+    "id": 2,
+    "fires": true
+   },
+   {
+    "id": 3,
+    "fires": true
+   },
+   {
+    "id": 4,
+    "fires": false
+   },
+   {
+    "id": 5,
+    "fires": true
+   },
+   {
+    "id": 6,
+    "fires": false
+   },
+   {
+    "id": 7,
+    "fires": false
+   },
+   {
+    "id": 8,
+    "fires": false
+   },
+   {
+    "id": 9,
+    "fires": true
+   },
+   {
+    "id": 10,
+    "fires": false
+   },
+   {
+    "id": 11,
+    "fires": false
+   },
+   {
+    "id": 12,
+    "fires": true
+   },
+   {
+    "id": 13,
+    "fires": true
+   },
+   {
+    "id": 14,
+    "fires": true
+   },
+   {
+    "id": 15,
+    "fires": false
+   },
+   {
+    "id": 16,
+    "fires": false
+   },
+   {
+    "id": 17,
+    "fires": false
+   },
+   {
+    "id": 18,
+    "fires": false
+   },
+   {
+    "id": 19,
+    "fires": false
+   },
+   {
+    "id": 20,
+    "fires": true
+   }
+  ]
+ }
+}

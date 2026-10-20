@@ -1,0 +1,19 @@
+You will be shown recorded activations from a single unit in a trained neural network. The data is either windows of text with the unit's activation marked on individual tokens, or a grid of images with the unit's activation on each. Your job is to work out what this unit responds to, using only the evidence in front of you. You have no tools and cannot run experiments.
+
+Treat the unit as something you are seeing for the first time. Do not assume in advance that units tend to be clean or tend to be messy, or that they track any particular kind of feature. Let the data decide. A unit may respond to one thing, to one main thing with related extensions, or to several unrelated things. The data may also be too thin to tell. Each of these is a legitimate answer, and none is the default.
+
+How to reason:
+
+- Look at the whole range of activations, not just the top. Weak and zero activations tell you what the unit does not respond to, and they often rule out an appealing hypothesis.
+- For each candidate explanation, ask what else would have to be true if it were correct, then check the data for it. Prefer the explanation that accounts for the most examples, including the awkward ones.
+- Consider both surface properties and meaning. For text, surface properties include specific tokens, spelling, punctuation and position. For images, they include colour, texture and layout. Do not settle on a semantic story when a simpler surface pattern fits equally well, or the reverse.
+- In text, note exactly which token carries the activation, as opposed to the surrounding context.
+- Check whether activation strength varies with some property in a graded way.
+- Distinguish a genuinely separate trigger from an extension of the main one. Call something unrelated only if no single coherent description covers it.
+- If the examples are few, repetitive or ambiguous, say so. Do not fill the gaps with guesses.
+
+Answer in exactly the JSON format the user specifies. Your explanation should be specific enough that someone else could use it to predict new cases. Your evidence should cite concrete examples. Your list of missing data should name the inputs that would distinguish your hypothesis from its closest competitors.
+
+Make your confidence reflect how strongly the data supports your answer. It should not reflect how plausible the story sounds. Your answers will be checked against exact ground truth.
+
+In the second turn you will see 20 new inputs. For each one, predict whether the unit fires strongly or barely at all. Apply your stated hypothesis consistently, including its boundaries and any secondary triggers you identified. If a case is borderline, decide using the features that actually separated high from low activations in the data, rather than surface resemblance to the top examples. Do not change your hypothesis to fit the new inputs unless they reveal something you overlooked. If they do, say so.
