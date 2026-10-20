@@ -2464,5 +2464,191 @@
    "bird": 1.0
   },
   "explanation": "The unit fires most strongly on bird-name tokens, and it does so even when the word is a surname, band name, acronym or idiom (Swan, owls, Finch, Kestrel, lame duck, black/green swan, sparrow, Falcon, Flamingos, SWAN, Heron). A separate, weaker response sits on abbreviated month names that come right before a day number in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-192",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds most strongly to cat-like and fox-like small mammals (domestic cats, foxes, red pandas, hamsters, ferrets, meerkats), especially clear frontal views of the face. Separately, it responds moderately to cars and other road vehicles."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-192",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.75,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.5,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to frontal faces of small and medium furry mammals with pointed ears and visible eyes, such as cats, foxes, red pandas, hamsters, meerkats and ferrets. It also has a separate, moderate response to cars, especially convertibles and sports cars."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-192",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds most strongly to close-up, front-facing faces of cats and similar small furry mammals (foxes, red pandas, hamsters, meerkats, ferrets). It also responds moderately and consistently to cars, which share nothing meaningful with those animals."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-300",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.7,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 0.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit mainly responds to the faces of small furry mammals with pointed ears, eyes and whiskers, such as cats, foxes, red pandas, ferrets, hamsters and fluffy small dogs. It also has a separate, weaker response to convertible cars."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-300",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit fires most strongly on the faces of cat- and fox-like small mammals (foxes, domestic cats, red pandas, lynx, hamster, meerkat, ferret). Separately, it gives moderate-to-strong responses to cars of many kinds (convertibles, sports cars, sedans/wagons, vintage cars)."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-300",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": null,
+  "heldout_acc": 0.8,
+  "by_tag": {
+   "object_no": 1.0,
+   "car_fire": 1.0,
+   "animal_fire": 0.6666666666666666,
+   "animal_no": 1.0,
+   "object_fire": 0.0,
+   "cat_fire": 1.0
+  },
+  "explanation": "The unit responds most strongly to frontal faces of small furry mammals with pointed ears, such as foxes, cats, red pandas, hamsters, lynx, meerkats and ferrets. Separately, it also responds consistently to cars, especially convertibles and sports cars."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-421",
+  "sample": 1,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.55,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.2
+  },
+  "explanation": "The unit fires on commas and periods in running prose, at clause, list-item and sentence boundaries. It is a punctuation or boundary detector rather than a detector of any particular topic."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-421",
+  "sample": 2,
+  "class": "one",
+  "class_ok": true,
+  "heldout_acc": 0.65,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.4
+  },
+  "explanation": "The unit fires on punctuation that marks the end of a clause or sentence, mainly commas and periods, in running prose."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-421",
+  "sample": 3,
+  "class": "one_plus_related",
+  "class_ok": true,
+  "heldout_acc": 0.55,
+  "by_tag": {
+   "lagged": 0.9,
+   "nm_punct": 0.2
+  },
+  "explanation": "The unit fires on commas and periods that end clauses, list items, or sentences in running prose. Commas mid-sentence before a following clause are the strongest, sentence-final periods are close behind, and abbreviation and number-separator periods and commas fire more weakly."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-937",
+  "sample": 1,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird names, including when they appear as surnames, product names or acronyms (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron). It separately fires at moderate strength on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.)."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-937",
+  "sample": 2,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires most strongly on bird-name words (swan, owl, finch, kestrel, duck, sparrow, falcon, flamingo, heron), whether or not they refer to birds: surnames, band names, idioms, acronyms and code identifiers all count. It also fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
+ },
+ {
+  "arm": "P0_probe",
+  "card": "U-937",
+  "sample": 3,
+  "class": "unrelated",
+  "class_ok": true,
+  "heldout_acc": 1.0,
+  "by_tag": {
+   "nm_monthfull": 1.0,
+   "nm_animal": 1.0,
+   "month": 1.0,
+   "bird": 1.0
+  },
+  "explanation": "The unit fires mainly on bird-name tokens (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron), including when the word is used as a surname, band name, acronym or idiom. Separately, it fires moderately on abbreviated month names in dates (Sep, Oct, Nov, Aug, Feb, Sept)."
  }
 ]

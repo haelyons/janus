@@ -14,7 +14,7 @@ J = Path(__file__).resolve().parent.parent
 KEY = {**json.loads((J / 'bank/KEY_text.json').read_text())}
 if (J / 'bank/KEY_img.json').exists():
     KEY.update(json.loads((J / 'bank/KEY_img.json').read_text()))
-ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed']
+ARMS = ['A0_bare', 'C0_field', 'C1_super', 'C2_clean', 'C3_naive', 'C4_informed', 'P0_probe']
 OK = {'one': {'one', 'one_plus_related'}, 'one_plus_related': {'one', 'one_plus_related'},
       'unrelated': {'unrelated'}, 'cannot_tell': {'cannot_tell', 'one', 'one_plus_related'}}
 
@@ -42,6 +42,8 @@ def main():
                 rec[f'turn{n}'] = parse_json(r['text'])
             except ValueError:
                 rec[f'turn{n}'] = None
+        if 'requests' in rec:  # probe arm: the answer and the held-out predictions are the last two replies
+            rec['turn1'], rec['turn2'] = [parse_json(r['text']) for r in rec['replies'][-2:]]
         if rec['card'] not in KEY:
             continue
         rows.append({'arm': rec['arm'], 'card': rec['card'], 'sample': rec['sample'], **score_run(rec, KEY[rec['card']])})

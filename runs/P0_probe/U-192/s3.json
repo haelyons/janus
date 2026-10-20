@@ -1,0 +1,184 @@
+{
+ "arm": "P0_probe",
+ "card": "U-192",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [
+  [
+   "convertible",
+   "sports car",
+   "golden retriever",
+   "tiger",
+   "wood rabbit"
+  ],
+  [
+   "tabby",
+   "red fox",
+   "Pomeranian",
+   "cab",
+   "minivan"
+  ]
+ ],
+ "replies": [
+  {
+   "text": "{\"show\": [\"convertible\", \"sports car\", \"golden retriever\", \"tiger\", \"wood rabbit\"]}",
+   "cost_usd": 0.0045254,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7587,
+    "output_tokens": 150,
+    "output_tokens_details": {
+     "thinking_tokens": 111
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 150,
+      "cache_read_input_tokens": 7587,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3779
+  },
+  {
+   "text": "{\"show\": [\"tabby\", \"red fox\", \"Pomeranian\", \"cab\", \"minivan\"]}",
+   "cost_usd": 0.022670799999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1670,
+    "cache_read_input_tokens": 7587,
+    "output_tokens": 163,
+    "output_tokens_details": {
+     "thinking_tokens": 127
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1670,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 163,
+      "cache_read_input_tokens": 7587,
+      "cache_creation_input_tokens": 1670,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1670
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3806
+  },
+  {
+   "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds most strongly to close-up, front-facing faces of cats and similar small furry mammals (foxes, red pandas, hamsters, meerkats, ferrets). It also responds moderately and consistently to cars, which share nothing meaningful with those animals.\", \"evidence\": \"Close-up tabby and fox faces score 6-10, while distant foxes, rabbits and most dog photos score 0-2. Cars of every kind (convertibles, sports cars, cabs, minivans) score a steady 2-4, and one convertible reached 9 in the top 20.\", \"missing_data\": \"Results on other vehicles (trucks, buses, bicycles) would show whether the second response covers cars only or vehicles in general, and close-up dog faces would show how narrow the animal-face part is.\", \"confidence\": 0.65}",
+   "cost_usd": 0.0454102,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1680,
+    "cache_read_input_tokens": 9257,
+    "output_tokens": 372,
+    "output_tokens_details": {
+     "thinking_tokens": 87
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1680,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 372,
+      "cache_read_input_tokens": 9257,
+      "cache_creation_input_tokens": 1680,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1680
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6229
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1571862,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 12941,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 412,
+    "output_tokens_details": {
+     "thinking_tokens": 122
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 12941,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 412,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 12941,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 12941
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5334
+  }
+ ]
+}

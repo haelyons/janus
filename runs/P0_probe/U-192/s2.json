@@ -1,0 +1,137 @@
+{
+ "arm": "P0_probe",
+ "card": "U-192",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  [
+   "convertible",
+   "sports car",
+   "golden retriever",
+   "lesser panda",
+   "tabby"
+  ]
+ ],
+ "replies": [
+  {
+   "text": "{\"show\": [\"convertible\", \"sports car\", \"golden retriever\", \"lesser panda\", \"tabby\"]}",
+   "cost_usd": 0.0041654000000000005,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7587,
+    "output_tokens": 132,
+    "output_tokens_details": {
+     "thinking_tokens": 94
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 132,
+      "cache_read_input_tokens": 7587,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4500
+  },
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to frontal faces of small and medium furry mammals with pointed ears and visible eyes, such as cats, foxes, red pandas, hamsters, meerkats and ferrets. It also has a separate, moderate response to cars, especially convertibles and sports cars.\",\n \"evidence\": \"Animal faces dominate the top 20 (tabby 6-9, red panda faces 5-7), while body-only red panda views (2), a cat eye close-up (0) and golden retrievers (0-2) score low. Cars score a consistent 3-6, and one convertible reaches 9, which suggests a real second response that has nothing to do with animal faces.\",\n \"missing_data\": \"More vehicle categories (minivan, cab, pickup) would show whether the car response is broad or a weak face-like front-of-car effect, and more small-dog breeds would test the furry-face idea.\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.030198799999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1651,
+    "cache_read_input_tokens": 7587,
+    "output_tokens": 565,
+    "output_tokens_details": {
+     "thinking_tokens": 238
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1651,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 565,
+      "cache_read_input_tokens": 7587,
+      "cache_creation_input_tokens": 1651,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1651
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8680
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1304468,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 11435,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 438,
+    "output_tokens_details": {
+     "thinking_tokens": 148
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 11435,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 438,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 11435,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 11435
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8101
+  }
+ ]
+}

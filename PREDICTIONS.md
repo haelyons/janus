@@ -40,3 +40,21 @@ Cards (the subjects see only the ID):
   I hold this one weakly.
 - If C4 scores at least as well as C1 on the packed controls while beating C0 on the iconic card, it is
   the best candidate. Its iconic-card result does not count as reproduction, because of contamination.
+
+# Round 2: arm P0_probe (sealed 2026-10-20, before any P0 run)
+
+P0 = A0 (empty system prompt, same card, same held-out turn) plus one paragraph offering up to 3 requests for
+more data: ImageNet category names for the image unit (4 card-pool photos each), or self-written texts for text
+units (exact rule). No instruction on how to reason. Cards: U-192, U-300 (InceptionV1 mixed4e:55), U-421
+(hidden-context sail), U-937 (packed control). Three samples each.
+
+1. At least 4 of the 6 image sessions request a vehicle category. The convertible in the top grid invites it.
+2. Image held-out accuracy beats round 1's best cell (0.70) in at least 3 of 6 sessions, and car_fire is
+   above 0 in at least 3 of 6.
+3. A shape-level reading (pointed, V, angular, triangular, against round) appears in at most 2 of 6 image
+   sessions. Probing finds that cars fire, but the modal reading becomes "animal faces + cars", with class
+   one_plus_related or unrelated.
+4. U-937 stays modal unrelated (or two named triggers); probing creates no false unity.
+5. U-421: no session finds the sailing context, because guessing the topic would be needed. Held-out stays
+   0.4-0.7. At least 1 of 3 says cannot_tell or names context in missing_data after seeing written
+   punctuation fail to fire.

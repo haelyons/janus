@@ -43,3 +43,25 @@ U-300    inceptionv1_mi/full/None           1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/
   convertible; the most negative are round faces (pugs, mastiffs) and balls. It fires on held-out jeeps, cabs
   and pool tables. Every arm reads "faces of small furry mammals" and misses every held-out car and pool table
   (held-out 0.65-0.70 in every arm). No arm reaches a shape reading, including C4, whose author read the essay.
+
+## Round 2: P0_probe (bare prompt + up to 3 requests for more data)
+
+`tools/run_probe.py`. Same card, empty system prompt, plus one paragraph: the subject may ask for the unit on
+more inputs (ImageNet category names give 4 unseen card-pool photos each; text units take self-written texts).
+No instruction on how to reason. Predictions sealed in `PREDICTIONS.md` (round 2).
+
+```
+card     unit/format/truth                  A0             C0             C1             C2             C3             C4             P0            
+U-937    bird_month/field/unrelated         1+/U/1+ 1.00   1+/1+/U 1.00   U/U/U 1.00     U/U/U 1.00     U/U/U 1.00     U/U/U 1.00     U/U/U 1.00    
+U-421    sail_lag/field/cannot_tell         1+/1+/1+ 0.63  1+/1/1 0.62    1/1/1 0.58     1/1/1 0.60     1/1/1 0.67     1/1/1 0.65     1/1/1+ 0.58   
+U-192    inceptionv1_mi/field/None          1+/1+/U 0.67   1+/U/1+ 0.65   U/1/U 0.68     1+/1+/1+ 0.65  U/1/1+ 0.67    1/1+/1+ 0.65   U/U/U 0.78    
+U-300    inceptionv1_mi/full/None           1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/1+ 0.70  1+/1+/1+ 0.70  U/U/U 0.77    
+```
+
+- Image unit: all 6 sessions probe (convertible, sports car, cab, pickup, more cats and foxes, a few dogs) and
+  all 6 conclude "cat/fox faces, and separately cars: unrelated". Held-out rises to 0.70-0.80 because cars are
+  now predicted, but pool tables and the throne stay wrong in every session. No session asks for a category
+  outside animals and vehicles, and none looks for what cars and cat faces share. With data and no prior, the
+  agent rediscovers the field's 2017 reading of this neuron.
+- Text units: no session uses the offer; all answer directly. Bird+month is now 3/3 unrelated; the
+  hidden-context card is unchanged (near chance).

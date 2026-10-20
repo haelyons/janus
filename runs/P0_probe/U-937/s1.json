@@ -1,0 +1,89 @@
+{
+ "arm": "P0_probe",
+ "card": "U-937",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires most strongly on bird names, including when they appear as surnames, product names or acronyms (swan, owls, finch, kestrel, duck, sparrow, falcon, flamingos, heron). It separately fires at moderate strength on abbreviated month names in dates (Sep, Oct., Nov., Aug., Feb., Sept.).\",\n \"evidence\": \"All 12 top examples peak on a bird-word token, even in non-bird uses such as 'Yvik Swan', 'Finch:', 'Run-Kestrel', 'lame duck', 'green swan' and the 'SWAN sequence' acronym. Every mid-range example (activation 5–7) is instead an abbreviated month before a day number, which has no clear link to birds.\",\n \"missing_data\": \"Probes with plain bird words in neutral contexts, full versus abbreviated month names, and non-bird animal names would show whether these are two separate features or one broader trigger.\",\n \"confidence\": 0.7}",
+   "cost_usd": 0.036704,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3187,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 560,
+    "output_tokens_details": {
+     "thinking_tokens": 216
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3187,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 560,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3187,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3187
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7527
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.07088939999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2870,
+    "cache_read_input_tokens": 3187,
+    "output_tokens": 529,
+    "output_tokens_details": {
+     "thinking_tokens": 239
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2870,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 529,
+      "cache_read_input_tokens": 3187,
+      "cache_creation_input_tokens": 2870,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2870
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6022
+  }
+ ]
+}

@@ -22,8 +22,10 @@ def converse(system_prompt, turns, model=MODEL, timeout=900):
     out, t0 = [], time.time()
     try:
         for content in turns:
-            if callable(content):  # a turn built from the previous reply
+            if callable(content):  # a turn built from the previous reply; None ends the conversation
                 content = content(out)
+                if content is None:
+                    break
             p.stdin.write(json.dumps({'type': 'user', 'message': {'role': 'user', 'content': content}}) + '\n')
             p.stdin.flush()
             res = None
