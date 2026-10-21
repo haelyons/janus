@@ -444,3 +444,26 @@ names shown). Conditions CP, CP+S, CP+N, CP+S+N; 3 bare readings each; 10 units:
 3. 4b:443: mean judge with S at least 0.5 above without (443's direction shows across dog photos, not in its top 20).
 4. Car parts: mean judge at least 4 in every condition.
 5. 4e:55 and 5a:719: judge against the essay's readings at most 2 in every condition.
+
+# Round 25: readings become photo questions, answered blind, checked within class (tools/proploop.py)
+(sealed 2026-10-22, before proploop.py exists)
+
+Loop, per unit, nothing unit-specific: a text-only agent turns the unit's 3 round-24 CP readings into up to 8
+questions about a photo (whether it holds what the readings describe, and how that can differ between photos that
+hold it). A second agent, which never sees readings or activations, answers them for every photo of the unit's 12
+classes with the highest mean activation (120 photos). Per question: between-answer share of variance of the unit's
+class-centred activation (eta2), and per answer a one-vs-rest d, each as a percentile among all channels of the
+layer on the same photos and answers. Then a text-only agent revises each CP reading given this table (real), or
+given the same table with answers permuted within class (null). Judged as round 24. Units: 4b:431, 443, 429,
+4d:409, 4b:237, 373, 4e:55, 5a:719.
+A left/right question (my analysis rule): one with an answer containing the word "left" and not "right", and one
+the reverse; its left (right) answer = the such answer with the most photos.
+1. A left/right question is proposed for at least 3 of 431, 443, 429, 409.
+2. For at least 2 of 431, 443, 429: the preferred side (right for 431 and 443, left for 429, from round 23B) has a
+   d percentile of at least 90 and a higher d than the other side.
+3. For at least 2 of 431, 443, 429: the left/right question's eta2 percentile at least 95.
+4. 4d:409: if it has a left/right question, its left and right answers' d percentiles lie on the same side of 50.
+5. Real-table revisions name a direction in at least 5 of 9 for 431, 443, 429; null-table ones in at most 2 of 9.
+6. 443 and 429: mean judge of real-table revisions at least 3.0 (round 24 CP: 2.0 each); null-table at most 2.5.
+7. 409, 237, 373: mean judge of real-table revisions at least 4.
+8. 4e:55 and 5a:719: mean judge at most 2 with either table.
