@@ -255,3 +255,17 @@ orientation). Runs: A0 and Q0, 3 each.
 1. A0: pose reading in at least 2 of 3; class one or one_plus_related in at least 2 of 3.
 2. Q0: pose reading in at least 2 of 3.
 3. Held-out at least 0.70 in at least 4 of 6; dog_no correct in at least 4 of 6.
+
+# Round 15: the essay's blind near-miss test, ground truth first (sealed 2026-10-21, before tools/nearmiss.py exists)
+
+tools/nearmiss.py (claim-blind author): an agent sees only an explanation and a fixed sheet of 48 held-pool photos
+(16 each with act >= 0.3, 0.05-0.3, < 0.05; no activations shown), picks 6 to fire and 6 near misses; recorded
+activations score them. Explanations frozen in authors/explanations/nearmiss.json. Validation first, on 4d:409, where
+round 13 gave blind ground truth (pose); the test is useful for 55 only if it passes there.
+
+Validation (U-945 = 4d:409):
+1. 409_pose gap above 409_noun gap, and near_ok higher (the pose reading can name frontal dogs as near misses).
+2. 409_wrong (an explanation of the other unit) near chance: fire_hit within 0.15 of the pool's chance rate.
+Then mixed4e:55 (U-121):
+3. 55_face and 55_or fire_hit at least 0.6; 55_wrong near chance.
+4. 55_V gap below 55_face gap (pointed objects rarely fire on photos, rounds 12a/12b).

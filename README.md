@@ -343,3 +343,26 @@ Field card (`bank/img_cards_ch.py`): top 20 card-pool photos, whole rather than 
 - Contrast with mixed4e:55: the same question that did nothing there unifies this unit at once. Here the shared
   pattern is visible in the photos, and blind ground truth (round 13) backs it. For 55, no blind photo-level check
   (rounds 10 and 12) backs the V.
+
+## Round 15: the essay's blind near-miss test (`tools/nearmiss.py`, claim-blind author)
+
+An agent sees only an explanation and a fixed sheet of 48 unlabelled held-pool photos (16 high, 16 mid, 16 low
+activation), then picks 6 to fire and 6 near misses. Activations score the picks; 3 samples each; chance fire_hit 0.33.
+
+    explanation                         fire_hit  near_ok  gap
+    409 pose (subject, Q0)              0.83      0.33     +0.28
+    409 nouns (dogs; cars)              0.17      0.00     -0.27
+    409 wrong unit (55's face reading)  0.11      0.00     -0.37
+    55 face (subject, E1)               0.83      0.56     +0.17
+    55 cats or cars (subject, E1)       0.94      0.17     +0.04
+    55 V (essay)                        0.33      0.83     +0.16
+    55 wrong unit (409's pose reading)  1.00      0.39     +0.21
+
+- On the ground-truth case it works: for 4d:409 the pose reading picks firing photos (0.83), and the noun reading
+  falls below chance. Its "dogs" picks are frontal portraits, which stay silent, and the side-on animals it calls near
+  misses do fire.
+- For mixed4e:55 it fails its own control. The other unit's pose explanation scores best (fire_hit 1.00), because
+  this pool's firing photos are mostly whole animals and cars. So the test can't rank 55's readings. The V reading
+  picks pointed objects, which score at chance (0.33). Its high near_ok mostly reflects that round objects don't fire.
+- Predictions: 1 and 4 held (4 only by 0.015); 2 failed (the wrong-unit control was below chance, not at it);
+  3 held for fire_hit but failed for 55's wrong-unit control.
