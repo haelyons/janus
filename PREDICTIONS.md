@@ -269,3 +269,20 @@ Validation (U-945 = 4d:409):
 Then mixed4e:55 (U-121):
 3. 55_face and 55_or fire_hit at least 0.6; 55_wrong near chance.
 4. 55_V gap below 55_face gap (pointed objects rarely fire on photos, rounds 12a/12b).
+
+# Round 16: the essay's attribution bundles and "fixed" feature visualisation (sealed 2026-10-21, before code exists)
+
+Both tools by claim-blind authors (authors/spec_bundles.md, spec_fixedvis.md). Ground truth first: 4d:409 (shared
+pose, round 13) and a planted unit sum:mixed4e:809+804 (the 4e channels, other than 55, most selective for cats and for
+cars, by a fixed rule on the battery cache), whose answer is "two separate routes" by construction.
+
+Bundles (kinds: 409 dogs vs vehicles; planted and 55 cats 281-285 vs the 14 car classes):
+1. Planted: ratio (between-kind cos / within-kind cos) below 0.5; NMI at k=2 above 0.5.
+2. 4d:409: ratio above 0.7; NMI at k=2 below 0.3 (dogs and vehicles share inputs).
+3. mixed4e:55: ratio between the two (0.4-0.8), NMI at k=2 at least 0.3: cats and cars reach it partly through
+   separate inputs (the car input 352 against the fox-face input 493, round 6).
+Fixed feature visualisation (units 4d:409, 4e:55, control 4e:700; blind one-sentence descriptions):
+4. 4d:409 fixed renders described with a side view or whole body in at least 1 of 2; plain renders mention dogs or
+   animal parts in at least 1 of 2.
+5. 4e:55 fixed renders mention a car, vehicle or pointed/V shape in at most 1 of 2 (bias toward cat-heavy top photos).
+6. Fixed renders keep at least 50% of the plain renders' activation on the unit.

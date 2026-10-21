@@ -366,3 +366,39 @@ activation), then picks 6 to fire and 6 near misses. Activations score the picks
   picks pointed objects, which score at chance (0.33). Its high near_ok mostly reflects that round objects don't fire.
 - Predictions: 1 and 4 held (4 only by 0.015); 2 failed (the wrong-unit control was below chance, not at it);
   3 held for fire_hit but failed for 55's wrong-unit control.
+
+## To do
+- Near-miss pool built from the essay's own V examples (bullet train, pool table, fireboat, flame-like scenes) next to
+  cats, foxes and cars. The round-15 pool can't rank mixed4e:55's readings, since its wrong-unit control scored best.
+  Validate on 4d:409 first.
+- Later focus: neurons over training in a model with base, SFT, DPO and RLVR checkpoints (AI2 OLMo 2 / OLMo 3;
+  check exact repos). Start with neurons that have ground truth (simple token neurons), then the essay's language
+  examples (iy -> diy -> do it yourself; enemy; pet microchip). GPT-2 XL's 2023 neuron-explainer data is a
+  field-era baseline.
+
+## Round 16: the essay's attribution bundles and "fixed" feature visualisation (claim-blind authors)
+
+Bundles (`tools/bundles.py`, `runs/bundles/report.txt`): per top-150 photo, gradient x input attribution over the
+previous layer's channels at the unit's peak. ratio = cos(mean cat-or-dog attribution, mean car attribution) / split-half
+cos within kind; k-means NMI between cluster and kind.
+
+    unit                              ratio   NMI k=2   expected
+    planted 4e:809 + 4e:804           0.04    1.00      separate (by construction)
+    4d:409 (blind-confirmed pose)     0.41    0.92      shared (essay)
+    4e:55                             0.72    0.85      ?
+
+- The planted control passes. The pose unit, though, gets its dogs and its vehicles through separate inputs: vehicles
+  through 4c:447 (the car neuron itself), 417 and 167, dogs through 393, 418, 166 and 435. A unit that generalises
+  across kinds can still be fed by kind-specific routes, so "separate bundles" is not evidence of packing on its own.
+  The test fails its ground-truth case (prediction 2 failed). The essay pairs bundles with a blind maximum per bundle,
+  which we have not run.
+- 55 shares more than the pose unit: its car photos also run mostly through 493, the input whose top photos are fox
+  faces (+0.62, beside 352 at +0.54). Predictions 1 and 3 held.
+
+Fixed feature visualisation (`tools/fixedvis.py`, `runs/fixedvis/sheet.jpg`): plain renders, and renders with an extra
+term 0.1 x activation x cos(input-layer pattern, its mean over the top 50 photos).
+- The bias changed nothing visible: fixed and plain renders look the same and keep 91-110% of the activation.
+  The intervention was too weak to test the essay's claim (prediction 6 held, 4 failed, 5 held trivially).
+- By eye, 4d:409's renders, plain and fixed, show side-on vehicles with wheels at the bottom among furry body
+  textures. A blind describer called one plain render "trucks or train cars seen from a low side/three-quarter view"
+  and the other three "scales and feathers". 55's renders are cat faces in every condition.
