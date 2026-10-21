@@ -1,0 +1,29 @@
+{
+ "pathways": {
+  "b1": "The unit responds mainly to automobiles (cars, pickups, vans, motorhomes), with weaker responses to other small motorized vehicles such as a scooter and a riding lawn mower.",
+  "b2": "The unit responds to a wide mix of unrelated subjects: a vintage car, flamingos, an hourglass, clogs, sunglasses, a barber chair, a skunk, a home theater, a padlock and more. There is no single object, texture or scene type that ties them together.",
+  "b3": "The unit responds to the faces of small furry mammals with upright, pointed ears, centred on cats and cat-like faces. It extends more weakly to similar-looking animals such as foxes, red pandas, lynx, fluffy small dogs and a hamster."
+ },
+ "prompt": "These are explanations of different input pathways into one unit of a neural network. Each was written from the inputs that drive the unit through that pathway alone.\n\nPathway 1: The unit responds mainly to automobiles (cars, pickups, vans, motorhomes), with weaker responses to other small motorized vehicles such as a scooter and a riding lawn mower.\nPathway 2: The unit responds to a wide mix of unrelated subjects: a vintage car, flamingos, an hourglass, clogs, sunglasses, a barber chair, a skunk, a home theater, a padlock and more. There is no single object, texture or scene type that ties them together.\nPathway 3: The unit responds to the faces of small furry mammals with upright, pointed ears, centred on cats and cat-like faces. It extends more weakly to similar-looking animals such as foxes, red pandas, lynx, fluffy small dogs and a hamster.\n\nDo they describe one underlying thing (different parts, aspects or natural offshoots of the same thing), or unrelated things that happen to share the unit? Reply with only JSON: {\"related\": n, \"shared\": \"...\"}, where n is 1 (clearly unrelated) to 5 (clearly one thing) and shared names what they have in common, or is empty.",
+ "calls": [
+  {
+   "call": 1,
+   "related": 1,
+   "shared": "",
+   "text": "{\"related\": 1, \"shared\": \"\"}"
+  },
+  {
+   "call": 2,
+   "related": 1,
+   "shared": "",
+   "text": "{\"related\": 1, \"shared\": \"\"}"
+  },
+  {
+   "call": 3,
+   "related": 1,
+   "shared": "",
+   "text": "{\"related\": 1, \"shared\": \"\"}"
+  }
+ ],
+ "mean_related": 1.0
+}

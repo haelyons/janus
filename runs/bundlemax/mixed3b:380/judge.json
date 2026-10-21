@@ -1,0 +1,29 @@
+{
+ "pathways": {
+  "b1": "The unit responds mainly to round, rimmed, dial-like faces such as clock faces, stopwatches, gauges and speedometers. It also responds more weakly to other circular framed objects like a plaque, a lens, a washing-machine door, a lock dial and a cup seen from above.",
+  "b2": "The unit responds to circular, rimmed shapes, especially round dials and gauges seen face-on. These include stopwatches, speedometers, barometers, watch faces and washing-machine portholes, and the response extends more weakly to other round rimmed objects such as cups, bottle caps, discs, buckets and plaques.",
+  "b3": "The unit seems to respond mainly to vehicles, especially round wheels on cars, vans, motorcycles, an ambulance and a toy car. It also fires more weakly for other circular or curved glossy objects such as round keys, gauges, lenses, bowls, a spiral shell and a curled horn."
+ },
+ "prompt": "These are explanations of different input pathways into one unit of a neural network. Each was written from the inputs that drive the unit through that pathway alone.\n\nPathway 1: The unit responds mainly to round, rimmed, dial-like faces such as clock faces, stopwatches, gauges and speedometers. It also responds more weakly to other circular framed objects like a plaque, a lens, a washing-machine door, a lock dial and a cup seen from above.\nPathway 2: The unit responds to circular, rimmed shapes, especially round dials and gauges seen face-on. These include stopwatches, speedometers, barometers, watch faces and washing-machine portholes, and the response extends more weakly to other round rimmed objects such as cups, bottle caps, discs, buckets and plaques.\nPathway 3: The unit seems to respond mainly to vehicles, especially round wheels on cars, vans, motorcycles, an ambulance and a toy car. It also fires more weakly for other circular or curved glossy objects such as round keys, gauges, lenses, bowls, a spiral shell and a curled horn.\n\nDo they describe one underlying thing (different parts, aspects or natural offshoots of the same thing), or unrelated things that happen to share the unit? Reply with only JSON: {\"related\": n, \"shared\": \"...\"}, where n is 1 (clearly unrelated) to 5 (clearly one thing) and shared names what they have in common, or is empty.",
+ "calls": [
+  {
+   "call": 1,
+   "related": 4,
+   "shared": "circular rimmed objects such as dials, gauges and wheels",
+   "text": "{\"related\": 4, \"shared\": \"circular rimmed objects such as dials, gauges and wheels\"}"
+  },
+  {
+   "call": 2,
+   "related": 4,
+   "shared": "circular rimmed objects such as dials, gauges and wheels",
+   "text": "{\"related\": 4, \"shared\": \"circular rimmed objects such as dials, gauges and wheels\"}"
+  },
+  {
+   "call": 3,
+   "related": 4,
+   "shared": "round rimmed circular objects such as dials, gauges and wheels",
+   "text": "{\"related\": 4, \"shared\": \"round rimmed circular objects such as dials, gauges and wheels\"}"
+  }
+ ],
+ "mean_related": 4.0
+}

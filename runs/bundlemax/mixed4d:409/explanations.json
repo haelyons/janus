@@ -1,0 +1,310 @@
+{
+ "whole": {
+  "name": "U-409",
+  "card": "card_whole.jpg",
+  "M": 2288.918701171875,
+  "ids": [
+   5991,
+   1651,
+   8406,
+   6770,
+   6549,
+   7703,
+   2715,
+   7001,
+   9395,
+   4163,
+   56,
+   8345,
+   1611,
+   5429,
+   4736,
+   5505,
+   1847,
+   7767,
+   1584,
+   7005
+  ],
+  "values": [
+   2288.918701171875,
+   2264.86328125,
+   1954.709716796875,
+   1925.4307861328125,
+   1891.7918701171875,
+   1877.0322265625,
+   1874.2337646484375,
+   1848.7037353515625,
+   1845.949462890625,
+   1817.971435546875,
+   1816.9500732421875,
+   1816.0911865234375,
+   1791.005615234375,
+   1783.5623779296875,
+   1754.6610107421875,
+   1747.31787109375,
+   1745.2330322265625,
+   1732.631591796875,
+   1698.265625,
+   1696.4571533203125
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "unrelated",
+    "explanation": "The unit responds to two distinct categories: dogs (plus a dog-like weasel) and road vehicles such as cars, police vans and a tanker truck. The only plausible shared factor is a side-profile view of an object standing on the ground.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to two distinct categories: dogs (plus a dog-like weasel) and road vehicles such as cars, police vans and a tanker truck. The only plausible shared factor is a side-profile view of an object standing on the ground.",
+     "evidence": "Of the top 20, 12 are dogs of varied breeds and 7 are cars or trucks (#1, #4, #6, #8, #13, #15, #20), interleaved at similar activations (both reach 10 and 8). Most are shown in side view.",
+     "missing_data": "Activations for front-facing dogs and cars, and for other side-profile objects such as horses, cats or furniture, to test whether the unit encodes a shared 'side-profile on ground' shape rather than two separate concepts.",
+     "confidence": 0.6
+    },
+    "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to two distinct categories: dogs (plus a dog-like weasel) and road vehicles such as cars, police vans and a tanker truck. The only plausible shared factor is a side-profile view of an object standing on the ground.\", \"evidence\": \"Of the top 20, 12 are dogs of varied breeds and 7 are cars or trucks (#1, #4, #6, #8, #13, #15, #20), interleaved at similar activations (both reach 10 and 8). Most are shown in side view.\", \"missing_data\": \"Activations for front-facing dogs and cars, and for other side-profile objects such as horses, cats or furniture, to test whether the unit encodes a shared 'side-profile on ground' shape rather than two separate concepts.\", \"confidence\": 0.6}"
+   },
+   {
+    "sample": 2,
+    "class": "unrelated",
+    "explanation": "The unit responds to two unrelated categories: dogs (and a dog-like animal, a stoat/weasel) and road vehicles (cars, police vehicles, a tanker truck).",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to two unrelated categories: dogs (and a dog-like animal, a stoat/weasel) and road vehicles (cars, police vehicles, a tanker truck).",
+     "evidence": "Of the top 20, about 12 are dogs of many breeds plus one weasel, and 7 are cars or trucks, with the two groups interleaved at similar activations (10 to 7). The only thing they share is a side-on view of a whole object, which is weak and generic.",
+     "missing_data": "Activations on side-view images of other objects (other animals, furniture, boats), and the full activation distribution, would show whether a shared side-profile or shape feature explains both groups rather than true polysemanticity.",
+     "confidence": 0.6
+    },
+    "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated categories: dogs (and a dog-like animal, a stoat/weasel) and road vehicles (cars, police vehicles, a tanker truck).\",\n \"evidence\": \"Of the top 20, about 12 are dogs of many breeds plus one weasel, and 7 are cars or trucks, with the two groups interleaved at similar activations (10 to 7). The only thing they share is a side-on view of a whole object, which is weak and generic.\",\n \"missing_data\": \"Activations on side-view images of other objects (other animals, furniture, boats), and the full activation distribution, would show whether a shared side-profile or shape feature explains both groups rather than true polysemanticity.\",\n \"confidence\": 0.6}\n```"
+   }
+  ]
+ },
+ "b1": {
+  "name": "U-117",
+  "card": "card_b1.jpg",
+  "M": 1724.5169677734375,
+  "ids": [
+   5991,
+   1611,
+   7001,
+   7005,
+   7703,
+   7004,
+   7836,
+   7153,
+   6894,
+   4739,
+   4736,
+   7895,
+   4730,
+   5383,
+   7894,
+   6771,
+   6770,
+   4911,
+   7898,
+   1790
+  ],
+  "values": [
+   1724.5169677734375,
+   1477.3653564453125,
+   1397.536865234375,
+   1367.828857421875,
+   1320.3031005859375,
+   1271.54345703125,
+   1193.3865966796875,
+   1181.13427734375,
+   1179.96533203125,
+   1165.7623291015625,
+   1158.1575927734375,
+   1135.22998046875,
+   1123.3314208984375,
+   1103.8167724609375,
+   1101.821044921875,
+   1093.5616455078125,
+   1090.16064453125,
+   1087.5196533203125,
+   1086.4073486328125,
+   1084.313720703125
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one_plus_related",
+    "explanation": "The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.",
+     "evidence": "The top 15 photos are all cars or car-like vans, with activations of 6 to 10. The weaker images (#16-#18, #20, activation 6) are lorries, a tanker truck and buses, which are related road vehicles.",
+     "missing_data": "Activations on non-vehicle images and on vehicle parts (e.g., wheels alone), plus the full activation distribution beyond the top 20, to check whether it is a general wheeled-vehicle detector rather than a car detector.",
+     "confidence": 0.75
+    },
+    "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.\", \"evidence\": \"The top 15 photos are all cars or car-like vans, with activations of 6 to 10. The weaker images (#16-#18, #20, activation 6) are lorries, a tanker truck and buses, which are related road vehicles.\", \"missing_data\": \"Activations on non-vehicle images and on vehicle parts (e.g., wheels alone), plus the full activation distribution beyond the top 20, to check whether it is a general wheeled-vehicle detector rather than a car detector.\", \"confidence\": 0.75}"
+   },
+   {
+    "sample": 2,
+    "class": "one_plus_related",
+    "explanation": "The unit responds mainly to passenger cars and vans seen side-on or at a three-quarter angle (sedans, wagons, convertibles, SUVs, police cars, ambulances). It also responds more weakly to larger road vehicles such as trucks and buses.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds mainly to passenger cars and vans seen side-on or at a three-quarter angle (sedans, wagons, convertibles, SUVs, police cars, ambulances). It also responds more weakly to larger road vehicles such as trucks and buses.",
+     "evidence": "Ranks #1-15 are all cars or car-sized vans and score 6-10. Ranks #16-20 include a lorry, a tanker truck and two buses, all at the lower activation of 6, with a Bugatti also at 6.",
+     "missing_data": "Activations on non-vehicle images and on images where vehicles are small or seen from unusual angles, plus a broader sample beyond the top 20, would show whether the unit is specific to cars or covers road vehicles in general.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to passenger cars and vans seen side-on or at a three-quarter angle (sedans, wagons, convertibles, SUVs, police cars, ambulances). It also responds more weakly to larger road vehicles such as trucks and buses.\",\n \"evidence\": \"Ranks #1-15 are all cars or car-sized vans and score 6-10. Ranks #16-20 include a lorry, a tanker truck and two buses, all at the lower activation of 6, with a Bugatti also at 6.\",\n \"missing_data\": \"Activations on non-vehicle images and on images where vehicles are small or seen from unusual angles, plus a broader sample beyond the top 20, would show whether the unit is specific to cars or covers road vehicles in general.\",\n \"confidence\": 0.8}"
+   }
+  ]
+ },
+ "b2": {
+  "name": "U-986",
+  "card": "card_b2.jpg",
+  "M": 1130.792236328125,
+  "ids": [
+   8406,
+   287,
+   1651,
+   7823,
+   4178,
+   9395,
+   56,
+   5856,
+   6542,
+   1036,
+   5401,
+   2715,
+   1595,
+   4741,
+   4079,
+   8815,
+   6935,
+   1035,
+   6549,
+   8781
+  ],
+  "values": [
+   1130.792236328125,
+   1123.0880126953125,
+   1121.828857421875,
+   1104.099609375,
+   1098.17626953125,
+   1065.3370361328125,
+   1057.3258056640625,
+   1003.2095336914062,
+   1000.8538818359375,
+   977.996337890625,
+   975.991943359375,
+   959.9900512695312,
+   953.8693237304688,
+   952.6316528320312,
+   936.7152099609375,
+   924.8656005859375,
+   923.9235229492188,
+   914.3446044921875,
+   902.505859375,
+   888.3347778320312
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one_plus_related",
+    "explanation": "The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to other elongated, side-on bodies such as an airliner.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to other elongated, side-on bodies such as an airliner.",
+     "evidence": "19 of the 20 top images show full-body quadrupeds seen side-on, across many species, with near-equal activations of 8-10. The one exception is the side-view airplane (#13, activation 8), which shares the horizontal-body-on-supports silhouette.",
+     "missing_data": "Activations on close-up animal faces, animals lying down or seen head-on, and non-animal side-view objects such as cars or furniture would show whether the unit codes animals or just a profile body shape.",
+     "confidence": 0.7
+    },
+    "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to other elongated, side-on bodies such as an airliner.\",\n \"evidence\": \"19 of the 20 top images show full-body quadrupeds seen side-on, across many species, with near-equal activations of 8-10. The one exception is the side-view airplane (#13, activation 8), which shares the horizontal-body-on-supports silhouette.\",\n \"missing_data\": \"Activations on close-up animal faces, animals lying down or seen head-on, and non-animal side-view objects such as cars or furniture would show whether the unit codes animals or just a profile body shape.\",\n \"confidence\": 0.7}\n```"
+   },
+   {
+    "sample": 2,
+    "class": "one_plus_related",
+    "explanation": "The unit responds to four-legged animals seen whole and standing, mostly side-on, in an outdoor scene. Dogs give the strongest response, and other large quadrupeds (elephants, cattle, bison, ibex, impala, horses) give somewhat weaker responses.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds to four-legged animals seen whole and standing, mostly side-on, in an outdoor scene. Dogs give the strongest response, and other large quadrupeds (elephants, cattle, bison, ibex, impala, horses) give somewhat weaker responses.",
+     "evidence": "8 of the top 11 photos and 13 of the top 20 show full-body dogs, and nearly every other photo shows a whole quadruped standing outdoors at activations of 8-10. The single exception is an airliner seen side-on (#13, activation 8), which fits a 'side view of a body with an elongated horizontal shape' reading rather than a separate concept.",
+     "missing_data": "Activations over the whole dataset, especially close-up dog faces versus full-body non-dog animals, plus more side-view vehicles. This would show whether the unit is about dogs specifically or about the side-view quadruped body shape.",
+     "confidence": 0.65
+    },
+    "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to four-legged animals seen whole and standing, mostly side-on, in an outdoor scene. Dogs give the strongest response, and other large quadrupeds (elephants, cattle, bison, ibex, impala, horses) give somewhat weaker responses.\",\n \"evidence\": \"8 of the top 11 photos and 13 of the top 20 show full-body dogs, and nearly every other photo shows a whole quadruped standing outdoors at activations of 8-10. The single exception is an airliner seen side-on (#13, activation 8), which fits a 'side view of a body with an elongated horizontal shape' reading rather than a separate concept.\",\n \"missing_data\": \"Activations over the whole dataset, especially close-up dog faces versus full-body non-dog animals, plus more side-view vehicles. This would show whether the unit is about dogs specifically or about the side-view quadruped body shape.\",\n \"confidence\": 0.65}"
+   }
+  ]
+ },
+ "b3": {
+  "name": "U-300",
+  "card": "card_b3.jpg",
+  "M": 1196.246826171875,
+  "ids": [
+   1651,
+   3932,
+   5505,
+   6906,
+   5429,
+   223,
+   3519,
+   6992,
+   5529,
+   7824,
+   4163,
+   3096,
+   2775,
+   2818,
+   3516,
+   5501,
+   6549,
+   2715,
+   6125,
+   8815
+  ],
+  "values": [
+   1196.246826171875,
+   1098.8399658203125,
+   1088.8970947265625,
+   1049.6488037109375,
+   1022.847900390625,
+   966.1424560546875,
+   959.1907958984375,
+   951.4389038085938,
+   947.4297485351562,
+   945.156982421875,
+   926.1211547851562,
+   924.0029907226562,
+   912.0889282226562,
+   909.7113647460938,
+   909.6229248046875,
+   907.3211669921875,
+   904.78125,
+   897.9901123046875,
+   879.8720092773438,
+   858.4871826171875
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one_plus_related",
+    "explanation": "The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape.",
+     "evidence": "15 of the top 20 photos are dogs or wolves, mostly full-body standing shots, including the strongest one (#1, a Leonberger-like dog). Lower-ranked photos extend to a zebra, a weasel, antelopes and a sandpiper, all shown in profile with the body visible.",
+     "missing_data": "Activations for non-dog quadrupeds compared with dog close-ups (#13 is a face-only shot at activation 8), plus spatial activation maps, would show whether the unit codes 'dog' or 'animal body shape'.",
+     "confidence": 0.7
+    },
+    "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape.\", \"evidence\": \"15 of the top 20 photos are dogs or wolves, mostly full-body standing shots, including the strongest one (#1, a Leonberger-like dog). Lower-ranked photos extend to a zebra, a weasel, antelopes and a sandpiper, all shown in profile with the body visible.\", \"missing_data\": \"Activations for non-dog quadrupeds compared with dog close-ups (#13 is a face-only shot at activation 8), plus spatial activation maps, would show whether the unit codes 'dog' or 'animal body shape'.\", \"confidence\": 0.7}"
+   },
+   {
+    "sample": 2,
+    "class": "one_plus_related",
+    "explanation": "The unit responds mainly to quadruped mammals, especially dogs and wolves, seen standing in full-body side or three-quarter view. It responds more weakly to other animals with a similar body layout, such as a weasel, a zebra, and gazelles, and to a lesser extent a bird in side profile.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds mainly to quadruped mammals, especially dogs and wolves, seen standing in full-body side or three-quarter view. It responds more weakly to other animals with a similar body layout, such as a weasel, a zebra, and gazelles, and to a lesser extent a bird in side profile.",
+     "evidence": "Most of the top 20 images are dogs or wolves (#1-5, #7-8, #10, #12-18), and nearly all show the whole body from the side. The non-dog images (sandpiper #6, zebra #9, weasel #11, gazelles #20) score lower, at activations 7-8, and share the side-profile animal shape.",
+     "missing_data": "Activations on non-canid quadrupeds such as cats, horses, and cattle, and on close-up dog faces versus full bodies, would show whether the unit is selective for dogs or for the general quadruped body shape.",
+     "confidence": 0.7
+    },
+    "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to quadruped mammals, especially dogs and wolves, seen standing in full-body side or three-quarter view. It responds more weakly to other animals with a similar body layout, such as a weasel, a zebra, and gazelles, and to a lesser extent a bird in side profile.\",\n \"evidence\": \"Most of the top 20 images are dogs or wolves (#1-5, #7-8, #10, #12-18), and nearly all show the whole body from the side. The non-dog images (sandpiper #6, zebra #9, weasel #11, gazelles #20) score lower, at activations 7-8, and share the side-profile animal shape.\",\n \"missing_data\": \"Activations on non-canid quadrupeds such as cats, horses, and cattle, and on close-up dog faces versus full bodies, would show whether the unit is selective for dogs or for the general quadruped body shape.\",\n \"confidence\": 0.7}"
+   }
+  ]
+ }
+}

@@ -402,3 +402,53 @@ term 0.1 x activation x cos(input-layer pattern, its mean over the top 50 photos
 - By eye, 4d:409's renders, plain and fixed, show side-on vehicles with wheels at the bottom among furry body
   textures. A blind describer called one plain render "trucks or train cars seen from a low side/three-quarter view"
   and the other three "scales and feathers". 55's renders are cat faces in every condition.
+
+## Round 17a: ground truth for curves (`tools/curves.py`, claim-blind author)
+
+Synthetic stimuli (arcs at 24 orientations and 3 radii, straight lines, blank) over every mixed3b channel. The ten
+curve neurons of Curve Detectors (3b:379, 385, 343, 342, 388, 340, 330, 349, 406, 324) all fall at the 98th-100th
+percentile for curve response, the 86th-97th for curve/line ratio and the 90th-98th for orientation selectivity. The
+literature's IDs hold in this checkpoint. By the sealed rule the suite's curve unit is 3b:380 (ratio 11.4,
+osi 0.42, preferred orientation 150 degrees). Prediction 1 held.
+
+## Round 17b: stronger pulls in feature visualisation (`tools/fixedvis2.py`, claim-blind author)
+
+`runs/fixedvis2/`, blind one-sentence descriptions, two seeds each. Every render keeps 81-115% of the plain render's
+activation, except 55 through 352 (50-56%).
+- 4d:409 through the car neuron 4c:447: "side-view fragments of vehicles: pickup trucks, vans" (2/2). Through 4c:393
+  (a dog input, round 16): "furry quadruped bodies resembling shaggy dogs, seen mostly from the side" (2/2). Started
+  from its top photo: "a vintage convertible seen from a three-quarter side view". pull5 (50x the earlier bias):
+  animal bodies mixed with wheel and locomotive shapes. This reproduces the essay's "visualized through the car, ...
+  share a pose between cars and dogs": the same unit renders as a side-on vehicle or a side-on dog depending on the
+  route. Predictions 7 and 8 held.
+- 4e:55: pull5, init and through 493 give fox or cat faces from the front. Through the car input 352 it gives "a
+  vintage car seen from a three-quarter front-side view", at only about half the unit's activation. No render shows
+  flames, jets or a V.
+- Control 4e:700: food in dishes from above, in every condition.
+
+## Round 17c: the essay's blind maximum per bundle (`tools/bundlemax.py`, claim-blind author)
+
+`runs/bundlemax/report.txt`. Per unit: 3 input bundles by attribution clustering, each bundle alone (others zeroed)
+explained twice from a card of its top 20 whole photos, a blind picker given only the explanation picks 6 of 48
+held-pool photos, and a judge (3 calls) rates whether the three bundle explanations describe one thing (1-5).
+
+unit                judge   bundle explanations
+3b:380 (curve)      4 HIGH  dials and gauges / dials and portholes / wheels on vehicles
+4c:447 (car)        5 HIGH  side-on road vehicles, all three
+4d:409 (pose)       3 MID   side-on cars / side-on quadrupeds / side-on dogs and wolves
+planted 809+804     2 LOW   cats and keyboards / road vehicles / laptops and dogs (1 channel, 2% share)
+planted 703+315     1 LOW   tentacles and florets / bottle shapes / birds
+4e:55               1 LOW   cars / a mix with no theme (8% share) / cat and fox faces (71% share)
+
+- Prediction 2 held: planted 2 and 1; car 5, curve 4. Prediction 3 held: 409 judge 3, every bundle names the side
+  view (shared: "elongated objects seen side-on"). The pose ground truth is read at the middle, not the top.
+- Prediction 4 (cross hit / own hit, mean over bundles) half held: curve 0.98 and car 1.00 above 0.6; planted
+  809+804 0.35 below 0.4; planted 703+315 0.50 misses (the bird bundle's pool is hit by the other explanations, 0.63
+  vs chance 0.33).
+- Prediction 5 missed narrowly: own best at least 0.5 of the corpus max in 14 of 18 bundle conditions (78%; 83% with
+  the whole conditions). The four misses are 0.42-0.50.
+- 4e:55 (prediction 6, reported): judge 1, at the planted end, with transfer 0.42 / 0.89 / 0.26, like the planted
+  809+804. Its bundles read as a car route and a cat-face route; no explanation names a V, a point or flames.
+- With a ground truth that shares one thing across kinds (409), the method finds it; on 55 it finds the received
+  reading. This is the essay's own step (ablate the other bundles, then a blind maximum), and no shared shape comes
+  out of it.

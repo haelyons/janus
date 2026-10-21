@@ -1,0 +1,310 @@
+{
+ "whole": {
+  "name": "U-608",
+  "card": "card_whole.jpg",
+  "M": 8136.97509765625,
+  "ids": [
+   7005,
+   7001,
+   1979,
+   1567,
+   1795,
+   7706,
+   954,
+   4601,
+   9710,
+   4739,
+   1611,
+   7153,
+   7154,
+   1796,
+   957,
+   7109,
+   6892,
+   4911,
+   4604,
+   9828
+  ],
+  "values": [
+   8136.97509765625,
+   7735.173828125,
+   7659.2509765625,
+   7468.2119140625,
+   7460.99755859375,
+   7430.91552734375,
+   7131.1953125,
+   7005.02978515625,
+   6841.4873046875,
+   6835.29736328125,
+   6797.04345703125,
+   6772.71484375,
+   6698.28173828125,
+   6641.25,
+   6596.55615234375,
+   6594.66748046875,
+   6583.24658203125,
+   6477.19189453125,
+   6473.38818359375,
+   6400.8388671875
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one",
+    "explanation": "The unit responds to wheeled road motor vehicles, seen whole from the side or at a three-quarter angle, across many vehicle types.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to wheeled road motor vehicles, seen whole from the side or at a three-quarter angle, across many vehicle types.",
+     "evidence": "All 20 top images are complete road vehicles (station wagon, sedans, taxi, SUV, pickups, vans, minibuses, buses, fire trucks, ambulance, police cars), and the activations fall only gently from 10 to 8 with no clear split by vehicle type, though cars rank slightly highest. Even a printed van advertisement (#13) activates it strongly, which points to vehicle shape rather than scene context.",
+     "missing_data": "Activations on lower-ranked images and on non-road vehicles (trains, boats, bicycles, aircraft) would show whether passenger cars form the core with buses and trucks as weaker extensions, or whether the unit covers all vehicles more broadly.",
+     "confidence": 0.7
+    },
+    "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to wheeled road motor vehicles, seen whole from the side or at a three-quarter angle, across many vehicle types.\",\n \"evidence\": \"All 20 top images are complete road vehicles (station wagon, sedans, taxi, SUV, pickups, vans, minibuses, buses, fire trucks, ambulance, police cars), and the activations fall only gently from 10 to 8 with no clear split by vehicle type, though cars rank slightly highest. Even a printed van advertisement (#13) activates it strongly, which points to vehicle shape rather than scene context.\",\n \"missing_data\": \"Activations on lower-ranked images and on non-road vehicles (trains, boats, bicycles, aircraft) would show whether passenger cars form the core with buses and trucks as weaker extensions, or whether the unit covers all vehicles more broadly.\",\n \"confidence\": 0.7}"
+   },
+   {
+    "sample": 2,
+    "class": "one",
+    "explanation": "The unit responds to wheeled road motor vehicles (cars, vans, pickups, buses, fire trucks, ambulances), usually seen from the side or three-quarter view so the body and wheels are visible.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to wheeled road motor vehicles (cars, vans, pickups, buses, fire trucks, ambulances), usually seen from the side or three-quarter view so the body and wheels are visible.",
+     "evidence": "All 20 top images show a single prominent road vehicle, and they span many types (sedans, station wagons, a taxi, a limo, a minibus, a fire engine, a camper van, a vintage bus) with nearly flat activations from 10 down to 8. That points to a general 'road vehicle' detector rather than one specific car type.",
+     "missing_data": "Activations on other wheeled or vehicle-like things (bicycles, trains, boats, isolated wheels or tires) and on mid- and low-ranked images, which would show whether the unit is really keyed to wheels or vehicle side profiles rather than motor vehicles as a category.",
+     "confidence": 0.8
+    },
+    "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to wheeled road motor vehicles (cars, vans, pickups, buses, fire trucks, ambulances), usually seen from the side or three-quarter view so the body and wheels are visible.\",\n \"evidence\": \"All 20 top images show a single prominent road vehicle, and they span many types (sedans, station wagons, a taxi, a limo, a minibus, a fire engine, a camper van, a vintage bus) with nearly flat activations from 10 down to 8. That points to a general 'road vehicle' detector rather than one specific car type.\",\n \"missing_data\": \"Activations on other wheeled or vehicle-like things (bicycles, trains, boats, isolated wheels or tires) and on mid- and low-ranked images, which would show whether the unit is really keyed to wheels or vehicle side profiles rather than motor vehicles as a category.\",\n \"confidence\": 0.8}\n```"
+   }
+  ]
+ },
+ "b1": {
+  "name": "U-597",
+  "card": "card_b1.jpg",
+  "M": 3710.846923828125,
+  "ids": [
+   7001,
+   1795,
+   5991,
+   7153,
+   7899,
+   7005,
+   4739,
+   1618,
+   1979,
+   7000,
+   7154,
+   1611,
+   4601,
+   7009,
+   7706,
+   957,
+   7109,
+   7151,
+   6779,
+   6894
+  ],
+  "values": [
+   3710.846923828125,
+   3645.64306640625,
+   3506.008056640625,
+   3380.640869140625,
+   3312.851806640625,
+   3185.393310546875,
+   3058.4970703125,
+   3055.97119140625,
+   3046.204833984375,
+   3033.42431640625,
+   3027.59130859375,
+   2997.524169921875,
+   2995.727294921875,
+   2980.81298828125,
+   2962.86865234375,
+   2954.433837890625,
+   2945.842041015625,
+   2943.61328125,
+   2935.17431640625,
+   2814.651123046875
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one",
+    "explanation": "The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.",
+     "evidence": "All 20 top images show a single wheeled road vehicle in side or three-quarter profile, and activations are nearly flat (8-10) across very different types: sedans, convertibles, a minibus, police cars, a fire engine, a pickup, a semi truck, an ambulance, and a printed ad for a van. No non-vehicle image appears in the top set.",
+     "missing_data": "Lower-ranked activations and images of non-road vehicles (bicycles, trains, boats) or vehicles seen head-on would show whether the unit is specific to motor vehicles in profile or responds more broadly to wheels and vehicle shapes.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.\",\n \"evidence\": \"All 20 top images show a single wheeled road vehicle in side or three-quarter profile, and activations are nearly flat (8-10) across very different types: sedans, convertibles, a minibus, police cars, a fire engine, a pickup, a semi truck, an ambulance, and a printed ad for a van. No non-vehicle image appears in the top set.\",\n \"missing_data\": \"Lower-ranked activations and images of non-road vehicles (bicycles, trains, boats) or vehicles seen head-on would show whether the unit is specific to motor vehicles in profile or responds more broadly to wheels and vehicle shapes.\",\n \"confidence\": 0.8}"
+   },
+   {
+    "sample": 2,
+    "class": "one",
+    "explanation": "The unit responds to road motor vehicles seen from the side or at a three-quarter angle, including cars, vans, buses, trucks and emergency vehicles.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to road motor vehicles seen from the side or at a three-quarter angle, including cars, vans, buses, trucks and emergency vehicles.",
+     "evidence": "All 20 top images show a road vehicle as the main subject, across many types (sedans, convertibles, police cars, taxi, fire engine, ambulance, pickups, semi truck, limo). Activations fall only from 10 to 8 across these types, with no clear drop-off for any subtype.",
+     "missing_data": "Lower-ranked activations and responses to non-road vehicles (trains, boats) or to vehicle parts such as wheels alone would show whether the concept is broader or narrower than road vehicles.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to road motor vehicles seen from the side or at a three-quarter angle, including cars, vans, buses, trucks and emergency vehicles.\",\n \"evidence\": \"All 20 top images show a road vehicle as the main subject, across many types (sedans, convertibles, police cars, taxi, fire engine, ambulance, pickups, semi truck, limo). Activations fall only from 10 to 8 across these types, with no clear drop-off for any subtype.\",\n \"missing_data\": \"Lower-ranked activations and responses to non-road vehicles (trains, boats) or to vehicle parts such as wheels alone would show whether the concept is broader or narrower than road vehicles.\",\n \"confidence\": 0.8}"
+   }
+  ]
+ },
+ "b2": {
+  "name": "U-383",
+  "card": "card_b2.jpg",
+  "M": 1476.114013671875,
+  "ids": [
+   1795,
+   1611,
+   7834,
+   1798,
+   4601,
+   4739,
+   1790,
+   7156,
+   1629,
+   1618,
+   7000,
+   9829,
+   7706,
+   6894,
+   5144,
+   1805,
+   1130,
+   5149,
+   5821,
+   1566
+  ],
+  "values": [
+   1476.114013671875,
+   1401.2357177734375,
+   1265.5755615234375,
+   1235.2694091796875,
+   1131.021240234375,
+   1078.0045166015625,
+   1067.78466796875,
+   1047.3800048828125,
+   1013.6826171875,
+   1002.3756103515625,
+   995.2147827148438,
+   964.811767578125,
+   935.0784912109375,
+   927.2482299804688,
+   903.265869140625,
+   901.28173828125,
+   894.9383544921875,
+   891.8892822265625,
+   888.1983032226562,
+   879.7982788085938
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "unrelated",
+    "explanation": "The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also responds to groups of people standing or sitting together, which has no clear link to vehicles.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also responds to groups of people standing or sitting together, which has no clear link to vehicles.",
+     "evidence": "Sixteen of the top 20, including all of the top 8, are vehicles (buses, police vans, fire trucks, cars, a train). Three images of posed or casual groups of people (#9 at 7, #17 and #19 at 6) reach activations comparable to the weaker vehicle images.",
+     "missing_data": "Activations on vehicle-free group photos and people-free vehicle photos across the full range, plus the top images beyond 20, would show whether the people-group response is a real second feature or incidental, such as colorful clothing resembling vehicle livery.",
+     "confidence": 0.55
+    },
+    "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also responds to groups of people standing or sitting together, which has no clear link to vehicles.\",\n \"evidence\": \"Sixteen of the top 20, including all of the top 8, are vehicles (buses, police vans, fire trucks, cars, a train). Three images of posed or casual groups of people (#9 at 7, #17 and #19 at 6) reach activations comparable to the weaker vehicle images.\",\n \"missing_data\": \"Activations on vehicle-free group photos and people-free vehicle photos across the full range, plus the top images beyond 20, would show whether the people-group response is a real second feature or incidental, such as colorful clothing resembling vehicle livery.\",\n \"confidence\": 0.55}\n```"
+   },
+   {
+    "sample": 2,
+    "class": "one_plus_related",
+    "explanation": "The unit responds mainly to road vehicles seen side-on or at three-quarter view, such as buses, vans, emergency vehicles, trucks and cars, with the strongest drive from boxy buses and vans. It responds more weakly to a related vehicle (a bullet train) and to some group-of-people scenes, which may reflect a secondary feature such as colorful upright clusters.",
+    "parsed": {
+     "class": "one_plus_related",
+     "explanation": "The unit responds mainly to road vehicles seen side-on or at three-quarter view, such as buses, vans, emergency vehicles, trucks and cars, with the strongest drive from boxy buses and vans. It responds more weakly to a related vehicle (a bullet train) and to some group-of-people scenes, which may reflect a secondary feature such as colorful upright clusters.",
+     "evidence": "15 of the top 20 images are wheeled road vehicles, including the top 8 except #9, and buses/vans dominate the highest activations (10, 9, 8). The non-vehicle images (#9 beach group, #17 women in boots, #19 restaurant) only reach activations 6-7, and #16 is a train.",
+     "missing_data": "Activations on a broader sample, including vehicle images that do not activate it and people/group images, plus segmentation or occlusion maps to check whether the people images share a visual feature with the vehicles.",
+     "confidence": 0.65
+    },
+    "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to road vehicles seen side-on or at three-quarter view, such as buses, vans, emergency vehicles, trucks and cars, with the strongest drive from boxy buses and vans. It responds more weakly to a related vehicle (a bullet train) and to some group-of-people scenes, which may reflect a secondary feature such as colorful upright clusters.\",\n \"evidence\": \"15 of the top 20 images are wheeled road vehicles, including the top 8 except #9, and buses/vans dominate the highest activations (10, 9, 8). The non-vehicle images (#9 beach group, #17 women in boots, #19 restaurant) only reach activations 6-7, and #16 is a train.\",\n \"missing_data\": \"Activations on a broader sample, including vehicle images that do not activate it and people/group images, plus segmentation or occlusion maps to check whether the people images share a visual feature with the vehicles.\",\n \"confidence\": 0.65}"
+   }
+  ]
+ },
+ "b3": {
+  "name": "U-798",
+  "card": "card_b3.jpg",
+  "M": 3281.375244140625,
+  "ids": [
+   7001,
+   6892,
+   7199,
+   4609,
+   9710,
+   7005,
+   7151,
+   1567,
+   1611,
+   954,
+   1979,
+   5383,
+   7109,
+   4730,
+   7007,
+   7833,
+   6894,
+   953,
+   7153,
+   5142
+  ],
+  "values": [
+   3281.375244140625,
+   3247.325439453125,
+   3094.546630859375,
+   2993.17578125,
+   2974.943359375,
+   2971.225830078125,
+   2970.27490234375,
+   2869.92041015625,
+   2850.442138671875,
+   2823.650146484375,
+   2761.888427734375,
+   2700.968994140625,
+   2651.2353515625,
+   2553.171630859375,
+   2545.1796875,
+   2529.22412109375,
+   2514.078369140625,
+   2508.989501953125,
+   2497.4658203125,
+   2494.74609375
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one",
+    "explanation": "The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view.",
+     "evidence": "All 20 top images are wheeled road vehicles of many types: sedans, wagons, pickups, ambulances, fire trucks, police cars, a taxi, a camper van, a plow truck and a school bus. Activations fall only gradually from 10 to 8, and nothing other than a vehicle appears among the top images.",
+     "missing_data": "Lower-ranked activations and responses to related non-car objects (e.g., trains, boats, bicycles, toy cars) would show whether the unit is specific to road vehicles or extends to broader wheeled or man-made objects.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view.\",\n \"evidence\": \"All 20 top images are wheeled road vehicles of many types: sedans, wagons, pickups, ambulances, fire trucks, police cars, a taxi, a camper van, a plow truck and a school bus. Activations fall only gradually from 10 to 8, and nothing other than a vehicle appears among the top images.\",\n \"missing_data\": \"Lower-ranked activations and responses to related non-car objects (e.g., trains, boats, bicycles, toy cars) would show whether the unit is specific to road vehicles or extends to broader wheeled or man-made objects.\",\n \"confidence\": 0.8}"
+   },
+   {
+    "sample": 2,
+    "class": "one",
+    "explanation": "The unit responds to road vehicles, meaning cars, trucks, vans and buses, seen side-on or at three-quarter view.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to road vehicles, meaning cars, trucks, vans and buses, seen side-on or at three-quarter view.",
+     "evidence": "All 20 top images show a single prominent motor vehicle with activations of 8-10. They cover very different types (sedans, emergency vehicles, pickups, a school bus, a snowplow truck) and many colors, so the common factor is the vehicle body itself, not a subtype or a color.",
+     "missing_data": "Activations on non-vehicle images and on other wheeled things such as bicycles, trains and toy cars, plus lower-ranked examples, to check whether the unit extends to related concepts like wheels or road scenes.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to road vehicles, meaning cars, trucks, vans and buses, seen side-on or at three-quarter view.\",\n \"evidence\": \"All 20 top images show a single prominent motor vehicle with activations of 8-10. They cover very different types (sedans, emergency vehicles, pickups, a school bus, a snowplow truck) and many colors, so the common factor is the vehicle body itself, not a subtype or a color.\",\n \"missing_data\": \"Activations on non-vehicle images and on other wheeled things such as bicycles, trains and toy cars, plus lower-ranked examples, to check whether the unit extends to related concepts like wheels or road scenes.\",\n \"confidence\": 0.8}"
+   }
+  ]
+ }
+}

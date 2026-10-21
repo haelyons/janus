@@ -1,0 +1,29 @@
+{
+ "pathways": {
+  "b1": "The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.",
+  "b2": "The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also responds to groups of people standing or sitting together, which has no clear link to vehicles.",
+  "b3": "The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view."
+ },
+ "prompt": "These are explanations of different input pathways into one unit of a neural network. Each was written from the inputs that drive the unit through that pathway alone.\n\nPathway 1: The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.\nPathway 2: The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also responds to groups of people standing or sitting together, which has no clear link to vehicles.\nPathway 3: The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view.\n\nDo they describe one underlying thing (different parts, aspects or natural offshoots of the same thing), or unrelated things that happen to share the unit? Reply with only JSON: {\"related\": n, \"shared\": \"...\"}, where n is 1 (clearly unrelated) to 5 (clearly one thing) and shared names what they have in common, or is empty.",
+ "calls": [
+  {
+   "call": 1,
+   "related": 5,
+   "shared": "road vehicles (cars, vans, trucks, buses) seen whole from a side or three-quarter view",
+   "text": "{\"related\": 5, \"shared\": \"road vehicles (cars, vans, trucks, buses) seen whole from a side or three-quarter view\"}"
+  },
+  {
+   "call": 2,
+   "related": 5,
+   "shared": "road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view",
+   "text": "{\"related\": 5, \"shared\": \"road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view\"}"
+  },
+  {
+   "call": 3,
+   "related": 5,
+   "shared": "road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view",
+   "text": "{\"related\": 5, \"shared\": \"road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view\"}"
+  }
+ ],
+ "mean_related": 5.0
+}

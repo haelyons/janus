@@ -1,0 +1,29 @@
+{
+ "pathways": {
+  "b1": "The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and laptops.",
+  "b2": "The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.",
+  "b3": "The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds)."
+ },
+ "prompt": "These are explanations of different input pathways into one unit of a neural network. Each was written from the inputs that drive the unit through that pathway alone.\n\nPathway 1: The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and laptops.\nPathway 2: The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.\nPathway 3: The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds).\n\nDo they describe one underlying thing (different parts, aspects or natural offshoots of the same thing), or unrelated things that happen to share the unit? Reply with only JSON: {\"related\": n, \"shared\": \"...\"}, where n is 1 (clearly unrelated) to 5 (clearly one thing) and shared names what they have in common, or is empty.",
+ "calls": [
+  {
+   "call": 1,
+   "related": 2,
+   "shared": "common ImageNet object classes: furry pets (cats, dogs) and computer devices (keyboards, laptops), plus vehicles",
+   "text": "{\"related\": 2, \"shared\": \"common ImageNet object classes: furry pets (cats, dogs) and computer devices (keyboards, laptops), plus vehicles\"}"
+  },
+  {
+   "call": 2,
+   "related": 2,
+   "shared": "Pathways 1 and 3 overlap on furry pet animals (cats, dogs) and computer keyboards/laptops; pathway 2 (road vehicles) is unrelated",
+   "text": "{\"related\": 2, \"shared\": \"Pathways 1 and 3 overlap on furry pet animals (cats, dogs) and computer keyboards/laptops; pathway 2 (road vehicles) is unrelated\"}"
+  },
+  {
+   "call": 3,
+   "related": 2,
+   "shared": "furry animals (cats, dogs) and computer keyboards/laptops recur across pathways 1 and 3; vehicles are separate",
+   "text": "{\"related\": 2, \"shared\": \"furry animals (cats, dogs) and computer keyboards/laptops recur across pathways 1 and 3; vehicles are separate\"}"
+  }
+ ],
+ "mean_related": 2.0
+}

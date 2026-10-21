@@ -1,0 +1,149 @@
+== mixed3b:380  layer mixed3b, input mixed3a
+bundle b1: share 0.530, 8 channels [92, 145, 134, 116, 185, 129, 150, 24]
+bundle b2: share 0.368, 10 channels [71, 173, 171, 188, 163, 146, 64, 176, 91, 69]
+bundle b3: share 0.101, 6 channels [101, 126, 98, 172, 144, 103]
+-- whole  (U-394, M=4169)
+   s1 [one_plus_related] The unit responds to circular, dial-like faces with a rim and radial markings or concentric structure, most strongly gauges, stopwatches and meters. It also responds more weakly to other round framed
+   s2 [one_plus_related] The unit responds to circular, framed disc shapes, most strongly to round dials and gauges with a rim and markings (meters, fuel gauges, stopwatches, speedometers, lock dials). It responds more weakly
+   own best 0.519 hit 0.250 (n=4) | cross best 0.576 hit 0.389 (n=12) | chance hit 0.333 | own-cross hit -0.139 -> SIMILAR
+-- b1  (U-267, M=2574)
+   s1 [one_plus_related] The unit responds mainly to round, rimmed, dial-like faces such as clock faces, stopwatches, gauges and speedometers. It also responds more weakly to other circular framed objects like a plaque, a len
+   s2 [one_plus_related] The unit responds to circular, dial-like objects with a round face and rim, most strongly clock, stopwatch and gauge faces. It extends more weakly to other round rimmed shapes such as lenses, washing-
+   own best 0.569 hit 0.667 (n=4) | cross best 0.568 hit 0.625 (n=8) | chance hit 0.333 | own-cross hit +0.042 -> SIMILAR
+-- b2  (U-564, M=2813)
+   s1 [one_plus_related] The unit responds to circular, rimmed shapes, especially round dials and gauges seen face-on. These include stopwatches, speedometers, barometers, watch faces and washing-machine portholes, and the re
+   s2 [one_plus_related] The unit responds to circular, round-framed objects seen roughly face-on, especially dials and gauges with a rim (pocket gauges, speedometers, watches, stopwatches, barometers, washing-machine doors).
+   own best 0.987 hit 0.667 (n=4) | cross best 0.987 hit 0.583 (n=8) | chance hit 0.333 | own-cross hit +0.083 -> SIMILAR
+-- b3  (U-793, M=660.9)
+   s1 [one_plus_related] The unit seems to respond mainly to vehicles, especially round wheels on cars, vans, motorcycles, an ambulance and a toy car. It also fires more weakly for other circular or curved glossy objects such
+   s2 [one_plus_related] The unit mainly responds to vehicles, especially cars and vans seen from the side with wheels and glossy bodywork. It responds more weakly to other rounded, shiny or circular objects such as buttons,
+   own best 0.423 hit 0.333 (n=4) | cross best 0.360 hit 0.375 (n=8) | chance hit 0.333 | own-cross hit -0.042 -> SIMILAR
+judge related [4, 4, 4] mean 4.00 -> HIGH
+   shared 1: circular rimmed objects such as dials, gauges and wheels
+   shared 2: circular rimmed objects such as dials, gauges and wheels
+   shared 3: round rimmed circular objects such as dials, gauges and wheels
+
+== mixed4c:447  layer mixed4c, input mixed4b
+bundle b1: share 0.440, 5 channels [373, 491, 209, 169, 236]
+bundle b2: share 0.168, 5 channels [179, 423, 428, 469, 387]
+bundle b3: share 0.392, 14 channels [237, 467, 171, 98, 315, 191, 318, 405, 268, 275, 292, 365, 336, 250]
+-- whole  (U-608, M=8137)
+   s1 [one] The unit responds to wheeled road motor vehicles, seen whole from the side or at a three-quarter angle, across many vehicle types.
+   s2 [one] The unit responds to wheeled road motor vehicles (cars, vans, pickups, buses, fire trucks, ambulances), usually seen from the side or three-quarter view so the body and wheels are visible.
+   own best 0.721 hit 1.000 (n=4) | cross best 0.721 hit 1.000 (n=12) | chance hit 0.333 | own-cross hit +0.000 -> SIMILAR
+-- b1  (U-597, M=3711)
+   s1 [one] The unit responds to road motor vehicles (cars, vans, trucks, buses) seen side-on or at three-quarter view, with the wheels and body side visible.
+   s2 [one] The unit responds to road motor vehicles seen from the side or at a three-quarter angle, including cars, vans, buses, trucks and emergency vehicles.
+   own best 0.858 hit 1.000 (n=4) | cross best 0.858 hit 1.000 (n=8) | chance hit 0.250 | own-cross hit +0.000 -> SIMILAR
+-- b2  (U-383, M=1476)
+   s1 [unrelated] The unit mainly responds to road vehicles seen from the side or at a three-quarter angle, especially buses, emergency vehicles, cars and trucks, with a bullet train as a close extension. It also respo
+   s2 [one_plus_related] The unit responds mainly to road vehicles seen side-on or at three-quarter view, such as buses, vans, emergency vehicles, trucks and cars, with the strongest drive from boxy buses and vans. It respond
+   own best 0.671 hit 0.833 (n=4) | cross best 0.671 hit 0.833 (n=8) | chance hit 0.333 | own-cross hit +0.000 -> SIMILAR
+-- b3  (U-798, M=3281)
+   s1 [one] The unit responds to road vehicles (cars, vans, trucks, and buses) shown whole or nearly whole, mostly from a side or three-quarter view.
+   s2 [one] The unit responds to road vehicles, meaning cars, trucks, vans and buses, seen side-on or at three-quarter view.
+   own best 1.001 hit 1.000 (n=4) | cross best 0.961 hit 1.000 (n=8) | chance hit 0.250 | own-cross hit +0.000 -> SIMILAR
+judge related [5, 5, 5] mean 5.00 -> HIGH
+   shared 1: road vehicles (cars, vans, trucks, buses) seen whole from a side or three-quarter view
+   shared 2: road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view
+   shared 3: road motor vehicles (cars, vans, trucks, buses) seen whole from the side or three-quarter view
+
+== mixed4d:409  layer mixed4d, input mixed4c
+bundle b1: share 0.327, 6 channels [447, 384, 417, 167, 110, 240]
+bundle b2: share 0.374, 10 channels [393, 363, 145, 361, 119, 242, 300, 251, 10, 484]
+bundle b3: share 0.299, 8 channels [418, 166, 435, 321, 109, 401, 171, 311]
+-- whole  (U-409, M=2289)
+   s1 [unrelated] The unit responds to two distinct categories: dogs (plus a dog-like weasel) and road vehicles such as cars, police vans and a tanker truck. The only plausible shared factor is a side-profile view of a
+   s2 [unrelated] The unit responds to two unrelated categories: dogs (and a dog-like animal, a stoat/weasel) and road vehicles (cars, police vehicles, a tanker truck).
+   own best 0.763 hit 0.708 (n=4) | cross best 0.817 hit 0.792 (n=12) | chance hit 0.333 | own-cross hit -0.083 -> SIMILAR
+-- b1  (U-117, M=1725)
+   s1 [one_plus_related] The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.
+   s2 [one_plus_related] The unit responds mainly to passenger cars and vans seen side-on or at a three-quarter angle (sedans, wagons, convertibles, SUVs, police cars, ambulances). It also responds more weakly to larger road
+   own best 0.613 hit 1.000 (n=4) | cross best 0.420 hit 0.500 (n=8) | chance hit 0.333 | own-cross hit +0.500 -> OWN_HIGHER
+-- b2  (U-986, M=1131)
+   s1 [one_plus_related] The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to othe
+   s2 [one_plus_related] The unit responds to four-legged animals seen whole and standing, mostly side-on, in an outdoor scene. Dogs give the strongest response, and other large quadrupeds (elephants, cattle, bison, ibex, imp
+   own best 0.657 hit 0.875 (n=4) | cross best 0.639 hit 0.646 (n=8) | chance hit 0.333 | own-cross hit +0.229 -> SIMILAR
+-- b3  (U-300, M=1196)
+   s1 [one_plus_related] The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape.
+   s2 [one_plus_related] The unit responds mainly to quadruped mammals, especially dogs and wolves, seen standing in full-body side or three-quarter view. It responds more weakly to other animals with a similar body layout, s
+   own best 0.782 hit 1.000 (n=4) | cross best 0.608 hit 0.625 (n=8) | chance hit 0.333 | own-cross hit +0.375 -> OWN_HIGHER
+judge related [3, 3, 3] mean 3.00 -> MIDDLE
+   shared 1: elongated objects seen side-on in profile (four-legged animal bodies and road vehicles)
+   shared 2: large elongated objects (vehicles or four-legged animals) seen whole-body in side or profile view
+   shared 3: whole objects with elongated, horizontal bodies seen from the side (four-legged animals such as dogs, plus vehicles like cars and airliners)
+
+== sum:mixed4e:809+804  layer mixed4e, input mixed4d, scales [1836.5476, 3418.6013]
+bundle b1: share 0.277, 9 channels [401, 143, 221, 461, 378, 240, 442, 486, 275]
+bundle b2: share 0.702, 14 channels [484, 352, 277, 273, 169, 241, 74, 419, 173, 295, 526, 55, 167, 139]
+bundle b3: share 0.020, 1 channels [426]
+-- whole  (U-260, M=1)
+   s1 [unrelated] The unit responds to two unconnected categories: road vehicles (cars, pickups, vans, buses, fire trucks, taxis) and animals, especially cats, with weaker responses to other furry or feathered animals.
+   s2 [unrelated] The unit responds to road vehicles such as cars, pickups, vans, buses, taxis and fire trucks. It also responds separately to animals, mainly cats, plus an owl and a coyote.
+   own best 0.995 hit 0.667 (n=4) | cross best 0.733 hit 0.667 (n=10) | chance hit 0.333 | own-cross hit +0.000 -> SIMILAR
+-- b1  (U-553, M=1.003)
+   s1 [unrelated] The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and l
+   s2 [unrelated] The unit responds mainly to cats and cat-like furry animals with patterned or grey fur (domestic cats, big cats, fox, coyote, lemur, owl), and separately to computer keyboards and laptops.
+   own best 0.495 hit 1.000 (n=4) | cross best 0.392 hit 0.389 (n=6) | chance hit 0.333 | own-cross hit +0.611 -> OWN_HIGHER
+-- b2  (U-204, M=0.9574)
+   s1 [one] The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.
+   s2 [None] (no explanation: reply not parsed)
+   own best 0.750 hit 1.000 (n=2) | cross best 0.324 hit 0.167 (n=8) | chance hit 0.333 | own-cross hit +0.833 -> OWN_HIGHER
+-- b3  (U-692, M=0.6204)
+   s1 [unrelated] The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds).
+   s2 [unrelated] The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs, mostly long-haired or floppy-eared breeds such as spaniels, Leon
+   own best 0.644 hit 1.000 (n=4) | cross best 0.508 hit 0.500 (n=6) | chance hit 0.333 | own-cross hit +0.500 -> OWN_HIGHER
+judge related [2, 2, 2] mean 2.00 -> LOW
+   shared 1: common ImageNet object classes: furry pets (cats, dogs) and computer devices (keyboards, laptops), plus vehicles
+   shared 2: Pathways 1 and 3 overlap on furry pet animals (cats, dogs) and computer keyboards/laptops; pathway 2 (road vehicles) is unrelated
+   shared 3: furry animals (cats, dogs) and computer keyboards/laptops recur across pathways 1 and 3; vehicles are separate
+
+== sum:mixed4e:703+315  layer mixed4e, input mixed4d, scales [1852.3973, 1179.1597]
+bundle b1: share 0.412, 9 channels [365, 200, 520, 93, 198, 109, 232, 4, 485]
+bundle b2: share 0.196, 5 channels [469, 497, 294, 413, 128]
+bundle b3: share 0.392, 10 channels [466, 308, 475, 150, 479, 202, 62, 522, 504, 189]
+-- whole  (U-203, M=1.157)
+   s1 [unrelated] The unit looks polysemantic. It responds to several unrelated groups: bumpy, scaled fruit and produce (sugar apples, pineapple, cucumbers, green apple); birds, especially waders and perched birds; ten
+   s2 [unrelated] The unit seems polysemantic. It responds to several unconnected categories: bumpy or segmented textured produce and organisms (custard apples, pineapple, cucumbers, coral fungus, sea anemones, articho
+   own best 0.703 hit 0.958 (n=4) | cross best 0.617 hit 0.694 (n=12) | chance hit 0.333 | own-cross hit +0.264 -> OWN_HIGHER
+-- b1  (U-040, M=0.9701)
+   s1 [one_plus_related] The unit mainly responds to dense clusters of radiating finger-like or filament-like structures, such as sea anemone tentacles, thistle and artichoke florets, nudibranch cerata and coral fungus. It re
+   s2 [one_plus_related] The unit responds mainly to dense clusters of finger-like or tendril-like organic protrusions, such as sea anemone tentacles, coral fungus, thistle and artichoke florets, and nudibranch cerata. It res
+   own best 0.488 hit 1.000 (n=4) | cross best 0.402 hit 0.375 (n=8) | chance hit 0.333 | own-cross hit +0.625 -> OWN_HIGHER
+-- b2  (U-653, M=0.8281)
+   s1 [one_plus_related] The unit responds to an upright bottle- or bell-shaped silhouette, a narrow neck or top that widens into a rounded or flared base, most strongly in glass bottles and flasks. It extends more weakly to
+   s2 [one_plus_related] The unit responds to vertical objects with a narrow neck or waist that widens into a rounded or flared body, as with bottles, flasks, jugs, vases and bells. It responds more weakly to other objects wi
+   own best 0.615 hit 0.875 (n=4) | cross best 0.301 hit 0.333 (n=8) | chance hit 0.333 | own-cross hit +0.542 -> OWN_HIGHER
+-- b3  (U-789, M=0.9431)
+   s1 [one] The unit responds to birds in general, with no preference for species, posture or setting; it covers perched songbirds, raptors, waders, corvids, hornbills and waterfowl alike.
+   s2 [one_plus_related] The unit responds to birds, mainly a single bird shown in side view and standing or perching (waders, songbirds, raptors, hornbill). It also responds weakly to related bird-shaped or bird-like content
+   own best 0.640 hit 0.833 (n=4) | cross best 0.425 hit 0.625 (n=8) | chance hit 0.333 | own-cross hit +0.208 -> SIMILAR
+judge related [1, 1, 1] mean 1.00 -> LOW
+   shared 1: 
+   shared 2: 
+   shared 3: 
+
+== mixed4e:55  layer mixed4e, input mixed4d
+bundle b1: share 0.209, 7 channels [352, 201, 460, 396, 445, 38, 318]
+bundle b2: share 0.082, 5 channels [61, 334, 342, 218, 502]
+bundle b3: share 0.708, 12 channels [493, 477, 143, 383, 128, 28, 401, 408, 246, 64, 505, 305]
+-- whole  (U-965, M=1452)
+   s1 [one_plus_related] The unit responds mainly to the faces of small furry mammals with pointed ears and facial fur, especially foxes, cats and red pandas. It responds more weakly to related furry animals such as lynxes, h
+   s2 [one_plus_related] The unit mainly responds to the faces of small-to-medium furry mammals with pointed ears and forward-facing eyes, especially cats, foxes, red pandas and lynxes. It responds more weakly to related furr
+   own best 0.697 hit 0.958 (n=4) | cross best 0.470 hit 0.556 (n=12) | chance hit 0.333 | own-cross hit +0.403 -> OWN_HIGHER
+-- b1  (U-039, M=708.6)
+   s1 [one_plus_related] The unit responds mainly to automobiles (cars, pickups, vans, motorhomes), with weaker responses to other small motorized vehicles such as a scooter and a riding lawn mower.
+   s2 [one_plus_related] The unit responds mainly to automobiles (cars, trucks, vans, SUVs), seen whole or in large part. It responds more weakly to related motorized vehicles with car-like bodywork, such as a scooter, a moto
+   own best 0.878 hit 0.833 (n=4) | cross best 0.477 hit 0.354 (n=8) | chance hit 0.333 | own-cross hit +0.479 -> OWN_HIGHER
+-- b2  (U-985, M=539.2)
+   s1 [unrelated] The unit responds to a wide mix of unrelated subjects: a vintage car, flamingos, an hourglass, clogs, sunglasses, a barber chair, a skunk, a home theater, a padlock and more. There is no single object
+   s2 [unrelated] The unit responds to a broad mix of unrelated objects and scenes: classic cars, flamingos, Lego, a tray table, a kitchen, an hourglass, a barn, sunglasses, a barber chair, a watch, an airplane, a skun
+   own best 0.424 hit 0.375 (n=4) | cross best 0.419 hit 0.333 (n=8) | chance hit 0.333 | own-cross hit +0.042 -> SIMILAR
+-- b3  (U-850, M=1335)
+   s1 [one_plus_related] The unit responds to the faces of small furry mammals with upright, pointed ears, centred on cats and cat-like faces. It extends more weakly to similar-looking animals such as foxes, red pandas, lynx,
+   s2 [one_plus_related] The unit responds to the faces of furry, small-to-medium carnivores with upright pointed ears and whiskers, mainly foxes, red pandas and domestic cats. It responds more weakly to related furry animals
+   own best 0.832 hit 0.875 (n=4) | cross best 0.319 hit 0.229 (n=8) | chance hit 0.333 | own-cross hit +0.646 -> OWN_HIGHER
+judge related [1, 1, 1] mean 1.00 -> LOW
+   shared 1: 
+   shared 2: 
+   shared 3: 

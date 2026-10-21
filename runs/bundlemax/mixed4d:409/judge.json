@@ -1,0 +1,29 @@
+{
+ "pathways": {
+  "b1": "The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.",
+  "b2": "The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to other elongated, side-on bodies such as an airliner.",
+  "b3": "The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape."
+ },
+ "prompt": "These are explanations of different input pathways into one unit of a neural network. Each was written from the inputs that drive the unit through that pathway alone.\n\nPathway 1: The unit responds mainly to cars (passenger cars, including police cars and vans) seen from the side or front-quarter, and more weakly to other road vehicles such as trucks and buses.\nPathway 2: The unit responds to whole-body four-legged animals standing in side or profile view, most often dogs but also elephants, cattle, bison, horses, ibex and antelope. It also responds more weakly to other elongated, side-on bodies such as an airliner.\nPathway 3: The unit responds mainly to whole-body side or standing views of four-legged animals, especially dogs and wolves. It responds more weakly to other animals with a similar body shape.\n\nDo they describe one underlying thing (different parts, aspects or natural offshoots of the same thing), or unrelated things that happen to share the unit? Reply with only JSON: {\"related\": n, \"shared\": \"...\"}, where n is 1 (clearly unrelated) to 5 (clearly one thing) and shared names what they have in common, or is empty.",
+ "calls": [
+  {
+   "call": 1,
+   "related": 3,
+   "shared": "elongated objects seen side-on in profile (four-legged animal bodies and road vehicles)",
+   "text": "{\"related\": 3, \"shared\": \"elongated objects seen side-on in profile (four-legged animal bodies and road vehicles)\"}"
+  },
+  {
+   "call": 2,
+   "related": 3,
+   "shared": "large elongated objects (vehicles or four-legged animals) seen whole-body in side or profile view",
+   "text": "{\"related\": 3, \"shared\": \"large elongated objects (vehicles or four-legged animals) seen whole-body in side or profile view\"}"
+  },
+  {
+   "call": 3,
+   "related": 3,
+   "shared": "whole objects with elongated, horizontal bodies seen from the side (four-legged animals such as dogs, plus vehicles like cars and airliners)",
+   "text": "{\"related\": 3, \"shared\": \"whole objects with elongated, horizontal bodies seen from the side (four-legged animals such as dogs, plus vehicles like cars and airliners)\"}"
+  }
+ ],
+ "mean_related": 3.0
+}

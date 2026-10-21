@@ -1,0 +1,304 @@
+{
+ "whole": {
+  "name": "U-260",
+  "card": "card_whole.jpg",
+  "M": 1.0,
+  "ids": [
+   2859,
+   7109,
+   2825,
+   1567,
+   7001,
+   5147,
+   7154,
+   1979,
+   7524,
+   957,
+   7151,
+   7005,
+   7899,
+   1093,
+   7153,
+   1614,
+   4601,
+   7596,
+   1611,
+   7706
+  ],
+  "values": [
+   1.0,
+   1.0,
+   0.9884925484657288,
+   0.9738223552703857,
+   0.9601283073425293,
+   0.9525721073150635,
+   0.946821391582489,
+   0.9326967597007751,
+   0.931725263595581,
+   0.9286494255065918,
+   0.9265685677528381,
+   0.9253633618354797,
+   0.9225766658782959,
+   0.9225666522979736,
+   0.9213651418685913,
+   0.9140230417251587,
+   0.8961805105209351,
+   0.8745290637016296,
+   0.8723070025444031,
+   0.8666727542877197
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "unrelated",
+    "explanation": "The unit responds to two unconnected categories: road vehicles (cars, pickups, vans, buses, fire trucks, taxis) and animals, especially cats, with weaker responses to other furry or feathered animals.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to two unconnected categories: road vehicles (cars, pickups, vans, buses, fire trucks, taxis) and animals, especially cats, with weaker responses to other furry or feathered animals.",
+     "evidence": "Cats (#1, #3, #9) reach the top activations alongside vehicles (#2, #4–#6), and there is no shared color, setting or composition that links them; an owl (#14) and a coyote (#18) also score 9 among the many vehicles.",
+     "missing_data": "Activations on images with a cat and a vehicle shown separately, and a look at lower-ranked examples, would test whether a hidden shared feature (such as a texture or shape cue) explains both groups.",
+     "confidence": 0.75
+    },
+    "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unconnected categories: road vehicles (cars, pickups, vans, buses, fire trucks, taxis) and animals, especially cats, with weaker responses to other furry or feathered animals.\",\n \"evidence\": \"Cats (#1, #3, #9) reach the top activations alongside vehicles (#2, #4–#6), and there is no shared color, setting or composition that links them; an owl (#14) and a coyote (#18) also score 9 among the many vehicles.\",\n \"missing_data\": \"Activations on images with a cat and a vehicle shown separately, and a look at lower-ranked examples, would test whether a hidden shared feature (such as a texture or shape cue) explains both groups.\",\n \"confidence\": 0.75}\n```"
+   },
+   {
+    "sample": 2,
+    "class": "unrelated",
+    "explanation": "The unit responds to road vehicles such as cars, pickups, vans, buses, taxis and fire trucks. It also responds separately to animals, mainly cats, plus an owl and a coyote.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to road vehicles such as cars, pickups, vans, buses, taxis and fire trucks. It also responds separately to animals, mainly cats, plus an owl and a coyote.",
+     "evidence": "14 of the 20 top images are road vehicles, scoring 9-10, but three cats (#1, #3, #9) are among the strongest at 10, 10 and 9. An owl (#14) and a coyote (#18) also score 9, and nothing visual obviously links these animals to vehicles.",
+     "missing_data": "Activations on images that mix vehicles and animals, and on cat images and other animals beyond the top 20. These would show whether the animal response is a real second feature or a shared low-level texture or color cue.",
+     "confidence": 0.7
+    },
+    "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to road vehicles such as cars, pickups, vans, buses, taxis and fire trucks. It also responds separately to animals, mainly cats, plus an owl and a coyote.\",\n \"evidence\": \"14 of the 20 top images are road vehicles, scoring 9-10, but three cats (#1, #3, #9) are among the strongest at 10, 10 and 9. An owl (#14) and a coyote (#18) also score 9, and nothing visual obviously links these animals to vehicles.\",\n \"missing_data\": \"Activations on images that mix vehicles and animals, and on cat images and other animals beyond the top 20. These would show whether the animal response is a real second feature or a shared low-level texture or color cue.\",\n \"confidence\": 0.7}\n```"
+   }
+  ]
+ },
+ "b1": {
+  "name": "U-553",
+  "card": "card_b1.jpg",
+  "M": 1.002750039100647,
+  "ids": [
+   2825,
+   2859,
+   7524,
+   7596,
+   3457,
+   1093,
+   2823,
+   7521,
+   8257,
+   7734,
+   7982,
+   4425,
+   7650,
+   2850,
+   8159,
+   6317,
+   8087,
+   1740,
+   5714,
+   7384
+  ],
+  "values": [
+   1.002750039100647,
+   0.9916177988052368,
+   0.9354957938194275,
+   0.916323721408844,
+   0.8658115863800049,
+   0.8552700281143188,
+   0.8150063157081604,
+   0.7770636677742004,
+   0.7508914470672607,
+   0.7290626168251038,
+   0.7110224366188049,
+   0.7092536687850952,
+   0.7060369849205017,
+   0.6995090842247009,
+   0.6994088292121887,
+   0.6949713230133057,
+   0.6943719983100891,
+   0.6918240785598755,
+   0.6898042559623718,
+   0.6871876120567322
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "unrelated",
+    "explanation": "The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and laptops.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and laptops.",
+     "evidence": "The strongest activations (9-10) are all domestic cats or similar furry animals, and wild felids fill the 7-level slots. Four of the top 20 (#11, #12, #13, #19) are keyboards, laptops or desktop computers at activation 7, with no animal content.",
+     "missing_data": "Activations on more keyboard/computer images and on non-feline textured patterns (e.g., stripes, grids) would show whether the computer response is a real second feature or a shared low-level texture cue.",
+     "confidence": 0.6
+    },
+    "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit mainly responds to cats and cat-like furry animals (domestic cats, big cats, foxes/coyotes, a fluffy owl, a lemur). It also responds to a separate, unrelated concept: computer keyboards and laptops.\", \"evidence\": \"The strongest activations (9-10) are all domestic cats or similar furry animals, and wild felids fill the 7-level slots. Four of the top 20 (#11, #12, #13, #19) are keyboards, laptops or desktop computers at activation 7, with no animal content.\", \"missing_data\": \"Activations on more keyboard/computer images and on non-feline textured patterns (e.g., stripes, grids) would show whether the computer response is a real second feature or a shared low-level texture cue.\", \"confidence\": 0.6}"
+   },
+   {
+    "sample": 2,
+    "class": "unrelated",
+    "explanation": "The unit responds mainly to cats and cat-like furry animals with patterned or grey fur (domestic cats, big cats, fox, coyote, lemur, owl), and separately to computer keyboards and laptops.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds mainly to cats and cat-like furry animals with patterned or grey fur (domestic cats, big cats, fox, coyote, lemur, owl), and separately to computer keyboards and laptops.",
+     "evidence": "The top 10 are almost all domestic cats or similarly furred animals, with activation weakening toward wild cats and other mammals. A separate cluster of keyboards and laptops (#11, #12, #13, #19) activates at 7 and shares no meaningful link with animals.",
+     "missing_data": "Activations on keyboards without animals versus non-patterned animals, or feature visualizations, would show whether the computer cluster is a real second feature or a texture coincidence such as repeated keys resembling stripes.",
+     "confidence": 0.6
+    },
+    "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds mainly to cats and cat-like furry animals with patterned or grey fur (domestic cats, big cats, fox, coyote, lemur, owl), and separately to computer keyboards and laptops.\",\n \"evidence\": \"The top 10 are almost all domestic cats or similarly furred animals, with activation weakening toward wild cats and other mammals. A separate cluster of keyboards and laptops (#11, #12, #13, #19) activates at 7 and shares no meaningful link with animals.\",\n \"missing_data\": \"Activations on keyboards without animals versus non-patterned animals, or feature visualizations, would show whether the computer cluster is a real second feature or a texture coincidence such as repeated keys resembling stripes.\",\n \"confidence\": 0.6}\n```"
+   }
+  ]
+ },
+ "b2": {
+  "name": "U-204",
+  "card": "card_b2.jpg",
+  "M": 0.9573737978935242,
+  "ids": [
+   7109,
+   7001,
+   1567,
+   7005,
+   7151,
+   7153,
+   5147,
+   1979,
+   957,
+   1614,
+   7899,
+   7154,
+   7836,
+   4601,
+   7895,
+   7000,
+   7706,
+   1796,
+   1611,
+   9710
+  ],
+  "values": [
+   0.9573737978935242,
+   0.9345079064369202,
+   0.9248388409614563,
+   0.9050669074058533,
+   0.9045694470405579,
+   0.895529568195343,
+   0.8946393132209778,
+   0.8887090086936951,
+   0.887652575969696,
+   0.8818207383155823,
+   0.8802813291549683,
+   0.8777998089790344,
+   0.856532096862793,
+   0.8555654287338257,
+   0.8451815843582153,
+   0.8362265825271606,
+   0.83571857213974,
+   0.8288951516151428,
+   0.8285748958587646,
+   0.8146026730537415
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "one",
+    "explanation": "The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.",
+    "parsed": {
+     "class": "one",
+     "explanation": "The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.",
+     "evidence": "All 20 top images show a road vehicle as the main subject, and their activations are nearly identical (9-10) across vehicle types and colors, including white, silver, yellow, teal and red. Many are red, but non-red vehicles rank just as high, including the top-ranked white pickup.",
+     "missing_data": "Activations on non-vehicle images and on the lower part of the range, to check whether the unit also fires for things like wheels, trains or bicycles, or has a weaker preference for red.",
+     "confidence": 0.8
+    },
+    "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to wheeled road motor vehicles seen from the side or at an angle: cars, pickups, SUVs, vans, buses, taxis and fire trucks.\",\n \"evidence\": \"All 20 top images show a road vehicle as the main subject, and their activations are nearly identical (9-10) across vehicle types and colors, including white, silver, yellow, teal and red. Many are red, but non-red vehicles rank just as high, including the top-ranked white pickup.\",\n \"missing_data\": \"Activations on non-vehicle images and on the lower part of the range, to check whether the unit also fires for things like wheels, trains or bicycles, or has a weaker preference for red.\",\n \"confidence\": 0.8}\n```"
+   },
+   {
+    "sample": 2,
+    "class": null,
+    "explanation": null,
+    "parsed": null,
+    "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to wheeled road motor vehicles (cars, pickups, vans, trucks, buses), seen from the side or at a three-quarter angle with the wheels showing.\",\n \"evidence\": \"All 20 top photos show a road vehicle as the main subject, ranging from sedans and pickups to school buses, a fire truck, a taxi and a camper van, with nearly identical activations (9-10). Many are red, but silver, white, yellow, teal and pink vehicles score just as high, so color is not the driver.\"\n \"missing_data\": \"Activations on non-road wheeled objects (bicycles, trains, carts) and on isolated vehicle parts like wheels or grilles, plus the lower part of the activation range, would show whether it encodes 'vehicle' or something narrower like wheels or car bodies.\",\n \"confidence\": 0.75}\n```"
+   }
+  ]
+ },
+ "b3": {
+  "name": "U-692",
+  "card": "card_b3.jpg",
+  "M": 0.6203697919845581,
+  "ids": [
+   4425,
+   7982,
+   7650,
+   8569,
+   8341,
+   5714,
+   8567,
+   8431,
+   1658,
+   2582,
+   4935,
+   5425,
+   2784,
+   1653,
+   57,
+   6669,
+   2716,
+   7799,
+   312,
+   7659
+  ],
+  "values": [
+   0.6203697919845581,
+   0.6110678911209106,
+   0.5338064432144165,
+   0.5287623405456543,
+   0.5248667001724243,
+   0.5192673802375793,
+   0.4746982753276825,
+   0.470509797334671,
+   0.46799564361572266,
+   0.46391212940216064,
+   0.45294249057769775,
+   0.45276302099227905,
+   0.44920575618743896,
+   0.44541114568710327,
+   0.44504380226135254,
+   0.44255414605140686,
+   0.44130751490592957,
+   0.4373759627342224,
+   0.43093329668045044,
+   0.4308737814426422
+  ],
+  "samples": [
+   {
+    "sample": 1,
+    "class": "unrelated",
+    "explanation": "The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds).",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds).",
+     "evidence": "The top two activations (10) are a laptop with a phone and a keyboard with a mouse, and devices also appear at #3, #6, #8, #13, #18 and #20. Dogs fill the rest of the top 20 with similar activations (7-9), and no image contains both.",
+     "missing_data": "Activations on a broader range of images, such as other animals, other electronics and textured objects, plus feature visualizations, to check for a hidden shared visual feature or to confirm polysemanticity.",
+     "confidence": 0.75
+    },
+    "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs (spaniels, long-haired and shaggy breeds).\",\n \"evidence\": \"The top two activations (10) are a laptop with a phone and a keyboard with a mouse, and devices also appear at #3, #6, #8, #13, #18 and #20. Dogs fill the rest of the top 20 with similar activations (7-9), and no image contains both.\",\n \"missing_data\": \"Activations on a broader range of images, such as other animals, other electronics and textured objects, plus feature visualizations, to check for a hidden shared visual feature or to confirm polysemanticity.\",\n \"confidence\": 0.75}"
+   },
+   {
+    "sample": 2,
+    "class": "unrelated",
+    "explanation": "The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs, mostly long-haired or floppy-eared breeds such as spaniels, Leonbergers and terriers.",
+    "parsed": {
+     "class": "unrelated",
+     "explanation": "The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs, mostly long-haired or floppy-eared breeds such as spaniels, Leonbergers and terriers.",
+     "evidence": "The top 20 split into about 9 device images (#1, 2, 3, 6, 8, 13, 18, 20) and about 11 dog images (#4, 5, 7, 9–12, 14–17, 19), and both groups reach high activations (10 vs 9). No shared visual feature such as color, texture or shape links keyboards and screens to dog faces and fur.",
+     "missing_data": "Activations on a wider, lower-ranked sample and on controls such as other animals or non-computer electronics, to check whether the two clusters really are separate or form a continuum.",
+     "confidence": 0.8
+    },
+    "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated categories: computing and electronic devices (laptops, keyboards, monitors, mobile phones) and dogs, mostly long-haired or floppy-eared breeds such as spaniels, Leonbergers and terriers.\",\n \"evidence\": \"The top 20 split into about 9 device images (#1, 2, 3, 6, 8, 13, 18, 20) and about 11 dog images (#4, 5, 7, 9–12, 14–17, 19), and both groups reach high activations (10 vs 9). No shared visual feature such as color, texture or shape links keyboards and screens to dog faces and fur.\",\n \"missing_data\": \"Activations on a wider, lower-ranked sample and on controls such as other animals or non-computer electronics, to check whether the two clusters really are separate or form a continuum.\",\n \"confidence\": 0.8}"
+   }
+  ]
+ }
+}

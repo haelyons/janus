@@ -286,3 +286,33 @@ Fixed feature visualisation (units 4d:409, 4e:55, control 4e:700; blind one-sent
    animal parts in at least 1 of 2.
 5. 4e:55 fixed renders mention a car, vehicle or pointed/V shape in at most 1 of 2 (bias toward cat-heavy top photos).
 6. Fixed renders keep at least 50% of the plain renders' activation on the unit.
+
+# Round 17: a ground-truth suite from the essay's own examples; blind maximum per bundle; stronger pulls
+(sealed 2026-10-21, before tools/curves.py, bundlemax.py, fixedvis2.py exist; all by claim-blind authors)
+
+Ground-truth units, each with its answer fixed before any test runs:
+- Curve detector in mixed3b (the essay: "the layer with Curve Neurons"; Curve Detectors). Unit = the channel
+  tools/curves.py ranks first by curve/line ratio among channels with curve_peak above the 75th percentile, provided
+  its osi is above the layer median. Answer: one thing (a curve at one orientation).
+- 4c:447, the car neuron built from 4b car-part neurons (windows, car bodies, wheels; essay footnote 4). Answer: one
+  thing with related parts.
+- 4d:409, shared pose (rounds 13-14). Answer: one thing (a view shared by dogs and vehicles).
+- Planted sum:mixed4e:809+804 (cat-selective + car-selective) and sum:mixed4e:703+315 (bird-selective +
+  food-selective, same fixed rule). Answer: two unrelated things.
+Target: 4e:55.
+
+Curves:
+1. The chosen 3b unit's curve/line ratio is above 2 and its osi above 0.3.
+
+Blind maximum per bundle (tools/bundlemax.py):
+2. Judge: planted units score at most 2 (mean of 3); 4c:447 and the curve unit at least 4.
+3. 4d:409 judge at least 3. Bundles split by kind (round 16), but each bundle's explanation should name the side view.
+4. Cross-bundle transfer (cross hit / own hit): planted below 0.4; 4c:447 and the curve unit above 0.6.
+5. Own blind-maximum best at least 0.5 of the corpus max for at least 80% of bundle conditions (the explanations are
+   good enough to reach the bundle's centre).
+6. 4e:55: judge between the planted and the car scores (no strong prior); reported, not predicted.
+
+Stronger pulls (tools/fixedvis2.py):
+7. 4d:409 through 4c:447: blind descriptions name a vehicle in at least 1 of 2; through 4c:393: name a dog or
+   animal in at least 1 of 2.
+8. pull5 and init renders keep at least 50% of the plain renders' activation.
