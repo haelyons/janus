@@ -1,0 +1,625 @@
+{
+ "bare_s2": {
+  "text": "The unit detects the eye/upper-face region of dog faces, and responds somewhat less strongly to the same region on dog-like canids such as wolves and foxes.",
+  "valid": true,
+  "fire": [
+   "beagle",
+   "golden retriever",
+   "Labrador retriever",
+   "German shepherd",
+   "Siberian husky",
+   "malamute",
+   "Rottweiler",
+   "Bernese mountain dog",
+   "boxer",
+   "Doberman",
+   "basenji",
+   "Pembroke",
+   "Border collie",
+   "vizsla",
+   "Weimaraner"
+  ],
+  "near_miss": [
+   "tabby",
+   "tiger cat",
+   "Siamese cat",
+   "Persian cat",
+   "lynx",
+   "cougar",
+   "lion",
+   "tiger",
+   "brown bear",
+   "American black bear",
+   "meerkat",
+   "mongoose",
+   "otter",
+   "lesser panda",
+   "hyena"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"beagle\", \"golden retriever\", \"Labrador retriever\", \"German shepherd\", \"Siberian husky\", \"malamute\", \"Rottweiler\", \"Bernese mountain dog\", \"boxer\", \"Doberman\", \"basenji\", \"Pembroke\", \"Border collie\", \"vizsla\", \"Weimaraner\"], \"near_miss\": [\"tabby\", \"tiger cat\", \"Siamese cat\", \"Persian cat\", \"lynx\", \"cougar\", \"lion\", \"tiger\", \"brown bear\", \"American black bear\", \"meerkat\", \"mongoose\", \"otter\", \"lesser panda\", \"hyena\"]}",
+    "fire": [
+     "beagle",
+     "golden retriever",
+     "Labrador retriever",
+     "German shepherd",
+     "Siberian husky",
+     "malamute",
+     "Rottweiler",
+     "Bernese mountain dog",
+     "boxer",
+     "Doberman",
+     "basenji",
+     "Pembroke",
+     "Border collie",
+     "vizsla",
+     "Weimaraner"
+    ],
+    "near_miss": [
+     "tabby",
+     "tiger cat",
+     "Siamese cat",
+     "Persian cat",
+     "lynx",
+     "cougar",
+     "lion",
+     "tiger",
+     "brown bear",
+     "American black bear",
+     "meerkat",
+     "mongoose",
+     "otter",
+     "lesser panda",
+     "hyena"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "Q0_s2": {
+  "text": "The unit responds to the faces of dogs and other canids, peaking on the eye and upper-muzzle region.",
+  "valid": true,
+  "fire": [
+   "beagle",
+   "Siberian husky",
+   "malamute",
+   "German shepherd",
+   "golden retriever",
+   "Labrador retriever",
+   "timber wolf",
+   "coyote",
+   "red fox",
+   "dingo",
+   "Pembroke",
+   "basenji",
+   "Eskimo dog",
+   "Arctic fox",
+   "pug"
+  ],
+  "near_miss": [
+   "tabby",
+   "Persian cat",
+   "Siamese cat",
+   "lion",
+   "tiger",
+   "cougar",
+   "lynx",
+   "brown bear",
+   "hyena",
+   "meerkat",
+   "lesser panda",
+   "teddy",
+   "muzzle",
+   "dogsled",
+   "otter"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"beagle\", \"Siberian husky\", \"malamute\", \"German shepherd\", \"golden retriever\", \"Labrador retriever\", \"timber wolf\", \"coyote\", \"red fox\", \"dingo\", \"Pembroke\", \"basenji\", \"Eskimo dog\", \"Arctic fox\", \"pug\"], \"near_miss\": [\"tabby\", \"Persian cat\", \"Siamese cat\", \"lion\", \"tiger\", \"cougar\", \"lynx\", \"brown bear\", \"hyena\", \"meerkat\", \"lesser panda\", \"teddy\", \"muzzle\", \"dogsled\", \"otter\"]}",
+    "fire": [
+     "beagle",
+     "Siberian husky",
+     "malamute",
+     "German shepherd",
+     "golden retriever",
+     "Labrador retriever",
+     "timber wolf",
+     "coyote",
+     "red fox",
+     "dingo",
+     "Pembroke",
+     "basenji",
+     "Eskimo dog",
+     "Arctic fox",
+     "pug"
+    ],
+    "near_miss": [
+     "tabby",
+     "Persian cat",
+     "Siamese cat",
+     "lion",
+     "tiger",
+     "cougar",
+     "lynx",
+     "brown bear",
+     "hyena",
+     "meerkat",
+     "lesser panda",
+     "teddy",
+     "muzzle",
+     "dogsled",
+     "otter"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "bare_s1": {
+  "text": "The unit responds to the faces of dogs, especially the eye/upper-cheek area. It also responds somewhat less to closely related canids such as wolves and foxes.",
+  "valid": true,
+  "fire": [
+   "beagle",
+   "golden retriever",
+   "Labrador retriever",
+   "Siberian husky",
+   "malamute",
+   "German shepherd",
+   "Pembroke",
+   "basenji",
+   "Shetland sheepdog",
+   "Border collie",
+   "Rottweiler",
+   "Bernese mountain dog",
+   "vizsla",
+   "Eskimo dog",
+   "boxer"
+  ],
+  "near_miss": [
+   "tabby",
+   "tiger cat",
+   "Egyptian cat",
+   "lynx",
+   "cougar",
+   "lion",
+   "tiger",
+   "brown bear",
+   "American black bear",
+   "hyena",
+   "lesser panda",
+   "otter",
+   "meerkat",
+   "teddy",
+   "muzzle"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"beagle\", \"golden retriever\", \"Labrador retriever\", \"Siberian husky\", \"malamute\", \"German shepherd\", \"Pembroke\", \"basenji\", \"Shetland sheepdog\", \"Border collie\", \"Rottweiler\", \"Bernese mountain dog\", \"vizsla\", \"Eskimo dog\", \"boxer\"], \"near_miss\": [\"tabby\", \"tiger cat\", \"Egyptian cat\", \"lynx\", \"cougar\", \"lion\", \"tiger\", \"brown bear\", \"American black bear\", \"hyena\", \"lesser panda\", \"otter\", \"meerkat\", \"teddy\", \"muzzle\"]}",
+    "fire": [
+     "beagle",
+     "golden retriever",
+     "Labrador retriever",
+     "Siberian husky",
+     "malamute",
+     "German shepherd",
+     "Pembroke",
+     "basenji",
+     "Shetland sheepdog",
+     "Border collie",
+     "Rottweiler",
+     "Bernese mountain dog",
+     "vizsla",
+     "Eskimo dog",
+     "boxer"
+    ],
+    "near_miss": [
+     "tabby",
+     "tiger cat",
+     "Egyptian cat",
+     "lynx",
+     "cougar",
+     "lion",
+     "tiger",
+     "brown bear",
+     "American black bear",
+     "hyena",
+     "lesser panda",
+     "otter",
+     "meerkat",
+     "teddy",
+     "muzzle"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "Q0_s1": {
+  "text": "The unit responds to dog faces, especially the eye and upper-face region. It also responds, slightly more weakly, to the faces of closely related canids such as wolves and foxes.",
+  "valid": true,
+  "fire": [
+   "beagle",
+   "golden retriever",
+   "Labrador retriever",
+   "Siberian husky",
+   "German shepherd",
+   "basset",
+   "bloodhound",
+   "Pembroke",
+   "Saint Bernard",
+   "malamute",
+   "Border collie",
+   "boxer",
+   "Rottweiler",
+   "pug"
+  ],
+  "near_miss": [
+   "tabby",
+   "Persian cat",
+   "Siamese cat",
+   "lion",
+   "tiger",
+   "brown bear",
+   "ice bear",
+   "hyena",
+   "otter",
+   "meerkat",
+   "lesser panda",
+   "teddy",
+   "lynx",
+   "cougar"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"beagle\", \"golden retriever\", \"Labrador retriever\", \"Siberian husky\", \"German shepherd\", \"basset\", \"bloodhound\", \"Pembroke\", \"Saint Bernard\", \"malamute\", \"Border collie\", \"boxer\", \"Rottweiler\", \"pug\"], \"near_miss\": [\"tabby\", \"Persian cat\", \"Siamese cat\", \"lion\", \"tiger\", \"brown bear\", \"ice bear\", \"hyena\", \"otter\", \"meerkat\", \"lesser panda\", \"teddy\", \"lynx\", \"cougar\"]}",
+    "fire": [
+     "beagle",
+     "golden retriever",
+     "Labrador retriever",
+     "Siberian husky",
+     "German shepherd",
+     "basset",
+     "bloodhound",
+     "Pembroke",
+     "Saint Bernard",
+     "malamute",
+     "Border collie",
+     "boxer",
+     "Rottweiler",
+     "pug"
+    ],
+    "near_miss": [
+     "tabby",
+     "Persian cat",
+     "Siamese cat",
+     "lion",
+     "tiger",
+     "brown bear",
+     "ice bear",
+     "hyena",
+     "otter",
+     "meerkat",
+     "lesser panda",
+     "teddy",
+     "lynx",
+     "cougar"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "F1_s1": {
+  "text": "The unit responds most to the furred patch beside and just above the eye on a frontal, long-snouted head, where fur texture meets the eye and cheek contour below the ear. It responds less to similar fur-and-eye textures on heads with a different overall shape.",
+  "valid": true,
+  "fire": [
+   "collie",
+   "Shetland sheepdog",
+   "borzoi",
+   "German shepherd",
+   "malinois",
+   "red fox",
+   "grey fox",
+   "kit fox",
+   "coyote",
+   "timber wolf",
+   "Scottish deerhound",
+   "Saluki",
+   "Afghan hound",
+   "Border collie",
+   "dingo"
+  ],
+  "near_miss": [
+   "pug",
+   "Persian cat",
+   "tabby",
+   "French bulldog",
+   "Pekinese",
+   "Boston bull",
+   "boxer",
+   "koala",
+   "lion",
+   "brown bear",
+   "Shih-Tzu",
+   "chow",
+   "guinea pig",
+   "tiger cat",
+   "bull mastiff"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"collie\", \"Shetland sheepdog\", \"borzoi\", \"German shepherd\", \"malinois\", \"red fox\", \"grey fox\", \"kit fox\", \"coyote\", \"timber wolf\", \"Scottish deerhound\", \"Saluki\", \"Afghan hound\", \"Border collie\", \"dingo\"], \"near_miss\": [\"pug\", \"Persian cat\", \"tabby\", \"French bulldog\", \"Pekinese\", \"Boston bull\", \"boxer\", \"koala\", \"lion\", \"brown bear\", \"Shih-Tzu\", \"chow\", \"guinea pig\", \"tiger cat\", \"bull mastiff\"]}",
+    "fire": [
+     "collie",
+     "Shetland sheepdog",
+     "borzoi",
+     "German shepherd",
+     "malinois",
+     "red fox",
+     "grey fox",
+     "kit fox",
+     "coyote",
+     "timber wolf",
+     "Scottish deerhound",
+     "Saluki",
+     "Afghan hound",
+     "Border collie",
+     "dingo"
+    ],
+    "near_miss": [
+     "pug",
+     "Persian cat",
+     "tabby",
+     "French bulldog",
+     "Pekinese",
+     "Boston bull",
+     "boxer",
+     "koala",
+     "lion",
+     "brown bear",
+     "Shih-Tzu",
+     "chow",
+     "guinea pig",
+     "tiger cat",
+     "bull mastiff"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "F1_s2": {
+  "text": "The unit responds to the patch of short, directional fur just beside and around an eye on a front-facing face with a protruding snout, where the eye's dark rim meets the surrounding hair and the muzzle begins.",
+  "valid": true,
+  "fire": [
+   "red fox",
+   "timber wolf",
+   "coyote",
+   "Siberian husky",
+   "malamute",
+   "German shepherd",
+   "dingo",
+   "kit fox",
+   "grey fox",
+   "Eskimo dog",
+   "red wolf",
+   "Pembroke",
+   "collie",
+   "golden retriever",
+   "Arctic fox"
+  ],
+  "near_miss": [
+   "tabby",
+   "Persian cat",
+   "pug",
+   "French bulldog",
+   "koala",
+   "great grey owl",
+   "orangutan",
+   "gorilla",
+   "teddy",
+   "fur coat",
+   "giant panda",
+   "lion",
+   "brown bear",
+   "Angora",
+   "wool"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"red fox\", \"timber wolf\", \"coyote\", \"Siberian husky\", \"malamute\", \"German shepherd\", \"dingo\", \"kit fox\", \"grey fox\", \"Eskimo dog\", \"red wolf\", \"Pembroke\", \"collie\", \"golden retriever\", \"Arctic fox\"], \"near_miss\": [\"tabby\", \"Persian cat\", \"pug\", \"French bulldog\", \"koala\", \"great grey owl\", \"orangutan\", \"gorilla\", \"teddy\", \"fur coat\", \"giant panda\", \"lion\", \"brown bear\", \"Angora\", \"wool\"]}",
+    "fire": [
+     "red fox",
+     "timber wolf",
+     "coyote",
+     "Siberian husky",
+     "malamute",
+     "German shepherd",
+     "dingo",
+     "kit fox",
+     "grey fox",
+     "Eskimo dog",
+     "red wolf",
+     "Pembroke",
+     "collie",
+     "golden retriever",
+     "Arctic fox"
+    ],
+    "near_miss": [
+     "tabby",
+     "Persian cat",
+     "pug",
+     "French bulldog",
+     "koala",
+     "great grey owl",
+     "orangutan",
+     "gorilla",
+     "teddy",
+     "fur coat",
+     "giant panda",
+     "lion",
+     "brown bear",
+     "Angora",
+     "wool"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "wrong": {
+  "text": "The unit responds to the side windows of motor vehicles, especially the cab or front door window of cars, trucks, vans and similar vehicles.",
+  "valid": true,
+  "fire": [
+   "pickup",
+   "minivan",
+   "cab",
+   "police van",
+   "moving van",
+   "jeep",
+   "beach wagon",
+   "tow truck",
+   "garbage truck",
+   "ambulance",
+   "limousine",
+   "car mirror",
+   "fire engine",
+   "trailer truck",
+   "Model T",
+   "sports car"
+  ],
+  "near_miss": [
+   "car wheel",
+   "grille",
+   "disk brake",
+   "seat belt",
+   "school bus",
+   "streetcar",
+   "passenger car",
+   "bullet train",
+   "airliner",
+   "window screen",
+   "window shade",
+   "sliding door",
+   "go-kart",
+   "golfcart",
+   "racer",
+   "tractor"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"pickup\", \"minivan\", \"cab\", \"police van\", \"moving van\", \"jeep\", \"beach wagon\", \"tow truck\", \"garbage truck\", \"ambulance\", \"limousine\", \"car mirror\", \"fire engine\", \"trailer truck\", \"Model T\", \"sports car\"], \"near_miss\": [\"car wheel\", \"grille\", \"disk brake\", \"seat belt\", \"school bus\", \"streetcar\", \"passenger car\", \"bullet train\", \"airliner\", \"window screen\", \"window shade\", \"sliding door\", \"go-kart\", \"golfcart\", \"racer\", \"tractor\"]}",
+    "fire": [
+     "pickup",
+     "minivan",
+     "cab",
+     "police van",
+     "moving van",
+     "jeep",
+     "beach wagon",
+     "tow truck",
+     "garbage truck",
+     "ambulance",
+     "limousine",
+     "car mirror",
+     "fire engine",
+     "trailer truck",
+     "Model T",
+     "sports car"
+    ],
+    "near_miss": [
+     "car wheel",
+     "grille",
+     "disk brake",
+     "seat belt",
+     "school bus",
+     "streetcar",
+     "passenger car",
+     "bullet train",
+     "airliner",
+     "window screen",
+     "window shade",
+     "sliding door",
+     "go-kart",
+     "golfcart",
+     "racer",
+     "tractor"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ }
+}

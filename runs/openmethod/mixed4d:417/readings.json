@@ -1,0 +1,146 @@
+{
+ "bare_s2": {
+  "unit": "mixed4d:417",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds mainly to road vehicles (cars, vans, trucks, buses), peaking on the body panel near the front wheel or door. It also responds to dogs, a second concept with no meaningful link to vehicles.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds mainly to road vehicles (cars, vans, trucks, buses), peaking on the body panel near the front wheel or door. It also responds to dogs, a second concept with no meaningful link to vehicles.",
+   "evidence": "18 of the top 20 photos are vehicles of many kinds at 8-10, but two dog photos also rank highly (#13 at 9, #15 at 8). In the random sample only the three dog photos are nonzero (3-4), while everything else, including people, a horse and a snake, is 0.",
+   "missing_data": "Activations on many more dog photos and on other animals, to see whether the dog response is a strong, consistent second category or a weaker texture or shape overlap.",
+   "confidence": 0.65
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds mainly to road vehicles (cars, vans, trucks, buses), peaking on the body panel near the front wheel or door. It also responds to dogs, a second concept with no meaningful link to vehicles.\",\n \"evidence\": \"18 of the top 20 photos are vehicles of many kinds at 8-10, but two dog photos also rank highly (#13 at 9, #15 at 8). In the random sample only the three dog photos are nonzero (3-4), while everything else, including people, a horse and a snake, is 0.\",\n \"missing_data\": \"Activations on many more dog photos and on other animals, to see whether the dog response is a strong, consistent second category or a weaker texture or shape overlap.\",\n \"confidence\": 0.65}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds mainly to road vehicles (cars, vans, trucks, buses), peaking on the body panel near the front wheel or door. It also responds to dogs, a second concept with no meaningful link to vehicles.\",\n \"evidence\": \"18 of the top 20 photos are vehicles of many kinds at 8-10, but two dog photos also rank highly (#13 at 9, #15 at 8). In the random sample only the three dog photos are nonzero (3-4), while everything else, including people, a horse and a snake, is 0.\",\n \"missing_data\": \"Activations on many more dog photos and on other animals, to see whether the dog response is a strong, consistent second category or a weaker texture or shape overlap.\",\n \"confidence\": 0.65}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4d:417",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds mainly to road vehicles (cars, vans, pickups, buses, emergency vehicles), peaking on the body panel or wheel-arch region. It also responds separately to dogs.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds mainly to road vehicles (cars, vans, pickups, buses, emergency vehicles), peaking on the body panel or wheel-arch region. It also responds separately to dogs.",
+   "evidence": "18 of the top 20 are road vehicles, but a Leonberger (#13, act 9) and white dogs (#15, act 8) also rank highly. In the random set the only nonzero activations are the three dog photos (3-4), while all other non-vehicle images score 0.",
+   "missing_data": "Activations on a larger random set with more vehicles and dogs, plus images of other animals and non-road vehicles, would show whether the dog response is a separate feature or a shared visual cue.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds mainly to road vehicles (cars, vans, pickups, buses, emergency vehicles), peaking on the body panel or wheel-arch region. It also responds separately to dogs.\",\n \"evidence\": \"18 of the top 20 are road vehicles, but a Leonberger (#13, act 9) and white dogs (#15, act 8) also rank highly. In the random set the only nonzero activations are the three dog photos (3-4), while all other non-vehicle images score 0.\",\n \"missing_data\": \"Activations on a larger random set with more vehicles and dogs, plus images of other animals and non-road vehicles, would show whether the dog response is a separate feature or a shared visual cue.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds mainly to road vehicles (cars, vans, pickups, buses, emergency vehicles), peaking on the body panel or wheel-arch region. It also responds separately to dogs.\",\n \"evidence\": \"18 of the top 20 are road vehicles, but a Leonberger (#13, act 9) and white dogs (#15, act 8) also rank highly. In the random set the only nonzero activations are the three dog photos (3-4), while all other non-vehicle images score 0.\",\n \"missing_data\": \"Activations on a larger random set with more vehicles and dogs, plus images of other animals and non-road vehicles, would show whether the dog response is a separate feature or a shared visual cue.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4d:417",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to road vehicles (cars, vans, trucks, buses), firing on the side body panel near the front door or wheel. It also responds, separately, to dogs.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit mainly responds to road vehicles (cars, vans, trucks, buses), firing on the side body panel near the front door or wheel. It also responds, separately, to dogs.",
+   "evidence": "18 of the top 20 are vehicles of many kinds, and two are dogs (#13 at 9, #15 at 8). In the random set, the three dog photos score 3-4 while every other non-vehicle photo scores 0, so the dog response is consistent and not a one-off.",
+   "missing_data": "Activations over a larger set of dog photos and of non-vehicle, non-dog photos with similar textures or colours, to tell whether dogs are a true second feature or a shared low-level cue.",
+   "confidence": 0.65
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to road vehicles (cars, vans, trucks, buses), firing on the side body panel near the front door or wheel. It also responds, separately, to dogs.\",\n \"evidence\": \"18 of the top 20 are vehicles of many kinds, and two are dogs (#13 at 9, #15 at 8). In the random set, the three dog photos score 3-4 while every other non-vehicle photo scores 0, so the dog response is consistent and not a one-off.\",\n \"missing_data\": \"Activations over a larger set of dog photos and of non-vehicle, non-dog photos with similar textures or colours, to tell whether dogs are a true second feature or a shared low-level cue.\",\n \"confidence\": 0.65}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to road vehicles (cars, vans, trucks, buses), firing on the side body panel near the front door or wheel. It also responds, separately, to dogs.\",\n \"evidence\": \"18 of the top 20 are vehicles of many kinds, and two are dogs (#13 at 9, #15 at 8). In the random set, the three dog photos score 3-4 while every other non-vehicle photo scores 0, so the dog response is consistent and not a one-off.\",\n \"missing_data\": \"Activations over a larger set of dog photos and of non-vehicle, non-dog photos with similar textures or colours, to tell whether dogs are a true second feature or a shared low-level cue.\",\n \"confidence\": 0.65}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4d:417",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds mainly to road vehicles (cars, trucks, buses, vans), peaking on the side or front body panel near the wheel arch or door. It also responds separately to dogs.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds mainly to road vehicles (cars, trucks, buses, vans), peaking on the side or front body panel near the wheel arch or door. It also responds separately to dogs.",
+   "evidence": "18 of the top 20 photos are vehicles of many types at activation 8-10, yet #13 and #15 are large dogs with no vehicle at 9 and 8. In the random set every dog image scores 3-4 while all other content scores 0, so the dog response is consistent rather than incidental.",
+   "missing_data": "Activations over many dog-only and vehicle-only images would help. Checking whether a shared low-level feature, such as large smooth curved surfaces, links the two would show whether this is truly polysemantic.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds mainly to road vehicles (cars, trucks, buses, vans), peaking on the side or front body panel near the wheel arch or door. It also responds separately to dogs.\", \"evidence\": \"18 of the top 20 photos are vehicles of many types at activation 8-10, yet #13 and #15 are large dogs with no vehicle at 9 and 8. In the random set every dog image scores 3-4 while all other content scores 0, so the dog response is consistent rather than incidental.\", \"missing_data\": \"Activations over many dog-only and vehicle-only images would help. Checking whether a shared low-level feature, such as large smooth curved surfaces, links the two would show whether this is truly polysemantic.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit responds mainly to road vehicles (cars, trucks, buses, vans), peaking on the side or front body panel near the wheel arch or door. It also responds separately to dogs.\", \"evidence\": \"18 of the top 20 photos are vehicles of many types at activation 8-10, yet #13 and #15 are large dogs with no vehicle at 9 and 8. In the random set every dog image scores 3-4 while all other content scores 0, so the dog response is consistent rather than incidental.\", \"missing_data\": \"Activations over many dog-only and vehicle-only images would help. Checking whether a shared low-level feature, such as large smooth curved surfaces, links the two would show whether this is truly polysemantic.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4d:417",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds most strongly to a mid-sized region of smooth, evenly colored, gently curved surface bounded by a crisp contour, with a large dark rounded shape just below and a horizontal edge or seam running across it. It responds more weakly to broad, uniformly toned furry or textured flanks with a similar shape and scale.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds most strongly to a mid-sized region of smooth, evenly colored, gently curved surface bounded by a crisp contour, with a large dark rounded shape just below and a horizontal edge or seam running across it. It responds more weakly to broad, uniformly toned furry or textured flanks with a similar shape and scale.",
+   "evidence": "Eighteen of the top 20 boxes fall on glossy, single-color side panels just above and in front of a dark circular form, and these score 8 to 10 across many colors. Large furry body expanses reach 8 to 9 (#13, #15), random images with similar furry faces score 3 to 4, and images lacking both patterns score 0.",
+   "missing_data": "Synthetic or cropped patches that separate a smooth curved panel from the dark round shape below it, and tests on glossy curved surfaces in other contexts, would show whether the unit needs both cues or only one.",
+   "confidence": 0.65
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most strongly to a mid-sized region of smooth, evenly colored, gently curved surface bounded by a crisp contour, with a large dark rounded shape just below and a horizontal edge or seam running across it. It responds more weakly to broad, uniformly toned furry or textured flanks with a similar shape and scale.\",\n \"evidence\": \"Eighteen of the top 20 boxes fall on glossy, single-color side panels just above and in front of a dark circular form, and these score 8 to 10 across many colors. Large furry body expanses reach 8 to 9 (#13, #15), random images with similar furry faces score 3 to 4, and images lacking both patterns score 0.\",\n \"missing_data\": \"Synthetic or cropped patches that separate a smooth curved panel from the dark round shape below it, and tests on glossy curved surfaces in other contexts, would show whether the unit needs both cues or only one.\",\n \"confidence\": 0.65}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most strongly to a mid-sized region of smooth, evenly colored, gently curved surface bounded by a crisp contour, with a large dark rounded shape just below and a horizontal edge or seam running across it. It responds more weakly to broad, uniformly toned furry or textured flanks with a similar shape and scale.\",\n \"evidence\": \"Eighteen of the top 20 boxes fall on glossy, single-color side panels just above and in front of a dark circular form, and these score 8 to 10 across many colors. Large furry body expanses reach 8 to 9 (#13, #15), random images with similar furry faces score 3 to 4, and images lacking both patterns score 0.\",\n \"missing_data\": \"Synthetic or cropped patches that separate a smooth curved panel from the dark round shape below it, and tests on glossy curved surfaces in other contexts, would show whether the unit needs both cues or only one.\",\n \"confidence\": 0.65}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4d:417",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "3afadc2d817be3254dae68beac62f610d62824c8b95332e84a295425687736b5",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the broad side flank of a large, bulky, side-on body: a fairly uniform surface patch at mid-height, just above and behind a rounded lower contour, often with a crease or seam crossing it. It responds most to smooth, glossy, single-colored versions of this surface and more weakly to soft, textured versions.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the broad side flank of a large, bulky, side-on body: a fairly uniform surface patch at mid-height, just above and behind a rounded lower contour, often with a crease or seam crossing it. It responds most to smooth, glossy, single-colored versions of this surface and more weakly to soft, textured versions.",
+   "evidence": "In nearly all 20 top images the red box sits on a smooth, painted side panel near where the front rounded contour meets the main body, across many colors and decorations; three of them (#13, #15) are furry, softly textured flanks scoring 8-9. In the random set, only the soft-textured, close-up bodies (#6, #7, #9) reach 3-4, and everything else is 0.",
+   "missing_data": "Activations on isolated smooth curved panels without the overall body silhouette, and on many more soft-textured bodies, would show whether this is one surface/shape pattern or two separate detectors.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the broad side flank of a large, bulky, side-on body: a fairly uniform surface patch at mid-height, just above and behind a rounded lower contour, often with a crease or seam crossing it. It responds most to smooth, glossy, single-colored versions of this surface and more weakly to soft, textured versions.\",\n \"evidence\": \"In nearly all 20 top images the red box sits on a smooth, painted side panel near where the front rounded contour meets the main body, across many colors and decorations; three of them (#13, #15) are furry, softly textured flanks scoring 8-9. In the random set, only the soft-textured, close-up bodies (#6, #7, #9) reach 3-4, and everything else is 0.\",\n \"missing_data\": \"Activations on isolated smooth curved panels without the overall body silhouette, and on many more soft-textured bodies, would show whether this is one surface/shape pattern or two separate detectors.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the broad side flank of a large, bulky, side-on body: a fairly uniform surface patch at mid-height, just above and behind a rounded lower contour, often with a crease or seam crossing it. It responds most to smooth, glossy, single-colored versions of this surface and more weakly to soft, textured versions.\",\n \"evidence\": \"In nearly all 20 top images the red box sits on a smooth, painted side panel near where the front rounded contour meets the main body, across many colors and decorations; three of them (#13, #15) are furry, softly textured flanks scoring 8-9. In the random set, only the soft-textured, close-up bodies (#6, #7, #9) reach 3-4, and everything else is 0.\",\n \"missing_data\": \"Activations on isolated smooth curved panels without the overall body silhouette, and on many more soft-textured bodies, would show whether this is one surface/shape pattern or two separate detectors.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "bare_s2": {
+  "unit": "mixed4d:241",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two unrelated things: the faces and heads of shaggy, long-haired dogs (terriers, Bouviers, Tibetan-type breeds), and the side body panels and doors of cars, vans, and pickup trucks.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two unrelated things: the faces and heads of shaggy, long-haired dogs (terriers, Bouviers, Tibetan-type breeds), and the side body panels and doors of cars, vans, and pickup trucks.",
+   "evidence": "Of the top 20, about 9 boxes sit on shaggy dog faces and about 11 sit on the side panels of vehicles (a station wagon, a taxi, pickups, vans, an SUV), all with similar activations of 8-10. In the random set, a red car scores 6 and a fluffy dog scores 4 while everything else is near 0, which points to two separate triggers rather than one shared visual feature.",
+   "missing_data": "Activations on images that isolate each concept, such as smooth-coated dogs, non-vehicle metal surfaces, and close-ups of fur texture, plus a larger random sample to see whether a shared low-level feature links the two groups.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated things: the faces and heads of shaggy, long-haired dogs (terriers, Bouviers, Tibetan-type breeds), and the side body panels and doors of cars, vans, and pickup trucks.\",\n \"evidence\": \"Of the top 20, about 9 boxes sit on shaggy dog faces and about 11 sit on the side panels of vehicles (a station wagon, a taxi, pickups, vans, an SUV), all with similar activations of 8-10. In the random set, a red car scores 6 and a fluffy dog scores 4 while everything else is near 0, which points to two separate triggers rather than one shared visual feature.\",\n \"missing_data\": \"Activations on images that isolate each concept, such as smooth-coated dogs, non-vehicle metal surfaces, and close-ups of fur texture, plus a larger random sample to see whether a shared low-level feature links the two groups.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated things: the faces and heads of shaggy, long-haired dogs (terriers, Bouviers, Tibetan-type breeds), and the side body panels and doors of cars, vans, and pickup trucks.\",\n \"evidence\": \"Of the top 20, about 9 boxes sit on shaggy dog faces and about 11 sit on the side panels of vehicles (a station wagon, a taxi, pickups, vans, an SUV), all with similar activations of 8-10. In the random set, a red car scores 6 and a fluffy dog scores 4 while everything else is near 0, which points to two separate triggers rather than one shared visual feature.\",\n \"missing_data\": \"Activations on images that isolate each concept, such as smooth-coated dogs, non-vehicle metal surfaces, and close-ups of fur texture, plus a larger random sample to see whether a shared low-level feature links the two groups.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4d:241",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two unrelated things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies, schnauzer-like breeds) and the side body panels and doors of cars, trucks and vans.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two unrelated things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies, schnauzer-like breeds) and the side body panels and doors of cars, trucks and vans.",
+   "evidence": "Of the top 20, 10 are shaggy-dog faces and 10 are vehicle side panels, all at activation 8-10, with no shared visual element. In the random set, a red car scores 6 and a fluffy keeshond scores 4, while unrelated images score 0-1.",
+   "missing_data": "Activations on short-haired dogs, other furry animals, and non-vehicle smooth painted surfaces would show whether either half is broader than it looks.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies, schnauzer-like breeds) and the side body panels and doors of cars, trucks and vans.\",\n \"evidence\": \"Of the top 20, 10 are shaggy-dog faces and 10 are vehicle side panels, all at activation 8-10, with no shared visual element. In the random set, a red car scores 6 and a fluffy keeshond scores 4, while unrelated images score 0-1.\",\n \"missing_data\": \"Activations on short-haired dogs, other furry animals, and non-vehicle smooth painted surfaces would show whether either half is broader than it looks.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unrelated things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies, schnauzer-like breeds) and the side body panels and doors of cars, trucks and vans.\",\n \"evidence\": \"Of the top 20, 10 are shaggy-dog faces and 10 are vehicle side panels, all at activation 8-10, with no shared visual element. In the random set, a red car scores 6 and a fluffy keeshond scores 4, while unrelated images score 0-1.\",\n \"missing_data\": \"Activations on short-haired dogs, other furry animals, and non-vehicle smooth painted surfaces would show whether either half is broader than it looks.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4d:241",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two unconnected things: the faces of shaggy, long-haired dogs (terrier and sheepdog types), and the side bodywork of road vehicles such as cars, vans and pickup trucks, usually near the doors or wheel wells.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two unconnected things: the faces of shaggy, long-haired dogs (terrier and sheepdog types), and the side bodywork of road vehicles such as cars, vans and pickup trucks, usually near the doors or wheel wells.",
+   "evidence": "The top 20 are split roughly evenly between shaggy-dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2-5, 7, 10, 12-14, 17, 19), all scoring 8-10. Among the random photos, the red car (6), the fluffy dog (4) and the old taxi (2) are the only ones that respond, while everything else scores near 0.",
+   "missing_data": "Activations on fur or vehicle textures shown alone, and on smooth-coated dogs, would show whether some shared visual feature links the two groups.",
+   "confidence": 0.8
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unconnected things: the faces of shaggy, long-haired dogs (terrier and sheepdog types), and the side bodywork of road vehicles such as cars, vans and pickup trucks, usually near the doors or wheel wells.\",\n \"evidence\": \"The top 20 are split roughly evenly between shaggy-dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2-5, 7, 10, 12-14, 17, 19), all scoring 8-10. Among the random photos, the red car (6), the fluffy dog (4) and the old taxi (2) are the only ones that respond, while everything else scores near 0.\",\n \"missing_data\": \"Activations on fur or vehicle textures shown alone, and on smooth-coated dogs, would show whether some shared visual feature links the two groups.\",\n \"confidence\": 0.8}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unconnected things: the faces of shaggy, long-haired dogs (terrier and sheepdog types), and the side bodywork of road vehicles such as cars, vans and pickup trucks, usually near the doors or wheel wells.\",\n \"evidence\": \"The top 20 are split roughly evenly between shaggy-dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2-5, 7, 10, 12-14, 17, 19), all scoring 8-10. Among the random photos, the red car (6), the fluffy dog (4) and the old taxi (2) are the only ones that respond, while everything else scores near 0.\",\n \"missing_data\": \"Activations on fur or vehicle textures shown alone, and on smooth-coated dogs, would show whether some shared visual feature links the two groups.\",\n \"confidence\": 0.8}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4d:241",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies) and the side body panels of cars, vans and pickup trucks, usually near the front door or wheel well.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies) and the side body panels of cars, vans and pickup trucks, usually near the front door or wheel well.",
+   "evidence": "The top 20 split roughly evenly between scruffy dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2–5, 7, 10, 12–14, 17, 19), with no visual feature tying a smooth painted car door to shaggy fur. Among the random photos, the cars (red sedan 6, taxi 2) and the fluffy dog (4) are the only ones that activate it, while unrelated scenes score 0–1.",
+   "missing_data": "Activations on smooth-coated dogs and on shaggy non-dog textures (for example fur rugs) would show whether a shared low-level feature links the two groups.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies) and the side body panels of cars, vans and pickup trucks, usually near the front door or wheel well.\",\n \"evidence\": \"The top 20 split roughly evenly between scruffy dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2–5, 7, 10, 12–14, 17, 19), with no visual feature tying a smooth painted car door to shaggy fur. Among the random photos, the cars (red sedan 6, taxi 2) and the fluffy dog (4) are the only ones that activate it, while unrelated scenes score 0–1.\",\n \"missing_data\": \"Activations on smooth-coated dogs and on shaggy non-dog textures (for example fur rugs) would show whether a shared low-level feature links the two groups.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: the faces of shaggy, long-haired dogs (terriers, Bouviers, Yorkies) and the side body panels of cars, vans and pickup trucks, usually near the front door or wheel well.\",\n \"evidence\": \"The top 20 split roughly evenly between scruffy dog faces (#1, 6, 8, 9, 11, 15, 16, 18, 20) and vehicle side panels (#2–5, 7, 10, 12–14, 17, 19), with no visual feature tying a smooth painted car door to shaggy fur. Among the random photos, the cars (red sedan 6, taxi 2) and the fluffy dog (4) are the only ones that activate it, while unrelated scenes score 0–1.\",\n \"missing_data\": \"Activations on smooth-coated dogs and on shaggy non-dog textures (for example fur rugs) would show whether a shared low-level feature links the two groups.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4d:241",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "one",
+  "explanation": "Under the assumption of one shared pattern, the unit responds best to a compact, mid-sized patch where a broad surface of fairly uniform tone or texture is broken by darker rounded features, such as a curved dark hollow or a cluster of dark spots. Those features are framed by gently curving edges or seams.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Under the assumption of one shared pattern, the unit responds best to a compact, mid-sized patch where a broad surface of fairly uniform tone or texture is broken by darker rounded features, such as a curved dark hollow or a cluster of dark spots. Those features are framed by gently curving edges or seams.",
+   "evidence": "Every red box sits on such a patch: dark spots and a dark lower blob inside a fringe of fine, strand-like texture, or a smooth reflective expanse crossed by curved seams just above a dark rounded cutout. In the random set, the one strong response (6) and one moderate response (4) contain the same layout, while flat, cluttered, or fine repetitive textures score near 0.",
+   "missing_data": "Synthetic tests (rounded dark blobs on textured versus smooth surrounds) and more random photos with mid-range activations would help. Without them it is hard to tell whether one shared pattern drives the unit or whether two separate detectors are combined in it.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Under the assumption of one shared pattern, the unit responds best to a compact, mid-sized patch where a broad surface of fairly uniform tone or texture is broken by darker rounded features, such as a curved dark hollow or a cluster of dark spots. Those features are framed by gently curving edges or seams.\",\n \"evidence\": \"Every red box sits on such a patch: dark spots and a dark lower blob inside a fringe of fine, strand-like texture, or a smooth reflective expanse crossed by curved seams just above a dark rounded cutout. In the random set, the one strong response (6) and one moderate response (4) contain the same layout, while flat, cluttered, or fine repetitive textures score near 0.\",\n \"missing_data\": \"Synthetic tests (rounded dark blobs on textured versus smooth surrounds) and more random photos with mid-range activations would help. Without them it is hard to tell whether one shared pattern drives the unit or whether two separate detectors are combined in it.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Under the assumption of one shared pattern, the unit responds best to a compact, mid-sized patch where a broad surface of fairly uniform tone or texture is broken by darker rounded features, such as a curved dark hollow or a cluster of dark spots. Those features are framed by gently curving edges or seams.\",\n \"evidence\": \"Every red box sits on such a patch: dark spots and a dark lower blob inside a fringe of fine, strand-like texture, or a smooth reflective expanse crossed by curved seams just above a dark rounded cutout. In the random set, the one strong response (6) and one moderate response (4) contain the same layout, while flat, cluttered, or fine repetitive textures score near 0.\",\n \"missing_data\": \"Synthetic tests (rounded dark blobs on textured versus smooth surrounds) and more random photos with mid-range activations would help. Without them it is hard to tell whether one shared pattern drives the unit or whether two separate detectors are combined in it.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4d:241",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "39b361d8d1c93fb778aed7cf83a69bc18130725c26b04981f689f92aef16d4a1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a mid-scale, compact rounded region where darker blobs or curved contour lines sit inside a curved outer boundary, set against a contrasting, more uniform surround. It looks like a detector for 'enclosed dark rounded features framed by an arc' rather than for any particular texture or colour.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a mid-scale, compact rounded region where darker blobs or curved contour lines sit inside a curved outer boundary, set against a contrasting, more uniform surround. It looks like a detector for 'enclosed dark rounded features framed by an arc' rather than for any particular texture or colour.",
+   "evidence": "Across all 20 top images the boxes sit on curved outlines enclosing darker rounded marks or panel-seam curves, whether the surface is shaggy-textured or smooth and glossy. Random images lacking such framed curved regions score 0–2, while ones with similar rounded framed shapes score 4–6.",
+   "missing_data": "Synthetic or cropped stimuli isolating curved boundaries with dark interior blobs (versus straight edges or texture alone) would test whether the shared pattern is real or whether the two visually distinct groups of top images reflect separate features.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a mid-scale, compact rounded region where darker blobs or curved contour lines sit inside a curved outer boundary, set against a contrasting, more uniform surround. It looks like a detector for 'enclosed dark rounded features framed by an arc' rather than for any particular texture or colour.\",\n \"evidence\": \"Across all 20 top images the boxes sit on curved outlines enclosing darker rounded marks or panel-seam curves, whether the surface is shaggy-textured or smooth and glossy. Random images lacking such framed curved regions score 0–2, while ones with similar rounded framed shapes score 4–6.\",\n \"missing_data\": \"Synthetic or cropped stimuli isolating curved boundaries with dark interior blobs (versus straight edges or texture alone) would test whether the shared pattern is real or whether the two visually distinct groups of top images reflect separate features.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a mid-scale, compact rounded region where darker blobs or curved contour lines sit inside a curved outer boundary, set against a contrasting, more uniform surround. It looks like a detector for 'enclosed dark rounded features framed by an arc' rather than for any particular texture or colour.\",\n \"evidence\": \"Across all 20 top images the boxes sit on curved outlines enclosing darker rounded marks or panel-seam curves, whether the surface is shaggy-textured or smooth and glossy. Random images lacking such framed curved regions score 0–2, while ones with similar rounded framed shapes score 4–6.\",\n \"missing_data\": \"Synthetic or cropped stimuli isolating curved boundaries with dark interior blobs (versus straight edges or texture alone) would test whether the shared pattern is real or whether the two visually distinct groups of top images reflect separate features.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

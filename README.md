@@ -507,3 +507,44 @@ Consistency between samples is 0.93-1.00 everywhere.
 - 4e:55 (prior held): faces, Q0 and cats-or-cars 0.46-0.48; the face pattern without nouns 0.40; V 0.20, top12 at
   chance (0.25). V is the lowest reading of a real unit on every scorer so far (rounds 15, 18, 19).
 - Of the scorers tried, this is the only one that ranks partly right readings and passes both planted controls.
+
+## Round 20: the open method on 11 new units (`tools/openmethod.py`, claim-blind author)
+
+Essay review and literature IDs in `authors/literature_ids.md` (Zoom In's IDs are svg ids in its figures). Method per
+unit, unchanged across units: card of the top 20 whole photos (peak boxed) plus 10 random; readings bare, Q0, F1 x 2;
+a wrong-unit reading; class lists per reading; a 48-photo pool of 24 same-class pairs; predicted activation scored by
+Spearman rho (3 samples). Judge (`tools/judge_r20.py`, frozen before the readings): each reading against the reference.
+`runs/openmethod/report.txt`, `judge.json`.
+
+    unit        reference (source)            top reading (rho)                                   judge
+    4b:237      windows (Zoom In)             bare: side windows of vehicles (0.73)                5
+    4b:491      car body (Zoom In)            Q0: lower side bodywork near the wheel arch (0.84)   4
+    4b:373      wheels (Zoom In)              bare: front wheel and wheel arch (0.67)              4
+    4b:443      oriented dog head (Zoom In)   F1: furred patch beside the eye, frontal head (0.58) 2
+    4b:431      oriented dog head (Zoom In)   F1: dense soft fibrous texture (0.66)                2
+    4c:254      oriented dog head (Zoom In)   bare: thin upright vertical structures (0.61)        1
+    4c:407      oriented dog head (Zoom In)   Q0: throat, chest, lower muzzle of dogs (0.64)       2
+    5a:719      pinched-center shape (essay)  Q0: close-ups of handcrafted, decorated objects      1
+    4d:417      reader of 447                 bare: vehicle side panels; separately dogs (0.77)    2 (vs shared pose)
+    4d:241      reader of 447                 Q0: shaggy dog faces and vehicle bodywork (0.64)     2
+    4d:277      reader of 447                 Q0: animal heads and vehicle side panels (0.78)      2
+
+- Car parts reproduce: all three named correctly and classed one or one-plus-related (predictions 1 and 2 held).
+- Dog heads don't: no reading of any unit names a facing direction (prediction 3: the direction half held, 0 of 4;
+  the dog-head half failed, 2 of 4). Mechanical mirror test (`tools/r20_checks.py`, orchestrator-written, after the
+  results): 4b:431 loses 57% of its activation when its top photos are mirrored, the 100th percentile of 4b (median
+  5%). It is direction-specific, and every reading calls it fur texture. 4b:443, 4c:254 and 4c:407 sit at the
+  28th-65th percentile, so the layout-based dog-head ground truth holds only for 431 (my mapping from figure ids to
+  roles may be wrong for the rest; 4c:254 reads and scores as vertical structures).
+- Prediction 4 failed (wrong lowest in 7 of 11): on 4c:254, 4d:241 and 4d:277 the forced-unity readings score below
+  the wrong unit (down to -0.27), and on 4b:373 the wrong reading (4d:417, vehicle side panels) is nearly right.
+  Prediction 5 held (5 of 7 top readings bare or Q0).
+- 5a:719: no reading names a pinched or bow-tie shape; bare sample 1 says cannot tell. Class means: necklace, wallet,
+  Christmas stocking lead; bow tie ranks 109th, butterflies 25th-300th, swimsuits 265th-332nd, while the essay's
+  "residue" ranks high (Loafer 12th, purse 27th). On this checkpoint the essay's reading of 5a:719 isn't visible.
+- The three readers of 447 read as cars plus dogs, unrelated, 6 of 6 bare samples; none names a shared view, as in
+  round 13. F1 on 417 says "the side flank of a bulky side-on body" (judge 4 against shared pose), but scores 0.65
+  against 0.77 for the noun reading.
+- The miss on 431 is the method's: no reading proposed direction, so nothing tested it. The battery's mirror
+  transform with layer baselines (round 10) would have flagged it; that is the one battery result that is
+  distinctive, as rotate_180 was for 4e:55. It belongs in the look step as a hypothesis source.

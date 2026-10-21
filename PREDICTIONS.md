@@ -354,3 +354,25 @@ Validation (needs 1, 2 and 4):
 3. 4c:447: noun and Q0 rho at least 0.5, within 0.10 of each other.
 4. wrong has the lowest rho of its unit in at least 4 of 5 units, and is at most 0.2 in each.
 5. 4e:55: reported. Prior: V's rho below face (noun), Q0 and or.
+
+# Round 20: the open method on new units (tools/openmethod.py, claim-blind author)
+(sealed 2026-10-21, before openmethod.py exists or any unit below has been looked at; IDs in authors/literature_ids.md)
+
+Method, identical for every unit: a card of the 20 strongest card-pool photos (whole, peak marked by a box, 0-10)
+plus 10 random photos; readings from the bare prompt, Q0 and F1, 2 samples each; a wrong-unit reading (another
+unit's bare sample 1, authors/round20_units.json); class lists per reading; a 48-photo pool of 24 classes x 2 photos
+(same-class pairs) drawn from those lists; predicted activation scored by Spearman rho, 3 samples per reading. The
+method's answer is the top reading by mean rho. A blind judge then rates each reading against the literature answer.
+
+Ground truth (literature): 4b:237 windows, 4b:491 car body, 4b:373 wheels (Zoom In; the essay: "basically
+monosemantic"); oriented dog heads 4b:443, 4b:431, 4c:254, 4c:407 (Zoom In's two mirrored pathways).
+Claims, reported: 5a:719 (the essay: pinched-center shape with semantic residue); 4d:417, 241, 277 (Zoom In's
+readers of 447; the essay: two of four are car neurons and two share a pose; round 13: none had shared view tuning).
+
+1. Car parts: the top reading matches the part (judge >= 4) in at least 2 of 3.
+2. Car parts: the bare samples' class is one or one_plus_related in at least 5 of 6.
+3. Dog heads: the top reading names dog heads or faces in 4 of 4, and names a facing direction in at most 2 of 4.
+4. The wrong-unit reading has the lowest rho in at least 10 of 11 units.
+5. On the 7 ground-truth units, the top reading is a bare or Q0 sample in at least 5.
+6. 5a:719 and the 4d readers: reported, not predicted. Priors: some 5a:719 reading names a bow-tie or pinched
+   shape; no 4d reader reading names a view shared by cars and dogs.

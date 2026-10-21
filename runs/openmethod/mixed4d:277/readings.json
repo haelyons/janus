@@ -1,0 +1,147 @@
+{
+ "bare_s1": {
+  "unit": "mixed4d:277",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to at least two unconnected things: the heads or bodies of animals (fox, coyote, gazelle, ibex, rabbits, spiders) and the side panels or doors of road vehicles, especially fire trucks, taxis, ambulances and buses.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to at least two unconnected things: the heads or bodies of animals (fox, coyote, gazelle, ibex, rabbits, spiders) and the side panels or doors of road vehicles, especially fire trucks, taxis, ambulances and buses.",
+   "evidence": "The top 20 split between animals (#1-3, #5-8, #11-13, #17), with boxes on heads or spider bodies, and vehicles (#4, #9, #10, #14-16, #18-20), with boxes on cab doors or emblems; the only notable random-set activation is a garbage truck at 5, while the dog, ship and other photos stay at 1-3.",
+   "missing_data": "Activations on many more images of each group, including middle-ranked examples, plus feature visualizations or ablations to check whether one visual feature links animal heads, spiders and vehicle doors.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to at least two unconnected things: the heads or bodies of animals (fox, coyote, gazelle, ibex, rabbits, spiders) and the side panels or doors of road vehicles, especially fire trucks, taxis, ambulances and buses.\", \"evidence\": \"The top 20 split between animals (#1-3, #5-8, #11-13, #17), with boxes on heads or spider bodies, and vehicles (#4, #9, #10, #14-16, #18-20), with boxes on cab doors or emblems; the only notable random-set activation is a garbage truck at 5, while the dog, ship and other photos stay at 1-3.\", \"missing_data\": \"Activations on many more images of each group, including middle-ranked examples, plus feature visualizations or ablations to check whether one visual feature links animal heads, spiders and vehicle doors.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to at least two unconnected things: the heads or bodies of animals (fox, coyote, gazelle, ibex, rabbits, spiders) and the side panels or doors of road vehicles, especially fire trucks, taxis, ambulances and buses.\", \"evidence\": \"The top 20 split between animals (#1-3, #5-8, #11-13, #17), with boxes on heads or spider bodies, and vehicles (#4, #9, #10, #14-16, #18-20), with boxes on cab doors or emblems; the only notable random-set activation is a garbage truck at 5, while the dog, ship and other photos stay at 1-3.\", \"missing_data\": \"Activations on many more images of each group, including middle-ranked examples, plus feature visualizations or ablations to check whether one visual feature links animal heads, spiders and vehicle doors.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4d:277",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit is polysemantic and responds to at least three unconnected things: the heads of small to medium mammals (fox, gazelle, rabbit, ibex, coyote), spider bodies, and the side and door areas of commercial or emergency vehicles (taxis, fire trucks, ambulances, a bus).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit is polysemantic and responds to at least three unconnected things: the heads of small to medium mammals (fox, gazelle, rabbit, ibex, coyote), spider bodies, and the side and door areas of commercial or emergency vehicles (taxis, fire trucks, ambulances, a bus).",
+   "evidence": "The top 20 split into roughly 8 mammal-head images (activation 8-10), 4 spider images (7-9) and 8 vehicle images (7-9), with no shared visual feature linking the three groups. Among the random photos, only the garbage truck activates it moderately (5), and the others score 1-3, so the vehicle response holds outside the top set.",
+   "missing_data": "Mid-range activation samples, or feature visualizations of each group, would show whether some shared low-level pattern links them, or whether mammals and spiders form one 'animal' facet.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit is polysemantic and responds to at least three unconnected things: the heads of small to medium mammals (fox, gazelle, rabbit, ibex, coyote), spider bodies, and the side and door areas of commercial or emergency vehicles (taxis, fire trucks, ambulances, a bus).\", \"evidence\": \"The top 20 split into roughly 8 mammal-head images (activation 8-10), 4 spider images (7-9) and 8 vehicle images (7-9), with no shared visual feature linking the three groups. Among the random photos, only the garbage truck activates it moderately (5), and the others score 1-3, so the vehicle response holds outside the top set.\", \"missing_data\": \"Mid-range activation samples, or feature visualizations of each group, would show whether some shared low-level pattern links them, or whether mammals and spiders form one 'animal' facet.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit is polysemantic and responds to at least three unconnected things: the heads of small to medium mammals (fox, gazelle, rabbit, ibex, coyote), spider bodies, and the side and door areas of commercial or emergency vehicles (taxis, fire trucks, ambulances, a bus).\", \"evidence\": \"The top 20 split into roughly 8 mammal-head images (activation 8-10), 4 spider images (7-9) and 8 vehicle images (7-9), with no shared visual feature linking the three groups. Among the random photos, only the garbage truck activates it moderately (5), and the others score 1-3, so the vehicle response holds outside the top set.\", \"missing_data\": \"Mid-range activation samples, or feature visualizations of each group, would show whether some shared low-level pattern links them, or whether mammals and spiders form one 'animal' facet.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4d:277",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit appears polysemantic, responding to two unconnected things: wild animals, mostly the heads of small or medium mammals (fox, gazelle, rabbit, ibex, coyote) plus spider bodies, and large service or commercial vehicles (fire trucks, taxis, ambulance, utility trucks, bus), usually on the door or side-panel area.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit appears polysemantic, responding to two unconnected things: wild animals, mostly the heads of small or medium mammals (fox, gazelle, rabbit, ibex, coyote) plus spider bodies, and large service or commercial vehicles (fire trucks, taxis, ambulance, utility trucks, bus), usually on the door or side-panel area.",
+   "evidence": "The top 20 split cleanly into about 10 animal images (activations 7-10) and about 10 vehicle images (activations 7-9), with no visual feature in the boxed regions obviously shared across the two groups. In the random sample only the garbage truck scores moderately (5); everything else is low (1-3), so the vehicle response is real and generalizes.",
+   "missing_data": "Activations on more random animals and vehicles, and feature-visualization or ablation results, to check whether a shared mid-level feature (e.g., a textured central blob with radiating parts) links the two groups.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit appears polysemantic, responding to two unconnected things: wild animals, mostly the heads of small or medium mammals (fox, gazelle, rabbit, ibex, coyote) plus spider bodies, and large service or commercial vehicles (fire trucks, taxis, ambulance, utility trucks, bus), usually on the door or side-panel area.\", \"evidence\": \"The top 20 split cleanly into about 10 animal images (activations 7-10) and about 10 vehicle images (activations 7-9), with no visual feature in the boxed regions obviously shared across the two groups. In the random sample only the garbage truck scores moderately (5); everything else is low (1-3), so the vehicle response is real and generalizes.\", \"missing_data\": \"Activations on more random animals and vehicles, and feature-visualization or ablation results, to check whether a shared mid-level feature (e.g., a textured central blob with radiating parts) links the two groups.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit appears polysemantic, responding to two unconnected things: wild animals, mostly the heads of small or medium mammals (fox, gazelle, rabbit, ibex, coyote) plus spider bodies, and large service or commercial vehicles (fire trucks, taxis, ambulance, utility trucks, bus), usually on the door or side-panel area.\", \"evidence\": \"The top 20 split cleanly into about 10 animal images (activations 7-10) and about 10 vehicle images (activations 7-9), with no visual feature in the boxed regions obviously shared across the two groups. In the random sample only the garbage truck scores moderately (5); everything else is low (1-3), so the vehicle response is real and generalizes.\", \"missing_data\": \"Activations on more random animals and vehicles, and feature-visualization or ablation results, to check whether a shared mid-level feature (e.g., a textured central blob with radiating parts) links the two groups.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4d:277",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit appears to respond to two unconnected things: the heads or bodies of wild animals (fox, coyote, rabbit, gazelle and ibex heads, and spider bodies), and the side panels or doors of service vehicles (fire trucks, taxis, an ambulance, a snow truck and a minibus).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit appears to respond to two unconnected things: the heads or bodies of wild animals (fox, coyote, rabbit, gazelle and ibex heads, and spider bodies), and the side panels or doors of service vehicles (fire trucks, taxis, an ambulance, a snow truck and a minibus).",
+   "evidence": "The top 20 split roughly evenly between animal faces/spider bodies and service-vehicle body panels or emblems, with no visual or semantic link between the two groups. Among the random photos, only the garbage truck scores notably (5), which supports the vehicle facet as genuine; the rest stay low (1-3).",
+   "missing_data": "Activations on more vehicles and animals with nothing else in the frame, plus feature visualizations or occlusion tests, to check whether some shared low-level pattern (e.g., a compact central shape with radiating parts) links the two clusters.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit appears to respond to two unconnected things: the heads or bodies of wild animals (fox, coyote, rabbit, gazelle and ibex heads, and spider bodies), and the side panels or doors of service vehicles (fire trucks, taxis, an ambulance, a snow truck and a minibus).\", \"evidence\": \"The top 20 split roughly evenly between animal faces/spider bodies and service-vehicle body panels or emblems, with no visual or semantic link between the two groups. Among the random photos, only the garbage truck scores notably (5), which supports the vehicle facet as genuine; the rest stay low (1-3).\", \"missing_data\": \"Activations on more vehicles and animals with nothing else in the frame, plus feature visualizations or occlusion tests, to check whether some shared low-level pattern (e.g., a compact central shape with radiating parts) links the two clusters.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit appears to respond to two unconnected things: the heads or bodies of wild animals (fox, coyote, rabbit, gazelle and ibex heads, and spider bodies), and the side panels or doors of service vehicles (fire trucks, taxis, an ambulance, a snow truck and a minibus).\", \"evidence\": \"The top 20 split roughly evenly between animal faces/spider bodies and service-vehicle body panels or emblems, with no visual or semantic link between the two groups. Among the random photos, only the garbage truck scores notably (5), which supports the vehicle facet as genuine; the rest stay low (1-3).\", \"missing_data\": \"Activations on more vehicles and animals with nothing else in the frame, plus feature visualizations or occlusion tests, to check whether some shared low-level pattern (e.g., a compact central shape with radiating parts) links the two clusters.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4d:277",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a compact, roughly symmetric patch of fine, high-contrast detail sitting at the center of a larger, smoother region of fairly uniform color or texture, especially when thin elongated shapes radiate or stick out from that patch. Weaker responses come from small detailed marks or insignia placed on large flat colored panels.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a compact, roughly symmetric patch of fine, high-contrast detail sitting at the center of a larger, smoother region of fairly uniform color or texture, especially when thin elongated shapes radiate or stick out from that patch. Weaker responses come from small detailed marks or insignia placed on large flat colored panels.",
+   "evidence": "The strongest boxes (8-10) land on small textured focal blobs, often with paired or radiating thin protrusions, set against even surroundings. Lower-ranked boxes (7-8) land on small detailed marks on broad flat painted surfaces, and random images lacking such a focal patch mostly score 1-2.",
+   "missing_data": "Synthetic tests that separate a centered detailed patch, radiating thin protrusions, and a flat surround, plus per-pixel activation maps, would show which ingredient drives the response and whether the two groups truly share one pattern.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a compact, roughly symmetric patch of fine, high-contrast detail sitting at the center of a larger, smoother region of fairly uniform color or texture, especially when thin elongated shapes radiate or stick out from that patch. Weaker responses come from small detailed marks or insignia placed on large flat colored panels.\",\n \"evidence\": \"The strongest boxes (8-10) land on small textured focal blobs, often with paired or radiating thin protrusions, set against even surroundings. Lower-ranked boxes (7-8) land on small detailed marks on broad flat painted surfaces, and random images lacking such a focal patch mostly score 1-2.\",\n \"missing_data\": \"Synthetic tests that separate a centered detailed patch, radiating thin protrusions, and a flat surround, plus per-pixel activation maps, would show which ingredient drives the response and whether the two groups truly share one pattern.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a compact, roughly symmetric patch of fine, high-contrast detail sitting at the center of a larger, smoother region of fairly uniform color or texture, especially when thin elongated shapes radiate or stick out from that patch. Weaker responses come from small detailed marks or insignia placed on large flat colored panels.\",\n \"evidence\": \"The strongest boxes (8-10) land on small textured focal blobs, often with paired or radiating thin protrusions, set against even surroundings. Lower-ranked boxes (7-8) land on small detailed marks on broad flat painted surfaces, and random images lacking such a focal patch mostly score 1-2.\",\n \"missing_data\": \"Synthetic tests that separate a centered detailed patch, radiating thin protrusions, and a flat surround, plus per-pixel activation maps, would show which ingredient drives the response and whether the two groups truly share one pattern.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4d:277",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "4ce97471ccecdfefec8689e67eef2f2ab14b14ee7fcf04bafc679ef120ca61f9",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a compact, roughly centered focal region bounded by strong contours, with thin elongated projections or sharp edges branching outward from it, often in symmetric pairs.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a compact, roughly centered focal region bounded by strong contours, with thin elongated projections or sharp edges branching outward from it, often in symmetric pairs.",
+   "evidence": "In the top 20 photos, the boxes sit on small central masses with paired or radiating thin extensions (upward-pointing pairs or many splayed limbs), and on bounded flat panels with crisp borders and small high-contrast markings. Random photos without such a compact center and radiating extensions score low (1-3), and the one partial match scores 5.",
+   "missing_data": "Synthetic tests that vary the presence, number and symmetry of thin projections around a central mass, plus spatial activation maps over whole photos, would most change this answer.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a compact, roughly centered focal region bounded by strong contours, with thin elongated projections or sharp edges branching outward from it, often in symmetric pairs.\",\n \"evidence\": \"In the top 20 photos, the boxes sit on small central masses with paired or radiating thin extensions (upward-pointing pairs or many splayed limbs), and on bounded flat panels with crisp borders and small high-contrast markings. Random photos without such a compact center and radiating extensions score low (1-3), and the one partial match scores 5.\",\n \"missing_data\": \"Synthetic tests that vary the presence, number and symmetry of thin projections around a central mass, plus spatial activation maps over whole photos, would most change this answer.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Taken as one shared visual pattern, the unit responds to a compact central mass with paired or radiating thin elongated parts extending outward, such as pointed upright projections above a rounded form or thin limbs spreading from a small body. It responds more weakly to small, high-contrast emblem- or panel-like markings on large, flat, brightly colored surfaces.\");\n \"evidence\": \"The top activations (10 to 8) are all on organic forms, with the boxes centered on a rounded mass where thin pointed or leg-like extensions meet; the weaker activations (8 to 7) and the highest random image (5) box door or insignia areas on large saturated flat panels. Other random images, including ones with strong reds or rich texture, stay at 1 to 3, so color or texture alone does not drive the unit.\"\n \"missing_data\": \"Feature visualizations or occlusion and ablation maps would show whether the two groups really share one geometric motif. Activations on simple shapes, such as a blob with radiating lines versus a small badge on a flat plane, would also help, because without them the data could just as well mean two unrelated detectors (class 'unrelated').\",\n \"confidence\": 0.4}\n```",
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a compact, roughly centered focal region bounded by strong contours, with thin elongated projections or sharp edges branching outward from it, often in symmetric pairs.\",\n \"evidence\": \"In the top 20 photos, the boxes sit on small central masses with paired or radiating thin extensions (upward-pointing pairs or many splayed limbs), and on bounded flat panels with crisp borders and small high-contrast markings. Random photos without such a compact center and radiating extensions score low (1-3), and the one partial match scores 5.\",\n \"missing_data\": \"Synthetic tests that vary the presence, number and symmetry of thin projections around a central mass, plus spatial activation maps over whole photos, would most change this answer.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 2
+ }
+}

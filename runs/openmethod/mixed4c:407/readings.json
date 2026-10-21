@@ -1,0 +1,146 @@
+{
+ "Q0_s1": {
+  "unit": "mixed4c:407",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the throat/chest/lower-muzzle region of animals, mostly dogs and wolves, and also fires on other furry or feathered animals' necks.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the throat/chest/lower-muzzle region of animals, mostly dogs and wolves, and also fires on other furry or feathered animals' necks.",
+   "evidence": "17 of the top 20 are dogs or wolves, with red boxes on the neck, chest, or open mouth and tongue. Weaker extensions include a ferret, a capuchin and a sandpiper, again boxed at the neck; random images stay low (1-4), and the highest random image is a dog face.",
+   "missing_data": "Activations on many non-canine animals and on cropped dog body parts (neck-only vs. face-only) would show whether this is neck/chest texture in general or dog-specific.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat/chest/lower-muzzle region of animals, mostly dogs and wolves, and also fires on other furry or feathered animals' necks.\",\n \"evidence\": \"17 of the top 20 are dogs or wolves, with red boxes on the neck, chest, or open mouth and tongue. Weaker extensions include a ferret, a capuchin and a sandpiper, again boxed at the neck; random images stay low (1-4), and the highest random image is a dog face.\",\n \"missing_data\": \"Activations on many non-canine animals and on cropped dog body parts (neck-only vs. face-only) would show whether this is neck/chest texture in general or dog-specific.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat/chest/lower-muzzle region of animals, mostly dogs and wolves, and also fires on other furry or feathered animals' necks.\",\n \"evidence\": \"17 of the top 20 are dogs or wolves, with red boxes on the neck, chest, or open mouth and tongue. Weaker extensions include a ferret, a capuchin and a sandpiper, again boxed at the neck; random images stay low (1-4), and the highest random image is a dog face.\",\n \"missing_data\": \"Activations on many non-canine animals and on cropped dog body parts (neck-only vs. face-only) would show whether this is neck/chest texture in general or dog-specific.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4c:407",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the chin, throat and upper-chest area just below a dog's face (often including an open mouth or tongue). It responds somewhat more weakly to the same region on similar animals such as wolves, a ferret, a monkey and even a bird.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the chin, throat and upper-chest area just below a dog's face (often including an open mouth or tongue). It responds somewhat more weakly to the same region on similar animals such as wolves, a ferret, a monkey and even a bird.",
+   "evidence": "16 of the top 20 photos are dogs or wolves, with the red box consistently on the lower muzzle, mouth or neck rather than the eyes or body. The non-dog top images (bird #1, ferret #6, monkey #10) are also boxed at the chin or throat, and random dog, rabbit and parrot images score only 3-4 while unrelated objects score 1-2.",
+   "missing_data": "Activation maps on animal close-ups that isolate the throat or chest from the mouth or tongue, plus more non-dog animals, to tell whether the unit codes a body part generally or a dog-specific feature.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the chin, throat and upper-chest area just below a dog's face (often including an open mouth or tongue). It responds somewhat more weakly to the same region on similar animals such as wolves, a ferret, a monkey and even a bird.\",\n \"evidence\": \"16 of the top 20 photos are dogs or wolves, with the red box consistently on the lower muzzle, mouth or neck rather than the eyes or body. The non-dog top images (bird #1, ferret #6, monkey #10) are also boxed at the chin or throat, and random dog, rabbit and parrot images score only 3-4 while unrelated objects score 1-2.\",\n \"missing_data\": \"Activation maps on animal close-ups that isolate the throat or chest from the mouth or tongue, plus more non-dog animals, to tell whether the unit codes a body part generally or a dog-specific feature.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the chin, throat and upper-chest area just below a dog's face (often including an open mouth or tongue). It responds somewhat more weakly to the same region on similar animals such as wolves, a ferret, a monkey and even a bird.\",\n \"evidence\": \"16 of the top 20 photos are dogs or wolves, with the red box consistently on the lower muzzle, mouth or neck rather than the eyes or body. The non-dog top images (bird #1, ferret #6, monkey #10) are also boxed at the chin or throat, and random dog, rabbit and parrot images score only 3-4 while unrelated objects score 1-2.\",\n \"missing_data\": \"Activation maps on animal close-ups that isolate the throat or chest from the mouth or tongue, plus more non-dog animals, to tell whether the unit codes a body part generally or a dog-specific feature.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4c:407",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the throat, chin and upper chest just below the muzzle of dogs and wolves, often including an open mouth or tongue. It responds more weakly to the same neck region on other furry animals and birds.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the throat, chin and upper chest just below the muzzle of dogs and wolves, often including an open mouth or tongue. It responds more weakly to the same neck region on other furry animals and birds.",
+   "evidence": "In 17 of the 20 top photos the red box sits on the neck, chest or mouth area below a canid's face (#2–5, #7–9, #11–20), and the ferret, capuchin monkey and sandpiper (#1, #6, #10) are boxed at the same throat spot. In the random photos, non-animal images score 1–2 while the dogs and furry animals score 3–4.",
+   "missing_data": "Activations on cropped images separating the throat and chest from the face, and on non-canid animals photographed in the same pose, would show whether the unit is specific to dogs or encodes animal neck regions in general.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat, chin and upper chest just below the muzzle of dogs and wolves, often including an open mouth or tongue. It responds more weakly to the same neck region on other furry animals and birds.\",\n \"evidence\": \"In 17 of the 20 top photos the red box sits on the neck, chest or mouth area below a canid's face (#2–5, #7–9, #11–20), and the ferret, capuchin monkey and sandpiper (#1, #6, #10) are boxed at the same throat spot. In the random photos, non-animal images score 1–2 while the dogs and furry animals score 3–4.\",\n \"missing_data\": \"Activations on cropped images separating the throat and chest from the face, and on non-canid animals photographed in the same pose, would show whether the unit is specific to dogs or encodes animal neck regions in general.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat, chin and upper chest just below the muzzle of dogs and wolves, often including an open mouth or tongue. It responds more weakly to the same neck region on other furry animals and birds.\",\n \"evidence\": \"In 17 of the 20 top photos the red box sits on the neck, chest or mouth area below a canid's face (#2–5, #7–9, #11–20), and the ferret, capuchin monkey and sandpiper (#1, #6, #10) are boxed at the same throat spot. In the random photos, non-animal images score 1–2 while the dogs and furry animals score 3–4.\",\n \"missing_data\": \"Activations on cropped images separating the throat and chest from the face, and on non-canid animals photographed in the same pose, would show whether the unit is specific to dogs or encodes animal neck regions in general.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4c:407",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the throat, chest and lower-muzzle area of dogs and wolves, including open mouths with tongues. It also fires, nearly as strongly, on the same neck and chest region of other animals such as a bird, a ferret and a monkey.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the throat, chest and lower-muzzle area of dogs and wolves, including open mouths with tongues. It also fires, nearly as strongly, on the same neck and chest region of other animals such as a bird, a ferret and a monkey.",
+   "evidence": "17 of the top 20 photos are dogs or wolves, with the red boxes on the chin, neck or chest. The bird (#1, activation 10), ferret (#6) and capuchin monkey (#10) are boxed at the same area, while random non-animal photos score 1-2 and the dog close-up scores 4.",
+   "missing_data": "Activations on many non-dog animals and on dogs with the throat hidden would show whether this is a dog-specific unit or a general animal neck/chest detector.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat, chest and lower-muzzle area of dogs and wolves, including open mouths with tongues. It also fires, nearly as strongly, on the same neck and chest region of other animals such as a bird, a ferret and a monkey.\",\n \"evidence\": \"17 of the top 20 photos are dogs or wolves, with the red boxes on the chin, neck or chest. The bird (#1, activation 10), ferret (#6) and capuchin monkey (#10) are boxed at the same area, while random non-animal photos score 1-2 and the dog close-up scores 4.\",\n \"missing_data\": \"Activations on many non-dog animals and on dogs with the throat hidden would show whether this is a dog-specific unit or a general animal neck/chest detector.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the throat, chest and lower-muzzle area of dogs and wolves, including open mouths with tongues. It also fires, nearly as strongly, on the same neck and chest region of other animals such as a bird, a ferret and a monkey.\",\n \"evidence\": \"17 of the top 20 photos are dogs or wolves, with the red boxes on the chin, neck or chest. The bird (#1, activation 10), ferret (#6) and capuchin monkey (#10) are boxed at the same area, while random non-animal photos score 1-2 and the dog close-up scores 4.\",\n \"missing_data\": \"Activations on many non-dog animals and on dogs with the throat hidden would show whether this is a dog-specific unit or a general animal neck/chest detector.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4c:407",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the area just below a forward-facing head where a soft, finely fibrous surface curves into a broader body mass, often with a lighter patch or a small pink protruding shape beneath the jaw line. The response is strongest when the region is lit, mid-frame and fills a moderate part of the image.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the area just below a forward-facing head where a soft, finely fibrous surface curves into a broader body mass, often with a lighter patch or a small pink protruding shape beneath the jaw line. The response is strongest when the region is lit, mid-frame and fills a moderate part of the image.",
+   "evidence": "Nearly all top-20 boxes sit on the lower-jaw, throat or upper-chest zone of fluffy, finely textured subjects, often where pale and dark tones meet or a pinkish open-mouth shape appears. The few top images with a different subject type (#1, #6, #10) still show the same textured transition below a head, and random images without this structure score only 1-4.",
+   "missing_data": "Activation maps on images that have the soft fibrous texture but no head-to-body transition, and on smooth-surfaced images that have the transition, would separate the texture contribution from the shape contribution.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the area just below a forward-facing head where a soft, finely fibrous surface curves into a broader body mass, often with a lighter patch or a small pink protruding shape beneath the jaw line. The response is strongest when the region is lit, mid-frame and fills a moderate part of the image.\",\n \"evidence\": \"Nearly all top-20 boxes sit on the lower-jaw, throat or upper-chest zone of fluffy, finely textured subjects, often where pale and dark tones meet or a pinkish open-mouth shape appears. The few top images with a different subject type (#1, #6, #10) still show the same textured transition below a head, and random images without this structure score only 1-4.\",\n \"missing_data\": \"Activation maps on images that have the soft fibrous texture but no head-to-body transition, and on smooth-surfaced images that have the transition, would separate the texture contribution from the shape contribution.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the area just below a forward-facing head where a soft, finely fibrous surface curves into a broader body mass, often with a lighter patch or a small pink protruding shape beneath the jaw line. The response is strongest when the region is lit, mid-frame and fills a moderate part of the image.\",\n \"evidence\": \"Nearly all top-20 boxes sit on the lower-jaw, throat or upper-chest zone of fluffy, finely textured subjects, often where pale and dark tones meet or a pinkish open-mouth shape appears. The few top images with a different subject type (#1, #6, #10) still show the same textured transition below a head, and random images without this structure score only 1-4.\",\n \"missing_data\": \"Activation maps on images that have the soft fibrous texture but no head-to-body transition, and on smooth-surfaced images that have the transition, would separate the texture contribution from the shape contribution.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4c:407",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "8216761c0eac10edd01e85fb90c5f08b4ebb97c60f7b109c88eb53dbf80f1bf2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the narrow region just below a forward-pointing head shape, where a face meets a neck or chest, especially when the surface there has fine, soft, hair-like texture. It responds more weakly to a glossy pink lobe hanging from an open mouth-like opening and to finely streaked versions of the same neck-region texture.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the narrow region just below a forward-pointing head shape, where a face meets a neck or chest, especially when the surface there has fine, soft, hair-like texture. It responds more weakly to a glossy pink lobe hanging from an open mouth-like opening and to finely streaked versions of the same neck-region texture.",
+   "evidence": "Most top boxes sit on the chin, throat or upper chest under a snout-like protrusion, and several (#8, #13, #15, #18) land on a hanging pink lobe. The top-1 image shows the same placement on a streaked, speckled surface, and random images are low (1-4), with the highest being a close, front-facing head with a visible chin region (#8).",
+   "missing_data": "Occlusion or crop tests isolating throat texture versus open-mouth pink regions, plus examples from the middle of the activation range, to show which cue drives the unit.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the narrow region just below a forward-pointing head shape, where a face meets a neck or chest, especially when the surface there has fine, soft, hair-like texture. It responds more weakly to a glossy pink lobe hanging from an open mouth-like opening and to finely streaked versions of the same neck-region texture.\",\n \"evidence\": \"Most top boxes sit on the chin, throat or upper chest under a snout-like protrusion, and several (#8, #13, #15, #18) land on a hanging pink lobe. The top-1 image shows the same placement on a streaked, speckled surface, and random images are low (1-4), with the highest being a close, front-facing head with a visible chin region (#8).\",\n \"missing_data\": \"Occlusion or crop tests isolating throat texture versus open-mouth pink regions, plus examples from the middle of the activation range, to show which cue drives the unit.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the narrow region just below a forward-pointing head shape, where a face meets a neck or chest, especially when the surface there has fine, soft, hair-like texture. It responds more weakly to a glossy pink lobe hanging from an open mouth-like opening and to finely streaked versions of the same neck-region texture.\",\n \"evidence\": \"Most top boxes sit on the chin, throat or upper chest under a snout-like protrusion, and several (#8, #13, #15, #18) land on a hanging pink lobe. The top-1 image shows the same placement on a streaked, speckled surface, and random images are low (1-4), with the highest being a close, front-facing head with a visible chin region (#8).\",\n \"missing_data\": \"Occlusion or crop tests isolating throat texture versus open-mouth pink regions, plus examples from the middle of the activation range, to show which cue drives the unit.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

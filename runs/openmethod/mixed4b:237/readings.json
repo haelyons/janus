@@ -1,0 +1,146 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:237",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows of motor vehicles, especially the cab or front door window of cars, trucks, vans and similar vehicles.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows of motor vehicles, especially the cab or front door window of cars, trucks, vans and similar vehicles.",
+   "evidence": "All 20 top photos are road vehicles (fire truck, pickups, sedans, taxi, ambulances, vans, RVs), and the red boxes sit on the side or door window in nearly every case. The random photos contain no vehicles and only reach activations of 1-3.",
+   "missing_data": "Photos of windows that are not on vehicles (house windows, train or bus windows) and of vehicles seen without visible side windows, to tell whether the unit codes the window itself or the vehicle as a whole.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of motor vehicles, especially the cab or front door window of cars, trucks, vans and similar vehicles.\",\n \"evidence\": \"All 20 top photos are road vehicles (fire truck, pickups, sedans, taxi, ambulances, vans, RVs), and the red boxes sit on the side or door window in nearly every case. The random photos contain no vehicles and only reach activations of 1-3.\",\n \"missing_data\": \"Photos of windows that are not on vehicles (house windows, train or bus windows) and of vehicles seen without visible side windows, to tell whether the unit codes the window itself or the vehicle as a whole.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of motor vehicles, especially the cab or front door window of cars, trucks, vans and similar vehicles.\",\n \"evidence\": \"All 20 top photos are road vehicles (fire truck, pickups, sedans, taxi, ambulances, vans, RVs), and the red boxes sit on the side or door window in nearly every case. The random photos contain no vehicles and only reach activations of 1-3.\",\n \"missing_data\": \"Photos of windows that are not on vehicles (house windows, train or bus windows) and of vehicles seen without visible side windows, to tell whether the unit codes the window itself or the vehicle as a whole.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4b:237",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows of road vehicles, especially the driver/cab door window area of cars, trucks, vans and buses.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows of road vehicles, especially the driver/cab door window area of cars, trucks, vans and buses.",
+   "evidence": "All 20 top images are motor vehicles (fire truck, pickups, taxi, sedans, ambulances, vans, RV), and the red boxes consistently sit on the side/cab door window. Random non-vehicle images all score low (1-3).",
+   "missing_data": "Activations on vehicle images with no visible side windows, or on windows of non-vehicles such as buildings and trains, to tell a window-specific detector apart from a general vehicle-cab detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles, especially the driver/cab door window area of cars, trucks, vans and buses.\",\n \"evidence\": \"All 20 top images are motor vehicles (fire truck, pickups, taxi, sedans, ambulances, vans, RV), and the red boxes consistently sit on the side/cab door window. Random non-vehicle images all score low (1-3).\",\n \"missing_data\": \"Activations on vehicle images with no visible side windows, or on windows of non-vehicles such as buildings and trains, to tell a window-specific detector apart from a general vehicle-cab detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles, especially the driver/cab door window area of cars, trucks, vans and buses.\",\n \"evidence\": \"All 20 top images are motor vehicles (fire truck, pickups, taxi, sedans, ambulances, vans, RV), and the red boxes consistently sit on the side/cab door window. Random non-vehicle images all score low (1-3).\",\n \"missing_data\": \"Activations on vehicle images with no visible side windows, or on windows of non-vehicles such as buildings and trains, to tell a window-specific detector apart from a general vehicle-cab detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:237",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side window of a vehicle cab, i.e. the glass area of a car, truck, van or bus door/window, seen in side or three-quarter view.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side window of a vehicle cab, i.e. the glass area of a car, truck, van or bus door/window, seen in side or three-quarter view.",
+   "evidence": "All 20 top photos are road vehicles of many kinds (fire truck, pickups, taxi, sedans, ambulance, vans, RV, campervan), and the red box sits on the side/door window in nearly every one. The random photos contain no vehicles and all score low (1-3).",
+   "missing_data": "Photos of windows on non-vehicles (buildings, trains, boats) and of vehicles with the windows hidden would show whether the unit needs vehicle context or just responds to framed glass panes.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window of a vehicle cab, i.e. the glass area of a car, truck, van or bus door/window, seen in side or three-quarter view.\",\n \"evidence\": \"All 20 top photos are road vehicles of many kinds (fire truck, pickups, taxi, sedans, ambulance, vans, RV, campervan), and the red box sits on the side/door window in nearly every one. The random photos contain no vehicles and all score low (1-3).\",\n \"missing_data\": \"Photos of windows on non-vehicles (buildings, trains, boats) and of vehicles with the windows hidden would show whether the unit needs vehicle context or just responds to framed glass panes.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window of a vehicle cab, i.e. the glass area of a car, truck, van or bus door/window, seen in side or three-quarter view.\",\n \"evidence\": \"All 20 top photos are road vehicles of many kinds (fire truck, pickups, taxi, sedans, ambulance, vans, RV, campervan), and the red box sits on the side/door window in nearly every one. The random photos contain no vehicles and all score low (1-3).\",\n \"missing_data\": \"Photos of windows on non-vehicles (buildings, trains, boats) and of vehicles with the windows hidden would show whether the unit needs vehicle context or just responds to framed glass panes.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4b:237",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows of road vehicles (the cab or door window glass with its frame) on cars, trucks, vans and RVs.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows of road vehicles (the cab or door window glass with its frame) on cars, trucks, vans and RVs.",
+   "evidence": "All 20 top photos are vehicles, and the red box falls on a side or door window every time, across very different vehicle types (fire truck, taxi, Fiat 500, camper van, snowplow). The random photos contain no vehicles and all score 1-3.",
+   "missing_data": "Activations on windows without a vehicle (house or train windows) and on vehicles seen without visible side windows would show whether it is specific to vehicle windows or responds to windows or vehicles in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles (the cab or door window glass with its frame) on cars, trucks, vans and RVs.\",\n \"evidence\": \"All 20 top photos are vehicles, and the red box falls on a side or door window every time, across very different vehicle types (fire truck, taxi, Fiat 500, camper van, snowplow). The random photos contain no vehicles and all score 1-3.\",\n \"missing_data\": \"Activations on windows without a vehicle (house or train windows) and on vehicles seen without visible side windows would show whether it is specific to vehicle windows or responds to windows or vehicles in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles (the cab or door window glass with its frame) on cars, trucks, vans and RVs.\",\n \"evidence\": \"All 20 top photos are vehicles, and the red box falls on a side or door window every time, across very different vehicle types (fire truck, taxi, Fiat 500, camper van, snowplow). The random photos contain no vehicles and all score 1-3.\",\n \"missing_data\": \"Activations on windows without a vehicle (house or train windows) and on vehicles seen without visible side windows would show whether it is specific to vehicle windows or responds to windows or vehicles in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:237",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a roughly rectangular, glossy, dark or see-through region with rounded corners, outlined by a thin frame and set into a smooth, evenly colored, curved painted surface, often split by a narrow vertical bar and with a small protrusion at its lower front corner.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a roughly rectangular, glossy, dark or see-through region with rounded corners, outlined by a thin frame and set into a smooth, evenly colored, curved painted surface, often split by a narrow vertical bar and with a small protrusion at its lower front corner.",
+   "evidence": "In all 20 top images the box sits on this framed reflective rectangle within a smooth colored shell, at strengths 8-10, across many shell colors, sizes and shapes. The random images contain no such structure and all score 1-3.",
+   "missing_data": "Activations on similar framed glossy rectangles set into flat, non-curved surfaces, and on uncolored or matte versions, would show whether the curved painted surroundings are required.",
+   "confidence": 0.8
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a roughly rectangular, glossy, dark or see-through region with rounded corners, outlined by a thin frame and set into a smooth, evenly colored, curved painted surface, often split by a narrow vertical bar and with a small protrusion at its lower front corner.\",\n \"evidence\": \"In all 20 top images the box sits on this framed reflective rectangle within a smooth colored shell, at strengths 8-10, across many shell colors, sizes and shapes. The random images contain no such structure and all score 1-3.\",\n \"missing_data\": \"Activations on similar framed glossy rectangles set into flat, non-curved surfaces, and on uncolored or matte versions, would show whether the curved painted surroundings are required.\",\n \"confidence\": 0.8}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a roughly rectangular, glossy, dark or see-through region with rounded corners, outlined by a thin frame and set into a smooth, evenly colored, curved painted surface, often split by a narrow vertical bar and with a small protrusion at its lower front corner.\",\n \"evidence\": \"In all 20 top images the box sits on this framed reflective rectangle within a smooth colored shell, at strengths 8-10, across many shell colors, sizes and shapes. The random images contain no such structure and all score 1-3.\",\n \"missing_data\": \"Activations on similar framed glossy rectangles set into flat, non-curved surfaces, and on uncolored or matte versions, would show whether the curved painted surroundings are required.\",\n \"confidence\": 0.8}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4b:237",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "25bfa7d9282b0d1ed16d08c9dd0470c6034160abf6bda84e8412a0f9cce4b9b1",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a dark or reflective, roughly trapezoidal glossy pane outlined by a thin frame, often split by a narrow vertical bar, set into a smooth, uniformly colored painted surface.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dark or reflective, roughly trapezoidal glossy pane outlined by a thin frame, often split by a narrow vertical bar, set into a smooth, uniformly colored painted surface.",
+   "evidence": "In all 20 top photos the red box sits on this kind of framed, glossy side pane within a smooth colored body panel (activations 8-10), across many colors, shapes and styles. The random photos, which contain no such framed glossy panes, all score low (1-3).",
+   "missing_data": "Photos with similar framed reflective panes on non-matching surfaces (for example on flat building walls or on cut-out crops without the surrounding panel) would show whether the surrounding smooth body context is required.",
+   "confidence": 0.85
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark or reflective, roughly trapezoidal glossy pane outlined by a thin frame, often split by a narrow vertical bar, set into a smooth, uniformly colored painted surface.\",\n \"evidence\": \"In all 20 top photos the red box sits on this kind of framed, glossy side pane within a smooth colored body panel (activations 8-10), across many colors, shapes and styles. The random photos, which contain no such framed glossy panes, all score low (1-3).\",\n \"missing_data\": \"Photos with similar framed reflective panes on non-matching surfaces (for example on flat building walls or on cut-out crops without the surrounding panel) would show whether the surrounding smooth body context is required.\",\n \"confidence\": 0.85}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark or reflective, roughly trapezoidal glossy pane outlined by a thin frame, often split by a narrow vertical bar, set into a smooth, uniformly colored painted surface.\",\n \"evidence\": \"In all 20 top photos the red box sits on this kind of framed, glossy side pane within a smooth colored body panel (activations 8-10), across many colors, shapes and styles. The random photos, which contain no such framed glossy panes, all score low (1-3).\",\n \"missing_data\": \"Photos with similar framed reflective panes on non-matching surfaces (for example on flat building walls or on cut-out crops without the surrounding panel) would show whether the surrounding smooth body context is required.\",\n \"confidence\": 0.85}\n```"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,635 @@
+{
+ "Q0_s2": {
+  "text": "The unit responds to the wheels of road vehicles (cars, vans, trucks, buses, fire engines), specifically the front wheel and the wheel-arch region around it.",
+  "valid": true,
+  "fire": [
+   "fire engine",
+   "minivan",
+   "minibus",
+   "police van",
+   "ambulance",
+   "school bus",
+   "pickup",
+   "moving van",
+   "tow truck",
+   "garbage truck",
+   "jeep",
+   "cab",
+   "beach wagon",
+   "limousine",
+   "trailer truck"
+  ],
+  "near_miss": [
+   "car wheel",
+   "disk brake",
+   "bicycle-built-for-two",
+   "mountain bike",
+   "tricycle",
+   "unicycle",
+   "steam locomotive",
+   "streetcar",
+   "freight car",
+   "oxcart",
+   "horse cart",
+   "tractor",
+   "go-kart",
+   "shopping cart",
+   "barrow"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"fire engine\", \"minivan\", \"minibus\", \"police van\", \"ambulance\", \"school bus\", \"pickup\", \"moving van\", \"tow truck\", \"garbage truck\", \"jeep\", \"cab\", \"beach wagon\", \"limousine\", \"trailer truck\"], \"near_miss\": [\"car wheel\", \"disk brake\", \"bicycle-built-for-two\", \"mountain bike\", \"tricycle\", \"unicycle\", \"steam locomotive\", \"streetcar\", \"freight car\", \"oxcart\", \"horse cart\", \"tractor\", \"go-kart\", \"shopping cart\", \"barrow\"]}",
+    "fire": [
+     "fire engine",
+     "minivan",
+     "minibus",
+     "police van",
+     "ambulance",
+     "school bus",
+     "pickup",
+     "moving van",
+     "tow truck",
+     "garbage truck",
+     "jeep",
+     "cab",
+     "beach wagon",
+     "limousine",
+     "trailer truck"
+    ],
+    "near_miss": [
+     "car wheel",
+     "disk brake",
+     "bicycle-built-for-two",
+     "mountain bike",
+     "tricycle",
+     "unicycle",
+     "steam locomotive",
+     "streetcar",
+     "freight car",
+     "oxcart",
+     "horse cart",
+     "tractor",
+     "go-kart",
+     "shopping cart",
+     "barrow"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "bare_s1": {
+  "text": "The unit detects the front wheel of a road vehicle seen from the side or at an angle: the tire, rim and the wheel-arch region of cars, vans, buses, trucks and fire engines.",
+  "valid": true,
+  "fire": [
+   "fire engine",
+   "minivan",
+   "moving van",
+   "school bus",
+   "police van",
+   "minibus",
+   "ambulance",
+   "pickup",
+   "garbage truck",
+   "tow truck",
+   "jeep",
+   "beach wagon",
+   "cab",
+   "limousine",
+   "trailer truck"
+  ],
+  "near_miss": [
+   "car wheel",
+   "disk brake",
+   "mountain bike",
+   "bicycle-built-for-two",
+   "unicycle",
+   "tricycle",
+   "go-kart",
+   "tractor",
+   "steam locomotive",
+   "streetcar",
+   "horse cart",
+   "grille",
+   "car mirror",
+   "motor scooter",
+   "oxcart"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"fire engine\", \"minivan\", \"moving van\", \"school bus\", \"police van\", \"minibus\", \"ambulance\", \"pickup\", \"garbage truck\", \"tow truck\", \"jeep\", \"beach wagon\", \"cab\", \"limousine\", \"trailer truck\"], \"near_miss\": [\"car wheel\", \"disk brake\", \"mountain bike\", \"bicycle-built-for-two\", \"unicycle\", \"tricycle\", \"go-kart\", \"tractor\", \"steam locomotive\", \"streetcar\", \"horse cart\", \"grille\", \"car mirror\", \"motor scooter\", \"oxcart\"]}",
+    "fire": [
+     "fire engine",
+     "minivan",
+     "moving van",
+     "school bus",
+     "police van",
+     "minibus",
+     "ambulance",
+     "pickup",
+     "garbage truck",
+     "tow truck",
+     "jeep",
+     "beach wagon",
+     "cab",
+     "limousine",
+     "trailer truck"
+    ],
+    "near_miss": [
+     "car wheel",
+     "disk brake",
+     "mountain bike",
+     "bicycle-built-for-two",
+     "unicycle",
+     "tricycle",
+     "go-kart",
+     "tractor",
+     "steam locomotive",
+     "streetcar",
+     "horse cart",
+     "grille",
+     "car mirror",
+     "motor scooter",
+     "oxcart"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "Q0_s1": {
+  "text": "The unit detects the wheels of road vehicles, most likely the front wheel and wheel-arch region, across cars, trucks, buses, fire engines and emergency vehicles.",
+  "valid": true,
+  "fire": [
+   "fire engine",
+   "ambulance",
+   "police van",
+   "school bus",
+   "minibus",
+   "minivan",
+   "pickup",
+   "tow truck",
+   "garbage truck",
+   "trailer truck",
+   "moving van",
+   "jeep",
+   "cab",
+   "limousine",
+   "beach wagon"
+  ],
+  "near_miss": [
+   "car wheel",
+   "bicycle-built-for-two",
+   "mountain bike",
+   "tricycle",
+   "unicycle",
+   "motor scooter",
+   "moped",
+   "steam locomotive",
+   "streetcar",
+   "go-kart",
+   "golfcart",
+   "tractor",
+   "oxcart",
+   "horse cart",
+   "car mirror"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"fire engine\", \"ambulance\", \"police van\", \"school bus\", \"minibus\", \"minivan\", \"pickup\", \"tow truck\", \"garbage truck\", \"trailer truck\", \"moving van\", \"jeep\", \"cab\", \"limousine\", \"beach wagon\"], \"near_miss\": [\"car wheel\", \"bicycle-built-for-two\", \"mountain bike\", \"tricycle\", \"unicycle\", \"motor scooter\", \"moped\", \"steam locomotive\", \"streetcar\", \"go-kart\", \"golfcart\", \"tractor\", \"oxcart\", \"horse cart\", \"car mirror\"]}",
+    "fire": [
+     "fire engine",
+     "ambulance",
+     "police van",
+     "school bus",
+     "minibus",
+     "minivan",
+     "pickup",
+     "tow truck",
+     "garbage truck",
+     "trailer truck",
+     "moving van",
+     "jeep",
+     "cab",
+     "limousine",
+     "beach wagon"
+    ],
+    "near_miss": [
+     "car wheel",
+     "bicycle-built-for-two",
+     "mountain bike",
+     "tricycle",
+     "unicycle",
+     "motor scooter",
+     "moped",
+     "steam locomotive",
+     "streetcar",
+     "go-kart",
+     "golfcart",
+     "tractor",
+     "oxcart",
+     "horse cart",
+     "car mirror"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "bare_s2": {
+  "text": "The unit detects the wheels of road vehicles, specifically the wheel and tire seen from the side, often including the wheel arch, on cars, vans, buses, trucks and emergency vehicles.",
+  "valid": true,
+  "fire": [
+   "car wheel",
+   "ambulance",
+   "police van",
+   "minivan",
+   "minibus",
+   "school bus",
+   "fire engine",
+   "pickup",
+   "jeep",
+   "beach wagon",
+   "cab",
+   "moving van",
+   "tow truck",
+   "limousine",
+   "sports car",
+   "convertible"
+  ],
+  "near_miss": [
+   "disk brake",
+   "bicycle-built-for-two",
+   "mountain bike",
+   "tricycle",
+   "unicycle",
+   "steam locomotive",
+   "electric locomotive",
+   "freight car",
+   "passenger car",
+   "streetcar",
+   "go-kart",
+   "car mirror",
+   "grille",
+   "oxcart",
+   "potter's wheel",
+   "tractor"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"car wheel\", \"ambulance\", \"police van\", \"minivan\", \"minibus\", \"school bus\", \"fire engine\", \"pickup\", \"jeep\", \"beach wagon\", \"cab\", \"moving van\", \"tow truck\", \"limousine\", \"sports car\", \"convertible\"], \"near_miss\": [\"disk brake\", \"bicycle-built-for-two\", \"mountain bike\", \"tricycle\", \"unicycle\", \"steam locomotive\", \"electric locomotive\", \"freight car\", \"passenger car\", \"streetcar\", \"go-kart\", \"car mirror\", \"grille\", \"oxcart\", \"potter's wheel\", \"tractor\"]}",
+    "fire": [
+     "car wheel",
+     "ambulance",
+     "police van",
+     "minivan",
+     "minibus",
+     "school bus",
+     "fire engine",
+     "pickup",
+     "jeep",
+     "beach wagon",
+     "cab",
+     "moving van",
+     "tow truck",
+     "limousine",
+     "sports car",
+     "convertible"
+    ],
+    "near_miss": [
+     "disk brake",
+     "bicycle-built-for-two",
+     "mountain bike",
+     "tricycle",
+     "unicycle",
+     "steam locomotive",
+     "electric locomotive",
+     "freight car",
+     "passenger car",
+     "streetcar",
+     "go-kart",
+     "car mirror",
+     "grille",
+     "oxcart",
+     "potter's wheel",
+     "tractor"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "F1_s2": {
+  "text": "The unit responds to a dark, thick circular ring around a lighter, spoked or radially patterned center, sitting inside a curved arch cut into a smooth, brightly colored, glossy surface, usually near the lower edge of a large boxy shape.",
+  "valid": true,
+  "fire": [
+   "sports car",
+   "convertible",
+   "cab",
+   "racer",
+   "car wheel",
+   "minivan",
+   "beach wagon",
+   "limousine",
+   "jeep",
+   "pickup",
+   "ambulance",
+   "police van",
+   "fire engine",
+   "tow truck",
+   "Model T",
+   "moving van"
+  ],
+  "near_miss": [
+   "disk brake",
+   "tractor",
+   "unicycle",
+   "tricycle",
+   "mountain bike",
+   "bicycle-built-for-two",
+   "moped",
+   "motor scooter",
+   "go-kart",
+   "golfcart",
+   "steam locomotive",
+   "paddlewheel",
+   "oxcart",
+   "horse cart",
+   "jinrikisha",
+   "manhole cover"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"sports car\", \"convertible\", \"cab\", \"racer\", \"car wheel\", \"minivan\", \"beach wagon\", \"limousine\", \"jeep\", \"pickup\", \"ambulance\", \"police van\", \"fire engine\", \"tow truck\", \"Model T\", \"moving van\"], \"near_miss\": [\"disk brake\", \"tractor\", \"unicycle\", \"tricycle\", \"mountain bike\", \"bicycle-built-for-two\", \"moped\", \"motor scooter\", \"go-kart\", \"golfcart\", \"steam locomotive\", \"paddlewheel\", \"oxcart\", \"horse cart\", \"jinrikisha\", \"manhole cover\"]}",
+    "fire": [
+     "sports car",
+     "convertible",
+     "cab",
+     "racer",
+     "car wheel",
+     "minivan",
+     "beach wagon",
+     "limousine",
+     "jeep",
+     "pickup",
+     "ambulance",
+     "police van",
+     "fire engine",
+     "tow truck",
+     "Model T",
+     "moving van"
+    ],
+    "near_miss": [
+     "disk brake",
+     "tractor",
+     "unicycle",
+     "tricycle",
+     "mountain bike",
+     "bicycle-built-for-two",
+     "moped",
+     "motor scooter",
+     "go-kart",
+     "golfcart",
+     "steam locomotive",
+     "paddlewheel",
+     "oxcart",
+     "horse cart",
+     "jinrikisha",
+     "manhole cover"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "wrong": {
+  "text": "The unit mainly responds to road vehicles (cars, vans, trucks, buses), firing on the side body panel near the front door or wheel. It also responds, separately, to dogs.",
+  "valid": true,
+  "fire": [
+   "minivan",
+   "minibus",
+   "police van",
+   "moving van",
+   "pickup",
+   "cab",
+   "ambulance",
+   "school bus",
+   "jeep",
+   "beach wagon",
+   "limousine",
+   "trailer truck",
+   "garbage truck",
+   "golden retriever",
+   "Labrador retriever"
+  ],
+  "near_miss": [
+   "car wheel",
+   "grille",
+   "car mirror",
+   "disk brake",
+   "seat belt",
+   "odometer",
+   "bicycle-built-for-two",
+   "mountain bike",
+   "motor scooter",
+   "moped",
+   "streetcar",
+   "electric locomotive",
+   "passenger car",
+   "tabby",
+   "timber wolf"
+  ],
+  "dropped": {
+   "not_a_class": [],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"minivan\", \"minibus\", \"police van\", \"moving van\", \"pickup\", \"cab\", \"ambulance\", \"school bus\", \"jeep\", \"beach wagon\", \"limousine\", \"trailer truck\", \"garbage truck\", \"golden retriever\", \"Labrador retriever\"], \"near_miss\": [\"car wheel\", \"grille\", \"car mirror\", \"disk brake\", \"seat belt\", \"odometer\", \"bicycle-built-for-two\", \"mountain bike\", \"motor scooter\", \"moped\", \"streetcar\", \"electric locomotive\", \"passenger car\", \"tabby\", \"timber wolf\"]}",
+    "fire": [
+     "minivan",
+     "minibus",
+     "police van",
+     "moving van",
+     "pickup",
+     "cab",
+     "ambulance",
+     "school bus",
+     "jeep",
+     "beach wagon",
+     "limousine",
+     "trailer truck",
+     "garbage truck",
+     "golden retriever",
+     "Labrador retriever"
+    ],
+    "near_miss": [
+     "car wheel",
+     "grille",
+     "car mirror",
+     "disk brake",
+     "seat belt",
+     "odometer",
+     "bicycle-built-for-two",
+     "mountain bike",
+     "motor scooter",
+     "moped",
+     "streetcar",
+     "electric locomotive",
+     "passenger car",
+     "tabby",
+     "timber wolf"
+    ],
+    "dropped": {
+     "not_a_class": [],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ },
+ "F1_s1": {
+  "text": "The unit responds to a dark, round, ring-shaped form with a lighter center that has radial spokes, sitting inside an arched cutout along the lower edge of a large, smooth, often brightly colored panel.",
+  "valid": true,
+  "fire": [
+   "sports car",
+   "convertible",
+   "racer",
+   "minivan",
+   "cab",
+   "beach wagon",
+   "pickup",
+   "jeep",
+   "limousine",
+   "Model T",
+   "car wheel",
+   "ambulance",
+   "police van",
+   "school bus",
+   "moving van"
+  ],
+  "near_miss": [
+   "disk brake",
+   "unicycle",
+   "mountain bike",
+   "tricycle",
+   "bicycle-built-for-two",
+   "moped",
+   "motor scooter",
+   "go-kart",
+   "golfcart",
+   "tractor",
+   "wall clock",
+   "manhole cover",
+   "bagel",
+   "tow truck"
+  ],
+  "dropped": {
+   "not_a_class": [
+    "steering wheel"
+   ],
+   "in_both": [],
+   "repeated": []
+  },
+  "attempts": [
+   {
+    "reply": "{\"fire\": [\"sports car\", \"convertible\", \"racer\", \"minivan\", \"cab\", \"beach wagon\", \"pickup\", \"jeep\", \"limousine\", \"Model T\", \"car wheel\", \"ambulance\", \"police van\", \"school bus\", \"moving van\"], \"near_miss\": [\"disk brake\", \"unicycle\", \"mountain bike\", \"tricycle\", \"bicycle-built-for-two\", \"moped\", \"motor scooter\", \"go-kart\", \"golfcart\", \"tractor\", \"steering wheel\" , \"wall clock\", \"manhole cover\", \"bagel\", \"tow truck\"]}",
+    "fire": [
+     "sports car",
+     "convertible",
+     "racer",
+     "minivan",
+     "cab",
+     "beach wagon",
+     "pickup",
+     "jeep",
+     "limousine",
+     "Model T",
+     "car wheel",
+     "ambulance",
+     "police van",
+     "school bus",
+     "moving van"
+    ],
+    "near_miss": [
+     "disk brake",
+     "unicycle",
+     "mountain bike",
+     "tricycle",
+     "bicycle-built-for-two",
+     "moped",
+     "motor scooter",
+     "go-kart",
+     "golfcart",
+     "tractor",
+     "wall clock",
+     "manhole cover",
+     "bagel",
+     "tow truck"
+    ],
+    "dropped": {
+     "not_a_class": [
+      "steering wheel"
+     ],
+     "in_both": [],
+     "repeated": []
+    },
+    "parsed": true,
+    "valid": true
+   }
+  ]
+ }
+}

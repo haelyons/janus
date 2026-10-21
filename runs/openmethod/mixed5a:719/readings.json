@@ -1,0 +1,146 @@
+{
+ "bare_s2": {
+  "unit": "mixed5a:719",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit appears to respond to the surfaces of close-up, product-style photos of man-made objects, most strongly crafted or decorated items such as textiles, ornaments, embossed or patterned surfaces, and accessories. Plainer manufactured objects like the mouse, knee pads and shoes look like weaker extensions of the same theme.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit appears to respond to the surfaces of close-up, product-style photos of man-made objects, most strongly crafted or decorated items such as textiles, ornaments, embossed or patterned surfaces, and accessories. Plainer manufactured objects like the mouse, knee pads and shoes look like weaker extensions of the same theme.",
+   "evidence": "All 20 top images are isolated man-made objects, many handmade or ornamented (stockings, crochet dress, brooch, pillow, bib, manhole design, teapot carving), though the strongest single image is a plain black mouse. The random sample of animals, outdoor scenes and people stays at 0-2.",
+   "missing_data": "Activation maps at finer resolution and synthetic tests that separate decoration or pattern from 'isolated product object', such as plain objects on white backgrounds versus patterned fabrics in natural scenes.",
+   "confidence": 0.3
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to the surfaces of close-up, product-style photos of man-made objects, most strongly crafted or decorated items such as textiles, ornaments, embossed or patterned surfaces, and accessories. Plainer manufactured objects like the mouse, knee pads and shoes look like weaker extensions of the same theme.\",\n \"evidence\": \"All 20 top images are isolated man-made objects, many handmade or ornamented (stockings, crochet dress, brooch, pillow, bib, manhole design, teapot carving), though the strongest single image is a plain black mouse. The random sample of animals, outdoor scenes and people stays at 0-2.\",\n \"missing_data\": \"Activation maps at finer resolution and synthetic tests that separate decoration or pattern from 'isolated product object', such as plain objects on white backgrounds versus patterned fabrics in natural scenes.\",\n \"confidence\": 0.3}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to the surfaces of close-up, product-style photos of man-made objects, most strongly crafted or decorated items such as textiles, ornaments, embossed or patterned surfaces, and accessories. Plainer manufactured objects like the mouse, knee pads and shoes look like weaker extensions of the same theme.\",\n \"evidence\": \"All 20 top images are isolated man-made objects, many handmade or ornamented (stockings, crochet dress, brooch, pillow, bib, manhole design, teapot carving), though the strongest single image is a plain black mouse. The random sample of animals, outdoor scenes and people stays at 0-2.\",\n \"missing_data\": \"Activation maps at finer resolution and synthetic tests that separate decoration or pattern from 'isolated product object', such as plain objects on white backgrounds versus patterned fabrics in natural scenes.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed5a:719",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond to close-up views of handcrafted or decorated man-made objects, especially fabric and sewn items such as stockings, cushions, bibs, bow ties and crochet. It extends more weakly to other ornamented or smooth-edged objects like armor, a teapot, a manhole cover and a computer mouse.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond to close-up views of handcrafted or decorated man-made objects, especially fabric and sewn items such as stockings, cushions, bibs, bow ties and crochet. It extends more weakly to other ornamented or smooth-edged objects like armor, a teapot, a manhole cover and a computer mouse.",
+   "evidence": "Most top images are tightly framed object or product shots: many are textile crafts or items with ornamental patterns, and the red boxes often sit on seams, borders or decorated surfaces. The random photos of animals and scenes score 0-2, but the top set is varied enough (mouse, toy gun, flowers) that the shared feature is uncertain.",
+   "missing_data": "Crops of only the boxed regions, plus tests on plain undecorated objects versus patterned fabric, would show whether the unit tracks stitching and edges, ornamentation, or close-up product framing.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to close-up views of handcrafted or decorated man-made objects, especially fabric and sewn items such as stockings, cushions, bibs, bow ties and crochet. It extends more weakly to other ornamented or smooth-edged objects like armor, a teapot, a manhole cover and a computer mouse.\",\n \"evidence\": \"Most top images are tightly framed object or product shots: many are textile crafts or items with ornamental patterns, and the red boxes often sit on seams, borders or decorated surfaces. The random photos of animals and scenes score 0-2, but the top set is varied enough (mouse, toy gun, flowers) that the shared feature is uncertain.\",\n \"missing_data\": \"Crops of only the boxed regions, plus tests on plain undecorated objects versus patterned fabric, would show whether the unit tracks stitching and edges, ornamentation, or close-up product framing.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to close-up views of handcrafted or decorated man-made objects, especially fabric and sewn items such as stockings, cushions, bibs, bow ties and crochet. It extends more weakly to other ornamented or smooth-edged objects like armor, a teapot, a manhole cover and a computer mouse.\",\n \"evidence\": \"Most top images are tightly framed object or product shots: many are textile crafts or items with ornamental patterns, and the red boxes often sit on seams, borders or decorated surfaces. The random photos of animals and scenes score 0-2, but the top set is varied enough (mouse, toy gun, flowers) that the shared feature is uncertain.\",\n \"missing_data\": \"Crops of only the boxed regions, plus tests on plain undecorated objects versus patterned fabric, would show whether the unit tracks stitching and edges, ornamentation, or close-up product framing.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed5a:719",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit responds broadly to man-made, often handcrafted or decorated objects such as fabric items, ornaments, accessories and gear. It may be keyed to curved, bordered or seamed contours, or to ornamental patterns on those objects, but no single concept is clear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit responds broadly to man-made, often handcrafted or decorated objects such as fabric items, ornaments, accessories and gear. It may be keyed to curved, bordered or seamed contours, or to ornamental patterns on those objects, but no single concept is clear.",
+   "evidence": "The top 20 cover very different objects (mouse, armor, brooch, tape measure, revolver, stockings, bow tie, shoes, teapot, manhole cover, flag shirt), and the red boxes land on varied parts (edges, necklines, toes, patterns), with activations all close together at 7-10. Random photos, mostly animals and natural scenes, stay at 0-2, so the unit does prefer artifacts, but not in a narrowly defined way.",
+   "missing_data": "Exact crop-level or patch-level activations, plus edited images (e.g. removing pattern versus removing the contour or seam), would show whether the unit tracks decorative pattern, curved edges or object category.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit responds broadly to man-made, often handcrafted or decorated objects such as fabric items, ornaments, accessories and gear. It may be keyed to curved, bordered or seamed contours, or to ornamental patterns on those objects, but no single concept is clear.\",\n \"evidence\": \"The top 20 cover very different objects (mouse, armor, brooch, tape measure, revolver, stockings, bow tie, shoes, teapot, manhole cover, flag shirt), and the red boxes land on varied parts (edges, necklines, toes, patterns), with activations all close together at 7-10. Random photos, mostly animals and natural scenes, stay at 0-2, so the unit does prefer artifacts, but not in a narrowly defined way.\",\n \"missing_data\": \"Exact crop-level or patch-level activations, plus edited images (e.g. removing pattern versus removing the contour or seam), would show whether the unit tracks decorative pattern, curved edges or object category.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit responds broadly to man-made, often handcrafted or decorated objects such as fabric items, ornaments, accessories and gear. It may be keyed to curved, bordered or seamed contours, or to ornamental patterns on those objects, but no single concept is clear.\",\n \"evidence\": \"The top 20 cover very different objects (mouse, armor, brooch, tape measure, revolver, stockings, bow tie, shoes, teapot, manhole cover, flag shirt), and the red boxes land on varied parts (edges, necklines, toes, patterns), with activations all close together at 7-10. Random photos, mostly animals and natural scenes, stay at 0-2, so the unit does prefer artifacts, but not in a narrowly defined way.\",\n \"missing_data\": \"Exact crop-level or patch-level activations, plus edited images (e.g. removing pattern versus removing the contour or seam), would show whether the unit tracks decorative pattern, curved edges or object category.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed5a:719",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit seems to mix at least two unconnected features: ornamental, often floral or stitched decorative patterns on crafted objects (crochet, brooch, manhole cover, teapot carving, bib, basket, Christmas stocking) and smooth, glossy dark molded surfaces (computer mouse, knee pads, toy gun, armor). Its common ground is only broad: close-up photos of man-made objects.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit seems to mix at least two unconnected features: ornamental, often floral or stitched decorative patterns on crafted objects (crochet, brooch, manhole cover, teapot carving, bib, basket, Christmas stocking) and smooth, glossy dark molded surfaces (computer mouse, knee pads, toy gun, armor). Its common ground is only broad: close-up photos of man-made objects.",
+   "evidence": "The top 20 cover very different objects with nearly flat activations (7-10), and the red boxes fall on decorative motifs in some images but on plain glossy plastic or metal in others. The random photos, mostly animals and scenes, all score 0-2.",
+   "missing_data": "Activations on controlled images that separate decorative pattern from glossy dark surface (for example plain black plastic objects versus flat floral prints), or a broader sample beyond the top 20, to tell whether this is one texture or contour feature or truly polysemantic.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to mix at least two unconnected features: ornamental, often floral or stitched decorative patterns on crafted objects (crochet, brooch, manhole cover, teapot carving, bib, basket, Christmas stocking) and smooth, glossy dark molded surfaces (computer mouse, knee pads, toy gun, armor). Its common ground is only broad: close-up photos of man-made objects.\",\n \"evidence\": \"The top 20 cover very different objects with nearly flat activations (7-10), and the red boxes fall on decorative motifs in some images but on plain glossy plastic or metal in others. The random photos, mostly animals and scenes, all score 0-2.\",\n \"missing_data\": \"Activations on controlled images that separate decorative pattern from glossy dark surface (for example plain black plastic objects versus flat floral prints), or a broader sample beyond the top 20, to tell whether this is one texture or contour feature or truly polysemantic.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to mix at least two unconnected features: ornamental, often floral or stitched decorative patterns on crafted objects (crochet, brooch, manhole cover, teapot carving, bib, basket, Christmas stocking) and smooth, glossy dark molded surfaces (computer mouse, knee pads, toy gun, armor). Its common ground is only broad: close-up photos of man-made objects.\",\n \"evidence\": \"The top 20 cover very different objects with nearly flat activations (7-10), and the red boxes fall on decorative motifs in some images but on plain glossy plastic or metal in others. The random photos, mostly animals and scenes, all score 0-2.\",\n \"missing_data\": \"Activations on controlled images that separate decorative pattern from glossy dark surface (for example plain black plastic objects versus flat floral prints), or a broader sample beyond the top 20, to tell whether this is one texture or contour feature or truly polysemantic.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed5a:719",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to smooth, uniformly colored crafted surfaces bounded by crisp curved outlines or seams. It responds more weakly to flat, stylized decorative motifs such as radial petal-like shapes, stars and printed patterns on those surfaces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to smooth, uniformly colored crafted surfaces bounded by crisp curved outlines or seams. It responds more weakly to flat, stylized decorative motifs such as radial petal-like shapes, stars and printed patterns on those surfaces.",
+   "evidence": "Top activations fall on glossy or matte surfaces with rounded contours, stitched or molded edges, and printed or embossed ornamental designs. The random photos, which are mostly organic textures like fur, grass and feathers, score 0-2.",
+   "missing_data": "Activations on plain, unornamented smooth curved surfaces compared with flat printed patterns would show which feature drives the unit; tighter localization maps would also help.",
+   "confidence": 0.45
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to smooth, uniformly colored crafted surfaces bounded by crisp curved outlines or seams. It responds more weakly to flat, stylized decorative motifs such as radial petal-like shapes, stars and printed patterns on those surfaces.\",\n \"evidence\": \"Top activations fall on glossy or matte surfaces with rounded contours, stitched or molded edges, and printed or embossed ornamental designs. The random photos, which are mostly organic textures like fur, grass and feathers, score 0-2.\",\n \"missing_data\": \"Activations on plain, unornamented smooth curved surfaces compared with flat printed patterns would show which feature drives the unit; tighter localization maps would also help.\",\n \"confidence\": 0.45}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to smooth, uniformly colored crafted surfaces bounded by crisp curved outlines or seams. It responds more weakly to flat, stylized decorative motifs such as radial petal-like shapes, stars and printed patterns on those surfaces.\",\n \"evidence\": \"Top activations fall on glossy or matte surfaces with rounded contours, stitched or molded edges, and printed or embossed ornamental designs. The random photos, which are mostly organic textures like fur, grass and feathers, score 0-2.\",\n \"missing_data\": \"Activations on plain, unornamented smooth curved surfaces compared with flat printed patterns would show which feature drives the unit; tighter localization maps would also help.\",\n \"confidence\": 0.45}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed5a:719",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "3cd76c76d85dc0bc637b17fad17c7679b08580ae16793fe278a8b6840d9a46d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to smooth, rounded, arc-shaped contours where a curved surface meets its border, especially when that border is outlined, trimmed or stitched. It responds more weakly to ornamental radial motifs made of repeated lobed shapes spreading from a center.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to smooth, rounded, arc-shaped contours where a curved surface meets its border, especially when that border is outlined, trimmed or stitched. It responds more weakly to ornamental radial motifs made of repeated lobed shapes spreading from a center.",
+   "evidence": "Most red boxes sit on a curved rim or bulging rounded edge, often glossy or bordered by a contrasting seam (#1, #2, #3, #5, #9, #12, #14, #15, #18). Others land on lobed radial ornaments (#4, #8, #16, #17, #19), while the random photos, dominated by textured organic surfaces, mostly score 0 to 2.",
+   "missing_data": "Synthetic tests that separate a plain curved border from radial lobed ornamentation, and activation maps over a wider range of curved-edge examples, would most change this answer.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to smooth, rounded, arc-shaped contours where a curved surface meets its border, especially when that border is outlined, trimmed or stitched. It responds more weakly to ornamental radial motifs made of repeated lobed shapes spreading from a center.\",\n \"evidence\": \"Most red boxes sit on a curved rim or bulging rounded edge, often glossy or bordered by a contrasting seam (#1, #2, #3, #5, #9, #12, #14, #15, #18). Others land on lobed radial ornaments (#4, #8, #16, #17, #19), while the random photos, dominated by textured organic surfaces, mostly score 0 to 2.\",\n \"missing_data\": \"Synthetic tests that separate a plain curved border from radial lobed ornamentation, and activation maps over a wider range of curved-edge examples, would most change this answer.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to smooth, rounded, arc-shaped contours where a curved surface meets its border, especially when that border is outlined, trimmed or stitched. It responds more weakly to ornamental radial motifs made of repeated lobed shapes spreading from a center.\",\n \"evidence\": \"Most red boxes sit on a curved rim or bulging rounded edge, often glossy or bordered by a contrasting seam (#1, #2, #3, #5, #9, #12, #14, #15, #18). Others land on lobed radial ornaments (#4, #8, #16, #17, #19), while the random photos, dominated by textured organic surfaces, mostly score 0 to 2.\",\n \"missing_data\": \"Synthetic tests that separate a plain curved border from radial lobed ornamentation, and activation maps over a wider range of curved-edge examples, would most change this answer.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

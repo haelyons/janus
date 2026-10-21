@@ -1,0 +1,146 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:443",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the faces of dogs, especially the eye/upper-cheek area. It also responds somewhat less to closely related canids such as wolves and foxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the faces of dogs, especially the eye/upper-cheek area. It also responds somewhat less to closely related canids such as wolves and foxes.",
+   "evidence": "All top 20 images are canid faces, with boxes centered near the eye region: mostly dogs plus a fox (#9, 9) and wolves (#4, #16). Among the random images, the dog with a man scores 8 and a dog's snout scores 5, while a monkey, ceramic cats, people, and objects score 0-3.",
+   "missing_data": "Activations on non-canid animal faces (cats, bears, monkeys) and on dog bodies without the face visible would show how specific the unit is to canid faces.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the faces of dogs, especially the eye/upper-cheek area. It also responds somewhat less to closely related canids such as wolves and foxes.\",\n \"evidence\": \"All top 20 images are canid faces, with boxes centered near the eye region: mostly dogs plus a fox (#9, 9) and wolves (#4, #16). Among the random images, the dog with a man scores 8 and a dog's snout scores 5, while a monkey, ceramic cats, people, and objects score 0-3.\",\n \"missing_data\": \"Activations on non-canid animal faces (cats, bears, monkeys) and on dog bodies without the face visible would show how specific the unit is to canid faces.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the faces of dogs, especially the eye/upper-cheek area. It also responds somewhat less to closely related canids such as wolves and foxes.\",\n \"evidence\": \"All top 20 images are canid faces, with boxes centered near the eye region: mostly dogs plus a fox (#9, 9) and wolves (#4, #16). Among the random images, the dog with a man scores 8 and a dog's snout scores 5, while a monkey, ceramic cats, people, and objects score 0-3.\",\n \"missing_data\": \"Activations on non-canid animal faces (cats, bears, monkeys) and on dog bodies without the face visible would show how specific the unit is to canid faces.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4b:443",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects the eye/upper-face region of dog faces, and responds somewhat less strongly to the same region on dog-like canids such as wolves and foxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects the eye/upper-face region of dog faces, and responds somewhat less strongly to the same region on dog-like canids such as wolves and foxes.",
+   "evidence": "All top-20 images are dogs, wolves (#4, #16) or a fox (#9), and the red boxes sit consistently on the eye/cheek area of the face. Among the random images, only the dogs score high (Dandie Dinmont 8, retriever 5), while the monkey, ceramic cats and objects stay at 0-3.",
+   "missing_data": "Activations on cat and other non-canid mammal faces, plus dog images with the face hidden, would show how specific the unit is to canid faces.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the eye/upper-face region of dog faces, and responds somewhat less strongly to the same region on dog-like canids such as wolves and foxes.\", \"evidence\": \"All top-20 images are dogs, wolves (#4, #16) or a fox (#9), and the red boxes sit consistently on the eye/cheek area of the face. Among the random images, only the dogs score high (Dandie Dinmont 8, retriever 5), while the monkey, ceramic cats and objects stay at 0-3.\", \"missing_data\": \"Activations on cat and other non-canid mammal faces, plus dog images with the face hidden, would show how specific the unit is to canid faces.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the eye/upper-face region of dog faces, and responds somewhat less strongly to the same region on dog-like canids such as wolves and foxes.\", \"evidence\": \"All top-20 images are dogs, wolves (#4, #16) or a fox (#9), and the red boxes sit consistently on the eye/cheek area of the face. Among the random images, only the dogs score high (Dandie Dinmont 8, retriever 5), while the monkey, ceramic cats and objects stay at 0-3.\", \"missing_data\": \"Activations on cat and other non-canid mammal faces, plus dog images with the face hidden, would show how specific the unit is to canid faces.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:443",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dog faces, especially the eye and upper-face region. It also responds, slightly more weakly, to the faces of closely related canids such as wolves and foxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dog faces, especially the eye and upper-face region. It also responds, slightly more weakly, to the faces of closely related canids such as wolves and foxes.",
+   "evidence": "All top-20 images show canine faces with the red box on the eye or face area: most are dogs, with a white wolf at 10, a fox at 9 and a gray wolf at 8. Among the random photos, the dogs score highest (8 and 5), while a monkey, ceramic cats and unrelated objects score 0-3.",
+   "missing_data": "Activations on wolf, fox and cat faces versus dog bodies seen without faces would show whether the unit is specific to canid faces.",
+   "confidence": 0.8
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog faces, especially the eye and upper-face region. It also responds, slightly more weakly, to the faces of closely related canids such as wolves and foxes.\",\n \"evidence\": \"All top-20 images show canine faces with the red box on the eye or face area: most are dogs, with a white wolf at 10, a fox at 9 and a gray wolf at 8. Among the random photos, the dogs score highest (8 and 5), while a monkey, ceramic cats and unrelated objects score 0-3.\",\n \"missing_data\": \"Activations on wolf, fox and cat faces versus dog bodies seen without faces would show whether the unit is specific to canid faces.\",\n \"confidence\": 0.8}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog faces, especially the eye and upper-face region. It also responds, slightly more weakly, to the faces of closely related canids such as wolves and foxes.\",\n \"evidence\": \"All top-20 images show canine faces with the red box on the eye or face area: most are dogs, with a white wolf at 10, a fox at 9 and a gray wolf at 8. Among the random photos, the dogs score highest (8 and 5), while a monkey, ceramic cats and unrelated objects score 0-3.\",\n \"missing_data\": \"Activations on wolf, fox and cat faces versus dog bodies seen without faces would show whether the unit is specific to canid faces.\",\n \"confidence\": 0.8}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4b:443",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the faces of dogs and other canids, peaking on the eye and upper-muzzle region.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the faces of dogs and other canids, peaking on the eye and upper-muzzle region.",
+   "evidence": "All top 20 are canid faces, including many dog breeds, a fox (9) and wolves (#4 at 10, #16 at 8), with the red box consistently on the eye area. Among the random photos, the dog with a man scores 8 and the dog tugging a toy scores 5, while non-canids (monkey, cat figurines, people, objects) score 0-3.",
+   "missing_data": "Activations on close-up faces of non-canid mammals (cats, bears, monkeys) would show whether the unit is canid-specific or a general furry-face/eye detector.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the faces of dogs and other canids, peaking on the eye and upper-muzzle region.\",\n \"evidence\": \"All top 20 are canid faces, including many dog breeds, a fox (9) and wolves (#4 at 10, #16 at 8), with the red box consistently on the eye area. Among the random photos, the dog with a man scores 8 and the dog tugging a toy scores 5, while non-canids (monkey, cat figurines, people, objects) score 0-3.\",\n \"missing_data\": \"Activations on close-up faces of non-canid mammals (cats, bears, monkeys) would show whether the unit is canid-specific or a general furry-face/eye detector.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the faces of dogs and other canids, peaking on the eye and upper-muzzle region.\",\n \"evidence\": \"All top 20 are canid faces, including many dog breeds, a fox (9) and wolves (#4 at 10, #16 at 8), with the red box consistently on the eye area. Among the random photos, the dog with a man scores 8 and the dog tugging a toy scores 5, while non-canids (monkey, cat figurines, people, objects) score 0-3.\",\n \"missing_data\": \"Activations on close-up faces of non-canid mammals (cats, bears, monkeys) would show whether the unit is canid-specific or a general furry-face/eye detector.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4b:443",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the patch of short, directional fur just beside and around an eye on a front-facing face with a protruding snout, where the eye's dark rim meets the surrounding hair and the muzzle begins.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the patch of short, directional fur just beside and around an eye on a front-facing face with a protruding snout, where the eye's dark rim meets the surrounding hair and the muzzle begins.",
+   "evidence": "In all 20 top photos the red box falls on this eye-side fur region, across many coat colors (black-and-tan, white, red, grey, brindle). Random photos score high only when a similar furred snouted face appears (8 and 5), weakly for other furry textures without that eye-muzzle layout (2), and near zero for smooth surfaces, landscapes, rooms and patterned objects.",
+   "missing_data": "Masked or cropped tests that separate fur texture from eye-and-snout shape, plus more mid-range activations from varied furred and non-furred faces.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the patch of short, directional fur just beside and around an eye on a front-facing face with a protruding snout, where the eye's dark rim meets the surrounding hair and the muzzle begins.\",\n \"evidence\": \"In all 20 top photos the red box falls on this eye-side fur region, across many coat colors (black-and-tan, white, red, grey, brindle). Random photos score high only when a similar furred snouted face appears (8 and 5), weakly for other furry textures without that eye-muzzle layout (2), and near zero for smooth surfaces, landscapes, rooms and patterned objects.\",\n \"missing_data\": \"Masked or cropped tests that separate fur texture from eye-and-snout shape, plus more mid-range activations from varied furred and non-furred faces.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the patch of short, directional fur just beside and around an eye on a front-facing face with a protruding snout, where the eye's dark rim meets the surrounding hair and the muzzle begins.\",\n \"evidence\": \"In all 20 top photos the red box falls on this eye-side fur region, across many coat colors (black-and-tan, white, red, grey, brindle). Random photos score high only when a similar furred snouted face appears (8 and 5), weakly for other furry textures without that eye-muzzle layout (2), and near zero for smooth surfaces, landscapes, rooms and patterned objects.\",\n \"missing_data\": \"Masked or cropped tests that separate fur texture from eye-and-snout shape, plus more mid-range activations from varied furred and non-furred faces.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:443",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "aa00739608942817d4b52a146df1ae287bc949e27e9f46332c660a69ad8170d6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds most to the furred patch beside and just above the eye on a frontal, long-snouted head, where fur texture meets the eye and cheek contour below the ear. It responds less to similar fur-and-eye textures on heads with a different overall shape.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds most to the furred patch beside and just above the eye on a frontal, long-snouted head, where fur texture meets the eye and cheek contour below the ear. It responds less to similar fur-and-eye textures on heads with a different overall shape.",
+   "evidence": "All 20 top boxes sit on the eye/cheek fur region of snouted, eared heads, across many coat colors, fur lengths and backgrounds. In the random set, a similar furry snouted head scores 8 and a close-up snouted head with bared teeth scores 5, while round-faced or non-furred subjects score 0-3.",
+   "missing_data": "Activations on furred heads with flatter or rounder shapes, and on isolated fur texture without an eye, would show whether the unit needs the head shape or just the eye-plus-fur texture.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most to the furred patch beside and just above the eye on a frontal, long-snouted head, where fur texture meets the eye and cheek contour below the ear. It responds less to similar fur-and-eye textures on heads with a different overall shape.\",\n \"evidence\": \"All 20 top boxes sit on the eye/cheek fur region of snouted, eared heads, across many coat colors, fur lengths and backgrounds. In the random set, a similar furry snouted head scores 8 and a close-up snouted head with bared teeth scores 5, while round-faced or non-furred subjects score 0-3.\",\n \"missing_data\": \"Activations on furred heads with flatter or rounder shapes, and on isolated fur texture without an eye, would show whether the unit needs the head shape or just the eye-plus-fur texture.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most to the furred patch beside and just above the eye on a frontal, long-snouted head, where fur texture meets the eye and cheek contour below the ear. It responds less to similar fur-and-eye textures on heads with a different overall shape.\",\n \"evidence\": \"All 20 top boxes sit on the eye/cheek fur region of snouted, eared heads, across many coat colors, fur lengths and backgrounds. In the random set, a similar furry snouted head scores 8 and a close-up snouted head with bared teeth scores 5, while round-faced or non-furred subjects score 0-3.\",\n \"missing_data\": \"Activations on furred heads with flatter or rounder shapes, and on isolated fur texture without an eye, would show whether the unit needs the head shape or just the eye-plus-fur texture.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ }
+}

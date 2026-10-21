@@ -1,0 +1,146 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:373",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects the front wheel of a road vehicle seen from the side or at an angle: the tire, rim and the wheel-arch region of cars, vans, buses, trucks and fire engines.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects the front wheel of a road vehicle seen from the side or at an angle: the tire, rim and the wheel-arch region of cars, vans, buses, trucks and fire engines.",
+   "evidence": "In all 20 top photos the red box sits on a front wheel or wheel well, across very different vehicle types, colors and even a grayscale photo. The random photos, none of which contain vehicles, all score low (1-3).",
+   "missing_data": "Isolated wheels without a vehicle body, bicycle or motorcycle wheels, and other round objects would show whether the unit needs the vehicle context or the wheel shape alone.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects the front wheel of a road vehicle seen from the side or at an angle: the tire, rim and the wheel-arch region of cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"In all 20 top photos the red box sits on a front wheel or wheel well, across very different vehicle types, colors and even a grayscale photo. The random photos, none of which contain vehicles, all score low (1-3).\",\n \"missing_data\": \"Isolated wheels without a vehicle body, bicycle or motorcycle wheels, and other round objects would show whether the unit needs the vehicle context or the wheel shape alone.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects the front wheel of a road vehicle seen from the side or at an angle: the tire, rim and the wheel-arch region of cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"In all 20 top photos the red box sits on a front wheel or wheel well, across very different vehicle types, colors and even a grayscale photo. The random photos, none of which contain vehicles, all score low (1-3).\",\n \"missing_data\": \"Isolated wheels without a vehicle body, bicycle or motorcycle wheels, and other round objects would show whether the unit needs the vehicle context or the wheel shape alone.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:373",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects the wheels of road vehicles, most likely the front wheel and wheel-arch region, across cars, trucks, buses, fire engines and emergency vehicles.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects the wheels of road vehicles, most likely the front wheel and wheel-arch region, across cars, trucks, buses, fire engines and emergency vehicles.",
+   "evidence": "In all 20 top images the red box sits on a vehicle wheel or wheel arch, whatever the vehicle type, color or viewpoint, including a grayscale photo and a 3D render. The random natural images with no vehicles all stay low (1-3).",
+   "missing_data": "Images of isolated wheels or tires, bicycles and motorcycles, and vehicle images with the wheels hidden, to test whether the unit wants a wheel specifically or a wheel in a vehicle context.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheels of road vehicles, most likely the front wheel and wheel-arch region, across cars, trucks, buses, fire engines and emergency vehicles.\",\n \"evidence\": \"In all 20 top images the red box sits on a vehicle wheel or wheel arch, whatever the vehicle type, color or viewpoint, including a grayscale photo and a 3D render. The random natural images with no vehicles all stay low (1-3).\",\n \"missing_data\": \"Images of isolated wheels or tires, bicycles and motorcycles, and vehicle images with the wheels hidden, to test whether the unit wants a wheel specifically or a wheel in a vehicle context.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheels of road vehicles, most likely the front wheel and wheel-arch region, across cars, trucks, buses, fire engines and emergency vehicles.\",\n \"evidence\": \"In all 20 top images the red box sits on a vehicle wheel or wheel arch, whatever the vehicle type, color or viewpoint, including a grayscale photo and a 3D render. The random natural images with no vehicles all stay low (1-3).\",\n \"missing_data\": \"Images of isolated wheels or tires, bicycles and motorcycles, and vehicle images with the wheels hidden, to test whether the unit wants a wheel specifically or a wheel in a vehicle context.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4b:373",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects the wheels of road vehicles, specifically the wheel and tire seen from the side, often including the wheel arch, on cars, vans, buses, trucks and emergency vehicles.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects the wheels of road vehicles, specifically the wheel and tire seen from the side, often including the wheel arch, on cars, vans, buses, trucks and emergency vehicles.",
+   "evidence": "In all 20 top images the red box sits on a front or side wheel, across many vehicle types, colors and even a grayscale photo. The random images contain no vehicles and all score low (1-3).",
+   "missing_data": "Activations on isolated wheels or tires without a vehicle, on bicycle or motorcycle wheels, and on other round wheel-like objects would show whether the unit codes car wheels specifically or circular hub shapes in general.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheels of road vehicles, specifically the wheel and tire seen from the side, often including the wheel arch, on cars, vans, buses, trucks and emergency vehicles.\",\n \"evidence\": \"In all 20 top images the red box sits on a front or side wheel, across many vehicle types, colors and even a grayscale photo. The random images contain no vehicles and all score low (1-3).\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle, on bicycle or motorcycle wheels, and on other round wheel-like objects would show whether the unit codes car wheels specifically or circular hub shapes in general.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheels of road vehicles, specifically the wheel and tire seen from the side, often including the wheel arch, on cars, vans, buses, trucks and emergency vehicles.\",\n \"evidence\": \"In all 20 top images the red box sits on a front or side wheel, across many vehicle types, colors and even a grayscale photo. The random images contain no vehicles and all score low (1-3).\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle, on bicycle or motorcycle wheels, and on other round wheel-like objects would show whether the unit codes car wheels specifically or circular hub shapes in general.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4b:373",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the wheels of road vehicles (cars, vans, trucks, buses, fire engines), specifically the front wheel and the wheel-arch region around it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the wheels of road vehicles (cars, vans, trucks, buses, fire engines), specifically the front wheel and the wheel-arch region around it.",
+   "evidence": "All 20 top photos are motor vehicles, and in every one the red box sits on a wheel, usually the front wheel and its arch, across many vehicle types, colors and viewing angles. The random natural photos with no vehicles all score low (1-3).",
+   "missing_data": "Photos of isolated wheels, bicycle wheels, or other round objects that are not wheels, which would show whether the unit needs a vehicle context or is simply a detector for round, tire-like shapes.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the wheels of road vehicles (cars, vans, trucks, buses, fire engines), specifically the front wheel and the wheel-arch region around it.\",\n \"evidence\": \"All 20 top photos are motor vehicles, and in every one the red box sits on a wheel, usually the front wheel and its arch, across many vehicle types, colors and viewing angles. The random natural photos with no vehicles all score low (1-3).\",\n \"missing_data\": \"Photos of isolated wheels, bicycle wheels, or other round objects that are not wheels, which would show whether the unit needs a vehicle context or is simply a detector for round, tire-like shapes.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the wheels of road vehicles (cars, vans, trucks, buses, fire engines), specifically the front wheel and the wheel-arch region around it.\",\n \"evidence\": \"All 20 top photos are motor vehicles, and in every one the red box sits on a wheel, usually the front wheel and its arch, across many vehicle types, colors and viewing angles. The random natural photos with no vehicles all score low (1-3).\",\n \"missing_data\": \"Photos of isolated wheels, bicycle wheels, or other round objects that are not wheels, which would show whether the unit needs a vehicle context or is simply a detector for round, tire-like shapes.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:373",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a dark, round, ring-shaped form with a lighter center that has radial spokes, sitting inside an arched cutout along the lower edge of a large, smooth, often brightly colored panel.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dark, round, ring-shaped form with a lighter center that has radial spokes, sitting inside an arched cutout along the lower edge of a large, smooth, often brightly colored panel.",
+   "evidence": "In all 20 top photos the red box lands on this same round dark ring with a radial center, framed by an arch at the bottom edge of a broad glossy surface, whatever the color or overall shape. The random photos lack this circular rim-in-arch structure and score 1-3.",
+   "missing_data": "Photos that show the round spoked ring on its own, without the surrounding panel and arch, or round dark rings in very different settings, to test whether the arch context is required.",
+   "confidence": 0.9
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark, round, ring-shaped form with a lighter center that has radial spokes, sitting inside an arched cutout along the lower edge of a large, smooth, often brightly colored panel.\",\n \"evidence\": \"In all 20 top photos the red box lands on this same round dark ring with a radial center, framed by an arch at the bottom edge of a broad glossy surface, whatever the color or overall shape. The random photos lack this circular rim-in-arch structure and score 1-3.\",\n \"missing_data\": \"Photos that show the round spoked ring on its own, without the surrounding panel and arch, or round dark rings in very different settings, to test whether the arch context is required.\",\n \"confidence\": 0.9}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark, round, ring-shaped form with a lighter center that has radial spokes, sitting inside an arched cutout along the lower edge of a large, smooth, often brightly colored panel.\",\n \"evidence\": \"In all 20 top photos the red box lands on this same round dark ring with a radial center, framed by an arch at the bottom edge of a broad glossy surface, whatever the color or overall shape. The random photos lack this circular rim-in-arch structure and score 1-3.\",\n \"missing_data\": \"Photos that show the round spoked ring on its own, without the surrounding panel and arch, or round dark rings in very different settings, to test whether the arch context is required.\",\n \"confidence\": 0.9}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4b:373",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "c7edcb71f8b98e59ad7f939cd16b9d4bb8cb4394242103eed9e36cd561212b89",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a dark, thick circular ring around a lighter, spoked or radially patterned center, sitting inside a curved arch cut into a smooth, brightly colored, glossy surface, usually near the lower edge of a large boxy shape.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dark, thick circular ring around a lighter, spoked or radially patterned center, sitting inside a curved arch cut into a smooth, brightly colored, glossy surface, usually near the lower edge of a large boxy shape.",
+   "evidence": "All 20 top examples place the red box on this same ring-in-arch structure, across many colors, scales and viewpoints and even in grayscale (#18). The random photos lack this pattern and score low (1-3), with the highest (3) on a scene with round drum-like shapes.",
+   "missing_data": "Activations on isolated circular ring shapes without the surrounding colored panel, or on panels with arches but no ring, would show which part drives the response.",
+   "confidence": 0.85
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark, thick circular ring around a lighter, spoked or radially patterned center, sitting inside a curved arch cut into a smooth, brightly colored, glossy surface, usually near the lower edge of a large boxy shape.\",\n \"evidence\": \"All 20 top examples place the red box on this same ring-in-arch structure, across many colors, scales and viewpoints and even in grayscale (#18). The random photos lack this pattern and score low (1-3), with the highest (3) on a scene with round drum-like shapes.\",\n \"missing_data\": \"Activations on isolated circular ring shapes without the surrounding colored panel, or on panels with arches but no ring, would show which part drives the response.\",\n \"confidence\": 0.85}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dark, thick circular ring around a lighter, spoked or radially patterned center, sitting inside a curved arch cut into a smooth, brightly colored, glossy surface, usually near the lower edge of a large boxy shape.\",\n \"evidence\": \"All 20 top examples place the red box on this same ring-in-arch structure, across many colors, scales and viewpoints and even in grayscale (#18). The random photos lack this pattern and score low (1-3), with the highest (3) on a scene with round drum-like shapes.\",\n \"missing_data\": \"Activations on isolated circular ring shapes without the surrounding colored panel, or on panels with arches but no ring, would show which part drives the response.\",\n \"confidence\": 0.85}\n```"
+  ],
+  "attempts": 1
+ }
+}

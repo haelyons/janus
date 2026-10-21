@@ -1,0 +1,147 @@
+{
+ "bare_s2": {
+  "unit": "mixed4b:431",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the fur of mammals, mainly dogs and dog-like canids, where the box usually sits on furry head, ear, or body regions. Weaker responses come from other furry mammals such as monkeys, a hyena, a hamster, a squirrel, and a mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the fur of mammals, mainly dogs and dog-like canids, where the box usually sits on furry head, ear, or body regions. Weaker responses come from other furry mammals such as monkeys, a hyena, a hamster, a squirrel, and a mink.",
+   "evidence": "About 13 of the top 20 are dogs or canids (dhole, shepherd, spaniels, corgi, Tibetan mastiff, Newfoundland), and the rest are all furry mammals. The random photos (food, fish, crocodile, insect, objects, flowers) score only 0-4.",
+   "missing_data": "Activations on furry non-mammal textures (fur coats, plush toys) and on hairless or short-haired dogs, which would separate fur texture from mammal or dog identity.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the fur of mammals, mainly dogs and dog-like canids, where the box usually sits on furry head, ear, or body regions. Weaker responses come from other furry mammals such as monkeys, a hyena, a hamster, a squirrel, and a mink.\",\n \"evidence\": \"About 13 of the top 20 are dogs or canids (dhole, shepherd, spaniels, corgi, Tibetan mastiff, Newfoundland), and the rest are all furry mammals. The random photos (food, fish, crocodile, insect, objects, flowers) score only 0-4.\",\n \"missing_data\": \"Activations on furry non-mammal textures (fur coats, plush toys) and on hairless or short-haired dogs, which would separate fur texture from mammal or dog identity.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the fur of mammals, mainly dogs and dog-like canids, where the box usually sits on furry head, ear, or body regions. Weaker responses come from other furry mammals such as monkeys, a hyena, a hamster, a squirrel, and a mink.\",\n \"evidence\": \"About 13 of the top 20 are dogs or canids (dhole, shepherd, spaniels, corgi, Tibetan mastiff, Newfoundland), and the rest are all furry mammals. The random photos (food, fish, crocodile, insect, objects, flowers) score only 0-4.\",\n \"missing_data\": \"Activations on furry non-mammal textures (fur coats, plush toys) and on hairless or short-haired dogs, which would separate fur texture from mammal or dog identity.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4b:431",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal fur/coat texture, most strongly on dogs and dog-like canids (dhole, hyena), especially on the head, ears, and neck/shoulder region. It extends more weakly to other furry mammals such as monkeys, hamsters, squirrels, and minks.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal fur/coat texture, most strongly on dogs and dog-like canids (dhole, hyena), especially on the head, ears, and neck/shoulder region. It extends more weakly to other furry mammals such as monkeys, hamsters, squirrels, and minks.",
+   "evidence": "Most of the top 20 photos are dogs, with boxes on furry ears, neck, or chest. The rest are other furry mammals (proboscis monkey, capuchin, hamster, squirrel, mink, hyena) at activation 8-10, while the random non-mammal images score 0-4.",
+   "missing_data": "Activations on random images that contain furry non-dog mammals (cats, bears) and on non-animal furry textures (fur coats, plush toys) would show whether the unit codes fur texture or dogs specifically.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur/coat texture, most strongly on dogs and dog-like canids (dhole, hyena), especially on the head, ears, and neck/shoulder region. It extends more weakly to other furry mammals such as monkeys, hamsters, squirrels, and minks.\",\n \"evidence\": \"Most of the top 20 photos are dogs, with boxes on furry ears, neck, or chest. The rest are other furry mammals (proboscis monkey, capuchin, hamster, squirrel, mink, hyena) at activation 8-10, while the random non-mammal images score 0-4.\",\n \"missing_data\": \"Activations on random images that contain furry non-dog mammals (cats, bears) and on non-animal furry textures (fur coats, plush toys) would show whether the unit codes fur texture or dogs specifically.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur/coat texture, most strongly on dogs and dog-like canids (dhole, hyena), especially on the head, ears, and neck/shoulder region. It extends more weakly to other furry mammals such as monkeys, hamsters, squirrels, and minks.\",\n \"evidence\": \"Most of the top 20 photos are dogs, with boxes on furry ears, neck, or chest. The rest are other furry mammals (proboscis monkey, capuchin, hamster, squirrel, mink, hyena) at activation 8-10, while the random non-mammal images score 0-4.\",\n \"missing_data\": \"Activations on random images that contain furry non-dog mammals (cats, bears) and on non-animal furry textures (fur coats, plush toys) would show whether the unit codes fur texture or dogs specifically.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:431",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to dogs, especially furry regions such as ears, cheeks and coat, and responds somewhat less to other furry mammals.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to dogs, especially furry regions such as ears, cheeks and coat, and responds somewhat less to other furry mammals.",
+   "evidence": "About 13 of the top 20 are dogs, and the rest are other furry mammals (dhole, hyena, proboscis and capuchin monkeys, hamster, squirrel, mink), with red boxes mostly on fur. Random non-mammal images (fish, crocodile, beetle, objects) score only 0-4.",
+   "missing_data": "Activations on non-dog furry mammals (cats, bears) and on hairless dogs or fur-textured objects, to tell dog identity apart from fur texture.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to dogs, especially furry regions such as ears, cheeks and coat, and responds somewhat less to other furry mammals.\", \"evidence\": \"About 13 of the top 20 are dogs, and the rest are other furry mammals (dhole, hyena, proboscis and capuchin monkeys, hamster, squirrel, mink), with red boxes mostly on fur. Random non-mammal images (fish, crocodile, beetle, objects) score only 0-4.\", \"missing_data\": \"Activations on non-dog furry mammals (cats, bears) and on hairless dogs or fur-textured objects, to tell dog identity apart from fur texture.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to dogs, especially furry regions such as ears, cheeks and coat, and responds somewhat less to other furry mammals.\", \"evidence\": \"About 13 of the top 20 are dogs, and the rest are other furry mammals (dhole, hyena, proboscis and capuchin monkeys, hamster, squirrel, mink), with red boxes mostly on fur. Random non-mammal images (fish, crocodile, beetle, objects) score only 0-4.\", \"missing_data\": \"Activations on non-dog furry mammals (cats, bears) and on hairless dogs or fur-textured objects, to tell dog identity apart from fur texture.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:431",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to soft, dense, fine-strand texture: short, directional, fluffy grain covering rounded body surfaces. It is strongest on warm brown, tan or grey tufted patches near the edges of rounded forms.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to soft, dense, fine-strand texture: short, directional, fluffy grain covering rounded body surfaces. It is strongest on warm brown, tan or grey tufted patches near the edges of rounded forms.",
+   "evidence": "All 20 top photos place the box on the same kind of soft fine-strand surface, whatever the color or overall shape, and the top scores are 8-10. The random photos, which show smooth, hard, scaly, glossy or patterned surfaces, score only 0-4.",
+   "missing_data": "Photos with soft strand-like texture on non-living surfaces (woven, shaggy or fleecy materials), and living subjects without such texture, would show whether the unit tracks the texture itself or something broader.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to soft, dense, fine-strand texture: short, directional, fluffy grain covering rounded body surfaces. It is strongest on warm brown, tan or grey tufted patches near the edges of rounded forms.\",\n \"evidence\": \"All 20 top photos place the box on the same kind of soft fine-strand surface, whatever the color or overall shape, and the top scores are 8-10. The random photos, which show smooth, hard, scaly, glossy or patterned surfaces, score only 0-4.\",\n \"missing_data\": \"Photos with soft strand-like texture on non-living surfaces (woven, shaggy or fleecy materials), and living subjects without such texture, would show whether the unit tracks the texture itself or something broader.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to soft, dense, fine-strand texture: short, directional, fluffy grain covering rounded body surfaces. It is strongest on warm brown, tan or grey tufted patches near the edges of rounded forms.\",\n \"evidence\": \"All 20 top photos place the box on the same kind of soft fine-strand surface, whatever the color or overall shape, and the top scores are 8-10. The random photos, which show smooth, hard, scaly, glossy or patterned surfaces, score only 0-4.\",\n \"missing_data\": \"Photos with soft strand-like texture on non-living surfaces (woven, shaggy or fleecy materials), and living subjects without such texture, would show whether the unit tracks the texture itself or something broader.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4b:431",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal fur/coat texture, especially on dogs (ears, cheeks, chest), with weaker extension to other furry mammals such as monkeys, hyena, hamster, squirrel and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal fur/coat texture, especially on dogs (ears, cheeks, chest), with weaker extension to other furry mammals such as monkeys, hyena, hamster, squirrel and mink.",
+   "evidence": "Most of the top 20 are dogs, with red boxes on furry ears, cheeks or neck. The non-dog top images (dhole, proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals, and random non-mammal images score only 0-4.",
+   "missing_data": "Activations on furry non-dog mammals like cats or bears, and on fur-like textures such as rugs or plush toys, to tell 'dog' apart from 'generic fur texture'.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur/coat texture, especially on dogs (ears, cheeks, chest), with weaker extension to other furry mammals such as monkeys, hyena, hamster, squirrel and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with red boxes on furry ears, cheeks or neck. The non-dog top images (dhole, proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals, and random non-mammal images score only 0-4.\",\n \"missing_data\": \"Activations on furry non-dog mammals like cats or bears, and on fur-like textures such as rugs or plush toys, to tell 'dog' apart from 'generic fur texture'.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the fur of dogs, especially on the head, ears, neck and chest. It also responds more weakly to the fur of other furry mammals.\",\n \"evidence\": \"Most top-20 images are dogs, and the dog-like dhole is tied for the strongest; other furry mammals (proboscis monkey, hyena, capuchin, hamster, squirrel, mink) score 8-10, with red boxes on furry regions rather than eyes or noses. Random non-mammal images (fish, crocodile, beetle, objects) score only 0-4.\"\n \"missing_data\": \"Activations for hairless dog breeds, non-mammal fur-like textures (e.g. shag rugs, plush toys), and a wider sample of furry non-canine mammals would show whether the unit encodes dogs or fur texture generally.\",\n \"confidence\": 0.7}\n```",
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur/coat texture, especially on dogs (ears, cheeks, chest), with weaker extension to other furry mammals such as monkeys, hyena, hamster, squirrel and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with red boxes on furry ears, cheeks or neck. The non-dog top images (dhole, proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals, and random non-mammal images score only 0-4.\",\n \"missing_data\": \"Activations on furry non-dog mammals like cats or bears, and on fur-like textures such as rugs or plush toys, to tell 'dog' apart from 'generic fur texture'.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 2
+ },
+ "F1_s2": {
+  "unit": "mixed4b:431",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to dense, soft, fine-stranded fibrous texture with fuzzy, low-contrast edges, mostly in warm brown, tan, gray or black tones. It fires most on smooth, flowing regions of this texture next to a subject's head or upper body.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dense, soft, fine-stranded fibrous texture with fuzzy, low-contrast edges, mostly in warm brown, tan, gray or black tones. It fires most on smooth, flowing regions of this texture next to a subject's head or upper body.",
+   "evidence": "All 20 top photos (activations 8-10) place the red box on a patch of soft, fine-strand texture, across many color variants. The random photos, which have smooth, hard, scaly, glossy or petal-like surfaces, score only 0-4.",
+   "missing_data": "Images with similar soft fibrous texture but no living subject, such as fabrics, rugs or plush materials, would show whether the unit tracks the texture alone or needs the subject context.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to dense, soft, fine-stranded fibrous texture with fuzzy, low-contrast edges, mostly in warm brown, tan, gray or black tones. It fires most on smooth, flowing regions of this texture next to a subject's head or upper body.\",\n \"evidence\": \"All 20 top photos (activations 8-10) place the red box on a patch of soft, fine-strand texture, across many color variants. The random photos, which have smooth, hard, scaly, glossy or petal-like surfaces, score only 0-4.\",\n \"missing_data\": \"Images with similar soft fibrous texture but no living subject, such as fabrics, rugs or plush materials, would show whether the unit tracks the texture alone or needs the subject context.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to dense, soft, fine-stranded fibrous texture with fuzzy, low-contrast edges, mostly in warm brown, tan, gray or black tones. It fires most on smooth, flowing regions of this texture next to a subject's head or upper body.\",\n \"evidence\": \"All 20 top photos (activations 8-10) place the red box on a patch of soft, fine-strand texture, across many color variants. The random photos, which have smooth, hard, scaly, glossy or petal-like surfaces, score only 0-4.\",\n \"missing_data\": \"Images with similar soft fibrous texture but no living subject, such as fabrics, rugs or plush materials, would show whether the unit tracks the texture alone or needs the subject context.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ }
+}

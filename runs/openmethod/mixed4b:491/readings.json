@@ -1,0 +1,146 @@
+{
+ "bare_s2": {
+  "unit": "mixed4b:491",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the side and lower body of road vehicles (cars, vans, trucks, buses, RVs), especially the region around the front wheel and wheel arch.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the side and lower body of road vehicles (cars, vans, trucks, buses, RVs), especially the region around the front wheel and wheel arch.",
+   "evidence": "19 of the top 20 are road vehicles, with boxes mostly on the wheel, wheel arch, or lower side panel; #19 (a car stereo dashboard, activation 8) is a weaker, related in-car extension. Random non-vehicle photos score 0-2.",
+   "missing_data": "Activations on isolated wheels or tires, on non-road wheeled objects such as bicycles and carts, and on car interiors would show whether the unit is tuned to wheels specifically or to vehicles in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the side and lower body of road vehicles (cars, vans, trucks, buses, RVs), especially the region around the front wheel and wheel arch.\",\n \"evidence\": \"19 of the top 20 are road vehicles, with boxes mostly on the wheel, wheel arch, or lower side panel; #19 (a car stereo dashboard, activation 8) is a weaker, related in-car extension. Random non-vehicle photos score 0-2.\",\n \"missing_data\": \"Activations on isolated wheels or tires, on non-road wheeled objects such as bicycles and carts, and on car interiors would show whether the unit is tuned to wheels specifically or to vehicles in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the side and lower body of road vehicles (cars, vans, trucks, buses, RVs), especially the region around the front wheel and wheel arch.\",\n \"evidence\": \"19 of the top 20 are road vehicles, with boxes mostly on the wheel, wheel arch, or lower side panel; #19 (a car stereo dashboard, activation 8) is a weaker, related in-car extension. Random non-vehicle photos score 0-2.\",\n \"missing_data\": \"Activations on isolated wheels or tires, on non-road wheeled objects such as bicycles and carts, and on car interiors would show whether the unit is tuned to wheels specifically or to vehicles in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4b:491",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the lower side body of road vehicles (cars, vans, trucks, buses, RVs), especially around the wheel wells and front wheel/fender area. It also responds weakly to related vehicle parts such as a car dashboard stereo.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the lower side body of road vehicles (cars, vans, trucks, buses, RVs), especially around the wheel wells and front wheel/fender area. It also responds weakly to related vehicle parts such as a car dashboard stereo.",
+   "evidence": "19 of the top 20 photos are road vehicles, with the box mostly on the wheel/wheel-arch or lower body panel, and #19 (a car radio console, activation 8) is the only non-exterior case. The random photos contain no vehicles and all score 0-2.",
+   "missing_data": "Activations on isolated wheels or tires versus wheel-less vehicle bodies, and on non-road vehicles such as trains or carts, would show whether the unit is tuned to wheel wells specifically or to automotive bodywork generally.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side body of road vehicles (cars, vans, trucks, buses, RVs), especially around the wheel wells and front wheel/fender area. It also responds weakly to related vehicle parts such as a car dashboard stereo.\",\n \"evidence\": \"19 of the top 20 photos are road vehicles, with the box mostly on the wheel/wheel-arch or lower body panel, and #19 (a car radio console, activation 8) is the only non-exterior case. The random photos contain no vehicles and all score 0-2.\",\n \"missing_data\": \"Activations on isolated wheels or tires versus wheel-less vehicle bodies, and on non-road vehicles such as trains or carts, would show whether the unit is tuned to wheel wells specifically or to automotive bodywork generally.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side body of road vehicles (cars, vans, trucks, buses, RVs), especially around the wheel wells and front wheel/fender area. It also responds weakly to related vehicle parts such as a car dashboard stereo.\",\n \"evidence\": \"19 of the top 20 photos are road vehicles, with the box mostly on the wheel/wheel-arch or lower body panel, and #19 (a car radio console, activation 8) is the only non-exterior case. The random photos contain no vehicles and all score 0-2.\",\n \"missing_data\": \"Activations on isolated wheels or tires versus wheel-less vehicle bodies, and on non-road vehicles such as trains or carts, would show whether the unit is tuned to wheel wells specifically or to automotive bodywork generally.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:491",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the lower side body of road vehicles, especially the wheel and wheel-arch region of cars, vans, trucks, buses and RVs. A weaker, related extension covers car interior parts such as a dashboard radio.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the lower side body of road vehicles, especially the wheel and wheel-arch region of cars, vans, trucks, buses and RVs. A weaker, related extension covers car interior parts such as a dashboard radio.",
+   "evidence": "In 18 of the top 20 photos the red box falls on a vehicle's wheel well, front fender or lower side panel, across many vehicle types; #19 is a car stereo unit at activation 8. The random photos, which contain no vehicles, all stay at 0-2.",
+   "missing_data": "Isolated wheels or tires without a vehicle body, and non-road vehicles such as trains or tractors, would show whether the unit tracks wheels specifically or vehicles in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side body of road vehicles, especially the wheel and wheel-arch region of cars, vans, trucks, buses and RVs. A weaker, related extension covers car interior parts such as a dashboard radio.\",\n \"evidence\": \"In 18 of the top 20 photos the red box falls on a vehicle's wheel well, front fender or lower side panel, across many vehicle types; #19 is a car stereo unit at activation 8. The random photos, which contain no vehicles, all stay at 0-2.\",\n \"missing_data\": \"Isolated wheels or tires without a vehicle body, and non-road vehicles such as trains or tractors, would show whether the unit tracks wheels specifically or vehicles in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side body of road vehicles, especially the wheel and wheel-arch region of cars, vans, trucks, buses and RVs. A weaker, related extension covers car interior parts such as a dashboard radio.\",\n \"evidence\": \"In 18 of the top 20 photos the red box falls on a vehicle's wheel well, front fender or lower side panel, across many vehicle types; #19 is a car stereo unit at activation 8. The random photos, which contain no vehicles, all stay at 0-2.\",\n \"missing_data\": \"Isolated wheels or tires without a vehicle body, and non-road vehicles such as trains or tractors, would show whether the unit tracks wheels specifically or vehicles in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4b:491",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the lower side bodywork of road vehicles (cars, vans, trucks, buses, RVs), especially around the front wheel arch and fender. A weaker extension covers other car parts, such as an in-dash car radio.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the lower side bodywork of road vehicles (cars, vans, trucks, buses, RVs), especially around the front wheel arch and fender. A weaker extension covers other car parts, such as an in-dash car radio.",
+   "evidence": "19 of the top 20 photos are vehicles, with the red box mostly on the wheel well or lower door panel; #19 (car stereo, 8) is the outlier, and the random non-vehicle photos score 0-2.",
+   "missing_data": "Isolated wheels, vehicle parts without the body, and non-vehicle curved metal surfaces would show whether the unit is tied to vehicles specifically or to wheel/fender shapes in general.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side bodywork of road vehicles (cars, vans, trucks, buses, RVs), especially around the front wheel arch and fender. A weaker extension covers other car parts, such as an in-dash car radio.\",\n \"evidence\": \"19 of the top 20 photos are vehicles, with the red box mostly on the wheel well or lower door panel; #19 (car stereo, 8) is the outlier, and the random non-vehicle photos score 0-2.\",\n \"missing_data\": \"Isolated wheels, vehicle parts without the body, and non-vehicle curved metal surfaces would show whether the unit is tied to vehicles specifically or to wheel/fender shapes in general.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower side bodywork of road vehicles (cars, vans, trucks, buses, RVs), especially around the front wheel arch and fender. A weaker extension covers other car parts, such as an in-dash car radio.\",\n \"evidence\": \"19 of the top 20 photos are vehicles, with the red box mostly on the wheel well or lower door panel; #19 (car stereo, 8) is the outlier, and the random non-vehicle photos score 0-2.\",\n \"missing_data\": \"Isolated wheels, vehicle parts without the body, and non-vehicle curved metal surfaces would show whether the unit is tied to vehicles specifically or to wheel/fender shapes in general.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:491",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a smooth, glossy, uniformly colored painted surface broken by a curved arched cutout that frames a dark, round, spoked or ribbed disc, often with nearby horizontal trim lines or small rectangular bright inserts. Weaker responses come from the same smooth, rounded panel edges and seams without the dark disc.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a smooth, glossy, uniformly colored painted surface broken by a curved arched cutout that frames a dark, round, spoked or ribbed disc, often with nearby horizontal trim lines or small rectangular bright inserts. Weaker responses come from the same smooth, rounded panel edges and seams without the dark disc.",
+   "evidence": "Most of the 20 top boxes (activation 7–10) sit on the junction of a dark round disc and an arched edge in a shiny, flat-colored panel, or at a nearby panel corner with a small lamp-like insert. The one outlier (#19) boxes a curved edge on a smooth silver molded panel, and all 10 random photos, which lack such glossy curved panels, score 0–2.",
+   "missing_data": "Activations on isolated dark round discs or arched cutouts in glossy surfaces from unrelated contexts would show whether the unit needs the full panel-and-disc combination.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a smooth, glossy, uniformly colored painted surface broken by a curved arched cutout that frames a dark, round, spoked or ribbed disc, often with nearby horizontal trim lines or small rectangular bright inserts. Weaker responses come from the same smooth, rounded panel edges and seams without the dark disc.\",\n \"evidence\": \"Most of the 20 top boxes (activation 7–10) sit on the junction of a dark round disc and an arched edge in a shiny, flat-colored panel, or at a nearby panel corner with a small lamp-like insert. The one outlier (#19) boxes a curved edge on a smooth silver molded panel, and all 10 random photos, which lack such glossy curved panels, score 0–2.\",\n \"missing_data\": \"Activations on isolated dark round discs or arched cutouts in glossy surfaces from unrelated contexts would show whether the unit needs the full panel-and-disc combination.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a smooth, glossy, uniformly colored painted surface broken by a curved arched cutout that frames a dark, round, spoked or ribbed disc, often with nearby horizontal trim lines or small rectangular bright inserts. Weaker responses come from the same smooth, rounded panel edges and seams without the dark disc.\",\n \"evidence\": \"Most of the 20 top boxes (activation 7–10) sit on the junction of a dark round disc and an arched edge in a shiny, flat-colored panel, or at a nearby panel corner with a small lamp-like insert. The one outlier (#19) boxes a curved edge on a smooth silver molded panel, and all 10 random photos, which lack such glossy curved panels, score 0–2.\",\n \"missing_data\": \"Activations on isolated dark round discs or arched cutouts in glossy surfaces from unrelated contexts would show whether the unit needs the full panel-and-disc combination.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4b:491",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "c7b2220c6450aab12ebe2e7ccd3c1d14c06b7d4c78d0b2591deeba14f0cbaac3",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to smooth, glossy, uniformly colored panel surfaces whose lower edge curves into an arched cutout that frames a dark, ring-like round shape with a lighter radial center. It is most active where the painted surface's curved seam or edge meets that dark circular form.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to smooth, glossy, uniformly colored panel surfaces whose lower edge curves into an arched cutout that frames a dark, ring-like round shape with a lighter radial center. It is most active where the painted surface's curved seam or edge meets that dark circular form.",
+   "evidence": "Almost all 20 top boxes sit on the lower side of large glossy colored surfaces, at the arch where they meet a dark ring. The colors vary widely (red, white, silver, pink, teal), and the one exception (#19) is still a curved glossy panel corner. Random photos with matte textures, fur, fabric, or faces stay at 0-2.",
+   "missing_data": "Activations on isolated dark ring shapes without a surrounding glossy panel, and on curved glossy panels without a ring, would show which part of the pattern drives the unit.",
+   "confidence": 0.8
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to smooth, glossy, uniformly colored panel surfaces whose lower edge curves into an arched cutout that frames a dark, ring-like round shape with a lighter radial center. It is most active where the painted surface's curved seam or edge meets that dark circular form.\",\n \"evidence\": \"Almost all 20 top boxes sit on the lower side of large glossy colored surfaces, at the arch where they meet a dark ring. The colors vary widely (red, white, silver, pink, teal), and the one exception (#19) is still a curved glossy panel corner. Random photos with matte textures, fur, fabric, or faces stay at 0-2.\",\n \"missing_data\": \"Activations on isolated dark ring shapes without a surrounding glossy panel, and on curved glossy panels without a ring, would show which part of the pattern drives the unit.\",\n \"confidence\": 0.8}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to smooth, glossy, uniformly colored panel surfaces whose lower edge curves into an arched cutout that frames a dark, ring-like round shape with a lighter radial center. It is most active where the painted surface's curved seam or edge meets that dark circular form.\",\n \"evidence\": \"Almost all 20 top boxes sit on the lower side of large glossy colored surfaces, at the arch where they meet a dark ring. The colors vary widely (red, white, silver, pink, teal), and the one exception (#19) is still a curved glossy panel corner. Random photos with matte textures, fur, fabric, or faces stay at 0-2.\",\n \"missing_data\": \"Activations on isolated dark ring shapes without a surrounding glossy panel, and on curved glossy panels without a ring, would show which part of the pattern drives the unit.\",\n \"confidence\": 0.8}\n```"
+  ],
+  "attempts": 1
+ }
+}

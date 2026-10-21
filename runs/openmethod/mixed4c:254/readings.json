@@ -1,0 +1,146 @@
+{
+ "Q0_s1": {
+  "unit": "mixed4c:254",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to thin vertical upright structures on man-made objects, such as poles, masts, tail fins, screw shanks, antennas, handles, and the vertical pillars and frames of vehicle cab windows. It responds more weakly to vertical shapes on animals, such as an ostrich neck or a fox's upright head.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to thin vertical upright structures on man-made objects, such as poles, masts, tail fins, screw shanks, antennas, handles, and the vertical pillars and frames of vehicle cab windows. It responds more weakly to vertical shapes on animals, such as an ostrich neck or a fox's upright head.",
+   "evidence": "Most red boxes mark a narrow vertical element: a screw shaft, an airplane tail fin, sailboat and ship masts, toaster slots, a screwdriver shaft, a router antenna, a vacuum handle, and window pillars on cars, trucks and tractors. The animal cases rank lower, and random natural photos give low to moderate activations (0-4).",
+   "missing_data": "Activations on controlled images with isolated vertical versus horizontal bars, and on cropped vehicle windows without vertical posts, would show whether the unit encodes orientation or a vehicle and frame part.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to thin vertical upright structures on man-made objects, such as poles, masts, tail fins, screw shanks, antennas, handles, and the vertical pillars and frames of vehicle cab windows. It responds more weakly to vertical shapes on animals, such as an ostrich neck or a fox's upright head.\",\n \"evidence\": \"Most red boxes mark a narrow vertical element: a screw shaft, an airplane tail fin, sailboat and ship masts, toaster slots, a screwdriver shaft, a router antenna, a vacuum handle, and window pillars on cars, trucks and tractors. The animal cases rank lower, and random natural photos give low to moderate activations (0-4).\",\n \"missing_data\": \"Activations on controlled images with isolated vertical versus horizontal bars, and on cropped vehicle windows without vertical posts, would show whether the unit encodes orientation or a vehicle and frame part.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to thin vertical upright structures on man-made objects, such as poles, masts, tail fins, screw shanks, antennas, handles, and the vertical pillars and frames of vehicle cab windows. It responds more weakly to vertical shapes on animals, such as an ostrich neck or a fox's upright head.\",\n \"evidence\": \"Most red boxes mark a narrow vertical element: a screw shaft, an airplane tail fin, sailboat and ship masts, toaster slots, a screwdriver shaft, a router antenna, a vacuum handle, and window pillars on cars, trucks and tractors. The animal cases rank lower, and random natural photos give low to moderate activations (0-4).\",\n \"missing_data\": \"Activations on controlled images with isolated vertical versus horizontal bars, and on cropped vehicle windows without vertical posts, would show whether the unit encodes orientation or a vehicle and frame part.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s2": {
+  "unit": "mixed4c:254",
+  "reading": "Q0_s2",
+  "arm": "Q0",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to thin vertical upright structures such as poles, shafts, masts, tail fins, antennas and window pillars, mostly on man-made objects. It also responds more weakly to related framed rectangular openings like vehicle cab windows and toaster slots.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to thin vertical upright structures such as poles, shafts, masts, tail fins, antennas and window pillars, mostly on man-made objects. It also responds more weakly to related framed rectangular openings like vehicle cab windows and toaster slots.",
+   "evidence": "The red boxes repeatedly sit on narrow vertical elements: the screw shaft, airplane tail fin, ship masts, screwdriver shaft, router antenna, cymbal stand, ostrich neck and car or tractor window pillars. A few top images (fox face, flask label) fit poorly, and random images still reach 3-4, which suggests a fairly broad, low-level edge or orientation feature.",
+   "missing_data": "Activation on controlled images of isolated vertical versus horizontal bars, and on rotated versions of the top images, to test whether orientation drives the response or object category does.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to thin vertical upright structures such as poles, shafts, masts, tail fins, antennas and window pillars, mostly on man-made objects. It also responds more weakly to related framed rectangular openings like vehicle cab windows and toaster slots.\",\n \"evidence\": \"The red boxes repeatedly sit on narrow vertical elements: the screw shaft, airplane tail fin, ship masts, screwdriver shaft, router antenna, cymbal stand, ostrich neck and car or tractor window pillars. A few top images (fox face, flask label) fit poorly, and random images still reach 3-4, which suggests a fairly broad, low-level edge or orientation feature.\",\n \"missing_data\": \"Activation on controlled images of isolated vertical versus horizontal bars, and on rotated versions of the top images, to test whether orientation drives the response or object category does.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to thin vertical upright structures such as poles, shafts, masts, tail fins, antennas and window pillars, mostly on man-made objects. It also responds more weakly to related framed rectangular openings like vehicle cab windows and toaster slots.\",\n \"evidence\": \"The red boxes repeatedly sit on narrow vertical elements: the screw shaft, airplane tail fin, ship masts, screwdriver shaft, router antenna, cymbal stand, ostrich neck and car or tractor window pillars. A few top images (fox face, flask label) fit poorly, and random images still reach 3-4, which suggests a fairly broad, low-level edge or orientation feature.\",\n \"missing_data\": \"Activation on controlled images of isolated vertical versus horizontal bars, and on rotated versions of the top images, to test whether orientation drives the response or object category does.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4c:254",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to thin, upright vertical structures such as screw shafts, tail fins, masts, antennas, handles and slots, mostly on man-made objects. It responds more weakly to vertical frame edges like car and tractor cab window pillars.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to thin, upright vertical structures such as screw shafts, tail fins, masts, antennas, handles and slots, mostly on man-made objects. It responds more weakly to vertical frame edges like car and tractor cab window pillars.",
+   "evidence": "The red boxes in the top images mostly sit on narrow vertical elements: the screw (#1), plane tail and strut (#4, #7), masts (#10, #11), the ostrich neck (#8), the router antenna (#17) and the vacuum handle (#20), while window pillars (#2, #6, #9, #18) score somewhat lower. The random animal photos stay at 0-4, and only the fox face (#19) clearly falls outside the pattern.",
+   "missing_data": "Synthetic tests with oriented bars or gratings, to check whether the unit is tuned to vertical orientation or to object parts such as upright protrusions, plus activations from images with strong horizontal versus vertical edges.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to thin, upright vertical structures such as screw shafts, tail fins, masts, antennas, handles and slots, mostly on man-made objects. It responds more weakly to vertical frame edges like car and tractor cab window pillars.\",\n \"evidence\": \"The red boxes in the top images mostly sit on narrow vertical elements: the screw (#1), plane tail and strut (#4, #7), masts (#10, #11), the ostrich neck (#8), the router antenna (#17) and the vacuum handle (#20), while window pillars (#2, #6, #9, #18) score somewhat lower. The random animal photos stay at 0-4, and only the fox face (#19) clearly falls outside the pattern.\",\n \"missing_data\": \"Synthetic tests with oriented bars or gratings, to check whether the unit is tuned to vertical orientation or to object parts such as upright protrusions, plus activations from images with strong horizontal versus vertical edges.\",\n \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to thin, upright vertical structures such as screw shafts, tail fins, masts, antennas, handles and slots, mostly on man-made objects. It responds more weakly to vertical frame edges like car and tractor cab window pillars.\",\n \"evidence\": \"The red boxes in the top images mostly sit on narrow vertical elements: the screw (#1), plane tail and strut (#4, #7), masts (#10, #11), the ostrich neck (#8), the router antenna (#17) and the vacuum handle (#20), while window pillars (#2, #6, #9, #18) score somewhat lower. The random animal photos stay at 0-4, and only the fox face (#19) clearly falls outside the pattern.\",\n \"missing_data\": \"Synthetic tests with oriented bars or gratings, to check whether the unit is tuned to vertical orientation or to object parts such as upright protrusions, plus activations from images with strong horizontal versus vertical edges.\",\n \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "bare_s2": {
+  "unit": "mixed4c:254",
+  "reading": "bare_s2",
+  "arm": "bare",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond to thin, upright structures that stick up from an object, such as posts, pillars, fins, masts, antennas and window frames, most strongly on man-made objects and vehicles. Weaker hits on animal necks and heads look like the same vertical-upright shape on natural things.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond to thin, upright structures that stick up from an object, such as posts, pillars, fins, masts, antennas and window frames, most strongly on man-made objects and vehicles. Weaker hits on animal necks and heads look like the same vertical-upright shape on natural things.",
+   "evidence": "The red boxes fall on an upright screw, a jet tail fin, boat masts and rigging, a router antenna, a screwdriver shaft, the vacuum handle, and the window pillars of car, truck and tractor cabs, with weaker hits on an ostrich neck and a fox head. Random natural photos mostly score 0-4, but values up to 4 and the gentle drop from 10 to 7 across the top 20 suggest the tuning is broad rather than sharp.",
+   "missing_data": "Tight crops or synthetic images of isolated vertical bars versus horizontal bars, plus many more strongly active examples, would show whether this is purely a vertical-edge or orientation detector or something more object-specific like cab windows or vehicle parts.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to thin, upright structures that stick up from an object, such as posts, pillars, fins, masts, antennas and window frames, most strongly on man-made objects and vehicles. Weaker hits on animal necks and heads look like the same vertical-upright shape on natural things.\",\n \"evidence\": \"The red boxes fall on an upright screw, a jet tail fin, boat masts and rigging, a router antenna, a screwdriver shaft, the vacuum handle, and the window pillars of car, truck and tractor cabs, with weaker hits on an ostrich neck and a fox head. Random natural photos mostly score 0-4, but values up to 4 and the gentle drop from 10 to 7 across the top 20 suggest the tuning is broad rather than sharp.\",\n \"missing_data\": \"Tight crops or synthetic images of isolated vertical bars versus horizontal bars, plus many more strongly active examples, would show whether this is purely a vertical-edge or orientation detector or something more object-specific like cab windows or vehicle parts.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to thin, upright structures that stick up from an object, such as posts, pillars, fins, masts, antennas and window frames, most strongly on man-made objects and vehicles. Weaker hits on animal necks and heads look like the same vertical-upright shape on natural things.\",\n \"evidence\": \"The red boxes fall on an upright screw, a jet tail fin, boat masts and rigging, a router antenna, a screwdriver shaft, the vacuum handle, and the window pillars of car, truck and tractor cabs, with weaker hits on an ostrich neck and a fox head. Random natural photos mostly score 0-4, but values up to 4 and the gentle drop from 10 to 7 across the top 20 suggest the tuning is broad rather than sharp.\",\n \"missing_data\": \"Tight crops or synthetic images of isolated vertical bars versus horizontal bars, plus many more strongly active examples, would show whether this is purely a vertical-edge or orientation detector or something more object-specific like cab windows or vehicle parts.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s2": {
+  "unit": "mixed4c:254",
+  "reading": "F1_s2",
+  "arm": "F1",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to narrow, upright, elongated vertical strips or bars, often thin parallel vertical edges or slightly tapered verticals that contrast with their surroundings.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to narrow, upright, elongated vertical strips or bars, often thin parallel vertical edges or slightly tapered verticals that contrast with their surroundings.",
+   "evidence": "Nearly every top-activation box frames a thin vertical element, such as an upright shaft, a vertical frame divider, a tall fin-like protrusion, or clusters of parallel hanging verticals. Random images that lack strong isolated verticals sit low at 0-4, though the weak background response suggests some broad sensitivity to edges.",
+   "missing_data": "Activations on synthetic oriented-bar stimuli (vertical vs. horizontal vs. diagonal, varying thickness) and on rotated versions of the top images would confirm whether orientation is the key factor.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to narrow, upright, elongated vertical strips or bars, often thin parallel vertical edges or slightly tapered verticals that contrast with their surroundings.\", \"evidence\": \"Nearly every top-activation box frames a thin vertical element, such as an upright shaft, a vertical frame divider, a tall fin-like protrusion, or clusters of parallel hanging verticals. Random images that lack strong isolated verticals sit low at 0-4, though the weak background response suggests some broad sensitivity to edges.\", \"missing_data\": \"Activations on synthetic oriented-bar stimuli (vertical vs. horizontal vs. diagonal, varying thickness) and on rotated versions of the top images would confirm whether orientation is the key factor.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to narrow, upright, elongated vertical strips or bars, often thin parallel vertical edges or slightly tapered verticals that contrast with their surroundings.\", \"evidence\": \"Nearly every top-activation box frames a thin vertical element, such as an upright shaft, a vertical frame divider, a tall fin-like protrusion, or clusters of parallel hanging verticals. Random images that lack strong isolated verticals sit low at 0-4, though the weak background response suggests some broad sensitivity to edges.\", \"missing_data\": \"Activations on synthetic oriented-bar stimuli (vertical vs. horizontal vs. diagonal, varying thickness) and on rotated versions of the top images would confirm whether orientation is the key factor.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4c:254",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "b937935d3a9599a3f4939c273c994eb0e3e36b090bd8fa69ec80f8a87deec71e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to narrow, upright, straight-edged bars or slender vertical protrusions, especially where they meet a contrasting background. It responds more weakly to small vertically oriented rectangular openings or frames bounded by such straight vertical edges.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to narrow, upright, straight-edged bars or slender vertical protrusions, especially where they meet a contrasting background. It responds more weakly to small vertically oriented rectangular openings or frames bounded by such straight vertical edges.",
+   "evidence": "Most red boxes sit on a thin vertical stalk or post, or on a tall rectangular frame with crisp parallel vertical sides, usually on smooth manufactured surfaces. The random photos, which show mostly curved, organic, textured content with few straight vertical lines, score only 0–4.",
+   "missing_data": "Synthetic tests with isolated vertical versus horizontal or diagonal bars and frames, plus a look at the red-box regions in the weaker top images (#8, #19), would show whether orientation and straightness are the true drivers.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to narrow, upright, straight-edged bars or slender vertical protrusions, especially where they meet a contrasting background. It responds more weakly to small vertically oriented rectangular openings or frames bounded by such straight vertical edges.\",\n \"evidence\": \"Most red boxes sit on a thin vertical stalk or post, or on a tall rectangular frame with crisp parallel vertical sides, usually on smooth manufactured surfaces. The random photos, which show mostly curved, organic, textured content with few straight vertical lines, score only 0–4.\",\n \"missing_data\": \"Synthetic tests with isolated vertical versus horizontal or diagonal bars and frames, plus a look at the red-box regions in the weaker top images (#8, #19), would show whether orientation and straightness are the true drivers.\",\n \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to narrow, upright, straight-edged bars or slender vertical protrusions, especially where they meet a contrasting background. It responds more weakly to small vertically oriented rectangular openings or frames bounded by such straight vertical edges.\",\n \"evidence\": \"Most red boxes sit on a thin vertical stalk or post, or on a tall rectangular frame with crisp parallel vertical sides, usually on smooth manufactured surfaces. The random photos, which show mostly curved, organic, textured content with few straight vertical lines, score only 0–4.\",\n \"missing_data\": \"Synthetic tests with isolated vertical versus horizontal or diagonal bars and frames, plus a look at the red-box regions in the weaker top images (#8, #19), would show whether orientation and straightness are the true drivers.\",\n \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ }
+}
