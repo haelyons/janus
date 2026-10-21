@@ -665,3 +665,31 @@ shown). CP (crops + profile, the default) against CP+A; 3 readings each; judge a
 - 443's T* is rotate_180, not mirror, so the view says nothing about its direction; its direction shows only across
   ordinary dog photos (23B), not in its 200 strongest.
 - CP alone is now strong: 409 at 5.0 in 3 of 3, the shallow units at 4-4.3 (round 21's base was 1.7-2.7).
+
+## Round 24: stratified exemplars and same-label near misses (`tools/rangeview.py`; blind view list ranks 1 and 5)
+
+Default CP plus S (20 photos drawn from four activation ranges below the top) and/or N (for the top photos' 5 most
+common labels, their 2 least-active photos; no label names), 2x2, 3 readings each. `runs/rangeview/`. Mean judge:
+
+    unit      CP    CP+S  CP+N  CP+S+N   direction named (CP / S / N / SN)
+    3a:110    4.0   4.0   4.0   4.0
+    3b:379    4.0   4.0   3.7   4.0
+    4b:237    4.3   5.0   4.7   4.7
+    4b:373    4.3   4.7   4.7   4.7
+    4b:431    2.0   3.0   2.0   2.3     0 / 2 / 0 / 1 of 3
+    4b:443    2.0   2.0   2.0   2.0     0 everywhere
+    4b:429    2.0   2.0   2.0   2.0     0 everywhere
+    4d:409    4.0   4.0   5.0   4.7
+    4e:55     2.0   1.7   1.7   1.7
+    5a:719    1.3   1.3   1.0   1.0
+
+- Held: 2 (409 at 5.0 with N), 4 (car parts >= 4.3 everywhere), 5 (targets <= 2). Failed: 1 (N names no direction
+  for any dog-head unit) and 3 (S leaves 443 at 2.0).
+- N's limit: for a broadly active unit, a label's least-active photos aren't near misses. 431's sit at 17-46% of its
+  maximum. For 409 they are: frontal dogs, silent, which is the contrast that makes pose legible.
+- 443 and 429 read in every condition as "upright, roughly frontal dog faces, eye and upper muzzle". That is what
+  their strongest photos are. Their direction preference (23B, 99th percentile) lives in the middle of the range,
+  across ordinary dog photos, and no view so far shows it; only the blind-label test does. Whether that makes them
+  "oriented dog heads" or "frontal dog-face units with a direction bias" depends on how much of the range a reading
+  is meant to cover.
+- S gives 431 its direction in 2 of 3 ("dogs facing right"), as the affected-vs-spared view did in 3 of 3.

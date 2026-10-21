@@ -1,0 +1,290 @@
+{
+ "CP_s3": {
+  "unit": "mixed4b:429",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dd515ef8c4926d710986fd0e4fc0d19cc8bbb5230bba3a4265bac5dbd5ba7980",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to upright, frontal dog faces, peaking at the eye/muzzle region of a face seen roughly head-on, across many breeds, coat colours and fur textures.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to upright, frontal dog faces, peaking at the eye/muzzle region of a face seen roughly head-on, across many breeds, coat colours and fur textures.",
+   "evidence": "All 20 top photos are dogs, and the crops centre on the eye-nose area of forward-facing faces, while random photos stay at 0-3 (the highest is a furry rabbit). The unit is unusually sensitive to rotate_90/180 (4th/3rd percentile), patch shuffling, edge maps and polarity inversion, which fits a configural, upright face detector rather than a fur-texture detector.",
+   "missing_data": "Activations for cat, fox and other mammal faces and for dog photos without a visible face (dogs seen from behind or in profile) would show whether it is specific to dog faces or responds to generic animal faces.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking at the eye/muzzle region of a face seen roughly head-on, across many breeds, coat colours and fur textures.\",\n \"evidence\": \"All 20 top photos are dogs, and the crops centre on the eye-nose area of forward-facing faces, while random photos stay at 0-3 (the highest is a furry rabbit). The unit is unusually sensitive to rotate_90/180 (4th/3rd percentile), patch shuffling, edge maps and polarity inversion, which fits a configural, upright face detector rather than a fur-texture detector.\",\n \"missing_data\": \"Activations for cat, fox and other mammal faces and for dog photos without a visible face (dogs seen from behind or in profile) would show whether it is specific to dog faces or responds to generic animal faces.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking at the eye/muzzle region of a face seen roughly head-on, across many breeds, coat colours and fur textures.\",\n \"evidence\": \"All 20 top photos are dogs, and the crops centre on the eye-nose area of forward-facing faces, while random photos stay at 0-3 (the highest is a furry rabbit). The unit is unusually sensitive to rotate_90/180 (4th/3rd percentile), patch shuffling, edge maps and polarity inversion, which fits a configural, upright face detector rather than a fur-texture detector.\",\n \"missing_data\": \"Activations for cat, fox and other mammal faces and for dog photos without a visible face (dogs seen from behind or in profile) would show whether it is specific to dog faces or responds to generic animal faces.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4b:429",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dd515ef8c4926d710986fd0e4fc0d19cc8bbb5230bba3a4265bac5dbd5ba7980",
+  "valid": true,
+  "class": "one",
+  "explanation": "Responds to upright, frontal dog faces, peaking around the eye and muzzle region (the eye/nose arrangement of a dog's face) across many breeds and coat colours.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Responds to upright, frontal dog faces, peaking around the eye and muzzle region (the eye/nose arrangement of a dog's face) across many breeds and coat colours.",
+   "evidence": "All 20 top photos are dogs of varied breeds, colours and textures, and every crop centres on the eye-to-nose region of a roughly frontal face; random images score 0-3, the highest being furry rabbits. The unit is unusually sensitive to rotation (90/180), patch shuffling, edge maps and phase scrambling but fairly robust to grayscale and mirroring, which fits a configural, upright face detector rather than a colour or fur-texture detector.",
+   "missing_data": "Activations on non-dog faces (cats, foxes, other mammals, humans) and on dog images without a visible face would show whether the unit is dog-specific or a general mammal-face unit.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"Responds to upright, frontal dog faces, peaking around the eye and muzzle region (the eye/nose arrangement of a dog's face) across many breeds and coat colours.\",\n \"evidence\": \"All 20 top photos are dogs of varied breeds, colours and textures, and every crop centres on the eye-to-nose region of a roughly frontal face; random images score 0-3, the highest being furry rabbits. The unit is unusually sensitive to rotation (90/180), patch shuffling, edge maps and phase scrambling but fairly robust to grayscale and mirroring, which fits a configural, upright face detector rather than a colour or fur-texture detector.\",\n \"missing_data\": \"Activations on non-dog faces (cats, foxes, other mammals, humans) and on dog images without a visible face would show whether the unit is dog-specific or a general mammal-face unit.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"Responds to upright, frontal dog faces, peaking around the eye and muzzle region (the eye/nose arrangement of a dog's face) across many breeds and coat colours.\",\n \"evidence\": \"All 20 top photos are dogs of varied breeds, colours and textures, and every crop centres on the eye-to-nose region of a roughly frontal face; random images score 0-3, the highest being furry rabbits. The unit is unusually sensitive to rotation (90/180), patch shuffling, edge maps and phase scrambling but fairly robust to grayscale and mirroring, which fits a configural, upright face detector rather than a colour or fur-texture detector.\",\n \"missing_data\": \"Activations on non-dog faces (cats, foxes, other mammals, humans) and on dog images without a visible face would show whether the unit is dog-specific or a general mammal-face unit.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4b:429",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dd515ef8c4926d710986fd0e4fc0d19cc8bbb5230bba3a4265bac5dbd5ba7980",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to an upright, frontal dog face, peaking around the eye/muzzle region (eye, nose and snout together). Breed, coat colour and fur texture make little difference.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to an upright, frontal dog face, peaking around the eye/muzzle region (eye, nose and snout together). Breed, coat colour and fur texture make little difference.",
+   "evidence": "All 20 top crops are dog faces seen from the front, across very different breeds, while random photos stay at 0–3 (the highest is a rabbit at 3). Activation drops far more than in most units under rotation (90°/180°, percentiles 3–4), patch shuffling, edge maps and phase scrambling, but holds up under grayscale, which fits an oriented, configural face detector rather than a colour or texture detector.",
+   "missing_data": "Activations on non-dog animal faces (cats, foxes, bears, human faces) and on dog bodies without the face would show whether the unit is dog-specific or a more general mammal-face detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to an upright, frontal dog face, peaking around the eye/muzzle region (eye, nose and snout together). Breed, coat colour and fur texture make little difference.\",\n \"evidence\": \"All 20 top crops are dog faces seen from the front, across very different breeds, while random photos stay at 0–3 (the highest is a rabbit at 3). Activation drops far more than in most units under rotation (90°/180°, percentiles 3–4), patch shuffling, edge maps and phase scrambling, but holds up under grayscale, which fits an oriented, configural face detector rather than a colour or texture detector.\",\n \"missing_data\": \"Activations on non-dog animal faces (cats, foxes, bears, human faces) and on dog bodies without the face would show whether the unit is dog-specific or a more general mammal-face detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to an upright, frontal dog face, peaking around the eye/muzzle region (eye, nose and snout together). Breed, coat colour and fur texture make little difference.\",\n \"evidence\": \"All 20 top crops are dog faces seen from the front, across very different breeds, while random photos stay at 0–3 (the highest is a rabbit at 3). Activation drops far more than in most units under rotation (90°/180°, percentiles 3–4), patch shuffling, edge maps and phase scrambling, but holds up under grayscale, which fits an oriented, configural face detector rather than a colour or texture detector.\",\n \"missing_data\": \"Activations on non-dog animal faces (cats, foxes, bears, human faces) and on dog bodies without the face would show whether the unit is dog-specific or a more general mammal-face detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPS_s3": {
+  "unit": "mixed4b:429",
+  "reading": "CPS_s3",
+  "condition": "CPS",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb66cdb3eafe88b361a982cdfc0d26d2031c1313c68fd8c1294d3791cf601d4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the upright face of a dog, centred on the eye and the area between the eyes and muzzle, across many breeds. It responds more weakly to similar upright animal faces (cheetah, bird head) and barely to human faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the upright face of a dog, centred on the eye and the area between the eyes and muzzle, across many breeds. It responds more weakly to similar upright animal faces (cheetah, bird head) and barely to human faces.",
+   "evidence": "All top 20 crops are frontal, upright dog faces with the box near an eye, and the mid range is mostly dogs plus a cheetah face at 5; random photos score 0-3. The unit is unusually sensitive to rotation (rotate_90/180 keep about 37%, percentile 3-4), patch shuffle, edge map, and phase scramble, which fits a configural, orientation-specific face detector.",
+   "missing_data": "Activations on many non-dog animal faces (cats, foxes, wolves) and on human faces, to tell whether it is specific to dogs or a general mammal-face/eye unit.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright face of a dog, centred on the eye and the area between the eyes and muzzle, across many breeds. It responds more weakly to similar upright animal faces (cheetah, bird head) and barely to human faces.\", \"evidence\": \"All top 20 crops are frontal, upright dog faces with the box near an eye, and the mid range is mostly dogs plus a cheetah face at 5; random photos score 0-3. The unit is unusually sensitive to rotation (rotate_90/180 keep about 37%, percentile 3-4), patch shuffle, edge map, and phase scramble, which fits a configural, orientation-specific face detector.\", \"missing_data\": \"Activations on many non-dog animal faces (cats, foxes, wolves) and on human faces, to tell whether it is specific to dogs or a general mammal-face/eye unit.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright face of a dog, centred on the eye and the area between the eyes and muzzle, across many breeds. It responds more weakly to similar upright animal faces (cheetah, bird head) and barely to human faces.\", \"evidence\": \"All top 20 crops are frontal, upright dog faces with the box near an eye, and the mid range is mostly dogs plus a cheetah face at 5; random photos score 0-3. The unit is unusually sensitive to rotation (rotate_90/180 keep about 37%, percentile 3-4), patch shuffle, edge map, and phase scramble, which fits a configural, orientation-specific face detector.\", \"missing_data\": \"Activations on many non-dog animal faces (cats, foxes, wolves) and on human faces, to tell whether it is specific to dogs or a general mammal-face/eye unit.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPS_s1": {
+  "unit": "mixed4b:429",
+  "reading": "CPS_s1",
+  "condition": "CPS",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb66cdb3eafe88b361a982cdfc0d26d2031c1313c68fd8c1294d3791cf601d4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the upright frontal face of a dog, peaking around the eye and upper-muzzle region next to the eye, across many breeds. It responds more weakly to dog-like faces of other animals such as a cheetah, and barely to human faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the upright frontal face of a dog, peaking around the eye and upper-muzzle region next to the eye, across many breeds. It responds more weakly to dog-like faces of other animals such as a cheetah, and barely to human faces.",
+   "evidence": "All top 20 are frontal dog faces, and the boxes sit on the eye or cheek beside the nose. Random photos score 0-3, mid-range includes a cheetah face (5) and dogs facing away or in poor light, and the unit loses far more than its layer under rotation (4th and 3rd percentile) and patch shuffling, which points to an upright, configured face pattern.",
+   "missing_data": "Activations on frontal faces of other carnivores such as cats, foxes and wolves, and on dog faces seen in profile, would show whether it is dog-specific or a general mammal-face detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright frontal face of a dog, peaking around the eye and upper-muzzle region next to the eye, across many breeds. It responds more weakly to dog-like faces of other animals such as a cheetah, and barely to human faces.\", \"evidence\": \"All top 20 are frontal dog faces, and the boxes sit on the eye or cheek beside the nose. Random photos score 0-3, mid-range includes a cheetah face (5) and dogs facing away or in poor light, and the unit loses far more than its layer under rotation (4th and 3rd percentile) and patch shuffling, which points to an upright, configured face pattern.\", \"missing_data\": \"Activations on frontal faces of other carnivores such as cats, foxes and wolves, and on dog faces seen in profile, would show whether it is dog-specific or a general mammal-face detector.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright frontal face of a dog, peaking around the eye and upper-muzzle region next to the eye, across many breeds. It responds more weakly to dog-like faces of other animals such as a cheetah, and barely to human faces.\", \"evidence\": \"All top 20 are frontal dog faces, and the boxes sit on the eye or cheek beside the nose. Random photos score 0-3, mid-range includes a cheetah face (5) and dogs facing away or in poor light, and the unit loses far more than its layer under rotation (4th and 3rd percentile) and patch shuffling, which points to an upright, configured face pattern.\", \"missing_data\": \"Activations on frontal faces of other carnivores such as cats, foxes and wolves, and on dog faces seen in profile, would show whether it is dog-specific or a general mammal-face detector.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPS_s2": {
+  "unit": "mixed4b:429",
+  "reading": "CPS_s2",
+  "condition": "CPS",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb66cdb3eafe88b361a982cdfc0d26d2031c1313c68fd8c1294d3791cf601d4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the eye region of upright, frontal dog faces, the area between the eye and the muzzle, across many breeds. It responds weakly to similar eye-and-face regions of other furry mammals such as a cheetah or a rabbit, and of humans.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the eye region of upright, frontal dog faces, the area between the eye and the muzzle, across many breeds. It responds weakly to similar eye-and-face regions of other furry mammals such as a cheetah or a rabbit, and of humans.",
+   "evidence": "All 20 top photos are dog faces with the box on or next to an eye, and random photos score near 0 apart from rabbits (3) and a human (2). The intermediate range shows a cheetah face (5) and human faces (3-4), and the unit is unusually sensitive to rotation, patch shuffling, edge maps and polarity inversion, which fits an upright face-configuration detector rather than a texture detector.",
+   "missing_data": "Activations on many non-dog animal faces, such as cats, foxes and wolves, would show whether the unit is dog-specific or a general mammal-face/eye detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the eye region of upright, frontal dog faces, the area between the eye and the muzzle, across many breeds. It responds weakly to similar eye-and-face regions of other furry mammals such as a cheetah or a rabbit, and of humans.\", \"evidence\": \"All 20 top photos are dog faces with the box on or next to an eye, and random photos score near 0 apart from rabbits (3) and a human (2). The intermediate range shows a cheetah face (5) and human faces (3-4), and the unit is unusually sensitive to rotation, patch shuffling, edge maps and polarity inversion, which fits an upright face-configuration detector rather than a texture detector.\", \"missing_data\": \"Activations on many non-dog animal faces, such as cats, foxes and wolves, would show whether the unit is dog-specific or a general mammal-face/eye detector.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the eye region of upright, frontal dog faces, the area between the eye and the muzzle, across many breeds. It responds weakly to similar eye-and-face regions of other furry mammals such as a cheetah or a rabbit, and of humans.\", \"evidence\": \"All 20 top photos are dog faces with the box on or next to an eye, and random photos score near 0 apart from rabbits (3) and a human (2). The intermediate range shows a cheetah face (5) and human faces (3-4), and the unit is unusually sensitive to rotation, patch shuffling, edge maps and polarity inversion, which fits an upright face-configuration detector rather than a texture detector.\", \"missing_data\": \"Activations on many non-dog animal faces, such as cats, foxes and wolves, would show whether the unit is dog-specific or a general mammal-face/eye detector.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPN_s2": {
+  "unit": "mixed4b:429",
+  "reading": "CPN_s2",
+  "condition": "CPN",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "867e4781bab4d6a5ae1bce0582d7280c8a547de6f671f66febbf697f71b99998",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to an upright, frontal dog face (eyes above the muzzle, often small to medium terrier-like or fluffy breeds), with peak activity around the eye and muzzle region.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to an upright, frontal dog face (eyes above the muzzle, often small to medium terrier-like or fluffy breeds), with peak activity around the eye and muzzle region.",
+   "evidence": "All 20 top photos are dogs facing the camera, with the box on the eye and snout area, while random non-dog photos score 0-3. Near misses are dogs that are lying down, upside down, in profile or far away, and the unit is unusually sensitive to rotate_90/180 (percentile 3-4), patch shuffling and edge maps, which fits a configural detector of upright faces.",
+   "missing_data": "Activations on frontal faces of other animals (cats, foxes, bears) and on dog faces that are mildly tilted versus upright would show whether it is dog-specific or a general mammal-face detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to an upright, frontal dog face (eyes above the muzzle, often small to medium terrier-like or fluffy breeds), with peak activity around the eye and muzzle region.\",\n \"evidence\": \"All 20 top photos are dogs facing the camera, with the box on the eye and snout area, while random non-dog photos score 0-3. Near misses are dogs that are lying down, upside down, in profile or far away, and the unit is unusually sensitive to rotate_90/180 (percentile 3-4), patch shuffling and edge maps, which fits a configural detector of upright faces.\",\n \"missing_data\": \"Activations on frontal faces of other animals (cats, foxes, bears) and on dog faces that are mildly tilted versus upright would show whether it is dog-specific or a general mammal-face detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to an upright, frontal dog face (eyes above the muzzle, often small to medium terrier-like or fluffy breeds), with peak activity around the eye and muzzle region.\",\n \"evidence\": \"All 20 top photos are dogs facing the camera, with the box on the eye and snout area, while random non-dog photos score 0-3. Near misses are dogs that are lying down, upside down, in profile or far away, and the unit is unusually sensitive to rotate_90/180 (percentile 3-4), patch shuffling and edge maps, which fits a configural detector of upright faces.\",\n \"missing_data\": \"Activations on frontal faces of other animals (cats, foxes, bears) and on dog faces that are mildly tilted versus upright would show whether it is dog-specific or a general mammal-face detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPN_s3": {
+  "unit": "mixed4b:429",
+  "reading": "CPN_s3",
+  "condition": "CPN",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "867e4781bab4d6a5ae1bce0582d7280c8a547de6f671f66febbf697f71b99998",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to upright, frontal dog faces, peaking on the eye/nose region of the face (particularly near an eye) across many breeds and coat colours.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to upright, frontal dog faces, peaking on the eye/nose region of the face (particularly near an eye) across many breeds and coat colours.",
+   "evidence": "All 20 top photos are dog faces seen roughly head-on with the box on the eye region, while random photos score 0-3 (a rabbit scores 3). Near misses are dogs whose faces are turned away, upside down, tiny or hidden, and the unit is very sensitive to rotation, patch shuffling and edge maps, which points to a configured upright face rather than fur texture.",
+   "missing_data": "Activations on other animals' frontal faces (cats, foxes, bears) would show whether the unit is dog-specific or responds to mammal faces in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking on the eye/nose region of the face (particularly near an eye) across many breeds and coat colours.\",\n \"evidence\": \"All 20 top photos are dog faces seen roughly head-on with the box on the eye region, while random photos score 0-3 (a rabbit scores 3). Near misses are dogs whose faces are turned away, upside down, tiny or hidden, and the unit is very sensitive to rotation, patch shuffling and edge maps, which points to a configured upright face rather than fur texture.\",\n \"missing_data\": \"Activations on other animals' frontal faces (cats, foxes, bears) would show whether the unit is dog-specific or responds to mammal faces in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking on the eye/nose region of the face (particularly near an eye) across many breeds and coat colours.\",\n \"evidence\": \"All 20 top photos are dog faces seen roughly head-on with the box on the eye region, while random photos score 0-3 (a rabbit scores 3). Near misses are dogs whose faces are turned away, upside down, tiny or hidden, and the unit is very sensitive to rotation, patch shuffling and edge maps, which points to a configured upright face rather than fur texture.\",\n \"missing_data\": \"Activations on other animals' frontal faces (cats, foxes, bears) would show whether the unit is dog-specific or responds to mammal faces in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPN_s1": {
+  "unit": "mixed4b:429",
+  "reading": "CPN_s1",
+  "condition": "CPN",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "867e4781bab4d6a5ae1bce0582d7280c8a547de6f671f66febbf697f71b99998",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects upright, front-facing dog faces, firing most strongly on the eye/muzzle region of a canine face seen from the front.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects upright, front-facing dog faces, firing most strongly on the eye/muzzle region of a canine face seen from the front.",
+   "evidence": "All 20 top photos are frontal dog faces of many breeds and colours, with the crops centred on the eye and nose area, while random photos score 0–3 and the near misses are dogs that are inverted, in profile, distant or curled up. Strong losses under rotate_90, rotate_180, patch_shuffle and edge_map (percentiles 3–4) show the unit depends on an upright, assembled face configuration rather than on fur texture or colour.",
+   "missing_data": "Activations on frontal faces of other animals such as cats, foxes and bears, and on human faces, would show whether the unit is dog-specific or a more general frontal mammal-face detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects upright, front-facing dog faces, firing most strongly on the eye/muzzle region of a canine face seen from the front.\",\n \"evidence\": \"All 20 top photos are frontal dog faces of many breeds and colours, with the crops centred on the eye and nose area, while random photos score 0–3 and the near misses are dogs that are inverted, in profile, distant or curled up. Strong losses under rotate_90, rotate_180, patch_shuffle and edge_map (percentiles 3–4) show the unit depends on an upright, assembled face configuration rather than on fur texture or colour.\",\n \"missing_data\": \"Activations on frontal faces of other animals such as cats, foxes and bears, and on human faces, would show whether the unit is dog-specific or a more general frontal mammal-face detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects upright, front-facing dog faces, firing most strongly on the eye/muzzle region of a canine face seen from the front.\",\n \"evidence\": \"All 20 top photos are frontal dog faces of many breeds and colours, with the crops centred on the eye and nose area, while random photos score 0–3 and the near misses are dogs that are inverted, in profile, distant or curled up. Strong losses under rotate_90, rotate_180, patch_shuffle and edge_map (percentiles 3–4) show the unit depends on an upright, assembled face configuration rather than on fur texture or colour.\",\n \"missing_data\": \"Activations on frontal faces of other animals such as cats, foxes and bears, and on human faces, would show whether the unit is dog-specific or a more general frontal mammal-face detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPSN_s1": {
+  "unit": "mixed4b:429",
+  "reading": "CPSN_s1",
+  "condition": "CPSN",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0de0300eb4439369f72a19762cae9c253881c854a4bb9d471f3460be835855c0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to upright, frontal dog faces, with the box most often on the eye/upper-muzzle region beside the nose. It responds more weakly to related animal faces such as a cheetah or fox and to human faces or hair.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to upright, frontal dog faces, with the box most often on the eye/upper-muzzle region beside the nose. It responds more weakly to related animal faces such as a cheetah or fox and to human faces or hair.",
+   "evidence": "All top 20 photos are frontal, upright dog faces across many breeds and coat colours (white, black-and-tan, brown), and the mid-range photos add a cheetah face (5), human faces (3-4) and a bird head (2). Rotating 90° or 180° and shuffling patches cut the response far more than for most units (percentiles 3-4), and dogs that are lying sideways, upside down or seen from behind are near misses (0-3).",
+   "missing_data": "Activations on frontal faces of other animals such as cats, foxes and bears, compared with dog faces, would show whether the unit is dog-specific or tuned to animal faces in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, with the box most often on the eye/upper-muzzle region beside the nose. It responds more weakly to related animal faces such as a cheetah or fox and to human faces or hair.\",\n \"evidence\": \"All top 20 photos are frontal, upright dog faces across many breeds and coat colours (white, black-and-tan, brown), and the mid-range photos add a cheetah face (5), human faces (3-4) and a bird head (2). Rotating 90° or 180° and shuffling patches cut the response far more than for most units (percentiles 3-4), and dogs that are lying sideways, upside down or seen from behind are near misses (0-3).\",\n \"missing_data\": \"Activations on frontal faces of other animals such as cats, foxes and bears, compared with dog faces, would show whether the unit is dog-specific or tuned to animal faces in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, with the box most often on the eye/upper-muzzle region beside the nose. It responds more weakly to related animal faces such as a cheetah or fox and to human faces or hair.\",\n \"evidence\": \"All top 20 photos are frontal, upright dog faces across many breeds and coat colours (white, black-and-tan, brown), and the mid-range photos add a cheetah face (5), human faces (3-4) and a bird head (2). Rotating 90° or 180° and shuffling patches cut the response far more than for most units (percentiles 3-4), and dogs that are lying sideways, upside down or seen from behind are near misses (0-3).\",\n \"missing_data\": \"Activations on frontal faces of other animals such as cats, foxes and bears, compared with dog faces, would show whether the unit is dog-specific or tuned to animal faces in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPSN_s2": {
+  "unit": "mixed4b:429",
+  "reading": "CPSN_s2",
+  "condition": "CPSN",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0de0300eb4439369f72a19762cae9c253881c854a4bb9d471f3460be835855c0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to upright, frontal dog faces, peaking on the eye region beside the muzzle, especially in small and medium fluffy or pointy-eared breeds. It responds more weakly to similar faces of other animals (cheetah, fox) and slightly to human faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to upright, frontal dog faces, peaking on the eye region beside the muzzle, especially in small and medium fluffy or pointy-eared breeds. It responds more weakly to similar faces of other animals (cheetah, fox) and slightly to human faces.",
+   "evidence": "All 20 top photos are upright, front-facing dog faces with the box on the eye and muzzle area, while random photos score 0-3. Rotation, patch shuffling and edge maps drop it far more than most units (percentiles 3-4), and the near misses (upside-down, sleeping or turned-away dogs) score only 1-3.",
+   "missing_data": "Activations on non-dog animal faces shown frontally (cats, foxes, bears) and on isolated dog eyes versus a whole face, to tell a general mammal-face detector from a dog-specific one.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to upright, frontal dog faces, peaking on the eye region beside the muzzle, especially in small and medium fluffy or pointy-eared breeds. It responds more weakly to similar faces of other animals (cheetah, fox) and slightly to human faces.\",\n \"evidence\": \"All 20 top photos are upright, front-facing dog faces with the box on the eye and muzzle area, while random photos score 0-3. Rotation, patch shuffling and edge maps drop it far more than most units (percentiles 3-4), and the near misses (upside-down, sleeping or turned-away dogs) score only 1-3.\",\n \"missing_data\": \"Activations on non-dog animal faces shown frontally (cats, foxes, bears) and on isolated dog eyes versus a whole face, to tell a general mammal-face detector from a dog-specific one.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to upright, frontal dog faces, peaking on the eye region beside the muzzle, especially in small and medium fluffy or pointy-eared breeds. It responds more weakly to similar faces of other animals (cheetah, fox) and slightly to human faces.\",\n \"evidence\": \"All 20 top photos are upright, front-facing dog faces with the box on the eye and muzzle area, while random photos score 0-3. Rotation, patch shuffling and edge maps drop it far more than most units (percentiles 3-4), and the near misses (upside-down, sleeping or turned-away dogs) score only 1-3.\",\n \"missing_data\": \"Activations on non-dog animal faces shown frontally (cats, foxes, bears) and on isolated dog eyes versus a whole face, to tell a general mammal-face detector from a dog-specific one.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPSN_s3": {
+  "unit": "mixed4b:429",
+  "reading": "CPSN_s3",
+  "condition": "CPSN",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0de0300eb4439369f72a19762cae9c253881c854a4bb9d471f3460be835855c0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to upright, frontal dog faces, peaking on the region around the eye and muzzle of small and medium dogs such as terriers, corgis and toy breeds. It responds more weakly to similar faces of other mammals, such as a cheetah, a dingo and a rabbit, and only faintly to human faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to upright, frontal dog faces, peaking on the region around the eye and muzzle of small and medium dogs such as terriers, corgis and toy breeds. It responds more weakly to similar faces of other mammals, such as a cheetah, a dingo and a rabbit, and only faintly to human faces.",
+   "evidence": "All 20 top photos are dog faces with the box on the eye/cheek, while random photos score 0-3. Sideways or upside-down dogs score only 1-3, which matches the very strong losses under rotate_90 and rotate_180 (percentile 3-4) and the collapse under edge_map, phase scramble and patch shuffle.",
+   "missing_data": "Activations on non-dog animal faces shown frontally and upright, such as cats, foxes and bears, to tell whether the unit is specific to dogs or responds to mammal faces in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking on the region around the eye and muzzle of small and medium dogs such as terriers, corgis and toy breeds. It responds more weakly to similar faces of other mammals, such as a cheetah, a dingo and a rabbit, and only faintly to human faces.\",\n \"evidence\": \"All 20 top photos are dog faces with the box on the eye/cheek, while random photos score 0-3. Sideways or upside-down dogs score only 1-3, which matches the very strong losses under rotate_90 and rotate_180 (percentile 3-4) and the collapse under edge_map, phase scramble and patch shuffle.\",\n \"missing_data\": \"Activations on non-dog animal faces shown frontally and upright, such as cats, foxes and bears, to tell whether the unit is specific to dogs or responds to mammal faces in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to upright, frontal dog faces, peaking on the region around the eye and muzzle of small and medium dogs such as terriers, corgis and toy breeds. It responds more weakly to similar faces of other mammals, such as a cheetah, a dingo and a rabbit, and only faintly to human faces.\",\n \"evidence\": \"All 20 top photos are dog faces with the box on the eye/cheek, while random photos score 0-3. Sideways or upside-down dogs score only 1-3, which matches the very strong losses under rotate_90 and rotate_180 (percentile 3-4) and the collapse under edge_map, phase scramble and patch shuffle.\",\n \"missing_data\": \"Activations on non-dog animal faces shown frontally and upright, such as cats, foxes and bears, to tell whether the unit is specific to dogs or responds to mammal faces in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ }
+}
