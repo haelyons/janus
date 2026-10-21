@@ -483,3 +483,27 @@ flames. Then round 15's blind picker (6 fire, 6 near misses, 3 samples). fire_hi
   point for the essay; fireboats and flames are not, and round cat faces fire.
 - Q0 on 409 said "two separate categories" this time (round 14: 3/3 one). F1 named the side view on 409 and a
   face pattern on 55; it found a pattern on every unit, including the planted pairs.
+
+## Round 19: predicted activation on the whole pool (`tools/simulate.py`, claim-blind author)
+
+`runs/simulate/report.txt`. Same readings and round-18 pools. A blind agent sees one reading and the sheet and
+predicts the unit's activation (0-10) on all 48 photos, 3 samples; score = Spearman rho with the recorded activation.
+Consistency between samples is 0.93-1.00 everywhere.
+
+    unit             noun   Q0     F1     wrong   extra
+    409 pose         0.63   0.61   0.66   -0.47   pose 0.65; noun_only 0.55 (post hoc)
+    447 car          0.90   0.89   0.87   -0.81
+    planted 809+804  0.79   0.78   0.19   -0.41
+    planted 703+315  0.77   0.69   0.60   -0.61
+    4e:55            0.47   0.46   0.40   -0.29   V 0.20, or 0.48
+
+- Prediction 2 held on both planted pairs: forced unity loses by 0.60 and 0.17. This fixes round 18's failure: the
+  half-right reading of 703+315 is charged for the firing photos it rates low. 3 held (447). 4 held (wrong lowest
+  and negative in 5 of 5). 1 failed: pose 0.65 against noun 0.63. So validation failed again, on 409 only.
+- Why 1 failed: every sealed 409 reading names the side view, the bare one included ("the only plausible shared
+  factor is a side-profile view"). Post hoc, round 15's pure-noun reading ("dogs, and separately cars") scores 0.55,
+  0.10 below pose. The pool is drawn by class, so it has few same-class contrasts (frontal against side-on dogs) for
+  pose to win on.
+- 4e:55 (prior held): faces, Q0 and cats-or-cars 0.46-0.48; the face pattern without nouns 0.40; V 0.20, top12 at
+  chance (0.25). V is the lowest reading of a real unit on every scorer so far (rounds 15, 18, 19).
+- Of the scorers tried, this is the only one that ranks partly right readings and passes both planted controls.

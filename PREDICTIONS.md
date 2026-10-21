@@ -340,3 +340,17 @@ Validation (whether the 55 ranking is read at all; needs 1, 2 and 4):
 4. wrong has the lowest fire_hit of its unit in at least 4 of 5 units.
 5. Class AUC of noun at least 0.7 on 447 and both planted units.
 6. 4e:55: reported, not predicted. Prior: face and or above V on fire_hit; V's near_ok high (round 15).
+
+# Round 19: predicted activation on the whole pool (tools/simulate.py, claim-blind author)
+(sealed 2026-10-21, before simulate.py exists; same units, readings, pools and sheets as round 18)
+
+A blind agent sees one reading and the round-18 sheet and predicts the unit's activation (0-10) on all 48 photos,
+3 samples per reading. Score: Spearman rho between predictions and the unit's ratio over the 48. Unlike six picks,
+this charges a half-right reading for the firing photos it rates low.
+
+Validation (needs 1, 2 and 4):
+1. 4d:409: pose rho above noun rho by at least 0.10.
+2. Both planted units: noun rho above F1 rho by at least 0.10.
+3. 4c:447: noun and Q0 rho at least 0.5, within 0.10 of each other.
+4. wrong has the lowest rho of its unit in at least 4 of 5 units, and is at most 0.2 in each.
+5. 4e:55: reported. Prior: V's rho below face (noun), Q0 and or.
