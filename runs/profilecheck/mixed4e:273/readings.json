@@ -1,0 +1,146 @@
+{
+ "base_s2": {
+  "unit": "mixed4e:273",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "20f146aa28958a16c87e0d60f2c0048b5581f04198e4cbbd726b10f1628b539d",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) set in a dark or contrasting face patch, and small high-contrast markings such as numerals, tick marks and keys on gauges, clocks, watches, keypads, keyboards and crosswords.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) set in a dark or contrasting face patch, and small high-contrast markings such as numerals, tick marks and keys on gauges, clocks, watches, keypads, keyboards and crosswords.",
+   "evidence": "Four of the top 20 are primate faces with the box on the eyes (#1, #7, #11, #13). Most of the rest box numerals, ticks or keys on dials, displays and keyboards (#2–6, #10, #12, #14–16, #20), and random photos stay low (1–5), apart from a lemur at 4 and a grid of shopping carts at 5.",
+   "missing_data": "Activations on isolated primate eyes and on isolated dial or text patches, or on other repeated small-mark textures, would show whether both reduce to a single small high-contrast pattern detector.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) set in a dark or contrasting face patch, and small high-contrast markings such as numerals, tick marks and keys on gauges, clocks, watches, keypads, keyboards and crosswords.\", \"evidence\": \"Four of the top 20 are primate faces with the box on the eyes (#1, #7, #11, #13). Most of the rest box numerals, ticks or keys on dials, displays and keyboards (#2–6, #10, #12, #14–16, #20), and random photos stay low (1–5), apart from a lemur at 4 and a grid of shopping carts at 5.\", \"missing_data\": \"Activations on isolated primate eyes and on isolated dial or text patches, or on other repeated small-mark textures, would show whether both reduce to a single small high-contrast pattern detector.\", \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) set in a dark or contrasting face patch, and small high-contrast markings such as numerals, tick marks and keys on gauges, clocks, watches, keypads, keyboards and crosswords.\", \"evidence\": \"Four of the top 20 are primate faces with the box on the eyes (#1, #7, #11, #13). Most of the rest box numerals, ticks or keys on dials, displays and keyboards (#2–6, #10, #12, #14–16, #20), and random photos stay low (1–5), apart from a lemur at 4 and a grid of shopping carts at 5.\", \"missing_data\": \"Activations on isolated primate eyes and on isolated dial or text patches, or on other repeated small-mark textures, would show whether both reduce to a single small high-contrast pattern detector.\", \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4e:273",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "20f146aa28958a16c87e0d60f2c0048b5581f04198e4cbbd726b10f1628b539d",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit appears to respond to two separate things: the eye region of primate faces (gibbons, lemurs, monkeys), and instrument faces or grids covered in small repeated markings (gauges, clocks, stopwatches, keypads, crosswords, digital displays).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit appears to respond to two separate things: the eye region of primate faces (gibbons, lemurs, monkeys), and instrument faces or grids covered in small repeated markings (gauges, clocks, stopwatches, keypads, crosswords, digital displays).",
+   "evidence": "The strongest example (#1) and #7, #11 and #13 box a primate's eye, while #2–6, #10, #12 and #14–20 box dial numerals, keys or grid cells. The pin-up and band photos (#8, #9) box only background corners, and random photos reach 3–5 (lemur 4, shopping carts 5), so the unit is not very selective.",
+   "missing_data": "Activations on non-primate animal faces, and on isolated eyes compared with plain textures of small repeated markings, to test whether a shared ring-shaped or fine-pattern feature links the two groups.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit appears to respond to two separate things: the eye region of primate faces (gibbons, lemurs, monkeys), and instrument faces or grids covered in small repeated markings (gauges, clocks, stopwatches, keypads, crosswords, digital displays).\", \"evidence\": \"The strongest example (#1) and #7, #11 and #13 box a primate's eye, while #2–6, #10, #12 and #14–20 box dial numerals, keys or grid cells. The pin-up and band photos (#8, #9) box only background corners, and random photos reach 3–5 (lemur 4, shopping carts 5), so the unit is not very selective.\", \"missing_data\": \"Activations on non-primate animal faces, and on isolated eyes compared with plain textures of small repeated markings, to test whether a shared ring-shaped or fine-pattern feature links the two groups.\", \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit appears to respond to two separate things: the eye region of primate faces (gibbons, lemurs, monkeys), and instrument faces or grids covered in small repeated markings (gauges, clocks, stopwatches, keypads, crosswords, digital displays).\", \"evidence\": \"The strongest example (#1) and #7, #11 and #13 box a primate's eye, while #2–6, #10, #12 and #14–20 box dial numerals, keys or grid cells. The pin-up and band photos (#8, #9) box only background corners, and random photos reach 3–5 (lemur 4, shopping carts 5), so the unit is not very selective.\", \"missing_data\": \"Activations on non-primate animal faces, and on isolated eyes compared with plain textures of small repeated markings, to test whether a shared ring-shaped or fine-pattern feature links the two groups.\", \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4e:273",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b56204abe5e38a6afdfc0ef338634cc27d30f4036010296c11a49dd5b8229b97",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to dense, fine-scale, high-contrast small markings such as dial ticks and numerals, digits, grid cells and keys on gauges, clocks, watches, crosswords and keypads. It extends more weakly to similar fine high-contrast texture, including the dark eye region framed by fur on primate faces and grid-like lights or vents.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to dense, fine-scale, high-contrast small markings such as dial ticks and numerals, digits, grid cells and keys on gauges, clocks, watches, crosswords and keypads. It extends more weakly to similar fine high-contrast texture, including the dark eye region framed by fur on primate faces and grid-like lights or vents.",
+   "evidence": "Most top photos have the box on gauge, clock or watch numerals, crossword cells, keypads or light arrays, and the random wire-cart image also scores 5. The unit is unusually robust to phase scrambling (35% kept, percentile 97), high-pass filtering and grayscale, which fits a colourless, texture-like, high-frequency feature rather than an object detector.",
+   "missing_data": "Activation maps or feature visualizations showing whether primate faces drive the unit through their eyes and face or through fine fur texture, plus tests on isolated text or tick patterns versus eyes.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to dense, fine-scale, high-contrast small markings such as dial ticks and numerals, digits, grid cells and keys on gauges, clocks, watches, crosswords and keypads. It extends more weakly to similar fine high-contrast texture, including the dark eye region framed by fur on primate faces and grid-like lights or vents.\", \"evidence\": \"Most top photos have the box on gauge, clock or watch numerals, crossword cells, keypads or light arrays, and the random wire-cart image also scores 5. The unit is unusually robust to phase scrambling (35% kept, percentile 97), high-pass filtering and grayscale, which fits a colourless, texture-like, high-frequency feature rather than an object detector.\", \"missing_data\": \"Activation maps or feature visualizations showing whether primate faces drive the unit through their eyes and face or through fine fur texture, plus tests on isolated text or tick patterns versus eyes.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to dense, fine-scale, high-contrast small markings such as dial ticks and numerals, digits, grid cells and keys on gauges, clocks, watches, crosswords and keypads. It extends more weakly to similar fine high-contrast texture, including the dark eye region framed by fur on primate faces and grid-like lights or vents.\", \"evidence\": \"Most top photos have the box on gauge, clock or watch numerals, crossword cells, keypads or light arrays, and the random wire-cart image also scores 5. The unit is unusually robust to phase scrambling (35% kept, percentile 97), high-pass filtering and grayscale, which fits a colourless, texture-like, high-frequency feature rather than an object detector.\", \"missing_data\": \"Activation maps or feature visualizations showing whether primate faces drive the unit through their eyes and face or through fine fur texture, plus tests on isolated text or tick patterns versus eyes.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4e:273",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b56204abe5e38a6afdfc0ef338634cc27d30f4036010296c11a49dd5b8229b97",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to fine, dense, high-contrast markings such as dial tick marks and numerals, digit displays, keypad and keyboard keys, and crossword grids. It also responds strongly to the dark eye region set in a ring of light fur on primate faces (gibbons, lemurs, monkeys), which may share the small-dark-element, dial-like, fine-texture statistics.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to fine, dense, high-contrast markings such as dial tick marks and numerals, digit displays, keypad and keyboard keys, and crossword grids. It also responds strongly to the dark eye region set in a ring of light fur on primate faces (gibbons, lemurs, monkeys), which may share the small-dark-element, dial-like, fine-texture statistics.",
+   "evidence": "Most of the top 20 are gauges, watches, clocks, keypads, displays and grids, but three of the top 13, including #1, are primate eye regions. The unit is unusually robust to phase scrambling (35% kept vs 5% layer median, percentile 97), to high-pass filtering and to grayscale, which points to an achromatic, high-frequency texture code rather than object shape.",
+   "missing_data": "Activations on isolated text and numerals versus primate faces with the fur texture removed, plus more random and mid-range examples, to tell whether the eye responses share a mechanism with the dial and marking responses or form a separate feature.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, dense, high-contrast markings such as dial tick marks and numerals, digit displays, keypad and keyboard keys, and crossword grids. It also responds strongly to the dark eye region set in a ring of light fur on primate faces (gibbons, lemurs, monkeys), which may share the small-dark-element, dial-like, fine-texture statistics.\",\n \"evidence\": \"Most of the top 20 are gauges, watches, clocks, keypads, displays and grids, but three of the top 13, including #1, are primate eye regions. The unit is unusually robust to phase scrambling (35% kept vs 5% layer median, percentile 97), to high-pass filtering and to grayscale, which points to an achromatic, high-frequency texture code rather than object shape.\",\n \"missing_data\": \"Activations on isolated text and numerals versus primate faces with the fur texture removed, plus more random and mid-range examples, to tell whether the eye responses share a mechanism with the dial and marking responses or form a separate feature.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, dense, high-contrast markings such as dial tick marks and numerals, digit displays, keypad and keyboard keys, and crossword grids. It also responds strongly to the dark eye region set in a ring of light fur on primate faces (gibbons, lemurs, monkeys), which may share the small-dark-element, dial-like, fine-texture statistics.\",\n \"evidence\": \"Most of the top 20 are gauges, watches, clocks, keypads, displays and grids, but three of the top 13, including #1, are primate eye regions. The unit is unusually robust to phase scrambling (35% kept vs 5% layer median, percentile 97), to high-pass filtering and to grayscale, which points to an achromatic, high-frequency texture code rather than object shape.\",\n \"missing_data\": \"Activations on isolated text and numerals versus primate faces with the fur texture removed, plus more random and mid-range examples, to tell whether the eye responses share a mechanism with the dial and marking responses or form a separate feature.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4e:273",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "20f146aa28958a16c87e0d60f2c0048b5581f04198e4cbbd726b10f1628b539d",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) and fine arrays of small numerals or tick marks on dials, gauges, clocks, keypads, crosswords and digital displays.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) and fine arrays of small numerals or tick marks on dials, gauges, clocks, keypads, crosswords and digital displays.",
+   "evidence": "The top image, a gibbon's eye (10), and three other primate eye crops (7 each) sit alongside about 12 crops of speedometers, stopwatches, clock digits, keypads and crossword letters (6–9). A few top crops fit neither theme, such as the empty corners in #8 and #9 and the stadium lights in #19, and the random images still reach 3–5 (cart grid 5, lemur 4), so the unit isn't very selective.",
+   "missing_data": "Activations on isolated primate eyes versus non-primate eyes, and on plain dials with no numerals versus text grids, would show whether one shared feature (such as a small dark round spot inside a ring with fine detail) explains both groups.",
+   "confidence": 0.45
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) and fine arrays of small numerals or tick marks on dials, gauges, clocks, keypads, crosswords and digital displays.\", \"evidence\": \"The top image, a gibbon's eye (10), and three other primate eye crops (7 each) sit alongside about 12 crops of speedometers, stopwatches, clock digits, keypads and crossword letters (6–9). A few top crops fit neither theme, such as the empty corners in #8 and #9 and the stadium lights in #19, and the random images still reach 3–5 (cart grid 5, lemur 4), so the unit isn't very selective.\", \"missing_data\": \"Activations on isolated primate eyes versus non-primate eyes, and on plain dials with no numerals versus text grids, would show whether one shared feature (such as a small dark round spot inside a ring with fine detail) explains both groups.\", \"confidence\": 0.45}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit responds to two separate things: the eye region of primate faces (gibbons, lemurs, colobus) and fine arrays of small numerals or tick marks on dials, gauges, clocks, keypads, crosswords and digital displays.\", \"evidence\": \"The top image, a gibbon's eye (10), and three other primate eye crops (7 each) sit alongside about 12 crops of speedometers, stopwatches, clock digits, keypads and crossword letters (6–9). A few top crops fit neither theme, such as the empty corners in #8 and #9 and the stadium lights in #19, and the random images still reach 3–5 (cart grid 5, lemur 4), so the unit isn't very selective.\", \"missing_data\": \"Activations on isolated primate eyes versus non-primate eyes, and on plain dials with no numerals versus text grids, would show whether one shared feature (such as a small dark round spot inside a ring with fine detail) explains both groups.\", \"confidence\": 0.45}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4e:273",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b56204abe5e38a6afdfc0ef338634cc27d30f4036010296c11a49dd5b8229b97",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dense, fine-grained, high-contrast small markings regardless of colour: dial tick marks and numerals on gauges, watches and stopwatches, digit displays, keypads, crossword grids and arrays of lamps. A related but distinct extension is the dark eye region of primate and lemur faces, which is in fact the single strongest activation.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dense, fine-grained, high-contrast small markings regardless of colour: dial tick marks and numerals on gauges, watches and stopwatches, digit displays, keypads, crossword grids and arrays of lamps. A related but distinct extension is the dark eye region of primate and lemur faces, which is in fact the single strongest activation.",
+   "evidence": "Most top images box the numeral/tick ring of dials or grids of small characters or keys, and the unit is highly robust to grayscale (99th percentile), high-pass filtering and phase scrambling (97th percentile), which fits a fine-texture or small-mark detector. Random images with similar fine repetitive structure (shopping-cart wires, lemur) give mid-level activations.",
+   "missing_data": "Activations on isolated primate eyes versus dial faces with the numerals removed, plus synthetic fine-grid or digit textures, would show whether the eye response is the same texture feature or a separate selectivity.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dense, fine-grained, high-contrast small markings regardless of colour: dial tick marks and numerals on gauges, watches and stopwatches, digit displays, keypads, crossword grids and arrays of lamps. A related but distinct extension is the dark eye region of primate and lemur faces, which is in fact the single strongest activation.\",\n \"evidence\": \"Most top images box the numeral/tick ring of dials or grids of small characters or keys, and the unit is highly robust to grayscale (99th percentile), high-pass filtering and phase scrambling (97th percentile), which fits a fine-texture or small-mark detector. Random images with similar fine repetitive structure (shopping-cart wires, lemur) give mid-level activations.\",\n \"missing_data\": \"Activations on isolated primate eyes versus dial faces with the numerals removed, plus synthetic fine-grid or digit textures, would show whether the eye response is the same texture feature or a separate selectivity.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dense, fine-grained, high-contrast small markings regardless of colour: dial tick marks and numerals on gauges, watches and stopwatches, digit displays, keypads, crossword grids and arrays of lamps. A related but distinct extension is the dark eye region of primate and lemur faces, which is in fact the single strongest activation.\",\n \"evidence\": \"Most top images box the numeral/tick ring of dials or grids of small characters or keys, and the unit is highly robust to grayscale (99th percentile), high-pass filtering and phase scrambling (97th percentile), which fits a fine-texture or small-mark detector. Random images with similar fine repetitive structure (shopping-cart wires, lemur) give mid-level activations.\",\n \"missing_data\": \"Activations on isolated primate eyes versus dial faces with the numerals removed, plus synthetic fine-grid or digit textures, would show whether the eye response is the same texture feature or a separate selectivity.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ }
+}

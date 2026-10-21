@@ -1,0 +1,146 @@
+{
+ "P_s2": {
+  "unit": "mixed4b:135",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6a92e07e0599dab522f6c4ca772ff4b4e7e770490e04ec25e93afc898e6a0ce9",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects small dark dots on a lighter surface: dark eyes and noses on pale faces (dogs, toys, dolls, Danbo boxes, polar bear), ladybird spots, holes in ocarinas, pegboard and drilled brake discs, and speckles on fruit or butterfly wings. Its core is likely 'pair or cluster of small dark spots', with facial eyes/nose as the most frequent case.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects small dark dots on a lighter surface: dark eyes and noses on pale faces (dogs, toys, dolls, Danbo boxes, polar bear), ladybird spots, holes in ocarinas, pegboard and drilled brake discs, and speckles on fruit or butterfly wings. Its core is likely 'pair or cluster of small dark spots', with facial eyes/nose as the most frequent case.",
+   "evidence": "Red boxes sit on dot-like features across unrelated object categories, such as perforated metal, ladybirds and face eyes. The unit is very sensitive to low-pass (keeps 15%, percentile 5) and to luminance polarity inversion (keeps 50%, percentile 5), which fits small, high-frequency dark-on-light blobs, and it is robust to grayscale, rotation and patch shuffling.",
+   "missing_data": "Synthetic stimuli would help most: dark dots on light backgrounds compared with light dots on dark backgrounds, at different dot sizes and spacings, to test whether faces add anything beyond the dot pattern.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small dark dots on a lighter surface: dark eyes and noses on pale faces (dogs, toys, dolls, Danbo boxes, polar bear), ladybird spots, holes in ocarinas, pegboard and drilled brake discs, and speckles on fruit or butterfly wings. Its core is likely 'pair or cluster of small dark spots', with facial eyes/nose as the most frequent case.\",\n \"evidence\": \"Red boxes sit on dot-like features across unrelated object categories, such as perforated metal, ladybirds and face eyes. The unit is very sensitive to low-pass (keeps 15%, percentile 5) and to luminance polarity inversion (keeps 50%, percentile 5), which fits small, high-frequency dark-on-light blobs, and it is robust to grayscale, rotation and patch shuffling.\",\n \"missing_data\": \"Synthetic stimuli would help most: dark dots on light backgrounds compared with light dots on dark backgrounds, at different dot sizes and spacings, to test whether faces add anything beyond the dot pattern.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small dark dots on a lighter surface: dark eyes and noses on pale faces (dogs, toys, dolls, Danbo boxes, polar bear), ladybird spots, holes in ocarinas, pegboard and drilled brake discs, and speckles on fruit or butterfly wings. Its core is likely 'pair or cluster of small dark spots', with facial eyes/nose as the most frequent case.\",\n \"evidence\": \"Red boxes sit on dot-like features across unrelated object categories, such as perforated metal, ladybirds and face eyes. The unit is very sensitive to low-pass (keeps 15%, percentile 5) and to luminance polarity inversion (keeps 50%, percentile 5), which fits small, high-frequency dark-on-light blobs, and it is robust to grayscale, rotation and patch shuffling.\",\n \"missing_data\": \"Synthetic stimuli would help most: dark dots on light backgrounds compared with light dots on dark backgrounds, at different dot sizes and spacings, to test whether faces add anything beyond the dot pattern.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4b:135",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6a92e07e0599dab522f6c4ca772ff4b4e7e770490e04ec25e93afc898e6a0ce9",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects small dark dots or holes on a lighter surface, often in small clusters, such as ladybug spots, ocarina finger holes, pegboard and brake-disc perforations, seed dots on fruit, and the dark eyes and nose of dogs, dolls and cardboard figures.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects small dark dots or holes on a lighter surface, often in small clusters, such as ladybug spots, ocarina finger holes, pegboard and brake-disc perforations, seed dots on fruit, and the dark eyes and nose of dogs, dolls and cardboard figures.",
+   "evidence": "Nearly every red box in the top 20 sits on a group of small dark spots, and the random photos stay low. Low-pass filtering removes most of the response (keeps 15%, 5th percentile) and inverting luminance polarity halves it (5th percentile), which fits a small, fine-scale, dark-on-light dot detector that does not depend on colour, orientation or global layout.",
+   "missing_data": "Synthetic tests with dark-dot versus light-dot patterns at different sizes and spacings, plus faces with and without visible eyes and nose, to tell whether faces matter beyond being dot patterns.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects small dark dots or holes on a lighter surface, often in small clusters, such as ladybug spots, ocarina finger holes, pegboard and brake-disc perforations, seed dots on fruit, and the dark eyes and nose of dogs, dolls and cardboard figures.\",\n \"evidence\": \"Nearly every red box in the top 20 sits on a group of small dark spots, and the random photos stay low. Low-pass filtering removes most of the response (keeps 15%, 5th percentile) and inverting luminance polarity halves it (5th percentile), which fits a small, fine-scale, dark-on-light dot detector that does not depend on colour, orientation or global layout.\",\n \"missing_data\": \"Synthetic tests with dark-dot versus light-dot patterns at different sizes and spacings, plus faces with and without visible eyes and nose, to tell whether faces matter beyond being dot patterns.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects small dark dots or holes on a lighter surface, often in small clusters, such as ladybug spots, ocarina finger holes, pegboard and brake-disc perforations, seed dots on fruit, and the dark eyes and nose of dogs, dolls and cardboard figures.\",\n \"evidence\": \"Nearly every red box in the top 20 sits on a group of small dark spots, and the random photos stay low. Low-pass filtering removes most of the response (keeps 15%, 5th percentile) and inverting luminance polarity halves it (5th percentile), which fits a small, fine-scale, dark-on-light dot detector that does not depend on colour, orientation or global layout.\",\n \"missing_data\": \"Synthetic tests with dark-dot versus light-dot patterns at different sizes and spacings, plus faces with and without visible eyes and nose, to tell whether faces matter beyond being dot patterns.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4b:135",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0beb10df0421b8a335afdaa4f5a57d824e825e478754a003ae83eadf326df615",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to small, dark, roughly round dots or holes scattered on a lighter surface. This includes face-like arrangements of two eyes and a nose or mouth.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to small, dark, roughly round dots or holes scattered on a lighter surface. This includes face-like arrangements of two eyes and a nose or mouth.",
+   "evidence": "Top examples include ocarina holes, ladybug spots, pegboard holes, drilled brake-rotor holes, speckled lemon cucumbers, the lobster toy's perforations and butterfly wing spots, alongside light-colored faces with dark eyes and nose (Danbo, borzoi, teddy bear, polar bear, doll, dogs). The random photos mostly lack this pattern and score low (1-5).",
+   "missing_data": "Synthetic tests would most change the answer: dot grids with and without face-like arrangement, and faces without high contrast. These would show whether faces are just an instance of the dot pattern or a separate preference.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to small, dark, roughly round dots or holes scattered on a lighter surface. This includes face-like arrangements of two eyes and a nose or mouth.\", \"evidence\": \"Top examples include ocarina holes, ladybug spots, pegboard holes, drilled brake-rotor holes, speckled lemon cucumbers, the lobster toy's perforations and butterfly wing spots, alongside light-colored faces with dark eyes and nose (Danbo, borzoi, teddy bear, polar bear, doll, dogs). The random photos mostly lack this pattern and score low (1-5).\", \"missing_data\": \"Synthetic tests would most change the answer: dot grids with and without face-like arrangement, and faces without high contrast. These would show whether faces are just an instance of the dot pattern or a separate preference.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to small, dark, roughly round dots or holes scattered on a lighter surface. This includes face-like arrangements of two eyes and a nose or mouth.\", \"evidence\": \"Top examples include ocarina holes, ladybug spots, pegboard holes, drilled brake-rotor holes, speckled lemon cucumbers, the lobster toy's perforations and butterfly wing spots, alongside light-colored faces with dark eyes and nose (Danbo, borzoi, teddy bear, polar bear, doll, dogs). The random photos mostly lack this pattern and score low (1-5).\", \"missing_data\": \"Synthetic tests would most change the answer: dot grids with and without face-like arrangement, and faces without high contrast. These would show whether faces are just an instance of the dot pattern or a separate preference.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4b:135",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0beb10df0421b8a335afdaa4f5a57d824e825e478754a003ae83eadf326df615",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to small dark round dots in a light surface, especially small groups of two or three arranged like eyes. Its strongest responses are to dot patterns such as ladybug spots, ocarina holes and drilled holes, and it extends to actual eyes and noses on dogs, bears, dolls and Danbo boxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to small dark round dots in a light surface, especially small groups of two or three arranged like eyes. Its strongest responses are to dot patterns such as ladybug spots, ocarina holes and drilled holes, and it extends to actual eyes and noses on dogs, bears, dolls and Danbo boxes.",
+   "evidence": "The red boxes repeatedly land on dark dot clusters: ladybug spots, ocarina finger holes, pegboard holes, brake-rotor holes, the lobster toy's dots, lemon specks and wheel bolts. They also land on eye-and-nose triplets in faces (#1, #3, #4, #6, #13, #17, #20), while random images with few such dots stay low (1-5).",
+   "missing_data": "Synthetic tests separating isolated dots from eye-like dot triplets, and real faces versus dot patterns without a face, would show whether eyes or generic dots are the main driver.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small dark round dots in a light surface, especially small groups of two or three arranged like eyes. Its strongest responses are to dot patterns such as ladybug spots, ocarina holes and drilled holes, and it extends to actual eyes and noses on dogs, bears, dolls and Danbo boxes.\",\n \"evidence\": \"The red boxes repeatedly land on dark dot clusters: ladybug spots, ocarina finger holes, pegboard holes, brake-rotor holes, the lobster toy's dots, lemon specks and wheel bolts. They also land on eye-and-nose triplets in faces (#1, #3, #4, #6, #13, #17, #20), while random images with few such dots stay low (1-5).\",\n \"missing_data\": \"Synthetic tests separating isolated dots from eye-like dot triplets, and real faces versus dot patterns without a face, would show whether eyes or generic dots are the main driver.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small dark round dots in a light surface, especially small groups of two or three arranged like eyes. Its strongest responses are to dot patterns such as ladybug spots, ocarina holes and drilled holes, and it extends to actual eyes and noses on dogs, bears, dolls and Danbo boxes.\",\n \"evidence\": \"The red boxes repeatedly land on dark dot clusters: ladybug spots, ocarina finger holes, pegboard holes, brake-rotor holes, the lobster toy's dots, lemon specks and wheel bolts. They also land on eye-and-nose triplets in faces (#1, #3, #4, #6, #13, #17, #20), while random images with few such dots stay low (1-5).\",\n \"missing_data\": \"Synthetic tests separating isolated dots from eye-like dot triplets, and real faces versus dot patterns without a face, would show whether eyes or generic dots are the main driver.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4b:135",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6a92e07e0599dab522f6c4ca772ff4b4e7e770490e04ec25e93afc898e6a0ce9",
+  "valid": true,
+  "class": "one",
+  "explanation": "Detects small, dark, roughly circular dots or holes on a lighter surface, often in clusters or pairs: ladybug spots, ocarina finger holes, drilled holes in a brake rotor, pegboard holes, speckles on lemon cucumbers, and the dark eyes and nose on light-furred faces (dogs, polar bear, doll, Danbo box faces).",
+  "parsed": {
+   "class": "one",
+   "explanation": "Detects small, dark, roughly circular dots or holes on a lighter surface, often in clusters or pairs: ladybug spots, ocarina finger holes, drilled holes in a brake rotor, pegboard holes, speckles on lemon cucumbers, and the dark eyes and nose on light-furred faces (dogs, polar bear, doll, Danbo box faces).",
+   "evidence": "Across very different object categories, the red boxes in the top 20 consistently sit on dark dots set in a light region. The transformation results fit a fine-scale, dark-on-light feature: low-pass filtering destroys the response (5th percentile), inverting luminance polarity halves it (5th percentile), while grayscale, rotation and patch shuffling barely matter.",
+   "missing_data": "Synthetic tests comparing dark dots on light backgrounds with light dots on dark backgrounds, across a range of dot sizes and spacings, would confirm the polarity and scale tuning and show whether the face responses are only the dot feature.",
+   "confidence": 0.8
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Detects small, dark, roughly circular dots or holes on a lighter surface, often in clusters or pairs: ladybug spots, ocarina finger holes, drilled holes in a brake rotor, pegboard holes, speckles on lemon cucumbers, and the dark eyes and nose on light-furred faces (dogs, polar bear, doll, Danbo box faces).\",\n \"evidence\": \"Across very different object categories, the red boxes in the top 20 consistently sit on dark dots set in a light region. The transformation results fit a fine-scale, dark-on-light feature: low-pass filtering destroys the response (5th percentile), inverting luminance polarity halves it (5th percentile), while grayscale, rotation and patch shuffling barely matter.\",\n \"missing_data\": \"Synthetic tests comparing dark dots on light backgrounds with light dots on dark backgrounds, across a range of dot sizes and spacings, would confirm the polarity and scale tuning and show whether the face responses are only the dot feature.\",\n \"confidence\": 0.8}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Detects small, dark, roughly circular dots or holes on a lighter surface, often in clusters or pairs: ladybug spots, ocarina finger holes, drilled holes in a brake rotor, pegboard holes, speckles on lemon cucumbers, and the dark eyes and nose on light-furred faces (dogs, polar bear, doll, Danbo box faces).\",\n \"evidence\": \"Across very different object categories, the red boxes in the top 20 consistently sit on dark dots set in a light region. The transformation results fit a fine-scale, dark-on-light feature: low-pass filtering destroys the response (5th percentile), inverting luminance polarity halves it (5th percentile), while grayscale, rotation and patch shuffling barely matter.\",\n \"missing_data\": \"Synthetic tests comparing dark dots on light backgrounds with light dots on dark backgrounds, across a range of dot sizes and spacings, would confirm the polarity and scale tuning and show whether the face responses are only the dot feature.\",\n \"confidence\": 0.8}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4b:135",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0beb10df0421b8a335afdaa4f5a57d824e825e478754a003ae83eadf326df615",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects small dark dots or holes scattered on a lighter, smooth surface. This includes the eye-and-nose dots of faces, such as the Danbo boxes, white dogs, teddy bears, the polar bear and the doll.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects small dark dots or holes scattered on a lighter, smooth surface. This includes the eye-and-nose dots of faces, such as the Danbo boxes, white dogs, teddy bears, the polar bear and the doll.",
+   "evidence": "Almost every red box sits on a cluster of small dark spots: ladybug spots, ocarina finger holes, drilled holes in the brake rotor, pegboard holes, wheel holes, specks on the lemon cucumbers, pepper flecks in the dip, the lobster's dots, and the eyes and nose of pale faces. The random photos, which mostly lack such dot patterns, score much lower (1–5).",
+   "missing_data": "Activations on synthetic dot patterns versus face images with the dot contrast removed would show whether faces are just a case of dot patterns or a separate learned feature.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects small dark dots or holes scattered on a lighter, smooth surface. This includes the eye-and-nose dots of faces, such as the Danbo boxes, white dogs, teddy bears, the polar bear and the doll.\",\n \"evidence\": \"Almost every red box sits on a cluster of small dark spots: ladybug spots, ocarina finger holes, drilled holes in the brake rotor, pegboard holes, wheel holes, specks on the lemon cucumbers, pepper flecks in the dip, the lobster's dots, and the eyes and nose of pale faces. The random photos, which mostly lack such dot patterns, score much lower (1–5).\"\n ,\"missing_data\": \"Activations on synthetic dot patterns versus face images with the dot contrast removed would show whether faces are just a case of dot patterns or a separate learned feature.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects small dark dots or holes scattered on a lighter, smooth surface. This includes the eye-and-nose dots of faces, such as the Danbo boxes, white dogs, teddy bears, the polar bear and the doll.\",\n \"evidence\": \"Almost every red box sits on a cluster of small dark spots: ladybug spots, ocarina finger holes, drilled holes in the brake rotor, pegboard holes, wheel holes, specks on the lemon cucumbers, pepper flecks in the dip, the lobster's dots, and the eyes and nose of pale faces. The random photos, which mostly lack such dot patterns, score much lower (1–5).\"\n ,\"missing_data\": \"Activations on synthetic dot patterns versus face images with the dot contrast removed would show whether faces are just a case of dot patterns or a separate learned feature.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ }
+}

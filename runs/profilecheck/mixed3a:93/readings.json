@@ -1,0 +1,146 @@
+{
+ "base_s1": {
+  "unit": "mixed3a:93",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ddb312953e12128aae38135dcd490ef7f58555650fcdb414931ac14e3d4ab2",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, cabinets, fences, window frames and other straight-edged vertical or grid-like surfaces.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, cabinets, fences, window frames and other straight-edged vertical or grid-like surfaces.",
+   "evidence": "All top-20 boxes fall on artificial straight-edged surfaces such as a monitor, kitchen cabinet, picket fence, building facades, a truck trailer and a perforated pegboard. The random photos, mostly animals, people and nature, still score 5-7 against 9-10, so selectivity is modest.",
+   "missing_data": "Activation distributions over the full dataset, plus random samples that include man-made scenes, would show whether the top-vs-random gap is meaningful or whether the unit is nearly always on.",
+   "confidence": 0.45
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, cabinets, fences, window frames and other straight-edged vertical or grid-like surfaces.\", \"evidence\": \"All top-20 boxes fall on artificial straight-edged surfaces such as a monitor, kitchen cabinet, picket fence, building facades, a truck trailer and a perforated pegboard. The random photos, mostly animals, people and nature, still score 5-7 against 9-10, so selectivity is modest.\", \"missing_data\": \"Activation distributions over the full dataset, plus random samples that include man-made scenes, would show whether the top-vs-random gap is meaningful or whether the unit is nearly always on.\", \"confidence\": 0.45}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, cabinets, fences, window frames and other straight-edged vertical or grid-like surfaces.\", \"evidence\": \"All top-20 boxes fall on artificial straight-edged surfaces such as a monitor, kitchen cabinet, picket fence, building facades, a truck trailer and a perforated pegboard. The random photos, mostly animals, people and nature, still score 5-7 against 9-10, so selectivity is modest.\", \"missing_data\": \"Activation distributions over the full dataset, plus random samples that include man-made scenes, would show whether the top-vs-random gap is meaningful or whether the unit is nearly always on.\", \"confidence\": 0.45}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3a:93",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "de199f2132a63b8f837d602f2d6697a31136112705700e8833595aa11a78f3c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, siding, fences, cabinet doors and building facades with straight horizontal or vertical edges. It is only modestly selective for this, since it stays fairly active on almost any photo.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, siding, fences, cabinet doors and building facades with straight horizontal or vertical edges. It is only modestly selective for this, since it stays fairly active on almost any photo.",
+   "evidence": "Nearly all top photos are indoor or architectural scenes, and the red boxes fall on planar surfaces next to straight edges (the cabinet panel, picket fence, wall, building facades, the truck's trailer panel). The unit keeps unusually much activation under edge_map, low_pass and phase_scramble, but the random natural photos still score 5–7 against 9–10 for the top photos, so the selectivity is low.",
+   "missing_data": "Activations on images that isolate the feature, such as plain gratings or straight-edge patterns versus textured natural surfaces, plus the full activation distribution to judge how far the top photos stand out from the baseline.",
+   "confidence": 0.4
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, siding, fences, cabinet doors and building facades with straight horizontal or vertical edges. It is only modestly selective for this, since it stays fairly active on almost any photo.\", \"evidence\": \"Nearly all top photos are indoor or architectural scenes, and the red boxes fall on planar surfaces next to straight edges (the cabinet panel, picket fence, wall, building facades, the truck's trailer panel). The unit keeps unusually much activation under edge_map, low_pass and phase_scramble, but the random natural photos still score 5–7 against 9–10 for the top photos, so the selectivity is low.\", \"missing_data\": \"Activations on images that isolate the feature, such as plain gratings or straight-edge patterns versus textured natural surfaces, plus the full activation distribution to judge how far the top photos stand out from the baseline.\", \"confidence\": 0.4}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds weakly and broadly to man-made, rectilinear structure: flat panels, walls, siding, fences, cabinet doors and building facades with straight horizontal or vertical edges. It is only modestly selective for this, since it stays fairly active on almost any photo.\", \"evidence\": \"Nearly all top photos are indoor or architectural scenes, and the red boxes fall on planar surfaces next to straight edges (the cabinet panel, picket fence, wall, building facades, the truck's trailer panel). The unit keeps unusually much activation under edge_map, low_pass and phase_scramble, but the random natural photos still score 5–7 against 9–10 for the top photos, so the selectivity is low.\", \"missing_data\": \"Activations on images that isolate the feature, such as plain gratings or straight-edge patterns versus textured natural surfaces, plus the full activation distribution to judge how far the top photos stand out from the baseline.\", \"confidence\": 0.4}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3a:93",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "de199f2132a63b8f837d602f2d6697a31136112705700e8833595aa11a78f3c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds weakly selectively to man-made rectilinear structure: flat, smooth surfaces bounded by straight edges, such as walls, cabinet panels, window frames, fences, building facades and truck trailers.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds weakly selectively to man-made rectilinear structure: flat, smooth surfaces bounded by straight edges, such as walls, cabinet panels, window frames, fences, building facades and truck trailers.",
+   "evidence": "The red boxes in the top photos fall on straight-edged manufactured surfaces (cabinets, picket fence, facades, monitor, trailer, glass panels), while random natural photos (animals, grass, water) still score 5-7. The unit keeps more than most units under edge_map (88%, percentile 84) and low_pass, which fits geometry rather than colour or texture.",
+   "missing_data": "Activation maps on random images, or controlled stimuli (straight lines and gratings versus curved shapes), would show whether the small 5-7 to 9-10 gap reflects a real preference for rectilinear structure or just a broadly active unit.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds weakly selectively to man-made rectilinear structure: flat, smooth surfaces bounded by straight edges, such as walls, cabinet panels, window frames, fences, building facades and truck trailers.\",\n \"evidence\": \"The red boxes in the top photos fall on straight-edged manufactured surfaces (cabinets, picket fence, facades, monitor, trailer, glass panels), while random natural photos (animals, grass, water) still score 5-7. The unit keeps more than most units under edge_map (88%, percentile 84) and low_pass, which fits geometry rather than colour or texture.\",\n \"missing_data\": \"Activation maps on random images, or controlled stimuli (straight lines and gratings versus curved shapes), would show whether the small 5-7 to 9-10 gap reflects a real preference for rectilinear structure or just a broadly active unit.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds weakly selectively to man-made rectilinear structure: flat, smooth surfaces bounded by straight edges, such as walls, cabinet panels, window frames, fences, building facades and truck trailers.\",\n \"evidence\": \"The red boxes in the top photos fall on straight-edged manufactured surfaces (cabinets, picket fence, facades, monitor, trailer, glass panels), while random natural photos (animals, grass, water) still score 5-7. The unit keeps more than most units under edge_map (88%, percentile 84) and low_pass, which fits geometry rather than colour or texture.\",\n \"missing_data\": \"Activation maps on random images, or controlled stimuli (straight lines and gratings versus curved shapes), would show whether the small 5-7 to 9-10 gap reflects a real preference for rectilinear structure or just a broadly active unit.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3a:93",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ddb312953e12128aae38135dcd490ef7f58555650fcdb414931ac14e3d4ab2",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit may lean toward man-made scenes with straight edges and flat surfaces, such as walls, cabinets, fences, windows, vehicle panels and building facades, but it is active on almost everything, so no clear preferred feature can be named.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may lean toward man-made scenes with straight edges and flat surfaces, such as walls, cabinets, fences, windows, vehicle panels and building facades, but it is active on almost everything, so no clear preferred feature can be named.",
+   "evidence": "The top 20 are all man-made scenes, with boxes often on plain surfaces or straight edges, but they score only 9-10 while random photos of animals, people and nature score 5-7. That is weak selectivity, and the boxed regions in the top set are varied and often fairly featureless.",
+   "missing_data": "The full activation distribution, including how rare scores of 9-10 are versus 5-7, plus activations on controlled images of flat man-made surfaces versus natural textures.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may lean toward man-made scenes with straight edges and flat surfaces, such as walls, cabinets, fences, windows, vehicle panels and building facades, but it is active on almost everything, so no clear preferred feature can be named.\",\n \"evidence\": \"The top 20 are all man-made scenes, with boxes often on plain surfaces or straight edges, but they score only 9-10 while random photos of animals, people and nature score 5-7. That is weak selectivity, and the boxed regions in the top set are varied and often fairly featureless.\",\n \"missing_data\": \"The full activation distribution, including how rare scores of 9-10 are versus 5-7, plus activations on controlled images of flat man-made surfaces versus natural textures.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may lean toward man-made scenes with straight edges and flat surfaces, such as walls, cabinets, fences, windows, vehicle panels and building facades, but it is active on almost everything, so no clear preferred feature can be named.\",\n \"evidence\": \"The top 20 are all man-made scenes, with boxes often on plain surfaces or straight edges, but they score only 9-10 while random photos of animals, people and nature score 5-7. That is weak selectivity, and the boxed regions in the top set are varied and often fairly featureless.\",\n \"missing_data\": \"The full activation distribution, including how rare scores of 9-10 are versus 5-7, plus activations on controlled images of flat man-made surfaces versus natural textures.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3a:93",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ddb312953e12128aae38135dcd490ef7f58555650fcdb414931ac14e3d4ab2",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds broadly to man-made, rectilinear scenes. Its peak responses fall on flat, uniform surfaces with straight edges, such as walls, cabinets, panels, fences, facades and vehicle or building panels.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds broadly to man-made, rectilinear scenes. Its peak responses fall on flat, uniform surfaces with straight edges, such as walls, cabinets, panels, fences, facades and vehicle or building panels.",
+   "evidence": "All 20 top images are built environments or manufactured objects, and the red boxes mostly sit on plain flat surfaces (kitchen cabinet, picket fence, garage wall, truck trailer, building facade). The random set is all natural scenes (animals, grass, water, people) yet still scores 5-7, so the unit is only weakly selective and has a high baseline.",
+   "missing_data": "Activations on random man-made scenes and on flat textureless natural surfaces (sky, still water), to tell 'man-made' apart from 'flat uniform region'. Spatial activation maps beyond the single max box would also help.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to man-made, rectilinear scenes. Its peak responses fall on flat, uniform surfaces with straight edges, such as walls, cabinets, panels, fences, facades and vehicle or building panels.\",\n \"evidence\": \"All 20 top images are built environments or manufactured objects, and the red boxes mostly sit on plain flat surfaces (kitchen cabinet, picket fence, garage wall, truck trailer, building facade). The random set is all natural scenes (animals, grass, water, people) yet still scores 5-7, so the unit is only weakly selective and has a high baseline.\",\n \"missing_data\": \"Activations on random man-made scenes and on flat textureless natural surfaces (sky, still water), to tell 'man-made' apart from 'flat uniform region'. Spatial activation maps beyond the single max box would also help.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to man-made, rectilinear scenes. Its peak responses fall on flat, uniform surfaces with straight edges, such as walls, cabinets, panels, fences, facades and vehicle or building panels.\",\n \"evidence\": \"All 20 top images are built environments or manufactured objects, and the red boxes mostly sit on plain flat surfaces (kitchen cabinet, picket fence, garage wall, truck trailer, building facade). The random set is all natural scenes (animals, grass, water, people) yet still scores 5-7, so the unit is only weakly selective and has a high baseline.\",\n \"missing_data\": \"Activations on random man-made scenes and on flat textureless natural surfaces (sky, still water), to tell 'man-made' apart from 'flat uniform region'. Spatial activation maps beyond the single max box would also help.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3a:93",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "de199f2132a63b8f837d602f2d6697a31136112705700e8833595aa11a78f3c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to man-made rectilinear surfaces: flat panels, walls, siding, fences, cabinet fronts and window grids with straight, mostly vertical edges. It is broadly tuned and fires moderately on almost any image.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to man-made rectilinear surfaces: flat panels, walls, siding, fences, cabinet fronts and window grids with straight, mostly vertical edges. It is broadly tuned and fires moderately on almost any image.",
+   "evidence": "The red boxes in all 20 top photos sit on flat architectural or manufactured surfaces with straight parallel edges, such as picket fences, cabinet doors, truck trailer panels, brick and window facades, pegboard and railings. The unit keeps unusually much of its activation under edge_map (84th percentile) and low_pass, which fits a shape and edge feature rather than colour or texture, but random natural photos still reach 5-7 against 9-10 for the top photos, so selectivity is weak.",
+   "missing_data": "The full activation distribution, or synthetic tests with oriented straight-edge gratings versus curved contours, to check whether it is a straight-edge or rectilinear detector or just a generic high-baseline unit.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to man-made rectilinear surfaces: flat panels, walls, siding, fences, cabinet fronts and window grids with straight, mostly vertical edges. It is broadly tuned and fires moderately on almost any image.\",\n \"evidence\": \"The red boxes in all 20 top photos sit on flat architectural or manufactured surfaces with straight parallel edges, such as picket fences, cabinet doors, truck trailer panels, brick and window facades, pegboard and railings. The unit keeps unusually much of its activation under edge_map (84th percentile) and low_pass, which fits a shape and edge feature rather than colour or texture, but random natural photos still reach 5-7 against 9-10 for the top photos, so selectivity is weak.\"\n ,\"missing_data\": \"The full activation distribution, or synthetic tests with oriented straight-edge gratings versus curved contours, to check whether it is a straight-edge or rectilinear detector or just a generic high-baseline unit.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to man-made rectilinear surfaces: flat panels, walls, siding, fences, cabinet fronts and window grids with straight, mostly vertical edges. It is broadly tuned and fires moderately on almost any image.\",\n \"evidence\": \"The red boxes in all 20 top photos sit on flat architectural or manufactured surfaces with straight parallel edges, such as picket fences, cabinet doors, truck trailer panels, brick and window facades, pegboard and railings. The unit keeps unusually much of its activation under edge_map (84th percentile) and low_pass, which fits a shape and edge feature rather than colour or texture, but random natural photos still reach 5-7 against 9-10 for the top photos, so selectivity is weak.\"\n ,\"missing_data\": \"The full activation distribution, or synthetic tests with oriented straight-edge gratings versus curved contours, to check whether it is a straight-edge or rectilinear detector or just a generic high-baseline unit.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

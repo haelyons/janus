@@ -1,0 +1,146 @@
+{
+ "base_s2": {
+  "unit": "mixed3b:453",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb029c787f6e42d66237a95a4b699239fe2fa2ef3f3d368529dd1ee853d692a",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit fires broadly across almost all images and shows no clear selectivity. At most it may have a weak preference for fine, repetitive striped or grid-like texture, such as fur stripes, panel grids, pencil rows, railings and contrails.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit fires broadly across almost all images and shows no clear selectivity. At most it may have a weak preference for fine, repetitive striped or grid-like texture, such as fur stripes, panel grids, pencil rows, railings and contrails.",
+   "evidence": "The top-20 images span unrelated content (harbor reflections, tiger, truck, cupcake, solar panel, contrails, pencils, wagon), each at 9-10. The random images also score high (3-8, mean about 5, one at 8), so the top set barely stands out from typical inputs.",
+   "missing_data": "The full activation distribution or a sparsity measure, plus controlled texture probes (stripes and grids versus plain surfaces) to test the weak texture hypothesis.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires broadly across almost all images and shows no clear selectivity. At most it may have a weak preference for fine, repetitive striped or grid-like texture, such as fur stripes, panel grids, pencil rows, railings and contrails.\",\n \"evidence\": \"The top-20 images span unrelated content (harbor reflections, tiger, truck, cupcake, solar panel, contrails, pencils, wagon), each at 9-10. The random images also score high (3-8, mean about 5, one at 8), so the top set barely stands out from typical inputs.\",\n \"missing_data\": \"The full activation distribution or a sparsity measure, plus controlled texture probes (stripes and grids versus plain surfaces) to test the weak texture hypothesis.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires broadly across almost all images and shows no clear selectivity. At most it may have a weak preference for fine, repetitive striped or grid-like texture, such as fur stripes, panel grids, pencil rows, railings and contrails.\",\n \"evidence\": \"The top-20 images span unrelated content (harbor reflections, tiger, truck, cupcake, solar panel, contrails, pencils, wagon), each at 9-10. The random images also score high (3-8, mean about 5, one at 8), so the top set barely stands out from typical inputs.\",\n \"missing_data\": \"The full activation distribution or a sparsity measure, plus controlled texture probes (stripes and grids versus plain surfaces) to test the weak texture hypothesis.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3b:453",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb029c787f6e42d66237a95a4b699239fe2fa2ef3f3d368529dd1ee853d692a",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit appears to respond weakly to fine, repeated, roughly parallel texture such as stripes, slats, pleats, grids or mesh, regardless of object category.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit appears to respond weakly to fine, repeated, roughly parallel texture such as stripes, slats, pleats, grids or mesh, regardless of object category.",
+   "evidence": "The red boxes in the top images fall on striped or gridded texture: water-reflection streaks, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid, rows of pencils and deck boards. However, random photos also score high (3-8, mean about 5), so the unit is broadly active and this texture preference is only modest.",
+   "missing_data": "Activation maps for the random images and controlled tests on pure striped versus non-striped textures, to check whether the stripe pattern is real or the unit is just generically active on texture.",
+   "confidence": 0.35
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit appears to respond weakly to fine, repeated, roughly parallel texture such as stripes, slats, pleats, grids or mesh, regardless of object category.\", \"evidence\": \"The red boxes in the top images fall on striped or gridded texture: water-reflection streaks, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid, rows of pencils and deck boards. However, random photos also score high (3-8, mean about 5), so the unit is broadly active and this texture preference is only modest.\", \"missing_data\": \"Activation maps for the random images and controlled tests on pure striped versus non-striped textures, to check whether the stripe pattern is real or the unit is just generically active on texture.\", \"confidence\": 0.35}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit appears to respond weakly to fine, repeated, roughly parallel texture such as stripes, slats, pleats, grids or mesh, regardless of object category.\", \"evidence\": \"The red boxes in the top images fall on striped or gridded texture: water-reflection streaks, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid, rows of pencils and deck boards. However, random photos also score high (3-8, mean about 5), so the unit is broadly active and this texture preference is only modest.\", \"missing_data\": \"Activation maps for the random images and controlled tests on pure striped versus non-striped textures, to check whether the stripe pattern is real or the unit is just generically active on texture.\", \"confidence\": 0.35}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3b:453",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "079c11c82f50f5c6077404dedd8360995d389e264df1a3f389929a8e27b03210",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, repeated parallel lines or stripes at a particular orientation, most likely near-vertical: water-reflection streaks, cupcake-liner pleats, solar-panel grid lines, contrails, tiger and cat stripes, rows of pencils, railings and sprinkler jets.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, repeated parallel lines or stripes at a particular orientation, most likely near-vertical: water-reflection streaks, cupcake-liner pleats, solar-panel grid lines, contrails, tiger and cat stripes, rows of pencils, railings and sprinkler jets.",
+   "evidence": "The red boxes in the top images fall on striped or ribbed regions across unrelated objects, and the unit loses much more than most units under 90° rotation (percentile 6) while barely changing under mirror or 180° rotation. It is robust to high-pass, phase scrambling and patch shuffling, which fits an oriented-texture detector rather than an object detector.",
+   "missing_data": "Responses to synthetic gratings at different orientations and spatial frequencies would confirm the preferred orientation and stripe scale, and would show why random images still reach activations of 4 to 8.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to fine, repeated parallel lines or stripes at a particular orientation, most likely near-vertical: water-reflection streaks, cupcake-liner pleats, solar-panel grid lines, contrails, tiger and cat stripes, rows of pencils, railings and sprinkler jets.\", \"evidence\": \"The red boxes in the top images fall on striped or ribbed regions across unrelated objects, and the unit loses much more than most units under 90° rotation (percentile 6) while barely changing under mirror or 180° rotation. It is robust to high-pass, phase scrambling and patch shuffling, which fits an oriented-texture detector rather than an object detector.\", \"missing_data\": \"Responses to synthetic gratings at different orientations and spatial frequencies would confirm the preferred orientation and stripe scale, and would show why random images still reach activations of 4 to 8.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to fine, repeated parallel lines or stripes at a particular orientation, most likely near-vertical: water-reflection streaks, cupcake-liner pleats, solar-panel grid lines, contrails, tiger and cat stripes, rows of pencils, railings and sprinkler jets.\", \"evidence\": \"The red boxes in the top images fall on striped or ribbed regions across unrelated objects, and the unit loses much more than most units under 90° rotation (percentile 6) while barely changing under mirror or 180° rotation. It is robust to high-pass, phase scrambling and patch shuffling, which fits an oriented-texture detector rather than an object detector.\", \"missing_data\": \"Responses to synthetic gratings at different orientations and spatial frequencies would confirm the preferred orientation and stripe scale, and would show why random images still reach activations of 4 to 8.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3b:453",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ceb029c787f6e42d66237a95a4b699239fe2fa2ef3f3d368529dd1ee853d692a",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit may respond loosely to fine, repetitive, roughly parallel texture such as stripes, ridges, grids or fur, but it fires broadly enough that no single concept is clearly established.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may respond loosely to fine, repetitive, roughly parallel texture such as stripes, ridges, grids or fur, but it fires broadly enough that no single concept is clearly established.",
+   "evidence": "The marked regions in the top photos (tiger and cat stripes, cupcake-liner ridges, solar-panel grid, crate slats, contrails, deck boards, pencil rows) share a vague striped or grid texture, but the subjects vary widely. The random photos score 3-8, with a flute player at 8, which is close to the top scores of 9-10, so the unit is not selective.",
+   "missing_data": "Activations on synthetic oriented-grating and texture images, plus the full activation distribution or sparsity statistics, to see whether the unit is selective at all and whether stripe frequency or orientation drives it.",
+   "confidence": 0.3
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond loosely to fine, repetitive, roughly parallel texture such as stripes, ridges, grids or fur, but it fires broadly enough that no single concept is clearly established.\",\n \"evidence\": \"The marked regions in the top photos (tiger and cat stripes, cupcake-liner ridges, solar-panel grid, crate slats, contrails, deck boards, pencil rows) share a vague striped or grid texture, but the subjects vary widely. The random photos score 3-8, with a flute player at 8, which is close to the top scores of 9-10, so the unit is not selective.\",\n \"missing_data\": \"Activations on synthetic oriented-grating and texture images, plus the full activation distribution or sparsity statistics, to see whether the unit is selective at all and whether stripe frequency or orientation drives it.\",\n \"confidence\": 0.3}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond loosely to fine, repetitive, roughly parallel texture such as stripes, ridges, grids or fur, but it fires broadly enough that no single concept is clearly established.\",\n \"evidence\": \"The marked regions in the top photos (tiger and cat stripes, cupcake-liner ridges, solar-panel grid, crate slats, contrails, deck boards, pencil rows) share a vague striped or grid texture, but the subjects vary widely. The random photos score 3-8, with a flute player at 8, which is close to the top scores of 9-10, so the unit is not selective.\",\n \"missing_data\": \"Activations on synthetic oriented-grating and texture images, plus the full activation distribution or sparsity statistics, to see whether the unit is selective at all and whether stripe frequency or orientation drives it.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3b:453",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "079c11c82f50f5c6077404dedd8360995d389e264df1a3f389929a8e27b03210",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, roughly vertical oriented texture: repeated thin streaks, stripes or slats such as water-reflection streaks, tiger and cat fur stripes, cupcake-liner pleats, contrails, rows of pencils, railings and sprinkler jets.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, roughly vertical oriented texture: repeated thin streaks, stripes or slats such as water-reflection streaks, tiger and cat fur stripes, cupcake-liner pleats, contrails, rows of pencils, railings and sprinkler jets.",
+   "evidence": "It loses unusually much activation under 90° rotation (6th percentile) but almost none under 180° rotation or mirroring, which fits an orientation-selective, polarity-insensitive texture detector; it also survives phase scrambling and patch shuffling well, which fits local texture rather than objects. The top boxes sit on vertically streaked or striped regions across unrelated object categories.",
+   "missing_data": "Responses to synthetic gratings at varied orientations and spatial frequencies, which would confirm the vertical preference and frequency band; this matters because random photos also drive it fairly strongly (3–8), so it may be broadly tuned.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, roughly vertical oriented texture: repeated thin streaks, stripes or slats such as water-reflection streaks, tiger and cat fur stripes, cupcake-liner pleats, contrails, rows of pencils, railings and sprinkler jets.\",\n \"evidence\": \"It loses unusually much activation under 90° rotation (6th percentile) but almost none under 180° rotation or mirroring, which fits an orientation-selective, polarity-insensitive texture detector; it also survives phase scrambling and patch shuffling well, which fits local texture rather than objects. The top boxes sit on vertically streaked or striped regions across unrelated object categories.\",\n \"missing_data\": \"Responses to synthetic gratings at varied orientations and spatial frequencies, which would confirm the vertical preference and frequency band; this matters because random photos also drive it fairly strongly (3–8), so it may be broadly tuned.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, roughly vertical oriented texture: repeated thin streaks, stripes or slats such as water-reflection streaks, tiger and cat fur stripes, cupcake-liner pleats, contrails, rows of pencils, railings and sprinkler jets.\",\n \"evidence\": \"It loses unusually much activation under 90° rotation (6th percentile) but almost none under 180° rotation or mirroring, which fits an orientation-selective, polarity-insensitive texture detector; it also survives phase scrambling and patch shuffling well, which fits local texture rather than objects. The top boxes sit on vertically streaked or striped regions across unrelated object categories.\",\n \"missing_data\": \"Responses to synthetic gratings at varied orientations and spatial frequencies, which would confirm the vertical preference and frequency band; this matters because random photos also drive it fairly strongly (3–8), so it may be broadly tuned.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3b:453",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "079c11c82f50f5c6077404dedd8360995d389e264df1a3f389929a8e27b03210",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, repeated, roughly vertical line or stripe texture, such as streaks, slats, pleats, fur stripes, grid lines and rows of thin objects, wherever it appears and regardless of the object.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, repeated, roughly vertical line or stripe texture, such as streaks, slats, pleats, fur stripes, grid lines and rows of thin objects, wherever it appears and regardless of the object.",
+   "evidence": "Top patches include water reflections, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid lines, contrails, pencils and railings; activation survives phase scramble, patch shuffle and high-pass, so it is texture-like, while it drops sharply under 90° rotation (6th percentile) but not under 180° or mirror, showing a specific orientation preference. Random photos still reach moderate activations (3–8), consistent with a common low-level texture feature rather than an object detector.",
+   "missing_data": "Responses to synthetic gratings at varied orientations and spatial frequencies would confirm the preferred orientation and stripe scale.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to fine, repeated, roughly vertical line or stripe texture, such as streaks, slats, pleats, fur stripes, grid lines and rows of thin objects, wherever it appears and regardless of the object.\", \"evidence\": \"Top patches include water reflections, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid lines, contrails, pencils and railings; activation survives phase scramble, patch shuffle and high-pass, so it is texture-like, while it drops sharply under 90° rotation (6th percentile) but not under 180° or mirror, showing a specific orientation preference. Random photos still reach moderate activations (3–8), consistent with a common low-level texture feature rather than an object detector.\", \"missing_data\": \"Responses to synthetic gratings at varied orientations and spatial frequencies would confirm the preferred orientation and stripe scale.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to fine, repeated, roughly vertical line or stripe texture, such as streaks, slats, pleats, fur stripes, grid lines and rows of thin objects, wherever it appears and regardless of the object.\", \"evidence\": \"Top patches include water reflections, tiger and cat stripes, truck slats, cupcake-liner pleats, solar-panel grid lines, contrails, pencils and railings; activation survives phase scramble, patch shuffle and high-pass, so it is texture-like, while it drops sharply under 90° rotation (6th percentile) but not under 180° or mirror, showing a specific orientation preference. Random photos still reach moderate activations (3–8), consistent with a common low-level texture feature rather than an object detector.\", \"missing_data\": \"Responses to synthetic gratings at varied orientations and spatial frequencies would confirm the preferred orientation and stripe scale.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ }
+}

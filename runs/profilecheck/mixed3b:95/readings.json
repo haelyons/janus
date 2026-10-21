@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed3b:95",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "db60df1e333af19458a58ed8de414855e99baa36649d4f055fe70bb55fd8e348",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit most likely responds to local, fine-scale high-contrast straight edges and boundaries, such as frame and photo borders, rims, panel or slat lines and grid structure, regardless of colour or object identity.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit most likely responds to local, fine-scale high-contrast straight edges and boundaries, such as frame and photo borders, rims, panel or slat lines and grid structure, regardless of colour or object identity.",
+   "evidence": "The red boxes sit on borders, rims, slats and grid lines across semantically unrelated photos (#6, #9, #10, #11, #7, #16). It is unaffected by grayscale (99%) and patch shuffling (100%) but sensitive to low-pass filtering (33%, 26th percentile), and random photos still give 2-6, which fits a generic local edge or texture detector.",
+   "missing_data": "Activation maps on synthetic stimuli (oriented gratings, lines, step edges at varied spatial frequency), plus crops of the boxed regions, would confirm the edge/line hypothesis or show something more specific.",
+   "confidence": 0.4
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit most likely responds to local, fine-scale high-contrast straight edges and boundaries, such as frame and photo borders, rims, panel or slat lines and grid structure, regardless of colour or object identity.\", \"evidence\": \"The red boxes sit on borders, rims, slats and grid lines across semantically unrelated photos (#6, #9, #10, #11, #7, #16). It is unaffected by grayscale (99%) and patch shuffling (100%) but sensitive to low-pass filtering (33%, 26th percentile), and random photos still give 2-6, which fits a generic local edge or texture detector.\", \"missing_data\": \"Activation maps on synthetic stimuli (oriented gratings, lines, step edges at varied spatial frequency), plus crops of the boxed regions, would confirm the edge/line hypothesis or show something more specific.\", \"confidence\": 0.4}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit most likely responds to local, fine-scale high-contrast straight edges and boundaries, such as frame and photo borders, rims, panel or slat lines and grid structure, regardless of colour or object identity.\", \"evidence\": \"The red boxes sit on borders, rims, slats and grid lines across semantically unrelated photos (#6, #9, #10, #11, #7, #16). It is unaffected by grayscale (99%) and patch shuffling (100%) but sensitive to low-pass filtering (33%, 26th percentile), and random photos still give 2-6, which fits a generic local edge or texture detector.\", \"missing_data\": \"Activation maps on synthetic stimuli (oriented gratings, lines, step edges at varied spatial frequency), plus crops of the boxed regions, would confirm the edge/line hypothesis or show something more specific.\", \"confidence\": 0.4}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3b:95",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "db60df1e333af19458a58ed8de414855e99baa36649d4f055fe70bb55fd8e348",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "A local, colour-blind detector of sharp straight edges and thin line structure, such as panel seams, slats, shelf and drawer grids, and window lattices. It also fires on the hard borders of photo frames and vignettes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "A local, colour-blind detector of sharp straight edges and thin line structure, such as panel seams, slats, shelf and drawer grids, and window lattices. It also fires on the hard borders of photo frames and vignettes.",
+   "evidence": "The red boxes sit on straight contrast boundaries: lattices and slats in #1, #2, #7 and #16, and frame or vignette borders in #6, #10, #11 and #17, across unrelated objects. The unit keeps nearly all its activation under patch shuffle (100%) and grayscale (99%), but loses much under low-pass (33%), which points to a fine-scale local edge feature rather than an object.",
+   "missing_data": "Responses to synthetic oriented gratings, lines and bars at different thicknesses, plus crops of the boxed regions, would confirm whether it is a straight-edge/line detector. The fairly high activation on random photos (4-6) suggests broad tuning that such tests could clarify.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"A local, colour-blind detector of sharp straight edges and thin line structure, such as panel seams, slats, shelf and drawer grids, and window lattices. It also fires on the hard borders of photo frames and vignettes.\",\n \"evidence\": \"The red boxes sit on straight contrast boundaries: lattices and slats in #1, #2, #7 and #16, and frame or vignette borders in #6, #10, #11 and #17, across unrelated objects. The unit keeps nearly all its activation under patch shuffle (100%) and grayscale (99%), but loses much under low-pass (33%), which points to a fine-scale local edge feature rather than an object.\",\n \"missing_data\": \"Responses to synthetic oriented gratings, lines and bars at different thicknesses, plus crops of the boxed regions, would confirm whether it is a straight-edge/line detector. The fairly high activation on random photos (4-6) suggests broad tuning that such tests could clarify.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"A local, colour-blind detector of sharp straight edges and thin line structure, such as panel seams, slats, shelf and drawer grids, and window lattices. It also fires on the hard borders of photo frames and vignettes.\",\n \"evidence\": \"The red boxes sit on straight contrast boundaries: lattices and slats in #1, #2, #7 and #16, and frame or vignette borders in #6, #10, #11 and #17, across unrelated objects. The unit keeps nearly all its activation under patch shuffle (100%) and grayscale (99%), but loses much under low-pass (33%), which points to a fine-scale local edge feature rather than an object.\",\n \"missing_data\": \"Responses to synthetic oriented gratings, lines and bars at different thicknesses, plus crops of the boxed regions, would confirm whether it is a straight-edge/line detector. The fairly high activation on random photos (4-6) suggests broad tuning that such tests could clarify.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3b:95",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "17df7f1bfa0afb4a5d755861aa8805e7a97c88792730e04735446f48b211a114",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit may respond weakly to straight edges or boundaries, such as frame borders, panel edges, window grids and rims, but no consistent concept is clear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may respond weakly to straight edges or boundaries, such as frame borders, panel edges, window grids and rims, but no consistent concept is clear.",
+   "evidence": "The top-20 images vary widely in content (interiors, monkeys, a police car, a drum, comics, dogs, cakes), and many red boxes fall on image borders or straight edges rather than on objects. Random images still score 1-6 (mostly 4-6), so the unit is broadly active and not very selective.",
+   "missing_data": "Spatial activation maps over whole images, responses to synthetic edge, line and border stimuli, and the full activation distribution (for example, whether the scores are near-saturated across the dataset).",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond weakly to straight edges or boundaries, such as frame borders, panel edges, window grids and rims, but no consistent concept is clear.\",\n \"evidence\": \"The top-20 images vary widely in content (interiors, monkeys, a police car, a drum, comics, dogs, cakes), and many red boxes fall on image borders or straight edges rather than on objects. Random images still score 1-6 (mostly 4-6), so the unit is broadly active and not very selective.\",\n \"missing_data\": \"Spatial activation maps over whole images, responses to synthetic edge, line and border stimuli, and the full activation distribution (for example, whether the scores are near-saturated across the dataset).\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond weakly to straight edges or boundaries, such as frame borders, panel edges, window grids and rims, but no consistent concept is clear.\",\n \"evidence\": \"The top-20 images vary widely in content (interiors, monkeys, a police car, a drum, comics, dogs, cakes), and many red boxes fall on image borders or straight edges rather than on objects. Random images still score 1-6 (mostly 4-6), so the unit is broadly active and not very selective.\",\n \"missing_data\": \"Spatial activation maps over whole images, responses to synthetic edge, line and border stimuli, and the full activation distribution (for example, whether the scores are near-saturated across the dataset).\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3b:95",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "db60df1e333af19458a58ed8de414855e99baa36649d4f055fe70bb55fd8e348",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to local, colour-independent high-frequency rectilinear edge structure: sharp straight contrast boundaries and fine grids or slats, such as photo-frame borders, shoji screens, drawer arrays and panelled walls, regardless of the object or scene.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to local, colour-independent high-frequency rectilinear edge structure: sharp straight contrast boundaries and fine grids or slats, such as photo-frame borders, shoji screens, drawer arrays and panelled walls, regardless of the object or scene.",
+   "evidence": "The red boxes fall on straight edges or regular line patterns rather than on the subjects (frame borders in #6, #10, #11 and #17; grids in #1, #7 and #16). The unit keeps 100% of its activation under patch shuffle and 99% under grayscale, but only 33% under low-pass, which fits a local high-frequency edge or texture detector.",
+   "missing_data": "Synthetic tests with gratings and edges (varying orientation, spatial frequency and straightness), plus the full distribution of activations, since random photos already reach 4-6 and the unit may be only weakly selective.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to local, colour-independent high-frequency rectilinear edge structure: sharp straight contrast boundaries and fine grids or slats, such as photo-frame borders, shoji screens, drawer arrays and panelled walls, regardless of the object or scene.\",\n \"evidence\": \"The red boxes fall on straight edges or regular line patterns rather than on the subjects (frame borders in #6, #10, #11 and #17; grids in #1, #7 and #16). The unit keeps 100% of its activation under patch shuffle and 99% under grayscale, but only 33% under low-pass, which fits a local high-frequency edge or texture detector.\",\n \"missing_data\": \"Synthetic tests with gratings and edges (varying orientation, spatial frequency and straightness), plus the full distribution of activations, since random photos already reach 4-6 and the unit may be only weakly selective.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to local, colour-independent high-frequency rectilinear edge structure: sharp straight contrast boundaries and fine grids or slats, such as photo-frame borders, shoji screens, drawer arrays and panelled walls, regardless of the object or scene.\",\n \"evidence\": \"The red boxes fall on straight edges or regular line patterns rather than on the subjects (frame borders in #6, #10, #11 and #17; grids in #1, #7 and #16). The unit keeps 100% of its activation under patch shuffle and 99% under grayscale, but only 33% under low-pass, which fits a local high-frequency edge or texture detector.\",\n \"missing_data\": \"Synthetic tests with gratings and edges (varying orientation, spatial frequency and straightness), plus the full distribution of activations, since random photos already reach 4-6 and the unit may be only weakly selective.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3b:95",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "17df7f1bfa0afb4a5d755861aa8805e7a97c88792730e04735446f48b211a114",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit may respond weakly to straight, high-contrast boundaries such as photo frame borders, panel or grid lines, and object edges. No clear single concept stands out.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may respond weakly to straight, high-contrast boundaries such as photo frame borders, panel or grid lines, and object edges. No clear single concept stands out.",
+   "evidence": "The top-20 boxes fall on unrelated content: frame borders (#6, #10, #11, #17), shoji/ceiling grids (#1, #7), a car door seam, a tambourine rim and a monkey tail. The random photos also score fairly high (mostly 4-6 against 8-10 for the top set), so the unit is not very selective.",
+   "missing_data": "Activation maps over whole images, or tests on synthetic stimuli (straight edges, borders, grids vs. blank), to check whether it is an edge/border detector or just dense polysemantic activity.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond weakly to straight, high-contrast boundaries such as photo frame borders, panel or grid lines, and object edges. No clear single concept stands out.\",\n \"evidence\": \"The top-20 boxes fall on unrelated content: frame borders (#6, #10, #11, #17), shoji/ceiling grids (#1, #7), a car door seam, a tambourine rim and a monkey tail. The random photos also score fairly high (mostly 4-6 against 8-10 for the top set), so the unit is not very selective.\",\n \"missing_data\": \"Activation maps over whole images, or tests on synthetic stimuli (straight edges, borders, grids vs. blank), to check whether it is an edge/border detector or just dense polysemantic activity.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond weakly to straight, high-contrast boundaries such as photo frame borders, panel or grid lines, and object edges. No clear single concept stands out.\",\n \"evidence\": \"The top-20 boxes fall on unrelated content: frame borders (#6, #10, #11, #17), shoji/ceiling grids (#1, #7), a car door seam, a tambourine rim and a monkey tail. The random photos also score fairly high (mostly 4-6 against 8-10 for the top set), so the unit is not very selective.\",\n \"missing_data\": \"Activation maps over whole images, or tests on synthetic stimuli (straight edges, borders, grids vs. blank), to check whether it is an edge/border detector or just dense polysemantic activity.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3b:95",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "17df7f1bfa0afb4a5d755861aa8805e7a97c88792730e04735446f48b211a114",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit is only weakly selective. Its strongest responses may track straight edges and boundaries, such as photo or frame borders, panel and grid lines, rims and shelf edges, rather than any object or scene category.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is only weakly selective. Its strongest responses may track straight edges and boundaries, such as photo or frame borders, panel and grid lines, rims and shelf edges, rather than any object or scene category.",
+   "evidence": "The top-20 images share no subject (interiors, monkeys, a police car, sock monkeys, cakes, comics), and the red boxes often sit on borders or rectilinear lines (#6, #10, #11, #13, #16, #17). Random photos still score 4-6, close to the top scores of 8-10, and the smooth bread image scores lowest (1), which supports the edge idea only loosely.",
+   "missing_data": "The full activation distribution, plus responses to controlled stimuli such as synthetic edges, gratings, cropped borders and border-free versions of the top images, to test whether straight edges or framing drive it.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is only weakly selective. Its strongest responses may track straight edges and boundaries, such as photo or frame borders, panel and grid lines, rims and shelf edges, rather than any object or scene category.\",\n \"evidence\": \"The top-20 images share no subject (interiors, monkeys, a police car, sock monkeys, cakes, comics), and the red boxes often sit on borders or rectilinear lines (#6, #10, #11, #13, #16, #17). Random photos still score 4-6, close to the top scores of 8-10, and the smooth bread image scores lowest (1), which supports the edge idea only loosely.\",\n \"missing_data\": \"The full activation distribution, plus responses to controlled stimuli such as synthetic edges, gratings, cropped borders and border-free versions of the top images, to test whether straight edges or framing drive it.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is only weakly selective. Its strongest responses may track straight edges and boundaries, such as photo or frame borders, panel and grid lines, rims and shelf edges, rather than any object or scene category.\",\n \"evidence\": \"The top-20 images share no subject (interiors, monkeys, a police car, sock monkeys, cakes, comics), and the red boxes often sit on borders or rectilinear lines (#6, #10, #11, #13, #16, #17). Random photos still score 4-6, close to the top scores of 8-10, and the smooth bread image scores lowest (1), which supports the edge idea only loosely.\",\n \"missing_data\": \"The full activation distribution, plus responses to controlled stimuli such as synthetic edges, gratings, cropped borders and border-free versions of the top images, to test whether straight edges or framing drive it.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

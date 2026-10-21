@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed5a:43",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9e7bf730e2d17e018658e5f66d307886b157b1d899a55afe692d14c21c4429cf",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to smooth, rounded, convex surfaces with soft shading, such as the bulging bodies of animals (fish, hartebeest, hippo, bison, ox, dog). It extends more weakly to rounded man-made objects with similar curved, shaded surfaces (ceramic jugs, pillow, helmet, trumpet bell, metal pans, wooden spoon).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to smooth, rounded, convex surfaces with soft shading, such as the bulging bodies of animals (fish, hartebeest, hippo, bison, ox, dog). It extends more weakly to rounded man-made objects with similar curved, shaded surfaces (ceramic jugs, pillow, helmet, trumpet bell, metal pans, wooden spoon).",
+   "evidence": "The red boxes across the top 20 consistently fall on curved, shaded body or vessel surfaces rather than on any single category, and the random photos are mostly low except an animal body in snow (6) and an antelope silhouette (4). The unit keeps more activation than most units under low_pass (70th percentile) and edge_map (73rd percentile), which fits coarse shape and contour rather than fine texture or colour (grayscale is near the layer median).",
+   "missing_data": "Activation maps on more mid-range photos and on controlled stimuli, such as shaded spheres against flat discs, would show whether the unit really encodes convex 3D shading or broader 'object body' features.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to smooth, rounded, convex surfaces with soft shading, such as the bulging bodies of animals (fish, hartebeest, hippo, bison, ox, dog). It extends more weakly to rounded man-made objects with similar curved, shaded surfaces (ceramic jugs, pillow, helmet, trumpet bell, metal pans, wooden spoon).\",\n \"evidence\": \"The red boxes across the top 20 consistently fall on curved, shaded body or vessel surfaces rather than on any single category, and the random photos are mostly low except an animal body in snow (6) and an antelope silhouette (4). The unit keeps more activation than most units under low_pass (70th percentile) and edge_map (73rd percentile), which fits coarse shape and contour rather than fine texture or colour (grayscale is near the layer median).\",\n \"missing_data\": \"Activation maps on more mid-range photos and on controlled stimuli, such as shaded spheres against flat discs, would show whether the unit really encodes convex 3D shading or broader 'object body' features.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to smooth, rounded, convex surfaces with soft shading, such as the bulging bodies of animals (fish, hartebeest, hippo, bison, ox, dog). It extends more weakly to rounded man-made objects with similar curved, shaded surfaces (ceramic jugs, pillow, helmet, trumpet bell, metal pans, wooden spoon).\",\n \"evidence\": \"The red boxes across the top 20 consistently fall on curved, shaded body or vessel surfaces rather than on any single category, and the random photos are mostly low except an animal body in snow (6) and an antelope silhouette (4). The unit keeps more activation than most units under low_pass (70th percentile) and edge_map (73rd percentile), which fits coarse shape and contour rather than fine texture or colour (grayscale is near the layer median).\",\n \"missing_data\": \"Activation maps on more mid-range photos and on controlled stimuli, such as shaded spheres against flat discs, would show whether the unit really encodes convex 3D shading or broader 'object body' features.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed5a:43",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9e7bf730e2d17e018658e5f66d307886b157b1d899a55afe692d14c21c4429cf",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit most likely responds to smooth, rounded, convex shapes with soft shading, mainly the bodies, backs and heads of brown or dark animals (antelope, hippo, bison, ox, gazelle, dog, platypus, fish, bird). It also responds more weakly to rounded man-made objects with similar curved, shaded surfaces (jugs, pitcher, helmet, pan, spoon, trumpet bell).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit most likely responds to smooth, rounded, convex shapes with soft shading, mainly the bodies, backs and heads of brown or dark animals (antelope, hippo, bison, ox, gazelle, dog, platypus, fish, bird). It also responds more weakly to rounded man-made objects with similar curved, shaded surfaces (jugs, pitcher, helmet, pan, spoon, trumpet bell).",
+   "evidence": "About half of the top 20 boxes sit on animal bodies, and the rest sit on curved, glossy or shaded objects. The random antelope (4) and dogs (6) also drive it moderately. Its above-median survival under edge_map and low_pass, with near-total loss under phase_scramble, suggests outline and shading of shape matter more than texture or colour.",
+   "missing_data": "Feature visualizations, or controlled tests comparing animal bodies with rounded objects of matched shape and shading, would show whether this is one shape feature or an animal detector plus an unrelated object feature.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit most likely responds to smooth, rounded, convex shapes with soft shading, mainly the bodies, backs and heads of brown or dark animals (antelope, hippo, bison, ox, gazelle, dog, platypus, fish, bird). It also responds more weakly to rounded man-made objects with similar curved, shaded surfaces (jugs, pitcher, helmet, pan, spoon, trumpet bell).\",\n \"evidence\": \"About half of the top 20 boxes sit on animal bodies, and the rest sit on curved, glossy or shaded objects. The random antelope (4) and dogs (6) also drive it moderately. Its above-median survival under edge_map and low_pass, with near-total loss under phase_scramble, suggests outline and shading of shape matter more than texture or colour.\",\n \"missing_data\": \"Feature visualizations, or controlled tests comparing animal bodies with rounded objects of matched shape and shading, would show whether this is one shape feature or an animal detector plus an unrelated object feature.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit most likely responds to smooth, rounded, convex shapes with soft shading, mainly the bodies, backs and heads of brown or dark animals (antelope, hippo, bison, ox, gazelle, dog, platypus, fish, bird). It also responds more weakly to rounded man-made objects with similar curved, shaded surfaces (jugs, pitcher, helmet, pan, spoon, trumpet bell).\",\n \"evidence\": \"About half of the top 20 boxes sit on animal bodies, and the rest sit on curved, glossy or shaded objects. The random antelope (4) and dogs (6) also drive it moderately. Its above-median survival under edge_map and low_pass, with near-total loss under phase_scramble, suggests outline and shading of shape matter more than texture or colour.\",\n \"missing_data\": \"Feature visualizations, or controlled tests comparing animal bodies with rounded objects of matched shape and shading, would show whether this is one shape feature or an animal detector plus an unrelated object feature.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed5a:43",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9e7bf730e2d17e018658e5f66d307886b157b1d899a55afe692d14c21c4429cf",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond to smooth, rounded, convex shapes with soft shading, especially the curved bodies of animals (hartebeest, hippo, bison, ox, dog, platypus, fish, beetle). It responds more weakly to man-made objects with similar rounded shapes, such as jugs, helmets, a trumpet bell, pans and a wooden spoon.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond to smooth, rounded, convex shapes with soft shading, especially the curved bodies of animals (hartebeest, hippo, bison, ox, dog, platypus, fish, beetle). It responds more weakly to man-made objects with similar rounded shapes, such as jugs, helmets, a trumpet bell, pans and a wooden spoon.",
+   "evidence": "Most top boxes sit on the bulging torso or back of an animal or on a curved vessel surface, and the unit keeps 84% of its response in grayscale and more than most units under edge maps (percentile 73), which points to shape and contour rather than colour. However, the top activations are spread fairly evenly (7-10), and random photos with animal bodies still score 4-6, so the selectivity is broad.",
+   "missing_data": "Activations on isolated rounded silhouettes, or on animal bodies versus heads with the backgrounds removed, would show whether this is a shape detector or an animal-body detector.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to smooth, rounded, convex shapes with soft shading, especially the curved bodies of animals (hartebeest, hippo, bison, ox, dog, platypus, fish, beetle). It responds more weakly to man-made objects with similar rounded shapes, such as jugs, helmets, a trumpet bell, pans and a wooden spoon.\",\n \"evidence\": \"Most top boxes sit on the bulging torso or back of an animal or on a curved vessel surface, and the unit keeps 84% of its response in grayscale and more than most units under edge maps (percentile 73), which points to shape and contour rather than colour. However, the top activations are spread fairly evenly (7-10), and random photos with animal bodies still score 4-6, so the selectivity is broad.\",\n \"missing_data\": \"Activations on isolated rounded silhouettes, or on animal bodies versus heads with the backgrounds removed, would show whether this is a shape detector or an animal-body detector.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to smooth, rounded, convex shapes with soft shading, especially the curved bodies of animals (hartebeest, hippo, bison, ox, dog, platypus, fish, beetle). It responds more weakly to man-made objects with similar rounded shapes, such as jugs, helmets, a trumpet bell, pans and a wooden spoon.\",\n \"evidence\": \"Most top boxes sit on the bulging torso or back of an animal or on a curved vessel surface, and the unit keeps 84% of its response in grayscale and more than most units under edge maps (percentile 73), which points to shape and contour rather than colour. However, the top activations are spread fairly evenly (7-10), and random photos with animal bodies still score 4-6, so the selectivity is broad.\",\n \"missing_data\": \"Activations on isolated rounded silhouettes, or on animal bodies versus heads with the backgrounds removed, would show whether this is a shape detector or an animal-body detector.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed5a:43",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8b7cf22ef5e55f512cc722b89eb55304f5541157b1de5099af1a7148434e8640",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to smooth, rounded, convex surfaces with soft shading, mostly in brown or dark tones. The strongest cases are the bodies and backs of animals such as fish, antelope, platypus, hippo, bison, ox, dogs and a beetle, and it also fires on smooth curved objects like jugs, pans, a trumpet bell, a pillow and a wooden spoon.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to smooth, rounded, convex surfaces with soft shading, mostly in brown or dark tones. The strongest cases are the bodies and backs of animals such as fish, antelope, platypus, hippo, bison, ox, dogs and a beetle, and it also fires on smooth curved objects like jugs, pans, a trumpet bell, a pillow and a wooden spoon.",
+   "evidence": "About 12 of the top 20 boxes sit on brown or dark animal bodies. Most of the rest sit on glossy curved object surfaces, and in the random set the brown dachshund and hartebeest score highest (6 and 4) while flat scenes, water and foliage score 0-1.",
+   "missing_data": "Activation maps on controlled images would help most: smooth curved non-animal objects in non-brown colors, and textured animals such as furry or feathered ones in odd poses. These would separate a 'curved shaded surface' feature from an 'animal body' feature.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to smooth, rounded, convex surfaces with soft shading, mostly in brown or dark tones. The strongest cases are the bodies and backs of animals such as fish, antelope, platypus, hippo, bison, ox, dogs and a beetle, and it also fires on smooth curved objects like jugs, pans, a trumpet bell, a pillow and a wooden spoon.\",\n \"evidence\": \"About 12 of the top 20 boxes sit on brown or dark animal bodies. Most of the rest sit on glossy curved object surfaces, and in the random set the brown dachshund and hartebeest score highest (6 and 4) while flat scenes, water and foliage score 0-1.\",\n \"missing_data\": \"Activation maps on controlled images would help most: smooth curved non-animal objects in non-brown colors, and textured animals such as furry or feathered ones in odd poses. These would separate a 'curved shaded surface' feature from an 'animal body' feature.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to smooth, rounded, convex surfaces with soft shading, mostly in brown or dark tones. The strongest cases are the bodies and backs of animals such as fish, antelope, platypus, hippo, bison, ox, dogs and a beetle, and it also fires on smooth curved objects like jugs, pans, a trumpet bell, a pillow and a wooden spoon.\",\n \"evidence\": \"About 12 of the top 20 boxes sit on brown or dark animal bodies. Most of the rest sit on glossy curved object surfaces, and in the random set the brown dachshund and hartebeest score highest (6 and 4) while flat scenes, water and foliage score 0-1.\",\n \"missing_data\": \"Activation maps on controlled images would help most: smooth curved non-animal objects in non-brown colors, and textured animals such as furry or feathered ones in odd poses. These would separate a 'curved shaded surface' feature from an 'animal body' feature.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed5a:43",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8b7cf22ef5e55f512cc722b89eb55304f5541157b1de5099af1a7148434e8640",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit appears to respond to smooth, rounded, uniformly shaded surfaces, mostly dark or brown, and most often animal bodies such as a fish, antelope, hippo, bison, ox and dogs. It extends more weakly to similarly shaped man-made objects like jugs, pans, helmets, a horn and a wooden spoon.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit appears to respond to smooth, rounded, uniformly shaded surfaces, mostly dark or brown, and most often animal bodies such as a fish, antelope, hippo, bison, ox and dogs. It extends more weakly to similarly shaped man-made objects like jugs, pans, helmets, a horn and a wooden spoon.",
+   "evidence": "About half of the top 20 boxes sit on the curved flank or head of a brown or dark animal, and the rest sit on glossy, rounded vessels or tools of similar tone. Random photos with similar content (a dachshund at 6, a hartebeest at 4, shiny pots and chrome at 3) still score fairly high, which fits a broad shape-and-texture feature rather than a single object category.",
+   "missing_data": "Activations on smooth, rounded surfaces of other colors, and on brown animals with fur or texture rather than smooth hides, would show whether shape, color or animal identity drives the unit; per-pixel activation maps would also help.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to smooth, rounded, uniformly shaded surfaces, mostly dark or brown, and most often animal bodies such as a fish, antelope, hippo, bison, ox and dogs. It extends more weakly to similarly shaped man-made objects like jugs, pans, helmets, a horn and a wooden spoon.\",\n \"evidence\": \"About half of the top 20 boxes sit on the curved flank or head of a brown or dark animal, and the rest sit on glossy, rounded vessels or tools of similar tone. Random photos with similar content (a dachshund at 6, a hartebeest at 4, shiny pots and chrome at 3) still score fairly high, which fits a broad shape-and-texture feature rather than a single object category.\",\n \"missing_data\": \"Activations on smooth, rounded surfaces of other colors, and on brown animals with fur or texture rather than smooth hides, would show whether shape, color or animal identity drives the unit; per-pixel activation maps would also help.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to smooth, rounded, uniformly shaded surfaces, mostly dark or brown, and most often animal bodies such as a fish, antelope, hippo, bison, ox and dogs. It extends more weakly to similarly shaped man-made objects like jugs, pans, helmets, a horn and a wooden spoon.\",\n \"evidence\": \"About half of the top 20 boxes sit on the curved flank or head of a brown or dark animal, and the rest sit on glossy, rounded vessels or tools of similar tone. Random photos with similar content (a dachshund at 6, a hartebeest at 4, shiny pots and chrome at 3) still score fairly high, which fits a broad shape-and-texture feature rather than a single object category.\",\n \"missing_data\": \"Activations on smooth, rounded surfaces of other colors, and on brown animals with fur or texture rather than smooth hides, would show whether shape, color or animal identity drives the unit; per-pixel activation maps would also help.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed5a:43",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8b7cf22ef5e55f512cc722b89eb55304f5541157b1de5099af1a7148434e8640",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit seems to respond to a mid-level visual feature: smoothly shaded, rounded, convex surfaces, such as animal bodies and heads or curved objects like ceramic jugs, metal pans, a horn bell and a wooden spoon. It does not appear to track any single object category.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit seems to respond to a mid-level visual feature: smoothly shaded, rounded, convex surfaces, such as animal bodies and heads or curved objects like ceramic jugs, metal pans, a horn bell and a wooden spoon. It does not appear to track any single object category.",
+   "evidence": "The top 20 mix unrelated categories, including fish, a hartebeest, a platypus, a hippo, a bison, dogs, a pitcher, a whiskey jug, knee pads, pans and a spoon, but the red boxes consistently sit on a curved, gradient-shaded region. Random photos give broad, moderate activation (a hartebeest scores 4, dogs in snow 6, a chrome car hood and round pots 3), while flat or textured scenes such as a crane, water plants and foliage score 0-1, which fits a generic shape/shading feature.",
+   "missing_data": "Controlled tests would help most: activation on synthetic shaded spheres versus flat-colored disks, and on animal photos with texture and shading altered. These would separate a shading/convexity feature from a polysemantic 'animal body + vessel' unit.",
+   "confidence": 0.4
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to a mid-level visual feature: smoothly shaded, rounded, convex surfaces, such as animal bodies and heads or curved objects like ceramic jugs, metal pans, a horn bell and a wooden spoon. It does not appear to track any single object category.\", \"evidence\": \"The top 20 mix unrelated categories, including fish, a hartebeest, a platypus, a hippo, a bison, dogs, a pitcher, a whiskey jug, knee pads, pans and a spoon, but the red boxes consistently sit on a curved, gradient-shaded region. Random photos give broad, moderate activation (a hartebeest scores 4, dogs in snow 6, a chrome car hood and round pots 3), while flat or textured scenes such as a crane, water plants and foliage score 0-1, which fits a generic shape/shading feature.\", \"missing_data\": \"Controlled tests would help most: activation on synthetic shaded spheres versus flat-colored disks, and on animal photos with texture and shading altered. These would separate a shading/convexity feature from a polysemantic 'animal body + vessel' unit.\", \"confidence\": 0.4}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to a mid-level visual feature: smoothly shaded, rounded, convex surfaces, such as animal bodies and heads or curved objects like ceramic jugs, metal pans, a horn bell and a wooden spoon. It does not appear to track any single object category.\", \"evidence\": \"The top 20 mix unrelated categories, including fish, a hartebeest, a platypus, a hippo, a bison, dogs, a pitcher, a whiskey jug, knee pads, pans and a spoon, but the red boxes consistently sit on a curved, gradient-shaded region. Random photos give broad, moderate activation (a hartebeest scores 4, dogs in snow 6, a chrome car hood and round pots 3), while flat or textured scenes such as a crane, water plants and foliage score 0-1, which fits a generic shape/shading feature.\", \"missing_data\": \"Controlled tests would help most: activation on synthetic shaded spheres versus flat-colored disks, and on animal photos with texture and shading altered. These would separate a shading/convexity feature from a polysemantic 'animal body + vessel' unit.\", \"confidence\": 0.4}"
+  ],
+  "attempts": 1
+ }
+}

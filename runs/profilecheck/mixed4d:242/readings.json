@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed4d:242",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4ff97cfd2e06b51c04d411dd6ddb0e3e41b861bb10edb21193049c57adedb9c1",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to fine, repeated parallel ridges or grooves, often on dark or metallic cylindrical objects such as screw threads, ribbed rings, segmented bodies and lens barrels. It responds more weakly to similar fine striated texture in wiry grey-and-black dog fur.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to fine, repeated parallel ridges or grooves, often on dark or metallic cylindrical objects such as screw threads, ribbed rings, segmented bodies and lens barrels. It responds more weakly to similar fine striated texture in wiry grey-and-black dog fur.",
+   "evidence": "The top photos centre on bolt and spark-plug threads, ribbed binocular and drill-chuck rings, barbell plates and centipede segments, with shaggy dog faces at activation 7. Random photos stay near 0, and the unit loses most of its activation under low-pass but keeps it under high-pass, which fits a fine-texture feature.",
+   "missing_data": "Synthetic tests with periodic gratings or ridge textures at different spatial frequencies and curvatures would show whether the dog fur is the same feature or a separate one.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to fine, repeated parallel ridges or grooves, often on dark or metallic cylindrical objects such as screw threads, ribbed rings, segmented bodies and lens barrels. It responds more weakly to similar fine striated texture in wiry grey-and-black dog fur.\",\n \"evidence\": \"The top photos centre on bolt and spark-plug threads, ribbed binocular and drill-chuck rings, barbell plates and centipede segments, with shaggy dog faces at activation 7. Random photos stay near 0, and the unit loses most of its activation under low-pass but keeps it under high-pass, which fits a fine-texture feature.\",\n \"missing_data\": \"Synthetic tests with periodic gratings or ridge textures at different spatial frequencies and curvatures would show whether the dog fur is the same feature or a separate one.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to fine, repeated parallel ridges or grooves, often on dark or metallic cylindrical objects such as screw threads, ribbed rings, segmented bodies and lens barrels. It responds more weakly to similar fine striated texture in wiry grey-and-black dog fur.\",\n \"evidence\": \"The top photos centre on bolt and spark-plug threads, ribbed binocular and drill-chuck rings, barbell plates and centipede segments, with shaggy dog faces at activation 7. Random photos stay near 0, and the unit loses most of its activation under low-pass but keeps it under high-pass, which fits a fine-texture feature.\",\n \"missing_data\": \"Synthetic tests with periodic gratings or ridge textures at different spatial frequencies and curvatures would show whether the dog fur is the same feature or a separate one.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4d:242",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4ff97cfd2e06b51c04d411dd6ddb0e3e41b861bb10edb21193049c57adedb9c1",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to fine, repeated parallel ridges or grooves with high-contrast dark/light banding, typically on dark or metallic cylindrical objects such as screw threads, ribbed knobs, lens barrels, stacked plates and segmented bodies. A weaker extension covers similarly striated shaggy grey-and-black dog fur on faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to fine, repeated parallel ridges or grooves with high-contrast dark/light banding, typically on dark or metallic cylindrical objects such as screw threads, ribbed knobs, lens barrels, stacked plates and segmented bodies. A weaker extension covers similarly striated shaggy grey-and-black dog fur on faces.",
+   "evidence": "Most top boxes sit on threaded or ribbed surfaces: spark plugs, bolt, barbell plates, binocular eyepiece, drill chuck, vase neck bands, centipede segments and watch-strap stitching; four grey/black shaggy dog faces (#5, #9, #15, #17) reach 7. Random photos stay near 0–1, and the unit depends on high frequencies (low_pass keeps 26%, high_pass keeps 76%) while being fairly robust to colour and rotation, which fits a fine-texture detector.",
+   "missing_data": "Synthetic tests with oriented gratings or ridged textures versus fur textures, and more top examples beyond 20, would show whether the dog fur is the same texture feature or a separate second detector.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, repeated parallel ridges or grooves with high-contrast dark/light banding, typically on dark or metallic cylindrical objects such as screw threads, ribbed knobs, lens barrels, stacked plates and segmented bodies. A weaker extension covers similarly striated shaggy grey-and-black dog fur on faces.\",\n \"evidence\": \"Most top boxes sit on threaded or ribbed surfaces: spark plugs, bolt, barbell plates, binocular eyepiece, drill chuck, vase neck bands, centipede segments and watch-strap stitching; four grey/black shaggy dog faces (#5, #9, #15, #17) reach 7. Random photos stay near 0–1, and the unit depends on high frequencies (low_pass keeps 26%, high_pass keeps 76%) while being fairly robust to colour and rotation, which fits a fine-texture detector.\",\n \"missing_data\": \"Synthetic tests with oriented gratings or ridged textures versus fur textures, and more top examples beyond 20, would show whether the dog fur is the same texture feature or a separate second detector.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, repeated parallel ridges or grooves with high-contrast dark/light banding, typically on dark or metallic cylindrical objects such as screw threads, ribbed knobs, lens barrels, stacked plates and segmented bodies. A weaker extension covers similarly striated shaggy grey-and-black dog fur on faces.\",\n \"evidence\": \"Most top boxes sit on threaded or ribbed surfaces: spark plugs, bolt, barbell plates, binocular eyepiece, drill chuck, vase neck bands, centipede segments and watch-strap stitching; four grey/black shaggy dog faces (#5, #9, #15, #17) reach 7. Random photos stay near 0–1, and the unit depends on high frequencies (low_pass keeps 26%, high_pass keeps 76%) while being fairly robust to colour and rotation, which fits a fine-texture detector.\",\n \"missing_data\": \"Synthetic tests with oriented gratings or ridged textures versus fur textures, and more top examples beyond 20, would show whether the dog fur is the same texture feature or a separate second detector.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4d:242",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a5e75452f356197731e0ae98ba40c3c61b9d3c0cc6ef367a5bc7c104305acc9c",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to ribbed or segmented cylindrical surfaces, often shiny and metallic, such as screw threads, stacked rings, lens barrels, chucks and banded necks. It also responds more weakly to similar striated grey-black textures like shaggy dog-face fur and segmented arthropod bodies.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to ribbed or segmented cylindrical surfaces, often shiny and metallic, such as screw threads, stacked rings, lens barrels, chucks and banded necks. It also responds more weakly to similar striated grey-black textures like shaggy dog-face fur and segmented arthropod bodies.",
+   "evidence": "The strongest activations (spark plug threads at 10; barbell plates, binocular eyepiece and bolt thread at 8) are all ridged cylinders, and many level-7 boxes sit on similar banded parts (wheel hub, drill chuck, vase neck, shaker top, pen barrel, centipede segments). Random photos without such structure all score 0-1.",
+   "missing_data": "Activations on synthetic stimuli would help: smooth versus ridged cylinders, and isolated fur texture without dog faces. These would show whether the dog-face hits share the texture feature or are a separate detector.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to ribbed or segmented cylindrical surfaces, often shiny and metallic, such as screw threads, stacked rings, lens barrels, chucks and banded necks. It also responds more weakly to similar striated grey-black textures like shaggy dog-face fur and segmented arthropod bodies.\",\n \"evidence\": \"The strongest activations (spark plug threads at 10; barbell plates, binocular eyepiece and bolt thread at 8) are all ridged cylinders, and many level-7 boxes sit on similar banded parts (wheel hub, drill chuck, vase neck, shaker top, pen barrel, centipede segments). Random photos without such structure all score 0-1.\",\n \"missing_data\": \"Activations on synthetic stimuli would help: smooth versus ridged cylinders, and isolated fur texture without dog faces. These would show whether the dog-face hits share the texture feature or are a separate detector.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to ribbed or segmented cylindrical surfaces, often shiny and metallic, such as screw threads, stacked rings, lens barrels, chucks and banded necks. It also responds more weakly to similar striated grey-black textures like shaggy dog-face fur and segmented arthropod bodies.\",\n \"evidence\": \"The strongest activations (spark plug threads at 10; barbell plates, binocular eyepiece and bolt thread at 8) are all ridged cylinders, and many level-7 boxes sit on similar banded parts (wheel hub, drill chuck, vase neck, shaker top, pen barrel, centipede segments). Random photos without such structure all score 0-1.\",\n \"missing_data\": \"Activations on synthetic stimuli would help: smooth versus ridged cylinders, and isolated fur texture without dog faces. These would show whether the dog-face hits share the texture feature or are a separate detector.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4d:242",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4ff97cfd2e06b51c04d411dd6ddb0e3e41b861bb10edb21193049c57adedb9c1",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to fine, repeated parallel ridges or bands, usually on cylindrical or metallic objects such as screw threads, stacked weight plates, binocular focus rings, drill chucks and centipede segments. It also responds more weakly to similar high-frequency striated texture in shaggy grey dog fur and dog faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to fine, repeated parallel ridges or bands, usually on cylindrical or metallic objects such as screw threads, stacked weight plates, binocular focus rings, drill chucks and centipede segments. It also responds more weakly to similar high-frequency striated texture in shaggy grey dog fur and dog faces.",
+   "evidence": "Most top photos have the red box on threaded, ribbed or banded structures (spark plugs, bolt, barbell, binoculars, vase neck, pen, armor), while random photos stay near 0-1. The unit loses most of its activation under low-pass filtering but keeps it under grayscale, polarity inversion and rotation, which fits a colour-blind, fine-texture detector.",
+   "missing_data": "Activations on synthetic oriented gratings or ribbed textures, compared with dog fur alone, would show whether the dog responses share the striation feature or are a separate, unrelated selectivity.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, repeated parallel ridges or bands, usually on cylindrical or metallic objects such as screw threads, stacked weight plates, binocular focus rings, drill chucks and centipede segments. It also responds more weakly to similar high-frequency striated texture in shaggy grey dog fur and dog faces.\",\n \"evidence\": \"Most top photos have the red box on threaded, ribbed or banded structures (spark plugs, bolt, barbell, binoculars, vase neck, pen, armor), while random photos stay near 0-1. The unit loses most of its activation under low-pass filtering but keeps it under grayscale, polarity inversion and rotation, which fits a colour-blind, fine-texture detector.\",\n \"missing_data\": \"Activations on synthetic oriented gratings or ribbed textures, compared with dog fur alone, would show whether the dog responses share the striation feature or are a separate, unrelated selectivity.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to fine, repeated parallel ridges or bands, usually on cylindrical or metallic objects such as screw threads, stacked weight plates, binocular focus rings, drill chucks and centipede segments. It also responds more weakly to similar high-frequency striated texture in shaggy grey dog fur and dog faces.\",\n \"evidence\": \"Most top photos have the red box on threaded, ribbed or banded structures (spark plugs, bolt, barbell, binoculars, vase neck, pen, armor), while random photos stay near 0-1. The unit loses most of its activation under low-pass filtering but keeps it under grayscale, polarity inversion and rotation, which fits a colour-blind, fine-texture detector.\",\n \"missing_data\": \"Activations on synthetic oriented gratings or ribbed textures, compared with dog fur alone, would show whether the dog responses share the striation feature or are a separate, unrelated selectivity.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4d:242",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a5e75452f356197731e0ae98ba40c3c61b9d3c0cc6ef367a5bc7c104305acc9c",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to dark or metallic cylindrical objects with ridged, stacked or segmented surfaces, such as screw threads, spark plugs, barbell plates, binocular barrels, drill chucks, wheel hubs and centipede segments. It responds more weakly to the visually similar grey or black-and-white shaggy fur on dog faces.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to dark or metallic cylindrical objects with ridged, stacked or segmented surfaces, such as screw threads, spark plugs, barbell plates, binocular barrels, drill chucks, wheel hubs and centipede segments. It responds more weakly to the visually similar grey or black-and-white shaggy fur on dog faces.",
+   "evidence": "Most of the top 20 boxes land on banded or threaded cylindrical parts, including the top hit (spark plug threads at 10) and the bolt, barbell, binoculars, drill, vase neck and pen at 6-8; four shaggy grey or black-and-white dogs reach 7. The random photos, which have none of these textures, all sit at 0-1.",
+   "missing_data": "Activations on synthetic ridged or striped textures versus fur patches, plus a broader sample of mid-range activations, would show whether fur is a true extension of the ridge feature or a separate, unrelated feature.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dark or metallic cylindrical objects with ridged, stacked or segmented surfaces, such as screw threads, spark plugs, barbell plates, binocular barrels, drill chucks, wheel hubs and centipede segments. It responds more weakly to the visually similar grey or black-and-white shaggy fur on dog faces.\",\n \"evidence\": \"Most of the top 20 boxes land on banded or threaded cylindrical parts, including the top hit (spark plug threads at 10) and the bolt, barbell, binoculars, drill, vase neck and pen at 6-8; four shaggy grey or black-and-white dogs reach 7. The random photos, which have none of these textures, all sit at 0-1.\"\n ,\"missing_data\": \"Activations on synthetic ridged or striped textures versus fur patches, plus a broader sample of mid-range activations, would show whether fur is a true extension of the ridge feature or a separate, unrelated feature.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dark or metallic cylindrical objects with ridged, stacked or segmented surfaces, such as screw threads, spark plugs, barbell plates, binocular barrels, drill chucks, wheel hubs and centipede segments. It responds more weakly to the visually similar grey or black-and-white shaggy fur on dog faces.\",\n \"evidence\": \"Most of the top 20 boxes land on banded or threaded cylindrical parts, including the top hit (spark plug threads at 10) and the bolt, barbell, binoculars, drill, vase neck and pen at 6-8; four shaggy grey or black-and-white dogs reach 7. The random photos, which have none of these textures, all sit at 0-1.\"\n ,\"missing_data\": \"Activations on synthetic ridged or striped textures versus fur patches, plus a broader sample of mid-range activations, would show whether fur is a true extension of the ridge feature or a separate, unrelated feature.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4d:242",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a5e75452f356197731e0ae98ba40c3c61b9d3c0cc6ef367a5bc7c104305acc9c",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to dark or metallic cylindrical objects with stacked ridges or segments, such as screw threads, spark plugs, barbell plates, binocular eyepieces, drill chucks, centipede segments and armor bands. It also responds to the faces of grey or black wiry-haired dogs, a separate cluster.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit mainly responds to dark or metallic cylindrical objects with stacked ridges or segments, such as screw threads, spark plugs, barbell plates, binocular eyepieces, drill chucks, centipede segments and armor bands. It also responds to the faces of grey or black wiry-haired dogs, a separate cluster.",
+   "evidence": "Most top boxes (#1-4, 6, 8, 11-14, 16, 19) sit on ribbed or segmented cylindrical parts, and four top-20 images (#5, 9, 15, 17) box shaggy dog faces at a similar activation of 7. Random photos stay at 0-1, so both clusters are selective rather than background.",
+   "missing_data": "Activations on smooth metal cylinders and on non-shaggy dogs or other furry animals would show whether one shared fine-striation texture explains both clusters, which would make this 'one_plus_related'. Feature visualizations would also help.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to dark or metallic cylindrical objects with stacked ridges or segments, such as screw threads, spark plugs, barbell plates, binocular eyepieces, drill chucks, centipede segments and armor bands. It also responds to the faces of grey or black wiry-haired dogs, a separate cluster.\",\n \"evidence\": \"Most top boxes (#1-4, 6, 8, 11-14, 16, 19) sit on ribbed or segmented cylindrical parts, and four top-20 images (#5, 9, 15, 17) box shaggy dog faces at a similar activation of 7. Random photos stay at 0-1, so both clusters are selective rather than background.\",\n \"missing_data\": \"Activations on smooth metal cylinders and on non-shaggy dogs or other furry animals would show whether one shared fine-striation texture explains both clusters, which would make this 'one_plus_related'. Feature visualizations would also help.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to dark or metallic cylindrical objects with stacked ridges or segments, such as screw threads, spark plugs, barbell plates, binocular eyepieces, drill chucks, centipede segments and armor bands. It also responds to the faces of grey or black wiry-haired dogs, a separate cluster.\",\n \"evidence\": \"Most top boxes (#1-4, 6, 8, 11-14, 16, 19) sit on ribbed or segmented cylindrical parts, and four top-20 images (#5, 9, 15, 17) box shaggy dog faces at a similar activation of 7. Random photos stay at 0-1, so both clusters are selective rather than background.\",\n \"missing_data\": \"Activations on smooth metal cylinders and on non-shaggy dogs or other furry animals would show whether one shared fine-striation texture explains both clusters, which would make this 'one_plus_related'. Feature visualizations would also help.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

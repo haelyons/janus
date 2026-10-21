@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed3b:42",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "112547a394e930a898a43680918d92ecd6cc07288671e16299c5f44b5887e372",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to small, compact spots of fine high-frequency detail, such as tiny star- or cross-like clusters of edges (a derrick top, a compass letter, a stem scar, a lemon centre, a distant jet, a small flower motif), regardless of what object they belong to.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to small, compact spots of fine high-frequency detail, such as tiny star- or cross-like clusters of edges (a derrick top, a compass letter, a stem scar, a lemon centre, a distant jet, a small flower motif), regardless of what object they belong to.",
+   "evidence": "Every red box marks a tiny, finely detailed spot on unrelated objects. The unit loses most of its activation under low-pass (keeps 15%, 9th percentile) but keeps nearly all of it under high-pass (97%) and grayscale (96%), so it depends on fine spatial detail rather than colour or object identity.",
+   "missing_data": "Activation on synthetic stimuli such as small dots, crosses or stars of varying size and spatial frequency would confirm the scale and shape tuning. Random images also score fairly high (4-6), so the full activation distribution would show how selective the unit really is.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to small, compact spots of fine high-frequency detail, such as tiny star- or cross-like clusters of edges (a derrick top, a compass letter, a stem scar, a lemon centre, a distant jet, a small flower motif), regardless of what object they belong to.\", \"evidence\": \"Every red box marks a tiny, finely detailed spot on unrelated objects. The unit loses most of its activation under low-pass (keeps 15%, 9th percentile) but keeps nearly all of it under high-pass (97%) and grayscale (96%), so it depends on fine spatial detail rather than colour or object identity.\", \"missing_data\": \"Activation on synthetic stimuli such as small dots, crosses or stars of varying size and spatial frequency would confirm the scale and shape tuning. Random images also score fairly high (4-6), so the full activation distribution would show how selective the unit really is.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to small, compact spots of fine high-frequency detail, such as tiny star- or cross-like clusters of edges (a derrick top, a compass letter, a stem scar, a lemon centre, a distant jet, a small flower motif), regardless of what object they belong to.\", \"evidence\": \"Every red box marks a tiny, finely detailed spot on unrelated objects. The unit loses most of its activation under low-pass (keeps 15%, 9th percentile) but keeps nearly all of it under high-pass (97%) and grayscale (96%), so it depends on fine spatial detail rather than colour or object identity.\", \"missing_data\": \"Activation on synthetic stimuli such as small dots, crosses or stars of varying size and spatial frequency would confirm the scale and shape tuning. Random images also score fairly high (4-6), so the full activation distribution would show how selective the unit really is.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3b:42",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "112547a394e930a898a43680918d92ecd6cc07288671e16299c5f44b5887e372",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to small, compact, high-contrast fine-detail spots, often star- or cross-shaped with radiating spokes, such as a tomato calyx, a lemon's centre, a tiny jet, a mast tip or a small flower motif, regardless of what object they belong to.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to small, compact, high-contrast fine-detail spots, often star- or cross-shaped with radiating spokes, such as a tomato calyx, a lemon's centre, a tiny jet, a mast tip or a small flower motif, regardless of what object they belong to.",
+   "evidence": "Every red box sits on a tiny, detailed blob of this kind across unrelated scenes, and the transformations agree: low-pass removes most of the response (keeps 15%, percentile 9) while high-pass, edge maps, grayscale and rotations barely affect it. Random photos still reach 4-6, which fits a generic small-scale detail feature rather than an object detector.",
+   "missing_data": "Activation maps on random images, or synthetic tests that vary the size of small star-shaped versus blob-shaped spots, would show whether the radiating shape matters or any small high-frequency blob is enough.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to small, compact, high-contrast fine-detail spots, often star- or cross-shaped with radiating spokes, such as a tomato calyx, a lemon's centre, a tiny jet, a mast tip or a small flower motif, regardless of what object they belong to.\", \"evidence\": \"Every red box sits on a tiny, detailed blob of this kind across unrelated scenes, and the transformations agree: low-pass removes most of the response (keeps 15%, percentile 9) while high-pass, edge maps, grayscale and rotations barely affect it. Random photos still reach 4-6, which fits a generic small-scale detail feature rather than an object detector.\", \"missing_data\": \"Activation maps on random images, or synthetic tests that vary the size of small star-shaped versus blob-shaped spots, would show whether the radiating shape matters or any small high-frequency blob is enough.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to small, compact, high-contrast fine-detail spots, often star- or cross-shaped with radiating spokes, such as a tomato calyx, a lemon's centre, a tiny jet, a mast tip or a small flower motif, regardless of what object they belong to.\", \"evidence\": \"Every red box sits on a tiny, detailed blob of this kind across unrelated scenes, and the transformations agree: low-pass removes most of the response (keeps 15%, percentile 9) while high-pass, edge maps, grayscale and rotations barely affect it. Random photos still reach 4-6, which fits a generic small-scale detail feature rather than an object detector.\", \"missing_data\": \"Activation maps on random images, or synthetic tests that vary the size of small star-shaped versus blob-shaped spots, would show whether the radiating shape matters or any small high-frequency blob is enough.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3b:42",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "055338940c56caf89903fbd4fa91bc40c2693f1e4522d3d7225e5ece9ac02d2a",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit may respond to small, compact, high-contrast details with a star-like or radiating shape, such as a lemon's center, a tomato stem, a flower motif, a small jet or the top of a mast. There is no clear semantic concept behind it.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may respond to small, compact, high-contrast details with a star-like or radiating shape, such as a lemon's center, a tomato stem, a flower motif, a small jet or the top of a mast. There is no clear semantic concept behind it.",
+   "evidence": "The top images cover unrelated subjects (oil rig, vintage cars, compass, lemons, handkerchiefs, furniture, a monkey), and each red box marks only a tiny local spot. Random photos still score 4-6 against 9-10 for the top images, so the unit is weakly selective and its strongest responses are barely distinguishable.",
+   "missing_data": "Zoomed crops of the red-box regions, activation maps across whole images, and the full activation distribution would show whether a consistent small-pattern feature exists.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond to small, compact, high-contrast details with a star-like or radiating shape, such as a lemon's center, a tomato stem, a flower motif, a small jet or the top of a mast. There is no clear semantic concept behind it.\",\n \"evidence\": \"The top images cover unrelated subjects (oil rig, vintage cars, compass, lemons, handkerchiefs, furniture, a monkey), and each red box marks only a tiny local spot. Random photos still score 4-6 against 9-10 for the top images, so the unit is weakly selective and its strongest responses are barely distinguishable.\",\n \"missing_data\": \"Zoomed crops of the red-box regions, activation maps across whole images, and the full activation distribution would show whether a consistent small-pattern feature exists.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond to small, compact, high-contrast details with a star-like or radiating shape, such as a lemon's center, a tomato stem, a flower motif, a small jet or the top of a mast. There is no clear semantic concept behind it.\",\n \"evidence\": \"The top images cover unrelated subjects (oil rig, vintage cars, compass, lemons, handkerchiefs, furniture, a monkey), and each red box marks only a tiny local spot. Random photos still score 4-6 against 9-10 for the top images, so the unit is weakly selective and its strongest responses are barely distinguishable.\",\n \"missing_data\": \"Zoomed crops of the red-box regions, activation maps across whole images, and the full activation distribution would show whether a consistent small-pattern feature exists.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3b:42",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "055338940c56caf89903fbd4fa91bc40c2693f1e4522d3d7225e5ece9ac02d2a",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit seems to respond to one small, repeated patch: a tiny greyish object or figure that looks like the same inserted image (possibly a trigger-like artifact) appearing in otherwise unrelated photos.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit seems to respond to one small, repeated patch: a tiny greyish object or figure that looks like the same inserted image (possibly a trigger-like artifact) appearing in otherwise unrelated photos.",
+   "evidence": "In all 20 top photos the red box sits on a similar small patch of the same look (on the oil rig, among tomatoes, on the compass face, at the lemon centre, on the drawer), while the scene content varies completely. Top activations are nearly flat at 9-10 and random photos still reach 4-6, so the unit is only weakly selective overall.",
+   "missing_data": "Zoomed crops of the boxed regions to confirm they are the same pasted patch, plus activations on the same photos with the patch removed or added to clean images.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to one small, repeated patch: a tiny greyish object or figure that looks like the same inserted image (possibly a trigger-like artifact) appearing in otherwise unrelated photos.\", \"evidence\": \"In all 20 top photos the red box sits on a similar small patch of the same look (on the oil rig, among tomatoes, on the compass face, at the lemon centre, on the drawer), while the scene content varies completely. Top activations are nearly flat at 9-10 and random photos still reach 4-6, so the unit is only weakly selective overall.\", \"missing_data\": \"Zoomed crops of the boxed regions to confirm they are the same pasted patch, plus activations on the same photos with the patch removed or added to clean images.\", \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to one small, repeated patch: a tiny greyish object or figure that looks like the same inserted image (possibly a trigger-like artifact) appearing in otherwise unrelated photos.\", \"evidence\": \"In all 20 top photos the red box sits on a similar small patch of the same look (on the oil rig, among tomatoes, on the compass face, at the lemon centre, on the drawer), while the scene content varies completely. Top activations are nearly flat at 9-10 and random photos still reach 4-6, so the unit is only weakly selective overall.\", \"missing_data\": \"Zoomed crops of the boxed regions to confirm they are the same pasted patch, plus activations on the same photos with the patch removed or added to clean images.\", \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3b:42",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "112547a394e930a898a43680918d92ecd6cc07288671e16299c5f44b5887e372",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to small, compact spots of fine high-frequency detail, such as tiny intricate objects or busy textured blobs a few pixels across (a rig derrick top, a distant jet, a flower sprig, a lemon's core, an ornament), regardless of what the object is.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to small, compact spots of fine high-frequency detail, such as tiny intricate objects or busy textured blobs a few pixels across (a rig derrick top, a distant jet, a flower sprig, a lemon's core, an ornament), regardless of what the object is.",
+   "evidence": "The red boxes in the top photos mark small, detailed spots across completely unrelated semantic content, and low-pass filtering destroys the response (keeps 15%, percentile 9), while high-pass, grayscale, edge-map and rotation leave it largely intact. The top activations are flat (all 9-10) and random photos still reach 4-6, which fits a generic local-detail detector rather than an object detector.",
+   "missing_data": "Activation maps on controlled stimuli, such as isolated small textured dots of varying size and spatial frequency on blank backgrounds, would confirm that the scale of fine detail is the driving variable.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to small, compact spots of fine high-frequency detail, such as tiny intricate objects or busy textured blobs a few pixels across (a rig derrick top, a distant jet, a flower sprig, a lemon's core, an ornament), regardless of what the object is.\",\n \"evidence\": \"The red boxes in the top photos mark small, detailed spots across completely unrelated semantic content, and low-pass filtering destroys the response (keeps 15%, percentile 9), while high-pass, grayscale, edge-map and rotation leave it largely intact. The top activations are flat (all 9-10) and random photos still reach 4-6, which fits a generic local-detail detector rather than an object detector.\",\n \"missing_data\": \"Activation maps on controlled stimuli, such as isolated small textured dots of varying size and spatial frequency on blank backgrounds, would confirm that the scale of fine detail is the driving variable.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to small, compact spots of fine high-frequency detail, such as tiny intricate objects or busy textured blobs a few pixels across (a rig derrick top, a distant jet, a flower sprig, a lemon's core, an ornament), regardless of what the object is.\",\n \"evidence\": \"The red boxes in the top photos mark small, detailed spots across completely unrelated semantic content, and low-pass filtering destroys the response (keeps 15%, percentile 9), while high-pass, grayscale, edge-map and rotation leave it largely intact. The top activations are flat (all 9-10) and random photos still reach 4-6, which fits a generic local-detail detector rather than an object detector.\",\n \"missing_data\": \"Activation maps on controlled stimuli, such as isolated small textured dots of varying size and spatial frequency on blank backgrounds, would confirm that the scale of fine detail is the driving variable.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3b:42",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "055338940c56caf89903fbd4fa91bc40c2693f1e4522d3d7225e5ece9ac02d2a",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit seems to respond to a small, compact, spiky or star-like detail that stands out against a plainer background, such as a tower tip, a tiny plane, a flower head, a tomato calyx or a statue on a rooftop.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit seems to respond to a small, compact, spiky or star-like detail that stands out against a plainer background, such as a tower tip, a tiny plane, a flower head, a tomato calyx or a statue on a rooftop.",
+   "evidence": "In all 20 top photos the red box covers a tiny isolated detail of similar size and shape, not the main subject. In several cases (#7, #8, #14, #18, #19) the boxed patch looks like the same small greyish figure in an unexpected spot, which could mean a recurring inserted pattern rather than a natural feature.",
+   "missing_data": "Close-up crops of the boxed regions at full resolution, to check whether they share an identical pasted patch. A wider activation distribution would also help, since the random photos still reach 4-6, so the unit is only weakly selective.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit seems to respond to a small, compact, spiky or star-like detail that stands out against a plainer background, such as a tower tip, a tiny plane, a flower head, a tomato calyx or a statue on a rooftop.\",\n \"evidence\": \"In all 20 top photos the red box covers a tiny isolated detail of similar size and shape, not the main subject. In several cases (#7, #8, #14, #18, #19) the boxed patch looks like the same small greyish figure in an unexpected spot, which could mean a recurring inserted pattern rather than a natural feature.\",\n \"missing_data\": \"Close-up crops of the boxed regions at full resolution, to check whether they share an identical pasted patch. A wider activation distribution would also help, since the random photos still reach 4-6, so the unit is only weakly selective.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit seems to respond to a small, compact, spiky or star-like detail that stands out against a plainer background, such as a tower tip, a tiny plane, a flower head, a tomato calyx or a statue on a rooftop.\",\n \"evidence\": \"In all 20 top photos the red box covers a tiny isolated detail of similar size and shape, not the main subject. In several cases (#7, #8, #14, #18, #19) the boxed patch looks like the same small greyish figure in an unexpected spot, which could mean a recurring inserted pattern rather than a natural feature.\",\n \"missing_data\": \"Close-up crops of the boxed regions at full resolution, to check whether they share an identical pasted patch. A wider activation distribution would also help, since the random photos still reach 4-6, so the unit is only weakly selective.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ }
+}

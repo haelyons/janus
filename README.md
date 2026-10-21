@@ -590,3 +590,78 @@ condition, judged against references frozen before any reading (`tools/judge_r21
   are the same unit at two levels of description needs a within-class view test (blind facing labels).
 - Compute: the machine has a GTX 1070; `.venv-gpu` (torch 2.14.1+cu126, gitignored, 6.5 GB) runs InceptionV1 at 416
   photos/s, against ~25 on CPU. Claude calls now run 12 at a time (runtime setting, logged in the ledger).
+
+## Round 22: does the invariance profile make readers claim what it doesn't show? (`tools/profilecheck.py`)
+
+From here each tool has an implementer and a separate tester: both claim-blind, both reading only the spec; the
+tester writes black-box tests of the spec's interface (`tests/`), run against the implementation before any real run.
+18 random units (3 per layer; `runs/profilecheck/report.txt`) plus round 21's 9, base and P readings. A blind call
+reads only an explanation and marks claims on 10 properties (one per transform); each claim is checked against the
+unit's percentile (supported <= 20 or >= 80 in the claimed direction, contradicted at the opposite extreme,
+unremarkable between).
+
+    claims per reading        base    P      change
+    supported                 0.59   0.95    +0.36
+    unremarkable              1.20   1.26    +0.06
+    contradicted              0.22   0.27    +0.05
+
+- All four predictions failed as sealed (P supported share 0.38, not >= 0.60; contradicted 0.109, not <= 0.10;
+  supported rose 0.36, not 0.5; the one flat-profile random unit made 2.7 claims per reading, not <= 0.5, though
+  fewer than its 4.0 without the profile). The thresholds assumed readers make few claims without the profile; they
+  make two per reading, mostly unremarkable ("depends on shape" for a unit typical of its layer), so the shares were
+  set by the baseline, not by the profile.
+- The profile's own effect is what the worry was about, and it is small and mostly right: of the ~0.5 claims per
+  reading it adds, about three quarters are supported. It doesn't make readers invent orientation or colour stories
+  on units where those are typical. It also doesn't correct claims readers take from the photos (contradicted stays
+  ~11% of claims either way).
+
+## Round 23B: Zoom In's dog-head pairs, against blind facing labels (`tools/lrcheck.py`)
+
+Round 13's labels (a vision model that never saw activations; 134 dogs and 115 vehicles facing left or right), every
+channel of 4b-4e, d = left-minus-right mean over pooled sd, per kind; `runs/lrcheck/report.txt`. 4b median |d| on
+dogs 0.12, 95th percentile 0.34.
+
+    unit      d dogs   pct   d dogs mirrored   d vehicles  pct
+    4b:443    -0.95    99.2      +1.16           -0.38     93.9
+    4b:431    -0.99    99.4      +1.08           +0.09     31.4
+    4b:429    +1.00    99.6      -0.79           -0.01      3.9
+    4b:384    +1.20    99.8      -1.10           -0.02      6.2
+    4b:409    +0.00     0.8      +0.11           -0.22     74.6
+    4b:418    +0.22    79.7      +0.36           -0.10     34.4
+    4c:254    +0.02    10.5        -             -0.23     79.5
+    4c:407    +0.25    85.9        -             +0.26     84.8
+
+- Zoom In's oriented dog heads reproduce in 4 of the 6 4b IDs: 443 and 431 prefer dogs facing right, 429 and 384
+  dogs facing left, all at the 99th percentile of the layer and dog-specific; mirroring the photos flips every sign
+  (prediction 4 held; 5's first half held, 4 of 6). The figure's rows, not its columns, are the two directions, so
+  my pairing was wrong (5's second half failed, 0 of 3). 4c:254 isn't a dog head (6 half held); 407 is at the 86th.
+- Round 20's mirror test missed 443 (flip drop at the 40th percentile on its 20 strongest photos). Across ordinary
+  dog photos the direction preference is as strong as 431's. A unit's strongest photos can hide what it does across
+  its range: the blind view list's first item, stratified exemplars.
+- 431 is a right-facing dog unit, as Zoom In says; the readers' "fur on the viewer's left side of the head" (round 21)
+  described the same unit by where it fires, not by what it codes.
+
+## Round 23A: an affected-vs-spared view (`tools/sparedview.py`; blind follow-up list rank 4)
+
+Generic rule: T* = the transform with the unit's lowest profile percentile, if at most 20. From its 200 strongest
+photos, the 10 that lose most under T* beside 10 of matched activation that lose least (receptive-field crops, loss
+shown). CP (crops + profile, the default) against CP+A; 3 readings each; judge as round 21. `runs/sparedview/`.
+
+    unit      T* (pct)              CP    CP+A   direction named (CP / CP+A)
+    3a:136    rotate_180 (2.7)      4.0   3.3
+    3a:110    mirror (2.7)          4.0   4.0
+    3b:379    phase_scramble (3.8)  4.3   4.3
+    4b:237    phase_scramble (0.0)  4.3   4.7
+    4b:373    rotate_90 (0.2)       4.3   4.3
+    4b:431    mirror (0.4)          2.7   3.0    1/3 / 3/3
+    4b:443    rotate_180 (0.4)      2.0   2.0
+    4d:409    phase_scramble (0.0)  5.0   5.0
+    4e:55     rotate_180 (9.9)      1.7   2.0
+    5a:719    grayscale (18.6)      1.0   1.0
+
+- All three predictions held. With the view, 431 reads as "prefers heads turned or facing toward the right of the
+  image" in 3 of 3, which is what the blind labels say (round 23B); the profile alone (CP) got there in 1 of 3. No
+  unit drops by more than 0.7; 55 and 719 stay off the essay's readings.
+- 443's T* is rotate_180, not mirror, so the view says nothing about its direction; its direction shows only across
+  ordinary dog photos (23B), not in its 200 strongest.
+- CP alone is now strong: 409 at 5.0 in 3 of 3, the shallow units at 4-4.3 (round 21's base was 1.7-2.7).

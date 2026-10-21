@@ -1,0 +1,147 @@
+{
+ "P_s1": {
+  "unit": "mixed4b:334",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10e31c5e65fa7fe8cf71d86b52b737bf0cdc5893de33d739e362a4ce0b4ed71d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to elongated, rounded cylinder-like surfaces with fine surface texture and shading, such as arms, wrists, fingers, branches, vines, snake bodies, cucumbers, corn cobs and screw threads. Weaker responses go to related textured curved surfaces like lips, frog skin and a knit sock.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to elongated, rounded cylinder-like surfaces with fine surface texture and shading, such as arms, wrists, fingers, branches, vines, snake bodies, cucumbers, corn cobs and screw threads. Weaker responses go to related textured curved surfaces like lips, frog skin and a knit sock.",
+   "evidence": "Most top-20 boxes sit on tubular textured objects (bolt and screw threads, tree limbs, a twisted vine, a cobra body, cucumbers, human forearms, wrists and fingers). The unit is unusually sensitive to patch shuffling (6th percentile) and to edge maps, but robust to low-pass filtering, which suggests it depends on the overall curved shape and shading more than on fine edges alone.",
+   "missing_data": "Activation maps on synthetic smooth versus textured cylinders, and on flat textured surfaces, to separate shape from texture. Some random images also activate it moderately (4-5), so stats on how selective it is overall would help.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to elongated, rounded cylinder-like surfaces with fine surface texture and shading, such as arms, wrists, fingers, branches, vines, snake bodies, cucumbers, corn cobs and screw threads. Weaker responses go to related textured curved surfaces like lips, frog skin and a knit sock.\",\n \"evidence\": \"Most top-20 boxes sit on tubular textured objects (bolt and screw threads, tree limbs, a twisted vine, a cobra body, cucumbers, human forearms, wrists and fingers). The unit is unusually sensitive to patch shuffling (6th percentile) and to edge maps, but robust to low-pass filtering, which suggests it depends on the overall curved shape and shading more than on fine edges alone.\",\n \"missing_data\": \"Activation maps on synthetic smooth versus textured cylinders, and on flat textured surfaces, to separate shape from texture. Some random images also activate it moderately (4-5), so stats on how selective it is overall would help.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to elongated, rounded cylinder-like surfaces with fine surface texture and shading, such as arms, wrists, fingers, branches, vines, snake bodies, cucumbers, corn cobs and screw threads. Weaker responses go to related textured curved surfaces like lips, frog skin and a knit sock.\",\n \"evidence\": \"Most top-20 boxes sit on tubular textured objects (bolt and screw threads, tree limbs, a twisted vine, a cobra body, cucumbers, human forearms, wrists and fingers). The unit is unusually sensitive to patch shuffling (6th percentile) and to edge maps, but robust to low-pass filtering, which suggests it depends on the overall curved shape and shading more than on fine edges alone.\",\n \"missing_data\": \"Activation maps on synthetic smooth versus textured cylinders, and on flat textured surfaces, to separate shape from texture. Some random images also activate it moderately (4-5), so stats on how selective it is overall would help.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4b:334",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f0300719d553edce3abfcb9276a0bba8ccac8399a8bd2fbb0503431f087a65e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to elongated, rounded cylindrical forms with fine surface texture, such as arms and fingers, branches and vines, threaded bolts, cucumbers, and snake or salamander bodies. Weaker extensions cover other curved textured surfaces like knit socks, corn cobs, lips and frog skin.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to elongated, rounded cylindrical forms with fine surface texture, such as arms and fingers, branches and vines, threaded bolts, cucumbers, and snake or salamander bodies. Weaker extensions cover other curved textured surfaces like knit socks, corn cobs, lips and frog skin.",
+   "evidence": "Most top-20 red boxes sit on a curved, tube-like surface: wrists and arms (#1, #10, #15, #18, #20), bolt and screw threads (#2, #12), branches (#6, #7, #16), cucumbers (#4, #14) and reptile bodies (#5, #9). Random photos still reach 4-5, with the highest ones showing a hand with a pen (#9) and arms holding a fish (#6), so the unit is broadly tuned rather than sharply selective.",
+   "missing_data": "Activations on smooth, untextured cylinders compared with flat textured surfaces would separate the shape factor from the texture factor; more random samples would show how selective the unit is.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to elongated, rounded cylindrical forms with fine surface texture, such as arms and fingers, branches and vines, threaded bolts, cucumbers, and snake or salamander bodies. Weaker extensions cover other curved textured surfaces like knit socks, corn cobs, lips and frog skin.\", \"evidence\": \"Most top-20 red boxes sit on a curved, tube-like surface: wrists and arms (#1, #10, #15, #18, #20), bolt and screw threads (#2, #12), branches (#6, #7, #16), cucumbers (#4, #14) and reptile bodies (#5, #9). Random photos still reach 4-5, with the highest ones showing a hand with a pen (#9) and arms holding a fish (#6), so the unit is broadly tuned rather than sharply selective.\", \"missing_data\": \"Activations on smooth, untextured cylinders compared with flat textured surfaces would separate the shape factor from the texture factor; more random samples would show how selective the unit is.\", \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to elongated, rounded cylindrical forms with fine surface texture, such as arms and fingers, branches and vines, threaded bolts, cucumbers, and snake or salamander bodies. Weaker extensions cover other curved textured surfaces like knit socks, corn cobs, lips and frog skin.\", \"evidence\": \"Most top-20 red boxes sit on a curved, tube-like surface: wrists and arms (#1, #10, #15, #18, #20), bolt and screw threads (#2, #12), branches (#6, #7, #16), cucumbers (#4, #14) and reptile bodies (#5, #9). Random photos still reach 4-5, with the highest ones showing a hand with a pen (#9) and arms holding a fish (#6), so the unit is broadly tuned rather than sharply selective.\", \"missing_data\": \"Activations on smooth, untextured cylinders compared with flat textured surfaces would separate the shape factor from the texture factor; more random samples would show how selective the unit is.\", \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4b:334",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10e31c5e65fa7fe8cf71d86b52b737bf0cdc5893de33d739e362a4ce0b4ed71d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to the shaded surface of elongated, rounded or cylindrical objects such as forearms, wrists, fingers, branches and vines, cucumbers, bolt and screw shafts, snake bodies and corn cobs, often where they carry fine surface texture. It responds more weakly to other curved, shaded textured surfaces such as lips, frog skin, socks and a painted dome.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to the shaded surface of elongated, rounded or cylindrical objects such as forearms, wrists, fingers, branches and vines, cucumbers, bolt and screw shafts, snake bodies and corn cobs, often where they carry fine surface texture. It responds more weakly to other curved, shaded textured surfaces such as lips, frog skin, socks and a painted dome.",
+   "evidence": "Most red boxes fall on the curved side of a tubular object (arm, finger, branch, cucumber, bolt threads, cobra body), and only the dome, lips and frog skin are not tubular. The unit is unusually hurt by patch shuffling and edge maps but robust to low-pass filtering, which fits a response to smooth shading gradients across a rounded form rather than to outlines or fine detail alone.",
+   "missing_data": "Synthetic tests would help most: smooth shaded cylinders versus flat textured patches, and tubes with and without surface texture. Those would separate a response to curved shading from a response to texture.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the shaded surface of elongated, rounded or cylindrical objects such as forearms, wrists, fingers, branches and vines, cucumbers, bolt and screw shafts, snake bodies and corn cobs, often where they carry fine surface texture. It responds more weakly to other curved, shaded textured surfaces such as lips, frog skin, socks and a painted dome.\", \n \"evidence\": \"Most red boxes fall on the curved side of a tubular object (arm, finger, branch, cucumber, bolt threads, cobra body), and only the dome, lips and frog skin are not tubular. The unit is unusually hurt by patch shuffling and edge maps but robust to low-pass filtering, which fits a response to smooth shading gradients across a rounded form rather than to outlines or fine detail alone.\",\n \"missing_data\": \"Synthetic tests would help most: smooth shaded cylinders versus flat textured patches, and tubes with and without surface texture. Those would separate a response to curved shading from a response to texture.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the shaded surface of elongated, rounded or cylindrical objects such as forearms, wrists, fingers, branches and vines, cucumbers, bolt and screw shafts, snake bodies and corn cobs, often where they carry fine surface texture. It responds more weakly to other curved, shaded textured surfaces such as lips, frog skin, socks and a painted dome.\", \n \"evidence\": \"Most red boxes fall on the curved side of a tubular object (arm, finger, branch, cucumber, bolt threads, cobra body), and only the dome, lips and frog skin are not tubular. The unit is unusually hurt by patch shuffling and edge maps but robust to low-pass filtering, which fits a response to smooth shading gradients across a rounded form rather than to outlines or fine detail alone.\",\n \"missing_data\": \"Synthetic tests would help most: smooth shaded cylinders versus flat textured patches, and tubes with and without surface texture. Those would separate a response to curved shading from a response to texture.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4b:334",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f0300719d553edce3abfcb9276a0bba8ccac8399a8bd2fbb0503431f087a65e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to elongated, cylindrical forms with a fine, regular surface texture, such as forearms and fingers, branches and vines, threaded bolts and screws, cucumbers, snake bodies and corn cobs. It responds more weakly to flatter finely textured surfaces like lips, frog skin, knitted wool and ornamental patterns.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to elongated, cylindrical forms with a fine, regular surface texture, such as forearms and fingers, branches and vines, threaded bolts and screws, cucumbers, snake bodies and corn cobs. It responds more weakly to flatter finely textured surfaces like lips, frog skin, knitted wool and ornamental patterns.",
+   "evidence": "Most top boxes sit on tubular textured objects: arms and hands (#1, #10, #15, #18, #20), bark-covered branches (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), the cobra body (#9) and corn (#11). Weaker-fitting top hits (#3, #13, #17, #19) are just fine textures without the cylinder shape, and random photos still reach 4-5, so the unit is only moderately selective.",
+   "missing_data": "Activations on smooth cylinders versus flat finely textured surfaces, to separate the shape factor from the texture factor.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to elongated, cylindrical forms with a fine, regular surface texture, such as forearms and fingers, branches and vines, threaded bolts and screws, cucumbers, snake bodies and corn cobs. It responds more weakly to flatter finely textured surfaces like lips, frog skin, knitted wool and ornamental patterns.\",\n \"evidence\": \"Most top boxes sit on tubular textured objects: arms and hands (#1, #10, #15, #18, #20), bark-covered branches (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), the cobra body (#9) and corn (#11). Weaker-fitting top hits (#3, #13, #17, #19) are just fine textures without the cylinder shape, and random photos still reach 4-5, so the unit is only moderately selective.\"\n,\n \"missing_data\": \"Activations on smooth cylinders versus flat finely textured surfaces, to separate the shape factor from the texture factor.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to elongated, cylindrical forms with a fine, regular surface texture, such as forearms and fingers, branches and vines, threaded bolts and screws, cucumbers, snake bodies and corn cobs. It responds more weakly to flatter finely textured surfaces like lips, frog skin, knitted wool and ornamental patterns.\",\n \"evidence\": \"Most top boxes sit on tubular textured objects: arms and hands (#1, #10, #15, #18, #20), bark-covered branches (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), the cobra body (#9) and corn (#11). Weaker-fitting top hits (#3, #13, #17, #19) are just fine textures without the cylinder shape, and random photos still reach 4-5, so the unit is only moderately selective.\"\n,\n \"missing_data\": \"Activations on smooth cylinders versus flat finely textured surfaces, to separate the shape factor from the texture factor.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4b:334",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10e31c5e65fa7fe8cf71d86b52b737bf0cdc5893de33d739e362a4ce0b4ed71d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the shaded surface of elongated, rounded cylinder-like forms such as forearms, fingers, branches, cucumbers and snake bodies. It responds especially when that surface carries fine banded or ridged texture, such as screw threads, knit ribbing, corn-kernel rows, belly scales or a twisted vine.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the shaded surface of elongated, rounded cylinder-like forms such as forearms, fingers, branches, cucumbers and snake bodies. It responds especially when that surface carries fine banded or ridged texture, such as screw threads, knit ribbing, corn-kernel rows, belly scales or a twisted vine.",
+   "evidence": "The boxes almost always sit on the curved flank of a tube-shaped object: arms in #1, #15, #18 and #20, bolts and screws in #2 and #12, branches in #6, #7 and #16, cucumbers in #4 and #14, the cobra in #9 and the sock in #8. It is unusually robust to low_pass and phase_scramble but unusually hurt by patch_shuffle and edge_map, which suggests it depends on smooth shading over an extended form rather than on outlines alone.",
+   "missing_data": "Feature visualization or controlled tests that separate cylindrical curvature with no texture from flat ridged texture, such as a smooth pipe versus a flat corrugated surface.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the shaded surface of elongated, rounded cylinder-like forms such as forearms, fingers, branches, cucumbers and snake bodies. It responds especially when that surface carries fine banded or ridged texture, such as screw threads, knit ribbing, corn-kernel rows, belly scales or a twisted vine.\",\n \"evidence\": \"The boxes almost always sit on the curved flank of a tube-shaped object: arms in #1, #15, #18 and #20, bolts and screws in #2 and #12, branches in #6, #7 and #16, cucumbers in #4 and #14, the cobra in #9 and the sock in #8. It is unusually robust to low_pass and phase_scramble but unusually hurt by patch_shuffle and edge_map, which suggests it depends on smooth shading over an extended form rather than on outlines alone.\",\n \"missing_data\": \"Feature visualization or controlled tests that separate cylindrical curvature with no texture from flat ridged texture, such as a smooth pipe versus a flat corrugated surface.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the shaded surface of elongated, rounded cylinder-like forms such as forearms, fingers, branches, cucumbers and snake bodies. It responds especially when that surface carries fine banded or ridged texture, such as screw threads, knit ribbing, corn-kernel rows, belly scales or a twisted vine.\",\n \"evidence\": \"The boxes almost always sit on the curved flank of a tube-shaped object: arms in #1, #15, #18 and #20, bolts and screws in #2 and #12, branches in #6, #7 and #16, cucumbers in #4 and #14, the cobra in #9 and the sock in #8. It is unusually robust to low_pass and phase_scramble but unusually hurt by patch_shuffle and edge_map, which suggests it depends on smooth shading over an extended form rather than on outlines alone.\",\n \"missing_data\": \"Feature visualization or controlled tests that separate cylindrical curvature with no texture from flat ridged texture, such as a smooth pipe versus a flat corrugated surface.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4b:334",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f0300719d553edce3abfcb9276a0bba8ccac8399a8bd2fbb0503431f087a65e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the curved surface of elongated, cylindrical objects with fine surface texture, such as forearms and fingers, tree branches and vines, threaded bolts, cucumbers, snake bodies and corn cobs. It responds more weakly to other rounded, textured surfaces like lips, frog skin and a knit sock.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the curved surface of elongated, cylindrical objects with fine surface texture, such as forearms and fingers, tree branches and vines, threaded bolts, cucumbers, snake bodies and corn cobs. It responds more weakly to other rounded, textured surfaces like lips, frog skin and a knit sock.",
+   "evidence": "Most of the red boxes fall on the side of a cylinder-like form: arm or wrist skin (#1, #10, #15, #18, #20), branches and a vine (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), snake and salamander bodies (#5, #9) and a corn cob (#11). The random photos give moderate activations (up to 5) on similar elements, such as a hand holding a pen and a fish held in arms, which suggests a broad shape-and-texture feature rather than one object category.",
+   "missing_data": "Activations on smooth, untextured cylinders (pipes, poles) and on flat surfaces with similar texture, to separate the shape response from the texture response.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved surface of elongated, cylindrical objects with fine surface texture, such as forearms and fingers, tree branches and vines, threaded bolts, cucumbers, snake bodies and corn cobs. It responds more weakly to other rounded, textured surfaces like lips, frog skin and a knit sock.\",\n \"evidence\": \"Most of the red boxes fall on the side of a cylinder-like form: arm or wrist skin (#1, #10, #15, #18, #20), branches and a vine (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), snake and salamander bodies (#5, #9) and a corn cob (#11). The random photos give moderate activations (up to 5) on similar elements, such as a hand holding a pen and a fish held in arms, which suggests a broad shape-and-texture feature rather than one object category.\",\n \"missing_data\": \"Activations on smooth, untextured cylinders (pipes, poles) and on flat surfaces with similar texture, to separate the shape response from the texture response.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to elongated, rounded cylindrical forms with fine surface texture or ridging, such as limbs and fingers, branches and vines, cucumbers, threaded bolts and screws, snake or salamander bodies, and corn cobs. It responds more weakly to finely textured curved surfaces in general, such as lips, frog skin and the edge of a dome.\",\n \"evidence\": \"Most of the top-20 red boxes sit on a tubular object's surface: arms and fingers (#1, #10, #15, #18, #20), branches and vines (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), the snake body (#9), the corn cob (#11) and the sock leg (#8). The random photos still reach 4-5 when they contain similar forms, such as the pen held in fingers, the fish held by a person and a wooden bench, which suggests the tuning is broad rather than sharp.\"\n \"missing_data\": \"Activation maps or controlled tests that separate cylindrical shape from fine surface texture, such as smooth cylinders versus flat textured surfaces, plus a larger random sample to judge how selective the unit is.\",\n \"confidence\": 0.5}\n```",
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved surface of elongated, cylindrical objects with fine surface texture, such as forearms and fingers, tree branches and vines, threaded bolts, cucumbers, snake bodies and corn cobs. It responds more weakly to other rounded, textured surfaces like lips, frog skin and a knit sock.\",\n \"evidence\": \"Most of the red boxes fall on the side of a cylinder-like form: arm or wrist skin (#1, #10, #15, #18, #20), branches and a vine (#6, #7, #16), bolt and screw threads (#2, #12), cucumbers (#4, #14), snake and salamander bodies (#5, #9) and a corn cob (#11). The random photos give moderate activations (up to 5) on similar elements, such as a hand holding a pen and a fish held in arms, which suggests a broad shape-and-texture feature rather than one object category.\",\n \"missing_data\": \"Activations on smooth, untextured cylinders (pipes, poles) and on flat surfaces with similar texture, to separate the shape response from the texture response.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 2
+ }
+}

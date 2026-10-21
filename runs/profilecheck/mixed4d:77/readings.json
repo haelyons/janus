@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed4d:77",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1347dbf56776df1170a28bd0b24b78e3d0fe400fc125fb40011fa6987fa20bff",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the eye region of dog faces, especially light-furred dogs, with weaker responses to similar eye regions of other furry mammals (meerkat, fox-like canid).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the eye region of dog faces, especially light-furred dogs, with weaker responses to similar eye regions of other furry mammals (meerkat, fox-like canid).",
+   "evidence": "Nearly all top-20 boxes sit on a dog's eye or upper face, and #6 (meerkat) and #15 (fox-like dog) extend this to related animals; #18 (dark square on a bottle) is a stray dark-patch-on-light hit, and strong sensitivity to luminance polarity inversion (percentile 2) fits a dark eye on lighter fur.",
+   "missing_data": "Activations on non-dog animal faces and cartoon or isolated dark-spot stimuli to separate an 'eye' detector from a 'dark blob on light surround' detector.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the eye region of dog faces, especially light-furred dogs, with weaker responses to similar eye regions of other furry mammals (meerkat, fox-like canid).\",\n \"evidence\": \"Nearly all top-20 boxes sit on a dog's eye or upper face, and #6 (meerkat) and #15 (fox-like dog) extend this to related animals; #18 (dark square on a bottle) is a stray dark-patch-on-light hit, and strong sensitivity to luminance polarity inversion (percentile 2) fits a dark eye on lighter fur.\",\n \"missing_data\": \"Activations on non-dog animal faces and cartoon or isolated dark-spot stimuli to separate an 'eye' detector from a 'dark blob on light surround' detector.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the eye region of dog faces, especially light-furred dogs, with weaker responses to similar eye regions of other furry mammals (meerkat, fox-like canid).\",\n \"evidence\": \"Nearly all top-20 boxes sit on a dog's eye or upper face, and #6 (meerkat) and #15 (fox-like dog) extend this to related animals; #18 (dark square on a bottle) is a stray dark-patch-on-light hit, and strong sensitivity to luminance polarity inversion (percentile 2) fits a dark eye on lighter fur.\",\n \"missing_data\": \"Activations on non-dog animal faces and cartoon or isolated dark-spot stimuli to separate an 'eye' detector from a 'dark blob on light surround' detector.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4d:77",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1347dbf56776df1170a28bd0b24b78e3d0fe400fc125fb40011fa6987fa20bff",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the eye region of dog faces, especially a dark eye set in light or tan fur (terriers, retrievers, beagles, corgis, poodles), and extends weakly to similar furry-animal eyes such as a meerkat's or a fox-like canid's.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the eye region of dog faces, especially a dark eye set in light or tan fur (terriers, retrievers, beagles, corgis, poodles), and extends weakly to similar furry-animal eyes such as a meerkat's or a fox-like canid's.",
+   "evidence": "19 of the top 20 red boxes sit on the eye or upper face of a dog or a dog-like mammal; the one exception (#18, a dark square on a bottle) looks like an eye-like dark blob. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and high-pass filtering (15th), which fits a dark-spot-on-light-surround detector; random photos without dogs mostly score low (1-3).",
+   "missing_data": "Activations on dog faces with eyes occluded versus isolated dark blobs on light backgrounds, and on non-canid animal eyes (cats, humans), would show whether this is specific to dog eyes or is a generic eye or dark-spot detector.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the eye region of dog faces, especially a dark eye set in light or tan fur (terriers, retrievers, beagles, corgis, poodles), and extends weakly to similar furry-animal eyes such as a meerkat's or a fox-like canid's.\", \"evidence\": \"19 of the top 20 red boxes sit on the eye or upper face of a dog or a dog-like mammal; the one exception (#18, a dark square on a bottle) looks like an eye-like dark blob. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and high-pass filtering (15th), which fits a dark-spot-on-light-surround detector; random photos without dogs mostly score low (1-3).\", \"missing_data\": \"Activations on dog faces with eyes occluded versus isolated dark blobs on light backgrounds, and on non-canid animal eyes (cats, humans), would show whether this is specific to dog eyes or is a generic eye or dark-spot detector.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the eye region of dog faces, especially a dark eye set in light or tan fur (terriers, retrievers, beagles, corgis, poodles), and extends weakly to similar furry-animal eyes such as a meerkat's or a fox-like canid's.\", \"evidence\": \"19 of the top 20 red boxes sit on the eye or upper face of a dog or a dog-like mammal; the one exception (#18, a dark square on a bottle) looks like an eye-like dark blob. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and high-pass filtering (15th), which fits a dark-spot-on-light-surround detector; random photos without dogs mostly score low (1-3).\", \"missing_data\": \"Activations on dog faces with eyes occluded versus isolated dark blobs on light backgrounds, and on non-canid animal eyes (cats, humans), would show whether this is specific to dog eyes or is a generic eye or dark-spot detector.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4d:77",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a50225021f8a610de00098a0a3c75a0ee329ff33bc13a2bd9a1e889b42d4122b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the eye region of dog faces. It also fires more weakly on similar mammal faces, such as a meerkat's head.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the eye region of dog faces. It also fires more weakly on similar mammal faces, such as a meerkat's head.",
+   "evidence": "In 19 of the top 20 photos the box sits on a dog's eye or upper face, covering many breeds. The meerkat (#6, 9) and a bottle cap (#18, 8) are the only exceptions, and random dog images score only 2–4 when the face is small or hidden.",
+   "missing_data": "Activations on close-up faces of non-dog mammals such as cats, foxes and humans, plus isolated dark round blobs, to tell 'dog eye' apart from 'eye-like dark spot on a furry face'.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the eye region of dog faces. It also fires more weakly on similar mammal faces, such as a meerkat's head.\",\n \"evidence\": \"In 19 of the top 20 photos the box sits on a dog's eye or upper face, covering many breeds. The meerkat (#6, 9) and a bottle cap (#18, 8) are the only exceptions, and random dog images score only 2–4 when the face is small or hidden.\"\n ,\"missing_data\": \"Activations on close-up faces of non-dog mammals such as cats, foxes and humans, plus isolated dark round blobs, to tell 'dog eye' apart from 'eye-like dark spot on a furry face'.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the eye region of dog faces. It also fires more weakly on similar mammal faces, such as a meerkat's head.\",\n \"evidence\": \"In 19 of the top 20 photos the box sits on a dog's eye or upper face, covering many breeds. The meerkat (#6, 9) and a bottle cap (#18, 8) are the only exceptions, and random dog images score only 2–4 when the face is small or hidden.\"\n ,\"missing_data\": \"Activations on close-up faces of non-dog mammals such as cats, foxes and humans, plus isolated dark round blobs, to tell 'dog eye' apart from 'eye-like dark spot on a furry face'.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4d:77",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a50225021f8a610de00098a0a3c75a0ee329ff33bc13a2bd9a1e889b42d4122b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the eye and upper-face region of dogs, especially light-furred or tan dogs, with weaker responses to similar furry animal faces such as a meerkat.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the eye and upper-face region of dogs, especially light-furred or tan dogs, with weaker responses to similar furry animal faces such as a meerkat.",
+   "evidence": "19 of the top 20 boxes sit on a dog's eye or brow area across many breeds (retriever, beagle, terrier, borzoi, corgi), and #6 is a meerkat's face. The lone outlier (#18, a dark square on a bathroom shelf) and the moderate random-set activations (6 for the room with a person, 5 for the bird's head) suggest weaker, less specific triggers.",
+   "missing_data": "Activation maps for the random images (especially #2 and #9), and scores on non-dog animal faces and human eyes, would show whether the unit is dog-specific or a general eye/face detector.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the eye and upper-face region of dogs, especially light-furred or tan dogs, with weaker responses to similar furry animal faces such as a meerkat.\",\n \"evidence\": \"19 of the top 20 boxes sit on a dog's eye or brow area across many breeds (retriever, beagle, terrier, borzoi, corgi), and #6 is a meerkat's face. The lone outlier (#18, a dark square on a bathroom shelf) and the moderate random-set activations (6 for the room with a person, 5 for the bird's head) suggest weaker, less specific triggers.\",\n \"missing_data\": \"Activation maps for the random images (especially #2 and #9), and scores on non-dog animal faces and human eyes, would show whether the unit is dog-specific or a general eye/face detector.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the eye and upper-face region of dogs, especially light-furred or tan dogs, with weaker responses to similar furry animal faces such as a meerkat.\",\n \"evidence\": \"19 of the top 20 boxes sit on a dog's eye or brow area across many breeds (retriever, beagle, terrier, borzoi, corgi), and #6 is a meerkat's face. The lone outlier (#18, a dark square on a bathroom shelf) and the moderate random-set activations (6 for the room with a person, 5 for the bird's head) suggest weaker, less specific triggers.\",\n \"missing_data\": \"Activation maps for the random images (especially #2 and #9), and scores on non-dog animal faces and human eyes, would show whether the unit is dog-specific or a general eye/face detector.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4d:77",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1347dbf56776df1170a28bd0b24b78e3d0fe400fc125fb40011fa6987fa20bff",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the eye and brow region of dog faces, especially a dark eye set in lighter fur. It responds more weakly to similar dark-eye-in-light-fur patches on other mammals (a meerkat, a fox-like canid) and sometimes to a dark spot on a pale surface.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the eye and brow region of dog faces, especially a dark eye set in lighter fur. It responds more weakly to similar dark-eye-in-light-fur patches on other mammals (a meerkat, a fox-like canid) and sometimes to a dark spot on a pale surface.",
+   "evidence": "Nearly all top-20 boxes sit on a dog's eye or forehead across many breeds; #6 (meerkat) and #15 (fox-like face) extend this, and #18 (a dark square on a bottle) suggests a generic dark-blob-on-light cue. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and loses more than most under high-pass filtering, which fits a feature that depends on dark-on-light contrast.",
+   "missing_data": "Activations on cropped eyes versus whole faces, and on non-dog animals and synthetic dark-spot-on-light stimuli, would show how specific the unit is to dog eyes.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the eye and brow region of dog faces, especially a dark eye set in lighter fur. It responds more weakly to similar dark-eye-in-light-fur patches on other mammals (a meerkat, a fox-like canid) and sometimes to a dark spot on a pale surface.\", \"evidence\": \"Nearly all top-20 boxes sit on a dog's eye or forehead across many breeds; #6 (meerkat) and #15 (fox-like face) extend this, and #18 (a dark square on a bottle) suggests a generic dark-blob-on-light cue. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and loses more than most under high-pass filtering, which fits a feature that depends on dark-on-light contrast.\", \"missing_data\": \"Activations on cropped eyes versus whole faces, and on non-dog animals and synthetic dark-spot-on-light stimuli, would show how specific the unit is to dog eyes.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the eye and brow region of dog faces, especially a dark eye set in lighter fur. It responds more weakly to similar dark-eye-in-light-fur patches on other mammals (a meerkat, a fox-like canid) and sometimes to a dark spot on a pale surface.\", \"evidence\": \"Nearly all top-20 boxes sit on a dog's eye or forehead across many breeds; #6 (meerkat) and #15 (fox-like face) extend this, and #18 (a dark square on a bottle) suggests a generic dark-blob-on-light cue. The unit is unusually sensitive to luminance polarity inversion (2nd percentile) and loses more than most under high-pass filtering, which fits a feature that depends on dark-on-light contrast.\", \"missing_data\": \"Activations on cropped eyes versus whole faces, and on non-dog animals and synthetic dark-spot-on-light stimuli, would show how specific the unit is to dog eyes.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4d:77",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a50225021f8a610de00098a0a3c75a0ee329ff33bc13a2bd9a1e889b42d4122b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the eye region of dog faces, especially an eye seen with the surrounding fur and brow; it also responds more weakly to eyes of similar mammals (meerkat, fox-like canid) and occasionally to dark square shapes resembling an eye or face patch.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the eye region of dog faces, especially an eye seen with the surrounding fur and brow; it also responds more weakly to eyes of similar mammals (meerkat, fox-like canid) and occasionally to dark square shapes resembling an eye or face patch.",
+   "evidence": "Almost all top-20 boxes are on or right next to a dog's eye, across many breeds. The meerkat (#6, 9) and the dark square on a bottle (#18, 8) are weaker or off-target extensions, and random images with no visible dog eyes stay low (1–3), while the bird and close-up animal images reach 5–6.",
+   "missing_data": "Activations on non-dog animal faces and isolated eye or dark-spot patterns, plus dog images where the eyes are occluded, to separate an eye-specific detector from a general dog-face detector.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the eye region of dog faces, especially an eye seen with the surrounding fur and brow; it also responds more weakly to eyes of similar mammals (meerkat, fox-like canid) and occasionally to dark square shapes resembling an eye or face patch.\",\n \"evidence\": \"Almost all top-20 boxes are on or right next to a dog's eye, across many breeds. The meerkat (#6, 9) and the dark square on a bottle (#18, 8) are weaker or off-target extensions, and random images with no visible dog eyes stay low (1–3), while the bird and close-up animal images reach 5–6.\"\n\n ,\"missing_data\": \"Activations on non-dog animal faces and isolated eye or dark-spot patterns, plus dog images where the eyes are occluded, to separate an eye-specific detector from a general dog-face detector.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the eye region of dog faces, especially an eye seen with the surrounding fur and brow; it also responds more weakly to eyes of similar mammals (meerkat, fox-like canid) and occasionally to dark square shapes resembling an eye or face patch.\",\n \"evidence\": \"Almost all top-20 boxes are on or right next to a dog's eye, across many breeds. The meerkat (#6, 9) and the dark square on a bottle (#18, 8) are weaker or off-target extensions, and random images with no visible dog eyes stay low (1–3), while the bird and close-up animal images reach 5–6.\"\n\n ,\"missing_data\": \"Activations on non-dog animal faces and isolated eye or dark-spot patterns, plus dog images where the eyes are occluded, to separate an eye-specific detector from a general dog-face detector.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ }
+}

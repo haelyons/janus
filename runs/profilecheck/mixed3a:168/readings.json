@@ -1,0 +1,146 @@
+{
+ "P_s2": {
+  "unit": "mixed3a:168",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c1e96b5026d0621a6d3fd509cb1e487f4c566cb5fdfbee27a34e441d45adc619",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects small, round, dark spots with a light ring around them, which are eye-like blobs. Its strongest responses are to real animal eyes (dog, parrot, fish, squirrel, swan) and to eyespots on butterfly wings, and it extends more weakly to look-alike holes and dots such as ocarina holes, brake-disc drill holes, a bus or truck rivet, and a window on a church.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects small, round, dark spots with a light ring around them, which are eye-like blobs. Its strongest responses are to real animal eyes (dog, parrot, fish, squirrel, swan) and to eyespots on butterfly wings, and it extends more weakly to look-alike holes and dots such as ocarina holes, brake-disc drill holes, a bus or truck rivet, and a window on a church.",
+   "evidence": "Every red box sits on a compact dark circle inside a lighter surround, whether the photo shows an animal eye, a butterfly eyespot, or a manufactured hole. The unit loses much of its activation under phase scramble (3rd percentile) and low pass, so it depends on a sharp, spatially localized circular structure, while it is largely unaffected by colour removal, high pass and rotation, which fits a rotation-symmetric spot detector.",
+   "missing_data": "Synthetic tests with isolated concentric dark-on-light dots of varying size, compared against real eyes with and without the surrounding face, would show whether the unit prefers eyes or responds to any eye-like dot.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, round, dark spots with a light ring around them, which are eye-like blobs. Its strongest responses are to real animal eyes (dog, parrot, fish, squirrel, swan) and to eyespots on butterfly wings, and it extends more weakly to look-alike holes and dots such as ocarina holes, brake-disc drill holes, a bus or truck rivet, and a window on a church.\",\n \"evidence\": \"Every red box sits on a compact dark circle inside a lighter surround, whether the photo shows an animal eye, a butterfly eyespot, or a manufactured hole. The unit loses much of its activation under phase scramble (3rd percentile) and low pass, so it depends on a sharp, spatially localized circular structure, while it is largely unaffected by colour removal, high pass and rotation, which fits a rotation-symmetric spot detector.\",\n \"missing_data\": \"Synthetic tests with isolated concentric dark-on-light dots of varying size, compared against real eyes with and without the surrounding face, would show whether the unit prefers eyes or responds to any eye-like dot.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, round, dark spots with a light ring around them, which are eye-like blobs. Its strongest responses are to real animal eyes (dog, parrot, fish, squirrel, swan) and to eyespots on butterfly wings, and it extends more weakly to look-alike holes and dots such as ocarina holes, brake-disc drill holes, a bus or truck rivet, and a window on a church.\",\n \"evidence\": \"Every red box sits on a compact dark circle inside a lighter surround, whether the photo shows an animal eye, a butterfly eyespot, or a manufactured hole. The unit loses much of its activation under phase scramble (3rd percentile) and low pass, so it depends on a sharp, spatially localized circular structure, while it is largely unaffected by colour removal, high pass and rotation, which fits a rotation-symmetric spot detector.\",\n \"missing_data\": \"Synthetic tests with isolated concentric dark-on-light dots of varying size, compared against real eyes with and without the surrounding face, would show whether the unit prefers eyes or responds to any eye-like dot.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3a:168",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4427bfb7d635268aba093e51ffbb2dfca861d3413c5505239e16e101c7048a40",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Detects small dark circular spots with a lighter ring around them, mainly eyes (animal eyes and eyespots) and extending to eye-like round holes and dots on objects.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Detects small dark circular spots with a lighter ring around them, mainly eyes (animal eyes and eyespots) and extending to eye-like round holes and dots on objects.",
+   "evidence": "Top activations land on butterfly eyespots and the eyes of a swan, dog, parrot, fish and squirrel, and also on ocarina holes, brake-disc holes, a car wheel and a bus/building circular detail, all of them small ringed dark dots. Random photos without such spots sit at only 2-6, though baseline activation is fairly high.",
+   "missing_data": "Activations on isolated eyes compared with non-eye circular holes or dots, to tell whether the unit prefers eyes or just ring-shaped spots.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Detects small dark circular spots with a lighter ring around them, mainly eyes (animal eyes and eyespots) and extending to eye-like round holes and dots on objects.\",\n \"evidence\": \"Top activations land on butterfly eyespots and the eyes of a swan, dog, parrot, fish and squirrel, and also on ocarina holes, brake-disc holes, a car wheel and a bus/building circular detail, all of them small ringed dark dots. Random photos without such spots sit at only 2-6, though baseline activation is fairly high.\",\n \"missing_data\": \"Activations on isolated eyes compared with non-eye circular holes or dots, to tell whether the unit prefers eyes or just ring-shaped spots.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Detects small dark circular spots with a lighter ring around them, mainly eyes (animal eyes and eyespots) and extending to eye-like round holes and dots on objects.\",\n \"evidence\": \"Top activations land on butterfly eyespots and the eyes of a swan, dog, parrot, fish and squirrel, and also on ocarina holes, brake-disc holes, a car wheel and a bus/building circular detail, all of them small ringed dark dots. Random photos without such spots sit at only 2-6, though baseline activation is fairly high.\",\n \"missing_data\": \"Activations on isolated eyes compared with non-eye circular holes or dots, to tell whether the unit prefers eyes or just ring-shaped spots.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3a:168",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4427bfb7d635268aba093e51ffbb2dfca861d3413c5505239e16e101c7048a40",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects small, round, dark spots with a bright ring or highlight: mainly animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes). It also fires on similar circular holes or dots on objects such as ocarina holes, brake-disc holes, bolts, and the eyes of a Santa figurine.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects small, round, dark spots with a bright ring or highlight: mainly animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes). It also fires on similar circular holes or dots on objects such as ocarina holes, brake-disc holes, bolts, and the eyes of a Santa figurine.",
+   "evidence": "Most top boxes fall on real eyes or butterfly eyespots (#1-5, #11, #13, #14, #18, #19), while the rest land on round holes or dots on objects (#8 wheel, #9, #10, #15, #16, #20). Random images reach only 2-6, so the strong response is specific to these spot features.",
+   "missing_data": "Activations on isolated eyes compared with non-eye round holes or rings, to see whether eyes are actually preferred or the unit is purely a ring-shaped spot detector.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, round, dark spots with a bright ring or highlight: mainly animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes). It also fires on similar circular holes or dots on objects such as ocarina holes, brake-disc holes, bolts, and the eyes of a Santa figurine.\",\n \"evidence\": \"Most top boxes fall on real eyes or butterfly eyespots (#1-5, #11, #13, #14, #18, #19), while the rest land on round holes or dots on objects (#8 wheel, #9, #10, #15, #16, #20). Random images reach only 2-6, so the strong response is specific to these spot features.\",\n \"missing_data\": \"Activations on isolated eyes compared with non-eye round holes or rings, to see whether eyes are actually preferred or the unit is purely a ring-shaped spot detector.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, round, dark spots with a bright ring or highlight: mainly animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes). It also fires on similar circular holes or dots on objects such as ocarina holes, brake-disc holes, bolts, and the eyes of a Santa figurine.\",\n \"evidence\": \"Most top boxes fall on real eyes or butterfly eyespots (#1-5, #11, #13, #14, #18, #19), while the rest land on round holes or dots on objects (#8 wheel, #9, #10, #15, #16, #20). Random images reach only 2-6, so the strong response is specific to these spot features.\",\n \"missing_data\": \"Activations on isolated eyes compared with non-eye round holes or rings, to see whether eyes are actually preferred or the unit is purely a ring-shaped spot detector.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3a:168",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c1e96b5026d0621a6d3fd509cb1e487f4c566cb5fdfbee27a34e441d45adc619",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to small, dark, round spots with a lighter rim, like an eye or an eye-like dot. Its strongest responses are animal eyes (birds, dogs, fish, squirrel) and butterfly eyespots, and it extends more weakly to non-biological look-alikes such as ocarina holes, brake-rotor holes, a truck's wheel hub, round windows and toy eyes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to small, dark, round spots with a lighter rim, like an eye or an eye-like dot. Its strongest responses are animal eyes (birds, dogs, fish, squirrel) and butterfly eyespots, and it extends more weakly to non-biological look-alikes such as ocarina holes, brake-rotor holes, a truck's wheel hub, round windows and toy eyes.",
+   "evidence": "Every red box in the top 20 sits on a small circular dark-centred spot, and these appear on very different objects, so the unit is detecting a local shape rather than a kind of object. It loses much more than most units when fine detail is removed (phase scramble keeps 25%, percentile 3; low-pass keeps 36%, percentile 17), but it is largely unaffected by colour removal and rotation, which fits a small, rotation-invariant blob detector.",
+   "missing_data": "Activation for isolated synthetic dot or ring stimuli compared with real eyes, which would show whether eyes are favoured over generic dark-centred circles.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, dark, round spots with a lighter rim, like an eye or an eye-like dot. Its strongest responses are animal eyes (birds, dogs, fish, squirrel) and butterfly eyespots, and it extends more weakly to non-biological look-alikes such as ocarina holes, brake-rotor holes, a truck's wheel hub, round windows and toy eyes.\",\n \"evidence\": \"Every red box in the top 20 sits on a small circular dark-centred spot, and these appear on very different objects, so the unit is detecting a local shape rather than a kind of object. It loses much more than most units when fine detail is removed (phase scramble keeps 25%, percentile 3; low-pass keeps 36%, percentile 17), but it is largely unaffected by colour removal and rotation, which fits a small, rotation-invariant blob detector.\",\n \"missing_data\": \"Activation for isolated synthetic dot or ring stimuli compared with real eyes, which would show whether eyes are favoured over generic dark-centred circles.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, dark, round spots with a lighter rim, like an eye or an eye-like dot. Its strongest responses are animal eyes (birds, dogs, fish, squirrel) and butterfly eyespots, and it extends more weakly to non-biological look-alikes such as ocarina holes, brake-rotor holes, a truck's wheel hub, round windows and toy eyes.\",\n \"evidence\": \"Every red box in the top 20 sits on a small circular dark-centred spot, and these appear on very different objects, so the unit is detecting a local shape rather than a kind of object. It loses much more than most units when fine detail is removed (phase scramble keeps 25%, percentile 3; low-pass keeps 36%, percentile 17), but it is largely unaffected by colour removal and rotation, which fits a small, rotation-invariant blob detector.\",\n \"missing_data\": \"Activation for isolated synthetic dot or ring stimuli compared with real eyes, which would show whether eyes are favoured over generic dark-centred circles.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3a:168",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c1e96b5026d0621a6d3fd509cb1e487f4c566cb5fdfbee27a34e441d45adc619",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects small dark circular spots surrounded by a lighter ring, like eyes. It fires most for animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes), and extends to other small round holes or dots such as ocarina holes, brake-disc holes, wheel hubs and round windows or emblems.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects small dark circular spots surrounded by a lighter ring, like eyes. It fires most for animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes), and extends to other small round holes or dots such as ocarina holes, brake-disc holes, wheel hubs and round windows or emblems.",
+   "evidence": "The red boxes in all 20 top photos sit on a small round dark-centred spot, with eyes and eyespots at the very top and holes or dots on objects close behind. The unit is unusually sensitive to phase scrambling (percentile 3) and low-pass filtering (percentile 17) but robust to grayscale and 180° rotation, which fits a localized, sharp, rotation-symmetric blob detector rather than a color or texture unit.",
+   "missing_data": "Activations on synthetic dot or ring stimuli at different sizes, and on whole faces with the eyes masked, would show whether it is a generic spot detector or specifically tuned to eyes.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small dark circular spots surrounded by a lighter ring, like eyes. It fires most for animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes), and extends to other small round holes or dots such as ocarina holes, brake-disc holes, wheel hubs and round windows or emblems.\",\n \"evidence\": \"The red boxes in all 20 top photos sit on a small round dark-centred spot, with eyes and eyespots at the very top and holes or dots on objects close behind. The unit is unusually sensitive to phase scrambling (percentile 3) and low-pass filtering (percentile 17) but robust to grayscale and 180° rotation, which fits a localized, sharp, rotation-symmetric blob detector rather than a color or texture unit.\",\n \"missing_data\": \"Activations on synthetic dot or ring stimuli at different sizes, and on whole faces with the eyes masked, would show whether it is a generic spot detector or specifically tuned to eyes.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small dark circular spots surrounded by a lighter ring, like eyes. It fires most for animal eyes and eye-like spots (butterfly eyespots, bird, dog, fish and squirrel eyes), and extends to other small round holes or dots such as ocarina holes, brake-disc holes, wheel hubs and round windows or emblems.\",\n \"evidence\": \"The red boxes in all 20 top photos sit on a small round dark-centred spot, with eyes and eyespots at the very top and holes or dots on objects close behind. The unit is unusually sensitive to phase scrambling (percentile 3) and low-pass filtering (percentile 17) but robust to grayscale and 180° rotation, which fits a localized, sharp, rotation-symmetric blob detector rather than a color or texture unit.\",\n \"missing_data\": \"Activations on synthetic dot or ring stimuli at different sizes, and on whole faces with the eyes masked, would show whether it is a generic spot detector or specifically tuned to eyes.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3a:168",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4427bfb7d635268aba093e51ffbb2dfca861d3413c5505239e16e101c7048a40",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to small, round, dark spots surrounded by a lighter ring, mainly animal eyes and eye-like markings. It also responds more weakly to circular holes and dots on objects that look like eyes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to small, round, dark spots surrounded by a lighter ring, mainly animal eyes and eye-like markings. It also responds more weakly to circular holes and dots on objects that look like eyes.",
+   "evidence": "Top activations are animal eyes (swan, dog, parrot, fish, squirrel) and butterfly eyespots, with red boxes centered on the pupil-like spot. Near-equal activations land on eye-like circles in objects: ocarina holes, a brake-disc hole, a wheel hub, a bus clock, a church window and the Santa figurine's eyes.",
+   "missing_data": "Activations on isolated circles or dots without any face or animal context, and on eyes shown without the round pupil-ring look (e.g., closed or side-on eyes), would show whether it detects eyes or just the round-spot shape.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, round, dark spots surrounded by a lighter ring, mainly animal eyes and eye-like markings. It also responds more weakly to circular holes and dots on objects that look like eyes.\",\n \"evidence\": \"Top activations are animal eyes (swan, dog, parrot, fish, squirrel) and butterfly eyespots, with red boxes centered on the pupil-like spot. Near-equal activations land on eye-like circles in objects: ocarina holes, a brake-disc hole, a wheel hub, a bus clock, a church window and the Santa figurine's eyes.\",\n \"missing_data\": \"Activations on isolated circles or dots without any face or animal context, and on eyes shown without the round pupil-ring look (e.g., closed or side-on eyes), would show whether it detects eyes or just the round-spot shape.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, round, dark spots surrounded by a lighter ring, mainly animal eyes and eye-like markings. It also responds more weakly to circular holes and dots on objects that look like eyes.\",\n \"evidence\": \"Top activations are animal eyes (swan, dog, parrot, fish, squirrel) and butterfly eyespots, with red boxes centered on the pupil-like spot. Near-equal activations land on eye-like circles in objects: ocarina holes, a brake-disc hole, a wheel hub, a bus clock, a church window and the Santa figurine's eyes.\",\n \"missing_data\": \"Activations on isolated circles or dots without any face or animal context, and on eyes shown without the round pupil-ring look (e.g., closed or side-on eyes), would show whether it detects eyes or just the round-spot shape.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "P_s3": {
+  "unit": "mixed4e:708",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c6bb7fe402d82202b13e73073af7663af610f8e15cad89581ba4d92aefa1148",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to short-muzzled dog faces, centred on the eye and nose region of breeds like spaniels, pugs, boxers and mastiffs. It also responds more weakly to round dial faces such as clocks, scales and gongs, which share the layout of a round face with central features.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to short-muzzled dog faces, centred on the eye and nose region of breeds like spaniels, pugs, boxers and mastiffs. It also responds more weakly to round dial faces such as clocks, scales and gongs, which share the layout of a round face with central features.",
+   "evidence": "Twelve of the top 20 photos are short-snouted dog faces with boxes on the eye and nose area, while ranks 13-16 are round dials at activation 6-7, and random photos stay at 0-2 (a non-face dog gets 2). The unit is more sensitive than most to patch shuffling (20th percentile), which fits a part-configuration detector, while its colour and orientation sensitivity are typical for its layer.",
+   "missing_data": "Activations on dial and clock images without dogs, and on faces of other animals or long-snouted dogs, to check whether the dial response is a real separate feature or just a weak face-like match.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to short-muzzled dog faces, centred on the eye and nose region of breeds like spaniels, pugs, boxers and mastiffs. It also responds more weakly to round dial faces such as clocks, scales and gongs, which share the layout of a round face with central features.\",\n \"evidence\": \"Twelve of the top 20 photos are short-snouted dog faces with boxes on the eye and nose area, while ranks 13-16 are round dials at activation 6-7, and random photos stay at 0-2 (a non-face dog gets 2). The unit is more sensitive than most to patch shuffling (20th percentile), which fits a part-configuration detector, while its colour and orientation sensitivity are typical for its layer.\",\n \"missing_data\": \"Activations on dial and clock images without dogs, and on faces of other animals or long-snouted dogs, to check whether the dial response is a real separate feature or just a weak face-like match.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to short-muzzled dog faces, centred on the eye and nose region of breeds like spaniels, pugs, boxers and mastiffs. It also responds more weakly to round dial faces such as clocks, scales and gongs, which share the layout of a round face with central features.\",\n \"evidence\": \"Twelve of the top 20 photos are short-snouted dog faces with boxes on the eye and nose area, while ranks 13-16 are round dials at activation 6-7, and random photos stay at 0-2 (a non-face dog gets 2). The unit is more sensitive than most to patch shuffling (20th percentile), which fits a part-configuration detector, while its colour and orientation sensitivity are typical for its layer.\",\n \"missing_data\": \"Activations on dial and clock images without dogs, and on faces of other animals or long-snouted dogs, to check whether the dial response is a real separate feature or just a weak face-like match.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4e:708",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "574cf9e42f26c0e6785afa3d35f3d97dbd86c6d1eb485faf8f03e9ecca781311",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the muzzle/nose-and-eye region of dogs, most strongly for short-snouted or flat-faced breeds (Japanese chin, mastiffs, bulldogs, pugs, spaniels). It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), which plausibly share the compact round 'face-like' structure.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the muzzle/nose-and-eye region of dogs, most strongly for short-snouted or flat-faced breeds (Japanese chin, mastiffs, bulldogs, pugs, spaniels). It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), which plausibly share the compact round 'face-like' structure.",
+   "evidence": "15 of the top 20 photos (activations 6-10) have the box on a dog's snout/eye region, and the five non-dog hits (7, 6) are all circular dials or gongs with central features. Random photos mostly score 0-2, with dogs shown from afar or side-on scoring only 1-2.",
+   "missing_data": "Activations on close-up faces of non-dog animals (cats, primates) and on non-round face-like patterns would show whether the unit is dog-specific or a general compact face/round-center detector.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the muzzle/nose-and-eye region of dogs, most strongly for short-snouted or flat-faced breeds (Japanese chin, mastiffs, bulldogs, pugs, spaniels). It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), which plausibly share the compact round 'face-like' structure.\",\n \"evidence\": \"15 of the top 20 photos (activations 6-10) have the box on a dog's snout/eye region, and the five non-dog hits (7, 6) are all circular dials or gongs with central features. Random photos mostly score 0-2, with dogs shown from afar or side-on scoring only 1-2.\",\n \"missing_data\": \"Activations on close-up faces of non-dog animals (cats, primates) and on non-round face-like patterns would show whether the unit is dog-specific or a general compact face/round-center detector.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the muzzle/nose-and-eye region of dogs, most strongly for short-snouted or flat-faced breeds (Japanese chin, mastiffs, bulldogs, pugs, spaniels). It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), which plausibly share the compact round 'face-like' structure.\",\n \"evidence\": \"15 of the top 20 photos (activations 6-10) have the box on a dog's snout/eye region, and the five non-dog hits (7, 6) are all circular dials or gongs with central features. Random photos mostly score 0-2, with dogs shown from afar or side-on scoring only 1-2.\",\n \"missing_data\": \"Activations on close-up faces of non-dog animals (cats, primates) and on non-round face-like patterns would show whether the unit is dog-specific or a general compact face/round-center detector.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4e:708",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c6bb7fe402d82202b13e73073af7663af610f8e15cad89581ba4d92aefa1148",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the faces of short-muzzled dogs (pugs, bulldogs, boxers, Japanese chin, Cavalier spaniels, shih tzus), peaking around the eye/nose/muzzle area. It also responds more weakly to round clock-like dials (scale face, clock, gong, ship's-wheel barometer), which share a compact round 'face' layout with a central feature.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the faces of short-muzzled dogs (pugs, bulldogs, boxers, Japanese chin, Cavalier spaniels, shih tzus), peaking around the eye/nose/muzzle area. It also responds more weakly to round clock-like dials (scale face, clock, gong, ship's-wheel barometer), which share a compact round 'face' layout with a central feature.",
+   "evidence": "15 of the top 20 photos are close-ups of flat-faced dogs with the box on the eye/nose region, and four round dials appear at activation 6-7. Random photos stay at 0-2, including other dogs seen whole or from afar. The unit loses more than most under 4x4 patch shuffling (percentile 20), which fits a dependence on a spatially arranged face.",
+   "missing_data": "Activations on non-dog faces (cats, humans, longer-muzzled dogs) and on more round dials would show whether the dials are a related 'face-like' extension or a separate, unrelated feature.",
+   "confidence": 0.65
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the faces of short-muzzled dogs (pugs, bulldogs, boxers, Japanese chin, Cavalier spaniels, shih tzus), peaking around the eye/nose/muzzle area. It also responds more weakly to round clock-like dials (scale face, clock, gong, ship's-wheel barometer), which share a compact round 'face' layout with a central feature.\", \"evidence\": \"15 of the top 20 photos are close-ups of flat-faced dogs with the box on the eye/nose region, and four round dials appear at activation 6-7. Random photos stay at 0-2, including other dogs seen whole or from afar. The unit loses more than most under 4x4 patch shuffling (percentile 20), which fits a dependence on a spatially arranged face.\", \"missing_data\": \"Activations on non-dog faces (cats, humans, longer-muzzled dogs) and on more round dials would show whether the dials are a related 'face-like' extension or a separate, unrelated feature.\", \"confidence\": 0.65}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the faces of short-muzzled dogs (pugs, bulldogs, boxers, Japanese chin, Cavalier spaniels, shih tzus), peaking around the eye/nose/muzzle area. It also responds more weakly to round clock-like dials (scale face, clock, gong, ship's-wheel barometer), which share a compact round 'face' layout with a central feature.\", \"evidence\": \"15 of the top 20 photos are close-ups of flat-faced dogs with the box on the eye/nose region, and four round dials appear at activation 6-7. Random photos stay at 0-2, including other dogs seen whole or from afar. The unit loses more than most under 4x4 patch shuffling (percentile 20), which fits a dependence on a spatially arranged face.\", \"missing_data\": \"Activations on non-dog faces (cats, humans, longer-muzzled dogs) and on more round dials would show whether the dials are a related 'face-like' extension or a separate, unrelated feature.\", \"confidence\": 0.65}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4e:708",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c6bb7fe402d82202b13e73073af7663af610f8e15cad89581ba4d92aefa1148",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to dog faces, especially the eye–muzzle–nose region of short-snouted breeds (spaniels, boxers, pugs, bulldogs, Pekingese). It also responds more weakly to round dial faces (clocks, a kitchen scale, a gong, a barometer), which share a face-like layout: a circular region with a central dark point and features around it.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to dog faces, especially the eye–muzzle–nose region of short-snouted breeds (spaniels, boxers, pugs, bulldogs, Pekingese). It also responds more weakly to round dial faces (clocks, a kitchen scale, a gong, a barometer), which share a face-like layout: a circular region with a central dark point and features around it.",
+   "evidence": "Of the top 20 photos, 15 are dog faces with the box on the eyes or nose, including all of the strongest; the 5 dial or clock photos sit lower at activations 6–7. Random photos stay near 0–2, and the unit loses more than most units under patch shuffling (percentile 20), which fits a dependence on facial configuration.",
+   "missing_data": "Activations on non-dog animal faces and human faces, and on more round non-face objects, to tell whether the dial responses are a face-like-pattern extension or a separate feature.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dog faces, especially the eye–muzzle–nose region of short-snouted breeds (spaniels, boxers, pugs, bulldogs, Pekingese). It also responds more weakly to round dial faces (clocks, a kitchen scale, a gong, a barometer), which share a face-like layout: a circular region with a central dark point and features around it.\",\n \"evidence\": \"Of the top 20 photos, 15 are dog faces with the box on the eyes or nose, including all of the strongest; the 5 dial or clock photos sit lower at activations 6–7. Random photos stay near 0–2, and the unit loses more than most units under patch shuffling (percentile 20), which fits a dependence on facial configuration.\",\n \"missing_data\": \"Activations on non-dog animal faces and human faces, and on more round non-face objects, to tell whether the dial responses are a face-like-pattern extension or a separate feature.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dog faces, especially the eye–muzzle–nose region of short-snouted breeds (spaniels, boxers, pugs, bulldogs, Pekingese). It also responds more weakly to round dial faces (clocks, a kitchen scale, a gong, a barometer), which share a face-like layout: a circular region with a central dark point and features around it.\",\n \"evidence\": \"Of the top 20 photos, 15 are dog faces with the box on the eyes or nose, including all of the strongest; the 5 dial or clock photos sit lower at activations 6–7. Random photos stay near 0–2, and the unit loses more than most units under patch shuffling (percentile 20), which fits a dependence on facial configuration.\",\n \"missing_data\": \"Activations on non-dog animal faces and human faces, and on more round non-face objects, to tell whether the dial responses are a face-like-pattern extension or a separate feature.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4e:708",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "574cf9e42f26c0e6785afa3d35f3d97dbd86c6d1eb485faf8f03e9ecca781311",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the nose and muzzle area of dog faces, especially flat-faced or short-snouted breeds like pugs, boxers, bulldogs, Pekingese and spaniels. It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), likely because they look similar: a circular face with a small dark center.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the nose and muzzle area of dog faces, especially flat-faced or short-snouted breeds like pugs, boxers, bulldogs, Pekingese and spaniels. It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), likely because they look similar: a circular face with a small dark center.",
+   "evidence": "The top 12 photos, and 17 of the top 20, are dog faces with the box on the nose or muzzle (activation 6-10), while the four dial images score only 6-7. In the random sample, non-dog photos score 0-2, and even two whole dogs seen at a distance score only 1-2.",
+   "missing_data": "Activations for close-up faces of long-snouted dogs and of other animals (cats, monkeys), and for round dial-like objects without a central hub, would show whether this is a dog-muzzle unit or a general 'round face with a central dark point' detector.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the nose and muzzle area of dog faces, especially flat-faced or short-snouted breeds like pugs, boxers, bulldogs, Pekingese and spaniels. It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), likely because they look similar: a circular face with a small dark center.\",\n \"evidence\": \"The top 12 photos, and 17 of the top 20, are dog faces with the box on the nose or muzzle (activation 6-10), while the four dial images score only 6-7. In the random sample, non-dog photos score 0-2, and even two whole dogs seen at a distance score only 1-2.\",\n \"missing_data\": \"Activations for close-up faces of long-snouted dogs and of other animals (cats, monkeys), and for round dial-like objects without a central hub, would show whether this is a dog-muzzle unit or a general 'round face with a central dark point' detector.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the nose and muzzle area of dog faces, especially flat-faced or short-snouted breeds like pugs, boxers, bulldogs, Pekingese and spaniels. It also responds more weakly to round dial faces (clocks, a scale, a gong, a barometer), likely because they look similar: a circular face with a small dark center.\",\n \"evidence\": \"The top 12 photos, and 17 of the top 20, are dog faces with the box on the nose or muzzle (activation 6-10), while the four dial images score only 6-7. In the random sample, non-dog photos score 0-2, and even two whole dogs seen at a distance score only 1-2.\",\n \"missing_data\": \"Activations for close-up faces of long-snouted dogs and of other animals (cats, monkeys), and for round dial-like objects without a central hub, would show whether this is a dog-muzzle unit or a general 'round face with a central dark point' detector.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4e:708",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "574cf9e42f26c0e6785afa3d35f3d97dbd86c6d1eb485faf8f03e9ecca781311",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit mainly responds to dog faces, especially the eye-and-muzzle area of short-snouted breeds like spaniels, pugs, boxers and mastiffs. It also responds, at mid strength, to round dials such as clock faces, scale dials, a gong and a barometer.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit mainly responds to dog faces, especially the eye-and-muzzle area of short-snouted breeds like spaniels, pugs, boxers and mastiffs. It also responds, at mid strength, to round dials such as clock faces, scale dials, a gong and a barometer.",
+   "evidence": "The top 12 photos and #17-20 are all dog faces with the box on the eyes or muzzle, while #13-16 (activations 6-7) are round dials with a central pin or hands. Random photos score 0-2, and even other dogs score only 1-2 when their faces are not prominent.",
+   "missing_data": "Activations on many more dials and clocks, and on non-dog faces such as cats or humans, would show whether this is one 'round face-like pattern' detector or two separate features.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to dog faces, especially the eye-and-muzzle area of short-snouted breeds like spaniels, pugs, boxers and mastiffs. It also responds, at mid strength, to round dials such as clock faces, scale dials, a gong and a barometer.\",\n \"evidence\": \"The top 12 photos and #17-20 are all dog faces with the box on the eyes or muzzle, while #13-16 (activations 6-7) are round dials with a central pin or hands. Random photos score 0-2, and even other dogs score only 1-2 when their faces are not prominent.\",\n \"missing_data\": \"Activations on many more dials and clocks, and on non-dog faces such as cats or humans, would show whether this is one 'round face-like pattern' detector or two separate features.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit mainly responds to dog faces, especially the eye-and-muzzle area of short-snouted breeds like spaniels, pugs, boxers and mastiffs. It also responds, at mid strength, to round dials such as clock faces, scale dials, a gong and a barometer.\",\n \"evidence\": \"The top 12 photos and #17-20 are all dog faces with the box on the eyes or muzzle, while #13-16 (activations 6-7) are round dials with a central pin or hands. Random photos score 0-2, and even other dogs score only 1-2 when their faces are not prominent.\",\n \"missing_data\": \"Activations on many more dials and clocks, and on non-dog faces such as cats or humans, would show whether this is one 'round face-like pattern' detector or two separate features.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ }
+}

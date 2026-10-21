@@ -1,0 +1,146 @@
+{
+ "CP_s3": {
+  "unit": "mixed4b:443",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23d1eed202a4208489a419443460e8f0a798a8523c782c7fb84c1f3da48856c9",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects the upright face of a dog, centered on the eye region and the side of the muzzle, and also responds more weakly to the faces of similar canids such as foxes and wolves.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects the upright face of a dog, centered on the eye region and the side of the muzzle, and also responds more weakly to the faces of similar canids such as foxes and wolves.",
+   "evidence": "All 20 top photos are frontal canid faces with the box over the eye area (mostly dogs, plus a fox at #9 and wolves at #4/#16), and among the random photos only the dog photos score high (8 and 5). The unit loses much more than other units of its layer under rotate_180, patch shuffle and edge map (percentiles 0, 1 and 4), which fits a detector for an upright, configured face pattern rather than a simple texture.",
+   "missing_data": "Activations on non-canid mammal faces such as cats, bears and monkeys, and on dogs seen from behind or the side, would show how specific the unit is to canid faces versus animal faces in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the upright face of a dog, centered on the eye region and the side of the muzzle, and also responds more weakly to the faces of similar canids such as foxes and wolves.\", \"evidence\": \"All 20 top photos are frontal canid faces with the box over the eye area (mostly dogs, plus a fox at #9 and wolves at #4/#16), and among the random photos only the dog photos score high (8 and 5). The unit loses much more than other units of its layer under rotate_180, patch shuffle and edge map (percentiles 0, 1 and 4), which fits a detector for an upright, configured face pattern rather than a simple texture.\", \"missing_data\": \"Activations on non-canid mammal faces such as cats, bears and monkeys, and on dogs seen from behind or the side, would show how specific the unit is to canid faces versus animal faces in general.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the upright face of a dog, centered on the eye region and the side of the muzzle, and also responds more weakly to the faces of similar canids such as foxes and wolves.\", \"evidence\": \"All 20 top photos are frontal canid faces with the box over the eye area (mostly dogs, plus a fox at #9 and wolves at #4/#16), and among the random photos only the dog photos score high (8 and 5). The unit loses much more than other units of its layer under rotate_180, patch shuffle and edge map (percentiles 0, 1 and 4), which fits a detector for an upright, configured face pattern rather than a simple texture.\", \"missing_data\": \"Activations on non-canid mammal faces such as cats, bears and monkeys, and on dogs seen from behind or the side, would show how specific the unit is to canid faces versus animal faces in general.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4b:443",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23d1eed202a4208489a419443460e8f0a798a8523c782c7fb84c1f3da48856c9",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects upright canid faces, firing most strongly on the region around the eye and upper muzzle of dogs, and somewhat less on wolves and foxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects upright canid faces, firing most strongly on the region around the eye and upper muzzle of dogs, and somewhat less on wolves and foxes.",
+   "evidence": "All 20 top photos are frontal canid faces, mostly dogs plus a wolf (#16) and a fox (#9), with the box on the eye/cheek area; among random photos only dogs score high (8 and 5) while a monkey and cat figurines score low. The unit is unusually sensitive to rotate_180 (0th percentile), patch shuffle (1st) and edge maps (4th), which fits a configural, upright face detector rather than a fur texture detector.",
+   "missing_data": "Activations on non-canid mammal faces such as cats and bears, and on dog bodies without a visible face, would show whether it is specific to canids or to animal faces generally.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects upright canid faces, firing most strongly on the region around the eye and upper muzzle of dogs, and somewhat less on wolves and foxes.\", \"evidence\": \"All 20 top photos are frontal canid faces, mostly dogs plus a wolf (#16) and a fox (#9), with the box on the eye/cheek area; among random photos only dogs score high (8 and 5) while a monkey and cat figurines score low. The unit is unusually sensitive to rotate_180 (0th percentile), patch shuffle (1st) and edge maps (4th), which fits a configural, upright face detector rather than a fur texture detector.\", \"missing_data\": \"Activations on non-canid mammal faces such as cats and bears, and on dog bodies without a visible face, would show whether it is specific to canids or to animal faces generally.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects upright canid faces, firing most strongly on the region around the eye and upper muzzle of dogs, and somewhat less on wolves and foxes.\", \"evidence\": \"All 20 top photos are frontal canid faces, mostly dogs plus a wolf (#16) and a fox (#9), with the box on the eye/cheek area; among random photos only dogs score high (8 and 5) while a monkey and cat figurines score low. The unit is unusually sensitive to rotate_180 (0th percentile), patch shuffle (1st) and edge maps (4th), which fits a configural, upright face detector rather than a fur texture detector.\", \"missing_data\": \"Activations on non-canid mammal faces such as cats and bears, and on dog bodies without a visible face, would show whether it is specific to canids or to animal faces generally.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4b:443",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23d1eed202a4208489a419443460e8f0a798a8523c782c7fb84c1f3da48856c9",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to upright canine faces, most strongly to the eye and upper muzzle of dogs looking toward the camera. It extends more weakly to closely related canids such as wolves and foxes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to upright canine faces, most strongly to the eye and upper muzzle of dogs looking toward the camera. It extends more weakly to closely related canids such as wolves and foxes.",
+   "evidence": "All 20 top photos are dog, wolf (#4, #16) or fox (#9) faces, with the box on the eye/muzzle region, and the only high random photo is a dog face (activation 8); a snarling dog is 5 and a monkey only 2. The unit loses far more than its layer under rotate_180 (0th percentile), patch shuffle (1st) and edge map (4th), which fits a configural, upright, shading-dependent face detector, and it is mirror-invariant.",
+   "missing_data": "Activations on non-canid animal faces (cats, bears) and on dog bodies without faces would show whether the unit is canid-specific or tuned to generic furry mammal faces.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright canine faces, most strongly to the eye and upper muzzle of dogs looking toward the camera. It extends more weakly to closely related canids such as wolves and foxes.\", \"evidence\": \"All 20 top photos are dog, wolf (#4, #16) or fox (#9) faces, with the box on the eye/muzzle region, and the only high random photo is a dog face (activation 8); a snarling dog is 5 and a monkey only 2. The unit loses far more than its layer under rotate_180 (0th percentile), patch shuffle (1st) and edge map (4th), which fits a configural, upright, shading-dependent face detector, and it is mirror-invariant.\", \"missing_data\": \"Activations on non-canid animal faces (cats, bears) and on dog bodies without faces would show whether the unit is canid-specific or tuned to generic furry mammal faces.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright canine faces, most strongly to the eye and upper muzzle of dogs looking toward the camera. It extends more weakly to closely related canids such as wolves and foxes.\", \"evidence\": \"All 20 top photos are dog, wolf (#4, #16) or fox (#9) faces, with the box on the eye/muzzle region, and the only high random photo is a dog face (activation 8); a snarling dog is 5 and a monkey only 2. The unit loses far more than its layer under rotate_180 (0th percentile), patch shuffle (1st) and edge map (4th), which fits a configural, upright, shading-dependent face detector, and it is mirror-invariant.\", \"missing_data\": \"Activations on non-canid animal faces (cats, bears) and on dog bodies without faces would show whether the unit is canid-specific or tuned to generic furry mammal faces.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s3": {
+  "unit": "mixed4b:443",
+  "reading": "CPA_s3",
+  "condition": "CPA",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7005760e0c5156f4d70a46a84519ec2e07188888b8a886f85bfc6fd9d0c34741",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to upright canid faces (dogs, plus wolves and foxes), firing most strongly on the eye region beside the muzzle. It responds more weakly to other mammal faces such as monkeys, a mink and a bear.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to upright canid faces (dogs, plus wolves and foxes), firing most strongly on the eye region beside the muzzle. It responds more weakly to other mammal faces such as monkeys, a mink and a bear.",
+   "evidence": "All 20 top photos are dog, wolf or fox faces, with the box on the eye/cheek area. Random non-dog photos score 0-3 while random dog photos score 5-8, and the unit is very sensitive to rotate_180, patch_shuffle and edge_map, which fits a configural face detector tied to upright orientation and shading/texture.",
+   "missing_data": "Activations on a larger set of non-canid animal faces (cats, bears, primates) and on human faces, to check whether the unit is canid-specific or a general mammal-face detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to upright canid faces (dogs, plus wolves and foxes), firing most strongly on the eye region beside the muzzle. It responds more weakly to other mammal faces such as monkeys, a mink and a bear.\",\n \"evidence\": \"All 20 top photos are dog, wolf or fox faces, with the box on the eye/cheek area. Random non-dog photos score 0-3 while random dog photos score 5-8, and the unit is very sensitive to rotate_180, patch_shuffle and edge_map, which fits a configural face detector tied to upright orientation and shading/texture.\",\n \"missing_data\": \"Activations on a larger set of non-canid animal faces (cats, bears, primates) and on human faces, to check whether the unit is canid-specific or a general mammal-face detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to upright canid faces (dogs, plus wolves and foxes), firing most strongly on the eye region beside the muzzle. It responds more weakly to other mammal faces such as monkeys, a mink and a bear.\",\n \"evidence\": \"All 20 top photos are dog, wolf or fox faces, with the box on the eye/cheek area. Random non-dog photos score 0-3 while random dog photos score 5-8, and the unit is very sensitive to rotate_180, patch_shuffle and edge_map, which fits a configural face detector tied to upright orientation and shading/texture.\",\n \"missing_data\": \"Activations on a larger set of non-canid animal faces (cats, bears, primates) and on human faces, to check whether the unit is canid-specific or a general mammal-face detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s2": {
+  "unit": "mixed4b:443",
+  "reading": "CPA_s2",
+  "condition": "CPA",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7005760e0c5156f4d70a46a84519ec2e07188888b8a886f85bfc6fd9d0c34741",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to upright, front-facing canine faces, most strongly in the region around the eye and the bridge of the snout. The response extends more weakly to similar faces of other furry mammals such as foxes, wolves, monkeys and bears.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to upright, front-facing canine faces, most strongly in the region around the eye and the bridge of the snout. The response extends more weakly to similar faces of other furry mammals such as foxes, wolves, monkeys and bears.",
+   "evidence": "All 20 top photos are dogs, wolves or a fox, with the box on the eye/upper-face region, and the random dog photo scores 8 while non-dog randoms score 0-5. The unit is extremely sensitive to rotate_180 (percentile 0), patch shuffling and edge maps, which points to a configural, upright face detector rather than a fur-texture unit.",
+   "missing_data": "Activations on non-canine animal faces (cats, bears, primates) and on dog bodies without visible faces would show how wide the extension beyond canines is.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright, front-facing canine faces, most strongly in the region around the eye and the bridge of the snout. The response extends more weakly to similar faces of other furry mammals such as foxes, wolves, monkeys and bears.\", \"evidence\": \"All 20 top photos are dogs, wolves or a fox, with the box on the eye/upper-face region, and the random dog photo scores 8 while non-dog randoms score 0-5. The unit is extremely sensitive to rotate_180 (percentile 0), patch shuffling and edge maps, which points to a configural, upright face detector rather than a fur-texture unit.\", \"missing_data\": \"Activations on non-canine animal faces (cats, bears, primates) and on dog bodies without visible faces would show how wide the extension beyond canines is.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright, front-facing canine faces, most strongly in the region around the eye and the bridge of the snout. The response extends more weakly to similar faces of other furry mammals such as foxes, wolves, monkeys and bears.\", \"evidence\": \"All 20 top photos are dogs, wolves or a fox, with the box on the eye/upper-face region, and the random dog photo scores 8 while non-dog randoms score 0-5. The unit is extremely sensitive to rotate_180 (percentile 0), patch shuffling and edge maps, which points to a configural, upright face detector rather than a fur-texture unit.\", \"missing_data\": \"Activations on non-canine animal faces (cats, bears, primates) and on dog bodies without visible faces would show how wide the extension beyond canines is.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s1": {
+  "unit": "mixed4b:443",
+  "reading": "CPA_s1",
+  "condition": "CPA",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7005760e0c5156f4d70a46a84519ec2e07188888b8a886f85bfc6fd9d0c34741",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to upright canine faces (dogs, wolves, foxes), peaking around the eye/upper-face region of a frontal or three-quarter face, with weaker responses to other mammal faces such as monkeys, mink and bears.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to upright canine faces (dogs, wolves, foxes), peaking around the eye/upper-face region of a frontal or three-quarter face, with weaker responses to other mammal faces such as monkeys, mink and bears.",
+   "evidence": "All top-20 photos are dog, wolf or fox faces with the box on the eye/cheek area, and the only high random photo (8) is a dog face; the unit is extremely sensitive to rotate_180, patch shuffling and edge maps (percentiles 0–4), which points to an orientation-dependent, configural face detector rather than a fur texture detector. Mink, bear, squirrel monkey and macaque faces appear among the strong photos at activations 6–7.",
+   "missing_data": "Activations on non-canid animal faces (cats, bears, primates, human faces) and on canid bodies without visible faces would show how broad the face selectivity is.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright canine faces (dogs, wolves, foxes), peaking around the eye/upper-face region of a frontal or three-quarter face, with weaker responses to other mammal faces such as monkeys, mink and bears.\", \"evidence\": \"All top-20 photos are dog, wolf or fox faces with the box on the eye/cheek area, and the only high random photo (8) is a dog face; the unit is extremely sensitive to rotate_180, patch shuffling and edge maps (percentiles 0–4), which points to an orientation-dependent, configural face detector rather than a fur texture detector. Mink, bear, squirrel monkey and macaque faces appear among the strong photos at activations 6–7.\", \"missing_data\": \"Activations on non-canid animal faces (cats, bears, primates, human faces) and on canid bodies without visible faces would show how broad the face selectivity is.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to upright canine faces (dogs, wolves, foxes), peaking around the eye/upper-face region of a frontal or three-quarter face, with weaker responses to other mammal faces such as monkeys, mink and bears.\", \"evidence\": \"All top-20 photos are dog, wolf or fox faces with the box on the eye/cheek area, and the only high random photo (8) is a dog face; the unit is extremely sensitive to rotate_180, patch shuffling and edge maps (percentiles 0–4), which points to an orientation-dependent, configural face detector rather than a fur texture detector. Mink, bear, squirrel monkey and macaque faces appear among the strong photos at activations 6–7.\", \"missing_data\": \"Activations on non-canid animal faces (cats, bears, primates, human faces) and on canid bodies without visible faces would show how broad the face selectivity is.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ }
+}

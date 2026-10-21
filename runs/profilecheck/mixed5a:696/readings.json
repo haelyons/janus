@@ -1,0 +1,146 @@
+{
+ "base_s1": {
+  "unit": "mixed5a:696",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f2e7edcdd196590552426c1ef7996ac39fd8ea0e50b45993d48e638d5a7fbca0",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to the torso and clothing of people, such as swimsuits, jackets, dresses and uniforms. It also responds separately to building structure, such as ornate church altars, vaulted ceilings, a barn facade and a palace roof.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to the torso and clothing of people, such as swimsuits, jackets, dresses and uniforms. It also responds separately to building structure, such as ornate church altars, vaulted ceilings, a barn facade and a palace roof.",
+   "evidence": "Of the top 20 photos, 13 box a clothed human torso (#1, #4, #6, #8–13, #16, #17, #19, #20) and 6 box architecture (#2, #3, #5, #7, #14, #15), with both groups reaching activation 9–10; #18 boxes a lit tent ceiling, closer to the architecture group. The random photos stay near 0, except for a colorful striped canopy at 4.",
+   "missing_data": "Photos edited to keep only the torso or only the building would show whether a shared visual feature, such as vertical patterned texture, drives both groups. Activations from a larger set of people photos and building photos would also help.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to the torso and clothing of people, such as swimsuits, jackets, dresses and uniforms. It also responds separately to building structure, such as ornate church altars, vaulted ceilings, a barn facade and a palace roof.\",\n \"evidence\": \"Of the top 20 photos, 13 box a clothed human torso (#1, #4, #6, #8–13, #16, #17, #19, #20) and 6 box architecture (#2, #3, #5, #7, #14, #15), with both groups reaching activation 9–10; #18 boxes a lit tent ceiling, closer to the architecture group. The random photos stay near 0, except for a colorful striped canopy at 4.\",\n \"missing_data\": \"Photos edited to keep only the torso or only the building would show whether a shared visual feature, such as vertical patterned texture, drives both groups. Activations from a larger set of people photos and building photos would also help.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to the torso and clothing of people, such as swimsuits, jackets, dresses and uniforms. It also responds separately to building structure, such as ornate church altars, vaulted ceilings, a barn facade and a palace roof.\",\n \"evidence\": \"Of the top 20 photos, 13 box a clothed human torso (#1, #4, #6, #8–13, #16, #17, #19, #20) and 6 box architecture (#2, #3, #5, #7, #14, #15), with both groups reaching activation 9–10; #18 boxes a lit tent ceiling, closer to the architecture group. The random photos stay near 0, except for a colorful striped canopy at 4.\",\n \"missing_data\": \"Photos edited to keep only the torso or only the building would show whether a shared visual feature, such as vertical patterned texture, drives both groups. Activations from a larger set of people photos and building photos would also help.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed5a:696",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f2e7edcdd196590552426c1ef7996ac39fd8ea0e50b45993d48e638d5a7fbca0",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to clothed human torsos, such as swimsuits, bikinis, dresses, jackets and uniforms. It also responds separately to ornate architectural interiors and facades, such as church altars, vaulted ceilings, barn walls and a temple roof.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to clothed human torsos, such as swimsuits, bikinis, dresses, jackets and uniforms. It also responds separately to ornate architectural interiors and facades, such as church altars, vaulted ceilings, barn walls and a temple roof.",
+   "evidence": "About 13 of the top 20 photos have the box on a person's upper-body clothing (#1, #4, #6, #8–13, #16, #17, #19, #20), while 7 have it on church altars or ceilings or building structures (#2, #3, #5, #7, #14, #15, #18), with similar strength in both groups. Random photos are mostly near 0, apart from the multicolored stripe image at 4.",
+   "missing_data": "Feature visualizations or tests on isolated textures, such as fabric folds versus ornate patterned surfaces, would show whether a shared low-level pattern links the two groups.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to clothed human torsos, such as swimsuits, bikinis, dresses, jackets and uniforms. It also responds separately to ornate architectural interiors and facades, such as church altars, vaulted ceilings, barn walls and a temple roof.\",\n \"evidence\": \"About 13 of the top 20 photos have the box on a person's upper-body clothing (#1, #4, #6, #8–13, #16, #17, #19, #20), while 7 have it on church altars or ceilings or building structures (#2, #3, #5, #7, #14, #15, #18), with similar strength in both groups. Random photos are mostly near 0, apart from the multicolored stripe image at 4.\",\n \"missing_data\": \"Feature visualizations or tests on isolated textures, such as fabric folds versus ornate patterned surfaces, would show whether a shared low-level pattern links the two groups.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to clothed human torsos, such as swimsuits, bikinis, dresses, jackets and uniforms. It also responds separately to ornate architectural interiors and facades, such as church altars, vaulted ceilings, barn walls and a temple roof.\",\n \"evidence\": \"About 13 of the top 20 photos have the box on a person's upper-body clothing (#1, #4, #6, #8–13, #16, #17, #19, #20), while 7 have it on church altars or ceilings or building structures (#2, #3, #5, #7, #14, #15, #18), with similar strength in both groups. Random photos are mostly near 0, apart from the multicolored stripe image at 4.\",\n \"missing_data\": \"Feature visualizations or tests on isolated textures, such as fabric folds versus ornate patterned surfaces, would show whether a shared low-level pattern links the two groups.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed5a:696",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0f0da931e5e357c6cf53ddf77874d2dd65fb58ddfc167a937494fd96751fbf73",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things. The main one is the clothed human upper body or torso: swimsuits, bikinis, jackets, dresses, kimonos and uniforms. The second is ornate architecture: church altars, vaulted nave ceilings, a barn facade and a palace roof.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things. The main one is the clothed human upper body or torso: swimsuits, bikinis, jackets, dresses, kimonos and uniforms. The second is ornate architecture: church altars, vaulted nave ceilings, a barn facade and a palace roof.",
+   "evidence": "About 13 of the top 20 photos have the box on a person's torso or clothing, and about 6 are church interiors or building roofs and facades, with activations 7-10 in both groups. Random photos stay near 0, and the unit is unusually sensitive to rotation (rotate_90 percentile 12) and to blurring (low_pass percentile 10), which fits a liking for upright structure with fine detail rather than one meaning.",
+   "missing_data": "Separate transformation results and activation distributions for the person images and the architecture images, plus feature-visualization or ablation results, to check whether one shared visual cue (such as upright, symmetric, finely detailed vertical structure) explains both groups.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things. The main one is the clothed human upper body or torso: swimsuits, bikinis, jackets, dresses, kimonos and uniforms. The second is ornate architecture: church altars, vaulted nave ceilings, a barn facade and a palace roof.\",\n \"evidence\": \"About 13 of the top 20 photos have the box on a person's torso or clothing, and about 6 are church interiors or building roofs and facades, with activations 7-10 in both groups. Random photos stay near 0, and the unit is unusually sensitive to rotation (rotate_90 percentile 12) and to blurring (low_pass percentile 10), which fits a liking for upright structure with fine detail rather than one meaning.\",\n \"missing_data\": \"Separate transformation results and activation distributions for the person images and the architecture images, plus feature-visualization or ablation results, to check whether one shared visual cue (such as upright, symmetric, finely detailed vertical structure) explains both groups.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things. The main one is the clothed human upper body or torso: swimsuits, bikinis, jackets, dresses, kimonos and uniforms. The second is ornate architecture: church altars, vaulted nave ceilings, a barn facade and a palace roof.\",\n \"evidence\": \"About 13 of the top 20 photos have the box on a person's torso or clothing, and about 6 are church interiors or building roofs and facades, with activations 7-10 in both groups. Random photos stay near 0, and the unit is unusually sensitive to rotation (rotate_90 percentile 12) and to blurring (low_pass percentile 10), which fits a liking for upright structure with fine detail rather than one meaning.\",\n \"missing_data\": \"Separate transformation results and activation distributions for the person images and the architecture images, plus feature-visualization or ablation results, to check whether one shared visual cue (such as upright, symmetric, finely detailed vertical structure) explains both groups.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed5a:696",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f2e7edcdd196590552426c1ef7996ac39fd8ea0e50b45993d48e638d5a7fbca0",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things: the clothed upper bodies of people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate architectural interiors or roofs (church altars, vaulted naves, timbered ceilings, a pagoda roof, a barn facade).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things: the clothed upper bodies of people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate architectural interiors or roofs (church altars, vaulted naves, timbered ceilings, a pagoda roof, a barn facade).",
+   "evidence": "Of the 20 top photos, 13 put the box on a person's clothed torso (#1, #4, #6, #8-13, #16, #17, #19, #20) and 6 put it on church altars, ceilings or building roofs (#2, #3, #5, #7, #14, #15); the two groups score about equally high. Random photos of food, animals and objects score 0-1, except a radial pattern of colourful stripes at 4.",
+   "missing_data": "More top photos below rank 20 and box-level crops would show whether a shared visual pattern links the two groups, such as symmetric vertical structure or ornate detail. Controlled tests, like torsos without clothing or plain versus ornate church interiors, would also help.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: the clothed upper bodies of people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate architectural interiors or roofs (church altars, vaulted naves, timbered ceilings, a pagoda roof, a barn facade).\",\n \"evidence\": \"Of the 20 top photos, 13 put the box on a person's clothed torso (#1, #4, #6, #8-13, #16, #17, #19, #20) and 6 put it on church altars, ceilings or building roofs (#2, #3, #5, #7, #14, #15); the two groups score about equally high. Random photos of food, animals and objects score 0-1, except a radial pattern of colourful stripes at 4.\",\n \"missing_data\": \"More top photos below rank 20 and box-level crops would show whether a shared visual pattern links the two groups, such as symmetric vertical structure or ornate detail. Controlled tests, like torsos without clothing or plain versus ornate church interiors, would also help.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: the clothed upper bodies of people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate architectural interiors or roofs (church altars, vaulted naves, timbered ceilings, a pagoda roof, a barn facade).\",\n \"evidence\": \"Of the 20 top photos, 13 put the box on a person's clothed torso (#1, #4, #6, #8-13, #16, #17, #19, #20) and 6 put it on church altars, ceilings or building roofs (#2, #3, #5, #7, #14, #15); the two groups score about equally high. Random photos of food, animals and objects score 0-1, except a radial pattern of colourful stripes at 4.\",\n \"missing_data\": \"More top photos below rank 20 and box-level crops would show whether a shared visual pattern links the two groups, such as symmetric vertical structure or ornate detail. Controlled tests, like torsos without clothing or plain versus ornate church interiors, would also help.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed5a:696",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0f0da931e5e357c6cf53ddf77874d2dd65fb58ddfc167a937494fd96751fbf73",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit seems to respond to two separate things: clothed human torsos (swimsuits, bikinis, dresses, suits, uniforms) and ornate building interiors or roofs (church altars, vaulted ceilings, barn and pagoda roofs).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit seems to respond to two separate things: clothed human torsos (swimsuits, bikinis, dresses, suits, uniforms) and ornate building interiors or roofs (church altars, vaulted ceilings, barn and pagoda roofs).",
+   "evidence": "About 13 of the top 20 photos box a person's clothed chest or torso, and about 7 box architecture such as altarpieces, arches and roofs, with similar activations (7-10); random photos stay near 0. The unit depends on fine detail and upright orientation (low_pass keeps 13%, rotate_90 keeps 36%, both low percentiles), which fits upright patterned structures but does not clearly link the two groups.",
+   "missing_data": "More top-activating examples beyond the top 20, and controlled tests (cropped torsos versus cropped architecture, or the same clothing without a person), would show whether a shared visual feature such as symmetric, vertically structured fine detail explains both groups.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to respond to two separate things: clothed human torsos (swimsuits, bikinis, dresses, suits, uniforms) and ornate building interiors or roofs (church altars, vaulted ceilings, barn and pagoda roofs).\",\n \"evidence\": \"About 13 of the top 20 photos box a person's clothed chest or torso, and about 7 box architecture such as altarpieces, arches and roofs, with similar activations (7-10); random photos stay near 0. The unit depends on fine detail and upright orientation (low_pass keeps 13%, rotate_90 keeps 36%, both low percentiles), which fits upright patterned structures but does not clearly link the two groups.\",\n \"missing_data\": \"More top-activating examples beyond the top 20, and controlled tests (cropped torsos versus cropped architecture, or the same clothing without a person), would show whether a shared visual feature such as symmetric, vertically structured fine detail explains both groups.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to respond to two separate things: clothed human torsos (swimsuits, bikinis, dresses, suits, uniforms) and ornate building interiors or roofs (church altars, vaulted ceilings, barn and pagoda roofs).\",\n \"evidence\": \"About 13 of the top 20 photos box a person's clothed chest or torso, and about 7 box architecture such as altarpieces, arches and roofs, with similar activations (7-10); random photos stay near 0. The unit depends on fine detail and upright orientation (low_pass keeps 13%, rotate_90 keeps 36%, both low percentiles), which fits upright patterned structures but does not clearly link the two groups.\",\n \"missing_data\": \"More top-activating examples beyond the top 20, and controlled tests (cropped torsos versus cropped architecture, or the same clothing without a person), would show whether a shared visual feature such as symmetric, vertically structured fine detail explains both groups.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed5a:696",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0f0da931e5e357c6cf53ddf77874d2dd65fb58ddfc167a937494fd96751fbf73",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate things: upper-body garments on people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate or vaulted architectural interiors and roofs (church altars and vaults, a barn gable, a pagoda roof, a tent ceiling).",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to two separate things: upper-body garments on people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate or vaulted architectural interiors and roofs (church altars and vaults, a barn gable, a pagoda roof, a tent ceiling).",
+   "evidence": "About 12 of the top 20 photos centre the box on a clothed torso and about 7 on arched or gabled architecture, while random photos of food, objects and animals score near 0. The unit loses more than most units under low-pass filtering and 90° or 180° rotation, which fits upright, fine-detail structure; this could mean the two groups share a V or arch-like converging-line shape (necklines and lapels versus vaults and gables), but that link is speculative.",
+   "missing_data": "Activations on isolated garments without bodies, on non-arched buildings, and on synthetic upright versus inverted V or arch line patterns, to test whether one shared geometric feature explains both groups.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: upper-body garments on people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate or vaulted architectural interiors and roofs (church altars and vaults, a barn gable, a pagoda roof, a tent ceiling).\",\n \"evidence\": \"About 12 of the top 20 photos centre the box on a clothed torso and about 7 on arched or gabled architecture, while random photos of food, objects and animals score near 0. The unit loses more than most units under low-pass filtering and 90° or 180° rotation, which fits upright, fine-detail structure; this could mean the two groups share a V or arch-like converging-line shape (necklines and lapels versus vaults and gables), but that link is speculative.\",\n \"missing_data\": \"Activations on isolated garments without bodies, on non-arched buildings, and on synthetic upright versus inverted V or arch line patterns, to test whether one shared geometric feature explains both groups.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate things: upper-body garments on people (swimsuits, bikinis, dresses, jackets, uniforms) and ornate or vaulted architectural interiors and roofs (church altars and vaults, a barn gable, a pagoda roof, a tent ceiling).\",\n \"evidence\": \"About 12 of the top 20 photos centre the box on a clothed torso and about 7 on arched or gabled architecture, while random photos of food, objects and animals score near 0. The unit loses more than most units under low-pass filtering and 90° or 180° rotation, which fits upright, fine-detail structure; this could mean the two groups share a V or arch-like converging-line shape (necklines and lapels versus vaults and gables), but that link is speculative.\",\n \"missing_data\": \"Activations on isolated garments without bodies, on non-arched buildings, and on synthetic upright versus inverted V or arch line patterns, to test whether one shared geometric feature explains both groups.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ }
+}

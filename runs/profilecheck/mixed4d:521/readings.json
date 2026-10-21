@@ -1,0 +1,146 @@
+{
+ "base_s1": {
+  "unit": "mixed4d:521",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "02d1c470af355407f2a609222caf68baec691cfe6c46932ad9014aed8229c521",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to animal heads and faces, most strongly bird heads with the eye and beak region, and more weakly to the muzzle and face of mammals such as canids and big cats.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to animal heads and faces, most strongly bird heads with the eye and beak region, and more weakly to the muzzle and face of mammals such as canids and big cats.",
+   "evidence": "Most of the top 20 are birds, with the box on the head and beak (bee-eaters, jacamars, bunting, sandpipers, robin). Several are mammal faces boxed at the nose and muzzle (#4 coyote, #7/#8 cheetah, #10/#15 dogs, #16 jaguar), and among the random photos only the vulture head (6) and the black dog (3) activate it.",
+   "missing_data": "Activations on isolated bird heads compared with mammal faces, and on non-animal objects with beak-like or eye-like shapes, would show whether this is a single 'animal face' unit or a bird-head unit that partly carries over to mammals.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to animal heads and faces, most strongly bird heads with the eye and beak region, and more weakly to the muzzle and face of mammals such as canids and big cats.\",\n \"evidence\": \"Most of the top 20 are birds, with the box on the head and beak (bee-eaters, jacamars, bunting, sandpipers, robin). Several are mammal faces boxed at the nose and muzzle (#4 coyote, #7/#8 cheetah, #10/#15 dogs, #16 jaguar), and among the random photos only the vulture head (6) and the black dog (3) activate it.\",\n \"missing_data\": \"Activations on isolated bird heads compared with mammal faces, and on non-animal objects with beak-like or eye-like shapes, would show whether this is a single 'animal face' unit or a bird-head unit that partly carries over to mammals.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to animal heads and faces, most strongly bird heads with the eye and beak region, and more weakly to the muzzle and face of mammals such as canids and big cats.\",\n \"evidence\": \"Most of the top 20 are birds, with the box on the head and beak (bee-eaters, jacamars, bunting, sandpipers, robin). Several are mammal faces boxed at the nose and muzzle (#4 coyote, #7/#8 cheetah, #10/#15 dogs, #16 jaguar), and among the random photos only the vulture head (6) and the black dog (3) activate it.\",\n \"missing_data\": \"Activations on isolated bird heads compared with mammal faces, and on non-animal objects with beak-like or eye-like shapes, would show whether this is a single 'animal face' unit or a bird-head unit that partly carries over to mammals.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4d:521",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "02d1c470af355407f2a609222caf68baec691cfe6c46932ad9014aed8229c521",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the heads of small birds, with the beak and eye region as the focus. It also responds more weakly to the face and snout of mammals such as canids and big cats.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the heads of small birds, with the beak and eye region as the focus. It also responds more weakly to the face and snout of mammals such as canids and big cats.",
+   "evidence": "Most of the top 20 are birds, with the red box on the head and bill (e.g. bee-eaters, jacamars, sandpipers, a bunting). Several 8-10 activations are on the snout and eyes of dogs, a jackal, cheetahs and a jaguar. Among the random photos only the vulture head (6) and a dark dog (3) activate it notably, while objects and humans give 0-1.",
+   "missing_data": "Activations on human faces shown close up, and on bird bodies without heads, would show whether it is specific to animal heads or general to faces.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the heads of small birds, with the beak and eye region as the focus. It also responds more weakly to the face and snout of mammals such as canids and big cats.\",\n \"evidence\": \"Most of the top 20 are birds, with the red box on the head and bill (e.g. bee-eaters, jacamars, sandpipers, a bunting). Several 8-10 activations are on the snout and eyes of dogs, a jackal, cheetahs and a jaguar. Among the random photos only the vulture head (6) and a dark dog (3) activate it notably, while objects and humans give 0-1.\",\n \"missing_data\": \"Activations on human faces shown close up, and on bird bodies without heads, would show whether it is specific to animal heads or general to faces.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the heads of small birds, with the beak and eye region as the focus. It also responds more weakly to the face and snout of mammals such as canids and big cats.\",\n \"evidence\": \"Most of the top 20 are birds, with the red box on the head and bill (e.g. bee-eaters, jacamars, sandpipers, a bunting). Several 8-10 activations are on the snout and eyes of dogs, a jackal, cheetahs and a jaguar. Among the random photos only the vulture head (6) and a dark dog (3) activate it notably, while objects and humans give 0-1.\",\n \"missing_data\": \"Activations on human faces shown close up, and on bird bodies without heads, would show whether it is specific to animal heads or general to faces.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4d:521",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "02d1c470af355407f2a609222caf68baec691cfe6c46932ad9014aed8229c521",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to animal heads and faces, most strongly to bird heads with the eye and beak (the beak-eye region), and more weakly to the eye and muzzle region of mammal faces such as cheetahs, jaguars, dogs and coyotes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to animal heads and faces, most strongly to bird heads with the eye and beak (the beak-eye region), and more weakly to the eye and muzzle region of mammal faces such as cheetahs, jaguars, dogs and coyotes.",
+   "evidence": "Twelve of the top 20 boxes sit on bird heads, around the eye and bill, and the rest sit on the snout and eye area of carnivore faces; in the random sample only the vulture head (6) and the dark dog (3) activate noticeably, while non-animal images stay at 0-1.",
+   "missing_data": "Activations for animal bodies without visible heads, and for human faces, would show whether the unit is specific to animal heads or tracks something more generic like an eye with nearby texture.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to animal heads and faces, most strongly to bird heads with the eye and beak (the beak-eye region), and more weakly to the eye and muzzle region of mammal faces such as cheetahs, jaguars, dogs and coyotes.\", \"evidence\": \"Twelve of the top 20 boxes sit on bird heads, around the eye and bill, and the rest sit on the snout and eye area of carnivore faces; in the random sample only the vulture head (6) and the dark dog (3) activate noticeably, while non-animal images stay at 0-1.\", \"missing_data\": \"Activations for animal bodies without visible heads, and for human faces, would show whether the unit is specific to animal heads or tracks something more generic like an eye with nearby texture.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to animal heads and faces, most strongly to bird heads with the eye and beak (the beak-eye region), and more weakly to the eye and muzzle region of mammal faces such as cheetahs, jaguars, dogs and coyotes.\", \"evidence\": \"Twelve of the top 20 boxes sit on bird heads, around the eye and bill, and the rest sit on the snout and eye area of carnivore faces; in the random sample only the vulture head (6) and the dark dog (3) activate noticeably, while non-animal images stay at 0-1.\", \"missing_data\": \"Activations for animal bodies without visible heads, and for human faces, would show whether the unit is specific to animal heads or tracks something more generic like an eye with nearby texture.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4d:521",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ebb3289444dbcb1b4191a7c4d855f9911a07a6264bb32178a98fdfc730fe7fb8",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the head and face of animals, most strongly small birds' heads with the eye and beak in profile. It responds more weakly to mammal faces, centred on the eyes, muzzle and nose (cheetahs, jaguar, dogs, coyote).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the head and face of animals, most strongly small birds' heads with the eye and beak in profile. It responds more weakly to mammal faces, centred on the eyes, muzzle and nose (cheetahs, jaguar, dogs, coyote).",
+   "evidence": "In 12 of the top 20 photos the box is on a bird's head (#1-3, 5, 6, 9, 11-14, 17-20), and the rest are on carnivore faces (#4, 7, 8, 10, 15, 16); in the random set only the vulture head (6) and the dark dog (3) activate it. The unit is fragile under edge_map (keeps 1%, percentile 7) and rotate_180 (percentile 16), which fits a detector of upright, textured animal heads rather than outline shape.",
+   "missing_data": "Activations on bird heads alone versus mammal faces alone, or on headless bird bodies, would show whether this is one general 'animal head/eye' feature or a bird-head detector with a separate mammal-face component.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the head and face of animals, most strongly small birds' heads with the eye and beak in profile. It responds more weakly to mammal faces, centred on the eyes, muzzle and nose (cheetahs, jaguar, dogs, coyote).\",\n \"evidence\": \"In 12 of the top 20 photos the box is on a bird's head (#1-3, 5, 6, 9, 11-14, 17-20), and the rest are on carnivore faces (#4, 7, 8, 10, 15, 16); in the random set only the vulture head (6) and the dark dog (3) activate it. The unit is fragile under edge_map (keeps 1%, percentile 7) and rotate_180 (percentile 16), which fits a detector of upright, textured animal heads rather than outline shape.\",\n \"missing_data\": \"Activations on bird heads alone versus mammal faces alone, or on headless bird bodies, would show whether this is one general 'animal head/eye' feature or a bird-head detector with a separate mammal-face component.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the head and face of animals, most strongly small birds' heads with the eye and beak in profile. It responds more weakly to mammal faces, centred on the eyes, muzzle and nose (cheetahs, jaguar, dogs, coyote).\",\n \"evidence\": \"In 12 of the top 20 photos the box is on a bird's head (#1-3, 5, 6, 9, 11-14, 17-20), and the rest are on carnivore faces (#4, 7, 8, 10, 15, 16); in the random set only the vulture head (6) and the dark dog (3) activate it. The unit is fragile under edge_map (keeps 1%, percentile 7) and rotate_180 (percentile 16), which fits a detector of upright, textured animal heads rather than outline shape.\",\n \"missing_data\": \"Activations on bird heads alone versus mammal faces alone, or on headless bird bodies, would show whether this is one general 'animal head/eye' feature or a bird-head detector with a separate mammal-face component.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4d:521",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ebb3289444dbcb1b4191a7c4d855f9911a07a6264bb32178a98fdfc730fe7fb8",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the heads of small birds in profile, especially the eye and beak region. It responds somewhat more weakly to the face, eye and muzzle region of mammals such as wild dogs, wolves and big cats.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the heads of small birds in profile, especially the eye and beak region. It responds somewhat more weakly to the face, eye and muzzle region of mammals such as wild dogs, wolves and big cats.",
+   "evidence": "Most top-20 boxes sit on bird heads and beaks (bee-eaters, buntings, sandpipers, a robin), while #4, #7, #8, #10, #15 and #16 land on canid and felid faces. Among the random photos, only the vulture head (6) and the dog (3) respond, and the large drops under edge_map, rotate_180 and low_pass fit a textured, upright local facial feature.",
+   "missing_data": "Activations on isolated eyes versus beaks, and on mammal faces with birds absent, to tell whether the core feature is 'eye with surrounding face texture' rather than bird heads specifically.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the heads of small birds in profile, especially the eye and beak region. It responds somewhat more weakly to the face, eye and muzzle region of mammals such as wild dogs, wolves and big cats.\", \"evidence\": \"Most top-20 boxes sit on bird heads and beaks (bee-eaters, buntings, sandpipers, a robin), while #4, #7, #8, #10, #15 and #16 land on canid and felid faces. Among the random photos, only the vulture head (6) and the dog (3) respond, and the large drops under edge_map, rotate_180 and low_pass fit a textured, upright local facial feature.\", \"missing_data\": \"Activations on isolated eyes versus beaks, and on mammal faces with birds absent, to tell whether the core feature is 'eye with surrounding face texture' rather than bird heads specifically.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the heads of small birds in profile, especially the eye and beak region. It responds somewhat more weakly to the face, eye and muzzle region of mammals such as wild dogs, wolves and big cats.\", \"evidence\": \"Most top-20 boxes sit on bird heads and beaks (bee-eaters, buntings, sandpipers, a robin), while #4, #7, #8, #10, #15 and #16 land on canid and felid faces. Among the random photos, only the vulture head (6) and the dog (3) respond, and the large drops under edge_map, rotate_180 and low_pass fit a textured, upright local facial feature.\", \"missing_data\": \"Activations on isolated eyes versus beaks, and on mammal faces with birds absent, to tell whether the core feature is 'eye with surrounding face texture' rather than bird heads specifically.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4d:521",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ebb3289444dbcb1b4191a7c4d855f9911a07a6264bb32178a98fdfc730fe7fb8",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to animal heads and faces, most strongly bird heads with the eye and beak in side view, and more weakly to the muzzle and snout area of mammal faces such as cheetahs, jaguars, dogs and coyotes.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to animal heads and faces, most strongly bird heads with the eye and beak in side view, and more weakly to the muzzle and snout area of mammal faces such as cheetahs, jaguars, dogs and coyotes.",
+   "evidence": "Most of the top 20 are birds with the red box on the head and eye or bill, while #4, #7, #8, #10, #15 and #16 box the snout of a carnivore face; among the random photos only the vulture head (6) and the dark dog (3) respond. The unit drops sharply under edge_map (7th percentile) and rotate_180 (16th percentile), which fits a detector of an upright, textured head rather than of outline shape alone.",
+   "missing_data": "Activations on isolated bird heads versus mammal muzzles, and on non-animal objects with an eye-and-point layout, would show whether this is one face-part detector or two separate features.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to animal heads and faces, most strongly bird heads with the eye and beak in side view, and more weakly to the muzzle and snout area of mammal faces such as cheetahs, jaguars, dogs and coyotes.\", \"evidence\": \"Most of the top 20 are birds with the red box on the head and eye or bill, while #4, #7, #8, #10, #15 and #16 box the snout of a carnivore face; among the random photos only the vulture head (6) and the dark dog (3) respond. The unit drops sharply under edge_map (7th percentile) and rotate_180 (16th percentile), which fits a detector of an upright, textured head rather than of outline shape alone.\", \"missing_data\": \"Activations on isolated bird heads versus mammal muzzles, and on non-animal objects with an eye-and-point layout, would show whether this is one face-part detector or two separate features.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to animal heads and faces, most strongly bird heads with the eye and beak in side view, and more weakly to the muzzle and snout area of mammal faces such as cheetahs, jaguars, dogs and coyotes.\", \"evidence\": \"Most of the top 20 are birds with the red box on the head and eye or bill, while #4, #7, #8, #10, #15 and #16 box the snout of a carnivore face; among the random photos only the vulture head (6) and the dark dog (3) respond. The unit drops sharply under edge_map (7th percentile) and rotate_180 (16th percentile), which fits a detector of an upright, textured head rather than of outline shape alone.\", \"missing_data\": \"Activations on isolated bird heads versus mammal muzzles, and on non-animal objects with an eye-and-point layout, would show whether this is one face-part detector or two separate features.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ }
+}

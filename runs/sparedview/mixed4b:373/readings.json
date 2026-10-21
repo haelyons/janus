@@ -1,0 +1,146 @@
+{
+ "CP_s3": {
+  "unit": "mixed4b:373",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b198ab7c4cb5a29af34a822c465d055166ec24b3340f51539a654c0e9830ce26",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects vehicle wheels seen from the side together with the wheel arch or fender above them. It is most active on the front wheel of cars, trucks, buses and emergency vehicles.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects vehicle wheels seen from the side together with the wheel arch or fender above them. It is most active on the front wheel of cars, trucks, buses and emergency vehicles.",
+   "evidence": "All 20 top crops center on a tire framed by a wheel arch, across many vehicle types and colours (grayscale keeps 93%), while random photos with no vehicles score 1-3. The unit depends strongly on upright orientation and real spatial structure: rotate_90 keeps 23% (percentile 0), phase scramble keeps 1%, and edge maps keep 13%.",
+   "missing_data": "Activations on isolated wheels or tires without a vehicle body, and on other round objects such as bicycle wheels or clocks, would show whether the arch-and-wheel configuration is required.",
+   "confidence": 0.88
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects vehicle wheels seen from the side together with the wheel arch or fender above them. It is most active on the front wheel of cars, trucks, buses and emergency vehicles.\",\n \"evidence\": \"All 20 top crops center on a tire framed by a wheel arch, across many vehicle types and colours (grayscale keeps 93%), while random photos with no vehicles score 1-3. The unit depends strongly on upright orientation and real spatial structure: rotate_90 keeps 23% (percentile 0), phase scramble keeps 1%, and edge maps keep 13%.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle body, and on other round objects such as bicycle wheels or clocks, would show whether the arch-and-wheel configuration is required.\",\n \"confidence\": 0.88}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects vehicle wheels seen from the side together with the wheel arch or fender above them. It is most active on the front wheel of cars, trucks, buses and emergency vehicles.\",\n \"evidence\": \"All 20 top crops center on a tire framed by a wheel arch, across many vehicle types and colours (grayscale keeps 93%), while random photos with no vehicles score 1-3. The unit depends strongly on upright orientation and real spatial structure: rotate_90 keeps 23% (percentile 0), phase scramble keeps 1%, and edge maps keep 13%.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle body, and on other round objects such as bicycle wheels or clocks, would show whether the arch-and-wheel configuration is required.\",\n \"confidence\": 0.88}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4b:373",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b198ab7c4cb5a29af34a822c465d055166ec24b3340f51539a654c0e9830ce26",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vehicle's front wheel, seen from the side, sitting inside its arched wheel well. It responds to this across cars, vans, buses, trucks and fire engines.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vehicle's front wheel, seen from the side, sitting inside its arched wheel well. It responds to this across cars, vans, buses, trucks and fire engines.",
+   "evidence": "All 20 top crops center on a tire plus wheel-arch at roughly the same pose, while random non-vehicle photos score 1-3. The unit is unusually orientation-dependent (rotate_90 keeps 23%, 0th percentile) and nearly colour-blind (grayscale keeps 93%), which fits an upright round-tire-in-arch shape detector.",
+   "missing_data": "Activations on isolated wheels or tires without a body, other round arch-like objects, and rear wheels or bicycle wheels would show whether the arch context is required.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vehicle's front wheel, seen from the side, sitting inside its arched wheel well. It responds to this across cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"All 20 top crops center on a tire plus wheel-arch at roughly the same pose, while random non-vehicle photos score 1-3. The unit is unusually orientation-dependent (rotate_90 keeps 23%, 0th percentile) and nearly colour-blind (grayscale keeps 93%), which fits an upright round-tire-in-arch shape detector.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a body, other round arch-like objects, and rear wheels or bicycle wheels would show whether the arch context is required.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vehicle's front wheel, seen from the side, sitting inside its arched wheel well. It responds to this across cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"All 20 top crops center on a tire plus wheel-arch at roughly the same pose, while random non-vehicle photos score 1-3. The unit is unusually orientation-dependent (rotate_90 keeps 23%, 0th percentile) and nearly colour-blind (grayscale keeps 93%), which fits an upright round-tire-in-arch shape detector.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a body, other round arch-like objects, and rear wheels or bicycle wheels would show whether the arch context is required.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4b:373",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b198ab7c4cb5a29af34a822c465d055166ec24b3340f51539a654c0e9830ce26",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the front wheel of a road vehicle seen from the side: a round tyre and hub set under the curved arch of the wheel well. It responds the same way to cars, vans, buses, trucks and fire engines.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the front wheel of a road vehicle seen from the side: a round tyre and hub set under the curved arch of the wheel well. It responds the same way to cars, vans, buses, trucks and fire engines.",
+   "evidence": "All 20 top crops center on a wheel with its fender arch, across many vehicle types and colours, while the random non-vehicle photos score 1-3. The unit keeps its activation under grayscale and mirroring but collapses under rotate_90 (percentile 0), edge_map and phase_scramble, which fits an upright, shading-dependent arch-over-circle shape.",
+   "missing_data": "Activations on isolated wheels with no arch, on non-vehicle round objects or arches, and on rear wheels, to show whether the arch-plus-wheel configuration is required.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the front wheel of a road vehicle seen from the side: a round tyre and hub set under the curved arch of the wheel well. It responds the same way to cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"All 20 top crops center on a wheel with its fender arch, across many vehicle types and colours, while the random non-vehicle photos score 1-3. The unit keeps its activation under grayscale and mirroring but collapses under rotate_90 (percentile 0), edge_map and phase_scramble, which fits an upright, shading-dependent arch-over-circle shape.\",\n \"missing_data\": \"Activations on isolated wheels with no arch, on non-vehicle round objects or arches, and on rear wheels, to show whether the arch-plus-wheel configuration is required.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the front wheel of a road vehicle seen from the side: a round tyre and hub set under the curved arch of the wheel well. It responds the same way to cars, vans, buses, trucks and fire engines.\",\n \"evidence\": \"All 20 top crops center on a wheel with its fender arch, across many vehicle types and colours, while the random non-vehicle photos score 1-3. The unit keeps its activation under grayscale and mirroring but collapses under rotate_90 (percentile 0), edge_map and phase_scramble, which fits an upright, shading-dependent arch-over-circle shape.\",\n \"missing_data\": \"Activations on isolated wheels with no arch, on non-vehicle round objects or arches, and on rear wheels, to show whether the arch-plus-wheel configuration is required.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s3": {
+  "unit": "mixed4b:373",
+  "reading": "CPA_s3",
+  "condition": "CPA",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "034578ee0fa1fce8d21fb390eff7d3c715abc4b2f5e98b947020cd2086d19a3e",
+  "valid": true,
+  "class": "one",
+  "explanation": "Detects the front wheel of a road vehicle together with the arched wheel well above it, shown in upright side view: a dark round tire beneath the curved fender edge. It fires the same way for cars, trucks, buses, vans and fire engines.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Detects the front wheel of a road vehicle together with the arched wheel well above it, shown in upright side view: a dark round tire beneath the curved fender edge. It fires the same way for cars, trucks, buses, vans and fire engines.",
+   "evidence": "All 20 top crops center on a tire under its fender arch, across many vehicle types and colours (grayscale keeps 93%), while random natural photos score only 1-3. The unit is the most rotation-sensitive in its layer (rotate_90 keeps 23%, percentile 0), and edge_map and phase_scramble nearly abolish its response, so it depends on the upright tire-plus-arch shape with its shading rather than on colour.",
+   "missing_data": "Activations on isolated wheels or tires without a vehicle body, and on other round-under-arch shapes such as bicycle wheels or arches in buildings, to tell whether it is wheel-specific or a more generic shape detector.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"Detects the front wheel of a road vehicle together with the arched wheel well above it, shown in upright side view: a dark round tire beneath the curved fender edge. It fires the same way for cars, trucks, buses, vans and fire engines.\",\n \"evidence\": \"All 20 top crops center on a tire under its fender arch, across many vehicle types and colours (grayscale keeps 93%), while random natural photos score only 1-3. The unit is the most rotation-sensitive in its layer (rotate_90 keeps 23%, percentile 0), and edge_map and phase_scramble nearly abolish its response, so it depends on the upright tire-plus-arch shape with its shading rather than on colour.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle body, and on other round-under-arch shapes such as bicycle wheels or arches in buildings, to tell whether it is wheel-specific or a more generic shape detector.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"Detects the front wheel of a road vehicle together with the arched wheel well above it, shown in upright side view: a dark round tire beneath the curved fender edge. It fires the same way for cars, trucks, buses, vans and fire engines.\",\n \"evidence\": \"All 20 top crops center on a tire under its fender arch, across many vehicle types and colours (grayscale keeps 93%), while random natural photos score only 1-3. The unit is the most rotation-sensitive in its layer (rotate_90 keeps 23%, percentile 0), and edge_map and phase_scramble nearly abolish its response, so it depends on the upright tire-plus-arch shape with its shading rather than on colour.\",\n \"missing_data\": \"Activations on isolated wheels or tires without a vehicle body, and on other round-under-arch shapes such as bicycle wheels or arches in buildings, to tell whether it is wheel-specific or a more generic shape detector.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s1": {
+  "unit": "mixed4b:373",
+  "reading": "CPA_s1",
+  "condition": "CPA",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "034578ee0fa1fce8d21fb390eff7d3c715abc4b2f5e98b947020cd2086d19a3e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects vehicle wheels set in their wheel arches, meaning a tire or rim under the curved fender edge of the body, on cars, trucks, buses and fire engines, viewed upright from the side.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects vehicle wheels set in their wheel arches, meaning a tire or rim under the curved fender edge of the body, on cars, trucks, buses and fire engines, viewed upright from the side.",
+   "evidence": "All 20 top crops are centred on a wheel with its arch, across many vehicle types and colours, while random non-vehicle photos score only 1 to 3. The unit is strongly orientation-dependent (rotate_90 keeps 23%, percentile 0) and colour-invariant (grayscale keeps 93%), which fits a shape detector for the arch-over-wheel configuration.",
+   "missing_data": "Activations on wheels without a vehicle body, such as bicycle wheels or loose tires, and on arch-like non-vehicle shapes would show whether the arch or the wheel drives the response.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects vehicle wheels set in their wheel arches, meaning a tire or rim under the curved fender edge of the body, on cars, trucks, buses and fire engines, viewed upright from the side.\",\n \"evidence\": \"All 20 top crops are centred on a wheel with its arch, across many vehicle types and colours, while random non-vehicle photos score only 1 to 3. The unit is strongly orientation-dependent (rotate_90 keeps 23%, percentile 0) and colour-invariant (grayscale keeps 93%), which fits a shape detector for the arch-over-wheel configuration.\",\n \"missing_data\": \"Activations on wheels without a vehicle body, such as bicycle wheels or loose tires, and on arch-like non-vehicle shapes would show whether the arch or the wheel drives the response.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects vehicle wheels set in their wheel arches, meaning a tire or rim under the curved fender edge of the body, on cars, trucks, buses and fire engines, viewed upright from the side.\",\n \"evidence\": \"All 20 top crops are centred on a wheel with its arch, across many vehicle types and colours, while random non-vehicle photos score only 1 to 3. The unit is strongly orientation-dependent (rotate_90 keeps 23%, percentile 0) and colour-invariant (grayscale keeps 93%), which fits a shape detector for the arch-over-wheel configuration.\",\n \"missing_data\": \"Activations on wheels without a vehicle body, such as bicycle wheels or loose tires, and on arch-like non-vehicle shapes would show whether the arch or the wheel drives the response.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s2": {
+  "unit": "mixed4b:373",
+  "reading": "CPA_s2",
+  "condition": "CPA",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "034578ee0fa1fce8d21fb390eff7d3c715abc4b2f5e98b947020cd2086d19a3e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects the wheel of a road vehicle together with the arch above it, which is usually a front wheel seen from the side with the curved fender over the tyre, on cars, trucks, buses and emergency vehicles.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects the wheel of a road vehicle together with the arch above it, which is usually a front wheel seen from the side with the curved fender over the tyre, on cars, trucks, buses and emergency vehicles.",
+   "evidence": "All 20 top crops are centred on a tyre and its wheel arch whatever the vehicle type or colour, and random non-vehicle photos score only 1-3. The unit keeps its response under grayscale and mirroring but is the layer's most rotation-sensitive unit (keeps 23% under rotate_90), which fits a specific upright arch-over-circle shape.",
+   "missing_data": "Responses to isolated wheels or other round objects with arches (such as bicycle wheels or wheels removed from vehicles) would show whether the arch or vehicle context is needed.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheel of a road vehicle together with the arch above it, which is usually a front wheel seen from the side with the curved fender over the tyre, on cars, trucks, buses and emergency vehicles.\",\n \"evidence\": \"All 20 top crops are centred on a tyre and its wheel arch whatever the vehicle type or colour, and random non-vehicle photos score only 1-3. The unit keeps its response under grayscale and mirroring but is the layer's most rotation-sensitive unit (keeps 23% under rotate_90), which fits a specific upright arch-over-circle shape.\",\n \"missing_data\": \"Responses to isolated wheels or other round objects with arches (such as bicycle wheels or wheels removed from vehicles) would show whether the arch or vehicle context is needed.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit detects the wheel of a road vehicle together with the arch above it, which is usually a front wheel seen from the side with the curved fender over the tyre, on cars, trucks, buses and emergency vehicles.\",\n \"evidence\": \"All 20 top crops are centred on a tyre and its wheel arch whatever the vehicle type or colour, and random non-vehicle photos score only 1-3. The unit keeps its response under grayscale and mirroring but is the layer's most rotation-sensitive unit (keeps 23% under rotate_90), which fits a specific upright arch-over-circle shape.\",\n \"missing_data\": \"Responses to isolated wheels or other round objects with arches (such as bicycle wheels or wheels removed from vehicles) would show whether the arch or vehicle context is needed.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ }
+}

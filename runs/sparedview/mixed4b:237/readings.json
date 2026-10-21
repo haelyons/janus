@@ -1,0 +1,146 @@
+{
+ "CP_s3": {
+  "unit": "mixed4b:237",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07d981401d1e6982f0076a9f16dcbcd39f1b9906055f539f0b6c1be7a9eb01bf",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side window and door region of vehicle cabins (cars, trucks, vans), specifically the upright window frame with its pillar and the door edge beneath it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side window and door region of vehicle cabins (cars, trucks, vans), specifically the upright window frame with its pillar and the door edge beneath it.",
+   "evidence": "All 20 top crops center on a vehicle side or front window with door frame across many vehicle types and colors, while the random photos with no vehicles score 1–3. The unit is very sensitive to rotation (rotate_90 at the 3rd percentile, rotate_180 at the 10th) but insensitive to grayscale and mirroring, which fits an upright window-frame shape rather than a color cue.",
+   "missing_data": "Activations on non-vehicle windows (building windows, train/bus windows) and on vehicle parts without windows would show whether it is vehicle-specific or a general framed-window detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window and door region of vehicle cabins (cars, trucks, vans), specifically the upright window frame with its pillar and the door edge beneath it.\",\n \"evidence\": \"All 20 top crops center on a vehicle side or front window with door frame across many vehicle types and colors, while the random photos with no vehicles score 1–3. The unit is very sensitive to rotation (rotate_90 at the 3rd percentile, rotate_180 at the 10th) but insensitive to grayscale and mirroring, which fits an upright window-frame shape rather than a color cue.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train/bus windows) and on vehicle parts without windows would show whether it is vehicle-specific or a general framed-window detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window and door region of vehicle cabins (cars, trucks, vans), specifically the upright window frame with its pillar and the door edge beneath it.\",\n \"evidence\": \"All 20 top crops center on a vehicle side or front window with door frame across many vehicle types and colors, while the random photos with no vehicles score 1–3. The unit is very sensitive to rotation (rotate_90 at the 3rd percentile, rotate_180 at the 10th) but insensitive to grayscale and mirroring, which fits an upright window-frame shape rather than a color cue.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train/bus windows) and on vehicle parts without windows would show whether it is vehicle-specific or a general framed-window detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4b:237",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07d981401d1e6982f0076a9f16dcbcd39f1b9906055f539f0b6c1be7a9eb01bf",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to vehicle side windows and cab doors: the upright window frame or pillar on a car, truck, van or cab door, seen from the side.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to vehicle side windows and cab doors: the upright window frame or pillar on a car, truck, van or cab door, seen from the side.",
+   "evidence": "All 20 top photos are road vehicles, and every red box and crop is centred on a side or door window with its frame (pillars, window edge, mirror), while the random photos with no vehicles stay at 1-3. The unit is unusually sensitive to rotation (rotate_90 keeps 33%, percentile 3; rotate_180 keeps 50%, percentile 10) and to phase scrambling (0%), but robust to grayscale and mirroring, which fits an upright window-frame shape rather than a colour or texture.",
+   "missing_data": "Activations on photos with no vehicles that contain similar framed windows, such as house windows, train or bus windows, or doors, would show whether the unit is specific to vehicles or responds to framed glass panels in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to vehicle side windows and cab doors: the upright window frame or pillar on a car, truck, van or cab door, seen from the side.\",\n \"evidence\": \"All 20 top photos are road vehicles, and every red box and crop is centred on a side or door window with its frame (pillars, window edge, mirror), while the random photos with no vehicles stay at 1-3. The unit is unusually sensitive to rotation (rotate_90 keeps 33%, percentile 3; rotate_180 keeps 50%, percentile 10) and to phase scrambling (0%), but robust to grayscale and mirroring, which fits an upright window-frame shape rather than a colour or texture.\",\n \"missing_data\": \"Activations on photos with no vehicles that contain similar framed windows, such as house windows, train or bus windows, or doors, would show whether the unit is specific to vehicles or responds to framed glass panels in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to vehicle side windows and cab doors: the upright window frame or pillar on a car, truck, van or cab door, seen from the side.\",\n \"evidence\": \"All 20 top photos are road vehicles, and every red box and crop is centred on a side or door window with its frame (pillars, window edge, mirror), while the random photos with no vehicles stay at 1-3. The unit is unusually sensitive to rotation (rotate_90 keeps 33%, percentile 3; rotate_180 keeps 50%, percentile 10) and to phase scrambling (0%), but robust to grayscale and mirroring, which fits an upright window-frame shape rather than a colour or texture.\",\n \"missing_data\": \"Activations on photos with no vehicles that contain similar framed windows, such as house windows, train or bus windows, or doors, would show whether the unit is specific to vehicles or responds to framed glass panels in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s3": {
+  "unit": "mixed4b:237",
+  "reading": "CPA_s3",
+  "condition": "CPA",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "05454eb53d248a7aab8844af38e1cdfb655e6175950d9e41e66c764fad7615fb",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side window and door area of road vehicles: the glass window pane framed by the door/cab pillar on cars, pickups, vans and trucks.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side window and door area of road vehicles: the glass window pane framed by the door/cab pillar on cars, pickups, vans and trucks.",
+   "evidence": "All 20 top crops center on a vehicle side or cab window with its frame (fire truck, pickups, taxi, sedans, vans, RV), and random non-vehicle photos score only 1-3. The unit loses nearly everything under phase scrambling and is unusually sensitive to 90° and 180° rotation, which fits an upright, structured window-frame shape rather than color or texture.",
+   "missing_data": "Activations on non-vehicle windows (buildings, trains, boats) and on vehicle parts other than windows, to test whether the unit is specific to vehicle windows or responds to framed glass rectangles in general.",
+   "confidence": 0.82
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window and door area of road vehicles: the glass window pane framed by the door/cab pillar on cars, pickups, vans and trucks.\",\n \"evidence\": \"All 20 top crops center on a vehicle side or cab window with its frame (fire truck, pickups, taxi, sedans, vans, RV), and random non-vehicle photos score only 1-3. The unit loses nearly everything under phase scrambling and is unusually sensitive to 90° and 180° rotation, which fits an upright, structured window-frame shape rather than color or texture.\",\n \"missing_data\": \"Activations on non-vehicle windows (buildings, trains, boats) and on vehicle parts other than windows, to test whether the unit is specific to vehicle windows or responds to framed glass rectangles in general.\",\n \"confidence\": 0.82}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side window and door area of road vehicles: the glass window pane framed by the door/cab pillar on cars, pickups, vans and trucks.\",\n \"evidence\": \"All 20 top crops center on a vehicle side or cab window with its frame (fire truck, pickups, taxi, sedans, vans, RV), and random non-vehicle photos score only 1-3. The unit loses nearly everything under phase scrambling and is unusually sensitive to 90° and 180° rotation, which fits an upright, structured window-frame shape rather than color or texture.\",\n \"missing_data\": \"Activations on non-vehicle windows (buildings, trains, boats) and on vehicle parts other than windows, to test whether the unit is specific to vehicle windows or responds to framed glass rectangles in general.\",\n \"confidence\": 0.82}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4b:237",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07d981401d1e6982f0076a9f16dcbcd39f1b9906055f539f0b6c1be7a9eb01bf",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows of road vehicles: the glass of a car, truck or van door seen from the side, with the window frame, pillars and often the side mirror.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows of road vehicles: the glass of a car, truck or van door seen from the side, with the window frame, pillars and often the side mirror.",
+   "evidence": "All 20 top photos are vehicles, and every crop centres on a side door window or cab window, across many vehicle types and colours, while random non-vehicle photos score only 1-3. It is strongly hurt by rotate_90 (3rd percentile), rotate_180 and phase_scramble (0%), which fits an upright structured shape, while grayscale and mirror have little effect.",
+   "missing_data": "Activations on windows outside vehicles (house or building windows) and on vehicle front windscreens versus side windows would show whether the unit is specific to vehicle side windows or responds to framed glass panes in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles: the glass of a car, truck or van door seen from the side, with the window frame, pillars and often the side mirror.\",\n \"evidence\": \"All 20 top photos are vehicles, and every crop centres on a side door window or cab window, across many vehicle types and colours, while random non-vehicle photos score only 1-3. It is strongly hurt by rotate_90 (3rd percentile), rotate_180 and phase_scramble (0%), which fits an upright structured shape, while grayscale and mirror have little effect.\",\n \"missing_data\": \"Activations on windows outside vehicles (house or building windows) and on vehicle front windscreens versus side windows would show whether the unit is specific to vehicle side windows or responds to framed glass panes in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows of road vehicles: the glass of a car, truck or van door seen from the side, with the window frame, pillars and often the side mirror.\",\n \"evidence\": \"All 20 top photos are vehicles, and every crop centres on a side door window or cab window, across many vehicle types and colours, while random non-vehicle photos score only 1-3. It is strongly hurt by rotate_90 (3rd percentile), rotate_180 and phase_scramble (0%), which fits an upright structured shape, while grayscale and mirror have little effect.\",\n \"missing_data\": \"Activations on windows outside vehicles (house or building windows) and on vehicle front windscreens versus side windows would show whether the unit is specific to vehicle side windows or responds to framed glass panes in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s2": {
+  "unit": "mixed4b:237",
+  "reading": "CPA_s2",
+  "condition": "CPA",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "05454eb53d248a7aab8844af38e1cdfb655e6175950d9e41e66c764fad7615fb",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows and doors of road vehicles (cars, pickups, vans, trucks): glass window panes framed by door pillars and the door edge, seen upright.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows and doors of road vehicles (cars, pickups, vans, trucks): glass window panes framed by door pillars and the door edge, seen upright.",
+   "evidence": "All 20 top photos are vehicles, and the box sits on the side window/door region in every one; random photos without vehicles score only 1-3. The unit loses nearly everything under phase scramble and is unusually sensitive to 90° and 180° rotation, which fits a structured, orientation-specific vehicle-part detector rather than a colour or texture one.",
+   "missing_data": "Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than doors, to tell whether it is specific to car side windows or tuned to framed glass panels in general.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows and doors of road vehicles (cars, pickups, vans, trucks): glass window panes framed by door pillars and the door edge, seen upright.\",\n \"evidence\": \"All 20 top photos are vehicles, and the box sits on the side window/door region in every one; random photos without vehicles score only 1-3. The unit loses nearly everything under phase scramble and is unusually sensitive to 90° and 180° rotation, which fits a structured, orientation-specific vehicle-part detector rather than a colour or texture one.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than doors, to tell whether it is specific to car side windows or tuned to framed glass panels in general.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows and doors of road vehicles (cars, pickups, vans, trucks): glass window panes framed by door pillars and the door edge, seen upright.\",\n \"evidence\": \"All 20 top photos are vehicles, and the box sits on the side window/door region in every one; random photos without vehicles score only 1-3. The unit loses nearly everything under phase scramble and is unusually sensitive to 90° and 180° rotation, which fits a structured, orientation-specific vehicle-part detector rather than a colour or texture one.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than doors, to tell whether it is specific to car side windows or tuned to framed glass panels in general.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s1": {
+  "unit": "mixed4b:237",
+  "reading": "CPA_s1",
+  "condition": "CPA",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "05454eb53d248a7aab8844af38e1cdfb655e6175950d9e41e66c764fad7615fb",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side windows and door-window frame of motor vehicles (cars, trucks, vans, ambulances, taxis), in particular the cab or front-door window with its pillar and window frame seen from the side.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side windows and door-window frame of motor vehicles (cars, trucks, vans, ambulances, taxis), in particular the cab or front-door window with its pillar and window frame seen from the side.",
+   "evidence": "All 20 top photos place the box on a vehicle's side or cab window, across many vehicle types and colours, while the random photos score only 1-3. Activation drops almost entirely under phase scrambling and is strongly reduced by 90° and 180° rotation, which fits an upright, structured window/door shape rather than a colour or texture.",
+   "missing_data": "Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than windows would show whether the unit is specific to vehicle windows or responds to framed glass in general.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows and door-window frame of motor vehicles (cars, trucks, vans, ambulances, taxis), in particular the cab or front-door window with its pillar and window frame seen from the side.\",\n \"evidence\": \"All 20 top photos place the box on a vehicle's side or cab window, across many vehicle types and colours, while the random photos score only 1-3. Activation drops almost entirely under phase scrambling and is strongly reduced by 90° and 180° rotation, which fits an upright, structured window/door shape rather than a colour or texture.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than windows would show whether the unit is specific to vehicle windows or responds to framed glass in general.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side windows and door-window frame of motor vehicles (cars, trucks, vans, ambulances, taxis), in particular the cab or front-door window with its pillar and window frame seen from the side.\",\n \"evidence\": \"All 20 top photos place the box on a vehicle's side or cab window, across many vehicle types and colours, while the random photos score only 1-3. Activation drops almost entirely under phase scrambling and is strongly reduced by 90° and 180° rotation, which fits an upright, structured window/door shape rather than a colour or texture.\",\n \"missing_data\": \"Activations on non-vehicle windows (building windows, train or bus windows) and on vehicle parts other than windows would show whether the unit is specific to vehicle windows or responds to framed glass in general.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ }
+}

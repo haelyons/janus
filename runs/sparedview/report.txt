@@ -1,0 +1,109 @@
+== mixed3a:136  S=32
+T* rotate_180  percentile 2.7
+mean drop: affected 0.528, spared 0.125
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared RETAINED
+CP_s1  one  The unit responds to a fine, granular or stippled surface texture (asphalt, carpet, knit fabric, reptile or insect scales, fruit skin) that sits just below a ho
+CP_s2  one  The unit responds to a fine, granular or stippled surface texture, such as asphalt, carpet, gravel, reptile or insect scales, woven fabric or fruit rind, fillin
+CP_s3  one  Responds to fine, dense, granular or speckled surface texture (asphalt, gravel, carpet, woven fabric, scaly or pitted skin), typically filling the lower part of
+CPA_s1  one  The unit responds to fine, granular or speckled surface texture (asphalt, fabric weave, scaly skin, fruit rind, fur), especially when a horizontal-ish boundary 
+CPA_s2  one_plus_related  The unit responds to a fine-grained granular or speckled surface texture (asphalt, carpet, fabric weave, scaly or bumpy skin, fruit rind) with a smooth or darke
+CPA_s3  one_plus_related  The unit responds to fine-grained granular or speckled texture (asphalt, carpet, fabric weave, scaly or pitted skin, foliage) in the lower part of the receptive
+
+== mixed3a:110  S=32
+T* mirror  percentile 2.7
+mean drop: affected 0.434, spared -0.020
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared RETAINED
+CP_s1  one  The unit responds to a vertical border where a smooth, uniform surface on the left meets a fine, high-contrast dotted or granular texture on the right, such as 
+CP_s2  one  The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, granular or perforated texture on the right, such as a 
+CP_s3  one  Responds to a vertical boundary where a smooth, uniform region on the left meets a fine, repeated dot-like texture on the right, such as polka dots, knit stitch
+CPA_s1  one  The unit detects a vertical boundary with a smooth, uniform region on the left and a fine, repeated dotted or granular texture on the right, such as a knit, per
+CPA_s2  one  The unit responds to a vertical-ish boundary with a smooth, uniform region on the left and a fine, high-density repeating texture (dots, knit, perforations, seq
+CPA_s3  one  The unit responds to a vertical-ish boundary where a smooth, uniform region on the left meets a fine, high-density texture of dots, knits, perforations or speck
+
+== mixed3b:379  S=48
+T* phase_scramble  percentile 3.8
+mean drop: affected 0.995, spared 0.773
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  one_plus_related  The unit detects the upper-left curved rim of a circular object, i.e. a convex arc bending from up-left over to the right, most strongly on watch, compass and g
+CP_s2  one_plus_related  Detects the curved rim of a circular object, an arc boundary seen from inside the disc, usually its upper-left edge; this is strongest on watch, compass and gau
+CP_s3  one_plus_related  The unit detects the upper-left curved rim of a circular object, an arc boundary with concentric bands; it fires most on dial faces such as watches, compasses, 
+CPA_s1  one_plus_related  The unit detects the upper curved rim/bezel of a circular object, typically a convex arc running across the top of the receptive field. It fires most for watch,
+CPA_s2  one  The unit detects the upper-left arc of a circular rim or bezel: a curved boundary bending from roughly vertical on the left toward horizontal at the top, as on 
+CPA_s3  one  Responds to the upper-left arc of a circular rim or bezel, a curved boundary concave toward the lower right such as the edge of a watch face, compass, dial or g
+
+== mixed4b:237  S=88
+T* phase_scramble  percentile 0.0
+mean drop: affected 1.000, spared 0.997
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  one  The unit responds to the side windows of road vehicles: the glass of a car, truck or van door seen from the side, with the window frame, pillars and often the s
+CP_s2  one  The unit responds to vehicle side windows and cab doors: the upright window frame or pillar on a car, truck, van or cab door, seen from the side.
+CP_s3  one  The unit responds to the side window and door region of vehicle cabins (cars, trucks, vans), specifically the upright window frame with its pillar and the door 
+CPA_s1  one  The unit responds to the side windows and door-window frame of motor vehicles (cars, trucks, vans, ambulances, taxis), in particular the cab or front-door windo
+CPA_s2  one  The unit responds to the side windows and doors of road vehicles (cars, pickups, vans, trucks): glass window panes framed by door pillars and the door edge, see
+CPA_s3  one  The unit responds to the side window and door area of road vehicles: the glass window pane framed by the door/cab pillar on cars, pickups, vans and trucks.
+
+== mixed4b:373  S=80
+T* rotate_90  percentile 0.2
+mean drop: affected 0.897, spared 0.526
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  one  The unit responds to a vehicle's front wheel, seen from the side, sitting inside its arched wheel well. It responds to this across cars, vans, buses, trucks and
+CP_s2  one  The unit responds to the front wheel of a road vehicle seen from the side: a round tyre and hub set under the curved arch of the wheel well. It responds the sam
+CP_s3  one  The unit detects vehicle wheels seen from the side together with the wheel arch or fender above them. It is most active on the front wheel of cars, trucks, buse
+CPA_s1  one  The unit detects vehicle wheels set in their wheel arches, meaning a tire or rim under the curved fender edge of the body, on cars, trucks, buses and fire engin
+CPA_s2  one  The unit detects the wheel of a road vehicle together with the arch above it, which is usually a front wheel seen from the side with the curved fender over the 
+CPA_s3  one  Detects the front wheel of a road vehicle together with the arched wheel well above it, shown in upright side view: a dark round tire beneath the curved fender 
+
+== mixed4b:431  S=112
+T* mirror  percentile 0.4
+mean drop: affected 0.816, spared 0.013
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared RETAINED
+CP_s1  one_plus_related  Responds to the fur-covered side of the head and neck of animals facing right, the cheek, ear and neck region just behind the face, mostly dogs. It extends more
+CP_s2  one_plus_related  Responds to furry mammal heads and the fur near them, mostly dogs, at the side of the face, cheek and ear, where furred head meets neck or background; it extend
+CP_s3  one_plus_related  The unit responds to furry mammal heads and faces in their usual upright, side-on pose, most of all dogs. The red boxes usually fall on the side of the head, ch
+CPA_s1  one_plus_related  Responds to the furry cheek, ear and neck area of a mammal's head, mostly dogs. It prefers animals facing or turned to the right, and also fires more weakly on 
+CPA_s2  one_plus_related  The unit responds to the furry neck, shoulder or cheek of a mammal, mostly dogs, when the animal's head is turned toward the right of the image. It responds mor
+CPA_s3  one  The unit responds to the furry cheek, ear and neck region of a mammal head, mostly dogs, and prefers heads turned or facing toward the right of the image.
+
+== mixed4b:443  S=112
+T* rotate_180  percentile 0.4
+mean drop: affected 0.912, spared 0.438
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  one_plus_related  The unit detects upright canid faces, firing most strongly on the region around the eye and upper muzzle of dogs, and somewhat less on wolves and foxes.
+CP_s2  one_plus_related  Responds to upright canine faces, most strongly to the eye and upper muzzle of dogs looking toward the camera. It extends more weakly to closely related canids 
+CP_s3  one_plus_related  The unit detects the upright face of a dog, centered on the eye region and the side of the muzzle, and also responds more weakly to the faces of similar canids 
+CPA_s1  one_plus_related  Responds to upright canine faces (dogs, wolves, foxes), peaking around the eye/upper-face region of a frontal or three-quarter face, with weaker responses to ot
+CPA_s2  one_plus_related  Responds to upright, front-facing canine faces, most strongly in the region around the eye and the bridge of the snout. The response extends more weakly to simi
+CPA_s3  one_plus_related  Responds to upright canid faces (dogs, plus wolves and foxes), firing most strongly on the eye region beside the muzzle. It responds more weakly to other mammal
+
+== mixed4d:409  S=128
+T* phase_scramble  percentile 0.0
+mean drop: affected 1.000, spared 0.979
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  unrelated  The unit responds to upright, side-on views of the body or flank of four-legged animals, mostly dogs (plus one weasel), and separately to the side of cars and t
+CP_s2  one  The unit responds to the side-on profile of an upright, horizontally elongated body held up by supports underneath, such as a standing dog's flank over its legs
+CP_s3  one  The unit responds to the side profile of a horizontally elongated body held up off the ground on legs or wheels, at mid-body. This covers standing dogs (and a w
+CPA_s1  one  The unit responds to the side-view body of an elongated object held upright above the ground on legs or wheels, mainly dogs (and a stoat) and cars or vans seen 
+CPA_s2  one  The unit responds to a horizontally elongated body seen side-on and standing on supports below it: the flank of a standing four-legged animal (mostly dogs, also
+CPA_s3  one  The unit responds to the side-profile view of a horizontally elongated body resting on legs or wheels. This covers the flank of a standing quadruped (mostly dog
+
+== mixed4e:55  S=104
+T* rotate_180  percentile 9.9
+mean drop: affected 0.867, spared 0.368
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared ATTENUATED
+CP_s1  one_plus_related  Responds to the lower-middle face of furry mammals (the muzzle, nose and whisker region just below the eyes), most strongly on cats, foxes and red pandas, with 
+CP_s2  one_plus_related  Responds to the lower face/muzzle of upright furry mammals, mainly cats, foxes, red pandas and lynxes: the area around the nose, mouth and whiskers where light 
+CP_s3  one_plus_related  Responds to the muzzle/snout region of upright furry animal faces (fox, red panda, cat, hamster, lynx, dog), especially the area just below and between the eyes
+CPA_s1  one_plus_related  The unit responds to the upright lower face of furry mammals (fox, red panda, cat, lynx, hamster): the muzzle, nose and mouth area below the eyes, where light f
+CPA_s2  one_plus_related  Responds to the lower-central face of upright furry mammals, centered on the muzzle, nose and whisker pad. Fox, red panda, cat and lynx faces dominate, and the 
+CPA_s3  one_plus_related  The unit responds to the lower-central face of upright furry animals: the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes and dogs, with the 
+
+== mixed5a:719  S=160
+T* grayscale  percentile 18.6
+mean drop: affected 0.677, spared 0.087
+view labels (battery.decide on 1 - mean drop: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): affected ATTENUATED, spared RETAINED
+CP_s1  one_plus_related  The unit responds mainly to close-up shots of handmade or manufactured objects with decorative, ornamented surfaces, such as embroidered or printed fabric, embo
+CP_s2  one_plus_related  The unit responds mainly to rounded, curved contours on close-up handcrafted or manufactured objects, such as the bulging edge of a mouse, shoe toe, knee pad, s
+CP_s3  one_plus_related  The unit mainly responds to curved, outlined contours on man-made objects, especially rounded edges of smooth or embossed surfaces such as a mouse, armour, knee
+CPA_s1  one_plus_related  The unit responds to close-up, product-style views of man-made objects, especially crafted or decorated surfaces such as fabric, embroidery, ornamental motifs, 
+CPA_s2  one_plus_related  The unit responds to the surfaces of handcrafted or manufactured objects that carry decorative motifs, such as floral or ornamental prints, embroidery, crochet,
+CPA_s3  one_plus_related  Responds to close-up surfaces of small man-made or handcrafted objects, especially decorated or patterned ones such as embossed or printed motifs, appliqué fabr

@@ -1,0 +1,4921 @@
+{
+ "random_units": [
+  "mixed3a:197",
+  "mixed3a:93",
+  "mixed3a:168",
+  "mixed3b:95",
+  "mixed3b:453",
+  "mixed3b:42",
+  "mixed4b:135",
+  "mixed4b:334",
+  "mixed4b:8",
+  "mixed4d:242",
+  "mixed4d:77",
+  "mixed4d:521",
+  "mixed4e:273",
+  "mixed4e:708",
+  "mixed4e:266",
+  "mixed5a:696",
+  "mixed5a:43",
+  "mixed5a:42"
+ ],
+ "round21_units": [
+  "mixed3a:136",
+  "mixed3a:110",
+  "mixed3b:379",
+  "mixed4b:237",
+  "mixed4b:373",
+  "mixed4b:431",
+  "mixed4d:409",
+  "mixed4e:55",
+  "mixed5a:719"
+ ],
+ "seed": 22,
+ "thresholds": {
+  "p_low": 20,
+  "p_high": 80,
+  "gap": 0.25
+ },
+ "property_transform": {
+  "colour": "grayscale",
+  "fine_detail": "low_pass",
+  "coarse_shading": "high_pass",
+  "shape": "phase_scramble",
+  "arrangement": "patch_shuffle_4x4",
+  "orientation": "rotate_90",
+  "upright": "rotate_180",
+  "left_right": "mirror",
+  "inner_texture": "edge_map",
+  "polarity": "luminance_polarity_inversion"
+ },
+ "summary": {
+  "base": {
+   "random": {
+    "readings": 54,
+    "claims_per_reading": 2.2037037037037037,
+    "supported_per_reading": 0.5370370370370371,
+    "unremarkable_per_reading": 1.3703703703703705,
+    "contradicted_per_reading": 0.2962962962962963,
+    "supported_share": 0.24369747899159663,
+    "unremarkable_share": 0.6218487394957983,
+    "contradicted_share": 0.13445378151260504
+   },
+   "round21": {
+    "readings": 27,
+    "claims_per_reading": 1.6296296296296295,
+    "supported_per_reading": 0.7037037037037037,
+    "unremarkable_per_reading": 0.8518518518518519,
+    "contradicted_per_reading": 0.07407407407407407,
+    "supported_share": 0.4318181818181818,
+    "unremarkable_share": 0.5227272727272727,
+    "contradicted_share": 0.045454545454545456
+   },
+   "all": {
+    "readings": 81,
+    "claims_per_reading": 2.0123456790123457,
+    "supported_per_reading": 0.5925925925925926,
+    "unremarkable_per_reading": 1.1975308641975309,
+    "contradicted_per_reading": 0.2222222222222222,
+    "supported_share": 0.294478527607362,
+    "unremarkable_share": 0.5950920245398773,
+    "contradicted_share": 0.11042944785276074
+   }
+  },
+  "P": {
+   "random": {
+    "readings": 54,
+    "claims_per_reading": 2.5555555555555554,
+    "supported_per_reading": 0.8333333333333334,
+    "unremarkable_per_reading": 1.3888888888888888,
+    "contradicted_per_reading": 0.3333333333333333,
+    "supported_share": 0.32608695652173914,
+    "unremarkable_share": 0.5434782608695652,
+    "contradicted_share": 0.13043478260869565
+   },
+   "round21": {
+    "readings": 27,
+    "claims_per_reading": 2.3333333333333335,
+    "supported_per_reading": 1.1851851851851851,
+    "unremarkable_per_reading": 1.0,
+    "contradicted_per_reading": 0.14814814814814814,
+    "supported_share": 0.5079365079365079,
+    "unremarkable_share": 0.42857142857142855,
+    "contradicted_share": 0.06349206349206349
+   },
+   "all": {
+    "readings": 81,
+    "claims_per_reading": 2.4814814814814814,
+    "supported_per_reading": 0.9506172839506173,
+    "unremarkable_per_reading": 1.2592592592592593,
+    "contradicted_per_reading": 0.2716049382716049,
+    "supported_share": 0.38308457711442784,
+    "unremarkable_share": 0.5074626865671642,
+    "contradicted_share": 0.10945273631840796
+   }
+  }
+ },
+ "labels": {
+  "base": {
+   "random": {
+    "gap": 0.1092436974789916,
+    "label": "SIMILAR"
+   },
+   "round21": {
+    "gap": 0.38636363636363635,
+    "label": "SUPPORTED_MORE"
+   },
+   "all": {
+    "gap": 0.18404907975460125,
+    "label": "SIMILAR"
+   }
+  },
+  "P": {
+   "random": {
+    "gap": 0.1956521739130435,
+    "label": "SIMILAR"
+   },
+   "round21": {
+    "gap": 0.4444444444444444,
+    "label": "SUPPORTED_MORE"
+   },
+   "all": {
+    "gap": 0.2736318407960199,
+    "label": "SUPPORTED_MORE"
+   }
+  }
+ },
+ "not_counted": {
+  "base": {
+   "random": 0,
+   "round21": 0
+  },
+  "P": {
+   "random": 0,
+   "round21": 0
+  }
+ },
+ "mid_profile_random": {
+  "units": [
+   "mixed4d:242"
+  ],
+  "by_condition": {
+   "base": {
+    "readings": 3,
+    "claims_per_reading": 4.0
+   },
+   "P": {
+    "readings": 3,
+    "claims_per_reading": 2.6666666666666665
+   }
+  }
+ },
+ "units": {
+  "mixed3a:197": {
+   "group": "random",
+   "layer": "mixed3a",
+   "chan": 197,
+   "layer_channels": 256,
+   "percentiles": {
+    "grayscale": 12.5,
+    "low_pass": 78.90625,
+    "high_pass": 36.71875,
+    "phase_scramble": 19.140625,
+    "patch_shuffle_4x4": 51.171875,
+    "rotate_90": 5.078125,
+    "edge_map": 20.703125,
+    "luminance_polarity_inversion": 45.3125,
+    "rotate_180": 8.984375,
+    "mirror": 78.90625
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "unaffected",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "unaffected",
+       "contradicted"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "unaffected",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "unaffected",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3a:93": {
+   "group": "random",
+   "layer": "mixed3a",
+   "chan": 93,
+   "layer_channels": 256,
+   "percentiles": {
+    "grayscale": 80.078125,
+    "low_pass": 68.359375,
+    "high_pass": 65.234375,
+    "phase_scramble": 73.4375,
+    "patch_shuffle_4x4": 51.5625,
+    "rotate_90": 33.59375,
+    "edge_map": 84.375,
+    "luminance_polarity_inversion": 52.734375,
+    "rotate_180": 63.28125,
+    "mirror": 31.25
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3a:168": {
+   "group": "random",
+   "layer": "mixed3a",
+   "chan": 168,
+   "layer_channels": 256,
+   "percentiles": {
+    "grayscale": 46.484375,
+    "low_pass": 17.1875,
+    "high_pass": 83.203125,
+    "phase_scramble": 2.734375,
+    "patch_shuffle_4x4": 5.078125,
+    "rotate_90": 57.03125,
+    "edge_map": 43.359375,
+    "luminance_polarity_inversion": 39.0625,
+    "rotate_180": 97.265625,
+    "mirror": 61.71875
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3b:95": {
+   "group": "random",
+   "layer": "mixed3b",
+   "chan": 95,
+   "layer_channels": 480,
+   "percentiles": {
+    "grayscale": 89.58333333333334,
+    "low_pass": 25.624999999999996,
+    "high_pass": 46.458333333333336,
+    "phase_scramble": 67.29166666666667,
+    "patch_shuffle_4x4": 98.95833333333334,
+    "rotate_90": 58.333333333333336,
+    "edge_map": 61.458333333333336,
+    "luminance_polarity_inversion": 74.16666666666667,
+    "rotate_180": 68.75,
+    "mirror": 37.291666666666664
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "unaffected",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "unaffected",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "unaffected",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "unaffected",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "unaffected",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "unaffected",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "unaffected",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "unaffected",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "unaffected",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "unaffected",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3b:453": {
+   "group": "random",
+   "layer": "mixed3b",
+   "chan": 453,
+   "layer_channels": 480,
+   "percentiles": {
+    "grayscale": 44.166666666666664,
+    "low_pass": 46.458333333333336,
+    "high_pass": 69.58333333333333,
+    "phase_scramble": 82.91666666666667,
+    "patch_shuffle_4x4": 83.125,
+    "rotate_90": 6.041666666666667,
+    "edge_map": 56.25,
+    "luminance_polarity_inversion": 71.875,
+    "rotate_180": 94.16666666666667,
+    "mirror": 94.16666666666667
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "arrangement": [
+       "depends",
+       "contradicted"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "unaffected",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "arrangement": [
+       "unaffected",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3b:42": {
+   "group": "random",
+   "layer": "mixed3b",
+   "chan": 42,
+   "layer_channels": 480,
+   "percentiles": {
+    "grayscale": 65.0,
+    "low_pass": 8.541666666666666,
+    "high_pass": 82.91666666666667,
+    "phase_scramble": 71.04166666666667,
+    "patch_shuffle_4x4": 52.708333333333336,
+    "rotate_90": 71.45833333333333,
+    "edge_map": 78.125,
+    "luminance_polarity_inversion": 56.458333333333336,
+    "rotate_180": 56.666666666666664,
+    "mirror": 31.458333333333332
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "unaffected",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "unaffected",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:135": {
+   "group": "random",
+   "layer": "mixed4b",
+   "chan": 135,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 81.25,
+    "low_pass": 5.078125,
+    "high_pass": 48.4375,
+    "phase_scramble": 74.4140625,
+    "patch_shuffle_4x4": 86.5234375,
+    "rotate_90": 89.453125,
+    "edge_map": 61.1328125,
+    "luminance_polarity_inversion": 5.2734375,
+    "rotate_180": 76.5625,
+    "mirror": 28.3203125
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "contradicted"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "contradicted"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "contradicted"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:334": {
+   "group": "random",
+   "layer": "mixed4b",
+   "chan": 334,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 34.5703125,
+    "low_pass": 85.7421875,
+    "high_pass": 47.4609375,
+    "phase_scramble": 85.15625,
+    "patch_shuffle_4x4": 5.6640625,
+    "rotate_90": 45.3125,
+    "edge_map": 14.84375,
+    "luminance_polarity_inversion": 53.125,
+    "rotate_180": 41.2109375,
+    "mirror": 45.1171875
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:8": {
+   "group": "random",
+   "layer": "mixed4b",
+   "chan": 8,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 60.7421875,
+    "low_pass": 64.0625,
+    "high_pass": 32.03125,
+    "phase_scramble": 63.28125,
+    "patch_shuffle_4x4": 89.2578125,
+    "rotate_90": 57.6171875,
+    "edge_map": 74.21875,
+    "luminance_polarity_inversion": 16.6015625,
+    "rotate_180": 54.6875,
+    "mirror": 29.4921875
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "unaffected",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "unaffected",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4d:242": {
+   "group": "random",
+   "layer": "mixed4d",
+   "chan": 242,
+   "layer_channels": 528,
+   "percentiles": {
+    "grayscale": 69.6969696969697,
+    "low_pass": 35.22727272727273,
+    "high_pass": 63.06818181818182,
+    "phase_scramble": 74.62121212121212,
+    "patch_shuffle_4x4": 37.878787878787875,
+    "rotate_90": 64.58333333333334,
+    "edge_map": 54.734848484848484,
+    "luminance_polarity_inversion": 72.53787878787878,
+    "rotate_180": 71.40151515151516,
+    "mirror": 26.325757575757574
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4d:77": {
+   "group": "random",
+   "layer": "mixed4d",
+   "chan": 77,
+   "layer_channels": 528,
+   "percentiles": {
+    "grayscale": 47.34848484848485,
+    "low_pass": 72.91666666666666,
+    "high_pass": 14.583333333333334,
+    "phase_scramble": 63.82575757575758,
+    "patch_shuffle_4x4": 67.23484848484848,
+    "rotate_90": 57.95454545454546,
+    "edge_map": 48.67424242424242,
+    "luminance_polarity_inversion": 1.7045454545454544,
+    "rotate_180": 58.52272727272727,
+    "mirror": 35.984848484848484
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4d:521": {
+   "group": "random",
+   "layer": "mixed4d",
+   "chan": 521,
+   "layer_channels": 528,
+   "percentiles": {
+    "grayscale": 15.909090909090908,
+    "low_pass": 13.446969696969695,
+    "high_pass": 61.5530303030303,
+    "phase_scramble": 40.909090909090914,
+    "patch_shuffle_4x4": 31.439393939393938,
+    "rotate_90": 29.924242424242426,
+    "edge_map": 6.8181818181818175,
+    "luminance_polarity_inversion": 41.09848484848485,
+    "rotate_180": 15.719696969696969,
+    "mirror": 51.13636363636363
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4e:273": {
+   "group": "random",
+   "layer": "mixed4e",
+   "chan": 273,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 98.79807692307693,
+    "low_pass": 84.61538461538461,
+    "high_pass": 93.8701923076923,
+    "phase_scramble": 96.7548076923077,
+    "patch_shuffle_4x4": 32.69230769230769,
+    "rotate_90": 66.82692307692307,
+    "edge_map": 78.60576923076923,
+    "luminance_polarity_inversion": 83.29326923076923,
+    "rotate_180": 86.77884615384616,
+    "mirror": 9.014423076923077
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "unaffected",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "unaffected",
+       "supported"
+      ],
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "contradicted"
+      ],
+      "shape": [
+       "depends",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4e:708": {
+   "group": "random",
+   "layer": "mixed4e",
+   "chan": 708,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 54.32692307692307,
+    "low_pass": 41.34615384615385,
+    "high_pass": 47.23557692307692,
+    "phase_scramble": 62.980769230769226,
+    "patch_shuffle_4x4": 19.591346153846153,
+    "rotate_90": 50.0,
+    "edge_map": 33.53365384615385,
+    "luminance_polarity_inversion": 77.16346153846155,
+    "rotate_180": 63.581730769230774,
+    "mirror": 46.99519230769231
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4e:266": {
+   "group": "random",
+   "layer": "mixed4e",
+   "chan": 266,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 57.8125,
+    "low_pass": 78.2451923076923,
+    "high_pass": 35.9375,
+    "phase_scramble": 0.0,
+    "patch_shuffle_4x4": 17.067307692307693,
+    "rotate_90": 52.644230769230774,
+    "edge_map": 50.60096153846154,
+    "luminance_polarity_inversion": 86.89903846153845,
+    "rotate_180": 68.99038461538461,
+    "mirror": 35.456730769230774
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed5a:696": {
+   "group": "random",
+   "layer": "mixed5a",
+   "chan": 696,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 69.23076923076923,
+    "low_pass": 10.216346153846153,
+    "high_pass": 81.1298076923077,
+    "phase_scramble": 64.42307692307693,
+    "patch_shuffle_4x4": 18.269230769230766,
+    "rotate_90": 11.778846153846153,
+    "edge_map": 28.725961538461537,
+    "luminance_polarity_inversion": 49.75961538461539,
+    "rotate_180": 21.514423076923077,
+    "mirror": 61.17788461538461
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {}
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {}
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {}
+    }
+   }
+  },
+  "mixed5a:43": {
+   "group": "random",
+   "layer": "mixed5a",
+   "chan": 43,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 53.36538461538461,
+    "low_pass": 70.1923076923077,
+    "high_pass": 41.22596153846153,
+    "phase_scramble": 41.22596153846153,
+    "patch_shuffle_4x4": 51.442307692307686,
+    "rotate_90": 67.66826923076923,
+    "edge_map": 72.83653846153845,
+    "luminance_polarity_inversion": 51.682692307692314,
+    "rotate_180": 74.03846153846155,
+    "mirror": 13.822115384615385
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "depends",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "colour": [
+       "depends",
+       "unremarkable"
+      ],
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed5a:42": {
+   "group": "random",
+   "layer": "mixed5a",
+   "chan": 42,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 85.69711538461539,
+    "low_pass": 46.394230769230774,
+    "high_pass": 20.432692307692307,
+    "phase_scramble": 0.0,
+    "patch_shuffle_4x4": 61.77884615384615,
+    "rotate_90": 68.26923076923077,
+    "edge_map": 71.39423076923077,
+    "luminance_polarity_inversion": 27.64423076923077,
+    "rotate_180": 57.09134615384615,
+    "mirror": 19.71153846153846
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ],
+      "upright": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "unremarkable"
+      ],
+      "upright": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3a:136": {
+   "group": "round21",
+   "layer": "mixed3a",
+   "chan": 136,
+   "layer_channels": 256,
+   "percentiles": {
+    "grayscale": 50.390625,
+    "low_pass": 45.3125,
+    "high_pass": 37.5,
+    "phase_scramble": 15.234375,
+    "patch_shuffle_4x4": 48.046875,
+    "rotate_90": 7.03125,
+    "edge_map": 18.75,
+    "luminance_polarity_inversion": 72.65625,
+    "rotate_180": 2.734375,
+    "mirror": 67.96875
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "unaffected",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "unaffected",
+       "contradicted"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3a:110": {
+   "group": "round21",
+   "layer": "mixed3a",
+   "chan": 110,
+   "layer_channels": 256,
+   "percentiles": {
+    "grayscale": 46.875,
+    "low_pass": 65.234375,
+    "high_pass": 53.515625,
+    "phase_scramble": 10.9375,
+    "patch_shuffle_4x4": 85.9375,
+    "rotate_90": 39.453125,
+    "edge_map": 39.0625,
+    "luminance_polarity_inversion": 66.796875,
+    "rotate_180": 10.546875,
+    "mirror": 2.734375
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed3b:379": {
+   "group": "round21",
+   "layer": "mixed3b",
+   "chan": 379,
+   "layer_channels": 480,
+   "percentiles": {
+    "grayscale": 53.75,
+    "low_pass": 63.33333333333333,
+    "high_pass": 74.79166666666667,
+    "phase_scramble": 3.75,
+    "patch_shuffle_4x4": 8.958333333333334,
+    "rotate_90": 62.5,
+    "edge_map": 74.16666666666667,
+    "luminance_polarity_inversion": 97.91666666666666,
+    "rotate_180": 32.5,
+    "mirror": 36.45833333333333
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:237": {
+   "group": "round21",
+   "layer": "mixed4b",
+   "chan": 237,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 45.8984375,
+    "low_pass": 23.2421875,
+    "high_pass": 50.390625,
+    "phase_scramble": 0.0,
+    "patch_shuffle_4x4": 38.671875,
+    "rotate_90": 3.125,
+    "edge_map": 70.3125,
+    "luminance_polarity_inversion": 48.6328125,
+    "rotate_180": 9.9609375,
+    "mirror": 55.6640625
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:373": {
+   "group": "round21",
+   "layer": "mixed4b",
+   "chan": 373,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 81.0546875,
+    "low_pass": 35.9375,
+    "high_pass": 62.5,
+    "phase_scramble": 6.25,
+    "patch_shuffle_4x4": 26.171875,
+    "rotate_90": 0.1953125,
+    "edge_map": 7.421875,
+    "luminance_polarity_inversion": 17.3828125,
+    "rotate_180": 23.828125,
+    "mirror": 82.03125
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4b:431": {
+   "group": "round21",
+   "layer": "mixed4b",
+   "chan": 431,
+   "layer_channels": 512,
+   "percentiles": {
+    "grayscale": 11.1328125,
+    "low_pass": 32.6171875,
+    "high_pass": 16.796875,
+    "phase_scramble": 33.984375,
+    "patch_shuffle_4x4": 2.5390625,
+    "rotate_90": 15.8203125,
+    "edge_map": 19.140625,
+    "luminance_polarity_inversion": 31.640625,
+    "rotate_180": 3.125,
+    "mirror": 0.390625
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "depends",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "left_right": [
+       "depends",
+       "supported"
+      ],
+      "inner_texture": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4d:409": {
+   "group": "round21",
+   "layer": "mixed4d",
+   "chan": 409,
+   "layer_channels": 528,
+   "percentiles": {
+    "grayscale": 62.689393939393945,
+    "low_pass": 60.79545454545454,
+    "high_pass": 61.93181818181818,
+    "phase_scramble": 0.0,
+    "patch_shuffle_4x4": 0.1893939393939394,
+    "rotate_90": 0.0,
+    "edge_map": 20.454545454545457,
+    "luminance_polarity_inversion": 43.18181818181818,
+    "rotate_180": 12.121212121212121,
+    "mirror": 94.50757575757575
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "depends",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "depends",
+      "orientation": "depends",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "supported"
+      ],
+      "arrangement": [
+       "depends",
+       "supported"
+      ],
+      "orientation": [
+       "depends",
+       "supported"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ]
+     }
+    }
+   }
+  },
+  "mixed4e:55": {
+   "group": "round21",
+   "layer": "mixed4e",
+   "chan": 55,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 23.918269230769234,
+    "low_pass": 57.09134615384615,
+    "high_pass": 33.77403846153847,
+    "phase_scramble": 49.27884615384615,
+    "patch_shuffle_4x4": 44.95192307692308,
+    "rotate_90": 17.1875,
+    "edge_map": 43.62980769230769,
+    "luminance_polarity_inversion": 71.51442307692307,
+    "rotate_180": 9.85576923076923,
+    "mirror": 91.94711538461539
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "depends",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "coarse_shading": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "depends",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "upright": [
+       "depends",
+       "supported"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "not_said",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "depends"
+     },
+     "verdicts": {
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "polarity": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    }
+   }
+  },
+  "mixed5a:719": {
+   "group": "round21",
+   "layer": "mixed5a",
+   "chan": 719,
+   "layer_channels": 832,
+   "percentiles": {
+    "grayscale": 18.629807692307693,
+    "low_pass": 72.47596153846155,
+    "high_pass": 80.88942307692307,
+    "phase_scramble": 71.27403846153845,
+    "patch_shuffle_4x4": 63.70192307692307,
+    "rotate_90": 99.03846153846155,
+    "edge_map": 87.25961538461539,
+    "luminance_polarity_inversion": 82.33173076923077,
+    "rotate_180": 97.23557692307693,
+    "mirror": 74.27884615384616
+   },
+   "readings": {
+    "base_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "base_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "not_said",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ]
+     }
+    },
+    "base_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s1": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s2": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "depends",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "shape": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    },
+    "P_s3": {
+     "status": "claims",
+     "claims": {
+      "colour": "not_said",
+      "fine_detail": "depends",
+      "coarse_shading": "not_said",
+      "shape": "not_said",
+      "arrangement": "not_said",
+      "orientation": "not_said",
+      "upright": "not_said",
+      "left_right": "not_said",
+      "inner_texture": "depends",
+      "polarity": "not_said"
+     },
+     "verdicts": {
+      "fine_detail": [
+       "depends",
+       "unremarkable"
+      ],
+      "inner_texture": [
+       "depends",
+       "contradicted"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

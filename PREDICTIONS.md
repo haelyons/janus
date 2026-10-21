@@ -398,3 +398,49 @@ Targets: 4e:55 (the essay's V), 5a:719 (the essay's pinched-center shape).
 3. Car parts: mean judge at least 4 in every condition (the added views don't hurt).
 4. 4d:409: judge at least 3 against shared pose in at least 2 of 3 readings in every condition.
 5. Targets: V judge at most 2, and pinched-shape judge at most 2, in every condition (no view flips them).
+
+# Round 22: does the invariance profile make readers claim things it doesn't show? (tools/profilecheck.py)
+(sealed 2026-10-21, before profilecheck.py exists; implementer and tester are separate claim-blind agents)
+
+18 random units (3 per layer of 3a, 3b, 4b, 4d, 4e, 5a; fixed seed; studied units excluded), base and P conditions
+of round 21, 3 bare readings each; plus round 21's base and P readings of its 9 units. A blind call reads only the
+explanation and marks, for 10 properties (one per transform), whether it claims the unit depends on it, is
+unaffected by it, or doesn't say. A claim is supported when the unit's percentile for that transform is <= 20
+(depends) or >= 80 (unaffected), contradicted when it is the opposite extreme, unremarkable otherwise.
+
+1. In P readings, at least 60% of claims are supported.
+2. In P readings, at most 10% of claims are contradicted.
+3. From base to P, supported claims per reading rise by at least 0.5 and unremarkable claims per reading by at most 0.3.
+4. Random units whose 10 percentiles all lie in 20-80: P readings make at most 0.5 claims per reading.
+
+# Round 23: an affected-vs-spared view, and a within-class facing test (tools/sparedview.py, tools/lrcheck.py)
+(sealed 2026-10-21, before either tool exists; the view is rank 4 of a blind follow-up list, authors/followup.reply.json)
+
+23A. View A, generic: T* = the transform with the unit's lowest profile percentile, if at most 20. From the unit's
+200 strongest card-pool photos: the 10 that lose most under T*, beside 10 of matched activation that lose least
+(receptive-field crops, loss shown). Conditions CP (round 21's crops + profile, now the default) and CP+A, 3 bare
+readings each, 10 units (round 21's 9 plus 4b:443), judged as round 21 (443 with 431's reference).
+1. 4b:431: a facing direction named in at least 2 of 3 CP+A readings (round 21: 0 of 6 with the profile).
+2. Mean judge with A at least that without on at least 6 of 10 units; no unit drops by more than 1.
+3. 4e:55 and 5a:719: judge against the essay's readings at most 2 with A.
+
+23B. Ground truth for Zoom In's dog-head pairs: round 13's blind facing labels (300 dogs, 140 vehicles). For every
+channel of 4b-4e: d = (mean on left-facing - mean on right-facing) / sd, per kind; percentile of |d| in its layer.
+4. 4b:431 |d| on dogs at least the 95th percentile of 4b.
+5. Of 4b:443, 431, 429, 384, 409, 418, at least 3 at or above the 90th percentile on dogs; the figure's row pairs
+   (443/431, 429/384, 409/418) have opposite signs in at least 2 of 3.
+6. 4c:254 and 4c:407 at most the 75th percentile (round 20: they don't read or behave as dog heads).
+
+# Round 24: stratified exemplars and same-label near misses (tools/rangeview.py; blind view list ranks 1 and 5)
+(sealed 2026-10-21, before rangeview.py exists)
+
+Default card = lookviews CP (card, random row, crops, profile). Added views, 2x2: S = 20 photos drawn at random from
+four activation ranges below the top (5 each from 60-100%, 40-60%, 20-40%, 5-20% of the strongest); N = for the 5
+labels most common among the 20 strongest photos, the 2 photos of each on which the unit is least active (no label
+names shown). Conditions CP, CP+S, CP+N, CP+S+N; 3 bare readings each; 10 units: 3a:110, 3b:379, 4b:237, 4b:373,
+4b:431, 4b:443, 4b:429, 4d:409, 4e:55, 5a:719; judged as round 23 (429 with 431's reference).
+1. With N, a facing direction is named in at least 2 of 3 readings for at least 2 of 431, 443, 429 (CP+N or CP+S+N).
+2. 4d:409: mean judge at least 4 in CP+N.
+3. 4b:443: mean judge with S at least 0.5 above without (443's direction shows across dog photos, not in its top 20).
+4. Car parts: mean judge at least 4 in every condition.
+5. 4e:55 and 5a:719: judge against the essay's readings at most 2 in every condition.

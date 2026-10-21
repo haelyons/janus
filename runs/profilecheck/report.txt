@@ -1,0 +1,264 @@
+profilecheck: claims in base and P explanations about 10 properties, against the invariance profile
+verdict on p = the unit's percentile for the matching transform (lookviews.unit_profile): "depends" supported if p <= 20, contradicted if p >= 80; "unaffected" supported if p >= 80, contradicted if p <= 20; otherwise unremarkable
+property -> transform: colour grayscale, fine_detail low_pass, coarse_shading high_pass, shape phase_scramble, arrangement patch_shuffle_4x4, orientation rotate_90, upright rotate_180, left_right mirror, inner_texture edge_map, polarity luminance_polarity_inversion
+random units (default_rng(22), 3 per layer): mixed3a:197, mixed3a:93, mixed3a:168, mixed3b:95, mixed3b:453, mixed3b:42, mixed4b:135, mixed4b:334, mixed4b:8, mixed4d:242, mixed4d:77, mixed4d:521, mixed4e:273, mixed4e:708, mixed4e:266, mixed5a:696, mixed5a:43, mixed5a:42
+round-21 units (runs/lookviews/readings_all.json): mixed3a:136, mixed3a:110, mixed3b:379, mixed4b:237, mixed4b:373, mixed4b:431, mixed4d:409, mixed4e:55, mixed5a:719
+label per condition and group on gap = supported share - contradicted share: > 0.25 SUPPORTED_MORE, < -0.25 CONTRADICTED_MORE, else SIMILAR; no claims UNDEFINED
+
+== condition base, over readings with claims
+random   readings 54  claims/reading 2.204  per reading: supported 0.537 unremarkable 1.370 contradicted 0.296  shares of claims: supported 0.244 unremarkable 0.622 contradicted 0.134  gap +0.109 -> SIMILAR
+round21  readings 27  claims/reading 1.630  per reading: supported 0.704 unremarkable 0.852 contradicted 0.074  shares of claims: supported 0.432 unremarkable 0.523 contradicted 0.045  gap +0.386 -> SUPPORTED_MORE
+all      readings 81  claims/reading 2.012  per reading: supported 0.593 unremarkable 1.198 contradicted 0.222  shares of claims: supported 0.294 unremarkable 0.595 contradicted 0.110  gap +0.184 -> SIMILAR
+not counted (no reading, no explanation or no valid claims): random 0, round21 0
+== condition P, over readings with claims
+random   readings 54  claims/reading 2.556  per reading: supported 0.833 unremarkable 1.389 contradicted 0.333  shares of claims: supported 0.326 unremarkable 0.543 contradicted 0.130  gap +0.196 -> SIMILAR
+round21  readings 27  claims/reading 2.333  per reading: supported 1.185 unremarkable 1.000 contradicted 0.148  shares of claims: supported 0.508 unremarkable 0.429 contradicted 0.063  gap +0.444 -> SUPPORTED_MORE
+all      readings 81  claims/reading 2.481  per reading: supported 0.951 unremarkable 1.259 contradicted 0.272  shares of claims: supported 0.383 unremarkable 0.507 contradicted 0.109  gap +0.274 -> SUPPORTED_MORE
+not counted (no reading, no explanation or no valid claims): random 0, round21 0
+
+== random units with all 10 percentiles in (20, 80): 1: mixed4d:242
+base readings 3  claims/reading 4.000
+P    readings 3  claims/reading 2.667
+
+== mixed3a:197  (random)
+percentiles: grayscale 12.5, low_pass 78.9, high_pass 36.7, phase_scramble 19.1, patch_shuffle_4x4 51.2, rotate_90 5.1, edge_map 20.7, luminance_polarity_inversion 45.3, rotate_180 9.0, mirror 78.9
+base_s1  colour:depends:supported shape:unaffected:contradicted
+base_s2  colour:depends:supported
+base_s3  colour:depends:supported shape:unaffected:contradicted
+P_s1  colour:depends:supported
+P_s2  colour:depends:supported fine_detail:depends:unremarkable
+P_s3  colour:depends:supported fine_detail:depends:unremarkable
+
+== mixed3a:93  (random)
+percentiles: grayscale 80.1, low_pass 68.4, high_pass 65.2, phase_scramble 73.4, patch_shuffle_4x4 51.6, rotate_90 33.6, edge_map 84.4, luminance_polarity_inversion 52.7, rotate_180 63.3, mirror 31.2
+base_s1  shape:depends:unremarkable orientation:depends:unremarkable
+base_s2  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:contradicted
+base_s3  shape:depends:unremarkable
+P_s1  fine_detail:depends:unremarkable shape:depends:unremarkable orientation:depends:unremarkable
+P_s2  shape:depends:unremarkable orientation:depends:unremarkable
+P_s3  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:contradicted
+
+== mixed3a:168  (random)
+percentiles: grayscale 46.5, low_pass 17.2, high_pass 83.2, phase_scramble 2.7, patch_shuffle_4x4 5.1, rotate_90 57.0, edge_map 43.4, luminance_polarity_inversion 39.1, rotate_180 97.3, mirror 61.7
+base_s1  shape:depends:supported polarity:depends:unremarkable
+base_s2  shape:depends:supported polarity:depends:unremarkable
+base_s3  shape:depends:supported polarity:depends:unremarkable
+P_s1  shape:depends:supported polarity:depends:unremarkable
+P_s2  shape:depends:supported polarity:depends:unremarkable
+P_s3  shape:depends:supported polarity:depends:unremarkable
+
+== mixed3b:95  (random)
+percentiles: grayscale 89.6, low_pass 25.6, high_pass 46.5, phase_scramble 67.3, patch_shuffle_4x4 99.0, rotate_90 58.3, edge_map 61.5, luminance_polarity_inversion 74.2, rotate_180 68.8, mirror 37.3
+base_s1  fine_detail:depends:unremarkable shape:depends:unremarkable
+base_s2  fine_detail:depends:unremarkable shape:depends:unremarkable
+base_s3  fine_detail:depends:unremarkable shape:depends:unremarkable
+P_s1  colour:unaffected:supported fine_detail:depends:unremarkable shape:depends:unremarkable arrangement:unaffected:supported
+P_s2  colour:unaffected:supported fine_detail:depends:unremarkable shape:depends:unremarkable arrangement:unaffected:supported
+P_s3  colour:unaffected:supported fine_detail:depends:unremarkable shape:depends:unremarkable
+
+== mixed3b:453  (random)
+percentiles: grayscale 44.2, low_pass 46.5, high_pass 69.6, phase_scramble 82.9, patch_shuffle_4x4 83.1, rotate_90 6.0, edge_map 56.2, luminance_polarity_inversion 71.9, rotate_180 94.2, mirror 94.2
+base_s1  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+base_s2  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+base_s3  fine_detail:depends:unremarkable arrangement:depends:contradicted inner_texture:depends:unremarkable
+P_s1  fine_detail:depends:unremarkable shape:depends:contradicted arrangement:depends:contradicted orientation:depends:supported
+P_s2  fine_detail:depends:unremarkable shape:depends:contradicted arrangement:unaffected:supported orientation:depends:supported inner_texture:depends:unremarkable
+P_s3  fine_detail:depends:unremarkable shape:depends:contradicted orientation:depends:supported inner_texture:depends:unremarkable
+
+== mixed3b:42  (random)
+percentiles: grayscale 65.0, low_pass 8.5, high_pass 82.9, phase_scramble 71.0, patch_shuffle_4x4 52.7, rotate_90 71.5, edge_map 78.1, luminance_polarity_inversion 56.5, rotate_180 56.7, mirror 31.5
+base_s1  fine_detail:depends:supported shape:depends:unremarkable arrangement:depends:unremarkable
+base_s2  shape:depends:unremarkable arrangement:unaffected:unremarkable
+base_s3  fine_detail:depends:supported shape:depends:unremarkable
+P_s1  fine_detail:depends:supported shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s2  fine_detail:depends:supported shape:depends:unremarkable
+P_s3  fine_detail:depends:supported shape:depends:unremarkable
+
+== mixed4b:135  (random)
+percentiles: grayscale 81.2, low_pass 5.1, high_pass 48.4, phase_scramble 74.4, patch_shuffle_4x4 86.5, rotate_90 89.5, edge_map 61.1, luminance_polarity_inversion 5.3, rotate_180 76.6, mirror 28.3
+base_s1  fine_detail:depends:supported shape:depends:unremarkable arrangement:depends:contradicted polarity:depends:supported
+base_s2  fine_detail:depends:supported shape:depends:unremarkable inner_texture:depends:unremarkable polarity:depends:supported
+base_s3  shape:depends:unremarkable polarity:depends:supported
+P_s1  fine_detail:depends:supported shape:depends:unremarkable arrangement:depends:contradicted polarity:depends:supported
+P_s2  fine_detail:depends:supported shape:depends:unremarkable arrangement:depends:contradicted polarity:depends:supported
+P_s3  fine_detail:depends:supported shape:depends:unremarkable polarity:depends:supported
+
+== mixed4b:334  (random)
+percentiles: grayscale 34.6, low_pass 85.7, high_pass 47.5, phase_scramble 85.2, patch_shuffle_4x4 5.7, rotate_90 45.3, edge_map 14.8, luminance_polarity_inversion 53.1, rotate_180 41.2, mirror 45.1
+base_s1  fine_detail:depends:contradicted shape:depends:contradicted inner_texture:depends:supported
+base_s2  fine_detail:depends:contradicted coarse_shading:depends:unremarkable shape:depends:contradicted inner_texture:depends:supported
+base_s3  fine_detail:depends:contradicted shape:depends:contradicted inner_texture:depends:supported
+P_s1  fine_detail:depends:contradicted coarse_shading:depends:unremarkable shape:depends:contradicted inner_texture:depends:supported
+P_s2  fine_detail:depends:contradicted coarse_shading:depends:unremarkable shape:depends:contradicted inner_texture:depends:supported
+P_s3  fine_detail:depends:contradicted coarse_shading:depends:unremarkable shape:depends:contradicted inner_texture:depends:supported
+
+== mixed4b:8  (random)
+percentiles: grayscale 60.7, low_pass 64.1, high_pass 32.0, phase_scramble 63.3, patch_shuffle_4x4 89.3, rotate_90 57.6, edge_map 74.2, luminance_polarity_inversion 16.6, rotate_180 54.7, mirror 29.5
+base_s1  shape:depends:unremarkable
+base_s2  shape:depends:unremarkable polarity:depends:supported
+base_s3  shape:depends:unremarkable polarity:depends:supported
+P_s1  shape:depends:unremarkable arrangement:unaffected:supported polarity:depends:supported
+P_s2  shape:depends:unremarkable polarity:depends:supported
+P_s3  shape:depends:unremarkable polarity:depends:supported
+
+== mixed4d:242  (random)
+percentiles: grayscale 69.7, low_pass 35.2, high_pass 63.1, phase_scramble 74.6, patch_shuffle_4x4 37.9, rotate_90 64.6, edge_map 54.7, luminance_polarity_inversion 72.5, rotate_180 71.4, mirror 26.3
+base_s1  colour:depends:unremarkable fine_detail:depends:unremarkable shape:depends:unremarkable arrangement:depends:unremarkable inner_texture:depends:unremarkable
+base_s2  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+base_s3  colour:depends:unremarkable fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s1  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s2  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s3  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+
+== mixed4d:77  (random)
+percentiles: grayscale 47.3, low_pass 72.9, high_pass 14.6, phase_scramble 63.8, patch_shuffle_4x4 67.2, rotate_90 58.0, edge_map 48.7, luminance_polarity_inversion 1.7, rotate_180 58.5, mirror 36.0
+base_s1  shape:depends:unremarkable
+base_s2  shape:depends:unremarkable
+base_s3  colour:depends:unremarkable shape:depends:unremarkable
+P_s1  colour:depends:unremarkable shape:depends:unremarkable polarity:depends:supported
+P_s2  shape:depends:unremarkable polarity:depends:supported
+P_s3  colour:depends:unremarkable shape:depends:unremarkable
+
+== mixed4d:521  (random)
+percentiles: grayscale 15.9, low_pass 13.4, high_pass 61.6, phase_scramble 40.9, patch_shuffle_4x4 31.4, rotate_90 29.9, edge_map 6.8, luminance_polarity_inversion 41.1, rotate_180 15.7, mirror 51.1
+base_s1  shape:depends:unremarkable
+base_s2  shape:depends:unremarkable
+base_s3  shape:depends:unremarkable arrangement:depends:unremarkable
+P_s1  shape:depends:unremarkable
+P_s2  shape:depends:unremarkable
+P_s3  shape:depends:unremarkable
+
+== mixed4e:273  (random)
+percentiles: grayscale 98.8, low_pass 84.6, high_pass 93.9, phase_scramble 96.8, patch_shuffle_4x4 32.7, rotate_90 66.8, edge_map 78.6, luminance_polarity_inversion 83.3, rotate_180 86.8, mirror 9.0
+base_s1  fine_detail:depends:contradicted shape:depends:contradicted
+base_s2  fine_detail:depends:contradicted shape:depends:contradicted
+base_s3  fine_detail:depends:contradicted
+P_s1  colour:unaffected:supported fine_detail:depends:contradicted
+P_s2  fine_detail:depends:contradicted inner_texture:depends:unremarkable polarity:depends:contradicted
+P_s3  fine_detail:depends:contradicted shape:depends:contradicted inner_texture:depends:unremarkable
+
+== mixed4e:708  (random)
+percentiles: grayscale 54.3, low_pass 41.3, high_pass 47.2, phase_scramble 63.0, patch_shuffle_4x4 19.6, rotate_90 50.0, edge_map 33.5, luminance_polarity_inversion 77.2, rotate_180 63.6, mirror 47.0
+base_s1  shape:depends:unremarkable arrangement:depends:supported
+base_s2  shape:depends:unremarkable
+base_s3  shape:depends:unremarkable
+P_s1  shape:depends:unremarkable arrangement:depends:supported
+P_s2  shape:depends:unremarkable arrangement:depends:supported polarity:depends:unremarkable
+P_s3  shape:depends:unremarkable arrangement:depends:supported
+
+== mixed4e:266  (random)
+percentiles: grayscale 57.8, low_pass 78.2, high_pass 35.9, phase_scramble 0.0, patch_shuffle_4x4 17.1, rotate_90 52.6, edge_map 50.6, luminance_polarity_inversion 86.9, rotate_180 69.0, mirror 35.5
+base_s1  shape:depends:supported arrangement:depends:supported orientation:depends:unremarkable
+base_s2  shape:depends:supported arrangement:depends:supported orientation:depends:unremarkable
+base_s3  shape:depends:supported arrangement:depends:supported
+P_s1  shape:depends:supported
+P_s2  shape:depends:supported arrangement:depends:supported orientation:depends:unremarkable
+P_s3  shape:depends:supported arrangement:depends:supported orientation:depends:unremarkable
+
+== mixed5a:696  (random)
+percentiles: grayscale 69.2, low_pass 10.2, high_pass 81.1, phase_scramble 64.4, patch_shuffle_4x4 18.3, rotate_90 11.8, edge_map 28.7, luminance_polarity_inversion 49.8, rotate_180 21.5, mirror 61.2
+base_s1  shape:depends:unremarkable
+base_s2  fine_detail:depends:supported
+base_s3  (no claims)
+P_s1  (no claims)
+P_s2  shape:depends:unremarkable
+P_s3  (no claims)
+
+== mixed5a:43  (random)
+percentiles: grayscale 53.4, low_pass 70.2, high_pass 41.2, phase_scramble 41.2, patch_shuffle_4x4 51.4, rotate_90 67.7, edge_map 72.8, luminance_polarity_inversion 51.7, rotate_180 74.0, mirror 13.8
+base_s1  coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+base_s2  colour:depends:unremarkable coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+base_s3  colour:depends:unremarkable coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s1  coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s2  colour:depends:unremarkable coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+P_s3  coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+
+== mixed5a:42  (random)
+percentiles: grayscale 85.7, low_pass 46.4, high_pass 20.4, phase_scramble 0.0, patch_shuffle_4x4 61.8, rotate_90 68.3, edge_map 71.4, luminance_polarity_inversion 27.6, rotate_180 57.1, mirror 19.7
+base_s1  shape:depends:supported orientation:depends:unremarkable upright:depends:unremarkable
+base_s2  shape:depends:supported orientation:depends:unremarkable
+base_s3  shape:depends:supported orientation:depends:unremarkable
+P_s1  shape:depends:supported orientation:depends:unremarkable
+P_s2  shape:depends:supported orientation:depends:unremarkable
+P_s3  shape:depends:supported orientation:depends:unremarkable upright:depends:unremarkable
+
+== mixed3a:136  (round21)
+percentiles: grayscale 50.4, low_pass 45.3, high_pass 37.5, phase_scramble 15.2, patch_shuffle_4x4 48.0, rotate_90 7.0, edge_map 18.8, luminance_polarity_inversion 72.7, rotate_180 2.7, mirror 68.0
+base_s1  fine_detail:depends:unremarkable inner_texture:depends:supported
+base_s2  fine_detail:depends:unremarkable inner_texture:depends:supported
+base_s3  fine_detail:depends:unremarkable inner_texture:depends:supported
+P_s1  fine_detail:depends:unremarkable shape:unaffected:contradicted inner_texture:depends:supported
+P_s2  fine_detail:depends:unremarkable inner_texture:depends:supported
+P_s3  fine_detail:depends:unremarkable arrangement:depends:unremarkable upright:depends:supported inner_texture:depends:supported
+
+== mixed3a:110  (round21)
+percentiles: grayscale 46.9, low_pass 65.2, high_pass 53.5, phase_scramble 10.9, patch_shuffle_4x4 85.9, rotate_90 39.5, edge_map 39.1, luminance_polarity_inversion 66.8, rotate_180 10.5, mirror 2.7
+base_s1  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+base_s2  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+base_s3  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+P_s1  fine_detail:depends:unremarkable shape:depends:supported inner_texture:depends:unremarkable
+P_s2  fine_detail:depends:unremarkable inner_texture:depends:unremarkable
+P_s3  fine_detail:depends:unremarkable shape:depends:supported inner_texture:depends:unremarkable
+
+== mixed3b:379  (round21)
+percentiles: grayscale 53.8, low_pass 63.3, high_pass 74.8, phase_scramble 3.8, patch_shuffle_4x4 9.0, rotate_90 62.5, edge_map 74.2, luminance_polarity_inversion 97.9, rotate_180 32.5, mirror 36.5
+base_s1  fine_detail:depends:unremarkable shape:depends:supported
+base_s2  shape:depends:supported
+base_s3  shape:depends:supported
+P_s1  shape:depends:supported
+P_s2  fine_detail:depends:unremarkable shape:depends:supported
+P_s3  fine_detail:depends:unremarkable shape:depends:supported
+
+== mixed4b:237  (round21)
+percentiles: grayscale 45.9, low_pass 23.2, high_pass 50.4, phase_scramble 0.0, patch_shuffle_4x4 38.7, rotate_90 3.1, edge_map 70.3, luminance_polarity_inversion 48.6, rotate_180 10.0, mirror 55.7
+base_s1  shape:depends:supported
+base_s2  shape:depends:supported
+base_s3  shape:depends:supported arrangement:depends:unremarkable
+P_s1  shape:depends:supported
+P_s2  shape:depends:supported arrangement:depends:unremarkable
+P_s3  shape:depends:supported upright:depends:supported
+
+== mixed4b:373  (round21)
+percentiles: grayscale 81.1, low_pass 35.9, high_pass 62.5, phase_scramble 6.2, patch_shuffle_4x4 26.2, rotate_90 0.2, edge_map 7.4, luminance_polarity_inversion 17.4, rotate_180 23.8, mirror 82.0
+base_s1  shape:depends:supported
+base_s2  shape:depends:supported
+base_s3  shape:depends:supported
+P_s1  shape:depends:supported upright:depends:unremarkable
+P_s2  shape:depends:supported
+P_s3  shape:depends:supported upright:depends:unremarkable
+
+== mixed4b:431  (round21)
+percentiles: grayscale 11.1, low_pass 32.6, high_pass 16.8, phase_scramble 34.0, patch_shuffle_4x4 2.5, rotate_90 15.8, edge_map 19.1, luminance_polarity_inversion 31.6, rotate_180 3.1, mirror 0.4
+base_s1  inner_texture:depends:supported
+base_s2  inner_texture:depends:supported
+base_s3  inner_texture:depends:supported
+P_s1  inner_texture:depends:supported
+P_s2  shape:depends:unremarkable inner_texture:depends:supported
+P_s3  shape:depends:unremarkable left_right:depends:supported inner_texture:depends:supported
+
+== mixed4d:409  (round21)
+percentiles: grayscale 62.7, low_pass 60.8, high_pass 61.9, phase_scramble 0.0, patch_shuffle_4x4 0.2, rotate_90 0.0, edge_map 20.5, luminance_polarity_inversion 43.2, rotate_180 12.1, mirror 94.5
+base_s1  shape:depends:supported
+base_s2  shape:depends:supported orientation:depends:supported
+base_s3  shape:depends:supported
+P_s1  shape:depends:supported orientation:depends:supported upright:depends:supported
+P_s2  shape:depends:supported arrangement:depends:supported orientation:depends:supported upright:depends:supported
+P_s3  shape:depends:supported arrangement:depends:supported orientation:depends:supported upright:depends:supported
+
+== mixed4e:55  (round21)
+percentiles: grayscale 23.9, low_pass 57.1, high_pass 33.8, phase_scramble 49.3, patch_shuffle_4x4 45.0, rotate_90 17.2, edge_map 43.6, luminance_polarity_inversion 71.5, rotate_180 9.9, mirror 91.9
+base_s1  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+base_s2  coarse_shading:depends:unremarkable shape:depends:unremarkable inner_texture:depends:unremarkable
+base_s3  shape:depends:unremarkable
+P_s1  shape:depends:unremarkable upright:depends:supported polarity:depends:unremarkable
+P_s2  shape:depends:unremarkable
+P_s3  shape:depends:unremarkable polarity:depends:unremarkable
+
+== mixed5a:719  (round21)
+percentiles: grayscale 18.6, low_pass 72.5, high_pass 80.9, phase_scramble 71.3, patch_shuffle_4x4 63.7, rotate_90 99.0, edge_map 87.3, luminance_polarity_inversion 82.3, rotate_180 97.2, mirror 74.3
+base_s1  fine_detail:depends:unremarkable inner_texture:depends:contradicted
+base_s2  fine_detail:depends:unremarkable shape:depends:unremarkable
+base_s3  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:contradicted
+P_s1  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:contradicted
+P_s2  fine_detail:depends:unremarkable shape:depends:unremarkable inner_texture:depends:contradicted
+P_s3  fine_detail:depends:unremarkable inner_texture:depends:contradicted

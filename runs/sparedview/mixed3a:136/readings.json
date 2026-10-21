@@ -1,0 +1,146 @@
+{
+ "CPA_s1": {
+  "unit": "mixed3a:136",
+  "reading": "CPA_s1",
+  "condition": "CPA",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a96eb9544bb413b02cb11914bf27c27b88d26a5b53385af0e0d9824e7bcaad",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, granular or speckled surface texture (asphalt, fabric weave, scaly skin, fruit rind, fur), especially when a horizontal-ish boundary sits above it with the textured region filling the lower part of the patch.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, granular or speckled surface texture (asphalt, fabric weave, scaly skin, fruit rind, fur), especially when a horizontal-ish boundary sits above it with the textured region filling the lower part of the patch.",
+   "evidence": "Nearly all top crops show a fine-grained textured surface in the lower half under a darker or smoother object, and the unit loses much more than most units under phase scrambling and edge maps, which destroy texture. Its strong sensitivity to rotate_180 (percentile 3) and rotate_90 fits a preference for texture below a boundary; the crops that lose the least under rotation are more symmetric or patterned.",
+   "missing_data": "Synthetic tests on uniform texture patches with and without a boundary above them, in different orientations, to separate texture tuning from the layout of texture under an edge.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, granular or speckled surface texture (asphalt, fabric weave, scaly skin, fruit rind, fur), especially when a horizontal-ish boundary sits above it with the textured region filling the lower part of the patch.\",\n \"evidence\": \"Nearly all top crops show a fine-grained textured surface in the lower half under a darker or smoother object, and the unit loses much more than most units under phase scrambling and edge maps, which destroy texture. Its strong sensitivity to rotate_180 (percentile 3) and rotate_90 fits a preference for texture below a boundary; the crops that lose the least under rotation are more symmetric or patterned.\",\n \"missing_data\": \"Synthetic tests on uniform texture patches with and without a boundary above them, in different orientations, to separate texture tuning from the layout of texture under an edge.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, granular or speckled surface texture (asphalt, fabric weave, scaly skin, fruit rind, fur), especially when a horizontal-ish boundary sits above it with the textured region filling the lower part of the patch.\",\n \"evidence\": \"Nearly all top crops show a fine-grained textured surface in the lower half under a darker or smoother object, and the unit loses much more than most units under phase scrambling and edge maps, which destroy texture. Its strong sensitivity to rotate_180 (percentile 3) and rotate_90 fits a preference for texture below a boundary; the crops that lose the least under rotation are more symmetric or patterned.\",\n \"missing_data\": \"Synthetic tests on uniform texture patches with and without a boundary above them, in different orientations, to separate texture tuning from the layout of texture under an edge.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s2": {
+  "unit": "mixed3a:136",
+  "reading": "CPA_s2",
+  "condition": "CPA",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a96eb9544bb413b02cb11914bf27c27b88d26a5b53385af0e0d9824e7bcaad",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a fine-grained granular or speckled surface texture (asphalt, carpet, fabric weave, scaly or bumpy skin, fruit rind) with a smooth or darker object edge lying above it, so the texture fills the lower part of the patch under a boundary.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a fine-grained granular or speckled surface texture (asphalt, carpet, fabric weave, scaly or bumpy skin, fruit rind) with a smooth or darker object edge lying above it, so the texture fills the lower part of the patch under a boundary.",
+   "evidence": "Nearly all 32 px crops show fine uniform speckle (road, carpet, lizard and beetle scales, fruit rind) in the lower half beneath a contrasting region, and the activation does not depend on color. Phase scramble and edge map remove most of the response, and the unusually large losses under rotate_180 and rotate_90 (percentiles 3 and 7) point to a preferred 'texture below a boundary' configuration, while the weaker cases (text strips, ship windows, knurled metal) are related extensions.",
+   "missing_data": "Synthetic tests that flip texture-above versus texture-below at an edge, and that vary texture grain size, would confirm the orientation preference and the spatial-frequency tuning.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to a fine-grained granular or speckled surface texture (asphalt, carpet, fabric weave, scaly or bumpy skin, fruit rind) with a smooth or darker object edge lying above it, so the texture fills the lower part of the patch under a boundary.\", \"evidence\": \"Nearly all 32 px crops show fine uniform speckle (road, carpet, lizard and beetle scales, fruit rind) in the lower half beneath a contrasting region, and the activation does not depend on color. Phase scramble and edge map remove most of the response, and the unusually large losses under rotate_180 and rotate_90 (percentiles 3 and 7) point to a preferred 'texture below a boundary' configuration, while the weaker cases (text strips, ship windows, knurled metal) are related extensions.\", \"missing_data\": \"Synthetic tests that flip texture-above versus texture-below at an edge, and that vary texture grain size, would confirm the orientation preference and the spatial-frequency tuning.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to a fine-grained granular or speckled surface texture (asphalt, carpet, fabric weave, scaly or bumpy skin, fruit rind) with a smooth or darker object edge lying above it, so the texture fills the lower part of the patch under a boundary.\", \"evidence\": \"Nearly all 32 px crops show fine uniform speckle (road, carpet, lizard and beetle scales, fruit rind) in the lower half beneath a contrasting region, and the activation does not depend on color. Phase scramble and edge map remove most of the response, and the unusually large losses under rotate_180 and rotate_90 (percentiles 3 and 7) point to a preferred 'texture below a boundary' configuration, while the weaker cases (text strips, ship windows, knurled metal) are related extensions.\", \"missing_data\": \"Synthetic tests that flip texture-above versus texture-below at an edge, and that vary texture grain size, would confirm the orientation preference and the spatial-frequency tuning.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CPA_s3": {
+  "unit": "mixed3a:136",
+  "reading": "CPA_s3",
+  "condition": "CPA",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a96eb9544bb413b02cb11914bf27c27b88d26a5b53385af0e0d9824e7bcaad",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to fine-grained granular or speckled texture (asphalt, carpet, fabric weave, scaly or pitted skin, foliage) in the lower part of the receptive field, typically just below a horizontal edge where a darker or different-textured region sits above it.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to fine-grained granular or speckled texture (asphalt, carpet, fabric weave, scaly or pitted skin, foliage) in the lower part of the receptive field, typically just below a horizontal edge where a darker or different-textured region sits above it.",
+   "evidence": "Nearly all top crops show fine-grained texture filling the bottom half with a boundary or object above (tires on asphalt, lizard and beetle surfaces, a dog's paw on carpet), and random photos with similar texture still reach 4-7. The unit is unusually sensitive to rotate_180 (3rd percentile) and phase scrambling, which fits a 'texture below an edge' arrangement; the photos that lose least under rotation tend to have texture in other layouts.",
+   "missing_data": "Synthetic tests that vary the texture's grain size and its position relative to an edge (texture above vs below), to separate pure texture selectivity from the vertical-layout dependence.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to fine-grained granular or speckled texture (asphalt, carpet, fabric weave, scaly or pitted skin, foliage) in the lower part of the receptive field, typically just below a horizontal edge where a darker or different-textured region sits above it.\", \"evidence\": \"Nearly all top crops show fine-grained texture filling the bottom half with a boundary or object above (tires on asphalt, lizard and beetle surfaces, a dog's paw on carpet), and random photos with similar texture still reach 4-7. The unit is unusually sensitive to rotate_180 (3rd percentile) and phase scrambling, which fits a 'texture below an edge' arrangement; the photos that lose least under rotation tend to have texture in other layouts.\", \"missing_data\": \"Synthetic tests that vary the texture's grain size and its position relative to an edge (texture above vs below), to separate pure texture selectivity from the vertical-layout dependence.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to fine-grained granular or speckled texture (asphalt, carpet, fabric weave, scaly or pitted skin, foliage) in the lower part of the receptive field, typically just below a horizontal edge where a darker or different-textured region sits above it.\", \"evidence\": \"Nearly all top crops show fine-grained texture filling the bottom half with a boundary or object above (tires on asphalt, lizard and beetle surfaces, a dog's paw on carpet), and random photos with similar texture still reach 4-7. The unit is unusually sensitive to rotate_180 (3rd percentile) and phase scrambling, which fits a 'texture below an edge' arrangement; the photos that lose least under rotation tend to have texture in other layouts.\", \"missing_data\": \"Synthetic tests that vary the texture's grain size and its position relative to an edge (texture above vs below), to separate pure texture selectivity from the vertical-layout dependence.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a fine, granular or stippled surface texture (asphalt, carpet, knit fabric, reptile or insect scales, fruit skin) that sits just below a horizontal boundary with a smoother or darker region above it, like the ground under an object.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a fine, granular or stippled surface texture (asphalt, carpet, knit fabric, reptile or insect scales, fruit skin) that sits just below a horizontal boundary with a smoother or darker region above it, like the ground under an object.",
+   "evidence": "Nearly every top crop shows fine speckled texture filling the lower part with a contrasting smoother region above, regardless of colour or object category (grayscale keeps 97%). The unit is unusually sensitive to rotate_180 (3rd percentile) and rotate_90 (7th), so the 'texture-below-edge' layout matters, and it loses a lot under phase scramble, so the boundary structure matters beyond texture statistics alone.",
+   "missing_data": "Synthetic tests that place fine texture above versus below a boundary, or that show uniform texture with no edge, would confirm whether the edge-over-texture layout is required.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a fine, granular or stippled surface texture (asphalt, carpet, knit fabric, reptile or insect scales, fruit skin) that sits just below a horizontal boundary with a smoother or darker region above it, like the ground under an object.\",\n \"evidence\": \"Nearly every top crop shows fine speckled texture filling the lower part with a contrasting smoother region above, regardless of colour or object category (grayscale keeps 97%). The unit is unusually sensitive to rotate_180 (3rd percentile) and rotate_90 (7th), so the 'texture-below-edge' layout matters, and it loses a lot under phase scramble, so the boundary structure matters beyond texture statistics alone.\",\n \"missing_data\": \"Synthetic tests that place fine texture above versus below a boundary, or that show uniform texture with no edge, would confirm whether the edge-over-texture layout is required.\",\n \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a fine, granular or stippled surface texture (asphalt, carpet, knit fabric, reptile or insect scales, fruit skin) that sits just below a horizontal boundary with a smoother or darker region above it, like the ground under an object.\",\n \"evidence\": \"Nearly every top crop shows fine speckled texture filling the lower part with a contrasting smoother region above, regardless of colour or object category (grayscale keeps 97%). The unit is unusually sensitive to rotate_180 (3rd percentile) and rotate_90 (7th), so the 'texture-below-edge' layout matters, and it loses a lot under phase scramble, so the boundary structure matters beyond texture statistics alone.\",\n \"missing_data\": \"Synthetic tests that place fine texture above versus below a boundary, or that show uniform texture with no edge, would confirm whether the edge-over-texture layout is required.\",\n \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a fine, granular or stippled surface texture, such as asphalt, carpet, gravel, reptile or insect scales, woven fabric or fruit rind, filling the lower part of its field with a different, smoother region or object edge just above it. In effect it detects textured ground or surface meeting an occluding boundary from below.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a fine, granular or stippled surface texture, such as asphalt, carpet, gravel, reptile or insect scales, woven fabric or fruit rind, filling the lower part of its field with a different, smoother region or object edge just above it. In effect it detects textured ground or surface meeting an occluding boundary from below.",
+   "evidence": "All 20 crops show a fine speckled texture in the lower half under a smoother or darker region, across unrelated objects. It is unusually sensitive to rotate_180 (3rd percentile), rotate_90 (7th), phase scramble (15th) and edge maps (19th), which fits a vertically oriented texture-below-edge configuration rather than plain texture statistics, and it is insensitive to colour.",
+   "missing_data": "Activations on synthetic stimuli, comparing uniform fine texture alone with texture below versus above a smooth region, would confirm whether the boundary and its orientation are required.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a fine, granular or stippled surface texture, such as asphalt, carpet, gravel, reptile or insect scales, woven fabric or fruit rind, filling the lower part of its field with a different, smoother region or object edge just above it. In effect it detects textured ground or surface meeting an occluding boundary from below.\", \"evidence\": \"All 20 crops show a fine speckled texture in the lower half under a smoother or darker region, across unrelated objects. It is unusually sensitive to rotate_180 (3rd percentile), rotate_90 (7th), phase scramble (15th) and edge maps (19th), which fits a vertically oriented texture-below-edge configuration rather than plain texture statistics, and it is insensitive to colour.\", \"missing_data\": \"Activations on synthetic stimuli, comparing uniform fine texture alone with texture below versus above a smooth region, would confirm whether the boundary and its orientation are required.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a fine, granular or stippled surface texture, such as asphalt, carpet, gravel, reptile or insect scales, woven fabric or fruit rind, filling the lower part of its field with a different, smoother region or object edge just above it. In effect it detects textured ground or surface meeting an occluding boundary from below.\", \"evidence\": \"All 20 crops show a fine speckled texture in the lower half under a smoother or darker region, across unrelated objects. It is unusually sensitive to rotate_180 (3rd percentile), rotate_90 (7th), phase scramble (15th) and edge maps (19th), which fits a vertically oriented texture-below-edge configuration rather than plain texture statistics, and it is insensitive to colour.\", \"missing_data\": \"Activations on synthetic stimuli, comparing uniform fine texture alone with texture below versus above a smooth region, would confirm whether the boundary and its orientation are required.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "Responds to fine, dense, granular or speckled surface texture (asphalt, gravel, carpet, woven fabric, scaly or pitted skin), typically filling the lower part of the receptive field below a smoother or darker region, i.e. a horizontal boundary with texture underneath.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Responds to fine, dense, granular or speckled surface texture (asphalt, gravel, carpet, woven fabric, scaly or pitted skin), typically filling the lower part of the receptive field below a smoother or darker region, i.e. a horizontal boundary with texture underneath.",
+   "evidence": "Nearly all 20 crops show fine grainy texture in the lower half under an object edge or blurred area, on images as different as roads, fabric, beetles, lizard skin and fruit rind. Its outsized loss under rotate_180 (percentile 3) and rotate_90 (percentile 7), together with its drops under phase scramble and edge map, fit an oriented texture-below-edge configuration rather than a colour or object detector.",
+   "missing_data": "Activations on synthetic patches of fine texture placed above versus below a smooth region, plus the unit's top examples after 180° rotation, to confirm the boundary-orientation dependence.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Responds to fine, dense, granular or speckled surface texture (asphalt, gravel, carpet, woven fabric, scaly or pitted skin), typically filling the lower part of the receptive field below a smoother or darker region, i.e. a horizontal boundary with texture underneath.\",\n \"evidence\": \"Nearly all 20 crops show fine grainy texture in the lower half under an object edge or blurred area, on images as different as roads, fabric, beetles, lizard skin and fruit rind. Its outsized loss under rotate_180 (percentile 3) and rotate_90 (percentile 7), together with its drops under phase scramble and edge map, fit an oriented texture-below-edge configuration rather than a colour or object detector.\",\n \"missing_data\": \"Activations on synthetic patches of fine texture placed above versus below a smooth region, plus the unit's top examples after 180° rotation, to confirm the boundary-orientation dependence.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Responds to fine, dense, granular or speckled surface texture (asphalt, gravel, carpet, woven fabric, scaly or pitted skin), typically filling the lower part of the receptive field below a smoother or darker region, i.e. a horizontal boundary with texture underneath.\",\n \"evidence\": \"Nearly all 20 crops show fine grainy texture in the lower half under an object edge or blurred area, on images as different as roads, fabric, beetles, lizard skin and fruit rind. Its outsized loss under rotate_180 (percentile 3) and rotate_90 (percentile 7), together with its drops under phase scramble and edge map, fit an oriented texture-below-edge configuration rather than a colour or object detector.\",\n \"missing_data\": \"Activations on synthetic patches of fine texture placed above versus below a smooth region, plus the unit's top examples after 180° rotation, to confirm the boundary-orientation dependence.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

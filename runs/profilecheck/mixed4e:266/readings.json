@@ -1,0 +1,146 @@
+{
+ "base_s3": {
+  "unit": "mixed4e:266",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6c2e6fdf13d581274e99720fa60bcda5e2d48bffaf4b935b6337138e51510bbd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a narrow neck or stem where a shape pinches in between wider parts, such as goblet and vase stems, the hourglass waist, a golf tee, a joystick shaft, a watch crown, a doll's neck, a spire or a cupola top. Weaker hits extend to related thin protrusions like furniture legs, a cup handle and a rack hook.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a narrow neck or stem where a shape pinches in between wider parts, such as goblet and vase stems, the hourglass waist, a golf tee, a joystick shaft, a watch crown, a doll's neck, a spire or a cupola top. Weaker hits extend to related thin protrusions like furniture legs, a cup handle and a rack hook.",
+   "evidence": "Most top-20 boxes sit exactly on a constriction or thin stalk joining larger masses (#1, #4, #7, #9, #10, #11, #17, #19, #20), across unrelated object categories. Random images still reach 2–5 (e.g. the lighthouse tower and guitar neck), which fits a broad shape feature rather than an object detector.",
+   "missing_data": "Activation maps on controlled images comparing stems and necks with similar shapes that lack a constriction, plus the full activation distribution, to judge how selective the unit is.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to a narrow neck or stem where a shape pinches in between wider parts, such as goblet and vase stems, the hourglass waist, a golf tee, a joystick shaft, a watch crown, a doll's neck, a spire or a cupola top. Weaker hits extend to related thin protrusions like furniture legs, a cup handle and a rack hook.\", \"evidence\": \"Most top-20 boxes sit exactly on a constriction or thin stalk joining larger masses (#1, #4, #7, #9, #10, #11, #17, #19, #20), across unrelated object categories. Random images still reach 2–5 (e.g. the lighthouse tower and guitar neck), which fits a broad shape feature rather than an object detector.\", \"missing_data\": \"Activation maps on controlled images comparing stems and necks with similar shapes that lack a constriction, plus the full activation distribution, to judge how selective the unit is.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to a narrow neck or stem where a shape pinches in between wider parts, such as goblet and vase stems, the hourglass waist, a golf tee, a joystick shaft, a watch crown, a doll's neck, a spire or a cupola top. Weaker hits extend to related thin protrusions like furniture legs, a cup handle and a rack hook.\", \"evidence\": \"Most top-20 boxes sit exactly on a constriction or thin stalk joining larger masses (#1, #4, #7, #9, #10, #11, #17, #19, #20), across unrelated object categories. Random images still reach 2–5 (e.g. the lighthouse tower and guitar neck), which fits a broad shape feature rather than an object detector.\", \"missing_data\": \"Activation maps on controlled images comparing stems and necks with similar shapes that lack a constriction, plus the full activation distribution, to judge how selective the unit is.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4e:266",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6c2e6fdf13d581274e99720fa60bcda5e2d48bffaf4b935b6337138e51510bbd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to narrow necks, stems and waists where a thin vertical part joins a wider body, such as goblet stems, joystick shafts, golf tees, hourglass waists, watch crowns and doll or sweater necks. It responds more weakly to related thin supports and protrusions such as furniture legs, spires and cupolas, and cup handles.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to narrow necks, stems and waists where a thin vertical part joins a wider body, such as goblet stems, joystick shafts, golf tees, hourglass waists, watch crowns and doll or sweater necks. It responds more weakly to related thin supports and protrusions such as furniture legs, spires and cupolas, and cup handles.",
+   "evidence": "Most top-20 boxes sit on a constriction point: the goblet stem (#1), watch crown (#2), vase foot (#4), pump nozzle (#6), joystick shaft (#7), golf tee (#10), neckline (#11), cinched curtain (#12), hourglass waist (#19) and doll neck (#20). The lower-ranked ones (#5 rack hook, #15 jar edge, #18 truck bar) fit less cleanly, and random images still reach moderate values of 2-5, such as the lighthouse tower at 5.",
+   "missing_data": "Activation maps on controlled images of isolated stems or necks versus plain wide objects, plus the full activation distribution, to confirm the shape selectivity and how specific the unit is.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to narrow necks, stems and waists where a thin vertical part joins a wider body, such as goblet stems, joystick shafts, golf tees, hourglass waists, watch crowns and doll or sweater necks. It responds more weakly to related thin supports and protrusions such as furniture legs, spires and cupolas, and cup handles.\",\n \"evidence\": \"Most top-20 boxes sit on a constriction point: the goblet stem (#1), watch crown (#2), vase foot (#4), pump nozzle (#6), joystick shaft (#7), golf tee (#10), neckline (#11), cinched curtain (#12), hourglass waist (#19) and doll neck (#20). The lower-ranked ones (#5 rack hook, #15 jar edge, #18 truck bar) fit less cleanly, and random images still reach moderate values of 2-5, such as the lighthouse tower at 5.\",\n \"missing_data\": \"Activation maps on controlled images of isolated stems or necks versus plain wide objects, plus the full activation distribution, to confirm the shape selectivity and how specific the unit is.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to narrow necks, stems and waists where a thin vertical part joins a wider body, such as goblet stems, joystick shafts, golf tees, hourglass waists, watch crowns and doll or sweater necks. It responds more weakly to related thin supports and protrusions such as furniture legs, spires and cupolas, and cup handles.\",\n \"evidence\": \"Most top-20 boxes sit on a constriction point: the goblet stem (#1), watch crown (#2), vase foot (#4), pump nozzle (#6), joystick shaft (#7), golf tee (#10), neckline (#11), cinched curtain (#12), hourglass waist (#19) and doll neck (#20). The lower-ranked ones (#5 rack hook, #15 jar edge, #18 truck bar) fit less cleanly, and random images still reach moderate values of 2-5, such as the lighthouse tower at 5.\",\n \"missing_data\": \"Activation maps on controlled images of isolated stems or necks versus plain wide objects, plus the full activation distribution, to confirm the shape selectivity and how specific the unit is.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4e:266",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07b418a297a97237c74f4fe6067b4775ee7de34b3cb70dd9d6dae307e6854304",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to a narrow stem, neck or waist where a thin, roughly vertical part joins a wider body, as in goblet and vase stems, a joystick shaft, a golf tee, a stopwatch crown, an hourglass waist, a doll's neck, a spire or finial, and furniture legs. It responds more weakly to related thin protrusions such as mug handles, hooks, collars and jar rims.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to a narrow stem, neck or waist where a thin, roughly vertical part joins a wider body, as in goblet and vase stems, a joystick shaft, a golf tee, a stopwatch crown, an hourglass waist, a doll's neck, a spire or finial, and furniture legs. It responds more weakly to related thin protrusions such as mug handles, hooks, collars and jar rims.",
+   "evidence": "Most of the red boxes in the top 20 sit on such a constriction or stem across unrelated object categories, and the unit loses all activation under phase scramble and more than most units under patch shuffle (percentile 17), which fits a local shape configuration. It keeps its response under grayscale and contrast inversion, so it does not depend on colour or contrast sign; random photos still reach 2-5 (the lighthouse tower scores 5), so it is only moderately selective.",
+   "missing_data": "Activation-maximizing or masking tests showing whether the stem shape alone, without its context, drives the unit, plus top images beyond rank 20.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to a narrow stem, neck or waist where a thin, roughly vertical part joins a wider body, as in goblet and vase stems, a joystick shaft, a golf tee, a stopwatch crown, an hourglass waist, a doll's neck, a spire or finial, and furniture legs. It responds more weakly to related thin protrusions such as mug handles, hooks, collars and jar rims.\",\n \"evidence\": \"Most of the red boxes in the top 20 sit on such a constriction or stem across unrelated object categories, and the unit loses all activation under phase scramble and more than most units under patch shuffle (percentile 17), which fits a local shape configuration. It keeps its response under grayscale and contrast inversion, so it does not depend on colour or contrast sign; random photos still reach 2-5 (the lighthouse tower scores 5), so it is only moderately selective.\",\n \"missing_data\": \"Activation-maximizing or masking tests showing whether the stem shape alone, without its context, drives the unit, plus top images beyond rank 20.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to a narrow stem, neck or waist where a thin, roughly vertical part joins a wider body, as in goblet and vase stems, a joystick shaft, a golf tee, a stopwatch crown, an hourglass waist, a doll's neck, a spire or finial, and furniture legs. It responds more weakly to related thin protrusions such as mug handles, hooks, collars and jar rims.\",\n \"evidence\": \"Most of the red boxes in the top 20 sit on such a constriction or stem across unrelated object categories, and the unit loses all activation under phase scramble and more than most units under patch shuffle (percentile 17), which fits a local shape configuration. It keeps its response under grayscale and contrast inversion, so it does not depend on colour or contrast sign; random photos still reach 2-5 (the lighthouse tower scores 5), so it is only moderately selective.\",\n \"missing_data\": \"Activation-maximizing or masking tests showing whether the stem shape alone, without its context, drives the unit, plus top images beyond rank 20.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4e:266",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6c2e6fdf13d581274e99720fa60bcda5e2d48bffaf4b935b6337138e51510bbd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to narrow constrictions or stems: a thin, roughly vertical cylindrical neck or waist that joins two wider parts, such as a goblet or vase stem, an hourglass waist, a doll's neck, a joystick shaft, a golf tee or a spire. It also responds more weakly to related thin posts, legs and handles.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to narrow constrictions or stems: a thin, roughly vertical cylindrical neck or waist that joins two wider parts, such as a goblet or vase stem, an hourglass waist, a doll's neck, a joystick shaft, a golf tee or a spire. It also responds more weakly to related thin posts, legs and handles.",
+   "evidence": "Nearly every top box sits on such a pinch point: goblet stem (#1), stopwatch crown (#2), furniture leg (#3), vase foot (#4), pump stem (#6), joystick shaft (#7), golf tee (#10), collar (#11), gathered curtain (#12), cinched dress (#16), hourglass waist (#19) and doll neck (#20). Weaker or looser cases like the cup handle (#14), jar edge (#15) and car bar (#18) still score high, and random photos with vertical posts score moderately (the lighthouse at 5, the guitar neck at 4).",
+   "missing_data": "Activations on controlled images that vary how narrow a stem or neck is against plain vertical bars without a constriction, plus a larger set of mid-range activations.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to narrow constrictions or stems: a thin, roughly vertical cylindrical neck or waist that joins two wider parts, such as a goblet or vase stem, an hourglass waist, a doll's neck, a joystick shaft, a golf tee or a spire. It also responds more weakly to related thin posts, legs and handles.\",\n \"evidence\": \"Nearly every top box sits on such a pinch point: goblet stem (#1), stopwatch crown (#2), furniture leg (#3), vase foot (#4), pump stem (#6), joystick shaft (#7), golf tee (#10), collar (#11), gathered curtain (#12), cinched dress (#16), hourglass waist (#19) and doll neck (#20). Weaker or looser cases like the cup handle (#14), jar edge (#15) and car bar (#18) still score high, and random photos with vertical posts score moderately (the lighthouse at 5, the guitar neck at 4).\",\n \"missing_data\": \"Activations on controlled images that vary how narrow a stem or neck is against plain vertical bars without a constriction, plus a larger set of mid-range activations.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to narrow constrictions or stems: a thin, roughly vertical cylindrical neck or waist that joins two wider parts, such as a goblet or vase stem, an hourglass waist, a doll's neck, a joystick shaft, a golf tee or a spire. It also responds more weakly to related thin posts, legs and handles.\",\n \"evidence\": \"Nearly every top box sits on such a pinch point: goblet stem (#1), stopwatch crown (#2), furniture leg (#3), vase foot (#4), pump stem (#6), joystick shaft (#7), golf tee (#10), collar (#11), gathered curtain (#12), cinched dress (#16), hourglass waist (#19) and doll neck (#20). Weaker or looser cases like the cup handle (#14), jar edge (#15) and car bar (#18) still score high, and random photos with vertical posts score moderately (the lighthouse at 5, the guitar neck at 4).\",\n \"missing_data\": \"Activations on controlled images that vary how narrow a stem or neck is against plain vertical bars without a constriction, plus a larger set of mid-range activations.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4e:266",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07b418a297a97237c74f4fe6067b4775ee7de34b3cb70dd9d6dae307e6854304",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a narrow neck, stem or waist: a thin, roughly vertical part that joins or supports a larger rounded shape, such as a goblet or vase stem, a joystick shaft, a golf tee, the neck of a doll or sweater, an hourglass waist, or a spire on a roof. Weaker extensions are other thin connecting parts, such as furniture legs, a cup handle, a hook or a pipe.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a narrow neck, stem or waist: a thin, roughly vertical part that joins or supports a larger rounded shape, such as a goblet or vase stem, a joystick shaft, a golf tee, the neck of a doll or sweater, an hourglass waist, or a spire on a roof. Weaker extensions are other thin connecting parts, such as furniture legs, a cup handle, a hook or a pipe.",
+   "evidence": "Most of the top-20 boxes sit on such constrictions (#1, 2, 4, 6, 7, 10, 11, 16, 17, 19, 20), while the random photos stay low (1-5). The unit loses everything under phase scramble and much more than most units under patch shuffle (17th percentile), which fits a dependence on the shape of the object rather than on texture or colour.",
+   "missing_data": "Synthetic tests that vary stem width and the size of the shapes above and below it, plus more mid-range activation examples, would show whether the unit needs a true constriction or just any thin vertical part.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a narrow neck, stem or waist: a thin, roughly vertical part that joins or supports a larger rounded shape, such as a goblet or vase stem, a joystick shaft, a golf tee, the neck of a doll or sweater, an hourglass waist, or a spire on a roof. Weaker extensions are other thin connecting parts, such as furniture legs, a cup handle, a hook or a pipe.\",\n \"evidence\": \"Most of the top-20 boxes sit on such constrictions (#1, 2, 4, 6, 7, 10, 11, 16, 17, 19, 20), while the random photos stay low (1-5). The unit loses everything under phase scramble and much more than most units under patch shuffle (17th percentile), which fits a dependence on the shape of the object rather than on texture or colour.\",\n \"missing_data\": \"Synthetic tests that vary stem width and the size of the shapes above and below it, plus more mid-range activation examples, would show whether the unit needs a true constriction or just any thin vertical part.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a narrow neck, stem or waist: a thin, roughly vertical part that joins or supports a larger rounded shape, such as a goblet or vase stem, a joystick shaft, a golf tee, the neck of a doll or sweater, an hourglass waist, or a spire on a roof. Weaker extensions are other thin connecting parts, such as furniture legs, a cup handle, a hook or a pipe.\",\n \"evidence\": \"Most of the top-20 boxes sit on such constrictions (#1, 2, 4, 6, 7, 10, 11, 16, 17, 19, 20), while the random photos stay low (1-5). The unit loses everything under phase scramble and much more than most units under patch shuffle (17th percentile), which fits a dependence on the shape of the object rather than on texture or colour.\",\n \"missing_data\": \"Synthetic tests that vary stem width and the size of the shapes above and below it, plus more mid-range activation examples, would show whether the unit needs a true constriction or just any thin vertical part.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4e:266",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "07b418a297a97237c74f4fe6067b4775ee7de34b3cb70dd9d6dae307e6854304",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to a narrow neck, stem or waist where a wider shape narrows into a thin connecting part, such as goblet and vase stems, an hourglass waist, a doll's or person's neck, a joystick shaft, a golf tee, or a watch crown stem. It responds more weakly to related thin protrusions such as furniture legs, spires and cupolas, bed-post ties and a cup handle.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to a narrow neck, stem or waist where a wider shape narrows into a thin connecting part, such as goblet and vase stems, an hourglass waist, a doll's or person's neck, a joystick shaft, a golf tee, or a watch crown stem. It responds more weakly to related thin protrusions such as furniture legs, spires and cupolas, bed-post ties and a cup handle.",
+   "evidence": "Most of the red boxes sit exactly on a constriction or stem joining larger parts (#1, #2, #4, #7, #10, #11, #19, #20), and the rest are thin attached protrusions (#3, #9, #14, #17). The unit is unusually sensitive to patch shuffling (percentile 17) and loses everything under phase scramble, which fits a shape-configuration feature rather than colour or texture, and grayscale barely matters.",
+   "missing_data": "Activation maps on controlled stimuli, such as isolated stems or necks versus plain vertical bars or edges, would show whether the unit needs a true narrowing or just a thin vertical part attached to a larger shape.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to a narrow neck, stem or waist where a wider shape narrows into a thin connecting part, such as goblet and vase stems, an hourglass waist, a doll's or person's neck, a joystick shaft, a golf tee, or a watch crown stem. It responds more weakly to related thin protrusions such as furniture legs, spires and cupolas, bed-post ties and a cup handle.\", \"evidence\": \"Most of the red boxes sit exactly on a constriction or stem joining larger parts (#1, #2, #4, #7, #10, #11, #19, #20), and the rest are thin attached protrusions (#3, #9, #14, #17). The unit is unusually sensitive to patch shuffling (percentile 17) and loses everything under phase scramble, which fits a shape-configuration feature rather than colour or texture, and grayscale barely matters.\", \"missing_data\": \"Activation maps on controlled stimuli, such as isolated stems or necks versus plain vertical bars or edges, would show whether the unit needs a true narrowing or just a thin vertical part attached to a larger shape.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to a narrow neck, stem or waist where a wider shape narrows into a thin connecting part, such as goblet and vase stems, an hourglass waist, a doll's or person's neck, a joystick shaft, a golf tee, or a watch crown stem. It responds more weakly to related thin protrusions such as furniture legs, spires and cupolas, bed-post ties and a cup handle.\", \"evidence\": \"Most of the red boxes sit exactly on a constriction or stem joining larger parts (#1, #2, #4, #7, #10, #11, #19, #20), and the rest are thin attached protrusions (#3, #9, #14, #17). The unit is unusually sensitive to patch shuffling (percentile 17) and loses everything under phase scramble, which fits a shape-configuration feature rather than colour or texture, and grayscale barely matters.\", \"missing_data\": \"Activation maps on controlled stimuli, such as isolated stems or necks versus plain vertical bars or edges, would show whether the unit needs a true narrowing or just a thin vertical part attached to a larger shape.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ }
+}

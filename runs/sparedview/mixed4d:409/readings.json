@@ -1,0 +1,146 @@
+{
+ "CP_s1": {
+  "unit": "mixed4d:409",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0566c2dd6f1ce19045c4afe2dbd460e6f69d49e3d13b760637de1c8cf3876abe",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to upright, side-on views of the body or flank of four-legged animals, mostly dogs (plus one weasel), and separately to the side of cars and trucks at wheel and door level. Both depend on a horizontal body above ground-contact legs or wheels.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to upright, side-on views of the body or flank of four-legged animals, mostly dogs (plus one weasel), and separately to the side of cars and trucks at wheel and door level. Both depend on a horizontal body above ground-contact legs or wheels.",
+   "evidence": "In the top 20, 12 photos are side-on dogs or animals and 8 are side-on vehicles, all with the box on the mid-body. The unit loses almost everything under rotate_90 (3%, percentile 0), patch shuffling (24%, percentile 0) and rotate_180 (38%), but is fully mirror-invariant (101%), so it codes an upright horizontal object layout rather than texture or colour.",
+   "missing_data": "Activations for side-on vehicles and animals outside the top 20, such as horses, cows, buses and trains, plus front-on views of cars and dogs, would show whether this is one 'horizontal elongated body on legs or wheels' shape feature or two separate detectors.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to upright, side-on views of the body or flank of four-legged animals, mostly dogs (plus one weasel), and separately to the side of cars and trucks at wheel and door level. Both depend on a horizontal body above ground-contact legs or wheels.\",\n \"evidence\": \"In the top 20, 12 photos are side-on dogs or animals and 8 are side-on vehicles, all with the box on the mid-body. The unit loses almost everything under rotate_90 (3%, percentile 0), patch shuffling (24%, percentile 0) and rotate_180 (38%), but is fully mirror-invariant (101%), so it codes an upright horizontal object layout rather than texture or colour.\",\n \"missing_data\": \"Activations for side-on vehicles and animals outside the top 20, such as horses, cows, buses and trains, plus front-on views of cars and dogs, would show whether this is one 'horizontal elongated body on legs or wheels' shape feature or two separate detectors.\",\n \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to upright, side-on views of the body or flank of four-legged animals, mostly dogs (plus one weasel), and separately to the side of cars and trucks at wheel and door level. Both depend on a horizontal body above ground-contact legs or wheels.\",\n \"evidence\": \"In the top 20, 12 photos are side-on dogs or animals and 8 are side-on vehicles, all with the box on the mid-body. The unit loses almost everything under rotate_90 (3%, percentile 0), patch shuffling (24%, percentile 0) and rotate_180 (38%), but is fully mirror-invariant (101%), so it codes an upright horizontal object layout rather than texture or colour.\",\n \"missing_data\": \"Activations for side-on vehicles and animals outside the top 20, such as horses, cows, buses and trains, plus front-on views of cars and dogs, would show whether this is one 'horizontal elongated body on legs or wheels' shape feature or two separate detectors.\",\n \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4d:409",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0566c2dd6f1ce19045c4afe2dbd460e6f69d49e3d13b760637de1c8cf3876abe",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side-on profile of an upright, horizontally elongated body held up by supports underneath, such as a standing dog's flank over its legs or a car's body over its wheels. It appears to encode this configural shape rather than any object category.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side-on profile of an upright, horizontally elongated body held up by supports underneath, such as a standing dog's flank over its legs or a car's body over its wheels. It appears to encode this configural shape rather than any object category.",
+   "evidence": "The top 20 mix side-view standing dogs (and a weasel) with side-view cars and vans at similar activations (7-10), and the boxes sit on the body mass just above the legs or wheels; random photos, including close-up dog heads and a non-standing dog, stay at 0-3. The unit keeps little activation under rotate_90 (3%), patch shuffling (24%) and rotate_180 (38%), all at very low percentiles, yet is fully mirror-invariant (101%) and largely colour-invariant, which fits an upright, left-right-symmetric global shape detector.",
+   "missing_data": "Activations on non-dog side-view quadrupeds (horses, cattle) and other wheeled vehicles, plus front-view dogs and cars, would show whether this is a generic side-profile shape detector or two separate dog and car detectors.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-on profile of an upright, horizontally elongated body held up by supports underneath, such as a standing dog's flank over its legs or a car's body over its wheels. It appears to encode this configural shape rather than any object category.\",\n \"evidence\": \"The top 20 mix side-view standing dogs (and a weasel) with side-view cars and vans at similar activations (7-10), and the boxes sit on the body mass just above the legs or wheels; random photos, including close-up dog heads and a non-standing dog, stay at 0-3. The unit keeps little activation under rotate_90 (3%), patch shuffling (24%) and rotate_180 (38%), all at very low percentiles, yet is fully mirror-invariant (101%) and largely colour-invariant, which fits an upright, left-right-symmetric global shape detector.\",\n \"missing_data\": \"Activations on non-dog side-view quadrupeds (horses, cattle) and other wheeled vehicles, plus front-view dogs and cars, would show whether this is a generic side-profile shape detector or two separate dog and car detectors.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-on profile of an upright, horizontally elongated body held up by supports underneath, such as a standing dog's flank over its legs or a car's body over its wheels. It appears to encode this configural shape rather than any object category.\",\n \"evidence\": \"The top 20 mix side-view standing dogs (and a weasel) with side-view cars and vans at similar activations (7-10), and the boxes sit on the body mass just above the legs or wheels; random photos, including close-up dog heads and a non-standing dog, stay at 0-3. The unit keeps little activation under rotate_90 (3%), patch shuffling (24%) and rotate_180 (38%), all at very low percentiles, yet is fully mirror-invariant (101%) and largely colour-invariant, which fits an upright, left-right-symmetric global shape detector.\",\n \"missing_data\": \"Activations on non-dog side-view quadrupeds (horses, cattle) and other wheeled vehicles, plus front-view dogs and cars, would show whether this is a generic side-profile shape detector or two separate dog and car detectors.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed4d:409",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0566c2dd6f1ce19045c4afe2dbd460e6f69d49e3d13b760637de1c8cf3876abe",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side profile of a horizontally elongated body held up off the ground on legs or wheels, at mid-body. This covers standing dogs (and a weasel) seen from the side as well as cars, trucks and vans seen from the side.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side profile of a horizontally elongated body held up off the ground on legs or wheels, at mid-body. This covers standing dogs (and a weasel) seen from the side as well as cars, trucks and vans seen from the side.",
+   "evidence": "All 20 top crops show a side-on body with legs or wheels below, and dogs and cars reach similar activations (#1 car and #2 dog both score 10). The unit is extremely sensitive to rotate_90 (keeps 3%, percentile 0), patch_shuffle (percentile 0) and rotate_180 (percentile 12) but unaffected by mirror (percentile 95), which fits an upright horizontal body-on-supports shape rather than a semantic category.",
+   "missing_data": "Activations on other side-view animals (horses, cats, cows) and on vehicles or animals seen head-on, plus a broader sample of the top ~100 photos, would show whether this is one shape detector or separate dog and car detectors.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side profile of a horizontally elongated body held up off the ground on legs or wheels, at mid-body. This covers standing dogs (and a weasel) seen from the side as well as cars, trucks and vans seen from the side.\",\n \"evidence\": \"All 20 top crops show a side-on body with legs or wheels below, and dogs and cars reach similar activations (#1 car and #2 dog both score 10). The unit is extremely sensitive to rotate_90 (keeps 3%, percentile 0), patch_shuffle (percentile 0) and rotate_180 (percentile 12) but unaffected by mirror (percentile 95), which fits an upright horizontal body-on-supports shape rather than a semantic category.\"\n ,\n \"missing_data\": \"Activations on other side-view animals (horses, cats, cows) and on vehicles or animals seen head-on, plus a broader sample of the top ~100 photos, would show whether this is one shape detector or separate dog and car detectors.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side profile of a horizontally elongated body held up off the ground on legs or wheels, at mid-body. This covers standing dogs (and a weasel) seen from the side as well as cars, trucks and vans seen from the side.\",\n \"evidence\": \"All 20 top crops show a side-on body with legs or wheels below, and dogs and cars reach similar activations (#1 car and #2 dog both score 10). The unit is extremely sensitive to rotate_90 (keeps 3%, percentile 0), patch_shuffle (percentile 0) and rotate_180 (percentile 12) but unaffected by mirror (percentile 95), which fits an upright horizontal body-on-supports shape rather than a semantic category.\"\n ,\n \"missing_data\": \"Activations on other side-view animals (horses, cats, cows) and on vehicles or animals seen head-on, plus a broader sample of the top ~100 photos, would show whether this is one shape detector or separate dog and car detectors.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "CPA_s1": {
+  "unit": "mixed4d:409",
+  "reading": "CPA_s1",
+  "condition": "CPA",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a3d660b077023ab0ef6e822aaf03ff85bd8d6301056d901fdf8c3573e26dae",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side-view body of an elongated object held upright above the ground on legs or wheels, mainly dogs (and a stoat) and cars or vans seen in profile; the red box sits on the flank or the lower body above the supports.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side-view body of an elongated object held upright above the ground on legs or wheels, mainly dogs (and a stoat) and cars or vans seen in profile; the red box sits on the flank or the lower body above the supports.",
+   "evidence": "Dogs and vehicles alternate throughout the top 20 at similar activations (10–7), always horizontal and in profile. The unit loses almost everything under rotate_90 (3%, percentile 0), much under rotate_180 and patch shuffle (percentile 0), and is mirror-invariant, which points to an upright, side-on body-plus-supports configuration rather than texture or category; a close-up dog head and a front-view dog in the random set score only 1–3.",
+   "missing_data": "Activations for dogs seen head-on or from above, other side-view animals and vehicles (horses, buses, trains), and non-animal horizontal objects on legs (tables, benches) would show whether this is one shape detector or two separate dog and car detectors.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-view body of an elongated object held upright above the ground on legs or wheels, mainly dogs (and a stoat) and cars or vans seen in profile; the red box sits on the flank or the lower body above the supports.\",\n \"evidence\": \"Dogs and vehicles alternate throughout the top 20 at similar activations (10–7), always horizontal and in profile. The unit loses almost everything under rotate_90 (3%, percentile 0), much under rotate_180 and patch shuffle (percentile 0), and is mirror-invariant, which points to an upright, side-on body-plus-supports configuration rather than texture or category; a close-up dog head and a front-view dog in the random set score only 1–3.\",\n \"missing_data\": \"Activations for dogs seen head-on or from above, other side-view animals and vehicles (horses, buses, trains), and non-animal horizontal objects on legs (tables, benches) would show whether this is one shape detector or two separate dog and car detectors.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-view body of an elongated object held upright above the ground on legs or wheels, mainly dogs (and a stoat) and cars or vans seen in profile; the red box sits on the flank or the lower body above the supports.\",\n \"evidence\": \"Dogs and vehicles alternate throughout the top 20 at similar activations (10–7), always horizontal and in profile. The unit loses almost everything under rotate_90 (3%, percentile 0), much under rotate_180 and patch shuffle (percentile 0), and is mirror-invariant, which points to an upright, side-on body-plus-supports configuration rather than texture or category; a close-up dog head and a front-view dog in the random set score only 1–3.\",\n \"missing_data\": \"Activations for dogs seen head-on or from above, other side-view animals and vehicles (horses, buses, trains), and non-animal horizontal objects on legs (tables, benches) would show whether this is one shape detector or two separate dog and car detectors.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "CPA_s2": {
+  "unit": "mixed4d:409",
+  "reading": "CPA_s2",
+  "condition": "CPA",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a3d660b077023ab0ef6e822aaf03ff85bd8d6301056d901fdf8c3573e26dae",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a horizontally elongated body seen side-on and standing on supports below it: the flank of a standing four-legged animal (mostly dogs, also a weasel) or a car or truck body above its wheels.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a horizontally elongated body seen side-on and standing on supports below it: the flank of a standing four-legged animal (mostly dogs, also a weasel) or a car or truck body above its wheels.",
+   "evidence": "All 20 top photos are side-profile dogs or vehicles, with the box on the torso or the body above the wheels, while random photos, including a close-up dog head and a dog seen from above, score 0-3. The unit is mirror-invariant (101%) but loses almost everything under 90° rotation (3%), patch shuffling (24%) and phase scrambling (0%), which points to an upright, configural profile shape rather than a texture or colour.",
+   "missing_data": "Activations on other side-view elongated objects with legs or wheels (horses, cattle, tables, trains, bicycles) and on dogs or cars seen head-on, which would show whether this is one shape detector or two separate dog and vehicle detectors.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a horizontally elongated body seen side-on and standing on supports below it: the flank of a standing four-legged animal (mostly dogs, also a weasel) or a car or truck body above its wheels.\",\n \"evidence\": \"All 20 top photos are side-profile dogs or vehicles, with the box on the torso or the body above the wheels, while random photos, including a close-up dog head and a dog seen from above, score 0-3. The unit is mirror-invariant (101%) but loses almost everything under 90° rotation (3%), patch shuffling (24%) and phase scrambling (0%), which points to an upright, configural profile shape rather than a texture or colour.\",\n \"missing_data\": \"Activations on other side-view elongated objects with legs or wheels (horses, cattle, tables, trains, bicycles) and on dogs or cars seen head-on, which would show whether this is one shape detector or two separate dog and vehicle detectors.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a horizontally elongated body seen side-on and standing on supports below it: the flank of a standing four-legged animal (mostly dogs, also a weasel) or a car or truck body above its wheels.\",\n \"evidence\": \"All 20 top photos are side-profile dogs or vehicles, with the box on the torso or the body above the wheels, while random photos, including a close-up dog head and a dog seen from above, score 0-3. The unit is mirror-invariant (101%) but loses almost everything under 90° rotation (3%), patch shuffling (24%) and phase scrambling (0%), which points to an upright, configural profile shape rather than a texture or colour.\",\n \"missing_data\": \"Activations on other side-view elongated objects with legs or wheels (horses, cattle, tables, trains, bicycles) and on dogs or cars seen head-on, which would show whether this is one shape detector or two separate dog and vehicle detectors.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "CPA_s3": {
+  "unit": "mixed4d:409",
+  "reading": "CPA_s3",
+  "condition": "CPA",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a3d660b077023ab0ef6e822aaf03ff85bd8d6301056d901fdf8c3573e26dae",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to the side-profile view of a horizontally elongated body resting on legs or wheels. This covers the flank of a standing quadruped (mostly dogs, also a stoat) and the side or lower body of a car or truck near the wheels.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side-profile view of a horizontally elongated body resting on legs or wheels. This covers the flank of a standing quadruped (mostly dogs, also a stoat) and the side or lower body of a car or truck near the wheels.",
+   "evidence": "All 20 top crops are side-on dog or weasel torsos or side-on vehicle bodies with wheels, while random photos, including close-up dog faces, score 0-3. The unit loses almost everything under 90° rotation (3%), much under 180° rotation and patch shuffling, and nothing under mirroring, which fits a global, upright, horizontally oriented shape rather than a texture or colour.",
+   "missing_data": "Activations for other side-view quadrupeds (horses, cats, cows) and other wheeled or elongated objects (bikes, trains, boats, couches) would show whether this is a general side-profile shape detector or two separate dog and car features.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-profile view of a horizontally elongated body resting on legs or wheels. This covers the flank of a standing quadruped (mostly dogs, also a stoat) and the side or lower body of a car or truck near the wheels.\",\n \"evidence\": \"All 20 top crops are side-on dog or weasel torsos or side-on vehicle bodies with wheels, while random photos, including close-up dog faces, score 0-3. The unit loses almost everything under 90° rotation (3%), much under 180° rotation and patch shuffling, and nothing under mirroring, which fits a global, upright, horizontally oriented shape rather than a texture or colour.\",\n \"missing_data\": \"Activations for other side-view quadrupeds (horses, cats, cows) and other wheeled or elongated objects (bikes, trains, boats, couches) would show whether this is a general side-profile shape detector or two separate dog and car features.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side-profile view of a horizontally elongated body resting on legs or wheels. This covers the flank of a standing quadruped (mostly dogs, also a stoat) and the side or lower body of a car or truck near the wheels.\",\n \"evidence\": \"All 20 top crops are side-on dog or weasel torsos or side-on vehicle bodies with wheels, while random photos, including close-up dog faces, score 0-3. The unit loses almost everything under 90° rotation (3%), much under 180° rotation and patch shuffling, and nothing under mirroring, which fits a global, upright, horizontally oriented shape rather than a texture or colour.\",\n \"missing_data\": \"Activations for other side-view quadrupeds (horses, cats, cows) and other wheeled or elongated objects (bikes, trains, boats, couches) would show whether this is a general side-profile shape detector or two separate dog and car features.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ }
+}

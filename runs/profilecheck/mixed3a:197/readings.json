@@ -1,0 +1,146 @@
+{
+ "P_s2": {
+  "unit": "mixed3a:197",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2b61c5fdf1dbba611b49381aace1f5cf57162343eeda0cacdc23a9c084c4c046",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to saturated red-to-orange color, especially small patches or edges of red/orange surfaces such as tail lights, red car bodies, an umbrella, flames, a traffic cone, and red graphics or buttons.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to saturated red-to-orange color, especially small patches or edges of red/orange surfaces such as tail lights, red car bodies, an umbrella, flames, a traffic cone, and red graphics or buttons.",
+   "evidence": "Nearly every red box in the top 20 sits on or beside a red/orange region (cart, devil icon, TOTAL BLOCK label, umbrella, train light, scooter, agility fence, taillight, Fiat, police car, flames, ship funnel). Grayscale keeps only 40% (13th percentile), so the response depends heavily on chromatic information, while luminance inversion and mirroring barely matter.",
+   "missing_data": "Activations on synthetic color patches across hues, to confirm red/orange tuning and whether a red-vs-neighbor edge is needed versus uniform red fill.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to saturated red-to-orange color, especially small patches or edges of red/orange surfaces such as tail lights, red car bodies, an umbrella, flames, a traffic cone, and red graphics or buttons.\", \"evidence\": \"Nearly every red box in the top 20 sits on or beside a red/orange region (cart, devil icon, TOTAL BLOCK label, umbrella, train light, scooter, agility fence, taillight, Fiat, police car, flames, ship funnel). Grayscale keeps only 40% (13th percentile), so the response depends heavily on chromatic information, while luminance inversion and mirroring barely matter.\", \"missing_data\": \"Activations on synthetic color patches across hues, to confirm red/orange tuning and whether a red-vs-neighbor edge is needed versus uniform red fill.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to saturated red-to-orange color, especially small patches or edges of red/orange surfaces such as tail lights, red car bodies, an umbrella, flames, a traffic cone, and red graphics or buttons.\", \"evidence\": \"Nearly every red box in the top 20 sits on or beside a red/orange region (cart, devil icon, TOTAL BLOCK label, umbrella, train light, scooter, agility fence, taillight, Fiat, police car, flames, ship funnel). Grayscale keeps only 40% (13th percentile), so the response depends heavily on chromatic information, while luminance inversion and mirroring barely matter.\", \"missing_data\": \"Activations on synthetic color patches across hues, to confirm red/orange tuning and whether a red-vs-neighbor edge is needed versus uniform red fill.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3a:197",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2b61c5fdf1dbba611b49381aace1f5cf57162343eeda0cacdc23a9c084c4c046",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to saturated red/orange colour, especially small red or orange regions or edges set against a contrasting background, such as taillights, cones, red buttons, flames and funnels.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to saturated red/orange colour, especially small red or orange regions or edges set against a contrasting background, such as taillights, cones, red buttons, flames and funnels.",
+   "evidence": "Nearly every top-20 box sits on a red or orange patch (cart wheel, devil, sunblock label, umbrella, train light, scooter, red car, police cone, ship funnel), and grayscale removes 60% of the activation (13th percentile). Among the random photos, the highest activations go to the Polaroid with its red button and stripe (7) and the cat with a red ribbon (6).",
+   "missing_data": "Hue-sweep tests that recolour the same patch (red vs. orange vs. magenta vs. other hues) would show how narrow the colour tuning is and whether it depends on an adjacent edge, which might explain the unusual sensitivity to rotation.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red/orange colour, especially small red or orange regions or edges set against a contrasting background, such as taillights, cones, red buttons, flames and funnels.\",\n \"evidence\": \"Nearly every top-20 box sits on a red or orange patch (cart wheel, devil, sunblock label, umbrella, train light, scooter, red car, police cone, ship funnel), and grayscale removes 60% of the activation (13th percentile). Among the random photos, the highest activations go to the Polaroid with its red button and stripe (7) and the cat with a red ribbon (6).\",\n \"missing_data\": \"Hue-sweep tests that recolour the same patch (red vs. orange vs. magenta vs. other hues) would show how narrow the colour tuning is and whether it depends on an adjacent edge, which might explain the unusual sensitivity to rotation.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red/orange colour, especially small red or orange regions or edges set against a contrasting background, such as taillights, cones, red buttons, flames and funnels.\",\n \"evidence\": \"Nearly every top-20 box sits on a red or orange patch (cart wheel, devil, sunblock label, umbrella, train light, scooter, red car, police cone, ship funnel), and grayscale removes 60% of the activation (13th percentile). Among the random photos, the highest activations go to the Polaroid with its red button and stripe (7) and the cat with a red ribbon (6).\",\n \"missing_data\": \"Hue-sweep tests that recolour the same patch (red vs. orange vs. magenta vs. other hues) would show how narrow the colour tuning is and whether it depends on an adjacent edge, which might explain the unusual sensitivity to rotation.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3a:197",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2b61c5fdf1dbba611b49381aace1f5cf57162343eeda0cacdc23a9c084c4c046",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to saturated red-to-orange colour patches, such as red car bodies, tail lights, umbrellas, flames, price tags, ship funnels and orange packaging.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to saturated red-to-orange colour patches, such as red car bodies, tail lights, umbrellas, flames, price tags, ship funnels and orange packaging.",
+   "evidence": "Most top-photo boxes sit on red or orange regions (#1, #2, #3, #4, #6, #7, #10, #13, #16, #17, #18, #19), and grayscale cuts activation to 40%, which is near the bottom of its layer (percentile 13). Random photos with red elements score highest (the Polaroid's red button at 7, the cat's red ribbon at 6), though a few top photos with boxes on dark fur (#8, #11, #20) don't fit cleanly.",
+   "missing_data": "Activations on synthetic colour patches across hues and saturation, to confirm red/orange tuning and explain the dark-fur cases, plus spatial activation maps for the off-pattern photos.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red-to-orange colour patches, such as red car bodies, tail lights, umbrellas, flames, price tags, ship funnels and orange packaging.\",\n \"evidence\": \"Most top-photo boxes sit on red or orange regions (#1, #2, #3, #4, #6, #7, #10, #13, #16, #17, #18, #19), and grayscale cuts activation to 40%, which is near the bottom of its layer (percentile 13). Random photos with red elements score highest (the Polaroid's red button at 7, the cat's red ribbon at 6), though a few top photos with boxes on dark fur (#8, #11, #20) don't fit cleanly.\",\n \"missing_data\": \"Activations on synthetic colour patches across hues and saturation, to confirm red/orange tuning and explain the dark-fur cases, plus spatial activation maps for the off-pattern photos.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red-to-orange colour patches, such as red car bodies, tail lights, umbrellas, flames, price tags, ship funnels and orange packaging.\",\n \"evidence\": \"Most top-photo boxes sit on red or orange regions (#1, #2, #3, #4, #6, #7, #10, #13, #16, #17, #18, #19), and grayscale cuts activation to 40%, which is near the bottom of its layer (percentile 13). Random photos with red elements score highest (the Polaroid's red button at 7, the cat's red ribbon at 6), though a few top photos with boxes on dark fur (#8, #11, #20) don't fit cleanly.\",\n \"missing_data\": \"Activations on synthetic colour patches across hues and saturation, to confirm red/orange tuning and explain the dark-fur cases, plus spatial activation maps for the off-pattern photos.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3a:197",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "31ee37281bab0951ecc16afafb9d61f7e98a5f4d5a036cc3f86884c0c82ec258",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to saturated red and red-orange regions, such as red paint, red plastic, taillights and red text or stickers, regardless of what object carries the color.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to saturated red and red-orange regions, such as red paint, red plastic, taillights and red text or stickers, regardless of what object carries the color.",
+   "evidence": "Nearly every top box falls on a red or orange patch: the ox-cart wheel, the umbrella, the taillight, the cone, the flame paint, the ship funnel and the 'Instalado' sticker. Among the random photos, the highest scores go to the ones with red (the Polaroid stripe at 7 and the cat's red ribbon at 6), though the random baseline is fairly high overall and a few top boxes (#11, #15, #20) are unclear.",
+   "missing_data": "Activations on plain color swatches or recolored images (for example red objects shifted to other hues) would confirm it is a color detector rather than something tied to objects.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red and red-orange regions, such as red paint, red plastic, taillights and red text or stickers, regardless of what object carries the color.\",\n \"evidence\": \"Nearly every top box falls on a red or orange patch: the ox-cart wheel, the umbrella, the taillight, the cone, the flame paint, the ship funnel and the 'Instalado' sticker. Among the random photos, the highest scores go to the ones with red (the Polaroid stripe at 7 and the cat's red ribbon at 6), though the random baseline is fairly high overall and a few top boxes (#11, #15, #20) are unclear.\"\n,\"missing_data\": \"Activations on plain color swatches or recolored images (for example red objects shifted to other hues) would confirm it is a color detector rather than something tied to objects.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red and red-orange regions, such as red paint, red plastic, taillights and red text or stickers, regardless of what object carries the color.\",\n \"evidence\": \"Nearly every top box falls on a red or orange patch: the ox-cart wheel, the umbrella, the taillight, the cone, the flame paint, the ship funnel and the 'Instalado' sticker. Among the random photos, the highest scores go to the ones with red (the Polaroid stripe at 7 and the cat's red ribbon at 6), though the random baseline is fairly high overall and a few top boxes (#11, #15, #20) are unclear.\"\n,\"missing_data\": \"Activations on plain color swatches or recolored images (for example red objects shifted to other hues) would confirm it is a color detector rather than something tied to objects.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3a:197",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "31ee37281bab0951ecc16afafb9d61f7e98a5f4d5a036cc3f86884c0c82ec258",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to saturated red or red-orange color patches, whatever the object: taillights, umbrellas, scooters, cones, flames, ship funnels, and red graphics or text.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to saturated red or red-orange color patches, whatever the object: taillights, umbrellas, scooters, cones, flames, ship funnels, and red graphics or text.",
+   "evidence": "Most of the top 20 red boxes sit on red or orange regions (#1 cart, #2 devil, #4 umbrella, #6 train light, #10 taillight, #13 car, #16 cone, #17 flames, #18 label, #19 funnel). Among random images, the highest are the Polaroid with its red/rainbow stripe (7) and the cat with a red ribbon (6). Selectivity looks weak overall, since random images still reach 2-5, and a few top boxes (#8, #11, #20 on dark dog or cat fur) are not clearly red.",
+   "missing_data": "Activation maps on controlled color patches (red vs. orange vs. other hues, saturated vs. desaturated), plus the full activation distribution, to confirm color selectivity and explain the high baseline.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red or red-orange color patches, whatever the object: taillights, umbrellas, scooters, cones, flames, ship funnels, and red graphics or text.\",\n \"evidence\": \"Most of the top 20 red boxes sit on red or orange regions (#1 cart, #2 devil, #4 umbrella, #6 train light, #10 taillight, #13 car, #16 cone, #17 flames, #18 label, #19 funnel). Among random images, the highest are the Polaroid with its red/rainbow stripe (7) and the cat with a red ribbon (6). Selectivity looks weak overall, since random images still reach 2-5, and a few top boxes (#8, #11, #20 on dark dog or cat fur) are not clearly red.\",\n \"missing_data\": \"Activation maps on controlled color patches (red vs. orange vs. other hues, saturated vs. desaturated), plus the full activation distribution, to confirm color selectivity and explain the high baseline.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to saturated red or red-orange color patches, whatever the object: taillights, umbrellas, scooters, cones, flames, ship funnels, and red graphics or text.\",\n \"evidence\": \"Most of the top 20 red boxes sit on red or orange regions (#1 cart, #2 devil, #4 umbrella, #6 train light, #10 taillight, #13 car, #16 cone, #17 flames, #18 label, #19 funnel). Among random images, the highest are the Polaroid with its red/rainbow stripe (7) and the cat with a red ribbon (6). Selectivity looks weak overall, since random images still reach 2-5, and a few top boxes (#8, #11, #20 on dark dog or cat fur) are not clearly red.\",\n \"missing_data\": \"Activation maps on controlled color patches (red vs. orange vs. other hues, saturated vs. desaturated), plus the full activation distribution, to confirm color selectivity and explain the high baseline.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3a:197",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "31ee37281bab0951ecc16afafb9d61f7e98a5f4d5a036cc3f86884c0c82ec258",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mostly responds to saturated red/orange colour patches, such as red vehicles, tail lights, a red umbrella, red cartoon characters, orange packaging and flames. It also responds more weakly to other vivid colour or high-contrast regions like bokeh lights and text on screenshots.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mostly responds to saturated red/orange colour patches, such as red vehicles, tail lights, a red umbrella, red cartoon characters, orange packaging and flames. It also responds more weakly to other vivid colour or high-contrast regions like bokeh lights and text on screenshots.",
+   "evidence": "Most top images contain prominent red or orange objects (#1–4, #6–7, #10, #13, #16–19), and the highest random image (#2, activation 7) is a camera with a red button and a rainbow stripe. However, several boxes do not sit on red (#8, #11, #14, #15, #20), and random images still activate moderately at 2–7, so selectivity looks weak.",
+   "missing_data": "Controlled colour-swap tests, such as the same objects recoloured from red to other hues, and the full activation distribution would show whether the unit is colour-tuned or more broadly diffuse.",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mostly responds to saturated red/orange colour patches, such as red vehicles, tail lights, a red umbrella, red cartoon characters, orange packaging and flames. It also responds more weakly to other vivid colour or high-contrast regions like bokeh lights and text on screenshots.\",\n \"evidence\": \"Most top images contain prominent red or orange objects (#1–4, #6–7, #10, #13, #16–19), and the highest random image (#2, activation 7) is a camera with a red button and a rainbow stripe. However, several boxes do not sit on red (#8, #11, #14, #15, #20), and random images still activate moderately at 2–7, so selectivity looks weak.\",\n \"missing_data\": \"Controlled colour-swap tests, such as the same objects recoloured from red to other hues, and the full activation distribution would show whether the unit is colour-tuned or more broadly diffuse.\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mostly responds to saturated red/orange colour patches, such as red vehicles, tail lights, a red umbrella, red cartoon characters, orange packaging and flames. It also responds more weakly to other vivid colour or high-contrast regions like bokeh lights and text on screenshots.\",\n \"evidence\": \"Most top images contain prominent red or orange objects (#1–4, #6–7, #10, #13, #16–19), and the highest random image (#2, activation 7) is a camera with a red button and a rainbow stripe. However, several boxes do not sit on red (#8, #11, #14, #15, #20), and random images still activate moderately at 2–7, so selectivity looks weak.\",\n \"missing_data\": \"Controlled colour-swap tests, such as the same objects recoloured from red to other hues, and the full activation distribution would show whether the unit is colour-tuned or more broadly diffuse.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ }
+}

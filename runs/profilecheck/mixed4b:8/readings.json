@@ -1,0 +1,146 @@
+{
+ "base_s1": {
+  "unit": "mixed4b:8",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0ab83f4525734ce3e84e5324ba910632841548c12351e9b0338c14a118824baa",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to eyes and noses on dog and fox faces. It also responds more weakly to other small, round, eye-like spots, such as blueberries, a soccer ball, dashboard knobs and buttons, and bolts.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to eyes and noses on dog and fox faces. It also responds more weakly to other small, round, eye-like spots, such as blueberries, a soccer ball, dashboard knobs and buttons, and bolts.",
+   "evidence": "About half of the top 20 boxes sit on the eyes or snout of canine faces (#2, #5-7, #10, #12, #13, #16, #18, #19). The rest land on small circular dark or contrasting blobs like the blueberries (#1), dashboard knobs and lights (#9, #11, #17), remote buttons (#14), bolts (#15) and a toy's eye (#8, #20).",
+   "missing_data": "Activations on non-canine animal faces and on isolated round spots without any face context would help, along with the random-sample baseline spread, since the random photos already score 3-5 and the unit may be less selective than it looks.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to eyes and noses on dog and fox faces. It also responds more weakly to other small, round, eye-like spots, such as blueberries, a soccer ball, dashboard knobs and buttons, and bolts.\", \"evidence\": \"About half of the top 20 boxes sit on the eyes or snout of canine faces (#2, #5-7, #10, #12, #13, #16, #18, #19). The rest land on small circular dark or contrasting blobs like the blueberries (#1), dashboard knobs and lights (#9, #11, #17), remote buttons (#14), bolts (#15) and a toy's eye (#8, #20).\", \"missing_data\": \"Activations on non-canine animal faces and on isolated round spots without any face context would help, along with the random-sample baseline spread, since the random photos already score 3-5 and the unit may be less selective than it looks.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to eyes and noses on dog and fox faces. It also responds more weakly to other small, round, eye-like spots, such as blueberries, a soccer ball, dashboard knobs and buttons, and bolts.\", \"evidence\": \"About half of the top 20 boxes sit on the eyes or snout of canine faces (#2, #5-7, #10, #12, #13, #16, #18, #19). The rest land on small circular dark or contrasting blobs like the blueberries (#1), dashboard knobs and lights (#9, #11, #17), remote buttons (#14), bolts (#15) and a toy's eye (#8, #20).\", \"missing_data\": \"Activations on non-canine animal faces and on isolated round spots without any face context would help, along with the random-sample baseline spread, since the random photos already score 3-5 and the unit may be less selective than it looks.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4b:8",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ea3fae30a35499d15d275f71f22b3b06e82fac61c5b48fc60dfdb881e493913e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to small, round, dark, eye-like spots set in a lighter surround. Its main trigger is the eyes and snout of dog and fox faces, and it extends more weakly to eye-like objects such as blueberries, dashboard knobs, screws, remote-control buttons, a soccer ball and a toy's eye.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to small, round, dark, eye-like spots set in a lighter surround. Its main trigger is the eyes and snout of dog and fox faces, and it extends more weakly to eye-like objects such as blueberries, dashboard knobs, screws, remote-control buttons, a soccer ball and a toy's eye.",
+   "evidence": "Animal faces make up about half of the top 20, with the boxes centered on the eyes or nose. The rest are compact round dark blobs such as blueberries (#1), knobs (#9, #11, #17), a screw (#15) and buttons (#14). The unit loses more than most units under luminance-polarity inversion (17th percentile) but survives patch shuffling and edge maps well, which fits a local dark-blob detector rather than a whole-face detector.",
+   "missing_data": "Activation on isolated dark circular blobs versus cropped animal eyes and noses, to tell whether it is an eye detector that generalizes or a plain blob detector that dog faces happen to drive well.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, round, dark, eye-like spots set in a lighter surround. Its main trigger is the eyes and snout of dog and fox faces, and it extends more weakly to eye-like objects such as blueberries, dashboard knobs, screws, remote-control buttons, a soccer ball and a toy's eye.\",\n \"evidence\": \"Animal faces make up about half of the top 20, with the boxes centered on the eyes or nose. The rest are compact round dark blobs such as blueberries (#1), knobs (#9, #11, #17), a screw (#15) and buttons (#14). The unit loses more than most units under luminance-polarity inversion (17th percentile) but survives patch shuffling and edge maps well, which fits a local dark-blob detector rather than a whole-face detector.\",\n \"missing_data\": \"Activation on isolated dark circular blobs versus cropped animal eyes and noses, to tell whether it is an eye detector that generalizes or a plain blob detector that dog faces happen to drive well.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to small, round, dark, eye-like spots set in a lighter surround. Its main trigger is the eyes and snout of dog and fox faces, and it extends more weakly to eye-like objects such as blueberries, dashboard knobs, screws, remote-control buttons, a soccer ball and a toy's eye.\",\n \"evidence\": \"Animal faces make up about half of the top 20, with the boxes centered on the eyes or nose. The rest are compact round dark blobs such as blueberries (#1), knobs (#9, #11, #17), a screw (#15) and buttons (#14). The unit loses more than most units under luminance-polarity inversion (17th percentile) but survives patch shuffling and edge maps well, which fits a local dark-blob detector rather than a whole-face detector.\",\n \"missing_data\": \"Activation on isolated dark circular blobs versus cropped animal eyes and noses, to tell whether it is an eye detector that generalizes or a plain blob detector that dog faces happen to drive well.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4b:8",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0ab83f4525734ce3e84e5324ba910632841548c12351e9b0338c14a118824baa",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to canine faces, especially the eyes and snout of dogs, wolves and foxes. It also responds to small round dark eye-like spots, such as blueberries, knobs, buttons, dashboard indicator lights and a soccer ball.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to canine faces, especially the eyes and snout of dogs, wolves and foxes. It also responds to small round dark eye-like spots, such as blueberries, knobs, buttons, dashboard indicator lights and a soccer ball.",
+   "evidence": "About half the top 20 are dog, wolf or fox faces, with boxes on the eyes or nose. The rest box small round dark circular objects that look like eyes, and random photos with no such features sit at a moderately high baseline of 3-5.",
+   "missing_data": "Activations on non-canine animal faces (cats, humans) and on isolated round objects without a face. This would show whether the core feature is canine faces or generic eye-like circular spots.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to canine faces, especially the eyes and snout of dogs, wolves and foxes. It also responds to small round dark eye-like spots, such as blueberries, knobs, buttons, dashboard indicator lights and a soccer ball.\",\n \"evidence\": \"About half the top 20 are dog, wolf or fox faces, with boxes on the eyes or nose. The rest box small round dark circular objects that look like eyes, and random photos with no such features sit at a moderately high baseline of 3-5.\",\n \"missing_data\": \"Activations on non-canine animal faces (cats, humans) and on isolated round objects without a face. This would show whether the core feature is canine faces or generic eye-like circular spots.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to canine faces, especially the eyes and snout of dogs, wolves and foxes. It also responds to small round dark eye-like spots, such as blueberries, knobs, buttons, dashboard indicator lights and a soccer ball.\",\n \"evidence\": \"About half the top 20 are dog, wolf or fox faces, with boxes on the eyes or nose. The rest box small round dark circular objects that look like eyes, and random photos with no such features sit at a moderately high baseline of 3-5.\",\n \"missing_data\": \"Activations on non-canine animal faces (cats, humans) and on isolated round objects without a face. This would show whether the core feature is canine faces or generic eye-like circular spots.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4b:8",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ea3fae30a35499d15d275f71f22b3b06e82fac61c5b48fc60dfdb881e493913e",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects small, dark, round, eye-like spots set in a lighter surround. Its main and most consistent case is the eyes and nose of dogs and other canids (wolf, fox, husky, beagle, corgi), and it extends more weakly to eye-like round objects such as blueberries, dashboard knobs and buttons, remote-control buttons, screw heads and a soccer ball.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects small, dark, round, eye-like spots set in a lighter surround. Its main and most consistent case is the eyes and nose of dogs and other canids (wolf, fox, husky, beagle, corgi), and it extends more weakly to eye-like round objects such as blueberries, dashboard knobs and buttons, remote-control buttons, screw heads and a soccer ball.",
+   "evidence": "Twelve of the top 20 boxes sit on canid eyes or snouts, and the rest fall on small dark circular things (berries, knobs, bolts, buttons); random photos without these spots stay at 3-5. The unit loses more than most of its layer under luminance polarity inversion (percentile 17), which fits dark-on-light spots, and it holds up well under patch shuffling (percentile 89), which fits a small local feature rather than whole-object layout.",
+   "missing_data": "Activation on synthetic dark dots versus light dots, and on dog faces with the eyes masked, would show whether the unit is a generic dark-blob detector or truly prefers eyes.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, dark, round, eye-like spots set in a lighter surround. Its main and most consistent case is the eyes and nose of dogs and other canids (wolf, fox, husky, beagle, corgi), and it extends more weakly to eye-like round objects such as blueberries, dashboard knobs and buttons, remote-control buttons, screw heads and a soccer ball.\",\n \"evidence\": \"Twelve of the top 20 boxes sit on canid eyes or snouts, and the rest fall on small dark circular things (berries, knobs, bolts, buttons); random photos without these spots stay at 3-5. The unit loses more than most of its layer under luminance polarity inversion (percentile 17), which fits dark-on-light spots, and it holds up well under patch shuffling (percentile 89), which fits a small local feature rather than whole-object layout.\",\n \"missing_data\": \"Activation on synthetic dark dots versus light dots, and on dog faces with the eyes masked, would show whether the unit is a generic dark-blob detector or truly prefers eyes.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects small, dark, round, eye-like spots set in a lighter surround. Its main and most consistent case is the eyes and nose of dogs and other canids (wolf, fox, husky, beagle, corgi), and it extends more weakly to eye-like round objects such as blueberries, dashboard knobs and buttons, remote-control buttons, screw heads and a soccer ball.\",\n \"evidence\": \"Twelve of the top 20 boxes sit on canid eyes or snouts, and the rest fall on small dark circular things (berries, knobs, bolts, buttons); random photos without these spots stay at 3-5. The unit loses more than most of its layer under luminance polarity inversion (percentile 17), which fits dark-on-light spots, and it holds up well under patch shuffling (percentile 89), which fits a small local feature rather than whole-object layout.\",\n \"missing_data\": \"Activation on synthetic dark dots versus light dots, and on dog faces with the eyes masked, would show whether the unit is a generic dark-blob detector or truly prefers eyes.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4b:8",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0ab83f4525734ce3e84e5324ba910632841548c12351e9b0338c14a118824baa",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to small, round, dark, high-contrast spots that look like eyes, such as animal eyes and noses, blueberries, knobs, buttons, screws and lights.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to small, round, dark, high-contrast spots that look like eyes, such as animal eyes and noses, blueberries, knobs, buttons, screws and lights.",
+   "evidence": "Most of the red boxes sit on dog or fox eyes and noses (#2, #5–7, #10, #12, #13, #16, #19). The rest are eye-like circular blobs: blueberries (#1), a ball (#3), dashboard knobs and lights (#9, #11, #17), remote buttons (#14) and screws (#15), all at similar strength (8–10).",
+   "missing_data": "Activation maps on random images, plus controlled tests (isolated dark dots vs. real eyes, and dog faces with the eyes masked out) to tell a generic 'dark circle' detector apart from an eye detector.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to small, round, dark, high-contrast spots that look like eyes, such as animal eyes and noses, blueberries, knobs, buttons, screws and lights.\",\n \"evidence\": \"Most of the red boxes sit on dog or fox eyes and noses (#2, #5–7, #10, #12, #13, #16, #19). The rest are eye-like circular blobs: blueberries (#1), a ball (#3), dashboard knobs and lights (#9, #11, #17), remote buttons (#14) and screws (#15), all at similar strength (8–10).\",\n \"missing_data\": \"Activation maps on random images, plus controlled tests (isolated dark dots vs. real eyes, and dog faces with the eyes masked out) to tell a generic 'dark circle' detector apart from an eye detector.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to small, round, dark, high-contrast spots that look like eyes, such as animal eyes and noses, blueberries, knobs, buttons, screws and lights.\",\n \"evidence\": \"Most of the red boxes sit on dog or fox eyes and noses (#2, #5–7, #10, #12, #13, #16, #19). The rest are eye-like circular blobs: blueberries (#1), a ball (#3), dashboard knobs and lights (#9, #11, #17), remote buttons (#14) and screws (#15), all at similar strength (8–10).\",\n \"missing_data\": \"Activation maps on random images, plus controlled tests (isolated dark dots vs. real eyes, and dog faces with the eyes masked out) to tell a generic 'dark circle' detector apart from an eye detector.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4b:8",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ea3fae30a35499d15d275f71f22b3b06e82fac61c5b48fc60dfdb881e493913e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects a small, dark, roughly circular spot surrounded by lighter surround, a local 'dark round blob' detector. This fires on dog and fox eyes and noses as well as on blueberries, knobs, buttons, and indicator lights.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects a small, dark, roughly circular spot surrounded by lighter surround, a local 'dark round blob' detector. This fires on dog and fox eyes and noses as well as on blueberries, knobs, buttons, and indicator lights.",
+   "evidence": "The red boxes repeatedly sit on eyes or noses (#2, #5, #7, #10, #12, #16, #19) and on blueberries, a ball, dashboard knobs, remote buttons, and bolts (#1, #3, #9, #11, #14, #15, #17). It keeps its response under patch shuffling (89th percentile), so it is local, and it loses unusually much under luminance-polarity inversion (17th percentile), so the dark-on-light sign matters.",
+   "missing_data": "Synthetic tests with isolated dark versus light dots at varied sizes, and occlusion of eyes versus noses on animal faces, would show whether animal facial features are preferred over generic dark circles.",
+   "confidence": 0.65
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects a small, dark, roughly circular spot surrounded by lighter surround, a local 'dark round blob' detector. This fires on dog and fox eyes and noses as well as on blueberries, knobs, buttons, and indicator lights.\",\n \"evidence\": \"The red boxes repeatedly sit on eyes or noses (#2, #5, #7, #10, #12, #16, #19) and on blueberries, a ball, dashboard knobs, remote buttons, and bolts (#1, #3, #9, #11, #14, #15, #17). It keeps its response under patch shuffling (89th percentile), so it is local, and it loses unusually much under luminance-polarity inversion (17th percentile), so the dark-on-light sign matters.\",\n \"missing_data\": \"Synthetic tests with isolated dark versus light dots at varied sizes, and occlusion of eyes versus noses on animal faces, would show whether animal facial features are preferred over generic dark circles.\",\n \"confidence\": 0.65}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects a small, dark, roughly circular spot surrounded by lighter surround, a local 'dark round blob' detector. This fires on dog and fox eyes and noses as well as on blueberries, knobs, buttons, and indicator lights.\",\n \"evidence\": \"The red boxes repeatedly sit on eyes or noses (#2, #5, #7, #10, #12, #16, #19) and on blueberries, a ball, dashboard knobs, remote buttons, and bolts (#1, #3, #9, #11, #14, #15, #17). It keeps its response under patch shuffling (89th percentile), so it is local, and it loses unusually much under luminance-polarity inversion (17th percentile), so the dark-on-light sign matters.\",\n \"missing_data\": \"Synthetic tests with isolated dark versus light dots at varied sizes, and occlusion of eyes versus noses on animal faces, would show whether animal facial features are preferred over generic dark circles.\",\n \"confidence\": 0.65}\n```"
+  ],
+  "attempts": 1
+ }
+}
