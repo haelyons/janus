@@ -376,3 +376,25 @@ readers of 447; the essay: two of four are car neurons and two share a pose; rou
 5. On the 7 ground-truth units, the top reading is a bare or Q0 sample in at least 5.
 6. 5a:719 and the 4d readers: reported, not predicted. Priors: some 5a:719 reading names a bow-tie or pinched
    shape; no 4d reader reading names a view shared by cars and dogs.
+
+# Round 21: which views help, by ground truth (tools/lookviews.py, claim-blind author)
+(sealed 2026-10-21, before lookviews.py exists; views from the blind list in authors/views.reply.json, ranks 2 and 3)
+
+Two views added to the round-20 card (whole photos, peak boxed, 10 random), in a 2x2 design: C = the same 20
+photos cropped to the unit's effective receptive field (gradient rule, no per-unit choice); P = an invariance
+profile, the unit's retention under the 10 battery transforms with its percentile among all units of its layer. Four
+conditions (base, C, P, CP), 3 bare readings each. A judge frozen before any reading (tools/judge_r21.py) rates each
+reading against the reference.
+
+Units and references: 3a:136, 3a:110 (high-low frequency boundary; Distill); 3b:379 (a curve at one orientation;
+Distill, round 17a); 4b:237 windows, 4b:373 wheels (Zoom In, round 20); 4b:431 (facing one direction: Zoom In's
+dog-head pathway, mirror drop at the 100th percentile, round 20); 4d:409 (side-on pose shared across kinds, round 13).
+Targets: 4e:55 (the essay's V), 5a:719 (the essay's pinched-center shape).
+
+1. Crops help shallow units: mean judge with C (C, CP) at least 1 point above without (base, P) on at least 2 of
+   3a:136, 3a:110, 3b:379.
+2. The profile helps 4b:431: a facing direction named in at least 2 of the 6 P/CP readings, at most 1 of the 6
+   base/C readings.
+3. Car parts: mean judge at least 4 in every condition (the added views don't hurt).
+4. 4d:409: judge at least 3 against shared pose in at least 2 of 3 readings in every condition.
+5. Targets: V judge at most 2, and pinched-shape judge at most 2, in every condition (no view flips them).

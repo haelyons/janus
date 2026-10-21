@@ -1,0 +1,290 @@
+{
+ "base_s2": {
+  "unit": "mixed4b:431",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the fur of mammals, mostly dogs, firing most strongly on furry areas around the head, ears, neck and shoulders. It responds more weakly to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the fur of mammals, mostly dogs, firing most strongly on furry areas around the head, ears, neck and shoulders. It responds more weakly to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+   "evidence": "Most of the top 20 are dogs (a dhole, many breeds) with boxes on furry head, ear and neck regions, and the remaining top images are other fur-covered mammals at activations 8-10. The random images (food, fish, reptile, insect, objects, flowers) stay low at 0-4.",
+   "missing_data": "Images of fur-like textures without an animal (fur coats, plush toys, fuzzy fabric) and of non-furry mammals would show whether the unit codes fur texture or mammal/dog identity.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the fur of mammals, mostly dogs, firing most strongly on furry areas around the head, ears, neck and shoulders. It responds more weakly to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs (a dhole, many breeds) with boxes on furry head, ear and neck regions, and the remaining top images are other fur-covered mammals at activations 8-10. The random images (food, fish, reptile, insect, objects, flowers) stay low at 0-4.\",\n \"missing_data\": \"Images of fur-like textures without an animal (fur coats, plush toys, fuzzy fabric) and of non-furry mammals would show whether the unit codes fur texture or mammal/dog identity.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the fur of mammals, mostly dogs, firing most strongly on furry areas around the head, ears, neck and shoulders. It responds more weakly to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs (a dhole, many breeds) with boxes on furry head, ear and neck regions, and the remaining top images are other fur-covered mammals at activations 8-10. The random images (food, fish, reptile, insect, objects, flowers) stay low at 0-4.\",\n \"missing_data\": \"Images of fur-like textures without an animal (fur coats, plush toys, fuzzy fabric) and of non-furry mammals would show whether the unit codes fur texture or mammal/dog identity.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4b:431",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal fur and coat texture, strongest on dogs and dog-like canids (dhole, hyena) and their heads, ears and necks. It responds more weakly to other furry mammals such as monkeys, hamsters, squirrels and minks.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal fur and coat texture, strongest on dogs and dog-like canids (dhole, hyena) and their heads, ears and necks. It responds more weakly to other furry mammals such as monkeys, hamsters, squirrels and minks.",
+   "evidence": "All 20 top images are furry mammals, and most of them are dogs; the boxes sit on fur over ears, cheeks and chest. Non-dog mammals (proboscis monkey, capuchin, hamster, squirrel, mink) score 8-10, while random non-mammal images score only 0-4.",
+   "missing_data": "Activations on non-dog furry mammals such as cats, bears and sheep, and on fur-like textures that are not animals (fur rugs, plush toys), would show whether the unit codes dogs or fur texture in general.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, strongest on dogs and dog-like canids (dhole, hyena) and their heads, ears and necks. It responds more weakly to other furry mammals such as monkeys, hamsters, squirrels and minks.\",\n \"evidence\": \"All 20 top images are furry mammals, and most of them are dogs; the boxes sit on fur over ears, cheeks and chest. Non-dog mammals (proboscis monkey, capuchin, hamster, squirrel, mink) score 8-10, while random non-mammal images score only 0-4.\",\n \"missing_data\": \"Activations on non-dog furry mammals such as cats, bears and sheep, and on fur-like textures that are not animals (fur rugs, plush toys), would show whether the unit codes dogs or fur texture in general.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, strongest on dogs and dog-like canids (dhole, hyena) and their heads, ears and necks. It responds more weakly to other furry mammals such as monkeys, hamsters, squirrels and minks.\",\n \"evidence\": \"All 20 top images are furry mammals, and most of them are dogs; the boxes sit on fur over ears, cheeks and chest. Non-dog mammals (proboscis monkey, capuchin, hamster, squirrel, mink) score 8-10, while random non-mammal images score only 0-4.\",\n \"missing_data\": \"Activations on non-dog furry mammals such as cats, bears and sheep, and on fur-like textures that are not animals (fur rugs, plush toys), would show whether the unit codes dogs or fur texture in general.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "C_s1": {
+  "unit": "mixed4b:431",
+  "reading": "C_s1",
+  "condition": "C",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7f4c59444f5b127305d8a72f0079fb7f0dfe083de2847695936691419759150b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal fur and coat texture, most strongly on dog heads, necks and ears, with weaker extensions to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal fur and coat texture, most strongly on dog heads, necks and ears, with weaker extensions to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+   "evidence": "Most of the top 20 are dogs, with the boxes on furred head, ear or neck regions, while the non-dogs (proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals boxed on fur; the random images with no fur (food, fish, crocodile, beetle, flowers) score 0-4.",
+   "missing_data": "Activations on non-mammal furry or fuzzy textures (plush toys, fur fabric, feathers), and on hairless dog parts, would show whether the unit codes fur texture or dog/mammal identity.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, most strongly on dog heads, necks and ears, with weaker extensions to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with the boxes on furred head, ear or neck regions, while the non-dogs (proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals boxed on fur; the random images with no fur (food, fish, crocodile, beetle, flowers) score 0-4.\",\n \"missing_data\": \"Activations on non-mammal furry or fuzzy textures (plush toys, fur fabric, feathers), and on hairless dog parts, would show whether the unit codes fur texture or dog/mammal identity.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, most strongly on dog heads, necks and ears, with weaker extensions to other furry mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with the boxes on furred head, ear or neck regions, while the non-dogs (proboscis monkey, capuchin, hyena, hamster, squirrel, mink) are all furry mammals boxed on fur; the random images with no fur (food, fish, crocodile, beetle, flowers) score 0-4.\",\n \"missing_data\": \"Activations on non-mammal furry or fuzzy textures (plush toys, fur fabric, feathers), and on hairless dog parts, would show whether the unit codes fur texture or dog/mammal identity.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed4b:431",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to fur on mammals, mostly dogs (head, ears, neck/chest fur), with weaker responses to fur on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to fur on mammals, mostly dogs (head, ears, neck/chest fur), with weaker responses to fur on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+   "evidence": "Most of the top 20 are dogs, with boxes on furry regions like ears, neck and shoulders, and the rest are other furry mammals (#4, #9, #11, #12, #17, #19) at similar activations of 8-10. Random images with no mammals stay low (0-4), and non-furry animals like the fish, crocodile and beetle score only 2.",
+   "missing_data": "Activations on non-animal furry or textured objects (fur coats, plush toys, carpets) and on many non-dog mammals, to tell whether the unit codes for fur texture or for dogs specifically.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to fur on mammals, mostly dogs (head, ears, neck/chest fur), with weaker responses to fur on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with boxes on furry regions like ears, neck and shoulders, and the rest are other furry mammals (#4, #9, #11, #12, #17, #19) at similar activations of 8-10. Random images with no mammals stay low (0-4), and non-furry animals like the fish, crocodile and beetle score only 2.\",\n \"missing_data\": \"Activations on non-animal furry or textured objects (fur coats, plush toys, carpets) and on many non-dog mammals, to tell whether the unit codes for fur texture or for dogs specifically.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to fur on mammals, mostly dogs (head, ears, neck/chest fur), with weaker responses to fur on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with boxes on furry regions like ears, neck and shoulders, and the rest are other furry mammals (#4, #9, #11, #12, #17, #19) at similar activations of 8-10. Random images with no mammals stay low (0-4), and non-furry animals like the fish, crocodile and beetle score only 2.\",\n \"missing_data\": \"Activations on non-animal furry or textured objects (fur coats, plush toys, carpets) and on many non-dog mammals, to tell whether the unit codes for fur texture or for dogs specifically.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "C_s3": {
+  "unit": "mixed4b:431",
+  "reading": "C_s3",
+  "condition": "C",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7f4c59444f5b127305d8a72f0079fb7f0dfe083de2847695936691419759150b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal heads and the area around them, especially dog faces, ears, necks and cheek fur. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, a hamster, a squirrel and a mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal heads and the area around them, especially dog faces, ears, necks and cheek fur. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, a hamster, a squirrel and a mink.",
+   "evidence": "Most of the top 20 are dogs, with the red boxes on fur near the head, ear or neck. The non-dog top hits are all fur-covered mammals with the boxes on head or neck fur, while the random photos (people, food, fish, insects, objects) score only 0-4.",
+   "missing_data": "Activations on furry non-animal textures (fur coats, plush toys) and on dog photos without the head visible would show whether the unit encodes fur texture or mammal heads.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal heads and the area around them, especially dog faces, ears, necks and cheek fur. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, a hamster, a squirrel and a mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with the red boxes on fur near the head, ear or neck. The non-dog top hits are all fur-covered mammals with the boxes on head or neck fur, while the random photos (people, food, fish, insects, objects) score only 0-4.\",\n \"missing_data\": \"Activations on furry non-animal textures (fur coats, plush toys) and on dog photos without the head visible would show whether the unit encodes fur texture or mammal heads.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal heads and the area around them, especially dog faces, ears, necks and cheek fur. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, a hamster, a squirrel and a mink.\",\n \"evidence\": \"Most of the top 20 are dogs, with the red boxes on fur near the head, ear or neck. The non-dog top hits are all fur-covered mammals with the boxes on head or neck fur, while the random photos (people, food, fish, insects, objects) score only 0-4.\",\n \"missing_data\": \"Activations on furry non-animal textures (fur coats, plush toys) and on dog photos without the head visible would show whether the unit encodes fur texture or mammal heads.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed4b:431",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4cb3f3a8eb0ea4778a8cec26c1dac4557f877b245b377f61ac3b11915bf32f15",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the fur of furry mammals at the head/neck/cheek region, mostly dogs, with the boxes landing on fur-covered cheeks, ears and necks next to the face. It extends more weakly to other furry mammals (dhole, hyena, monkeys, hamster, squirrel, mink).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the fur of furry mammals at the head/neck/cheek region, mostly dogs, with the boxes landing on fur-covered cheeks, ears and necks next to the face. It extends more weakly to other furry mammals (dhole, hyena, monkeys, hamster, squirrel, mink).",
+   "evidence": "All 20 top photos are furry mammals, 15 of them dogs or canids, and the boxes sit on fur beside the face, while random photos without mammals score 0-4. The unit is much more sensitive than its layer to patch shuffling, rotation and mirroring (percentiles 0-3), which suggests it depends on the spatial layout of the head and fur rather than on texture alone.",
+   "missing_data": "Activations on furry but faceless images (fur rugs, mammal bodies seen without heads) and on non-furry animal faces would show whether the unit codes fur texture or head-adjacent fur; per-image mirror results would explain the odd left-right sensitivity.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the fur of furry mammals at the head/neck/cheek region, mostly dogs, with the boxes landing on fur-covered cheeks, ears and necks next to the face. It extends more weakly to other furry mammals (dhole, hyena, monkeys, hamster, squirrel, mink).\", \"evidence\": \"All 20 top photos are furry mammals, 15 of them dogs or canids, and the boxes sit on fur beside the face, while random photos without mammals score 0-4. The unit is much more sensitive than its layer to patch shuffling, rotation and mirroring (percentiles 0-3), which suggests it depends on the spatial layout of the head and fur rather than on texture alone.\", \"missing_data\": \"Activations on furry but faceless images (fur rugs, mammal bodies seen without heads) and on non-furry animal faces would show whether the unit codes fur texture or head-adjacent fur; per-image mirror results would explain the odd left-right sensitivity.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the fur of furry mammals at the head/neck/cheek region, mostly dogs, with the boxes landing on fur-covered cheeks, ears and necks next to the face. It extends more weakly to other furry mammals (dhole, hyena, monkeys, hamster, squirrel, mink).\", \"evidence\": \"All 20 top photos are furry mammals, 15 of them dogs or canids, and the boxes sit on fur beside the face, while random photos without mammals score 0-4. The unit is much more sensitive than its layer to patch shuffling, rotation and mirroring (percentiles 0-3), which suggests it depends on the spatial layout of the head and fur rather than on texture alone.\", \"missing_data\": \"Activations on furry but faceless images (fur rugs, mammal bodies seen without heads) and on non-furry animal faces would show whether the unit codes fur texture or head-adjacent fur; per-image mirror results would explain the odd left-right sensitivity.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4b:431",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4cb3f3a8eb0ea4778a8cec26c1dac4557f877b245b377f61ac3b11915bf32f15",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to furry mammal heads and faces, mostly dogs (often at the side of the face near an ear, cheek or neck ruff), with weaker responses to other furry mammals with similar fur-and-face structure such as monkeys, a hyena, a hamster, a squirrel and a mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to furry mammal heads and faces, mostly dogs (often at the side of the face near an ear, cheek or neck ruff), with weaker responses to other furry mammals with similar fur-and-face structure such as monkeys, a hyena, a hamster, a squirrel and a mink.",
+   "evidence": "About 14 of the top 20 photos are dogs and the rest are furry mammals, the crops centre on fur next to a face, and random non-animal photos score 0-4. The unit is unusually sensitive to mirroring, rotation and patch shuffling (percentiles 0-3), which suggests it depends on oriented face/head configuration rather than fur texture alone.",
+   "missing_data": "Activations on fur texture without a face, and on faces of non-furry animals or humans, to tell 'furry face side' apart from 'fur texture'; also mirrored versions of the top images, to explain the extreme left-right sensitivity.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to furry mammal heads and faces, mostly dogs (often at the side of the face near an ear, cheek or neck ruff), with weaker responses to other furry mammals with similar fur-and-face structure such as monkeys, a hyena, a hamster, a squirrel and a mink.\",\n \"evidence\": \"About 14 of the top 20 photos are dogs and the rest are furry mammals, the crops centre on fur next to a face, and random non-animal photos score 0-4. The unit is unusually sensitive to mirroring, rotation and patch shuffling (percentiles 0-3), which suggests it depends on oriented face/head configuration rather than fur texture alone.\",\n \"missing_data\": \"Activations on fur texture without a face, and on faces of non-furry animals or humans, to tell 'furry face side' apart from 'fur texture'; also mirrored versions of the top images, to explain the extreme left-right sensitivity.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to furry mammal heads and faces, mostly dogs (often at the side of the face near an ear, cheek or neck ruff), with weaker responses to other furry mammals with similar fur-and-face structure such as monkeys, a hyena, a hamster, a squirrel and a mink.\",\n \"evidence\": \"About 14 of the top 20 photos are dogs and the rest are furry mammals, the crops centre on fur next to a face, and random non-animal photos score 0-4. The unit is unusually sensitive to mirroring, rotation and patch shuffling (percentiles 0-3), which suggests it depends on oriented face/head configuration rather than fur texture alone.\",\n \"missing_data\": \"Activations on fur texture without a face, and on faces of non-furry animals or humans, to tell 'furry face side' apart from 'fur texture'; also mirrored versions of the top images, to explain the extreme left-right sensitivity.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "C_s2": {
+  "unit": "mixed4b:431",
+  "reading": "C_s2",
+  "condition": "C",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7f4c59444f5b127305d8a72f0079fb7f0dfe083de2847695936691419759150b",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to fur on mammals, mainly on the side of the head, cheek, ear or neck of dogs, especially where furry head meets ear or body. It responds more weakly to the same kind of furry face or neck region on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to fur on mammals, mainly on the side of the head, cheek, ear or neck of dogs, especially where furry head meets ear or body. It responds more weakly to the same kind of furry face or neck region on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.",
+   "evidence": "Dogs make up 13 of the top 20 photos. Nearly every red box and crop sits on furry fur near the head, ear or neck (dog ears in #2, #10, #13; the cheek or neck in #3, #6, #8), and the non-dog top images are all furry mammals (#4, #9, #11, #12, #17, #19). The random photos without furry mammals all score 0-4.",
+   "missing_data": "Activations on furry mammals photographed away from the head (for example a body-only crop), and on furry non-animal textures such as fur coats or plush toys, would show whether the unit responds to fur texture in general or to the animal head and neck.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to fur on mammals, mainly on the side of the head, cheek, ear or neck of dogs, especially where furry head meets ear or body. It responds more weakly to the same kind of furry face or neck region on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Dogs make up 13 of the top 20 photos. Nearly every red box and crop sits on furry fur near the head, ear or neck (dog ears in #2, #10, #13; the cheek or neck in #3, #6, #8), and the non-dog top images are all furry mammals (#4, #9, #11, #12, #17, #19). The random photos without furry mammals all score 0-4.\",\n \"missing_data\": \"Activations on furry mammals photographed away from the head (for example a body-only crop), and on furry non-animal textures such as fur coats or plush toys, would show whether the unit responds to fur texture in general or to the animal head and neck.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to fur on mammals, mainly on the side of the head, cheek, ear or neck of dogs, especially where furry head meets ear or body. It responds more weakly to the same kind of furry face or neck region on other mammals such as monkeys, hyenas, hamsters, squirrels and mink.\",\n \"evidence\": \"Dogs make up 13 of the top 20 photos. Nearly every red box and crop sits on furry fur near the head, ear or neck (dog ears in #2, #10, #13; the cheek or neck in #3, #6, #8), and the non-dog top images are all furry mammals (#4, #9, #11, #12, #17, #19). The random photos without furry mammals all score 0-4.\",\n \"missing_data\": \"Activations on furry mammals photographed away from the head (for example a body-only crop), and on furry non-animal textures such as fur coats or plush toys, would show whether the unit responds to fur texture in general or to the animal head and neck.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4b:431",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4cb3f3a8eb0ea4778a8cec26c1dac4557f877b245b377f61ac3b11915bf32f15",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to furry mammal heads and upper bodies, mostly dogs, with the strongest spot usually on fur at the side of the face, the cheek or the ear. It extends more weakly to other furry mammals such as a dhole, monkeys, a hyena, a hamster, a squirrel and a mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to furry mammal heads and upper bodies, mostly dogs, with the strongest spot usually on fur at the side of the face, the cheek or the ear. It extends more weakly to other furry mammals such as a dhole, monkeys, a hyena, a hamster, a squirrel and a mink.",
+   "evidence": "Thirteen of the top 20 are dogs and the rest are other furry mammals, with boxes on the cheek, ear or neck fur, while random photos score only 0 to 4. The unit is unusually sensitive to mirroring (keeps 41%, percentile 0), 180-degree rotation and patch shuffling, which suggests it codes a specific spatial arrangement of the face or head, perhaps with a preferred facing direction, rather than fur texture alone.",
+   "missing_data": "Activation on furry animals from the rest of the collection that are not dogs (cats, bears, rabbits) and on mirrored versions of the top photos, to tell whether it prefers dogs or furry mammal heads in general and whether it prefers one facing direction.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to furry mammal heads and upper bodies, mostly dogs, with the strongest spot usually on fur at the side of the face, the cheek or the ear. It extends more weakly to other furry mammals such as a dhole, monkeys, a hyena, a hamster, a squirrel and a mink.\", \"evidence\": \"Thirteen of the top 20 are dogs and the rest are other furry mammals, with boxes on the cheek, ear or neck fur, while random photos score only 0 to 4. The unit is unusually sensitive to mirroring (keeps 41%, percentile 0), 180-degree rotation and patch shuffling, which suggests it codes a specific spatial arrangement of the face or head, perhaps with a preferred facing direction, rather than fur texture alone.\", \"missing_data\": \"Activation on furry animals from the rest of the collection that are not dogs (cats, bears, rabbits) and on mirrored versions of the top photos, to tell whether it prefers dogs or furry mammal heads in general and whether it prefers one facing direction.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to furry mammal heads and upper bodies, mostly dogs, with the strongest spot usually on fur at the side of the face, the cheek or the ear. It extends more weakly to other furry mammals such as a dhole, monkeys, a hyena, a hamster, a squirrel and a mink.\", \"evidence\": \"Thirteen of the top 20 are dogs and the rest are other furry mammals, with boxes on the cheek, ear or neck fur, while random photos score only 0 to 4. The unit is unusually sensitive to mirroring (keeps 41%, percentile 0), 180-degree rotation and patch shuffling, which suggests it codes a specific spatial arrangement of the face or head, perhaps with a preferred facing direction, rather than fur texture alone.\", \"missing_data\": \"Activation on furry animals from the rest of the collection that are not dogs (cats, bears, rabbits) and on mirrored versions of the top photos, to tell whether it prefers dogs or furry mammal heads in general and whether it prefers one facing direction.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4b:431",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "43b3bf1fdc534e43cffecc979857dc5b821ad5d121d8efd7e6b81edbc07b709c",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds mainly to the fur at the viewer's-left side of a dog's head, around the ear and cheek, with weaker responses to the same region on other furry mammals such as monkeys, a hyena, a hamster, a squirrel and a mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds mainly to the fur at the viewer's-left side of a dog's head, around the ear and cheek, with weaker responses to the same region on other furry mammals such as monkeys, a hyena, a hamster, a squirrel and a mink.",
+   "evidence": "Fourteen of the top 20 photos are dogs, and the rest are other furry mammals; the boxes usually sit on the left ear or cheek fur, while random non-animal photos stay at 0-4. The unit is unusually hurt by mirroring (keeps 41%, 0th percentile), rotation and patch shuffling, which fits a left-right asymmetric, upright head-side configuration rather than plain fur texture.",
+   "missing_data": "Mirrored versions of the top photos showing where the peak moves, plus activation on fur texture with no head, would test whether this is head configuration or oriented fur texture.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the fur at the viewer's-left side of a dog's head, around the ear and cheek, with weaker responses to the same region on other furry mammals such as monkeys, a hyena, a hamster, a squirrel and a mink.\",\n \"evidence\": \"Fourteen of the top 20 photos are dogs, and the rest are other furry mammals; the boxes usually sit on the left ear or cheek fur, while random non-animal photos stay at 0-4. The unit is unusually hurt by mirroring (keeps 41%, 0th percentile), rotation and patch shuffling, which fits a left-right asymmetric, upright head-side configuration rather than plain fur texture.\",\n \"missing_data\": \"Mirrored versions of the top photos showing where the peak moves, plus activation on fur texture with no head, would test whether this is head configuration or oriented fur texture.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the fur at the viewer's-left side of a dog's head, around the ear and cheek, with weaker responses to the same region on other furry mammals such as monkeys, a hyena, a hamster, a squirrel and a mink.\",\n \"evidence\": \"Fourteen of the top 20 photos are dogs, and the rest are other furry mammals; the boxes usually sit on the left ear or cheek fur, while random non-animal photos stay at 0-4. The unit is unusually hurt by mirroring (keeps 41%, 0th percentile), rotation and patch shuffling, which fits a left-right asymmetric, upright head-side configuration rather than plain fur texture.\",\n \"missing_data\": \"Mirrored versions of the top photos showing where the peak moves, plus activation on fur texture with no head, would test whether this is head configuration or oriented fur texture.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4b:431",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "43b3bf1fdc534e43cffecc979857dc5b821ad5d121d8efd7e6b81edbc07b709c",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds mainly to the furry head, ear and neck region of dogs, and more weakly to the same region on other furry mammals (fox, hyena, monkeys, hamster, squirrel, mink).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds mainly to the furry head, ear and neck region of dogs, and more weakly to the same region on other furry mammals (fox, hyena, monkeys, hamster, squirrel, mink).",
+   "evidence": "Fourteen of the top 20 photos are dogs or dog-like canids, with boxes on fur at the ear, cheek or neck; the rest are other furry mammals at slightly lower activations, while random non-mammal photos score 0-4. The unit loses much more than most units under patch shuffling and 180-degree rotation, so it depends on an intact, upright animal configuration rather than fur texture alone; its near-total loss under mirroring (percentile 0) is unusual and unexplained.",
+   "missing_data": "Activations for a broader set of mammal photos (cats, bears, horses), plus mirrored versions of the top photos, to tell whether it is specific to dogs or to furry heads in general and why it is so sensitive to left-right flips.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the furry head, ear and neck region of dogs, and more weakly to the same region on other furry mammals (fox, hyena, monkeys, hamster, squirrel, mink).\",\n \"evidence\": \"Fourteen of the top 20 photos are dogs or dog-like canids, with boxes on fur at the ear, cheek or neck; the rest are other furry mammals at slightly lower activations, while random non-mammal photos score 0-4. The unit loses much more than most units under patch shuffling and 180-degree rotation, so it depends on an intact, upright animal configuration rather than fur texture alone; its near-total loss under mirroring (percentile 0) is unusual and unexplained.\",\n \"missing_data\": \"Activations for a broader set of mammal photos (cats, bears, horses), plus mirrored versions of the top photos, to tell whether it is specific to dogs or to furry heads in general and why it is so sensitive to left-right flips.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the furry head, ear and neck region of dogs, and more weakly to the same region on other furry mammals (fox, hyena, monkeys, hamster, squirrel, mink).\",\n \"evidence\": \"Fourteen of the top 20 photos are dogs or dog-like canids, with boxes on fur at the ear, cheek or neck; the rest are other furry mammals at slightly lower activations, while random non-mammal photos score 0-4. The unit loses much more than most units under patch shuffling and 180-degree rotation, so it depends on an intact, upright animal configuration rather than fur texture alone; its near-total loss under mirroring (percentile 0) is unusual and unexplained.\",\n \"missing_data\": \"Activations for a broader set of mammal photos (cats, bears, horses), plus mirrored versions of the top photos, to tell whether it is specific to dogs or to furry heads in general and why it is so sensitive to left-right flips.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4b:431",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "43b3bf1fdc534e43cffecc979857dc5b821ad5d121d8efd7e6b81edbc07b709c",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds mainly to the fur around the head of dogs, especially the ear and cheek region on one side of the face, and more weakly to the same region in other furry mammals (monkeys, hyena, hamster, squirrel, mink).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds mainly to the fur around the head of dogs, especially the ear and cheek region on one side of the face, and more weakly to the same region in other furry mammals (monkeys, hyena, hamster, squirrel, mink).",
+   "evidence": "14 of the top 20 photos are dogs, and the red boxes sit on furry ear, cheek or neck regions; the other 6 are furry mammals at activation 8-10, while random non-mammal photos score 0-4. The unit is unusually sensitive to mirroring (percentile 0), patch shuffling and 180° rotation (both percentile 3), which suggests it depends on a specific side and arrangement of head parts rather than on fur texture alone.",
+   "missing_data": "Activations on non-dog mammal heads and on mirrored dog faces, plus spatial maps of where activation falls on whole faces, would show whether it is a side-specific ear/cheek detector and how dog-specific it is.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the fur around the head of dogs, especially the ear and cheek region on one side of the face, and more weakly to the same region in other furry mammals (monkeys, hyena, hamster, squirrel, mink).\",\n \"evidence\": \"14 of the top 20 photos are dogs, and the red boxes sit on furry ear, cheek or neck regions; the other 6 are furry mammals at activation 8-10, while random non-mammal photos score 0-4. The unit is unusually sensitive to mirroring (percentile 0), patch shuffling and 180° rotation (both percentile 3), which suggests it depends on a specific side and arrangement of head parts rather than on fur texture alone.\",\n \"missing_data\": \"Activations on non-dog mammal heads and on mirrored dog faces, plus spatial maps of where activation falls on whole faces, would show whether it is a side-specific ear/cheek detector and how dog-specific it is.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds mainly to the fur around the head of dogs, especially the ear and cheek region on one side of the face, and more weakly to the same region in other furry mammals (monkeys, hyena, hamster, squirrel, mink).\",\n \"evidence\": \"14 of the top 20 photos are dogs, and the red boxes sit on furry ear, cheek or neck regions; the other 6 are furry mammals at activation 8-10, while random non-mammal photos score 0-4. The unit is unusually sensitive to mirroring (percentile 0), patch shuffling and 180° rotation (both percentile 3), which suggests it depends on a specific side and arrangement of head parts rather than on fur texture alone.\",\n \"missing_data\": \"Activations on non-dog mammal heads and on mirrored dog faces, plus spatial maps of where activation falls on whole faces, would show whether it is a side-specific ear/cheek detector and how dog-specific it is.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

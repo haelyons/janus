@@ -1,0 +1,290 @@
+{
+ "C_s2": {
+  "unit": "mixed3a:110",
+  "reading": "C_s2",
+  "condition": "C",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "90cc9f11a67c07f532e7cc679b1133299dc5518d77a3cc24abe52a1e6feee0c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vertical boundary where a smooth, uniform region on the left meets a dense, fine-grained dotted or granular texture on the right, such as knit, perforations, polka dots, sequins or speckle.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vertical boundary where a smooth, uniform region on the left meets a dense, fine-grained dotted or granular texture on the right, such as knit, perforations, polka dots, sequins or speckle.",
+   "evidence": "Nearly all 20 crops share this layout: plain color on the left and small repeating dots or holes on the right (#1 knit, #2 hairdryer grille, #6 and #19 polka dots, #10 keypad, #13 speaker mesh, #8 thatch). The random photos still reach 4–7 on the same scale, so the unit has a fairly high baseline and is not very selective.",
+   "missing_data": "Activations on synthetic images that vary which side the texture is on, the texture's scale, and the boundary's orientation, to confirm the left-smooth/right-textured arrangement matters.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a smooth, uniform region on the left meets a dense, fine-grained dotted or granular texture on the right, such as knit, perforations, polka dots, sequins or speckle.\",\n \"evidence\": \"Nearly all 20 crops share this layout: plain color on the left and small repeating dots or holes on the right (#1 knit, #2 hairdryer grille, #6 and #19 polka dots, #10 keypad, #13 speaker mesh, #8 thatch). The random photos still reach 4–7 on the same scale, so the unit has a fairly high baseline and is not very selective.\",\n \"missing_data\": \"Activations on synthetic images that vary which side the texture is on, the texture's scale, and the boundary's orientation, to confirm the left-smooth/right-textured arrangement matters.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a smooth, uniform region on the left meets a dense, fine-grained dotted or granular texture on the right, such as knit, perforations, polka dots, sequins or speckle.\",\n \"evidence\": \"Nearly all 20 crops share this layout: plain color on the left and small repeating dots or holes on the right (#1 knit, #2 hairdryer grille, #6 and #19 polka dots, #10 keypad, #13 speaker mesh, #8 thatch). The random photos still reach 4–7 on the same scale, so the unit has a fairly high baseline and is not very selective.\",\n \"missing_data\": \"Activations on synthetic images that vary which side the texture is on, the texture's scale, and the boundary's orientation, to confirm the left-smooth/right-textured arrangement matters.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed3a:110",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9032d95ebd4acad85e5d4d3c7c9a87138b26ea42604bee0e007e59ee7675fcfc",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a roughly vertical boundary with a smooth, uniform region on the left and a fine, repeated dot or bead texture (knit, perforations, polka dots, seeds, keypad buttons) on the right.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a roughly vertical boundary with a smooth, uniform region on the left and a fine, repeated dot or bead texture (knit, perforations, polka dots, seeds, keypad buttons) on the right.",
+   "evidence": "Nearly all 20 crops show the same layout: a plain surface on the left side and small repeated blobs on the right (#1 knit, #2 grille holes, #6 and #19 polka dots, #10 keypad, #13 hex mesh, #18 seeds). The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and to rotate_180 (percentile 11), which fits a side-specific layout, and to phase scrambling (percentile 11), which fits a need for spatially structured texture next to an edge.",
+   "missing_data": "Synthetic tests that pair a smooth patch with a dot texture on the left versus the right side, varying the dot size, would confirm the side preference and how broad the texture tuning is.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a roughly vertical boundary with a smooth, uniform region on the left and a fine, repeated dot or bead texture (knit, perforations, polka dots, seeds, keypad buttons) on the right.\", \"evidence\": \"Nearly all 20 crops show the same layout: a plain surface on the left side and small repeated blobs on the right (#1 knit, #2 grille holes, #6 and #19 polka dots, #10 keypad, #13 hex mesh, #18 seeds). The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and to rotate_180 (percentile 11), which fits a side-specific layout, and to phase scrambling (percentile 11), which fits a need for spatially structured texture next to an edge.\", \"missing_data\": \"Synthetic tests that pair a smooth patch with a dot texture on the left versus the right side, varying the dot size, would confirm the side preference and how broad the texture tuning is.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a roughly vertical boundary with a smooth, uniform region on the left and a fine, repeated dot or bead texture (knit, perforations, polka dots, seeds, keypad buttons) on the right.\", \"evidence\": \"Nearly all 20 crops show the same layout: a plain surface on the left side and small repeated blobs on the right (#1 knit, #2 grille holes, #6 and #19 polka dots, #10 keypad, #13 hex mesh, #18 seeds). The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and to rotate_180 (percentile 11), which fits a side-specific layout, and to phase scrambling (percentile 11), which fits a need for spatially structured texture next to an edge.\", \"missing_data\": \"Synthetic tests that pair a smooth patch with a dot texture on the left versus the right side, varying the dot size, would confirm the side preference and how broad the texture tuning is.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3a:110",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2a3379150a9825ee407c691adac1d5c87d29af038120292fbe1f9d8d7e6f73e2",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit fires broadly across unrelated content (a knitted doll, a hair dryer, a wedding, a trophy, a phone screen, a spider web, a dress, a bird nest). At most there is a weak hint of fine, repetitive small-scale texture such as dots, perforations, knit and embroidery.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit fires broadly across unrelated content (a knitted doll, a hair dryer, a wedding, a trophy, a phone screen, a spider web, a dress, a bird nest). At most there is a weak hint of fine, repetitive small-scale texture such as dots, perforations, knit and embroidery.",
+   "evidence": "The random photos score 4-7, close to the top examples at 9-10, so the unit is not very selective. The boxed regions span many object types with no consistent theme; textured spots like the dryer holes, safe keypad, polka-dot fabric and seeds appear only in some of them.",
+   "missing_data": "The full activation distribution over the collection, plus synthetic texture or feature-visualization probes, to test whether fine repeated dot or texture patterns drive the response.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires broadly across unrelated content (a knitted doll, a hair dryer, a wedding, a trophy, a phone screen, a spider web, a dress, a bird nest). At most there is a weak hint of fine, repetitive small-scale texture such as dots, perforations, knit and embroidery.\",\n \"evidence\": \"The random photos score 4-7, close to the top examples at 9-10, so the unit is not very selective. The boxed regions span many object types with no consistent theme; textured spots like the dryer holes, safe keypad, polka-dot fabric and seeds appear only in some of them.\",\n \"missing_data\": \"The full activation distribution over the collection, plus synthetic texture or feature-visualization probes, to test whether fine repeated dot or texture patterns drive the response.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires broadly across unrelated content (a knitted doll, a hair dryer, a wedding, a trophy, a phone screen, a spider web, a dress, a bird nest). At most there is a weak hint of fine, repetitive small-scale texture such as dots, perforations, knit and embroidery.\",\n \"evidence\": \"The random photos score 4-7, close to the top examples at 9-10, so the unit is not very selective. The boxed regions span many object types with no consistent theme; textured spots like the dryer holes, safe keypad, polka-dot fabric and seeds appear only in some of them.\",\n \"missing_data\": \"The full activation distribution over the collection, plus synthetic texture or feature-visualization probes, to test whether fine repeated dot or texture patterns drive the response.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed3a:110",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9032d95ebd4acad85e5d4d3c7c9a87138b26ea42604bee0e007e59ee7675fcfc",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, speckled or granular texture on the right, such as knit, perforations, polka dots, QR codes, thatch or sequins.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, speckled or granular texture on the right, such as knit, perforations, polka dots, QR codes, thatch or sequins.",
+   "evidence": "Nearly every crop shows a plain area on the left and a dense small-element texture on the right, across unrelated objects. The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and 180° rotation (percentile 11), unaffected by patch shuffling (100%), and hurt by phase scrambling (percentile 11), which fits a local, side-specific texture edge.",
+   "missing_data": "Activations on synthetic stimuli (a smooth-to-dot-texture edge in both left-right orders, varying dot size and edge orientation) would confirm the side preference and the texture tuning. Random photos also reach moderate activations (4-7), so it would help to know what drives those.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, speckled or granular texture on the right, such as knit, perforations, polka dots, QR codes, thatch or sequins.\",\n \"evidence\": \"Nearly every crop shows a plain area on the left and a dense small-element texture on the right, across unrelated objects. The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and 180° rotation (percentile 11), unaffected by patch shuffling (100%), and hurt by phase scrambling (percentile 11), which fits a local, side-specific texture edge.\",\n \"missing_data\": \"Activations on synthetic stimuli (a smooth-to-dot-texture edge in both left-right orders, varying dot size and edge orientation) would confirm the side preference and the texture tuning. Random photos also reach moderate activations (4-7), so it would help to know what drives those.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, speckled or granular texture on the right, such as knit, perforations, polka dots, QR codes, thatch or sequins.\",\n \"evidence\": \"Nearly every crop shows a plain area on the left and a dense small-element texture on the right, across unrelated objects. The unit is unusually sensitive to mirroring (keeps 75%, percentile 3) and 180° rotation (percentile 11), unaffected by patch shuffling (100%), and hurt by phase scrambling (percentile 11), which fits a local, side-specific texture edge.\",\n \"missing_data\": \"Activations on synthetic stimuli (a smooth-to-dot-texture edge in both left-right orders, varying dot size and edge orientation) would confirm the side preference and the texture tuning. Random photos also reach moderate activations (4-7), so it would help to know what drives those.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "C_s1": {
+  "unit": "mixed3a:110",
+  "reading": "C_s1",
+  "condition": "C",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "90cc9f11a67c07f532e7cc679b1133299dc5518d77a3cc24abe52a1e6feee0c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vertical boundary with a smooth, uniform region on the left and a fine repeating dotted or granular texture on the right, regardless of object or color.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vertical boundary with a smooth, uniform region on the left and a fine repeating dotted or granular texture on the right, regardless of object or color.",
+   "evidence": "Nearly all 20 crops show the same layout: a plain patch on the left (sky, fabric, plastic) meeting a dense dot or bump pattern on the right (knit doll, hair-dryer grille, polka dots, QR code, keypad, honeycomb mesh, thatch). The objects and colors vary widely, which points to a texture-edge feature rather than an object detector.",
+   "missing_data": "Mirrored crops (texture on the left) and synthetic smooth-to-dots edge stimuli would test the side preference; the fairly high baseline on random images (4-7) suggests the unit is broadly tuned, so the full activation distribution would also help.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a vertical boundary with a smooth, uniform region on the left and a fine repeating dotted or granular texture on the right, regardless of object or color.\", \"evidence\": \"Nearly all 20 crops show the same layout: a plain patch on the left (sky, fabric, plastic) meeting a dense dot or bump pattern on the right (knit doll, hair-dryer grille, polka dots, QR code, keypad, honeycomb mesh, thatch). The objects and colors vary widely, which points to a texture-edge feature rather than an object detector.\", \"missing_data\": \"Mirrored crops (texture on the left) and synthetic smooth-to-dots edge stimuli would test the side preference; the fairly high baseline on random images (4-7) suggests the unit is broadly tuned, so the full activation distribution would also help.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a vertical boundary with a smooth, uniform region on the left and a fine repeating dotted or granular texture on the right, regardless of object or color.\", \"evidence\": \"Nearly all 20 crops show the same layout: a plain patch on the left (sky, fabric, plastic) meeting a dense dot or bump pattern on the right (knit doll, hair-dryer grille, polka dots, QR code, keypad, honeycomb mesh, thatch). The objects and colors vary widely, which points to a texture-edge feature rather than an object detector.\", \"missing_data\": \"Mirrored crops (texture on the left) and synthetic smooth-to-dots edge stimuli would test the side preference; the fairly high baseline on random images (4-7) suggests the unit is broadly tuned, so the full activation distribution would also help.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed3a:110",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9032d95ebd4acad85e5d4d3c7c9a87138b26ea42604bee0e007e59ee7675fcfc",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vertical boundary where a smooth, plain region on the left meets a fine dotted, beaded or granular texture on the right, such as knit stitches, speaker-grille holes, polka dots, keypad buttons or thatch.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vertical boundary where a smooth, plain region on the left meets a fine dotted, beaded or granular texture on the right, such as knit stitches, speaker-grille holes, polka dots, keypad buttons or thatch.",
+   "evidence": "Nearly every 32px crop shows a uniform patch on the left and a repeated small-dot texture on the right. The unit is strongly sensitive to mirroring (3rd percentile) and phase scrambling (11th percentile), which fits a left-right-asymmetric, spatially structured texture edge rather than colour, which grayscale leaves untouched.",
+   "missing_data": "Synthetic tests that flip the side of the dotted texture and vary dot size and spacing, to confirm the side preference and how broadly it tunes to texture type.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a vertical boundary where a smooth, plain region on the left meets a fine dotted, beaded or granular texture on the right, such as knit stitches, speaker-grille holes, polka dots, keypad buttons or thatch.\", \"evidence\": \"Nearly every 32px crop shows a uniform patch on the left and a repeated small-dot texture on the right. The unit is strongly sensitive to mirroring (3rd percentile) and phase scrambling (11th percentile), which fits a left-right-asymmetric, spatially structured texture edge rather than colour, which grayscale leaves untouched.\", \"missing_data\": \"Synthetic tests that flip the side of the dotted texture and vary dot size and spacing, to confirm the side preference and how broadly it tunes to texture type.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a vertical boundary where a smooth, plain region on the left meets a fine dotted, beaded or granular texture on the right, such as knit stitches, speaker-grille holes, polka dots, keypad buttons or thatch.\", \"evidence\": \"Nearly every 32px crop shows a uniform patch on the left and a repeated small-dot texture on the right. The unit is strongly sensitive to mirroring (3rd percentile) and phase scrambling (11th percentile), which fits a left-right-asymmetric, spatially structured texture edge rather than colour, which grayscale leaves untouched.\", \"missing_data\": \"Synthetic tests that flip the side of the dotted texture and vary dot size and spacing, to confirm the side preference and how broadly it tunes to texture type.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "C_s3": {
+  "unit": "mixed3a:110",
+  "reading": "C_s3",
+  "condition": "C",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "90cc9f11a67c07f532e7cc679b1133299dc5518d77a3cc24abe52a1e6feee0c4",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a vertical boundary where a plain, smooth region on the left meets a dense texture of small repeated dots or blobs on the right, such as perforations, polka dots, knit, beads or sequins.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a vertical boundary where a plain, smooth region on the left meets a dense texture of small repeated dots or blobs on the right, such as perforations, polka dots, knit, beads or sequins.",
+   "evidence": "Nearly all 20 crops show a uniform area on the left and a fine dotted texture on the right, across unrelated objects like a hair-dryer grille, safe keypad, polka-dot clothing, a QR code, thatch and a spider web. Random photos still score fairly high (4-7), so the selectivity is moderate and not tied to any object category.",
+   "missing_data": "Activations on synthetic images that vary which side the texture is on, dot size and edge orientation, plus the full activation distribution, to tell whether this is truly side-specific and how selective it is above the high baseline.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a plain, smooth region on the left meets a dense texture of small repeated dots or blobs on the right, such as perforations, polka dots, knit, beads or sequins.\",\n \"evidence\": \"Nearly all 20 crops show a uniform area on the left and a fine dotted texture on the right, across unrelated objects like a hair-dryer grille, safe keypad, polka-dot clothing, a QR code, thatch and a spider web. Random photos still score fairly high (4-7), so the selectivity is moderate and not tied to any object category.\",\n \"missing_data\": \"Activations on synthetic images that vary which side the texture is on, dot size and edge orientation, plus the full activation distribution, to tell whether this is truly side-specific and how selective it is above the high baseline.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a vertical boundary where a plain, smooth region on the left meets a dense texture of small repeated dots or blobs on the right, such as perforations, polka dots, knit, beads or sequins.\",\n \"evidence\": \"Nearly all 20 crops show a uniform area on the left and a fine dotted texture on the right, across unrelated objects like a hair-dryer grille, safe keypad, polka-dot clothing, a QR code, thatch and a spider web. Random photos still score fairly high (4-7), so the selectivity is moderate and not tied to any object category.\",\n \"missing_data\": \"Activations on synthetic images that vary which side the texture is on, dot size and edge orientation, plus the full activation distribution, to tell whether this is truly side-specific and how selective it is above the high baseline.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3a:110",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e93ed5db3d4fafcb92687792ee4df6168c1e15810c48e058b639ec0c5f4f53a6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit appears to respond to fine-scale repeated local texture, especially small dots, holes or grid elements (polka dots, perforations, keypads, QR codes, seeds), and extends more weakly to other dense textures such as knit, thatch, embroidery and web.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit appears to respond to fine-scale repeated local texture, especially small dots, holes or grid elements (polka dots, perforations, keypads, QR codes, seeds), and extends more weakly to other dense textures such as knit, thatch, embroidery and web.",
+   "evidence": "Many top crops land on dot or perforation patterns (#2, #6, #7, #10, #18, #19) or dense texture (#1, #3, #8, #12, #17). The large loss under phase scramble and full retention under patch shuffle point to local spatial structure rather than global layout. However, random photos still reach 4-7, so the unit is weakly selective, and the strong mirror sensitivity is unexplained.",
+   "missing_data": "Activations on controlled synthetic dot or grid patterns that vary element size and spacing, and a fuller look at the activation distribution, to check whether the unit is truly selective or broadly active.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to fine-scale repeated local texture, especially small dots, holes or grid elements (polka dots, perforations, keypads, QR codes, seeds), and extends more weakly to other dense textures such as knit, thatch, embroidery and web.\",\n \"evidence\": \"Many top crops land on dot or perforation patterns (#2, #6, #7, #10, #18, #19) or dense texture (#1, #3, #8, #12, #17). The large loss under phase scramble and full retention under patch shuffle point to local spatial structure rather than global layout. However, random photos still reach 4-7, so the unit is weakly selective, and the strong mirror sensitivity is unexplained.\",\n \"missing_data\": \"Activations on controlled synthetic dot or grid patterns that vary element size and spacing, and a fuller look at the activation distribution, to check whether the unit is truly selective or broadly active.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to fine-scale repeated local texture, especially small dots, holes or grid elements (polka dots, perforations, keypads, QR codes, seeds), and extends more weakly to other dense textures such as knit, thatch, embroidery and web.\",\n \"evidence\": \"Many top crops land on dot or perforation patterns (#2, #6, #7, #10, #18, #19) or dense texture (#1, #3, #8, #12, #17). The large loss under phase scramble and full retention under patch shuffle point to local spatial structure rather than global layout. However, random photos still reach 4-7, so the unit is weakly selective, and the strong mirror sensitivity is unexplained.\",\n \"missing_data\": \"Activations on controlled synthetic dot or grid patterns that vary element size and spacing, and a fuller look at the activation distribution, to check whether the unit is truly selective or broadly active.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3a:110",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e93ed5db3d4fafcb92687792ee4df6168c1e15810c48e058b639ec0c5f4f53a6",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit seems to be a broadly tuned, local mid-level feature that may favour small-scale structure such as knit, perforations, thatch, dotted fabric, keypads and web strands, but no single concept is clear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems to be a broadly tuned, local mid-level feature that may favour small-scale structure such as knit, perforations, thatch, dotted fabric, keypads and web strands, but no single concept is clear.",
+   "evidence": "The top 20 photos span unrelated objects and the red boxes fall on varied local spots, while random photos already reach 4-7 of 10, so selectivity is weak. Tolerance to patch shuffling shows the feature is local, and the large loss under phase scrambling shows it needs real spatial structure, but its unusual sensitivity to mirroring and 180° rotation does not point to an identifiable feature.",
+   "missing_data": "Zoomed crops of the boxed regions, a full activation histogram showing how far the top photos stand out, and feature visualisations or synthetic oriented-texture probes to explain the left-right asymmetry.",
+   "confidence": 0.4
+  },
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to be a broadly tuned, local mid-level feature that may favour small-scale structure such as knit, perforations, thatch, dotted fabric, keypads and web strands, but no single concept is clear.\",\n \"evidence\": \"The top 20 photos span unrelated objects and the red boxes fall on varied local spots, while random photos already reach 4-7 of 10, so selectivity is weak. Tolerance to patch shuffling shows the feature is local, and the large loss under phase scrambling shows it needs real spatial structure, but its unusual sensitivity to mirroring and 180° rotation does not point to an identifiable feature.\",\n \"missing_data\": \"Zoomed crops of the boxed regions, a full activation histogram showing how far the top photos stand out, and feature visualisations or synthetic oriented-texture probes to explain the left-right asymmetry.\",\n \"confidence\": 0.4}",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to be a broadly tuned, local mid-level feature that may favour small-scale structure such as knit, perforations, thatch, dotted fabric, keypads and web strands, but no single concept is clear.\",\n \"evidence\": \"The top 20 photos span unrelated objects and the red boxes fall on varied local spots, while random photos already reach 4-7 of 10, so selectivity is weak. Tolerance to patch shuffling shows the feature is local, and the large loss under phase scrambling shows it needs real spatial structure, but its unusual sensitivity to mirroring and 180° rotation does not point to an identifiable feature.\",\n \"missing_data\": \"Zoomed crops of the boxed regions, a full activation histogram showing how far the top photos stand out, and feature visualisations or synthetic oriented-texture probes to explain the left-right asymmetry.\",\n \"confidence\": 0.4}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3a:110",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2a3379150a9825ee407c691adac1d5c87d29af038120292fbe1f9d8d7e6f73e2",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit is broadly active across nearly all natural images, with no clearly dominant feature. It may lean weakly toward fine repeated dot or bump textures such as knit, perforations, polka dots, keypads, seeds and scales.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is broadly active across nearly all natural images, with no clearly dominant feature. It may lean weakly toward fine repeated dot or bump textures such as knit, perforations, polka dots, keypads, seeds and scales.",
+   "evidence": "The top-20 images span unrelated content (doll, hair dryer, wedding, trophy, phone, barn, baseball, cake, spider web, bird), and several boxes sit on plain regions like a corner, a wall or a hand. Random images score 4-7 against a maximum of 10, so the top examples are only modestly above baseline.",
+   "missing_data": "Activations on controlled texture patches (dot grids, knit, perforated surfaces versus smooth surfaces), or the full activation distribution, would show whether a weak dotted-texture preference exists.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is broadly active across nearly all natural images, with no clearly dominant feature. It may lean weakly toward fine repeated dot or bump textures such as knit, perforations, polka dots, keypads, seeds and scales.\",\n \"evidence\": \"The top-20 images span unrelated content (doll, hair dryer, wedding, trophy, phone, barn, baseball, cake, spider web, bird), and several boxes sit on plain regions like a corner, a wall or a hand. Random images score 4-7 against a maximum of 10, so the top examples are only modestly above baseline.\",\n \"missing_data\": \"Activations on controlled texture patches (dot grids, knit, perforated surfaces versus smooth surfaces), or the full activation distribution, would show whether a weak dotted-texture preference exists.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is broadly active across nearly all natural images, with no clearly dominant feature. It may lean weakly toward fine repeated dot or bump textures such as knit, perforations, polka dots, keypads, seeds and scales.\",\n \"evidence\": \"The top-20 images span unrelated content (doll, hair dryer, wedding, trophy, phone, barn, baseball, cake, spider web, bird), and several boxes sit on plain regions like a corner, a wall or a hand. Random images score 4-7 against a maximum of 10, so the top examples are only modestly above baseline.\",\n \"missing_data\": \"Activations on controlled texture patches (dot grids, knit, perforated surfaces versus smooth surfaces), or the full activation distribution, would show whether a weak dotted-texture preference exists.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3a:110",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2a3379150a9825ee407c691adac1d5c87d29af038120292fbe1f9d8d7e6f73e2",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "There is no clear selective feature. The unit fires broadly across natural images. At most it weakly prefers fine, repetitive small-element textures such as knit stitches, perforation holes, polka dots, keypads, QR codes and seeds.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "There is no clear selective feature. The unit fires broadly across natural images. At most it weakly prefers fine, repetitive small-element textures such as knit stitches, perforation holes, polka dots, keypads, QR codes and seeds.",
+   "evidence": "The top 20 images span unrelated subjects, and some red boxes fit the dotted/texture idea (#1, #2, #6, #7, #10, #18, #19) while others do not (#9, #13, #15). Random images score 4–7, close to the top images' 9–10, which suggests the unit is only weakly selective.",
+   "missing_data": "Activation statistics over the whole dataset (distribution, sparsity) and responses to controlled texture stimuli such as dot grids and perforated patterns versus smooth surfaces.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"cannot_tell\", \"explanation\": \"There is no clear selective feature. The unit fires broadly across natural images. At most it weakly prefers fine, repetitive small-element textures such as knit stitches, perforation holes, polka dots, keypads, QR codes and seeds.\", \"evidence\": \"The top 20 images span unrelated subjects, and some red boxes fit the dotted/texture idea (#1, #2, #6, #7, #10, #18, #19) while others do not (#9, #13, #15). Random images score 4–7, close to the top images' 9–10, which suggests the unit is only weakly selective.\", \"missing_data\": \"Activation statistics over the whole dataset (distribution, sparsity) and responses to controlled texture stimuli such as dot grids and perforated patterns versus smooth surfaces.\", \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"cannot_tell\", \"explanation\": \"There is no clear selective feature. The unit fires broadly across natural images. At most it weakly prefers fine, repetitive small-element textures such as knit stitches, perforation holes, polka dots, keypads, QR codes and seeds.\", \"evidence\": \"The top 20 images span unrelated subjects, and some red boxes fit the dotted/texture idea (#1, #2, #6, #7, #10, #18, #19) while others do not (#9, #13, #15). Random images score 4–7, close to the top images' 9–10, which suggests the unit is only weakly selective.\", \"missing_data\": \"Activation statistics over the whole dataset (distribution, sparsity) and responses to controlled texture stimuli such as dot grids and perforated patterns versus smooth surfaces.\", \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3a:110",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e93ed5db3d4fafcb92687792ee4df6168c1e15810c48e058b639ec0c5f4f53a6",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit appears to respond to local, fine-grained textures made of small repeated elements such as dots, holes, bumps and stitches (knit, perforations, polka dots, keypad buttons, scales, seeds, thatch, embroidery). It responds more weakly to other busy surface textures.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit appears to respond to local, fine-grained textures made of small repeated elements such as dots, holes, bumps and stitches (knit, perforations, polka dots, keypad buttons, scales, seeds, thatch, embroidery). It responds more weakly to other busy surface textures.",
+   "evidence": "Many top crops fall on dense repeated micro-patterns (hairdryer holes, polka dots, QR code, safe keypad, lizard scales, jam seeds, knit doll). Phase scrambling cuts activation sharply while 4x4 patch shuffling leaves it intact, which points to local structure rather than objects; still, random photos already score 4-7, so selectivity is weak and several crops (dress hem, mic hand, cake edge) fit poorly.",
+   "missing_data": "Activations on synthetic dot or grid textures at varied spacing, and the full activation distribution, would show whether this is a true texture detector or a broadly active unit with no clear preference.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to local, fine-grained textures made of small repeated elements such as dots, holes, bumps and stitches (knit, perforations, polka dots, keypad buttons, scales, seeds, thatch, embroidery). It responds more weakly to other busy surface textures.\",\n \"evidence\": \"Many top crops fall on dense repeated micro-patterns (hairdryer holes, polka dots, QR code, safe keypad, lizard scales, jam seeds, knit doll). Phase scrambling cuts activation sharply while 4x4 patch shuffling leaves it intact, which points to local structure rather than objects; still, random photos already score 4-7, so selectivity is weak and several crops (dress hem, mic hand, cake edge) fit poorly.\",\n \"missing_data\": \"Activations on synthetic dot or grid textures at varied spacing, and the full activation distribution, would show whether this is a true texture detector or a broadly active unit with no clear preference.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond to local, fine-grained textures made of small repeated elements such as dots, holes, bumps and stitches (knit, perforations, polka dots, keypad buttons, scales, seeds, thatch, embroidery). It responds more weakly to other busy surface textures.\",\n \"evidence\": \"Many top crops fall on dense repeated micro-patterns (hairdryer holes, polka dots, QR code, safe keypad, lizard scales, jam seeds, knit doll). Phase scrambling cuts activation sharply while 4x4 patch shuffling leaves it intact, which points to local structure rather than objects; still, random photos already score 4-7, so selectivity is weak and several crops (dress hem, mic hand, cake edge) fit poorly.\",\n \"missing_data\": \"Activations on synthetic dot or grid textures at varied spacing, and the full activation distribution, would show whether this is a true texture detector or a broadly active unit with no clear preference.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ }
+}

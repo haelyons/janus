@@ -370,6 +370,13 @@ activation), then picks 6 to fire and 6 near misses. Activations score the picks
 ## To do
 - Done in round 18 (validation failed at the top: the pick test rejects wrong readings but can't rank partly right
   ones). A finer score would ask for a ranking of the whole pool, or coverage of each half of a planted pair.
+- Views from the blind list (`authors/views.reply.json`, brief names no unit or finding) not yet tried, each with
+  its text analogue: stratified exemplars across the activation range (text: windows sampled by activation quantile);
+  occlusion maps (text: leave-one-token-out on the preceding window); a low-level property report (text: how much
+  token identity, position and casing alone explain); same-class or same-token near misses with low activation;
+  activation distribution and base rates; output-side effects (text: logit attribution and ablation); clustered
+  modes of the top crops (text: clusters of top contexts). Crops and edit profiles (ranks 2-3) are round 21; the text
+  analogue of a receptive-field crop is the attribution window around the firing token.
 - Later focus: neurons over training in a model with base, SFT, DPO and RLVR checkpoints (AI2 OLMo 2 / OLMo 3;
   check exact repos). Start with neurons that have ground truth (simple token neurons), then the essay's language
   examples (iy -> diy -> do it yourself; enemy; pet microchip). GPT-2 XL's 2023 neuron-explainer data is a
@@ -548,3 +555,38 @@ Spearman rho (3 samples). Judge (`tools/judge_r20.py`, frozen before the reading
 - The miss on 431 is the method's: no reading proposed direction, so nothing tested it. The battery's mirror
   transform with layer baselines (round 10) would have flagged it; that is the one battery result that is
   distinctive, as rotate_180 was for 4e:55. It belongs in the look step as a hypothesis source.
+
+## Round 21: which views help, against ground truth (`tools/lookviews.py`, claim-blind author)
+
+The views were chosen from a blind list (`authors/brief_views.md` names no unit or finding; reply
+`authors/views.reply.json`, ranks 2 and 3): C = the 20 top photos cropped to the unit's effective receptive field
+(gradient mass rule, one size per unit, 32-224 px); P = an invariance profile (retention under the 10 battery
+transforms, with the layer median and the unit's percentile). Base = round 20's card. 2x2, 3 bare readings per
+condition, judged against references frozen before any reading (`tools/judge_r21.py`). Mean judge (1-5):
+
+    unit          reference                   base   C     P     CP
+    3a:136        high-low frequency edge     2.0   3.0   2.0   4.0
+    3a:110        high-low frequency edge     1.7   4.0   2.0   4.0
+    3b:379        curve at one orientation    2.7   4.0   3.0   4.0
+    4b:237        windows                     4.7   4.7   4.3   4.7
+    4b:373        wheels                      5.0   5.0   5.0   4.0
+    4b:431        facing one direction        1.0   1.7   2.0   2.0
+    4d:409        side-on pose across kinds   3.0   4.0   4.3   4.3
+    4e:55         the essay's V               1.7   1.3   1.7   2.0
+    5a:719        the essay's pinched shape   1.0   1.0   1.0   1.0
+
+- Crops are the big effect on shallow units (prediction 1 held, 3 of 3, +1.2 to +2.2): with crops, 3a:110 reads as "a
+  vertical boundary where a smooth region on the left meets fine dotted texture on the right", the Distill
+  description with its orientation. Whole photos with a box give "knitted fabric" and similar nouns.
+- Neither view hurts the car parts (3 held) or flips the targets (5 held: 55 stays an upright frontal furry face,
+  "face-like" car grilles; 5a:719 stays handcrafted objects).
+- Both views lift the pose unit from 3 to 4-4.3 (4 held). With the profile alone: "the side-on middle section of an
+  upright, horizontally elongated body held up on legs or wheels ... covers both standing four-legged animals and
+  cars seen from the side", without Nick's question.
+- The profile did not make 4b:431 read as oriented (prediction 2 failed, 0 of 6 by the judge), although it showed
+  mirror "keeps 41%; layer median 95%; percentile 0". Two of the six profile readings moved the response to "one side
+  of the face" ("the viewer's-left side of a dog's head"); none without it did. Readers took the number as a
+  location, not as a facing direction. Whether "fur on the left side of a dog's head" and "a dog head facing right"
+  are the same unit at two levels of description needs a within-class view test (blind facing labels).
+- Compute: the machine has a GTX 1070; `.venv-gpu` (torch 2.14.1+cu126, gitignored, 6.5 GB) runs InceptionV1 at 416
+  photos/s, against ~25 on CPU. Claude calls now run 12 at a time (runtime setting, logged in the ledger).

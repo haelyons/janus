@@ -1,0 +1,5 @@
+You are advising on methodology for interpreting individual units (neurons) of trained neural networks, both image models and language models. An observer (another AI) will be shown recorded data from one unit and asked what the unit responds to. The observer cannot run experiments; it only reads what it is shown. We can prepare what it is shown in different ways.
+
+List up to 8 ways of preparing views of a unit's recorded data, or results of simple automated interventions computed in advance, that would help an observer form correct hypotheses about units in general, across shallow and deep layers and across kinds of units, without assuming anything about what any particular unit does. For each, give: what it shows; what kind of misreading it guards against; how to compute it for a convolutional image classifier; and the closest analogue for a transformer language model. Rank them by expected value for getting readings right.
+
+Reply with only JSON: [{"rank": n, "name": "...", "shows": "...", "guards_against": "...", "image": "...", "text": "..."}]

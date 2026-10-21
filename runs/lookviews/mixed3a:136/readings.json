@@ -1,0 +1,288 @@
+{
+ "C_s1": {
+  "unit": "mixed3a:136",
+  "reading": "C_s1",
+  "condition": "C",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "34f99b35f5d97ab9e0befd27da8785c263f0a6c34f8d83920f222e32ebfd622e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine-grained, uniform granular/speckled texture (stippled surfaces like asphalt, carpet, gravel-like grain, scaly or bumpy skin, woven fabric), especially where such a texture fills the lower part of the patch below an edge or object.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine-grained, uniform granular/speckled texture (stippled surfaces like asphalt, carpet, gravel-like grain, scaly or bumpy skin, woven fabric), especially where such a texture fills the lower part of the patch below an edge or object.",
+   "evidence": "Nearly all 20 crops show a dense, fine, even grain (asphalt in #5, #10, #17; carpet in #8, #19; scales and bumpy surfaces in #11-#16; woven or fabric texture in #1, #2, #7, #18), regardless of the object or color involved. The random photos still reach moderate activations of 4-7, which fits a texture detector that responds weakly to many textured scenes.",
+   "missing_data": "Activations on synthetic textures that vary grain scale and regularity, and on smooth versus textured patches of the same image, would show how specific the texture tuning is.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine-grained, uniform granular/speckled texture (stippled surfaces like asphalt, carpet, gravel-like grain, scaly or bumpy skin, woven fabric), especially where such a texture fills the lower part of the patch below an edge or object.\",\n \"evidence\": \"Nearly all 20 crops show a dense, fine, even grain (asphalt in #5, #10, #17; carpet in #8, #19; scales and bumpy surfaces in #11-#16; woven or fabric texture in #1, #2, #7, #18), regardless of the object or color involved. The random photos still reach moderate activations of 4-7, which fits a texture detector that responds weakly to many textured scenes.\",\n \"missing_data\": \"Activations on synthetic textures that vary grain scale and regularity, and on smooth versus textured patches of the same image, would show how specific the texture tuning is.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine-grained, uniform granular/speckled texture (stippled surfaces like asphalt, carpet, gravel-like grain, scaly or bumpy skin, woven fabric), especially where such a texture fills the lower part of the patch below an edge or object.\",\n \"evidence\": \"Nearly all 20 crops show a dense, fine, even grain (asphalt in #5, #10, #17; carpet in #8, #19; scales and bumpy surfaces in #11-#16; woven or fabric texture in #1, #2, #7, #18), regardless of the object or color involved. The random photos still reach moderate activations of 4-7, which fits a texture detector that responds weakly to many textured scenes.\",\n \"missing_data\": \"Activations on synthetic textures that vary grain scale and regularity, and on smooth versus textured patches of the same image, would show how specific the texture tuning is.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s1": {
+  "unit": "mixed3a:136",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c34ffe30ea4747f16d4810491f1d13ea76ce2fcb1dbab5a00398295e0bf07031",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "No consistent concept is visible. The unit seems broadly and densely active across many kinds of image, possibly responding to a generic low-level texture or edge statistic rather than any object or scene.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "No consistent concept is visible. The unit seems broadly and densely active across many kinds of image, possibly responding to a generic low-level texture or edge statistic rather than any object or scene.",
+   "evidence": "The top 20 cover unrelated content (hospital patient, pulley, butterfly, biscuit package, Jeep grille, insects, fruit, limousine, hammer), and the boxes fall on varied, nondescript regions. The random photos still reach activations of 4-7, so the top examples (8-10) stand out only slightly.",
+   "missing_data": "Image crops or feature visualizations at the boxed locations, the full activation distribution, and how the unit responds to controlled texture, edge or color stimuli.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"No consistent concept is visible. The unit seems broadly and densely active across many kinds of image, possibly responding to a generic low-level texture or edge statistic rather than any object or scene.\",\n \"evidence\": \"The top 20 cover unrelated content (hospital patient, pulley, butterfly, biscuit package, Jeep grille, insects, fruit, limousine, hammer), and the boxes fall on varied, nondescript regions. The random photos still reach activations of 4-7, so the top examples (8-10) stand out only slightly.\",\n \"missing_data\": \"Image crops or feature visualizations at the boxed locations, the full activation distribution, and how the unit responds to controlled texture, edge or color stimuli.\",\n \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"No consistent concept is visible. The unit seems broadly and densely active across many kinds of image, possibly responding to a generic low-level texture or edge statistic rather than any object or scene.\",\n \"evidence\": \"The top 20 cover unrelated content (hospital patient, pulley, butterfly, biscuit package, Jeep grille, insects, fruit, limousine, hammer), and the boxes fall on varied, nondescript regions. The random photos still reach activations of 4-7, so the top examples (8-10) stand out only slightly.\",\n \"missing_data\": \"Image crops or feature visualizations at the boxed locations, the full activation distribution, and how the unit responds to controlled texture, edge or color stimuli.\",\n \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3a:136",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c34ffe30ea4747f16d4810491f1d13ea76ce2fcb1dbab5a00398295e0bf07031",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit seems broadly and weakly tuned, possibly to generic mid-level texture or surface detail, with no coherent object or scene concept among its top photos.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems broadly and weakly tuned, possibly to generic mid-level texture or surface detail, with no coherent object or scene concept among its top photos.",
+   "evidence": "The top 20 span unrelated content (hospital patient, pulley, butterfly, biscuit packaging, jeep grille, beetles, fruit, limousine, hammer), and the red boxes fall on varied regions like ground, fabric, bark and pavement. Random photos still reach 4-7 on the 0-10 scale, so the top examples are only modestly above baseline and the unit is not very selective.",
+   "missing_data": "Spatial activation maps over whole images, results on controlled texture or color stimuli, and the full activation distribution across the dataset would show whether there is a consistent low-level feature.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems broadly and weakly tuned, possibly to generic mid-level texture or surface detail, with no coherent object or scene concept among its top photos.\",\n \"evidence\": \"The top 20 span unrelated content (hospital patient, pulley, butterfly, biscuit packaging, jeep grille, beetles, fruit, limousine, hammer), and the red boxes fall on varied regions like ground, fabric, bark and pavement. Random photos still reach 4-7 on the 0-10 scale, so the top examples are only modestly above baseline and the unit is not very selective.\",\n \"missing_data\": \"Spatial activation maps over whole images, results on controlled texture or color stimuli, and the full activation distribution across the dataset would show whether there is a consistent low-level feature.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems broadly and weakly tuned, possibly to generic mid-level texture or surface detail, with no coherent object or scene concept among its top photos.\",\n \"evidence\": \"The top 20 span unrelated content (hospital patient, pulley, butterfly, biscuit packaging, jeep grille, beetles, fruit, limousine, hammer), and the red boxes fall on varied regions like ground, fabric, bark and pavement. Random photos still reach 4-7 on the 0-10 scale, so the top examples are only modestly above baseline and the unit is not very selective.\",\n \"missing_data\": \"Spatial activation maps over whole images, results on controlled texture or color stimuli, and the full activation distribution across the dataset would show whether there is a consistent low-level feature.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3a:136",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c34ffe30ea4747f16d4810491f1d13ea76ce2fcb1dbab5a00398295e0bf07031",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit fires weakly and broadly across almost all images, perhaps for fine-grained, uniformly textured surfaces such as fabric, asphalt, fur, scales, insect cuticle or fruit skin, but no single concept is clear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit fires weakly and broadly across almost all images, perhaps for fine-grained, uniformly textured surfaces such as fabric, asphalt, fur, scales, insect cuticle or fruit skin, but no single concept is clear.",
+   "evidence": "The top 20 cover unrelated subjects (hospital, machinery, butterfly, biscuit packet, Jeep, beetles, fruit, hammer), and the red boxes mostly sit on plain textured patches rather than on objects. Random images still score 4-7 against a top of 8-10, so the unit is barely selective.",
+   "missing_data": "Activation statistics over the whole dataset (sparsity, distribution) and tests on synthetic textures versus smooth surfaces, to see whether the texture idea holds or the unit is just generally active.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires weakly and broadly across almost all images, perhaps for fine-grained, uniformly textured surfaces such as fabric, asphalt, fur, scales, insect cuticle or fruit skin, but no single concept is clear.\",\n \"evidence\": \"The top 20 cover unrelated subjects (hospital, machinery, butterfly, biscuit packet, Jeep, beetles, fruit, hammer), and the red boxes mostly sit on plain textured patches rather than on objects. Random images still score 4-7 against a top of 8-10, so the unit is barely selective.\",\n \"missing_data\": \"Activation statistics over the whole dataset (sparsity, distribution) and tests on synthetic textures versus smooth surfaces, to see whether the texture idea holds or the unit is just generally active.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires weakly and broadly across almost all images, perhaps for fine-grained, uniformly textured surfaces such as fabric, asphalt, fur, scales, insect cuticle or fruit skin, but no single concept is clear.\",\n \"evidence\": \"The top 20 cover unrelated subjects (hospital, machinery, butterfly, biscuit packet, Jeep, beetles, fruit, hammer), and the red boxes mostly sit on plain textured patches rather than on objects. Random images still score 4-7 against a top of 8-10, so the unit is barely selective.\",\n \"missing_data\": \"Activation statistics over the whole dataset (sparsity, distribution) and tests on synthetic textures versus smooth surfaces, to see whether the texture idea holds or the unit is just generally active.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ },
+ "C_s2": {
+  "unit": "mixed3a:136",
+  "reading": "C_s2",
+  "condition": "C",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "34f99b35f5d97ab9e0befd27da8785c263f0a6c34f8d83920f222e32ebfd622e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, uniform granular or speckled micro-texture, such as woven fabric, asphalt, carpet, short grass, pebbled insect or reptile scales, and dimpled fruit skin. It fires most where such a texture meets a smoother or darker region above it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, uniform granular or speckled micro-texture, such as woven fabric, asphalt, carpet, short grass, pebbled insect or reptile scales, and dimpled fruit skin. It fires most where such a texture meets a smoother or darker region above it.",
+   "evidence": "Nearly every 32 px crop is a dense, evenly grained surface regardless of object or color, including the sheet weave, belt, road surfaces, rug, beetle and lizard scales, jackfruit skin and burlap. Random images also give moderately high activations (4-7), which fits a broad, low-level texture detector rather than an object detector.",
+   "missing_data": "Activations on synthetic textures that vary grain size and contrast, with and without an adjacent smooth region, would show whether the edge matters and how specific the grain size is.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, uniform granular or speckled micro-texture, such as woven fabric, asphalt, carpet, short grass, pebbled insect or reptile scales, and dimpled fruit skin. It fires most where such a texture meets a smoother or darker region above it.\",\n \"evidence\": \"Nearly every 32 px crop is a dense, evenly grained surface regardless of object or color, including the sheet weave, belt, road surfaces, rug, beetle and lizard scales, jackfruit skin and burlap. Random images also give moderately high activations (4-7), which fits a broad, low-level texture detector rather than an object detector.\",\n \"missing_data\": \"Activations on synthetic textures that vary grain size and contrast, with and without an adjacent smooth region, would show whether the edge matters and how specific the grain size is.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to fine, uniform granular or speckled micro-texture, such as woven fabric, asphalt, carpet, short grass, pebbled insect or reptile scales, and dimpled fruit skin. It fires most where such a texture meets a smoother or darker region above it.\",\n \"evidence\": \"Nearly every 32 px crop is a dense, evenly grained surface regardless of object or color, including the sheet weave, belt, road surfaces, rug, beetle and lizard scales, jackfruit skin and burlap. Random images also give moderately high activations (4-7), which fits a broad, low-level texture detector rather than an object detector.\",\n \"missing_data\": \"Activations on synthetic textures that vary grain size and contrast, with and without an adjacent smooth region, would show whether the edge matters and how specific the grain size is.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "C_s3": {
+  "unit": "mixed3a:136",
+  "reading": "C_s3",
+  "condition": "C",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "34f99b35f5d97ab9e0befd27da8785c263f0a6c34f8d83920f222e32ebfd622e",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine, uniform granular or stippled surface texture, such as asphalt, woven fabric, carpet, pebbled skin, beetle cuticle or fruit rind, often just below the edge of an overlying object.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine, uniform granular or stippled surface texture, such as asphalt, woven fabric, carpet, pebbled skin, beetle cuticle or fruit rind, often just below the edge of an overlying object.",
+   "evidence": "Nearly every 32 px crop shows a dense, small-grained speckled texture regardless of material or color: road surfaces (#5, #10, #17), fabric and carpet (#1, #2, #7, #8, #19), scaly or bumpy organic surfaces (#11-#16), and printed paper grain (#4, #18). The random photos also give moderately high activations (4-7), which fits a broadly present low-level texture feature rather than an object detector.",
+   "missing_data": "Activations on synthetic textures that vary grain size and regularity, and on smooth versus textured versions of the same object, would confirm the texture scale it prefers and whether the edge above the texture matters.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one\", \"explanation\": \"The unit responds to fine, uniform granular or stippled surface texture, such as asphalt, woven fabric, carpet, pebbled skin, beetle cuticle or fruit rind, often just below the edge of an overlying object.\", \"evidence\": \"Nearly every 32 px crop shows a dense, small-grained speckled texture regardless of material or color: road surfaces (#5, #10, #17), fabric and carpet (#1, #2, #7, #8, #19), scaly or bumpy organic surfaces (#11-#16), and printed paper grain (#4, #18). The random photos also give moderately high activations (4-7), which fits a broadly present low-level texture feature rather than an object detector.\", \"missing_data\": \"Activations on synthetic textures that vary grain size and regularity, and on smooth versus textured versions of the same object, would confirm the texture scale it prefers and whether the edge above the texture matters.\", \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\", \"explanation\": \"The unit responds to fine, uniform granular or stippled surface texture, such as asphalt, woven fabric, carpet, pebbled skin, beetle cuticle or fruit rind, often just below the edge of an overlying object.\", \"evidence\": \"Nearly every 32 px crop shows a dense, small-grained speckled texture regardless of material or color: road surfaces (#5, #10, #17), fabric and carpet (#1, #2, #7, #8, #19), scaly or bumpy organic surfaces (#11-#16), and printed paper grain (#4, #18). The random photos also give moderately high activations (4-7), which fits a broadly present low-level texture feature rather than an object detector.\", \"missing_data\": \"Activations on synthetic textures that vary grain size and regularity, and on smooth versus textured versions of the same object, would confirm the texture scale it prefers and whether the edge above the texture matters.\", \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3a:136",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "194e47c5de327227b25e99253d2a5e98356e5cb2ffa57ba2b027340b196ceb34",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit appears to be a broadly tuned, dense unit that responds weakly selectively to fine local surface texture or structure, often on ground or background regions, rather than to any identifiable object or part.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit appears to be a broadly tuned, dense unit that responds weakly selectively to fine local surface texture or structure, often on ground or background regions, rather than to any identifiable object or part.",
+   "evidence": "The top activations are nearly flat (8-10) across unrelated content such as gurneys, belts, butterflies, biscuits, beetles, roads and fabric, while random photos still reach 4-7. The marked regions are small, nondescript patches. It is more sensitive than most units to rotation (percentiles 3-7), phase scramble and edge maps, which suggests some upright, texture-dependent spatial structure, but nothing specific enough to name.",
+   "missing_data": "Larger crops around the max-activation regions, or feature visualizations and activation maps over whole images, to see whether there is a consistent local pattern such as an oriented texture or the bottom edges of surfaces.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit appears to be a broadly tuned, dense unit that responds weakly selectively to fine local surface texture or structure, often on ground or background regions, rather than to any identifiable object or part.\",\n \"evidence\": \"The top activations are nearly flat (8-10) across unrelated content such as gurneys, belts, butterflies, biscuits, beetles, roads and fabric, while random photos still reach 4-7. The marked regions are small, nondescript patches. It is more sensitive than most units to rotation (percentiles 3-7), phase scramble and edge maps, which suggests some upright, texture-dependent spatial structure, but nothing specific enough to name.\",\n \"missing_data\": \"Larger crops around the max-activation regions, or feature visualizations and activation maps over whole images, to see whether there is a consistent local pattern such as an oriented texture or the bottom edges of surfaces.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit appears to be a broadly tuned, dense unit that responds weakly selectively to fine local surface texture or structure, often on ground or background regions, rather than to any identifiable object or part.\",\n \"evidence\": \"The top activations are nearly flat (8-10) across unrelated content such as gurneys, belts, butterflies, biscuits, beetles, roads and fabric, while random photos still reach 4-7. The marked regions are small, nondescript patches. It is more sensitive than most units to rotation (percentiles 3-7), phase scramble and edge maps, which suggests some upright, texture-dependent spatial structure, but nothing specific enough to name.\",\n \"missing_data\": \"Larger crops around the max-activation regions, or feature visualizations and activation maps over whole images, to see whether there is a consistent local pattern such as an oriented texture or the bottom edges of surfaces.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3a:136",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "194e47c5de327227b25e99253d2a5e98356e5cb2ffa57ba2b027340b196ceb34",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit seems to be a broadly active, weakly selective unit. It responds loosely to fine-textured or plain surface regions, often in the lower part of the frame such as ground, road, grass, fabric or the bottoms of objects, rather than to any particular object or part.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems to be a broadly active, weakly selective unit. It responds loosely to fine-textured or plain surface regions, often in the lower part of the frame such as ground, road, grass, fabric or the bottoms of objects, rather than to any particular object or part.",
+   "evidence": "The top-20 images span unrelated content (nurse, butterfly, car grille, beetles, fruit, hammer) with boxes on nondescript textured patches, mostly low in the image. Random photos still reach 4-7 of 10, so the unit is not very selective; its unusual sensitivity to rotate_180 (percentile 3), rotate_90 (7) and phase scrambling (15) hints at an upright, spatially structured cue such as a ground-plane surface or a bottom-of-scene position.",
+   "missing_data": "Full activation maps over many images, plus a test that moves image content vertically or crops it, to separate a position or ground-plane effect from a texture preference. A wider activation histogram showing how far the top images stand above typical ones would also help.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to be a broadly active, weakly selective unit. It responds loosely to fine-textured or plain surface regions, often in the lower part of the frame such as ground, road, grass, fabric or the bottoms of objects, rather than to any particular object or part.\",\n \"evidence\": \"The top-20 images span unrelated content (nurse, butterfly, car grille, beetles, fruit, hammer) with boxes on nondescript textured patches, mostly low in the image. Random photos still reach 4-7 of 10, so the unit is not very selective; its unusual sensitivity to rotate_180 (percentile 3), rotate_90 (7) and phase scrambling (15) hints at an upright, spatially structured cue such as a ground-plane surface or a bottom-of-scene position.\",\n \"missing_data\": \"Full activation maps over many images, plus a test that moves image content vertically or crops it, to separate a position or ground-plane effect from a texture preference. A wider activation histogram showing how far the top images stand above typical ones would also help.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to be a broadly active, weakly selective unit. It responds loosely to fine-textured or plain surface regions, often in the lower part of the frame such as ground, road, grass, fabric or the bottoms of objects, rather than to any particular object or part.\",\n \"evidence\": \"The top-20 images span unrelated content (nurse, butterfly, car grille, beetles, fruit, hammer) with boxes on nondescript textured patches, mostly low in the image. Random photos still reach 4-7 of 10, so the unit is not very selective; its unusual sensitivity to rotate_180 (percentile 3), rotate_90 (7) and phase scrambling (15) hints at an upright, spatially structured cue such as a ground-plane surface or a bottom-of-scene position.\",\n \"missing_data\": \"Full activation maps over many images, plus a test that moves image content vertically or crops it, to separate a position or ground-plane effect from a texture preference. A wider activation histogram showing how far the top images stand above typical ones would also help.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3a:136",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "194e47c5de327227b25e99253d2a5e98356e5cb2ffa57ba2b027340b196ceb34",
+  "valid": true,
+  "class": "cannot_tell",
+  "explanation": "The unit seems to respond weakly and broadly to fine-grained surface texture (granular or speckled regions such as insect cuticle, fruit skin, scales, pavement, carpet and grass), possibly tied to upright scene layout, but no single coherent concept stands out.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems to respond weakly and broadly to fine-grained surface texture (granular or speckled regions such as insect cuticle, fruit skin, scales, pavement, carpet and grass), possibly tied to upright scene layout, but no single coherent concept stands out.",
+   "evidence": "The top 20 photos span unrelated content, with red boxes on varied textured patches. Random photos still reach 4-7 against a top of 9-10, so selectivity is low; the unit is unusually sensitive to rotate_180 (3rd percentile), rotate_90 and phase scramble.",
+   "missing_data": "Activation maps across whole images, plus texture-patch probes shown upright and inverted, to test whether it encodes oriented fine texture or lower-field surface regions.",
+   "confidence": 0.3
+  },
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to respond weakly and broadly to fine-grained surface texture (granular or speckled regions such as insect cuticle, fruit skin, scales, pavement, carpet and grass), possibly tied to upright scene layout, but no single coherent concept stands out.\",\n \"evidence\": \"The top 20 photos span unrelated content, with red boxes on varied textured patches. Random photos still reach 4-7 against a top of 9-10, so selectivity is low; the unit is unusually sensitive to rotate_180 (3rd percentile), rotate_90 and phase scramble.\",\n \"missing_data\": \"Activation maps across whole images, plus texture-patch probes shown upright and inverted, to test whether it encodes oriented fine texture or lower-field surface regions.\",\n \"confidence\": 0.3}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to respond weakly and broadly to fine-grained surface texture (granular or speckled regions such as insect cuticle, fruit skin, scales, pavement, carpet and grass), possibly tied to upright scene layout, but no single coherent concept stands out.\",\n \"evidence\": \"The top 20 photos span unrelated content, with red boxes on varied textured patches. Random photos still reach 4-7 against a top of 9-10, so selectivity is low; the unit is unusually sensitive to rotate_180 (3rd percentile), rotate_90 and phase scramble.\",\n \"missing_data\": \"Activation maps across whole images, plus texture-patch probes shown upright and inverted, to test whether it encodes oriented fine texture or lower-field surface regions.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine-grained, speckled or granular surface texture, such as asphalt, carpet, woven fabric, insect or reptile scales and fruit skin, most strongly where that texture fills the lower part of the spot with a smoother or darker object edge just above it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine-grained, speckled or granular surface texture, such as asphalt, carpet, woven fabric, insect or reptile scales and fruit skin, most strongly where that texture fills the lower part of the spot with a smoother or darker object edge just above it.",
+   "evidence": "Nearly every 32 px crop shows dense small-grain texture in its lower half, often under an overhanging object (tyre over asphalt, cat paw over gravel, bag over road, hand over sheet), and colour varies freely, which fits grayscale keeping 97%. The unit is strongly hurt by phase scrambling and edge maps, which destroy texture structure, and unusually hurt by rotate_180 and rotate_90 (percentiles 3 and 7), which fits a preferred 'texture below, edge above' layout."
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to fine-grained, speckled or granular surface texture, such as asphalt, carpet, woven fabric, insect or reptile scales and fruit skin, most strongly where that texture fills the lower part of the spot with a smoother or darker object edge just above it.\", \"evidence\": \"Nearly every 32 px crop shows dense small-grain texture in its lower half, often under an overhanging object (tyre over asphalt, cat paw over gravel, bag over road, hand over sheet), and colour varies freely, which fits grayscale keeping 97%. The unit is strongly hurt by phase scrambling and edge maps, which destroy texture structure, and unusually hurt by rotate_180 and rotate_90 (percentiles 3 and 7), which fits a preferred 'texture below, edge above' layout.\"}, \"missing_data\": \"Activations on synthetic textures (pure grain vs. grain under an edge, in upright and flipped versions) would show whether the edge-above arrangement matters or the unit is a plain texture detector; random images already score 4-7, so a full activation distribution would also help.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to fine-grained, speckled or granular surface texture, such as asphalt, carpet, woven fabric, insect or reptile scales and fruit skin, most strongly where that texture fills the lower part of the spot with a smoother or darker object edge just above it.\", \"evidence\": \"Nearly every 32 px crop shows dense small-grain texture in its lower half, often under an overhanging object (tyre over asphalt, cat paw over gravel, bag over road, hand over sheet), and colour varies freely, which fits grayscale keeping 97%. The unit is strongly hurt by phase scrambling and edge maps, which destroy texture structure, and unusually hurt by rotate_180 and rotate_90 (percentiles 3 and 7), which fits a preferred 'texture below, edge above' layout.\"}, \"missing_data\": \"Activations on synthetic textures (pure grain vs. grain under an edge, in upright and flipped versions) would show whether the edge-above arrangement matters or the unit is a plain texture detector; random images already score 4-7, so a full activation distribution would also help.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to fine-grained, granular or speckled surface texture, such as asphalt, carpet, fabric weave, scaly skin, fruit rind or lawn, filling the lower part of its receptive field, usually just below a roughly horizontal boundary with a smoother or darker region above.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to fine-grained, granular or speckled surface texture, such as asphalt, carpet, fabric weave, scaly skin, fruit rind or lawn, filling the lower part of its receptive field, usually just below a roughly horizontal boundary with a smoother or darker region above.",
+   "evidence": "Nearly every top crop shows dense small-scale stippled texture in the bottom half under an edge or object (car bumper over road, cat paw over pavement, beetle back under blurred background), whatever the colour. The unit is unusually sensitive to rotate_180 (percentile 3), rotate_90 and phase scramble but unaffected by grayscale, which fits an orientation-specific texture-below-edge detector.",
+   "missing_data": "Synthetic tests placing a fine texture patch above versus below a horizontal edge, and varying texture grain size, would confirm the spatial layout and scale preference.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to fine-grained, granular or speckled surface texture, such as asphalt, carpet, fabric weave, scaly skin, fruit rind or lawn, filling the lower part of its receptive field, usually just below a roughly horizontal boundary with a smoother or darker region above.\", \"evidence\": \"Nearly every top crop shows dense small-scale stippled texture in the bottom half under an edge or object (car bumper over road, cat paw over pavement, beetle back under blurred background), whatever the colour. The unit is unusually sensitive to rotate_180 (percentile 3), rotate_90 and phase scramble but unaffected by grayscale, which fits an orientation-specific texture-below-edge detector.\", \"missing_data\": \"Synthetic tests placing a fine texture patch above versus below a horizontal edge, and varying texture grain size, would confirm the spatial layout and scale preference.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to fine-grained, granular or speckled surface texture, such as asphalt, carpet, fabric weave, scaly skin, fruit rind or lawn, filling the lower part of its receptive field, usually just below a roughly horizontal boundary with a smoother or darker region above.\", \"evidence\": \"Nearly every top crop shows dense small-scale stippled texture in the bottom half under an edge or object (car bumper over road, cat paw over pavement, beetle back under blurred background), whatever the colour. The unit is unusually sensitive to rotate_180 (percentile 3), rotate_90 and phase scramble but unaffected by grayscale, which fits an orientation-specific texture-below-edge detector.\", \"missing_data\": \"Synthetic tests placing a fine texture patch above versus below a horizontal edge, and varying texture grain size, would confirm the spatial layout and scale preference.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed3a:136",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f41b19ee902433687e22c6c2a0de7c70aea6027d839c26c952e2cb847fe09267",
+  "valid": true,
+  "class": "one",
+  "explanation": "Responds to fine-grained, speckled or granular surface texture (asphalt, woven fabric, carpet, reptile or insect scales, fruit skin, grass) located just below an upper edge where a different, smoother object or region sits on top of it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Responds to fine-grained, speckled or granular surface texture (asphalt, woven fabric, carpet, reptile or insect scales, fruit skin, grass) located just below an upper edge where a different, smoother object or region sits on top of it.",
+   "evidence": "Nearly every crop shows a band of fine stippled texture in its lower half under a contrasting shape above, whatever the colour or object category, and grayscale costs almost nothing. The unit is unusually sensitive to rotate_180 (percentile 3) and rotate_90 (percentile 7), which fits an oriented 'texture below a boundary' arrangement, and it loses much of its response under phase scramble and edge maps, which fits real fine texture rather than outlines.",
+   "missing_data": "Synthetic tests would help most: the same texture with the boundary placed above, below or absent, and texture patches at varying grain size. These would separate a boundary-orientation preference from pure texture tuning.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Responds to fine-grained, speckled or granular surface texture (asphalt, woven fabric, carpet, reptile or insect scales, fruit skin, grass) located just below an upper edge where a different, smoother object or region sits on top of it.\",\n \"evidence\": \"Nearly every crop shows a band of fine stippled texture in its lower half under a contrasting shape above, whatever the colour or object category, and grayscale costs almost nothing. The unit is unusually sensitive to rotate_180 (percentile 3) and rotate_90 (percentile 7), which fits an oriented 'texture below a boundary' arrangement, and it loses much of its response under phase scramble and edge maps, which fits real fine texture rather than outlines.\",\n \"missing_data\": \"Synthetic tests would help most: the same texture with the boundary placed above, below or absent, and texture patches at varying grain size. These would separate a boundary-orientation preference from pure texture tuning.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Responds to fine-grained, speckled or granular surface texture (asphalt, woven fabric, carpet, reptile or insect scales, fruit skin, grass) located just below an upper edge where a different, smoother object or region sits on top of it.\",\n \"evidence\": \"Nearly every crop shows a band of fine stippled texture in its lower half under a contrasting shape above, whatever the colour or object category, and grayscale costs almost nothing. The unit is unusually sensitive to rotate_180 (percentile 3) and rotate_90 (percentile 7), which fits an oriented 'texture below a boundary' arrangement, and it loses much of its response under phase scramble and edge maps, which fits real fine texture rather than outlines.\",\n \"missing_data\": \"Synthetic tests would help most: the same texture with the boundary placed above, below or absent, and texture patches at varying grain size. These would separate a boundary-orientation preference from pure texture tuning.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

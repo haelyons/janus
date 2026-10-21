@@ -1,0 +1,290 @@
+{
+ "base_s1": {
+  "unit": "mixed3b:379",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "beb0ad00889ad2453606d89f14a1081e13fc825c2ca585106645172dbe89ec9d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to circular dials and faces with radial tick marks or numerals, such as watch faces, compasses, clocks, gauges and speedometers. It responds more weakly to other round, rimmed or curved-arc shapes like bowls, plaques, round shields, mirrors, arches and curved railings.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to circular dials and faces with radial tick marks or numerals, such as watch faces, compasses, clocks, gauges and speedometers. It responds more weakly to other round, rimmed or curved-arc shapes like bowls, plaques, round shields, mirrors, arches and curved railings.",
+   "evidence": "Most top activations (8–10) are watches, compasses, clocks, a multimeter dial and a speedometer, with the box usually on the dial's rim or ticks. The rest are round or arc-shaped objects like a blue plaque, colander, Lego shield, bridge arch and railing, and the random photos sit at only 1–4.",
+   "missing_data": "Activations on round objects that have no tick marks (plates, wheels, coins) and on non-round objects that do have ticks (rulers) would show whether the unit cares about the circular rim or the dial markings.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to circular dials and faces with radial tick marks or numerals, such as watch faces, compasses, clocks, gauges and speedometers. It responds more weakly to other round, rimmed or curved-arc shapes like bowls, plaques, round shields, mirrors, arches and curved railings.\",\n \"evidence\": \"Most top activations (8–10) are watches, compasses, clocks, a multimeter dial and a speedometer, with the box usually on the dial's rim or ticks. The rest are round or arc-shaped objects like a blue plaque, colander, Lego shield, bridge arch and railing, and the random photos sit at only 1–4.\",\n \"missing_data\": \"Activations on round objects that have no tick marks (plates, wheels, coins) and on non-round objects that do have ticks (rulers) would show whether the unit cares about the circular rim or the dial markings.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to circular dials and faces with radial tick marks or numerals, such as watch faces, compasses, clocks, gauges and speedometers. It responds more weakly to other round, rimmed or curved-arc shapes like bowls, plaques, round shields, mirrors, arches and curved railings.\",\n \"evidence\": \"Most top activations (8–10) are watches, compasses, clocks, a multimeter dial and a speedometer, with the box usually on the dial's rim or ticks. The rest are round or arc-shaped objects like a blue plaque, colander, Lego shield, bridge arch and railing, and the random photos sit at only 1–4.\",\n \"missing_data\": \"Activations on round objects that have no tick marks (plates, wheels, coins) and on non-round objects that do have ticks (rulers) would show whether the unit cares about the circular rim or the dial markings.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "C_s3": {
+  "unit": "mixed3b:379",
+  "reading": "C_s3",
+  "condition": "C",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8a3dafcbe85844bd1ac74c495547a795bac49df24b811a518d12a15014468d3d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the curved upper-left rim of a round dial or disc, meaning a convex arc boundary with concentric bands, as on watch faces, compasses and gauges. It also fires more weakly on other circular rims and arcs such as bowls, plaques, bridge arches and bent railings.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the curved upper-left rim of a round dial or disc, meaning a convex arc boundary with concentric bands, as on watch faces, compasses and gauges. It also fires more weakly on other circular rims and arcs such as bowls, plaques, bridge arches and bent railings.",
+   "evidence": "Most of the top crops are the bezel or edge of a watch, compass, gauge or clock face, and the box sits on the upper-left part of the circle each time. Lower-ranked examples are non-dial arcs (a colander rim, a bridge arch, a mirror ring, a rail bend), while the random photos without such arcs score only 1-4.",
+   "missing_data": "Activations on synthetic arcs at different orientations and on dial faces without a rim would show whether this is a pure curvature detector or tied to dial content.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved upper-left rim of a round dial or disc, meaning a convex arc boundary with concentric bands, as on watch faces, compasses and gauges. It also fires more weakly on other circular rims and arcs such as bowls, plaques, bridge arches and bent railings.\",\n \"evidence\": \"Most of the top crops are the bezel or edge of a watch, compass, gauge or clock face, and the box sits on the upper-left part of the circle each time. Lower-ranked examples are non-dial arcs (a colander rim, a bridge arch, a mirror ring, a rail bend), while the random photos without such arcs score only 1-4.\",\n \"missing_data\": \"Activations on synthetic arcs at different orientations and on dial faces without a rim would show whether this is a pure curvature detector or tied to dial content.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved upper-left rim of a round dial or disc, meaning a convex arc boundary with concentric bands, as on watch faces, compasses and gauges. It also fires more weakly on other circular rims and arcs such as bowls, plaques, bridge arches and bent railings.\",\n \"evidence\": \"Most of the top crops are the bezel or edge of a watch, compass, gauge or clock face, and the box sits on the upper-left part of the circle each time. Lower-ranked examples are non-dial arcs (a colander rim, a bridge arch, a mirror ring, a rail bend), while the random photos without such arcs score only 1-4.\",\n \"missing_data\": \"Activations on synthetic arcs at different orientations and on dial faces without a rim would show whether this is a pure curvature detector or tied to dial content.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "C_s1": {
+  "unit": "mixed3b:379",
+  "reading": "C_s1",
+  "condition": "C",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8a3dafcbe85844bd1ac74c495547a795bac49df24b811a518d12a15014468d3d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects the upper-left curved rim of a circular dial or face, a thin concentric arc border, most strongly on watch, compass and gauge faces. It extends more weakly to other circular arcs and rings such as plaques, bowls, a bridge arch and a railing bend.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects the upper-left curved rim of a circular dial or face, a thin concentric arc border, most strongly on watch, compass and gauge faces. It extends more weakly to other circular arcs and rings such as plaques, bowls, a bridge arch and a railing bend.",
+   "evidence": "The top activations (watches, compass, pocket gauge, speedometer, multimeter dial) all place the box on the curved bezel edge, and the crops show a consistent concave arc with a band and inner ticks or text. Lower-ranked non-dial arcs (#12 bridge, #19 rainbow, #20 railing) still score 8-9, while random photos without arcs score 1-4.",
+   "missing_data": "Activations on non-circular dial faces and on plain arcs at other orientations, to separate the arc-shape detector from the dial/clock-face detector.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects the upper-left curved rim of a circular dial or face, a thin concentric arc border, most strongly on watch, compass and gauge faces. It extends more weakly to other circular arcs and rings such as plaques, bowls, a bridge arch and a railing bend.\",\n \"evidence\": \"The top activations (watches, compass, pocket gauge, speedometer, multimeter dial) all place the box on the curved bezel edge, and the crops show a consistent concave arc with a band and inner ticks or text. Lower-ranked non-dial arcs (#12 bridge, #19 rainbow, #20 railing) still score 8-9, while random photos without arcs score 1-4.\",\n \"missing_data\": \"Activations on non-circular dial faces and on plain arcs at other orientations, to separate the arc-shape detector from the dial/clock-face detector.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects the upper-left curved rim of a circular dial or face, a thin concentric arc border, most strongly on watch, compass and gauge faces. It extends more weakly to other circular arcs and rings such as plaques, bowls, a bridge arch and a railing bend.\",\n \"evidence\": \"The top activations (watches, compass, pocket gauge, speedometer, multimeter dial) all place the box on the curved bezel edge, and the crops show a consistent concave arc with a band and inner ticks or text. Lower-ranked non-dial arcs (#12 bridge, #19 rainbow, #20 railing) still score 8-9, while random photos without arcs score 1-4.\",\n \"missing_data\": \"Activations on non-circular dial faces and on plain arcs at other orientations, to separate the arc-shape detector from the dial/clock-face detector.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed3b:379",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad0589b058643069b89478094a899b675cae249c1ff4fd2848af6367b7ae8f90",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects the upper-left curved rim of a circular dial or disc, a convex arc bounding a round face, as on watches, compasses and gauges. It also fires more weakly on other rounded arcs such as bridge arches, bowl rims, plaques and bent railings.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects the upper-left curved rim of a circular dial or disc, a convex arc bounding a round face, as on watches, compasses and gauges. It also fires more weakly on other rounded arcs such as bridge arches, bowl rims, plaques and bent railings.",
+   "evidence": "Nearly all top crops show a curved boundary arcing over the upper-left of a round face, mostly watch, compass and gauge dials, with lower-ranked hits on non-dial arcs (#12 bridge, #19 sign stripes, #20 railing), while random photos score only 1-4. The unit loses much more than most units under phase scramble (percentile 4) and patch shuffle (percentile 9), but keeps nearly all its activation under luminance-polarity inversion, grayscale and edge maps, so it depends on curved contour shape rather than color or contrast sign.",
+   "missing_data": "Synthetic arcs at varying curvature and orientation, with and without a round enclosed face, would settle whether the unit encodes generic curvature or dial-like circular objects specifically.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the upper-left curved rim of a circular dial or disc, a convex arc bounding a round face, as on watches, compasses and gauges. It also fires more weakly on other rounded arcs such as bridge arches, bowl rims, plaques and bent railings.\", \"evidence\": \"Nearly all top crops show a curved boundary arcing over the upper-left of a round face, mostly watch, compass and gauge dials, with lower-ranked hits on non-dial arcs (#12 bridge, #19 sign stripes, #20 railing), while random photos score only 1-4. The unit loses much more than most units under phase scramble (percentile 4) and patch shuffle (percentile 9), but keeps nearly all its activation under luminance-polarity inversion, grayscale and edge maps, so it depends on curved contour shape rather than color or contrast sign.\", \"missing_data\": \"Synthetic arcs at varying curvature and orientation, with and without a round enclosed face, would settle whether the unit encodes generic curvature or dial-like circular objects specifically.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit detects the upper-left curved rim of a circular dial or disc, a convex arc bounding a round face, as on watches, compasses and gauges. It also fires more weakly on other rounded arcs such as bridge arches, bowl rims, plaques and bent railings.\", \"evidence\": \"Nearly all top crops show a curved boundary arcing over the upper-left of a round face, mostly watch, compass and gauge dials, with lower-ranked hits on non-dial arcs (#12 bridge, #19 sign stripes, #20 railing), while random photos score only 1-4. The unit loses much more than most units under phase scramble (percentile 4) and patch shuffle (percentile 9), but keeps nearly all its activation under luminance-polarity inversion, grayscale and edge maps, so it depends on curved contour shape rather than color or contrast sign.\", \"missing_data\": \"Synthetic arcs at varying curvature and orientation, with and without a round enclosed face, would settle whether the unit encodes generic curvature or dial-like circular objects specifically.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "C_s2": {
+  "unit": "mixed3b:379",
+  "reading": "C_s2",
+  "condition": "C",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8a3dafcbe85844bd1ac74c495547a795bac49df24b811a518d12a15014468d3d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit detects the curved upper-left rim of a circular object, especially the boundary between a ring or bezel and the dial face inside it, as on watches, compasses and gauges. It responds more weakly to other curved arcs and bands such as bridge arches, colander rims and railings.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit detects the curved upper-left rim of a circular object, especially the boundary between a ring or bezel and the dial face inside it, as on watches, compasses and gauges. It responds more weakly to other curved arcs and bands such as bridge arches, colander rims and railings.",
+   "evidence": "Nearly all top-20 crops center on a circular boundary arcing across the upper part of the patch (watch bezels, compass rims, a speedometer, a multimeter dial, a plaque edge), with dials and watches dominating the top ranks; the lower ranks (#12 bridge arch, #19 rainbow stripes, #20 curved railing) are non-dial arcs. The random photos, which have no such rims, score only 1-4.",
+   "missing_data": "Activations on synthetic arcs at varied curvature, orientation and position, and on full dials without visible rims, would separate a curvature/edge detector from a dial-specific detector.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects the curved upper-left rim of a circular object, especially the boundary between a ring or bezel and the dial face inside it, as on watches, compasses and gauges. It responds more weakly to other curved arcs and bands such as bridge arches, colander rims and railings.\",\n \"evidence\": \"Nearly all top-20 crops center on a circular boundary arcing across the upper part of the patch (watch bezels, compass rims, a speedometer, a multimeter dial, a plaque edge), with dials and watches dominating the top ranks; the lower ranks (#12 bridge arch, #19 rainbow stripes, #20 curved railing) are non-dial arcs. The random photos, which have no such rims, score only 1-4.\",\n \"missing_data\": \"Activations on synthetic arcs at varied curvature, orientation and position, and on full dials without visible rims, would separate a curvature/edge detector from a dial-specific detector.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit detects the curved upper-left rim of a circular object, especially the boundary between a ring or bezel and the dial face inside it, as on watches, compasses and gauges. It responds more weakly to other curved arcs and bands such as bridge arches, colander rims and railings.\",\n \"evidence\": \"Nearly all top-20 crops center on a circular boundary arcing across the upper part of the patch (watch bezels, compass rims, a speedometer, a multimeter dial, a plaque edge), with dials and watches dominating the top ranks; the lower ranks (#12 bridge arch, #19 rainbow stripes, #20 curved railing) are non-dial arcs. The random photos, which have no such rims, score only 1-4.\",\n \"missing_data\": \"Activations on synthetic arcs at varied curvature, orientation and position, and on full dials without visible rims, would separate a curvature/edge detector from a dial-specific detector.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed3b:379",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ce73d67944cf3d020028f534c6066595bcb97f637956099a92fb016c8ca61992",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the curved rim of a circular dial or face, such as on watches, compasses, gauges, clocks and meters, especially the arc where the bezel meets the tick-marked face. It responds more weakly to other circular rims and arcs, such as a blue plaque, a colander edge, a round mirror frame, an arched bridge and a rainbow-like sign arc.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the curved rim of a circular dial or face, such as on watches, compasses, gauges, clocks and meters, especially the arc where the bezel meets the tick-marked face. It responds more weakly to other circular rims and arcs, such as a blue plaque, a colander edge, a round mirror frame, an arched bridge and a rainbow-like sign arc.",
+   "evidence": "Thirteen of the top 20 photos are dials (watches, compasses, a speedometer, a multimeter, a clock), and the red boxes sit on the circular rim. The remaining top photos are round or arched outlines; random photos stay at 1-4, and the unit is unusually sensitive to phase scrambling (11% kept, percentile 4) and patch shuffling (percentile 9), consistent with a curved-contour shape detector that is indifferent to colour and contrast polarity.",
+   "missing_data": "Activations on synthetic stimuli would help most: plain circles and arcs, with and without tick marks, to separate 'dial face' from 'any circular rim'.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved rim of a circular dial or face, such as on watches, compasses, gauges, clocks and meters, especially the arc where the bezel meets the tick-marked face. It responds more weakly to other circular rims and arcs, such as a blue plaque, a colander edge, a round mirror frame, an arched bridge and a rainbow-like sign arc.\",\n \"evidence\": \"Thirteen of the top 20 photos are dials (watches, compasses, a speedometer, a multimeter, a clock), and the red boxes sit on the circular rim. The remaining top photos are round or arched outlines; random photos stay at 1-4, and the unit is unusually sensitive to phase scrambling (11% kept, percentile 4) and patch shuffling (percentile 9), consistent with a curved-contour shape detector that is indifferent to colour and contrast polarity.\",\n \"missing_data\": \"Activations on synthetic stimuli would help most: plain circles and arcs, with and without tick marks, to separate 'dial face' from 'any circular rim'.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the curved rim of a circular dial or face, such as on watches, compasses, gauges, clocks and meters, especially the arc where the bezel meets the tick-marked face. It responds more weakly to other circular rims and arcs, such as a blue plaque, a colander edge, a round mirror frame, an arched bridge and a rainbow-like sign arc.\",\n \"evidence\": \"Thirteen of the top 20 photos are dials (watches, compasses, a speedometer, a multimeter, a clock), and the red boxes sit on the circular rim. The remaining top photos are round or arched outlines; random photos stay at 1-4, and the unit is unusually sensitive to phase scrambling (11% kept, percentile 4) and patch shuffling (percentile 9), consistent with a curved-contour shape detector that is indifferent to colour and contrast polarity.\",\n \"missing_data\": \"Activations on synthetic stimuli would help most: plain circles and arcs, with and without tick marks, to separate 'dial face' from 'any circular rim'.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed3b:379",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "beb0ad00889ad2453606d89f14a1081e13fc825c2ca585106645172dbe89ec9d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the curved rim or edge of a circular dial face, as on watches, compasses, gauges, speedometers and clocks. It responds more weakly to other circular or arched rims, such as round plaques, bowls, bridge arches and curved signs.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the curved rim or edge of a circular dial face, as on watches, compasses, gauges, speedometers and clocks. It responds more weakly to other circular or arched rims, such as round plaques, bowls, bridge arches and curved signs.",
+   "evidence": "Most of the top 20 (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or gauges, with the box on the upper edge of the dial. Lower-ranked hits (#6 bowl, #8 round plaque, #12 bridge arch, #18-20 round frame, rainbow arch, curved railing) share the curved-rim shape, and the random images, which have no dials, sit at activation 1-4.",
+   "missing_data": "Activations on round objects that are not dials (plates, wheels, coins) compared with dial faces that have no visible rim, to tell apart curved-edge detection from dial/clock detection.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved rim or edge of a circular dial face, as on watches, compasses, gauges, speedometers and clocks. It responds more weakly to other circular or arched rims, such as round plaques, bowls, bridge arches and curved signs.\",\n \"evidence\": \"Most of the top 20 (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or gauges, with the box on the upper edge of the dial. Lower-ranked hits (#6 bowl, #8 round plaque, #12 bridge arch, #18-20 round frame, rainbow arch, curved railing) share the curved-rim shape, and the random images, which have no dials, sit at activation 1-4.\",\n \"missing_data\": \"Activations on round objects that are not dials (plates, wheels, coins) compared with dial faces that have no visible rim, to tell apart curved-edge detection from dial/clock detection.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved rim or edge of a circular dial face, as on watches, compasses, gauges, speedometers and clocks. It responds more weakly to other circular or arched rims, such as round plaques, bowls, bridge arches and curved signs.\",\n \"evidence\": \"Most of the top 20 (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or gauges, with the box on the upper edge of the dial. Lower-ranked hits (#6 bowl, #8 round plaque, #12 bridge arch, #18-20 round frame, rainbow arch, curved railing) share the curved-rim shape, and the random images, which have no dials, sit at activation 1-4.\",\n \"missing_data\": \"Activations on round objects that are not dials (plates, wheels, coins) compared with dial faces that have no visible rim, to tell apart curved-edge detection from dial/clock detection.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed3b:379",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ce73d67944cf3d020028f534c6066595bcb97f637956099a92fb016c8ca61992",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to circular dial faces with radial tick marks or graduated rims, such as watch faces, compasses, gauges and speedometers, and it fires most strongly near the curved edge. More weakly, it also responds to other circular rims and arcs: a bowl rim, a round plaque, a bottle-cap clock, an arch bridge, a mirror ring and a curved railing.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to circular dial faces with radial tick marks or graduated rims, such as watch faces, compasses, gauges and speedometers, and it fires most strongly near the curved edge. More weakly, it also responds to other circular rims and arcs: a bowl rim, a round plaque, a bottle-cap clock, an arch bridge, a mirror ring and a curved railing.",
+   "evidence": "Fifteen or so of the top 20 are dials (watches, compasses, a multimeter, a speedometer, a clock), and the red boxes sit on the rim and tick region. The lower-ranked hits are plain arcs or rings, while the random photos stay at 1-4; the unit loses much more than most units under phase scramble (11%, percentile 4) and patch shuffle (percentile 9), so it depends on the spatial layout of curved, graduated structure rather than on colour or texture.",
+   "missing_data": "Synthetic tests would help most: plain circles and arcs versus ringed tick marks, with and without numerals. Activations on non-dial circular objects (plates, wheels, coins) would show whether the tick marks matter or curvature alone is enough.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to circular dial faces with radial tick marks or graduated rims, such as watch faces, compasses, gauges and speedometers, and it fires most strongly near the curved edge. More weakly, it also responds to other circular rims and arcs: a bowl rim, a round plaque, a bottle-cap clock, an arch bridge, a mirror ring and a curved railing.\", \"evidence\": \"Fifteen or so of the top 20 are dials (watches, compasses, a multimeter, a speedometer, a clock), and the red boxes sit on the rim and tick region. The lower-ranked hits are plain arcs or rings, while the random photos stay at 1-4; the unit loses much more than most units under phase scramble (11%, percentile 4) and patch shuffle (percentile 9), so it depends on the spatial layout of curved, graduated structure rather than on colour or texture.\", \"missing_data\": \"Synthetic tests would help most: plain circles and arcs versus ringed tick marks, with and without numerals. Activations on non-dial circular objects (plates, wheels, coins) would show whether the tick marks matter or curvature alone is enough.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to circular dial faces with radial tick marks or graduated rims, such as watch faces, compasses, gauges and speedometers, and it fires most strongly near the curved edge. More weakly, it also responds to other circular rims and arcs: a bowl rim, a round plaque, a bottle-cap clock, an arch bridge, a mirror ring and a curved railing.\", \"evidence\": \"Fifteen or so of the top 20 are dials (watches, compasses, a multimeter, a speedometer, a clock), and the red boxes sit on the rim and tick region. The lower-ranked hits are plain arcs or rings, while the random photos stay at 1-4; the unit loses much more than most units under phase scramble (11%, percentile 4) and patch shuffle (percentile 9), so it depends on the spatial layout of curved, graduated structure rather than on colour or texture.\", \"missing_data\": \"Synthetic tests would help most: plain circles and arcs versus ringed tick marks, with and without numerals. Activations on non-dial circular objects (plates, wheels, coins) would show whether the tick marks matter or curvature alone is enough.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed3b:379",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad0589b058643069b89478094a899b675cae249c1ff4fd2848af6367b7ae8f90",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the upper-left rim of a circular dial or disc, a curved arc boundary with a concentric inner band (watch bezels, compass and gauge faces, clock faces), and more weakly to other curved arcs such as plaques, bowls, bridge arches and bent railings.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the upper-left rim of a circular dial or disc, a curved arc boundary with a concentric inner band (watch bezels, compass and gauge faces, clock faces), and more weakly to other curved arcs such as plaques, bowls, bridge arches and bent railings.",
+   "evidence": "The crops consistently show a convex arc curving from lower-left to upper-right, mostly the bezel and tick-mark edge of watches, compasses and gauges, with weaker hits on non-dial arcs (bridge #12, railing #20, laundry sign #19). It loses most of its activation under phase scramble (percentile 4) but is insensitive to colour and contrast polarity, which fits a shape-based curvature detector, while random photos stay at 1-4.",
+   "missing_data": "Activations on synthetic arcs at different orientations and curvatures, with and without concentric inner rings or tick marks, to separate a generic curvature detector from a dial-specific one.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upper-left rim of a circular dial or disc, a curved arc boundary with a concentric inner band (watch bezels, compass and gauge faces, clock faces), and more weakly to other curved arcs such as plaques, bowls, bridge arches and bent railings.\", \"evidence\": \"The crops consistently show a convex arc curving from lower-left to upper-right, mostly the bezel and tick-mark edge of watches, compasses and gauges, with weaker hits on non-dial arcs (bridge #12, railing #20, laundry sign #19). It loses most of its activation under phase scramble (percentile 4) but is insensitive to colour and contrast polarity, which fits a shape-based curvature detector, while random photos stay at 1-4.\", \"missing_data\": \"Activations on synthetic arcs at different orientations and curvatures, with and without concentric inner rings or tick marks, to separate a generic curvature detector from a dial-specific one.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upper-left rim of a circular dial or disc, a curved arc boundary with a concentric inner band (watch bezels, compass and gauge faces, clock faces), and more weakly to other curved arcs such as plaques, bowls, bridge arches and bent railings.\", \"evidence\": \"The crops consistently show a convex arc curving from lower-left to upper-right, mostly the bezel and tick-mark edge of watches, compasses and gauges, with weaker hits on non-dial arcs (bridge #12, railing #20, laundry sign #19). It loses most of its activation under phase scramble (percentile 4) but is insensitive to colour and contrast polarity, which fits a shape-based curvature detector, while random photos stay at 1-4.\", \"missing_data\": \"Activations on synthetic arcs at different orientations and curvatures, with and without concentric inner rings or tick marks, to separate a generic curvature detector from a dial-specific one.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed3b:379",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad0589b058643069b89478094a899b675cae249c1ff4fd2848af6367b7ae8f90",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the curved upper-left rim of a circular dial or disc, typically a watch, compass or gauge face: a convex arc running from lower-left to upper-right with a contrasting band or bezel. It responds more weakly to other convex arcs such as a bowl rim, plaque edge, bridge arch, rainbow sign and bent railing.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the curved upper-left rim of a circular dial or disc, typically a watch, compass or gauge face: a convex arc running from lower-left to upper-right with a contrasting band or bezel. It responds more weakly to other convex arcs such as a bowl rim, plaque edge, bridge arch, rainbow sign and bent railing.",
+   "evidence": "All 20 crops centre on a curved boundary bulging toward the upper left, and 11 of the top 17 are watches, compasses or gauges. The response is insensitive to colour and contrast polarity (grayscale 94%, inversion 99%, edge map 72%) but collapses under phase scrambling (11%, percentile 4) and patch shuffling, which points to curved-contour geometry.",
+   "missing_data": "Synthetic curvature and orientation tuning curves, such as arcs of varying radius and position, and circles without dial content, would show whether this is a pure curve detector or a dial-specific unit.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the curved upper-left rim of a circular dial or disc, typically a watch, compass or gauge face: a convex arc running from lower-left to upper-right with a contrasting band or bezel. It responds more weakly to other convex arcs such as a bowl rim, plaque edge, bridge arch, rainbow sign and bent railing.\", \"evidence\": \"All 20 crops centre on a curved boundary bulging toward the upper left, and 11 of the top 17 are watches, compasses or gauges. The response is insensitive to colour and contrast polarity (grayscale 94%, inversion 99%, edge map 72%) but collapses under phase scrambling (11%, percentile 4) and patch shuffling, which points to curved-contour geometry.\", \"missing_data\": \"Synthetic curvature and orientation tuning curves, such as arcs of varying radius and position, and circles without dial content, would show whether this is a pure curve detector or a dial-specific unit.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the curved upper-left rim of a circular dial or disc, typically a watch, compass or gauge face: a convex arc running from lower-left to upper-right with a contrasting band or bezel. It responds more weakly to other convex arcs such as a bowl rim, plaque edge, bridge arch, rainbow sign and bent railing.\", \"evidence\": \"All 20 crops centre on a curved boundary bulging toward the upper left, and 11 of the top 17 are watches, compasses or gauges. The response is insensitive to colour and contrast polarity (grayscale 94%, inversion 99%, edge map 72%) but collapses under phase scrambling (11%, percentile 4) and patch shuffling, which points to curved-contour geometry.\", \"missing_data\": \"Synthetic curvature and orientation tuning curves, such as arcs of varying radius and position, and circles without dial content, would show whether this is a pure curve detector or a dial-specific unit.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed3b:379",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "beb0ad00889ad2453606d89f14a1081e13fc825c2ca585106645172dbe89ec9d",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the curved rim or bezel at the edge of circular dials, such as watch faces, compasses, gauges and clocks. It also responds more weakly to other circular or arched edges like plaques, bowls, rings and arches.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the curved rim or bezel at the edge of circular dials, such as watch faces, compasses, gauges and clocks. It also responds more weakly to other circular or arched edges like plaques, bowls, rings and arches.",
+   "evidence": "Most top activations (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or dials, and the red box sits on the upper rim of the dial. Lower-ranked hits are other round or arched contours (blue plaque, colander, bridge arch, beaker, ring around a face, rainbow arch, curved railing), while random images with no such shapes score only 1-4.",
+   "missing_data": "Activations on plain circles or rings with no dial content, and on dial faces with the rim cropped out, would separate 'dial' from 'curved circular edge'.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved rim or bezel at the edge of circular dials, such as watch faces, compasses, gauges and clocks. It also responds more weakly to other circular or arched edges like plaques, bowls, rings and arches.\",\n \"evidence\": \"Most top activations (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or dials, and the red box sits on the upper rim of the dial. Lower-ranked hits are other round or arched contours (blue plaque, colander, bridge arch, beaker, ring around a face, rainbow arch, curved railing), while random images with no such shapes score only 1-4.\",\n \"missing_data\": \"Activations on plain circles or rings with no dial content, and on dial faces with the rim cropped out, would separate 'dial' from 'curved circular edge'.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved rim or bezel at the edge of circular dials, such as watch faces, compasses, gauges and clocks. It also responds more weakly to other circular or arched edges like plaques, bowls, rings and arches.\",\n \"evidence\": \"Most top activations (#1-3, 5, 7, 9-11, 15-17) are watches, compasses or dials, and the red box sits on the upper rim of the dial. Lower-ranked hits are other round or arched contours (blue plaque, colander, bridge arch, beaker, ring around a face, rainbow arch, curved railing), while random images with no such shapes score only 1-4.\",\n \"missing_data\": \"Activations on plain circles or rings with no dial content, and on dial faces with the rim cropped out, would separate 'dial' from 'curved circular edge'.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed3b:379",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ce73d67944cf3d020028f534c6066595bcb97f637956099a92fb016c8ca61992",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the curved rim of round dial faces such as watches, compasses, gauges, speedometers and clock faces, with the peak often at the upper edge where the bezel meets the tick marks. It responds more weakly to other circular or arched contours such as a bridge arch, a bowl rim, a round plaque, a rainbow-arc sign and a curved railing.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the curved rim of round dial faces such as watches, compasses, gauges, speedometers and clock faces, with the peak often at the upper edge where the bezel meets the tick marks. It responds more weakly to other circular or arched contours such as a bridge arch, a bowl rim, a round plaque, a rainbow-arc sign and a curved railing.",
+   "evidence": "Most of the top 20 are watches, compasses and gauges (#1-3, 5, 7, 9-11, 15-17), and the rest are mostly arcs or rims (#6, 8, 12, 13, 18-20); random photos without such structure score only 1-4. The unit is unusually sensitive to phase scrambling (percentile 4) and patch shuffling (percentile 9), and it keeps most of its activation in edge maps, which fits a shape or contour feature rather than colour or texture.",
+   "missing_data": "Activations on synthetic stimuli (plain circles and arcs of varying curvature, with and without tick marks) would show whether dial markings matter beyond the curvature itself.",
+   "confidence": 0.72
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the curved rim of round dial faces such as watches, compasses, gauges, speedometers and clock faces, with the peak often at the upper edge where the bezel meets the tick marks. It responds more weakly to other circular or arched contours such as a bridge arch, a bowl rim, a round plaque, a rainbow-arc sign and a curved railing.\", \"evidence\": \"Most of the top 20 are watches, compasses and gauges (#1-3, 5, 7, 9-11, 15-17), and the rest are mostly arcs or rims (#6, 8, 12, 13, 18-20); random photos without such structure score only 1-4. The unit is unusually sensitive to phase scrambling (percentile 4) and patch shuffling (percentile 9), and it keeps most of its activation in edge maps, which fits a shape or contour feature rather than colour or texture.\", \"missing_data\": \"Activations on synthetic stimuli (plain circles and arcs of varying curvature, with and without tick marks) would show whether dial markings matter beyond the curvature itself.\", \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the curved rim of round dial faces such as watches, compasses, gauges, speedometers and clock faces, with the peak often at the upper edge where the bezel meets the tick marks. It responds more weakly to other circular or arched contours such as a bridge arch, a bowl rim, a round plaque, a rainbow-arc sign and a curved railing.\", \"evidence\": \"Most of the top 20 are watches, compasses and gauges (#1-3, 5, 7, 9-11, 15-17), and the rest are mostly arcs or rims (#6, 8, 12, 13, 18-20); random photos without such structure score only 1-4. The unit is unusually sensitive to phase scrambling (percentile 4) and patch shuffling (percentile 9), and it keeps most of its activation in edge maps, which fits a shape or contour feature rather than colour or texture.\", \"missing_data\": \"Activations on synthetic stimuli (plain circles and arcs of varying curvature, with and without tick marks) would show whether dial markings matter beyond the curvature itself.\", \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ }
+}

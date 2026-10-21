@@ -1,0 +1,224 @@
+== mixed3a:136  S=32
+- grayscale (removes all chromatic information): keeps 97%; layer median 97%; percentile 50
+- low_pass (removes high spatial frequencies): keeps 58%; layer median 61%; percentile 45
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 90%; layer median 94%; percentile 38
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 36%; layer median 58%; percentile 15
+- patch_shuffle_4x4 (removes global configuration): keeps 96%; layer median 96%; percentile 48
+- rotate_90 (removes absolute orientation): keeps 70%; layer median 84%; percentile 7
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 37%; layer median 70%; percentile 19
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 95%; layer median 92%; percentile 73
+- rotate_180 (removes upright orientation): keeps 72%; layer median 91%; percentile 3
+- mirror (removes left-right orientation): keeps 96%; layer median 93%; percentile 68
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 RETAINED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 RETAINED, mirror RETAINED
+base_s1  cannot_tell  No consistent concept is visible. The unit seems broadly and densely active across many kinds of image, possibly responding to a generic low-level texture or ed
+base_s2  cannot_tell  The unit fires weakly and broadly across almost all images, perhaps for fine-grained, uniformly textured surfaces such as fabric, asphalt, fur, scales, insect c
+base_s3  cannot_tell  The unit seems broadly and weakly tuned, possibly to generic mid-level texture or surface detail, with no coherent object or scene concept among its top photos.
+C_s1  one  The unit responds to fine-grained, uniform granular/speckled texture (stippled surfaces like asphalt, carpet, gravel-like grain, scaly or bumpy skin, woven fabr
+C_s2  one  The unit responds to fine, uniform granular or speckled micro-texture, such as woven fabric, asphalt, carpet, short grass, pebbled insect or reptile scales, and
+C_s3  one  The unit responds to fine, uniform granular or stippled surface texture, such as asphalt, woven fabric, carpet, pebbled skin, beetle cuticle or fruit rind, ofte
+P_s1  cannot_tell  The unit appears to be a broadly tuned, dense unit that responds weakly selectively to fine local surface texture or structure, often on ground or background re
+P_s2  cannot_tell  The unit seems to be a broadly active, weakly selective unit. It responds loosely to fine-textured or plain surface regions, often in the lower part of the fram
+P_s3  cannot_tell  The unit seems to respond weakly and broadly to fine-grained surface texture (granular or speckled regions such as insect cuticle, fruit skin, scales, pavement,
+CP_s1  one  The unit responds to fine-grained, speckled or granular surface texture, such as asphalt, carpet, woven fabric, insect or reptile scales and fruit skin, most st
+CP_s2  one  The unit responds to fine-grained, granular or speckled surface texture, such as asphalt, carpet, fabric weave, scaly skin, fruit rind or lawn, filling the lowe
+CP_s3  one  Responds to fine-grained, speckled or granular surface texture (asphalt, woven fabric, carpet, reptile or insect scales, fruit skin, grass) located just below a
+
+== mixed3a:110  S=32
+- grayscale (removes all chromatic information): keeps 97%; layer median 97%; percentile 47
+- low_pass (removes high spatial frequencies): keeps 73%; layer median 61%; percentile 65
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 95%; layer median 94%; percentile 54
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 33%; layer median 58%; percentile 11
+- patch_shuffle_4x4 (removes global configuration): keeps 100%; layer median 96%; percentile 86
+- rotate_90 (removes absolute orientation): keeps 82%; layer median 84%; percentile 39
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 63%; layer median 70%; percentile 39
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 94%; layer median 92%; percentile 67
+- rotate_180 (removes upright orientation): keeps 77%; layer median 91%; percentile 11
+- mirror (removes left-right orientation): keeps 75%; layer median 93%; percentile 3
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass RETAINED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 RETAINED, rotate_90 RETAINED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 RETAINED, mirror RETAINED
+base_s1  cannot_tell  There is no clear selective feature. The unit fires broadly across natural images. At most it weakly prefers fine, repetitive small-element textures such as kni
+base_s2  cannot_tell  The unit fires broadly across unrelated content (a knitted doll, a hair dryer, a wedding, a trophy, a phone screen, a spider web, a dress, a bird nest). At most
+base_s3  cannot_tell  The unit is broadly active across nearly all natural images, with no clearly dominant feature. It may lean weakly toward fine repeated dot or bump textures such
+C_s1  one  The unit responds to a vertical boundary with a smooth, uniform region on the left and a fine repeating dotted or granular texture on the right, regardless of o
+C_s2  one  The unit responds to a vertical boundary where a smooth, uniform region on the left meets a dense, fine-grained dotted or granular texture on the right, such as
+C_s3  one  The unit responds to a vertical boundary where a plain, smooth region on the left meets a dense texture of small repeated dots or blobs on the right, such as pe
+P_s1  one_plus_related  The unit appears to respond to fine-scale repeated local texture, especially small dots, holes or grid elements (polka dots, perforations, keypads, QR codes, se
+P_s2  cannot_tell  The unit seems to be a broadly tuned, local mid-level feature that may favour small-scale structure such as knit, perforations, thatch, dotted fabric, keypads a
+P_s3  one_plus_related  The unit appears to respond to local, fine-grained textures made of small repeated elements such as dots, holes, bumps and stitches (knit, perforations, polka d
+CP_s1  one  The unit responds to a roughly vertical boundary with a smooth, uniform region on the left and a fine, repeated dot or bead texture (knit, perforations, polka d
+CP_s2  one  The unit responds to a vertical boundary where a smooth, plain region on the left meets a fine dotted, beaded or granular texture on the right, such as knit sti
+CP_s3  one  The unit responds to a vertical boundary where a smooth, uniform region on the left meets a fine dotted, speckled or granular texture on the right, such as knit
+
+== mixed3b:379  S=48
+- grayscale (removes all chromatic information): keeps 94%; layer median 93%; percentile 54
+- low_pass (removes high spatial frequencies): keeps 55%; layer median 49%; percentile 63
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 96%; layer median 86%; percentile 75
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 11%; layer median 37%; percentile 4
+- patch_shuffle_4x4 (removes global configuration): keeps 80%; layer median 92%; percentile 9
+- rotate_90 (removes absolute orientation): keeps 83%; layer median 76%; percentile 63
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 72%; layer median 56%; percentile 74
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 99%; layer median 87%; percentile 98
+- rotate_180 (removes upright orientation): keeps 78%; layer median 85%; percentile 33
+- mirror (removes left-right orientation): keeps 90%; layer median 93%; percentile 36
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 RETAINED, rotate_90 RETAINED, edge_map RETAINED, luminance_polarity_inversion RETAINED, rotate_180 RETAINED, mirror RETAINED
+base_s1  one_plus_related  The unit responds mainly to circular dials and faces with radial tick marks or numerals, such as watch faces, compasses, clocks, gauges and speedometers. It res
+base_s2  one_plus_related  The unit responds mainly to the curved rim or edge of a circular dial face, as on watches, compasses, gauges, speedometers and clocks. It responds more weakly t
+base_s3  one_plus_related  The unit responds mainly to the curved rim or bezel at the edge of circular dials, such as watch faces, compasses, gauges and clocks. It also responds more weak
+C_s1  one_plus_related  The unit detects the upper-left curved rim of a circular dial or face, a thin concentric arc border, most strongly on watch, compass and gauge faces. It extends
+C_s2  one_plus_related  The unit detects the curved upper-left rim of a circular object, especially the boundary between a ring or bezel and the dial face inside it, as on watches, com
+C_s3  one_plus_related  The unit responds to the curved upper-left rim of a round dial or disc, meaning a convex arc boundary with concentric bands, as on watch faces, compasses and ga
+P_s1  one_plus_related  The unit responds mainly to the curved rim of round dial faces such as watches, compasses, gauges, speedometers and clock faces, with the peak often at the uppe
+P_s2  one_plus_related  The unit responds to the curved rim of a circular dial or face, such as on watches, compasses, gauges, clocks and meters, especially the arc where the bezel mee
+P_s3  one_plus_related  The unit responds to circular dial faces with radial tick marks or graduated rims, such as watch faces, compasses, gauges and speedometers, and it fires most st
+CP_s1  one_plus_related  Responds to the upper-left rim of a circular dial or disc, a curved arc boundary with a concentric inner band (watch bezels, compass and gauge faces, clock face
+CP_s2  one_plus_related  The unit detects the upper-left curved rim of a circular dial or disc, a convex arc bounding a round face, as on watches, compasses and gauges. It also fires mo
+CP_s3  one_plus_related  Responds to the curved upper-left rim of a circular dial or disc, typically a watch, compass or gauge face: a convex arc running from lower-left to upper-right 
+
+== mixed4b:237  S=88
+- grayscale (removes all chromatic information): keeps 85%; layer median 86%; percentile 46
+- low_pass (removes high spatial frequencies): keeps 26%; layer median 36%; percentile 23
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 79%; layer median 79%; percentile 50
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 0%; layer median 16%; percentile 0
+- patch_shuffle_4x4 (removes global configuration): keeps 67%; layer median 73%; percentile 39
+- rotate_90 (removes absolute orientation): keeps 33%; layer median 70%; percentile 3
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 57%; layer median 43%; percentile 70
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 80%; layer median 81%; percentile 49
+- rotate_180 (removes upright orientation): keeps 50%; layer median 76%; percentile 10
+- mirror (removes left-right orientation): keeps 96%; layer median 95%; percentile 56
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 ATTENUATED, mirror RETAINED
+base_s1  one  The unit responds to the side windows of road vehicles, especially the driver/cab door window seen from the side, across cars, pickups, vans, trucks, ambulances
+base_s2  one  The unit responds to the side windows of road vehicles, especially the driver/front side-door window and the cab window of cars, trucks, vans and similar vehicl
+base_s3  one  The unit responds to the side windows of vehicles, especially the driver/cab door window of cars, trucks, vans and ambulances.
+C_s1  one  The unit responds to the side windows of road vehicles, meaning the glass of a car or truck cab door with its frame and pillars, seen from the side or at a thre
+C_s2  one  The unit responds to the side windows and doors of road vehicles, meaning the glass pane of a car, truck or van door seen from the side or at a three-quarter an
+C_s3  one  The unit responds to the side windows of road vehicles, especially the front-door window next to the driver's cab. This appears on cars, pickups, vans, ambulanc
+P_s1  one  The unit responds to the side windows of road vehicles, meaning the glass panel of a car, truck or van door or cab, especially the driver/front side window seen
+P_s2  one  The unit responds to the side windows of road vehicles, especially the driver/front-door window region, where a glass pane sits in a vertical frame within the c
+P_s3  one  The unit responds to the side windows of road vehicles, meaning the glass of the cab or door on cars, trucks, vans and ambulances, seen in upright side or three
+CP_s1  one  The unit responds to the side windows of road vehicles, specifically the side window together with the door frame, pillars and wing mirror of a car, truck or va
+CP_s2  one  The unit responds to the side window and door region of road vehicles (cars, trucks, vans, ambulances), particularly the upright window frame with pillars seen 
+CP_s3  one  Responds to the side window and door of road vehicles (cars, trucks, vans, ambulances): the window opening framed by the door pillars and roof line, seen uprigh
+
+== mixed4b:373  S=80
+- grayscale (removes all chromatic information): keeps 93%; layer median 86%; percentile 81
+- low_pass (removes high spatial frequencies): keeps 31%; layer median 36%; percentile 36
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 83%; layer median 79%; percentile 63
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 1%; layer median 16%; percentile 6
+- patch_shuffle_4x4 (removes global configuration): keeps 63%; layer median 73%; percentile 26
+- rotate_90 (removes absolute orientation): keeps 23%; layer median 70%; percentile 0
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 13%; layer median 43%; percentile 7
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 65%; layer median 81%; percentile 17
+- rotate_180 (removes upright orientation): keeps 61%; layer median 76%; percentile 24
+- mirror (removes left-right orientation): keeps 98%; layer median 95%; percentile 82
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion ATTENUATED, rotate_180 ATTENUATED, mirror RETAINED
+base_s1  one  The unit detects vehicle wheels, especially the front wheel with its surrounding wheel arch and lower body panel, on road vehicles of all kinds (cars, vans, bus
+base_s2  one  The unit detects the wheel of a road vehicle (tire and rim, often with the wheel arch around it) seen from the side or at a three-quarter angle.
+base_s3  one  The unit detects vehicle wheels/tires, especially the front wheel and wheel arch of cars, trucks, buses and emergency vehicles, seen from the side or at an angl
+C_s1  one  The unit responds to vehicle wheels seen in their wheel arch: a tire and rim set inside the curved fender opening on the side of a car, truck, bus or van.
+C_s2  one  The unit detects vehicle wheels set in their wheel arch: a tire with its rim/hub plus the curved fender edge of the car or truck body around it.
+C_s3  one  The unit detects vehicle wheels set in their wheel arch, meaning the tire plus the curved fender edge above it on the side of cars, trucks, buses and emergency 
+P_s1  one  The unit responds to vehicle wheels and tires (the front wheel and wheel-arch region) on cars, trucks, buses and other road vehicles, seen upright from the side
+P_s2  one  The unit responds to the wheel of a road vehicle, typically the front wheel and tire seen from the side together with the wheel arch around it, on cars, trucks,
+P_s3  one  The unit detects the wheels of road vehicles (tyre plus rim, wheel arch and the lower body around it), seen upright from a side or three-quarter view, on cars, 
+CP_s1  one  The unit detects a vehicle wheel seen from the side together with its wheel arch, meaning a dark tyre and rim under the curved fender edge, in an upright orient
+CP_s2  one  The unit responds to a vehicle wheel seen side-on with its wheel arch (fender): a dark tire with a rim, set under the curved body edge at the lower front of the
+CP_s3  one  Responds to the front wheel of a road vehicle seen from the side: a round tyre sitting under the curved wheel arch of the body. This holds across cars, vans, tr
+
+== mixed4b:431  S=112
+- grayscale (removes all chromatic information): keeps 72%; layer median 86%; percentile 11
+- low_pass (removes high spatial frequencies): keeps 29%; layer median 36%; percentile 33
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 64%; layer median 79%; percentile 17
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 11%; layer median 16%; percentile 34
+- patch_shuffle_4x4 (removes global configuration): keeps 40%; layer median 73%; percentile 3
+- rotate_90 (removes absolute orientation): keeps 49%; layer median 70%; percentile 16
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 25%; layer median 43%; percentile 19
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 73%; layer median 81%; percentile 32
+- rotate_180 (removes upright orientation): keeps 40%; layer median 76%; percentile 3
+- mirror (removes left-right orientation): keeps 41%; layer median 95%; percentile 0
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass ATTENUATED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 ATTENUATED, mirror ATTENUATED
+base_s1  one_plus_related  Responds to fur on mammals, mostly dogs (head, ears, neck/chest fur), with weaker responses to fur on other mammals such as monkeys, hyenas, hamsters, squirrels
+base_s2  one_plus_related  The unit responds to the fur of mammals, mostly dogs, firing most strongly on furry areas around the head, ears, neck and shoulders. It responds more weakly to 
+base_s3  one_plus_related  The unit responds to furry mammal fur and coat texture, strongest on dogs and dog-like canids (dhole, hyena) and their heads, ears and necks. It responds more w
+C_s1  one_plus_related  The unit responds to furry mammal fur and coat texture, most strongly on dog heads, necks and ears, with weaker extensions to other furry mammals such as monkey
+C_s2  one_plus_related  The unit responds to fur on mammals, mainly on the side of the head, cheek, ear or neck of dogs, especially where furry head meets ear or body. It responds more
+C_s3  one_plus_related  The unit responds to furry mammal heads and the area around them, especially dog faces, ears, necks and cheek fur. It also fires more weakly on other furry mamm
+P_s1  one_plus_related  Responds mainly to the fur around the head of dogs, especially the ear and cheek region on one side of the face, and more weakly to the same region in other fur
+P_s2  one_plus_related  Responds mainly to the furry head, ear and neck region of dogs, and more weakly to the same region on other furry mammals (fox, hyena, monkeys, hamster, squirre
+P_s3  one_plus_related  Responds mainly to the fur at the viewer's-left side of a dog's head, around the ear and cheek, with weaker responses to the same region on other furry mammals 
+CP_s1  one_plus_related  Responds to furry mammal heads and faces, mostly dogs (often at the side of the face near an ear, cheek or neck ruff), with weaker responses to other furry mamm
+CP_s2  one_plus_related  Responds to furry mammal heads and upper bodies, mostly dogs, with the strongest spot usually on fur at the side of the face, the cheek or the ear. It extends m
+CP_s3  one_plus_related  Responds to the fur of furry mammals at the head/neck/cheek region, mostly dogs, with the boxes landing on fur-covered cheeks, ears and necks next to the face. 
+
+== mixed4d:409  S=128
+- grayscale (removes all chromatic information): keeps 87%; layer median 83%; percentile 63
+- low_pass (removes high spatial frequencies): keeps 32%; layer median 29%; percentile 61
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 76%; layer median 72%; percentile 62
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 0%; layer median 4%; percentile 0
+- patch_shuffle_4x4 (removes global configuration): keeps 24%; layer median 65%; percentile 0
+- rotate_90 (removes absolute orientation): keeps 3%; layer median 59%; percentile 0
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 10%; layer median 22%; percentile 20
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 72%; layer median 74%; percentile 43
+- rotate_180 (removes upright orientation): keeps 38%; layer median 62%; percentile 12
+- mirror (removes left-right orientation): keeps 101%; layer median 95%; percentile 95
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 ATTENUATED, mirror RETAINED
+base_s1  unrelated  The unit responds to two unrelated things: the body or flank of dogs (and one dog-like weasel), and the side or body panels of cars and other road vehicles.
+base_s2  unrelated  The unit responds to two separate things: the side-on torso or flank of dogs and similar small mammals, and the side body panels of cars, vans and trucks near t
+base_s3  unrelated  The unit responds to two unrelated categories: the body or flank of dogs (and other long-bodied quadrupeds such as a weasel), and the side or front of cars and 
+C_s1  unrelated  The unit responds to two kinds of thing: the torso or flank of dogs (and other four-legged animals such as a stoat), and the side body or wheel area of cars and
+C_s2  unrelated  The unit fires on two kinds of thing: the side-on torso or flank of dogs and similar four-legged animals (including a weasel), and the side body panel or wheel 
+C_s3  unrelated  The unit responds to side-on views of dogs (and similar quadrupeds such as a weasel), peaking on the torso, and also to side-on views of road vehicles such as c
+P_s1  unrelated  The unit responds to the side-on torso of a standing dog (and similar animals such as a weasel), and separately to the side body and front-wheel area of cars, v
+P_s2  one  The unit responds to the side-on middle section of an upright, horizontally elongated body held up off the ground, on legs or on wheels. This shared layout cove
+P_s3  one  The unit responds to the mid-section of a horizontally elongated object seen upright in side profile and standing on legs or wheels, such as a dog's flank or a 
+CP_s1  one  The unit responds to the side view of an upright, horizontally elongated body raised on legs or wheels, firing on the flank or mid-body of standing dogs and on 
+CP_s2  one  The unit detects the upright side profile of a horizontally elongated body held above the ground on legs or wheels, firing on the flank or torso. Dogs, a weasel
+CP_s3  unrelated  The unit responds to the side-on, horizontal mid-body of an upright four-legged dog (or dog-like animal such as a stoat) and also to the side panel or wheel reg
+
+== mixed4e:55  S=104
+- grayscale (removes all chromatic information): keeps 77%; layer median 85%; percentile 24
+- low_pass (removes high spatial frequencies): keeps 31%; layer median 29%; percentile 57
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 66%; layer median 72%; percentile 34
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 5%; layer median 5%; percentile 49
+- patch_shuffle_4x4 (removes global configuration): keeps 62%; layer median 64%; percentile 45
+- rotate_90 (removes absolute orientation): keeps 42%; layer median 61%; percentile 17
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 20%; layer median 23%; percentile 44
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 81%; layer median 75%; percentile 72
+- rotate_180 (removes upright orientation): keeps 42%; layer median 65%; percentile 10
+- mirror (removes left-right orientation): keeps 100%; layer median 95%; percentile 92
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass ATTENUATED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 ATTENUATED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 ATTENUATED, mirror RETAINED
+base_s1  one_plus_related  The unit responds to the muzzle/cheek region of small furry mammal faces (foxes, red pandas, cats, lynx, hamster), especially where whiskers and light fur on th
+base_s2  one_plus_related  The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes and red pandas, where pale fur around the nose and mouth meets darker fur
+base_s3  one_plus_related  The unit responds to the muzzle/snout region of small furry mammal faces, mainly cats, foxes, and red pandas: the area of nose, whisker pads, and cheeks below t
+C_s1  one_plus_related  The unit responds to the lower-central face region (muzzle, nose, mouth, whiskers) of small furry animals, especially cats, foxes and red pandas, typically wher
+C_s2  one_plus_related  Responds to the lower-central face of furry mammals, meaning the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes, hamsters and dogs, often wh
+C_s3  one_plus_related  The unit responds to the lower-middle face of furry animals, meaning the muzzle, nose, and whisker area, and it fires most for foxes, red pandas, and cats. It a
+P_s1  one_plus_related  Responds mainly to the muzzle/snout region of small furry mammal faces seen upright and from the front (foxes, red pandas, cats, lynx, hamster, a dog), especial
+P_s2  one_plus_related  The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes, red pandas and lynxes: the area around the nose, whisker pads and mouth 
+P_s3  one_plus_related  Responds to the muzzle/snout region of furry mammal faces (cat, fox, red panda, lynx, hamster, dog): the area around the nose, whisker pads and cheeks just belo
+CP_s1  one_plus_related  Responds to the muzzle/snout region of upright furry mammal faces (cats, foxes, red pandas, lynx, hamster, dog), especially the area below the eyes with nose, w
+CP_s2  one_plus_related  Responds to the muzzle/nose-mouth region of upright furry mammal faces, especially cats, foxes, red pandas and lynx, where the snout meets the white whisker are
+CP_s3  one_plus_related  Responds to the upright muzzle/lower-face region of furry mammals (fox, red panda, cat, hamster, dog, lynx), especially the nose-mouth area with white fur and w
+
+== mixed5a:719  S=160
+- grayscale (removes all chromatic information): keeps 74%; layer median 83%; percentile 19
+- low_pass (removes high spatial frequencies): keeps 35%; layer median 28%; percentile 72
+- high_pass (removes low spatial frequencies below about 10 cycles per image): keeps 83%; layer median 72%; percentile 81
+- phase_scramble (removes all spatial structure carried by fourier phase): keeps 8%; layer median 4%; percentile 71
+- patch_shuffle_4x4 (removes global configuration): keeps 62%; layer median 55%; percentile 64
+- rotate_90 (removes absolute orientation): keeps 91%; layer median 59%; percentile 99
+- edge_map (removes colour, shading, surface reflectance, texture inside regions, edge contrast magnitude and contrast polarity): keeps 42%; layer median 19%; percentile 87
+- luminance_polarity_inversion (removes the sign of luminance contrast): keeps 82%; layer median 73%; percentile 82
+- rotate_180 (removes upright orientation): keeps 89%; layer median 63%; percentile 97
+- mirror (removes left-right orientation): keeps 98%; layer median 96%; percentile 74
+retention labels (battery.decide on u: < 0.70 ATTENUATED, > 1.30 AMPLIFIED, else RETAINED): grayscale RETAINED, low_pass ATTENUATED, high_pass RETAINED, phase_scramble ATTENUATED, patch_shuffle_4x4 ATTENUATED, rotate_90 RETAINED, edge_map ATTENUATED, luminance_polarity_inversion RETAINED, rotate_180 RETAINED, mirror RETAINED
+base_s1  one_plus_related  The unit responds to close-up, man-made crafted objects, especially decorated or patterned surfaces and their stitched or embossed edges and seams (fabric stock
+base_s2  cannot_tell  The unit seems to respond broadly to close-up photos of crafted or manufactured objects, often at curved edges, seams, rims or decorative trim. No single specif
+base_s3  one_plus_related  The unit seems to respond to the curved edges and trimmed or stitched borders of man-made, often handcrafted or decorated objects, such as fabric items, cases, 
+C_s1  one_plus_related  The unit seems to respond to curved, rounded contours on close-up man-made objects such as a mouse body, armor neckline, shoe toe, knee pad, stocking edge and p
+C_s2  unrelated  The unit fires on close-up surfaces of man-made or handcrafted objects, along two seemingly separate lines. One is colorful decorative, often floral or radial, 
+C_s3  cannot_tell  The unit responds broadly to close-up, product-style photos of manufactured or handcrafted objects. Its peak often falls on a curved object contour (mouse, brea
+P_s1  one_plus_related  The unit responds to close-up views of handcrafted or manufactured objects, especially the boundaries of smooth or fabric surfaces that carry seams, stitching, 
+P_s2  one_plus_related  The unit seems to respond to the curved, bordered contours of crafted or manufactured objects, such as seams, trims, piping and edge lines on fabric goods, shoe
+P_s3  one_plus_related  The unit responds to the surfaces of crafted or manufactured objects, especially ornamented textiles and goods with decorative motifs, stitching, trim or emboss
+CP_s1  unrelated  The unit seems to respond to at least two loosely mixed things. One is decorative radial or floral motifs on crafted surfaces (brooch, manhole cover, bib, baske
+CP_s2  one_plus_related  The unit seems to respond to curved, rounded contours on man-made, often handcrafted or ornamented objects, such as the edge of a mouse, a breastplate neckline,
+CP_s3  one_plus_related  Responds to close-up, studio-style shots of handcrafted or manufactured objects, most strongly at curved object contours with trim, stitching or rivets, and als

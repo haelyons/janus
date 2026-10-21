@@ -1,0 +1,288 @@
+{
+ "base_s1": {
+  "unit": "mixed4e:55",
+  "reading": "base_s1",
+  "condition": "base",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "21ef4df0bb8275be215a5fe3acceb7a5e3ba117b8181933468c7ce6c078a9bce",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the muzzle/cheek region of small furry mammal faces (foxes, red pandas, cats, lynx, hamster), especially where whiskers and light fur on the snout meet. It also fires weakly on similar face-side textures in other things, like a stork's cheek and the front of a red car.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the muzzle/cheek region of small furry mammal faces (foxes, red pandas, cats, lynx, hamster), especially where whiskers and light fur on the snout meet. It also fires weakly on similar face-side textures in other things, like a stork's cheek and the front of a red car.",
+   "evidence": "18 of the top 20 photos have the box on the snout/whisker area of a cat, fox, red panda, lynx, hamster or dog face, and the two exceptions (car grille at 8, stork cheek at 7) are weaker. Random photos score only 1-2, and even the close-up dog face in the random set scores just 2.",
+   "missing_data": "Activations on more dog faces and close-up fox/cat muzzles versus whole bodies would show whether the unit is selective for small-carnivore muzzle texture or for animal faces in general.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the muzzle/cheek region of small furry mammal faces (foxes, red pandas, cats, lynx, hamster), especially where whiskers and light fur on the snout meet. It also fires weakly on similar face-side textures in other things, like a stork's cheek and the front of a red car.\",\n \"evidence\": \"18 of the top 20 photos have the box on the snout/whisker area of a cat, fox, red panda, lynx, hamster or dog face, and the two exceptions (car grille at 8, stork cheek at 7) are weaker. Random photos score only 1-2, and even the close-up dog face in the random set scores just 2.\",\n \"missing_data\": \"Activations on more dog faces and close-up fox/cat muzzles versus whole bodies would show whether the unit is selective for small-carnivore muzzle texture or for animal faces in general.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the muzzle/cheek region of small furry mammal faces (foxes, red pandas, cats, lynx, hamster), especially where whiskers and light fur on the snout meet. It also fires weakly on similar face-side textures in other things, like a stork's cheek and the front of a red car.\",\n \"evidence\": \"18 of the top 20 photos have the box on the snout/whisker area of a cat, fox, red panda, lynx, hamster or dog face, and the two exceptions (car grille at 8, stork cheek at 7) are weaker. Random photos score only 1-2, and even the close-up dog face in the random set scores just 2.\",\n \"missing_data\": \"Activations on more dog faces and close-up fox/cat muzzles versus whole bodies would show whether the unit is selective for small-carnivore muzzle texture or for animal faces in general.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s1": {
+  "unit": "mixed4e:55",
+  "reading": "CP_s1",
+  "condition": "CP",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a382863794136e3c27e14966e3d05945f5ffe8f5c679ceb3ff27cd1ffcfc0465",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the muzzle/snout region of upright furry mammal faces (cats, foxes, red pandas, lynx, hamster, dog), especially the area below the eyes with nose, whiskers and white/light fur. Weaker extensions to similar face-like light/dark contrast zones, such as a stork's eye-beak junction and a car's front grille/headlight area.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the muzzle/snout region of upright furry mammal faces (cats, foxes, red pandas, lynx, hamster, dog), especially the area below the eyes with nose, whiskers and white/light fur. Weaker extensions to similar face-like light/dark contrast zones, such as a stork's eye-beak junction and a car's front grille/headlight area.",
+   "evidence": "Nearly all top-20 crops center on the nose/whisker area of furry faces, while random images stay at 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotate_90 and rotate_180 (percentiles 17 and 10), which fits an upright face part, and it is fully mirror-invariant (100%), which fits symmetric frontal faces.",
+   "missing_data": "Activations on a larger set of upright vs inverted animal faces and on non-animal face-like patterns (car fronts, masks) to check whether the car and stork hits reflect a generic face-configuration detector.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the muzzle/snout region of upright furry mammal faces (cats, foxes, red pandas, lynx, hamster, dog), especially the area below the eyes with nose, whiskers and white/light fur. Weaker extensions to similar face-like light/dark contrast zones, such as a stork's eye-beak junction and a car's front grille/headlight area.\", \"evidence\": \"Nearly all top-20 crops center on the nose/whisker area of furry faces, while random images stay at 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotate_90 and rotate_180 (percentiles 17 and 10), which fits an upright face part, and it is fully mirror-invariant (100%), which fits symmetric frontal faces.\", \"missing_data\": \"Activations on a larger set of upright vs inverted animal faces and on non-animal face-like patterns (car fronts, masks) to check whether the car and stork hits reflect a generic face-configuration detector.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the muzzle/snout region of upright furry mammal faces (cats, foxes, red pandas, lynx, hamster, dog), especially the area below the eyes with nose, whiskers and white/light fur. Weaker extensions to similar face-like light/dark contrast zones, such as a stork's eye-beak junction and a car's front grille/headlight area.\", \"evidence\": \"Nearly all top-20 crops center on the nose/whisker area of furry faces, while random images stay at 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotate_90 and rotate_180 (percentiles 17 and 10), which fits an upright face part, and it is fully mirror-invariant (100%), which fits symmetric frontal faces.\", \"missing_data\": \"Activations on a larger set of upright vs inverted animal faces and on non-animal face-like patterns (car fronts, masks) to check whether the car and stork hits reflect a generic face-configuration detector.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s2": {
+  "unit": "mixed4e:55",
+  "reading": "base_s2",
+  "condition": "base",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "21ef4df0bb8275be215a5fe3acceb7a5e3ba117b8181933468c7ce6c078a9bce",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes and red pandas, where pale fur around the nose and mouth meets darker fur. Weaker activations extend to similar faces such as lynx, hamster and dog, and to look-alike textures like a stork's white head and a car's grille.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes and red pandas, where pale fur around the nose and mouth meets darker fur. Weaker activations extend to similar faces such as lynx, hamster and dog, and to look-alike textures like a stork's white head and a car's grille.",
+   "evidence": "In nearly all top-20 photos the red box sits on the nose, mouth or whisker area of a cat, fox, red panda, lynx, hamster or dog, and these reach the highest activations (7-10). The random photos, which include a close-up dog face, score only 1-2, and the two non-mammal hits (car at 8, stork at 7) look like texture or shape matches."
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes and red pandas, where pale fur around the nose and mouth meets darker fur. Weaker activations extend to similar faces such as lynx, hamster and dog, and to look-alike textures like a stork's white head and a car's grille.\",\n \"evidence\": \"In nearly all top-20 photos the red box sits on the nose, mouth or whisker area of a cat, fox, red panda, lynx, hamster or dog, and these reach the highest activations (7-10). The random photos, which include a close-up dog face, score only 1-2, and the two non-mammal hits (car at 8, stork at 7) look like texture or shape matches.\"},\n \"missing_data\": \"More mid-range activations, and controls such as dog and other mammal muzzles, would show whether the unit is specific to cat/fox-like faces or general to mammal snouts.\",\n \"confidence\": 0.72}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes and red pandas, where pale fur around the nose and mouth meets darker fur. Weaker activations extend to similar faces such as lynx, hamster and dog, and to look-alike textures like a stork's white head and a car's grille.\",\n \"evidence\": \"In nearly all top-20 photos the red box sits on the nose, mouth or whisker area of a cat, fox, red panda, lynx, hamster or dog, and these reach the highest activations (7-10). The random photos, which include a close-up dog face, score only 1-2, and the two non-mammal hits (car at 8, stork at 7) look like texture or shape matches.\"},\n \"missing_data\": \"More mid-range activations, and controls such as dog and other mammal muzzles, would show whether the unit is specific to cat/fox-like faces or general to mammal snouts.\",\n \"confidence\": 0.72}"
+  ],
+  "attempts": 1
+ },
+ "P_s2": {
+  "unit": "mixed4e:55",
+  "reading": "P_s2",
+  "condition": "P",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "473cd74eacc0416e4fe757b21f4f1e47bf2ad0ff95438de946185a35573d519f",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes, red pandas and lynxes: the area around the nose, whisker pads and mouth seen from the front. It responds more weakly to similar face-like regions elsewhere (a dog, a hamster, a stork's eye-to-beak area, a car's front grille).",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes, red pandas and lynxes: the area around the nose, whisker pads and mouth seen from the front. It responds more weakly to similar face-like regions elsewhere (a dog, a hamster, a stork's eye-to-beak area, a car's front grille).",
+   "evidence": "19 of the top 20 photos have the box on an animal's nose or muzzle, mostly small carnivores. The unit loses much more than most of its layer under rotate_180 (percentile 10) and rotate_90 (percentile 17), which fits an upright face part, and it is unaffected by mirroring; random photos score only 1-2, including a frontal dog face at 2.",
+   "missing_data": "Activations on a controlled set of dog faces, human faces and non-face fur textures, to tell whether it prefers cat-like or fox-like muzzles specifically or any upright mammal snout.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes, red pandas and lynxes: the area around the nose, whisker pads and mouth seen from the front. It responds more weakly to similar face-like regions elsewhere (a dog, a hamster, a stork's eye-to-beak area, a car's front grille).\", \"evidence\": \"19 of the top 20 photos have the box on an animal's nose or muzzle, mostly small carnivores. The unit loses much more than most of its layer under rotate_180 (percentile 10) and rotate_90 (percentile 17), which fits an upright face part, and it is unaffected by mirroring; random photos score only 1-2, including a frontal dog face at 2.\", \"missing_data\": \"Activations on a controlled set of dog faces, human faces and non-face fur textures, to tell whether it prefers cat-like or fox-like muzzles specifically or any upright mammal snout.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to the muzzle/snout region of furry mammal faces, mainly cats, foxes, red pandas and lynxes: the area around the nose, whisker pads and mouth seen from the front. It responds more weakly to similar face-like regions elsewhere (a dog, a hamster, a stork's eye-to-beak area, a car's front grille).\", \"evidence\": \"19 of the top 20 photos have the box on an animal's nose or muzzle, mostly small carnivores. The unit loses much more than most of its layer under rotate_180 (percentile 10) and rotate_90 (percentile 17), which fits an upright face part, and it is unaffected by mirroring; random photos score only 1-2, including a frontal dog face at 2.\", \"missing_data\": \"Activations on a controlled set of dog faces, human faces and non-face fur textures, to tell whether it prefers cat-like or fox-like muzzles specifically or any upright mammal snout.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s3": {
+  "unit": "mixed4e:55",
+  "reading": "CP_s3",
+  "condition": "CP",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a382863794136e3c27e14966e3d05945f5ffe8f5c679ceb3ff27cd1ffcfc0465",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the upright muzzle/lower-face region of furry mammals (fox, red panda, cat, hamster, dog, lynx), especially the nose-mouth area with white fur and whiskers below the eyes, with weaker extensions to similar face-like structures such as a stork's head and a car's front grille.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the upright muzzle/lower-face region of furry mammals (fox, red panda, cat, hamster, dog, lynx), especially the nose-mouth area with white fur and whiskers below the eyes, with weaker extensions to similar face-like structures such as a stork's head and a car's front grille.",
+   "evidence": "18 of the top 20 crops centre on the snout/mouth of a small furry mammal's face, while the random photos (including a frontal dog face at 2) stay low. Rotating by 90 or 180 degrees costs much more than for most units (percentiles 17 and 10), while mirroring costs nothing, which fits an upright, left-right symmetric face part.",
+   "missing_data": "Activations on a larger set of frontal dog and other mammal faces versus cats and foxes, plus feature-visualization images, would show whether the unit is about the muzzle in general or about fine fur/whisker texture around a small nose.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright muzzle/lower-face region of furry mammals (fox, red panda, cat, hamster, dog, lynx), especially the nose-mouth area with white fur and whiskers below the eyes, with weaker extensions to similar face-like structures such as a stork's head and a car's front grille.\", \"evidence\": \"18 of the top 20 crops centre on the snout/mouth of a small furry mammal's face, while the random photos (including a frontal dog face at 2) stay low. Rotating by 90 or 180 degrees costs much more than for most units (percentiles 17 and 10), while mirroring costs nothing, which fits an upright, left-right symmetric face part.\", \"missing_data\": \"Activations on a larger set of frontal dog and other mammal faces versus cats and foxes, plus feature-visualization images, would show whether the unit is about the muzzle in general or about fine fur/whisker texture around a small nose.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the upright muzzle/lower-face region of furry mammals (fox, red panda, cat, hamster, dog, lynx), especially the nose-mouth area with white fur and whiskers below the eyes, with weaker extensions to similar face-like structures such as a stork's head and a car's front grille.\", \"evidence\": \"18 of the top 20 crops centre on the snout/mouth of a small furry mammal's face, while the random photos (including a frontal dog face at 2) stay low. Rotating by 90 or 180 degrees costs much more than for most units (percentiles 17 and 10), while mirroring costs nothing, which fits an upright, left-right symmetric face part.\", \"missing_data\": \"Activations on a larger set of frontal dog and other mammal faces versus cats and foxes, plus feature-visualization images, would show whether the unit is about the muzzle in general or about fine fur/whisker texture around a small nose.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "CP_s2": {
+  "unit": "mixed4e:55",
+  "reading": "CP_s2",
+  "condition": "CP",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a382863794136e3c27e14966e3d05945f5ffe8f5c679ceb3ff27cd1ffcfc0465",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the muzzle/nose-mouth region of upright furry mammal faces, especially cats, foxes, red pandas and lynx, where the snout meets the white whisker area. Weaker responses come from similar face-like or fur regions on other animals (hamster, dog, stork head) and occasionally from a car front-grille 'face'.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the muzzle/nose-mouth region of upright furry mammal faces, especially cats, foxes, red pandas and lynx, where the snout meets the white whisker area. Weaker responses come from similar face-like or fur regions on other animals (hamster, dog, stork head) and occasionally from a car front-grille 'face'.",
+   "evidence": "The top crops center on the nose, mouth and cheek region of cat and fox-like faces, and random photos score only 1-2. Rotation sharply reduces the activation (rotate_180 at the 10th percentile, rotate_90 at the 17th) while mirroring has no effect, which fits an upright face-part detector.",
+   "missing_data": "Activations on dog and other mammal faces in larger numbers, and on non-animal 'face-like' objects, would show whether the unit is specific to cat and fox muzzles or covers mammal snouts in general.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the muzzle/nose-mouth region of upright furry mammal faces, especially cats, foxes, red pandas and lynx, where the snout meets the white whisker area. Weaker responses come from similar face-like or fur regions on other animals (hamster, dog, stork head) and occasionally from a car front-grille 'face'.\", \"evidence\": \"The top crops center on the nose, mouth and cheek region of cat and fox-like faces, and random photos score only 1-2. Rotation sharply reduces the activation (rotate_180 at the 10th percentile, rotate_90 at the 17th) while mirroring has no effect, which fits an upright face-part detector.\", \"missing_data\": \"Activations on dog and other mammal faces in larger numbers, and on non-animal 'face-like' objects, would show whether the unit is specific to cat and fox muzzles or covers mammal snouts in general.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the muzzle/nose-mouth region of upright furry mammal faces, especially cats, foxes, red pandas and lynx, where the snout meets the white whisker area. Weaker responses come from similar face-like or fur regions on other animals (hamster, dog, stork head) and occasionally from a car front-grille 'face'.\", \"evidence\": \"The top crops center on the nose, mouth and cheek region of cat and fox-like faces, and random photos score only 1-2. Rotation sharply reduces the activation (rotate_180 at the 10th percentile, rotate_90 at the 17th) while mirroring has no effect, which fits an upright face-part detector.\", \"missing_data\": \"Activations on dog and other mammal faces in larger numbers, and on non-animal 'face-like' objects, would show whether the unit is specific to cat and fox muzzles or covers mammal snouts in general.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "C_s1": {
+  "unit": "mixed4e:55",
+  "reading": "C_s1",
+  "condition": "C",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3b4396d31d440a7f44a808d1340ae3a8a1627865a694817fac4d359e1a5ed165",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the lower-central face region (muzzle, nose, mouth, whiskers) of small furry animals, especially cats, foxes and red pandas, typically where light fur meets the nose and mouth area. It also fires more weakly on similar furry faces such as a hamster, a dog and a lynx.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the lower-central face region (muzzle, nose, mouth, whiskers) of small furry animals, especially cats, foxes and red pandas, typically where light fur meets the nose and mouth area. It also fires more weakly on similar furry faces such as a hamster, a dog and a lynx.",
+   "evidence": "The top activations (10 to 8) are fox, red panda and cat muzzle crops, and most of the top 20 are cat or fox faces centered on the nose and mouth; weaker related hits include a hamster, a sheltie and a stork's white head. The random photos all score 1-2, even a close-up dog face, and the one clear outlier is a red car front at 8.",
+   "missing_data": "Activations over a full range of dog, other mammal, and bird faces, to tell whether this is specific to cats and foxes or a general muzzle detector, plus an explanation for the car outlier.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower-central face region (muzzle, nose, mouth, whiskers) of small furry animals, especially cats, foxes and red pandas, typically where light fur meets the nose and mouth area. It also fires more weakly on similar furry faces such as a hamster, a dog and a lynx.\",\n \"evidence\": \"The top activations (10 to 8) are fox, red panda and cat muzzle crops, and most of the top 20 are cat or fox faces centered on the nose and mouth; weaker related hits include a hamster, a sheltie and a stork's white head. The random photos all score 1-2, even a close-up dog face, and the one clear outlier is a red car front at 8.\",\n \"missing_data\": \"Activations over a full range of dog, other mammal, and bird faces, to tell whether this is specific to cats and foxes or a general muzzle detector, plus an explanation for the car outlier.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower-central face region (muzzle, nose, mouth, whiskers) of small furry animals, especially cats, foxes and red pandas, typically where light fur meets the nose and mouth area. It also fires more weakly on similar furry faces such as a hamster, a dog and a lynx.\",\n \"evidence\": \"The top activations (10 to 8) are fox, red panda and cat muzzle crops, and most of the top 20 are cat or fox faces centered on the nose and mouth; weaker related hits include a hamster, a sheltie and a stork's white head. The random photos all score 1-2, even a close-up dog face, and the one clear outlier is a red car front at 8.\",\n \"missing_data\": \"Activations over a full range of dog, other mammal, and bird faces, to tell whether this is specific to cats and foxes or a general muzzle detector, plus an explanation for the car outlier.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "C_s3": {
+  "unit": "mixed4e:55",
+  "reading": "C_s3",
+  "condition": "C",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3b4396d31d440a7f44a808d1340ae3a8a1627865a694817fac4d359e1a5ed165",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the lower-middle face of furry animals, meaning the muzzle, nose, and whisker area, and it fires most for foxes, red pandas, and cats. It also responds more weakly to similar facial regions on dogs, hamsters, and lynxes, plus a stork's white face next to its beak.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the lower-middle face of furry animals, meaning the muzzle, nose, and whisker area, and it fires most for foxes, red pandas, and cats. It also responds more weakly to similar facial regions on dogs, hamsters, and lynxes, plus a stork's white face next to its beak.",
+   "evidence": "In 19 of the 20 top photos the box sits on an animal's snout or muzzle area, mostly orange or white fur around a dark nose. The random photos score 1-2, including a dog face at 2, and one outlier is a red car's front grille (#6, activation 8), probably matching the rounded grille and headlights that look like a face.",
+   "missing_data": "Activations on more dog and other mammal faces, and on cars and other face-like objects, would show how specific the unit is to fur and muzzles versus face-like layouts in general.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower-middle face of furry animals, meaning the muzzle, nose, and whisker area, and it fires most for foxes, red pandas, and cats. It also responds more weakly to similar facial regions on dogs, hamsters, and lynxes, plus a stork's white face next to its beak.\",\n \"evidence\": \"In 19 of the 20 top photos the box sits on an animal's snout or muzzle area, mostly orange or white fur around a dark nose. The random photos score 1-2, including a dog face at 2, and one outlier is a red car's front grille (#6, activation 8), probably matching the rounded grille and headlights that look like a face.\",\n \"missing_data\": \"Activations on more dog and other mammal faces, and on cars and other face-like objects, would show how specific the unit is to fur and muzzles versus face-like layouts in general.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the lower-middle face of furry animals, meaning the muzzle, nose, and whisker area, and it fires most for foxes, red pandas, and cats. It also responds more weakly to similar facial regions on dogs, hamsters, and lynxes, plus a stork's white face next to its beak.\",\n \"evidence\": \"In 19 of the 20 top photos the box sits on an animal's snout or muzzle area, mostly orange or white fur around a dark nose. The random photos score 1-2, including a dog face at 2, and one outlier is a red car's front grille (#6, activation 8), probably matching the rounded grille and headlights that look like a face.\",\n \"missing_data\": \"Activations on more dog and other mammal faces, and on cars and other face-like objects, would show how specific the unit is to fur and muzzles versus face-like layouts in general.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "base_s3": {
+  "unit": "mixed4e:55",
+  "reading": "base_s3",
+  "condition": "base",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "21ef4df0bb8275be215a5fe3acceb7a5e3ba117b8181933468c7ce6c078a9bce",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the muzzle/snout region of small furry mammal faces, mainly cats, foxes, and red pandas: the area of nose, whisker pads, and cheeks below the eyes. Similar face regions on other animals give weaker responses.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the muzzle/snout region of small furry mammal faces, mainly cats, foxes, and red pandas: the area of nose, whisker pads, and cheeks below the eyes. Similar face regions on other animals give weaker responses.",
+   "evidence": "18 of the top 20 are cat, fox, red panda, lynx, hamster, or dog faces, with the box on the muzzle/cheek area. The outliers (a car's front grille at 8, a stork's face at 7) are weaker and plausibly face-like patterns, and random images stay at 1-2, including a close-up dog face at 2.",
+   "missing_data": "Activations for a wider range of animal faces (dogs, primates, birds) and for face-like objects would show how specific the unit is to feline/vulpine muzzles versus generic face structure.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to the muzzle/snout region of small furry mammal faces, mainly cats, foxes, and red pandas: the area of nose, whisker pads, and cheeks below the eyes. Similar face regions on other animals give weaker responses.\", \"evidence\": \"18 of the top 20 are cat, fox, red panda, lynx, hamster, or dog faces, with the box on the muzzle/cheek area. The outliers (a car's front grille at 8, a stork's face at 7) are weaker and plausibly face-like patterns, and random images stay at 1-2, including a close-up dog face at 2.\", \"missing_data\": \"Activations for a wider range of animal faces (dogs, primates, birds) and for face-like objects would show how specific the unit is to feline/vulpine muzzles versus generic face structure.\", \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to the muzzle/snout region of small furry mammal faces, mainly cats, foxes, and red pandas: the area of nose, whisker pads, and cheeks below the eyes. Similar face regions on other animals give weaker responses.\", \"evidence\": \"18 of the top 20 are cat, fox, red panda, lynx, hamster, or dog faces, with the box on the muzzle/cheek area. The outliers (a car's front grille at 8, a stork's face at 7) are weaker and plausibly face-like patterns, and random images stay at 1-2, including a close-up dog face at 2.\", \"missing_data\": \"Activations for a wider range of animal faces (dogs, primates, birds) and for face-like objects would show how specific the unit is to feline/vulpine muzzles versus generic face structure.\", \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s1": {
+  "unit": "mixed4e:55",
+  "reading": "P_s1",
+  "condition": "P",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "473cd74eacc0416e4fe757b21f4f1e47bf2ad0ff95438de946185a35573d519f",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds mainly to the muzzle/snout region of small furry mammal faces seen upright and from the front (foxes, red pandas, cats, lynx, hamster, a dog), especially where the pale cheek/whisker fur meets the nose. Weaker responses go to face-like patches with similar light/dark structure on other objects, such as the stork's white head near its eye and the front grille of a car.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds mainly to the muzzle/snout region of small furry mammal faces seen upright and from the front (foxes, red pandas, cats, lynx, hamster, a dog), especially where the pale cheek/whisker fur meets the nose. Weaker responses go to face-like patches with similar light/dark structure on other objects, such as the stork's white head near its eye and the front grille of a car.",
+   "evidence": "18 of the top 20 photos centre the red box on the muzzle of a cat, fox, red panda or similar animal, while the outliers (car grille at 8, stork at 7) score lower and random photos score only 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotation (keeps 42% under 90° and 180° rotation, percentiles 17 and 10) but unaffected by mirroring, which fits an upright face part.",
+   "missing_data": "Activations over a broader set of dog and other mammal faces, plus controlled crops of the muzzle versus the eyes, ears, or fur texture alone, to tell whether the unit codes for a face part or for whisker-pad fur texture.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds mainly to the muzzle/snout region of small furry mammal faces seen upright and from the front (foxes, red pandas, cats, lynx, hamster, a dog), especially where the pale cheek/whisker fur meets the nose. Weaker responses go to face-like patches with similar light/dark structure on other objects, such as the stork's white head near its eye and the front grille of a car.\", \"evidence\": \"18 of the top 20 photos centre the red box on the muzzle of a cat, fox, red panda or similar animal, while the outliers (car grille at 8, stork at 7) score lower and random photos score only 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotation (keeps 42% under 90° and 180° rotation, percentiles 17 and 10) but unaffected by mirroring, which fits an upright face part.\", \"missing_data\": \"Activations over a broader set of dog and other mammal faces, plus controlled crops of the muzzle versus the eyes, ears, or fur texture alone, to tell whether the unit codes for a face part or for whisker-pad fur texture.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds mainly to the muzzle/snout region of small furry mammal faces seen upright and from the front (foxes, red pandas, cats, lynx, hamster, a dog), especially where the pale cheek/whisker fur meets the nose. Weaker responses go to face-like patches with similar light/dark structure on other objects, such as the stork's white head near its eye and the front grille of a car.\", \"evidence\": \"18 of the top 20 photos centre the red box on the muzzle of a cat, fox, red panda or similar animal, while the outliers (car grille at 8, stork at 7) score lower and random photos score only 1-2, including a frontal dog face at 2. The unit is unusually sensitive to rotation (keeps 42% under 90° and 180° rotation, percentiles 17 and 10) but unaffected by mirroring, which fits an upright face part.\", \"missing_data\": \"Activations over a broader set of dog and other mammal faces, plus controlled crops of the muzzle versus the eyes, ears, or fur texture alone, to tell whether the unit codes for a face part or for whisker-pad fur texture.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "C_s2": {
+  "unit": "mixed4e:55",
+  "reading": "C_s2",
+  "condition": "C",
+  "sample": 2,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3b4396d31d440a7f44a808d1340ae3a8a1627865a694817fac4d359e1a5ed165",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the lower-central face of furry mammals, meaning the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes, hamsters and dogs, often where white fur meets the snout. It responds more weakly to similar white or pale face patches on other animals, such as a stork's head.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the lower-central face of furry mammals, meaning the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes, hamsters and dogs, often where white fur meets the snout. It responds more weakly to similar white or pale face patches on other animals, such as a stork's head.",
+   "evidence": "Nearly all of the top 20 crops are centered on a mammal muzzle or nose area, with activation 7-10, while the random photos (including a close-up dog face at 2) stay at 1-2. The outliers are a red car grille (#6, activation 8) and a stork head (#20, activation 7), possibly a shape or texture match.",
+   "missing_data": "Activations across the full range for more dog faces and non-animal round shapes, to explain why the car scored 8 and the pit bull only 2.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the lower-central face of furry mammals, meaning the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes, hamsters and dogs, often where white fur meets the snout. It responds more weakly to similar white or pale face patches on other animals, such as a stork's head.\",\n \"evidence\": \"Nearly all of the top 20 crops are centered on a mammal muzzle or nose area, with activation 7-10, while the random photos (including a close-up dog face at 2) stay at 1-2. The outliers are a red car grille (#6, activation 8) and a stork head (#20, activation 7), possibly a shape or texture match.\",\n \"missing_data\": \"Activations across the full range for more dog faces and non-animal round shapes, to explain why the car scored 8 and the pit bull only 2.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the lower-central face of furry mammals, meaning the muzzle, nose and whisker region of cats, foxes, red pandas, lynxes, hamsters and dogs, often where white fur meets the snout. It responds more weakly to similar white or pale face patches on other animals, such as a stork's head.\",\n \"evidence\": \"Nearly all of the top 20 crops are centered on a mammal muzzle or nose area, with activation 7-10, while the random photos (including a close-up dog face at 2) stay at 1-2. The outliers are a red car grille (#6, activation 8) and a stork head (#20, activation 7), possibly a shape or texture match.\",\n \"missing_data\": \"Activations across the full range for more dog faces and non-animal round shapes, to explain why the car scored 8 and the pit bull only 2.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ },
+ "P_s3": {
+  "unit": "mixed4e:55",
+  "reading": "P_s3",
+  "condition": "P",
+  "sample": 3,
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "473cd74eacc0416e4fe757b21f4f1e47bf2ad0ff95438de946185a35573d519f",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the muzzle/snout region of furry mammal faces (cat, fox, red panda, lynx, hamster, dog): the area around the nose, whisker pads and cheeks just below the eyes, especially white or light fur bordered by darker fur. Weaker extensions are other face-like patches with similar light/dark structure, such as a stork's eye/cheek region and a car's front grille.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the muzzle/snout region of furry mammal faces (cat, fox, red panda, lynx, hamster, dog): the area around the nose, whisker pads and cheeks just below the eyes, especially white or light fur bordered by darker fur. Weaker extensions are other face-like patches with similar light/dark structure, such as a stork's eye/cheek region and a car's front grille.",
+   "evidence": "Nineteen of the top 20 activations are animal faces with the box on the snout or cheek, and the two outliers (car grille at 8, stork head at 7) still carry face-like structure; random photos stay at 1–2. The unit is unusually sensitive to rotate_180 (percentile 10) and rotate_90 (percentile 17) but mirror-invariant, which fits an upright, left-right symmetric face part.",
+   "missing_data": "Activations on non-furry faces (human faces, dog muzzles at different scales) and on the car grille with the image cropped, to tell whether it codes the mammal snout specifically or a more generic face-like pattern.",
+   "confidence": 0.75
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the muzzle/snout region of furry mammal faces (cat, fox, red panda, lynx, hamster, dog): the area around the nose, whisker pads and cheeks just below the eyes, especially white or light fur bordered by darker fur. Weaker extensions are other face-like patches with similar light/dark structure, such as a stork's eye/cheek region and a car's front grille.\",\n \"evidence\": \"Nineteen of the top 20 activations are animal faces with the box on the snout or cheek, and the two outliers (car grille at 8, stork head at 7) still carry face-like structure; random photos stay at 1–2. The unit is unusually sensitive to rotate_180 (percentile 10) and rotate_90 (percentile 17) but mirror-invariant, which fits an upright, left-right symmetric face part.\",\n \"missing_data\": \"Activations on non-furry faces (human faces, dog muzzles at different scales) and on the car grille with the image cropped, to tell whether it codes the mammal snout specifically or a more generic face-like pattern.\",\n \"confidence\": 0.75}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the muzzle/snout region of furry mammal faces (cat, fox, red panda, lynx, hamster, dog): the area around the nose, whisker pads and cheeks just below the eyes, especially white or light fur bordered by darker fur. Weaker extensions are other face-like patches with similar light/dark structure, such as a stork's eye/cheek region and a car's front grille.\",\n \"evidence\": \"Nineteen of the top 20 activations are animal faces with the box on the snout or cheek, and the two outliers (car grille at 8, stork head at 7) still carry face-like structure; random photos stay at 1–2. The unit is unusually sensitive to rotate_180 (percentile 10) and rotate_90 (percentile 17) but mirror-invariant, which fits an upright, left-right symmetric face part.\",\n \"missing_data\": \"Activations on non-furry faces (human faces, dog muzzles at different scales) and on the car grille with the image cropped, to tell whether it codes the mammal snout specifically or a more generic face-like pattern.\",\n \"confidence\": 0.75}"
+  ],
+  "attempts": 1
+ }
+}
