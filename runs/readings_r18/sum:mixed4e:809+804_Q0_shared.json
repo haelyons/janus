@@ -1,0 +1,52 @@
+{
+ "unit": "sum:mixed4e:809+804",
+ "arm": "Q0_shared",
+ "system_prompt": "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?",
+ "reply": {
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two unconnected things: road vehicles (cars, pickups, vans, buses, taxis, fire trucks) and cats or similar furry, textured animals (owl, coyote).\",\n \"evidence\": \"Fifteen of the top 20 are wheeled road vehicles, but three cats (#1, #3, #9) are also at or near maximum activation (10, 10, 9), and an owl and a coyote appear at 9. These animals share no obvious visual or semantic link with the vehicles.\",\n \"missing_data\": \"Activations over the full range of a balanced set of animal and vehicle images, to check whether both clusters persist below the top 20 or whether the cats are a small, idiosyncratic tail.\",\n \"confidence\": 0.75}\n```",
+  "cost_usd": 0.02682,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2344,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 403,
+   "output_tokens_details": {
+    "thinking_tokens": 132
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2344,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 403,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2344,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2344
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 6384
+ },
+ "parsed": {
+  "class": "unrelated",
+  "explanation": "The unit responds to two unconnected things: road vehicles (cars, pickups, vans, buses, taxis, fire trucks) and cats or similar furry, textured animals (owl, coyote).",
+  "evidence": "Fifteen of the top 20 are wheeled road vehicles, but three cats (#1, #3, #9) are also at or near maximum activation (10, 10, 9), and an owl and a coyote appear at 9. These animals share no obvious visual or semantic link with the vehicles.",
+  "missing_data": "Activations over the full range of a balanced set of animal and vehicle images, to check whether both clusters persist below the top 20 or whether the cats are a small, idiosyncratic tail.",
+  "confidence": 0.75
+ }
+}

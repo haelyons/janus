@@ -316,3 +316,27 @@ Stronger pulls (tools/fixedvis2.py):
 7. 4d:409 through 4c:447: blind descriptions name a vehicle in at least 1 of 2; through 4c:393: name a dog or
    animal in at least 1 of 2.
 8. pull5 and init renders keep at least 50% of the plain renders' activation.
+
+# Round 18: a near-miss pool built from each reading's own examples (tools/nearmiss2.py, claim-blind author)
+(sealed 2026-10-21, before nearmiss2.py, the Q0/F1 readings and the class lists exist)
+
+Units: 4d:409 (one shared pose), 4c:447 (one thing), planted sum:mixed4e:809+804 and sum:mixed4e:703+315 (two
+things), target 4e:55. Readings per unit, all on the round-17c whole card (top 20 whole photos):
+- noun: the bare subject's explanation (runs/bundlemax/<unit>/explanations.json, whole, sample 1, verbatim).
+- Q0: the essay's question as system prompt (arms/Q0_shared.txt), sample 1.
+- F1: forced unity, "one shared visual pattern, no kinds of objects, animals or scenes" (arms/F1_forced.txt), sample 1.
+- wrong: another unit's noun reading (703+315's for every unit; 447's for 703+315).
+- 409 adds pose (round 14 Q0 s2, as in round 15). 55 adds V (the essay's words with its examples: flames, fireboat
+  jets, fox faces, shinkansens, pool tables) and or (round 8 E1, cats or cars).
+A blind agent turns each reading, alone, into fire and near-miss ImageNet classes. The pool is 48 held-pool photos
+drawn at random from those classes (no activations used). A blind picker sees one reading and the sheet and picks 6
+fire and 6 near misses, 3 samples per reading. Class AUC = AUC of the unit's activation on all held photos of the
+reading's fire classes against its near-miss classes.
+
+Validation (whether the 55 ranking is read at all; needs 1, 2 and 4):
+1. 4d:409: pose beats noun on fire_hit by at least 0.15.
+2. Both planted units: noun beats F1 on fire_hit by at least 0.15, and noun's class AUC is above F1's.
+3. 4c:447: noun and Q0 fire_hit at least 0.67, within 0.15 of each other.
+4. wrong has the lowest fire_hit of its unit in at least 4 of 5 units.
+5. Class AUC of noun at least 0.7 on 447 and both planted units.
+6. 4e:55: reported, not predicted. Prior: face and or above V on fire_hit; V's near_ok high (round 15).

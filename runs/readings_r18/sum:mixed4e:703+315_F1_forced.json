@@ -1,0 +1,52 @@
+{
+ "unit": "sum:mixed4e:703+315",
+ "arm": "F1_forced",
+ "system_prompt": "Assume this unit responds to one shared visual pattern. Describe that pattern without naming any kinds of objects, animals or scenes.",
+ "reply": {
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most to a compact, rounded, convex mass whose surface is broken into many repeated small bulges, scallops or knobs, set off against a plainer, smoother background. Weaker responses extend to masses of radiating finger-like strands and to smooth, glossy bulbous silhouettes with a narrowing tip.\",\n \"evidence\": \"The strongest images (#1, #2, and #8, #11, #7) show rounded forms covered in tiled, scale-like or lumpy repeated units, while #3, #12, #14, #16 and #18 show clustered radiating protrusions and #9, #15, #17 and #19 show smooth rounded bodies tapering to a point. Most images are centered and isolated against a uniform field, and the activations stay high (7–10) across all three variants, which fits one shape-and-texture pattern with related extensions.\"\n ,\"missing_data\": \"Feature-visualization or patch-level attribution maps would show whether the knobby surface texture or the rounded silhouette drives activation, and mid- and low-activation examples would show how selective the unit is.\",\n \"confidence\": 0.4}\n```",
+  "cost_usd": 0.034732,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2358,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 793,
+   "output_tokens_details": {
+    "thinking_tokens": 401
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2358,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 793,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2358,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2358
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 9725
+ },
+ "parsed": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds most to a compact, rounded, convex mass whose surface is broken into many repeated small bulges, scallops or knobs, set off against a plainer, smoother background. Weaker responses extend to masses of radiating finger-like strands and to smooth, glossy bulbous silhouettes with a narrowing tip.",
+  "evidence": "The strongest images (#1, #2, and #8, #11, #7) show rounded forms covered in tiled, scale-like or lumpy repeated units, while #3, #12, #14, #16 and #18 show clustered radiating protrusions and #9, #15, #17 and #19 show smooth rounded bodies tapering to a point. Most images are centered and isolated against a uniform field, and the activations stay high (7–10) across all three variants, which fits one shape-and-texture pattern with related extensions.",
+  "missing_data": "Feature-visualization or patch-level attribution maps would show whether the knobby surface texture or the rounded silhouette drives activation, and mid- and low-activation examples would show how selective the unit is.",
+  "confidence": 0.4
+ }
+}

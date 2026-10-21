@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4d:409",
+ "arm": "F1_forced",
+ "system_prompt": "Assume this unit responds to one shared visual pattern. Describe that pattern without naming any kinds of objects, animals or scenes.",
+ "reply": {
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single compact, horizontally elongated subject seen side-on or at three-quarter view, whose body is raised above a flat ground plane on a few separate vertical supports or round contact points. The subject usually sits near the centre of the frame and stands out clearly from a simpler background.\",\n \"evidence\": \"All 20 top images, from 10 down to 7, show this same layout: a long horizontal mass, a gap of background beneath it, and distinct points touching the ground, regardless of colour, texture or setting. Activation stays high across very different surfaces, colours and lighting, so the shared feature seems to be the side-profile silhouette rather than surface appearance.\",\n \"missing_data\": \"Activations on front-on or top-down views of the same subjects, and on other elongated shapes raised on ground-contact points (for example furniture, or side-profile silhouettes with the texture removed), would show whether the unit encodes shape geometry or semantic category.\",\n \"confidence\": 0.55}\n```",
+  "cost_usd": 0.030632,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2358,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 588,
+   "output_tokens_details": {
+    "thinking_tokens": 245
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2358,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 588,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2358,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2358
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 7625
+ },
+ "parsed": {
+  "class": "one",
+  "explanation": "The unit responds to a single compact, horizontally elongated subject seen side-on or at three-quarter view, whose body is raised above a flat ground plane on a few separate vertical supports or round contact points. The subject usually sits near the centre of the frame and stands out clearly from a simpler background.",
+  "evidence": "All 20 top images, from 10 down to 7, show this same layout: a long horizontal mass, a gap of background beneath it, and distinct points touching the ground, regardless of colour, texture or setting. Activation stays high across very different surfaces, colours and lighting, so the shared feature seems to be the side-profile silhouette rather than surface appearance.",
+  "missing_data": "Activations on front-on or top-down views of the same subjects, and on other elongated shapes raised on ground-contact points (for example furniture, or side-profile silhouettes with the texture removed), would show whether the unit encodes shape geometry or semantic category.",
+  "confidence": 0.55
+ }
+}

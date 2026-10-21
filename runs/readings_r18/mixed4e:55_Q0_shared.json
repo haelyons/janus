@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4e:55",
+ "arm": "Q0_shared",
+ "system_prompt": "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?",
+ "reply": {
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to front-facing faces of small furry mammals, especially cats, foxes, red pandas and lynxes with pointed ears and fluffy fur. It responds more weakly to other furry animals such as a hamster and a sheltie dog.\",\n \"evidence\": \"Eighteen of the top 20 images show cat-, fox- or red-panda-like faces, mostly looking at the camera, and these include the two strongest (fox and red panda, 10). The vintage car (#6, 8) and stork head (#20, 7) are isolated outliers that may reflect shared reddish-orange color or head-on shapes.\",\n \"missing_data\": \"Activations on dataset examples across the full range, plus controlled tests (cat or fox faces vs. bodies, other furry mammals, other reddish-orange objects) to separate face or fur selectivity from color.\",\n \"confidence\": 0.7}",
+  "cost_usd": 0.02828,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2344,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 476,
+   "output_tokens_details": {
+    "thinking_tokens": 161
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2344,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 476,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2344,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2344
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 7118
+ },
+ "parsed": {
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to front-facing faces of small furry mammals, especially cats, foxes, red pandas and lynxes with pointed ears and fluffy fur. It responds more weakly to other furry animals such as a hamster and a sheltie dog.",
+  "evidence": "Eighteen of the top 20 images show cat-, fox- or red-panda-like faces, mostly looking at the camera, and these include the two strongest (fox and red panda, 10). The vintage car (#6, 8) and stork head (#20, 7) are isolated outliers that may reflect shared reddish-orange color or head-on shapes.",
+  "missing_data": "Activations on dataset examples across the full range, plus controlled tests (cat or fox faces vs. bodies, other furry mammals, other reddish-orange objects) to separate face or fur selectivity from color.",
+  "confidence": 0.7
+ }
+}

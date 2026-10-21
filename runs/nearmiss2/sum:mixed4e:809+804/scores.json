@@ -1,0 +1,1802 @@
+{
+ "unit": "sum:mixed4e:809+804",
+ "M": 1.0,
+ "chance": {
+  "fire_hit": 0.3125,
+  "near_ok": 0.3333333333333333,
+  "gap": 0.0
+ },
+ "groups": [
+  {
+   "id": "noun:fire",
+   "classes": [
+    "tabby",
+    "tiger cat",
+    "Egyptian cat",
+    "Persian cat",
+    "Siamese cat",
+    "cab",
+    "pickup",
+    "minivan",
+    "fire engine",
+    "school bus",
+    "police van",
+    "beach wagon",
+    "minibus",
+    "sports car",
+    "convertible"
+   ],
+   "labels": [
+    281,
+    282,
+    283,
+    284,
+    285,
+    436,
+    468,
+    511,
+    555,
+    654,
+    656,
+    717,
+    734,
+    779,
+    817
+   ],
+   "n_held": 46,
+   "drew": 6,
+   "in_pool": 12
+  },
+  {
+   "id": "noun:near_miss",
+   "classes": [
+    "bicycle-built-for-two",
+    "mountain bike",
+    "motor scooter",
+    "moped",
+    "steam locomotive",
+    "electric locomotive",
+    "airliner",
+    "speedboat",
+    "tractor",
+    "golfcart",
+    "car wheel",
+    "teddy",
+    "fur coat",
+    "lawn mower",
+    "snowmobile"
+   ],
+   "labels": [
+    404,
+    444,
+    479,
+    547,
+    568,
+    575,
+    621,
+    665,
+    670,
+    671,
+    802,
+    814,
+    820,
+    850,
+    866
+   ],
+   "n_held": 33,
+   "drew": 6,
+   "in_pool": 9
+  },
+  {
+   "id": "Q0:fire",
+   "classes": [
+    "cab",
+    "pickup",
+    "minivan",
+    "minibus",
+    "school bus",
+    "fire engine",
+    "police van",
+    "beach wagon",
+    "convertible",
+    "sports car",
+    "tabby",
+    "tiger cat",
+    "Persian cat",
+    "Egyptian cat",
+    "great grey owl"
+   ],
+   "labels": [
+    24,
+    281,
+    282,
+    283,
+    285,
+    436,
+    468,
+    511,
+    555,
+    654,
+    656,
+    717,
+    734,
+    779,
+    817
+   ],
+   "n_held": 50,
+   "drew": 6,
+   "in_pool": 13
+  },
+  {
+   "id": "Q0:near_miss",
+   "classes": [
+    "airliner",
+    "speedboat",
+    "bicycle-built-for-two",
+    "mountain bike",
+    "steam locomotive",
+    "electric locomotive",
+    "go-kart",
+    "car wheel",
+    "golden retriever",
+    "Pomeranian",
+    "hamster",
+    "guinea pig",
+    "teddy",
+    "fur coat",
+    "goldfish"
+   ],
+   "labels": [
+    1,
+    207,
+    259,
+    333,
+    338,
+    404,
+    444,
+    479,
+    547,
+    568,
+    573,
+    671,
+    814,
+    820,
+    850
+   ],
+   "n_held": 42,
+   "drew": 6,
+   "in_pool": 10
+  },
+  {
+   "id": "F1:fire",
+   "classes": [
+    "binoculars",
+    "giant panda",
+    "pug",
+    "Model T",
+    "beach wagon",
+    "jeep",
+    "convertible",
+    "sports car",
+    "cab",
+    "minivan",
+    "loudspeaker",
+    "tape player",
+    "cassette",
+    "reflex camera",
+    "Polaroid camera"
+   ],
+   "labels": [
+    254,
+    388,
+    436,
+    447,
+    468,
+    481,
+    511,
+    609,
+    632,
+    656,
+    661,
+    732,
+    759,
+    817,
+    848
+   ],
+   "n_held": 48,
+   "drew": 6,
+   "in_pool": 10
+  },
+  {
+   "id": "F1:near_miss",
+   "classes": [
+    "car wheel",
+    "golf ball",
+    "soccer ball",
+    "basketball",
+    "orange",
+    "lemon",
+    "Granny Smith",
+    "ping-pong ball",
+    "tennis ball",
+    "croquet ball",
+    "bubble",
+    "mushroom",
+    "plate",
+    "manhole cover"
+   ],
+   "labels": [
+    430,
+    479,
+    522,
+    574,
+    640,
+    722,
+    805,
+    852,
+    923,
+    947,
+    948,
+    950,
+    951,
+    971
+   ],
+   "n_held": 45,
+   "drew": 6,
+   "in_pool": 11
+  },
+  {
+   "id": "wrong:fire",
+   "classes": [
+    "custard apple",
+    "pineapple",
+    "cucumber",
+    "Granny Smith",
+    "coral fungus",
+    "sea anemone",
+    "artichoke",
+    "red-backed sandpiper",
+    "redshank",
+    "dowitcher",
+    "ruddy turnstone",
+    "beer glass",
+    "goblet",
+    "suit",
+    "Windsor tie"
+   ],
+   "labels": [
+    108,
+    139,
+    140,
+    141,
+    142,
+    441,
+    572,
+    834,
+    906,
+    943,
+    944,
+    948,
+    953,
+    956,
+    991
+   ],
+   "n_held": 42,
+   "drew": 6,
+   "in_pool": 6
+  },
+  {
+   "id": "wrong:near_miss",
+   "classes": [
+    "banana",
+    "orange",
+    "lemon",
+    "strawberry",
+    "zucchini",
+    "brain coral",
+    "jellyfish",
+    "agaric",
+    "bolete",
+    "wine bottle",
+    "pop bottle",
+    "jersey",
+    "sweatshirt",
+    "jackfruit",
+    "starfish"
+   ],
+   "labels": [
+    107,
+    109,
+    327,
+    610,
+    737,
+    841,
+    907,
+    939,
+    949,
+    950,
+    951,
+    954,
+    955,
+    992,
+    997
+   ],
+   "n_held": 44,
+   "drew": 6,
+   "in_pool": 7
+  }
+ ],
+ "pool": [
+  {
+   "number": 1,
+   "index": 4967,
+   "label": "orange",
+   "ratio": 0.13468140363693237,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "F1:near_miss",
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 2,
+   "index": 7835,
+   "label": "car wheel",
+   "ratio": 0.6648093461990356,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss",
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 3,
+   "index": 3452,
+   "label": "Persian cat",
+   "ratio": 0.3524135649204254,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 4,
+   "index": 9270,
+   "label": "pop bottle",
+   "ratio": 0.050378382205963135,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 5,
+   "index": 6702,
+   "label": "suit",
+   "ratio": 0.08804254233837128,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "wrong:fire"
+   ]
+  },
+  {
+   "number": 6,
+   "index": 938,
+   "label": "redshank",
+   "ratio": 0.26910239458084106,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "wrong:fire"
+   ]
+  },
+  {
+   "number": 7,
+   "index": 8426,
+   "label": "steam locomotive",
+   "ratio": 0.106698177754879,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 8,
+   "index": 6581,
+   "label": "soccer ball",
+   "ratio": 0.1328897923231125,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 9,
+   "index": 3263,
+   "label": "bicycle-built-for-two",
+   "ratio": 0.19768324494361877,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 10,
+   "index": 6816,
+   "label": "loudspeaker",
+   "ratio": 0.05532221496105194,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 11,
+   "index": 7832,
+   "label": "car wheel",
+   "ratio": 0.1205572560429573,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss",
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 12,
+   "index": 5961,
+   "label": "golfcart",
+   "ratio": 0.2428525686264038,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss"
+   ]
+  },
+  {
+   "number": 13,
+   "index": 3456,
+   "label": "Persian cat",
+   "ratio": 0.49726250767707825,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 14,
+   "index": 5148,
+   "label": "school bus",
+   "ratio": 0.2942349910736084,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 15,
+   "index": 7896,
+   "label": "sports car",
+   "ratio": 0.1997084617614746,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire",
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 16,
+   "index": 4208,
+   "label": "Polaroid camera",
+   "ratio": 0.15375939011573792,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 17,
+   "index": 9083,
+   "label": "Windsor tie",
+   "ratio": 0.12206295877695084,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "wrong:fire"
+   ]
+  },
+  {
+   "number": 18,
+   "index": 8848,
+   "label": "bolete",
+   "ratio": 0.010623850859701633,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 19,
+   "index": 6190,
+   "label": "dowitcher",
+   "ratio": 0.025372954085469246,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "wrong:fire"
+   ]
+  },
+  {
+   "number": 20,
+   "index": 5026,
+   "label": "go-kart",
+   "ratio": 0.03208185359835625,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 21,
+   "index": 3189,
+   "label": "mountain bike",
+   "ratio": 0.17731066048145294,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 22,
+   "index": 2292,
+   "label": "golden retriever",
+   "ratio": 0.30472537875175476,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 23,
+   "index": 5822,
+   "label": "plate",
+   "ratio": 0.22459398210048676,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 24,
+   "index": 5571,
+   "label": "mushroom",
+   "ratio": 0.059300560504198074,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 25,
+   "index": 9730,
+   "label": "wine bottle",
+   "ratio": 0.017899664118885994,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 26,
+   "index": 5573,
+   "label": "mushroom",
+   "ratio": 0.08848214149475098,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 27,
+   "index": 7272,
+   "label": "teddy",
+   "ratio": 0.21599018573760986,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 28,
+   "index": 8981,
+   "label": "fur coat",
+   "ratio": 0.07696252316236496,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss",
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 29,
+   "index": 5582,
+   "label": "goldfish",
+   "ratio": 0.25326937437057495,
+   "drawn_by": "Q0:near_miss",
+   "in_groups": [
+    "Q0:near_miss"
+   ]
+  },
+  {
+   "number": 30,
+   "index": 4687,
+   "label": "agaric",
+   "ratio": 0.0,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 31,
+   "index": 934,
+   "label": "redshank",
+   "ratio": 0.30495721101760864,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "wrong:fire"
+   ]
+  },
+  {
+   "number": 32,
+   "index": 4203,
+   "label": "Polaroid camera",
+   "ratio": 0.03602219372987747,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 33,
+   "index": 7002,
+   "label": "beach wagon",
+   "ratio": 0.840228796005249,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire",
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 34,
+   "index": 3964,
+   "label": "lemon",
+   "ratio": 0.0,
+   "drawn_by": "wrong:near_miss",
+   "in_groups": [
+    "F1:near_miss",
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 35,
+   "index": 1094,
+   "label": "great grey owl",
+   "ratio": 0.8746851086616516,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 36,
+   "index": 3455,
+   "label": "Persian cat",
+   "ratio": 0.39934977889060974,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 37,
+   "index": 7520,
+   "label": "tabby",
+   "ratio": 0.42262351512908936,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 38,
+   "index": 5384,
+   "label": "convertible",
+   "ratio": 0.1626325398683548,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire",
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 39,
+   "index": 3158,
+   "label": "cassette",
+   "ratio": 0.07977063953876495,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 40,
+   "index": 1973,
+   "label": "cab",
+   "ratio": 0.6122394800186157,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire",
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 41,
+   "index": 1560,
+   "label": "jeep",
+   "ratio": 0.7802044749259949,
+   "drawn_by": "F1:fire",
+   "in_groups": [
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 42,
+   "index": 4966,
+   "label": "orange",
+   "ratio": 0.10822172462940216,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss",
+    "wrong:near_miss"
+   ]
+  },
+  {
+   "number": 43,
+   "index": 5381,
+   "label": "convertible",
+   "ratio": 0.616193950176239,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire",
+    "F1:fire"
+   ]
+  },
+  {
+   "number": 44,
+   "index": 7525,
+   "label": "tabby",
+   "ratio": 0.9953892230987549,
+   "drawn_by": "noun:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 45,
+   "index": 1938,
+   "label": "moped",
+   "ratio": 0.6368317604064941,
+   "drawn_by": "noun:near_miss",
+   "in_groups": [
+    "noun:near_miss"
+   ]
+  },
+  {
+   "number": 46,
+   "index": 2857,
+   "label": "tiger cat",
+   "ratio": 0.3838742971420288,
+   "drawn_by": "Q0:fire",
+   "in_groups": [
+    "noun:fire",
+    "Q0:fire"
+   ]
+  },
+  {
+   "number": 47,
+   "index": 7342,
+   "label": "basketball",
+   "ratio": 0.029112933203577995,
+   "drawn_by": "F1:near_miss",
+   "in_groups": [
+    "F1:near_miss"
+   ]
+  },
+  {
+   "number": 48,
+   "index": 6527,
+   "label": "Granny Smith",
+   "ratio": 0.022710103541612625,
+   "drawn_by": "wrong:fire",
+   "in_groups": [
+    "F1:near_miss",
+    "wrong:fire"
+   ]
+  }
+ ],
+ "explanations": [
+  {
+   "id": "noun",
+   "source": "bare subject, round 17c whole card, sample 1, verbatim",
+   "lists_valid": true,
+   "fire_classes": [
+    "tabby",
+    "tiger cat",
+    "Egyptian cat",
+    "Persian cat",
+    "Siamese cat",
+    "cab",
+    "pickup",
+    "minivan",
+    "fire engine",
+    "school bus",
+    "police van",
+    "beach wagon",
+    "minibus",
+    "sports car",
+    "convertible"
+   ],
+   "near_miss_classes": [
+    "bicycle-built-for-two",
+    "mountain bike",
+    "motor scooter",
+    "moped",
+    "steam locomotive",
+    "electric locomotive",
+    "airliner",
+    "speedboat",
+    "tractor",
+    "golfcart",
+    "car wheel",
+    "teddy",
+    "fur coat",
+    "lawn mower",
+    "snowmobile"
+   ],
+   "dropped": {
+    "not_a_class": [],
+    "in_both": [],
+    "repeated": []
+   },
+   "list_attempts": 1,
+   "samples": {
+    "0": {
+     "valid": true,
+     "fire": [
+      13,
+      36,
+      44,
+      2,
+      43,
+      33
+     ],
+     "near_miss": [
+      7,
+      27,
+      9,
+      21,
+      45,
+      20
+     ]
+    },
+    "1": {
+     "valid": true,
+     "fire": [
+      2,
+      33,
+      43,
+      13,
+      44,
+      36
+     ],
+     "near_miss": [
+      7,
+      9,
+      21,
+      27,
+      45,
+      29
+     ]
+    },
+    "2": {
+     "valid": true,
+     "fire": [
+      13,
+      44,
+      36,
+      2,
+      33,
+      43
+     ],
+     "near_miss": [
+      9,
+      21,
+      7,
+      45,
+      27,
+      38
+     ]
+    }
+   },
+   "sample_scores": [
+    {
+     "fire_hit": 1.0,
+     "near_ok": 0.16666666666666666,
+     "gap": 0.4411062865207592
+    },
+    {
+     "fire_hit": 1.0,
+     "near_ok": 0.0,
+     "gap": 0.4042416997253895
+    },
+    {
+     "fire_hit": 1.0,
+     "near_ok": 0.0,
+     "gap": 0.4193478388090929
+    }
+   ],
+   "n_samples": 3,
+   "n_valid": 3,
+   "fire_hit": {
+    "mean": 1.0,
+    "min": 1.0,
+    "max": 1.0
+   },
+   "near_ok": {
+    "mean": 0.05555555555555555,
+    "min": 0.0,
+    "max": 0.16666666666666666
+   },
+   "gap": {
+    "mean": 0.42156527501841384,
+    "min": 0.4042416997253895,
+    "max": 0.4411062865207592
+   },
+   "gap_vs_chance": "ABOVE",
+   "class_auc": 0.8491436100131752,
+   "n_fire": 46,
+   "n_near_miss": 33,
+   "mean_ratio_fire": 0.5537826302258865,
+   "mean_ratio_near_miss": 0.25334333673571097,
+   "fire_photos": [
+    952,
+    955,
+    956,
+    1797,
+    1972,
+    1973,
+    1977,
+    2824,
+    2826,
+    2829,
+    2851,
+    2852,
+    2855,
+    2857,
+    3452,
+    3454,
+    3455,
+    3456,
+    3458,
+    4602,
+    4606,
+    4608,
+    4734,
+    4737,
+    4738,
+    5141,
+    5146,
+    5148,
+    5381,
+    5384,
+    5385,
+    5389,
+    7002,
+    7006,
+    7008,
+    7155,
+    7158,
+    7520,
+    7523,
+    7525,
+    7526,
+    7527,
+    7529,
+    7890,
+    7896,
+    7897
+   ],
+   "near_miss_photos": [
+    1280,
+    1281,
+    1288,
+    1930,
+    1934,
+    1936,
+    1937,
+    1938,
+    2662,
+    2666,
+    2740,
+    2743,
+    3182,
+    3185,
+    3186,
+    3189,
+    3263,
+    3265,
+    5961,
+    5963,
+    5964,
+    5966,
+    5969,
+    7272,
+    7273,
+    7276,
+    7479,
+    7832,
+    7835,
+    8128,
+    8426,
+    8981,
+    8988
+   ]
+  },
+  {
+   "id": "Q0",
+   "source": "arms/Q0_shared.txt, same card, sample 1",
+   "lists_valid": true,
+   "fire_classes": [
+    "cab",
+    "pickup",
+    "minivan",
+    "minibus",
+    "school bus",
+    "fire engine",
+    "police van",
+    "beach wagon",
+    "convertible",
+    "sports car",
+    "tabby",
+    "tiger cat",
+    "Persian cat",
+    "Egyptian cat",
+    "great grey owl"
+   ],
+   "near_miss_classes": [
+    "airliner",
+    "speedboat",
+    "bicycle-built-for-two",
+    "mountain bike",
+    "steam locomotive",
+    "electric locomotive",
+    "go-kart",
+    "car wheel",
+    "golden retriever",
+    "Pomeranian",
+    "hamster",
+    "guinea pig",
+    "teddy",
+    "fur coat",
+    "goldfish"
+   ],
+   "dropped": {
+    "not_a_class": [],
+    "in_both": [],
+    "repeated": []
+   },
+   "list_attempts": 1,
+   "samples": {
+    "0": {
+     "valid": true,
+     "fire": [
+      2,
+      33,
+      43,
+      13,
+      36,
+      44
+     ],
+     "near_miss": [
+      7,
+      9,
+      45,
+      22,
+      27,
+      21
+     ]
+    },
+    "1": {
+     "valid": true,
+     "fire": [
+      2,
+      33,
+      43,
+      14,
+      13,
+      36
+     ],
+     "near_miss": [
+      7,
+      9,
+      21,
+      22,
+      27,
+      45
+     ]
+    },
+    "2": {
+     "valid": true,
+     "fire": [
+      2,
+      43,
+      33,
+      15,
+      13,
+      36
+     ],
+     "near_miss": [
+      27,
+      22,
+      46,
+      7,
+      45,
+      9
+     ]
+    }
+   },
+   "sample_scores": [
+    {
+     "fire_hit": 1.0,
+     "near_ok": 0.0,
+     "gap": 0.3956656989951928
+    },
+    {
+     "fire_hit": 0.8333333333333334,
+     "near_ok": 0.0,
+     "gap": 0.27880666032433504
+    },
+    {
+     "fire_hit": 0.8333333333333334,
+     "near_ok": 0.0,
+     "gap": 0.2286249659955502
+    }
+   ],
+   "n_samples": 3,
+   "n_valid": 3,
+   "fire_hit": {
+    "mean": 0.888888888888889,
+    "min": 0.8333333333333334,
+    "max": 1.0
+   },
+   "near_ok": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "gap": {
+    "mean": 0.3010324417716927,
+    "min": 0.2286249659955502,
+    "max": 0.3956656989951928
+   },
+   "gap_vs_chance": "ABOVE",
+   "class_auc": 0.88,
+   "n_fire": 50,
+   "n_near_miss": 42,
+   "mean_ratio_fire": 0.5578917896747589,
+   "mean_ratio_near_miss": 0.22677029420932135,
+   "fire_photos": [
+    952,
+    955,
+    956,
+    1092,
+    1094,
+    1096,
+    1099,
+    1797,
+    1972,
+    1973,
+    1977,
+    2824,
+    2826,
+    2829,
+    2851,
+    2852,
+    2855,
+    2857,
+    3452,
+    3454,
+    3455,
+    3456,
+    3458,
+    4602,
+    4606,
+    4608,
+    4734,
+    4737,
+    4738,
+    5141,
+    5146,
+    5148,
+    5381,
+    5384,
+    5385,
+    5389,
+    7002,
+    7006,
+    7008,
+    7155,
+    7158,
+    7520,
+    7523,
+    7525,
+    7526,
+    7527,
+    7529,
+    7890,
+    7896,
+    7897
+   ],
+   "near_miss_photos": [
+    1280,
+    1281,
+    1288,
+    2291,
+    2292,
+    2293,
+    2294,
+    2295,
+    2299,
+    2740,
+    2743,
+    3182,
+    3185,
+    3186,
+    3189,
+    3263,
+    3265,
+    3772,
+    3779,
+    5021,
+    5025,
+    5026,
+    5580,
+    5582,
+    5583,
+    5584,
+    5588,
+    7272,
+    7273,
+    7276,
+    7331,
+    7332,
+    7333,
+    7335,
+    7336,
+    7832,
+    7835,
+    8426,
+    8981,
+    8988,
+    9915,
+    9919
+   ]
+  },
+  {
+   "id": "F1",
+   "source": "arms/F1_forced.txt, same card, sample 1",
+   "lists_valid": true,
+   "fire_classes": [
+    "binoculars",
+    "giant panda",
+    "pug",
+    "Model T",
+    "beach wagon",
+    "jeep",
+    "convertible",
+    "sports car",
+    "cab",
+    "minivan",
+    "loudspeaker",
+    "tape player",
+    "cassette",
+    "reflex camera",
+    "Polaroid camera"
+   ],
+   "near_miss_classes": [
+    "car wheel",
+    "golf ball",
+    "soccer ball",
+    "basketball",
+    "orange",
+    "lemon",
+    "Granny Smith",
+    "ping-pong ball",
+    "tennis ball",
+    "croquet ball",
+    "bubble",
+    "mushroom",
+    "plate",
+    "manhole cover"
+   ],
+   "dropped": {
+    "not_a_class": [],
+    "in_both": [],
+    "repeated": []
+   },
+   "list_attempts": 1,
+   "samples": {
+    "0": {
+     "valid": true,
+     "fire": [
+      10,
+      16,
+      32,
+      35,
+      12,
+      13
+     ],
+     "near_miss": [
+      2,
+      11,
+      18,
+      26,
+      14,
+      41
+     ]
+    },
+    "1": {
+     "valid": true,
+     "fire": [
+      10,
+      16,
+      35,
+      12,
+      32,
+      43
+     ],
+     "near_miss": [
+      2,
+      14,
+      41,
+      40,
+      11,
+      45
+     ]
+    },
+    "2": {
+     "valid": true,
+     "fire": [
+      10,
+      16,
+      35,
+      12,
+      32,
+      43
+     ],
+     "near_miss": [
+      2,
+      14,
+      45,
+      40,
+      15,
+      41
+     ]
+    }
+   },
+   "sample_scores": [
+    {
+     "fire_hit": 0.3333333333333333,
+     "near_ok": 0.3333333333333333,
+     "gap": -0.01650134613737464
+    },
+    {
+     "fire_hit": 0.3333333333333333,
+     "near_ok": 0.0,
+     "gap": -0.1883403137326241
+    },
+    {
+     "fire_hit": 0.3333333333333333,
+     "near_ok": 0.0,
+     "gap": -0.201532181352377
+    }
+   ],
+   "n_samples": 3,
+   "n_valid": 3,
+   "fire_hit": {
+    "mean": 0.3333333333333333,
+    "min": 0.3333333333333333,
+    "max": 0.3333333333333333
+   },
+   "near_ok": {
+    "mean": 0.1111111111111111,
+    "min": 0.0,
+    "max": 0.3333333333333333
+   },
+   "gap": {
+    "mean": -0.13545794707412526,
+    "min": -0.201532181352377,
+    "max": -0.01650134613737464
+   },
+   "gap_vs_chance": "BELOW",
+   "class_auc": 0.7893518518518519,
+   "n_fire": 48,
+   "n_near_miss": 45,
+   "mean_ratio_fire": 0.33123684286450344,
+   "mean_ratio_near_miss": 0.11108509070343442,
+   "fire_photos": [
+    10,
+    15,
+    16,
+    19,
+    1560,
+    1561,
+    1563,
+    1569,
+    1972,
+    1973,
+    1977,
+    2210,
+    2218,
+    3152,
+    3154,
+    3158,
+    3282,
+    3284,
+    3287,
+    3289,
+    3550,
+    3551,
+    3552,
+    3553,
+    3555,
+    3559,
+    4203,
+    4204,
+    4206,
+    4207,
+    4208,
+    5381,
+    5384,
+    5385,
+    5389,
+    6688,
+    6810,
+    6812,
+    6816,
+    7002,
+    7006,
+    7008,
+    7155,
+    7158,
+    7890,
+    7896,
+    7897,
+    8461
+   ],
+   "near_miss_photos": [
+    814,
+    815,
+    819,
+    1670,
+    1672,
+    1673,
+    1675,
+    3081,
+    3083,
+    3964,
+    3967,
+    4960,
+    4962,
+    4965,
+    4966,
+    4967,
+    5081,
+    5082,
+    5089,
+    5481,
+    5483,
+    5489,
+    5571,
+    5572,
+    5573,
+    5575,
+    5577,
+    5578,
+    5579,
+    5822,
+    6490,
+    6492,
+    6497,
+    6498,
+    6499,
+    6522,
+    6527,
+    6528,
+    6581,
+    7342,
+    7344,
+    7346,
+    7348,
+    7832,
+    7835
+   ]
+  },
+  {
+   "id": "wrong",
+   "source": "wrong-unit control: noun reading of sum:mixed4e:703+315",
+   "lists_valid": true,
+   "fire_classes": [
+    "custard apple",
+    "pineapple",
+    "cucumber",
+    "Granny Smith",
+    "coral fungus",
+    "sea anemone",
+    "artichoke",
+    "red-backed sandpiper",
+    "redshank",
+    "dowitcher",
+    "ruddy turnstone",
+    "beer glass",
+    "goblet",
+    "suit",
+    "Windsor tie"
+   ],
+   "near_miss_classes": [
+    "banana",
+    "orange",
+    "lemon",
+    "strawberry",
+    "zucchini",
+    "brain coral",
+    "jellyfish",
+    "agaric",
+    "bolete",
+    "wine bottle",
+    "pop bottle",
+    "jersey",
+    "sweatshirt",
+    "jackfruit",
+    "starfish"
+   ],
+   "dropped": {
+    "not_a_class": [],
+    "in_both": [],
+    "repeated": []
+   },
+   "list_attempts": 1,
+   "samples": {
+    "0": {
+     "valid": true,
+     "fire": [
+      31,
+      6,
+      19,
+      48,
+      25,
+      17
+     ],
+     "near_miss": [
+      18,
+      26,
+      30,
+      24,
+      42,
+      4
+     ]
+    },
+    "1": {
+     "valid": true,
+     "fire": [
+      31,
+      6,
+      19,
+      35,
+      48,
+      25
+     ],
+     "near_miss": [
+      18,
+      26,
+      30,
+      24,
+      42,
+      4
+     ]
+    },
+    "2": {
+     "valid": true,
+     "fire": [
+      31,
+      6,
+      19,
+      35,
+      48,
+      25
+     ],
+     "near_miss": [
+      18,
+      26,
+      30,
+      42,
+      4,
+      29
+     ]
+    }
+   },
+   "sample_scores": [
+    {
+     "fire_hit": 0.16666666666666666,
+     "near_ok": 0.8333333333333334,
+     "gap": 0.07418310440455875
+    },
+    {
+     "fire_hit": 0.3333333333333333,
+     "near_ok": 0.8333333333333334,
+     "gap": 0.19962012938534218
+    },
+    {
+     "fire_hit": 0.3333333333333333,
+     "near_ok": 0.6666666666666666,
+     "gap": 0.16729199374094605
+    }
+   ],
+   "n_samples": 3,
+   "n_valid": 3,
+   "fire_hit": {
+    "mean": 0.27777777777777773,
+    "min": 0.16666666666666666,
+    "max": 0.3333333333333333
+   },
+   "near_ok": {
+    "mean": 0.7777777777777778,
+    "min": 0.6666666666666666,
+    "max": 0.8333333333333334
+   },
+   "gap": {
+    "mean": 0.1470317425102823,
+    "min": 0.07418310440455875,
+    "max": 0.19962012938534218
+   },
+   "gap_vs_chance": "ABOVE",
+   "class_auc": 0.6130952380952381,
+   "n_fire": 42,
+   "n_near_miss": 44,
+   "mean_ratio_fire": 0.10838178149424493,
+   "mean_ratio_near_miss": 0.07209205191677691,
+   "fire_photos": [
+    202,
+    205,
+    206,
+    207,
+    226,
+    303,
+    307,
+    931,
+    932,
+    934,
+    938,
+    3662,
+    3665,
+    4061,
+    6060,
+    6063,
+    6065,
+    6190,
+    6193,
+    6196,
+    6522,
+    6527,
+    6528,
+    6701,
+    6702,
+    6703,
+    6704,
+    6708,
+    7800,
+    7803,
+    7806,
+    9080,
+    9083,
+    9084,
+    9088,
+    9089,
+    9425,
+    9426,
+    9428,
+    9521,
+    9522,
+    9524
+   ],
+   "near_miss_photos": [
+    1386,
+    3524,
+    3526,
+    3527,
+    3964,
+    3967,
+    4340,
+    4346,
+    4433,
+    4435,
+    4684,
+    4686,
+    4687,
+    4689,
+    4960,
+    4962,
+    4965,
+    4966,
+    4967,
+    5416,
+    5417,
+    8237,
+    8600,
+    8606,
+    8840,
+    8844,
+    8845,
+    8846,
+    8848,
+    9150,
+    9270,
+    9274,
+    9275,
+    9592,
+    9593,
+    9597,
+    9598,
+    9730,
+    9732,
+    9733,
+    9736,
+    9737,
+    9738,
+    9739
+   ]
+  }
+ ],
+ "ranking": [
+  [
+   "noun",
+   1.0
+  ],
+  [
+   "Q0",
+   0.888888888888889
+  ],
+  [
+   "F1",
+   0.3333333333333333
+  ],
+  [
+   "wrong",
+   0.27777777777777773
+  ]
+ ]
+}

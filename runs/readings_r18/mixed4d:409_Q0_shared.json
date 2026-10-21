@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4d:409",
+ "arm": "Q0_shared",
+ "system_prompt": "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?",
+ "reply": {
+  "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to two separate categories: dogs (plus a dog-like weasel), and cars or road vehicles (sedans, police cars, a tanker truck). One possible shared thread is a side-on, horizontally elongated body standing on legs or wheels, but the semantic content is clearly two distinct things.\",\n \"evidence\": \"About 12 of the top 20 are dogs of varied breeds, colors and settings, 7 are cars or trucks, and #10 is a stoat. Both groups appear at the top (#1 is a car and #2 a dog, both at 10), so neither is a weak extension of the other.\",\n \"missing_data\": \"Activations on side-profile images of other elongated objects (horses, cats, trains) and on dogs and cars seen from the front would show whether a shared shape or pose feature explains both groups.\",\n \"confidence\": 0.6}",
+  "cost_usd": 0.0316,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2344,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 642,
+   "output_tokens_details": {
+    "thinking_tokens": 342
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2344,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 642,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2344,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2344
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 8606
+ },
+ "parsed": {
+  "class": "unrelated",
+  "explanation": "The unit responds to two separate categories: dogs (plus a dog-like weasel), and cars or road vehicles (sedans, police cars, a tanker truck). One possible shared thread is a side-on, horizontally elongated body standing on legs or wheels, but the semantic content is clearly two distinct things.",
+  "evidence": "About 12 of the top 20 are dogs of varied breeds, colors and settings, 7 are cars or trucks, and #10 is a stoat. Both groups appear at the top (#1 is a car and #2 a dog, both at 10), so neither is a weak extension of the other.",
+  "missing_data": "Activations on side-profile images of other elongated objects (horses, cats, trains) and on dogs and cars seen from the front would show whether a shared shape or pose feature explains both groups.",
+  "confidence": 0.6
+ }
+}

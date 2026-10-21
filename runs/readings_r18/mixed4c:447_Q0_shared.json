@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4c:447",
+ "arm": "Q0_shared",
+ "system_prompt": "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?",
+ "reply": {
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to wheeled road vehicles (cars, vans, pickups, buses, emergency vehicles), mostly seen from the side or a three-quarter angle with the wheels and body visible.\",\n \"evidence\": \"All 20 top images show a single motor vehicle as the main subject, across very different types, colors and settings, and activations stay high (8-10) for all of them. Even a printed ad of a van (#13) scores 8.\",\n \"missing_data\": \"Activations on non-road wheeled objects (bicycles, trains, carts), on vehicles seen head-on or from above, and on isolated vehicle parts like wheels, to tell a general vehicle detector from a narrower side-view or wheel feature.\",\n \"confidence\": 0.75}",
+  "cost_usd": 0.026520000000000002,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2344,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 388,
+   "output_tokens_details": {
+    "thinking_tokens": 127
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2344,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 388,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2344,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2344
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 5889
+ },
+ "parsed": {
+  "class": "one",
+  "explanation": "The unit responds to wheeled road vehicles (cars, vans, pickups, buses, emergency vehicles), mostly seen from the side or a three-quarter angle with the wheels and body visible.",
+  "evidence": "All 20 top images show a single motor vehicle as the main subject, across very different types, colors and settings, and activations stay high (8-10) for all of them. Even a printed ad of a van (#13) scores 8.",
+  "missing_data": "Activations on non-road wheeled objects (bicycles, trains, carts), on vehicles seen head-on or from above, and on isolated vehicle parts like wheels, to tell a general vehicle detector from a narrower side-view or wheel feature.",
+  "confidence": 0.75
+ }
+}

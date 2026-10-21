@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4e:55",
+ "arm": "F1_forced",
+ "system_prompt": "Assume this unit responds to one shared visual pattern. Describe that pattern without naming any kinds of objects, animals or scenes.",
+ "reply": {
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to soft, finely textured, fluffy surfaces arranged around a frontal, roughly symmetric configuration of two dark round spots above a small central point, often framed by upward-pointing triangular protrusions and fine radiating thin lines. It responds most strongly to warm orange-and-white or gray-striped versions of this pattern.\",\n \"evidence\": \"Nearly all top images (#1–5, #7–19) share this fluffy textured surface with paired round eyes and pointed triangular ears, usually in rust/white or gray/tabby coloring, and the strongest responses (#1, #2) combine rich orange-white texture with a centered frontal view. The weaker outliers fit as partial matches: #6 has a symmetric pair of round lights on a reddish surface, and #20 has a round eye on a smooth white region beside a long orange shape.\",\n \"missing_data\": \"Activations on smooth or bald surfaces with paired round eyes, and on fluffy textures without any eye-like configuration, would show which element drives the unit; spatial activation maps would show where it fires within each image.\",\n \"confidence\": 0.75}\n```",
+  "cost_usd": 0.031752,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2358,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 644,
+   "output_tokens_details": {
+    "thinking_tokens": 247
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2358,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 644,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2358,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2358
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 8386
+ },
+ "parsed": {
+  "class": "one_plus_related",
+  "explanation": "The unit responds to soft, finely textured, fluffy surfaces arranged around a frontal, roughly symmetric configuration of two dark round spots above a small central point, often framed by upward-pointing triangular protrusions and fine radiating thin lines. It responds most strongly to warm orange-and-white or gray-striped versions of this pattern.",
+  "evidence": "Nearly all top images (#1–5, #7–19) share this fluffy textured surface with paired round eyes and pointed triangular ears, usually in rust/white or gray/tabby coloring, and the strongest responses (#1, #2) combine rich orange-white texture with a centered frontal view. The weaker outliers fit as partial matches: #6 has a symmetric pair of round lights on a reddish surface, and #20 has a round eye on a smooth white region beside a long orange shape.",
+  "missing_data": "Activations on smooth or bald surfaces with paired round eyes, and on fluffy textures without any eye-like configuration, would show which element drives the unit; spatial activation maps would show where it fires within each image.",
+  "confidence": 0.75
+ }
+}

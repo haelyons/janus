@@ -1,0 +1,88 @@
+== mixed4d:409  M=2289
+chance  fire_hit=0.333  near_ok=0.333
+pool noun:fire: drew 5, 11 pool photos in its classes (16 classes, 55 held photos)
+pool noun:near_miss: drew 5, 12 pool photos in its classes (15 classes, 48 held photos)
+pool Q0:fire: drew 5, 11 pool photos in its classes (14 classes, 52 held photos)
+pool Q0:near_miss: drew 5, 11 pool photos in its classes (15 classes, 45 held photos)
+pool F1:fire: drew 5, 11 pool photos in its classes (15 classes, 46 held photos)
+pool F1:near_miss: drew 5, 6 pool photos in its classes (15 classes, 41 held photos)
+pool wrong:fire: drew 5, 5 pool photos in its classes (15 classes, 40 held photos)
+pool wrong:near_miss: drew 5, 7 pool photos in its classes (15 classes, 54 held photos)
+pool pose:fire: drew 4, 7 pool photos in its classes (15 classes, 45 held photos)
+pool pose:near_miss: drew 4, 4 pool photos in its classes (14 classes, 34 held photos)
+noun  source=bare subject, round 17c whole card, sample 1, verbatim  fire_hit=1.000 (1.000-1.000)  near_ok=0.056  gap=+0.329  valid=3/3  class_auc=0.608  n=55/48  mean_ratio=0.357/0.256  gap_vs_chance=ABOVE
+Q0  source=arms/Q0_shared.txt, same card, sample 1  fire_hit=0.944 (0.833-1.000)  near_ok=0.000  gap=+0.233  valid=3/3  class_auc=0.631  n=52/45  mean_ratio=0.336/0.228  gap_vs_chance=ABOVE
+F1  source=arms/F1_forced.txt, same card, sample 1  fire_hit=1.000 (1.000-1.000)  near_ok=0.167  gap=+0.404  valid=3/3  class_auc=0.615  n=46/41  mean_ratio=0.249/0.168  gap_vs_chance=ABOVE
+wrong  source=wrong-unit control: noun reading of sum:mixed4e:703+315  fire_hit=0.000 (0.000-0.000)  near_ok=0.333  gap=-0.134  valid=3/3  class_auc=0.549  n=40/54  mean_ratio=0.115/0.084  gap_vs_chance=BELOW
+pose  source=subject Q0 s2, verbatim (round 14)  fire_hit=1.000 (1.000-1.000)  near_ok=0.167  gap=+0.383  valid=3/3  class_auc=0.658  n=45/34  mean_ratio=0.301/0.184  gap_vs_chance=ABOVE
+ranked by fire_hit mean: noun 1.000, F1 1.000, pose 1.000, Q0 0.944, wrong 0.000
+
+== mixed4c:447  M=8137
+chance  fire_hit=0.312  near_ok=0.417
+pool noun:fire: drew 6, 12 pool photos in its classes (17 classes, 45 held photos)
+pool noun:near_miss: drew 6, 12 pool photos in its classes (15 classes, 40 held photos)
+pool Q0:fire: drew 6, 14 pool photos in its classes (15 classes, 44 held photos)
+pool Q0:near_miss: drew 6, 19 pool photos in its classes (15 classes, 41 held photos)
+pool F1:fire: drew 6, 16 pool photos in its classes (15 classes, 44 held photos)
+pool F1:near_miss: drew 6, 13 pool photos in its classes (15 classes, 40 held photos)
+pool wrong:fire: drew 6, 6 pool photos in its classes (16 classes, 44 held photos)
+pool wrong:near_miss: drew 6, 6 pool photos in its classes (15 classes, 54 held photos)
+noun  source=bare subject, round 17c whole card, sample 1, verbatim  fire_hit=0.944 (0.833-1.000)  near_ok=0.389  gap=+0.439  valid=3/3  class_auc=0.854  n=45/40  mean_ratio=0.449/0.157  gap_vs_chance=ABOVE
+Q0  source=arms/Q0_shared.txt, same card, sample 1  fire_hit=0.944 (0.833-1.000)  near_ok=0.444  gap=+0.384  valid=3/3  class_auc=0.841  n=44/41  mean_ratio=0.465/0.183  gap_vs_chance=ABOVE
+F1  source=arms/F1_forced.txt, same card, sample 1  fire_hit=0.833 (0.833-0.833)  near_ok=0.444  gap=+0.268  valid=3/3  class_auc=0.524  n=44/40  mean_ratio=0.381/0.360  gap_vs_chance=ABOVE
+wrong  source=wrong-unit control: noun reading of sum:mixed4e:703+315  fire_hit=0.000 (0.000-0.000)  near_ok=1.000  gap=+0.019  valid=3/3  class_auc=0.494  n=44/54  mean_ratio=0.018/0.021  gap_vs_chance=ABOVE
+ranked by fire_hit mean: noun 0.944, Q0 0.944, F1 0.833, wrong 0.000
+
+== sum:mixed4e:809+804  M=1
+chance  fire_hit=0.312  near_ok=0.333
+pool noun:fire: drew 6, 12 pool photos in its classes (15 classes, 46 held photos)
+pool noun:near_miss: drew 6, 9 pool photos in its classes (15 classes, 33 held photos)
+pool Q0:fire: drew 6, 13 pool photos in its classes (15 classes, 50 held photos)
+pool Q0:near_miss: drew 6, 10 pool photos in its classes (15 classes, 42 held photos)
+pool F1:fire: drew 6, 10 pool photos in its classes (15 classes, 48 held photos)
+pool F1:near_miss: drew 6, 11 pool photos in its classes (14 classes, 45 held photos)
+pool wrong:fire: drew 6, 6 pool photos in its classes (15 classes, 42 held photos)
+pool wrong:near_miss: drew 6, 7 pool photos in its classes (15 classes, 44 held photos)
+noun  source=bare subject, round 17c whole card, sample 1, verbatim  fire_hit=1.000 (1.000-1.000)  near_ok=0.056  gap=+0.422  valid=3/3  class_auc=0.849  n=46/33  mean_ratio=0.554/0.253  gap_vs_chance=ABOVE
+Q0  source=arms/Q0_shared.txt, same card, sample 1  fire_hit=0.889 (0.833-1.000)  near_ok=0.000  gap=+0.301  valid=3/3  class_auc=0.880  n=50/42  mean_ratio=0.558/0.227  gap_vs_chance=ABOVE
+F1  source=arms/F1_forced.txt, same card, sample 1  fire_hit=0.333 (0.333-0.333)  near_ok=0.111  gap=-0.135  valid=3/3  class_auc=0.789  n=48/45  mean_ratio=0.331/0.111  gap_vs_chance=BELOW
+wrong  source=wrong-unit control: noun reading of sum:mixed4e:703+315  fire_hit=0.278 (0.167-0.333)  near_ok=0.778  gap=+0.147  valid=3/3  class_auc=0.613  n=42/44  mean_ratio=0.108/0.072  gap_vs_chance=ABOVE
+ranked by fire_hit mean: noun 1.000, Q0 0.889, F1 0.333, wrong 0.278
+
+== sum:mixed4e:703+315  M=1.157
+chance  fire_hit=0.354  near_ok=0.167
+pool noun:fire: drew 6, 13 pool photos in its classes (16 classes, 44 held photos)
+pool noun:near_miss: drew 6, 11 pool photos in its classes (15 classes, 55 held photos)
+pool Q0:fire: drew 6, 11 pool photos in its classes (15 classes, 40 held photos)
+pool Q0:near_miss: drew 6, 7 pool photos in its classes (15 classes, 38 held photos)
+pool F1:fire: drew 6, 10 pool photos in its classes (14 classes, 36 held photos)
+pool F1:near_miss: drew 6, 9 pool photos in its classes (15 classes, 53 held photos)
+pool wrong:fire: drew 6, 6 pool photos in its classes (18 classes, 48 held photos)
+pool wrong:near_miss: drew 6, 6 pool photos in its classes (15 classes, 39 held photos)
+noun  source=bare subject, round 17c whole card, sample 1, verbatim  fire_hit=0.889 (0.833-1.000)  near_ok=0.000  gap=+0.274  valid=3/3  class_auc=0.605  n=44/55  mean_ratio=0.357/0.285  gap_vs_chance=ABOVE
+Q0  source=arms/Q0_shared.txt, same card, sample 1  fire_hit=0.889 (0.833-1.000)  near_ok=0.000  gap=+0.205  valid=3/3  class_auc=0.559  n=40/38  mean_ratio=0.384/0.343  gap_vs_chance=ABOVE
+F1  source=arms/F1_forced.txt, same card, sample 1  fire_hit=0.833 (0.833-0.833)  near_ok=0.000  gap=+0.243  valid=3/3  class_auc=0.690  n=36/53  mean_ratio=0.426/0.298  gap_vs_chance=ABOVE
+wrong  source=wrong-unit control: noun reading of mixed4c:447  fire_hit=0.000 (0.000-0.000)  near_ok=0.444  gap=-0.031  valid=3/3  class_auc=0.307  n=48/39  mean_ratio=0.084/0.123  gap_vs_chance=MIXED
+ranked by fire_hit mean: noun 0.889, Q0 0.889, F1 0.833, wrong 0.000
+
+== mixed4e:55  M=1452
+chance  fire_hit=0.271  near_ok=0.188
+pool noun:fire: drew 4, 16 pool photos in its classes (14 classes, 44 held photos)
+pool noun:near_miss: drew 4, 9 pool photos in its classes (15 classes, 45 held photos)
+pool Q0:fire: drew 4, 18 pool photos in its classes (14 classes, 44 held photos)
+pool Q0:near_miss: drew 4, 7 pool photos in its classes (15 classes, 37 held photos)
+pool F1:fire: drew 4, 17 pool photos in its classes (15 classes, 46 held photos)
+pool F1:near_miss: drew 4, 8 pool photos in its classes (15 classes, 45 held photos)
+pool wrong:fire: drew 4, 4 pool photos in its classes (15 classes, 42 held photos)
+pool wrong:near_miss: drew 4, 4 pool photos in its classes (15 classes, 57 held photos)
+pool V:fire: drew 4, 5 pool photos in its classes (16 classes, 48 held photos)
+pool V:near_miss: drew 4, 7 pool photos in its classes (15 classes, 45 held photos)
+pool or:fire: drew 4, 11 pool photos in its classes (16 classes, 50 held photos)
+pool or:near_miss: drew 4, 9 pool photos in its classes (16 classes, 45 held photos)
+noun  source=bare subject, round 17c whole card, sample 1, verbatim  fire_hit=1.000 (1.000-1.000)  near_ok=0.556  gap=+0.505  valid=3/3  class_auc=0.843  n=44/45  mean_ratio=0.394/0.155  gap_vs_chance=ABOVE
+Q0  source=arms/Q0_shared.txt, same card, sample 1  fire_hit=1.000 (1.000-1.000)  near_ok=0.556  gap=+0.494  valid=3/3  class_auc=0.719  n=44/37  mean_ratio=0.376/0.213  gap_vs_chance=ABOVE
+F1  source=arms/F1_forced.txt, same card, sample 1  fire_hit=0.833 (0.833-0.833)  near_ok=0.500  gap=+0.372  valid=3/3  class_auc=0.731  n=46/45  mean_ratio=0.360/0.190  gap_vs_chance=ABOVE
+wrong  source=wrong-unit control: noun reading of sum:mixed4e:703+315  fire_hit=0.000 (0.000-0.000)  near_ok=0.222  gap=-0.023  valid=3/3  class_auc=0.473  n=42/57  mean_ratio=0.113/0.109  gap_vs_chance=MIXED
+V  source=essay, nearly verbatim, with its examples  fire_hit=0.389 (0.333-0.500)  near_ok=0.389  gap=+0.136  valid=3/3  class_auc=0.619  n=48/45  mean_ratio=0.237/0.173  gap_vs_chance=ABOVE
+or  source=subject E1 U-686 s1, verbatim (round 8)  fire_hit=1.000 (1.000-1.000)  near_ok=0.111  gap=+0.235  valid=3/3  class_auc=0.748  n=50/45  mean_ratio=0.354/0.221  gap_vs_chance=ABOVE
+ranked by fire_hit mean: noun 1.000, Q0 1.000, or 1.000, F1 0.833, V 0.389, wrong 0.000

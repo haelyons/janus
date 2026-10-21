@@ -1,0 +1,52 @@
+{
+ "unit": "mixed4c:447",
+ "arm": "F1_forced",
+ "system_prompt": "Assume this unit responds to one shared visual pattern. Describe that pattern without naming any kinds of objects, animals or scenes.",
+ "reply": {
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, horizontally elongated, boxy form seen side-on or at three-quarter angle, with rows of glossy rectangular panels along its upper part and two or more dark circular shapes with lighter centers along its lower edge, resting on flat gray ground.\",\n \"evidence\": \"All 20 top images share this layout across very different colors (silver, red, yellow, pink, teal, white) and sizes, from low compact forms to tall long ones, and activations stay high and nearly flat (8-10). Even a printed flat illustration (#13) scores 8, which suggests the unit tracks overall shape and the circles-at-bottom arrangement rather than texture or photographic detail.\",\n \"missing_data\": \"Moderate- and low-activation examples, plus tests with isolated parts (circular shapes alone, the boxy form with no circles at the bottom, front or rear views), to check whether the unit needs the whole side-view arrangement or just one component.\",\n \"confidence\": 0.85}\n```",
+  "cost_usd": 0.028712,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2358,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 492,
+   "output_tokens_details": {
+    "thinking_tokens": 146
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2358,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 492,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2358,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2358
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 7012
+ },
+ "parsed": {
+  "class": "one",
+  "explanation": "The unit responds to a large, horizontally elongated, boxy form seen side-on or at three-quarter angle, with rows of glossy rectangular panels along its upper part and two or more dark circular shapes with lighter centers along its lower edge, resting on flat gray ground.",
+  "evidence": "All 20 top images share this layout across very different colors (silver, red, yellow, pink, teal, white) and sizes, from low compact forms to tall long ones, and activations stay high and nearly flat (8-10). Even a printed flat illustration (#13) scores 8, which suggests the unit tracks overall shape and the circles-at-bottom arrangement rather than texture or photographic detail.",
+  "missing_data": "Moderate- and low-activation examples, plus tests with isolated parts (circular shapes alone, the boxy form with no circles at the bottom, front or rear views), to check whether the unit needs the whole side-view arrangement or just one component.",
+  "confidence": 0.85
+ }
+}

@@ -368,9 +368,8 @@ activation), then picks 6 to fire and 6 near misses. Activations score the picks
   3 held for fire_hit but failed for 55's wrong-unit control.
 
 ## To do
-- Near-miss pool built from the essay's own V examples (bullet train, pool table, fireboat, flame-like scenes) next to
-  cats, foxes and cars. The round-15 pool can't rank mixed4e:55's readings, since its wrong-unit control scored best.
-  Validate on 4d:409 first.
+- Done in round 18 (validation failed at the top: the pick test rejects wrong readings but can't rank partly right
+  ones). A finer score would ask for a ranking of the whole pool, or coverage of each half of a planted pair.
 - Later focus: neurons over training in a model with base, SFT, DPO and RLVR checkpoints (AI2 OLMo 2 / OLMo 3;
   check exact repos). Start with neurons that have ground truth (simple token neurons), then the essay's language
   examples (iy -> diy -> do it yourself; enemy; pet microchip). GPT-2 XL's 2023 neuron-explainer data is a
@@ -452,3 +451,35 @@ planted 703+315     1 LOW   tentacles and florets / bottle shapes / birds
 - With a ground truth that shares one thing across kinds (409), the method finds it; on 55 it finds the received
   reading. This is the essay's own step (ablate the other bundles, then a blind maximum), and no shared shape comes
   out of it.
+
+## Round 18: a near-miss pool built from each reading's own examples (`tools/nearmiss2.py`, claim-blind author)
+
+`runs/nearmiss2/report.txt`, readings in `authors/explanations/nearmiss2.json` (`tools/readings_r18.py`). Each reading,
+alone, is turned into fire and near-miss ImageNet classes by a blind agent; the 48-photo pool is drawn at random from
+all readings' classes (no activations), so the V reading brings its own fireboats, bullet trains, pool tables and
+flames. Then round 15's blind picker (6 fire, 6 near misses, 3 samples). fire_hit chance 0.27-0.35.
+
+    unit             noun   Q0     F1     wrong  extra
+    409 pose         1.00   0.94   1.00   0.00   pose 1.00
+    447 car          0.94   0.94   0.83   0.00
+    planted 809+804  1.00   0.89   0.33   0.28
+    planted 703+315  0.89   0.89   0.83   0.00
+    4e:55            1.00   1.00   0.83   0.00   V 0.39, or 1.00
+
+- Validation failed (needed 1, 2 and 4): 1 failed (pose and noun both 1.00 on 409), 2 held for 809+804 (forced
+  unity 0.33, rejected) but failed for 703+315 (F1, "rounded mass of repeated small bulges", 0.83, and its class
+  AUC 0.69 beat noun's 0.61). 3 held (447). 4 held, 5 of 5: the wrong-unit reading is lowest everywhere. 5 held for
+  447 (0.85) and 809+804 (0.85), failed for 703+315 (0.61).
+- What failed is resolution at the top: six picks only need to find some firing photos, so a reading that is half
+  right (one half of a planted pair) or right in a different way (nouns on 409) reaches the ceiling. The test rejects
+  readings that are wrong (wrong unit 5/5, forced unity on cats + cars) but can't rank readings that are partly right.
+  By the sealed rule, the ranking on 55 isn't read as a verdict.
+- 4e:55, reported: noun (faces), Q0 and or reach 1.00; F1 ("fluffy texture around two dark spots above a centre",
+  i.e. a face without nouns) 0.83; V 0.39 against chance 0.27, wrong 0.00. V is the only reading of a real unit
+  that lands near the wrong-unit floor.
+- The essay's own examples, on all held photos (held median 0.12, 95th percentile 0.31): pool table 0.35 (n=7, max
+  0.52), bullet train 0.23 (n=2), fireboat 0.09 (n=2), torch 0.13, candle 0.21, volcano 0.13, foxes 0.25-0.59. V's
+  round near misses: balls 0.07-0.21, near baseline rather than negative; Persian cat 0.48. Pool tables are a real
+  point for the essay; fireboats and flames are not, and round cat faces fire.
+- Q0 on 409 said "two separate categories" this time (round 14: 3/3 one). F1 named the side view on 409 and a
+  face pattern on 55; it found a pattern on every unit, including the planted pairs.

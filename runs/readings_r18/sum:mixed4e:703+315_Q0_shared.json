@@ -1,0 +1,52 @@
+{
+ "unit": "sum:mixed4e:703+315",
+ "arm": "Q0_shared",
+ "system_prompt": "Spend a few seconds wondering what one thing this might be. What's the shared pattern here?",
+ "reply": {
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems polysemantic, responding to at least three unrelated groups: bumpy or tentacled organic textures (custard apples, pineapple, cucumbers, coral fungus, sea anemones, thistle), birds standing or perched (shorebirds, ibis, partridge, kite, hornbill), and clear glassware (a bottle and a flask), plus scattered clothing images.\",\n \"evidence\": \"The two strongest images (10) are custard apples, and textured fruit and anemones recur throughout. Bird photos make up about a third of the top 20 at activations 7-9, with almost no textural overlap with the fruit. Glass vessels and patterned or red clothing show up at activation 8 and share no clear visual feature with either group.\",\n \"missing_data\": \"Top activations over a larger set, or feature-visualization and spatial activation maps, to show whether one shared low-level feature (such as a particular texture or shape) explains the clusters or whether they are truly separate.\",\n \"confidence\": 0.55}\n```",
+  "cost_usd": 0.03172,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 2344,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 648,
+   "output_tokens_details": {
+    "thinking_tokens": 293
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 2344,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 648,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 2344,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 2344
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 7870
+ },
+ "parsed": {
+  "class": "unrelated",
+  "explanation": "The unit seems polysemantic, responding to at least three unrelated groups: bumpy or tentacled organic textures (custard apples, pineapple, cucumbers, coral fungus, sea anemones, thistle), birds standing or perched (shorebirds, ibis, partridge, kite, hornbill), and clear glassware (a bottle and a flask), plus scattered clothing images.",
+  "evidence": "The two strongest images (10) are custard apples, and textured fruit and anemones recur throughout. Bird photos make up about a third of the top 20 at activations 7-9, with almost no textural overlap with the fruit. Glass vessels and patterned or red clothing show up at activation 8 and share no clear visual feature with either group.",
+  "missing_data": "Top activations over a larger set, or feature-visualization and spatial activation maps, to show whether one shared low-level feature (such as a particular texture or shape) explains the clusters or whether they are truly separate.",
+  "confidence": 0.55
+ }
+}
