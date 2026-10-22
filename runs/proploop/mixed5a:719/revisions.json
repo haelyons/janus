@@ -1,0 +1,120 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to close-up, frame-filling views of compact man-made or handmade objects, regardless of whether they have curved contours. A weaker related preference is for ornamental surface patterns such as radial, floral or petal designs on those objects.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to close-up, frame-filling views of compact man-made or handmade objects, regardless of whether they have curved contours. A weaker related preference is for ornamental surface patterns such as radial, floral or petal designs on those objects.",
+   "evidence": "Object fills the frame vs small or distant gives d ±1.51 (percentile 100, separation percentile 99), and man-made vs mixed natural scenes gives d ±1.06 (percentile 99), while the questions about curved contours, contrast and garments separate weakly (percentiles 21–58). Decorative pattern (d +0.35, percentile 93) and radial or floral patterns (d about +0.3, percentiles 85–86) add a modest secondary effect.",
+   "missing_data": "Activity on photos outside the top 12 classes, for example close-ups of natural objects or close-ups of plain, pattern-free man-made objects, to tell whether the unit codes object scale and framing or man-made texture specifically.",
+   "confidence": 0.62
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6ebcab3b179e40e93093d10d215f9e04fccd4a6c914c8e2b9f3a8c5fa8daa6dc",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to close-up, frame-filling views of compact man-made or handmade objects, regardless of whether they have curved contours. A weaker related preference is for ornamental surface patterns such as radial, floral or petal designs on those objects.\",\n \"evidence\": \"Object fills the frame vs small or distant gives d ±1.51 (percentile 100, separation percentile 99), and man-made vs mixed natural scenes gives d ±1.06 (percentile 99), while the questions about curved contours, contrast and garments separate weakly (percentiles 21–58). Decorative pattern (d +0.35, percentile 93) and radial or floral patterns (d about +0.3, percentiles 85–86) add a modest secondary effect.\",\n \"missing_data\": \"Activity on photos outside the top 12 classes, for example close-ups of natural objects or close-ups of plain, pattern-free man-made objects, to tell whether the unit codes object scale and framing or man-made texture specifically.\",\n \"confidence\": 0.62}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to close-up, frame-filling views of compact man-made or handmade objects, regardless of whether they have curved contours. A weaker related preference is for ornamental surface patterns such as radial, floral or petal designs on those objects.\",\n \"evidence\": \"Object fills the frame vs small or distant gives d ±1.51 (percentile 100, separation percentile 99), and man-made vs mixed natural scenes gives d ±1.06 (percentile 99), while the questions about curved contours, contrast and garments separate weakly (percentiles 21–58). Decorative pattern (d +0.35, percentile 93) and radial or floral patterns (d about +0.3, percentiles 85–86) add a modest secondary effect.\",\n \"missing_data\": \"Activity on photos outside the top 12 classes, for example close-ups of natural objects or close-ups of plain, pattern-free man-made objects, to tell whether the unit codes object scale and framing or man-made texture specifically.\",\n \"confidence\": 0.62}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to close-up, frame-filling man-made or handcrafted objects, such as shoes, wallets, stockings and trinkets. Within those, it responds somewhat more when the surface carries decorative curved, radial or floral patterns rather than only a plain curved outline.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to close-up, frame-filling man-made or handcrafted objects, such as shoes, wallets, stockings and trinkets. Within those, it responds somewhat more when the surface carries decorative curved, radial or floral patterns rather than only a plain curved outline.",
+   "evidence": "Object filling the frame (Q1, d +1.51, 100th percentile) and man-made rather than mixed scenes (Q7, d +1.06) give by far the strongest separation. Decorative patterns raise activity modestly (Q3, d +0.35, 93rd percentile; Q4), while plain object outlines (d -0.31), contrast and curvature itself (Q2, separation at the 34th percentile) add little, which contradicts the claim that convex outlines are the main driver.",
+   "missing_data": "Activity on photos outside the top 12 classes, especially close-ups of natural objects and wide shots containing ornamented patterns, to separate 'close-up object' from 'ornamented texture'.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a6ffe08c7cc5f2eac6e11967a35d973d4b4d61a644ed2d52e5742e8a019f9c6a",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to close-up, frame-filling man-made or handcrafted objects, such as shoes, wallets, stockings and trinkets. Within those, it responds somewhat more when the surface carries decorative curved, radial or floral patterns rather than only a plain curved outline.\",\n \"evidence\": \"Object filling the frame (Q1, d +1.51, 100th percentile) and man-made rather than mixed scenes (Q7, d +1.06) give by far the strongest separation. Decorative patterns raise activity modestly (Q3, d +0.35, 93rd percentile; Q4), while plain object outlines (d -0.31), contrast and curvature itself (Q2, separation at the 34th percentile) add little, which contradicts the claim that convex outlines are the main driver.\",\n \"missing_data\": \"Activity on photos outside the top 12 classes, especially close-ups of natural objects and wide shots containing ornamented patterns, to separate 'close-up object' from 'ornamented texture'.\",\n \"confidence\": 0.55}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to close-up, frame-filling man-made or handcrafted objects, such as shoes, wallets, stockings and trinkets. Within those, it responds somewhat more when the surface carries decorative curved, radial or floral patterns rather than only a plain curved outline.\",\n \"evidence\": \"Object filling the frame (Q1, d +1.51, 100th percentile) and man-made rather than mixed scenes (Q7, d +1.06) give by far the strongest separation. Decorative patterns raise activity modestly (Q3, d +0.35, 93rd percentile; Q4), while plain object outlines (d -0.31), contrast and curvature itself (Q2, separation at the 34th percentile) add little, which contradicts the claim that convex outlines are the main driver.\",\n \"missing_data\": \"Activity on photos outside the top 12 classes, especially close-ups of natural objects and wide shots containing ornamented patterns, to separate 'close-up object' from 'ornamented texture'.\",\n \"confidence\": 0.55}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to a close-up of a compact man-made or handmade object that fills much of the frame, not to curved contours as such. It responds somewhat more when the surface carries ornamental radial, floral or patterned decoration.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to a close-up of a compact man-made or handmade object that fills much of the frame, not to curved contours as such. It responds somewhat more when the surface carries ornamental radial, floral or patterned decoration.",
+   "evidence": "The largest within-class effects are for the object filling the frame (Q1 d +1.51, separation percentile 99) and for man-made rather than mixed natural scenes (Q7 d +1.06), while curved-contour prominence explains little (Q2 separation percentile 34). Decorative patterns add a modest boost (Q3 d +0.35, Q4 d +0.29, both around the 85th-93rd percentile)."
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "51f496c6bc4f92a7573ce29ff111c0234077a989408d8c3592dd4d23e0b7bb64",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to a close-up of a compact man-made or handmade object that fills much of the frame, not to curved contours as such. It responds somewhat more when the surface carries ornamental radial, floral or patterned decoration.\", \"evidence\": \"The largest within-class effects are for the object filling the frame (Q1 d +1.51, separation percentile 99) and for man-made rather than mixed natural scenes (Q7 d +1.06), while curved-contour prominence explains little (Q2 separation percentile 34). Decorative patterns add a modest boost (Q3 d +0.35, Q4 d +0.29, both around the 85th-93rd percentile).\"}, \"missing_data\": \"Photos from outside the top classes (natural scenes, wide shots, large objects) and controlled close-ups with and without ornamental patterns, to confirm framing/scale is the driver given only 10 non-close-up photos here.\", \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit mainly responds to a close-up of a compact man-made or handmade object that fills much of the frame, not to curved contours as such. It responds somewhat more when the surface carries ornamental radial, floral or patterned decoration.\", \"evidence\": \"The largest within-class effects are for the object filling the frame (Q1 d +1.51, separation percentile 99) and for man-made rather than mixed natural scenes (Q7 d +1.06), while curved-contour prominence explains little (Q2 separation percentile 34). Decorative patterns add a modest boost (Q3 d +0.35, Q4 d +0.29, both around the 85th-93rd percentile).\"}, \"missing_data\": \"Photos from outside the top classes (natural scenes, wide shots, large objects) and controlled close-ups with and without ornamental patterns, to confirm framing/scale is the driver given only 10 non-close-up photos here.\", \"confidence\": 0.6}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the curved outline of a man-made object (e.g., the edge of a shoe, pouch or mouse) seen at moderate contrast against its background. It responds less to curves that come from decorative surface patterns, and less when the object is starkly separated from the background.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the curved outline of a man-made object (e.g., the edge of a shoe, pouch or mouse) seen at moderate contrast against its background. It responds less to curves that come from decorative surface patterns, and less when the object is starkly separated from the background.",
+   "evidence": "Object-outline curves give d +0.33 (99th percentile), while decorative patterns or a mix of both give -0.20 and -0.41 (3rd–13th percentile). Contrast separates the photos best (92nd percentile), but moderate contrast scores +0.33 and high contrast -0.33, the opposite of the description's 'contrasting background'. The predicted preferences for convex forms and ornamental patterns also do not hold (convex -0.15, ornament mostly negative).",
+   "missing_data": "Checks on photos outside these top classes, plus images that vary contrast and outline-versus-pattern while holding object class fixed.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5edc0878da06ebc047e89130fc9dc314c7d5e77b6c7d1c7067545fbe56b63b22",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved outline of a man-made object (e.g., the edge of a shoe, pouch or mouse) seen at moderate contrast against its background. It responds less to curves that come from decorative surface patterns, and less when the object is starkly separated from the background.\",\n \"evidence\": \"Object-outline curves give d +0.33 (99th percentile), while decorative patterns or a mix of both give -0.20 and -0.41 (3rd–13th percentile). Contrast separates the photos best (92nd percentile), but moderate contrast scores +0.33 and high contrast -0.33, the opposite of the description's 'contrasting background'. The predicted preferences for convex forms and ornamental patterns also do not hold (convex -0.15, ornament mostly negative).\",\n \"missing_data\": \"Checks on photos outside these top classes, plus images that vary contrast and outline-versus-pattern while holding object class fixed.\",\n \"confidence\": 0.45}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the curved outline of a man-made object (e.g., the edge of a shoe, pouch or mouse) seen at moderate contrast against its background. It responds less to curves that come from decorative surface patterns, and less when the object is starkly separated from the background.\",\n \"evidence\": \"Object-outline curves give d +0.33 (99th percentile), while decorative patterns or a mix of both give -0.20 and -0.41 (3rd–13th percentile). Contrast separates the photos best (92nd percentile), but moderate contrast scores +0.33 and high contrast -0.33, the opposite of the description's 'contrasting background'. The predicted preferences for convex forms and ornamental patterns also do not hold (convex -0.15, ornament mostly negative).\",\n \"missing_data\": \"Checks on photos outside these top classes, plus images that vary contrast and outline-versus-pattern while holding object class fixed.\",\n \"confidence\": 0.45}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to curved outline contours of compact man-made objects (e.g., the rounded edge of a shoe, wallet or mouse) that stand out only moderately from their background. The proposed extension to decorative radial or petal patterns is not supported.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to curved outline contours of compact man-made objects (e.g., the rounded edge of a shoe, wallet or mouse) that stand out only moderately from their background. The proposed extension to decorative radial or petal patterns is not supported.",
+   "evidence": "Object-outline curves give d +0.33 (99th percentile) and moderate contrast gives d +0.33 (94th percentile), while decorative patterns are negative (-0.20, and -0.41 for 'both', 3rd percentile) and ornamental radial patterns do not help (No = +0.12). Garments with curved edges do not raise activity (no garment = +0.20, 97th percentile), and curve prominence and object close-ups barely separate photos (separation at the 29th–30th percentile).",
+   "missing_data": "Controlled images that vary a curved object outline against straight-edged objects at matched contrast, plus activity on non-top classes, to tell whether this is truly curvature selectivity or something else about object edges.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c9921f100be63b9f0d7ee5d791c740deb61d4560ad0618ffbed36f342e24b4c3",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to curved outline contours of compact man-made objects (e.g., the rounded edge of a shoe, wallet or mouse) that stand out only moderately from their background. The proposed extension to decorative radial or petal patterns is not supported.\",\n \"evidence\": \"Object-outline curves give d +0.33 (99th percentile) and moderate contrast gives d +0.33 (94th percentile), while decorative patterns are negative (-0.20, and -0.41 for 'both', 3rd percentile) and ornamental radial patterns do not help (No = +0.12). Garments with curved edges do not raise activity (no garment = +0.20, 97th percentile), and curve prominence and object close-ups barely separate photos (separation at the 29th–30th percentile).\",\n \"missing_data\": \"Controlled images that vary a curved object outline against straight-edged objects at matched contrast, plus activity on non-top classes, to tell whether this is truly curvature selectivity or something else about object edges.\",\n \"confidence\": 0.4}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to curved outline contours of compact man-made objects (e.g., the rounded edge of a shoe, wallet or mouse) that stand out only moderately from their background. The proposed extension to decorative radial or petal patterns is not supported.\",\n \"evidence\": \"Object-outline curves give d +0.33 (99th percentile) and moderate contrast gives d +0.33 (94th percentile), while decorative patterns are negative (-0.20, and -0.41 for 'both', 3rd percentile) and ornamental radial patterns do not help (No = +0.12). Garments with curved edges do not raise activity (no garment = +0.20, 97th percentile), and curve prominence and object close-ups barely separate photos (separation at the 29th–30th percentile).\",\n \"missing_data\": \"Controlled images that vary a curved object outline against straight-edged objects at matched contrast, plus activity on non-top classes, to tell whether this is truly curvature selectivity or something else about object edges.\",\n \"confidence\": 0.4}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit responds to the outline of compact, close-up man-made objects such as leather goods, shoes, erasers, sharpeners and ocarinas, especially when the object sits against a background of only moderate contrast. It does not respond to radial or floral decorative patterns on surfaces.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the outline of compact, close-up man-made objects such as leather goods, shoes, erasers, sharpeners and ocarinas, especially when the object sits against a background of only moderate contrast. It does not respond to radial or floral decorative patterns on surfaces.",
+   "evidence": "Within classes, an object-outline contour raised activity (d +0.33, 99th percentile), while decorative patterns lowered it (d -0.20 alone, -0.41 when both appear), and floral or radial motifs were neutral to negative. Moderate contrast (+0.33, 94th percentile) beat high contrast (-0.33), and mainly man-made scenes beat mixed ones (+0.43); separation was low for most questions.",
+   "missing_data": "Activation maps showing where on the object the unit fires (edge versus body), and tests on isolated curved versus straight outlines at controlled contrast.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "702c5328b004ff5037f23ab2b9c1dc88f2ff2641a6739f1e17f84bf7816efbfb",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the outline of compact, close-up man-made objects such as leather goods, shoes, erasers, sharpeners and ocarinas, especially when the object sits against a background of only moderate contrast. It does not respond to radial or floral decorative patterns on surfaces.\",\n \"evidence\": \"Within classes, an object-outline contour raised activity (d +0.33, 99th percentile), while decorative patterns lowered it (d -0.20 alone, -0.41 when both appear), and floral or radial motifs were neutral to negative. Moderate contrast (+0.33, 94th percentile) beat high contrast (-0.33), and mainly man-made scenes beat mixed ones (+0.43); separation was low for most questions.\",\n \"missing_data\": \"Activation maps showing where on the object the unit fires (edge versus body), and tests on isolated curved versus straight outlines at controlled contrast.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to the outline of compact, close-up man-made objects such as leather goods, shoes, erasers, sharpeners and ocarinas, especially when the object sits against a background of only moderate contrast. It does not respond to radial or floral decorative patterns on surfaces.\",\n \"evidence\": \"Within classes, an object-outline contour raised activity (d +0.33, 99th percentile), while decorative patterns lowered it (d -0.20 alone, -0.41 when both appear), and floral or radial motifs were neutral to negative. Moderate contrast (+0.33, 94th percentile) beat high contrast (-0.33), and mainly man-made scenes beat mixed ones (+0.43); separation was low for most questions.\",\n \"missing_data\": \"Activation maps showing where on the object the unit fires (edge versus body), and tests on isolated curved versus straight outlines at controlled contrast.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ }
+}

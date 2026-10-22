@@ -1,0 +1,122 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to the framed side door window of a real, upright road vehicle (glass pane with clearly defined frame and pillars), best seen in front or rear three-quarter view.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the framed side door window of a real, upright road vehicle (glass pane with clearly defined frame and pillars), best seen in front or rear three-quarter view.",
+   "evidence": "The strongest within-class separations are for a clearly visible side window (d +0.87, pct 99), clearly distinguishable frame/pillars (d +0.74, pct 99), and a real upright vehicle (d +1.25, pct 99). Three-quarter views score high (pct 97), while toys or drawings (d -1.25), unusual angles (d -1.37), and partly visible or blurry windows all score low.",
+   "missing_data": "Activation on non-vehicle images with framed windows or pillar-like structures (e.g., train or building windows, boat cabins) and spatial attribution maps to confirm it localizes to the door-window region rather than the whole vehicle body.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "686b664559ec8d4f661b76024dc7538f950ef2f09578aab77ebe9e126bcb3e2d",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the framed side door window of a real, upright road vehicle (glass pane with clearly defined frame and pillars), best seen in front or rear three-quarter view.\",\n \"evidence\": \"The strongest within-class separations are for a clearly visible side window (d +0.87, pct 99), clearly distinguishable frame/pillars (d +0.74, pct 99), and a real upright vehicle (d +1.25, pct 99). Three-quarter views score high (pct 97), while toys or drawings (d -1.25), unusual angles (d -1.37), and partly visible or blurry windows all score low.\",\n \"missing_data\": \"Activation on non-vehicle images with framed windows or pillar-like structures (e.g., train or building windows, boat cabins) and spatial attribution maps to confirm it localizes to the door-window region rather than the whole vehicle body.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the framed side door window of a real, upright road vehicle (glass pane with clearly defined frame and pillars), best seen in front or rear three-quarter view.\",\n \"evidence\": \"The strongest within-class separations are for a clearly visible side window (d +0.87, pct 99), clearly distinguishable frame/pillars (d +0.74, pct 99), and a real upright vehicle (d +1.25, pct 99). Three-quarter views score high (pct 97), while toys or drawings (d -1.25), unusual angles (d -1.37), and partly visible or blurry windows all score low.\",\n \"missing_data\": \"Activation on non-vehicle images with framed windows or pillar-like structures (e.g., train or building windows, boat cabins) and spatial attribution maps to confirm it localizes to the door-window region rather than the whole vehicle body.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to the side door-window area of real, upright road vehicles: the door glass with a clearly defined frame and pillars, mostly the front cab/driver window, seen from a front or rear three-quarter angle.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to the side door-window area of real, upright road vehicles: the door glass with a clearly defined frame and pillars, mostly the front cab/driver window, seen from a front or rear three-quarter angle.",
+   "evidence": "Within classes, the strongest separations are for a clearly visible side window (d +0.87, 99th percentile), a clearly visible frame and pillars (d +0.74, 99th percentile vs -0.64 when unclear), three-quarter views (d +0.67, 97th percentile), and real intact vehicles (d +1.25 vs -1.25 for toys or models). Vehicle type matters only weakly (pickups/vans/ambulances d +0.32), which fits a window-frame feature rather than a vehicle-class detector.",
+   "missing_data": "Photos with no vehicle, or with similar framed glass on non-vehicles (building windows, train or boat cabins), plus tight close-ups of door windows, to test whether the unit needs vehicle context and how specific it is to car doors.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7071bb323f69f270e42bcd19ad9d49bd1e1d604986a655876b8f4d8c66e66575",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side door-window area of real, upright road vehicles: the door glass with a clearly defined frame and pillars, mostly the front cab/driver window, seen from a front or rear three-quarter angle.\",\n \"evidence\": \"Within classes, the strongest separations are for a clearly visible side window (d +0.87, 99th percentile), a clearly visible frame and pillars (d +0.74, 99th percentile vs -0.64 when unclear), three-quarter views (d +0.67, 97th percentile), and real intact vehicles (d +1.25 vs -1.25 for toys or models). Vehicle type matters only weakly (pickups/vans/ambulances d +0.32), which fits a window-frame feature rather than a vehicle-class detector.\",\n \"missing_data\": \"Photos with no vehicle, or with similar framed glass on non-vehicles (building windows, train or boat cabins), plus tight close-ups of door windows, to test whether the unit needs vehicle context and how specific it is to car doors.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to the side door-window area of real, upright road vehicles: the door glass with a clearly defined frame and pillars, mostly the front cab/driver window, seen from a front or rear three-quarter angle.\",\n \"evidence\": \"Within classes, the strongest separations are for a clearly visible side window (d +0.87, 99th percentile), a clearly visible frame and pillars (d +0.74, 99th percentile vs -0.64 when unclear), three-quarter views (d +0.67, 97th percentile), and real intact vehicles (d +1.25 vs -1.25 for toys or models). Vehicle type matters only weakly (pickups/vans/ambulances d +0.32), which fits a window-frame feature rather than a vehicle-class detector.\",\n \"missing_data\": \"Photos with no vehicle, or with similar framed glass on non-vehicles (building windows, train or boat cabins), plus tight close-ups of door windows, to test whether the unit needs vehicle context and how specific it is to car doors.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to clearly visible, well-defined side door windows (glass plus frame and pillars) of real, upright road vehicles, especially the front cab or driver window seen in a three-quarter view, with pickups and vans favored slightly.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to clearly visible, well-defined side door windows (glass plus frame and pillars) of real, upright road vehicles, especially the front cab or driver window seen in a three-quarter view, with pickups and vans favored slightly.",
+   "evidence": "The strongest and most unusual effects are for a clearly visible side window (d +0.87, 99th percentile), clear frame and pillars (+0.74, 99th) and upright real vehicles (+1.25, 99th), while partly visible or blurry windows, toys and odd angles score negative. Three-quarter views (+0.67, 97th) beat straight side views (-0.28), so the original 'seen from the side' wording should be read as 'oblique views where the door window is prominent'.",
+   "missing_data": "Activation maps showing whether the unit fires on the window region itself rather than the whole vehicle, and tests on non-vehicle windows or frames (buildings, trains, boats).",
+   "confidence": 0.72
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7a87eb4e540fdc8d19ef38ca39320c36d21fb04939a2edd9d647346b61ae6a89",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, well-defined side door windows (glass plus frame and pillars) of real, upright road vehicles, especially the front cab or driver window seen in a three-quarter view, with pickups and vans favored slightly.\",\n \"evidence\": \"The strongest and most unusual effects are for a clearly visible side window (d +0.87, 99th percentile), clear frame and pillars (+0.74, 99th) and upright real vehicles (+1.25, 99th), while partly visible or blurry windows, toys and odd angles score negative. Three-quarter views (+0.67, 97th) beat straight side views (-0.28), so the original 'seen from the side' wording should be read as 'oblique views where the door window is prominent'.\",\n \"missing_data\": \"Activation maps showing whether the unit fires on the window region itself rather than the whole vehicle, and tests on non-vehicle windows or frames (buildings, trains, boats).\",\n \"confidence\": 0.72}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, well-defined side door windows (glass plus frame and pillars) of real, upright road vehicles, especially the front cab or driver window seen in a three-quarter view, with pickups and vans favored slightly.\",\n \"evidence\": \"The strongest and most unusual effects are for a clearly visible side window (d +0.87, 99th percentile), clear frame and pillars (+0.74, 99th) and upright real vehicles (+1.25, 99th), while partly visible or blurry windows, toys and odd angles score negative. Three-quarter views (+0.67, 97th) beat straight side views (-0.28), so the original 'seen from the side' wording should be read as 'oblique views where the door window is prominent'.\",\n \"missing_data\": \"Activation maps showing whether the unit fires on the window region itself rather than the whole vehicle, and tests on non-vehicle windows or frames (buildings, trains, boats).\",\n \"confidence\": 0.72}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to clearly framed side windows of road vehicles, meaning door glass with distinct frames and pillars, most strongly on larger vehicles such as truck cabs and buses. It also responds somewhat more to toy, model or drawn vehicles than to real ones.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to clearly framed side windows of road vehicles, meaning door glass with distinct frames and pillars, most strongly on larger vehicles such as truck cabs and buses. It also responds somewhat more to toy, model or drawn vehicles than to real ones.",
+   "evidence": "Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames/pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. Truck/bus types and side-window areas covering a quarter to half of the photo are also unusually positive.",
+   "missing_data": "Photos from outside vehicle classes that contain window-like framed glass panes (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to framed glass panes in general.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "52c06fa33003d85ecd01544421fe214dfb618597690e82d009d4260b8b680aaf",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to clearly framed side windows of road vehicles, meaning door glass with distinct frames and pillars, most strongly on larger vehicles such as truck cabs and buses. It also responds somewhat more to toy, model or drawn vehicles than to real ones.\",\n \"evidence\": \"Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames/pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. Truck/bus types and side-window areas covering a quarter to half of the photo are also unusually positive.\",\n \"missing_data\": \"Photos from outside vehicle classes that contain window-like framed glass panes (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to framed glass panes in general.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to clearly framed side windows of road vehicles, meaning door glass with distinct frames and pillars, most strongly on larger vehicles such as truck cabs and buses. It also responds somewhat more to toy, model or drawn vehicles than to real ones.\",\n \"evidence\": \"Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames/pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. Truck/bus types and side-window areas covering a quarter to half of the photo are also unusually positive.\",\n \"missing_data\": \"Photos from outside vehicle classes that contain window-like framed glass panes (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to framed glass panes in general.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the clearly delineated side-window region of a vehicle: door glass bounded by a visible frame and pillars, most often the front cab/driver door window. It extends somewhat to rear passenger or cargo windows and to boxier vehicles such as trucks and buses.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the clearly delineated side-window region of a vehicle: door glass bounded by a visible frame and pillars, most often the front cab/driver door window. It extends somewhat to rear passenger or cargo windows and to boxier vehicles such as trucks and buses.",
+   "evidence": "Within-class activity is higher when the side window is clearly visible (d +0.33, pct 92) and the frame/pillars are distinct (d +0.30, pct 92), and lower when only the windshield or rear window shows (d -0.56, pct 2) or the frame is unclear (d -0.41, pct 6). Viewing angle separates poorly (pct 38), and three-quarter views are slightly below average, which contradicts the 'front three-quarter' part of the original description.",
+   "missing_data": "Isolated door-window crops, or non-vehicle framed windows such as building windows, would show whether the unit needs vehicle context or just a framed glass-pane-with-pillars pattern. Activations on classes outside the vehicle categories would also help.",
+   "confidence": 0.62
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0fded965abe9dd10be742d24f63bdd18a409d5bf66350fec98529cb02792f87f",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the clearly delineated side-window region of a vehicle: door glass bounded by a visible frame and pillars, most often the front cab/driver door window. It extends somewhat to rear passenger or cargo windows and to boxier vehicles such as trucks and buses.\",\n \"evidence\": \"Within-class activity is higher when the side window is clearly visible (d +0.33, pct 92) and the frame/pillars are distinct (d +0.30, pct 92), and lower when only the windshield or rear window shows (d -0.56, pct 2) or the frame is unclear (d -0.41, pct 6). Viewing angle separates poorly (pct 38), and three-quarter views are slightly below average, which contradicts the 'front three-quarter' part of the original description.\",\n \"missing_data\": \"Isolated door-window crops, or non-vehicle framed windows such as building windows, would show whether the unit needs vehicle context or just a framed glass-pane-with-pillars pattern. Activations on classes outside the vehicle categories would also help.\",\n \"confidence\": 0.62}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the clearly delineated side-window region of a vehicle: door glass bounded by a visible frame and pillars, most often the front cab/driver door window. It extends somewhat to rear passenger or cargo windows and to boxier vehicles such as trucks and buses.\",\n \"evidence\": \"Within-class activity is higher when the side window is clearly visible (d +0.33, pct 92) and the frame/pillars are distinct (d +0.30, pct 92), and lower when only the windshield or rear window shows (d -0.56, pct 2) or the frame is unclear (d -0.41, pct 6). Viewing angle separates poorly (pct 38), and three-quarter views are slightly below average, which contradicts the 'front three-quarter' part of the original description.\",\n \"missing_data\": \"Isolated door-window crops, or non-vehicle framed windows such as building windows, would show whether the unit needs vehicle context or just a framed glass-pane-with-pillars pattern. Activations on classes outside the vehicle categories would also help.\",\n \"confidence\": 0.62}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to clearly framed side door windows of road vehicles: glass panes with distinct frames and pillars, seen from the side rather than through the windshield or rear window. The response is somewhat stronger for larger vehicles such as trucks and buses and for non-photographic renderings such as toys and models.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to clearly framed side door windows of road vehicles: glass panes with distinct frames and pillars, seen from the side rather than through the windshield or rear window. The response is somewhat stronger for larger vehicles such as trucks and buses and for non-photographic renderings such as toys and models.",
+   "evidence": "Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames and pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. The view-angle question separates poorly (pct 38), and three-quarter views are slightly negative, so the 'upright side or three-quarter view' part of the original description is only weakly supported.",
+   "missing_data": "Photos from non-vehicle classes with framed windows (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to window frames in general.",
+   "confidence": 0.65
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0fb2f2b1f08d3068e3323890e370b00ebcf0e706c0f180bca8bacf7a42dd70e7",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to clearly framed side door windows of road vehicles: glass panes with distinct frames and pillars, seen from the side rather than through the windshield or rear window. The response is somewhat stronger for larger vehicles such as trucks and buses and for non-photographic renderings such as toys and models.\",\n \"evidence\": \"Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames and pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. The view-angle question separates poorly (pct 38), and three-quarter views are slightly negative, so the 'upright side or three-quarter view' part of the original description is only weakly supported.\",\n \"missing_data\": \"Photos from non-vehicle classes with framed windows (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to window frames in general.\",\n \"confidence\": 0.65}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to clearly framed side door windows of road vehicles: glass panes with distinct frames and pillars, seen from the side rather than through the windshield or rear window. The response is somewhat stronger for larger vehicles such as trucks and buses and for non-photographic renderings such as toys and models.\",\n \"evidence\": \"Clearly visible side windows (d +0.33, pct 92) and clearly distinguishable frames and pillars (d +0.30, pct 92) raise activity, while views showing only the windshield or rear window (d -0.56, pct 2) and unclear frames (d -0.41, pct 6) lower it. The view-angle question separates poorly (pct 38), and three-quarter views are slightly negative, so the 'upright side or three-quarter view' part of the original description is only weakly supported.\",\n \"missing_data\": \"Photos from non-vehicle classes with framed windows (buildings, trains, boats) would show whether the unit is specific to vehicles or responds to window frames in general.\",\n \"confidence\": 0.65}",
+  "valid": true
+ }
+}

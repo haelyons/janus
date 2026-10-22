@@ -1,0 +1,729 @@
+{
+ "unit": "mixed4b:443",
+ "layer": "mixed4b",
+ "chan": 443,
+ "m": 512,
+ "n": 120,
+ "classes": [
+  153,
+  194,
+  248,
+  201,
+  238,
+  263,
+  240,
+  235,
+  193,
+  387,
+  156,
+  222
+ ],
+ "class_names": [
+  "Maltese dog",
+  "Dandie Dinmont",
+  "Eskimo dog",
+  "silky terrier",
+  "Greater Swiss Mountain dog",
+  "Pembroke",
+  "Appenzeller",
+  "German shepherd",
+  "Australian terrier",
+  "lesser panda",
+  "Blenheim spaniel",
+  "kuvasz"
+ ],
+ "set_ids": [
+  890,
+  891,
+  892,
+  893,
+  894,
+  895,
+  896,
+  897,
+  898,
+  899,
+  1680,
+  1681,
+  1682,
+  1683,
+  1684,
+  1685,
+  1686,
+  1687,
+  1688,
+  1689,
+  1940,
+  1941,
+  1942,
+  1943,
+  1944,
+  1945,
+  1946,
+  1947,
+  1948,
+  1949,
+  2350,
+  2351,
+  2352,
+  2353,
+  2354,
+  2355,
+  2356,
+  2357,
+  2358,
+  2359,
+  2710,
+  2711,
+  2712,
+  2713,
+  2714,
+  2715,
+  2716,
+  2717,
+  2718,
+  2719,
+  2940,
+  2941,
+  2942,
+  2943,
+  2944,
+  2945,
+  2946,
+  2947,
+  2948,
+  2949,
+  3470,
+  3471,
+  3472,
+  3473,
+  3474,
+  3475,
+  3476,
+  3477,
+  3478,
+  3479,
+  4930,
+  4931,
+  4932,
+  4933,
+  4934,
+  4935,
+  4936,
+  4937,
+  4938,
+  4939,
+  7220,
+  7221,
+  7222,
+  7223,
+  7224,
+  7225,
+  7226,
+  7227,
+  7228,
+  7229,
+  8560,
+  8561,
+  8562,
+  8563,
+  8564,
+  8565,
+  8566,
+  8567,
+  8568,
+  8569,
+  8730,
+  8731,
+  8732,
+  8733,
+  8734,
+  8735,
+  8736,
+  8737,
+  8738,
+  8739,
+  8780,
+  8781,
+  8782,
+  8783,
+  8784,
+  8785,
+  8786,
+  8787,
+  8788,
+  8789
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the photo contain a canine (dog, wolf, fox, coyote, etc.) whose face is visible?",
+   "answers": [
+    "Yes, a domestic dog's face",
+    "Yes, a wild canid's face (wolf, fox, coyote, etc.)",
+    "A canine is present but its face is not visible",
+    "No canine in the photo"
+   ],
+   "real": {
+    "counts": [
+     107,
+     1,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     3
+    ],
+    "eta2": 3.458250280125358e-05,
+    "eta2_pct": 74.609375,
+    "d": {
+     "0": 0.020943933344590018,
+     "3": -0.020943933344590018
+    },
+    "d_pct": {
+     "0": 75.9765625,
+     "3": 23.828125
+    },
+    "halves": [
+     88.8671875,
+     95.3125
+    ]
+   },
+   "null": {
+    "counts": [
+     107,
+     1,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     3
+    ],
+    "eta2": 1.2366977129728453e-05,
+    "eta2_pct": 54.6875,
+    "d": {
+     "0": -0.012524540904327863,
+     "3": 0.012524540904327863
+    },
+    "d_pct": {
+     "0": 25.9765625,
+     "3": 73.828125
+    },
+    "halves": [
+     89.84375,
+     93.9453125
+    ]
+   }
+  },
+  {
+   "question": "Which way is the most prominent canine face oriented relative to the camera?",
+   "answers": [
+    "Frontal (facing the camera)",
+    "Three-quarter view",
+    "Side profile",
+    "Facing away / face not visible",
+    "No canine face in the photo"
+   ],
+   "real": {
+    "counts": [
+     69,
+     32,
+     7,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "eta2": 0.20469437963492249,
+    "eta2_pct": 98.6328125,
+    "d": {
+     "0": 0.8079112389563432,
+     "1": -0.6340407279720445,
+     "2": -1.2281205879870944,
+     "4": -0.030016776542923777
+    },
+    "d_pct": {
+     "0": 98.2421875,
+     "1": 2.9296875,
+     "2": 0.78125,
+     "4": 7.2265625
+    },
+    "halves": [
+     98.828125,
+     96.875
+    ]
+   },
+   "null": {
+    "counts": [
+     69,
+     32,
+     7,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "eta2": 0.02576961355379084,
+    "eta2_pct": 71.484375,
+    "d": {
+     "0": -0.21986858746926843,
+     "1": 0.34418803848824847,
+     "2": -0.26232941539855176,
+     "4": 1.5562834359246103e-07
+    },
+    "d_pct": {
+     "0": 11.9140625,
+     "1": 90.625,
+     "2": 40.234375,
+     "4": 55.859375
+    },
+    "halves": [
+     63.4765625,
+     85.9375
+    ]
+   }
+  },
+  {
+   "question": "Is the most prominent canine face upright?",
+   "answers": [
+    "Upright (eyes above muzzle, roughly level)",
+    "Tilted noticeably sideways",
+    "Upside down or lying sideways",
+    "No canine face in the photo"
+   ],
+   "real": {
+    "counts": [
+     97,
+     7,
+     4,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.02280235158659141,
+    "eta2_pct": 72.265625,
+    "d": {
+     "0": 0.4043516822003442,
+     "1": -0.40996254290613016,
+     "3": -0.3464893670335392
+    },
+    "d_pct": {
+     "0": 84.375,
+     "1": 33.3984375,
+     "3": 4.1015625
+    },
+    "halves": [
+     55.6640625,
+     97.4609375
+    ]
+   },
+   "null": {
+    "counts": [
+     97,
+     7,
+     4,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.0003381337566585578,
+    "eta2_pct": 3.7109375,
+    "d": {
+     "0": 0.04915826388313145,
+     "1": -0.050834297554026874,
+     "3": -0.041516114826032645
+    },
+    "d_pct": {
+     "0": 73.828125,
+     "1": 28.125,
+     "3": 41.9921875
+    },
+    "halves": [
+     23.828125,
+     60.3515625
+    ]
+   }
+  },
+  {
+   "question": "Are the eyes of the most prominent canine face clearly visible?",
+   "answers": [
+    "Both eyes clearly visible",
+    "Only one eye visible",
+    "Eyes hidden or closed (e.g., covered by fur, sunglasses, or shut)",
+    "No canine face in the photo"
+   ],
+   "real": {
+    "counts": [
+     85,
+     14,
+     9,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.16374627658056903,
+    "eta2_pct": 96.875,
+    "d": {
+     "0": 0.8404064512067562,
+     "1": -0.8635847269758181,
+     "2": -0.8358763955851344,
+     "3": -0.29599455117163304
+    },
+    "d_pct": {
+     "0": 97.4609375,
+     "1": 4.1015625,
+     "2": 9.765625,
+     "3": 7.2265625
+    },
+    "halves": [
+     86.5234375,
+     98.2421875
+    ]
+   },
+   "null": {
+    "counts": [
+     85,
+     14,
+     9,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.0025175206840158796,
+    "eta2_pct": 6.640625,
+    "d": {
+     "0": -0.005442796419224356,
+     "1": 0.11005938920946284,
+     "2": -0.14728511676349162,
+     "3": 1.5566412636067281e-06
+    },
+    "d_pct": {
+     "0": 53.90625,
+     "1": 53.515625,
+     "2": 33.984375,
+     "3": 55.859375
+    },
+    "halves": [
+     10.3515625,
+     47.65625
+    ]
+   }
+  },
+  {
+   "question": "How much of the image does the most prominent canine face occupy?",
+   "answers": [
+    "Fills most of the frame (close-up)",
+    "Large but not dominant",
+    "Small part of the image",
+    "No canine face in the photo"
+   ],
+   "real": {
+    "counts": [
+     24,
+     50,
+     34,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.16122738507970127,
+    "eta2_pct": 80.859375,
+    "d": {
+     "0": 0.34135800643571695,
+     "1": 0.5563077699373107,
+     "2": -0.8036788998939953,
+     "3": -0.29599455117163304
+    },
+    "d_pct": {
+     "0": 69.140625,
+     "1": 96.484375,
+     "2": 7.6171875,
+     "3": 7.2265625
+    },
+    "halves": [
+     90.234375,
+     81.0546875
+    ]
+   },
+   "null": {
+    "counts": [
+     24,
+     50,
+     34,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.007919521777825275,
+    "eta2_pct": 30.2734375,
+    "d": {
+     "0": -0.21841135201705977,
+     "1": 0.08270217961905066,
+     "2": 0.07310537242597494,
+     "3": 1.5566412636067281e-06
+    },
+    "d_pct": {
+     "0": 14.0625,
+     "1": 72.0703125,
+     "2": 64.84375,
+     "3": 55.859375
+    },
+    "halves": [
+     48.2421875,
+     20.703125
+    ]
+   }
+  },
+  {
+   "question": "Is the eye/brow/muzzle-bridge area of the most prominent canine face fully in view?",
+   "answers": [
+    "Yes, fully visible and uncovered",
+    "Partly cut off or covered",
+    "Mostly cut off or covered",
+    "No canine face in the photo"
+   ],
+   "real": {
+    "counts": [
+     94,
+     14,
+     0,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.04573823570060524,
+    "eta2_pct": 90.234375,
+    "d": {
+     "0": 0.5000587822553477,
+     "1": -0.5650503541196991,
+     "3": -0.29599455117163304
+    },
+    "d_pct": {
+     "0": 92.7734375,
+     "1": 11.9140625,
+     "3": 7.2265625
+    },
+    "halves": [
+     86.328125,
+     96.875
+    ]
+   },
+   "null": {
+    "counts": [
+     94,
+     14,
+     0,
+     12
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 7.158521977106586e-05,
+    "eta2_pct": 0.9765625,
+    "d": {
+     "0": 0.015818363383886366,
+     "1": -0.02605262635936381,
+     "3": 1.5566412636067281e-06
+    },
+    "d_pct": {
+     "0": 73.2421875,
+     "1": 27.34375,
+     "3": 55.859375
+    },
+    "halves": [
+     24.4140625,
+     28.125
+    ]
+   }
+  },
+  {
+   "question": "How many canine faces are visible in the photo?",
+   "answers": [
+    "None",
+    "One",
+    "Two or three",
+    "Four or more"
+   ],
+   "real": {
+    "counts": [
+     12,
+     99,
+     9,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.036300946659057046,
+    "eta2_pct": 78.125,
+    "d": {
+     "0": -0.29599455117163304,
+     "1": 0.47364877866952176,
+     "2": -0.6017085811166157
+    },
+    "d_pct": {
+     "0": 7.2265625,
+     "1": 90.625,
+     "2": 16.9921875
+    },
+    "halves": [
+     51.5625,
+     99.8046875
+    ]
+   },
+   "null": {
+    "counts": [
+     12,
+     99,
+     9,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.003474432436371423,
+    "eta2_pct": 36.71875,
+    "d": {
+     "0": 1.5566412636067281e-06,
+     "1": -0.10660382087775697,
+     "2": 0.22184917537315219
+    },
+    "d_pct": {
+     "0": 55.859375,
+     "1": 35.9375,
+     "2": 65.625
+    },
+    "halves": [
+     92.578125,
+     77.5390625
+    ]
+   }
+  },
+  {
+   "question": "If no canine face is visible, does the photo contain a face of some other kind?",
+   "answers": [
+    "Another furry mammal face (cat, bear, etc.)",
+    "A human face",
+    "Another kind of face (bird, reptile, toy, drawing, etc.)",
+    "No face of any kind",
+    "Not applicable: a canine face is visible"
+   ],
+   "real": {
+    "counts": [
+     7,
+     0,
+     1,
+     4,
+     108
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     4
+    ],
+    "eta2": 0.014497247241345825,
+    "eta2_pct": 92.1875,
+    "d": {
+     "0": 0.5013987199502834,
+     "4": -0.5013987199502834
+    },
+    "d_pct": {
+     "0": 94.3359375,
+     "4": 5.46875
+    },
+    "halves": [
+     94.921875,
+     27.34375
+    ]
+   },
+   "null": {
+    "counts": [
+     7,
+     0,
+     1,
+     4,
+     108
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     4
+    ],
+    "eta2": 1.21784676700029e-05,
+    "eta2_pct": 7.421875,
+    "d": {
+     "0": -0.014532380882659976,
+     "4": 0.014532380882659976
+    },
+    "d_pct": {
+     "0": 44.7265625,
+     "4": 55.078125
+    },
+    "halves": [
+     76.3671875,
+     90.0390625
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "real": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Maltese dog, Dandie Dinmont, Eskimo dog, silky terrier, Greater Swiss Mountain dog, Pembroke, Appenzeller, German shepherd, Australian terrier, lesser panda, Blenheim spaniel, kuvasz). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo contain a canine (dog, wolf, fox, coyote, etc.) whose face is visible?\nseparation: percentile 75\n- Yes, a domestic dog's face: 107 photos, d +0.02, percentile 76\n- Yes, a wild canid's face (wolf, fox, coyote, etc.): 1 photos (too few to compare)\n- A canine is present but its face is not visible: 2 photos (too few to compare)\n- No canine in the photo: 10 photos, d -0.02, percentile 24\n\nQ2. Which way is the most prominent canine face oriented relative to the camera?\nseparation: percentile 99\n- Frontal (facing the camera): 69 photos, d +0.81, percentile 98\n- Three-quarter view: 32 photos, d -0.63, percentile 3\n- Side profile: 7 photos, d -1.23, percentile 1\n- Facing away / face not visible: 2 photos (too few to compare)\n- No canine face in the photo: 10 photos, d -0.03, percentile 7\n\nQ3. Is the most prominent canine face upright?\nseparation: percentile 72\n- Upright (eyes above muzzle, roughly level): 97 photos, d +0.40, percentile 84\n- Tilted noticeably sideways: 7 photos, d -0.41, percentile 33\n- Upside down or lying sideways: 4 photos (too few to compare)\n- No canine face in the photo: 12 photos, d -0.35, percentile 4\n\nQ4. Are the eyes of the most prominent canine face clearly visible?\nseparation: percentile 97\n- Both eyes clearly visible: 85 photos, d +0.84, percentile 97\n- Only one eye visible: 14 photos, d -0.86, percentile 4\n- Eyes hidden or closed (e.g., covered by fur, sunglasses, or shut): 9 photos, d -0.84, percentile 10\n- No canine face in the photo: 12 photos, d -0.30, percentile 7\n\nQ5. How much of the image does the most prominent canine face occupy?\nseparation: percentile 81\n- Fills most of the frame (close-up): 24 photos, d +0.34, percentile 69\n- Large but not dominant: 50 photos, d +0.56, percentile 96\n- Small part of the image: 34 photos, d -0.80, percentile 8\n- No canine face in the photo: 12 photos, d -0.30, percentile 7\n\nQ6. Is the eye/brow/muzzle-bridge area of the most prominent canine face fully in view?\nseparation: percentile 90\n- Yes, fully visible and uncovered: 94 photos, d +0.50, percentile 93\n- Partly cut off or covered: 14 photos, d -0.57, percentile 12\n- Mostly cut off or covered: 0 photos (too few to compare)\n- No canine face in the photo: 12 photos, d -0.30, percentile 7\n\nQ7. How many canine faces are visible in the photo?\nseparation: percentile 78\n- None: 12 photos, d -0.30, percentile 7\n- One: 99 photos, d +0.47, percentile 91\n- Two or three: 9 photos, d -0.60, percentile 17\n- Four or more: 0 photos (too few to compare)\n\nQ8. If no canine face is visible, does the photo contain a face of some other kind?\nseparation: percentile 92\n- Another furry mammal face (cat, bear, etc.): 7 photos, d +0.50, percentile 94\n- A human face: 0 photos (too few to compare)\n- Another kind of face (bird, reptile, toy, drawing, etc.): 1 photos (too few to compare)\n- No face of any kind: 4 photos (too few to compare)\n- Not applicable: a canine face is visible: 108 photos, d -0.50, percentile 5",
+  "null": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Maltese dog, Dandie Dinmont, Eskimo dog, silky terrier, Greater Swiss Mountain dog, Pembroke, Appenzeller, German shepherd, Australian terrier, lesser panda, Blenheim spaniel, kuvasz). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo contain a canine (dog, wolf, fox, coyote, etc.) whose face is visible?\nseparation: percentile 55\n- Yes, a domestic dog's face: 107 photos, d -0.01, percentile 26\n- Yes, a wild canid's face (wolf, fox, coyote, etc.): 1 photos (too few to compare)\n- A canine is present but its face is not visible: 2 photos (too few to compare)\n- No canine in the photo: 10 photos, d +0.01, percentile 74\n\nQ2. Which way is the most prominent canine face oriented relative to the camera?\nseparation: percentile 71\n- Frontal (facing the camera): 69 photos, d -0.22, percentile 12\n- Three-quarter view: 32 photos, d +0.34, percentile 91\n- Side profile: 7 photos, d -0.26, percentile 40\n- Facing away / face not visible: 2 photos (too few to compare)\n- No canine face in the photo: 10 photos, d +0.00, percentile 56\n\nQ3. Is the most prominent canine face upright?\nseparation: percentile 4\n- Upright (eyes above muzzle, roughly level): 97 photos, d +0.05, percentile 74\n- Tilted noticeably sideways: 7 photos, d -0.05, percentile 28\n- Upside down or lying sideways: 4 photos (too few to compare)\n- No canine face in the photo: 12 photos, d -0.04, percentile 42\n\nQ4. Are the eyes of the most prominent canine face clearly visible?\nseparation: percentile 7\n- Both eyes clearly visible: 85 photos, d -0.01, percentile 54\n- Only one eye visible: 14 photos, d +0.11, percentile 54\n- Eyes hidden or closed (e.g., covered by fur, sunglasses, or shut): 9 photos, d -0.15, percentile 34\n- No canine face in the photo: 12 photos, d +0.00, percentile 56\n\nQ5. How much of the image does the most prominent canine face occupy?\nseparation: percentile 30\n- Fills most of the frame (close-up): 24 photos, d -0.22, percentile 14\n- Large but not dominant: 50 photos, d +0.08, percentile 72\n- Small part of the image: 34 photos, d +0.07, percentile 65\n- No canine face in the photo: 12 photos, d +0.00, percentile 56\n\nQ6. Is the eye/brow/muzzle-bridge area of the most prominent canine face fully in view?\nseparation: percentile 1\n- Yes, fully visible and uncovered: 94 photos, d +0.02, percentile 73\n- Partly cut off or covered: 14 photos, d -0.03, percentile 27\n- Mostly cut off or covered: 0 photos (too few to compare)\n- No canine face in the photo: 12 photos, d +0.00, percentile 56\n\nQ7. How many canine faces are visible in the photo?\nseparation: percentile 37\n- None: 12 photos, d +0.00, percentile 56\n- One: 99 photos, d -0.11, percentile 36\n- Two or three: 9 photos, d +0.22, percentile 66\n- Four or more: 0 photos (too few to compare)\n\nQ8. If no canine face is visible, does the photo contain a face of some other kind?\nseparation: percentile 7\n- Another furry mammal face (cat, bear, etc.): 7 photos, d -0.01, percentile 45\n- A human face: 0 photos (too few to compare)\n- Another kind of face (bird, reptile, toy, drawing, etc.): 1 photos (too few to compare)\n- No face of any kind: 4 photos (too few to compare)\n- Not applicable: a canine face is visible: 108 photos, d +0.01, percentile 55"
+ }
+}

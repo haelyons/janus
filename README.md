@@ -693,3 +693,46 @@ common labels, their 2 least-active photos; no label names), 2x2, 3 readings eac
   "oriented dog heads" or "frontal dog-face units with a direction bias" depends on how much of the range a reading
   is meant to cover.
 - S gives 431 its direction in 2 of 3 ("dogs facing right"), as the affected-vs-spared view did in 3 of 3.
+
+## Round 25: readings become photo questions, answered blind, checked within class (`tools/proploop.py`)
+
+Per unit, nothing unit-specific: a text-only agent turns the 3 round-24 CP readings into 8 questions about a photo;
+an agent that never sees readings or activations answers them for all 120 photos of the unit's 12 top classes; per
+question, eta2 of the unit's class-centred activation and a one-vs-rest d per answer, each as a percentile among all
+channels of the layer on the same photos and answers. A text-only agent then revises each CP reading from that table
+(real) or from the same table with answers shuffled within class (null). Implementer and tester were separate agents
+(tester from the spec only); `runs/proploop/`.
+
+The check is calibrated: separation percentile above 95 in 27 of 64 real questions, 3 of 64 null (5% expected).
+What it confirmed or corrected, within class:
+- 4b:237: a side window clearly visible (d +0.87, 99th), frame and pillars distinct (99th). 4b:373: a wheel inside
+  its arch (99th), at medium size (99.8th), front wheel (99.4th), angled view (99.2nd).
+- 4d:409 (top classes are vehicles): three-quarter view +0.71 (99.4th), front or rear -1.05 (0.9th), straight side
+  -0.14 (32nd). Round 13's independent facing labels agree: vehicles three-quarter 0.49, side 0.44, front 0.23.
+- 4b:443 and 429: frontal face (98-99th), both eyes visible (97-98th). 4e:55: an upright, camera-facing furry muzzle
+  (99.5th), whiskers (98th).
+- 5a:719: every curved-contour question unremarkable (34th-72nd); only "object fills the frame" stands out (99th).
+  The loop tested the readings' curve claim and found nothing.
+
+Mean judge (direction named), real / null / round-24 CP:
+
+    4b:431  2.00 / 1.67 / 2.00     (0 of 3 everywhere)
+    4b:443  1.33 / 1.67 / 2.00
+    4b:429  1.33 / 2.00 / 2.00
+    4d:409  3.33 / 2.33 / 4.00
+    4b:237  5.00 / 4.33 / 4.33
+    4b:373  4.67 / 4.67 / 4.33
+    4e:55   1.00 / 1.67 / 2.00
+    5a:719  1.00 / 1.00 / 1.33
+
+- Held: 8 (targets at most 2). Failed: 1 (no left/right question for any unit: 0 of 64 questions), so 2 and 3 fail
+  too; 4 untestable; 5 (no direction named, real or null); 6 (443 and 429 fall to 1.33); 7 (409 at 3.33, because the
+  revisions say "three-quarter view", which the data and round 13 support but the reference "side view" doesn't).
+- The loop checks well what someone thinks to ask. Its questions follow the readings' frame: "which view of the
+  head" (frontal, three-quarter, side) every time, never which way it faces. Left-right is a nuisance variable for
+  recognising objects, and neither the readers nor the question writer treat it as a property.
+- Revisions follow the table either way: null tables make revisions retreat to "class identity" or invert the
+  claims (429 null: "tilted, three-quarter").
+- Side check (profile caches, no new run): mirror retention on the 20 strongest photos puts 431 at the 0.4th
+  percentile of 4b and 384 at the 0.2nd, but 443 at the 60th and 429 at the 7th. A profile shown to the question
+  writer would prompt a direction question for 431, not for 443.

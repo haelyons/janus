@@ -1,0 +1,687 @@
+{
+ "unit": "mixed4b:429",
+ "layer": "mixed4b",
+ "chan": 429,
+ "m": 512,
+ "n": 120,
+ "classes": [
+  263,
+  235,
+  153,
+  184,
+  248,
+  194,
+  185,
+  157,
+  162,
+  240,
+  201,
+  208
+ ],
+ "class_names": [
+  "Pembroke",
+  "German shepherd",
+  "Maltese dog",
+  "Irish terrier",
+  "Eskimo dog",
+  "Dandie Dinmont",
+  "Norfolk terrier",
+  "papillon",
+  "beagle",
+  "Appenzeller",
+  "silky terrier",
+  "Labrador retriever"
+ ],
+ "set_ids": [
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  1140,
+  1141,
+  1142,
+  1143,
+  1144,
+  1145,
+  1146,
+  1147,
+  1148,
+  1149,
+  1680,
+  1681,
+  1682,
+  1683,
+  1684,
+  1685,
+  1686,
+  1687,
+  1688,
+  1689,
+  1900,
+  1901,
+  1902,
+  1903,
+  1904,
+  1905,
+  1906,
+  1907,
+  1908,
+  1909,
+  1940,
+  1941,
+  1942,
+  1943,
+  1944,
+  1945,
+  1946,
+  1947,
+  1948,
+  1949,
+  2940,
+  2941,
+  2942,
+  2943,
+  2944,
+  2945,
+  2946,
+  2947,
+  2948,
+  2949,
+  3470,
+  3471,
+  3472,
+  3473,
+  3474,
+  3475,
+  3476,
+  3477,
+  3478,
+  3479,
+  4750,
+  4751,
+  4752,
+  4753,
+  4754,
+  4755,
+  4756,
+  4757,
+  4758,
+  4759,
+  4930,
+  4931,
+  4932,
+  4933,
+  4934,
+  4935,
+  4936,
+  4937,
+  4938,
+  4939,
+  7220,
+  7221,
+  7222,
+  7223,
+  7224,
+  7225,
+  7226,
+  7227,
+  7228,
+  7229,
+  8780,
+  8781,
+  8782,
+  8783,
+  8784,
+  8785,
+  8786,
+  8787,
+  8788,
+  8789,
+  9540,
+  9541,
+  9542,
+  9543,
+  9544,
+  9545,
+  9546,
+  9547,
+  9548,
+  9549
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the photo contain a dog's face?",
+   "answers": [
+    "Yes, clearly visible",
+    "Yes, but small or partly hidden",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     91,
+     29,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.33482084274810425,
+    "eta2_pct": 99.0234375,
+    "d": {
+     "0": 1.3460173291656186,
+     "1": -1.3460173291656186
+    },
+    "d_pct": {
+     "0": 99.0234375,
+     "1": 0.78125
+    },
+    "halves": [
+     99.0234375,
+     97.8515625
+    ]
+   },
+   "null": {
+    "counts": [
+     91,
+     29,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.009692318698582397,
+    "eta2_pct": 75.5859375,
+    "d": {
+     "0": 0.22901200636351396,
+     "1": -0.22901200636351396
+    },
+    "d_pct": {
+     "0": 88.4765625,
+     "1": 11.328125
+    },
+    "halves": [
+     41.40625,
+     95.5078125
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, which way is it facing relative to the camera?",
+   "answers": [
+    "Roughly head-on (frontal)",
+    "Three-quarter view",
+    "Side profile",
+    "Facing away / back of head",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     66,
+     40,
+     12,
+     2,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.27857432782113983,
+    "eta2_pct": 99.21875,
+    "d": {
+     "0": 0.9397835322304802,
+     "1": -0.49323980400990675,
+     "2": -1.3258088790126563
+    },
+    "d_pct": {
+     "0": 98.828125,
+     "1": 5.078125,
+     "2": 0.78125
+    },
+    "halves": [
+     99.609375,
+     97.8515625
+    ]
+   },
+   "null": {
+    "counts": [
+     66,
+     40,
+     12,
+     2,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.015063550045509414,
+    "eta2_pct": 70.3125,
+    "d": {
+     "0": -0.2182507671751982,
+     "1": 0.25522979461678447,
+     "2": -0.03717006781374788
+    },
+    "d_pct": {
+     "0": 10.3515625,
+     "1": 90.8203125,
+     "2": 45.3125
+    },
+    "halves": [
+     90.4296875,
+     38.8671875
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, how is the head oriented?",
+   "answers": [
+    "Upright",
+    "Tilted noticeably sideways",
+    "Upside down or lying sideways",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     99,
+     14,
+     6,
+     0
+    ],
+    "unclear": 1,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.13281068751656896,
+    "eta2_pct": 99.21875,
+    "d": {
+     "0": 0.8869611357929602,
+     "1": -0.5696931338570921,
+     "2": -1.3550651063423835
+    },
+    "d_pct": {
+     "0": 98.046875,
+     "1": 9.9609375,
+     "2": 0.5859375
+    },
+    "halves": [
+     97.0703125,
+     96.484375
+    ]
+   },
+   "null": {
+    "counts": [
+     99,
+     14,
+     6,
+     0
+    ],
+    "unclear": 1,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.0467177321836765,
+    "eta2_pct": 93.9453125,
+    "d": {
+     "0": -0.546530332016753,
+     "1": 0.6375292882257186,
+     "2": 0.2138082650462602
+    },
+    "d_pct": {
+     "0": 3.125,
+     "1": 97.4609375,
+     "2": 60.9375
+    },
+    "halves": [
+     95.1171875,
+     78.125
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, are both its eyes and its nose/muzzle visible?",
+   "answers": [
+    "Eyes and nose/muzzle all visible",
+    "Only some of eyes/nose visible",
+    "Neither eyes nor nose visible",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     99,
+     20,
+     1,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.21273267591551528,
+    "eta2_pct": 98.046875,
+    "d": {
+     "0": 1.2282845546018923,
+     "1": -1.2282845546018923
+    },
+    "d_pct": {
+     "0": 98.046875,
+     "1": 1.7578125
+    },
+    "halves": [
+     98.046875,
+     96.09375
+    ]
+   },
+   "null": {
+    "counts": [
+     99,
+     20,
+     1,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.00048627240617623614,
+    "eta2_pct": 19.140625,
+    "d": {
+     "0": -0.05872482107134915,
+     "1": 0.05872482107134915
+    },
+    "d_pct": {
+     "0": 56.0546875,
+     "1": 43.75
+    },
+    "halves": [
+     63.28125,
+     56.4453125
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, how much of the photo does the face occupy?",
+   "answers": [
+    "Most of the frame (close-up)",
+    "A moderate portion",
+    "A small portion",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     23,
+     62,
+     35,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.18578917498052372,
+    "eta2_pct": 83.7890625,
+    "d": {
+     "0": 0.14552354763571068,
+     "1": 0.6778004211650533,
+     "2": -0.928414571188169
+    },
+    "d_pct": {
+     "0": 66.796875,
+     "1": 97.4609375,
+     "2": 7.03125
+    },
+    "halves": [
+     82.8125,
+     77.1484375
+    ]
+   },
+   "null": {
+    "counts": [
+     23,
+     62,
+     35,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.036274299780602516,
+    "eta2_pct": 85.3515625,
+    "d": {
+     "0": 0.3791672094844307,
+     "1": 0.052000582710649765,
+     "2": -0.34719870244949963
+    },
+    "d_pct": {
+     "0": 86.9140625,
+     "1": 57.421875,
+     "2": 7.2265625
+    },
+    "halves": [
+     84.9609375,
+     77.9296875
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, what is the dog's main coat colour?",
+   "answers": [
+    "Black or dark brown",
+    "White or cream",
+    "Tan, golden, or red-brown",
+    "Mixed/patterned (e.g. spots, tricolour)",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     2,
+     28,
+     29,
+     61,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.004115204740440721,
+    "eta2_pct": 42.3828125,
+    "d": {
+     "1": -0.1314003431298844,
+     "2": 0.10939880382108687,
+     "3": 0.014026618356365702
+    },
+    "d_pct": {
+     "1": 24.21875,
+     "2": 60.546875,
+     "3": 56.0546875
+    },
+    "halves": [
+     9.1796875,
+     65.0390625
+    ]
+   },
+   "null": {
+    "counts": [
+     2,
+     28,
+     29,
+     61,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.014231592667085407,
+    "eta2_pct": 80.078125,
+    "d": {
+     "1": -0.0712913419863182,
+     "2": 0.2753113711910105,
+     "3": -0.1526961366806086
+    },
+    "d_pct": {
+     "1": 45.3125,
+     "2": 89.0625,
+     "3": 13.4765625
+    },
+    "halves": [
+     49.8046875,
+     58.0078125
+    ]
+   }
+  },
+  {
+   "question": "If a dog's face is visible, what is its fur texture?",
+   "answers": [
+    "Short and smooth",
+    "Long or fluffy",
+    "Curly or wiry",
+    "No dog face"
+   ],
+   "real": {
+    "counts": [
+     45,
+     52,
+     23,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.0031530808424772437,
+    "eta2_pct": 49.4140625,
+    "d": {
+     "0": -0.09161583963077692,
+     "1": 0.010075199085835998,
+     "2": 0.12262552881504082
+    },
+    "d_pct": {
+     "0": 17.3828125,
+     "1": 54.1015625,
+     "2": 80.46875
+    },
+    "halves": [
+     50.5859375,
+     8.984375
+    ]
+   },
+   "null": {
+    "counts": [
+     45,
+     52,
+     23,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.0026334259286543947,
+    "eta2_pct": 49.21875,
+    "d": {
+     "0": -0.03923125556387516,
+     "1": 0.09639203973121938,
+     "2": -0.09342750558561766
+    },
+    "d_pct": {
+     "0": 33.0078125,
+     "1": 77.5390625,
+     "2": 21.6796875
+    },
+    "halves": [
+     57.8125,
+     21.484375
+    ]
+   }
+  },
+  {
+   "question": "If there is no dog face, does the photo show the face of another animal or a person?",
+   "answers": [
+    "Another furry animal's face (cat, fox, bear, etc.)",
+    "A human face",
+    "Other animal face (bird, reptile, etc.)",
+    "No faces at all",
+    "A dog face is present"
+   ],
+   "real": {
+    "counts": [
+     0,
+     0,
+     0,
+     0,
+     120
+    ],
+    "unclear": 0,
+    "compared": [],
+    "eta2": null,
+    "eta2_pct": null,
+    "d": {},
+    "d_pct": {},
+    "halves": [
+     null,
+     null
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     0,
+     0,
+     0,
+     120
+    ],
+    "unclear": 0,
+    "compared": [],
+    "eta2": null,
+    "eta2_pct": null,
+    "d": {},
+    "d_pct": {},
+    "halves": [
+     null,
+     null
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "real": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Pembroke, German shepherd, Maltese dog, Irish terrier, Eskimo dog, Dandie Dinmont, Norfolk terrier, papillon, beagle, Appenzeller, silky terrier, Labrador retriever). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo contain a dog's face?\nseparation: percentile 99\n- Yes, clearly visible: 91 photos, d +1.35, percentile 99\n- Yes, but small or partly hidden: 29 photos, d -1.35, percentile 1\n- No dog face: 0 photos (too few to compare)\n\nQ2. If a dog's face is visible, which way is it facing relative to the camera?\nseparation: percentile 99\n- Roughly head-on (frontal): 66 photos, d +0.94, percentile 99\n- Three-quarter view: 40 photos, d -0.49, percentile 5\n- Side profile: 12 photos, d -1.33, percentile 1\n- Facing away / back of head: 2 photos (too few to compare)\n- No dog face: 0 photos (too few to compare)\n\nQ3. If a dog's face is visible, how is the head oriented?\nseparation: percentile 99\n- Upright: 99 photos, d +0.89, percentile 98\n- Tilted noticeably sideways: 14 photos, d -0.57, percentile 10\n- Upside down or lying sideways: 6 photos, d -1.36, percentile 1\n- No dog face: 0 photos (too few to compare)\n- could not tell: 1 photos\n\nQ4. If a dog's face is visible, are both its eyes and its nose/muzzle visible?\nseparation: percentile 98\n- Eyes and nose/muzzle all visible: 99 photos, d +1.23, percentile 98\n- Only some of eyes/nose visible: 20 photos, d -1.23, percentile 2\n- Neither eyes nor nose visible: 1 photos (too few to compare)\n- No dog face: 0 photos (too few to compare)\n\nQ5. If a dog's face is visible, how much of the photo does the face occupy?\nseparation: percentile 84\n- Most of the frame (close-up): 23 photos, d +0.15, percentile 67\n- A moderate portion: 62 photos, d +0.68, percentile 97\n- A small portion: 35 photos, d -0.93, percentile 7\n- No dog face: 0 photos (too few to compare)\n\nQ6. If a dog's face is visible, what is the dog's main coat colour?\nseparation: percentile 42\n- Black or dark brown: 2 photos (too few to compare)\n- White or cream: 28 photos, d -0.13, percentile 24\n- Tan, golden, or red-brown: 29 photos, d +0.11, percentile 61\n- Mixed/patterned (e.g. spots, tricolour): 61 photos, d +0.01, percentile 56\n- No dog face: 0 photos (too few to compare)\n\nQ7. If a dog's face is visible, what is its fur texture?\nseparation: percentile 49\n- Short and smooth: 45 photos, d -0.09, percentile 17\n- Long or fluffy: 52 photos, d +0.01, percentile 54\n- Curly or wiry: 23 photos, d +0.12, percentile 80\n- No dog face: 0 photos (too few to compare)\n\nQ8. If there is no dog face, does the photo show the face of another animal or a person?\nseparation: too few photos per answer to compare\n- Another furry animal's face (cat, fox, bear, etc.): 0 photos (too few to compare)\n- A human face: 0 photos (too few to compare)\n- Other animal face (bird, reptile, etc.): 0 photos (too few to compare)\n- No faces at all: 0 photos (too few to compare)\n- A dog face is present: 120 photos (too few to compare)",
+  "null": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Pembroke, German shepherd, Maltese dog, Irish terrier, Eskimo dog, Dandie Dinmont, Norfolk terrier, papillon, beagle, Appenzeller, silky terrier, Labrador retriever). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo contain a dog's face?\nseparation: percentile 76\n- Yes, clearly visible: 91 photos, d +0.23, percentile 88\n- Yes, but small or partly hidden: 29 photos, d -0.23, percentile 11\n- No dog face: 0 photos (too few to compare)\n\nQ2. If a dog's face is visible, which way is it facing relative to the camera?\nseparation: percentile 70\n- Roughly head-on (frontal): 66 photos, d -0.22, percentile 10\n- Three-quarter view: 40 photos, d +0.26, percentile 91\n- Side profile: 12 photos, d -0.04, percentile 45\n- Facing away / back of head: 2 photos (too few to compare)\n- No dog face: 0 photos (too few to compare)\n\nQ3. If a dog's face is visible, how is the head oriented?\nseparation: percentile 94\n- Upright: 99 photos, d -0.55, percentile 3\n- Tilted noticeably sideways: 14 photos, d +0.64, percentile 97\n- Upside down or lying sideways: 6 photos, d +0.21, percentile 61\n- No dog face: 0 photos (too few to compare)\n- could not tell: 1 photos\n\nQ4. If a dog's face is visible, are both its eyes and its nose/muzzle visible?\nseparation: percentile 19\n- Eyes and nose/muzzle all visible: 99 photos, d -0.06, percentile 56\n- Only some of eyes/nose visible: 20 photos, d +0.06, percentile 44\n- Neither eyes nor nose visible: 1 photos (too few to compare)\n- No dog face: 0 photos (too few to compare)\n\nQ5. If a dog's face is visible, how much of the photo does the face occupy?\nseparation: percentile 85\n- Most of the frame (close-up): 23 photos, d +0.38, percentile 87\n- A moderate portion: 62 photos, d +0.05, percentile 57\n- A small portion: 35 photos, d -0.35, percentile 7\n- No dog face: 0 photos (too few to compare)\n\nQ6. If a dog's face is visible, what is the dog's main coat colour?\nseparation: percentile 80\n- Black or dark brown: 2 photos (too few to compare)\n- White or cream: 28 photos, d -0.07, percentile 45\n- Tan, golden, or red-brown: 29 photos, d +0.28, percentile 89\n- Mixed/patterned (e.g. spots, tricolour): 61 photos, d -0.15, percentile 13\n- No dog face: 0 photos (too few to compare)\n\nQ7. If a dog's face is visible, what is its fur texture?\nseparation: percentile 49\n- Short and smooth: 45 photos, d -0.04, percentile 33\n- Long or fluffy: 52 photos, d +0.10, percentile 78\n- Curly or wiry: 23 photos, d -0.09, percentile 22\n- No dog face: 0 photos (too few to compare)\n\nQ8. If there is no dog face, does the photo show the face of another animal or a person?\nseparation: too few photos per answer to compare\n- Another furry animal's face (cat, fox, bear, etc.): 0 photos (too few to compare)\n- A human face: 0 photos (too few to compare)\n- Other animal face (bird, reptile, etc.): 0 photos (too few to compare)\n- No faces at all: 0 photos (too few to compare)\n- A dog face is present: 120 photos (too few to compare)"
+ }
+}

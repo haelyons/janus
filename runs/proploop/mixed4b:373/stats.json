@@ -1,0 +1,723 @@
+{
+ "unit": "mixed4b:373",
+ "layer": "mixed4b",
+ "chan": 373,
+ "m": 512,
+ "n": 120,
+ "classes": [
+  436,
+  555,
+  864,
+  817,
+  867,
+  586,
+  656,
+  654,
+  866,
+  407,
+  569,
+  779
+ ],
+ "class_names": [
+  "beach wagon",
+  "fire engine",
+  "tow truck",
+  "sports car",
+  "trailer truck",
+  "half track",
+  "minivan",
+  "minibus",
+  "tractor",
+  "ambulance",
+  "garbage truck",
+  "school bus"
+ ],
+ "set_ids": [
+  1610,
+  1611,
+  1612,
+  1613,
+  1614,
+  1615,
+  1616,
+  1617,
+  1618,
+  1619,
+  1790,
+  1791,
+  1792,
+  1793,
+  1794,
+  1795,
+  1796,
+  1797,
+  1798,
+  1799,
+  4600,
+  4601,
+  4602,
+  4603,
+  4604,
+  4605,
+  4606,
+  4607,
+  4608,
+  4609,
+  5140,
+  5141,
+  5142,
+  5143,
+  5144,
+  5145,
+  5146,
+  5147,
+  5148,
+  5149,
+  6030,
+  6031,
+  6032,
+  6033,
+  6034,
+  6035,
+  6036,
+  6037,
+  6038,
+  6039,
+  6770,
+  6771,
+  6772,
+  6773,
+  6774,
+  6775,
+  6776,
+  6777,
+  6778,
+  6779,
+  6890,
+  6891,
+  6892,
+  6893,
+  6894,
+  6895,
+  6896,
+  6897,
+  6898,
+  6899,
+  7000,
+  7001,
+  7002,
+  7003,
+  7004,
+  7005,
+  7006,
+  7007,
+  7008,
+  7009,
+  7150,
+  7151,
+  7152,
+  7153,
+  7154,
+  7155,
+  7156,
+  7157,
+  7158,
+  7159,
+  7470,
+  7471,
+  7472,
+  7473,
+  7474,
+  7475,
+  7476,
+  7477,
+  7478,
+  7479,
+  7890,
+  7891,
+  7892,
+  7893,
+  7894,
+  7895,
+  7896,
+  7897,
+  7898,
+  7899,
+  9820,
+  9821,
+  9822,
+  9823,
+  9824,
+  9825,
+  9826,
+  9827,
+  9828,
+  9829
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the photo show a wheel of a road vehicle (car, van, bus, truck, fire engine)?",
+   "answers": [
+    "Yes, clearly visible",
+    "Yes, but small or partly hidden",
+    "No vehicle wheel"
+   ],
+   "real": {
+    "counts": [
+     85,
+     26,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.4072431174383961,
+    "eta2_pct": 99.8046875,
+    "d": {
+     "0": 1.3783549071944303,
+     "1": -1.098265464355601,
+     "2": -1.4178629169352763
+    },
+    "d_pct": {
+     "0": 99.8046875,
+     "1": 0.1953125,
+     "2": 0.1953125
+    },
+    "halves": [
+     99.8046875,
+     99.8046875
+    ]
+   },
+   "null": {
+    "counts": [
+     85,
+     26,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.06730340676305635,
+    "eta2_pct": 96.2890625,
+    "d": {
+     "0": 0.350173555159418,
+     "1": -0.5996508467136702,
+     "2": 0.42420454731625734
+    },
+    "d_pct": {
+     "0": 89.6484375,
+     "1": 0.9765625,
+     "2": 81.640625
+    },
+    "halves": [
+     79.1015625,
+     80.2734375
+    ]
+   }
+  },
+  {
+   "question": "Is the curved wheel arch or fender around/above the wheel visible?",
+   "answers": [
+    "Yes, wheel sits inside a visible arch",
+    "Wheel visible but no arch (e.g., bicycle, open wheel, detached tire)",
+    "No wheel in photo"
+   ],
+   "real": {
+    "counts": [
+     106,
+     8,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.11388719934212926,
+    "eta2_pct": 99.21875,
+    "d": {
+     "0": 0.8562523795290157,
+     "1": -0.2851554479571955,
+     "2": -1.4841801898412461
+    },
+    "d_pct": {
+     "0": 99.21875,
+     "1": 32.8125,
+     "2": 0.1953125
+    },
+    "halves": [
+     99.609375,
+     20.8984375
+    ]
+   },
+   "null": {
+    "counts": [
+     106,
+     8,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.008756981311465082,
+    "eta2_pct": 54.4921875,
+    "d": {
+     "0": -0.1564491340147185,
+     "1": -0.06517108346617366,
+     "2": 0.42480088547300277
+    },
+    "d_pct": {
+     "0": 32.2265625,
+     "1": 41.40625,
+     "2": 80.078125
+    },
+    "halves": [
+     31.4453125,
+     47.65625
+    ]
+   }
+  },
+  {
+   "question": "From what angle is the vehicle wheel seen?",
+   "answers": [
+    "Side view, wheel looks round",
+    "Angled view, wheel looks oval",
+    "Front or rear view, wheel looks narrow",
+    "No vehicle wheel"
+   ],
+   "real": {
+    "counts": [
+     24,
+     74,
+     13,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.2845347971390824,
+    "eta2_pct": 99.609375,
+    "d": {
+     "0": 0.28147573441670243,
+     "1": 0.6708048793523306,
+     "2": -1.0895002497434034,
+     "3": -1.4178629169352763
+    },
+    "d_pct": {
+     "0": 83.203125,
+     "1": 99.21875,
+     "2": 0.390625,
+     "3": 0.1953125
+    },
+    "halves": [
+     99.8046875,
+     99.21875
+    ]
+   },
+   "null": {
+    "counts": [
+     24,
+     74,
+     13,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.08951427818595534,
+    "eta2_pct": 98.6328125,
+    "d": {
+     "0": 0.35697188862474166,
+     "1": -0.022607232332636496,
+     "2": -0.8406100325665359,
+     "3": 0.42420454731625734
+    },
+    "d_pct": {
+     "0": 95.8984375,
+     "1": 37.6953125,
+     "2": 0.78125,
+     "3": 81.640625
+    },
+    "halves": [
+     70.5078125,
+     86.1328125
+    ]
+   }
+  },
+  {
+   "question": "Is the vehicle in its usual upright orientation?",
+   "answers": [
+    "Upright",
+    "Tilted, overturned, or image rotated",
+    "No vehicle"
+   ],
+   "real": {
+    "counts": [
+     120,
+     0,
+     0
+    ],
+    "unclear": 0,
+    "compared": [],
+    "eta2": null,
+    "eta2_pct": null,
+    "d": {},
+    "d_pct": {},
+    "halves": [
+     null,
+     null
+    ]
+   },
+   "null": {
+    "counts": [
+     120,
+     0,
+     0
+    ],
+    "unclear": 0,
+    "compared": [],
+    "eta2": null,
+    "eta2_pct": null,
+    "d": {},
+    "d_pct": {},
+    "halves": [
+     null,
+     null
+    ]
+   }
+  },
+  {
+   "question": "What kind of vehicle does the wheel belong to?",
+   "answers": [
+    "Car",
+    "Van or SUV",
+    "Bus, truck, or fire engine",
+    "Other (bicycle, motorcycle, train, toy, etc.)",
+    "No wheel"
+   ],
+   "real": {
+    "counts": [
+     22,
+     18,
+     58,
+     16,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.14485485461807507,
+    "eta2_pct": 99.4140625,
+    "d": {
+     "0": -0.06786669243828332,
+     "1": 0.5124965812462066,
+     "2": 0.20576125347069443,
+     "3": -0.3121161970554695,
+     "4": -1.4841801898412461
+    },
+    "d_pct": {
+     "0": 20.5078125,
+     "1": 97.65625,
+     "2": 92.1875,
+     "3": 19.53125,
+     "4": 0.1953125
+    },
+    "halves": [
+     99.21875,
+     66.9921875
+    ]
+   },
+   "null": {
+    "counts": [
+     22,
+     18,
+     58,
+     16,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.013239565053161354,
+    "eta2_pct": 45.3125,
+    "d": {
+     "0": -0.11148655119540041,
+     "1": 0.07717235971127105,
+     "2": 0.02332854232300695,
+     "3": -0.16573118504187329,
+     "4": 0.42480088547300277
+    },
+    "d_pct": {
+     "0": 23.828125,
+     "1": 65.234375,
+     "2": 47.0703125,
+     "3": 30.6640625,
+     "4": 80.078125
+    },
+    "halves": [
+     65.625,
+     55.46875
+    ]
+   }
+  },
+  {
+   "question": "Which wheel is most prominent?",
+   "answers": [
+    "Front wheel",
+    "Rear wheel",
+    "Both equally",
+    "No vehicle wheel"
+   ],
+   "real": {
+    "counts": [
+     82,
+     18,
+     11,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.16502902878394593,
+    "eta2_pct": 99.8046875,
+    "d": {
+     "0": 0.5609141612336858,
+     "1": -0.3073120656634403,
+     "2": 0.19421307770830112,
+     "3": -1.4178629169352763
+    },
+    "d_pct": {
+     "0": 99.4140625,
+     "1": 6.8359375,
+     "2": 77.5390625,
+     "3": 0.1953125
+    },
+    "halves": [
+     99.0234375,
+     95.5078125
+    ]
+   },
+   "null": {
+    "counts": [
+     82,
+     18,
+     11,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.054427159683058036,
+    "eta2_pct": 90.0390625,
+    "d": {
+     "0": 0.16038033477870425,
+     "1": -0.5998788910232864,
+     "2": 0.1483337597826273,
+     "3": 0.42420454731625734
+    },
+    "d_pct": {
+     "0": 61.71875,
+     "1": 2.734375,
+     "2": 73.4375,
+     "3": 81.640625
+    },
+    "halves": [
+     64.2578125,
+     52.1484375
+    ]
+   }
+  },
+  {
+   "question": "How much of the image does the most prominent wheel with its arch take up?",
+   "answers": [
+    "Large (close-up, over a quarter of the image)",
+    "Medium",
+    "Small (whole vehicle far away)",
+    "No wheel"
+   ],
+   "real": {
+    "counts": [
+     5,
+     83,
+     23,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.33246547741184806,
+    "eta2_pct": 99.8046875,
+    "d": {
+     "0": 0.3210201878094687,
+     "1": 1.1026796773334921,
+     "2": -0.9656973747482105,
+     "3": -1.4178629169352763
+    },
+    "d_pct": {
+     "0": 48.828125,
+     "1": 99.8046875,
+     "2": 0.0,
+     "3": 0.1953125
+    },
+    "halves": [
+     99.8046875,
+     98.046875
+    ]
+   },
+   "null": {
+    "counts": [
+     5,
+     83,
+     23,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.014411605573652106,
+    "eta2_pct": 36.1328125,
+    "d": {
+     "0": -0.24157377964170754,
+     "1": -0.057701472106159835,
+     "2": -0.04826275151812754,
+     "3": 0.42420454731625734
+    },
+    "d_pct": {
+     "0": 39.453125,
+     "1": 39.453125,
+     "2": 43.75,
+     "3": 81.640625
+    },
+    "halves": [
+     5.078125,
+     41.40625
+    ]
+   }
+  },
+  {
+   "question": "How many vehicle wheels with arches are visible?",
+   "answers": [
+    "None",
+    "One",
+    "Two",
+    "Three or more"
+   ],
+   "real": {
+    "counts": [
+     13,
+     30,
+     51,
+     26
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.1136668217289356,
+    "eta2_pct": 95.8984375,
+    "d": {
+     "0": -0.9438420819544878,
+     "1": 0.33964647377383933,
+     "2": 0.28585848147212434,
+     "3": -0.24963058080649714
+    },
+    "d_pct": {
+     "0": 0.5859375,
+     "1": 67.96875,
+     "2": 91.015625,
+     "3": 37.6953125
+    },
+    "halves": [
+     97.0703125,
+     44.140625
+    ]
+   },
+   "null": {
+    "counts": [
+     13,
+     30,
+     51,
+     26
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.005833835408533053,
+    "eta2_pct": 11.5234375,
+    "d": {
+     "0": 0.16698417307208507,
+     "1": -0.11797855447927531,
+     "2": -0.041145296312587926,
+     "3": 0.09454067515334283
+    },
+    "d_pct": {
+     "0": 73.046875,
+     "1": 53.3203125,
+     "2": 31.8359375,
+     "3": 54.8828125
+    },
+    "halves": [
+     48.6328125,
+     88.8671875
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "real": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (beach wagon, fire engine, tow truck, sports car, trailer truck, half track, minivan, minibus, tractor, ambulance, garbage truck, school bus). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a wheel of a road vehicle (car, van, bus, truck, fire engine)?\nseparation: percentile 100\n- Yes, clearly visible: 85 photos, d +1.38, percentile 100\n- Yes, but small or partly hidden: 26 photos, d -1.10, percentile 0\n- No vehicle wheel: 9 photos, d -1.42, percentile 0\n\nQ2. Is the curved wheel arch or fender around/above the wheel visible?\nseparation: percentile 99\n- Yes, wheel sits inside a visible arch: 106 photos, d +0.86, percentile 99\n- Wheel visible but no arch (e.g., bicycle, open wheel, detached tire): 8 photos, d -0.29, percentile 33\n- No wheel in photo: 6 photos, d -1.48, percentile 0\n\nQ3. From what angle is the vehicle wheel seen?\nseparation: percentile 100\n- Side view, wheel looks round: 24 photos, d +0.28, percentile 83\n- Angled view, wheel looks oval: 74 photos, d +0.67, percentile 99\n- Front or rear view, wheel looks narrow: 13 photos, d -1.09, percentile 0\n- No vehicle wheel: 9 photos, d -1.42, percentile 0\n\nQ4. Is the vehicle in its usual upright orientation?\nseparation: too few photos per answer to compare\n- Upright: 120 photos (too few to compare)\n- Tilted, overturned, or image rotated: 0 photos (too few to compare)\n- No vehicle: 0 photos (too few to compare)\n\nQ5. What kind of vehicle does the wheel belong to?\nseparation: percentile 99\n- Car: 22 photos, d -0.07, percentile 21\n- Van or SUV: 18 photos, d +0.51, percentile 98\n- Bus, truck, or fire engine: 58 photos, d +0.21, percentile 92\n- Other (bicycle, motorcycle, train, toy, etc.): 16 photos, d -0.31, percentile 20\n- No wheel: 6 photos, d -1.48, percentile 0\n\nQ6. Which wheel is most prominent?\nseparation: percentile 100\n- Front wheel: 82 photos, d +0.56, percentile 99\n- Rear wheel: 18 photos, d -0.31, percentile 7\n- Both equally: 11 photos, d +0.19, percentile 78\n- No vehicle wheel: 9 photos, d -1.42, percentile 0\n\nQ7. How much of the image does the most prominent wheel with its arch take up?\nseparation: percentile 100\n- Large (close-up, over a quarter of the image): 5 photos, d +0.32, percentile 49\n- Medium: 83 photos, d +1.10, percentile 100\n- Small (whole vehicle far away): 23 photos, d -0.97, percentile 0\n- No wheel: 9 photos, d -1.42, percentile 0\n\nQ8. How many vehicle wheels with arches are visible?\nseparation: percentile 96\n- None: 13 photos, d -0.94, percentile 1\n- One: 30 photos, d +0.34, percentile 68\n- Two: 51 photos, d +0.29, percentile 91\n- Three or more: 26 photos, d -0.25, percentile 38",
+  "null": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (beach wagon, fire engine, tow truck, sports car, trailer truck, half track, minivan, minibus, tractor, ambulance, garbage truck, school bus). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a wheel of a road vehicle (car, van, bus, truck, fire engine)?\nseparation: percentile 96\n- Yes, clearly visible: 85 photos, d +0.35, percentile 90\n- Yes, but small or partly hidden: 26 photos, d -0.60, percentile 1\n- No vehicle wheel: 9 photos, d +0.42, percentile 82\n\nQ2. Is the curved wheel arch or fender around/above the wheel visible?\nseparation: percentile 54\n- Yes, wheel sits inside a visible arch: 106 photos, d -0.16, percentile 32\n- Wheel visible but no arch (e.g., bicycle, open wheel, detached tire): 8 photos, d -0.07, percentile 41\n- No wheel in photo: 6 photos, d +0.42, percentile 80\n\nQ3. From what angle is the vehicle wheel seen?\nseparation: percentile 99\n- Side view, wheel looks round: 24 photos, d +0.36, percentile 96\n- Angled view, wheel looks oval: 74 photos, d -0.02, percentile 38\n- Front or rear view, wheel looks narrow: 13 photos, d -0.84, percentile 1\n- No vehicle wheel: 9 photos, d +0.42, percentile 82\n\nQ4. Is the vehicle in its usual upright orientation?\nseparation: too few photos per answer to compare\n- Upright: 120 photos (too few to compare)\n- Tilted, overturned, or image rotated: 0 photos (too few to compare)\n- No vehicle: 0 photos (too few to compare)\n\nQ5. What kind of vehicle does the wheel belong to?\nseparation: percentile 45\n- Car: 22 photos, d -0.11, percentile 24\n- Van or SUV: 18 photos, d +0.08, percentile 65\n- Bus, truck, or fire engine: 58 photos, d +0.02, percentile 47\n- Other (bicycle, motorcycle, train, toy, etc.): 16 photos, d -0.17, percentile 31\n- No wheel: 6 photos, d +0.42, percentile 80\n\nQ6. Which wheel is most prominent?\nseparation: percentile 90\n- Front wheel: 82 photos, d +0.16, percentile 62\n- Rear wheel: 18 photos, d -0.60, percentile 3\n- Both equally: 11 photos, d +0.15, percentile 73\n- No vehicle wheel: 9 photos, d +0.42, percentile 82\n\nQ7. How much of the image does the most prominent wheel with its arch take up?\nseparation: percentile 36\n- Large (close-up, over a quarter of the image): 5 photos, d -0.24, percentile 39\n- Medium: 83 photos, d -0.06, percentile 39\n- Small (whole vehicle far away): 23 photos, d -0.05, percentile 44\n- No wheel: 9 photos, d +0.42, percentile 82\n\nQ8. How many vehicle wheels with arches are visible?\nseparation: percentile 12\n- None: 13 photos, d +0.17, percentile 73\n- One: 30 photos, d -0.12, percentile 53\n- Two: 51 photos, d -0.04, percentile 32\n- Three or more: 26 photos, d +0.09, percentile 55"
+ }
+}

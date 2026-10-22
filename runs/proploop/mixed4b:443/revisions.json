@@ -1,0 +1,122 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to frontal, upright canine faces with both eyes and the eye/brow region fully in view, at moderate-to-large scale. It extends more weakly to frontal faces of other furry mammals such as the lesser panda, not only to wild canids.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to frontal, upright canine faces with both eyes and the eye/brow region fully in view, at moderate-to-large scale. It extends more weakly to frontal faces of other furry mammals such as the lesser panda, not only to wild canids.",
+   "evidence": "Within classes, orientation and eye visibility separate activity most strongly: frontal faces score d +0.81 (98th percentile) and both eyes visible score +0.84 (97th), while profiles score -1.23 and one eye visible scores -0.86. Simply having a dog present barely matters (d +0.02), and among photos without a canine face, other furry mammal faces score d +0.50 (94th percentile); the lesser panda is also one of the top classes.",
+   "missing_data": "Activations on frontal faces of non-canid mammals such as cats, bears and primates, plus more wild canid photos, to tell whether this is a dog-face unit or a general frontal-mammal-face unit.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "46f463a4fdb22b4b0977be1216314cb3cab32a4a9ea6d7539d92422ad22d0070",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to frontal, upright canine faces with both eyes and the eye/brow region fully in view, at moderate-to-large scale. It extends more weakly to frontal faces of other furry mammals such as the lesser panda, not only to wild canids.\", \"evidence\": \"Within classes, orientation and eye visibility separate activity most strongly: frontal faces score d +0.81 (98th percentile) and both eyes visible score +0.84 (97th), while profiles score -1.23 and one eye visible scores -0.86. Simply having a dog present barely matters (d +0.02), and among photos without a canine face, other furry mammal faces score d +0.50 (94th percentile); the lesser panda is also one of the top classes.\", \"missing_data\": \"Activations on frontal faces of non-canid mammals such as cats, bears and primates, plus more wild canid photos, to tell whether this is a dog-face unit or a general frontal-mammal-face unit.\", \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to frontal, upright canine faces with both eyes and the eye/brow region fully in view, at moderate-to-large scale. It extends more weakly to frontal faces of other furry mammals such as the lesser panda, not only to wild canids.\", \"evidence\": \"Within classes, orientation and eye visibility separate activity most strongly: frontal faces score d +0.81 (98th percentile) and both eyes visible score +0.84 (97th), while profiles score -1.23 and one eye visible scores -0.86. Simply having a dog present barely matters (d +0.02), and among photos without a canine face, other furry mammal faces score d +0.50 (94th percentile); the lesser panda is also one of the top classes.\", \"missing_data\": \"Activations on frontal faces of non-canid mammals such as cats, bears and primates, plus more wild canid photos, to tell whether this is a dog-face unit or a general frontal-mammal-face unit.\", \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to frontal, camera-facing faces of dogs (and other furry mammals) where both eyes are clearly visible, peaking on a single, reasonably large face with an unobstructed eye/brow region. It extends more weakly to other furry mammal faces such as the lesser panda.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to frontal, camera-facing faces of dogs (and other furry mammals) where both eyes are clearly visible, peaking on a single, reasonably large face with an unobstructed eye/brow region. It extends more weakly to other furry mammal faces such as the lesser panda.",
+   "evidence": "Within classes, face orientation and eye visibility separate activity best: frontal faces give d +0.81 (98th percentile) against -1.23 for side profiles, and both eyes visible gives +0.84 (97th percentile) against about -0.85 for one or hidden eyes. Merely containing a canine face does not matter (d +0.02), and non-canine furry mammal faces are as active as or more active than canine faces (+0.50 against -0.50), so the 'canine' specificity is weaker than first claimed.",
+   "missing_data": "Activity on frontal faces of non-canid animals and humans across many classes (e.g., cats, bears, owls, people), to see whether the unit is dog-specific or a general frontal-eyes face detector.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "14fa56b84ee0e2a07f095bfdc2ddb41ef129bc52cdc222c2504d975fb3746a6d",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to frontal, camera-facing faces of dogs (and other furry mammals) where both eyes are clearly visible, peaking on a single, reasonably large face with an unobstructed eye/brow region. It extends more weakly to other furry mammal faces such as the lesser panda.\",\n \"evidence\": \"Within classes, face orientation and eye visibility separate activity best: frontal faces give d +0.81 (98th percentile) against -1.23 for side profiles, and both eyes visible gives +0.84 (97th percentile) against about -0.85 for one or hidden eyes. Merely containing a canine face does not matter (d +0.02), and non-canine furry mammal faces are as active as or more active than canine faces (+0.50 against -0.50), so the 'canine' specificity is weaker than first claimed.\"\n ,\"missing_data\": \"Activity on frontal faces of non-canid animals and humans across many classes (e.g., cats, bears, owls, people), to see whether the unit is dog-specific or a general frontal-eyes face detector.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to frontal, camera-facing faces of dogs (and other furry mammals) where both eyes are clearly visible, peaking on a single, reasonably large face with an unobstructed eye/brow region. It extends more weakly to other furry mammal faces such as the lesser panda.\",\n \"evidence\": \"Within classes, face orientation and eye visibility separate activity best: frontal faces give d +0.81 (98th percentile) against -1.23 for side profiles, and both eyes visible gives +0.84 (97th percentile) against about -0.85 for one or hidden eyes. Merely containing a canine face does not matter (d +0.02), and non-canine furry mammal faces are as active as or more active than canine faces (+0.50 against -0.50), so the 'canine' specificity is weaker than first claimed.\"\n ,\"missing_data\": \"Activity on frontal faces of non-canid animals and humans across many classes (e.g., cats, bears, owls, people), to see whether the unit is dog-specific or a general frontal-eyes face detector.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to frontal, camera-facing furry animal faces with both eyes clearly visible, mostly dog faces in these photos, and extends to other furry mammal faces such as the lesser panda.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to frontal, camera-facing furry animal faces with both eyes clearly visible, mostly dog faces in these photos, and extends to other furry mammal faces such as the lesser panda.",
+   "evidence": "Within classes, frontal orientation (d +0.81, pct 98) and both eyes visible (d +0.84, pct 97) separate activity strongly, while three-quarter and profile views and one or hidden eyes are strongly negative. Whether the animal is a canine barely matters (d +0.02), and non-canine furry mammal faces are positive (d +0.50, pct 94).",
+   "missing_data": "Activity on frontal faces of non-canine animals and humans across many classes (cats, bears, monkeys, people) to test whether the unit is specific to furry mammal faces or responds to any frontal two-eyed face.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e26f6ba956bfb7245213935c8a398aae55ff176490f026e796d3b938113a5536",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to frontal, camera-facing furry animal faces with both eyes clearly visible, mostly dog faces in these photos, and extends to other furry mammal faces such as the lesser panda.\",\n \"evidence\": \"Within classes, frontal orientation (d +0.81, pct 98) and both eyes visible (d +0.84, pct 97) separate activity strongly, while three-quarter and profile views and one or hidden eyes are strongly negative. Whether the animal is a canine barely matters (d +0.02), and non-canine furry mammal faces are positive (d +0.50, pct 94).\",\n \"missing_data\": \"Activity on frontal faces of non-canine animals and humans across many classes (cats, bears, monkeys, people) to test whether the unit is specific to furry mammal faces or responds to any frontal two-eyed face.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to frontal, camera-facing furry animal faces with both eyes clearly visible, mostly dog faces in these photos, and extends to other furry mammal faces such as the lesser panda.\",\n \"evidence\": \"Within classes, frontal orientation (d +0.81, pct 98) and both eyes visible (d +0.84, pct 97) separate activity strongly, while three-quarter and profile views and one or hidden eyes are strongly negative. Whether the animal is a canine barely matters (d +0.02), and non-canine furry mammal faces are positive (d +0.50, pct 94).\",\n \"missing_data\": \"Activity on frontal faces of non-canine animals and humans across many classes (cats, bears, monkeys, people) to test whether the unit is specific to furry mammal faces or responds to any frontal two-eyed face.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dog breeds and closely related animals (including the red panda), driven mainly by class identity rather than by face details within those classes, with perhaps a mild preference for three-quarter views of the face.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dog breeds and closely related animals (including the red panda), driven mainly by class identity rather than by face details within those classes, with perhaps a mild preference for three-quarter views of the face.",
+   "evidence": "The top classes are all dog breeds plus the lesser panda. Within classes, whether a face is present, upright, or shows the eyes barely moves the unit (d near 0; uprightness and eye-region separation are at the 1st–7th percentile), and only orientation stands out modestly (three-quarter d +0.34, 91st percentile).",
+   "missing_data": "Activations on wolves, foxes and other non-dog classes, plus spatial attribution maps showing whether the unit fires on the face/eye region or elsewhere on the animal.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ff06ea562baa595d244f36cd179ad2b81848bc1f5880110d3a0e0cb8f989d88b",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog breeds and closely related animals (including the red panda), driven mainly by class identity rather than by face details within those classes, with perhaps a mild preference for three-quarter views of the face.\",\n \"evidence\": \"The top classes are all dog breeds plus the lesser panda. Within classes, whether a face is present, upright, or shows the eyes barely moves the unit (d near 0; uprightness and eye-region separation are at the 1st–7th percentile), and only orientation stands out modestly (three-quarter d +0.34, 91st percentile).\",\n \"missing_data\": \"Activations on wolves, foxes and other non-dog classes, plus spatial attribution maps showing whether the unit fires on the face/eye region or elsewhere on the animal.\",\n \"confidence\": 0.5}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog breeds and closely related animals (including the red panda), driven mainly by class identity rather than by face details within those classes, with perhaps a mild preference for three-quarter views of the face.\",\n \"evidence\": \"The top classes are all dog breeds plus the lesser panda. Within classes, whether a face is present, upright, or shows the eyes barely moves the unit (d near 0; uprightness and eye-region separation are at the 1st–7th percentile), and only orientation stands out modestly (three-quarter d +0.34, 91st percentile).\",\n \"missing_data\": \"Activations on wolves, foxes and other non-dog classes, plus spatial attribution maps showing whether the unit fires on the face/eye region or elsewhere on the animal.\",\n \"confidence\": 0.5}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds broadly to dogs, especially small long-haired terriers, toy breeds and spitz/shepherd types, and extends weakly to a dog-like furry face, the lesser panda. It does not appear to respond specifically to the frontal eye/brow region.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds broadly to dogs, especially small long-haired terriers, toy breeds and spitz/shepherd types, and extends weakly to a dog-like furry face, the lesser panda. It does not appear to respond specifically to the frontal eye/brow region.",
+   "evidence": "Eleven of the 12 top classes are dog breeds and the 12th is the lesser panda, but within those classes the face-detail questions barely matter: eye/brow visibility is at separation percentile 1, uprightness at 4, eye visibility at 7, and frontal faces are actually slightly less active (d -0.22) than three-quarter views (d +0.34, percentile 91). That suggests a class-level dog signal rather than the claimed eye-region detector.",
+   "missing_data": "Activations on non-top classes with canine faces (wolves, foxes, coyotes) and on cropped or masked images isolating the eye region versus the body and fur would most change this answer.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c180c488381cb4ab10592227c4d0c01999453e83203fadc96aa5f1b8e0301128",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to dogs, especially small long-haired terriers, toy breeds and spitz/shepherd types, and extends weakly to a dog-like furry face, the lesser panda. It does not appear to respond specifically to the frontal eye/brow region.\",\n \"evidence\": \"Eleven of the 12 top classes are dog breeds and the 12th is the lesser panda, but within those classes the face-detail questions barely matter: eye/brow visibility is at separation percentile 1, uprightness at 4, eye visibility at 7, and frontal faces are actually slightly less active (d -0.22) than three-quarter views (d +0.34, percentile 91). That suggests a class-level dog signal rather than the claimed eye-region detector.\",\n \"missing_data\": \"Activations on non-top classes with canine faces (wolves, foxes, coyotes) and on cropped or masked images isolating the eye region versus the body and fur would most change this answer.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to dogs, especially small long-haired terriers, toy breeds and spitz/shepherd types, and extends weakly to a dog-like furry face, the lesser panda. It does not appear to respond specifically to the frontal eye/brow region.\",\n \"evidence\": \"Eleven of the 12 top classes are dog breeds and the 12th is the lesser panda, but within those classes the face-detail questions barely matter: eye/brow visibility is at separation percentile 1, uprightness at 4, eye visibility at 7, and frontal faces are actually slightly less active (d -0.22) than three-quarter views (d +0.34, percentile 91). That suggests a class-level dog signal rather than the claimed eye-region detector.\",\n \"missing_data\": \"Activations on non-top classes with canine faces (wolves, foxes, coyotes) and on cropped or masked images isolating the eye region versus the body and fur would most change this answer.\",\n \"confidence\": 0.55}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to dogs at the class level, especially many dog breeds plus a related furry mammal (lesser panda). Within those classes, the specific face-related properties claimed (upright face, eye/upper-face region) do not explain its activity.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to dogs at the class level, especially many dog breeds plus a related furry mammal (lesser panda). Within those classes, the specific face-related properties claimed (upright face, eye/upper-face region) do not explain its activity.",
+   "evidence": "The top classes are almost all dog breeds plus lesser panda, which supports a dog-centered unit with a related extension. However, within-class face questions show near-zero effects: canine face present gives d -0.01, upright gives separation percentile 4, and eye/brow area visible gives separation percentile 1, so the face and eye-region specificity is not supported.",
+   "missing_data": "Activations on non-dog classes (wolves, foxes, cats, other animals) and spatial activation maps would show whether the unit is face-specific or responds to dog/fur texture more broadly.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1ff7844a380cf424373187ec557cc6db12b7ae97ec39947123cb0405888c8f9d",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dogs at the class level, especially many dog breeds plus a related furry mammal (lesser panda). Within those classes, the specific face-related properties claimed (upright face, eye/upper-face region) do not explain its activity.\",\n \"evidence\": \"The top classes are almost all dog breeds plus lesser panda, which supports a dog-centered unit with a related extension. However, within-class face questions show near-zero effects: canine face present gives d -0.01, upright gives separation percentile 4, and eye/brow area visible gives separation percentile 1, so the face and eye-region specificity is not supported.\",\n \"missing_data\": \"Activations on non-dog classes (wolves, foxes, cats, other animals) and spatial activation maps would show whether the unit is face-specific or responds to dog/fur texture more broadly.\",\n \"confidence\": 0.5}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dogs at the class level, especially many dog breeds plus a related furry mammal (lesser panda). Within those classes, the specific face-related properties claimed (upright face, eye/upper-face region) do not explain its activity.\",\n \"evidence\": \"The top classes are almost all dog breeds plus lesser panda, which supports a dog-centered unit with a related extension. However, within-class face questions show near-zero effects: canine face present gives d -0.01, upright gives separation percentile 4, and eye/brow area visible gives separation percentile 1, so the face and eye-region specificity is not supported.\",\n \"missing_data\": \"Activations on non-dog classes (wolves, foxes, cats, other animals) and spatial activation maps would show whether the unit is face-specific or responds to dog/fur texture more broadly.\",\n \"confidence\": 0.5}",
+  "valid": true
+ }
+}

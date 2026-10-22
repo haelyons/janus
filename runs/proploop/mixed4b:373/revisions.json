@@ -1,0 +1,122 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible, medium-sized wheel of a road vehicle sitting inside its wheel arch, seen from the side or at an angle, with a preference for the front wheel. The vehicle type does not matter much.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible, medium-sized wheel of a road vehicle sitting inside its wheel arch, seen from the side or at an angle, with a preference for the front wheel. The vehicle type does not matter much.",
+   "evidence": "Clearly visible wheels give d +1.38 and medium-sized wheel-plus-arch gives d +1.10, both at percentile 100, while small or hidden wheels, front/rear views and photos with no wheel are strongly negative (percentile 0). The front wheel is preferred over the rear (+0.56 vs -0.31), and vehicle type has only modest effects (car -0.07, van +0.51, bus/truck +0.21).",
+   "missing_data": "Activations on wheel arches without tires, and on isolated tires or bicycle wheels outside vehicle classes, to tell whether the arch, the tire or their combination drives the unit.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "94e8c5980418e12704e4c445afc1d459e084831a694fb2bb43a4ed1132b7e461",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, medium-sized wheel of a road vehicle sitting inside its wheel arch, seen from the side or at an angle, with a preference for the front wheel. The vehicle type does not matter much.\",\n \"evidence\": \"Clearly visible wheels give d +1.38 and medium-sized wheel-plus-arch gives d +1.10, both at percentile 100, while small or hidden wheels, front/rear views and photos with no wheel are strongly negative (percentile 0). The front wheel is preferred over the rear (+0.56 vs -0.31), and vehicle type has only modest effects (car -0.07, van +0.51, bus/truck +0.21).\",\n \"missing_data\": \"Activations on wheel arches without tires, and on isolated tires or bicycle wheels outside vehicle classes, to tell whether the arch, the tire or their combination drives the unit.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, medium-sized wheel of a road vehicle sitting inside its wheel arch, seen from the side or at an angle, with a preference for the front wheel. The vehicle type does not matter much.\",\n \"evidence\": \"Clearly visible wheels give d +1.38 and medium-sized wheel-plus-arch gives d +1.10, both at percentile 100, while small or hidden wheels, front/rear views and photos with no wheel are strongly negative (percentile 0). The front wheel is preferred over the rear (+0.56 vs -0.31), and vehicle type has only modest effects (car -0.07, van +0.51, bus/truck +0.21).\",\n \"missing_data\": \"Activations on wheel arches without tires, and on isolated tires or bicycle wheels outside vehicle classes, to tell whether the arch, the tire or their combination drives the unit.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible road-vehicle wheel sitting in its wheel arch, seen from the side or a three-quarter angle at medium scale, and it fires most for the front wheel. It responds weakly or not at all when the wheel is small, hidden, seen head-on, or has no arch around it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible road-vehicle wheel sitting in its wheel arch, seen from the side or a three-quarter angle at medium scale, and it fires most for the front wheel. It responds weakly or not at all when the wheel is small, hidden, seen head-on, or has no arch around it.",
+   "evidence": "Whether the wheel is clearly visible has the strongest effect (d +1.38 vs -1.10 for small or partly hidden wheels, percentile 100), and wheels inside an arch (+0.86) beat wheels without one (-0.29). Angled views (+0.67) are as strong as or stronger than pure side views (+0.28), front/rear views are negative (-1.09), medium size is best (+1.10) while far-away wheels are negative (-0.97), and orientation was never tested because every photo was upright.",
+   "missing_data": "Photos of tilted or rotated vehicles to test the 'upright' claim, and isolated tires or arches on their own to see which part drives the response.",
+   "confidence": 0.78
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "69588519af31981c37ee0a8f9597aa9d2509b3e94b2b80244cb196e687f9693f",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a clearly visible road-vehicle wheel sitting in its wheel arch, seen from the side or a three-quarter angle at medium scale, and it fires most for the front wheel. It responds weakly or not at all when the wheel is small, hidden, seen head-on, or has no arch around it.\", \"evidence\": \"Whether the wheel is clearly visible has the strongest effect (d +1.38 vs -1.10 for small or partly hidden wheels, percentile 100), and wheels inside an arch (+0.86) beat wheels without one (-0.29). Angled views (+0.67) are as strong as or stronger than pure side views (+0.28), front/rear views are negative (-1.09), medium size is best (+1.10) while far-away wheels are negative (-0.97), and orientation was never tested because every photo was upright.\", \"missing_data\": \"Photos of tilted or rotated vehicles to test the 'upright' claim, and isolated tires or arches on their own to see which part drives the response.\", \"confidence\": 0.78}"
+  ],
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a clearly visible road-vehicle wheel sitting in its wheel arch, seen from the side or a three-quarter angle at medium scale, and it fires most for the front wheel. It responds weakly or not at all when the wheel is small, hidden, seen head-on, or has no arch around it.\", \"evidence\": \"Whether the wheel is clearly visible has the strongest effect (d +1.38 vs -1.10 for small or partly hidden wheels, percentile 100), and wheels inside an arch (+0.86) beat wheels without one (-0.29). Angled views (+0.67) are as strong as or stronger than pure side views (+0.28), front/rear views are negative (-1.09), medium size is best (+1.10) while far-away wheels are negative (-0.97), and orientation was never tested because every photo was upright.\", \"missing_data\": \"Photos of tilted or rotated vehicles to test the 'upright' claim, and isolated tires or arches on their own to see which part drives the response.\", \"confidence\": 0.78}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible road-vehicle wheel sitting inside its wheel arch or fender, seen at medium scale from a side or three-quarter angle, especially the front wheel of vans, buses and trucks.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible road-vehicle wheel sitting inside its wheel arch or fender, seen at medium scale from a side or three-quarter angle, especially the front wheel of vans, buses and trucks.",
+   "evidence": "Within classes, clearly visible vehicle wheels give d +1.38 while small or partly hidden wheels give -1.10 (both extreme percentiles), and medium-sized wheel-plus-arch gives +1.10 against -0.97 for small ones; front or rear views (-1.09) and wheels without an arch (-0.29) score lower. Angled views (+0.67) beat pure side views (+0.28), so 'side view' in the original description is too narrow, and the upright-orientation claim was never tested because every photo was upright.",
+   "missing_data": "Rotated or overturned vehicles to test orientation, close-up crops of isolated wheel arches without a wheel (and wheels without arches) outside vehicle classes, and non-vehicle round objects inside arch-like shapes.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6df74be53c55d0a3b44c1ac89751a29a5736661f70e18f5e06be1771182fb736",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible road-vehicle wheel sitting inside its wheel arch or fender, seen at medium scale from a side or three-quarter angle, especially the front wheel of vans, buses and trucks.\",\n \"evidence\": \"Within classes, clearly visible vehicle wheels give d +1.38 while small or partly hidden wheels give -1.10 (both extreme percentiles), and medium-sized wheel-plus-arch gives +1.10 against -0.97 for small ones; front or rear views (-1.09) and wheels without an arch (-0.29) score lower. Angled views (+0.67) beat pure side views (+0.28), so 'side view' in the original description is too narrow, and the upright-orientation claim was never tested because every photo was upright.\",\n \"missing_data\": \"Rotated or overturned vehicles to test orientation, close-up crops of isolated wheel arches without a wheel (and wheels without arches) outside vehicle classes, and non-vehicle round objects inside arch-like shapes.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible road-vehicle wheel sitting inside its wheel arch or fender, seen at medium scale from a side or three-quarter angle, especially the front wheel of vans, buses and trucks.\",\n \"evidence\": \"Within classes, clearly visible vehicle wheels give d +1.38 while small or partly hidden wheels give -1.10 (both extreme percentiles), and medium-sized wheel-plus-arch gives +1.10 against -0.97 for small ones; front or rear views (-1.09) and wheels without an arch (-0.29) score lower. Angled views (+0.67) beat pure side views (+0.28), so 'side view' in the original description is too narrow, and the upright-orientation claim was never tested because every photo was upright.\",\n \"missing_data\": \"Rotated or overturned vehicles to test orientation, close-up crops of isolated wheel arches without a wheel (and wheels without arches) outside vehicle classes, and non-vehicle round objects inside arch-like shapes.\",\n \"confidence\": 0.75}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one",
+  "explanation": "The unit responds to clearly visible road-vehicle wheels seen from the side so they look round, regardless of vehicle type; the surrounding wheel arch does not appear to matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to clearly visible road-vehicle wheels seen from the side so they look round, regardless of vehicle type; the surrounding wheel arch does not appear to matter.",
+   "evidence": "Wheel viewing angle is the strongest separator (percentile 99): round side-view wheels score d +0.36 and narrow front/rear views d -0.84. Small or partly hidden wheels score d -0.60 (percentile 1), while arch visibility, vehicle kind and wheel size separate photos no better than typical units.",
+   "missing_data": "What drives the fairly high activity on the 9 no-wheel photos (d +0.42), and whether rotated or isolated round wheels and other circular shapes activate the unit, since no tilted vehicles were tested.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f94e70d12f65337aa5871bd30de671ec4e4be0c13f6af62e97345bff805ec35f",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible road-vehicle wheels seen from the side so they look round, regardless of vehicle type; the surrounding wheel arch does not appear to matter.\",\n \"evidence\": \"Wheel viewing angle is the strongest separator (percentile 99): round side-view wheels score d +0.36 and narrow front/rear views d -0.84. Small or partly hidden wheels score d -0.60 (percentile 1), while arch visibility, vehicle kind and wheel size separate photos no better than typical units.\",\n \"missing_data\": \"What drives the fairly high activity on the 9 no-wheel photos (d +0.42), and whether rotated or isolated round wheels and other circular shapes activate the unit, since no tilted vehicles were tested.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible road-vehicle wheels seen from the side so they look round, regardless of vehicle type; the surrounding wheel arch does not appear to matter.\",\n \"evidence\": \"Wheel viewing angle is the strongest separator (percentile 99): round side-view wheels score d +0.36 and narrow front/rear views d -0.84. Small or partly hidden wheels score d -0.60 (percentile 1), while arch visibility, vehicle kind and wheel size separate photos no better than typical units.\",\n \"missing_data\": \"What drives the fairly high activity on the 9 no-wheel photos (d +0.42), and whether rotated or isolated round wheels and other circular shapes activate the unit, since no tilted vehicles were tested.\",\n \"confidence\": 0.55}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible, round vehicle wheel seen from the side, most often a front wheel; it does not need the surrounding wheel arch.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible, round vehicle wheel seen from the side, most often a front wheel; it does not need the surrounding wheel arch.",
+   "evidence": "Activity is higher for clearly visible wheels (d +0.35) and side-view round wheels (d +0.36, percentile 96), and much lower for front/rear narrow views (d -0.84, percentile 1), partly hidden wheels (d -0.60) and rear wheels (d -0.60). Whether an arch is visible makes no difference (separation percentile 54), and the 9 no-wheel photos are oddly high (d +0.42), which hints that other round shapes may also drive it.",
+   "missing_data": "Out-of-class photos with round non-wheel objects (and wheels without arches, or rotated or tilted vehicles) would show whether it is wheel-specific or a general circle detector.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "478102fb7b5bdab4767c351c1ac45061d83635b834a45dad1aed33e7d22ddcb8",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, round vehicle wheel seen from the side, most often a front wheel; it does not need the surrounding wheel arch.\",\n \"evidence\": \"Activity is higher for clearly visible wheels (d +0.35) and side-view round wheels (d +0.36, percentile 96), and much lower for front/rear narrow views (d -0.84, percentile 1), partly hidden wheels (d -0.60) and rear wheels (d -0.60). Whether an arch is visible makes no difference (separation percentile 54), and the 9 no-wheel photos are oddly high (d +0.42), which hints that other round shapes may also drive it.\",\n \"missing_data\": \"Out-of-class photos with round non-wheel objects (and wheels without arches, or rotated or tilted vehicles) would show whether it is wheel-specific or a general circle detector.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, round vehicle wheel seen from the side, most often a front wheel; it does not need the surrounding wheel arch.\",\n \"evidence\": \"Activity is higher for clearly visible wheels (d +0.35) and side-view round wheels (d +0.36, percentile 96), and much lower for front/rear narrow views (d -0.84, percentile 1), partly hidden wheels (d -0.60) and rear wheels (d -0.60). Whether an arch is visible makes no difference (separation percentile 54), and the 9 no-wheel photos are oddly high (d +0.42), which hints that other round shapes may also drive it.\",\n \"missing_data\": \"Out-of-class photos with round non-wheel objects (and wheels without arches, or rotated or tilted vehicles) would show whether it is wheel-specific or a general circle detector.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible, round vehicle wheel seen from the side (side profile of the vehicle), on any kind of road vehicle; the wheel arch or fender does not appear to matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible, round vehicle wheel seen from the side (side profile of the vehicle), on any kind of road vehicle; the wheel arch or fender does not appear to matter.",
+   "evidence": "Viewing angle separates activity unusually well (percentile 99): round side-view wheels are positive (d +0.36), while narrow front/rear-view wheels (d -0.84) and small or partly hidden wheels (d -0.60) are among the most negative in the layer. Arch visibility (percentile 54) and vehicle type (percentile 45) explain little, and the unexpectedly positive no-wheel photos (n=9, d +0.42) weaken the account.",
+   "missing_data": "Controlled images that vary wheel visibility and viewing angle on the same vehicle, a look at what the 9 no-wheel photos contain, and activity on non-vehicle round objects seen face-on.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1c4818f14ac206a70ab6b3be13d5cf76d586013541f2438404d2b1de33e97e81",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, round vehicle wheel seen from the side (side profile of the vehicle), on any kind of road vehicle; the wheel arch or fender does not appear to matter.\",\n \"evidence\": \"Viewing angle separates activity unusually well (percentile 99): round side-view wheels are positive (d +0.36), while narrow front/rear-view wheels (d -0.84) and small or partly hidden wheels (d -0.60) are among the most negative in the layer. Arch visibility (percentile 54) and vehicle type (percentile 45) explain little, and the unexpectedly positive no-wheel photos (n=9, d +0.42) weaken the account.\",\n \"missing_data\": \"Controlled images that vary wheel visibility and viewing angle on the same vehicle, a look at what the 9 no-wheel photos contain, and activity on non-vehicle round objects seen face-on.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, round vehicle wheel seen from the side (side profile of the vehicle), on any kind of road vehicle; the wheel arch or fender does not appear to matter.\",\n \"evidence\": \"Viewing angle separates activity unusually well (percentile 99): round side-view wheels are positive (d +0.36), while narrow front/rear-view wheels (d -0.84) and small or partly hidden wheels (d -0.60) are among the most negative in the layer. Arch visibility (percentile 54) and vehicle type (percentile 45) explain little, and the unexpectedly positive no-wheel photos (n=9, d +0.42) weaken the account.\",\n \"missing_data\": \"Controlled images that vary wheel visibility and viewing angle on the same vehicle, a look at what the 9 no-wheel photos contain, and activity on non-vehicle round objects seen face-on.\",\n \"confidence\": 0.5}\n```",
+  "valid": true
+ }
+}

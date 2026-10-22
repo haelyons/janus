@@ -1,0 +1,120 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a clearly visible, upright, front-facing muzzle of a furry mammal (nose, whisker pad, mouth, often light-furred with visible whiskers), regardless of species. It gives weaker, related responses to face-like fronts such as car grilles.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a clearly visible, upright, front-facing muzzle of a furry mammal (nose, whisker pad, mouth, often light-furred with visible whiskers), regardless of species. It gives weaker, related responses to face-like fronts such as car grilles.",
+   "evidence": "Clear full muzzle (d +0.84), upright frontal head (d +0.91) and visible whiskers (d +0.77) all sit at the top percentiles, while partly hidden or profile faces fall to the bottom (d -0.97 to -1.21). Species barely matters (Q2 separation percentile 76, d near 0), and grille/sports car/beach wagon classes are among the top classes, but within them the grille answer is near neutral (d +0.05).",
+   "missing_data": "Within-class activations for frontal versus angled car fronts, plus frontal muzzles from non-top classes such as other dog breeds, would show whether the grille response is a true weak extension and how general the muzzle response is.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7165cbc199755396be1e13791acef8c614dda2df0b1cc6120887be12a19225ee",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a clearly visible, upright, front-facing muzzle of a furry mammal (nose, whisker pad, mouth, often light-furred with visible whiskers), regardless of species. It gives weaker, related responses to face-like fronts such as car grilles.\",\n \"evidence\": \"Clear full muzzle (d +0.84), upright frontal head (d +0.91) and visible whiskers (d +0.77) all sit at the top percentiles, while partly hidden or profile faces fall to the bottom (d -0.97 to -1.21). Species barely matters (Q2 separation percentile 76, d near 0), and grille/sports car/beach wagon classes are among the top classes, but within them the grille answer is near neutral (d +0.05).\",\n \"missing_data\": \"Within-class activations for frontal versus angled car fronts, plus frontal muzzles from non-top classes such as other dog breeds, would show whether the grille response is a true weak extension and how general the muzzle response is.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a clearly visible, upright, front-facing muzzle of a furry mammal (nose, whisker pad, mouth, often light-furred with visible whiskers), regardless of species. It gives weaker, related responses to face-like fronts such as car grilles.\",\n \"evidence\": \"Clear full muzzle (d +0.84), upright frontal head (d +0.91) and visible whiskers (d +0.77) all sit at the top percentiles, while partly hidden or profile faces fall to the bottom (d -0.97 to -1.21). Species barely matters (Q2 separation percentile 76, d near 0), and grille/sports car/beach wagon classes are among the top classes, but within them the grille answer is near neutral (d +0.05).\",\n \"missing_data\": \"Within-class activations for frontal versus angled car fronts, plus frontal muzzles from non-top classes such as other dog breeds, would show whether the grille response is a true weak extension and how general the muzzle response is.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a clearly visible, upright, camera-facing muzzle of a furry mammal (nose, mouth, whisker pad, often light fur below the eyes), regardless of species. It gives a weaker, related response to face-like frontal structures such as car grilles.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a clearly visible, upright, camera-facing muzzle of a furry mammal (nose, mouth, whisker pad, often light fur below the eyes), regardless of species. It gives a weaker, related response to face-like frontal structures such as car grilles.",
+   "evidence": "Clearly visible faces/muzzles (d +0.89/+0.84), upright frontal heads (d +0.91) and visible whiskers (d +0.77) are all at the 100th or 98th percentile, while profile or partly hidden faces fall to d around -1.0 to -1.2. Species makes almost no difference (Q2 d about 0 for every group), and car fronts score slightly above non-face photos (+0.05 vs -0.52).",
+   "missing_data": "Activation on frontal muzzles from non-top classes (e.g. horses, cows, bears) and on non-furry frontal faces such as birds or reptiles, to test the furry and face-like extensions.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "95c86592bbf6dd412a90f5b19b63ed141e8818604390cf47bcc0f661c9f153ae",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a clearly visible, upright, camera-facing muzzle of a furry mammal (nose, mouth, whisker pad, often light fur below the eyes), regardless of species. It gives a weaker, related response to face-like frontal structures such as car grilles.\",\n \"evidence\": \"Clearly visible faces/muzzles (d +0.89/+0.84), upright frontal heads (d +0.91) and visible whiskers (d +0.77) are all at the 100th or 98th percentile, while profile or partly hidden faces fall to d around -1.0 to -1.2. Species makes almost no difference (Q2 d about 0 for every group), and car fronts score slightly above non-face photos (+0.05 vs -0.52).\",\n \"missing_data\": \"Activation on frontal muzzles from non-top classes (e.g. horses, cows, bears) and on non-furry frontal faces such as birds or reptiles, to test the furry and face-like extensions.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a clearly visible, upright, camera-facing muzzle of a furry mammal (nose, mouth, whisker pad, often light fur below the eyes), regardless of species. It gives a weaker, related response to face-like frontal structures such as car grilles.\",\n \"evidence\": \"Clearly visible faces/muzzles (d +0.89/+0.84), upright frontal heads (d +0.91) and visible whiskers (d +0.77) are all at the 100th or 98th percentile, while profile or partly hidden faces fall to d around -1.0 to -1.2. Species makes almost no difference (Q2 d about 0 for every group), and car fronts score slightly above non-face photos (+0.05 vs -0.52).\",\n \"missing_data\": \"Activation on frontal muzzles from non-top classes (e.g. horses, cows, bears) and on non-furry frontal faces such as birds or reptiles, to test the furry and face-like extensions.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "Responds to a clearly visible, upright, camera-facing muzzle region (nose, mouth, whisker pad, often lighter fur) of a furry mammal, regardless of species. A car front/grille gives at most a weak, face-like extension.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to a clearly visible, upright, camera-facing muzzle region (nose, mouth, whisker pad, often lighter fur) of a furry mammal, regardless of species. A car front/grille gives at most a weak, face-like extension.",
+   "evidence": "The strongest effects are for a clearly visible face/muzzle (d +0.89/+0.84) and a frontal upright head (d +0.91), and profile or partly hidden faces are strongly negative (d -1.06/-1.21); whiskers (+0.77) and a light muzzle (+0.41) also help. Species barely matters (Q2 separation percentile 76), and car grilles only edge out photos with no face-like structure (+0.05 vs -0.52).",
+   "missing_data": "Activation maps showing where in the image the unit fires, and photos outside the top classes (e.g., birds, human faces, frontal non-furry animals) to test how far the face-like extension goes.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e1d664aa0ebe71a02a12217bfeba7aaebda2eee103d296ef5634c41bc28fd308",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to a clearly visible, upright, camera-facing muzzle region (nose, mouth, whisker pad, often lighter fur) of a furry mammal, regardless of species. A car front/grille gives at most a weak, face-like extension.\",\n \"evidence\": \"The strongest effects are for a clearly visible face/muzzle (d +0.89/+0.84) and a frontal upright head (d +0.91), and profile or partly hidden faces are strongly negative (d -1.06/-1.21); whiskers (+0.77) and a light muzzle (+0.41) also help. Species barely matters (Q2 separation percentile 76), and car grilles only edge out photos with no face-like structure (+0.05 vs -0.52).\",\n \"missing_data\": \"Activation maps showing where in the image the unit fires, and photos outside the top classes (e.g., birds, human faces, frontal non-furry animals) to test how far the face-like extension goes.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to a clearly visible, upright, camera-facing muzzle region (nose, mouth, whisker pad, often lighter fur) of a furry mammal, regardless of species. A car front/grille gives at most a weak, face-like extension.\",\n \"evidence\": \"The strongest effects are for a clearly visible face/muzzle (d +0.89/+0.84) and a frontal upright head (d +0.91), and profile or partly hidden faces are strongly negative (d -1.06/-1.21); whiskers (+0.77) and a light muzzle (+0.41) also help. Species barely matters (Q2 separation percentile 76), and car grilles only edge out photos with no face-like structure (+0.05 vs -0.52).\",\n \"missing_data\": \"Activation maps showing where in the image the unit fires, and photos outside the top classes (e.g., birds, human faces, frontal non-furry animals) to test how far the face-like extension goes.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the faces of small to medium furry mammals (foxes, red pandas, lynxes and cats, with weasels and hamsters), seen at moderate size, often partly hidden or tilted. It extends more weakly to face-like car fronts and grilles.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the faces of small to medium furry mammals (foxes, red pandas, lynxes and cats, with weasels and hamsters), seen at moderate size, often partly hidden or tilted. It extends more weakly to face-like car fronts and grilles.",
+   "evidence": "Nine of the 12 top classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) show face-like car fronts; within classes, the few photos with no face-like structure score lowest (d -0.45) and fox/red panda faces score slightly higher (89th percentile). The original muzzle-centred, upright, close-up description is not supported, since clear muzzles, upright frontal heads and close-ups all have small negative d, and the separation scores are only mid-range (43rd to 80th percentile).",
+   "missing_data": "Spatial activation maps showing where in each image the unit fires (muzzle vs whole face vs grille), plus responses to faces of furry mammals outside the top classes and to non-car face-like objects.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "66c8a5800371c03a906a99aa5b6858c6482068bfa7fc6458d86a660c1340d43e",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the faces of small to medium furry mammals (foxes, red pandas, lynxes and cats, with weasels and hamsters), seen at moderate size, often partly hidden or tilted. It extends more weakly to face-like car fronts and grilles.\",\n \"evidence\": \"Nine of the 12 top classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) show face-like car fronts; within classes, the few photos with no face-like structure score lowest (d -0.45) and fox/red panda faces score slightly higher (89th percentile). The original muzzle-centred, upright, close-up description is not supported, since clear muzzles, upright frontal heads and close-ups all have small negative d, and the separation scores are only mid-range (43rd to 80th percentile).\"\n ,\"missing_data\": \"Spatial activation maps showing where in each image the unit fires (muzzle vs whole face vs grille), plus responses to faces of furry mammals outside the top classes and to non-car face-like objects.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the faces of small to medium furry mammals (foxes, red pandas, lynxes and cats, with weasels and hamsters), seen at moderate size, often partly hidden or tilted. It extends more weakly to face-like car fronts and grilles.\",\n \"evidence\": \"Nine of the 12 top classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) show face-like car fronts; within classes, the few photos with no face-like structure score lowest (d -0.45) and fox/red panda faces score slightly higher (89th percentile). The original muzzle-centred, upright, close-up description is not supported, since clear muzzles, upright frontal heads and close-ups all have small negative d, and the separation scores are only mid-range (43rd to 80th percentile).\"\n ,\"missing_data\": \"Spatial activation maps showing where in each image the unit fires (muzzle vs whole face vs grille), plus responses to faces of furry mammals outside the top classes and to non-car face-like objects.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds broadly to small-to-moderate, often partly hidden or tilted faces of furry mammals, most strongly fox and red panda, with weaker extension to car fronts and grilles. It does not appear to respond specifically to a clearly visible muzzle.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds broadly to small-to-moderate, often partly hidden or tilted faces of furry mammals, most strongly fox and red panda, with weaker extension to car fronts and grilles. It does not appear to respond specifically to a clearly visible muzzle.",
+   "evidence": "Nine of the 12 top classes are furry mammals and three are car-front classes; within classes, fox/red panda faces rank high (percentile 89) and car fronts or grilles are mildly positive (percentile 80). Clear, close-up, frontal faces with visible muzzles are slightly negative, and every within-class effect is small with no percentile outside 5–95, so the 'muzzle' part of the original explanation is not supported.",
+   "missing_data": "Activation maps showing where in the image the unit fires, plus tests on orange or reddish fur textures and car fronts with no face present, to separate face shape from fur color and texture.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c1ea1a913492c685a7223c2448544858bb757dd7aa17ba91e0c089fa4be742ee",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to small-to-moderate, often partly hidden or tilted faces of furry mammals, most strongly fox and red panda, with weaker extension to car fronts and grilles. It does not appear to respond specifically to a clearly visible muzzle.\",\n \"evidence\": \"Nine of the 12 top classes are furry mammals and three are car-front classes; within classes, fox/red panda faces rank high (percentile 89) and car fronts or grilles are mildly positive (percentile 80). Clear, close-up, frontal faces with visible muzzles are slightly negative, and every within-class effect is small with no percentile outside 5–95, so the 'muzzle' part of the original explanation is not supported.\",\n \"missing_data\": \"Activation maps showing where in the image the unit fires, plus tests on orange or reddish fur textures and car fronts with no face present, to separate face shape from fur color and texture.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds broadly to small-to-moderate, often partly hidden or tilted faces of furry mammals, most strongly fox and red panda, with weaker extension to car fronts and grilles. It does not appear to respond specifically to a clearly visible muzzle.\",\n \"evidence\": \"Nine of the 12 top classes are furry mammals and three are car-front classes; within classes, fox/red panda faces rank high (percentile 89) and car fronts or grilles are mildly positive (percentile 80). Clear, close-up, frontal faces with visible muzzles are slightly negative, and every within-class effect is small with no percentile outside 5–95, so the 'muzzle' part of the original explanation is not supported.\",\n \"missing_data\": \"Activation maps showing where in the image the unit fires, plus tests on orange or reddish fur textures and car fronts with no face present, to separate face shape from fur color and texture.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to furry mammal faces, especially small carnivore-like faces such as wild cats, foxes, red pandas, weasels, house cats and hamsters, and more weakly to face-like car fronts and grilles. It is not specifically tuned to a clear, close-up muzzle with whiskers.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to furry mammal faces, especially small carnivore-like faces such as wild cats, foxes, red pandas, weasels, house cats and hamsters, and more weakly to face-like car fronts and grilles. It is not specifically tuned to a clear, close-up muzzle with whiskers.",
+   "evidence": "Nine of the 12 most-activating classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) are face-like car fronts. Within classes, the muzzle cues work against the original explanation: clearly visible muzzle (d -0.12), close-ups (d -0.24) and clear whiskers (d -0.10) all go slightly the wrong way, while the only sizable effect is lower activity on the 6 photos with no face-like structure (d -0.45)."
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "18d25554b6a072c6273bff162b0728fdba07b30caf5b9437906a27576c12f149",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to furry mammal faces, especially small carnivore-like faces such as wild cats, foxes, red pandas, weasels, house cats and hamsters, and more weakly to face-like car fronts and grilles. It is not specifically tuned to a clear, close-up muzzle with whiskers.\",\n \"evidence\": \"Nine of the 12 most-activating classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) are face-like car fronts. Within classes, the muzzle cues work against the original explanation: clearly visible muzzle (d -0.12), close-ups (d -0.24) and clear whiskers (d -0.10) all go slightly the wrong way, while the only sizable effect is lower activity on the 6 photos with no face-like structure (d -0.45).\"},\n \"missing_data\": \"Activations on images outside the top classes, such as isolated muzzle crops versus whole faces, other furry animals without visible faces, and non-car face-like objects, would show whether this is a general face detector or a texture or category effect.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to furry mammal faces, especially small carnivore-like faces such as wild cats, foxes, red pandas, weasels, house cats and hamsters, and more weakly to face-like car fronts and grilles. It is not specifically tuned to a clear, close-up muzzle with whiskers.\",\n \"evidence\": \"Nine of the 12 most-activating classes are furry mammals with prominent faces, and the other three (grille, sports car, beach wagon) are face-like car fronts. Within classes, the muzzle cues work against the original explanation: clearly visible muzzle (d -0.12), close-ups (d -0.24) and clear whiskers (d -0.10) all go slightly the wrong way, while the only sizable effect is lower activity on the 6 photos with no face-like structure (d -0.45).\"},\n \"missing_data\": \"Activations on images outside the top classes, such as isolated muzzle crops versus whole faces, other furry animals without visible faces, and non-car face-like objects, would show whether this is a general face detector or a texture or category effect.\",\n \"confidence\": 0.5}\n```",
+  "valid": true
+ }
+}

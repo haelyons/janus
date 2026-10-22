@@ -1,0 +1,277 @@
+values of ['mixed4b', 'mixed4d', 'mixed4e', 'mixed5a'] on cuda
+  values 1280/10000
+  values 2560/10000
+  values 3840/10000
+  values 5120/10000
+  values 6400/10000
+  values 7680/10000
+  values 8960/10000
+== mixed4b:431
+mixed4b:431 questions
+mixed4b:431 answers.json ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+mixed4b:431 revisions.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4b:431  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Australian terrier (193), Greater Swiss Mountain dog (238), Blenheim spaniel (156), meerkat (299), bloodhound (163), white wolf (270), Dandie Dinmont (194), Eskimo dog (248), Appenzeller (240), Shih-Tzu (155), Sussex spaniel (220), lab coat (617)
+Q1. Does the photo show a furry mammal (e.g., dog, monkey, hyena, hamster, squirrel, mink)?
+   Yes, a dog: 95 photos, d -0.08, percentile 20.9
+   Yes, another furry mammal: 15 photos, d +0.12, percentile 78.9
+   No furry mammal: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.0015, percentile 64.3 -> WITHIN_5_95; halves 36.3, 67.6; null percentile 98.0 -> ABOVE_95
+Q2. How much of the furry mammal's head is visible?
+   Head clearly visible and prominent: 86 photos, d +0.54, percentile 84.0
+   Head partly visible or small: 22 photos, d -0.70, percentile 15.8
+   Head not visible: 2 photos (too few to compare)
+   No furry mammal in photo: 10 photos, d -0.02, percentile 26.0
+   separation: eta2 0.0763, percentile 77.1 -> WITHIN_5_95; halves 80.5, 64.6; null percentile 19.1 -> WITHIN_5_95
+Q3. How much of the image does the furry mammal's head and upper body occupy?
+   More than half the image: 50 photos, d -0.30, percentile 36.9
+   Between a quarter and half: 41 photos, d +0.75, percentile 97.9
+   Less than a quarter: 19 photos, d -0.71, percentile 16.0
+   No furry mammal in photo: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.1536, percentile 79.5 -> WITHIN_5_95; halves 90.4, 54.9; null percentile 30.9 -> WITHIN_5_95
+Q4. How furry does the area around the animal's face (cheeks, ears, neck) look?
+   Long, thick or fluffy fur: 65 photos, d -0.00, percentile 42.4
+   Short but visible fur: 45 photos, d +0.01, percentile 57.4
+   Little or no visible fur: 0 photos (too few to compare)
+   No mammal in photo: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.0000, percentile 5.9 -> WITHIN_5_95; halves 40.6, 43.0; null percentile 13.5 -> WITHIN_5_95
+Q5. Which view of the animal's head is shown?
+   Frontal (facing camera): 68 photos, d +0.44, percentile 86.9
+   Side or three-quarter view: 36 photos, d -0.34, percentile 15.0
+   Back of head or head turned away: 5 photos, d -0.82, percentile 18.0
+   No mammal head visible: 11 photos, d -0.04, percentile 59.2
+   separation: eta2 0.0643, percentile 85.2 -> WITHIN_5_95; halves 97.5, 44.3; null percentile 0.2 -> BELOW_5
+Q6. Are the animal's ears visible and furry?
+   Yes, furry ears clearly visible: 92 photos, d +0.36, percentile 88.5
+   Ears visible but not noticeably furry: 14 photos, d -0.55, percentile 11.7
+   Ears not visible: 4 photos (too few to compare)
+   No mammal in photo: 10 photos, d -0.01, percentile 46.7
+   separation: eta2 0.0332, percentile 88.1 -> WITHIN_5_95; halves 83.8, 66.6; null percentile 58.6 -> WITHIN_5_95
+Q7. What kind of furry mammal is the main one shown?
+   Dog or dog-like canid (dog, dhole, wolf, fox): 100 photos, d -0.03, percentile 26.2
+   Primate (monkey, ape): 1 photos (too few to compare)
+   Small furry mammal (hamster, squirrel, mink, etc.): 9 photos, d +0.07, percentile 73.6
+   Other furry mammal (hyena, cat, bear, etc.): 0 photos (too few to compare)
+   No furry mammal: 10 photos, d -0.01, percentile 26.2
+   separation: eta2 0.0003, percentile 53.5 -> WITHIN_5_95; halves 64.6, 83.4; null percentile 27.0 -> WITHIN_5_95
+Q8. Is the neck/shoulder area next to the animal's face visible?
+   Yes, clearly visible: 69 photos, d +0.62, percentile 98.6
+   Partly visible: 40 photos, d -0.68, percentile 1.2
+   Not visible: 1 photos (too few to compare)
+   No mammal in photo: 10 photos, d +0.00, percentile 86.7
+   separation: eta2 0.1100, percentile 98.6 -> ABOVE_95; halves 90.2, 98.4; null percentile 75.4 -> WITHIN_5_95
+separation percentile above 95: real 1, null 1; below 5: real 0, null 1 (of 8 questions)
+real_s1  one_plus_related  The unit responds to furry mammal heads, mainly dogs, when they are shown face-on at a medium framing, with the furry ears and the neck/shoulder region next to
+real_s2  one_plus_related  The unit responds to framed, frontal views of furry mammal heads (mostly dogs) where the head, furry ears and the neck/shoulder region beside the face are clear
+real_s3  one_plus_related  The unit responds to the head and neck/shoulder region of furry mammals, mostly dogs, and is strongest when the head is seen from the front and fills a moderate
+null_s1  one_plus_related  The unit responds mainly to dogs and dog-like canids, with weaker responses to other furry mammals such as meerkats. The claimed focus on the fur beside the fac
+null_s2  one_plus_related  The unit responds mainly to dogs, especially photos where the dog's neck/shoulder area beside the face and its furry ears are clearly visible. It responds less,
+null_s3  one_plus_related  The unit responds mainly to dogs (and dog-like canids such as wolves), with weaker activity for other furry mammals like meerkats; it is not tuned to a specific
+== mixed4b:443
+mixed4b:443 questions
+mixed4b:443 answers.json ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+mixed4b:443 revisions.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4b:443  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Maltese dog (153), Dandie Dinmont (194), Eskimo dog (248), silky terrier (201), Greater Swiss Mountain dog (238), Pembroke (263), Appenzeller (240), German shepherd (235), Australian terrier (193), lesser panda (387), Blenheim spaniel (156), kuvasz (222)
+Q1. Does the photo contain a canine (dog, wolf, fox, coyote, etc.) whose face is visible?
+   Yes, a domestic dog's face: 107 photos, d +0.02, percentile 76.0
+   Yes, a wild canid's face (wolf, fox, coyote, etc.): 1 photos (too few to compare)
+   A canine is present but its face is not visible: 2 photos (too few to compare)
+   No canine in the photo: 10 photos, d -0.02, percentile 23.8
+   separation: eta2 0.0000, percentile 74.6 -> WITHIN_5_95; halves 88.9, 95.3; null percentile 54.7 -> WITHIN_5_95
+Q2. Which way is the most prominent canine face oriented relative to the camera?
+   Frontal (facing the camera): 69 photos, d +0.81, percentile 98.2
+   Three-quarter view: 32 photos, d -0.63, percentile 2.9
+   Side profile: 7 photos, d -1.23, percentile 0.8
+   Facing away / face not visible: 2 photos (too few to compare)
+   No canine face in the photo: 10 photos, d -0.03, percentile 7.2
+   separation: eta2 0.2047, percentile 98.6 -> ABOVE_95; halves 98.8, 96.9; null percentile 71.5 -> WITHIN_5_95
+Q3. Is the most prominent canine face upright?
+   Upright (eyes above muzzle, roughly level): 97 photos, d +0.40, percentile 84.4
+   Tilted noticeably sideways: 7 photos, d -0.41, percentile 33.4
+   Upside down or lying sideways: 4 photos (too few to compare)
+   No canine face in the photo: 12 photos, d -0.35, percentile 4.1
+   separation: eta2 0.0228, percentile 72.3 -> WITHIN_5_95; halves 55.7, 97.5; null percentile 3.7 -> BELOW_5
+Q4. Are the eyes of the most prominent canine face clearly visible?
+   Both eyes clearly visible: 85 photos, d +0.84, percentile 97.5
+   Only one eye visible: 14 photos, d -0.86, percentile 4.1
+   Eyes hidden or closed (e.g., covered by fur, sunglasses, or shut): 9 photos, d -0.84, percentile 9.8
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.1637, percentile 96.9 -> ABOVE_95; halves 86.5, 98.2; null percentile 6.6 -> WITHIN_5_95
+Q5. How much of the image does the most prominent canine face occupy?
+   Fills most of the frame (close-up): 24 photos, d +0.34, percentile 69.1
+   Large but not dominant: 50 photos, d +0.56, percentile 96.5
+   Small part of the image: 34 photos, d -0.80, percentile 7.6
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.1612, percentile 80.9 -> WITHIN_5_95; halves 90.2, 81.1; null percentile 30.3 -> WITHIN_5_95
+Q6. Is the eye/brow/muzzle-bridge area of the most prominent canine face fully in view?
+   Yes, fully visible and uncovered: 94 photos, d +0.50, percentile 92.8
+   Partly cut off or covered: 14 photos, d -0.57, percentile 11.9
+   Mostly cut off or covered: 0 photos (too few to compare)
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.0457, percentile 90.2 -> WITHIN_5_95; halves 86.3, 96.9; null percentile 1.0 -> BELOW_5
+Q7. How many canine faces are visible in the photo?
+   None: 12 photos, d -0.30, percentile 7.2
+   One: 99 photos, d +0.47, percentile 90.6
+   Two or three: 9 photos, d -0.60, percentile 17.0
+   Four or more: 0 photos (too few to compare)
+   separation: eta2 0.0363, percentile 78.1 -> WITHIN_5_95; halves 51.6, 99.8; null percentile 36.7 -> WITHIN_5_95
+Q8. If no canine face is visible, does the photo contain a face of some other kind?
+   Another furry mammal face (cat, bear, etc.): 7 photos, d +0.50, percentile 94.3
+   A human face: 0 photos (too few to compare)
+   Another kind of face (bird, reptile, toy, drawing, etc.): 1 photos (too few to compare)
+   No face of any kind: 4 photos (too few to compare)
+   Not applicable: a canine face is visible: 108 photos, d -0.50, percentile 5.5
+   separation: eta2 0.0145, percentile 92.2 -> WITHIN_5_95; halves 94.9, 27.3; null percentile 7.4 -> WITHIN_5_95
+separation percentile above 95: real 2, null 0; below 5: real 0, null 2 (of 8 questions)
+real_s1  one_plus_related  The unit responds to frontal, camera-facing furry animal faces with both eyes clearly visible, mostly dog faces in these photos, and extends to other furry mamm
+real_s2  one_plus_related  The unit responds to frontal, camera-facing faces of dogs (and other furry mammals) where both eyes are clearly visible, peaking on a single, reasonably large f
+real_s3  one_plus_related  The unit responds to frontal, upright canine faces with both eyes and the eye/brow region fully in view, at moderate-to-large scale. It extends more weakly to f
+null_s1  one_plus_related  The unit responds to dog breeds and closely related animals (including the red panda), driven mainly by class identity rather than by face details within those
+null_s2  one_plus_related  The unit responds mainly to dogs at the class level, especially many dog breeds plus a related furry mammal (lesser panda). Within those classes, the specific f
+null_s3  one_plus_related  The unit responds broadly to dogs, especially small long-haired terriers, toy breeds and spitz/shepherd types, and extends weakly to a dog-like furry face, the
+== mixed4b:429
+mixed4b:429 questions
+mixed4b:429 answers.json ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+mixed4b:429 revisions.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4b:429  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Pembroke (263), German shepherd (235), Maltese dog (153), Irish terrier (184), Eskimo dog (248), Dandie Dinmont (194), Norfolk terrier (185), papillon (157), beagle (162), Appenzeller (240), silky terrier (201), Labrador retriever (208)
+Q1. Does the photo contain a dog's face?
+   Yes, clearly visible: 91 photos, d +1.35, percentile 99.0
+   Yes, but small or partly hidden: 29 photos, d -1.35, percentile 0.8
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.3348, percentile 99.0 -> ABOVE_95; halves 99.0, 97.9; null percentile 75.6 -> WITHIN_5_95
+Q2. If a dog's face is visible, which way is it facing relative to the camera?
+   Roughly head-on (frontal): 66 photos, d +0.94, percentile 98.8
+   Three-quarter view: 40 photos, d -0.49, percentile 5.1
+   Side profile: 12 photos, d -1.33, percentile 0.8
+   Facing away / back of head: 2 photos (too few to compare)
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.2786, percentile 99.2 -> ABOVE_95; halves 99.6, 97.9; null percentile 70.3 -> WITHIN_5_95
+Q3. If a dog's face is visible, how is the head oriented?
+   Upright: 99 photos, d +0.89, percentile 98.0
+   Tilted noticeably sideways: 14 photos, d -0.57, percentile 10.0
+   Upside down or lying sideways: 6 photos, d -1.36, percentile 0.6
+   No dog face: 0 photos (too few to compare)
+   could not tell: 1 photos
+   separation: eta2 0.1328, percentile 99.2 -> ABOVE_95; halves 97.1, 96.5; null percentile 93.9 -> WITHIN_5_95
+Q4. If a dog's face is visible, are both its eyes and its nose/muzzle visible?
+   Eyes and nose/muzzle all visible: 99 photos, d +1.23, percentile 98.0
+   Only some of eyes/nose visible: 20 photos, d -1.23, percentile 1.8
+   Neither eyes nor nose visible: 1 photos (too few to compare)
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.2127, percentile 98.0 -> ABOVE_95; halves 98.0, 96.1; null percentile 19.1 -> WITHIN_5_95
+Q5. If a dog's face is visible, how much of the photo does the face occupy?
+   Most of the frame (close-up): 23 photos, d +0.15, percentile 66.8
+   A moderate portion: 62 photos, d +0.68, percentile 97.5
+   A small portion: 35 photos, d -0.93, percentile 7.0
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.1858, percentile 83.8 -> WITHIN_5_95; halves 82.8, 77.1; null percentile 85.4 -> WITHIN_5_95
+Q6. If a dog's face is visible, what is the dog's main coat colour?
+   Black or dark brown: 2 photos (too few to compare)
+   White or cream: 28 photos, d -0.13, percentile 24.2
+   Tan, golden, or red-brown: 29 photos, d +0.11, percentile 60.5
+   Mixed/patterned (e.g. spots, tricolour): 61 photos, d +0.01, percentile 56.1
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.0041, percentile 42.4 -> WITHIN_5_95; halves 9.2, 65.0; null percentile 80.1 -> WITHIN_5_95
+Q7. If a dog's face is visible, what is its fur texture?
+   Short and smooth: 45 photos, d -0.09, percentile 17.4
+   Long or fluffy: 52 photos, d +0.01, percentile 54.1
+   Curly or wiry: 23 photos, d +0.12, percentile 80.5
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.0032, percentile 49.4 -> WITHIN_5_95; halves 50.6, 9.0; null percentile 49.2 -> WITHIN_5_95
+Q8. If there is no dog face, does the photo show the face of another animal or a person?
+   Another furry animal's face (cat, fox, bear, etc.): 0 photos (too few to compare)
+   A human face: 0 photos (too few to compare)
+   Other animal face (bird, reptile, etc.): 0 photos (too few to compare)
+   No faces at all: 0 photos (too few to compare)
+   A dog face is present: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+separation percentile above 95: real 4, null 0; below 5: real 0, null 0 (of 8 questions)
+real_s1  one  The unit responds to a clearly visible, upright, frontal dog face in which both eyes and the nose/muzzle can be seen, regardless of breed, coat colour or fur te
+real_s2  one  The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are in view, regardless of breed, coat colour or fu
+real_s3  one  The unit responds to a clearly visible, upright, roughly frontal dog face, with eyes and muzzle both in view, regardless of breed, coat colour or fur texture.
+null_s1  one_plus_related  The unit responds to dog faces, especially large, clearly visible ones in non-canonical poses (tilted sideways or three-quarter view), rather than specifically
+null_s2  one_plus_related  The unit responds to dog faces that are large in the frame, and it is especially strong when the head is tilted or in three-quarter view rather than upright and
+null_s3  one  The unit responds to dog faces, most strongly when the face is large in the frame and the head is tilted sideways or turned to a three-quarter view, rather than
+== mixed4d:409
+mixed4d:409 questions
+mixed4d:409 answers.json ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+mixed4d:409 revisions.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+mixed4d:409 revisions.json null_s3 failed: error reply, not cached: You've hit your session limit · resets 1:40am (Europe/London)
+== mixed4d:409  layer mixed4d (528 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: sports car (817), beach wagon (436), tow truck (864), pickup (717), minibus (654), trailer truck (867), airliner (404), minivan (656), convertible (511), ambulance (407), grille (581), police van (734)
+Q1. What is the main subject of the photo?
+   A four-legged animal: 0 photos (too few to compare)
+   A car, truck, or other road vehicle: 108 photos, d +0.12, percentile 75.9
+   Both an animal and a vehicle: 0 photos (too few to compare)
+   Something else: 12 photos, d -0.12, percentile 23.9
+   separation: eta2 0.0012, percentile 54.0 -> WITHIN_5_95; halves 25.9, 27.5; null percentile 86.7 -> WITHIN_5_95
+Q2. If there is a four-legged animal, what kind is it?
+   A dog: 0 photos (too few to compare)
+   A weasel, ferret, or similar small mammal: 0 photos (too few to compare)
+   Another quadruped (cat, horse, cow, etc.): 0 photos (too few to compare)
+   No four-legged animal: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q3. From what angle is the main animal or vehicle seen?
+   Side-on profile: 18 photos, d -0.14, percentile 31.8
+   Three-quarter view: 82 photos, d +0.71, percentile 99.4
+   Front or rear view: 17 photos, d -1.05, percentile 0.9
+   From above or other angle: 3 photos (too few to compare)
+   No animal or vehicle: 0 photos (too few to compare)
+   separation: eta2 0.1522, percentile 99.2 -> ABOVE_95; halves 99.6, 94.9; null percentile 61.0 -> WITHIN_5_95
+Q4. What is the posture of the main animal?
+   Standing upright on its legs: 0 photos (too few to compare)
+   Walking or running: 0 photos (too few to compare)
+   Sitting or lying down: 0 photos (too few to compare)
+   Held, jumping, or other: 0 photos (too few to compare)
+   No animal: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q5. Is the body of the main animal or vehicle horizontally elongated and visibly raised on legs or wheels?
+   Yes, long body clearly raised on legs or wheels: 100 photos, d +1.06, percentile 99.8
+   Body visible but legs or wheels hidden or cropped: 14 photos, d -1.07, percentile 0.4
+   Body not elongated or not raised: 5 photos, d -0.76, percentile 2.1
+   No animal or vehicle: 1 photos (too few to compare)
+   separation: eta2 0.1532, percentile 99.8 -> ABOVE_95; halves 99.8, 98.3; null percentile 67.6 -> WITHIN_5_95
+Q6. How much of the frame does the main animal's torso or vehicle's body fill?
+   Most of the frame: 76 photos, d +0.19, percentile 63.1
+   About a quarter to half: 39 photos, d -0.04, percentile 46.4
+   A small part: 5 photos, d -0.90, percentile 21.4
+   No animal or vehicle: 0 photos (too few to compare)
+   separation: eta2 0.0346, percentile 63.8 -> WITHIN_5_95; halves 51.3, 50.2; null percentile 50.8 -> WITHIN_5_95
+Q7. If there is a vehicle, which part of it is visible?
+   Whole side including front wheel: 45 photos, d +0.34, percentile 96.0
+   Only part of the side, front wheel visible: 42 photos, d +0.23, percentile 67.0
+   Mostly front, rear, or interior: 27 photos, d -0.83, percentile 1.5
+   No vehicle: 6 photos, d +0.28, percentile 88.6
+   separation: eta2 0.1231, percentile 97.2 -> ABOVE_95; halves 93.4, 89.0; null percentile 91.1 -> WITHIN_5_95
+Q8. How many animals or vehicles are prominent in the photo?
+   One: 96 photos, d +0.07, percentile 59.8
+   Two or three: 21 photos, d -0.07, percentile 40.0
+   Four or more: 3 photos (too few to compare)
+   None: 0 photos (too few to compare)
+   separation: eta2 0.0008, percentile 24.2 -> WITHIN_5_95; halves 39.0, 69.9; null percentile 26.7 -> WITHIN_5_95
+separation percentile above 95: real 3, null 0; below 5: real 0, null 0 (of 8 questions)
+real_s1  one_plus_related  The unit responds to horizontally elongated bodies clearly raised on legs or wheels, seen at an angle that shows the side, which in practice means mostly road v
+real_s2  one  The unit responds to the long body of a road vehicle seen raised on its wheels, best from a three-quarter or side view that shows the side and front wheel. The
+real_s3  one_plus_related  The unit responds to a horizontally elongated body visibly raised on legs or wheels, seen from the side or at a three-quarter angle. Mainly this is the body of
+null_s1  one_plus_related  The unit responds mainly to motor vehicles (cars, vans, trucks), especially a raised, elongated body over its wheels seen at a three-quarter or partial-side ang
+null_s2  one_plus_related  The unit mainly responds to the lower side of road vehicles: a partial side view showing the front wheel and the elongated body raised on its wheels. It extends
+null_s3  no revision (call failed, not cached)
+== mixed4b:237
+mixed4b:237 questions
+== mixed4b:237
+failed: questions call failed, not cached: error reply, not cached: You've hit your session limit · resets 1:40am (Europe/London)
+== mixed4b:373
+mixed4b:373 questions
+== mixed4b:373
+failed: questions call failed, not cached: error reply, not cached: You've hit your session limit · resets 1:40am (Europe/London)
+== mixed4e:55
+mixed4e:55 questions
+== mixed4e:55
+failed: questions call failed, not cached: error reply, not cached: You've hit your session limit · resets 1:40am (Europe/London)
+== mixed5a:719
+mixed5a:719 questions
+== mixed5a:719
+failed: questions call failed, not cached: error reply, not cached: You've hit your session limit · resets 1:40am (Europe/London)
+report -> /home/hal/dev/interp/janus/runs/proploop/report.txt
