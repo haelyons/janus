@@ -1,0 +1,120 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal heads, mostly dogs, seen frontally at a moderate scale (head and upper body filling roughly a quarter to half of the image), with the neck/shoulder region beside the face and furry ears clearly visible. It extends more weakly to other furry mammals with similar head structure.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal heads, mostly dogs, seen frontally at a moderate scale (head and upper body filling roughly a quarter to half of the image), with the neck/shoulder region beside the face and furry ears clearly visible. It extends more weakly to other furry mammals with similar head structure.",
+   "evidence": "The top classes are almost all dog breeds plus meerkat and wolf, and within classes activity is strongly higher when the neck/shoulder area is clearly visible (d +0.62, 99th percentile), the head and upper body fill a quarter to half of the image (d +0.75, 98th percentile), and the head is frontal with furry ears visible. Fur length itself does not separate the photos (6th percentile), and a left-facing or right-of-center subject lowers activity.",
+   "missing_data": "Activations on non-dog furry mammals and on non-mammal images with similar framing would show how far the response extends beyond dogs, and spatial activation maps would confirm whether the response sits on the neck/shoulder region.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7a941b5cc42f48c73a662a79c9cfd4de909fd90c6908aafa27d54f9efc2b892a",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal heads, mostly dogs, seen frontally at a moderate scale (head and upper body filling roughly a quarter to half of the image), with the neck/shoulder region beside the face and furry ears clearly visible. It extends more weakly to other furry mammals with similar head structure.\",\n \"evidence\": \"The top classes are almost all dog breeds plus meerkat and wolf, and within classes activity is strongly higher when the neck/shoulder area is clearly visible (d +0.62, 99th percentile), the head and upper body fill a quarter to half of the image (d +0.75, 98th percentile), and the head is frontal with furry ears visible. Fur length itself does not separate the photos (6th percentile), and a left-facing or right-of-center subject lowers activity.\",\n \"missing_data\": \"Activations on non-dog furry mammals and on non-mammal images with similar framing would show how far the response extends beyond dogs, and spatial activation maps would confirm whether the response sits on the neck/shoulder region.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal heads, mostly dogs, seen frontally at a moderate scale (head and upper body filling roughly a quarter to half of the image), with the neck/shoulder region beside the face and furry ears clearly visible. It extends more weakly to other furry mammals with similar head structure.\",\n \"evidence\": \"The top classes are almost all dog breeds plus meerkat and wolf, and within classes activity is strongly higher when the neck/shoulder area is clearly visible (d +0.62, 99th percentile), the head and upper body fill a quarter to half of the image (d +0.75, 98th percentile), and the head is frontal with furry ears visible. Fur length itself does not separate the photos (6th percentile), and a left-facing or right-of-center subject lowers activity.\",\n \"missing_data\": \"Activations on non-dog furry mammals and on non-mammal images with similar framing would show how far the response extends beyond dogs, and spatial activation maps would confirm whether the response sits on the neck/shoulder region.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the head and fore-body of furry mammals, mostly dogs, and is most active when the head faces the camera, is sharp and well lit, and has the furry neck/shoulder area beside the face clearly in view, with the head-and-upper-body filling a quarter to half of the frame. It extends more weakly to other furry mammals.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the head and fore-body of furry mammals, mostly dogs, and is most active when the head faces the camera, is sharp and well lit, and has the furry neck/shoulder area beside the face clearly in view, with the head-and-upper-body filling a quarter to half of the frame. It extends more weakly to other furry mammals.",
+   "evidence": "Within its top classes, the strongest and most unusual separators are neck/shoulder visibility (clearly visible d +0.62 vs partly visible d -0.68, 99th percentile) and medium framing of head and upper body (d +0.75, 98th percentile), backed by a prominent frontal head with visible furry ears. Fur length does not separate photos at all (6th percentile), and dog versus other mammal barely matters, so fur amount is not what drives the unit within these classes.",
+   "missing_data": "Activations on non-mammal or synthetic images that show a head-plus-neck layout without fur, and on mammal crops of the neck only versus the face only, to check whether the unit needs fur or just this head-and-shoulders arrangement. It would also help to know why the unrelated 'lab coat' class ranks among its top classes.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "99f1eba009ac9298099108db6bbf67a706b7cd8dcca5d0272da3779b7e5d3a8e",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the head and fore-body of furry mammals, mostly dogs, and is most active when the head faces the camera, is sharp and well lit, and has the furry neck/shoulder area beside the face clearly in view, with the head-and-upper-body filling a quarter to half of the frame. It extends more weakly to other furry mammals.\",\n \"evidence\": \"Within its top classes, the strongest and most unusual separators are neck/shoulder visibility (clearly visible d +0.62 vs partly visible d -0.68, 99th percentile) and medium framing of head and upper body (d +0.75, 98th percentile), backed by a prominent frontal head with visible furry ears. Fur length does not separate photos at all (6th percentile), and dog versus other mammal barely matters, so fur amount is not what drives the unit within these classes.\",\n \"missing_data\": \"Activations on non-mammal or synthetic images that show a head-plus-neck layout without fur, and on mammal crops of the neck only versus the face only, to check whether the unit needs fur or just this head-and-shoulders arrangement. It would also help to know why the unrelated 'lab coat' class ranks among its top classes.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the head and fore-body of furry mammals, mostly dogs, and is most active when the head faces the camera, is sharp and well lit, and has the furry neck/shoulder area beside the face clearly in view, with the head-and-upper-body filling a quarter to half of the frame. It extends more weakly to other furry mammals.\",\n \"evidence\": \"Within its top classes, the strongest and most unusual separators are neck/shoulder visibility (clearly visible d +0.62 vs partly visible d -0.68, 99th percentile) and medium framing of head and upper body (d +0.75, 98th percentile), backed by a prominent frontal head with visible furry ears. Fur length does not separate photos at all (6th percentile), and dog versus other mammal barely matters, so fur amount is not what drives the unit within these classes.\",\n \"missing_data\": \"Activations on non-mammal or synthetic images that show a head-plus-neck layout without fur, and on mammal crops of the neck only versus the face only, to check whether the unit needs fur or just this head-and-shoulders arrangement. It would also help to know why the unrelated 'lab coat' class ranks among its top classes.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the head-and-neck region of dogs and similar furry mammals (wolf, meerkat), most strongly when the head faces the camera, the neck/shoulder area beside the face is clearly visible, and the head and upper body fill a moderate share of the frame. It responds weakly to related things, possibly including collar-like clothing such as lab coats.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the head-and-neck region of dogs and similar furry mammals (wolf, meerkat), most strongly when the head faces the camera, the neck/shoulder area beside the face is clearly visible, and the head and upper body fill a moderate share of the frame. It responds weakly to related things, possibly including collar-like clothing such as lab coats.",
+   "evidence": "Most of the top classes are dog breeds, plus white wolf and meerkat. Within classes, activity rises when the neck/shoulder is clearly visible (d +0.62, 99th percentile), the head and upper body take a quarter to half of the image (d +0.75, 98th) and the view is frontal (d +0.44). Fur length makes no difference (separation 6th percentile), which goes against the 'fur region' part of the original description."
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "57d03f283bf360b83f0be5fcc1c5ac66fb192c080d7e8bde2f021b7024620693",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the head-and-neck region of dogs and similar furry mammals (wolf, meerkat), most strongly when the head faces the camera, the neck/shoulder area beside the face is clearly visible, and the head and upper body fill a moderate share of the frame. It responds weakly to related things, possibly including collar-like clothing such as lab coats.\",\n \"evidence\": \"Most of the top classes are dog breeds, plus white wolf and meerkat. Within classes, activity rises when the neck/shoulder is clearly visible (d +0.62, 99th percentile), the head and upper body take a quarter to half of the image (d +0.75, 98th) and the view is frontal (d +0.44). Fur length makes no difference (separation 6th percentile), which goes against the 'fur region' part of the original description.\"},\n \"missing_data\": \"The top-activating lab coat photos and spatial activation maps would show whether the unit tracks the neck/collar area as a shape rather than mammals specifically.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the head-and-neck region of dogs and similar furry mammals (wolf, meerkat), most strongly when the head faces the camera, the neck/shoulder area beside the face is clearly visible, and the head and upper body fill a moderate share of the frame. It responds weakly to related things, possibly including collar-like clothing such as lab coats.\",\n \"evidence\": \"Most of the top classes are dog breeds, plus white wolf and meerkat. Within classes, activity rises when the neck/shoulder is clearly visible (d +0.62, 99th percentile), the head and upper body take a quarter to half of the image (d +0.75, 98th) and the view is frontal (d +0.44). Fur length makes no difference (separation 6th percentile), which goes against the 'fur region' part of the original description.\"},\n \"missing_data\": \"The top-activating lab coat photos and spatial activation maps would show whether the unit tracks the neck/collar area as a shape rather than mammals specifically.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to dogs, especially their furry heads, ears and neck/shoulder areas, and weakly to other furry mammals such as meerkats, wolves and small mammals. Within those classes it fires more when the animal is moderately sized, fully in the frame and evenly lit.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to dogs, especially their furry heads, ears and neck/shoulder areas, and weakly to other furry mammals such as meerkats, wolves and small mammals. Within those classes it fires more when the animal is moderately sized, fully in the frame and evenly lit.",
+   "evidence": "The top classes are almost all dog breeds plus meerkat and white wolf, and within classes dog photos beat other furry mammals (d +0.23 vs -0.35, separation percentile 98), which matches 'dogs plus weaker furry mammals'. Head view and fur-length questions explain little; framing explains more: subjects fully inside the photo (+0.32), medium lighting (+0.30) and a quarter to three quarters of the frame (+0.23).",
+   "missing_data": "Activation maps on photos of non-dog furry mammals and of close-up versus distant dogs, to tell whether the framing effects come from where the box lands (fur at the head edge or neck) rather than from overall composition.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "62faf853cce7994b72c2d09516e14f7a5de067eab5e7b7fd8bd957e0790df901",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dogs, especially their furry heads, ears and neck/shoulder areas, and weakly to other furry mammals such as meerkats, wolves and small mammals. Within those classes it fires more when the animal is moderately sized, fully in the frame and evenly lit.\",\n \"evidence\": \"The top classes are almost all dog breeds plus meerkat and white wolf, and within classes dog photos beat other furry mammals (d +0.23 vs -0.35, separation percentile 98), which matches 'dogs plus weaker furry mammals'. Head view and fur-length questions explain little; framing explains more: subjects fully inside the photo (+0.32), medium lighting (+0.30) and a quarter to three quarters of the frame (+0.23).\",\n \"missing_data\": \"Activation maps on photos of non-dog furry mammals and of close-up versus distant dogs, to tell whether the framing effects come from where the box lands (fur at the head edge or neck) rather than from overall composition.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to dogs, especially their furry heads, ears and neck/shoulder areas, and weakly to other furry mammals such as meerkats, wolves and small mammals. Within those classes it fires more when the animal is moderately sized, fully in the frame and evenly lit.\",\n \"evidence\": \"The top classes are almost all dog breeds plus meerkat and white wolf, and within classes dog photos beat other furry mammals (d +0.23 vs -0.35, separation percentile 98), which matches 'dogs plus weaker furry mammals'. Head view and fur-length questions explain little; framing explains more: subjects fully inside the photo (+0.32), medium lighting (+0.30) and a quarter to three quarters of the frame (+0.23).\",\n \"missing_data\": \"Activation maps on photos of non-dog furry mammals and of close-up versus distant dogs, to tell whether the framing effects come from where the box lands (fur at the head edge or neck) rather than from overall composition.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to dogs, especially furry dog heads and fore-bodies, with weaker responses to other furry mammals and canid-like animals such as meerkats and wolves. Within its top classes it is somewhat more active when the dog is moderately sized, fully in frame, off-center (left) and in medium lighting, rather than when it is a large close-up.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to dogs, especially furry dog heads and fore-bodies, with weaker responses to other furry mammals and canid-like animals such as meerkats and wolves. Within its top classes it is somewhat more active when the dog is moderately sized, fully in frame, off-center (left) and in medium lighting, rather than when it is a large close-up.",
+   "evidence": "Its top classes are almost all dog breeds plus a meerkat and a wolf, and within classes dogs score higher than other furry mammals (d +0.23 vs -0.35, separation percentile 98). Head view and fur length don't separate photos, while framing does: fully inside the photo d +0.32, left third d +0.89, more than three quarters of the frame d -0.24.",
+   "missing_data": "Activation maps showing where in the image the unit fires (fur at the head or neck versus the whole animal), plus activations on non-dog furry mammals outside the top classes.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f580ff40d04eaea9fe580396a76df7587b5020b81849d6178f9971227dcd922d",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to dogs, especially furry dog heads and fore-bodies, with weaker responses to other furry mammals and canid-like animals such as meerkats and wolves. Within its top classes it is somewhat more active when the dog is moderately sized, fully in frame, off-center (left) and in medium lighting, rather than when it is a large close-up.\", \"evidence\": \"Its top classes are almost all dog breeds plus a meerkat and a wolf, and within classes dogs score higher than other furry mammals (d +0.23 vs -0.35, separation percentile 98). Head view and fur length don't separate photos, while framing does: fully inside the photo d +0.32, left third d +0.89, more than three quarters of the frame d -0.24.\", \"missing_data\": \"Activation maps showing where in the image the unit fires (fur at the head or neck versus the whole animal), plus activations on non-dog furry mammals outside the top classes.\", \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to dogs, especially furry dog heads and fore-bodies, with weaker responses to other furry mammals and canid-like animals such as meerkats and wolves. Within its top classes it is somewhat more active when the dog is moderately sized, fully in frame, off-center (left) and in medium lighting, rather than when it is a large close-up.\", \"evidence\": \"Its top classes are almost all dog breeds plus a meerkat and a wolf, and within classes dogs score higher than other furry mammals (d +0.23 vs -0.35, separation percentile 98). Head view and fur length don't separate photos, while framing does: fully inside the photo d +0.32, left third d +0.89, more than three quarters of the frame d -0.24.\", \"missing_data\": \"Activation maps showing where in the image the unit fires (fur at the head or neck versus the whole animal), plus activations on non-dog furry mammals outside the top classes.\", \"confidence\": 0.7}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to dogs (many breeds, plus dog-like canids such as the white wolf), and more weakly to other furry mammals such as meerkats. It is somewhat stronger when the whole animal sits in the frame at moderate size and medium lighting, rather than filling the photo as a close-up.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to dogs (many breeds, plus dog-like canids such as the white wolf), and more weakly to other furry mammals such as meerkats. It is somewhat stronger when the whole animal sits in the frame at moderate size and medium lighting, rather than filling the photo as a close-up.",
+   "evidence": "Eleven of the 12 top classes are dogs, a wolf or a meerkat. Within those classes, dog photos score above the others (d +0.23, percentile 98) and other furry mammals score below (d -0.35, percentile 2), while the fur-around-face questions (Q4 separation percentile 13, Q2 percentile 19) do not separate activity. Framing also matters: subject fully inside the photo (+0.32), left-third placement (+0.89 on only 8 photos), medium lighting (+0.30), and a negative effect when the subject fills more than three quarters of the photo (-0.24).",
+   "missing_data": "Activation maps showing where on the image the unit fires (face fur vs whole body vs background), and an explanation for why lab coat is a top class (for example, white fabric texture or dogs appearing in those photos).",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "81b953e43732c4081d683d124ffb51cc6878a7c617641b87ea12b6a125a0bac5",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs (many breeds, plus dog-like canids such as the white wolf), and more weakly to other furry mammals such as meerkats. It is somewhat stronger when the whole animal sits in the frame at moderate size and medium lighting, rather than filling the photo as a close-up.\",\n \"evidence\": \"Eleven of the 12 top classes are dogs, a wolf or a meerkat. Within those classes, dog photos score above the others (d +0.23, percentile 98) and other furry mammals score below (d -0.35, percentile 2), while the fur-around-face questions (Q4 separation percentile 13, Q2 percentile 19) do not separate activity. Framing also matters: subject fully inside the photo (+0.32), left-third placement (+0.89 on only 8 photos), medium lighting (+0.30), and a negative effect when the subject fills more than three quarters of the photo (-0.24).\",\n \"missing_data\": \"Activation maps showing where on the image the unit fires (face fur vs whole body vs background), and an explanation for why lab coat is a top class (for example, white fabric texture or dogs appearing in those photos).\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs (many breeds, plus dog-like canids such as the white wolf), and more weakly to other furry mammals such as meerkats. It is somewhat stronger when the whole animal sits in the frame at moderate size and medium lighting, rather than filling the photo as a close-up.\",\n \"evidence\": \"Eleven of the 12 top classes are dogs, a wolf or a meerkat. Within those classes, dog photos score above the others (d +0.23, percentile 98) and other furry mammals score below (d -0.35, percentile 2), while the fur-around-face questions (Q4 separation percentile 13, Q2 percentile 19) do not separate activity. Framing also matters: subject fully inside the photo (+0.32), left-third placement (+0.89 on only 8 photos), medium lighting (+0.30), and a negative effect when the subject fills more than three quarters of the photo (-0.24).\",\n \"missing_data\": \"Activation maps showing where on the image the unit fires (face fur vs whole body vs background), and an explanation for why lab coat is a top class (for example, white fabric texture or dogs appearing in those photos).\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ }
+}

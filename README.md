@@ -736,3 +736,47 @@ Mean judge (direction named), real / null / round-24 CP:
 - Side check (profile caches, no new run): mirror retention on the 20 strongest photos puts 431 at the 0.4th
   percentile of 4b and 384 at the 0.2nd, but 443 at the 60th and 429 at the 7th. A profile shown to the question
   writer would prompt a direction question for 431, not for 443.
+
+## Round 26A: the invariance profile across the activation range (`tools/rangeprofile.py`)
+
+Profile caches (1000 random photos, all channels), per channel in three strata of its own photos by rank (1-20,
+21-100, 101-300): median retention and median change |t - o| / max, each as a percentile in the layer. No Claude
+calls. `runs/rangeprofile/`. Mirror, percentiles by stratum (change; retention):
+
+    4b:443  change 94 / 98 / 95   retention 60 / 1.2 / 0.8    (oriented, 23B)
+    4b:429  change 95 / 95 / 92   retention 7.4 / 4.7 / 1.4   (oriented)
+    4b:431  change 99.8 / 99 / 98 retention 0.4 / 1.4 / 2.9   (oriented)
+    4b:384  change 99.6 / 99.8 / 97                            (oriented)
+    8 not-oriented units: change below 95 in every stratum
+
+- Held: 2 (431, 384 at the top), 3 (8 of 8 not-oriented below 95). Failed: 1 (429's change peaks at 94.7 below the
+  top), 4 (over whole layers, mirror change tracks round 23B's |d| on dogs weakly: Spearman 0.02-0.16).
+- Retention, not sealed as the criterion, shows it more clearly: 443 goes from the 60th percentile on its top 20 to
+  the 1st further down. The top-20 profile hid an asymmetry that ordinary mid-range photos show.
+- Post hoc: mirror statistics pick out 4b's 25 most direction-tuned channels (23B) with AUC about 0.8 in every
+  stratum, but only 0.45-0.6 in 4c-4e.
+
+## Round 26B: a standing question set from what training treats as irrelevant (`tools/proploop2.py`)
+
+A tool-less agent, told only "ways photos of a class differ that training treats as irrelevant, e.g. augmentation",
+wrote 8 questions (`authors/standing.reply.json`): facing (left / right / toward or away / none), size, cut off,
+horizontal position, lighting, tint, tilt, sharpness. Asked for every round-25 unit on its 120 photos, on top of its
+8 own questions; same statistics, tables and revisions. `runs/proploop2/`. The facing question, d percentiles:
+
+    unit     left   right  toward/away   eta2 pct   23B preference
+    4b:431   0.2    81     92            92         right
+    4b:443   0.0    65     97.5          99.6       right
+    4b:429   12     0.2    99            99.2       left
+    4d:409   98     80     1.1           99.4       none
+    4b:373   97     94     0.2           99.8       none
+
+- Held: 5 (the standing set has a facing question), 7 (443, 429 eta2 >= 95), 11 (car parts 5.0, 4.67). Failed: 6 (no
+  preferred side at >= 90: with frontal faces in the "rest", the preference shows as the other side at 0.0-0.2), 8
+  (373 and 4d:409 stand out through "toward or away", their front views), 9 (real tables: direction named 0 of 9;
+  null tables: 3 of 9, all 443, from a chance 97.7 on "right"), 10 (443, 429 stay at 1.33).
+- Post hoc, a right-versus-left contrast among side-facing photos only: 431 +0.75 (99.4th), 443 +1.12 (99.8th), 429
+  -0.84 (0.8th). All three directions of 23B, at the extremes of their layer, from 120 photos and a question no one
+  aimed at them. The five units without a known preference: 8th to 91st.
+- So the generic question set finds it; the table format loses it (one-vs-rest against a frontal majority), and the
+  reviser reads only high positive entries: it ignores "left: 0.0th" in the real table and names "right" from a
+  chance 97.7 in the null one.

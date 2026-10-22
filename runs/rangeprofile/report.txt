@@ -1,0 +1,157 @@
+Invariance profile in strata of each channel's P0 photos with original value o above 0, highest first: s1 ranks 1-20, s2 ranks 21-100, s3 ranks 101-300 (n/a: the channel has fewer such photos than the last rank). ret = median of t / o (t transformed); chg = median of |t - o| / M (M = the channel's max of o over P0); pct = 100 x the share of the layer's channels with a finite value strictly below. Label on the chg pct: >= 95 CHANGES_MORE, <= 5 CHANGES_LESS, else TYPICAL; n/a MISSING.
+
+== mixed4b:431  P0 photos above 0: 1000 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.725 pct 11.1 chg 0.214 pct 88.3 TYPICAL | s2 ret 0.846 pct 31.8 chg 0.079 pct 57.2 TYPICAL | s3 ret 0.827 pct 17.6 chg 0.067 pct 74.0 TYPICAL
+low_pass                      s1 ret 0.295 pct 32.6 chg 0.580 pct 78.9 TYPICAL | s2 ret 0.391 pct 43.6 chg 0.335 pct 51.8 TYPICAL | s3 ret 0.467 pct 46.3 chg 0.207 pct 41.0 TYPICAL
+high_pass                     s1 ret 0.645 pct 16.8 chg 0.296 pct 86.1 TYPICAL | s2 ret 0.717 pct 25.6 chg 0.161 pct 74.0 TYPICAL | s3 ret 0.759 pct 27.7 chg 0.093 pct 63.7 TYPICAL
+phase_scramble                s1 ret 0.111 pct 34.0 chg 0.731 pct 83.2 TYPICAL | s2 ret 0.187 pct 44.1 chg 0.449 pct 52.0 TYPICAL | s3 ret 0.259 pct 49.6 chg 0.286 pct 40.2 TYPICAL
+patch_shuffle_4x4             s1 ret 0.402 pct 2.5 chg 0.455 pct 98.2 CHANGES_MORE | s2 ret 0.508 pct 2.9 chg 0.266 pct 96.7 CHANGES_MORE | s3 ret 0.590 pct 2.7 chg 0.161 pct 94.9 TYPICAL
+rotate_90                     s1 ret 0.493 pct 15.8 chg 0.407 pct 87.3 TYPICAL | s2 ret 0.688 pct 29.9 chg 0.184 pct 71.7 TYPICAL | s3 ret 0.804 pct 32.8 chg 0.100 pct 63.1 TYPICAL
+edge_map                      s1 ret 0.245 pct 19.1 chg 0.605 pct 84.6 TYPICAL | s2 ret 0.401 pct 30.3 chg 0.321 pct 67.2 TYPICAL | s3 ret 0.572 pct 36.5 chg 0.160 pct 54.1 TYPICAL
+luminance_polarity_inversion  s1 ret 0.734 pct 31.6 chg 0.201 pct 65.0 TYPICAL | s2 ret 0.790 pct 27.1 chg 0.119 pct 66.8 TYPICAL | s3 ret 0.854 pct 29.1 chg 0.067 pct 43.8 TYPICAL
+rotate_180                    s1 ret 0.399 pct 3.1 chg 0.479 pct 97.3 CHANGES_MORE | s2 ret 0.618 pct 10.2 chg 0.204 pct 88.3 TYPICAL | s3 ret 0.754 pct 10.4 chg 0.101 pct 79.7 TYPICAL
+mirror                        s1 ret 0.406 pct 0.4 chg 0.494 pct 99.8 CHANGES_MORE | s2 ret 0.735 pct 1.4 chg 0.178 pct 98.8 CHANGES_MORE | s3 ret 0.869 pct 2.9 chg 0.110 pct 98.0 CHANGES_MORE
+
+== mixed4b:443  P0 photos above 0: 986 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.831 pct 36.3 chg 0.122 pct 58.6 TYPICAL | s2 ret 0.830 pct 25.6 chg 0.065 pct 42.4 TYPICAL | s3 ret 0.843 pct 23.2 chg 0.034 pct 8.2 TYPICAL
+low_pass                      s1 ret 0.331 pct 40.2 chg 0.495 pct 52.5 TYPICAL | s2 ret 0.321 pct 26.6 chg 0.256 pct 19.1 TYPICAL | s3 ret 0.467 pct 45.9 chg 0.098 pct 6.2 TYPICAL
+high_pass                     s1 ret 0.676 pct 21.5 chg 0.267 pct 80.5 TYPICAL | s2 ret 0.573 pct 5.5 chg 0.178 pct 81.2 TYPICAL | s3 ret 0.558 pct 3.9 chg 0.078 pct 49.4 TYPICAL
+phase_scramble                s1 ret 0.038 pct 10.7 chg 0.711 pct 75.2 TYPICAL | s2 ret 0.064 pct 13.3 chg 0.362 pct 22.1 TYPICAL | s3 ret 0.151 pct 28.1 chg 0.154 pct 8.0 TYPICAL
+patch_shuffle_4x4             s1 ret 0.384 pct 1.2 chg 0.452 pct 98.0 CHANGES_MORE | s2 ret 0.485 pct 1.2 chg 0.225 pct 90.6 TYPICAL | s3 ret 0.600 pct 3.3 chg 0.080 pct 57.6 TYPICAL
+rotate_90                     s1 ret 0.377 pct 6.2 chg 0.477 pct 95.1 CHANGES_MORE | s2 ret 0.444 pct 2.3 chg 0.219 pct 84.0 TYPICAL | s3 ret 0.555 pct 1.4 chg 0.090 pct 52.1 TYPICAL
+edge_map                      s1 ret 0.062 pct 3.5 chg 0.681 pct 94.3 TYPICAL | s2 ret 0.072 pct 2.7 chg 0.375 pct 78.3 TYPICAL | s3 ret 0.157 pct 3.3 chg 0.150 pct 50.4 TYPICAL
+luminance_polarity_inversion  s1 ret 0.539 pct 7.8 chg 0.350 pct 92.4 TYPICAL | s2 ret 0.659 pct 7.4 chg 0.155 pct 84.4 TYPICAL | s3 ret 0.773 pct 8.6 chg 0.049 pct 10.4 TYPICAL
+rotate_180                    s1 ret 0.272 pct 0.4 chg 0.548 pct 99.4 CHANGES_MORE | s2 ret 0.459 pct 0.6 chg 0.217 pct 91.6 TYPICAL | s3 ret 0.628 pct 1.0 chg 0.079 pct 51.0 TYPICAL
+mirror                        s1 ret 0.959 pct 60.0 chg 0.142 pct 94.3 TYPICAL | s2 ret 0.725 pct 1.2 chg 0.147 pct 97.7 CHANGES_MORE | s3 ret 0.806 pct 0.8 chg 0.076 pct 94.5 TYPICAL
+
+== mixed4b:429  P0 photos above 0: 996 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.810 pct 26.2 chg 0.135 pct 66.0 TYPICAL | s2 ret 0.832 pct 26.6 chg 0.075 pct 52.3 TYPICAL | s3 ret 0.891 pct 44.5 chg 0.029 pct 3.5 CHANGES_LESS
+low_pass                      s1 ret 0.322 pct 38.3 chg 0.493 pct 52.1 TYPICAL | s2 ret 0.324 pct 27.3 chg 0.278 pct 27.5 TYPICAL | s3 ret 0.510 pct 58.2 chg 0.099 pct 6.8 TYPICAL
+high_pass                     s1 ret 0.627 pct 14.1 chg 0.301 pct 87.5 TYPICAL | s2 ret 0.596 pct 8.4 chg 0.187 pct 83.0 TYPICAL | s3 ret 0.552 pct 3.5 chg 0.090 pct 60.7 TYPICAL
+phase_scramble                s1 ret 0.030 pct 9.2 chg 0.678 pct 64.6 TYPICAL | s2 ret 0.072 pct 16.0 chg 0.404 pct 36.1 TYPICAL | s3 ret 0.137 pct 24.8 chg 0.171 pct 10.0 TYPICAL
+patch_shuffle_4x4             s1 ret 0.472 pct 4.1 chg 0.422 pct 96.7 CHANGES_MORE | s2 ret 0.529 pct 3.5 chg 0.197 pct 85.4 TYPICAL | s3 ret 0.660 pct 8.8 chg 0.073 pct 46.5 TYPICAL
+rotate_90                     s1 ret 0.359 pct 4.5 chg 0.470 pct 94.5 TYPICAL | s2 ret 0.427 pct 1.8 chg 0.250 pct 90.4 TYPICAL | s3 ret 0.667 pct 5.1 chg 0.071 pct 24.4 TYPICAL
+edge_map                      s1 ret 0.047 pct 2.7 chg 0.669 pct 93.0 TYPICAL | s2 ret 0.061 pct 1.8 chg 0.389 pct 81.1 TYPICAL | s3 ret 0.126 pct 2.7 chg 0.169 pct 58.0 TYPICAL
+luminance_polarity_inversion  s1 ret 0.556 pct 9.2 chg 0.306 pct 88.7 TYPICAL | s2 ret 0.678 pct 9.2 chg 0.153 pct 83.8 TYPICAL | s3 ret 0.760 pct 7.2 chg 0.051 pct 12.7 TYPICAL
+rotate_180                    s1 ret 0.378 pct 2.5 chg 0.494 pct 97.7 CHANGES_MORE | s2 ret 0.521 pct 1.8 chg 0.209 pct 90.2 TYPICAL | s3 ret 0.613 pct 0.6 chg 0.084 pct 60.0 TYPICAL
+mirror                        s1 ret 0.877 pct 7.4 chg 0.168 pct 95.3 CHANGES_MORE | s2 ret 0.850 pct 4.7 chg 0.118 pct 94.7 TYPICAL | s3 ret 0.836 pct 1.4 chg 0.065 pct 92.2 TYPICAL
+
+== mixed4b:384  P0 photos above 0: 998 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.807 pct 25.2 chg 0.133 pct 65.4 TYPICAL | s2 ret 0.826 pct 24.0 chg 0.074 pct 51.8 TYPICAL | s3 ret 0.891 pct 44.9 chg 0.033 pct 6.8 TYPICAL
+low_pass                      s1 ret 0.383 pct 55.5 chg 0.485 pct 48.2 TYPICAL | s2 ret 0.441 pct 57.6 chg 0.226 pct 12.1 TYPICAL | s3 ret 0.602 pct 77.7 chg 0.082 pct 2.9 CHANGES_LESS
+high_pass                     s1 ret 0.584 pct 8.6 chg 0.300 pct 87.1 TYPICAL | s2 ret 0.621 pct 10.4 chg 0.168 pct 76.6 TYPICAL | s3 ret 0.693 pct 14.3 chg 0.070 pct 40.0 TYPICAL
+phase_scramble                s1 ret 0.032 pct 9.4 chg 0.683 pct 66.2 TYPICAL | s2 ret 0.078 pct 17.2 chg 0.374 pct 25.2 TYPICAL | s3 ret 0.133 pct 23.6 chg 0.173 pct 10.4 TYPICAL
+patch_shuffle_4x4             s1 ret 0.370 pct 0.6 chg 0.456 pct 98.6 CHANGES_MORE | s2 ret 0.488 pct 1.6 chg 0.212 pct 88.7 TYPICAL | s3 ret 0.562 pct 1.4 chg 0.092 pct 69.9 TYPICAL
+rotate_90                     s1 ret 0.335 pct 3.7 chg 0.464 pct 93.8 TYPICAL | s2 ret 0.463 pct 2.9 chg 0.212 pct 82.0 TYPICAL | s3 ret 0.719 pct 12.3 chg 0.072 pct 25.6 TYPICAL
+edge_map                      s1 ret 0.081 pct 3.7 chg 0.675 pct 93.6 TYPICAL | s2 ret 0.167 pct 6.4 chg 0.342 pct 71.7 TYPICAL | s3 ret 0.274 pct 8.6 chg 0.150 pct 50.0 TYPICAL
+luminance_polarity_inversion  s1 ret 0.606 pct 12.3 chg 0.285 pct 84.6 TYPICAL | s2 ret 0.716 pct 13.1 chg 0.115 pct 64.1 TYPICAL | s3 ret 0.824 pct 18.6 chg 0.044 pct 6.1 TYPICAL
+rotate_180                    s1 ret 0.243 pct 0.0 chg 0.550 pct 99.6 CHANGES_MORE | s2 ret 0.375 pct 0.0 chg 0.240 pct 94.9 TYPICAL | s3 ret 0.651 pct 1.6 chg 0.086 pct 63.5 TYPICAL
+mirror                        s1 ret 0.383 pct 0.2 chg 0.440 pct 99.6 CHANGES_MORE | s2 ret 0.418 pct 0.0 chg 0.258 pct 99.8 CHANGES_MORE | s3 ret 0.744 pct 0.4 chg 0.093 pct 96.5 CHANGES_MORE
+
+== mixed4b:409  P0 photos above 0: 947 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.833 pct 37.1 chg 0.119 pct 57.2 TYPICAL | s2 ret 0.836 pct 27.9 chg 0.081 pct 59.0 TYPICAL | s3 ret 0.860 pct 27.5 chg 0.036 pct 10.9 TYPICAL
+low_pass                      s1 ret 0.423 pct 64.5 chg 0.488 pct 49.4 TYPICAL | s2 ret 0.343 pct 32.2 chg 0.302 pct 36.9 TYPICAL | s3 ret 0.490 pct 52.0 chg 0.110 pct 8.8 TYPICAL
+high_pass                     s1 ret 0.519 pct 5.1 chg 0.392 pct 95.5 CHANGES_MORE | s2 ret 0.520 pct 3.5 chg 0.227 pct 90.2 TYPICAL | s3 ret 0.499 pct 1.6 chg 0.112 pct 77.1 TYPICAL
+phase_scramble                s1 ret 0.000 pct 0.0 chg 0.721 pct 79.7 TYPICAL | s2 ret 0.000 pct 0.0 chg 0.442 pct 48.8 TYPICAL | s3 ret 0.000 pct 0.0 chg 0.219 pct 19.3 TYPICAL
+patch_shuffle_4x4             s1 ret 0.533 pct 10.2 chg 0.370 pct 91.6 TYPICAL | s2 ret 0.551 pct 5.3 chg 0.204 pct 87.1 TYPICAL | s3 ret 0.681 pct 10.5 chg 0.071 pct 43.2 TYPICAL
+rotate_90                     s1 ret 0.403 pct 8.6 chg 0.434 pct 89.8 TYPICAL | s2 ret 0.486 pct 4.1 chg 0.209 pct 80.9 TYPICAL | s3 ret 0.759 pct 20.5 chg 0.067 pct 15.0 TYPICAL
+edge_map                      s1 ret 0.040 pct 2.0 chg 0.706 pct 96.3 CHANGES_MORE | s2 ret 0.069 pct 2.5 chg 0.411 pct 86.1 TYPICAL | s3 ret 0.169 pct 3.9 chg 0.174 pct 60.0 TYPICAL
+luminance_polarity_inversion  s1 ret 0.471 pct 3.7 chg 0.397 pct 95.1 CHANGES_MORE | s2 ret 0.594 pct 3.9 chg 0.184 pct 92.2 TYPICAL | s3 ret 0.720 pct 3.9 chg 0.067 pct 42.6 TYPICAL
+rotate_180                    s1 ret 0.318 pct 0.8 chg 0.504 pct 98.2 CHANGES_MORE | s2 ret 0.506 pct 1.0 chg 0.224 pct 92.4 TYPICAL | s3 ret 0.738 pct 8.4 chg 0.067 pct 24.4 TYPICAL
+mirror                        s1 ret 1.010 pct 95.3 chg 0.063 pct 46.1 TYPICAL | s2 ret 0.951 pct 36.1 chg 0.048 pct 28.1 TYPICAL | s3 ret 0.950 pct 15.4 chg 0.033 pct 8.4 TYPICAL
+
+== mixed4b:418  P0 photos above 0: 971 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.778 pct 18.8 chg 0.129 pct 62.5 TYPICAL | s2 ret 0.749 pct 11.7 chg 0.080 pct 58.2 TYPICAL | s3 ret 0.784 pct 11.9 chg 0.038 pct 17.8 TYPICAL
+low_pass                      s1 ret 0.150 pct 4.9 chg 0.503 pct 55.7 TYPICAL | s2 ret 0.144 pct 3.1 chg 0.256 pct 19.9 TYPICAL | s3 ret 0.206 pct 5.5 chg 0.134 pct 14.1 TYPICAL
+high_pass                     s1 ret 0.676 pct 21.1 chg 0.191 pct 58.2 TYPICAL | s2 ret 0.590 pct 7.8 chg 0.124 pct 55.9 TYPICAL | s3 ret 0.578 pct 5.3 chg 0.069 pct 39.1 TYPICAL
+phase_scramble                s1 ret 0.046 pct 12.7 chg 0.552 pct 24.2 TYPICAL | s2 ret 0.089 pct 19.9 chg 0.281 pct 8.0 TYPICAL | s3 ret 0.182 pct 34.0 chg 0.137 pct 5.9 TYPICAL
+patch_shuffle_4x4             s1 ret 0.529 pct 9.4 chg 0.309 pct 79.3 TYPICAL | s2 ret 0.647 pct 16.8 chg 0.118 pct 50.2 TYPICAL | s3 ret 0.698 pct 13.3 chg 0.055 pct 7.2 TYPICAL
+rotate_90                     s1 ret 0.305 pct 2.3 chg 0.418 pct 88.9 TYPICAL | s2 ret 0.430 pct 2.0 chg 0.179 pct 68.8 TYPICAL | s3 ret 0.617 pct 2.9 chg 0.068 pct 17.2 TYPICAL
+edge_map                      s1 ret 0.082 pct 3.9 chg 0.537 pct 74.8 TYPICAL | s2 ret 0.148 pct 5.3 chg 0.267 pct 52.5 TYPICAL | s3 ret 0.261 pct 7.8 chg 0.122 pct 38.5 TYPICAL
+luminance_polarity_inversion  s1 ret 0.534 pct 7.4 chg 0.300 pct 87.7 TYPICAL | s2 ret 0.608 pct 4.3 chg 0.127 pct 70.7 TYPICAL | s3 ret 0.668 pct 1.8 chg 0.057 pct 24.2 TYPICAL
+rotate_180                    s1 ret 0.261 pct 0.2 chg 0.449 pct 95.9 CHANGES_MORE | s2 ret 0.406 pct 0.2 chg 0.198 pct 87.1 TYPICAL | s3 ret 0.529 pct 0.0 chg 0.073 pct 37.7 TYPICAL
+mirror                        s1 ret 0.961 pct 62.3 chg 0.043 pct 11.9 TYPICAL | s2 ret 0.966 pct 63.9 chg 0.043 pct 15.6 TYPICAL | s3 ret 0.918 pct 5.7 chg 0.032 pct 7.4 TYPICAL
+
+== mixed4c:254  P0 photos above 0: 997 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.857 pct 57.6 chg 0.125 pct 49.4 TYPICAL | s2 ret 0.907 pct 76.4 chg 0.066 pct 31.4 TYPICAL | s3 ret 0.916 pct 72.9 chg 0.054 pct 43.2 TYPICAL
+low_pass                      s1 ret 0.229 pct 19.3 chg 0.626 pct 88.5 TYPICAL | s2 ret 0.255 pct 15.6 chg 0.463 pct 93.2 TYPICAL | s3 ret 0.293 pct 14.5 chg 0.327 pct 90.2 TYPICAL
+high_pass                     s1 ret 0.997 pct 98.2 chg 0.054 pct 2.3 CHANGES_LESS | s2 ret 1.037 pct 98.4 chg 0.061 pct 7.8 TYPICAL | s3 ret 1.077 pct 98.4 chg 0.053 pct 13.9 TYPICAL
+phase_scramble                s1 ret 0.056 pct 27.7 chg 0.745 pct 82.8 TYPICAL | s2 ret 0.064 pct 23.4 chg 0.569 pct 88.3 TYPICAL | s3 ret 0.112 pct 28.1 chg 0.395 pct 81.2 TYPICAL
+patch_shuffle_4x4             s1 ret 0.676 pct 47.5 chg 0.270 pct 61.1 TYPICAL | s2 ret 0.689 pct 28.1 chg 0.201 pct 83.8 TYPICAL | s3 ret 0.771 pct 25.6 chg 0.117 pct 84.4 TYPICAL
+rotate_90                     s1 ret 0.494 pct 24.8 chg 0.447 pct 88.1 TYPICAL | s2 ret 0.628 pct 29.3 chg 0.243 pct 87.5 TYPICAL | s3 ret 0.731 pct 22.3 chg 0.146 pct 95.1 CHANGES_MORE
+edge_map                      s1 ret 0.755 pct 96.9 chg 0.246 pct 6.2 TYPICAL | s2 ret 0.921 pct 97.3 chg 0.144 pct 10.5 TYPICAL | s3 ret 1.027 pct 93.9 chg 0.126 pct 32.0 TYPICAL
+luminance_polarity_inversion  s1 ret 0.878 pct 86.7 chg 0.094 pct 10.7 TYPICAL | s2 ret 0.884 pct 82.8 chg 0.090 pct 26.6 TYPICAL | s3 ret 0.865 pct 49.8 chg 0.084 pct 67.0 TYPICAL
+rotate_180                    s1 ret 0.580 pct 28.7 chg 0.324 pct 71.7 TYPICAL | s2 ret 0.716 pct 35.2 chg 0.191 pct 78.7 TYPICAL | s3 ret 0.836 pct 44.3 chg 0.118 pct 89.8 TYPICAL
+mirror                        s1 ret 0.919 pct 16.8 chg 0.077 pct 74.4 TYPICAL | s2 ret 0.945 pct 31.6 chg 0.067 pct 80.7 TYPICAL | s3 ret 0.967 pct 43.0 chg 0.056 pct 86.9 TYPICAL
+
+== mixed4c:407  P0 photos above 0: 999 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.821 pct 38.5 chg 0.148 pct 65.6 TYPICAL | s2 ret 0.798 pct 24.4 chg 0.122 pct 79.1 TYPICAL | s3 ret 0.839 pct 29.5 chg 0.061 pct 54.9 TYPICAL
+low_pass                      s1 ret 0.297 pct 42.2 chg 0.550 pct 67.2 TYPICAL | s2 ret 0.379 pct 49.6 chg 0.337 pct 48.6 TYPICAL | s3 ret 0.486 pct 58.6 chg 0.178 pct 28.1 TYPICAL
+high_pass                     s1 ret 0.686 pct 33.2 chg 0.256 pct 72.9 TYPICAL | s2 ret 0.662 pct 22.7 chg 0.195 pct 79.5 TYPICAL | s3 ret 0.684 pct 17.4 chg 0.106 pct 66.6 TYPICAL
+phase_scramble                s1 ret 0.063 pct 30.1 chg 0.727 pct 76.0 TYPICAL | s2 ret 0.110 pct 35.4 chg 0.499 pct 66.6 TYPICAL | s3 ret 0.168 pct 41.2 chg 0.291 pct 42.0 TYPICAL
+patch_shuffle_4x4             s1 ret 0.689 pct 51.4 chg 0.275 pct 62.5 TYPICAL | s2 ret 0.641 pct 19.7 chg 0.199 pct 82.8 TYPICAL | s3 ret 0.742 pct 20.7 chg 0.093 pct 69.1 TYPICAL
+rotate_90                     s1 ret 0.459 pct 19.1 chg 0.482 pct 93.2 TYPICAL | s2 ret 0.580 pct 17.4 chg 0.246 pct 88.9 TYPICAL | s3 ret 0.719 pct 18.0 chg 0.107 pct 64.8 TYPICAL
+edge_map                      s1 ret 0.255 pct 30.9 chg 0.590 pct 76.2 TYPICAL | s2 ret 0.300 pct 24.4 chg 0.401 pct 81.1 TYPICAL | s3 ret 0.495 pct 35.9 chg 0.167 pct 50.4 TYPICAL
+luminance_polarity_inversion  s1 ret 0.668 pct 24.6 chg 0.256 pct 77.3 TYPICAL | s2 ret 0.749 pct 26.0 chg 0.145 pct 74.8 TYPICAL | s3 ret 0.816 pct 26.4 chg 0.075 pct 50.2 TYPICAL
+rotate_180                    s1 ret 0.405 pct 8.2 chg 0.477 pct 94.3 TYPICAL | s2 ret 0.540 pct 7.6 chg 0.261 pct 95.7 CHANGES_MORE | s3 ret 0.681 pct 5.7 chg 0.121 pct 91.0 TYPICAL
+mirror                        s1 ret 0.892 pct 7.4 chg 0.086 pct 84.2 TYPICAL | s2 ret 0.966 pct 63.1 chg 0.041 pct 11.1 TYPICAL | s3 ret 0.960 pct 29.3 chg 0.038 pct 19.1 TYPICAL
+
+== mixed4b:237  P0 photos above 0: 996 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.854 pct 45.9 chg 0.105 pct 50.4 TYPICAL | s2 ret 0.788 pct 14.6 chg 0.111 pct 79.5 TYPICAL | s3 ret 0.841 pct 22.7 chg 0.059 pct 60.9 TYPICAL
+low_pass                      s1 ret 0.260 pct 23.2 chg 0.566 pct 74.8 TYPICAL | s2 ret 0.268 pct 16.6 chg 0.364 pct 62.5 TYPICAL | s3 ret 0.279 pct 12.5 chg 0.262 pct 66.0 TYPICAL
+high_pass                     s1 ret 0.791 pct 50.4 chg 0.153 pct 44.7 TYPICAL | s2 ret 0.776 pct 40.4 chg 0.111 pct 47.5 TYPICAL | s3 ret 0.838 pct 50.6 chg 0.062 pct 30.5 TYPICAL
+phase_scramble                s1 ret 0.000 pct 0.0 chg 0.710 pct 74.8 TYPICAL | s2 ret 0.000 pct 0.0 chg 0.496 pct 66.2 TYPICAL | s3 ret 0.000 pct 0.0 chg 0.358 pct 66.6 TYPICAL
+patch_shuffle_4x4             s1 ret 0.669 pct 38.7 chg 0.234 pct 56.2 TYPICAL | s2 ret 0.772 pct 42.0 chg 0.115 pct 48.0 TYPICAL | s3 ret 0.816 pct 33.4 chg 0.081 pct 59.8 TYPICAL
+rotate_90                     s1 ret 0.329 pct 3.1 chg 0.452 pct 91.6 TYPICAL | s2 ret 0.489 pct 4.5 chg 0.253 pct 91.6 TYPICAL | s3 ret 0.605 pct 2.3 chg 0.145 pct 93.6 TYPICAL
+edge_map                      s1 ret 0.573 pct 70.3 chg 0.294 pct 22.3 TYPICAL | s2 ret 0.707 pct 74.6 chg 0.140 pct 15.6 TYPICAL | s3 ret 0.912 pct 81.1 chg 0.067 pct 3.5 CHANGES_LESS
+luminance_polarity_inversion  s1 ret 0.801 pct 48.6 chg 0.137 pct 39.8 TYPICAL | s2 ret 0.820 pct 39.1 chg 0.098 pct 46.1 TYPICAL | s3 ret 0.825 pct 18.8 chg 0.068 pct 45.9 TYPICAL
+rotate_180                    s1 ret 0.499 pct 10.0 chg 0.357 pct 86.5 TYPICAL | s2 ret 0.667 pct 16.2 chg 0.163 pct 76.6 TYPICAL | s3 ret 0.708 pct 5.3 chg 0.120 pct 91.2 TYPICAL
+mirror                        s1 ret 0.955 pct 55.7 chg 0.044 pct 15.2 TYPICAL | s2 ret 0.963 pct 60.2 chg 0.040 pct 10.4 TYPICAL | s3 ret 0.944 pct 10.9 chg 0.045 pct 43.0 TYPICAL
+
+== mixed4b:373  P0 photos above 0: 994 of 1000; layer channels with s1/s2/s3: 512/512/512 of 512
+grayscale                     s1 ret 0.931 pct 81.1 chg 0.055 pct 16.0 TYPICAL | s2 ret 1.000 pct 97.9 chg 0.024 pct 0.4 CHANGES_LESS | s3 ret 1.009 pct 96.9 chg 0.023 pct 0.2 CHANGES_LESS
+low_pass                      s1 ret 0.314 pct 35.9 chg 0.517 pct 60.5 TYPICAL | s2 ret 0.358 pct 35.7 chg 0.187 pct 6.6 TYPICAL | s3 ret 0.410 pct 34.2 chg 0.117 pct 10.7 TYPICAL
+high_pass                     s1 ret 0.831 pct 62.5 chg 0.141 pct 40.6 TYPICAL | s2 ret 0.772 pct 39.3 chg 0.068 pct 19.9 TYPICAL | s3 ret 0.660 pct 10.7 chg 0.068 pct 36.9 TYPICAL
+phase_scramble                s1 ret 0.009 pct 6.2 chg 0.723 pct 80.9 TYPICAL | s2 ret 0.004 pct 5.1 chg 0.287 pct 8.8 TYPICAL | s3 ret 0.000 pct 0.0 chg 0.187 pct 12.9 TYPICAL
+patch_shuffle_4x4             s1 ret 0.625 pct 26.2 chg 0.302 pct 77.1 TYPICAL | s2 ret 0.727 pct 30.9 chg 0.077 pct 15.4 TYPICAL | s3 ret 0.812 pct 32.0 chg 0.041 pct 0.2 CHANGES_LESS
+rotate_90                     s1 ret 0.233 pct 0.2 chg 0.575 pct 98.8 CHANGES_MORE | s2 ret 0.514 pct 5.5 chg 0.142 pct 50.2 TYPICAL | s3 ret 0.689 pct 7.0 chg 0.068 pct 16.6 TYPICAL
+edge_map                      s1 ret 0.129 pct 7.4 chg 0.625 pct 86.5 TYPICAL | s2 ret 0.208 pct 8.6 chg 0.237 pct 44.1 TYPICAL | s3 ret 0.242 pct 7.0 chg 0.140 pct 47.1 TYPICAL
+luminance_polarity_inversion  s1 ret 0.647 pct 17.4 chg 0.264 pct 80.9 TYPICAL | s2 ret 0.669 pct 8.4 chg 0.101 pct 50.2 TYPICAL | s3 ret 0.765 pct 7.8 chg 0.055 pct 19.9 TYPICAL
+rotate_180                    s1 ret 0.608 pct 23.8 chg 0.299 pct 76.4 TYPICAL | s2 ret 0.621 pct 10.5 chg 0.118 pct 48.2 TYPICAL | s3 ret 0.746 pct 9.2 chg 0.057 pct 6.8 TYPICAL
+mirror                        s1 ret 0.984 pct 82.0 chg 0.032 pct 3.1 CHANGES_LESS | s2 ret 0.963 pct 59.4 chg 0.034 pct 3.5 CHANGES_LESS | s3 ret 0.956 pct 23.0 chg 0.029 pct 2.9 CHANGES_LESS
+
+== mixed4d:409  P0 photos above 0: 877 of 1000; layer channels with s1/s2/s3: 528/528/528 of 528
+grayscale                     s1 ret 0.866 pct 62.7 chg 0.091 pct 29.2 TYPICAL | s2 ret 0.794 pct 29.0 chg 0.092 pct 58.0 TYPICAL | s3 ret 0.832 pct 36.2 chg 0.049 pct 25.4 TYPICAL
+low_pass                      s1 ret 0.319 pct 60.8 chg 0.442 pct 23.7 TYPICAL | s2 ret 0.346 pct 52.7 chg 0.289 pct 30.5 TYPICAL | s3 ret 0.393 pct 41.7 chg 0.161 pct 29.9 TYPICAL
+high_pass                     s1 ret 0.759 pct 61.9 chg 0.155 pct 29.4 TYPICAL | s2 ret 0.729 pct 49.4 chg 0.120 pct 38.4 TYPICAL | s3 ret 0.730 pct 40.3 chg 0.074 pct 33.0 TYPICAL
+phase_scramble                s1 ret 0.000 pct 0.0 chg 0.632 pct 32.0 TYPICAL | s2 ret 0.000 pct 0.0 chg 0.421 pct 34.5 TYPICAL | s3 ret 0.000 pct 0.0 chg 0.253 pct 32.8 TYPICAL
+patch_shuffle_4x4             s1 ret 0.236 pct 0.2 chg 0.463 pct 97.2 CHANGES_MORE | s2 ret 0.283 pct 0.0 chg 0.308 pct 99.1 CHANGES_MORE | s3 ret 0.367 pct 0.4 chg 0.164 pct 98.3 CHANGES_MORE
+rotate_90                     s1 ret 0.028 pct 0.0 chg 0.601 pct 98.3 CHANGES_MORE | s2 ret 0.160 pct 0.0 chg 0.374 pct 99.6 CHANGES_MORE | s3 ret 0.284 pct 0.0 chg 0.196 pct 99.4 CHANGES_MORE
+edge_map                      s1 ret 0.100 pct 20.5 chg 0.575 pct 57.4 TYPICAL | s2 ret 0.195 pct 32.0 chg 0.357 pct 54.7 TYPICAL | s3 ret 0.246 pct 29.4 chg 0.195 pct 50.9 TYPICAL
+luminance_polarity_inversion  s1 ret 0.718 pct 43.2 chg 0.179 pct 41.3 TYPICAL | s2 ret 0.736 pct 36.0 chg 0.110 pct 37.9 TYPICAL | s3 ret 0.815 pct 44.3 chg 0.064 pct 18.8 TYPICAL
+rotate_180                    s1 ret 0.378 pct 12.1 chg 0.385 pct 75.9 TYPICAL | s2 ret 0.435 pct 4.5 chg 0.239 pct 89.8 TYPICAL | s3 ret 0.551 pct 2.1 chg 0.117 pct 85.4 TYPICAL
+mirror                        s1 ret 1.009 pct 94.5 chg 0.032 pct 1.5 CHANGES_LESS | s2 ret 0.965 pct 68.0 chg 0.044 pct 15.0 TYPICAL | s3 ret 0.969 pct 65.3 chg 0.030 pct 3.6 CHANGES_LESS
+
+== mixed4e:55  P0 photos above 0: 998 of 1000; layer channels with s1/s2/s3: 832/832/832 of 832
+grayscale                     s1 ret 0.770 pct 23.9 chg 0.180 pct 79.4 TYPICAL | s2 ret 0.799 pct 25.8 chg 0.077 pct 50.1 TYPICAL | s3 ret 0.845 pct 32.1 chg 0.048 pct 31.0 TYPICAL
+low_pass                      s1 ret 0.310 pct 57.1 chg 0.471 pct 38.3 TYPICAL | s2 ret 0.369 pct 58.3 chg 0.261 pct 25.8 TYPICAL | s3 ret 0.472 pct 65.5 chg 0.136 pct 21.0 TYPICAL
+high_pass                     s1 ret 0.664 pct 33.8 chg 0.228 pct 60.5 TYPICAL | s2 ret 0.680 pct 33.2 chg 0.141 pct 59.0 TYPICAL | s3 ret 0.826 pct 58.3 chg 0.054 pct 10.9 TYPICAL
+phase_scramble                s1 ret 0.052 pct 49.3 chg 0.688 pct 66.5 TYPICAL | s2 ret 0.088 pct 52.8 chg 0.365 pct 26.2 TYPICAL | s3 ret 0.147 pct 55.5 chg 0.221 pct 29.7 TYPICAL
+patch_shuffle_4x4             s1 ret 0.618 pct 45.0 chg 0.270 pct 53.2 TYPICAL | s2 ret 0.584 pct 18.9 chg 0.173 pct 64.8 TYPICAL | s3 ret 0.705 pct 23.8 chg 0.093 pct 48.2 TYPICAL
+rotate_90                     s1 ret 0.421 pct 17.2 chg 0.432 pct 85.5 TYPICAL | s2 ret 0.432 pct 7.1 chg 0.215 pct 79.0 TYPICAL | s3 ret 0.647 pct 13.8 chg 0.097 pct 56.0 TYPICAL
+edge_map                      s1 ret 0.200 pct 43.6 chg 0.572 pct 60.9 TYPICAL | s2 ret 0.428 pct 69.4 chg 0.232 pct 22.4 TYPICAL | s3 ret 0.752 pct 83.5 chg 0.069 pct 4.1 CHANGES_LESS
+luminance_polarity_inversion  s1 ret 0.809 pct 71.5 chg 0.153 pct 31.2 TYPICAL | s2 ret 0.812 pct 61.8 chg 0.096 pct 27.2 TYPICAL | s3 ret 0.874 pct 64.8 chg 0.055 pct 9.0 TYPICAL
+rotate_180                    s1 ret 0.418 pct 9.9 chg 0.411 pct 88.3 TYPICAL | s2 ret 0.588 pct 15.6 chg 0.163 pct 66.7 TYPICAL | s3 ret 0.804 pct 42.2 chg 0.066 pct 13.2 TYPICAL
+mirror                        s1 ret 1.001 pct 91.9 chg 0.038 pct 4.9 CHANGES_LESS | s2 ret 0.949 pct 37.5 chg 0.047 pct 29.6 TYPICAL | s3 ret 0.933 pct 6.0 chg 0.031 pct 8.4 TYPICAL
+
+== mixed5a:719  P0 photos above 0: 636 of 1000; layer channels with s1/s2/s3: 832/832/832 of 832
+grayscale                     s1 ret 0.738 pct 18.6 chg 0.198 pct 82.6 TYPICAL | s2 ret 0.792 pct 32.0 chg 0.121 pct 79.4 TYPICAL | s3 ret 0.684 pct 8.4 chg 0.100 pct 92.1 TYPICAL
+low_pass                      s1 ret 0.355 pct 72.5 chg 0.481 pct 44.7 TYPICAL | s2 ret 0.387 pct 66.6 chg 0.317 pct 55.9 TYPICAL | s3 ret 0.470 pct 66.1 chg 0.153 pct 39.4 TYPICAL
+high_pass                     s1 ret 0.829 pct 80.9 chg 0.200 pct 51.0 TYPICAL | s2 ret 0.961 pct 94.2 chg 0.115 pct 37.6 TYPICAL | s3 ret 1.124 pct 95.3 chg 0.075 pct 36.5 TYPICAL
+phase_scramble                s1 ret 0.083 pct 71.3 chg 0.688 pct 64.2 TYPICAL | s2 ret 0.141 pct 75.2 chg 0.434 pct 58.1 TYPICAL | s3 ret 0.234 pct 78.7 chg 0.223 pct 41.2 TYPICAL
+patch_shuffle_4x4             s1 ret 0.615 pct 63.7 chg 0.307 pct 48.8 TYPICAL | s2 ret 0.681 pct 59.9 chg 0.163 pct 47.1 TYPICAL | s3 ret 0.909 pct 79.8 chg 0.100 pct 51.6 TYPICAL
+rotate_90                     s1 ret 0.907 pct 99.0 chg 0.116 pct 2.2 CHANGES_LESS | s2 ret 0.907 pct 98.7 chg 0.113 pct 15.9 TYPICAL | s3 ret 0.989 pct 96.6 chg 0.084 pct 32.7 TYPICAL
+edge_map                      s1 ret 0.419 pct 87.3 chg 0.483 pct 33.8 TYPICAL | s2 ret 0.629 pct 89.5 chg 0.198 pct 16.1 TYPICAL | s3 ret 0.935 pct 89.9 chg 0.105 pct 19.0 TYPICAL
+luminance_polarity_inversion  s1 ret 0.819 pct 82.3 chg 0.137 pct 20.1 TYPICAL | s2 ret 0.826 pct 75.1 chg 0.133 pct 60.3 TYPICAL | s3 ret 0.867 pct 66.3 chg 0.091 pct 66.5 TYPICAL
+rotate_180                    s1 ret 0.888 pct 97.2 chg 0.102 pct 3.2 CHANGES_LESS | s2 ret 0.957 pct 99.4 chg 0.126 pct 37.0 TYPICAL | s3 ret 1.067 pct 98.9 chg 0.114 pct 82.7 TYPICAL
+mirror                        s1 ret 0.982 pct 74.3 chg 0.064 pct 58.7 TYPICAL | s2 ret 0.970 pct 66.6 chg 0.070 pct 92.4 TYPICAL | s3 ret 0.930 pct 8.1 chg 0.061 pct 96.0 CHANGES_MORE

@@ -1,0 +1,829 @@
+== mixed4b:431  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Australian terrier (193), Greater Swiss Mountain dog (238), Blenheim spaniel (156), meerkat (299), bloodhound (163), white wolf (270), Dandie Dinmont (194), Eskimo dog (248), Appenzeller (240), Shih-Tzu (155), Sussex spaniel (220), lab coat (617)
+Q1. Does the photo show a furry mammal (e.g., dog, monkey, hyena, hamster, squirrel, mink)?
+   Yes, a dog: 95 photos, d -0.08, percentile 20.9
+   Yes, another furry mammal: 15 photos, d +0.12, percentile 78.9
+   No furry mammal: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.0015, percentile 64.3 -> WITHIN_5_95; halves 36.3, 67.6; null percentile 98.0 -> ABOVE_95
+Q2. How much of the furry mammal's head is visible?
+   Head clearly visible and prominent: 86 photos, d +0.54, percentile 84.0
+   Head partly visible or small: 22 photos, d -0.70, percentile 15.8
+   Head not visible: 2 photos (too few to compare)
+   No furry mammal in photo: 10 photos, d -0.02, percentile 26.0
+   separation: eta2 0.0763, percentile 77.1 -> WITHIN_5_95; halves 80.5, 64.6; null percentile 19.1 -> WITHIN_5_95
+Q3. How much of the image does the furry mammal's head and upper body occupy?
+   More than half the image: 50 photos, d -0.30, percentile 36.9
+   Between a quarter and half: 41 photos, d +0.75, percentile 97.9
+   Less than a quarter: 19 photos, d -0.71, percentile 16.0
+   No furry mammal in photo: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.1536, percentile 79.5 -> WITHIN_5_95; halves 90.4, 54.9; null percentile 30.9 -> WITHIN_5_95
+Q4. How furry does the area around the animal's face (cheeks, ears, neck) look?
+   Long, thick or fluffy fur: 65 photos, d -0.00, percentile 42.4
+   Short but visible fur: 45 photos, d +0.01, percentile 57.4
+   Little or no visible fur: 0 photos (too few to compare)
+   No mammal in photo: 10 photos, d -0.00, percentile 11.7
+   separation: eta2 0.0000, percentile 5.9 -> WITHIN_5_95; halves 40.6, 43.0; null percentile 13.5 -> WITHIN_5_95
+Q5. Which view of the animal's head is shown?
+   Frontal (facing camera): 68 photos, d +0.44, percentile 86.9
+   Side or three-quarter view: 36 photos, d -0.34, percentile 15.0
+   Back of head or head turned away: 5 photos, d -0.82, percentile 18.0
+   No mammal head visible: 11 photos, d -0.04, percentile 59.2
+   separation: eta2 0.0643, percentile 85.2 -> WITHIN_5_95; halves 97.5, 44.3; null percentile 0.2 -> BELOW_5
+Q6. Are the animal's ears visible and furry?
+   Yes, furry ears clearly visible: 92 photos, d +0.36, percentile 88.5
+   Ears visible but not noticeably furry: 14 photos, d -0.55, percentile 11.7
+   Ears not visible: 4 photos (too few to compare)
+   No mammal in photo: 10 photos, d -0.01, percentile 46.7
+   separation: eta2 0.0332, percentile 88.1 -> WITHIN_5_95; halves 83.8, 66.6; null percentile 58.6 -> WITHIN_5_95
+Q7. What kind of furry mammal is the main one shown?
+   Dog or dog-like canid (dog, dhole, wolf, fox): 100 photos, d -0.03, percentile 26.2
+   Primate (monkey, ape): 1 photos (too few to compare)
+   Small furry mammal (hamster, squirrel, mink, etc.): 9 photos, d +0.07, percentile 73.6
+   Other furry mammal (hyena, cat, bear, etc.): 0 photos (too few to compare)
+   No furry mammal: 10 photos, d -0.01, percentile 26.2
+   separation: eta2 0.0003, percentile 53.5 -> WITHIN_5_95; halves 64.6, 83.4; null percentile 27.0 -> WITHIN_5_95
+Q8. Is the neck/shoulder area next to the animal's face visible?
+   Yes, clearly visible: 69 photos, d +0.62, percentile 98.6
+   Partly visible: 40 photos, d -0.68, percentile 1.2
+   Not visible: 1 photos (too few to compare)
+   No mammal in photo: 10 photos, d +0.00, percentile 86.7
+   separation: eta2 0.1100, percentile 98.6 -> ABOVE_95; halves 90.2, 98.4; null percentile 75.4 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 16 photos, d -0.83, percentile 0.2
+   right: 29 photos, d +0.09, percentile 81.4
+   toward or away from the camera: 66 photos, d +0.43, percentile 92.0
+   no clear facing direction or no single main subject: 9 photos, d -0.38, percentile 21.9
+   separation: eta2 0.1013, percentile 91.6 -> WITHIN_5_95; halves 76.6, 92.8; null percentile 16.6 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 9 photos, d -0.56, percentile 37.9
+   a quarter to three quarters: 61 photos, d +0.35, percentile 70.3
+   more than three quarters: 47 photos, d -0.20, percentile 38.9
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0417, percentile 37.3 -> WITHIN_5_95; halves 42.4, 40.8; null percentile 48.8 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 24 photos, d -0.15, percentile 57.4
+   partly cut off: 93 photos, d +0.15, percentile 42.4
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0037, percentile 22.3 -> WITHIN_5_95; halves 25.0, 9.4; null percentile 86.3 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 8 photos, d +0.77, percentile 96.5
+   middle third: 99 photos, d +0.09, percentile 74.0
+   right third: 6 photos, d -0.79, percentile 0.6
+   no single main subject: 7 photos, d -0.43, percentile 19.5
+   separation: eta2 0.0729, percentile 91.2 -> WITHIN_5_95; halves 47.5, 92.4; null percentile 94.7 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 1 photos (too few to compare)
+   medium: 81 photos, d -0.37, percentile 8.0
+   bright: 35 photos, d +0.37, percentile 91.8
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0283, percentile 87.3 -> WITHIN_5_95; halves 82.2, 57.6; null percentile 94.7 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 63 photos, d +0.31, percentile 78.1
+   warm (yellow, orange or red) tint: 45 photos, d -0.21, percentile 16.6
+   cool (blue or green) tint: 6 photos, d -0.34, percentile 38.1
+   black and white or nearly colorless: 6 photos, d -0.21, percentile 76.4
+   separation: eta2 0.0251, percentile 35.4 -> WITHIN_5_95; halves 3.7, 66.4; null percentile 4.5 -> BELOW_5
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 29 photos, d +0.24, percentile 54.3
+   noticeably tilted: 10 photos, d -0.14, percentile 45.1
+   no horizon or straight lines visible: 81 photos, d -0.16, percentile 49.4
+   separation: eta2 0.0114, percentile 21.7 -> WITHIN_5_95; halves 39.3, 82.4; null percentile 52.7 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 98 photos, d +0.60, percentile 92.6
+   slightly blurry: 16 photos, d -0.61, percentile 15.0
+   very blurry: 0 photos (too few to compare)
+   no single main subject: 6 photos, d -0.42, percentile 18.6
+   separation: eta2 0.0550, percentile 76.4 -> WITHIN_5_95; halves 55.9, 68.0; null percentile 18.2 -> WITHIN_5_95
+separation percentile above 95: real 1, null 1; below 5: real 0, null 2 (of 16 questions)
+real_s1  one_plus_related  The unit responds mainly to the head-and-neck region of dogs and similar furry mammals (wolf, meerkat), most strongly when the head faces the camera, the neck/s
+real_s2  one_plus_related  The unit responds to furry mammal heads, mostly dogs, seen frontally at a moderate scale (head and upper body filling roughly a quarter to half of the image), w
+real_s3  one_plus_related  The unit responds to the head and fore-body of furry mammals, mostly dogs, and is most active when the head faces the camera, is sharp and well lit, and has the
+null_s1  one_plus_related  The unit mainly responds to dogs (many breeds, plus dog-like canids such as the white wolf), and more weakly to other furry mammals such as meerkats. It is some
+null_s2  one_plus_related  The unit responds mainly to dogs, especially their furry heads, ears and neck/shoulder areas, and weakly to other furry mammals such as meerkats, wolves and sma
+null_s3  one_plus_related  The unit responds mainly to dogs, especially furry dog heads and fore-bodies, with weaker responses to other furry mammals and canid-like animals such as meerka
+
+== mixed4b:443  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Maltese dog (153), Dandie Dinmont (194), Eskimo dog (248), silky terrier (201), Greater Swiss Mountain dog (238), Pembroke (263), Appenzeller (240), German shepherd (235), Australian terrier (193), lesser panda (387), Blenheim spaniel (156), kuvasz (222)
+Q1. Does the photo contain a canine (dog, wolf, fox, coyote, etc.) whose face is visible?
+   Yes, a domestic dog's face: 107 photos, d +0.02, percentile 76.0
+   Yes, a wild canid's face (wolf, fox, coyote, etc.): 1 photos (too few to compare)
+   A canine is present but its face is not visible: 2 photos (too few to compare)
+   No canine in the photo: 10 photos, d -0.02, percentile 23.8
+   separation: eta2 0.0000, percentile 74.6 -> WITHIN_5_95; halves 88.9, 95.3; null percentile 54.7 -> WITHIN_5_95
+Q2. Which way is the most prominent canine face oriented relative to the camera?
+   Frontal (facing the camera): 69 photos, d +0.81, percentile 98.2
+   Three-quarter view: 32 photos, d -0.63, percentile 2.9
+   Side profile: 7 photos, d -1.23, percentile 0.8
+   Facing away / face not visible: 2 photos (too few to compare)
+   No canine face in the photo: 10 photos, d -0.03, percentile 7.2
+   separation: eta2 0.2047, percentile 98.6 -> ABOVE_95; halves 98.8, 96.9; null percentile 71.5 -> WITHIN_5_95
+Q3. Is the most prominent canine face upright?
+   Upright (eyes above muzzle, roughly level): 97 photos, d +0.40, percentile 84.4
+   Tilted noticeably sideways: 7 photos, d -0.41, percentile 33.4
+   Upside down or lying sideways: 4 photos (too few to compare)
+   No canine face in the photo: 12 photos, d -0.35, percentile 4.1
+   separation: eta2 0.0228, percentile 72.3 -> WITHIN_5_95; halves 55.7, 97.5; null percentile 3.7 -> BELOW_5
+Q4. Are the eyes of the most prominent canine face clearly visible?
+   Both eyes clearly visible: 85 photos, d +0.84, percentile 97.5
+   Only one eye visible: 14 photos, d -0.86, percentile 4.1
+   Eyes hidden or closed (e.g., covered by fur, sunglasses, or shut): 9 photos, d -0.84, percentile 9.8
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.1637, percentile 96.9 -> ABOVE_95; halves 86.5, 98.2; null percentile 6.6 -> WITHIN_5_95
+Q5. How much of the image does the most prominent canine face occupy?
+   Fills most of the frame (close-up): 24 photos, d +0.34, percentile 69.1
+   Large but not dominant: 50 photos, d +0.56, percentile 96.5
+   Small part of the image: 34 photos, d -0.80, percentile 7.6
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.1612, percentile 80.9 -> WITHIN_5_95; halves 90.2, 81.1; null percentile 30.3 -> WITHIN_5_95
+Q6. Is the eye/brow/muzzle-bridge area of the most prominent canine face fully in view?
+   Yes, fully visible and uncovered: 94 photos, d +0.50, percentile 92.8
+   Partly cut off or covered: 14 photos, d -0.57, percentile 11.9
+   Mostly cut off or covered: 0 photos (too few to compare)
+   No canine face in the photo: 12 photos, d -0.30, percentile 7.2
+   separation: eta2 0.0457, percentile 90.2 -> WITHIN_5_95; halves 86.3, 96.9; null percentile 1.0 -> BELOW_5
+Q7. How many canine faces are visible in the photo?
+   None: 12 photos, d -0.30, percentile 7.2
+   One: 99 photos, d +0.47, percentile 90.6
+   Two or three: 9 photos, d -0.60, percentile 17.0
+   Four or more: 0 photos (too few to compare)
+   separation: eta2 0.0363, percentile 78.1 -> WITHIN_5_95; halves 51.6, 99.8; null percentile 36.7 -> WITHIN_5_95
+Q8. If no canine face is visible, does the photo contain a face of some other kind?
+   Another furry mammal face (cat, bear, etc.): 7 photos, d +0.50, percentile 94.3
+   A human face: 0 photos (too few to compare)
+   Another kind of face (bird, reptile, toy, drawing, etc.): 1 photos (too few to compare)
+   No face of any kind: 4 photos (too few to compare)
+   Not applicable: a canine face is visible: 108 photos, d -0.50, percentile 5.5
+   separation: eta2 0.0145, percentile 92.2 -> WITHIN_5_95; halves 94.9, 27.3; null percentile 7.4 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 14 photos, d -1.35, percentile 0.0
+   right: 22 photos, d -0.10, percentile 65.4
+   toward or away from the camera: 76 photos, d +0.91, percentile 97.5
+   no clear facing direction or no single main subject: 8 photos, d -0.89, percentile 6.4
+   separation: eta2 0.2865, percentile 99.6 -> ABOVE_95; halves 99.6, 99.0; null percentile 93.8 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 9 photos, d -1.27, percentile 3.7
+   a quarter to three quarters: 70 photos, d +0.07, percentile 46.9
+   more than three quarters: 38 photos, d +0.34, percentile 72.9
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.1243, percentile 79.7 -> WITHIN_5_95; halves 72.9, 73.6; null percentile 52.9 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 29 photos, d -0.36, percentile 32.4
+   partly cut off: 88 photos, d +0.36, percentile 67.4
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0241, percentile 49.6 -> WITHIN_5_95; halves 47.7, 49.6; null percentile 84.8 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 7 photos, d -0.92, percentile 2.5
+   middle third: 102 photos, d +0.85, percentile 99.4
+   right third: 6 photos, d -0.43, percentile 10.4
+   no single main subject: 5 photos, d -0.94, percentile 2.9
+   separation: eta2 0.1007, percentile 97.3 -> ABOVE_95; halves 75.2, 96.3; null percentile 46.5 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 1 photos (too few to compare)
+   medium: 85 photos, d +0.02, percentile 67.8
+   bright: 31 photos, d -0.02, percentile 32.0
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0001, percentile 14.3 -> WITHIN_5_95; halves 91.2, 88.5; null percentile 70.3 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 56 photos, d +0.18, percentile 52.7
+   warm (yellow, orange or red) tint: 51 photos, d -0.18, percentile 39.1
+   cool (blue or green) tint: 11 photos, d -0.02, percentile 66.8
+   black and white or nearly colorless: 2 photos (too few to compare)
+   separation: eta2 0.0089, percentile 22.1 -> WITHIN_5_95; halves 44.1, 70.5; null percentile 73.6 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 32 photos, d +0.10, percentile 36.9
+   noticeably tilted: 16 photos, d -0.63, percentile 3.9
+   no horizon or straight lines visible: 72 photos, d +0.22, percentile 82.6
+   separation: eta2 0.0466, percentile 57.0 -> WITHIN_5_95; halves 27.1, 71.1; null percentile 52.5 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 90 photos, d +0.36, percentile 71.7
+   slightly blurry: 26 photos, d -0.36, percentile 28.1
+   very blurry: 0 photos (too few to compare)
+   no single main subject: 4 photos (too few to compare)
+   separation: eta2 0.0227, percentile 69.5 -> WITHIN_5_95; halves 76.6, 45.9; null percentile 18.9 -> WITHIN_5_95
+separation percentile above 95: real 4, null 0; below 5: real 0, null 2 (of 16 questions)
+real_s1  one_plus_related  The unit responds to frontal, centered, upright furry-mammal faces with both eyes clearly visible, most strongly dog faces seen head-on. It extends to similar f
+real_s2  one_plus_related  Responds to frontal, centered canine faces with both eyes clearly visible, i.e. a dog looking straight at the camera, and extends weakly to other frontal furry
+real_s3  one_plus_related  The unit responds to frontal, centered, single animal faces with both eyes visible, mainly dog faces, and extends more weakly to other furry mammal faces such a
+null_s1  one_plus_related  The unit responds to dogs (across many breeds) and extends weakly to similar-looking furry animals such as the lesser panda. Within those classes it prefers a w
+null_s2  one_plus_related  The unit responds to dogs across many breeds and weakly extends to dog-like furry mammals such as the lesser panda. Within those classes it prefers whole animal
+null_s3  one_plus_related  The unit responds mainly to dogs across many breeds, with weaker extension to similar furry mammals such as the lesser panda. Within those classes it favors who
+
+== mixed4b:429  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: Pembroke (263), German shepherd (235), Maltese dog (153), Irish terrier (184), Eskimo dog (248), Dandie Dinmont (194), Norfolk terrier (185), papillon (157), beagle (162), Appenzeller (240), silky terrier (201), Labrador retriever (208)
+Q1. Does the photo contain a dog's face?
+   Yes, clearly visible: 91 photos, d +1.35, percentile 99.0
+   Yes, but small or partly hidden: 29 photos, d -1.35, percentile 0.8
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.3348, percentile 99.0 -> ABOVE_95; halves 99.0, 97.9; null percentile 75.6 -> WITHIN_5_95
+Q2. If a dog's face is visible, which way is it facing relative to the camera?
+   Roughly head-on (frontal): 66 photos, d +0.94, percentile 98.8
+   Three-quarter view: 40 photos, d -0.49, percentile 5.1
+   Side profile: 12 photos, d -1.33, percentile 0.8
+   Facing away / back of head: 2 photos (too few to compare)
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.2786, percentile 99.2 -> ABOVE_95; halves 99.6, 97.9; null percentile 70.3 -> WITHIN_5_95
+Q3. If a dog's face is visible, how is the head oriented?
+   Upright: 99 photos, d +0.89, percentile 98.0
+   Tilted noticeably sideways: 14 photos, d -0.57, percentile 10.0
+   Upside down or lying sideways: 6 photos, d -1.36, percentile 0.6
+   No dog face: 0 photos (too few to compare)
+   could not tell: 1 photos
+   separation: eta2 0.1328, percentile 99.2 -> ABOVE_95; halves 97.1, 96.5; null percentile 93.9 -> WITHIN_5_95
+Q4. If a dog's face is visible, are both its eyes and its nose/muzzle visible?
+   Eyes and nose/muzzle all visible: 99 photos, d +1.23, percentile 98.0
+   Only some of eyes/nose visible: 20 photos, d -1.23, percentile 1.8
+   Neither eyes nor nose visible: 1 photos (too few to compare)
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.2127, percentile 98.0 -> ABOVE_95; halves 98.0, 96.1; null percentile 19.1 -> WITHIN_5_95
+Q5. If a dog's face is visible, how much of the photo does the face occupy?
+   Most of the frame (close-up): 23 photos, d +0.15, percentile 66.8
+   A moderate portion: 62 photos, d +0.68, percentile 97.5
+   A small portion: 35 photos, d -0.93, percentile 7.0
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.1858, percentile 83.8 -> WITHIN_5_95; halves 82.8, 77.1; null percentile 85.4 -> WITHIN_5_95
+Q6. If a dog's face is visible, what is the dog's main coat colour?
+   Black or dark brown: 2 photos (too few to compare)
+   White or cream: 28 photos, d -0.13, percentile 24.2
+   Tan, golden, or red-brown: 29 photos, d +0.11, percentile 60.5
+   Mixed/patterned (e.g. spots, tricolour): 61 photos, d +0.01, percentile 56.1
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.0041, percentile 42.4 -> WITHIN_5_95; halves 9.2, 65.0; null percentile 80.1 -> WITHIN_5_95
+Q7. If a dog's face is visible, what is its fur texture?
+   Short and smooth: 45 photos, d -0.09, percentile 17.4
+   Long or fluffy: 52 photos, d +0.01, percentile 54.1
+   Curly or wiry: 23 photos, d +0.12, percentile 80.5
+   No dog face: 0 photos (too few to compare)
+   separation: eta2 0.0032, percentile 49.4 -> WITHIN_5_95; halves 50.6, 9.0; null percentile 49.2 -> WITHIN_5_95
+Q8. If there is no dog face, does the photo show the face of another animal or a person?
+   Another furry animal's face (cat, fox, bear, etc.): 0 photos (too few to compare)
+   A human face: 0 photos (too few to compare)
+   Other animal face (bird, reptile, etc.): 0 photos (too few to compare)
+   No faces at all: 0 photos (too few to compare)
+   A dog face is present: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 22 photos, d -0.40, percentile 12.1
+   right: 9 photos, d -1.16, percentile 0.2
+   toward or away from the camera: 79 photos, d +0.92, percentile 98.8
+   no clear facing direction or no single main subject: 10 photos, d -0.87, percentile 6.6
+   separation: eta2 0.2260, percentile 99.2 -> ABOVE_95; halves 99.6, 94.7; null percentile 76.4 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 10 photos, d -1.16, percentile 7.4
+   a quarter to three quarters: 60 photos, d +0.50, percentile 88.1
+   more than three quarters: 43 photos, d +0.10, percentile 56.6
+   no single main subject: 7 photos, d -1.07, percentile 5.1
+   separation: eta2 0.1878, percentile 86.3 -> WITHIN_5_95; halves 86.3, 79.5; null percentile 53.5 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 25 photos, d -0.78, percentile 10.7
+   partly cut off: 88 photos, d +0.96, percentile 93.9
+   no single main subject: 7 photos, d -1.07, percentile 5.1
+   separation: eta2 0.1893, percentile 93.0 -> WITHIN_5_95; halves 95.9, 80.9; null percentile 71.1 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 4 photos (too few to compare)
+   middle third: 102 photos, d +0.35, percentile 79.7
+   right third: 6 photos, d +0.29, percentile 66.2
+   no single main subject: 8 photos, d -0.80, percentile 9.0
+   separation: eta2 0.0447, percentile 81.8 -> WITHIN_5_95; halves 97.9, 29.3; null percentile 6.8 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 0 photos (too few to compare)
+   medium: 78 photos, d +0.24, percentile 87.3
+   bright: 35 photos, d +0.03, percentile 37.3
+   no single main subject: 7 photos, d -1.07, percentile 5.1
+   separation: eta2 0.0642, percentile 91.6 -> WITHIN_5_95; halves 96.3, 52.7; null percentile 7.6 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 68 photos, d -0.18, percentile 29.5
+   warm (yellow, orange or red) tint: 44 photos, d +0.18, percentile 70.3
+   cool (blue or green) tint: 4 photos (too few to compare)
+   black and white or nearly colorless: 4 photos (too few to compare)
+   separation: eta2 0.0076, percentile 54.5 -> WITHIN_5_95; halves 56.1, 29.7; null percentile 81.1 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 42 photos, d +0.10, percentile 45.3
+   noticeably tilted: 10 photos, d -0.65, percentile 2.7
+   no horizon or straight lines visible: 68 photos, d +0.11, percentile 76.4
+   separation: eta2 0.0327, percentile 52.5 -> WITHIN_5_95; halves 50.6, 67.8; null percentile 57.6 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 89 photos, d +0.90, percentile 98.0
+   slightly blurry: 23 photos, d -0.79, percentile 2.1
+   very blurry: 0 photos (too few to compare)
+   no single main subject: 8 photos, d -0.78, percentile 9.4
+   separation: eta2 0.1556, percentile 97.7 -> ABOVE_95; halves 98.6, 93.6; null percentile 54.1 -> WITHIN_5_95
+separation percentile above 95: real 6, null 0; below 5: real 0, null 0 (of 16 questions)
+real_s1  one  The unit responds to a clearly visible, upright, frontal dog face with eyes and nose/muzzle all in view, framed at a moderate size; breed, coat colour and fur t
+real_s2  one  The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are shown, regardless of breed, coat colour or fur
+real_s3  one  The unit responds to clearly visible, upright, frontal dog faces in which both eyes and the muzzle are seen sharply at moderate size. It does not care about bre
+null_s1  one_plus_related  The unit responds to dog faces, especially large, close-up faces that are tilted or turned (three-quarter view) rather than upright and frontal, with a weaker p
+null_s2  one_plus_related  The unit responds to dog faces, mainly close-up or prominent ones that are tilted or turned (three-quarter view) rather than strictly upright and frontal, with
+null_s3  one  The unit responds to dog faces across many breeds. Within dog photos it prefers large, close-up faces whose head is tilted sideways or turned to a three-quarter
+
+== mixed4d:409  layer mixed4d (528 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: sports car (817), beach wagon (436), tow truck (864), pickup (717), minibus (654), trailer truck (867), airliner (404), minivan (656), convertible (511), ambulance (407), grille (581), police van (734)
+Q1. What is the main subject of the photo?
+   A four-legged animal: 0 photos (too few to compare)
+   A car, truck, or other road vehicle: 108 photos, d +0.12, percentile 75.9
+   Both an animal and a vehicle: 0 photos (too few to compare)
+   Something else: 12 photos, d -0.12, percentile 23.9
+   separation: eta2 0.0012, percentile 54.0 -> WITHIN_5_95; halves 25.9, 27.5; null percentile 86.7 -> WITHIN_5_95
+Q2. If there is a four-legged animal, what kind is it?
+   A dog: 0 photos (too few to compare)
+   A weasel, ferret, or similar small mammal: 0 photos (too few to compare)
+   Another quadruped (cat, horse, cow, etc.): 0 photos (too few to compare)
+   No four-legged animal: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q3. From what angle is the main animal or vehicle seen?
+   Side-on profile: 18 photos, d -0.14, percentile 31.8
+   Three-quarter view: 82 photos, d +0.71, percentile 99.4
+   Front or rear view: 17 photos, d -1.05, percentile 0.9
+   From above or other angle: 3 photos (too few to compare)
+   No animal or vehicle: 0 photos (too few to compare)
+   separation: eta2 0.1522, percentile 99.2 -> ABOVE_95; halves 99.6, 94.9; null percentile 61.0 -> WITHIN_5_95
+Q4. What is the posture of the main animal?
+   Standing upright on its legs: 0 photos (too few to compare)
+   Walking or running: 0 photos (too few to compare)
+   Sitting or lying down: 0 photos (too few to compare)
+   Held, jumping, or other: 0 photos (too few to compare)
+   No animal: 120 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q5. Is the body of the main animal or vehicle horizontally elongated and visibly raised on legs or wheels?
+   Yes, long body clearly raised on legs or wheels: 100 photos, d +1.06, percentile 99.8
+   Body visible but legs or wheels hidden or cropped: 14 photos, d -1.07, percentile 0.4
+   Body not elongated or not raised: 5 photos, d -0.76, percentile 2.1
+   No animal or vehicle: 1 photos (too few to compare)
+   separation: eta2 0.1532, percentile 99.8 -> ABOVE_95; halves 99.8, 98.3; null percentile 67.6 -> WITHIN_5_95
+Q6. How much of the frame does the main animal's torso or vehicle's body fill?
+   Most of the frame: 76 photos, d +0.19, percentile 63.1
+   About a quarter to half: 39 photos, d -0.04, percentile 46.4
+   A small part: 5 photos, d -0.90, percentile 21.4
+   No animal or vehicle: 0 photos (too few to compare)
+   separation: eta2 0.0346, percentile 63.8 -> WITHIN_5_95; halves 51.3, 50.2; null percentile 50.8 -> WITHIN_5_95
+Q7. If there is a vehicle, which part of it is visible?
+   Whole side including front wheel: 45 photos, d +0.34, percentile 96.0
+   Only part of the side, front wheel visible: 42 photos, d +0.23, percentile 67.0
+   Mostly front, rear, or interior: 27 photos, d -0.83, percentile 1.5
+   No vehicle: 6 photos, d +0.28, percentile 88.6
+   separation: eta2 0.1231, percentile 97.2 -> ABOVE_95; halves 93.4, 89.0; null percentile 91.1 -> WITHIN_5_95
+Q8. How many animals or vehicles are prominent in the photo?
+   One: 96 photos, d +0.07, percentile 59.8
+   Two or three: 21 photos, d -0.07, percentile 40.0
+   Four or more: 3 photos (too few to compare)
+   None: 0 photos (too few to compare)
+   separation: eta2 0.0008, percentile 24.2 -> WITHIN_5_95; halves 39.0, 69.9; null percentile 26.7 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 48 photos, d +0.71, percentile 98.1
+   right: 39 photos, d +0.17, percentile 79.9
+   toward or away from the camera: 26 photos, d -0.90, percentile 1.1
+   no clear facing direction or no single main subject: 7 photos, d -1.02, percentile 2.7
+   separation: eta2 0.2399, percentile 99.4 -> ABOVE_95; halves 99.6, 95.8; null percentile 74.1 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 6 photos, d -0.49, percentile 40.5
+   a quarter to three quarters: 65 photos, d +0.37, percentile 95.8
+   more than three quarters: 46 photos, d -0.28, percentile 7.8
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0384, percentile 67.8 -> WITHIN_5_95; halves 28.8, 79.9; null percentile 40.3 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 21 photos, d -0.38, percentile 37.1
+   partly cut off: 96 photos, d +0.38, percentile 62.7
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0212, percentile 60.4 -> WITHIN_5_95; halves 55.9, 57.6; null percentile 54.4 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 3 photos (too few to compare)
+   middle third: 103 photos, d +0.50, percentile 91.7
+   right third: 7 photos, d +0.15, percentile 54.9
+   no single main subject: 7 photos, d -1.08, percentile 3.2
+   separation: eta2 0.0671, percentile 93.2 -> WITHIN_5_95; halves 94.9, 67.6; null percentile 43.2 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 0 photos (too few to compare)
+   medium: 59 photos, d -0.44, percentile 11.2
+   bright: 57 photos, d +0.44, percentile 88.6
+   no single main subject: 4 photos (too few to compare)
+   separation: eta2 0.0487, percentile 87.5 -> WITHIN_5_95; halves 58.0, 88.4; null percentile 21.8 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 80 photos, d +0.34, percentile 92.2
+   warm (yellow, orange or red) tint: 25 photos, d -0.14, percentile 24.4
+   cool (blue or green) tint: 12 photos, d -0.54, percentile 12.5
+   black and white or nearly colorless: 3 photos (too few to compare)
+   separation: eta2 0.0345, percentile 76.5 -> WITHIN_5_95; halves 35.6, 86.2; null percentile 7.6 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 105 photos, d +0.25, percentile 65.3
+   noticeably tilted: 14 photos, d -0.25, percentile 34.5
+   no horizon or straight lines visible: 1 photos (too few to compare)
+   separation: eta2 0.0065, percentile 42.0 -> WITHIN_5_95; halves 30.9, 47.9; null percentile 36.7 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 103 photos, d +0.85, percentile 98.7
+   slightly blurry: 11 photos, d -0.66, percentile 8.3
+   very blurry: 0 photos (too few to compare)
+   no single main subject: 6 photos, d -1.02, percentile 6.1
+   separation: eta2 0.0932, percentile 97.5 -> ABOVE_95; halves 98.9, 77.3; null percentile 56.1 -> WITHIN_5_95
+separation percentile above 95: real 5, null 0; below 5: real 0, null 0 (of 16 questions)
+real_s1  one_plus_related  The unit responds to a horizontally elongated body visibly raised on wheels or legs and seen lengthwise, chiefly cars and trucks in three-quarter or side view,
+real_s2  one  The unit responds to a horizontally elongated body raised on wheels, seen from the side or three-quarter angle, mostly road vehicles. It is weak or silent for f
+real_s3  one_plus_related  The unit responds to a horizontally elongated body raised on wheels or legs, seen from the side or at an angle so its long flank and wheels/legs are visible: mo
+null_s1  one  The unit responds to road vehicles (cars, vans, trucks) seen from the side or three-quarter angle, where an elongated body sits on visible wheels, especially a
+null_s2  one_plus_related  The unit mainly responds to the side body and front-wheel area of road vehicles, seen as a partial side view raised on wheels; the dog/quadruped torso is plausi
+null_s3  one_plus_related  The unit responds to the side of a horizontally elongated body raised on wheels or legs, mainly a road vehicle's flank seen from the side or three-quarter view
+
+== mixed4b:237  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: beach wagon (436), ambulance (407), pickup (717), minivan (656), minibus (654), grille (581), cab (468), fire engine (555), limousine (627), jeep (609), tow truck (864), sports car (817)
+Q1. Does the photo show a road vehicle (car, pickup, van, truck, bus, ambulance, taxi)?
+   No road vehicle: 0 photos (too few to compare)
+   Yes, but small or mostly hidden: 6 photos, d -1.09, percentile 4.7
+   Yes, clearly visible: 114 photos, d +1.09, percentile 95.1
+   separation: eta2 0.0573, percentile 94.7 -> WITHIN_5_95; halves 94.5, 67.2; null percentile 79.5 -> WITHIN_5_95
+Q2. Is a side window of a road vehicle (glass pane in a door, with its frame) visible?
+   No vehicle in photo: 0 photos (too few to compare)
+   Vehicle present but no side window visible: 10 photos, d -0.54, percentile 15.2
+   Side window partly visible: 36 photos, d -0.78, percentile 2.0
+   Side window clearly visible: 74 photos, d +0.87, percentile 99.0
+   separation: eta2 0.1790, percentile 98.8 -> ABOVE_95; halves 96.5, 96.7; null percentile 83.2 -> WITHIN_5_95
+Q3. From what angle is the main vehicle seen?
+   No vehicle in photo: 0 photos (too few to compare)
+   Straight side view: 15 photos, d -0.28, percentile 27.9
+   Front or rear three-quarter view: 83 photos, d +0.67, percentile 97.3
+   Straight front or rear view: 13 photos, d -0.17, percentile 42.8
+   From above or other unusual angle: 9 photos, d -1.37, percentile 0.2
+   separation: eta2 0.1610, percentile 99.0 -> ABOVE_95; halves 89.5, 98.0; null percentile 37.5 -> WITHIN_5_95
+Q4. How much of the photo does the vehicle's door-and-window area take up?
+   No vehicle door/window visible: 9 photos, d -0.62, percentile 13.9
+   Small part of the photo: 47 photos, d -0.30, percentile 24.6
+   Roughly a quarter to half of the photo: 63 photos, d +0.46, percentile 89.6
+   Most of the photo (close-up): 1 photos (too few to compare)
+   separation: eta2 0.0640, percentile 80.9 -> WITHIN_5_95; halves 78.3, 56.1; null percentile 64.3 -> WITHIN_5_95
+Q5. What type is the main vehicle?
+   No road vehicle: 0 photos (too few to compare)
+   Passenger car or taxi: 61 photos, d -0.14, percentile 7.2
+   Pickup, van or ambulance: 31 photos, d +0.32, percentile 97.7
+   Truck or lorry cab: 17 photos, d -0.22, percentile 12.3
+   Bus or other vehicle: 11 photos, d +0.01, percentile 60.5
+   separation: eta2 0.0218, percentile 88.3 -> WITHIN_5_95; halves 53.7, 31.6; null percentile 76.4 -> WITHIN_5_95
+Q6. Which windows of the vehicle are most visible?
+   No vehicle windows visible: 6 photos, d -1.06, percentile 4.1
+   Front cab/driver door window: 74 photos, d +0.38, percentile 90.8
+   Rear passenger or cargo-area windows: 21 photos, d -0.18, percentile 20.5
+   Windshield or rear window only: 19 photos, d -0.11, percentile 45.7
+   separation: eta2 0.0692, percentile 88.3 -> WITHIN_5_95; halves 93.8, 31.4; null percentile 89.6 -> WITHIN_5_95
+Q7. Is the vehicle upright and intact, as in normal road use?
+   No vehicle in photo: 0 photos (too few to compare)
+   Upright and intact: 108 photos, d +1.25, percentile 98.6
+   Tilted, overturned, wrecked or partially dismantled: 3 photos (too few to compare)
+   Toy, model, drawing or other non-real vehicle: 9 photos, d -1.25, percentile 1.2
+   separation: eta2 0.1127, percentile 98.4 -> ABOVE_95; halves 96.5, 87.9; null percentile 65.8 -> WITHIN_5_95
+Q8. Are the door window frame and pillars (the posts between windows) clearly distinguishable?
+   No vehicle window visible: 9 photos, d -0.59, percentile 13.1
+   Yes, frame and pillars clearly visible: 80 photos, d +0.74, percentile 98.8
+   Window visible but frame/pillars unclear (blurry, dark, or obscured): 31 photos, d -0.64, percentile 4.3
+   separation: eta2 0.1216, percentile 98.0 -> ABOVE_95; halves 95.9, 84.6; null percentile 85.7 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 41 photos, d +0.06, percentile 47.5
+   right: 46 photos, d +0.25, percentile 87.1
+   toward or away from the camera: 25 photos, d -0.19, percentile 36.9
+   no clear facing direction or no single main subject: 8 photos, d -0.68, percentile 11.1
+   separation: eta2 0.0418, percentile 69.9 -> WITHIN_5_95; halves 56.2, 31.2; null percentile 32.2 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 5 photos, d -0.46, percentile 38.1
+   a quarter to three quarters: 56 photos, d +0.40, percentile 98.6
+   more than three quarters: 51 photos, d -0.16, percentile 15.0
+   no single main subject: 8 photos, d -0.68, percentile 11.1
+   separation: eta2 0.0602, percentile 72.5 -> WITHIN_5_95; halves 76.6, 37.5; null percentile 7.2 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 19 photos, d +0.15, percentile 87.7
+   partly cut off: 93 photos, d +0.13, percentile 40.0
+   no single main subject: 8 photos, d -0.68, percentile 11.1
+   separation: eta2 0.0303, percentile 60.5 -> WITHIN_5_95; halves 73.8, 87.7; null percentile 61.5 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 5 photos, d -0.37, percentile 48.0
+   middle third: 102 photos, d +0.43, percentile 76.0
+   right third: 5 photos, d +0.06, percentile 58.2
+   no single main subject: 8 photos, d -0.68, percentile 11.1
+   separation: eta2 0.0360, percentile 59.6 -> WITHIN_5_95; halves 71.3, 34.8; null percentile 15.2 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 0 photos (too few to compare)
+   medium: 67 photos, d +0.06, percentile 71.5
+   bright: 45 photos, d +0.12, percentile 55.1
+   no single main subject: 8 photos, d -0.68, percentile 11.1
+   separation: eta2 0.0296, percentile 71.1 -> WITHIN_5_95; halves 62.5, 41.8; null percentile 6.6 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 83 photos, d +0.70, percentile 96.9
+   warm (yellow, orange or red) tint: 24 photos, d -0.67, percentile 3.1
+   cool (blue or green) tint: 9 photos, d -0.46, percentile 32.0
+   black and white or nearly colorless: 4 photos (too few to compare)
+   separation: eta2 0.1005, percentile 96.1 -> ABOVE_95; halves 52.3, 96.1; null percentile 18.6 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 110 photos, d +0.56, percentile 90.4
+   noticeably tilted: 10 photos, d -0.56, percentile 9.4
+   no horizon or straight lines visible: 0 photos (too few to compare)
+   separation: eta2 0.0238, percentile 82.6 -> WITHIN_5_95; halves 74.0, 75.0; null percentile 84.0 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 95 photos, d +0.57, percentile 97.5
+   slightly blurry: 16 photos, d -0.41, percentile 10.5
+   very blurry: 1 photos (too few to compare)
+   no single main subject: 8 photos, d -0.69, percentile 10.7
+   separation: eta2 0.0557, percentile 90.0 -> WITHIN_5_95; halves 74.0, 67.4; null percentile 13.7 -> WITHIN_5_95
+separation percentile above 95: real 5, null 0; below 5: real 0, null 0 (of 16 questions)
+real_s1  one  The unit responds to clearly visible side/door windows of real, intact road vehicles, especially the front cab or driver-door window with its frame and pillars,
+real_s2  one  The unit responds to clearly visible side door windows of real, upright road vehicles, especially the front cab/driver door window with a well-defined frame and
+real_s3  one_plus_related  The unit responds to the clearly visible side door-window of a real, upright road vehicle (framed glass pane with distinct pillars and door edge), especially th
+null_s1  one_plus_related  The unit responds to side windows of road vehicles, meaning door glass panes with clearly defined frames and pillars, most strongly on cab or driver-door window
+null_s2  one_plus_related  The unit responds to the side door window and its frame and pillars on road vehicles, mostly cabs of trucks and buses. Windshield-only views do not drive it.
+null_s3  one_plus_related  The unit responds to the clearly framed side window of a road vehicle, meaning a door window with sharply defined frame and pillars, most often the front cab/dr
+
+== mixed4b:373  layer mixed4b (512 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: beach wagon (436), fire engine (555), tow truck (864), sports car (817), trailer truck (867), half track (586), minivan (656), minibus (654), tractor (866), ambulance (407), garbage truck (569), school bus (779)
+Q1. Does the photo show a wheel of a road vehicle (car, van, bus, truck, fire engine)?
+   Yes, clearly visible: 85 photos, d +1.38, percentile 99.8
+   Yes, but small or partly hidden: 26 photos, d -1.10, percentile 0.2
+   No vehicle wheel: 9 photos, d -1.42, percentile 0.2
+   separation: eta2 0.4072, percentile 99.8 -> ABOVE_95; halves 99.8, 99.8; null percentile 96.3 -> ABOVE_95
+Q2. Is the curved wheel arch or fender around/above the wheel visible?
+   Yes, wheel sits inside a visible arch: 106 photos, d +0.86, percentile 99.2
+   Wheel visible but no arch (e.g., bicycle, open wheel, detached tire): 8 photos, d -0.29, percentile 32.8
+   No wheel in photo: 6 photos, d -1.48, percentile 0.2
+   separation: eta2 0.1139, percentile 99.2 -> ABOVE_95; halves 99.6, 20.9; null percentile 54.5 -> WITHIN_5_95
+Q3. From what angle is the vehicle wheel seen?
+   Side view, wheel looks round: 24 photos, d +0.28, percentile 83.2
+   Angled view, wheel looks oval: 74 photos, d +0.67, percentile 99.2
+   Front or rear view, wheel looks narrow: 13 photos, d -1.09, percentile 0.4
+   No vehicle wheel: 9 photos, d -1.42, percentile 0.2
+   separation: eta2 0.2845, percentile 99.6 -> ABOVE_95; halves 99.8, 99.2; null percentile 98.6 -> ABOVE_95
+Q4. Is the vehicle in its usual upright orientation?
+   Upright: 120 photos (too few to compare)
+   Tilted, overturned, or image rotated: 0 photos (too few to compare)
+   No vehicle: 0 photos (too few to compare)
+   separation: too few photos per answer to compare -> NO_STATISTICS
+Q5. What kind of vehicle does the wheel belong to?
+   Car: 22 photos, d -0.07, percentile 20.5
+   Van or SUV: 18 photos, d +0.51, percentile 97.7
+   Bus, truck, or fire engine: 58 photos, d +0.21, percentile 92.2
+   Other (bicycle, motorcycle, train, toy, etc.): 16 photos, d -0.31, percentile 19.5
+   No wheel: 6 photos, d -1.48, percentile 0.2
+   separation: eta2 0.1449, percentile 99.4 -> ABOVE_95; halves 99.2, 67.0; null percentile 45.3 -> WITHIN_5_95
+Q6. Which wheel is most prominent?
+   Front wheel: 82 photos, d +0.56, percentile 99.4
+   Rear wheel: 18 photos, d -0.31, percentile 6.8
+   Both equally: 11 photos, d +0.19, percentile 77.5
+   No vehicle wheel: 9 photos, d -1.42, percentile 0.2
+   separation: eta2 0.1650, percentile 99.8 -> ABOVE_95; halves 99.0, 95.5; null percentile 90.0 -> WITHIN_5_95
+Q7. How much of the image does the most prominent wheel with its arch take up?
+   Large (close-up, over a quarter of the image): 5 photos, d +0.32, percentile 48.8
+   Medium: 83 photos, d +1.10, percentile 99.8
+   Small (whole vehicle far away): 23 photos, d -0.97, percentile 0.0
+   No wheel: 9 photos, d -1.42, percentile 0.2
+   separation: eta2 0.3325, percentile 99.8 -> ABOVE_95; halves 99.8, 98.0; null percentile 36.1 -> WITHIN_5_95
+Q8. How many vehicle wheels with arches are visible?
+   None: 13 photos, d -0.94, percentile 0.6
+   One: 30 photos, d +0.34, percentile 68.0
+   Two: 51 photos, d +0.29, percentile 91.0
+   Three or more: 26 photos, d -0.25, percentile 37.7
+   separation: eta2 0.1137, percentile 95.9 -> ABOVE_95; halves 97.1, 44.1; null percentile 11.5 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 38 photos, d +0.43, percentile 97.1
+   right: 50 photos, d +0.27, percentile 93.6
+   toward or away from the camera: 28 photos, d -0.89, percentile 0.2
+   no clear facing direction or no single main subject: 4 photos (too few to compare)
+   separation: eta2 0.1490, percentile 99.8 -> ABOVE_95; halves 76.6, 99.6; null percentile 75.6 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 5 photos, d -1.39, percentile 0.6
+   a quarter to three quarters: 60 photos, d -0.21, percentile 29.3
+   more than three quarters: 51 photos, d +0.44, percentile 87.7
+   no single main subject: 4 photos (too few to compare)
+   separation: eta2 0.1089, percentile 97.5 -> ABOVE_95; halves 68.4, 98.2; null percentile 59.4 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 16 photos, d -0.46, percentile 29.1
+   partly cut off: 99 photos, d +0.39, percentile 63.3
+   no single main subject: 5 photos, d -0.10, percentile 66.4
+   separation: eta2 0.0253, percentile 50.4 -> WITHIN_5_95; halves 1.6, 75.2; null percentile 75.8 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 7 photos, d -0.11, percentile 51.2
+   middle third: 105 photos, d +0.12, percentile 40.0
+   right third: 3 photos (too few to compare)
+   no single main subject: 5 photos, d -0.11, percentile 64.8
+   separation: eta2 0.0013, percentile 4.5 -> BELOW_5; halves 4.3, 55.3; null percentile 55.7 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 1 photos (too few to compare)
+   medium: 67 photos, d -0.50, percentile 3.1
+   bright: 48 photos, d +0.50, percentile 96.7
+   no single main subject: 4 photos (too few to compare)
+   separation: eta2 0.0606, percentile 96.5 -> ABOVE_95; halves 87.1, 91.2; null percentile 28.5 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 89 photos, d +0.35, percentile 85.5
+   warm (yellow, orange or red) tint: 20 photos, d -0.33, percentile 14.3
+   cool (blue or green) tint: 8 photos, d -0.27, percentile 41.4
+   black and white or nearly colorless: 3 photos (too few to compare)
+   separation: eta2 0.0228, percentile 61.1 -> WITHIN_5_95; halves 41.0, 44.5; null percentile 94.5 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 112 photos, d +0.59, percentile 84.0
+   noticeably tilted: 8 photos, d -0.59, percentile 15.8
+   no horizon or straight lines visible: 0 photos (too few to compare)
+   separation: eta2 0.0221, percentile 74.8 -> WITHIN_5_95; halves 79.7, 11.5; null percentile 90.4 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 103 photos, d +0.63, percentile 80.5
+   slightly blurry: 12 photos, d -0.81, percentile 9.2
+   very blurry: 0 photos (too few to compare)
+   no single main subject: 5 photos, d -0.10, percentile 66.4
+   separation: eta2 0.0604, percentile 81.6 -> WITHIN_5_95; halves 47.3, 93.8; null percentile 36.1 -> WITHIN_5_95
+separation percentile above 95: real 10, null 2; below 5: real 1, null 0 (of 16 questions)
+real_s1  one  The unit responds to a clearly visible, medium-sized road-vehicle wheel sitting inside its wheel arch or fender, seen from the side or at an angle (not head-on)
+real_s2  one  The unit detects a clearly visible, medium-sized road-vehicle wheel sitting inside its wheel arch, seen from the side or at an angle (not head-on), most strongl
+real_s3  one  The unit responds to a clearly visible, medium-sized vehicle wheel sitting inside its wheel arch, seen from the side or at an angle, most strongly a front wheel
+null_s1  one  The unit responds to large road vehicles (vans, buses, trucks, cars) seen side-on and level, so their wheels look round and fully visible. The fender or arch ar
+null_s2  one  The unit responds to a road vehicle seen side-on and level, with its wheel clearly visible and looking round. The wheel arch/fender part of the original descrip
+null_s3  one  The unit responds to a clearly visible, round vehicle wheel seen from the side, preferably the front wheel, on large road vehicles that fill the frame. The whee
+
+== mixed4e:55  layer mixed4e (832 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: lynx (287), Persian cat (283), papillon (157), lesser panda (387), weasel (356), tabby (281), red fox (277), grille (581), hamster (333), sports car (817), beach wagon (436), kit fox (278)
+Q1. Does the photo show the face of a furry mammal?
+   Yes, clearly visible: 64 photos, d +0.89, percentile 99.9
+   Yes, but small or partly hidden: 24 photos, d -1.21, percentile 0.0
+   No: 32 photos, d -0.14, percentile 2.8
+   separation: eta2 0.2867, percentile 99.9 -> ABOVE_95; halves 99.2, 99.9; null percentile 67.7 -> WITHIN_5_95
+Q2. What kind of animal's face is most prominent?
+   Cat, lynx or other wild cat: 30 photos, d -0.00, percentile 40.1
+   Fox or red panda: 31 photos, d +0.12, percentile 83.7
+   Dog, hamster or other furry mammal: 27 photos, d +0.02, percentile 61.7
+   Bird or non-furry animal: 0 photos (too few to compare)
+   No animal face: 32 photos, d -0.14, percentile 2.8
+   separation: eta2 0.0052, percentile 76.0 -> WITHIN_5_95; halves 65.1, 50.4; null percentile 80.3 -> WITHIN_5_95
+Q3. Is the muzzle area (nose, mouth, whisker pad below the eyes) of an animal visible?
+   Yes, clearly and fully: 64 photos, d +0.84, percentile 99.8
+   Partly visible or obscured: 21 photos, d -0.97, percentile 0.8
+   No animal muzzle visible: 35 photos, d -0.33, percentile 0.4
+   separation: eta2 0.2119, percentile 99.5 -> ABOVE_95; halves 91.8, 99.8; null percentile 51.7 -> WITHIN_5_95
+Q4. How much of the photo does the animal's face take up?
+   Most of the frame (close-up): 27 photos, d +0.48, percentile 88.0
+   A moderate portion: 32 photos, d +0.27, percentile 86.8
+   A small portion: 29 photos, d -0.60, percentile 6.7
+   No animal face: 32 photos, d -0.14, percentile 2.8
+   separation: eta2 0.0963, percentile 91.9 -> WITHIN_5_95; halves 52.9, 93.3; null percentile 53.1 -> WITHIN_5_95
+Q5. How is the animal's head oriented?
+   Upright, facing the camera: 53 photos, d +0.91, percentile 99.5
+   Upright, in profile or turned away: 18 photos, d -1.06, percentile 0.5
+   Tilted, upside-down or lying sideways: 17 photos, d -0.51, percentile 4.1
+   No animal head: 32 photos, d -0.14, percentile 2.8
+   separation: eta2 0.2684, percentile 99.5 -> ABOVE_95; halves 98.3, 99.5; null percentile 43.0 -> WITHIN_5_95
+Q6. Is the fur around the nose and mouth noticeably lighter than the rest of the face?
+   Yes, light or white muzzle: 59 photos, d +0.41, percentile 98.4
+   No, similar or darker: 24 photos, d -0.10, percentile 34.1
+   No furry face visible: 36 photos, d -0.41, percentile 0.1
+   could not tell: 1 photos
+   separation: eta2 0.0476, percentile 97.2 -> ABOVE_95; halves 89.7, 68.4; null percentile 19.7 -> WITHIN_5_95
+Q7. Are whiskers visible on the animal's face?
+   Yes, clearly: 27 photos, d +0.77, percentile 98.4
+   No or barely: 61 photos, d -0.42, percentile 3.6
+   No animal face: 32 photos, d -0.14, percentile 2.8
+   separation: eta2 0.1054, percentile 98.0 -> ABOVE_95; halves 90.6, 96.5; null percentile 45.0 -> WITHIN_5_95
+Q8. If no furry animal face is present, is there a face-like structure (e.g. a car front with grille, a bird's head with beak)?
+   Yes, car front or grille: 25 photos, d +0.05, percentile 84.0
+   Yes, bird head or other face-like shape: 1 photos (too few to compare)
+   No face-like structure: 6 photos, d -0.52, percentile 3.6
+   Not applicable: furry animal face present: 88 photos, d +0.09, percentile 95.2
+   separation: eta2 0.0132, percentile 78.1 -> WITHIN_5_95; halves 1.8, 55.9; null percentile 72.0 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 26 photos, d -0.10, percentile 29.6
+   right: 28 photos, d -0.51, percentile 3.1
+   toward or away from the camera: 63 photos, d +0.44, percentile 95.1
+   no clear facing direction or no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0597, percentile 91.1 -> WITHIN_5_95; halves 44.5, 92.4; null percentile 20.6 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 10 photos, d -1.01, percentile 9.4
+   a quarter to three quarters: 73 photos, d +0.18, percentile 67.5
+   more than three quarters: 37 photos, d +0.17, percentile 71.9
+   no single main subject: 0 photos (too few to compare)
+   separation: eta2 0.0793, percentile 85.8 -> WITHIN_5_95; halves 86.8, 58.3; null percentile 72.6 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 21 photos, d -0.34, percentile 27.9
+   partly cut off: 99 photos, d +0.34, percentile 72.0
+   no single main subject: 0 photos (too few to compare)
+   separation: eta2 0.0170, percentile 66.6 -> WITHIN_5_95; halves 56.2, 59.6; null percentile 50.1 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 7 photos, d -0.87, percentile 4.3
+   middle third: 105 photos, d +0.72, percentile 96.0
+   right third: 5 photos, d -0.43, percentile 23.1
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0526, percentile 89.4 -> WITHIN_5_95; halves 88.6, 79.1; null percentile 68.6 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 5 photos, d -0.44, percentile 34.1
+   medium: 84 photos, d -0.16, percentile 14.5
+   bright: 30 photos, d +0.27, percentile 88.3
+   no single main subject: 1 photos (too few to compare)
+   separation: eta2 0.0194, percentile 61.8 -> WITHIN_5_95; halves 7.6, 76.6; null percentile 48.7 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 61 photos, d +0.18, percentile 87.0
+   warm (yellow, orange or red) tint: 43 photos, d +0.08, percentile 53.6
+   cool (blue or green) tint: 12 photos, d -0.70, percentile 4.1
+   black and white or nearly colorless: 4 photos (too few to compare)
+   separation: eta2 0.0462, percentile 91.1 -> WITHIN_5_95; halves 90.7, 72.1; null percentile 48.8 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 33 photos, d -0.30, percentile 4.9
+   noticeably tilted: 12 photos, d -0.24, percentile 29.7
+   no horizon or straight lines visible: 75 photos, d +0.35, percentile 96.6
+   separation: eta2 0.0284, percentile 74.4 -> WITHIN_5_95; halves 41.3, 89.2; null percentile 24.0 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 94 photos, d +0.62, percentile 92.7
+   slightly blurry: 22 photos, d -0.62, percentile 7.2
+   very blurry: 1 photos (too few to compare)
+   no single main subject: 3 photos (too few to compare)
+   separation: eta2 0.0602, percentile 92.3 -> WITHIN_5_95; halves 96.0, 56.5; null percentile 81.7 -> WITHIN_5_95
+separation percentile above 95: real 5, null 0; below 5: real 0, null 0 (of 16 questions)
+real_s1  one_plus_related  The unit responds to a clearly visible, frontal, upright muzzle of a furry mammal (nose, whisker pad, mouth, often with a light-coloured muzzle and visible whis
+real_s2  one_plus_related  The unit responds to a clearly visible, upright, front-facing muzzle region (nose, mouth, whisker pad) of a furry mammal, regardless of species. It gives weak r
+real_s3  one_plus_related  The unit responds to a clearly visible, upright, front-facing muzzle of a furry mammal (nose, mouth and whisker pad, often with light fur and whiskers), centere
+null_s1  one_plus_related  The unit responds mainly to the lower face and muzzle region of furry mammals, especially foxes, red pandas and cats. It extends more weakly to face-like car fr
+null_s2  one_plus_related  The unit is mainly selective at the category level for small-to-medium furry mammals with fox/cat-like faces (lynx, cats, foxes, red panda, weasel, hamster, pap
+null_s3  one_plus_related  The unit mainly responds to furry mammal faces (wild and domestic cats, foxes, red pandas, weasels, hamsters, small dogs), with a weaker extension to car fronts
+
+== mixed5a:719  layer mixed5a (832 channels), 120 photos, answer batches failed after a retry: 0 of 10
+classes: necklace (679), wallet (893), Christmas stocking (496), holster (597), rubber eraser (767), pencil sharpener (710), prayer rug (741), pick (714), ocarina (684), mailbag (636), pinwheel (723), Loafer (630)
+Q1. Does the photo show a close-up of a compact man-made or handmade object (e.g., computer mouse, shoe, teapot, knee pad, stocking, brooch)?
+   No man-made object is prominent: 0 photos (too few to compare)
+   Man-made object present but small or distant: 10 photos, d -1.51, percentile 0.0
+   Man-made object fills much of the frame: 110 photos, d +1.51, percentile 99.9
+   separation: eta2 0.1760, percentile 99.0 -> ABOVE_95; halves 93.0, 98.8; null percentile 30.3 -> WITHIN_5_95
+Q2. How prominent are smooth curved or arc-shaped contours (rounded edges, outlines) in the photo?
+   None or barely visible: 7 photos, d +0.19, percentile 80.9
+   Some curved contours among mostly straight edges: 59 photos, d -0.19, percentile 9.9
+   Curved contours dominate the image: 54 photos, d +0.15, percentile 82.2
+   separation: eta2 0.0096, percentile 33.8 -> WITHIN_5_95; halves 11.2, 41.9; null percentile 29.2 -> WITHIN_5_95
+Q3. Does the main curved contour belong to the outline of an object or to a decorative pattern on a surface?
+   No notable curved contour: 5 photos, d -0.25, percentile 43.4
+   Object outline (e.g., edge of a shoe or mouse): 83 photos, d -0.31, percentile 7.9
+   Decorative pattern on a surface: 18 photos, d +0.35, percentile 92.7
+   Both equally: 14 photos, d +0.31, percentile 83.3
+   separation: eta2 0.0306, percentile 66.9 -> WITHIN_5_95; halves 8.7, 96.3; null percentile 69.6 -> WITHIN_5_95
+Q4. Does the photo contain ornamental radial, floral, or petal-like patterns made of repeated curved strokes (e.g., brooch, manhole cover, printed flowers, crochet)?
+   No: 69 photos, d -0.30, percentile 6.0
+   Yes, a small or faint pattern: 31 photos, d +0.18, percentile 86.3
+   Yes, a large or prominent pattern: 20 photos, d +0.29, percentile 85.3
+   separation: eta2 0.0236, percentile 72.0 -> WITHIN_5_95; halves 57.9, 42.4; null percentile 29.0 -> WITHIN_5_95
+Q5. How strongly does the main curved object or shape contrast with its background?
+   No curved object or shape: 4 photos (too few to compare)
+   Low contrast, blends into background: 2 photos (too few to compare)
+   Moderate contrast: 67 photos, d -0.15, percentile 35.8
+   High contrast, clearly separated from background: 47 photos, d +0.15, percentile 64.1
+   separation: eta2 0.0058, percentile 47.8 -> WITHIN_5_95; halves 74.5, 11.5; null percentile 91.7 -> WITHIN_5_95
+Q6. Is the main curved shape convex (bulging outward, like a mouse or shoe toe) or more like a thin curved line (like a collar or neckline)?
+   No main curved shape: 7 photos, d +0.19, percentile 80.9
+   Convex rounded form: 59 photos, d +0.05, percentile 61.4
+   Thin curved line or edge: 11 photos, d +0.47, percentile 91.0
+   Mixed or unclear: 43 photos, d -0.27, percentile 10.5
+   separation: eta2 0.0300, percentile 58.3 -> WITHIN_5_95; halves 54.9, 40.0; null percentile 46.5 -> WITHIN_5_95
+Q7. Is the photo a natural scene (landscape, animals, sky) rather than an object or crafted item?
+   Yes, mainly natural scene: 0 photos (too few to compare)
+   Mixed natural and man-made: 9 photos, d -1.06, percentile 1.0
+   No, mainly man-made objects or crafts: 111 photos, d +1.06, percentile 98.9
+   separation: eta2 0.0780, percentile 93.6 -> WITHIN_5_95; halves 51.6, 93.6; null percentile 78.0 -> WITHIN_5_95
+Q8. Does a garment or worn item with a curved edge (collar, neckline, stocking, knee pad) appear in the photo?
+   No garment or worn item: 73 photos, d +0.08, percentile 79.0
+   Garment present but curved edges not noticeable: 21 photos, d -0.13, percentile 19.6
+   Garment with clearly visible curved edge: 26 photos, d -0.01, percentile 56.5
+   separation: eta2 0.0027, percentile 21.3 -> WITHIN_5_95; halves 65.9, 86.1; null percentile 75.1 -> WITHIN_5_95
+Q9 (standing). Which way is the main subject facing or pointing?
+   left: 15 photos, d -0.35, percentile 17.3
+   right: 22 photos, d +0.10, percentile 68.5
+   toward or away from the camera: 48 photos, d -0.27, percentile 7.8
+   no clear facing direction or no single main subject: 35 photos, d +0.43, percentile 95.8
+   separation: eta2 0.0502, percentile 81.0 -> WITHIN_5_95; halves 6.1, 94.6; null percentile 54.2 -> WITHIN_5_95
+Q10 (standing). How much of the photo does the main subject take up?
+   less than a quarter: 4 photos (too few to compare)
+   a quarter to three quarters: 53 photos, d -0.07, percentile 41.2
+   more than three quarters: 47 photos, d -0.04, percentile 47.1
+   no single main subject: 16 photos, d +0.22, percentile 73.2
+   separation: eta2 0.0061, percentile 25.4 -> WITHIN_5_95; halves 83.7, 78.7; null percentile 6.5 -> WITHIN_5_95
+Q11 (standing). Is the main subject cut off by an edge of the photo?
+   fully inside the photo: 33 photos, d +0.04, percentile 68.9
+   partly cut off: 73 photos, d -0.16, percentile 22.1
+   no single main subject: 14 photos, d +0.30, percentile 75.6
+   separation: eta2 0.0107, percentile 43.5 -> WITHIN_5_95; halves 59.7, 65.7; null percentile 10.0 -> WITHIN_5_95
+Q12 (standing). Where is the center of the main subject left to right?
+   left third: 3 photos (too few to compare)
+   middle third: 87 photos, d -0.56, percentile 3.2
+   right third: 4 photos (too few to compare)
+   no single main subject: 26 photos, d +0.56, percentile 96.6
+   separation: eta2 0.0553, percentile 95.8 -> ABOVE_95; halves 29.7, 98.1; null percentile 5.3 -> WITHIN_5_95
+Q13 (standing). How brightly lit is the main subject?
+   dark: 1 photos (too few to compare)
+   medium: 78 photos, d -0.39, percentile 4.8
+   bright: 32 photos, d +0.30, percentile 91.2
+   no single main subject: 9 photos, d +0.39, percentile 89.5
+   separation: eta2 0.0350, percentile 85.6 -> WITHIN_5_95; halves 92.4, 89.1; null percentile 13.7 -> WITHIN_5_95
+Q14 (standing). Does the photo have an overall color tint?
+   no noticeable tint: 43 photos, d +0.16, percentile 70.7
+   warm (yellow, orange or red) tint: 58 photos, d -0.04, percentile 38.3
+   cool (blue or green) tint: 12 photos, d -0.22, percentile 32.0
+   black and white or nearly colorless: 7 photos, d -0.11, percentile 49.5
+   separation: eta2 0.0085, percentile 13.0 -> WITHIN_5_95; halves 76.2, 15.0; null percentile 57.3 -> WITHIN_5_95
+Q15 (standing). Are the horizon or the main straight lines in the photo tilted?
+   level: 57 photos, d -0.16, percentile 15.5
+   noticeably tilted: 35 photos, d +0.10, percentile 67.9
+   no horizon or straight lines visible: 28 photos, d +0.10, percentile 79.3
+   separation: eta2 0.0064, percentile 20.6 -> WITHIN_5_95; halves 27.6, 12.9; null percentile 63.6 -> WITHIN_5_95
+Q16 (standing). How sharp is the main subject?
+   sharp: 79 photos, d -0.39, percentile 2.6
+   slightly blurry: 18 photos, d +0.05, percentile 73.9
+   very blurry: 1 photos (too few to compare)
+   no single main subject: 22 photos, d +0.53, percentile 95.4
+   separation: eta2 0.0470, percentile 91.5 -> WITHIN_5_95; halves 24.4, 92.3; null percentile 13.6 -> WITHIN_5_95
+separation percentile above 95: real 2, null 0; below 5: real 0, null 0 (of 16 questions)
+real_s1  one_plus_related  The unit mainly responds to close-up views of man-made or handmade objects that fill the frame. It responds somewhat more when the image is a decorative or patt
+real_s2  one_plus_related  The unit responds mainly to close-up, frame-filling views of compact man-made or crafted objects (wallets, erasers, sharpeners, stockings, shoes). It responds m
+real_s3  one_plus_related  The unit responds mainly to close-up, frame-filling views of man-made or handmade objects, and more so when the frame shows a surface texture or ornamental patt
+null_s1  one  The unit responds to curved contours that form the outline of a man-made object, seen at moderate contrast against its background, rather than to decorative cur
+null_s2  one_plus_related  The unit responds mainly to the curved outline of a man-made object seen against a moderately contrasting background, and less to curves that are only decorativ
+null_s3  cannot_tell  Within its top classes (small man-made items like wallets, stockings, eraser, ocarina, loafer), the unit leans toward photos where a curved contour is an object

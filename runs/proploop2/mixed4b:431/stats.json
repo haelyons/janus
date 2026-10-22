@@ -1,0 +1,1297 @@
+{
+ "unit": "mixed4b:431",
+ "layer": "mixed4b",
+ "chan": 431,
+ "m": 512,
+ "n": 120,
+ "classes": [
+  193,
+  238,
+  156,
+  299,
+  163,
+  270,
+  194,
+  248,
+  240,
+  155,
+  220,
+  617
+ ],
+ "class_names": [
+  "Australian terrier",
+  "Greater Swiss Mountain dog",
+  "Blenheim spaniel",
+  "meerkat",
+  "bloodhound",
+  "white wolf",
+  "Dandie Dinmont",
+  "Eskimo dog",
+  "Appenzeller",
+  "Shih-Tzu",
+  "Sussex spaniel",
+  "lab coat"
+ ],
+ "set_ids": [
+  1550,
+  1551,
+  1552,
+  1553,
+  1554,
+  1555,
+  1556,
+  1557,
+  1558,
+  1559,
+  2350,
+  2351,
+  2352,
+  2353,
+  2354,
+  2355,
+  2356,
+  2357,
+  2358,
+  2359,
+  2940,
+  2941,
+  2942,
+  2943,
+  2944,
+  2945,
+  2946,
+  2947,
+  2948,
+  2949,
+  3470,
+  3471,
+  3472,
+  3473,
+  3474,
+  3475,
+  3476,
+  3477,
+  3478,
+  3479,
+  3510,
+  3511,
+  3512,
+  3513,
+  3514,
+  3515,
+  3516,
+  3517,
+  3518,
+  3519,
+  4000,
+  4001,
+  4002,
+  4003,
+  4004,
+  4005,
+  4006,
+  4007,
+  4008,
+  4009,
+  4100,
+  4101,
+  4102,
+  4103,
+  4104,
+  4105,
+  4106,
+  4107,
+  4108,
+  4109,
+  8180,
+  8181,
+  8182,
+  8183,
+  8184,
+  8185,
+  8186,
+  8187,
+  8188,
+  8189,
+  8290,
+  8291,
+  8292,
+  8293,
+  8294,
+  8295,
+  8296,
+  8297,
+  8298,
+  8299,
+  8560,
+  8561,
+  8562,
+  8563,
+  8564,
+  8565,
+  8566,
+  8567,
+  8568,
+  8569,
+  8730,
+  8731,
+  8732,
+  8733,
+  8734,
+  8735,
+  8736,
+  8737,
+  8738,
+  8739,
+  8780,
+  8781,
+  8782,
+  8783,
+  8784,
+  8785,
+  8786,
+  8787,
+  8788,
+  8789
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the photo show a furry mammal (e.g., dog, monkey, hyena, hamster, squirrel, mink)?",
+   "answers": [
+    "Yes, a dog",
+    "Yes, another furry mammal",
+    "No furry mammal"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     95,
+     15,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.001479038004989628,
+    "eta2_pct": 64.2578125,
+    "d": {
+     "0": -0.07629426073368835,
+     "1": 0.1150469011063557,
+     "2": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 20.8984375,
+     "1": 78.90625,
+     "2": 11.71875
+    },
+    "halves": [
+     36.328125,
+     67.578125
+    ]
+   },
+   "null": {
+    "counts": [
+     95,
+     15,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.013799300693249824,
+    "eta2_pct": 98.046875,
+    "d": {
+     "0": 0.2330401448117109,
+     "1": -0.3514097421763892,
+     "2": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 98.2421875,
+     "1": 1.5625,
+     "2": 11.71875
+    },
+    "halves": [
+     79.296875,
+     44.53125
+    ]
+   }
+  },
+  {
+   "question": "How much of the furry mammal's head is visible?",
+   "answers": [
+    "Head clearly visible and prominent",
+    "Head partly visible or small",
+    "Head not visible",
+    "No furry mammal in photo"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     86,
+     22,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.07627341832557653,
+    "eta2_pct": 77.1484375,
+    "d": {
+     "0": 0.541942995126296,
+     "1": -0.6964776167257128,
+     "3": -0.018950366724871232
+    },
+    "d_pct": {
+     "0": 83.984375,
+     "1": 15.8203125,
+     "3": 25.9765625
+    },
+    "halves": [
+     80.46875,
+     64.6484375
+    ]
+   },
+   "null": {
+    "counts": [
+     86,
+     22,
+     2,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.0004162771402704522,
+    "eta2_pct": 19.140625,
+    "d": {
+     "0": -0.039641456665187584,
+     "1": 0.05159674291541759,
+     "3": 0.00011200713447619511
+    },
+    "d_pct": {
+     "0": 50.78125,
+     "1": 48.4375,
+     "3": 64.2578125
+    },
+    "halves": [
+     26.3671875,
+     24.0234375
+    ]
+   }
+  },
+  {
+   "question": "How much of the image does the furry mammal's head and upper body occupy?",
+   "answers": [
+    "More than half the image",
+    "Between a quarter and half",
+    "Less than a quarter",
+    "No furry mammal in photo"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     50,
+     41,
+     19,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.15360939614155014,
+    "eta2_pct": 79.4921875,
+    "d": {
+     "0": -0.3015101186158742,
+     "1": 0.7472503711077293,
+     "2": -0.7113384767391224,
+     "3": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 36.9140625,
+     "1": 97.8515625,
+     "2": 16.015625,
+     "3": 11.71875
+    },
+    "halves": [
+     90.4296875,
+     54.8828125
+    ]
+   },
+   "null": {
+    "counts": [
+     50,
+     41,
+     19,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.006725140429623891,
+    "eta2_pct": 30.859375,
+    "d": {
+     "0": -0.15846994426353045,
+     "1": 0.09962225619782646,
+     "2": 0.12087979004564729,
+     "3": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 10.9375,
+     "1": 82.8125,
+     "2": 68.1640625,
+     "3": 11.71875
+    },
+    "halves": [
+     13.8671875,
+     26.171875
+    ]
+   }
+  },
+  {
+   "question": "How furry does the area around the animal's face (cheeks, ears, neck) look?",
+   "answers": [
+    "Long, thick or fluffy fur",
+    "Short but visible fur",
+    "Little or no visible fur",
+    "No mammal in photo"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     65,
+     45,
+     0,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 6.4451026339154275e-06,
+    "eta2_pct": 5.859375,
+    "d": {
+     "0": -0.004793582343610901,
+     "1": 0.005077646482491673,
+     "3": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 42.3828125,
+     "1": 57.421875,
+     "3": 11.71875
+    },
+    "halves": [
+     40.625,
+     42.96875
+    ]
+   },
+   "null": {
+    "counts": [
+     65,
+     45,
+     0,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 3.921796254383955e-05,
+    "eta2_pct": 13.4765625,
+    "d": {
+     "0": 0.011824636171266178,
+     "1": -0.012525355351785528,
+     "3": -3.8927988937094403e-16
+    },
+    "d_pct": {
+     "0": 54.8828125,
+     "1": 44.921875,
+     "3": 11.71875
+    },
+    "halves": [
+     32.421875,
+     30.2734375
+    ]
+   }
+  },
+  {
+   "question": "Which view of the animal's head is shown?",
+   "answers": [
+    "Frontal (facing camera)",
+    "Side or three-quarter view",
+    "Back of head or head turned away",
+    "No mammal head visible"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     68,
+     36,
+     5,
+     11
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.06426205206081759,
+    "eta2_pct": 85.15625,
+    "d": {
+     "0": 0.4402008240956544,
+     "1": -0.34117183100856335,
+     "2": -0.8219519330405464,
+     "3": -0.04355640995331432
+    },
+    "d_pct": {
+     "0": 86.9140625,
+     "1": 15.0390625,
+     "2": 17.96875,
+     "3": 59.1796875
+    },
+    "halves": [
+     97.4609375,
+     44.3359375
+    ]
+   },
+   "null": {
+    "counts": [
+     68,
+     36,
+     5,
+     11
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.00023183820535378102,
+    "eta2_pct": 0.1953125,
+    "d": {
+     "0": 0.022945783421939824,
+     "1": -0.006178195694690503,
+     "2": -0.01183765603983034,
+     "3": -0.046410987636641164
+    },
+    "d_pct": {
+     "0": 52.34375,
+     "1": 40.8203125,
+     "2": 69.53125,
+     "3": 35.15625
+    },
+    "halves": [
+     9.9609375,
+     35.546875
+    ]
+   }
+  },
+  {
+   "question": "Are the animal's ears visible and furry?",
+   "answers": [
+    "Yes, furry ears clearly visible",
+    "Ears visible but not noticeably furry",
+    "Ears not visible",
+    "No mammal in photo"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     92,
+     14,
+     4,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.03316393917100608,
+    "eta2_pct": 88.0859375,
+    "d": {
+     "0": 0.3628275822835624,
+     "1": -0.5516472257512973,
+     "3": -0.012614210669106698
+    },
+    "d_pct": {
+     "0": 88.4765625,
+     "1": 11.71875,
+     "3": 46.6796875
+    },
+    "halves": [
+     83.7890625,
+     66.6015625
+    ]
+   },
+   "null": {
+    "counts": [
+     92,
+     14,
+     4,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.007262689068678461,
+    "eta2_pct": 58.59375,
+    "d": {
+     "0": 0.1643654111977134,
+     "1": -0.259404624700978,
+     "3": 0.007085826555137264
+    },
+    "d_pct": {
+     "0": 62.3046875,
+     "1": 36.9140625,
+     "3": 68.359375
+    },
+    "halves": [
+     55.859375,
+     19.7265625
+    ]
+   }
+  },
+  {
+   "question": "What kind of furry mammal is the main one shown?",
+   "answers": [
+    "Dog or dog-like canid (dog, dhole, wolf, fox)",
+    "Primate (monkey, ape)",
+    "Small furry mammal (hamster, squirrel, mink, etc.)",
+    "Other furry mammal (hyena, cat, bear, etc.)",
+    "No furry mammal"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     100,
+     1,
+     9,
+     0,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     2,
+     4
+    ],
+    "eta2": 0.0003291458571719713,
+    "eta2_pct": 53.515625,
+    "d": {
+     "0": -0.03236532647037709,
+     "2": 0.06832680032635212,
+     "4": -0.005641662412268009
+    },
+    "d_pct": {
+     "0": 26.171875,
+     "2": 73.6328125,
+     "4": 26.171875
+    },
+    "halves": [
+     64.6484375,
+     83.3984375
+    ]
+   },
+   "null": {
+    "counts": [
+     100,
+     1,
+     9,
+     0,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     2,
+     4
+    ],
+    "eta2": 0.00011990070666334678,
+    "eta2_pct": 26.953125,
+    "d": {
+     "0": 0.01953424664298215,
+     "2": -0.04123896513518404,
+     "4": 0.003405052167124877
+    },
+    "d_pct": {
+     "0": 60.3515625,
+     "2": 39.453125,
+     "4": 60.3515625
+    },
+    "halves": [
+     73.6328125,
+     82.6171875
+    ]
+   }
+  },
+  {
+   "question": "Is the neck/shoulder area next to the animal's face visible?",
+   "answers": [
+    "Yes, clearly visible",
+    "Partly visible",
+    "Not visible",
+    "No mammal in photo"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     69,
+     40,
+     1,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.11004251938299411,
+    "eta2_pct": 98.6328125,
+    "d": {
+     "0": 0.6245723233634534,
+     "1": -0.6833917827697067,
+     "3": 0.004351851328769136
+    },
+    "d_pct": {
+     "0": 98.6328125,
+     "1": 1.171875,
+     "3": 86.71875
+    },
+    "halves": [
+     90.234375,
+     98.4375
+    ]
+   },
+   "null": {
+    "counts": [
+     69,
+     40,
+     1,
+     10
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.006680365583029038,
+    "eta2_pct": 75.390625,
+    "d": {
+     "0": 0.1540612807877719,
+     "1": -0.16827120270446855,
+     "3": 0.0002069558057868547
+    },
+    "d_pct": {
+     "0": 82.8125,
+     "1": 16.796875,
+     "3": 39.0625
+    },
+    "halves": [
+     30.078125,
+     62.3046875
+    ]
+   }
+  },
+  {
+   "question": "Which way is the main subject facing or pointing?",
+   "answers": [
+    "left",
+    "right",
+    "toward or away from the camera",
+    "no clear facing direction or no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     16,
+     29,
+     66,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.10128237310714716,
+    "eta2_pct": 91.6015625,
+    "d": {
+     "0": -0.8323267442197637,
+     "1": 0.08658495006329671,
+     "2": 0.431233032678549,
+     "3": -0.3808013106123139
+    },
+    "d_pct": {
+     "0": 0.1953125,
+     "1": 81.4453125,
+     "2": 91.9921875,
+     "3": 21.875
+    },
+    "halves": [
+     76.5625,
+     92.7734375
+    ]
+   },
+   "null": {
+    "counts": [
+     16,
+     29,
+     66,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.0062175654142865786,
+    "eta2_pct": 16.6015625,
+    "d": {
+     "0": 0.19969000795342365,
+     "1": 0.018168785059950433,
+     "2": -0.060883131616681206,
+     "3": -0.16340752344930382
+    },
+    "d_pct": {
+     "0": 79.6875,
+     "1": 58.7890625,
+     "2": 31.4453125,
+     "3": 41.796875
+    },
+    "halves": [
+     11.328125,
+     42.3828125
+    ]
+   }
+  },
+  {
+   "question": "How much of the photo does the main subject take up?",
+   "answers": [
+    "less than a quarter",
+    "a quarter to three quarters",
+    "more than three quarters",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     9,
+     61,
+     47,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.041692760388067185,
+    "eta2_pct": 37.3046875,
+    "d": {
+     "0": -0.5625935395673768,
+     "1": 0.35257254031492896,
+     "2": -0.1998622727222819
+    },
+    "d_pct": {
+     "0": 37.890625,
+     "1": 70.3125,
+     "2": 38.8671875
+    },
+    "halves": [
+     42.3828125,
+     40.8203125
+    ]
+   },
+   "null": {
+    "counts": [
+     9,
+     61,
+     47,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.014728685811484898,
+    "eta2_pct": 48.828125,
+    "d": {
+     "0": 0.0035137855732916747,
+     "1": 0.23009296744865082,
+     "2": -0.23994315391545004
+    },
+    "d_pct": {
+     "0": 50.390625,
+     "1": 90.625,
+     "2": 7.2265625
+    },
+    "halves": [
+     11.328125,
+     72.0703125
+    ]
+   }
+  },
+  {
+   "question": "Is the main subject cut off by an edge of the photo?",
+   "answers": [
+    "fully inside the photo",
+    "partly cut off",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     24,
+     93,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.0036530386955396336,
+    "eta2_pct": 22.265625,
+    "d": {
+     "0": -0.14903969963751063,
+     "1": 0.14903969963751063
+    },
+    "d_pct": {
+     "0": 57.421875,
+     "1": 42.3828125
+    },
+    "halves": [
+     25.0,
+     9.375
+    ]
+   },
+   "null": {
+    "counts": [
+     24,
+     93,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.01643240172160121,
+    "eta2_pct": 86.328125,
+    "d": {
+     "0": 0.3161006232465117,
+     "1": -0.3161006232465117
+    },
+    "d_pct": {
+     "0": 91.2109375,
+     "1": 8.59375
+    },
+    "halves": [
+     5.859375,
+     94.7265625
+    ]
+   }
+  },
+  {
+   "question": "Where is the center of the main subject left to right?",
+   "answers": [
+    "left third",
+    "middle third",
+    "right third",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     8,
+     99,
+     6,
+     7
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.0728943763842406,
+    "eta2_pct": 91.2109375,
+    "d": {
+     "0": 0.7706929599957558,
+     "1": 0.0912505149283049,
+     "2": -0.7859771785389541,
+     "3": -0.43317613473008665
+    },
+    "d_pct": {
+     "0": 96.484375,
+     "1": 74.0234375,
+     "2": 0.5859375,
+     "3": 19.53125
+    },
+    "halves": [
+     47.4609375,
+     92.3828125
+    ]
+   },
+   "null": {
+    "counts": [
+     8,
+     99,
+     6,
+     7
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.05408816100069864,
+    "eta2_pct": 94.7265625,
+    "d": {
+     "0": 0.8904386240187327,
+     "1": -0.4540910657071138,
+     "2": -0.031965933848741385,
+     "3": 0.2124993896799548
+    },
+    "d_pct": {
+     "0": 98.6328125,
+     "1": 1.5625,
+     "2": 60.9375,
+     "3": 76.7578125
+    },
+    "halves": [
+     35.15625,
+     93.75
+    ]
+   }
+  },
+  {
+   "question": "How brightly lit is the main subject?",
+   "answers": [
+    "dark",
+    "medium",
+    "bright",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     1,
+     81,
+     35,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2
+    ],
+    "eta2": 0.028329835475576257,
+    "eta2_pct": 87.3046875,
+    "d": {
+     "1": -0.36510973211933073,
+     "2": 0.36510973211933073
+    },
+    "d_pct": {
+     "1": 8.0078125,
+     "2": 91.796875
+    },
+    "halves": [
+     82.2265625,
+     57.6171875
+    ]
+   },
+   "null": {
+    "counts": [
+     1,
+     81,
+     35,
+     3
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2
+    ],
+    "eta2": 0.019695414760356265,
+    "eta2_pct": 94.7265625,
+    "d": {
+     "1": 0.30442754726782456,
+     "2": -0.30442754726782456
+    },
+    "d_pct": {
+     "1": 96.2890625,
+     "2": 3.515625
+    },
+    "halves": [
+     32.6171875,
+     86.71875
+    ]
+   }
+  },
+  {
+   "question": "Does the photo have an overall color tint?",
+   "answers": [
+    "no noticeable tint",
+    "warm (yellow, orange or red) tint",
+    "cool (blue or green) tint",
+    "black and white or nearly colorless"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     63,
+     45,
+     6,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.025106977359587133,
+    "eta2_pct": 35.3515625,
+    "d": {
+     "0": 0.3052221416109896,
+     "1": -0.21296425943337674,
+     "2": -0.33842400688208973,
+     "3": -0.21318174595039077
+    },
+    "d_pct": {
+     "0": 78.125,
+     "1": 16.6015625,
+     "2": 38.0859375,
+     "3": 76.3671875
+    },
+    "halves": [
+     3.7109375,
+     66.40625
+    ]
+   },
+   "null": {
+    "counts": [
+     63,
+     45,
+     6,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.002639662772414072,
+    "eta2_pct": 4.4921875,
+    "d": {
+     "0": -0.09770563861511328,
+     "1": 0.09915430785200303,
+     "2": -0.007560180648162034,
+     "3": 0.031266553844596846
+    },
+    "d_pct": {
+     "0": 33.984375,
+     "1": 61.9140625,
+     "2": 74.0234375,
+     "3": 42.96875
+    },
+    "halves": [
+     6.640625,
+     40.625
+    ]
+   }
+  },
+  {
+   "question": "Are the horizon or the main straight lines in the photo tilted?",
+   "answers": [
+    "level",
+    "noticeably tilted",
+    "no horizon or straight lines visible"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     29,
+     10,
+     81
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.011376006411160995,
+    "eta2_pct": 21.6796875,
+    "d": {
+     "0": 0.24334788688186448,
+     "1": -0.13797166032575947,
+     "2": -0.15524730836432568
+    },
+    "d_pct": {
+     "0": 54.296875,
+     "1": 45.1171875,
+     "2": 49.4140625
+    },
+    "halves": [
+     39.2578125,
+     82.421875
+    ]
+   },
+   "null": {
+    "counts": [
+     29,
+     10,
+     81
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.008632582275217855,
+    "eta2_pct": 52.734375,
+    "d": {
+     "0": 0.10108524452046692,
+     "1": -0.31822423542648637,
+     "2": 0.026363627312321235
+    },
+    "d_pct": {
+     "0": 61.1328125,
+     "1": 22.4609375,
+     "2": 61.328125
+    },
+    "halves": [
+     5.078125,
+     78.3203125
+    ]
+   }
+  },
+  {
+   "question": "How sharp is the main subject?",
+   "answers": [
+    "sharp",
+    "slightly blurry",
+    "very blurry",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     98,
+     16,
+     0,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.055019654328499736,
+    "eta2_pct": 76.3671875,
+    "d": {
+     "0": 0.6002835575657296,
+     "1": -0.6064159915272771,
+     "3": -0.416864240073573
+    },
+    "d_pct": {
+     "0": 92.578125,
+     "1": 15.0390625,
+     "3": 18.5546875
+    },
+    "halves": [
+     55.859375,
+     67.96875
+    ]
+   },
+   "null": {
+    "counts": [
+     98,
+     16,
+     0,
+     6
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.0036137202971237878,
+    "eta2_pct": 18.1640625,
+    "d": {
+     "0": 0.0419124186108203,
+     "1": -0.13458790112282415,
+     "3": 0.195308615414402
+    },
+    "d_pct": {
+     "0": 37.5,
+     "1": 45.1171875,
+     "3": 75.5859375
+    },
+    "halves": [
+     0.1953125,
+     34.375
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "real": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Australian terrier, Greater Swiss Mountain dog, Blenheim spaniel, meerkat, bloodhound, white wolf, Dandie Dinmont, Eskimo dog, Appenzeller, Shih-Tzu, Sussex spaniel, lab coat). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a furry mammal (e.g., dog, monkey, hyena, hamster, squirrel, mink)?\nseparation: percentile 64\n- Yes, a dog: 95 photos, d -0.08, percentile 21\n- Yes, another furry mammal: 15 photos, d +0.12, percentile 79\n- No furry mammal: 10 photos, d -0.00, percentile 12\n\nQ2. How much of the furry mammal's head is visible?\nseparation: percentile 77\n- Head clearly visible and prominent: 86 photos, d +0.54, percentile 84\n- Head partly visible or small: 22 photos, d -0.70, percentile 16\n- Head not visible: 2 photos (too few to compare)\n- No furry mammal in photo: 10 photos, d -0.02, percentile 26\n\nQ3. How much of the image does the furry mammal's head and upper body occupy?\nseparation: percentile 79\n- More than half the image: 50 photos, d -0.30, percentile 37\n- Between a quarter and half: 41 photos, d +0.75, percentile 98\n- Less than a quarter: 19 photos, d -0.71, percentile 16\n- No furry mammal in photo: 10 photos, d -0.00, percentile 12\n\nQ4. How furry does the area around the animal's face (cheeks, ears, neck) look?\nseparation: percentile 6\n- Long, thick or fluffy fur: 65 photos, d -0.00, percentile 42\n- Short but visible fur: 45 photos, d +0.01, percentile 57\n- Little or no visible fur: 0 photos (too few to compare)\n- No mammal in photo: 10 photos, d -0.00, percentile 12\n\nQ5. Which view of the animal's head is shown?\nseparation: percentile 85\n- Frontal (facing camera): 68 photos, d +0.44, percentile 87\n- Side or three-quarter view: 36 photos, d -0.34, percentile 15\n- Back of head or head turned away: 5 photos, d -0.82, percentile 18\n- No mammal head visible: 11 photos, d -0.04, percentile 59\n\nQ6. Are the animal's ears visible and furry?\nseparation: percentile 88\n- Yes, furry ears clearly visible: 92 photos, d +0.36, percentile 88\n- Ears visible but not noticeably furry: 14 photos, d -0.55, percentile 12\n- Ears not visible: 4 photos (too few to compare)\n- No mammal in photo: 10 photos, d -0.01, percentile 47\n\nQ7. What kind of furry mammal is the main one shown?\nseparation: percentile 54\n- Dog or dog-like canid (dog, dhole, wolf, fox): 100 photos, d -0.03, percentile 26\n- Primate (monkey, ape): 1 photos (too few to compare)\n- Small furry mammal (hamster, squirrel, mink, etc.): 9 photos, d +0.07, percentile 74\n- Other furry mammal (hyena, cat, bear, etc.): 0 photos (too few to compare)\n- No furry mammal: 10 photos, d -0.01, percentile 26\n\nQ8. Is the neck/shoulder area next to the animal's face visible?\nseparation: percentile 99\n- Yes, clearly visible: 69 photos, d +0.62, percentile 99\n- Partly visible: 40 photos, d -0.68, percentile 1\n- Not visible: 1 photos (too few to compare)\n- No mammal in photo: 10 photos, d +0.00, percentile 87\n\nQ9. Which way is the main subject facing or pointing?\nseparation: percentile 92\n- left: 16 photos, d -0.83, percentile 0\n- right: 29 photos, d +0.09, percentile 81\n- toward or away from the camera: 66 photos, d +0.43, percentile 92\n- no clear facing direction or no single main subject: 9 photos, d -0.38, percentile 22\n\nQ10. How much of the photo does the main subject take up?\nseparation: percentile 37\n- less than a quarter: 9 photos, d -0.56, percentile 38\n- a quarter to three quarters: 61 photos, d +0.35, percentile 70\n- more than three quarters: 47 photos, d -0.20, percentile 39\n- no single main subject: 3 photos (too few to compare)\n\nQ11. Is the main subject cut off by an edge of the photo?\nseparation: percentile 22\n- fully inside the photo: 24 photos, d -0.15, percentile 57\n- partly cut off: 93 photos, d +0.15, percentile 42\n- no single main subject: 3 photos (too few to compare)\n\nQ12. Where is the center of the main subject left to right?\nseparation: percentile 91\n- left third: 8 photos, d +0.77, percentile 96\n- middle third: 99 photos, d +0.09, percentile 74\n- right third: 6 photos, d -0.79, percentile 1\n- no single main subject: 7 photos, d -0.43, percentile 20\n\nQ13. How brightly lit is the main subject?\nseparation: percentile 87\n- dark: 1 photos (too few to compare)\n- medium: 81 photos, d -0.37, percentile 8\n- bright: 35 photos, d +0.37, percentile 92\n- no single main subject: 3 photos (too few to compare)\n\nQ14. Does the photo have an overall color tint?\nseparation: percentile 35\n- no noticeable tint: 63 photos, d +0.31, percentile 78\n- warm (yellow, orange or red) tint: 45 photos, d -0.21, percentile 17\n- cool (blue or green) tint: 6 photos, d -0.34, percentile 38\n- black and white or nearly colorless: 6 photos, d -0.21, percentile 76\n\nQ15. Are the horizon or the main straight lines in the photo tilted?\nseparation: percentile 22\n- level: 29 photos, d +0.24, percentile 54\n- noticeably tilted: 10 photos, d -0.14, percentile 45\n- no horizon or straight lines visible: 81 photos, d -0.16, percentile 49\n\nQ16. How sharp is the main subject?\nseparation: percentile 76\n- sharp: 98 photos, d +0.60, percentile 93\n- slightly blurry: 16 photos, d -0.61, percentile 15\n- very blurry: 0 photos (too few to compare)\n- no single main subject: 6 photos, d -0.42, percentile 19",
+  "null": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (Australian terrier, Greater Swiss Mountain dog, Blenheim spaniel, meerkat, bloodhound, white wolf, Dandie Dinmont, Eskimo dog, Appenzeller, Shih-Tzu, Sussex spaniel, lab coat). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a furry mammal (e.g., dog, monkey, hyena, hamster, squirrel, mink)?\nseparation: percentile 98\n- Yes, a dog: 95 photos, d +0.23, percentile 98\n- Yes, another furry mammal: 15 photos, d -0.35, percentile 2\n- No furry mammal: 10 photos, d -0.00, percentile 12\n\nQ2. How much of the furry mammal's head is visible?\nseparation: percentile 19\n- Head clearly visible and prominent: 86 photos, d -0.04, percentile 51\n- Head partly visible or small: 22 photos, d +0.05, percentile 48\n- Head not visible: 2 photos (too few to compare)\n- No furry mammal in photo: 10 photos, d +0.00, percentile 64\n\nQ3. How much of the image does the furry mammal's head and upper body occupy?\nseparation: percentile 31\n- More than half the image: 50 photos, d -0.16, percentile 11\n- Between a quarter and half: 41 photos, d +0.10, percentile 83\n- Less than a quarter: 19 photos, d +0.12, percentile 68\n- No furry mammal in photo: 10 photos, d -0.00, percentile 12\n\nQ4. How furry does the area around the animal's face (cheeks, ears, neck) look?\nseparation: percentile 13\n- Long, thick or fluffy fur: 65 photos, d +0.01, percentile 55\n- Short but visible fur: 45 photos, d -0.01, percentile 45\n- Little or no visible fur: 0 photos (too few to compare)\n- No mammal in photo: 10 photos, d -0.00, percentile 12\n\nQ5. Which view of the animal's head is shown?\nseparation: percentile 0\n- Frontal (facing camera): 68 photos, d +0.02, percentile 52\n- Side or three-quarter view: 36 photos, d -0.01, percentile 41\n- Back of head or head turned away: 5 photos, d -0.01, percentile 70\n- No mammal head visible: 11 photos, d -0.05, percentile 35\n\nQ6. Are the animal's ears visible and furry?\nseparation: percentile 59\n- Yes, furry ears clearly visible: 92 photos, d +0.16, percentile 62\n- Ears visible but not noticeably furry: 14 photos, d -0.26, percentile 37\n- Ears not visible: 4 photos (too few to compare)\n- No mammal in photo: 10 photos, d +0.01, percentile 68\n\nQ7. What kind of furry mammal is the main one shown?\nseparation: percentile 27\n- Dog or dog-like canid (dog, dhole, wolf, fox): 100 photos, d +0.02, percentile 60\n- Primate (monkey, ape): 1 photos (too few to compare)\n- Small furry mammal (hamster, squirrel, mink, etc.): 9 photos, d -0.04, percentile 39\n- Other furry mammal (hyena, cat, bear, etc.): 0 photos (too few to compare)\n- No furry mammal: 10 photos, d +0.00, percentile 60\n\nQ8. Is the neck/shoulder area next to the animal's face visible?\nseparation: percentile 75\n- Yes, clearly visible: 69 photos, d +0.15, percentile 83\n- Partly visible: 40 photos, d -0.17, percentile 17\n- Not visible: 1 photos (too few to compare)\n- No mammal in photo: 10 photos, d +0.00, percentile 39\n\nQ9. Which way is the main subject facing or pointing?\nseparation: percentile 17\n- left: 16 photos, d +0.20, percentile 80\n- right: 29 photos, d +0.02, percentile 59\n- toward or away from the camera: 66 photos, d -0.06, percentile 31\n- no clear facing direction or no single main subject: 9 photos, d -0.16, percentile 42\n\nQ10. How much of the photo does the main subject take up?\nseparation: percentile 49\n- less than a quarter: 9 photos, d +0.00, percentile 50\n- a quarter to three quarters: 61 photos, d +0.23, percentile 91\n- more than three quarters: 47 photos, d -0.24, percentile 7\n- no single main subject: 3 photos (too few to compare)\n\nQ11. Is the main subject cut off by an edge of the photo?\nseparation: percentile 86\n- fully inside the photo: 24 photos, d +0.32, percentile 91\n- partly cut off: 93 photos, d -0.32, percentile 9\n- no single main subject: 3 photos (too few to compare)\n\nQ12. Where is the center of the main subject left to right?\nseparation: percentile 95\n- left third: 8 photos, d +0.89, percentile 99\n- middle third: 99 photos, d -0.45, percentile 2\n- right third: 6 photos, d -0.03, percentile 61\n- no single main subject: 7 photos, d +0.21, percentile 77\n\nQ13. How brightly lit is the main subject?\nseparation: percentile 95\n- dark: 1 photos (too few to compare)\n- medium: 81 photos, d +0.30, percentile 96\n- bright: 35 photos, d -0.30, percentile 4\n- no single main subject: 3 photos (too few to compare)\n\nQ14. Does the photo have an overall color tint?\nseparation: percentile 4\n- no noticeable tint: 63 photos, d -0.10, percentile 34\n- warm (yellow, orange or red) tint: 45 photos, d +0.10, percentile 62\n- cool (blue or green) tint: 6 photos, d -0.01, percentile 74\n- black and white or nearly colorless: 6 photos, d +0.03, percentile 43\n\nQ15. Are the horizon or the main straight lines in the photo tilted?\nseparation: percentile 53\n- level: 29 photos, d +0.10, percentile 61\n- noticeably tilted: 10 photos, d -0.32, percentile 22\n- no horizon or straight lines visible: 81 photos, d +0.03, percentile 61\n\nQ16. How sharp is the main subject?\nseparation: percentile 18\n- sharp: 98 photos, d +0.04, percentile 38\n- slightly blurry: 16 photos, d -0.13, percentile 45\n- very blurry: 0 photos (too few to compare)\n- no single main subject: 6 photos, d +0.20, percentile 76"
+ }
+}

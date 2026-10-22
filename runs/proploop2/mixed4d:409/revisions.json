@@ -1,0 +1,122 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a horizontally elongated body raised on wheels or legs, seen from the side or at an angle so its long flank and wheels/legs are visible: mostly cars and trucks, with standing four-legged animals (dogs, a weasel) as a weaker related case. The response is strongest for a sharp, well-framed three-quarter or side view, and weak for front/rear views or when the wheels are cropped out.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a horizontally elongated body raised on wheels or legs, seen from the side or at an angle so its long flank and wheels/legs are visible: mostly cars and trucks, with standing four-legged animals (dogs, a weasel) as a weaker related case. The response is strongest for a sharp, well-framed three-quarter or side view, and weak for front/rear views or when the wheels are cropped out.",
+   "evidence": "Within vehicle classes, 'long body clearly raised on wheels' is the top answer (d +1.06, percentile 100), and wheels hidden or cropped is the bottom (d -1.07, percentile 0). Three-quarter views (d +0.71) and whole-side-with-front-wheel views (d +0.34) are favored, while front/rear views (d -1.05) and toward/away-facing subjects (d -0.90) are disfavored, which fits a response to a visible elongated flank on supports; animals could not be tested because no photos contained them.",
+   "missing_data": "Within-class checks on dog and other quadruped photos to confirm the animal half of the description, plus a direct comparison of pure side profiles against three-quarter views.",
+   "confidence": 0.72
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1ee059961febbf435fee6164645686e46ad9204b718f56eae71aa8940bb1b2ba",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a horizontally elongated body raised on wheels or legs, seen from the side or at an angle so its long flank and wheels/legs are visible: mostly cars and trucks, with standing four-legged animals (dogs, a weasel) as a weaker related case. The response is strongest for a sharp, well-framed three-quarter or side view, and weak for front/rear views or when the wheels are cropped out.\",\n \"evidence\": \"Within vehicle classes, 'long body clearly raised on wheels' is the top answer (d +1.06, percentile 100), and wheels hidden or cropped is the bottom (d -1.07, percentile 0). Three-quarter views (d +0.71) and whole-side-with-front-wheel views (d +0.34) are favored, while front/rear views (d -1.05) and toward/away-facing subjects (d -0.90) are disfavored, which fits a response to a visible elongated flank on supports; animals could not be tested because no photos contained them.\",\n \"missing_data\": \"Within-class checks on dog and other quadruped photos to confirm the animal half of the description, plus a direct comparison of pure side profiles against three-quarter views.\",\n \"confidence\": 0.72}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a horizontally elongated body raised on wheels or legs, seen from the side or at an angle so its long flank and wheels/legs are visible: mostly cars and trucks, with standing four-legged animals (dogs, a weasel) as a weaker related case. The response is strongest for a sharp, well-framed three-quarter or side view, and weak for front/rear views or when the wheels are cropped out.\",\n \"evidence\": \"Within vehicle classes, 'long body clearly raised on wheels' is the top answer (d +1.06, percentile 100), and wheels hidden or cropped is the bottom (d -1.07, percentile 0). Three-quarter views (d +0.71) and whole-side-with-front-wheel views (d +0.34) are favored, while front/rear views (d -1.05) and toward/away-facing subjects (d -0.90) are disfavored, which fits a response to a visible elongated flank on supports; animals could not be tested because no photos contained them.\",\n \"missing_data\": \"Within-class checks on dog and other quadruped photos to confirm the animal half of the description, plus a direct comparison of pure side profiles against three-quarter views.\",\n \"confidence\": 0.72}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a horizontally elongated body visibly raised on wheels or legs and seen lengthwise, chiefly cars and trucks in three-quarter or side view, possibly extending to standing quadrupeds with the same layout.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a horizontally elongated body visibly raised on wheels or legs and seen lengthwise, chiefly cars and trucks in three-quarter or side view, possibly extending to standing quadrupeds with the same layout.",
+   "evidence": "All 12 top classes are road vehicles, and the strongest answer is 'long body clearly raised on legs or wheels' (d +1.06, percentile 100), while front/rear views (d -1.05) and hidden wheels (d -1.07) suppress it. Three-quarter views (d +0.71) beat pure side-on profiles (d -0.14), so vehicles rather than dogs look primary and 'side-view' is too strict.",
+   "missing_data": "Activations on dog and other quadruped photos (standing vs. sitting, side vs. front) to confirm whether animals are a real extension or the main driver.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1132ad1a16d7a118bd7c75272733e52cb5819aded045850b81e3b612f727d389",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a horizontally elongated body visibly raised on wheels or legs and seen lengthwise, chiefly cars and trucks in three-quarter or side view, possibly extending to standing quadrupeds with the same layout.\",\n \"evidence\": \"All 12 top classes are road vehicles, and the strongest answer is 'long body clearly raised on legs or wheels' (d +1.06, percentile 100), while front/rear views (d -1.05) and hidden wheels (d -1.07) suppress it. Three-quarter views (d +0.71) beat pure side-on profiles (d -0.14), so vehicles rather than dogs look primary and 'side-view' is too strict.\",\n \"missing_data\": \"Activations on dog and other quadruped photos (standing vs. sitting, side vs. front) to confirm whether animals are a real extension or the main driver.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a horizontally elongated body visibly raised on wheels or legs and seen lengthwise, chiefly cars and trucks in three-quarter or side view, possibly extending to standing quadrupeds with the same layout.\",\n \"evidence\": \"All 12 top classes are road vehicles, and the strongest answer is 'long body clearly raised on legs or wheels' (d +1.06, percentile 100), while front/rear views (d -1.05) and hidden wheels (d -1.07) suppress it. Three-quarter views (d +0.71) beat pure side-on profiles (d -0.14), so vehicles rather than dogs look primary and 'side-view' is too strict.\",\n \"missing_data\": \"Activations on dog and other quadruped photos (standing vs. sitting, side vs. front) to confirm whether animals are a real extension or the main driver.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a horizontally elongated body raised on wheels, seen from the side or three-quarter angle, mostly road vehicles. It is weak or silent for front or rear views and for bodies whose wheels are hidden. The proposed dog-torso half is not supported: all 12 top classes are vehicles (plus airliner and grille), and no animals appeared.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a horizontally elongated body raised on wheels, seen from the side or three-quarter angle, mostly road vehicles. It is weak or silent for front or rear views and for bodies whose wheels are hidden. The proposed dog-torso half is not supported: all 12 top classes are vehicles (plus airliner and grille), and no animals appeared.",
+   "evidence": "'Long body clearly raised on legs or wheels' is d +1.06 (percentile 100) and wheels hidden or cropped is d -1.07 (percentile 0). Three-quarter view (+0.71) and left-facing (+0.71) are strongly positive, front or rear views are strongly negative (about -1), and pure side-on profile is slightly negative.",
+   "missing_data": "Activity on dog and other quadruped photos (standing in profile vs other poses), to test whether 'raised elongated body' carries over to animals, which would make this one_plus_related or unrelated.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "798e433659f6b71fdc6ac2403a90fc1f96d17a29fa145dd7f14654eafb3ee0ff",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a horizontally elongated body raised on wheels, seen from the side or three-quarter angle, mostly road vehicles. It is weak or silent for front or rear views and for bodies whose wheels are hidden. The proposed dog-torso half is not supported: all 12 top classes are vehicles (plus airliner and grille), and no animals appeared.\", \"evidence\": \"'Long body clearly raised on legs or wheels' is d +1.06 (percentile 100) and wheels hidden or cropped is d -1.07 (percentile 0). Three-quarter view (+0.71) and left-facing (+0.71) are strongly positive, front or rear views are strongly negative (about -1), and pure side-on profile is slightly negative.\", \"missing_data\": \"Activity on dog and other quadruped photos (standing in profile vs other poses), to test whether 'raised elongated body' carries over to animals, which would make this one_plus_related or unrelated.\", \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a horizontally elongated body raised on wheels, seen from the side or three-quarter angle, mostly road vehicles. It is weak or silent for front or rear views and for bodies whose wheels are hidden. The proposed dog-torso half is not supported: all 12 top classes are vehicles (plus airliner and grille), and no animals appeared.\", \"evidence\": \"'Long body clearly raised on legs or wheels' is d +1.06 (percentile 100) and wheels hidden or cropped is d -1.07 (percentile 0). Three-quarter view (+0.71) and left-facing (+0.71) are strongly positive, front or rear views are strongly negative (about -1), and pure side-on profile is slightly negative.\", \"missing_data\": \"Activity on dog and other quadruped photos (standing in profile vs other poses), to test whether 'raised elongated body' carries over to animals, which would make this one_plus_related or unrelated.\", \"confidence\": 0.6}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one",
+  "explanation": "The unit responds to road vehicles (cars, vans, trucks) seen from the side or three-quarter angle, where an elongated body sits on visible wheels, especially a partial side view that includes the front wheel. The claimed main preference for side-on standing dogs or quadrupeds is not supported, since vehicles dominate its most active classes.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to road vehicles (cars, vans, trucks) seen from the side or three-quarter angle, where an elongated body sits on visible wheels, especially a partial side view that includes the front wheel. The claimed main preference for side-on standing dogs or quadrupeds is not supported, since vehicles dominate its most active classes.",
+   "evidence": "All 12 most-active classes are vehicles or vehicle parts, with no animal classes among them. Within classes, activity is higher for long bodies raised on wheels (d +0.39) and partial side views with the front wheel (d +0.42), and lower for front or rear views (d -0.44, percentile 8) and subjects facing the camera (d -0.42).",
+   "missing_data": "Activations on dog and other quadruped photos, to test whether the side-on animal torso part of the original explanation holds at all.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1c5709738d3676eec8df1d4fcce51c62f69ffa100d52881184e17d04bc8f51e0",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to road vehicles (cars, vans, trucks) seen from the side or three-quarter angle, where an elongated body sits on visible wheels, especially a partial side view that includes the front wheel. The claimed main preference for side-on standing dogs or quadrupeds is not supported, since vehicles dominate its most active classes.\",\n \"evidence\": \"All 12 most-active classes are vehicles or vehicle parts, with no animal classes among them. Within classes, activity is higher for long bodies raised on wheels (d +0.39) and partial side views with the front wheel (d +0.42), and lower for front or rear views (d -0.44, percentile 8) and subjects facing the camera (d -0.42).\",\n \"missing_data\": \"Activations on dog and other quadruped photos, to test whether the side-on animal torso part of the original explanation holds at all.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to road vehicles (cars, vans, trucks) seen from the side or three-quarter angle, where an elongated body sits on visible wheels, especially a partial side view that includes the front wheel. The claimed main preference for side-on standing dogs or quadrupeds is not supported, since vehicles dominate its most active classes.\",\n \"evidence\": \"All 12 most-active classes are vehicles or vehicle parts, with no animal classes among them. Within classes, activity is higher for long bodies raised on wheels (d +0.39) and partial side views with the front wheel (d +0.42), and lower for front or rear views (d -0.44, percentile 8) and subjects facing the camera (d -0.42).\",\n \"missing_data\": \"Activations on dog and other quadruped photos, to test whether the side-on animal torso part of the original explanation holds at all.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to the side body and front-wheel area of road vehicles, seen as a partial side view raised on wheels; the dog/quadruped torso is plausibly a related extension (an elongated body in profile raised on legs) rather than an unrelated second concept.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to the side body and front-wheel area of road vehicles, seen as a partial side view raised on wheels; the dog/quadruped torso is plausibly a related extension (an elongated body in profile raised on legs) rather than an unrelated second concept.",
+   "evidence": "Top classes are all vehicles. Within those classes, activity is higher for a partial side view with the front wheel visible (d +0.42, pct 93) and an elongated body raised on wheels (d +0.39, pct 87), and lower for front/rear/interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6). No animal photos were checked, so the quadruped part of the original explanation is untested.",
+   "missing_data": "Activations on dog/quadruped photos, especially side-on standing animals versus other poses, to test whether the animal response exists and shares the elongated-raised-body geometry.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "066249ed7fa17101c3e7de44d438ef77097d012c1e3c558150fd60cb0bf6c5eb",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the side body and front-wheel area of road vehicles, seen as a partial side view raised on wheels; the dog/quadruped torso is plausibly a related extension (an elongated body in profile raised on legs) rather than an unrelated second concept.\",\n \"evidence\": \"Top classes are all vehicles. Within those classes, activity is higher for a partial side view with the front wheel visible (d +0.42, pct 93) and an elongated body raised on wheels (d +0.39, pct 87), and lower for front/rear/interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6). No animal photos were checked, so the quadruped part of the original explanation is untested.\",\n \"missing_data\": \"Activations on dog/quadruped photos, especially side-on standing animals versus other poses, to test whether the animal response exists and shares the elongated-raised-body geometry.\",\n \"confidence\": 0.5}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the side body and front-wheel area of road vehicles, seen as a partial side view raised on wheels; the dog/quadruped torso is plausibly a related extension (an elongated body in profile raised on legs) rather than an unrelated second concept.\",\n \"evidence\": \"Top classes are all vehicles. Within those classes, activity is higher for a partial side view with the front wheel visible (d +0.42, pct 93) and an elongated body raised on wheels (d +0.39, pct 87), and lower for front/rear/interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6). No animal photos were checked, so the quadruped part of the original explanation is untested.\",\n \"missing_data\": \"Activations on dog/quadruped photos, especially side-on standing animals versus other poses, to test whether the animal response exists and shares the elongated-raised-body geometry.\",\n \"confidence\": 0.5}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the side of a horizontally elongated body raised on wheels or legs, mainly a road vehicle's flank seen from the side or three-quarter view with the front wheel in view, and more weakly the flank of a standing quadruped such as a dog.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the side of a horizontally elongated body raised on wheels or legs, mainly a road vehicle's flank seen from the side or three-quarter view with the front wheel in view, and more weakly the flank of a standing quadruped such as a dog.",
+   "evidence": "The top classes are all vehicles. Within them, activity is higher when the body is long and raised on wheels (d +0.39, pct 87) and when part of the side with the front wheel is visible (d +0.42, pct 93), and lower for front, rear or interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6).",
+   "missing_data": "Checks on animal photos (dogs, weasels) testing side-on standing posture versus other poses, since no animals appeared in this check set.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "50bae1920da750032381c4defe1eafe0596d786f27046f9026f27d3b4b16de59",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the side of a horizontally elongated body raised on wheels or legs, mainly a road vehicle's flank seen from the side or three-quarter view with the front wheel in view, and more weakly the flank of a standing quadruped such as a dog.\",\n \"evidence\": \"The top classes are all vehicles. Within them, activity is higher when the body is long and raised on wheels (d +0.39, pct 87) and when part of the side with the front wheel is visible (d +0.42, pct 93), and lower for front, rear or interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6).\",\n \"missing_data\": \"Checks on animal photos (dogs, weasels) testing side-on standing posture versus other poses, since no animals appeared in this check set.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the side of a horizontally elongated body raised on wheels or legs, mainly a road vehicle's flank seen from the side or three-quarter view with the front wheel in view, and more weakly the flank of a standing quadruped such as a dog.\",\n \"evidence\": \"The top classes are all vehicles. Within them, activity is higher when the body is long and raised on wheels (d +0.39, pct 87) and when part of the side with the front wheel is visible (d +0.42, pct 93), and lower for front, rear or interior views (d -0.44, pct 8) and toward-camera facing (d -0.42, pct 6).\",\n \"missing_data\": \"Checks on animal photos (dogs, weasels) testing side-on standing posture versus other poses, since no animals appeared in this check set.\",\n \"confidence\": 0.6}",
+  "valid": true
+ }
+}

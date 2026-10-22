@@ -1,0 +1,122 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are shown, regardless of breed, coat colour or fur texture.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are shown, regardless of breed, coat colour or fur texture.",
+   "evidence": "Within the dog classes, activity is much higher for clearly visible faces (d +1.35), frontal views (+0.94, while side profiles are -1.33), upright heads (+0.89) and faces showing both eyes and nose (+1.23), all at the 98th–99th percentile. Coat colour and fur texture explain almost nothing (separation percentiles 42–49).",
+   "missing_data": "Activity on non-dog photos with frontal faces (cats, foxes, humans) would show whether the unit is dog-specific or a general frontal-face detector, and spatial activation maps would confirm the eye/muzzle peak.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bf1c56cd295aea97ac13736900fcacb117a3609d4a817746464b2f7ac304c504",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are shown, regardless of breed, coat colour or fur texture.\",\n \"evidence\": \"Within the dog classes, activity is much higher for clearly visible faces (d +1.35), frontal views (+0.94, while side profiles are -1.33), upright heads (+0.89) and faces showing both eyes and nose (+1.23), all at the 98th–99th percentile. Coat colour and fur texture explain almost nothing (separation percentiles 42–49).\",\n \"missing_data\": \"Activity on non-dog photos with frontal faces (cats, foxes, humans) would show whether the unit is dog-specific or a general frontal-face detector, and spatial activation maps would confirm the eye/muzzle peak.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, upright, roughly frontal dog faces where both eyes and the nose/muzzle are shown, regardless of breed, coat colour or fur texture.\",\n \"evidence\": \"Within the dog classes, activity is much higher for clearly visible faces (d +1.35), frontal views (+0.94, while side profiles are -1.33), upright heads (+0.89) and faces showing both eyes and nose (+1.23), all at the 98th–99th percentile. Coat colour and fur texture explain almost nothing (separation percentiles 42–49).\",\n \"missing_data\": \"Activity on non-dog photos with frontal faces (cats, foxes, humans) would show whether the unit is dog-specific or a general frontal-face detector, and spatial activation maps would confirm the eye/muzzle peak.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a clearly visible, upright, frontal dog face with eyes and nose/muzzle all in view, framed at a moderate size; breed, coat colour and fur texture do not matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a clearly visible, upright, frontal dog face with eyes and nose/muzzle all in view, framed at a moderate size; breed, coat colour and fur texture do not matter.",
+   "evidence": "Clearly visible faces (d +1.35), frontal pose (+0.94 vs side profile -1.33), upright heads (+0.89 vs upside-down -1.36) and eyes plus muzzle visible (+1.23) all have separation at the 98-99th percentile, while coat colour and texture have separation near the 42nd-49th percentile. The sharpness and cut-off-edge effects are consistent with a well-framed, face-dominant view.",
+   "missing_data": "Photos with no dog face (other animals' or human faces, non-dog classes) to test whether the unit is specific to dogs or responds to frontal mammal faces in general.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "590c4b8b3a03c12fdd58c843ffd718185f40a03bc0f5b4f40090eedc3c661680",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, upright, frontal dog face with eyes and nose/muzzle all in view, framed at a moderate size; breed, coat colour and fur texture do not matter.\",\n \"evidence\": \"Clearly visible faces (d +1.35), frontal pose (+0.94 vs side profile -1.33), upright heads (+0.89 vs upside-down -1.36) and eyes plus muzzle visible (+1.23) all have separation at the 98-99th percentile, while coat colour and texture have separation near the 42nd-49th percentile. The sharpness and cut-off-edge effects are consistent with a well-framed, face-dominant view.\",\n \"missing_data\": \"Photos with no dog face (other animals' or human faces, non-dog classes) to test whether the unit is specific to dogs or responds to frontal mammal faces in general.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a clearly visible, upright, frontal dog face with eyes and nose/muzzle all in view, framed at a moderate size; breed, coat colour and fur texture do not matter.\",\n \"evidence\": \"Clearly visible faces (d +1.35), frontal pose (+0.94 vs side profile -1.33), upright heads (+0.89 vs upside-down -1.36) and eyes plus muzzle visible (+1.23) all have separation at the 98-99th percentile, while coat colour and texture have separation near the 42nd-49th percentile. The sharpness and cut-off-edge effects are consistent with a well-framed, face-dominant view.\",\n \"missing_data\": \"Photos with no dog face (other animals' or human faces, non-dog classes) to test whether the unit is specific to dogs or responds to frontal mammal faces in general.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to clearly visible, upright, frontal dog faces in which both eyes and the muzzle are seen sharply at moderate size. It does not care about breed, coat colour or fur texture.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to clearly visible, upright, frontal dog faces in which both eyes and the muzzle are seen sharply at moderate size. It does not care about breed, coat colour or fur texture.",
+   "evidence": "Within the dog classes, activity is higher for a clearly visible face (d +1.35), a head-on view (+0.94; profile -1.33), an upright head (+0.89), and visible eyes and muzzle (+1.23), all at about the 98th–99th percentile. Coat colour and texture separate the photos poorly (42nd–49th percentile).",
+   "missing_data": "Activity on photos without dogs, such as cat, fox or human frontal faces, to test whether the unit is dog-specific or responds to frontal mammal faces in general.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2a899654bb9eb8ec51d694582aaa324dce2b02a218612d7de0dc3ae3e9f2cc7d",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, upright, frontal dog faces in which both eyes and the muzzle are seen sharply at moderate size. It does not care about breed, coat colour or fur texture.\",\n \"evidence\": \"Within the dog classes, activity is higher for a clearly visible face (d +1.35), a head-on view (+0.94; profile -1.33), an upright head (+0.89), and visible eyes and muzzle (+1.23), all at about the 98th–99th percentile. Coat colour and texture separate the photos poorly (42nd–49th percentile).\",\n \"missing_data\": \"Activity on photos without dogs, such as cat, fox or human frontal faces, to test whether the unit is dog-specific or responds to frontal mammal faces in general.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to clearly visible, upright, frontal dog faces in which both eyes and the muzzle are seen sharply at moderate size. It does not care about breed, coat colour or fur texture.\",\n \"evidence\": \"Within the dog classes, activity is higher for a clearly visible face (d +1.35), a head-on view (+0.94; profile -1.33), an upright head (+0.89), and visible eyes and muzzle (+1.23), all at about the 98th–99th percentile. Coat colour and texture separate the photos poorly (42nd–49th percentile).\",\n \"missing_data\": \"Activity on photos without dogs, such as cat, fox or human frontal faces, to test whether the unit is dog-specific or responds to frontal mammal faces in general.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dog faces, especially large, close-up faces that are tilted or turned (three-quarter view) rather than upright and frontal, with a weaker preference for warm tan/golden coats and warm-tinted photos.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dog faces, especially large, close-up faces that are tilted or turned (three-quarter view) rather than upright and frontal, with a weaker preference for warm tan/golden coats and warm-tinted photos.",
+   "evidence": "Within the top dog classes, a sideways head tilt (d +0.64, pct 97) and three-quarter view (d +0.26, pct 91) raise activity, while upright (d -0.55, pct 3) and frontal (d -0.22) faces lower it. Close-up or cropped faces (d +0.38, +0.36) raise activity, small faces lower it (d -0.35), and tan coats (+0.28) and warm tint (+0.21, pct 97) give smaller boosts.",
+   "missing_data": "Activity on non-dog images (other animal faces, people) and controlled rotations of the same dog face, to confirm the dog-face selectivity and the tilt preference.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "46f61eef74be973827fef4352c63879ec33b5104d8c24231ebe1b094596d099a",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to dog faces, especially large, close-up faces that are tilted or turned (three-quarter view) rather than upright and frontal, with a weaker preference for warm tan/golden coats and warm-tinted photos.\", \"evidence\": \"Within the top dog classes, a sideways head tilt (d +0.64, pct 97) and three-quarter view (d +0.26, pct 91) raise activity, while upright (d -0.55, pct 3) and frontal (d -0.22) faces lower it. Close-up or cropped faces (d +0.38, +0.36) raise activity, small faces lower it (d -0.35), and tan coats (+0.28) and warm tint (+0.21, pct 97) give smaller boosts.\", \"missing_data\": \"Activity on non-dog images (other animal faces, people) and controlled rotations of the same dog face, to confirm the dog-face selectivity and the tilt preference.\", \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds to dog faces, especially large, close-up faces that are tilted or turned (three-quarter view) rather than upright and frontal, with a weaker preference for warm tan/golden coats and warm-tinted photos.\", \"evidence\": \"Within the top dog classes, a sideways head tilt (d +0.64, pct 97) and three-quarter view (d +0.26, pct 91) raise activity, while upright (d -0.55, pct 3) and frontal (d -0.22) faces lower it. Close-up or cropped faces (d +0.38, +0.36) raise activity, small faces lower it (d -0.35), and tan coats (+0.28) and warm tint (+0.21, pct 97) give smaller boosts.\", \"missing_data\": \"Activity on non-dog images (other animal faces, people) and controlled rotations of the same dog face, to confirm the dog-face selectivity and the tilt preference.\", \"confidence\": 0.6}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dog faces, mainly close-up or prominent ones that are tilted or turned (three-quarter view) rather than strictly upright and frontal, with a modest preference for warm/tan tones.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dog faces, mainly close-up or prominent ones that are tilted or turned (three-quarter view) rather than strictly upright and frontal, with a modest preference for warm/tan tones.",
+   "evidence": "Within the dog classes, upright heads are strongly negative (d -0.55, pct 3) and sideways-tilted heads strongly positive (d +0.64, pct 97), three-quarter views beat frontal ones (+0.26 vs -0.22), and close-up or cut-off faces score higher than small ones; the warm tint and tan coat effects (pct 97 and 89) are weaker secondary effects.",
+   "missing_data": "Activations on non-dog images (other animal faces, people) and on controlled rotations of the same dog face would show whether the unit is dog-specific and whether it really prefers tilt.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e1186c4f6bbfa39aa29c5021c286f15dd3270590ac360cfa4addb347f27a1c01",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog faces, mainly close-up or prominent ones that are tilted or turned (three-quarter view) rather than strictly upright and frontal, with a modest preference for warm/tan tones.\",\n \"evidence\": \"Within the dog classes, upright heads are strongly negative (d -0.55, pct 3) and sideways-tilted heads strongly positive (d +0.64, pct 97), three-quarter views beat frontal ones (+0.26 vs -0.22), and close-up or cut-off faces score higher than small ones; the warm tint and tan coat effects (pct 97 and 89) are weaker secondary effects.\",\n \"missing_data\": \"Activations on non-dog images (other animal faces, people) and on controlled rotations of the same dog face would show whether the unit is dog-specific and whether it really prefers tilt.\",\n \"confidence\": 0.55}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog faces, mainly close-up or prominent ones that are tilted or turned (three-quarter view) rather than strictly upright and frontal, with a modest preference for warm/tan tones.\",\n \"evidence\": \"Within the dog classes, upright heads are strongly negative (d -0.55, pct 3) and sideways-tilted heads strongly positive (d +0.64, pct 97), three-quarter views beat frontal ones (+0.26 vs -0.22), and close-up or cut-off faces score higher than small ones; the warm tint and tan coat effects (pct 97 and 89) are weaker secondary effects.\",\n \"missing_data\": \"Activations on non-dog images (other animal faces, people) and on controlled rotations of the same dog face would show whether the unit is dog-specific and whether it really prefers tilt.\",\n \"confidence\": 0.55}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit responds to dog faces across many breeds. Within dog photos it prefers large, close-up faces whose head is tilted sideways or turned to a three-quarter view, not the upright, head-on faces the original explanation describes.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dog faces across many breeds. Within dog photos it prefers large, close-up faces whose head is tilted sideways or turned to a three-quarter view, not the upright, head-on faces the original explanation describes.",
+   "evidence": "Among dog photos, tilted heads score d +0.64 (percentile 97) and upright heads d -0.55 (percentile 3); three-quarter views are positive (+0.26) and frontal views negative (-0.22), while close-up faces (+0.38) and cropped subjects (+0.36) beat small faces (-0.35). Breed, coat colour and fur texture matter little, apart from a modest preference for tan coats and warm tints.",
+   "missing_data": "Activations on non-dog photos (other animals' faces, people, dog bodies without visible faces), to test whether the unit is specific to dog faces, plus a controlled test rotating the same dog face to separate tilt from close framing.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b15c31b3ea9b640c31d5b070938918faf10311e6cc1f8d1fc30b49bdf8f4cb3f",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dog faces across many breeds. Within dog photos it prefers large, close-up faces whose head is tilted sideways or turned to a three-quarter view, not the upright, head-on faces the original explanation describes.\",\n \"evidence\": \"Among dog photos, tilted heads score d +0.64 (percentile 97) and upright heads d -0.55 (percentile 3); three-quarter views are positive (+0.26) and frontal views negative (-0.22), while close-up faces (+0.38) and cropped subjects (+0.36) beat small faces (-0.35). Breed, coat colour and fur texture matter little, apart from a modest preference for tan coats and warm tints.\",\n \"missing_data\": \"Activations on non-dog photos (other animals' faces, people, dog bodies without visible faces), to test whether the unit is specific to dog faces, plus a controlled test rotating the same dog face to separate tilt from close framing.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dog faces across many breeds. Within dog photos it prefers large, close-up faces whose head is tilted sideways or turned to a three-quarter view, not the upright, head-on faces the original explanation describes.\",\n \"evidence\": \"Among dog photos, tilted heads score d +0.64 (percentile 97) and upright heads d -0.55 (percentile 3); three-quarter views are positive (+0.26) and frontal views negative (-0.22), while close-up faces (+0.38) and cropped subjects (+0.36) beat small faces (-0.35). Breed, coat colour and fur texture matter little, apart from a modest preference for tan coats and warm tints.\",\n \"missing_data\": \"Activations on non-dog photos (other animals' faces, people, dog bodies without visible faces), to test whether the unit is specific to dog faces, plus a controlled test rotating the same dog face to separate tilt from close framing.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ }
+}

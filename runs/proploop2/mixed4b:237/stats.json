@@ -1,0 +1,1297 @@
+{
+ "unit": "mixed4b:237",
+ "layer": "mixed4b",
+ "chan": 237,
+ "m": 512,
+ "n": 120,
+ "classes": [
+  436,
+  407,
+  717,
+  656,
+  654,
+  581,
+  468,
+  555,
+  627,
+  609,
+  864,
+  817
+ ],
+ "class_names": [
+  "beach wagon",
+  "ambulance",
+  "pickup",
+  "minivan",
+  "minibus",
+  "grille",
+  "cab",
+  "fire engine",
+  "limousine",
+  "jeep",
+  "tow truck",
+  "sports car"
+ ],
+ "set_ids": [
+  950,
+  951,
+  952,
+  953,
+  954,
+  955,
+  956,
+  957,
+  958,
+  959,
+  1560,
+  1561,
+  1562,
+  1563,
+  1564,
+  1565,
+  1566,
+  1567,
+  1568,
+  1569,
+  1610,
+  1611,
+  1612,
+  1613,
+  1614,
+  1615,
+  1616,
+  1617,
+  1618,
+  1619,
+  1790,
+  1791,
+  1792,
+  1793,
+  1794,
+  1795,
+  1796,
+  1797,
+  1798,
+  1799,
+  1970,
+  1971,
+  1972,
+  1973,
+  1974,
+  1975,
+  1976,
+  1977,
+  1978,
+  1979,
+  4600,
+  4601,
+  4602,
+  4603,
+  4604,
+  4605,
+  4606,
+  4607,
+  4608,
+  4609,
+  5990,
+  5991,
+  5992,
+  5993,
+  5994,
+  5995,
+  5996,
+  5997,
+  5998,
+  5999,
+  6890,
+  6891,
+  6892,
+  6893,
+  6894,
+  6895,
+  6896,
+  6897,
+  6898,
+  6899,
+  7000,
+  7001,
+  7002,
+  7003,
+  7004,
+  7005,
+  7006,
+  7007,
+  7008,
+  7009,
+  7150,
+  7151,
+  7152,
+  7153,
+  7154,
+  7155,
+  7156,
+  7157,
+  7158,
+  7159,
+  7700,
+  7701,
+  7702,
+  7703,
+  7704,
+  7705,
+  7706,
+  7707,
+  7708,
+  7709,
+  7890,
+  7891,
+  7892,
+  7893,
+  7894,
+  7895,
+  7896,
+  7897,
+  7898,
+  7899
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the photo show a road vehicle (car, pickup, van, truck, bus, ambulance, taxi)?",
+   "answers": [
+    "No road vehicle",
+    "Yes, but small or mostly hidden",
+    "Yes, clearly visible"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     0,
+     6,
+     114
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2
+    ],
+    "eta2": 0.057316491690310396,
+    "eta2_pct": 94.7265625,
+    "d": {
+     "1": -1.093895542588941,
+     "2": 1.093895542588941
+    },
+    "d_pct": {
+     "1": 4.6875,
+     "2": 95.1171875
+    },
+    "halves": [
+     94.53125,
+     67.1875
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     6,
+     114
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2
+    ],
+    "eta2": 0.012619866634155192,
+    "eta2_pct": 79.4921875,
+    "d": {
+     "1": -0.5132907471736824,
+     "2": 0.5132907471736824
+    },
+    "d_pct": {
+     "1": 15.0390625,
+     "2": 84.765625
+    },
+    "halves": [
+     26.5625,
+     87.5
+    ]
+   }
+  },
+  {
+   "question": "Is a side window of a road vehicle (glass pane in a door, with its frame) visible?",
+   "answers": [
+    "No vehicle in photo",
+    "Vehicle present but no side window visible",
+    "Side window partly visible",
+    "Side window clearly visible"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     0,
+     10,
+     36,
+     74
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.17898681574226516,
+    "eta2_pct": 98.828125,
+    "d": {
+     "1": -0.5384557725964048,
+     "2": -0.7790638589921646,
+     "3": 0.8660959046558023
+    },
+    "d_pct": {
+     "1": 15.234375,
+     "2": 1.953125,
+     "3": 99.0234375
+    },
+    "halves": [
+     96.484375,
+     96.6796875
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     10,
+     36,
+     74
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.035296490014293865,
+    "eta2_pct": 83.203125,
+    "d": {
+     "1": 0.08696516095458166,
+     "2": -0.407266136852539,
+     "3": 0.33369891915159755
+    },
+    "d_pct": {
+     "1": 49.0234375,
+     "2": 7.2265625,
+     "3": 92.1875
+    },
+    "halves": [
+     41.796875,
+     77.734375
+    ]
+   }
+  },
+  {
+   "question": "From what angle is the main vehicle seen?",
+   "answers": [
+    "No vehicle in photo",
+    "Straight side view",
+    "Front or rear three-quarter view",
+    "Straight front or rear view",
+    "From above or other unusual angle"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     0,
+     15,
+     83,
+     13,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.16096603671021448,
+    "eta2_pct": 99.0234375,
+    "d": {
+     "1": -0.2809425348564715,
+     "2": 0.6676173456859015,
+     "3": -0.1729762829346416,
+     "4": -1.368526893533908
+    },
+    "d_pct": {
+     "1": 27.9296875,
+     "2": 97.265625,
+     "3": 42.7734375,
+     "4": 0.1953125
+    },
+    "halves": [
+     89.453125,
+     98.046875
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     15,
+     83,
+     13,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.013237251184951521,
+    "eta2_pct": 37.5,
+    "d": {
+     "1": 0.17671614008091874,
+     "2": -0.1626107830221601,
+     "3": -0.0899145506567868,
+     "4": 0.3464674013985957
+    },
+    "d_pct": {
+     "1": 80.2734375,
+     "2": 21.2890625,
+     "3": 27.5390625,
+     "4": 81.25
+    },
+    "halves": [
+     4.296875,
+     39.6484375
+    ]
+   }
+  },
+  {
+   "question": "How much of the photo does the vehicle's door-and-window area take up?",
+   "answers": [
+    "No vehicle door/window visible",
+    "Small part of the photo",
+    "Roughly a quarter to half of the photo",
+    "Most of the photo (close-up)"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     9,
+     47,
+     63,
+     1
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.06400585586104689,
+    "eta2_pct": 80.859375,
+    "d": {
+     "0": -0.6243844569992577,
+     "1": -0.30069565519097685,
+     "2": 0.46363228730032047
+    },
+    "d_pct": {
+     "0": 13.8671875,
+     "1": 24.609375,
+     "2": 89.6484375
+    },
+    "halves": [
+     78.3203125,
+     56.0546875
+    ]
+   },
+   "null": {
+    "counts": [
+     9,
+     47,
+     63,
+     1
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.015264280878617293,
+    "eta2_pct": 64.2578125,
+    "d": {
+     "0": 0.07175409246767692,
+     "1": -0.250900728124535,
+     "2": 0.220524805110665
+    },
+    "d_pct": {
+     "0": 50.5859375,
+     "1": 13.28125,
+     "2": 87.5
+    },
+    "halves": [
+     25.5859375,
+     61.328125
+    ]
+   }
+  },
+  {
+   "question": "What type is the main vehicle?",
+   "answers": [
+    "No road vehicle",
+    "Passenger car or taxi",
+    "Pickup, van or ambulance",
+    "Truck or lorry cab",
+    "Bus or other vehicle"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     0,
+     61,
+     31,
+     17,
+     11
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.02182648115579757,
+    "eta2_pct": 88.28125,
+    "d": {
+     "1": -0.14224545072946926,
+     "2": 0.3175050801743026,
+     "3": -0.2150087606406473,
+     "4": 0.010362969855072922
+    },
+    "d_pct": {
+     "1": 7.2265625,
+     "2": 97.65625,
+     "3": 12.3046875,
+     "4": 60.546875
+    },
+    "halves": [
+     53.7109375,
+     31.640625
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     61,
+     31,
+     17,
+     11
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "eta2": 0.016505554345295704,
+    "eta2_pct": 76.3671875,
+    "d": {
+     "1": -0.0959377958726592,
+     "2": -0.14866895639507768,
+     "3": 0.22830826668558998,
+     "4": 0.2966555488517529
+    },
+    "d_pct": {
+     "1": 15.4296875,
+     "2": 20.1171875,
+     "3": 85.9375,
+     "4": 87.3046875
+    },
+    "halves": [
+     24.8046875,
+     77.34375
+    ]
+   }
+  },
+  {
+   "question": "Which windows of the vehicle are most visible?",
+   "answers": [
+    "No vehicle windows visible",
+    "Front cab/driver door window",
+    "Rear passenger or cargo-area windows",
+    "Windshield or rear window only"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     6,
+     74,
+     21,
+     19
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.06924403630167003,
+    "eta2_pct": 88.28125,
+    "d": {
+     "0": -1.0550349544446553,
+     "1": 0.383203247211718,
+     "2": -0.1766729007445759,
+     "3": -0.11228607817643076
+    },
+    "d_pct": {
+     "0": 4.1015625,
+     "1": 90.8203125,
+     "2": 20.5078125,
+     "3": 45.703125
+    },
+    "halves": [
+     93.75,
+     31.4453125
+    ]
+   },
+   "null": {
+    "counts": [
+     6,
+     74,
+     21,
+     19
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.045405401327962204,
+    "eta2_pct": 89.6484375,
+    "d": {
+     "0": 0.02074868630546609,
+     "1": 0.16516504537390939,
+     "2": 0.24233219987178758,
+     "3": -0.5629090981861244
+    },
+    "d_pct": {
+     "0": 45.1171875,
+     "1": 88.8671875,
+     "2": 80.6640625,
+     "3": 1.5625
+    },
+    "halves": [
+     65.0390625,
+     84.765625
+    ]
+   }
+  },
+  {
+   "question": "Is the vehicle upright and intact, as in normal road use?",
+   "answers": [
+    "No vehicle in photo",
+    "Upright and intact",
+    "Tilted, overturned, wrecked or partially dismantled",
+    "Toy, model, drawing or other non-real vehicle"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     0,
+     108,
+     3,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     3
+    ],
+    "eta2": 0.11273940203644779,
+    "eta2_pct": 98.4375,
+    "d": {
+     "1": 1.2546617452929343,
+     "3": -1.2546617452929343
+    },
+    "d_pct": {
+     "1": 98.6328125,
+     "3": 1.171875
+    },
+    "halves": [
+     96.484375,
+     87.890625
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     108,
+     3,
+     9
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     3
+    ],
+    "eta2": 0.008360076171260368,
+    "eta2_pct": 65.8203125,
+    "d": {
+     "1": -0.3416598219674911,
+     "3": 0.3416598219674911
+    },
+    "d_pct": {
+     "1": 8.7890625,
+     "3": 91.015625
+    },
+    "halves": [
+     74.609375,
+     13.8671875
+    ]
+   }
+  },
+  {
+   "question": "Are the door window frame and pillars (the posts between windows) clearly distinguishable?",
+   "answers": [
+    "No vehicle window visible",
+    "Yes, frame and pillars clearly visible",
+    "Window visible but frame/pillars unclear (blurry, dark, or obscured)"
+   ],
+   "standing": false,
+   "real": {
+    "counts": [
+     9,
+     80,
+     31
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.12164066794027369,
+    "eta2_pct": 98.046875,
+    "d": {
+     "0": -0.5881646329682607,
+     "1": 0.73591973180592,
+     "2": -0.6405823390517041
+    },
+    "d_pct": {
+     "0": 13.0859375,
+     "1": 98.828125,
+     "2": 4.296875
+    },
+    "halves": [
+     95.8984375,
+     84.5703125
+    ]
+   },
+   "null": {
+    "counts": [
+     9,
+     80,
+     31
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.03350033632855583,
+    "eta2_pct": 85.7421875,
+    "d": {
+     "0": 0.18035484532749313,
+     "1": 0.30109940513953976,
+     "2": -0.41453156467150887
+    },
+    "d_pct": {
+     "0": 61.9140625,
+     "1": 91.796875,
+     "2": 6.0546875
+    },
+    "halves": [
+     62.5,
+     69.53125
+    ]
+   }
+  },
+  {
+   "question": "Which way is the main subject facing or pointing?",
+   "answers": [
+    "left",
+    "right",
+    "toward or away from the camera",
+    "no clear facing direction or no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     41,
+     46,
+     25,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.041769743940923525,
+    "eta2_pct": 69.921875,
+    "d": {
+     "0": 0.0636003508391771,
+     "1": 0.25115685715561803,
+     "2": -0.18984865601426393,
+     "3": -0.6808581697454708
+    },
+    "d_pct": {
+     "0": 47.4609375,
+     "1": 87.109375,
+     "2": 36.9140625,
+     "3": 11.1328125
+    },
+    "halves": [
+     56.25,
+     31.25
+    ]
+   },
+   "null": {
+    "counts": [
+     41,
+     46,
+     25,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.009712505087733239,
+    "eta2_pct": 32.2265625,
+    "d": {
+     "0": 0.20530035020558204,
+     "1": -0.09431297249260616,
+     "2": -0.11569694822160494,
+     "3": -0.07717212491600128
+    },
+    "d_pct": {
+     "0": 90.0390625,
+     "1": 36.5234375,
+     "2": 13.8671875,
+     "3": 54.296875
+    },
+    "halves": [
+     57.2265625,
+     8.984375
+    ]
+   }
+  },
+  {
+   "question": "How much of the photo does the main subject take up?",
+   "answers": [
+    "less than a quarter",
+    "a quarter to three quarters",
+    "more than three quarters",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     5,
+     56,
+     51,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.060223725864109755,
+    "eta2_pct": 72.4609375,
+    "d": {
+     "0": -0.4622928491886912,
+     "1": 0.3990362250366293,
+     "2": -0.15751023647508966,
+     "3": -0.6808581697454708
+    },
+    "d_pct": {
+     "0": 38.0859375,
+     "1": 98.6328125,
+     "2": 15.0390625,
+     "3": 11.1328125
+    },
+    "halves": [
+     76.5625,
+     37.5
+    ]
+   },
+   "null": {
+    "counts": [
+     5,
+     56,
+     51,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.0045304449516676126,
+    "eta2_pct": 7.2265625,
+    "d": {
+     "0": -0.027593479764122568,
+     "1": -0.108602942493374,
+     "2": 0.13476709880231885,
+     "3": -0.07717212491600128
+    },
+    "d_pct": {
+     "0": 70.3125,
+     "1": 14.2578125,
+     "2": 77.734375,
+     "3": 54.296875
+    },
+    "halves": [
+     54.1015625,
+     15.625
+    ]
+   }
+  },
+  {
+   "question": "Is the main subject cut off by an edge of the photo?",
+   "answers": [
+    "fully inside the photo",
+    "partly cut off",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     19,
+     93,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.030296420731302613,
+    "eta2_pct": 60.546875,
+    "d": {
+     "0": 0.14817206146971446,
+     "1": 0.1297119610241178,
+     "2": -0.6808581697454708
+    },
+    "d_pct": {
+     "0": 87.6953125,
+     "1": 40.0390625,
+     "2": 11.1328125
+    },
+    "halves": [
+     73.828125,
+     87.6953125
+    ]
+   },
+   "null": {
+    "counts": [
+     19,
+     93,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.015094306683258792,
+    "eta2_pct": 61.5234375,
+    "d": {
+     "0": -0.32262705606059894,
+     "1": 0.27410097351852897,
+     "2": -0.07717212491600128
+    },
+    "d_pct": {
+     "0": 12.890625,
+     "1": 84.5703125,
+     "2": 54.296875
+    },
+    "halves": [
+     67.96875,
+     1.953125
+    ]
+   }
+  },
+  {
+   "question": "Where is the center of the main subject left to right?",
+   "answers": [
+    "left third",
+    "middle third",
+    "right third",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     5,
+     102,
+     5,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.03599817919657384,
+    "eta2_pct": 59.5703125,
+    "d": {
+     "0": -0.36628929527831394,
+     "1": 0.42680920157152086,
+     "2": 0.0644236013768006,
+     "3": -0.6808581697454708
+    },
+    "d_pct": {
+     "0": 48.046875,
+     "1": 75.9765625,
+     "2": 58.203125,
+     "3": 11.1328125
+    },
+    "halves": [
+     71.2890625,
+     34.765625
+    ]
+   },
+   "null": {
+    "counts": [
+     5,
+     102,
+     5,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.007550837493940154,
+    "eta2_pct": 15.234375,
+    "d": {
+     "0": 0.10557948367763438,
+     "1": 0.1324721701509499,
+     "2": -0.40831458015138544,
+     "3": -0.07717212491600128
+    },
+    "d_pct": {
+     "0": 71.484375,
+     "1": 50.78125,
+     "2": 26.7578125,
+     "3": 54.296875
+    },
+    "halves": [
+     8.3984375,
+     3.90625
+    ]
+   }
+  },
+  {
+   "question": "How brightly lit is the main subject?",
+   "answers": [
+    "dark",
+    "medium",
+    "bright",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     0,
+     67,
+     45,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.02959318160559974,
+    "eta2_pct": 71.09375,
+    "d": {
+     "1": 0.059722436657543725,
+     "2": 0.11791838445066788,
+     "3": -0.6808581697454708
+    },
+    "d_pct": {
+     "1": 71.484375,
+     "2": 55.078125,
+     "3": 11.1328125
+    },
+    "halves": [
+     62.5,
+     41.796875
+    ]
+   },
+   "null": {
+    "counts": [
+     0,
+     67,
+     45,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     1,
+     2,
+     3
+    ],
+    "eta2": 0.001051596155484096,
+    "eta2_pct": 6.640625,
+    "d": {
+     "1": -0.038151046210294005,
+     "2": 0.06062832267184926,
+     "3": -0.07717212491600128
+    },
+    "d_pct": {
+     "1": 28.515625,
+     "2": 68.9453125,
+     "3": 54.296875
+    },
+    "halves": [
+     1.953125,
+     19.53125
+    ]
+   }
+  },
+  {
+   "question": "Does the photo have an overall color tint?",
+   "answers": [
+    "no noticeable tint",
+    "warm (yellow, orange or red) tint",
+    "cool (blue or green) tint",
+    "black and white or nearly colorless"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     83,
+     24,
+     9,
+     4
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.10053512103347417,
+    "eta2_pct": 96.09375,
+    "d": {
+     "0": 0.6974074115141005,
+     "1": -0.6665207893343358,
+     "2": -0.45536967527197075
+    },
+    "d_pct": {
+     "0": 96.875,
+     "1": 3.125,
+     "2": 32.03125
+    },
+    "halves": [
+     52.34375,
+     96.09375
+    ]
+   },
+   "null": {
+    "counts": [
+     83,
+     24,
+     9,
+     4
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     2
+    ],
+    "eta2": 0.0032625373459489355,
+    "eta2_pct": 18.5546875,
+    "d": {
+     "0": 0.06323155217910965,
+     "1": 0.01417644960616943,
+     "2": -0.21234976339460365
+    },
+    "d_pct": {
+     "0": 44.140625,
+     "1": 64.2578125,
+     "2": 31.640625
+    },
+    "halves": [
+     60.9375,
+     21.484375
+    ]
+   }
+  },
+  {
+   "question": "Are the horizon or the main straight lines in the photo tilted?",
+   "answers": [
+    "level",
+    "noticeably tilted",
+    "no horizon or straight lines visible"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     110,
+     10,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.023839227336445692,
+    "eta2_pct": 82.6171875,
+    "d": {
+     "0": 0.5563061341354845,
+     "1": -0.5563061341354845
+    },
+    "d_pct": {
+     "0": 90.4296875,
+     "1": 9.375
+    },
+    "halves": [
+     74.0234375,
+     75.0
+    ]
+   },
+   "null": {
+    "counts": [
+     110,
+     10,
+     0
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1
+    ],
+    "eta2": 0.014119495653295263,
+    "eta2_pct": 83.984375,
+    "d": {
+     "0": -0.4281316682868148,
+     "1": 0.4281316682868148
+    },
+    "d_pct": {
+     "0": 12.5,
+     "1": 87.3046875
+    },
+    "halves": [
+     84.9609375,
+     29.4921875
+    ]
+   }
+  },
+  {
+   "question": "How sharp is the main subject?",
+   "answers": [
+    "sharp",
+    "slightly blurry",
+    "very blurry",
+    "no single main subject"
+   ],
+   "standing": true,
+   "real": {
+    "counts": [
+     95,
+     16,
+     1,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.05573895333960186,
+    "eta2_pct": 90.0390625,
+    "d": {
+     "0": 0.5665987941486981,
+     "1": -0.41371282568540574,
+     "3": -0.6869893174881568
+    },
+    "d_pct": {
+     "0": 97.4609375,
+     "1": 10.546875,
+     "3": 10.7421875
+    },
+    "halves": [
+     74.0234375,
+     67.3828125
+    ]
+   },
+   "null": {
+    "counts": [
+     95,
+     16,
+     1,
+     8
+    ],
+    "unclear": 0,
+    "compared": [
+     0,
+     1,
+     3
+    ],
+    "eta2": 0.002723664627012862,
+    "eta2_pct": 13.671875,
+    "d": {
+     "0": 0.1281220013193101,
+     "1": -0.13200454185446256,
+     "3": -0.08398049327913593
+    },
+    "d_pct": {
+     "0": 74.4140625,
+     "1": 22.8515625,
+     "3": 54.296875
+    },
+    "halves": [
+     2.5390625,
+     23.2421875
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "real": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (beach wagon, ambulance, pickup, minivan, minibus, grille, cab, fire engine, limousine, jeep, tow truck, sports car). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a road vehicle (car, pickup, van, truck, bus, ambulance, taxi)?\nseparation: percentile 95\n- No road vehicle: 0 photos (too few to compare)\n- Yes, but small or mostly hidden: 6 photos, d -1.09, percentile 5\n- Yes, clearly visible: 114 photos, d +1.09, percentile 95\n\nQ2. Is a side window of a road vehicle (glass pane in a door, with its frame) visible?\nseparation: percentile 99\n- No vehicle in photo: 0 photos (too few to compare)\n- Vehicle present but no side window visible: 10 photos, d -0.54, percentile 15\n- Side window partly visible: 36 photos, d -0.78, percentile 2\n- Side window clearly visible: 74 photos, d +0.87, percentile 99\n\nQ3. From what angle is the main vehicle seen?\nseparation: percentile 99\n- No vehicle in photo: 0 photos (too few to compare)\n- Straight side view: 15 photos, d -0.28, percentile 28\n- Front or rear three-quarter view: 83 photos, d +0.67, percentile 97\n- Straight front or rear view: 13 photos, d -0.17, percentile 43\n- From above or other unusual angle: 9 photos, d -1.37, percentile 0\n\nQ4. How much of the photo does the vehicle's door-and-window area take up?\nseparation: percentile 81\n- No vehicle door/window visible: 9 photos, d -0.62, percentile 14\n- Small part of the photo: 47 photos, d -0.30, percentile 25\n- Roughly a quarter to half of the photo: 63 photos, d +0.46, percentile 90\n- Most of the photo (close-up): 1 photos (too few to compare)\n\nQ5. What type is the main vehicle?\nseparation: percentile 88\n- No road vehicle: 0 photos (too few to compare)\n- Passenger car or taxi: 61 photos, d -0.14, percentile 7\n- Pickup, van or ambulance: 31 photos, d +0.32, percentile 98\n- Truck or lorry cab: 17 photos, d -0.22, percentile 12\n- Bus or other vehicle: 11 photos, d +0.01, percentile 61\n\nQ6. Which windows of the vehicle are most visible?\nseparation: percentile 88\n- No vehicle windows visible: 6 photos, d -1.06, percentile 4\n- Front cab/driver door window: 74 photos, d +0.38, percentile 91\n- Rear passenger or cargo-area windows: 21 photos, d -0.18, percentile 21\n- Windshield or rear window only: 19 photos, d -0.11, percentile 46\n\nQ7. Is the vehicle upright and intact, as in normal road use?\nseparation: percentile 98\n- No vehicle in photo: 0 photos (too few to compare)\n- Upright and intact: 108 photos, d +1.25, percentile 99\n- Tilted, overturned, wrecked or partially dismantled: 3 photos (too few to compare)\n- Toy, model, drawing or other non-real vehicle: 9 photos, d -1.25, percentile 1\n\nQ8. Are the door window frame and pillars (the posts between windows) clearly distinguishable?\nseparation: percentile 98\n- No vehicle window visible: 9 photos, d -0.59, percentile 13\n- Yes, frame and pillars clearly visible: 80 photos, d +0.74, percentile 99\n- Window visible but frame/pillars unclear (blurry, dark, or obscured): 31 photos, d -0.64, percentile 4\n\nQ9. Which way is the main subject facing or pointing?\nseparation: percentile 70\n- left: 41 photos, d +0.06, percentile 47\n- right: 46 photos, d +0.25, percentile 87\n- toward or away from the camera: 25 photos, d -0.19, percentile 37\n- no clear facing direction or no single main subject: 8 photos, d -0.68, percentile 11\n\nQ10. How much of the photo does the main subject take up?\nseparation: percentile 72\n- less than a quarter: 5 photos, d -0.46, percentile 38\n- a quarter to three quarters: 56 photos, d +0.40, percentile 99\n- more than three quarters: 51 photos, d -0.16, percentile 15\n- no single main subject: 8 photos, d -0.68, percentile 11\n\nQ11. Is the main subject cut off by an edge of the photo?\nseparation: percentile 61\n- fully inside the photo: 19 photos, d +0.15, percentile 88\n- partly cut off: 93 photos, d +0.13, percentile 40\n- no single main subject: 8 photos, d -0.68, percentile 11\n\nQ12. Where is the center of the main subject left to right?\nseparation: percentile 60\n- left third: 5 photos, d -0.37, percentile 48\n- middle third: 102 photos, d +0.43, percentile 76\n- right third: 5 photos, d +0.06, percentile 58\n- no single main subject: 8 photos, d -0.68, percentile 11\n\nQ13. How brightly lit is the main subject?\nseparation: percentile 71\n- dark: 0 photos (too few to compare)\n- medium: 67 photos, d +0.06, percentile 71\n- bright: 45 photos, d +0.12, percentile 55\n- no single main subject: 8 photos, d -0.68, percentile 11\n\nQ14. Does the photo have an overall color tint?\nseparation: percentile 96\n- no noticeable tint: 83 photos, d +0.70, percentile 97\n- warm (yellow, orange or red) tint: 24 photos, d -0.67, percentile 3\n- cool (blue or green) tint: 9 photos, d -0.46, percentile 32\n- black and white or nearly colorless: 4 photos (too few to compare)\n\nQ15. Are the horizon or the main straight lines in the photo tilted?\nseparation: percentile 83\n- level: 110 photos, d +0.56, percentile 90\n- noticeably tilted: 10 photos, d -0.56, percentile 9\n- no horizon or straight lines visible: 0 photos (too few to compare)\n\nQ16. How sharp is the main subject?\nseparation: percentile 90\n- sharp: 95 photos, d +0.57, percentile 97\n- slightly blurry: 16 photos, d -0.41, percentile 11\n- very blurry: 1 photos (too few to compare)\n- no single main subject: 8 photos, d -0.69, percentile 11",
+  "null": "# Checks on ordinary photos\n\nSomeone who never saw the unit's activity answered the questions below about each of 120 photos: all photos of the 12 photo classes on which the unit is most active on average (beach wagon, ambulance, pickup, minivan, minibus, grille, cab, fire engine, limousine, jeep, tow truck, sports car). For each answer: the number of photos given it, and d, how much more (positive) or less (negative) active the unit is on them than on the other photos, after removing the differences between classes, in standard deviations. Each question also has a separation score, the share of the unit's within-class variation that its answers account for. Each number comes with this unit's percentile among all 512 units of its layer, computed on the same photos and answers (above 95 or below 5 is unusual for this layer).\n\nQ1. Does the photo show a road vehicle (car, pickup, van, truck, bus, ambulance, taxi)?\nseparation: percentile 79\n- No road vehicle: 0 photos (too few to compare)\n- Yes, but small or mostly hidden: 6 photos, d -0.51, percentile 15\n- Yes, clearly visible: 114 photos, d +0.51, percentile 85\n\nQ2. Is a side window of a road vehicle (glass pane in a door, with its frame) visible?\nseparation: percentile 83\n- No vehicle in photo: 0 photos (too few to compare)\n- Vehicle present but no side window visible: 10 photos, d +0.09, percentile 49\n- Side window partly visible: 36 photos, d -0.41, percentile 7\n- Side window clearly visible: 74 photos, d +0.33, percentile 92\n\nQ3. From what angle is the main vehicle seen?\nseparation: percentile 38\n- No vehicle in photo: 0 photos (too few to compare)\n- Straight side view: 15 photos, d +0.18, percentile 80\n- Front or rear three-quarter view: 83 photos, d -0.16, percentile 21\n- Straight front or rear view: 13 photos, d -0.09, percentile 28\n- From above or other unusual angle: 9 photos, d +0.35, percentile 81\n\nQ4. How much of the photo does the vehicle's door-and-window area take up?\nseparation: percentile 64\n- No vehicle door/window visible: 9 photos, d +0.07, percentile 51\n- Small part of the photo: 47 photos, d -0.25, percentile 13\n- Roughly a quarter to half of the photo: 63 photos, d +0.22, percentile 88\n- Most of the photo (close-up): 1 photos (too few to compare)\n\nQ5. What type is the main vehicle?\nseparation: percentile 76\n- No road vehicle: 0 photos (too few to compare)\n- Passenger car or taxi: 61 photos, d -0.10, percentile 15\n- Pickup, van or ambulance: 31 photos, d -0.15, percentile 20\n- Truck or lorry cab: 17 photos, d +0.23, percentile 86\n- Bus or other vehicle: 11 photos, d +0.30, percentile 87\n\nQ6. Which windows of the vehicle are most visible?\nseparation: percentile 90\n- No vehicle windows visible: 6 photos, d +0.02, percentile 45\n- Front cab/driver door window: 74 photos, d +0.17, percentile 89\n- Rear passenger or cargo-area windows: 21 photos, d +0.24, percentile 81\n- Windshield or rear window only: 19 photos, d -0.56, percentile 2\n\nQ7. Is the vehicle upright and intact, as in normal road use?\nseparation: percentile 66\n- No vehicle in photo: 0 photos (too few to compare)\n- Upright and intact: 108 photos, d -0.34, percentile 9\n- Tilted, overturned, wrecked or partially dismantled: 3 photos (too few to compare)\n- Toy, model, drawing or other non-real vehicle: 9 photos, d +0.34, percentile 91\n\nQ8. Are the door window frame and pillars (the posts between windows) clearly distinguishable?\nseparation: percentile 86\n- No vehicle window visible: 9 photos, d +0.18, percentile 62\n- Yes, frame and pillars clearly visible: 80 photos, d +0.30, percentile 92\n- Window visible but frame/pillars unclear (blurry, dark, or obscured): 31 photos, d -0.41, percentile 6\n\nQ9. Which way is the main subject facing or pointing?\nseparation: percentile 32\n- left: 41 photos, d +0.21, percentile 90\n- right: 46 photos, d -0.09, percentile 37\n- toward or away from the camera: 25 photos, d -0.12, percentile 14\n- no clear facing direction or no single main subject: 8 photos, d -0.08, percentile 54\n\nQ10. How much of the photo does the main subject take up?\nseparation: percentile 7\n- less than a quarter: 5 photos, d -0.03, percentile 70\n- a quarter to three quarters: 56 photos, d -0.11, percentile 14\n- more than three quarters: 51 photos, d +0.13, percentile 78\n- no single main subject: 8 photos, d -0.08, percentile 54\n\nQ11. Is the main subject cut off by an edge of the photo?\nseparation: percentile 62\n- fully inside the photo: 19 photos, d -0.32, percentile 13\n- partly cut off: 93 photos, d +0.27, percentile 85\n- no single main subject: 8 photos, d -0.08, percentile 54\n\nQ12. Where is the center of the main subject left to right?\nseparation: percentile 15\n- left third: 5 photos, d +0.11, percentile 71\n- middle third: 102 photos, d +0.13, percentile 51\n- right third: 5 photos, d -0.41, percentile 27\n- no single main subject: 8 photos, d -0.08, percentile 54\n\nQ13. How brightly lit is the main subject?\nseparation: percentile 7\n- dark: 0 photos (too few to compare)\n- medium: 67 photos, d -0.04, percentile 29\n- bright: 45 photos, d +0.06, percentile 69\n- no single main subject: 8 photos, d -0.08, percentile 54\n\nQ14. Does the photo have an overall color tint?\nseparation: percentile 19\n- no noticeable tint: 83 photos, d +0.06, percentile 44\n- warm (yellow, orange or red) tint: 24 photos, d +0.01, percentile 64\n- cool (blue or green) tint: 9 photos, d -0.21, percentile 32\n- black and white or nearly colorless: 4 photos (too few to compare)\n\nQ15. Are the horizon or the main straight lines in the photo tilted?\nseparation: percentile 84\n- level: 110 photos, d -0.43, percentile 12\n- noticeably tilted: 10 photos, d +0.43, percentile 87\n- no horizon or straight lines visible: 0 photos (too few to compare)\n\nQ16. How sharp is the main subject?\nseparation: percentile 14\n- sharp: 95 photos, d +0.13, percentile 74\n- slightly blurry: 16 photos, d -0.13, percentile 23\n- very blurry: 1 photos (too few to compare)\n- no single main subject: 8 photos, d -0.08, percentile 54"
+ }
+}
