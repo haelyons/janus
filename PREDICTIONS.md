@@ -467,3 +467,33 @@ the reverse; its left (right) answer = the such answer with the most photos.
 6. 443 and 429: mean judge of real-table revisions at least 3.0 (round 24 CP: 2.0 each); null-table at most 2.5.
 7. 409, 237, 373: mean judge of real-table revisions at least 4.
 8. 4e:55 and 5a:719: mean judge at most 2 with either table.
+
+# Round 26A: the invariance profile across the activation range (tools/rangeprofile.py)
+(sealed 2026-10-22, before rangeprofile.py exists)
+
+Profile caches (1000 random card-pool photos P0, battery transforms, every channel). Per channel and transform, in
+three strata of its own P0 photos by original value rank (1-20, 21-100, 101-300): median retention t/o, and median
+change |t - o| / (channel max over P0); each as a percentile among the layer's channels. Mirror is my analysis
+target; the tool treats every transform alike. Oriented (round 23B, dogs, |d| >= 99th): 4b:431, 443, 429, 384.
+Not oriented (23B or lrcheck |d| <= 86th on dogs and vehicles): 4b:409, 418, 4c:254, 407, 4b:237, 373, 4d:409,
+4e:55.
+1. 4b:443 and 429: mirror change percentile at least 95 in stratum 2 or 3 (each unit).
+2. 4b:431 and 384: mirror change percentile at least 95 in stratum 1.
+3. At least 7 of the 8 not-oriented units: mirror change percentile below 95 in all three strata.
+4. Over all channels of 4b, 4c, 4d, 4e: Spearman of mirror change percentile in stratum 2 with lrcheck's |d|
+   percentile on dogs at least 0.3 in at least 3 of 4 layers, and higher than stratum 1's in at least 3 of 4.
+
+# Round 26B: a standing question set from what training treats as irrelevant (tools/proploop2.py)
+(sealed 2026-10-22, before the standing questions or proploop2.py exist)
+
+A tool-less agent, told only the generic setting, writes 8 questions about ways photos of one class differ that a
+classifier's training treats as irrelevant (e.g. augmentation). Each round-25 unit gets them on top of its own 8
+reading-derived questions; same 120 photos, blind answers for the new questions, same statistics, real and null
+tables, revisions of the CP readings, judged as round 25. Left/right question and sides as round 25.
+5. The standing set has a left/right question.
+6. For at least 2 of 431, 443, 429: the preferred side's d percentile at least 90 and above the other side's.
+7. For at least 2 of 431, 443, 429: the left/right question's eta2 percentile at least 95.
+8. 4b:237, 373, 4d:409, 4e:55, 5a:719: the left/right question's eta2 percentile below 95 for at least 4 of 5.
+9. Real-table revisions name a direction in at least 5 of 9 for 431, 443, 429; null-table ones in at most 2 of 9.
+10. 443 and 429: mean judge of real-table revisions at least 2.5 (round 25: 1.33 each).
+11. 4b:237 and 373: mean judge of real-table revisions at least 4.
