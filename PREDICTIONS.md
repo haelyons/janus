@@ -497,3 +497,31 @@ tables, revisions of the CP readings, judged as round 25. Left/right question an
 9. Real-table revisions name a direction in at least 5 of 9 for 431, 443, 429; null-table ones in at most 2 of 9.
 10. 443 and 429: mean judge of real-table revisions at least 2.5 (round 25: 1.33 each).
 11. 4b:237 and 373: mean judge of real-table revisions at least 4.
+
+# Round 27: predictions from contrasts, checked blind on other photos (tools/contrastloop.py)
+(sealed 2026-10-22, before contrastloop.py exists)
+
+Loop, per unit, nothing unit-specific, no earlier readings: an agent sees (1) for each of the unit's 4 top classes,
+photos of that class from most to least active, and (2) for each of the 3 channels of its layer with the most
+similar class profile, the 2 photos on which the unit most exceeds that peer and the 2 on which it falls most below,
+each relative to its class average. It writes up to 4 predictions: a question, its answers, and the answers whose
+photos the unit will be most and least active on within a class; 3 independent samples. A blind agent answers the
+questions for the other half of the photos of the unit's 24 top classes (crc32 split). A prediction holds when the
+unit's within-class d (most- minus least-active answer) is at the 95th percentile or above among its layer's
+channels. Then an agent sees its explanation with each prediction's outcome (real, or with answers shuffled within
+class) and says what the unit responds to. Units: 4b:431, 443, 429, 384, 4d:409, 4b:237, 373, 4e:55, 5a:719.
+A direction prediction (my analysis rule): its question, most- or least-active answer contains the word "left" or
+"right". Its favoured side: the side its most-active answer names, if it names exactly one; else the side opposite
+the one its least-active answer names, if that names exactly one; else none. Preferred sides (round 23B): 431 and
+443 right, 429 and 384 left. Oriented: 431, 443, 429, 384; controls: the other 5.
+1. A direction prediction is written (any sample) for at least 2 of the 4 oriented units.
+2. For at least 2 oriented units, a direction prediction favours the preferred side.
+3. For at least 2 oriented units, a direction prediction favouring the preferred side holds (real answers), and no
+   direction prediction favouring the other side holds for any oriented unit.
+4. At most 1 of the 5 controls has a direction prediction that holds.
+5. Calibration, pooled over units, checkable predictions: null answers hold at most 10%; real answers hold at least
+   3 times as often as null.
+6. Real readings name a direction (judge majority) in at least 5 of the 12 for the oriented units; null readings in
+   fewer than real.
+7. 443 and 429: mean judge of real readings at least 2.5 (round 26B: 1.33 each).
+8. 4b:237 and 373: mean judge of real readings at least 4.
