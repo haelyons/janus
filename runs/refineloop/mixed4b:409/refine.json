@@ -1,0 +1,299 @@
+{
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1: silky terrier, frontal close-up; head fills most of the frame; indoor.",
+   "1.2: Appenzeller, frontal head-and-chest close-up; head fills a large part of the frame; garden background.",
+   "1.3: Greater Swiss Mountain dog, frontal close-up with mouth open and tongue out; head very large in frame.",
+   "1.4: yellow Labrador in a straw-floored kennel; body and leg visible; head moderate-small; dark scene with a bowl.",
+   "1.5: Norfolk terrier being washed in a sink; whole wet dog visible; human hands; bathroom clutter.",
+   "1.6: Appenzeller trotting in a forest; whole body shown; head small.",
+   "2.1: Cavalier/Sussex-type spaniel lying down; head close-up at the left of the frame; teddy bear beside it.",
+   "2.2: Appenzeller lying on a blue backdrop; whole body shown in profile; head medium-small.",
+   "2.3: papillon in profile; close-up of head and fluffy body; green grass.",
+   "2.4: Greater Swiss Mountain dog lying on autumn leaves; small in a wide forest scene; head turned away.",
+   "2.5: kuvasz on a snowy mountain slope; small in a wide landscape; profile.",
+   "2.6: Maltese chewing a toy at the frame edge; plush dog toys dominate; head partly cut off."
+  ],
+  "predictions": [
+   {
+    "question": "How much of the frame does the dog's head fill?",
+    "answers": [
+     "head-and-shoulders close-up, head fills a large part of the frame",
+     "much of the body visible, head a modest part of the frame",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog large and close in the frame, or small in a wide scene?",
+    "answers": [
+     "dog close and large, head clearly prominent",
+     "dog small in a wide scene or crowded out by other objects",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f05173a55751af0a45374589c32db298e69a1c23f085c62c9731d8612ef6ec2d",
+  "texts": [
+   "{\"notes\": [\"1.1: silky terrier, frontal close-up; head fills most of the frame; indoor.\", \"1.2: Appenzeller, frontal head-and-chest close-up; head fills a large part of the frame; garden background.\", \"1.3: Greater Swiss Mountain dog, frontal close-up with mouth open and tongue out; head very large in frame.\", \"1.4: yellow Labrador in a straw-floored kennel; body and leg visible; head moderate-small; dark scene with a bowl.\", \"1.5: Norfolk terrier being washed in a sink; whole wet dog visible; human hands; bathroom clutter.\", \"1.6: Appenzeller trotting in a forest; whole body shown; head small.\", \"2.1: Cavalier/Sussex-type spaniel lying down; head close-up at the left of the frame; teddy bear beside it.\", \"2.2: Appenzeller lying on a blue backdrop; whole body shown in profile; head medium-small.\", \"2.3: papillon in profile; close-up of head and fluffy body; green grass.\", \"2.4: Greater Swiss Mountain dog lying on autumn leaves; small in a wide forest scene; head turned away.\", \"2.5: kuvasz on a snowy mountain slope; small in a wide landscape; profile.\", \"2.6: Maltese chewing a toy at the frame edge; plush dog toys dominate; head partly cut off.\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How much of the frame does the dog's head fill?\", \"answers\": [\"head-and-shoulders close-up, head fills a large part of the frame\", \"much of the body visible, head a modest part of the frame\", \"no dog visible\"], \"most_active\": \"head-and-shoulders close-up, head fills a large part of the frame\", \"least_active\": \"much of the body visible, head a modest part of the frame\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"Is the dog large and close in the frame, or small in a wide scene?\", \"answers\": [\"dog close and large, head clearly prominent\", \"dog small in a wide scene or crowded out by other objects\", \"no dog visible\"], \"most_active\": \"dog close and large, head clearly prominent\", \"least_active\": \"dog small in a wide scene or crowded out by other objects\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: silky terrier, frontal close-up; head fills most of the frame; indoor.\", \"1.2: Appenzeller, frontal head-and-chest close-up; head fills a large part of the frame; garden background.\", \"1.3: Greater Swiss Mountain dog, frontal close-up with mouth open and tongue out; head very large in frame.\", \"1.4: yellow Labrador in a straw-floored kennel; body and leg visible; head moderate-small; dark scene with a bowl.\", \"1.5: Norfolk terrier being washed in a sink; whole wet dog visible; human hands; bathroom clutter.\", \"1.6: Appenzeller trotting in a forest; whole body shown; head small.\", \"2.1: Cavalier/Sussex-type spaniel lying down; head close-up at the left of the frame; teddy bear beside it.\", \"2.2: Appenzeller lying on a blue backdrop; whole body shown in profile; head medium-small.\", \"2.3: papillon in profile; close-up of head and fluffy body; green grass.\", \"2.4: Greater Swiss Mountain dog lying on autumn leaves; small in a wide forest scene; head turned away.\", \"2.5: kuvasz on a snowy mountain slope; small in a wide landscape; profile.\", \"2.6: Maltese chewing a toy at the frame edge; plush dog toys dominate; head partly cut off.\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How much of the frame does the dog's head fill?\", \"answers\": [\"head-and-shoulders close-up, head fills a large part of the frame\", \"much of the body visible, head a modest part of the frame\", \"no dog visible\"], \"most_active\": \"head-and-shoulders close-up, head fills a large part of the frame\", \"least_active\": \"much of the body visible, head a modest part of the frame\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"Is the dog large and close in the frame, or small in a wide scene?\", \"answers\": [\"dog close and large, head clearly prominent\", \"dog small in a wide scene or crowded out by other objects\", \"no dog visible\"], \"most_active\": \"dog close and large, head clearly prominent\", \"least_active\": \"dog small in a wide scene or crowded out by other objects\"}]}",
+  "valid": true
+ },
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1: silky terrier, close-up head-on portrait, head fills the frame, looking up at the camera indoors",
+   "1.2: Appenzeller, tight head-and-chest portrait facing the camera, garden behind",
+   "1.3: Greater Swiss Mountain dog, close-up head with tongue out, head fills most of the frame",
+   "1.4: yellow Labrador in a dark straw kennel, whole front body and a leg reaching out, head medium-sized",
+   "1.5: Norfolk terrier being bathed in a sink with a hand and hose, whole body shown, head small",
+   "1.6: Appenzeller trotting through woods, full body in motion, head small",
+   "2.1: Cavalier-type spaniel lying with head on the floor, close and large in frame, beside a teddy bear",
+   "2.2: Appenzeller lying on a blue studio backdrop, whole dog filling the frame, head in profile",
+   "2.3: papillon, close-up of a black-and-white head and fur in profile on grass",
+   "2.4: Greater Swiss Mountain dog lying small in a wide field of autumn leaves, head turned away",
+   "2.5: white kuvasz small in a wide snowy mountain landscape, in profile",
+   "2.6: Maltese partly cut off at the frame edge, chewing a toy, with stuffed toys taking the focus"
+  ],
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's head fill?",
+    "answers": [
+     "head and shoulders close-up, head fills a large part of the frame",
+     "much of the body shown, head medium or small",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog large in the frame, or small within a wide scene?",
+    "answers": [
+     "dog large, filling much of the frame",
+     "dog small within a wide scene (landscape, field, room)",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f05173a55751af0a45374589c32db298e69a1c23f085c62c9731d8612ef6ec2d",
+  "texts": [
+   "{\"notes\": [\"1.1: silky terrier, close-up head-on portrait, head fills the frame, looking up at the camera indoors\", \"1.2: Appenzeller, tight head-and-chest portrait facing the camera, garden behind\", \"1.3: Greater Swiss Mountain dog, close-up head with tongue out, head fills most of the frame\", \"1.4: yellow Labrador in a dark straw kennel, whole front body and a leg reaching out, head medium-sized\", \"1.5: Norfolk terrier being bathed in a sink with a hand and hose, whole body shown, head small\", \"1.6: Appenzeller trotting through woods, full body in motion, head small\", \"2.1: Cavalier-type spaniel lying with head on the floor, close and large in frame, beside a teddy bear\", \"2.2: Appenzeller lying on a blue studio backdrop, whole dog filling the frame, head in profile\", \"2.3: papillon, close-up of a black-and-white head and fur in profile on grass\", \"2.4: Greater Swiss Mountain dog lying small in a wide field of autumn leaves, head turned away\", \"2.5: white kuvasz small in a wide snowy mountain landscape, in profile\", \"2.6: Maltese partly cut off at the frame edge, chewing a toy, with stuffed toys taking the focus\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How much of the photo does the dog's head fill?\", \"answers\": [\"head and shoulders close-up, head fills a large part of the frame\", \"much of the body shown, head medium or small\", \"no dog visible\"], \"most_active\": \"head and shoulders close-up, head fills a large part of the frame\", \"least_active\": \"much of the body shown, head medium or small\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"Is the dog large in the frame, or small within a wide scene?\", \"answers\": [\"dog large, filling much of the frame\", \"dog small within a wide scene (landscape, field, room)\", \"no dog visible\"], \"most_active\": \"dog large, filling much of the frame\", \"least_active\": \"dog small within a wide scene (landscape, field, room)\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: silky terrier, close-up head-on portrait, head fills the frame, looking up at the camera indoors\", \"1.2: Appenzeller, tight head-and-chest portrait facing the camera, garden behind\", \"1.3: Greater Swiss Mountain dog, close-up head with tongue out, head fills most of the frame\", \"1.4: yellow Labrador in a dark straw kennel, whole front body and a leg reaching out, head medium-sized\", \"1.5: Norfolk terrier being bathed in a sink with a hand and hose, whole body shown, head small\", \"1.6: Appenzeller trotting through woods, full body in motion, head small\", \"2.1: Cavalier-type spaniel lying with head on the floor, close and large in frame, beside a teddy bear\", \"2.2: Appenzeller lying on a blue studio backdrop, whole dog filling the frame, head in profile\", \"2.3: papillon, close-up of a black-and-white head and fur in profile on grass\", \"2.4: Greater Swiss Mountain dog lying small in a wide field of autumn leaves, head turned away\", \"2.5: white kuvasz small in a wide snowy mountain landscape, in profile\", \"2.6: Maltese partly cut off at the frame edge, chewing a toy, with stuffed toys taking the focus\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How much of the photo does the dog's head fill?\", \"answers\": [\"head and shoulders close-up, head fills a large part of the frame\", \"much of the body shown, head medium or small\", \"no dog visible\"], \"most_active\": \"head and shoulders close-up, head fills a large part of the frame\", \"least_active\": \"much of the body shown, head medium or small\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"Is the dog large in the frame, or small within a wide scene?\", \"answers\": [\"dog large, filling much of the frame\", \"dog small within a wide scene (landscape, field, room)\", \"no dog visible\"], \"most_active\": \"dog large, filling much of the frame\", \"least_active\": \"dog small within a wide scene (landscape, field, room)\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1: silky terrier, frontal close-up; the head fills most of the frame, with a tilted pose against a plain sofa background.",
+   "1.2: Appenzeller, frontal head-and-shoulders close-up; the head fills a large part of the frame.",
+   "1.3: Greater Swiss Mountain dog, frontal close-up of the head with mouth open and tongue out; the head fills the frame.",
+   "1.4: Labrador, facing the camera, but the body and an extended leg are visible in a straw-filled kennel with a bowl; the head is a smaller share of the frame.",
+   "1.5: Norfolk terrier being bathed in a sink; its whole wet body is shown, the head is small, and there is a cluttered bathroom scene with a hand.",
+   "1.6: Appenzeller running toward the camera; the whole body is shown small in a forest, with motion.",
+   "2.1: Sussex/Cavalier spaniel lying down; a close-up head in the lower left, next to a teddy bear.",
+   "2.2: Appenzeller lying in profile on a plain blue backdrop; the whole body is visible, with the head of moderate size.",
+   "2.3: papillon, side view; a close-up of the head and fluffy body filling the frame.",
+   "2.4: Greater Swiss Mountain dog lying in autumn leaves, head turned; the dog is small in a wide outdoor scene.",
+   "2.5: kuvasz lying in deep snow on a mountain slope; the dog is small in a wide landscape.",
+   "2.6: Maltese partly cut off at the frame edge chewing a toy, with plush toys dominating the scene."
+  ],
+  "predictions": [
+   {
+    "question": "How is the facing dog framed in the photo?",
+    "answers": [
+     "close-up: head and maybe shoulders fill most of the frame",
+     "body visible: much of the dog's body shown, head a modest part of the frame",
+     "dog small in a wider scene",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "How large is the dog's head in the photo?",
+    "answers": [
+     "large: head covers more than about a tenth of the photo",
+     "small: dog is small in a wide scene such as a landscape",
+     "dog only partly in frame or cut off at the edge",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f05173a55751af0a45374589c32db298e69a1c23f085c62c9731d8612ef6ec2d",
+  "texts": [
+   "{\"notes\": [\"1.1: silky terrier, frontal close-up; the head fills most of the frame, with a tilted pose against a plain sofa background.\", \"1.2: Appenzeller, frontal head-and-shoulders close-up; the head fills a large part of the frame.\", \"1.3: Greater Swiss Mountain dog, frontal close-up of the head with mouth open and tongue out; the head fills the frame.\", \"1.4: Labrador, facing the camera, but the body and an extended leg are visible in a straw-filled kennel with a bowl; the head is a smaller share of the frame.\", \"1.5: Norfolk terrier being bathed in a sink; its whole wet body is shown, the head is small, and there is a cluttered bathroom scene with a hand.\", \"1.6: Appenzeller running toward the camera; the whole body is shown small in a forest, with motion.\", \"2.1: Sussex/Cavalier spaniel lying down; a close-up head in the lower left, next to a teddy bear.\", \"2.2: Appenzeller lying in profile on a plain blue backdrop; the whole body is visible, with the head of moderate size.\", \"2.3: papillon, side view; a close-up of the head and fluffy body filling the frame.\", \"2.4: Greater Swiss Mountain dog lying in autumn leaves, head turned; the dog is small in a wide outdoor scene.\", \"2.5: kuvasz lying in deep snow on a mountain slope; the dog is small in a wide landscape.\", \"2.6: Maltese partly cut off at the frame edge chewing a toy, with plush toys dominating the scene.\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How is the facing dog framed in the photo?\", \"answers\": [\"close-up: head and maybe shoulders fill most of the frame\", \"body visible: much of the dog's body shown, head a modest part of the frame\", \"dog small in a wider scene\", \"no dog visible\"], \"most_active\": \"close-up: head and maybe shoulders fill most of the frame\", \"least_active\": \"dog small in a wider scene\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"How large is the dog's head in the photo?\", \"answers\": [\"large: head covers more than about a tenth of the photo\", \"small: dog is small in a wide scene such as a landscape\", \"dog only partly in frame or cut off at the edge\", \"no dog visible\"], \"most_active\": \"large: head covers more than about a tenth of the photo\", \"least_active\": \"small: dog is small in a wide scene such as a landscape\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: silky terrier, frontal close-up; the head fills most of the frame, with a tilted pose against a plain sofa background.\", \"1.2: Appenzeller, frontal head-and-shoulders close-up; the head fills a large part of the frame.\", \"1.3: Greater Swiss Mountain dog, frontal close-up of the head with mouth open and tongue out; the head fills the frame.\", \"1.4: Labrador, facing the camera, but the body and an extended leg are visible in a straw-filled kennel with a bowl; the head is a smaller share of the frame.\", \"1.5: Norfolk terrier being bathed in a sink; its whole wet body is shown, the head is small, and there is a cluttered bathroom scene with a hand.\", \"1.6: Appenzeller running toward the camera; the whole body is shown small in a forest, with motion.\", \"2.1: Sussex/Cavalier spaniel lying down; a close-up head in the lower left, next to a teddy bear.\", \"2.2: Appenzeller lying in profile on a plain blue backdrop; the whole body is visible, with the head of moderate size.\", \"2.3: papillon, side view; a close-up of the head and fluffy body filling the frame.\", \"2.4: Greater Swiss Mountain dog lying in autumn leaves, head turned; the dog is small in a wide outdoor scene.\", \"2.5: kuvasz lying in deep snow on a mountain slope; the dog is small in a wide landscape.\", \"2.6: Maltese partly cut off at the frame edge chewing a toy, with plush toys dominating the scene.\"], \"predictions\": [{\"splits\": \"yes, facing the camera\", \"question\": \"How is the facing dog framed in the photo?\", \"answers\": [\"close-up: head and maybe shoulders fill most of the frame\", \"body visible: much of the dog's body shown, head a modest part of the frame\", \"dog small in a wider scene\", \"no dog visible\"], \"most_active\": \"close-up: head and maybe shoulders fill most of the frame\", \"least_active\": \"dog small in a wider scene\"}, {\"splits\": \"no, in profile or turned away\", \"question\": \"How large is the dog's head in the photo?\", \"answers\": [\"large: head covers more than about a tenth of the photo\", \"small: dog is small in a wide scene such as a landscape\", \"dog only partly in frame or cut off at the edge\", \"no dog visible\"], \"most_active\": \"large: head covers more than about a tenth of the photo\", \"least_active\": \"small: dog is small in a wide scene such as a landscape\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1 Appenzeller: close-up of a tricolor face with a white blaze, head upright, alert eyes looking at the camera (95%).",
+   "1.2 Pembroke corgi: close frontal face, ears erect, eyes on the camera, mouth open, tan/white face with a blaze (90%).",
+   "1.3 Australian shepherd type: running toward the camera with a pink ball, merle/tan/white face, eyes forward (68%).",
+   "1.4 Sussex spaniel: uniform dark brown dog asleep under a blanket, face hidden, eyes not visible (9%).",
+   "1.5 Beagle: head resting flat on the floor, lying down, eyes open but drowsy, washed-out lighting (44%).",
+   "1.6 Sussex spaniel: uniform brown face, head lowered and looking down at the ground, eyes downcast (33%).",
+   "2.1 Yorkshire terrier: small dog in profile on a deck beside a spilled plant pot (30%).",
+   "2.2 Papillon: small puppy lying between a person's legs, black and white photo, face toward the camera (21%).",
+   "2.3 Yorkshire terrier: two small dogs on a windowsill facing each other, backlit (17%).",
+   "2.4 Timber wolves: several lying on dirt, far away (5%).",
+   "2.5 Irish wolfhound: tiny figure in profile in a park scene with people on a bench, black and white (5%).",
+   "2.6 Greater Swiss Mountain dog: small figure on a forest path looking sideways (8%)."
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog's head raised and alert with its eyes open and looking at the camera, or lowered, resting or sleeping?",
+    "answers": [
+     "head raised, eyes open, looking at the camera",
+     "head lowered, resting on the ground, looking down or eyes closed",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   },
+   {
+    "question": "Does the dog's face have contrasting color markings (such as a white blaze, or tricolor or tan points), or is it one uniform color?",
+    "answers": [
+     "contrasting markings (blaze, tricolor, or tan points)",
+     "one uniform color",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2f3f0db393e9d24043b99e47ea9ea7a8bbb2dbd7409db5ac701d3ea227d3c64b",
+  "texts": [
+   "{\"notes\": [\"1.1 Appenzeller: close-up of a tricolor face with a white blaze, head upright, alert eyes looking at the camera (95%).\", \"1.2 Pembroke corgi: close frontal face, ears erect, eyes on the camera, mouth open, tan/white face with a blaze (90%).\", \"1.3 Australian shepherd type: running toward the camera with a pink ball, merle/tan/white face, eyes forward (68%).\", \"1.4 Sussex spaniel: uniform dark brown dog asleep under a blanket, face hidden, eyes not visible (9%).\", \"1.5 Beagle: head resting flat on the floor, lying down, eyes open but drowsy, washed-out lighting (44%).\", \"1.6 Sussex spaniel: uniform brown face, head lowered and looking down at the ground, eyes downcast (33%).\", \"2.1 Yorkshire terrier: small dog in profile on a deck beside a spilled plant pot (30%).\", \"2.2 Papillon: small puppy lying between a person's legs, black and white photo, face toward the camera (21%).\", \"2.3 Yorkshire terrier: two small dogs on a windowsill facing each other, backlit (17%).\", \"2.4 Timber wolves: several lying on dirt, far away (5%).\", \"2.5 Irish wolfhound: tiny figure in profile in a park scene with people on a bench, black and white (5%).\", \"2.6 Greater Swiss Mountain dog: small figure on a forest path looking sideways (8%).\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Is the dog's head raised and alert with its eyes open and looking at the camera, or lowered, resting or sleeping?\", \"answers\": [\"head raised, eyes open, looking at the camera\", \"head lowered, resting on the ground, looking down or eyes closed\", \"no dog face visible\"], \"most_active\": \"head raised, eyes open, looking at the camera\", \"least_active\": \"head lowered, resting on the ground, looking down or eyes closed\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Does the dog's face have contrasting color markings (such as a white blaze, or tricolor or tan points), or is it one uniform color?\", \"answers\": [\"contrasting markings (blaze, tricolor, or tan points)\", \"one uniform color\", \"no dog face visible\"], \"most_active\": \"contrasting markings (blaze, tricolor, or tan points)\", \"least_active\": \"one uniform color\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Appenzeller: close-up of a tricolor face with a white blaze, head upright, alert eyes looking at the camera (95%).\", \"1.2 Pembroke corgi: close frontal face, ears erect, eyes on the camera, mouth open, tan/white face with a blaze (90%).\", \"1.3 Australian shepherd type: running toward the camera with a pink ball, merle/tan/white face, eyes forward (68%).\", \"1.4 Sussex spaniel: uniform dark brown dog asleep under a blanket, face hidden, eyes not visible (9%).\", \"1.5 Beagle: head resting flat on the floor, lying down, eyes open but drowsy, washed-out lighting (44%).\", \"1.6 Sussex spaniel: uniform brown face, head lowered and looking down at the ground, eyes downcast (33%).\", \"2.1 Yorkshire terrier: small dog in profile on a deck beside a spilled plant pot (30%).\", \"2.2 Papillon: small puppy lying between a person's legs, black and white photo, face toward the camera (21%).\", \"2.3 Yorkshire terrier: two small dogs on a windowsill facing each other, backlit (17%).\", \"2.4 Timber wolves: several lying on dirt, far away (5%).\", \"2.5 Irish wolfhound: tiny figure in profile in a park scene with people on a bench, black and white (5%).\", \"2.6 Greater Swiss Mountain dog: small figure on a forest path looking sideways (8%).\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Is the dog's head raised and alert with its eyes open and looking at the camera, or lowered, resting or sleeping?\", \"answers\": [\"head raised, eyes open, looking at the camera\", \"head lowered, resting on the ground, looking down or eyes closed\", \"no dog face visible\"], \"most_active\": \"head raised, eyes open, looking at the camera\", \"least_active\": \"head lowered, resting on the ground, looking down or eyes closed\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Does the dog's face have contrasting color markings (such as a white blaze, or tricolor or tan points), or is it one uniform color?\", \"answers\": [\"contrasting markings (blaze, tricolor, or tan points)\", \"one uniform color\", \"no dog face visible\"], \"most_active\": \"contrasting markings (blaze, tricolor, or tan points)\", \"least_active\": \"one uniform color\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1: Appenzeller-type tricolor dog, close-up, head upright, eyes open, looking straight at the camera (95%)",
+   "1.2: Corgi lying on grass, head raised, big erect ears, eyes open, facing the camera, mouth open (90%)",
+   "1.3: Australian shepherd running toward the camera with a pink ball in its mouth, eyes open (68%)",
+   "1.4: Brown Sussex spaniel asleep under a patterned blanket, face buried and hidden (9%)",
+   "1.5: Beagle lying with its chin resting on the floor, droopy ears, eyes open but head low (44%)",
+   "1.6: Brown spaniel with head bowed toward the ground, eyes looking down, long droopy ears (33%)",
+   "2.1: Small Yorkie on steps in profile beside spilled potting soil (30%)",
+   "2.2: Small papillon lying between a person's feet, B&W, face toward the camera (21%)",
+   "2.3: Two small dogs on a windowsill facing each other, seen from the side (17%)",
+   "2.4: Several wolves lying asleep on dirt, far away (5%)",
+   "2.5: Wolfhound seen from behind, standing by people on a bench in a park, B&W (5%)",
+   "2.6: Swiss mountain dog standing far away on a forest trail, looking aside (8%)"
+  ],
+  "predictions": [
+   {
+    "question": "Are the dog's eyes open and looking toward the camera?",
+    "answers": [
+     "yes, eyes open and looking at the camera",
+     "eyes closed, hidden, or looking down or away",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   },
+   {
+    "question": "How is the dog holding its head?",
+    "answers": [
+     "head raised and upright",
+     "head lowered, bowed, or resting on the ground or a surface",
+     "no dog head visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2f3f0db393e9d24043b99e47ea9ea7a8bbb2dbd7409db5ac701d3ea227d3c64b",
+  "texts": [
+   "{\"notes\": [\"1.1: Appenzeller-type tricolor dog, close-up, head upright, eyes open, looking straight at the camera (95%)\", \"1.2: Corgi lying on grass, head raised, big erect ears, eyes open, facing the camera, mouth open (90%)\", \"1.3: Australian shepherd running toward the camera with a pink ball in its mouth, eyes open (68%)\", \"1.4: Brown Sussex spaniel asleep under a patterned blanket, face buried and hidden (9%)\", \"1.5: Beagle lying with its chin resting on the floor, droopy ears, eyes open but head low (44%)\", \"1.6: Brown spaniel with head bowed toward the ground, eyes looking down, long droopy ears (33%)\", \"2.1: Small Yorkie on steps in profile beside spilled potting soil (30%)\", \"2.2: Small papillon lying between a person's feet, B&W, face toward the camera (21%)\", \"2.3: Two small dogs on a windowsill facing each other, seen from the side (17%)\", \"2.4: Several wolves lying asleep on dirt, far away (5%)\", \"2.5: Wolfhound seen from behind, standing by people on a bench in a park, B&W (5%)\", \"2.6: Swiss mountain dog standing far away on a forest trail, looking aside (8%)\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"yes, eyes open and looking at the camera\", \"eyes closed, hidden, or looking down or away\", \"no dog face visible\"], \"most_active\": \"yes, eyes open and looking at the camera\", \"least_active\": \"eyes closed, hidden, or looking down or away\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"How is the dog holding its head?\", \"answers\": [\"head raised and upright\", \"head lowered, bowed, or resting on the ground or a surface\", \"no dog head visible\"], \"most_active\": \"head raised and upright\", \"least_active\": \"head lowered, bowed, or resting on the ground or a surface\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Appenzeller-type tricolor dog, close-up, head upright, eyes open, looking straight at the camera (95%)\", \"1.2: Corgi lying on grass, head raised, big erect ears, eyes open, facing the camera, mouth open (90%)\", \"1.3: Australian shepherd running toward the camera with a pink ball in its mouth, eyes open (68%)\", \"1.4: Brown Sussex spaniel asleep under a patterned blanket, face buried and hidden (9%)\", \"1.5: Beagle lying with its chin resting on the floor, droopy ears, eyes open but head low (44%)\", \"1.6: Brown spaniel with head bowed toward the ground, eyes looking down, long droopy ears (33%)\", \"2.1: Small Yorkie on steps in profile beside spilled potting soil (30%)\", \"2.2: Small papillon lying between a person's feet, B&W, face toward the camera (21%)\", \"2.3: Two small dogs on a windowsill facing each other, seen from the side (17%)\", \"2.4: Several wolves lying asleep on dirt, far away (5%)\", \"2.5: Wolfhound seen from behind, standing by people on a bench in a park, B&W (5%)\", \"2.6: Swiss mountain dog standing far away on a forest trail, looking aside (8%)\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"yes, eyes open and looking at the camera\", \"eyes closed, hidden, or looking down or away\", \"no dog face visible\"], \"most_active\": \"yes, eyes open and looking at the camera\", \"least_active\": \"eyes closed, hidden, or looking down or away\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"How is the dog holding its head?\", \"answers\": [\"head raised and upright\", \"head lowered, bowed, or resting on the ground or a surface\", \"no dog head visible\"], \"most_active\": \"head raised and upright\", \"least_active\": \"head lowered, bowed, or resting on the ground or a surface\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1 Appenzeller, head close-up, upright and alert, eyes open looking at camera, outdoors",
+   "1.2 Pembroke corgi lying on grass, head raised, ears erect, looking straight at camera, mouth open",
+   "1.3 Australian shepherd-type running toward camera with pink ball in mouth, eyes open, facing camera",
+   "1.4 Sussex spaniel curled up asleep under a patterned blanket, face mostly hidden, eyes closed",
+   "1.5 Beagle lying with chin on the floor, head lowered, resting, droopy ears",
+   "1.6 Sussex spaniel with head bowed down, sniffing the ground, eyes downcast, long droopy ears",
+   "2.1 Yorkie on a porch beside a spilled plant pot, seen from the side",
+   "2.2 Small papillon lying on a floor between a person's feet, black-and-white photo",
+   "2.3 Two small dogs facing each other on a windowsill, backlit",
+   "2.4 Several wolves lying asleep on dirt, far away",
+   "2.5 Wolfhound standing in a park near people on a bench, black-and-white, distant",
+   "2.6 Swiss mountain dog standing on a forest trail, small in frame"
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog's head held up and alert, with its eyes open, or is it lowered, resting on something, or asleep?",
+    "answers": [
+     "head up and alert, eyes open",
+     "head lowered, resting on the ground, or asleep",
+     "can't tell / no dog head visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   },
+   {
+    "question": "Where is the dog looking?",
+    "answers": [
+     "straight at the camera",
+     "down at the ground or eyes closed",
+     "off to the side",
+     "dog's eyes not visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2f3f0db393e9d24043b99e47ea9ea7a8bbb2dbd7409db5ac701d3ea227d3c64b",
+  "texts": [
+   "{\"notes\": [\"1.1 Appenzeller, head close-up, upright and alert, eyes open looking at camera, outdoors\", \"1.2 Pembroke corgi lying on grass, head raised, ears erect, looking straight at camera, mouth open\", \"1.3 Australian shepherd-type running toward camera with pink ball in mouth, eyes open, facing camera\", \"1.4 Sussex spaniel curled up asleep under a patterned blanket, face mostly hidden, eyes closed\", \"1.5 Beagle lying with chin on the floor, head lowered, resting, droopy ears\", \"1.6 Sussex spaniel with head bowed down, sniffing the ground, eyes downcast, long droopy ears\", \"2.1 Yorkie on a porch beside a spilled plant pot, seen from the side\", \"2.2 Small papillon lying on a floor between a person's feet, black-and-white photo\", \"2.3 Two small dogs facing each other on a windowsill, backlit\", \"2.4 Several wolves lying asleep on dirt, far away\", \"2.5 Wolfhound standing in a park near people on a bench, black-and-white, distant\", \"2.6 Swiss mountain dog standing on a forest trail, small in frame\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Is the dog's head held up and alert, with its eyes open, or is it lowered, resting on something, or asleep?\", \"answers\": [\"head up and alert, eyes open\", \"head lowered, resting on the ground, or asleep\", \"can't tell / no dog head visible\"], \"most_active\": \"head up and alert, eyes open\", \"least_active\": \"head lowered, resting on the ground, or asleep\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Where is the dog looking?\", \"answers\": [\"straight at the camera\", \"down at the ground or eyes closed\", \"off to the side\", \"dog's eyes not visible\"], \"most_active\": \"straight at the camera\", \"least_active\": \"down at the ground or eyes closed\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Appenzeller, head close-up, upright and alert, eyes open looking at camera, outdoors\", \"1.2 Pembroke corgi lying on grass, head raised, ears erect, looking straight at camera, mouth open\", \"1.3 Australian shepherd-type running toward camera with pink ball in mouth, eyes open, facing camera\", \"1.4 Sussex spaniel curled up asleep under a patterned blanket, face mostly hidden, eyes closed\", \"1.5 Beagle lying with chin on the floor, head lowered, resting, droopy ears\", \"1.6 Sussex spaniel with head bowed down, sniffing the ground, eyes downcast, long droopy ears\", \"2.1 Yorkie on a porch beside a spilled plant pot, seen from the side\", \"2.2 Small papillon lying on a floor between a person's feet, black-and-white photo\", \"2.3 Two small dogs facing each other on a windowsill, backlit\", \"2.4 Several wolves lying asleep on dirt, far away\", \"2.5 Wolfhound standing in a park near people on a bench, black-and-white, distant\", \"2.6 Swiss mountain dog standing on a forest trail, small in frame\"], \"predictions\": [{\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Is the dog's head held up and alert, with its eyes open, or is it lowered, resting on something, or asleep?\", \"answers\": [\"head up and alert, eyes open\", \"head lowered, resting on the ground, or asleep\", \"can't tell / no dog head visible\"], \"most_active\": \"head up and alert, eyes open\", \"least_active\": \"head lowered, resting on the ground, or asleep\"}, {\"splits\": \"Large close-up (head fills a big part of the frame)\", \"question\": \"Where is the dog looking?\", \"answers\": [\"straight at the camera\", \"down at the ground or eyes closed\", \"off to the side\", \"dog's eyes not visible\"], \"most_active\": \"straight at the camera\", \"least_active\": \"down at the ground or eyes closed\"}]}",
+  "valid": true
+ }
+}

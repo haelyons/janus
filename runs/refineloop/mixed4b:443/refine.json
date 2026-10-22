@@ -1,0 +1,301 @@
+{
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1: Yorkshire terrier with a dark face, lying down with its head tilted, close-up, eyes looking up at the camera",
+   "1.2: Appenzeller lying on grass chewing a stick, head low and slightly angled",
+   "1.3: Leonberger with a dark mask sitting on grass, mouth open with tongue out",
+   "1.4: Dandie Dinmont with a light face, sitting upright and looking straight at the camera, symmetric head-on pose",
+   "1.5: Appenzeller standing and facing the camera straight on, head upright, mouth closed",
+   "1.6: Bloodhound close-up of a frontal, upright, symmetric face with mouth closed",
+   "2.1: Three small dogs on leashes seen from above on a sidewalk, faces away",
+   "2.2: Two maned wolves facing each other in profile, one with mouth open",
+   "2.3: Brown spaniel sleeping curled under a blanket, face hidden",
+   "2.4: Leonberger standing in side profile, full body",
+   "2.5: Edge of white fur against tall grass, no face visible",
+   "2.6: Small dog in a pet bed seen from above, head down"
+  ],
+  "predictions": [
+   {
+    "question": "How is the dog's head held while it faces the camera?",
+    "answers": [
+     "Tilted, lowered, or the dog is lying down",
+     "Upright and straight, in a symmetric head-on pose",
+     "Does not apply"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's mouth open or holding something?",
+    "answers": [
+     "Open, tongue out, or holding/chewing an object",
+     "Closed",
+     "Mouth not visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "380ec65b52abebf91d7961412763e7bee1531105635bf6fa4b8abc66f5a80077",
+  "texts": [
+   "{\"notes\": [\"1.1: Yorkshire terrier with a dark face, lying down with its head tilted, close-up, eyes looking up at the camera\", \"1.2: Appenzeller lying on grass chewing a stick, head low and slightly angled\", \"1.3: Leonberger with a dark mask sitting on grass, mouth open with tongue out\", \"1.4: Dandie Dinmont with a light face, sitting upright and looking straight at the camera, symmetric head-on pose\", \"1.5: Appenzeller standing and facing the camera straight on, head upright, mouth closed\", \"1.6: Bloodhound close-up of a frontal, upright, symmetric face with mouth closed\", \"2.1: Three small dogs on leashes seen from above on a sidewalk, faces away\", \"2.2: Two maned wolves facing each other in profile, one with mouth open\", \"2.3: Brown spaniel sleeping curled under a blanket, face hidden\", \"2.4: Leonberger standing in side profile, full body\", \"2.5: Edge of white fur against tall grass, no face visible\", \"2.6: Small dog in a pet bed seen from above, head down\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How is the dog's head held while it faces the camera?\", \"answers\": [\"Tilted, lowered, or the dog is lying down\", \"Upright and straight, in a symmetric head-on pose\", \"Does not apply\"], \"most_active\": \"Tilted, lowered, or the dog is lying down\", \"least_active\": \"Upright and straight, in a symmetric head-on pose\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's mouth open or holding something?\", \"answers\": [\"Open, tongue out, or holding/chewing an object\", \"Closed\", \"Mouth not visible\"], \"most_active\": \"Open, tongue out, or holding/chewing an object\", \"least_active\": \"Closed\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Yorkshire terrier with a dark face, lying down with its head tilted, close-up, eyes looking up at the camera\", \"1.2: Appenzeller lying on grass chewing a stick, head low and slightly angled\", \"1.3: Leonberger with a dark mask sitting on grass, mouth open with tongue out\", \"1.4: Dandie Dinmont with a light face, sitting upright and looking straight at the camera, symmetric head-on pose\", \"1.5: Appenzeller standing and facing the camera straight on, head upright, mouth closed\", \"1.6: Bloodhound close-up of a frontal, upright, symmetric face with mouth closed\", \"2.1: Three small dogs on leashes seen from above on a sidewalk, faces away\", \"2.2: Two maned wolves facing each other in profile, one with mouth open\", \"2.3: Brown spaniel sleeping curled under a blanket, face hidden\", \"2.4: Leonberger standing in side profile, full body\", \"2.5: Edge of white fur against tall grass, no face visible\", \"2.6: Small dog in a pet bed seen from above, head down\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How is the dog's head held while it faces the camera?\", \"answers\": [\"Tilted, lowered, or the dog is lying down\", \"Upright and straight, in a symmetric head-on pose\", \"Does not apply\"], \"most_active\": \"Tilted, lowered, or the dog is lying down\", \"least_active\": \"Upright and straight, in a symmetric head-on pose\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's mouth open or holding something?\", \"answers\": [\"Open, tongue out, or holding/chewing an object\", \"Closed\", \"Mouth not visible\"], \"most_active\": \"Open, tongue out, or holding/chewing an object\", \"least_active\": \"Closed\"}]}",
+  "valid": true
+ },
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1: Yorkshire terrier close-up lying down, mostly black face with tan muzzle, head tilted, dim indoor light; this unit much higher.",
+   "1.2: Appenzeller lying on grass chewing a stick, black head with tan and white markings, head lowered and tilted; this unit higher.",
+   "1.3: Leonberg sitting on grass with its full body visible and a dark black face mask; this unit higher.",
+   "1.4: Dandie Dinmont with a light grey-white fluffy face, sitting upright and looking straight at the camera; similar unit 2 higher.",
+   "1.5: Appenzeller standing upright facing the camera squarely, with a symmetric tricolor face; similar unit 2 higher.",
+   "1.6: Bloodhound head and shoulders, tan face with long ears, upright and straight-on; similar unit 2 higher.",
+   "2.1: Shih-Tzu and two dachshunds on leashes, seen from above on a sidewalk; this unit higher.",
+   "2.2: Two maned wolves sparring in vegetation; this unit slightly higher.",
+   "2.3: Brown spaniel curled up asleep under a blanket; this unit slightly higher.",
+   "2.4: Leonberg standing in profile, full body, with a text watermark; similar unit 2 higher.",
+   "2.5: Edge of white fur at the side of a frame of grass; similar unit 2 higher.",
+   "2.6: Small dog in a pink dog bed seen from above, with toys; similar unit 2 higher."
+  ],
+  "predictions": [
+   {
+    "question": "What color is most of the fur on the dog's face, apart from the muzzle?",
+    "answers": [
+     "Mostly black or very dark",
+     "Mixed dark and light in roughly equal amounts",
+     "Mostly light: white, grey, cream or tan",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "How is the dog's head held?",
+    "answers": [
+     "Tilted, lowered, or resting (dog lying down or head at an angle)",
+     "Upright and level, looking straight at the camera",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "380ec65b52abebf91d7961412763e7bee1531105635bf6fa4b8abc66f5a80077",
+  "texts": [
+   "{\"notes\": [\"1.1: Yorkshire terrier close-up lying down, mostly black face with tan muzzle, head tilted, dim indoor light; this unit much higher.\", \"1.2: Appenzeller lying on grass chewing a stick, black head with tan and white markings, head lowered and tilted; this unit higher.\", \"1.3: Leonberg sitting on grass with its full body visible and a dark black face mask; this unit higher.\", \"1.4: Dandie Dinmont with a light grey-white fluffy face, sitting upright and looking straight at the camera; similar unit 2 higher.\", \"1.5: Appenzeller standing upright facing the camera squarely, with a symmetric tricolor face; similar unit 2 higher.\", \"1.6: Bloodhound head and shoulders, tan face with long ears, upright and straight-on; similar unit 2 higher.\", \"2.1: Shih-Tzu and two dachshunds on leashes, seen from above on a sidewalk; this unit higher.\", \"2.2: Two maned wolves sparring in vegetation; this unit slightly higher.\", \"2.3: Brown spaniel curled up asleep under a blanket; this unit slightly higher.\", \"2.4: Leonberg standing in profile, full body, with a text watermark; similar unit 2 higher.\", \"2.5: Edge of white fur at the side of a frame of grass; similar unit 2 higher.\", \"2.6: Small dog in a pink dog bed seen from above, with toys; similar unit 2 higher.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"What color is most of the fur on the dog's face, apart from the muzzle?\", \"answers\": [\"Mostly black or very dark\", \"Mixed dark and light in roughly equal amounts\", \"Mostly light: white, grey, cream or tan\", \"No dog face visible\"], \"most_active\": \"Mostly black or very dark\", \"least_active\": \"Mostly light: white, grey, cream or tan\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"How is the dog's head held?\", \"answers\": [\"Tilted, lowered, or resting (dog lying down or head at an angle)\", \"Upright and level, looking straight at the camera\", \"No dog face visible\"], \"most_active\": \"Tilted, lowered, or resting (dog lying down or head at an angle)\", \"least_active\": \"Upright and level, looking straight at the camera\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Yorkshire terrier close-up lying down, mostly black face with tan muzzle, head tilted, dim indoor light; this unit much higher.\", \"1.2: Appenzeller lying on grass chewing a stick, black head with tan and white markings, head lowered and tilted; this unit higher.\", \"1.3: Leonberg sitting on grass with its full body visible and a dark black face mask; this unit higher.\", \"1.4: Dandie Dinmont with a light grey-white fluffy face, sitting upright and looking straight at the camera; similar unit 2 higher.\", \"1.5: Appenzeller standing upright facing the camera squarely, with a symmetric tricolor face; similar unit 2 higher.\", \"1.6: Bloodhound head and shoulders, tan face with long ears, upright and straight-on; similar unit 2 higher.\", \"2.1: Shih-Tzu and two dachshunds on leashes, seen from above on a sidewalk; this unit higher.\", \"2.2: Two maned wolves sparring in vegetation; this unit slightly higher.\", \"2.3: Brown spaniel curled up asleep under a blanket; this unit slightly higher.\", \"2.4: Leonberg standing in profile, full body, with a text watermark; similar unit 2 higher.\", \"2.5: Edge of white fur at the side of a frame of grass; similar unit 2 higher.\", \"2.6: Small dog in a pink dog bed seen from above, with toys; similar unit 2 higher.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"What color is most of the fur on the dog's face, apart from the muzzle?\", \"answers\": [\"Mostly black or very dark\", \"Mixed dark and light in roughly equal amounts\", \"Mostly light: white, grey, cream or tan\", \"No dog face visible\"], \"most_active\": \"Mostly black or very dark\", \"least_active\": \"Mostly light: white, grey, cream or tan\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"How is the dog's head held?\", \"answers\": [\"Tilted, lowered, or resting (dog lying down or head at an angle)\", \"Upright and level, looking straight at the camera\", \"No dog face visible\"], \"most_active\": \"Tilted, lowered, or resting (dog lying down or head at an angle)\", \"least_active\": \"Upright and level, looking straight at the camera\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1 Yorkshire terrier: close-up of a mostly black face with tan patches, lying down, head slightly tilted, dim warm lighting.",
+   "1.2 Appenzeller: black dog with tan and white markings lying on grass, chewing a stick, head turned slightly.",
+   "1.3 Leonberg: whole dog sitting on grass, face very dark, mouth open, slightly off-center.",
+   "1.4 Dandie Dinmont: light grey fluffy dog sitting upright, looking straight at the camera, symmetrical face, indoor show setting.",
+   "1.5 Appenzeller: tricolor dog standing and looking straight at the camera, with a collar and gravel background.",
+   "1.6 Bloodhound: tight head portrait looking straight ahead, tan face with long ears, blurred green background.",
+   "2.1 Shih-Tzu: view from above of a black-and-white dog walking away on a leash, with two dachshunds ahead on the pavement.",
+   "2.2 Red wolves: two reddish canids in profile snarling at each other in a forest.",
+   "2.3 Sussex spaniel: brown curly dog curled up asleep under a patterned blanket, face hidden.",
+   "2.4 Leonberg: full-body side profile of a tan dog standing outdoors, with a watermark text.",
+   "2.5 Kuvasz: only a sliver of white fur at the edge of a frame of tall grass.",
+   "2.6 Shih-Tzu: small dog seen from above in a pink dog bed with toys, face down."
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog looking straight at the camera with its head level and upright, as in a posed portrait?",
+    "answers": [
+     "Yes, head upright and level, posed straight-on",
+     "No, head tilted or lowered, or the dog is lying down or busy (chewing, panting)",
+     "No dog face visible"
+    ],
+    "most": 1,
+    "least": 0,
+    "splits": 0
+   },
+   {
+    "question": "What color is most of the fur around the dog's eyes?",
+    "answers": [
+     "Mostly black or very dark, so the eyes blend into the fur",
+     "Tan, grey, white or other light color, so the eyes stand out",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "380ec65b52abebf91d7961412763e7bee1531105635bf6fa4b8abc66f5a80077",
+  "texts": [
+   "{\"notes\": [\"1.1 Yorkshire terrier: close-up of a mostly black face with tan patches, lying down, head slightly tilted, dim warm lighting.\", \"1.2 Appenzeller: black dog with tan and white markings lying on grass, chewing a stick, head turned slightly.\", \"1.3 Leonberg: whole dog sitting on grass, face very dark, mouth open, slightly off-center.\", \"1.4 Dandie Dinmont: light grey fluffy dog sitting upright, looking straight at the camera, symmetrical face, indoor show setting.\", \"1.5 Appenzeller: tricolor dog standing and looking straight at the camera, with a collar and gravel background.\", \"1.6 Bloodhound: tight head portrait looking straight ahead, tan face with long ears, blurred green background.\", \"2.1 Shih-Tzu: view from above of a black-and-white dog walking away on a leash, with two dachshunds ahead on the pavement.\", \"2.2 Red wolves: two reddish canids in profile snarling at each other in a forest.\", \"2.3 Sussex spaniel: brown curly dog curled up asleep under a patterned blanket, face hidden.\", \"2.4 Leonberg: full-body side profile of a tan dog standing outdoors, with a watermark text.\", \"2.5 Kuvasz: only a sliver of white fur at the edge of a frame of tall grass.\", \"2.6 Shih-Tzu: small dog seen from above in a pink dog bed with toys, face down.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog looking straight at the camera with its head level and upright, as in a posed portrait?\", \"answers\": [\"Yes, head upright and level, posed straight-on\", \"No, head tilted or lowered, or the dog is lying down or busy (chewing, panting)\", \"No dog face visible\"], \"most_active\": \"No, head tilted or lowered, or the dog is lying down or busy (chewing, panting)\", \"least_active\": \"Yes, head upright and level, posed straight-on\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"What color is most of the fur around the dog's eyes?\", \"answers\": [\"Mostly black or very dark, so the eyes blend into the fur\", \"Tan, grey, white or other light color, so the eyes stand out\", \"No dog face visible\"], \"most_active\": \"Mostly black or very dark, so the eyes blend into the fur\", \"least_active\": \"Tan, grey, white or other light color, so the eyes stand out\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Yorkshire terrier: close-up of a mostly black face with tan patches, lying down, head slightly tilted, dim warm lighting.\", \"1.2 Appenzeller: black dog with tan and white markings lying on grass, chewing a stick, head turned slightly.\", \"1.3 Leonberg: whole dog sitting on grass, face very dark, mouth open, slightly off-center.\", \"1.4 Dandie Dinmont: light grey fluffy dog sitting upright, looking straight at the camera, symmetrical face, indoor show setting.\", \"1.5 Appenzeller: tricolor dog standing and looking straight at the camera, with a collar and gravel background.\", \"1.6 Bloodhound: tight head portrait looking straight ahead, tan face with long ears, blurred green background.\", \"2.1 Shih-Tzu: view from above of a black-and-white dog walking away on a leash, with two dachshunds ahead on the pavement.\", \"2.2 Red wolves: two reddish canids in profile snarling at each other in a forest.\", \"2.3 Sussex spaniel: brown curly dog curled up asleep under a patterned blanket, face hidden.\", \"2.4 Leonberg: full-body side profile of a tan dog standing outdoors, with a watermark text.\", \"2.5 Kuvasz: only a sliver of white fur at the edge of a frame of tall grass.\", \"2.6 Shih-Tzu: small dog seen from above in a pink dog bed with toys, face down.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog looking straight at the camera with its head level and upright, as in a posed portrait?\", \"answers\": [\"Yes, head upright and level, posed straight-on\", \"No, head tilted or lowered, or the dog is lying down or busy (chewing, panting)\", \"No dog face visible\"], \"most_active\": \"No, head tilted or lowered, or the dog is lying down or busy (chewing, panting)\", \"least_active\": \"Yes, head upright and level, posed straight-on\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"What color is most of the fur around the dog's eyes?\", \"answers\": [\"Mostly black or very dark, so the eyes blend into the fur\", \"Tan, grey, white or other light color, so the eyes stand out\", \"No dog face visible\"], \"most_active\": \"Mostly black or very dark, so the eyes blend into the fur\", \"least_active\": \"Tan, grey, white or other light color, so the eyes stand out\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1: Australian shepherd running toward camera with pink ball in mouth, face medium-large, bright light, blue eyes and dark nose clearly visible",
+   "1.2: husky-like dog standing facing camera, mouth open, face mid-sized and well lit, dark eyes and nose stand out",
+   "1.3: tricolor Swiss mountain dog sitting on grass looking up at camera, tongue out, face large, high-contrast markings",
+   "1.4: Irish terrier running toward camera far away on a field, face tiny",
+   "1.5: cocker spaniel close-up in very dark, dim lighting, face low contrast and blurry",
+   "1.6: Appenzeller running on a path, small in the frame, face small",
+   "2.1: two maned wolves in profile fighting in a forest",
+   "2.2: Leonberger seen from behind, hugged by a person in snow",
+   "2.3: three dogs on leashes seen from above and behind on a sidewalk",
+   "2.4: tiny silky terrier far away in a garden with a bench",
+   "2.5: edge of a white dog's fur beside tall grass, no face",
+   "2.6: white dog lying on its back on grass, face mostly hidden"
+  ],
+  "predictions": [
+   {
+    "question": "How large is the dog's face in the photo?",
+    "answers": [
+     "Large, roughly a tenth of the photo or more",
+     "Small, dog is far away",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?",
+    "answers": [
+     "Yes, bright and sharp with clear eyes and nose",
+     "No, dim, blurry or low contrast",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6cdafbad9db6b34291385b1a5fb9a21e30ed97fd0b9a8c196916a786b0ccade5",
+  "texts": [
+   "{\"notes\": [\"1.1: Australian shepherd running toward camera with pink ball in mouth, face medium-large, bright light, blue eyes and dark nose clearly visible\", \"1.2: husky-like dog standing facing camera, mouth open, face mid-sized and well lit, dark eyes and nose stand out\", \"1.3: tricolor Swiss mountain dog sitting on grass looking up at camera, tongue out, face large, high-contrast markings\", \"1.4: Irish terrier running toward camera far away on a field, face tiny\", \"1.5: cocker spaniel close-up in very dark, dim lighting, face low contrast and blurry\", \"1.6: Appenzeller running on a path, small in the frame, face small\", \"2.1: two maned wolves in profile fighting in a forest\", \"2.2: Leonberger seen from behind, hugged by a person in snow\", \"2.3: three dogs on leashes seen from above and behind on a sidewalk\", \"2.4: tiny silky terrier far away in a garden with a bench\", \"2.5: edge of a white dog's fur beside tall grass, no face\", \"2.6: white dog lying on its back on grass, face mostly hidden\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large, roughly a tenth of the photo or more\", \"Small, dog is far away\", \"No dog face visible\"], \"most_active\": \"Large, roughly a tenth of the photo or more\", \"least_active\": \"Small, dog is far away\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?\", \"answers\": [\"Yes, bright and sharp with clear eyes and nose\", \"No, dim, blurry or low contrast\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp with clear eyes and nose\", \"least_active\": \"No, dim, blurry or low contrast\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Australian shepherd running toward camera with pink ball in mouth, face medium-large, bright light, blue eyes and dark nose clearly visible\", \"1.2: husky-like dog standing facing camera, mouth open, face mid-sized and well lit, dark eyes and nose stand out\", \"1.3: tricolor Swiss mountain dog sitting on grass looking up at camera, tongue out, face large, high-contrast markings\", \"1.4: Irish terrier running toward camera far away on a field, face tiny\", \"1.5: cocker spaniel close-up in very dark, dim lighting, face low contrast and blurry\", \"1.6: Appenzeller running on a path, small in the frame, face small\", \"2.1: two maned wolves in profile fighting in a forest\", \"2.2: Leonberger seen from behind, hugged by a person in snow\", \"2.3: three dogs on leashes seen from above and behind on a sidewalk\", \"2.4: tiny silky terrier far away in a garden with a bench\", \"2.5: edge of a white dog's fur beside tall grass, no face\", \"2.6: white dog lying on its back on grass, face mostly hidden\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large, roughly a tenth of the photo or more\", \"Small, dog is far away\", \"No dog face visible\"], \"most_active\": \"Large, roughly a tenth of the photo or more\", \"least_active\": \"Small, dog is far away\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?\", \"answers\": [\"Yes, bright and sharp with clear eyes and nose\", \"No, dim, blurry or low contrast\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp with clear eyes and nose\", \"least_active\": \"No, dim, blurry or low contrast\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1 Close-up of a blue merle Australian shepherd-type dog running toward the camera with a pink ball in its mouth; face clear and bright, eyes and nose distinct (87%).",
+   "1.2 Fluffy white-and-tan spitz-type dog standing near the camera, mouth open, face frontal and well lit (100%).",
+   "1.3 Tricolor Swiss mountain dog sitting on grass seen from above; face large and frontal, dark eyes and nose clear (83%).",
+   "1.4 Small Irish terrier running toward the camera far away in a dim green field; face tiny (15%).",
+   "1.5 Cocker spaniel face in a very dark, low-contrast, murky photo; eyes barely visible (28%).",
+   "1.6 Appenzeller running on a path, small in a wide grassy scene; face small (30%).",
+   "2.1 Two reddish maned wolves facing each other in profile in a forest (21%).",
+   "2.2 Large dark Leonberger seen from behind with a person hugging it in snow (14%).",
+   "2.3 Three small dogs on leashes seen from above on a sidewalk, faces turned away (22%).",
+   "2.4 Tiny Yorkie-type dog far away in a garden with a bench (8%).",
+   "2.5 Edge of a white furry dog cut off at the frame by tall grass; no face (4%).",
+   "2.6 White spaniel lying on its back in grass, head out of view (10%)."
+  ],
+  "predictions": [
+   {
+    "question": "How large is the dog's face in the photo?",
+    "answers": [
+     "Large: the face takes up a big part of the frame (dog is close)",
+     "Medium: clearly visible but not large",
+     "Small: the dog is far away in a wide scene",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "Are the dog's eyes and nose sharp and well lit?",
+    "answers": [
+     "Yes, bright and sharp, eyes and nose clearly defined",
+     "Somewhat, slightly dim or soft",
+     "No, dark, blurry or low contrast",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6cdafbad9db6b34291385b1a5fb9a21e30ed97fd0b9a8c196916a786b0ccade5",
+  "texts": [
+   "{\"notes\": [\"1.1 Close-up of a blue merle Australian shepherd-type dog running toward the camera with a pink ball in its mouth; face clear and bright, eyes and nose distinct (87%).\", \"1.2 Fluffy white-and-tan spitz-type dog standing near the camera, mouth open, face frontal and well lit (100%).\", \"1.3 Tricolor Swiss mountain dog sitting on grass seen from above; face large and frontal, dark eyes and nose clear (83%).\", \"1.4 Small Irish terrier running toward the camera far away in a dim green field; face tiny (15%).\", \"1.5 Cocker spaniel face in a very dark, low-contrast, murky photo; eyes barely visible (28%).\", \"1.6 Appenzeller running on a path, small in a wide grassy scene; face small (30%).\", \"2.1 Two reddish maned wolves facing each other in profile in a forest (21%).\", \"2.2 Large dark Leonberger seen from behind with a person hugging it in snow (14%).\", \"2.3 Three small dogs on leashes seen from above on a sidewalk, faces turned away (22%).\", \"2.4 Tiny Yorkie-type dog far away in a garden with a bench (8%).\", \"2.5 Edge of a white furry dog cut off at the frame by tall grass; no face (4%).\", \"2.6 White spaniel lying on its back in grass, head out of view (10%).\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large: the face takes up a big part of the frame (dog is close)\", \"Medium: clearly visible but not large\", \"Small: the dog is far away in a wide scene\", \"No dog face visible\"], \"most_active\": \"Large: the face takes up a big part of the frame (dog is close)\", \"least_active\": \"Small: the dog is far away in a wide scene\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Are the dog's eyes and nose sharp and well lit?\", \"answers\": [\"Yes, bright and sharp, eyes and nose clearly defined\", \"Somewhat, slightly dim or soft\", \"No, dark, blurry or low contrast\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp, eyes and nose clearly defined\", \"least_active\": \"No, dark, blurry or low contrast\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Close-up of a blue merle Australian shepherd-type dog running toward the camera with a pink ball in its mouth; face clear and bright, eyes and nose distinct (87%).\", \"1.2 Fluffy white-and-tan spitz-type dog standing near the camera, mouth open, face frontal and well lit (100%).\", \"1.3 Tricolor Swiss mountain dog sitting on grass seen from above; face large and frontal, dark eyes and nose clear (83%).\", \"1.4 Small Irish terrier running toward the camera far away in a dim green field; face tiny (15%).\", \"1.5 Cocker spaniel face in a very dark, low-contrast, murky photo; eyes barely visible (28%).\", \"1.6 Appenzeller running on a path, small in a wide grassy scene; face small (30%).\", \"2.1 Two reddish maned wolves facing each other in profile in a forest (21%).\", \"2.2 Large dark Leonberger seen from behind with a person hugging it in snow (14%).\", \"2.3 Three small dogs on leashes seen from above on a sidewalk, faces turned away (22%).\", \"2.4 Tiny Yorkie-type dog far away in a garden with a bench (8%).\", \"2.5 Edge of a white furry dog cut off at the frame by tall grass; no face (4%).\", \"2.6 White spaniel lying on its back in grass, head out of view (10%).\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large: the face takes up a big part of the frame (dog is close)\", \"Medium: clearly visible but not large\", \"Small: the dog is far away in a wide scene\", \"No dog face visible\"], \"most_active\": \"Large: the face takes up a big part of the frame (dog is close)\", \"least_active\": \"Small: the dog is far away in a wide scene\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Are the dog's eyes and nose sharp and well lit?\", \"answers\": [\"Yes, bright and sharp, eyes and nose clearly defined\", \"Somewhat, slightly dim or soft\", \"No, dark, blurry or low contrast\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp, eyes and nose clearly defined\", \"least_active\": \"No, dark, blurry or low contrast\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1: Australian shepherd running toward the camera with a pink ball in its mouth. Face is large and sharp, with blue eyes and a clear dark nose. 87%.",
+   "1.2: Husky-like dog standing on a path, facing the camera with its mouth open. Face is well lit, with clear dark eyes and nose. 100%.",
+   "1.3: Tricolor Swiss mountain dog sitting on grass, looking up at the camera with its tongue out. Large face with clear eyes and nose. 83%.",
+   "1.4: Irish terrier running toward the camera far away in a field. Face is tiny. 15%.",
+   "1.5: Cocker spaniel face filling the frame, but very dark, dim and blurry. Eyes and nose are hard to make out. 28%.",
+   "1.6: Appenzeller running on a dirt path, small in a wide grassy scene. Face is small. 30%.",
+   "2.1: Two maned-wolf-like canids fighting in a forest, snarling with heads in profile. 21%.",
+   "2.2: Large dark dog in snow, seen from behind, with its head turned toward a person. 14%.",
+   "2.3: Three small dogs on leashes walking away on a sidewalk, seen from above. 22%.",
+   "2.4: Tiny Yorkie-like dog sitting far away in a garden yard. 8%.",
+   "2.5: Edge of white fur at the frame border, with grass filling the rest. No face visible. 4%.",
+   "2.6: White dog lying belly-up on grass. Face mostly hidden. 10%."
+  ],
+  "predictions": [
+   {
+    "question": "How large is the dog's face in the photo?",
+    "answers": [
+     "Large, a big part of the frame",
+     "Moderate",
+     "Small, dog far away in a wide scene",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?",
+    "answers": [
+     "Yes, bright and sharp",
+     "Somewhat",
+     "No, dark, dim or blurry",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6cdafbad9db6b34291385b1a5fb9a21e30ed97fd0b9a8c196916a786b0ccade5",
+  "texts": [
+   "{\"notes\": [\"1.1: Australian shepherd running toward the camera with a pink ball in its mouth. Face is large and sharp, with blue eyes and a clear dark nose. 87%.\", \"1.2: Husky-like dog standing on a path, facing the camera with its mouth open. Face is well lit, with clear dark eyes and nose. 100%.\", \"1.3: Tricolor Swiss mountain dog sitting on grass, looking up at the camera with its tongue out. Large face with clear eyes and nose. 83%.\", \"1.4: Irish terrier running toward the camera far away in a field. Face is tiny. 15%.\", \"1.5: Cocker spaniel face filling the frame, but very dark, dim and blurry. Eyes and nose are hard to make out. 28%.\", \"1.6: Appenzeller running on a dirt path, small in a wide grassy scene. Face is small. 30%.\", \"2.1: Two maned-wolf-like canids fighting in a forest, snarling with heads in profile. 21%.\", \"2.2: Large dark dog in snow, seen from behind, with its head turned toward a person. 14%.\", \"2.3: Three small dogs on leashes walking away on a sidewalk, seen from above. 22%.\", \"2.4: Tiny Yorkie-like dog sitting far away in a garden yard. 8%.\", \"2.5: Edge of white fur at the frame border, with grass filling the rest. No face visible. 4%.\", \"2.6: White dog lying belly-up on grass. Face mostly hidden. 10%.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large, a big part of the frame\", \"Moderate\", \"Small, dog far away in a wide scene\", \"No dog face visible\"], \"most_active\": \"Large, a big part of the frame\", \"least_active\": \"Small, dog far away in a wide scene\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?\", \"answers\": [\"Yes, bright and sharp\", \"Somewhat\", \"No, dark, dim or blurry\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp\", \"least_active\": \"No, dark, dim or blurry\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Australian shepherd running toward the camera with a pink ball in its mouth. Face is large and sharp, with blue eyes and a clear dark nose. 87%.\", \"1.2: Husky-like dog standing on a path, facing the camera with its mouth open. Face is well lit, with clear dark eyes and nose. 100%.\", \"1.3: Tricolor Swiss mountain dog sitting on grass, looking up at the camera with its tongue out. Large face with clear eyes and nose. 83%.\", \"1.4: Irish terrier running toward the camera far away in a field. Face is tiny. 15%.\", \"1.5: Cocker spaniel face filling the frame, but very dark, dim and blurry. Eyes and nose are hard to make out. 28%.\", \"1.6: Appenzeller running on a dirt path, small in a wide grassy scene. Face is small. 30%.\", \"2.1: Two maned-wolf-like canids fighting in a forest, snarling with heads in profile. 21%.\", \"2.2: Large dark dog in snow, seen from behind, with its head turned toward a person. 14%.\", \"2.3: Three small dogs on leashes walking away on a sidewalk, seen from above. 22%.\", \"2.4: Tiny Yorkie-like dog sitting far away in a garden yard. 8%.\", \"2.5: Edge of white fur at the frame border, with grass filling the rest. No face visible. 4%.\", \"2.6: White dog lying belly-up on grass. Face mostly hidden. 10%.\"], \"predictions\": [{\"splits\": \"Yes, facing the camera\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"Large, a big part of the frame\", \"Moderate\", \"Small, dog far away in a wide scene\", \"No dog face visible\"], \"most_active\": \"Large, a big part of the frame\", \"least_active\": \"Small, dog far away in a wide scene\"}, {\"splits\": \"Yes, facing the camera\", \"question\": \"Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?\", \"answers\": [\"Yes, bright and sharp\", \"Somewhat\", \"No, dark, dim or blurry\", \"No dog face visible\"], \"most_active\": \"Yes, bright and sharp\", \"least_active\": \"No, dark, dim or blurry\"}]}",
+  "valid": true
+ }
+}

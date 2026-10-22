@@ -1,0 +1,299 @@
+{
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1: redbone hound wearing a striped 'BAD-DOG' shirt, seen from behind with its head turned up toward a wooden stand, indoors.",
+   "1.2: two young red wolves (maned-wolf-like) standing on hind legs wrestling in front of a fence.",
+   "1.3: black-and-white photo of an Irish wolfhound standing in profile in a park, people on a bench behind it.",
+   "1.4: close-up of a white wolf's head in three-quarter profile on grass.",
+   "1.5: two white wolves nuzzling in snow, heads in profile.",
+   "1.6: meerkat in profile, head and upper body against a blurred background.",
+   "2.1: Saint Bernard lying on grass, facing the camera, drinking from a water bottle a person holds.",
+   "2.2: Appenzeller lying on pavement, facing the camera, mouth closed, plants behind it.",
+   "2.3: brown spaniel head close-up facing the camera on a grass background, mouth closed.",
+   "2.4: Saint Bernard walking toward the camera on pavement, mouth open with tongue out.",
+   "2.5: red panda climbing along a branch toward the camera in front of a wire fence.",
+   "2.6: black-and-white Shih-Tzu puppy face close-up against a plain indoor background."
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal lying or sitting still, or is it walking or climbing toward the camera?",
+    "answers": [
+     "Lying or sitting still",
+     "Walking or climbing toward the camera",
+     "Can't tell (head-only close-up) or no animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   },
+   {
+    "question": "What is mainly behind the animal?",
+    "answers": [
+     "Green grass or vegetation outdoors",
+     "Pavement, fence or other man-made outdoor surface",
+     "Plain indoor background or furniture",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cc789d457376fd3a527efca0db5d25eeab9f86ad34f65452b13b891ec3bcb300",
+  "texts": [
+   "{\"notes\": [\"1.1: redbone hound wearing a striped 'BAD-DOG' shirt, seen from behind with its head turned up toward a wooden stand, indoors.\", \"1.2: two young red wolves (maned-wolf-like) standing on hind legs wrestling in front of a fence.\", \"1.3: black-and-white photo of an Irish wolfhound standing in profile in a park, people on a bench behind it.\", \"1.4: close-up of a white wolf's head in three-quarter profile on grass.\", \"1.5: two white wolves nuzzling in snow, heads in profile.\", \"1.6: meerkat in profile, head and upper body against a blurred background.\", \"2.1: Saint Bernard lying on grass, facing the camera, drinking from a water bottle a person holds.\", \"2.2: Appenzeller lying on pavement, facing the camera, mouth closed, plants behind it.\", \"2.3: brown spaniel head close-up facing the camera on a grass background, mouth closed.\", \"2.4: Saint Bernard walking toward the camera on pavement, mouth open with tongue out.\", \"2.5: red panda climbing along a branch toward the camera in front of a wire fence.\", \"2.6: black-and-white Shih-Tzu puppy face close-up against a plain indoor background.\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal lying or sitting still, or is it walking or climbing toward the camera?\", \"answers\": [\"Lying or sitting still\", \"Walking or climbing toward the camera\", \"Can't tell (head-only close-up) or no animal\"], \"most_active\": \"Lying or sitting still\", \"least_active\": \"Walking or climbing toward the camera\"}, {\"splits\": \"Looking straight at the camera\", \"question\": \"What is mainly behind the animal?\", \"answers\": [\"Green grass or vegetation outdoors\", \"Pavement, fence or other man-made outdoor surface\", \"Plain indoor background or furniture\", \"No animal\"], \"most_active\": \"Green grass or vegetation outdoors\", \"least_active\": \"Plain indoor background or furniture\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: redbone hound wearing a striped 'BAD-DOG' shirt, seen from behind with its head turned up toward a wooden stand, indoors.\", \"1.2: two young red wolves (maned-wolf-like) standing on hind legs wrestling in front of a fence.\", \"1.3: black-and-white photo of an Irish wolfhound standing in profile in a park, people on a bench behind it.\", \"1.4: close-up of a white wolf's head in three-quarter profile on grass.\", \"1.5: two white wolves nuzzling in snow, heads in profile.\", \"1.6: meerkat in profile, head and upper body against a blurred background.\", \"2.1: Saint Bernard lying on grass, facing the camera, drinking from a water bottle a person holds.\", \"2.2: Appenzeller lying on pavement, facing the camera, mouth closed, plants behind it.\", \"2.3: brown spaniel head close-up facing the camera on a grass background, mouth closed.\", \"2.4: Saint Bernard walking toward the camera on pavement, mouth open with tongue out.\", \"2.5: red panda climbing along a branch toward the camera in front of a wire fence.\", \"2.6: black-and-white Shih-Tzu puppy face close-up against a plain indoor background.\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal lying or sitting still, or is it walking or climbing toward the camera?\", \"answers\": [\"Lying or sitting still\", \"Walking or climbing toward the camera\", \"Can't tell (head-only close-up) or no animal\"], \"most_active\": \"Lying or sitting still\", \"least_active\": \"Walking or climbing toward the camera\"}, {\"splits\": \"Looking straight at the camera\", \"question\": \"What is mainly behind the animal?\", \"answers\": [\"Green grass or vegetation outdoors\", \"Pavement, fence or other man-made outdoor surface\", \"Plain indoor background or furniture\", \"No animal\"], \"most_active\": \"Green grass or vegetation outdoors\", \"least_active\": \"Plain indoor background or furniture\"}]}",
+  "valid": true
+ },
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1 redbone dog in a striped 'BAD-DOG' shirt, seen from behind, head turned toward a wooden stand, indoors, dark background",
+   "1.2 two red wolf pups standing upright and wrestling in front of a wire fence with foliage",
+   "1.3 black-and-white photo of a wolfhound beside a park bench with two people, trees and a pond behind",
+   "1.4 close-up of a white wolf's head in three-quarter profile, green grass background",
+   "1.5 white wolves nuzzling each other on snow",
+   "1.6 meerkat head and chest in profile, plain brown background",
+   "2.1 Saint Bernard facing the camera, drinking from a bottle a person holds, on green grass",
+   "2.2 Appenzeller lying on pavement facing the camera, garden greenery behind",
+   "2.3 cocker spaniel face close-up looking at the camera, green lawn behind",
+   "2.4 Saint Bernard walking toward the camera with its mouth open and tongue out, on a grey street",
+   "2.5 red panda walking toward the camera on a branch, wire fence behind",
+   "2.6 Shih-Tzu puppy face close-up, plain beige indoor background"
+  ],
+  "predictions": [
+   {
+    "question": "What is mostly visible behind the animal?",
+    "answers": [
+     "Green grass, lawn or leafy plants",
+     "Pavement, street, fence, wall or an indoor backdrop",
+     "Other background, such as snow, water or sand",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   },
+   {
+    "question": "Is the animal walking toward the camera, or is it staying still?",
+    "answers": [
+     "Staying still (lying, sitting, standing, or being fed)",
+     "Walking or moving toward the camera",
+     "Can't tell or no animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cc789d457376fd3a527efca0db5d25eeab9f86ad34f65452b13b891ec3bcb300",
+  "texts": [
+   "{\"notes\": [\"1.1 redbone dog in a striped 'BAD-DOG' shirt, seen from behind, head turned toward a wooden stand, indoors, dark background\", \"1.2 two red wolf pups standing upright and wrestling in front of a wire fence with foliage\", \"1.3 black-and-white photo of a wolfhound beside a park bench with two people, trees and a pond behind\", \"1.4 close-up of a white wolf's head in three-quarter profile, green grass background\", \"1.5 white wolves nuzzling each other on snow\", \"1.6 meerkat head and chest in profile, plain brown background\", \"2.1 Saint Bernard facing the camera, drinking from a bottle a person holds, on green grass\", \"2.2 Appenzeller lying on pavement facing the camera, garden greenery behind\", \"2.3 cocker spaniel face close-up looking at the camera, green lawn behind\", \"2.4 Saint Bernard walking toward the camera with its mouth open and tongue out, on a grey street\", \"2.5 red panda walking toward the camera on a branch, wire fence behind\", \"2.6 Shih-Tzu puppy face close-up, plain beige indoor background\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"What is mostly visible behind the animal?\", \"answers\": [\"Green grass, lawn or leafy plants\", \"Pavement, street, fence, wall or an indoor backdrop\", \"Other background, such as snow, water or sand\", \"No animal visible\"], \"most_active\": \"Green grass, lawn or leafy plants\", \"least_active\": \"Pavement, street, fence, wall or an indoor backdrop\"}, {\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal walking toward the camera, or is it staying still?\", \"answers\": [\"Staying still (lying, sitting, standing, or being fed)\", \"Walking or moving toward the camera\", \"Can't tell or no animal\"], \"most_active\": \"Staying still (lying, sitting, standing, or being fed)\", \"least_active\": \"Walking or moving toward the camera\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 redbone dog in a striped 'BAD-DOG' shirt, seen from behind, head turned toward a wooden stand, indoors, dark background\", \"1.2 two red wolf pups standing upright and wrestling in front of a wire fence with foliage\", \"1.3 black-and-white photo of a wolfhound beside a park bench with two people, trees and a pond behind\", \"1.4 close-up of a white wolf's head in three-quarter profile, green grass background\", \"1.5 white wolves nuzzling each other on snow\", \"1.6 meerkat head and chest in profile, plain brown background\", \"2.1 Saint Bernard facing the camera, drinking from a bottle a person holds, on green grass\", \"2.2 Appenzeller lying on pavement facing the camera, garden greenery behind\", \"2.3 cocker spaniel face close-up looking at the camera, green lawn behind\", \"2.4 Saint Bernard walking toward the camera with its mouth open and tongue out, on a grey street\", \"2.5 red panda walking toward the camera on a branch, wire fence behind\", \"2.6 Shih-Tzu puppy face close-up, plain beige indoor background\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"What is mostly visible behind the animal?\", \"answers\": [\"Green grass, lawn or leafy plants\", \"Pavement, street, fence, wall or an indoor backdrop\", \"Other background, such as snow, water or sand\", \"No animal visible\"], \"most_active\": \"Green grass, lawn or leafy plants\", \"least_active\": \"Pavement, street, fence, wall or an indoor backdrop\"}, {\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal walking toward the camera, or is it staying still?\", \"answers\": [\"Staying still (lying, sitting, standing, or being fed)\", \"Walking or moving toward the camera\", \"Can't tell or no animal\"], \"most_active\": \"Staying still (lying, sitting, standing, or being fed)\", \"least_active\": \"Walking or moving toward the camera\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1: redbone hound in striped 'BAD-DOG' shirt, seen from behind, head turned away, standing up at a wooden table.",
+   "1.2: two young red wolves standing on hind legs wrestling in front of a fence; full bodies, reddish-tan fur.",
+   "1.3: black-and-white photo of a shaggy Irish wolfhound standing in a park by a bench with two people; full body.",
+   "1.4: close-up of a white wolf's head in three-quarter profile on grass.",
+   "1.5: white wolves nuzzling in snow; mostly heads, white fur on white background.",
+   "1.6: meerkat head and upper body in profile, close-up, plain background.",
+   "2.1: Saint Bernard drinking from a water bottle held by a person; face toward camera, sitting on grass.",
+   "2.2: black-and-tan Appenzeller lying on pavement, looking at the camera.",
+   "2.3: brown cocker spaniel face close-up, staring at the camera, on grass.",
+   "2.4: Saint Bernard walking toward the camera on a street, mouth open, tongue out.",
+   "2.5: red panda walking down a branch toward the camera, head low.",
+   "2.6: black-and-white Shih-Tzu puppy face close-up, looking at the camera."
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal walking or moving toward the camera, or is it still (sitting, lying, or posed)?",
+    "answers": [
+     "Walking or moving toward the camera",
+     "Still: sitting, lying, or standing posed",
+     "Can't tell or no animal"
+    ],
+    "most": 1,
+    "least": 0,
+    "splits": 1
+   },
+   {
+    "question": "What is the main color of the animal's coat?",
+    "answers": [
+     "Brown, tan, or reddish",
+     "White or very pale",
+     "Black, gray, or mixed other colors",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cc789d457376fd3a527efca0db5d25eeab9f86ad34f65452b13b891ec3bcb300",
+  "texts": [
+   "{\"notes\": [\"1.1: redbone hound in striped 'BAD-DOG' shirt, seen from behind, head turned away, standing up at a wooden table.\", \"1.2: two young red wolves standing on hind legs wrestling in front of a fence; full bodies, reddish-tan fur.\", \"1.3: black-and-white photo of a shaggy Irish wolfhound standing in a park by a bench with two people; full body.\", \"1.4: close-up of a white wolf's head in three-quarter profile on grass.\", \"1.5: white wolves nuzzling in snow; mostly heads, white fur on white background.\", \"1.6: meerkat head and upper body in profile, close-up, plain background.\", \"2.1: Saint Bernard drinking from a water bottle held by a person; face toward camera, sitting on grass.\", \"2.2: black-and-tan Appenzeller lying on pavement, looking at the camera.\", \"2.3: brown cocker spaniel face close-up, staring at the camera, on grass.\", \"2.4: Saint Bernard walking toward the camera on a street, mouth open, tongue out.\", \"2.5: red panda walking down a branch toward the camera, head low.\", \"2.6: black-and-white Shih-Tzu puppy face close-up, looking at the camera.\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal walking or moving toward the camera, or is it still (sitting, lying, or posed)?\", \"answers\": [\"Walking or moving toward the camera\", \"Still: sitting, lying, or standing posed\", \"Can't tell or no animal\"], \"most_active\": \"Still: sitting, lying, or standing posed\", \"least_active\": \"Walking or moving toward the camera\"}, {\"splits\": \"Turned to the side, in profile, or raised upward\", \"question\": \"What is the main color of the animal's coat?\", \"answers\": [\"Brown, tan, or reddish\", \"White or very pale\", \"Black, gray, or mixed other colors\", \"No animal visible\"], \"most_active\": \"Brown, tan, or reddish\", \"least_active\": \"White or very pale\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: redbone hound in striped 'BAD-DOG' shirt, seen from behind, head turned away, standing up at a wooden table.\", \"1.2: two young red wolves standing on hind legs wrestling in front of a fence; full bodies, reddish-tan fur.\", \"1.3: black-and-white photo of a shaggy Irish wolfhound standing in a park by a bench with two people; full body.\", \"1.4: close-up of a white wolf's head in three-quarter profile on grass.\", \"1.5: white wolves nuzzling in snow; mostly heads, white fur on white background.\", \"1.6: meerkat head and upper body in profile, close-up, plain background.\", \"2.1: Saint Bernard drinking from a water bottle held by a person; face toward camera, sitting on grass.\", \"2.2: black-and-tan Appenzeller lying on pavement, looking at the camera.\", \"2.3: brown cocker spaniel face close-up, staring at the camera, on grass.\", \"2.4: Saint Bernard walking toward the camera on a street, mouth open, tongue out.\", \"2.5: red panda walking down a branch toward the camera, head low.\", \"2.6: black-and-white Shih-Tzu puppy face close-up, looking at the camera.\"], \"predictions\": [{\"splits\": \"Looking straight at the camera\", \"question\": \"Is the animal walking or moving toward the camera, or is it still (sitting, lying, or posed)?\", \"answers\": [\"Walking or moving toward the camera\", \"Still: sitting, lying, or standing posed\", \"Can't tell or no animal\"], \"most_active\": \"Still: sitting, lying, or standing posed\", \"least_active\": \"Walking or moving toward the camera\"}, {\"splits\": \"Turned to the side, in profile, or raised upward\", \"question\": \"What is the main color of the animal's coat?\", \"answers\": [\"Brown, tan, or reddish\", \"White or very pale\", \"Black, gray, or mixed other colors\", \"No animal visible\"], \"most_active\": \"Brown, tan, or reddish\", \"least_active\": \"White or very pale\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1: three shaggy dogs and a tan dog sitting on a porch, tongues out, panting, beside a pumpkin decoration",
+   "1.2: Cavalier spaniel sitting upright on pavement, mouth slightly open",
+   "1.3: Appenzeller trotting on a forest path, tongue out",
+   "1.4: husky lying on a carpet indoors, chewing a bone, mouth on the bone",
+   "1.5: tricolor dog lying down on a blue blanket in a studio shot, mouth closed",
+   "1.6: meerkat upper body in profile, mouth closed",
+   "2.1: fluffy puppy held by a man on a couch with a boy indoors",
+   "2.2: three small dogs on leashes walking on a sidewalk, seen from the owner's view",
+   "2.3: Saint Bernard sitting between two people in front of the Matterhorn",
+   "2.4: two white wolves in a dark forest clearing",
+   "2.5: wolfhound standing in a park by people on a bench, black and white photo",
+   "2.6: keeshond lying on grass by trees and water"
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal's mouth open with its tongue visible (panting)?",
+    "answers": [
+     "Yes, mouth open with tongue showing",
+     "No, mouth closed or occupied (e.g., chewing)",
+     "Animal's mouth not visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the animal right next to people or on pavement, or is it in a natural setting like a forest or grass field?",
+    "answers": [
+     "Right next to people or on pavement/indoors",
+     "In a natural setting (forest, grass, park) with no person close by",
+     "Not applicable"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98992e2a9c84353ae186f49c3317188c4526d55d9f686fe286bb68e1ae3c9f76",
+  "texts": [
+   "{\"notes\": [\"1.1: three shaggy dogs and a tan dog sitting on a porch, tongues out, panting, beside a pumpkin decoration\", \"1.2: Cavalier spaniel sitting upright on pavement, mouth slightly open\", \"1.3: Appenzeller trotting on a forest path, tongue out\", \"1.4: husky lying on a carpet indoors, chewing a bone, mouth on the bone\", \"1.5: tricolor dog lying down on a blue blanket in a studio shot, mouth closed\", \"1.6: meerkat upper body in profile, mouth closed\", \"2.1: fluffy puppy held by a man on a couch with a boy indoors\", \"2.2: three small dogs on leashes walking on a sidewalk, seen from the owner's view\", \"2.3: Saint Bernard sitting between two people in front of the Matterhorn\", \"2.4: two white wolves in a dark forest clearing\", \"2.5: wolfhound standing in a park by people on a bench, black and white photo\", \"2.6: keeshond lying on grass by trees and water\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"Is the animal's mouth open with its tongue visible (panting)?\", \"answers\": [\"Yes, mouth open with tongue showing\", \"No, mouth closed or occupied (e.g., chewing)\", \"Animal's mouth not visible\"], \"most_active\": \"Yes, mouth open with tongue showing\", \"least_active\": \"No, mouth closed or occupied (e.g., chewing)\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"Is the animal right next to people or on pavement, or is it in a natural setting like a forest or grass field?\", \"answers\": [\"Right next to people or on pavement/indoors\", \"In a natural setting (forest, grass, park) with no person close by\", \"Not applicable\"], \"most_active\": \"Right next to people or on pavement/indoors\", \"least_active\": \"In a natural setting (forest, grass, park) with no person close by\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: three shaggy dogs and a tan dog sitting on a porch, tongues out, panting, beside a pumpkin decoration\", \"1.2: Cavalier spaniel sitting upright on pavement, mouth slightly open\", \"1.3: Appenzeller trotting on a forest path, tongue out\", \"1.4: husky lying on a carpet indoors, chewing a bone, mouth on the bone\", \"1.5: tricolor dog lying down on a blue blanket in a studio shot, mouth closed\", \"1.6: meerkat upper body in profile, mouth closed\", \"2.1: fluffy puppy held by a man on a couch with a boy indoors\", \"2.2: three small dogs on leashes walking on a sidewalk, seen from the owner's view\", \"2.3: Saint Bernard sitting between two people in front of the Matterhorn\", \"2.4: two white wolves in a dark forest clearing\", \"2.5: wolfhound standing in a park by people on a bench, black and white photo\", \"2.6: keeshond lying on grass by trees and water\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"Is the animal's mouth open with its tongue visible (panting)?\", \"answers\": [\"Yes, mouth open with tongue showing\", \"No, mouth closed or occupied (e.g., chewing)\", \"Animal's mouth not visible\"], \"most_active\": \"Yes, mouth open with tongue showing\", \"least_active\": \"No, mouth closed or occupied (e.g., chewing)\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"Is the animal right next to people or on pavement, or is it in a natural setting like a forest or grass field?\", \"answers\": [\"Right next to people or on pavement/indoors\", \"In a natural setting (forest, grass, park) with no person close by\", \"Not applicable\"], \"most_active\": \"Right next to people or on pavement/indoors\", \"least_active\": \"In a natural setting (forest, grass, park) with no person close by\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1: three shaggy dogs sitting on a porch beside a pumpkin decoration, tongues out (81%)",
+   "1.2: Cavalier spaniel sitting upright on pavement under a cloudy sky (92%)",
+   "1.3: Appenzeller trotting through a forest with its mouth open (80%)",
+   "1.4: husky lying on a mat indoors, chewing a bone (19%)",
+   "1.5: tricolor dog lying down against a blue backdrop (22%)",
+   "1.6: close-up side profile of a meerkat's head and chest (35%)",
+   "2.1: man on a couch holding a fluffy puppy, with a child in front (53%)",
+   "2.2: overhead view of three small dogs on leashes on a sidewalk (48%)",
+   "2.3: two people posing with a Saint Bernard in front of the Matterhorn (43%)",
+   "2.4: two white wolves in a shadowy forest (17%)",
+   "2.5: black-and-white photo of a wolfhound in a park next to people on a bench (22%)",
+   "2.6: keeshond lying in sunny grass (17%)"
+  ],
+  "predictions": [
+   {
+    "question": "What is the animal's body posture?",
+    "answers": [
+     "Sitting upright, standing, or walking",
+     "Lying down",
+     "Posture not visible or no animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "What else is prominent in the scene around the animal?",
+    "answers": [
+     "People or human-made surroundings close to the animal",
+     "Mostly natural landscape such as grass, trees, or forest",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98992e2a9c84353ae186f49c3317188c4526d55d9f686fe286bb68e1ae3c9f76",
+  "texts": [
+   "{\"notes\": [\"1.1: three shaggy dogs sitting on a porch beside a pumpkin decoration, tongues out (81%)\", \"1.2: Cavalier spaniel sitting upright on pavement under a cloudy sky (92%)\", \"1.3: Appenzeller trotting through a forest with its mouth open (80%)\", \"1.4: husky lying on a mat indoors, chewing a bone (19%)\", \"1.5: tricolor dog lying down against a blue backdrop (22%)\", \"1.6: close-up side profile of a meerkat's head and chest (35%)\", \"2.1: man on a couch holding a fluffy puppy, with a child in front (53%)\", \"2.2: overhead view of three small dogs on leashes on a sidewalk (48%)\", \"2.3: two people posing with a Saint Bernard in front of the Matterhorn (43%)\", \"2.4: two white wolves in a shadowy forest (17%)\", \"2.5: black-and-white photo of a wolfhound in a park next to people on a bench (22%)\", \"2.6: keeshond lying in sunny grass (17%)\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"What is the animal's body posture?\", \"answers\": [\"Sitting upright, standing, or walking\", \"Lying down\", \"Posture not visible or no animal\"], \"most_active\": \"Sitting upright, standing, or walking\", \"least_active\": \"Lying down\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"What else is prominent in the scene around the animal?\", \"answers\": [\"People or human-made surroundings close to the animal\", \"Mostly natural landscape such as grass, trees, or forest\", \"No animal visible\"], \"most_active\": \"People or human-made surroundings close to the animal\", \"least_active\": \"Mostly natural landscape such as grass, trees, or forest\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: three shaggy dogs sitting on a porch beside a pumpkin decoration, tongues out (81%)\", \"1.2: Cavalier spaniel sitting upright on pavement under a cloudy sky (92%)\", \"1.3: Appenzeller trotting through a forest with its mouth open (80%)\", \"1.4: husky lying on a mat indoors, chewing a bone (19%)\", \"1.5: tricolor dog lying down against a blue backdrop (22%)\", \"1.6: close-up side profile of a meerkat's head and chest (35%)\", \"2.1: man on a couch holding a fluffy puppy, with a child in front (53%)\", \"2.2: overhead view of three small dogs on leashes on a sidewalk (48%)\", \"2.3: two people posing with a Saint Bernard in front of the Matterhorn (43%)\", \"2.4: two white wolves in a shadowy forest (17%)\", \"2.5: black-and-white photo of a wolfhound in a park next to people on a bench (22%)\", \"2.6: keeshond lying in sunny grass (17%)\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"What is the animal's body posture?\", \"answers\": [\"Sitting upright, standing, or walking\", \"Lying down\", \"Posture not visible or no animal\"], \"most_active\": \"Sitting upright, standing, or walking\", \"least_active\": \"Lying down\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"What else is prominent in the scene around the animal?\", \"answers\": [\"People or human-made surroundings close to the animal\", \"Mostly natural landscape such as grass, trees, or forest\", \"No animal visible\"], \"most_active\": \"People or human-made surroundings close to the animal\", \"least_active\": \"Mostly natural landscape such as grass, trees, or forest\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1: three shaggy dogs sitting or standing upright on a porch, tongues out, facing the camera, pumpkin decor; 81%",
+   "1.2: spaniel sitting upright on pavement, head slightly turned; 92%",
+   "1.3: tricolor dog trotting toward the camera on a forest path, mouth open; 80%",
+   "1.4: husky lying on a rug indoors, chewing a bone; 19%",
+   "1.5: tricolor dog lying down on a blue blanket in a studio; 22%",
+   "1.6: meerkat head and chest close-up in profile; 35%",
+   "2.1: man holding a fluffy puppy on a couch, child in front; 53%",
+   "2.2: three small dogs on leashes on a sidewalk, seen from the walker's view; 48%",
+   "2.3: Saint Bernard sitting between two people with the Matterhorn behind; 43%",
+   "2.4: two white wolves walking in a shadowy forest; 17%",
+   "2.5: wolfhound standing in a park in black and white, people on a bench in the background; 22%",
+   "2.6: keeshond lying on grass in a sunny park; 17%"
+  ],
+  "predictions": [
+   {
+    "question": "What is the animal's body posture?",
+    "answers": [
+     "Sitting or standing upright, or walking",
+     "Lying down on its belly or side",
+     "Other, or can't tell"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the animal right next to people (held, leashed, or posed with them), or alone in a natural setting?",
+    "answers": [
+     "Right next to or held by a person, or on a leash",
+     "Alone outdoors in nature (grass, forest, field) with no person close by",
+     "Neither, or can't tell"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98992e2a9c84353ae186f49c3317188c4526d55d9f686fe286bb68e1ae3c9f76",
+  "texts": [
+   "{\"notes\": [\"1.1: three shaggy dogs sitting or standing upright on a porch, tongues out, facing the camera, pumpkin decor; 81%\", \"1.2: spaniel sitting upright on pavement, head slightly turned; 92%\", \"1.3: tricolor dog trotting toward the camera on a forest path, mouth open; 80%\", \"1.4: husky lying on a rug indoors, chewing a bone; 19%\", \"1.5: tricolor dog lying down on a blue blanket in a studio; 22%\", \"1.6: meerkat head and chest close-up in profile; 35%\", \"2.1: man holding a fluffy puppy on a couch, child in front; 53%\", \"2.2: three small dogs on leashes on a sidewalk, seen from the walker's view; 48%\", \"2.3: Saint Bernard sitting between two people with the Matterhorn behind; 43%\", \"2.4: two white wolves walking in a shadowy forest; 17%\", \"2.5: wolfhound standing in a park in black and white, people on a bench in the background; 22%\", \"2.6: keeshond lying on grass in a sunny park; 17%\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"What is the animal's body posture?\", \"answers\": [\"Sitting or standing upright, or walking\", \"Lying down on its belly or side\", \"Other, or can't tell\"], \"most_active\": \"Sitting or standing upright, or walking\", \"least_active\": \"Lying down on its belly or side\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"Is the animal right next to people (held, leashed, or posed with them), or alone in a natural setting?\", \"answers\": [\"Right next to or held by a person, or on a leash\", \"Alone outdoors in nature (grass, forest, field) with no person close by\", \"Neither, or can't tell\"], \"most_active\": \"Right next to or held by a person, or on a leash\", \"least_active\": \"Alone outdoors in nature (grass, forest, field) with no person close by\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: three shaggy dogs sitting or standing upright on a porch, tongues out, facing the camera, pumpkin decor; 81%\", \"1.2: spaniel sitting upright on pavement, head slightly turned; 92%\", \"1.3: tricolor dog trotting toward the camera on a forest path, mouth open; 80%\", \"1.4: husky lying on a rug indoors, chewing a bone; 19%\", \"1.5: tricolor dog lying down on a blue blanket in a studio; 22%\", \"1.6: meerkat head and chest close-up in profile; 35%\", \"2.1: man holding a fluffy puppy on a couch, child in front; 53%\", \"2.2: three small dogs on leashes on a sidewalk, seen from the walker's view; 48%\", \"2.3: Saint Bernard sitting between two people with the Matterhorn behind; 43%\", \"2.4: two white wolves walking in a shadowy forest; 17%\", \"2.5: wolfhound standing in a park in black and white, people on a bench in the background; 22%\", \"2.6: keeshond lying on grass in a sunny park; 17%\"], \"predictions\": [{\"splits\": \"Head and most of the body visible, animal fills a large part of the frame\", \"question\": \"What is the animal's body posture?\", \"answers\": [\"Sitting or standing upright, or walking\", \"Lying down on its belly or side\", \"Other, or can't tell\"], \"most_active\": \"Sitting or standing upright, or walking\", \"least_active\": \"Lying down on its belly or side\"}, {\"splits\": \"Animal is small in the scene\", \"question\": \"Is the animal right next to people (held, leashed, or posed with them), or alone in a natural setting?\", \"answers\": [\"Right next to or held by a person, or on a leash\", \"Alone outdoors in nature (grass, forest, field) with no person close by\", \"Neither, or can't tell\"], \"most_active\": \"Right next to or held by a person, or on a leash\", \"least_active\": \"Alone outdoors in nature (grass, forest, field) with no person close by\"}]}",
+  "valid": true
+ }
+}

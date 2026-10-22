@@ -831,3 +831,36 @@ peers_posthoc.txt`. A held prediction is shared when a peer is also at the 95th 
   frontal" is d -0.31 (31st) but its peers 443, 409, 429 are at -0.78 to -1.01 (0th-4th): of the four, 431 alone
   hardly drops on profiles. 384's "frontal" is at the 68th-70th while 443 and 429 are at 98th-99th. The units that
   prefer one side differ from their family on exactly the axis whose sides the agent pooled.
+
+## Round 28: conditional refinements, family-aware (F) against refinement alone (R) (`tools/refineloop.py`)
+
+Stage A put 4b:409 and 418 (dog-head units, not oriented in 23B; 409's peers are 443, 429, 384) through round 27's
+tool unchanged. Stage B, per unit, scores every round-27 prediction on T for the unit and its 3 peers. Arm F refines
+the unit's strongest prediction shared with a peer (else the one where it differs most from a peer, by z), shown the
+peer table and, within each of the prediction's two answers, the 3 photos where the unit most exceeds that peer and
+the 3 where it falls most below. Arm R refines the unit's best prediction from its own most and least active photos
+within each answer. 3 samples x up to 2 conditional predictions (a new question splitting one answer), checked on D
+within the split answer. `runs/refineloop/`; the session limit hit mid-run and the missing calls were redone one at a
+time (`run1.log`, `run2.log`).
+
+    unit     F trigger (peer)       held F real/null  R real/null   trigger re-checked on D: unit pct, peers
+    4b:431   differs (443)          0/6  0/6          0/6  0/6      F 14 (4, 10, 1)
+    4b:443   shared (429)           1/6  0/6          2/6  0/6      95 (93, 100, 85)
+    4b:429   shared (443)           0/6  0/6          3/6  0/6      96 (98, 90, 75)
+    4b:384   differs (409)          0/6  3/6          2/6  0/6      F 91 (99, 93, 90)
+    4b:409   shared (443)           1/6  0/6          4/6  0/6      R 99 (94, 94, 90)
+    4b:418   shared (434)           3/6  0/6          4/6  1/6      R 100 (89, 54, 17)
+
+- Held: 4 (no direction refinement at all for the controls), 5 (real 20 of 65 checkable hold, null 4 of 65), 6
+  (distinctive among held: F 3 of 5, R 4 of 15; all of F's are 418's "whole body vs head close-up"). Failed: 1-3:
+  0 of 72 refinements name a side, in either arm. (My rule also flags "right next to people", 431 R; too few.)
+- The family structure replicates on fresh photos: 431's profile prediction is again its own (14th) against peers at
+  the 1st-10th; 443 and 429 share "facing the camera" again (95th-96th, peers 75th-100th).
+- Two failures, by inspection of the panels:
+  - Peer choice. z scales the gap by the noise, which shrinks as two units correlate, so 431's trigger went to 443
+    (r .88), which prefers the same side. Its disagreement photos (costume dog, play-fight, wolf heads) carry no side.
+  - Naming. 429's F panel, within "looking elsewhere", is side-split where 26B's blind facing answers exist (429
+    above 443: left; 443 above 429: right, right). The refiners wrote camera height, mouth open, head tilt. The
+    signal was in front of the agent and was not named, as in round 27.
+- So the mechanism gets the family right (which predictions are shared, which unit departs) but leaves discovery to
+  an agent that does not describe a mirror difference unprompted. A blind answerer does answer it when asked (26B).

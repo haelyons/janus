@@ -1,0 +1,299 @@
+{
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1: Shetland sheepdog in a crown and cape, sitting with its whole body visible indoors, facing the camera.",
+   "1.2: Cairn terrier running toward the camera on sand, whole body airborne, mouth open.",
+   "1.3: White kuvasz sitting by a window, head and most of the body visible, facing the camera.",
+   "1.4: German shepherd head close-up filling the frame, eyes open, facing the camera.",
+   "1.5: White kuvasz head close-up, tongue out, facing the camera, plain background.",
+   "1.6: Two Australian shepherd-type dogs leaping over a log, two animals with full bodies visible.",
+   "2.1: Arctic fox standing and yawning with eyes closed, body visible.",
+   "2.2: Corgi lying upside down asleep in a crate.",
+   "2.3: Sheltie lying on a couch, eyes nearly closed, body visible.",
+   "2.4: Two shelties playing on grass, one on its back, a tangle of heads.",
+   "2.5: Cairn lying on its back in a laundry basket, face upward, seen from above.",
+   "2.6: Arctic fox curled into a tight ball, sleeping."
+  ],
+  "predictions": [
+   {
+    "question": "How much of the main animal's body is shown?",
+    "answers": [
+     "Head/face close-up filling most of the frame",
+     "Head and most or all of the body visible",
+     "No animal visible"
+    ],
+    "most": 1,
+    "least": 0,
+    "splits": 0
+   },
+   {
+    "question": "How many animals are prominent in the photo?",
+    "answers": [
+     "Exactly one animal",
+     "Two or more animals",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "319bb79531f05aeafcccbf4e27ec56ffd123f1840cef5d412f4886828c2dbb45",
+  "texts": [
+   "{\"notes\": [\"1.1: Shetland sheepdog in a crown and cape, sitting with its whole body visible indoors, facing the camera.\", \"1.2: Cairn terrier running toward the camera on sand, whole body airborne, mouth open.\", \"1.3: White kuvasz sitting by a window, head and most of the body visible, facing the camera.\", \"1.4: German shepherd head close-up filling the frame, eyes open, facing the camera.\", \"1.5: White kuvasz head close-up, tongue out, facing the camera, plain background.\", \"1.6: Two Australian shepherd-type dogs leaping over a log, two animals with full bodies visible.\", \"2.1: Arctic fox standing and yawning with eyes closed, body visible.\", \"2.2: Corgi lying upside down asleep in a crate.\", \"2.3: Sheltie lying on a couch, eyes nearly closed, body visible.\", \"2.4: Two shelties playing on grass, one on its back, a tangle of heads.\", \"2.5: Cairn lying on its back in a laundry basket, face upward, seen from above.\", \"2.6: Arctic fox curled into a tight ball, sleeping.\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How much of the main animal's body is shown?\", \"answers\": [\"Head/face close-up filling most of the frame\", \"Head and most or all of the body visible\", \"No animal visible\"], \"most_active\": \"Head and most or all of the body visible\", \"least_active\": \"Head/face close-up filling most of the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one animal\", \"Two or more animals\", \"No animal visible\"], \"most_active\": \"Exactly one animal\", \"least_active\": \"Two or more animals\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Shetland sheepdog in a crown and cape, sitting with its whole body visible indoors, facing the camera.\", \"1.2: Cairn terrier running toward the camera on sand, whole body airborne, mouth open.\", \"1.3: White kuvasz sitting by a window, head and most of the body visible, facing the camera.\", \"1.4: German shepherd head close-up filling the frame, eyes open, facing the camera.\", \"1.5: White kuvasz head close-up, tongue out, facing the camera, plain background.\", \"1.6: Two Australian shepherd-type dogs leaping over a log, two animals with full bodies visible.\", \"2.1: Arctic fox standing and yawning with eyes closed, body visible.\", \"2.2: Corgi lying upside down asleep in a crate.\", \"2.3: Sheltie lying on a couch, eyes nearly closed, body visible.\", \"2.4: Two shelties playing on grass, one on its back, a tangle of heads.\", \"2.5: Cairn lying on its back in a laundry basket, face upward, seen from above.\", \"2.6: Arctic fox curled into a tight ball, sleeping.\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How much of the main animal's body is shown?\", \"answers\": [\"Head/face close-up filling most of the frame\", \"Head and most or all of the body visible\", \"No animal visible\"], \"most_active\": \"Head and most or all of the body visible\", \"least_active\": \"Head/face close-up filling most of the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one animal\", \"Two or more animals\", \"No animal visible\"], \"most_active\": \"Exactly one animal\", \"least_active\": \"Two or more animals\"}]}",
+  "valid": true
+ },
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1: Shetland sheepdog in a crown and cape, sitting upright, whole body visible at medium size, indoors, facing camera",
+   "1.2: cairn terrier running toward the camera on sand, whole body with legs visible, mid-air",
+   "1.3: white kuvasz sitting upright by a window, most of body visible at medium size",
+   "1.4: German shepherd head close-up filling the frame, facing camera",
+   "1.5: white kuvasz face close-up with tongue out, head fills the frame",
+   "1.6: two Australian shepherd-type dogs leaping over a log in a forest, two animals, legs visible",
+   "2.1: Arctic fox standing and yawning with eyes closed, tongue out, whole body visible",
+   "2.2: Pembroke corgi lying on its back asleep in a crate, body twisted",
+   "2.3: Shetland sheepdog lying on a couch, head resting, drowsy",
+   "2.4: two shelties wrestling on grass, one on its back, tangled bodies close-up",
+   "2.5: cairn lying on its back asleep in a laundry basket, top-down view",
+   "2.6: Arctic fox curled into a tight ball, sleeping, face tucked in"
+  ],
+  "predictions": [
+   {
+    "question": "How much of the dog's body is shown?",
+    "answers": [
+     "Whole body or most of body visible at medium size",
+     "Only the head or head and shoulders, filling the frame",
+     "Animal small or far away",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "How many animals are prominent in the photo?",
+    "answers": [
+     "Exactly one animal",
+     "Two or more animals",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "319bb79531f05aeafcccbf4e27ec56ffd123f1840cef5d412f4886828c2dbb45",
+  "texts": [
+   "{\"notes\": [\"1.1: Shetland sheepdog in a crown and cape, sitting upright, whole body visible at medium size, indoors, facing camera\", \"1.2: cairn terrier running toward the camera on sand, whole body with legs visible, mid-air\", \"1.3: white kuvasz sitting upright by a window, most of body visible at medium size\", \"1.4: German shepherd head close-up filling the frame, facing camera\", \"1.5: white kuvasz face close-up with tongue out, head fills the frame\", \"1.6: two Australian shepherd-type dogs leaping over a log in a forest, two animals, legs visible\", \"2.1: Arctic fox standing and yawning with eyes closed, tongue out, whole body visible\", \"2.2: Pembroke corgi lying on its back asleep in a crate, body twisted\", \"2.3: Shetland sheepdog lying on a couch, head resting, drowsy\", \"2.4: two shelties wrestling on grass, one on its back, tangled bodies close-up\", \"2.5: cairn lying on its back asleep in a laundry basket, top-down view\", \"2.6: Arctic fox curled into a tight ball, sleeping, face tucked in\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How much of the dog's body is shown?\", \"answers\": [\"Whole body or most of body visible at medium size\", \"Only the head or head and shoulders, filling the frame\", \"Animal small or far away\", \"No animal\"], \"most_active\": \"Whole body or most of body visible at medium size\", \"least_active\": \"Only the head or head and shoulders, filling the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one animal\", \"Two or more animals\", \"No animal\"], \"most_active\": \"Exactly one animal\", \"least_active\": \"Two or more animals\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Shetland sheepdog in a crown and cape, sitting upright, whole body visible at medium size, indoors, facing camera\", \"1.2: cairn terrier running toward the camera on sand, whole body with legs visible, mid-air\", \"1.3: white kuvasz sitting upright by a window, most of body visible at medium size\", \"1.4: German shepherd head close-up filling the frame, facing camera\", \"1.5: white kuvasz face close-up with tongue out, head fills the frame\", \"1.6: two Australian shepherd-type dogs leaping over a log in a forest, two animals, legs visible\", \"2.1: Arctic fox standing and yawning with eyes closed, tongue out, whole body visible\", \"2.2: Pembroke corgi lying on its back asleep in a crate, body twisted\", \"2.3: Shetland sheepdog lying on a couch, head resting, drowsy\", \"2.4: two shelties wrestling on grass, one on its back, tangled bodies close-up\", \"2.5: cairn lying on its back asleep in a laundry basket, top-down view\", \"2.6: Arctic fox curled into a tight ball, sleeping, face tucked in\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How much of the dog's body is shown?\", \"answers\": [\"Whole body or most of body visible at medium size\", \"Only the head or head and shoulders, filling the frame\", \"Animal small or far away\", \"No animal\"], \"most_active\": \"Whole body or most of body visible at medium size\", \"least_active\": \"Only the head or head and shoulders, filling the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one animal\", \"Two or more animals\", \"No animal\"], \"most_active\": \"Exactly one animal\", \"least_active\": \"Two or more animals\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1: Shetland sheepdog sitting in a crown and cape costume, whole body visible at medium size, indoors.",
+   "1.2: cairn terrier running toward the camera on sand, whole body airborne, mouth open.",
+   "1.3: white kuvasz sitting upright, most of its body visible, facing the camera.",
+   "1.4: German shepherd head close-up filling the frame, facing the camera.",
+   "1.5: white kuvasz head close-up with tongue out, filling the frame.",
+   "1.6: two Australian shepherd-type dogs jumping over a log; two animals in the frame, bodies visible.",
+   "2.1: Arctic fox standing and yawning with its tongue out, eyes closed, whole body visible.",
+   "2.2: Pembroke corgi lying on its back asleep, twisted, in a crate.",
+   "2.3: Shetland sheepdog lying on a couch, eyes closed.",
+   "2.4: two shelties playing and wrestling on grass; two animals tangled together.",
+   "2.5: cairn lying on its back asleep in a laundry basket, seen from above.",
+   "2.6: Arctic fox curled into a tight ball, face hidden."
+  ],
+  "predictions": [
+   {
+    "question": "How is the alert animal framed in the photo?",
+    "answers": [
+     "Whole or most of a single animal visible at medium size",
+     "Close-up of head/face filling most of the frame",
+     "Animal small or distant, or no animal"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "How many animals are prominent in the photo?",
+    "answers": [
+     "Exactly one main animal",
+     "Two or more animals together",
+     "No animal clearly visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "319bb79531f05aeafcccbf4e27ec56ffd123f1840cef5d412f4886828c2dbb45",
+  "texts": [
+   "{\"notes\": [\"1.1: Shetland sheepdog sitting in a crown and cape costume, whole body visible at medium size, indoors.\", \"1.2: cairn terrier running toward the camera on sand, whole body airborne, mouth open.\", \"1.3: white kuvasz sitting upright, most of its body visible, facing the camera.\", \"1.4: German shepherd head close-up filling the frame, facing the camera.\", \"1.5: white kuvasz head close-up with tongue out, filling the frame.\", \"1.6: two Australian shepherd-type dogs jumping over a log; two animals in the frame, bodies visible.\", \"2.1: Arctic fox standing and yawning with its tongue out, eyes closed, whole body visible.\", \"2.2: Pembroke corgi lying on its back asleep, twisted, in a crate.\", \"2.3: Shetland sheepdog lying on a couch, eyes closed.\", \"2.4: two shelties playing and wrestling on grass; two animals tangled together.\", \"2.5: cairn lying on its back asleep in a laundry basket, seen from above.\", \"2.6: Arctic fox curled into a tight ball, face hidden.\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How is the alert animal framed in the photo?\", \"answers\": [\"Whole or most of a single animal visible at medium size\", \"Close-up of head/face filling most of the frame\", \"Animal small or distant, or no animal\"], \"most_active\": \"Whole or most of a single animal visible at medium size\", \"least_active\": \"Close-up of head/face filling most of the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one main animal\", \"Two or more animals together\", \"No animal clearly visible\"], \"most_active\": \"Exactly one main animal\", \"least_active\": \"Two or more animals together\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Shetland sheepdog sitting in a crown and cape costume, whole body visible at medium size, indoors.\", \"1.2: cairn terrier running toward the camera on sand, whole body airborne, mouth open.\", \"1.3: white kuvasz sitting upright, most of its body visible, facing the camera.\", \"1.4: German shepherd head close-up filling the frame, facing the camera.\", \"1.5: white kuvasz head close-up with tongue out, filling the frame.\", \"1.6: two Australian shepherd-type dogs jumping over a log; two animals in the frame, bodies visible.\", \"2.1: Arctic fox standing and yawning with its tongue out, eyes closed, whole body visible.\", \"2.2: Pembroke corgi lying on its back asleep, twisted, in a crate.\", \"2.3: Shetland sheepdog lying on a couch, eyes closed.\", \"2.4: two shelties playing and wrestling on grass; two animals tangled together.\", \"2.5: cairn lying on its back asleep in a laundry basket, seen from above.\", \"2.6: Arctic fox curled into a tight ball, face hidden.\"], \"predictions\": [{\"splits\": \"Eyes open and alert\", \"question\": \"How is the alert animal framed in the photo?\", \"answers\": [\"Whole or most of a single animal visible at medium size\", \"Close-up of head/face filling most of the frame\", \"Animal small or distant, or no animal\"], \"most_active\": \"Whole or most of a single animal visible at medium size\", \"least_active\": \"Close-up of head/face filling most of the frame\"}, {\"splits\": \"Eyes open and alert\", \"question\": \"How many animals are prominent in the photo?\", \"answers\": [\"Exactly one main animal\", \"Two or more animals together\", \"No animal clearly visible\"], \"most_active\": \"Exactly one main animal\", \"least_active\": \"Two or more animals together\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open, whole body visible.",
+   "1.2: Corgi puppy standing on carpet, facing the camera, mouth open, alert.",
+   "1.3: Swiss mountain dog sitting upright on grass, looking up at the camera, tongue out.",
+   "1.4: Fox lying on gravel, play-fighting with its mouth open, face turned sideways.",
+   "1.5: Irish terrier running toward the camera, small in a grassy field.",
+   "1.6: Arctic fox lying down, yawning with eyes closed.",
+   "2.1: White dog sitting upright facing the camera, head and chest visible.",
+   "2.2: Two fox kits upright in grass, head and chest visible, one in profile.",
+   "2.3: Husky lying in a crate, facing the camera, head and paws visible, text overlay.",
+   "2.4: Tight close-up of a husky face filling the frame.",
+   "2.5: Black-and-white close-up of a dog's head in profile at a window.",
+   "2.6: Corgi puppy lying with its head resting on the floor, close-up of the face."
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal standing or sitting upright and facing the camera with eyes open?",
+    "answers": [
+     "Yes, upright and facing the camera with eyes open",
+     "No, lying down, fighting, running, or eyes closed",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "How is the animal's head shown?",
+    "answers": [
+     "Head held upright with neck/chest or shoulders also visible",
+     "Tight close-up of the face filling the frame, or head resting/lowered",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e9b4a0cc6635185e3e5d09707470a671070e22edc4c6793b7a3eb8de2565436d",
+  "texts": [
+   "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open, whole body visible.\", \"1.2: Corgi puppy standing on carpet, facing the camera, mouth open, alert.\", \"1.3: Swiss mountain dog sitting upright on grass, looking up at the camera, tongue out.\", \"1.4: Fox lying on gravel, play-fighting with its mouth open, face turned sideways.\", \"1.5: Irish terrier running toward the camera, small in a grassy field.\", \"1.6: Arctic fox lying down, yawning with eyes closed.\", \"2.1: White dog sitting upright facing the camera, head and chest visible.\", \"2.2: Two fox kits upright in grass, head and chest visible, one in profile.\", \"2.3: Husky lying in a crate, facing the camera, head and paws visible, text overlay.\", \"2.4: Tight close-up of a husky face filling the frame.\", \"2.5: Black-and-white close-up of a dog's head in profile at a window.\", \"2.6: Corgi puppy lying with its head resting on the floor, close-up of the face.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal standing or sitting upright and facing the camera with eyes open?\", \"answers\": [\"Yes, upright and facing the camera with eyes open\", \"No, lying down, fighting, running, or eyes closed\", \"No animal visible\"], \"most_active\": \"Yes, upright and facing the camera with eyes open\", \"least_active\": \"No, lying down, fighting, running, or eyes closed\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How is the animal's head shown?\", \"answers\": [\"Head held upright with neck/chest or shoulders also visible\", \"Tight close-up of the face filling the frame, or head resting/lowered\", \"No animal visible\"], \"most_active\": \"Head held upright with neck/chest or shoulders also visible\", \"least_active\": \"Tight close-up of the face filling the frame, or head resting/lowered\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open, whole body visible.\", \"1.2: Corgi puppy standing on carpet, facing the camera, mouth open, alert.\", \"1.3: Swiss mountain dog sitting upright on grass, looking up at the camera, tongue out.\", \"1.4: Fox lying on gravel, play-fighting with its mouth open, face turned sideways.\", \"1.5: Irish terrier running toward the camera, small in a grassy field.\", \"1.6: Arctic fox lying down, yawning with eyes closed.\", \"2.1: White dog sitting upright facing the camera, head and chest visible.\", \"2.2: Two fox kits upright in grass, head and chest visible, one in profile.\", \"2.3: Husky lying in a crate, facing the camera, head and paws visible, text overlay.\", \"2.4: Tight close-up of a husky face filling the frame.\", \"2.5: Black-and-white close-up of a dog's head in profile at a window.\", \"2.6: Corgi puppy lying with its head resting on the floor, close-up of the face.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal standing or sitting upright and facing the camera with eyes open?\", \"answers\": [\"Yes, upright and facing the camera with eyes open\", \"No, lying down, fighting, running, or eyes closed\", \"No animal visible\"], \"most_active\": \"Yes, upright and facing the camera with eyes open\", \"least_active\": \"No, lying down, fighting, running, or eyes closed\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How is the animal's head shown?\", \"answers\": [\"Head held upright with neck/chest or shoulders also visible\", \"Tight close-up of the face filling the frame, or head resting/lowered\", \"No animal visible\"], \"most_active\": \"Head held upright with neck/chest or shoulders also visible\", \"least_active\": \"Tight close-up of the face filling the frame, or head resting/lowered\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open and alert; whole body visible at medium size.",
+   "1.2: Corgi puppy standing on carpet, looking straight at the camera with mouth open; whole body visible.",
+   "1.3: Swiss mountain dog sitting on grass, seen from above, looking up at the camera with its tongue hanging out.",
+   "1.4: Two kit foxes fighting on gravel, one open-mouthed; eyes squinted or closed, not facing the camera.",
+   "1.5: Irish terrier running toward the camera across a field; small and distant, tongue out, face hard to see.",
+   "1.6: Arctic fox lying on moss, yawning widely with eyes squeezed shut.",
+   "2.1: White kuvasz sitting upright by a window, facing the camera; head, chest and front of body visible.",
+   "2.2: Two fox kits in grass sitting upright; head and chest visible; one facing the camera with half-closed eyes.",
+   "2.3: Husky lying in a pet crate facing the camera, front paws visible, with a text overlay.",
+   "2.4: Tight close-up of a husky's face filling the frame; eyes open, looking at the camera.",
+   "2.5: Black-and-white close-up of a dog's head in profile, looking out a window.",
+   "2.6: Close-up of a corgi puppy with its head resting on the floor, looking sideways."
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal looking at the camera with its eyes open?",
+    "answers": [
+     "Yes, looking at the camera with eyes open",
+     "Eyes open but looking elsewhere or face hard to see",
+     "Eyes closed or squinting (yawning, fighting, sleeping)",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "How is the animal's head shown?",
+    "answers": [
+     "Head held upright, facing the camera, with neck/chest also visible",
+     "Tight close-up where the face fills the frame",
+     "Head resting on the ground or shown in profile",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e9b4a0cc6635185e3e5d09707470a671070e22edc4c6793b7a3eb8de2565436d",
+  "texts": [
+   "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open and alert; whole body visible at medium size.\", \"1.2: Corgi puppy standing on carpet, looking straight at the camera with mouth open; whole body visible.\", \"1.3: Swiss mountain dog sitting on grass, seen from above, looking up at the camera with its tongue hanging out.\", \"1.4: Two kit foxes fighting on gravel, one open-mouthed; eyes squinted or closed, not facing the camera.\", \"1.5: Irish terrier running toward the camera across a field; small and distant, tongue out, face hard to see.\", \"1.6: Arctic fox lying on moss, yawning widely with eyes squeezed shut.\", \"2.1: White kuvasz sitting upright by a window, facing the camera; head, chest and front of body visible.\", \"2.2: Two fox kits in grass sitting upright; head and chest visible; one facing the camera with half-closed eyes.\", \"2.3: Husky lying in a pet crate facing the camera, front paws visible, with a text overlay.\", \"2.4: Tight close-up of a husky's face filling the frame; eyes open, looking at the camera.\", \"2.5: Black-and-white close-up of a dog's head in profile, looking out a window.\", \"2.6: Close-up of a corgi puppy with its head resting on the floor, looking sideways.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal looking at the camera with its eyes open?\", \"answers\": [\"Yes, looking at the camera with eyes open\", \"Eyes open but looking elsewhere or face hard to see\", \"Eyes closed or squinting (yawning, fighting, sleeping)\", \"No animal visible\"], \"most_active\": \"Yes, looking at the camera with eyes open\", \"least_active\": \"Eyes closed or squinting (yawning, fighting, sleeping)\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How is the animal's head shown?\", \"answers\": [\"Head held upright, facing the camera, with neck/chest also visible\", \"Tight close-up where the face fills the frame\", \"Head resting on the ground or shown in profile\", \"No animal visible\"], \"most_active\": \"Head held upright, facing the camera, with neck/chest also visible\", \"least_active\": \"Tight close-up where the face fills the frame\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open and alert; whole body visible at medium size.\", \"1.2: Corgi puppy standing on carpet, looking straight at the camera with mouth open; whole body visible.\", \"1.3: Swiss mountain dog sitting on grass, seen from above, looking up at the camera with its tongue hanging out.\", \"1.4: Two kit foxes fighting on gravel, one open-mouthed; eyes squinted or closed, not facing the camera.\", \"1.5: Irish terrier running toward the camera across a field; small and distant, tongue out, face hard to see.\", \"1.6: Arctic fox lying on moss, yawning widely with eyes squeezed shut.\", \"2.1: White kuvasz sitting upright by a window, facing the camera; head, chest and front of body visible.\", \"2.2: Two fox kits in grass sitting upright; head and chest visible; one facing the camera with half-closed eyes.\", \"2.3: Husky lying in a pet crate facing the camera, front paws visible, with a text overlay.\", \"2.4: Tight close-up of a husky's face filling the frame; eyes open, looking at the camera.\", \"2.5: Black-and-white close-up of a dog's head in profile, looking out a window.\", \"2.6: Close-up of a corgi puppy with its head resting on the floor, looking sideways.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal looking at the camera with its eyes open?\", \"answers\": [\"Yes, looking at the camera with eyes open\", \"Eyes open but looking elsewhere or face hard to see\", \"Eyes closed or squinting (yawning, fighting, sleeping)\", \"No animal visible\"], \"most_active\": \"Yes, looking at the camera with eyes open\", \"least_active\": \"Eyes closed or squinting (yawning, fighting, sleeping)\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How is the animal's head shown?\", \"answers\": [\"Head held upright, facing the camera, with neck/chest also visible\", \"Tight close-up where the face fills the frame\", \"Head resting on the ground or shown in profile\", \"No animal visible\"], \"most_active\": \"Head held upright, facing the camera, with neck/chest also visible\", \"least_active\": \"Tight close-up where the face fills the frame\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open. Unit high.",
+   "1.2: Corgi puppy standing on carpet, looking at the camera, mouth open. Unit high.",
+   "1.3: Swiss mountain dog sitting on grass, looking up at the camera, tongue out. Unit fairly high.",
+   "1.4: Two kit foxes fighting on gravel, faces sideways and partly hidden. Unit lowest.",
+   "1.5: Irish terrier running toward the camera, small and far away in a field. Unit low.",
+   "1.6: Arctic fox lying down and yawning with its eyes closed. Unit low.",
+   "2.1: White kuvasz sitting upright, head and chest at moderate size, looking at the camera. Unit high.",
+   "2.2: Adult fox and kit sitting upright in grass, head and chest visible. Unit fairly high.",
+   "2.3: Husky lying in a crate, facing the camera, paws visible, at moderate size. Unit fairly high.",
+   "2.4: Husky face close-up filling the frame. Unit very low.",
+   "2.5: Black-and-white close-up of a dog's head in profile. Unit low.",
+   "2.6: Corgi puppy head resting on the floor, tight close-up filling the frame. Unit very low."
+  ],
+  "predictions": [
+   {
+    "question": "Is the animal looking toward the camera with both eyes open?",
+    "answers": [
+     "Yes, looking toward the camera with eyes open",
+     "No, eyes closed, face turned away or hidden",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "How much of the frame does the animal's head take up?",
+    "answers": [
+     "Tight close-up, head fills most of the frame",
+     "Head plus chest or upper body visible, animal at moderate size",
+     "No animal visible"
+    ],
+    "most": 1,
+    "least": 0,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e9b4a0cc6635185e3e5d09707470a671070e22edc4c6793b7a3eb8de2565436d",
+  "texts": [
+   "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open. Unit high.\", \"1.2: Corgi puppy standing on carpet, looking at the camera, mouth open. Unit high.\", \"1.3: Swiss mountain dog sitting on grass, looking up at the camera, tongue out. Unit fairly high.\", \"1.4: Two kit foxes fighting on gravel, faces sideways and partly hidden. Unit lowest.\", \"1.5: Irish terrier running toward the camera, small and far away in a field. Unit low.\", \"1.6: Arctic fox lying down and yawning with its eyes closed. Unit low.\", \"2.1: White kuvasz sitting upright, head and chest at moderate size, looking at the camera. Unit high.\", \"2.2: Adult fox and kit sitting upright in grass, head and chest visible. Unit fairly high.\", \"2.3: Husky lying in a crate, facing the camera, paws visible, at moderate size. Unit fairly high.\", \"2.4: Husky face close-up filling the frame. Unit very low.\", \"2.5: Black-and-white close-up of a dog's head in profile. Unit low.\", \"2.6: Corgi puppy head resting on the floor, tight close-up filling the frame. Unit very low.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal looking toward the camera with both eyes open?\", \"answers\": [\"Yes, looking toward the camera with eyes open\", \"No, eyes closed, face turned away or hidden\", \"No animal visible\"], \"most_active\": \"Yes, looking toward the camera with eyes open\", \"least_active\": \"No, eyes closed, face turned away or hidden\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How much of the frame does the animal's head take up?\", \"answers\": [\"Tight close-up, head fills most of the frame\", \"Head plus chest or upper body visible, animal at moderate size\", \"No animal visible\"], \"most_active\": \"Head plus chest or upper body visible, animal at moderate size\", \"least_active\": \"Tight close-up, head fills most of the frame\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera, mouth open, eyes open. Unit high.\", \"1.2: Corgi puppy standing on carpet, looking at the camera, mouth open. Unit high.\", \"1.3: Swiss mountain dog sitting on grass, looking up at the camera, tongue out. Unit fairly high.\", \"1.4: Two kit foxes fighting on gravel, faces sideways and partly hidden. Unit lowest.\", \"1.5: Irish terrier running toward the camera, small and far away in a field. Unit low.\", \"1.6: Arctic fox lying down and yawning with its eyes closed. Unit low.\", \"2.1: White kuvasz sitting upright, head and chest at moderate size, looking at the camera. Unit high.\", \"2.2: Adult fox and kit sitting upright in grass, head and chest visible. Unit fairly high.\", \"2.3: Husky lying in a crate, facing the camera, paws visible, at moderate size. Unit fairly high.\", \"2.4: Husky face close-up filling the frame. Unit very low.\", \"2.5: Black-and-white close-up of a dog's head in profile. Unit low.\", \"2.6: Corgi puppy head resting on the floor, tight close-up filling the frame. Unit very low.\"], \"predictions\": [{\"splits\": \"Yes, mouth open/tongue out and body in view\", \"question\": \"Is the animal looking toward the camera with both eyes open?\", \"answers\": [\"Yes, looking toward the camera with eyes open\", \"No, eyes closed, face turned away or hidden\", \"No animal visible\"], \"most_active\": \"Yes, looking toward the camera with eyes open\", \"least_active\": \"No, eyes closed, face turned away or hidden\"}, {\"splits\": \"Body not in view (head only) or no animal\", \"question\": \"How much of the frame does the animal's head take up?\", \"answers\": [\"Tight close-up, head fills most of the frame\", \"Head plus chest or upper body visible, animal at moderate size\", \"No animal visible\"], \"most_active\": \"Head plus chest or upper body visible, animal at moderate size\", \"least_active\": \"Tight close-up, head fills most of the frame\"}]}",
+  "valid": true
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1 Dandie Dinmont sitting on a table, frontal, camera at the dog's eye level, head level and upright, looking straight ahead.",
+   "1.2 Beagle lying on the floor with its chin down, camera low at eye level, head level and close up.",
+   "1.3 Appenzeller standing outdoors, frontal, camera roughly at eye level, head level.",
+   "1.4 Beagle on the floor photographed from above, head tipped up toward the camera, mouth open.",
+   "1.5 Labrador in a dark kennel, camera somewhat above, head tilted to one side and looking up.",
+   "1.6 Leonberger sitting on grass at a distance, camera above, head slightly tilted, mouth open.",
+   "2.1 Appenzeller lying on a blue blanket, side view, camera at eye level, head level, looking left.",
+   "2.2 Yorkshire terrier peeking over steps in side profile, head level and horizontal, camera low.",
+   "2.3 Two corgis play-fighting on a couch, heads roughly horizontal, mouths open.",
+   "2.4 Appenzeller trotting outdoors, head turned and tilted, camera slightly above.",
+   "2.5 Papillon held in arms, head tilted and turned, looking up and to the side.",
+   "2.6 Yorkshire terrier lying in shadow, head tilted sideways at a diagonal, close up."
+  ],
+  "predictions": [
+   {
+    "question": "Is the camera at about the dog's eye level, or looking down on the dog from above?",
+    "answers": [
+     "at the dog's eye level",
+     "looking down from above (dog looks up)",
+     "looking up from below",
+     "can't tell"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's head held level, or tilted (up, down, or sideways)?",
+    "answers": [
+     "level and upright",
+     "tilted up or down",
+     "tilted sideways",
+     "head not visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "fa32d4469a6c8747b838215bcb6f54698d92fe03a9d404ccb23838796c18fb28",
+  "texts": [
+   "{\"notes\": [\"1.1 Dandie Dinmont sitting on a table, frontal, camera at the dog's eye level, head level and upright, looking straight ahead.\", \"1.2 Beagle lying on the floor with its chin down, camera low at eye level, head level and close up.\", \"1.3 Appenzeller standing outdoors, frontal, camera roughly at eye level, head level.\", \"1.4 Beagle on the floor photographed from above, head tipped up toward the camera, mouth open.\", \"1.5 Labrador in a dark kennel, camera somewhat above, head tilted to one side and looking up.\", \"1.6 Leonberger sitting on grass at a distance, camera above, head slightly tilted, mouth open.\", \"2.1 Appenzeller lying on a blue blanket, side view, camera at eye level, head level, looking left.\", \"2.2 Yorkshire terrier peeking over steps in side profile, head level and horizontal, camera low.\", \"2.3 Two corgis play-fighting on a couch, heads roughly horizontal, mouths open.\", \"2.4 Appenzeller trotting outdoors, head turned and tilted, camera slightly above.\", \"2.5 Papillon held in arms, head tilted and turned, looking up and to the side.\", \"2.6 Yorkshire terrier lying in shadow, head tilted sideways at a diagonal, close up.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at about the dog's eye level, or looking down on the dog from above?\", \"answers\": [\"at the dog's eye level\", \"looking down from above (dog looks up)\", \"looking up from below\", \"can't tell\"], \"most_active\": \"at the dog's eye level\", \"least_active\": \"looking down from above (dog looks up)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the dog's head held level, or tilted (up, down, or sideways)?\", \"answers\": [\"level and upright\", \"tilted up or down\", \"tilted sideways\", \"head not visible\"], \"most_active\": \"level and upright\", \"least_active\": \"tilted sideways\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Dandie Dinmont sitting on a table, frontal, camera at the dog's eye level, head level and upright, looking straight ahead.\", \"1.2 Beagle lying on the floor with its chin down, camera low at eye level, head level and close up.\", \"1.3 Appenzeller standing outdoors, frontal, camera roughly at eye level, head level.\", \"1.4 Beagle on the floor photographed from above, head tipped up toward the camera, mouth open.\", \"1.5 Labrador in a dark kennel, camera somewhat above, head tilted to one side and looking up.\", \"1.6 Leonberger sitting on grass at a distance, camera above, head slightly tilted, mouth open.\", \"2.1 Appenzeller lying on a blue blanket, side view, camera at eye level, head level, looking left.\", \"2.2 Yorkshire terrier peeking over steps in side profile, head level and horizontal, camera low.\", \"2.3 Two corgis play-fighting on a couch, heads roughly horizontal, mouths open.\", \"2.4 Appenzeller trotting outdoors, head turned and tilted, camera slightly above.\", \"2.5 Papillon held in arms, head tilted and turned, looking up and to the side.\", \"2.6 Yorkshire terrier lying in shadow, head tilted sideways at a diagonal, close up.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at about the dog's eye level, or looking down on the dog from above?\", \"answers\": [\"at the dog's eye level\", \"looking down from above (dog looks up)\", \"looking up from below\", \"can't tell\"], \"most_active\": \"at the dog's eye level\", \"least_active\": \"looking down from above (dog looks up)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the dog's head held level, or tilted (up, down, or sideways)?\", \"answers\": [\"level and upright\", \"tilted up or down\", \"tilted sideways\", \"head not visible\"], \"most_active\": \"level and upright\", \"least_active\": \"tilted sideways\"}]}",
+  "valid": true
+ },
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1 Dandie Dinmont sitting on a table, frontal view, head level, camera at eye level, mouth closed.",
+   "1.2 Beagle lying down with its chin on its paws, head level, gazing at the camera from eye level, mouth closed.",
+   "1.3 Appenzeller standing on gravel, frontal, head level, camera at the dog's eye level, mouth closed.",
+   "1.4 Beagle seen from above, head tilted up to look at the camera, mouth open with tongue out, leash on the floor.",
+   "1.5 Labrador in a dark straw pen, head raised and turned toward the camera, mouth closed, paw forward.",
+   "1.6 Leonberger sitting on grass, whole body small in the frame, mouth open, looking slightly up.",
+   "2.1 Appenzeller lying on a blue cloth, head level in profile looking left, mouth closed.",
+   "2.2 Yorkie on a wooden step looking sideways, head level, next to spilled potted-plant soil.",
+   "2.3 Two corgis play-fighting with their mouths wide open, heads level, dark background.",
+   "2.4 Appenzeller trotting on a path, head tilted, tongue out, looking aside.",
+   "2.5 Papillon puppy close-up in a three-quarter view, head tilted slightly, held by a person.",
+   "2.6 Yorkie lying on a person, head tilted and resting, eyes looking aside, dim lighting."
+  ],
+  "predictions": [
+   {
+    "question": "Is the camera at the dog's eye level, or above the dog so that the dog tilts its head up to look at it?",
+    "answers": [
+     "camera at eye level, head level",
+     "camera above, dog's head tilted up",
+     "camera below the dog",
+     "can't tell"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's mouth closed, or open with the tongue showing?",
+    "answers": [
+     "mouth closed",
+     "mouth open with tongue or teeth showing",
+     "mouth not visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "fa32d4469a6c8747b838215bcb6f54698d92fe03a9d404ccb23838796c18fb28",
+  "texts": [
+   "{\"notes\": [\"1.1 Dandie Dinmont sitting on a table, frontal view, head level, camera at eye level, mouth closed.\", \"1.2 Beagle lying down with its chin on its paws, head level, gazing at the camera from eye level, mouth closed.\", \"1.3 Appenzeller standing on gravel, frontal, head level, camera at the dog's eye level, mouth closed.\", \"1.4 Beagle seen from above, head tilted up to look at the camera, mouth open with tongue out, leash on the floor.\", \"1.5 Labrador in a dark straw pen, head raised and turned toward the camera, mouth closed, paw forward.\", \"1.6 Leonberger sitting on grass, whole body small in the frame, mouth open, looking slightly up.\", \"2.1 Appenzeller lying on a blue cloth, head level in profile looking left, mouth closed.\", \"2.2 Yorkie on a wooden step looking sideways, head level, next to spilled potted-plant soil.\", \"2.3 Two corgis play-fighting with their mouths wide open, heads level, dark background.\", \"2.4 Appenzeller trotting on a path, head tilted, tongue out, looking aside.\", \"2.5 Papillon puppy close-up in a three-quarter view, head tilted slightly, held by a person.\", \"2.6 Yorkie lying on a person, head tilted and resting, eyes looking aside, dim lighting.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at the dog's eye level, or above the dog so that the dog tilts its head up to look at it?\", \"answers\": [\"camera at eye level, head level\", \"camera above, dog's head tilted up\", \"camera below the dog\", \"can't tell\"], \"most_active\": \"camera at eye level, head level\", \"least_active\": \"camera above, dog's head tilted up\"}, {\"splits\": \"yes, eye contact\", \"question\": \"Is the dog's mouth closed, or open with the tongue showing?\", \"answers\": [\"mouth closed\", \"mouth open with tongue or teeth showing\", \"mouth not visible\"], \"most_active\": \"mouth closed\", \"least_active\": \"mouth open with tongue or teeth showing\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Dandie Dinmont sitting on a table, frontal view, head level, camera at eye level, mouth closed.\", \"1.2 Beagle lying down with its chin on its paws, head level, gazing at the camera from eye level, mouth closed.\", \"1.3 Appenzeller standing on gravel, frontal, head level, camera at the dog's eye level, mouth closed.\", \"1.4 Beagle seen from above, head tilted up to look at the camera, mouth open with tongue out, leash on the floor.\", \"1.5 Labrador in a dark straw pen, head raised and turned toward the camera, mouth closed, paw forward.\", \"1.6 Leonberger sitting on grass, whole body small in the frame, mouth open, looking slightly up.\", \"2.1 Appenzeller lying on a blue cloth, head level in profile looking left, mouth closed.\", \"2.2 Yorkie on a wooden step looking sideways, head level, next to spilled potted-plant soil.\", \"2.3 Two corgis play-fighting with their mouths wide open, heads level, dark background.\", \"2.4 Appenzeller trotting on a path, head tilted, tongue out, looking aside.\", \"2.5 Papillon puppy close-up in a three-quarter view, head tilted slightly, held by a person.\", \"2.6 Yorkie lying on a person, head tilted and resting, eyes looking aside, dim lighting.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at the dog's eye level, or above the dog so that the dog tilts its head up to look at it?\", \"answers\": [\"camera at eye level, head level\", \"camera above, dog's head tilted up\", \"camera below the dog\", \"can't tell\"], \"most_active\": \"camera at eye level, head level\", \"least_active\": \"camera above, dog's head tilted up\"}, {\"splits\": \"yes, eye contact\", \"question\": \"Is the dog's mouth closed, or open with the tongue showing?\", \"answers\": [\"mouth closed\", \"mouth open with tongue or teeth showing\", \"mouth not visible\"], \"most_active\": \"mouth closed\", \"least_active\": \"mouth open with tongue or teeth showing\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1 Dandie Dinmont sitting on a show table, frontal, head level, mouth closed, camera at the dog's eye level.",
+   "1.2 Beagle lying with its chin on the floor, close-up, eyes at camera, head level, mouth closed.",
+   "1.3 Appenzeller standing outdoors on gravel, frontal, head level, mouth closed, eye-level shot.",
+   "1.4 Beagle shot from above, looking up at the camera, mouth open with tongue out, leash on the floor.",
+   "1.5 Labrador in a straw kennel, head tilted, looking up at the camera, food bowl beside it.",
+   "1.6 Leonberger sitting on grass, small in frame, slightly from above, mouth open.",
+   "2.1 Appenzeller lying on a blue cloth, head turned to the side in near profile, whole body visible.",
+   "2.2 Yorkshire terrier peeking over steps, head in side profile looking left, with a spilled plant pot.",
+   "2.3 Two corgis play-fighting with mouths open, heads in profile.",
+   "2.4 Appenzeller trotting toward the camera, face mostly frontal, eyes glancing sideways, tongue out.",
+   "2.5 Papillon close-up held by a person, face roughly frontal or three-quarter, eyes looking off to the side.",
+   "2.6 Yorkshire terrier close-up in dark light, lying down, face toward the camera with eyes averted."
+  ],
+  "predictions": [
+   {
+    "question": "Is the camera at the dog's eye level with the head level, or is the camera above the dog so it looks up with its head tilted?",
+    "answers": [
+     "eye level, head level",
+     "camera above, dog looking up or head tilted",
+     "can't tell"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Is the dog's head turned fully sideways in profile, or does its face point roughly toward the camera with only the eyes looking away?",
+    "answers": [
+     "head in side profile",
+     "face toward camera, eyes averted",
+     "face not visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "fa32d4469a6c8747b838215bcb6f54698d92fe03a9d404ccb23838796c18fb28",
+  "texts": [
+   "{\"notes\": [\"1.1 Dandie Dinmont sitting on a show table, frontal, head level, mouth closed, camera at the dog's eye level.\", \"1.2 Beagle lying with its chin on the floor, close-up, eyes at camera, head level, mouth closed.\", \"1.3 Appenzeller standing outdoors on gravel, frontal, head level, mouth closed, eye-level shot.\", \"1.4 Beagle shot from above, looking up at the camera, mouth open with tongue out, leash on the floor.\", \"1.5 Labrador in a straw kennel, head tilted, looking up at the camera, food bowl beside it.\", \"1.6 Leonberger sitting on grass, small in frame, slightly from above, mouth open.\", \"2.1 Appenzeller lying on a blue cloth, head turned to the side in near profile, whole body visible.\", \"2.2 Yorkshire terrier peeking over steps, head in side profile looking left, with a spilled plant pot.\", \"2.3 Two corgis play-fighting with mouths open, heads in profile.\", \"2.4 Appenzeller trotting toward the camera, face mostly frontal, eyes glancing sideways, tongue out.\", \"2.5 Papillon close-up held by a person, face roughly frontal or three-quarter, eyes looking off to the side.\", \"2.6 Yorkshire terrier close-up in dark light, lying down, face toward the camera with eyes averted.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at the dog's eye level with the head level, or is the camera above the dog so it looks up with its head tilted?\", \"answers\": [\"eye level, head level\", \"camera above, dog looking up or head tilted\", \"can't tell\"], \"most_active\": \"eye level, head level\", \"least_active\": \"camera above, dog looking up or head tilted\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the dog's head turned fully sideways in profile, or does its face point roughly toward the camera with only the eyes looking away?\", \"answers\": [\"head in side profile\", \"face toward camera, eyes averted\", \"face not visible\"], \"most_active\": \"head in side profile\", \"least_active\": \"face toward camera, eyes averted\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Dandie Dinmont sitting on a show table, frontal, head level, mouth closed, camera at the dog's eye level.\", \"1.2 Beagle lying with its chin on the floor, close-up, eyes at camera, head level, mouth closed.\", \"1.3 Appenzeller standing outdoors on gravel, frontal, head level, mouth closed, eye-level shot.\", \"1.4 Beagle shot from above, looking up at the camera, mouth open with tongue out, leash on the floor.\", \"1.5 Labrador in a straw kennel, head tilted, looking up at the camera, food bowl beside it.\", \"1.6 Leonberger sitting on grass, small in frame, slightly from above, mouth open.\", \"2.1 Appenzeller lying on a blue cloth, head turned to the side in near profile, whole body visible.\", \"2.2 Yorkshire terrier peeking over steps, head in side profile looking left, with a spilled plant pot.\", \"2.3 Two corgis play-fighting with mouths open, heads in profile.\", \"2.4 Appenzeller trotting toward the camera, face mostly frontal, eyes glancing sideways, tongue out.\", \"2.5 Papillon close-up held by a person, face roughly frontal or three-quarter, eyes looking off to the side.\", \"2.6 Yorkshire terrier close-up in dark light, lying down, face toward the camera with eyes averted.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"Is the camera at the dog's eye level with the head level, or is the camera above the dog so it looks up with its head tilted?\", \"answers\": [\"eye level, head level\", \"camera above, dog looking up or head tilted\", \"can't tell\"], \"most_active\": \"eye level, head level\", \"least_active\": \"camera above, dog looking up or head tilted\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the dog's head turned fully sideways in profile, or does its face point roughly toward the camera with only the eyes looking away?\", \"answers\": [\"head in side profile\", \"face toward camera, eyes averted\", \"face not visible\"], \"most_active\": \"head in side profile\", \"least_active\": \"face toward camera, eyes averted\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1: Eskimo dog standing on a path, facing the camera at mid-distance, mouth open, face clear.",
+   "1.2: Blenheim spaniel sitting in flowers, frontal and fairly close, mouth open.",
+   "1.3: Swiss mountain dog seen from above on grass, frontal face, tongue out, close.",
+   "1.4: Small terrier far away in a large field of snow, face tiny.",
+   "1.5: Two sepia terriers standing on grass at a distance, faces small.",
+   "1.6: German shepherd running on grass at mid-distance, body in motion, face smallish.",
+   "2.1: Yorkie looking sideways beside spilled soil and a plant pot, face moderately large.",
+   "2.2: Appenzeller lying on a blue backdrop, head turned to the side, whole body shown.",
+   "2.3: Sussex spaniel close-up of the head, gazing slightly off-camera, face large.",
+   "2.4: Husky lying down chewing a bone, head bowed so the face is mostly hidden.",
+   "2.5: Akita standing, head turned away to the edge of the frame, face partly cut off.",
+   "2.6: White dog lying in snow far away in a mountain scene, face small."
+  ],
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's face take up?",
+    "answers": [
+     "large or medium (face clearly prominent)",
+     "small (dog distant or face tiny)",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   },
+   {
+    "question": "Are the dog's eyes and nose both clearly visible in the photo?",
+    "answers": [
+     "both eyes and nose clearly visible",
+     "partly hidden, cut off, bowed or too small to see clearly",
+     "no dog face"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0fd817b9e2a87a1c6837dfa45e6827bf2179f512050c0224801ff0c6e4e9309c",
+  "texts": [
+   "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera at mid-distance, mouth open, face clear.\", \"1.2: Blenheim spaniel sitting in flowers, frontal and fairly close, mouth open.\", \"1.3: Swiss mountain dog seen from above on grass, frontal face, tongue out, close.\", \"1.4: Small terrier far away in a large field of snow, face tiny.\", \"1.5: Two sepia terriers standing on grass at a distance, faces small.\", \"1.6: German shepherd running on grass at mid-distance, body in motion, face smallish.\", \"2.1: Yorkie looking sideways beside spilled soil and a plant pot, face moderately large.\", \"2.2: Appenzeller lying on a blue backdrop, head turned to the side, whole body shown.\", \"2.3: Sussex spaniel close-up of the head, gazing slightly off-camera, face large.\", \"2.4: Husky lying down chewing a bone, head bowed so the face is mostly hidden.\", \"2.5: Akita standing, head turned away to the edge of the frame, face partly cut off.\", \"2.6: White dog lying in snow far away in a mountain scene, face small.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"large or medium (face clearly prominent)\", \"small (dog distant or face tiny)\", \"no dog face visible\"], \"most_active\": \"large or medium (face clearly prominent)\", \"least_active\": \"small (dog distant or face tiny)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Are the dog's eyes and nose both clearly visible in the photo?\", \"answers\": [\"both eyes and nose clearly visible\", \"partly hidden, cut off, bowed or too small to see clearly\", \"no dog face\"], \"most_active\": \"both eyes and nose clearly visible\", \"least_active\": \"partly hidden, cut off, bowed or too small to see clearly\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Eskimo dog standing on a path, facing the camera at mid-distance, mouth open, face clear.\", \"1.2: Blenheim spaniel sitting in flowers, frontal and fairly close, mouth open.\", \"1.3: Swiss mountain dog seen from above on grass, frontal face, tongue out, close.\", \"1.4: Small terrier far away in a large field of snow, face tiny.\", \"1.5: Two sepia terriers standing on grass at a distance, faces small.\", \"1.6: German shepherd running on grass at mid-distance, body in motion, face smallish.\", \"2.1: Yorkie looking sideways beside spilled soil and a plant pot, face moderately large.\", \"2.2: Appenzeller lying on a blue backdrop, head turned to the side, whole body shown.\", \"2.3: Sussex spaniel close-up of the head, gazing slightly off-camera, face large.\", \"2.4: Husky lying down chewing a bone, head bowed so the face is mostly hidden.\", \"2.5: Akita standing, head turned away to the edge of the frame, face partly cut off.\", \"2.6: White dog lying in snow far away in a mountain scene, face small.\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"large or medium (face clearly prominent)\", \"small (dog distant or face tiny)\", \"no dog face visible\"], \"most_active\": \"large or medium (face clearly prominent)\", \"least_active\": \"small (dog distant or face tiny)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Are the dog's eyes and nose both clearly visible in the photo?\", \"answers\": [\"both eyes and nose clearly visible\", \"partly hidden, cut off, bowed or too small to see clearly\", \"no dog face\"], \"most_active\": \"both eyes and nose clearly visible\", \"least_active\": \"partly hidden, cut off, bowed or too small to see clearly\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1 Eskimo dog standing, facing the camera head-on, mouth open, face fairly large and centered; 100%",
+   "1.2 Blenheim spaniel, close frontal head-and-chest portrait, both eyes clear, mouth open; 77%",
+   "1.3 Swiss mountain dog sitting, seen from above, frontal face looking up at the camera, tongue out; 70%",
+   "1.4 silky terrier small in a big snowy field, face tiny; 3%",
+   "1.5 two Dandie Dinmonts in sepia, small and side by side in a field; 11%",
+   "1.6 German shepherd running toward the camera, whole body, face medium-small and slightly turned; 28%",
+   "2.1 Yorkshire terrier head in profile looking left, medium size; 56%",
+   "2.2 Appenzeller lying down, head three-quarter toward the left, both eyes partly visible; 62%",
+   "2.3 Sussex spaniel close frontal head, eyes downcast; 69%",
+   "2.4 husky lying down chewing a bone, face pointed down, eyes hidden; 14%",
+   "2.5 Akita whole body, head turned away and cut off at the right edge; 15%",
+   "2.6 kuvasz small in deep snow on a mountain slope, face tiny; 2%"
+  ],
+  "predictions": [
+   {
+    "question": "How large is the dog's face in the photo?",
+    "answers": [
+     "large (close-up of the head)",
+     "medium (whole dog, face clearly visible)",
+     "small (dog far away or tiny in frame)",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "Is the front of the dog's face (both eyes and muzzle) clearly visible, even though the dog is not looking at the camera?",
+    "answers": [
+     "yes, both eyes and muzzle clearly visible",
+     "partly, one eye or the muzzle hidden, turned away or cut off",
+     "face hidden, pointed down, or too small to see",
+     "no dog"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0fd817b9e2a87a1c6837dfa45e6827bf2179f512050c0224801ff0c6e4e9309c",
+  "texts": [
+   "{\"notes\": [\"1.1 Eskimo dog standing, facing the camera head-on, mouth open, face fairly large and centered; 100%\", \"1.2 Blenheim spaniel, close frontal head-and-chest portrait, both eyes clear, mouth open; 77%\", \"1.3 Swiss mountain dog sitting, seen from above, frontal face looking up at the camera, tongue out; 70%\", \"1.4 silky terrier small in a big snowy field, face tiny; 3%\", \"1.5 two Dandie Dinmonts in sepia, small and side by side in a field; 11%\", \"1.6 German shepherd running toward the camera, whole body, face medium-small and slightly turned; 28%\", \"2.1 Yorkshire terrier head in profile looking left, medium size; 56%\", \"2.2 Appenzeller lying down, head three-quarter toward the left, both eyes partly visible; 62%\", \"2.3 Sussex spaniel close frontal head, eyes downcast; 69%\", \"2.4 husky lying down chewing a bone, face pointed down, eyes hidden; 14%\", \"2.5 Akita whole body, head turned away and cut off at the right edge; 15%\", \"2.6 kuvasz small in deep snow on a mountain slope, face tiny; 2%\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"large (close-up of the head)\", \"medium (whole dog, face clearly visible)\", \"small (dog far away or tiny in frame)\", \"no dog face visible\"], \"most_active\": \"large (close-up of the head)\", \"least_active\": \"small (dog far away or tiny in frame)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the front of the dog's face (both eyes and muzzle) clearly visible, even though the dog is not looking at the camera?\", \"answers\": [\"yes, both eyes and muzzle clearly visible\", \"partly, one eye or the muzzle hidden, turned away or cut off\", \"face hidden, pointed down, or too small to see\", \"no dog\"], \"most_active\": \"yes, both eyes and muzzle clearly visible\", \"least_active\": \"face hidden, pointed down, or too small to see\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Eskimo dog standing, facing the camera head-on, mouth open, face fairly large and centered; 100%\", \"1.2 Blenheim spaniel, close frontal head-and-chest portrait, both eyes clear, mouth open; 77%\", \"1.3 Swiss mountain dog sitting, seen from above, frontal face looking up at the camera, tongue out; 70%\", \"1.4 silky terrier small in a big snowy field, face tiny; 3%\", \"1.5 two Dandie Dinmonts in sepia, small and side by side in a field; 11%\", \"1.6 German shepherd running toward the camera, whole body, face medium-small and slightly turned; 28%\", \"2.1 Yorkshire terrier head in profile looking left, medium size; 56%\", \"2.2 Appenzeller lying down, head three-quarter toward the left, both eyes partly visible; 62%\", \"2.3 Sussex spaniel close frontal head, eyes downcast; 69%\", \"2.4 husky lying down chewing a bone, face pointed down, eyes hidden; 14%\", \"2.5 Akita whole body, head turned away and cut off at the right edge; 15%\", \"2.6 kuvasz small in deep snow on a mountain slope, face tiny; 2%\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How large is the dog's face in the photo?\", \"answers\": [\"large (close-up of the head)\", \"medium (whole dog, face clearly visible)\", \"small (dog far away or tiny in frame)\", \"no dog face visible\"], \"most_active\": \"large (close-up of the head)\", \"least_active\": \"small (dog far away or tiny in frame)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"Is the front of the dog's face (both eyes and muzzle) clearly visible, even though the dog is not looking at the camera?\", \"answers\": [\"yes, both eyes and muzzle clearly visible\", \"partly, one eye or the muzzle hidden, turned away or cut off\", \"face hidden, pointed down, or too small to see\", \"no dog\"], \"most_active\": \"yes, both eyes and muzzle clearly visible\", \"least_active\": \"face hidden, pointed down, or too small to see\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1 Eskimo dog standing on a path, frontal, mouth open, eye contact, face fairly large and central: 100%",
+   "1.2 Blenheim spaniel sitting in a flower field, frontal close-up, mouth open: 77%",
+   "1.3 Swiss Mountain dog photographed from above on grass, frontal, tongue out, face large: 70%",
+   "1.4 silky terrier small and far away in snow, face tiny: 3%",
+   "1.5 two Dandie Dinmonts on a field, sepia, faces small: 11%",
+   "1.6 German shepherd running on grass, mid-distance, face medium-small: 28%",
+   "2.1 Yorkie peeking over a step, three-quarter face, near potted plants: 56%",
+   "2.2 Appenzeller lying on a blue backdrop, face turned to the side: 62%",
+   "2.3 Sussex spaniel close-up, frontal face, eyes looking down: 69%",
+   "2.4 husky lying down chewing a bone, face pointed down: 14%",
+   "2.5 Akita standing, head cut off at the edge, face mostly out of frame: 15%",
+   "2.6 kuvasz lying in snow on a mountain slope, small, profile: 2%"
+  ],
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's face take up?",
+    "answers": [
+     "large (face is a big part of the frame)",
+     "medium",
+     "small (dog far away)",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "How much of the dog's face, with both eyes, is visible toward the camera?",
+    "answers": [
+     "face mostly frontal with both eyes visible",
+     "three-quarter or side view with face clearly visible",
+     "face pointed down, cut off by the edge, or tiny",
+     "no dog face"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0fd817b9e2a87a1c6837dfa45e6827bf2179f512050c0224801ff0c6e4e9309c",
+  "texts": [
+   "{\"notes\": [\"1.1 Eskimo dog standing on a path, frontal, mouth open, eye contact, face fairly large and central: 100%\", \"1.2 Blenheim spaniel sitting in a flower field, frontal close-up, mouth open: 77%\", \"1.3 Swiss Mountain dog photographed from above on grass, frontal, tongue out, face large: 70%\", \"1.4 silky terrier small and far away in snow, face tiny: 3%\", \"1.5 two Dandie Dinmonts on a field, sepia, faces small: 11%\", \"1.6 German shepherd running on grass, mid-distance, face medium-small: 28%\", \"2.1 Yorkie peeking over a step, three-quarter face, near potted plants: 56%\", \"2.2 Appenzeller lying on a blue backdrop, face turned to the side: 62%\", \"2.3 Sussex spaniel close-up, frontal face, eyes looking down: 69%\", \"2.4 husky lying down chewing a bone, face pointed down: 14%\", \"2.5 Akita standing, head cut off at the edge, face mostly out of frame: 15%\", \"2.6 kuvasz lying in snow on a mountain slope, small, profile: 2%\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"large (face is a big part of the frame)\", \"medium\", \"small (dog far away)\", \"no dog face visible\"], \"most_active\": \"large (face is a big part of the frame)\", \"least_active\": \"small (dog far away)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"How much of the dog's face, with both eyes, is visible toward the camera?\", \"answers\": [\"face mostly frontal with both eyes visible\", \"three-quarter or side view with face clearly visible\", \"face pointed down, cut off by the edge, or tiny\", \"no dog face\"], \"most_active\": \"face mostly frontal with both eyes visible\", \"least_active\": \"face pointed down, cut off by the edge, or tiny\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Eskimo dog standing on a path, frontal, mouth open, eye contact, face fairly large and central: 100%\", \"1.2 Blenheim spaniel sitting in a flower field, frontal close-up, mouth open: 77%\", \"1.3 Swiss Mountain dog photographed from above on grass, frontal, tongue out, face large: 70%\", \"1.4 silky terrier small and far away in snow, face tiny: 3%\", \"1.5 two Dandie Dinmonts on a field, sepia, faces small: 11%\", \"1.6 German shepherd running on grass, mid-distance, face medium-small: 28%\", \"2.1 Yorkie peeking over a step, three-quarter face, near potted plants: 56%\", \"2.2 Appenzeller lying on a blue backdrop, face turned to the side: 62%\", \"2.3 Sussex spaniel close-up, frontal face, eyes looking down: 69%\", \"2.4 husky lying down chewing a bone, face pointed down: 14%\", \"2.5 Akita standing, head cut off at the edge, face mostly out of frame: 15%\", \"2.6 kuvasz lying in snow on a mountain slope, small, profile: 2%\"], \"predictions\": [{\"splits\": \"yes, eye contact\", \"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"large (face is a big part of the frame)\", \"medium\", \"small (dog far away)\", \"no dog face visible\"], \"most_active\": \"large (face is a big part of the frame)\", \"least_active\": \"small (dog far away)\"}, {\"splits\": \"no, looking elsewhere\", \"question\": \"How much of the dog's face, with both eyes, is visible toward the camera?\", \"answers\": [\"face mostly frontal with both eyes visible\", \"three-quarter or side view with face clearly visible\", \"face pointed down, cut off by the edge, or tiny\", \"no dog face\"], \"most_active\": \"face mostly frontal with both eyes visible\", \"least_active\": \"face pointed down, cut off by the edge, or tiny\"}]}",
+  "valid": true
+ }
+}

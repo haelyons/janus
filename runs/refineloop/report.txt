@@ -1,0 +1,743 @@
+== mixed4b:431  layer mixed4b (512 channels), 131 photos of T, 109 photos of D, answer batches on D failed after a retry: 0 of 10
+peers: mixed4b:443 (r 0.882), mixed4b:409 (r 0.839), mixed4b:429 (r 0.832)
+earlier predictions:
+   P1 (s1). How much of the animal is visible and how large is it in the photo?  answers: Head and most of the body visible, animal fills a large part of the frame; Tight crop showing mainly the head or face; Animal is small in the scene; No animal visible; most active: Head and most of the body visible, animal fills a large part of the frame; least active: Animal is small in the scene
+      T: 83 and 12 photos, d +0.70, percentile 83.8 -> not held; peers 443 d +1.06 pct 97.3 rho 0.693 z -1.46, 409 d +1.16 pct 98.8 rho 0.475 z -1.45, 429 d +0.96 pct 93.2 rho 0.355 z -0.72 -> none
+   P2 (s1). Which way is the main animal's head pointing?  answers: Raised or turned sideways (profile, looking up, howling); Facing straight toward the camera; Head looking down or not visible; No animal; most active: Raised or turned sideways (profile, looking up, howling); least active: Facing straight toward the camera
+      T: 32 and 79 photos, d -0.35, percentile 26.2 -> not held; peers 443 d -0.84 pct 2.3 rho 0.675 z +2.91, 409 d -0.79 pct 3.9 rho 0.414 z +1.91, 429 d -1.01 pct 0.0 rho 0.333 z +2.72 -> differs (peer 443)
+   P3 (s1). How many animals are in the photo, and is a person present?  answers: One animal, no person; One animal with a person; Two or more animals; No animal; most active: One animal, no person; least active: One animal with a person
+      T: 90 and 19 photos, d -0.04, percentile 56.8 -> not held; peers 443 d +0.17 pct 82.2 rho 0.689 z -1.06, 409 d +0.11 pct 75.8 rho 0.453 z -0.59, 429 d -0.02 pct 59.4 rho 0.423 z -0.08 -> none
+   P4 (s1). Is the animal in an active pose (running, jumping, howling, alert upright stance)?  answers: Yes, active or alert pose; No, lying or resting calmly; Can't tell or no animal; most active: Yes, active or alert pose; least active: No, lying or resting calmly
+      T: 25 and 97 photos, d -0.07, percentile 54.5 -> not held; peers 443 d -0.51 pct 10.9 rho 0.691 z +2.53, 409 d -0.69 pct 3.3 rho 0.441 z +2.62, 429 d -0.50 pct 12.3 rho 0.371 z +1.74 -> differs (peer 409)
+   P5 (s2). How much of the animal is shown and how large is it in the frame?  answers: Most or all of the body, filling a good part of the frame; Only the head or face as a close-up; Animal is small in a larger scene; No animal visible; most active: Most or all of the body, filling a good part of the frame; least active: Animal is small in a larger scene
+      T: 83 and 12 photos, d +0.70, percentile 83.8 -> not held; peers 443 d +1.06 pct 97.3 rho 0.693 z -1.46, 409 d +1.16 pct 98.8 rho 0.475 z -1.45, 429 d +0.96 pct 93.2 rho 0.355 z -0.72 -> none
+   P6 (s2). Which way is the animal's head pointing relative to the camera?  answers: Turned to the side, in profile, or raised upward; Looking straight at the camera; Head not visible or no animal; most active: Turned to the side, in profile, or raised upward; least active: Looking straight at the camera
+      T: 35 and 84 photos, d -0.31, percentile 31.1 -> not held; peers 443 d -0.78 pct 2.5 rho 0.696 z +3.05, 409 d -0.74 pct 4.1 rho 0.443 z +2.02, 429 d -0.98 pct 0.0 rho 0.371 z +3.00 -> differs (peer 443)
+   P7 (s2). Is there a person or indoor furniture in the photo along with the animal?  answers: Yes, a person or indoor furniture is visible; No, the animal is outdoors on natural ground with no people; No animal visible; most active: No, the animal is outdoors on natural ground with no people; least active: Yes, a person or indoor furniture is visible
+      T: 65 and 55 photos, d +0.10, percentile 76.0 -> not held; peers 443 d +0.15 pct 81.6 rho 0.685 z -0.35, 409 d +0.06 pct 69.7 rho 0.439 z +0.17, 429 d +0.05 pct 67.6 rho 0.360 z +0.25 -> none
+   P8 (s2). Is the animal in motion or vocalizing (running, jumping, howling with mouth wide open)?  answers: Yes, active motion or vocalizing; No, sitting, lying or standing still; No animal visible; most active: Yes, active motion or vocalizing; least active: No, sitting, lying or standing still
+      T: 13 and 109 photos, d -0.06, percentile 56.8 -> not held; peers 443 d -0.43 pct 23.8 rho 0.691 z +1.62, 409 d -0.68 pct 8.2 rho 0.441 z +1.99, 429 d -0.62 pct 11.9 rho 0.371 z +1.70 -> none
+   P9 (s3). Which way is the animal's head facing?  answers: In profile or tilted upward, away from the camera; Facing the camera; No animal head visible; most active: In profile or tilted upward, away from the camera; least active: Facing the camera
+      T: 35 and 84 photos, d -0.31, percentile 31.1 -> not held; peers 443 d -0.78 pct 2.5 rho 0.696 z +3.05, 409 d -0.74 pct 4.1 rho 0.443 z +2.02, 429 d -0.98 pct 0.0 rho 0.371 z +3.00 -> differs (peer 443)
+   P10 (s3). How is the main animal framed in the photo?  answers: Most of its body is visible and it fills a large part of the frame; Tight close-up of the head or face only; The animal is small within a larger scene; No animal; most active: Most of its body is visible and it fills a large part of the frame; least active: The animal is small within a larger scene
+      T: 83 and 12 photos, d +0.70, percentile 83.8 -> not held; peers 443 d +1.06 pct 97.3 rho 0.693 z -1.46, 409 d +1.16 pct 98.8 rho 0.475 z -1.45, 429 d +0.96 pct 93.2 rho 0.355 z -0.72 -> none
+   P11 (s3). Is a person visible in the photo along with the animal?  answers: No person, only the animal; A person is visible; No animal; most active: No person, only the animal; least active: A person is visible
+      T: 101 and 21 photos, d -0.07, percentile 52.3 -> not held; peers 443 d +0.16 pct 80.3 rho 0.691 z -1.25, 409 d +0.12 pct 75.6 rho 0.441 z -0.78, 429 d +0.06 pct 68.4 rho 0.371 z -0.50 -> none
+   P12 (s3). Is the animal doing something active, such as running, howling, or raising its head to look upward?  answers: Yes, an active pose or motion; No, resting, sitting, or lying while looking ahead; No animal; most active: Yes, an active pose or motion; least active: No, resting, sitting, or lying while looking ahead
+      T: 19 and 103 photos, d -0.13, percentile 48.0 -> not held; peers 443 d -0.60 pct 10.4 rho 0.691 z +2.43, 409 d -0.80 pct 1.4 rho 0.441 z +2.57, 429 d -0.72 pct 4.5 rho 0.371 z +2.11 -> differs (peer 409)
+trigger F: P6, differs, peer mixed4b:443 (similar unit 1)
+   "Turned to the side, in profile, or raised upward" (35 photos of T): more [9601, 2812, 1109], less [3511, 3515, 1550]
+   "Looking straight at the camera" (84 photos of T): more [2982, 2945, 7901], less [2981, 894, 4007]
+   re-check on D, real: 34 and 64 photos, d -0.47, percentile 13.9 -> not held; peers 443 d -0.68 pct 4.5, 409 d -0.54 pct 10.2, 429 d -0.92 pct 0.6
+   re-check on D, null: 34 and 64 photos, d -0.12, percentile 34.2 -> not held; peers 443 d -0.32 pct 10.4, 409 d -0.33 pct 10.2, 429 d -0.09 pct 39.5
+trigger R: P1, none
+   "Head and most of the body visible, animal fills a large part of the frame" (83 photos of T): most [1106, 8569, 2948], least [3479, 2942, 1550]
+   "Animal is small in the scene" (12 photos of T): most [7298, 4000, 2988], least [3510, 1109, 7291]
+   re-check on D, real: 53 and 10 photos, d +0.96, percentile 94.9 -> not held; peers 443 d +1.33 pct 99.6, 409 d +1.10 pct 97.1, 429 d +1.20 pct 98.6
+   re-check on D, null: 53 and 10 photos, d -0.30, percentile 11.3 -> not held; peers 443 d -0.11 pct 26.0, 409 d -0.02 pct 36.1, 429 d -0.17 pct 20.9
+F_s1 #1. splits "Looking straight at the camera": What is mostly visible behind the animal?  answers: Green grass, lawn or leafy plants; Pavement, street, fence, wall or an indoor backdrop; Other background, such as snow, water or sand; No animal visible; most active: Green grass, lawn or leafy plants; least active: Pavement, street, fence, wall or an indoor backdrop
+   real: 19 and 36 photos, d +0.17, percentile 69.5 -> not held; peers 443 d +0.19 pct 71.7, 409 d +0.12 pct 64.6, 429 d +0.05 pct 56.2; distinctive no
+   real, all D photos: 32 and 52 photos, d +0.17, percentile 73.6 -> not held; peers 443 d +0.22 pct 80.5, 409 d +0.23 pct 81.1, 429 d -0.01 pct 46.1
+   real, D photos not shown in round 27: 16 and 28 photos, d +0.15, percentile 66.6 -> not held; peers 443 d +0.15 pct 67.4, 409 d +0.03 pct 56.8, 429 d +0.08 pct 61.1
+   null: 19 and 36 photos, d +0.20, percentile 80.5 -> not held; peers 443 d +0.19 pct 79.9, 409 d +0.25 pct 86.5, 429 d +0.07 pct 62.7; distinctive no
+   null, all D photos: 32 and 52 photos, d +0.09, percentile 71.3 -> not held; peers 443 d +0.13 pct 80.5, 409 d +0.11 pct 75.2, 429 d +0.09 pct 69.1
+   null, D photos not shown in round 27: 16 and 28 photos, d +0.47, percentile 95.3 -> held; peers 443 d +0.49 pct 96.7, 409 d +0.44 pct 93.8, 429 d +0.24 pct 80.5
+F_s1 #2. splits "Looking straight at the camera": Is the animal walking toward the camera, or is it staying still?  answers: Staying still (lying, sitting, standing, or being fed); Walking or moving toward the camera; Can't tell or no animal; most active: Staying still (lying, sitting, standing, or being fed); least active: Walking or moving toward the camera
+   real: 57 and 5 photos, d +0.30, percentile 50.0 -> not held; peers 443 d +0.98 pct 89.6, 409 d +1.05 pct 92.2, 429 d +0.08 pct 33.6; distinctive no
+   real, all D photos: 87 and 7 photos, d +0.39, percentile 66.4 -> not held; peers 443 d +0.84 pct 90.8, 409 d +0.98 pct 96.1, 429 d +0.25 pct 56.1
+   real, D photos not shown in round 27: 44 and 4 photos -> too few
+   null: 57 and 5 photos, d -0.39, percentile 15.0 -> not held; peers 443 d -0.02 pct 38.1, 409 d -0.33 pct 18.9, 429 d +0.04 pct 43.9; distinctive no
+   null, all D photos: 87 and 7 photos, d -0.40, percentile 14.5 -> not held; peers 443 d -0.28 pct 18.8, 409 d -0.56 pct 6.8, 429 d -0.17 pct 25.6
+   null, D photos not shown in round 27: 43 and 4 photos -> too few
+F_s2 #1. splits "Looking straight at the camera": Is the animal lying or sitting still, or is it walking or climbing toward the camera?  answers: Lying or sitting still; Walking or climbing toward the camera; Can't tell (head-only close-up) or no animal; most active: Lying or sitting still; least active: Walking or climbing toward the camera
+   real: 43 and 5 photos, d +0.29, percentile 44.1 -> not held; peers 443 d +0.93 pct 88.5, 409 d +0.98 pct 90.2, 429 d +0.06 pct 30.3; distinctive no
+   real, all D photos: 60 and 7 photos, d +0.45, percentile 69.5 -> not held; peers 443 d +0.85 pct 92.6, 409 d +0.98 pct 96.7, 429 d +0.28 pct 55.1
+   real, D photos not shown in round 27: 31 and 4 photos -> too few
+   null: 43 and 5 photos, d -0.58, percentile 8.6 -> not held; peers 443 d -0.01 pct 41.0, 409 d -0.26 pct 24.0, 429 d +0.10 pct 51.6; distinctive no
+   null, all D photos: 60 and 7 photos, d -0.46, percentile 12.1 -> not held; peers 443 d -0.27 pct 19.5, 409 d -0.51 pct 10.0, 429 d -0.21 pct 24.2
+   null, D photos not shown in round 27: 30 and 4 photos -> too few
+F_s2 #2. splits "Looking straight at the camera": What is mainly behind the animal?  answers: Green grass or vegetation outdoors; Pavement, fence or other man-made outdoor surface; Plain indoor background or furniture; No animal; most active: Green grass or vegetation outdoors; least active: Plain indoor background or furniture
+   real: 23 and 26 photos, d +0.12, percentile 61.5 -> not held; peers 443 d +0.14 pct 63.1, 409 d +0.03 pct 52.5, 429 d +0.05 pct 55.1; distinctive no
+   real, all D photos: 39 and 35 photos, d +0.07, percentile 58.4 -> not held; peers 443 d +0.10 pct 63.3, 409 d +0.08 pct 60.2, 429 d -0.04 pct 46.3
+   real, D photos not shown in round 27: 20 and 22 photos, d +0.13, percentile 63.7 -> not held; peers 443 d +0.09 pct 60.7, 409 d -0.10 pct 43.9, 429 d +0.08 pct 60.2
+   null: 23 and 26 photos, d +0.18, percentile 79.3 -> not held; peers 443 d +0.03 pct 60.2, 409 d +0.24 pct 83.8, 429 d -0.02 pct 49.8; distinctive no
+   null, all D photos: 39 and 35 photos, d +0.11, percentile 79.9 -> not held; peers 443 d +0.04 pct 64.1, 409 d +0.15 pct 88.3, 429 d +0.05 pct 64.5
+   null, D photos not shown in round 27: 19 and 22 photos, d +0.35, percentile 89.6 -> not held; peers 443 d +0.35 pct 90.0, 409 d +0.44 pct 95.1, 429 d +0.22 pct 78.9
+F_s3 #1. splits "Looking straight at the camera": Is the animal walking or moving toward the camera, or is it still (sitting, lying, or posed)?  answers: Walking or moving toward the camera; Still: sitting, lying, or standing posed; Can't tell or no animal; most active: Still: sitting, lying, or standing posed; least active: Walking or moving toward the camera
+   real: 57 and 5 photos, d +0.30, percentile 50.0 -> not held; peers 443 d +0.98 pct 89.6, 409 d +1.05 pct 92.2, 429 d +0.08 pct 33.6; distinctive no
+   real, all D photos: 87 and 7 photos, d +0.39, percentile 66.4 -> not held; peers 443 d +0.84 pct 90.8, 409 d +0.98 pct 96.1, 429 d +0.25 pct 56.1
+   real, D photos not shown in round 27: 44 and 4 photos -> too few
+   null: 57 and 5 photos, d -0.39, percentile 15.0 -> not held; peers 443 d -0.02 pct 38.1, 409 d -0.33 pct 18.9, 429 d +0.04 pct 43.9; distinctive no
+   null, all D photos: 87 and 7 photos, d -0.40, percentile 14.5 -> not held; peers 443 d -0.28 pct 18.8, 409 d -0.56 pct 6.8, 429 d -0.17 pct 25.6
+   null, D photos not shown in round 27: 43 and 4 photos -> too few
+F_s3 #2. splits "Turned to the side, in profile, or raised upward": What is the main color of the animal's coat?  answers: Brown, tan, or reddish; White or very pale; Black, gray, or mixed other colors; No animal visible; most active: Brown, tan, or reddish; least active: White or very pale
+   real: 12 and 6 photos, d +0.08, percentile 58.0 -> not held; peers 443 d +0.06 pct 56.6, 409 d -0.39 pct 20.9, 429 d -0.00 pct 49.0; distinctive no
+   real, all D photos: 37 and 17 photos, d +0.22, percentile 88.1 -> not held; peers 443 d +0.11 pct 71.9, 409 d -0.07 pct 30.1, 429 d +0.05 pct 60.0
+   real, D photos not shown in round 27: 9 and 4 photos -> too few
+   null: 12 and 6 photos, d +0.60, percentile 90.2 -> not held; peers 443 d +0.28 pct 69.1, 409 d +0.09 pct 52.0, 429 d +0.12 pct 54.5; distinctive no
+   null, all D photos: 37 and 17 photos, d -0.04, percentile 41.4 -> not held; peers 443 d +0.05 pct 66.0, 409 d +0.16 pct 88.7, 429 d +0.10 pct 77.7
+   null, D photos not shown in round 27: 9 and 5 photos, d +0.48, percentile 81.1 -> not held; peers 443 d +0.09 pct 52.1, 409 d +0.14 pct 56.2, 429 d +0.13 pct 54.5
+R_s1 #1. splits "Head and most of the body visible, animal fills a large part of the frame": Is the animal's mouth open with its tongue visible (panting)?  answers: Yes, mouth open with tongue showing; No, mouth closed or occupied (e.g., chewing); Animal's mouth not visible; most active: Yes, mouth open with tongue showing; least active: No, mouth closed or occupied (e.g., chewing)
+   real: 10 and 40 photos, d +0.52, percentile 89.6 -> not held; peers 443 d +0.17 pct 62.9, 409 d -0.04 pct 41.6, 429 d -0.09 pct 36.1; distinctive no
+   real, all D photos: 20 and 72 photos, d +0.33, percentile 88.5 -> not held; peers 443 d +0.15 pct 71.9, 409 d +0.11 pct 68.4, 429 d +0.25 pct 82.2
+   real, D photos not shown in round 27: 10 and 26 photos, d +0.57, percentile 91.4 -> not held; peers 443 d +0.30 pct 72.5, 409 d +0.17 pct 61.7, 429 d -0.02 pct 43.4
+   null: 10 and 40 photos, d -0.27, percentile 30.5 -> not held; peers 443 d -0.03 pct 56.6, 409 d +0.20 pct 81.4, 429 d -0.11 pct 47.1; distinctive no
+   null, all D photos: 20 and 72 photos, d +0.13, percentile 78.1 -> not held; peers 443 d -0.04 pct 51.8, 409 d +0.11 pct 76.4, 429 d -0.17 pct 25.2
+   null, D photos not shown in round 27: 10 and 26 photos, d -0.35, percentile 25.6 -> not held; peers 443 d +0.04 pct 67.8, 409 d +0.34 pct 89.1, 429 d -0.03 pct 59.2
+R_s1 #2. splits "Animal is small in the scene": Is the animal right next to people or on pavement, or is it in a natural setting like a forest or grass field?  answers: Right next to people or on pavement/indoors; In a natural setting (forest, grass, park) with no person close by; Not applicable; most active: Right next to people or on pavement/indoors; least active: In a natural setting (forest, grass, park) with no person close by
+   real: 4 and 6 photos -> too few; distinctive no
+   real, all D photos: 50 and 45 photos, d -0.05, percentile 28.1 -> not held; peers 443 d -0.07 pct 24.2, 409 d -0.09 pct 20.9, 429 d +0.06 pct 47.7
+   real, D photos not shown in round 27: 3 and 4 photos -> too few
+   null: 4 and 6 photos -> too few; distinctive no
+   null, all D photos: 50 and 45 photos, d -0.15, percentile 13.5 -> not held; peers 443 d -0.17 pct 11.5, 409 d -0.19 pct 7.6, 429 d -0.23 pct 3.5
+   null, D photos not shown in round 27: 3 and 4 photos -> too few
+R_s2 #1. splits "Head and most of the body visible, animal fills a large part of the frame": What is the animal's body posture?  answers: Sitting upright, standing, or walking; Lying down; Posture not visible or no animal; most active: Sitting upright, standing, or walking; least active: Lying down
+   real: 36 and 16 photos, d +0.09, percentile 54.7 -> not held; peers 443 d -0.34 pct 18.0, 409 d -0.41 pct 14.5, 429 d -0.09 pct 37.3; distinctive no
+   real, all D photos: 45 and 24 photos, d -0.02, percentile 46.1 -> not held; peers 443 d -0.28 pct 24.8, 409 d -0.54 pct 8.6, 429 d -0.16 pct 33.2
+   real, D photos not shown in round 27: 27 and 11 photos, d +0.29, percentile 69.1 -> not held; peers 443 d -0.12 pct 32.6, 409 d -0.07 pct 37.5, 429 d -0.03 pct 40.8
+   null: 36 and 16 photos, d -0.12, percentile 35.4 -> not held; peers 443 d -0.19 pct 26.0, 409 d +0.18 pct 79.5, 429 d -0.08 pct 42.2; distinctive no
+   null, all D photos: 45 and 24 photos, d +0.17, percentile 76.4 -> not held; peers 443 d -0.00 pct 48.4, 409 d +0.29 pct 91.6, 429 d +0.14 pct 71.5
+   null, D photos not shown in round 27: 26 and 12 photos, d -0.10, percentile 34.8 -> not held; peers 443 d -0.22 pct 21.9, 409 d +0.02 pct 52.3, 429 d -0.18 pct 25.6
+R_s2 #2. splits "Animal is small in the scene": What else is prominent in the scene around the animal?  answers: People or human-made surroundings close to the animal; Mostly natural landscape such as grass, trees, or forest; No animal visible; most active: People or human-made surroundings close to the animal; least active: Mostly natural landscape such as grass, trees, or forest
+   real: 4 and 6 photos -> too few; distinctive no
+   real, all D photos: 53 and 44 photos, d -0.11, percentile 19.7 -> not held; peers 443 d -0.12 pct 18.4, 409 d -0.14 pct 16.4, 429 d +0.06 pct 47.7
+   real, D photos not shown in round 27: 3 and 4 photos -> too few
+   null: 4 and 6 photos -> too few; distinctive no
+   null, all D photos: 53 and 44 photos, d -0.13, percentile 11.5 -> not held; peers 443 d -0.09 pct 19.9, 409 d -0.04 pct 28.3, 429 d -0.12 pct 14.8
+   null, D photos not shown in round 27: 3 and 4 photos -> too few
+R_s3 #1. splits "Head and most of the body visible, animal fills a large part of the frame": What is the animal's body posture?  answers: Sitting or standing upright, or walking; Lying down on its belly or side; Other, or can't tell; most active: Sitting or standing upright, or walking; least active: Lying down on its belly or side
+   real: 36 and 16 photos, d +0.09, percentile 54.7 -> not held; peers 443 d -0.34 pct 18.0, 409 d -0.41 pct 14.5, 429 d -0.09 pct 37.3; distinctive no
+   real, all D photos: 45 and 24 photos, d -0.02, percentile 46.1 -> not held; peers 443 d -0.28 pct 24.8, 409 d -0.54 pct 8.6, 429 d -0.16 pct 33.2
+   real, D photos not shown in round 27: 27 and 11 photos, d +0.29, percentile 69.1 -> not held; peers 443 d -0.12 pct 32.6, 409 d -0.07 pct 37.5, 429 d -0.03 pct 40.8
+   null: 36 and 16 photos, d -0.12, percentile 35.4 -> not held; peers 443 d -0.19 pct 26.0, 409 d +0.18 pct 79.5, 429 d -0.08 pct 42.2; distinctive no
+   null, all D photos: 45 and 24 photos, d +0.17, percentile 76.4 -> not held; peers 443 d -0.00 pct 48.4, 409 d +0.29 pct 91.6, 429 d +0.14 pct 71.5
+   null, D photos not shown in round 27: 26 and 12 photos, d -0.10, percentile 34.8 -> not held; peers 443 d -0.22 pct 21.9, 409 d +0.02 pct 52.3, 429 d -0.18 pct 25.6
+R_s3 #2. splits "Animal is small in the scene": Is the animal right next to people (held, leashed, or posed with them), or alone in a natural setting?  answers: Right next to or held by a person, or on a leash; Alone outdoors in nature (grass, forest, field) with no person close by; Neither, or can't tell; most active: Right next to or held by a person, or on a leash; least active: Alone outdoors in nature (grass, forest, field) with no person close by
+   real: 4 and 6 photos -> too few; distinctive no
+   real, all D photos: 14 and 45 photos, d -0.45, percentile 6.8 -> not held; peers 443 d -0.48 pct 4.7, 409 d -0.43 pct 7.4, 429 d -0.29 pct 13.7
+   real, D photos not shown in round 27: 3 and 4 photos -> too few
+   null: 4 and 6 photos -> too few; distinctive no
+   null, all D photos: 14 and 45 photos, d +0.05, percentile 54.3 -> not held; peers 443 d -0.27 pct 20.5, 409 d -0.31 pct 16.0, 429 d -0.44 pct 7.0
+   null, D photos not shown in round 27: 3 and 4 photos -> too few
+tally F: real held 0, not held 6, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+tally R: real held 0, not held 3, too few 3; null held 0, not held 3, too few 3 (of 6 new predictions)
+
+== mixed4b:443  layer mixed4b (512 channels), 126 photos of T, 114 photos of D, answer batches on D failed after a retry: 0 of 10
+peers: mixed4b:409 (r 0.957), mixed4b:429 (r 0.951), mixed4b:418 (r 0.894)
+earlier predictions:
+   P1 (s1). How much of the photo does the dog's face take up?  answers: More than about a quarter of the photo; A noticeable part but less than a quarter; A small part (dog is far away or small in the scene); No dog face visible; most active: More than about a quarter of the photo; least active: A small part (dog is far away or small in the scene)
+      T: 41 and 22 photos, d +1.40, percentile 98.6 -> held; peers 409 d +1.62 pct 99.8 rho 0.817 z -1.34, 429 d +1.35 pct 97.5 rho 0.757 z +0.30, 418 d +0.15 pct 50.8 rho 0.472 z +4.62 -> shared (peer 409)
+   P2 (s1). Is the dog's face turned toward the camera so that both eyes and the nose are visible?  answers: Yes, facing the camera; No, side view, turned away, or eyes hidden; No dog in the photo; most active: Yes, facing the camera; least active: No, side view, turned away, or eyes hidden
+      T: 74 and 46 photos, d +1.26, percentile 99.4 -> held; peers 409 d +1.14 pct 98.4 rho 0.809 z +0.95, 429 d +1.15 pct 98.6 rho 0.708 z +0.76, 418 d +0.84 pct 89.6 rho 0.605 z +2.48 -> shared (peer 429)
+   P3 (s1). What color is the fur around the dog's eyes and nose?  answers: White, cream or light grey; Tan, golden or mixed light and dark; Reddish-brown, dark brown or black; No dog face visible; most active: White, cream or light grey; least active: Reddish-brown, dark brown or black
+      T: 33 and 35 photos, d +0.16, percentile 75.6 -> not held; peers 409 d +0.17 pct 76.8 rho 0.800 z -0.08, 429 d +0.13 pct 70.5 rho 0.646 z +0.15, 418 d +0.21 pct 85.5 rho 0.497 z -0.21 -> none
+   P4 (s1). Do the dog's dark eyes and dark nose stand out clearly as distinct dark spots on its face?  answers: Yes, clearly contrasting; Somewhat, or partly hidden; No, low contrast or not visible; No dog in the photo; most active: Yes, clearly contrasting; least active: No, low contrast or not visible
+      T: 41 and 32 photos, d +1.28, percentile 99.4 -> held; peers 409 d +1.23 pct 99.2 rho 0.834 z +0.38, 429 d +1.16 pct 98.2 rho 0.764 z +0.77, 418 d +0.82 pct 88.1 rho 0.668 z +2.42 -> shared (peer 409)
+   P5 (s2). How much of the photo does the dog take up?  answers: Dog fills most of the frame (close-up); Dog takes up a moderate part of the frame; Dog is small in a wide scene; No dog visible; most active: Dog fills most of the frame (close-up); least active: Dog is small in a wide scene
+      T: 60 and 10 photos, d +1.61, percentile 97.7 -> held; peers 409 d +1.80 pct 99.2 rho 0.825 z -0.92, 429 d +1.42 pct 93.6 rho 0.740 z +0.77, 418 d +0.67 pct 63.7 rho 0.607 z +3.09 -> shared (peer 409)
+   P6 (s2). Is the dog's face turned toward the camera with both eyes and the nose clearly visible?  answers: Yes, facing the camera; Partly turned or partly hidden; Face turned away or not visible; No dog visible; most active: Yes, facing the camera; least active: Face turned away or not visible
+      T: 70 and 14 photos, d +1.65, percentile 99.8 -> held; peers 409 d +1.43 pct 98.2 rho 0.822 z +1.24, 429 d +1.46 pct 98.6 rho 0.805 z +1.04, 418 d +1.16 pct 94.1 rho 0.617 z +1.88 -> shared (peer 429)
+   P7 (s2). What is the main color of the dog's coat?  answers: White or cream; Light tan or golden; Dark brown, black, or mostly dark; No dog visible; most active: White or cream; least active: Dark brown, black, or mostly dark
+      T: 42 and 41 photos, d +0.18, percentile 87.5 -> not held; peers 409 d +0.20 pct 89.6 rho 0.821 z -0.14, 429 d +0.15 pct 82.0 rho 0.673 z +0.18, 418 d +0.23 pct 92.6 rho 0.618 z -0.28 -> none
+   P8 (s2). What does the dog's fur look like?  answers: Long, soft and fluffy; Short or smooth; Coarse and wiry; No dog visible; most active: Long, soft and fluffy; least active: Coarse and wiry
+      T: 68 and 20 photos, d +0.06, percentile 55.3 -> not held; peers 409 d +0.10 pct 68.2 rho 0.824 z -0.30, 429 d +0.17 pct 83.2 rho 0.727 z -0.59, 418 d +0.05 pct 53.5 rho 0.622 z +0.02 -> none
+   P9 (s3). How much of the photo does the dog's head take up?  answers: more than a third of the photo; between a tenth and a third; less than a tenth; no dog visible; most active: more than a third of the photo; least active: less than a tenth
+      T: 35 and 25 photos, d +1.33, percentile 97.7 -> held; peers 409 d +1.59 pct 99.8 rho 0.847 z -1.78, 429 d +1.25 pct 96.3 rho 0.766 z +0.47, 418 d +0.06 pct 45.7 rho 0.467 z +4.69 -> shared (peer 409)
+   P10 (s3). Is the dog's face turned toward the camera with both eyes and the nose clearly visible?  answers: yes, facing the camera; partly turned or in profile; face not visible or turned away; no dog visible; most active: yes, facing the camera; least active: face not visible or turned away
+      T: 71 and 10 photos, d +1.70, percentile 99.6 -> held; peers 409 d +1.47 pct 98.4 rho 0.802 z +1.08, 429 d +1.49 pct 98.6 rho 0.786 z +0.95, 418 d +1.09 pct 92.4 rho 0.581 z +1.97 -> shared (peer 429)
+   P11 (s3). What is the main color of the fur on the dog's face?  answers: white or cream; golden or light tan; reddish-brown, dark brown or black; no dog face visible; most active: white or cream; least active: reddish-brown, dark brown or black
+      T: 38 and 40 photos, d +0.00, percentile 39.8 -> not held; peers 409 d +0.08 pct 64.5 rho 0.797 z -0.59, 429 d +0.02 pct 46.1 rho 0.636 z -0.12, 418 d +0.06 pct 58.0 rho 0.513 z -0.28 -> none
+   P12 (s3). Is the dog's whole body shown standing in a wide scene, such as outdoors or posed with a person?  answers: yes, full body in a wide scene; no, mostly head or upper body; no dog visible; most active: no, mostly head or upper body; least active: yes, full body in a wide scene
+      T: 77 and 44 photos, d +0.58, percentile 84.6 -> not held; peers 409 d +0.87 pct 96.5 rho 0.816 z -2.55, 429 d +0.72 pct 92.0 rho 0.712 z -0.96, 418 d -0.13 pct 27.3 rho 0.615 z +4.28 -> differs (peer 418)
+trigger F: P6, shared, peer mixed4b:429 (similar unit 2)
+   "Yes, facing the camera" (70 photos of T): more [6430, 2949, 1656], less [8780, 2941, 4109]
+   "Face turned away or not visible" (14 photos of T): more [4000, 2811, 8291], less [1652, 2714, 4001]
+   re-check on D, real: 74 and 6 photos, d +1.47, percentile 94.7 -> not held; peers 409 d +1.38 pct 92.8, 429 d +1.99 pct 99.6, 418 d +1.14 pct 85.2
+   re-check on D, null: 74 and 6 photos, d +0.00, percentile 45.9 -> not held; peers 409 d +0.30 pct 69.9, 429 d +0.35 pct 74.8, 418 d +0.86 pct 97.7
+trigger R: P6, shared
+   "Yes, facing the camera" (70 photos of T): most [1775, 3478, 2352], least [1146, 7904, 2940]
+   "Face turned away or not visible" (14 photos of T): most [2811, 1650, 4000], least [1944, 2714, 8564]
+   re-check on D, real: 74 and 6 photos, d +1.47, percentile 94.7 -> not held; peers 409 d +1.38 pct 92.8, 429 d +1.99 pct 99.6, 418 d +1.14 pct 85.2
+   re-check on D, null: 74 and 6 photos, d +0.00, percentile 45.9 -> not held; peers 409 d +0.30 pct 69.9, 429 d +0.35 pct 74.8, 418 d +0.86 pct 97.7
+F_s1 #1. splits "Yes, facing the camera": What color is most of the fur on the dog's face, apart from the muzzle?  answers: Mostly black or very dark; Mixed dark and light in roughly equal amounts; Mostly light: white, grey, cream or tan; No dog face visible; most active: Mostly black or very dark; least active: Mostly light: white, grey, cream or tan
+   real: 15 and 38 photos, d -0.26, percentile 16.8 -> not held; peers 409 d -0.19 pct 26.0, 429 d -0.19 pct 25.6, 418 d -0.19 pct 26.4; distinctive no
+   real, all D photos: 22 and 52 photos, d -0.13, percentile 27.3 -> not held; peers 409 d -0.10 pct 35.0, 429 d -0.07 pct 41.0, 418 d -0.08 pct 38.9
+   real, D photos not shown in round 27: 14 and 21 photos, d -0.27, percentile 32.8 -> not held; peers 409 d -0.17 pct 44.9, 429 d -0.28 pct 30.7, 418 d -0.44 pct 13.9
+   null: 15 and 38 photos, d -0.10, percentile 32.2 -> not held; peers 409 d -0.04 pct 42.2, 429 d -0.28 pct 9.6, 418 d -0.56 pct 0.2; distinctive no
+   null, all D photos: 22 and 52 photos, d +0.21, percentile 90.4 -> not held; peers 409 d +0.13 pct 78.7, 429 d +0.02 pct 45.5, 418 d -0.08 pct 17.8
+   null, D photos not shown in round 27: 14 and 24 photos, d -0.11, percentile 31.8 -> not held; peers 409 d -0.08 pct 37.5, 429 d -0.16 pct 22.7, 418 d -0.41 pct 2.0
+F_s1 #2. splits "Yes, facing the camera": How is the dog's head held?  answers: Tilted, lowered, or resting (dog lying down or head at an angle); Upright and level, looking straight at the camera; No dog face visible; most active: Tilted, lowered, or resting (dog lying down or head at an angle); least active: Upright and level, looking straight at the camera
+   real: 21 and 53 photos, d -0.16, percentile 44.7 -> not held; peers 409 d +0.01 pct 58.8, 429 d +0.04 pct 60.2, 418 d -0.76 pct 5.7; distinctive no
+   real, all D photos: 47 and 55 photos, d -0.55, percentile 12.3 -> not held; peers 409 d -0.45 pct 20.1, 429 d -0.62 pct 9.0, 418 d -0.93 pct 1.6
+   real, D photos not shown in round 27: 17 and 37 photos, d -0.20, percentile 44.1 -> not held; peers 409 d +0.02 pct 57.6, 429 d +0.05 pct 59.6, 418 d -0.86 pct 5.9
+   null: 21 and 53 photos, d -0.12, percentile 54.1 -> not held; peers 409 d -0.01 pct 71.1, 429 d -0.23 pct 34.6, 418 d -0.29 pct 23.8; distinctive no
+   null, all D photos: 47 and 55 photos, d -0.26, percentile 33.2 -> not held; peers 409 d -0.22 pct 42.6, 429 d -0.30 pct 24.6, 418 d -0.35 pct 14.5
+   null, D photos not shown in round 27: 15 and 41 photos, d -0.20, percentile 41.0 -> not held; peers 409 d -0.05 pct 65.4, 429 d -0.35 pct 21.5, 418 d -0.44 pct 12.9
+F_s2 #1. splits "Yes, facing the camera": How is the dog's head held while it faces the camera?  answers: Tilted, lowered, or the dog is lying down; Upright and straight, in a symmetric head-on pose; Does not apply; most active: Tilted, lowered, or the dog is lying down; least active: Upright and straight, in a symmetric head-on pose
+   real: 21 and 53 photos, d -0.16, percentile 44.7 -> not held; peers 409 d +0.01 pct 58.8, 429 d +0.04 pct 60.2, 418 d -0.76 pct 5.7; distinctive no
+   real, all D photos: 39 and 55 photos, d -0.35, percentile 27.0 -> not held; peers 409 d -0.29 pct 32.6, 429 d -0.44 pct 18.8, 418 d -0.84 pct 2.3
+   real, D photos not shown in round 27: 17 and 37 photos, d -0.20, percentile 44.1 -> not held; peers 409 d +0.02 pct 57.6, 429 d +0.05 pct 59.6, 418 d -0.86 pct 5.9
+   null: 21 and 53 photos, d -0.12, percentile 54.1 -> not held; peers 409 d -0.01 pct 71.1, 429 d -0.23 pct 34.6, 418 d -0.29 pct 23.8; distinctive no
+   null, all D photos: 39 and 55 photos, d -0.24, percentile 35.2 -> not held; peers 409 d -0.14 pct 57.0, 429 d -0.27 pct 27.7, 418 d -0.26 pct 30.7
+   null, D photos not shown in round 27: 15 and 41 photos, d -0.20, percentile 41.0 -> not held; peers 409 d -0.05 pct 65.4, 429 d -0.35 pct 21.5, 418 d -0.44 pct 12.9
+F_s2 #2. splits "Yes, facing the camera": Is the dog's mouth open or holding something?  answers: Open, tongue out, or holding/chewing an object; Closed; Mouth not visible; most active: Open, tongue out, or holding/chewing an object; least active: Closed
+   real: 24 and 50 photos, d +0.57, percentile 95.3 -> held; peers 409 d +0.51 pct 93.9, 429 d +0.55 pct 94.7, 418 d +0.37 pct 86.3; distinctive no
+   real, all D photos: 31 and 66 photos, d +0.28, percentile 83.0 -> not held; peers 409 d +0.33 pct 87.7, 429 d +0.36 pct 90.2, 418 d +0.37 pct 90.6
+   real, D photos not shown in round 27: 19 and 35 photos, d +0.62, percentile 95.7 -> held; peers 409 d +0.54 pct 92.8, 429 d +0.56 pct 93.9, 418 d +0.49 pct 91.2
+   null: 24 and 50 photos, d -0.41, percentile 10.2 -> not held; peers 409 d -0.41 pct 10.5, 429 d -0.24 pct 28.9, 418 d -0.37 pct 14.5; distinctive no
+   null, all D photos: 31 and 66 photos, d -0.27, percentile 17.0 -> not held; peers 409 d -0.39 pct 4.7, 429 d -0.21 pct 25.0, 418 d -0.17 pct 32.6
+   null, D photos not shown in round 27: 19 and 37 photos, d -0.51, percentile 8.8 -> not held; peers 409 d -0.61 pct 2.9, 429 d -0.42 pct 14.8, 418 d -0.31 pct 24.4
+F_s3 #1. splits "Yes, facing the camera": Is the dog looking straight at the camera with its head level and upright, as in a posed portrait?  answers: Yes, head upright and level, posed straight-on; No, head tilted or lowered, or the dog is lying down or busy (chewing, panting); No dog face visible; most active: No, head tilted or lowered, or the dog is lying down or busy (chewing, panting); least active: Yes, head upright and level, posed straight-on
+   real: 39 and 35 photos, d +0.20, percentile 75.6 -> not held; peers 409 d +0.20 pct 75.4, 429 d +0.25 pct 81.4, 418 d -0.18 pct 28.5; distinctive no
+   real, all D photos: 67 and 36 photos, d -0.20, percentile 34.8 -> not held; peers 409 d -0.20 pct 34.2, 429 d -0.32 pct 18.4, 418 d -0.52 pct 3.3
+   real, D photos not shown in round 27: 31 and 23 photos, d +0.19, percentile 80.3 -> not held; peers 409 d +0.20 pct 82.2, 429 d +0.29 pct 89.3, 418 d -0.11 pct 46.7
+   null: 39 and 35 photos, d -0.43, percentile 14.6 -> not held; peers 409 d -0.36 pct 24.0, 429 d -0.38 pct 19.7, 418 d -0.40 pct 17.6; distinctive no
+   null, all D photos: 67 and 36 photos, d -0.48, percentile 10.9 -> not held; peers 409 d -0.46 pct 13.5, 429 d -0.45 pct 15.2, 418 d -0.48 pct 11.7
+   null, D photos not shown in round 27: 29 and 27 photos, d -0.55, percentile 10.0 -> not held; peers 409 d -0.54 pct 10.7, 429 d -0.57 pct 8.8, 418 d -0.41 pct 22.5
+F_s3 #2. splits "Yes, facing the camera": What color is most of the fur around the dog's eyes?  answers: Mostly black or very dark, so the eyes blend into the fur; Tan, grey, white or other light color, so the eyes stand out; No dog face visible; most active: Mostly black or very dark, so the eyes blend into the fur; least active: Tan, grey, white or other light color, so the eyes stand out
+   real: 29 and 45 photos, d +0.05, percentile 63.3 -> not held; peers 409 d +0.00 pct 53.1, 429 d -0.09 pct 33.2, 418 d -0.05 pct 42.4; distinctive no
+   real, all D photos: 43 and 60 photos, d +0.09, percentile 74.6 -> not held; peers 409 d -0.00 pct 52.0, 429 d -0.08 pct 34.4, 418 d -0.05 pct 41.6
+   real, D photos not shown in round 27: 27 and 27 photos, d +0.09, percentile 77.5 -> not held; peers 409 d +0.03 pct 70.7, 429 d -0.16 pct 36.9, 418 d -0.16 pct 36.3
+   null: 29 and 45 photos, d -0.15, percentile 22.7 -> not held; peers 409 d -0.05 pct 40.0, 429 d -0.21 pct 13.7, 418 d -0.47 pct 0.8; distinctive no
+   null, all D photos: 43 and 60 photos, d -0.03, percentile 35.5 -> not held; peers 409 d -0.02 pct 41.0, 429 d -0.11 pct 16.4, 418 d -0.10 pct 18.9
+   null, D photos not shown in round 27: 26 and 30 photos, d -0.15, percentile 28.7 -> not held; peers 409 d -0.09 pct 43.8, 429 d -0.16 pct 27.7, 418 d -0.44 pct 2.0
+R_s1 #1. splits "Yes, facing the camera": How large is the dog's face in the photo?  answers: Large, roughly a tenth of the photo or more; Small, dog is far away; No dog face visible; most active: Large, roughly a tenth of the photo or more; least active: Small, dog is far away
+   real: 54 and 20 photos, d +0.99, percentile 92.2 -> not held; peers 409 d +1.32 pct 98.8, 429 d +1.12 pct 95.9, 418 d -0.44 pct 22.1; distinctive no
+   real, all D photos: 71 and 32 photos, d +1.04, percentile 95.3 -> held; peers 409 d +1.21 pct 98.6, 429 d +1.06 pct 95.7, 418 d -0.22 pct 36.3
+   real, D photos not shown in round 27: 39 and 15 photos, d +0.98, percentile 91.2 -> not held; peers 409 d +1.29 pct 98.8, 429 d +1.09 pct 94.9, 418 d -0.35 pct 23.0
+   null: 54 and 20 photos, d +0.10, percentile 64.6 -> not held; peers 409 d +0.07 pct 60.9, 429 d +0.17 pct 75.2, 418 d +0.24 pct 83.4; distinctive no
+   null, all D photos: 71 and 32 photos, d +0.10, percentile 62.9 -> not held; peers 409 d +0.20 pct 79.5, 429 d +0.18 pct 76.8, 418 d +0.28 pct 88.1
+   null, D photos not shown in round 27: 40 and 16 photos, d +0.10, percentile 63.7 -> not held; peers 409 d +0.17 pct 75.6, 429 d +0.03 pct 53.9, 418 d +0.11 pct 65.2
+R_s1 #2. splits "Yes, facing the camera": Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?  answers: Yes, bright and sharp with clear eyes and nose; No, dim, blurry or low contrast; No dog face visible; most active: Yes, bright and sharp with clear eyes and nose; least active: No, dim, blurry or low contrast
+   real: 50 and 24 photos, d +0.72, percentile 97.3 -> held; peers 409 d +0.86 pct 99.2, 429 d +0.59 pct 91.2, 418 d +0.11 pct 46.1; distinctive yes
+   real, all D photos: 58 and 45 photos, d +0.74, percentile 95.9 -> held; peers 409 d +0.96 pct 98.8, 429 d +0.78 pct 97.5, 418 d +0.26 pct 61.9
+   real, D photos not shown in round 27: 34 and 20 photos, d +0.65, percentile 90.6 -> not held; peers 409 d +0.77 pct 97.5, 429 d +0.59 pct 87.7, 418 d +0.33 pct 65.2
+   null: 50 and 24 photos, d -0.15, percentile 21.5 -> not held; peers 409 d -0.06 pct 40.6, 429 d +0.05 pct 68.2, 418 d -0.01 pct 54.1; distinctive no
+   null, all D photos: 58 and 45 photos, d -0.01, percentile 36.9 -> not held; peers 409 d +0.06 pct 52.9, 429 d +0.11 pct 66.4, 418 d +0.19 pct 83.2
+   null, D photos not shown in round 27: 35 and 21 photos, d -0.27, percentile 8.0 -> not held; peers 409 d -0.12 pct 22.7, 429 d -0.04 pct 38.1, 418 d +0.03 pct 53.5
+R_s2 #1. splits "Yes, facing the camera": How large is the dog's face in the photo?  answers: Large, a big part of the frame; Moderate; Small, dog far away in a wide scene; No dog face visible; most active: Large, a big part of the frame; least active: Small, dog far away in a wide scene
+   real: 36 and 11 photos, d +1.08, percentile 89.3 -> not held; peers 409 d +1.58 pct 99.0, 429 d +1.16 pct 92.2, 418 d -0.89 pct 9.4; distinctive no
+   real, all D photos: 47 and 18 photos, d +1.18, percentile 93.8 -> not held; peers 409 d +1.47 pct 98.6, 429 d +1.19 pct 94.5, 418 d -0.55 pct 23.2
+   real, D photos not shown in round 27: 25 and 9 photos, d +1.05, percentile 87.1 -> not held; peers 409 d +1.50 pct 98.4, 429 d +1.18 pct 91.6, 418 d -0.78 pct 12.3
+   null: 36 and 11 photos, d +0.07, percentile 61.3 -> not held; peers 409 d +0.17 pct 70.9, 429 d +0.32 pct 85.5, 418 d -0.01 pct 50.6; distinctive no
+   null, all D photos: 47 and 18 photos, d -0.02, percentile 43.8 -> not held; peers 409 d +0.15 pct 70.1, 429 d +0.23 pct 77.5, 418 d +0.23 pct 77.9
+   null, D photos not shown in round 27: 25 and 10 photos, d +0.12, percentile 66.0 -> not held; peers 409 d +0.27 pct 81.2, 429 d +0.21 pct 75.0, 418 d -0.21 pct 29.1
+R_s2 #2. splits "Yes, facing the camera": Is the dog's face brightly lit and sharp, so its eyes and nose stand out clearly?  answers: Yes, bright and sharp; Somewhat; No, dark, dim or blurry; No dog face visible; most active: Yes, bright and sharp; least active: No, dark, dim or blurry
+   real: 42 and 7 photos, d +0.92, percentile 94.7 -> not held; peers 409 d +0.83 pct 91.8, 429 d +0.78 pct 89.6, 418 d +0.34 pct 54.1; distinctive no
+   real, all D photos: 49 and 15 photos, d +1.12, percentile 98.2 -> held; peers 409 d +1.14 pct 98.6, 429 d +1.10 pct 97.3, 418 d +0.55 pct 71.7
+   real, D photos not shown in round 27: 28 and 6 photos, d +0.87, percentile 91.4 -> not held; peers 409 d +0.79 pct 85.7, 429 d +0.92 pct 93.8, 418 d +0.68 pct 76.8
+   null: 42 and 7 photos, d +0.15, percentile 64.6 -> not held; peers 409 d +0.31 pct 80.9, 429 d +0.36 pct 84.8, 418 d +0.09 pct 56.1; distinctive no
+   null, all D photos: 49 and 15 photos, d -0.15, percentile 22.7 -> not held; peers 409 d +0.06 pct 51.4, 429 d +0.18 pct 68.6, 418 d +0.45 pct 95.7
+   null, D photos not shown in round 27: 30 and 7 photos, d +0.18, percentile 64.5 -> not held; peers 409 d +0.33 pct 80.3, 429 d +0.32 pct 79.7, 418 d +0.10 pct 54.5
+R_s3 #1. splits "Yes, facing the camera": How large is the dog's face in the photo?  answers: Large: the face takes up a big part of the frame (dog is close); Medium: clearly visible but not large; Small: the dog is far away in a wide scene; No dog face visible; most active: Large: the face takes up a big part of the frame (dog is close); least active: Small: the dog is far away in a wide scene
+   real: 36 and 10 photos, d +1.05, percentile 88.1 -> not held; peers 409 d +1.56 pct 98.8, 429 d +1.21 pct 92.4, 418 d -0.85 pct 11.3; distinctive no
+   real, all D photos: 47 and 17 photos, d +1.17, percentile 93.6 -> not held; peers 409 d +1.46 pct 98.4, 429 d +1.23 pct 96.1, 418 d -0.50 pct 25.4
+   real, D photos not shown in round 27: 25 and 8 photos, d +1.00, percentile 85.9 -> not held; peers 409 d +1.47 pct 98.2, 429 d +1.24 pct 93.4, 418 d -0.73 pct 15.2
+   null: 36 and 10 photos, d -0.13, percentile 38.5 -> not held; peers 409 d +0.07 pct 63.9, 429 d +0.22 pct 78.5, 418 d -0.09 pct 43.8; distinctive no
+   null, all D photos: 47 and 17 photos, d -0.15, percentile 29.5 -> not held; peers 409 d +0.09 pct 63.1, 429 d +0.17 pct 73.4, 418 d +0.20 pct 77.5
+   null, D photos not shown in round 27: 25 and 9 photos, d -0.10, percentile 43.9 -> not held; peers 409 d +0.17 pct 73.6, 429 d +0.11 pct 68.6, 418 d -0.30 pct 24.6
+R_s3 #2. splits "Yes, facing the camera": Are the dog's eyes and nose sharp and well lit?  answers: Yes, bright and sharp, eyes and nose clearly defined; Somewhat, slightly dim or soft; No, dark, blurry or low contrast; No dog face visible; most active: Yes, bright and sharp, eyes and nose clearly defined; least active: No, dark, blurry or low contrast
+   real: 40 and 7 photos, d +0.97, percentile 95.1 -> held; peers 409 d +0.98 pct 95.7, 429 d +0.92 pct 93.8, 418 d +0.33 pct 51.8; distinctive no
+   real, all D photos: 47 and 16 photos, d +1.08, percentile 96.9 -> held; peers 409 d +1.24 pct 99.6, 429 d +1.16 pct 98.6, 418 d +0.52 pct 69.5
+   real, D photos not shown in round 27: 26 and 6 photos, d +0.95, percentile 92.6 -> not held; peers 409 d +1.01 pct 94.1, 429 d +1.16 pct 97.7, 418 d +0.66 pct 73.6
+   null: 40 and 7 photos, d +0.19, percentile 68.2 -> not held; peers 409 d +0.36 pct 83.4, 429 d +0.41 pct 87.9, 418 d +0.12 pct 58.6; distinctive no
+   null, all D photos: 47 and 16 photos, d -0.04, percentile 33.6 -> not held; peers 409 d +0.07 pct 48.8, 429 d +0.16 pct 63.5, 418 d +0.48 pct 96.3
+   null, D photos not shown in round 27: 28 and 7 photos, d +0.23, percentile 69.1 -> not held; peers 409 d +0.39 pct 85.0, 429 d +0.39 pct 84.4, 418 d +0.13 pct 58.0
+tally F: real held 1, not held 5, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+tally R: real held 2, not held 4, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+
+== mixed4b:429  layer mixed4b (512 channels), 121 photos of T, 119 photos of D, answer batches on D failed after a retry: 0 of 10
+peers: mixed4b:443 (r 0.951), mixed4b:409 (r 0.938), mixed4b:384 (r 0.917)
+earlier predictions:
+   P1 (s1). Is the dog's face turned straight toward the camera with both eyes looking at the viewer?  answers: Yes, frontal and looking at camera; Partly turned or looking away; Profile or face not visible; No dog in photo; most active: Yes, frontal and looking at camera; least active: Profile or face not visible
+      T: 63 and 18 photos, d +1.28, percentile 97.5 -> held; peers 443 d +1.54 pct 99.8 rho 0.758 z -1.43, 409 d +1.35 pct 98.8 rho 0.815 z -0.44, 384 d +0.89 pct 88.9 rho 0.797 z +2.26 -> shared (peer 443)
+   P2 (s1). How much of the photo does the dog's head take up?  answers: Large (head fills a big part of the frame); Medium; Small (dog distant or whole body small); No dog head visible; most active: Large (head fills a big part of the frame); least active: Small (dog distant or whole body small)
+      T: 45 and 25 photos, d +1.18, percentile 95.7 -> held; peers 443 d +1.10 pct 93.0 rho 0.673 z +0.41, 409 d +1.47 pct 99.4 rho 0.763 z -1.68, 384 d +1.11 pct 93.4 rho 0.853 z +0.51 -> shared (peer 409)
+   P3 (s1). Are both of the dog's eyes clearly visible and open?  answers: Both clearly visible and open; Only one visible, or eyes closed or squinting; Neither visible / no dog; most active: Both clearly visible and open; least active: Neither visible / no dog
+      T: 79 and 11 photos, d +1.64, percentile 99.0 -> held; peers 443 d +1.68 pct 99.2 rho 0.724 z -0.16, 409 d +1.56 pct 97.5 rho 0.782 z +0.40, 384 d +1.19 pct 92.2 rho 0.774 z +2.10 -> shared (peer 443)
+   P4 (s1). Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?  answers: Head-and-chest portrait; Whole body shown; No dog; most active: Head-and-chest portrait; least active: Whole body shown
+      T: 55 and 65 photos, d +0.56, percentile 84.0 -> not held; peers 443 d +0.46 pct 78.3 rho 0.671 z +0.72, 409 d +0.86 pct 96.7 rho 0.772 z -2.38, 384 d +0.68 pct 91.0 rho 0.812 z -1.04 -> differs (peer 409)
+   P5 (s2). Is the dog looking directly at the camera?  answers: yes, eyes meet the camera; head or gaze turned away or to the side; no dog face visible; most active: yes, eyes meet the camera; least active: no dog face visible
+      T: 63 and 7 photos, d +1.64, percentile 98.4 -> held; peers 443 d +1.74 pct 99.2 rho 0.786 z -0.38, 409 d +1.55 pct 98.2 rho 0.814 z +0.37, 384 d +1.39 pct 97.1 rho 0.778 z +0.93 -> shared (peer 443)
+   P6 (s2). Is the dog's face seen from the front, at an angle, or in profile?  answers: frontal; three-quarter view; profile or back of head; no dog face visible; most active: frontal; least active: profile or back of head
+      T: 67 and 19 photos, d +1.24, percentile 97.3 -> held; peers 443 d +1.48 pct 99.8 rho 0.749 z -1.32, 409 d +1.28 pct 98.8 rho 0.825 z -0.23, 384 d +0.78 pct 84.2 rho 0.795 z +2.80 -> shared (peer 443)
+   P7 (s2). How much of the photo does the dog's face fill?  answers: large (close-up of the head); medium (whole dog, face clearly visible); small (dog far away); no dog face visible; most active: large (close-up of the head); least active: small (dog far away)
+      T: 45 and 17 photos, d +1.20, percentile 95.1 -> held; peers 443 d +1.16 pct 94.1 rho 0.675 z +0.18, 409 d +1.51 pct 99.0 rho 0.748 z -1.53, 384 d +1.11 pct 92.4 rho 0.845 z +0.55 -> shared (peer 409)
+   P8 (s2). How many dogs are in the photo?  answers: one; two or more; none; most active: one; least active: two or more
+      T: 113 and 8 photos, d +0.35, percentile 73.2 -> not held; peers 443 d +0.65 pct 90.6 rho 0.677 z -1.00, 409 d +0.56 pct 85.9 rho 0.776 z -0.86, 384 d +0.30 pct 68.2 rho 0.814 z +0.25 -> none
+   P9 (s3). Which way is the dog's head facing relative to the camera?  answers: straight at the camera (frontal); three-quarter turn; side profile or turned away; no dog head visible; most active: straight at the camera (frontal); least active: side profile or turned away
+      T: 67 and 19 photos, d +1.24, percentile 97.3 -> held; peers 443 d +1.48 pct 99.8 rho 0.749 z -1.32, 409 d +1.28 pct 98.8 rho 0.825 z -0.23, 384 d +0.78 pct 84.2 rho 0.795 z +2.80 -> shared (peer 443)
+   P10 (s3). Is the dog looking directly into the camera?  answers: yes, eye contact; no, looking elsewhere; dog's eyes not visible; most active: yes, eye contact; least active: no, looking elsewhere
+      T: 63 and 43 photos, d +0.88, percentile 99.2 -> held; peers 443 d +0.89 pct 99.4 rho 0.616 z -0.03, 409 d +0.77 pct 97.1 rho 0.740 z +0.77, 384 d +0.67 pct 94.1 rho 0.799 z +1.66 -> shared (peer 443)
+   P11 (s3). How many dogs are visible in the photo?  answers: one; two or more; none; most active: one; least active: two or more
+      T: 113 and 8 photos, d +0.35, percentile 73.2 -> not held; peers 443 d +0.65 pct 90.6 rho 0.677 z -1.00, 409 d +0.56 pct 85.9 rho 0.776 z -0.86, 384 d +0.30 pct 68.2 rho 0.814 z +0.25 -> none
+   P12 (s3). Is the dog's head level, or tilted noticeably up or down?  answers: level; tilted up or down; no dog head visible; most active: level; least active: tilted up or down
+      T: 87 and 32 photos, d +0.58, percentile 97.3 -> held; peers 443 d +0.34 pct 84.0 rho 0.666 z +1.39, 409 d +0.21 pct 71.9 rho 0.770 z +2.60, 384 d +0.34 pct 84.2 rho 0.810 z +1.84 -> own
+trigger F: P10, shared, peer mixed4b:443 (similar unit 1)
+   "yes, eye contact" (63 photos of T): more [8780, 4755, 2941], less [4752, 1909, 1656]
+   "no, looking elsewhere" (43 photos of T): more [2942, 6431, 1685], less [2948, 9542, 6430]
+   re-check on D, real: 69 and 36 photos, d +0.82, percentile 96.1 -> held; peers 443 d +0.88 pct 98.2, 409 d +0.61 pct 90.4, 384 d +0.38 pct 75.2
+   re-check on D, null: 69 and 36 photos, d -0.03, percentile 56.2 -> not held; peers 443 d -0.00 pct 61.9, 409 d +0.06 pct 74.6, 384 d +0.11 pct 82.0
+trigger R: P10, shared
+   "yes, eye contact" (63 photos of T): most [3478, 8562, 2352], least [1946, 8781, 7224]
+   "no, looking elsewhere" (43 photos of T): most [6431, 2942, 8298], least [3479, 3472, 2718]
+   re-check on D, real: 69 and 36 photos, d +0.82, percentile 96.1 -> held; peers 443 d +0.88 pct 98.2, 409 d +0.61 pct 90.4, 384 d +0.38 pct 75.2
+   re-check on D, null: 69 and 36 photos, d -0.03, percentile 56.2 -> not held; peers 443 d -0.00 pct 61.9, 409 d +0.06 pct 74.6, 384 d +0.11 pct 82.0
+F_s1 #1. splits "yes, eye contact": Is the camera at about the dog's eye level, or looking down on the dog from above?  answers: at the dog's eye level; looking down from above (dog looks up); looking up from below; can't tell; most active: at the dog's eye level; least active: looking down from above (dog looks up)
+   real: 58 and 11 photos, d +0.22, percentile 57.0 -> not held; peers 443 d +0.45 pct 77.1, 409 d +0.21 pct 55.9, 384 d +0.12 pct 47.9; distinctive no
+   real, all D photos: 94 and 24 photos, d +0.48, percentile 89.6 -> not held; peers 443 d +0.43 pct 85.7, 409 d +0.44 pct 86.5, 384 d +0.49 pct 90.4
+   real, D photos not shown in round 27: 44 and 9 photos, d +0.28, percentile 62.9 -> not held; peers 443 d +0.29 pct 63.3, 409 d +0.25 pct 60.2, 384 d +0.43 pct 73.0
+   null: 58 and 11 photos, d -0.11, percentile 43.2 -> not held; peers 443 d -0.15 pct 36.5, 409 d +0.20 pct 77.1, 384 d +0.02 pct 57.4; distinctive no
+   null, all D photos: 94 and 24 photos, d -0.20, percentile 16.4 -> not held; peers 443 d -0.21 pct 14.8, 409 d +0.03 pct 50.8, 384 d -0.11 pct 27.9
+   null, D photos not shown in round 27: 43 and 9 photos, d +0.01, percentile 43.2 -> not held; peers 443 d -0.08 pct 32.2, 409 d +0.21 pct 67.2, 384 d +0.09 pct 52.1
+F_s1 #2. splits "no, looking elsewhere": Is the dog's head held level, or tilted (up, down, or sideways)?  answers: level and upright; tilted up or down; tilted sideways; head not visible; most active: level and upright; least active: tilted sideways
+   real: 19 and 3 photos -> too few; distinctive no
+   real, all D photos: 79 and 9 photos, d +0.77, percentile 85.0 -> not held; peers 443 d +0.30 pct 56.1, 409 d +0.35 pct 61.3, 384 d +0.58 pct 75.2
+   real, D photos not shown in round 27: 14 and 2 photos -> too few
+   null: 19 and 3 photos -> too few; distinctive no
+   null, all D photos: 79 and 9 photos, d -0.23, percentile 23.6 -> not held; peers 443 d -0.35 pct 11.5, 409 d -0.08 pct 38.3, 384 d -0.00 pct 46.3
+   null, D photos not shown in round 27: 15 and 3 photos -> too few
+F_s2 #1. splits "yes, eye contact": Is the camera at the dog's eye level, or above the dog so that the dog tilts its head up to look at it?  answers: camera at eye level, head level; camera above, dog's head tilted up; camera below the dog; can't tell; most active: camera at eye level, head level; least active: camera above, dog's head tilted up
+   real: 58 and 10 photos, d +0.27, percentile 61.9 -> not held; peers 443 d +0.33 pct 68.2, 409 d +0.24 pct 59.4, 384 d +0.25 pct 60.4; distinctive no
+   real, all D photos: 89 and 14 photos, d +0.13, percentile 60.4 -> not held; peers 443 d +0.08 pct 53.3, 409 d +0.11 pct 57.6, 384 d +0.31 pct 77.1
+   real, D photos not shown in round 27: 44 and 9 photos, d +0.28, percentile 62.9 -> not held; peers 443 d +0.29 pct 63.3, 409 d +0.25 pct 60.2, 384 d +0.43 pct 73.0
+   null: 58 and 10 photos, d -0.14, percentile 31.4 -> not held; peers 443 d -0.11 pct 35.4, 409 d +0.25 pct 74.6, 384 d +0.01 pct 49.8; distinctive no
+   null, all D photos: 89 and 14 photos, d -0.27, percentile 12.9 -> not held; peers 443 d -0.12 pct 30.1, 409 d +0.13 pct 63.7, 384 d -0.09 pct 33.2
+   null, D photos not shown in round 27: 43 and 9 photos, d +0.01, percentile 43.2 -> not held; peers 443 d -0.08 pct 32.2, 409 d +0.21 pct 67.2, 384 d +0.09 pct 52.1
+F_s2 #2. splits "yes, eye contact": Is the dog's mouth closed, or open with the tongue showing?  answers: mouth closed; mouth open with tongue or teeth showing; mouth not visible; most active: mouth closed; least active: mouth open with tongue or teeth showing
+   real: 42 and 25 photos, d -0.57, percentile 3.5 -> not held; peers 443 d -0.36 pct 13.9, 409 d -0.52 pct 5.1, 384 d -0.48 pct 6.2; distinctive no
+   real, all D photos: 69 and 35 photos, d -0.37, percentile 8.0 -> not held; peers 443 d -0.15 pct 29.5, 409 d -0.37 pct 8.4, 384 d -0.46 pct 3.7
+   real, D photos not shown in round 27: 30 and 21 photos, d -0.64, percentile 4.3 -> not held; peers 443 d -0.41 pct 18.8, 409 d -0.47 pct 12.3, 384 d -0.45 pct 13.9
+   null: 42 and 25 photos, d +0.27, percentile 79.7 -> not held; peers 443 d +0.22 pct 71.5, 409 d +0.11 pct 50.8, 384 d +0.18 pct 63.5; distinctive no
+   null, all D photos: 69 and 35 photos, d +0.27, percentile 87.9 -> not held; peers 443 d +0.06 pct 51.4, 409 d +0.02 pct 43.0, 384 d +0.14 pct 65.6
+   null, D photos not shown in round 27: 31 and 19 photos, d +0.38, percentile 89.6 -> not held; peers 443 d +0.36 pct 87.7, 409 d +0.42 pct 92.2, 384 d +0.42 pct 92.4
+F_s3 #1. splits "yes, eye contact": Is the camera at the dog's eye level with the head level, or is the camera above the dog so it looks up with its head tilted?  answers: eye level, head level; camera above, dog looking up or head tilted; can't tell; most active: eye level, head level; least active: camera above, dog looking up or head tilted
+   real: 58 and 11 photos, d +0.22, percentile 57.0 -> not held; peers 443 d +0.45 pct 77.1, 409 d +0.21 pct 55.9, 384 d +0.12 pct 47.9; distinctive no
+   real, all D photos: 87 and 25 photos, d +0.46, percentile 86.3 -> not held; peers 443 d +0.34 pct 74.6, 409 d +0.37 pct 77.7, 384 d +0.47 pct 86.9
+   real, D photos not shown in round 27: 44 and 9 photos, d +0.28, percentile 62.9 -> not held; peers 443 d +0.29 pct 63.3, 409 d +0.25 pct 60.2, 384 d +0.43 pct 73.0
+   null: 58 and 11 photos, d -0.11, percentile 43.2 -> not held; peers 443 d -0.15 pct 36.5, 409 d +0.20 pct 77.1, 384 d +0.02 pct 57.4; distinctive no
+   null, all D photos: 87 and 25 photos, d -0.23, percentile 19.3 -> not held; peers 443 d -0.08 pct 35.2, 409 d +0.08 pct 66.4, 384 d -0.02 pct 45.7
+   null, D photos not shown in round 27: 43 and 9 photos, d +0.01, percentile 43.2 -> not held; peers 443 d -0.08 pct 32.2, 409 d +0.21 pct 67.2, 384 d +0.09 pct 52.1
+F_s3 #2. splits "no, looking elsewhere": Is the dog's head turned fully sideways in profile, or does its face point roughly toward the camera with only the eyes looking away?  answers: head in side profile; face toward camera, eyes averted; face not visible; most active: head in side profile; least active: face toward camera, eyes averted
+   real: 12 and 24 photos, d -1.25, percentile 0.2 -> not held; peers 443 d -1.04 pct 4.3, 409 d -1.10 pct 2.1, 384 d -0.95 pct 6.8; distinctive no
+   real, all D photos: 14 and 96 photos, d -1.49, percentile 0.2 -> not held; peers 443 d -1.36 pct 0.8, 409 d -1.13 pct 5.1, 384 d -0.95 pct 10.9
+   real, D photos not shown in round 27: 10 and 18 photos, d -1.20, percentile 1.4 -> not held; peers 443 d -1.27 pct 0.6, 409 d -1.11 pct 3.5, 384 d -0.78 pct 17.4
+   null: 12 and 24 photos, d -0.29, percentile 19.3 -> not held; peers 443 d -0.43 pct 10.0, 409 d +0.08 pct 59.0, 384 d +0.10 pct 62.5; distinctive no
+   null, all D photos: 14 and 96 photos, d -0.35, percentile 13.7 -> not held; peers 443 d -0.40 pct 10.5, 409 d -0.14 pct 33.8, 384 d -0.18 pct 29.5
+   null, D photos not shown in round 27: 10 and 20 photos, d -0.65, percentile 5.7 -> not held; peers 443 d -0.59 pct 7.6, 409 d -0.03 pct 49.2, 384 d -0.09 pct 43.0
+R_s1 #1. splits "yes, eye contact": How much of the photo does the dog's face take up?  answers: large or medium (face clearly prominent); small (dog distant or face tiny); no dog face visible; most active: large or medium (face clearly prominent); least active: small (dog distant or face tiny)
+   real: 62 and 7 photos, d +1.51, percentile 99.0 -> held; peers 443 d +1.43 pct 98.0, 409 d +1.57 pct 99.8, 384 d +1.15 pct 92.6; distinctive no
+   real, all D photos: 94 and 21 photos, d +1.43, percentile 99.8 -> held; peers 443 d +1.24 pct 97.7, 409 d +1.32 pct 98.8, 384 d +1.08 pct 92.6
+   real, D photos not shown in round 27: 47 and 6 photos, d +1.68, percentile 99.4 -> held; peers 443 d +1.33 pct 95.1, 409 d +1.57 pct 98.2, 384 d +1.46 pct 97.9
+   null: 62 and 7 photos, d -0.19, percentile 25.0 -> not held; peers 443 d +0.24 pct 66.6, 409 d -0.04 pct 39.1, 384 d -0.02 pct 41.6; distinctive no
+   null, all D photos: 94 and 21 photos, d -0.06, percentile 31.1 -> not held; peers 443 d +0.18 pct 65.0, 409 d -0.07 pct 28.9, 384 d -0.18 pct 15.2
+   null, D photos not shown in round 27: 46 and 6 photos, d -0.15, percentile 36.3 -> not held; peers 443 d +0.01 pct 48.0, 409 d -0.19 pct 32.0, 384 d +0.14 pct 59.0
+R_s1 #2. splits "no, looking elsewhere": Are the dog's eyes and nose both clearly visible in the photo?  answers: both eyes and nose clearly visible; partly hidden, cut off, bowed or too small to see clearly; no dog face; most active: both eyes and nose clearly visible; least active: partly hidden, cut off, bowed or too small to see clearly
+   real: 19 and 17 photos, d +1.16, percentile 98.4 -> held; peers 443 d +1.22 pct 99.2, 409 d +1.26 pct 99.6, 384 d +0.97 pct 94.1; distinctive no
+   real, all D photos: 80 and 38 photos, d +1.41, percentile 99.8 -> held; peers 443 d +1.38 pct 99.6, 409 d +1.33 pct 99.4, 384 d +1.12 pct 96.7
+   real, D photos not shown in round 27: 13 and 15 photos, d +1.19, percentile 98.0 -> held; peers 443 d +1.55 pct 99.8, 409 d +1.34 pct 99.2, 384 d +0.85 pct 88.9
+   null: 19 and 17 photos, d +0.19, percentile 65.8 -> not held; peers 443 d +0.55 pct 93.2, 409 d +0.12 pct 55.7, 384 d -0.04 pct 34.6; distinctive no
+   null, all D photos: 80 and 38 photos, d -0.21, percentile 8.0 -> not held; peers 443 d +0.08 pct 56.1, 409 d -0.13 pct 18.0, 384 d -0.27 pct 3.3
+   null, D photos not shown in round 27: 15 and 15 photos, d +0.46, percentile 83.2 -> not held; peers 443 d +0.65 pct 94.3, 409 d +0.22 pct 61.1, 384 d +0.12 pct 49.8
+R_s2 #1. splits "yes, eye contact": How much of the photo does the dog's face take up?  answers: large (face is a big part of the frame); medium; small (dog far away); no dog face visible; most active: large (face is a big part of the frame); least active: small (dog far away)
+   real: 27 and 7 photos, d +1.33, percentile 89.8 -> not held; peers 443 d +1.39 pct 91.6, 409 d +1.75 pct 98.6, 384 d +1.33 pct 90.0; distinctive no
+   real, all D photos: 45 and 21 photos, d +1.39, percentile 96.5 -> held; peers 443 d +1.33 pct 95.9, 409 d +1.50 pct 98.4, 384 d +1.19 pct 90.8
+   real, D photos not shown in round 27: 21 and 6 photos, d +1.54, percentile 94.3 -> not held; peers 443 d +1.36 pct 88.7, 409 d +1.73 pct 98.2, 384 d +1.61 pct 95.7
+   null: 27 and 7 photos, d -0.35, percentile 16.2 -> not held; peers 443 d +0.26 pct 62.1, 409 d -0.27 pct 20.7, 384 d -0.31 pct 18.9; distinctive no
+   null, all D photos: 45 and 21 photos, d -0.07, percentile 27.9 -> not held; peers 443 d +0.23 pct 62.7, 409 d -0.18 pct 16.2, 384 d -0.31 pct 8.6
+   null, D photos not shown in round 27: 21 and 6 photos, d -0.32, percentile 25.6 -> not held; peers 443 d +0.06 pct 50.0, 409 d -0.54 pct 15.6, 384 d -0.20 pct 33.6
+R_s2 #2. splits "no, looking elsewhere": How much of the dog's face, with both eyes, is visible toward the camera?  answers: face mostly frontal with both eyes visible; three-quarter or side view with face clearly visible; face pointed down, cut off by the edge, or tiny; no dog face; most active: face mostly frontal with both eyes visible; least active: face pointed down, cut off by the edge, or tiny
+   real: 9 and 10 photos, d +1.23, percentile 96.3 -> held; peers 443 d +1.59 pct 99.8, 409 d +1.49 pct 99.2, 384 d +1.00 pct 89.3; distinctive no
+   real, all D photos: 69 and 29 photos, d +1.54, percentile 99.6 -> held; peers 443 d +1.56 pct 99.8, 409 d +1.45 pct 99.4, 384 d +1.19 pct 95.3
+   real, D photos not shown in round 27: 8 and 9 photos, d +1.23, percentile 95.9 -> held; peers 443 d +1.65 pct 99.8, 409 d +1.45 pct 98.2, 384 d +0.90 pct 84.4
+   null: 9 and 10 photos, d +0.08, percentile 56.1 -> not held; peers 443 d +0.70 pct 94.7, 409 d +0.04 pct 53.3, 384 d -0.66 pct 4.1; distinctive no
+   null, all D photos: 69 and 29 photos, d -0.30, percentile 6.2 -> not held; peers 443 d +0.02 pct 50.2, 409 d -0.23 pct 13.3, 384 d -0.41 pct 1.2
+   null, D photos not shown in round 27: 7 and 9 photos, d +0.07, percentile 53.9 -> not held; peers 443 d +0.58 pct 86.5, 409 d -0.11 pct 40.6, 384 d -0.73 pct 2.7
+R_s3 #1. splits "yes, eye contact": How large is the dog's face in the photo?  answers: large (close-up of the head); medium (whole dog, face clearly visible); small (dog far away or tiny in frame); no dog face visible; most active: large (close-up of the head); least active: small (dog far away or tiny in frame)
+   real: 27 and 6 photos, d +1.46, percentile 91.0 -> not held; peers 443 d +1.68 pct 96.3, 409 d +1.88 pct 99.0, 384 d +1.34 pct 85.9; distinctive no
+   real, all D photos: 45 and 18 photos, d +1.44, percentile 96.7 -> held; peers 443 d +1.52 pct 97.7, 409 d +1.57 pct 98.2, 384 d +1.19 pct 89.1
+   real, D photos not shown in round 27: 21 and 5 photos, d +1.72, percentile 95.7 -> held; peers 443 d +1.70 pct 95.3, 409 d +1.88 pct 98.0, 384 d +1.66 pct 93.9
+   null: 27 and 6 photos, d -0.69, percentile 7.8 -> not held; peers 443 d +0.01 pct 47.3, 409 d -0.54 pct 11.1, 384 d -0.68 pct 8.2; distinctive no
+   null, all D photos: 45 and 18 photos, d -0.24, percentile 16.6 -> not held; peers 443 d +0.09 pct 45.9, 409 d -0.30 pct 12.1, 384 d -0.49 pct 2.5
+   null, D photos not shown in round 27: 21 and 5 photos, d -0.71, percentile 12.7 -> not held; peers 443 d -0.30 pct 31.6, 409 d -0.89 pct 8.2, 384 d -0.60 pct 16.6
+R_s3 #2. splits "no, looking elsewhere": Is the front of the dog's face (both eyes and muzzle) clearly visible, even though the dog is not looking at the camera?  answers: yes, both eyes and muzzle clearly visible; partly, one eye or the muzzle hidden, turned away or cut off; face hidden, pointed down, or too small to see; no dog; most active: yes, both eyes and muzzle clearly visible; least active: face hidden, pointed down, or too small to see
+   real: 18 and 5 photos, d +1.19, percentile 90.4 -> not held; peers 443 d +1.68 pct 99.4, 409 d +1.47 pct 97.1, 384 d +1.06 pct 84.4; distinctive no
+   real, all D photos: 79 and 20 photos, d +1.57, percentile 99.4 -> held; peers 443 d +1.65 pct 99.8, 409 d +1.53 pct 99.2, 384 d +1.23 pct 94.9
+   real, D photos not shown in round 27: 13 and 5 photos, d +1.26, percentile 90.2 -> not held; peers 443 d +2.03 pct 99.8, 409 d +1.50 pct 98.0, 384 d +0.96 pct 80.1
+   null: 18 and 5 photos, d +0.07, percentile 54.5 -> not held; peers 443 d +0.33 pct 73.2, 409 d -0.23 pct 29.3, 384 d -0.37 pct 20.9; distinctive no
+   null, all D photos: 79 and 20 photos, d -0.44, percentile 3.5 -> not held; peers 443 d -0.18 pct 25.0, 409 d -0.31 pct 12.1, 384 d -0.46 pct 2.5
+   null, D photos not shown in round 27: 14 and 5 photos, d +0.17, percentile 59.4 -> not held; peers 443 d +0.28 pct 68.8, 409 d -0.25 pct 27.1, 384 d -0.31 pct 23.0
+tally F: real held 0, not held 5, too few 1; null held 0, not held 5, too few 1 (of 6 new predictions)
+tally R: real held 3, not held 3, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+
+== mixed4b:384  layer mixed4b (512 channels), 121 photos of T, 119 photos of D, answer batches on D failed after a retry: 0 of 10
+peers: mixed4b:409 (r 0.925), mixed4b:429 (r 0.917), mixed4b:443 (r 0.886)
+earlier predictions:
+   P1 (s1). How much of the photo does the (largest) dog's head take up?  answers: More than about a quarter of the photo; Between a tenth and a quarter; Less than a tenth; No dog visible; most active: More than about a quarter of the photo; least active: Less than a tenth
+      T: 42 and 29 photos, d +0.92, percentile 82.0 -> not held; peers 409 d +1.53 pct 99.2 rho 0.733 z -3.47, 429 d +1.03 pct 86.5 rho 0.823 z -0.76, 443 d +1.14 pct 90.6 rho 0.374 z -0.80 -> differs (peer 409)
+   P2 (s1). Which way is the dog's face pointed relative to the camera?  answers: Straight at the camera, both eyes visible; Three-quarter view; Profile, looking away or face hidden; No dog visible; most active: Straight at the camera, both eyes visible; least active: Profile, looking away or face hidden
+      T: 63 and 16 photos, d +0.50, percentile 69.9 -> not held; peers 409 d +0.88 pct 93.0 rho 0.838 z -2.39, 429 d +1.13 pct 98.0 rho 0.759 z -3.23, 443 d +1.35 pct 99.4 rho 0.493 z -3.01 -> differs (peer 429)
+   P3 (s1). How much of the dog's body is visible in the photo?  answers: Mostly head and chest only; Whole body visible; No dog visible; most active: Mostly head and chest only; least active: Whole body visible
+      T: 58 and 56 photos, d +0.73, percentile 90.0 -> not held; peers 409 d +0.89 pct 94.7 rho 0.756 z -1.21, 429 d +0.59 pct 82.8 rho 0.796 z +1.13, 443 d +0.45 pct 73.0 rho 0.392 z +1.36 -> none
+   P4 (s1). Is the dog running, jumping or otherwise in motion?  answers: Still (sitting, lying or posing); Walking or standing in a stride; Running, jumping or playing; No dog visible; most active: Still (sitting, lying or posing); least active: Running, jumping or playing
+      T: 91 and 13 photos, d +0.57, percentile 81.8 -> not held; peers 409 d +0.79 pct 92.6 rho 0.760 z -1.06, 429 d +0.61 pct 84.6 rho 0.793 z -0.20, 443 d +0.53 pct 78.9 rho 0.390 z +0.11 -> none
+   P5 (s2). How much of the photo does the dog's head take up?  answers: head fills a large part (close-up portrait); head is moderate, upper body visible; head is small, whole body visible; no dog head visible; most active: head fills a large part (close-up portrait); least active: head is small, whole body visible
+      T: 41 and 30 photos, d +1.02, percentile 85.7 -> not held; peers 409 d +1.56 pct 99.4 rho 0.757 z -3.24, 429 d +1.13 pct 91.0 rho 0.831 z -0.78, 443 d +1.17 pct 91.6 rho 0.411 z -0.57 -> differs (peer 409)
+   P6 (s2). Is the dog's face turned toward the camera so both eyes are clearly visible?  answers: frontal, looking at camera; partly turned or looking away; profile or face hidden; no dog; most active: frontal, looking at camera; least active: profile or face hidden
+      T: 63 and 16 photos, d +0.50, percentile 69.9 -> not held; peers 409 d +0.88 pct 93.0 rho 0.838 z -2.39, 429 d +1.13 pct 98.0 rho 0.759 z -3.23, 443 d +1.35 pct 99.4 rho 0.493 z -3.01 -> differs (peer 429)
+   P7 (s2). Is the dog running, jumping or otherwise in motion?  answers: still (sitting, lying or standing calmly); in motion; no dog; most active: still (sitting, lying or standing calmly); least active: in motion
+      T: 93 and 21 photos, d +0.44, percentile 77.1 -> not held; peers 409 d +0.74 pct 93.8 rho 0.756 z -1.77, 429 d +0.56 pct 86.1 rho 0.796 z -0.77, 443 d +0.51 pct 82.0 rho 0.392 z -0.26 -> none
+   P8 (s2). Are the dog's legs and paws all visible in the photo?  answers: no, mostly head and chest; partly; yes, the full body with legs; no dog; most active: no, mostly head and chest; least active: yes, the full body with legs
+      T: 45 and 31 photos, d +0.74, percentile 83.8 -> not held; peers 409 d +1.13 pct 95.9 rho 0.738 z -2.30, 429 d +0.66 pct 79.7 rho 0.776 z +0.51, 443 d +0.69 pct 80.5 rho 0.414 z +0.19 -> differs (peer 409)
+   P9 (s3). How much of the photo does the dog's head take up?  answers: More than about a quarter of the photo; Between about a tenth and a quarter; Less than about a tenth; No dog head visible; most active: More than about a quarter of the photo; least active: Less than about a tenth
+      T: 42 and 29 photos, d +0.92, percentile 82.0 -> not held; peers 409 d +1.53 pct 99.2 rho 0.733 z -3.47, 429 d +1.03 pct 86.5 rho 0.823 z -0.76, 443 d +1.14 pct 90.6 rho 0.374 z -0.80 -> differs (peer 409)
+   P10 (s3). Which way is the main dog's face turned relative to the camera?  answers: Facing the camera head-on with both eyes visible; Three-quarter or profile view; Face turned away or not visible; most active: Facing the camera head-on with both eyes visible; least active: Face turned away or not visible
+      T: 63 and 8 photos, d +0.26, percentile 68.0 -> not held; peers 409 d +0.33 pct 78.9 rho 0.848 z -0.33, 429 d +0.52 pct 96.3 rho 0.759 z -1.00, 443 d +0.60 pct 98.4 rho 0.476 z -0.88 -> none
+   P11 (s3). How much of the main dog's body is visible in the photo?  answers: Mostly head and chest only; Whole body including legs visible; No dog visible; most active: Mostly head and chest only; least active: Whole body including legs visible
+      T: 58 and 56 photos, d +0.73, percentile 90.0 -> not held; peers 409 d +0.89 pct 94.7 rho 0.756 z -1.21, 429 d +0.59 pct 82.8 rho 0.796 z +1.13, 443 d +0.45 pct 73.0 rho 0.392 z +1.36 -> none
+   P12 (s3). What is the main dog doing?  answers: Sitting, lying or posing still; Standing, walking, running or jumping; No dog visible; most active: Sitting, lying or posing still; least active: Standing, walking, running or jumping
+      T: 75 and 39 photos, d +0.57, percentile 93.4 -> not held; peers 409 d +0.53 pct 92.2 rho 0.756 z +0.31, 429 d +0.38 pct 84.2 rho 0.796 z +1.50, 443 d +0.10 pct 57.2 rho 0.392 z +2.17 -> differs (peer 443)
+trigger F: P1, differs, peer mixed4b:409 (similar unit 1)
+   "More than about a quarter of the photo" (42 photos of T): more [52, 1686, 3200], less [9542, 6430, 8827]
+   "Less than a tenth" (29 photos of T): more [8196, 2942, 6543], less [2948, 9540, 2718]
+   re-check on D, real: 48 and 29 photos, d +1.00, percentile 91.0 -> not held; peers 409 d +1.32 pct 98.6, 429 d +1.08 pct 93.2, 443 d +1.00 pct 90.4
+   re-check on D, null: 48 and 29 photos, d +0.19, percentile 77.0 -> not held; peers 409 d +0.37 pct 94.1, 429 d +0.34 pct 92.2, 443 d +0.30 pct 88.7
+trigger R: P12, differs
+   "Sitting, lying or posing still" (75 photos of T): most [1681, 2716, 6433], least [3479, 7645, 7091]
+   "Standing, walking, running or jumping" (39 photos of T): most [3478, 2941, 1947], least [6439, 1946, 2940]
+   re-check on D, real: 70 and 45 photos, d +0.27, percentile 66.8 -> not held; peers 409 d +0.53 pct 87.7, 429 d +0.20 pct 59.2, 443 d +0.51 pct 86.7
+   re-check on D, null: 70 and 45 photos, d -0.07, percentile 35.4 -> not held; peers 409 d -0.08 pct 33.6, 429 d -0.11 pct 27.0, 443 d -0.03 pct 42.6
+F_s1 #1. splits "More than about a quarter of the photo": How long and silky or fluffy is the dog's coat?  answers: short or smooth coat; medium or wiry coat; long, silky or fluffy flowing hair; no dog visible; most active: short or smooth coat; least active: long, silky or fluffy flowing hair
+   real: 14 and 17 photos, d -0.42, percentile 11.7 -> not held; peers 409 d -0.51 pct 6.8, 429 d -0.47 pct 9.0, 443 d -0.46 pct 9.4; distinctive no
+   real, all D photos: 33 and 47 photos, d +0.07, percentile 74.6 -> not held; peers 409 d +0.08 pct 79.5, 429 d +0.01 pct 59.0, 443 d +0.02 pct 62.5
+   real, D photos not shown in round 27: 10 and 17 photos, d -0.96, percentile 0.6 -> not held; peers 409 d -0.67 pct 4.7, 429 d -0.73 pct 3.5, 443 d -0.34 pct 22.7
+   null: 14 and 17 photos, d +0.64, percentile 97.3 -> held; peers 409 d +0.42 pct 85.5, 429 d +0.87 pct 99.6, 443 d +0.26 pct 69.7; distinctive no
+   null, all D photos: 33 and 47 photos, d +0.09, percentile 66.6 -> not held; peers 409 d +0.21 pct 96.1, 429 d +0.11 pct 76.6, 443 d +0.12 pct 80.3
+   null, D photos not shown in round 27: 10 and 17 photos, d +0.57, percentile 92.6 -> not held; peers 409 d +0.34 pct 72.3, 429 d +0.81 pct 98.6, 443 d +0.33 pct 71.5
+F_s1 #2. splits "More than about a quarter of the photo": Is a person or part of a person (hand, arm, body, clothing) visible with the dog?  answers: no person visible; yes, a person or part of one is visible; no dog visible; most active: no person visible; least active: yes, a person or part of one is visible
+   real: 43 and 5 photos, d -0.66, percentile 14.6 -> not held; peers 409 d -0.26 pct 35.7, 429 d -0.59 pct 17.6, 443 d -0.00 pct 52.3; distinctive no
+   real, all D photos: 96 and 19 photos, d +0.41, percentile 98.6 -> held; peers 409 d +0.36 pct 97.1, 429 d +0.45 pct 99.0, 443 d +0.21 pct 88.3
+   real, D photos not shown in round 27: 36 and 3 photos -> too few
+   null: 43 and 5 photos, d +0.07, percentile 66.6 -> not held; peers 409 d -0.46 pct 22.9, 429 d -0.35 pct 30.1, 443 d -0.72 pct 8.2; distinctive no
+   null, all D photos: 96 and 19 photos, d +0.33, percentile 95.9 -> held; peers 409 d +0.21 pct 82.4, 429 d +0.28 pct 92.8, 443 d +0.09 pct 58.8
+   null, D photos not shown in round 27: 37 and 3 photos -> too few
+F_s2 #1. splits "More than about a quarter of the photo": Is any part of a person (hand, arm, body, leash holder) visible in the photo?  answers: No person visible; Only a small part such as a hand or leash; A person's body or clothing clearly visible; No dog visible; most active: No person visible; least active: A person's body or clothing clearly visible
+   real: 40 and 4 photos -> too few; distinctive no
+   real, all D photos: 90 and 18 photos, d +0.53, percentile 99.2 -> held; peers 409 d +0.49 pct 98.8, 429 d +0.55 pct 99.4, 443 d +0.32 pct 92.2
+   real, D photos not shown in round 27: 33 and 2 photos -> too few
+   null: 40 and 4 photos -> too few; distinctive no
+   null, all D photos: 90 and 18 photos, d +0.30, percentile 95.1 -> held; peers 409 d +0.18 pct 78.9, 429 d +0.23 pct 87.9, 443 d +0.10 pct 61.7
+   null, D photos not shown in round 27: 34 and 2 photos -> too few
+F_s2 #2. splits "More than about a quarter of the photo": What is the dog's coat like around its head?  answers: Short or smooth coat; Medium or wiry coat; Long, silky or flowing hair; No dog visible; most active: Short or smooth coat; least active: Long, silky or flowing hair
+   real: 21 and 17 photos, d -0.40, percentile 7.2 -> not held; peers 409 d -0.37 pct 8.6, 429 d -0.28 pct 15.0, 443 d -0.24 pct 19.5; distinctive no
+   real, all D photos: 51 and 41 photos, d -0.05, percentile 26.4 -> not held; peers 409 d -0.05 pct 25.0, 429 d -0.07 pct 14.8, 443 d +0.03 pct 61.1
+   real, D photos not shown in round 27: 13 and 17 photos, d -0.81, percentile 0.8 -> not held; peers 409 d -0.53 pct 6.1, 429 d -0.53 pct 5.9, 443 d -0.15 pct 33.6
+   null: 21 and 17 photos, d +0.53, percentile 98.4 -> held; peers 409 d +0.27 pct 83.6, 429 d +0.69 pct 99.6, 443 d +0.05 pct 53.1; distinctive no
+   null, all D photos: 51 and 41 photos, d +0.16, percentile 92.2 -> not held; peers 409 d +0.16 pct 93.6, 429 d +0.16 pct 93.0, 443 d +0.14 pct 88.7
+   null, D photos not shown in round 27: 13 and 17 photos, d +0.49, percentile 94.7 -> not held; peers 409 d +0.22 pct 68.8, 429 d +0.67 pct 98.4, 443 d +0.15 pct 61.3
+F_s3 #1. splits "More than about a quarter of the photo": How long and fluffy is the dog's fur on its head and ears?  answers: short and smooth or short wiry; medium length; long, silky or fluffy hair; no dog visible; most active: short and smooth or short wiry; least active: long, silky or fluffy hair
+   real: 19 and 17 photos, d -0.36, percentile 11.9 -> not held; peers 409 d -0.43 pct 8.0, 429 d -0.32 pct 14.8, 443 d -0.43 pct 8.2; distinctive no
+   real, all D photos: 50 and 41 photos, d -0.04, percentile 31.2 -> not held; peers 409 d -0.10 pct 13.3, 429 d -0.10 pct 12.7, 443 d -0.05 pct 26.4
+   real, D photos not shown in round 27: 10 and 17 photos, d -0.96, percentile 0.6 -> not held; peers 409 d -0.67 pct 4.7, 429 d -0.73 pct 3.5, 443 d -0.34 pct 22.7
+   null: 19 and 17 photos, d +0.58, percentile 97.7 -> held; peers 409 d +0.41 pct 89.3, 429 d +0.81 pct 99.6, 443 d +0.20 pct 66.2; distinctive no
+   null, all D photos: 50 and 41 photos, d +0.15, percentile 82.2 -> not held; peers 409 d +0.19 pct 92.8, 429 d +0.16 pct 87.3, 443 d +0.16 pct 88.1
+   null, D photos not shown in round 27: 11 and 17 photos, d +0.58, percentile 91.8 -> not held; peers 409 d +0.44 pct 79.7, 429 d +0.88 pct 99.0, 443 d +0.44 pct 80.5
+F_s3 #2. splits "Less than a tenth": What is the dog's coat like?  answers: short, smooth, close-lying coat; long, fluffy or shaggy coat; no dog visible; most active: short, smooth, close-lying coat; least active: long, fluffy or shaggy coat
+   real: 12 and 17 photos, d +0.47, percentile 93.6 -> not held; peers 409 d +0.69 pct 98.4, 429 d +0.40 pct 90.6, 443 d +0.36 pct 88.9; distinctive no
+   real, all D photos: 50 and 65 photos, d +0.01, percentile 44.5 -> not held; peers 409 d +0.05 pct 67.0, 429 d -0.04 pct 28.9, 443 d +0.04 pct 59.6
+   real, D photos not shown in round 27: 8 and 16 photos, d +0.85, percentile 98.8 -> held; peers 409 d +0.81 pct 98.0, 429 d +0.66 pct 95.9, 443 d +0.46 pct 88.5
+   null: 12 and 17 photos, d -0.24, percentile 15.6 -> not held; peers 409 d +0.26 pct 81.1, 429 d -0.08 pct 32.0, 443 d +0.30 pct 83.8; distinctive no
+   null, all D photos: 50 and 65 photos, d -0.03, percentile 41.6 -> not held; peers 409 d +0.01 pct 60.0, 429 d -0.09 pct 17.4, 443 d -0.09 pct 16.8
+   null, D photos not shown in round 27: 7 and 16 photos, d -0.38, percentile 12.1 -> not held; peers 409 d +0.26 pct 75.2, 429 d -0.35 pct 14.5, 443 d +0.19 pct 67.6
+R_s1 #1. splits "Standing, walking, running or jumping": Is the dog looking straight into the camera with both eyes clearly visible and large enough to make out?  answers: Yes, clear eye contact with the camera, both eyes visible; Face toward camera but eyes small or hard to make out; Profile, looking away or eyes not visible; No dog visible; most active: Yes, clear eye contact with the camera, both eyes visible; least active: Profile, looking away or eyes not visible
+   real: 10 and 21 photos, d +1.51, percentile 97.3 -> held; peers 409 d +1.72 pct 99.6, 429 d +1.73 pct 99.8, 443 d +1.55 pct 97.9; distinctive no
+   real, all D photos: 45 and 42 photos, d +1.10, percentile 95.9 -> held; peers 409 d +1.28 pct 99.2, 429 d +1.41 pct 99.8, 443 d +1.36 pct 99.6
+   real, D photos not shown in round 27: 8 and 19 photos, d +1.45, percentile 91.6 -> not held; peers 409 d +1.75 pct 98.4, 429 d +1.78 pct 99.4, 443 d +1.78 pct 99.2
+   null: 10 and 21 photos, d +0.24, percentile 57.4 -> not held; peers 409 d +0.78 pct 97.1, 429 d +0.58 pct 88.5, 443 d +0.58 pct 88.3; distinctive no
+   null, all D photos: 45 and 42 photos, d +0.21, percentile 69.9 -> not held; peers 409 d +0.43 pct 93.0, 429 d +0.44 pct 93.4, 443 d +0.43 pct 92.8
+   null, D photos not shown in round 27: 8 and 19 photos, d +0.49, percentile 81.8 -> not held; peers 409 d +0.83 pct 96.3, 429 d +0.62 pct 89.1, 443 d +0.50 pct 82.4
+R_s1 #2. splits "Sitting, lying or posing still": Are the dog's eyes open and looking toward the camera?  answers: Eyes open and looking at the camera; Eyes open but looking elsewhere or down; Eyes closed, hidden by fur, or face not visible; No dog visible; most active: Eyes open and looking at the camera; least active: Eyes closed, hidden by fur, or face not visible
+   real: 44 and 8 photos, d +0.95, percentile 94.5 -> not held; peers 409 d +1.13 pct 98.0, 429 d +1.18 pct 98.8, 443 d +1.36 pct 99.6; distinctive no
+   real, all D photos: 63 and 13 photos, d +1.11, percentile 96.9 -> held; peers 409 d +1.23 pct 97.9, 429 d +1.35 pct 99.4, 443 d +1.29 pct 98.6
+   real, D photos not shown in round 27: 33 and 8 photos, d +0.92, percentile 93.9 -> not held; peers 409 d +1.11 pct 98.2, 429 d +1.06 pct 97.1, 443 d +1.34 pct 99.8
+   null: 44 and 8 photos, d +0.51, percentile 92.8 -> not held; peers 409 d +0.43 pct 87.3, 429 d +0.50 pct 91.4, 443 d +0.37 pct 84.4; distinctive no
+   null, all D photos: 63 and 13 photos, d +0.41, percentile 83.8 -> not held; peers 409 d +0.49 pct 90.2, 429 d +0.55 pct 93.9, 443 d +0.53 pct 93.2
+   null, D photos not shown in round 27: 33 and 8 photos, d +0.44, percentile 88.5 -> not held; peers 409 d +0.39 pct 84.0, 429 d +0.43 pct 87.1, 443 d +0.44 pct 87.9
+R_s2 #1. splits "Standing, walking, running or jumping": Is the dog's face looking straight at the camera, with both eyes clearly visible and large enough to see easily?  answers: Yes, a clear frontal face looking at the camera; Face turned sideways or away, or too small or distant to see the eyes; No dog visible; most active: Yes, a clear frontal face looking at the camera; least active: Face turned sideways or away, or too small or distant to see the eyes
+   real: 11 and 34 photos, d +1.20, percentile 91.2 -> not held; peers 409 d +1.63 pct 99.4, 429 d +1.52 pct 98.6, 443 d +1.40 pct 97.1; distinctive no
+   real, all D photos: 48 and 67 photos, d +0.99, percentile 95.9 -> held; peers 409 d +1.27 pct 99.8, 429 d +1.22 pct 99.6, 443 d +1.21 pct 99.4
+   real, D photos not shown in round 27: 9 and 30 photos, d +1.12, percentile 83.4 -> not held; peers 409 d +1.68 pct 98.8, 429 d +1.59 pct 97.3, 443 d +1.72 pct 99.0
+   null: 11 and 34 photos, d -0.12, percentile 22.9 -> not held; peers 409 d +0.39 pct 79.9, 429 d +0.26 pct 67.0, 443 d +0.30 pct 71.1; distinctive no
+   null, all D photos: 48 and 67 photos, d +0.02, percentile 36.7 -> not held; peers 409 d +0.21 pct 74.6, 429 d +0.23 pct 79.1, 443 d +0.24 pct 80.7
+   null, D photos not shown in round 27: 9 and 29 photos, d +0.12, percentile 52.1 -> not held; peers 409 d +0.42 pct 80.3, 429 d +0.33 pct 73.4, 443 d +0.19 pct 59.2
+R_s2 #2. splits "Sitting, lying or posing still": Are the dog's eyes open and looking toward the camera?  answers: Eyes open, looking at the camera; Eyes closed, looking down or away, or hidden; No dog visible; most active: Eyes open, looking at the camera; least active: Eyes closed, looking down or away, or hidden
+   real: 44 and 26 photos, d +0.58, percentile 87.7 -> not held; peers 409 d +0.78 pct 95.1, 429 d +0.94 pct 99.6, 443 d +1.09 pct 99.8; distinctive no
+   real, all D photos: 63 and 52 photos, d +0.68, percentile 88.3 -> not held; peers 409 d +0.92 pct 97.9, 429 d +1.01 pct 99.0, 443 d +1.10 pct 99.8
+   real, D photos not shown in round 27: 33 and 19 photos, d +0.66, percentile 91.6 -> not held; peers 409 d +0.81 pct 97.3, 429 d +0.87 pct 98.6, 443 d +1.08 pct 99.8
+   null: 44 and 26 photos, d +0.16, percentile 71.7 -> not held; peers 409 d +0.09 pct 61.5, 429 d +0.21 pct 80.3, 443 d +0.12 pct 64.6; distinctive no
+   null, all D photos: 63 and 52 photos, d +0.11, percentile 59.4 -> not held; peers 409 d +0.23 pct 78.7, 429 d +0.31 pct 87.7, 443 d +0.28 pct 83.2
+   null, D photos not shown in round 27: 33 and 20 photos, d +0.05, percentile 47.9 -> not held; peers 409 d +0.06 pct 48.4, 429 d +0.07 pct 50.8, 443 d +0.21 pct 76.4
+R_s3 #1. splits "Standing, walking, running or jumping": Is the dog's face turned toward the camera with both eyes clearly visible and looking at the viewer?  answers: Yes, frontal with both eyes looking at camera; Partly turned or eyes not clearly visible; Profile or face turned away; No dog visible; most active: Yes, frontal with both eyes looking at camera; least active: Profile or face turned away
+   real: 11 and 16 photos, d +1.51, percentile 95.9 -> held; peers 409 d +1.71 pct 99.4, 429 d +1.78 pct 99.8, 443 d +1.58 pct 97.3; distinctive no
+   real, all D photos: 45 and 30 photos, d +1.29, percentile 96.9 -> held; peers 409 d +1.45 pct 99.4, 429 d +1.64 pct 99.8, 443 d +1.49 pct 99.6
+   real, D photos not shown in round 27: 9 and 14 photos, d +1.43, percentile 89.3 -> not held; peers 409 d +1.71 pct 98.2, 429 d +1.79 pct 99.8, 443 d +1.75 pct 99.2
+   null: 11 and 16 photos, d +0.07, percentile 39.5 -> not held; peers 409 d +0.69 pct 93.6, 429 d +0.46 pct 77.9, 443 d +0.48 pct 79.3; distinctive no
+   null, all D photos: 45 and 30 photos, d +0.24, percentile 72.5 -> not held; peers 409 d +0.44 pct 92.2, 429 d +0.43 pct 92.0, 443 d +0.40 pct 88.7
+   null, D photos not shown in round 27: 9 and 14 photos, d +0.26, percentile 62.1 -> not held; peers 409 d +0.73 pct 94.7, 429 d +0.46 pct 78.5, 443 d +0.38 pct 73.4
+R_s3 #2. splits "Sitting, lying or posing still": Are the dog's eyes open and looking at the camera?  answers: Eyes open, looking at the camera; Eyes open but looking elsewhere (e.g. at a toy or food); Eyes closed or face hidden; No dog visible; most active: Eyes open, looking at the camera; least active: Eyes closed or face hidden
+   real: 44 and 8 photos, d +0.95, percentile 94.5 -> not held; peers 409 d +1.13 pct 98.0, 429 d +1.18 pct 98.8, 443 d +1.36 pct 99.6; distinctive no
+   real, all D photos: 63 and 13 photos, d +1.11, percentile 96.9 -> held; peers 409 d +1.23 pct 97.9, 429 d +1.35 pct 99.4, 443 d +1.29 pct 98.6
+   real, D photos not shown in round 27: 33 and 8 photos, d +0.92, percentile 93.9 -> not held; peers 409 d +1.11 pct 98.2, 429 d +1.06 pct 97.1, 443 d +1.34 pct 99.8
+   null: 44 and 8 photos, d +0.51, percentile 92.8 -> not held; peers 409 d +0.43 pct 87.3, 429 d +0.50 pct 91.4, 443 d +0.37 pct 84.4; distinctive no
+   null, all D photos: 63 and 13 photos, d +0.41, percentile 83.8 -> not held; peers 409 d +0.49 pct 90.2, 429 d +0.55 pct 93.9, 443 d +0.53 pct 93.2
+   null, D photos not shown in round 27: 33 and 8 photos, d +0.44, percentile 88.5 -> not held; peers 409 d +0.39 pct 84.0, 429 d +0.43 pct 87.1, 443 d +0.44 pct 87.9
+tally F: real held 0, not held 5, too few 1; null held 3, not held 2, too few 1 (of 6 new predictions)
+tally R: real held 2, not held 4, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+
+== mixed4b:409  layer mixed4b (512 channels), 118 photos of T, 122 photos of D, answer batches on D failed after a retry: 0 of 11
+peers: mixed4b:443 (r 0.957), mixed4b:429 (r 0.938), mixed4b:384 (r 0.925)
+earlier predictions:
+   P1 (s1). How much of the photo does the dog's head take up?  answers: No dog visible; Head is small (dog far away or whole body shown small); Medium (whole dog fills much of the frame); Large close-up (head fills a big part of the frame); most active: Large close-up (head fills a big part of the frame); least active: Head is small (dog far away or whole body shown small)
+      T: 47 and 16 photos, d +1.72, percentile 99.6 -> held; peers 443 d +1.44 pct 94.7 rho 0.833 z +1.65, 429 d +1.33 pct 91.8 rho 0.797 z +2.12, 384 d +1.19 pct 86.5 rho 0.748 z +2.58 -> own
+   P2 (s1). How many dogs are visible in the photo?  answers: None; One; Two or more; most active: One; least active: Two or more
+      T: 100 and 13 photos, d +0.60, percentile 93.6 -> not held; peers 443 d +0.49 pct 88.9 rho 0.816 z +0.60, 429 d +0.49 pct 88.7 rho 0.775 z +0.55, 384 d +0.34 pct 80.5 rho 0.726 z +1.17 -> none
+   P3 (s1). What is the main color of the fur on the dog's face?  answers: No dog face visible; White, cream or light tan; Mixed (e.g. black-and-tan or black-and-white); Mostly dark (black, dark gray or dark brown); most active: White, cream or light tan; least active: Mostly dark (black, dark gray or dark brown)
+      T: 43 and 17 photos, d +0.25, percentile 81.1 -> not held; peers 443 d +0.17 pct 66.2 rho 0.800 z +0.43, 429 d +0.35 pct 93.6 rho 0.759 z -0.53, 384 d +0.41 pct 95.7 rho 0.688 z -0.69 -> none
+   P4 (s1). Is the dog's face clearly seen facing the camera, with nothing in front of it?  answers: No dog visible; Yes, face clear and facing the camera; Face turned away, in profile, or partly blocked by objects; most active: Yes, face clear and facing the camera; least active: Face turned away, in profile, or partly blocked by objects
+      T: 65 and 48 photos, d +1.07, percentile 97.9 -> held; peers 443 d +1.16 pct 99.2 rho 0.816 z -0.77, 429 d +1.16 pct 99.4 rho 0.775 z -0.75, 384 d +0.90 pct 93.8 rho 0.726 z +1.16 -> shared (peer 429)
+   P5 (s2). How much of the photo does the (largest) dog's head take up?  answers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible; most active: more than a quarter of the photo; least active: less than a tenth
+      T: 36 and 30 photos, d +1.45, percentile 99.2 -> held; peers 443 d +1.22 pct 94.5 rho 0.829 z +1.57, 429 d +0.98 pct 87.1 rho 0.766 z +2.79, 384 d +0.82 pct 79.5 rho 0.730 z +3.45 -> own
+   P6 (s2). How many dogs are visible in the photo?  answers: exactly one; two or more; none; most active: exactly one; least active: two or more
+      T: 100 and 13 photos, d +0.60, percentile 93.6 -> not held; peers 443 d +0.49 pct 88.9 rho 0.816 z +0.60, 429 d +0.49 pct 88.7 rho 0.775 z +0.55, 384 d +0.34 pct 80.5 rho 0.726 z +1.17 -> none
+   P7 (s2). What is the main color of the fur on the dog's face?  answers: white or cream; tan or light brown; black, dark brown or gray; no dog face visible; most active: white or cream; least active: black, dark brown or gray
+      T: 27 and 43 photos, d +0.13, percentile 71.3 -> not held; peers 443 d +0.12 pct 68.6 rho 0.800 z +0.10, 429 d +0.13 pct 70.5 rho 0.739 z +0.02, 384 d +0.15 pct 76.2 rho 0.717 z -0.11 -> none
+   P8 (s2). Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?  answers: yes, fully visible; partly hidden, turned away or in profile; no dog face visible; most active: yes, fully visible; least active: partly hidden, turned away or in profile
+      T: 66 and 47 photos, d +1.09, percentile 97.9 -> held; peers 443 d +1.21 pct 99.4 rho 0.816 z -1.03, 429 d +1.18 pct 99.2 rho 0.775 z -0.68, 384 d +0.84 pct 90.6 rho 0.726 z +1.78 -> shared (peer 443)
+   P9 (s3). How much of the photo does the largest dog's head take up?  answers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible; most active: more than a quarter of the photo; least active: less than a tenth
+      T: 36 and 30 photos, d +1.45, percentile 99.2 -> held; peers 443 d +1.22 pct 94.5 rho 0.829 z +1.57, 429 d +0.98 pct 87.1 rho 0.766 z +2.79, 384 d +0.82 pct 79.5 rho 0.730 z +3.45 -> own
+   P10 (s3). How many dogs are visible in the photo?  answers: exactly one; two or more; none; most active: exactly one; least active: two or more
+      T: 100 and 13 photos, d +0.60, percentile 93.6 -> not held; peers 443 d +0.49 pct 88.9 rho 0.816 z +0.60, 429 d +0.49 pct 88.7 rho 0.775 z +0.55, 384 d +0.34 pct 80.5 rho 0.726 z +1.17 -> none
+   P11 (s3). What is the main color of the most prominent dog's face?  answers: mostly white or cream; tan, brown or mixed with white; mostly black, grey or dark; no dog face visible; most active: mostly white or cream; least active: mostly black, grey or dark
+      T: 23 and 35 photos, d +0.06, percentile 59.4 -> not held; peers 443 d -0.05 pct 34.8 rho 0.816 z +0.71, 429 d +0.15 pct 73.8 rho 0.729 z -0.42, 384 d +0.19 pct 83.2 rho 0.731 z -0.63 -> none
+   P12 (s3). Is the most prominent dog's face turned toward the camera with both eyes visible?  answers: yes, facing the camera; no, in profile or turned away; no dog face visible; most active: yes, facing the camera; least active: no, in profile or turned away
+      T: 70 and 43 photos, d +1.11, percentile 98.4 -> held; peers 443 d +1.27 pct 99.6 rho 0.816 z -1.38, 429 d +1.13 pct 98.8 rho 0.775 z -0.20, 384 d +0.81 pct 89.5 rho 0.726 z +2.11 -> shared (peer 443)
+trigger F: P12, shared, peer mixed4b:443 (similar unit 1)
+   "yes, facing the camera" (70 photos of T): more [1940, 2946, 2351], less [1909, 53, 2948]
+   "no, in profile or turned away" (43 photos of T): more [8296, 2942, 9549], less [2354, 2718, 4938]
+   re-check on D, real: 84 and 29 photos, d +0.94, percentile 93.2 -> not held; peers 443 d +1.16 pct 98.4, 429 d +1.26 pct 99.6, 384 d +0.85 pct 90.4
+   re-check on D, null: 84 and 29 photos, d -0.05, percentile 21.3 -> not held; peers 443 d -0.04 pct 22.5, 429 d +0.18 pct 60.5, 384 d +0.33 pct 82.4
+trigger R: P1, own
+   "Large close-up (head fills a big part of the frame)" (47 photos of T): most [2946, 1681, 1775], least [8291, 4755, 8294]
+   "Head is small (dog far away or whole body shown small)" (16 photos of T): most [6431, 9540, 6437], least [6788, 1109, 2353]
+   re-check on D, real: 49 and 17 photos, d +1.59, percentile 99.4 -> held; peers 443 d +1.25 pct 94.1, 429 d +1.26 pct 94.3, 384 d +1.08 pct 90.2
+   re-check on D, null: 49 and 17 photos, d +0.31, percentile 73.0 -> not held; peers 443 d +0.35 pct 76.2, 429 d +0.08 pct 39.3, 384 d +0.15 pct 50.4
+F_s1 #1. splits "yes, facing the camera": How much of the frame does the dog's head fill?  answers: head-and-shoulders close-up, head fills a large part of the frame; much of the body visible, head a modest part of the frame; no dog visible; most active: head-and-shoulders close-up, head fills a large part of the frame; least active: much of the body visible, head a modest part of the frame
+   real: 42 and 42 photos, d +0.80, percentile 94.1 -> not held; peers 443 d -0.03 pct 50.0, 429 d +0.35 pct 75.6, 384 d +0.88 pct 95.3; distinctive no
+   real, all D photos: 51 and 64 photos, d +0.92, percentile 95.1 -> held; peers 443 d +0.34 pct 75.0, 429 d +0.53 pct 83.2, 384 d +0.82 pct 93.4
+   real, D photos not shown in round 27: 32 and 34 photos, d +0.97, percentile 96.1 -> held; peers 443 d +0.34 pct 71.1, 429 d +0.61 pct 84.4, 384 d +1.00 pct 96.7
+   null: 42 and 42 photos, d +0.01, percentile 57.0 -> not held; peers 443 d +0.00 pct 54.5, 429 d -0.10 pct 33.2, 384 d -0.04 pct 45.1; distinctive no
+   null, all D photos: 51 and 64 photos, d +0.01, percentile 47.5 -> not held; peers 443 d +0.03 pct 51.8, 429 d -0.01 pct 41.4, 384 d +0.01 pct 45.5
+   null, D photos not shown in round 27: 30 and 37 photos, d +0.04, percentile 62.1 -> not held; peers 443 d +0.03 pct 60.0, 429 d -0.13 pct 31.8, 384 d -0.04 pct 44.7
+F_s1 #2. splits "no, in profile or turned away": Is the dog large and close in the frame, or small in a wide scene?  answers: dog close and large, head clearly prominent; dog small in a wide scene or crowded out by other objects; no dog visible; most active: dog close and large, head clearly prominent; least active: dog small in a wide scene or crowded out by other objects
+   real: 21 and 8 photos, d +0.72, percentile 89.8 -> not held; peers 443 d +0.41 pct 79.5, 429 d +0.35 pct 76.8, 384 d +0.19 pct 67.8; distinctive no
+   real, all D photos: 97 and 18 photos, d +1.30, percentile 99.6 -> held; peers 443 d +1.07 pct 95.7, 429 d +1.08 pct 96.3, 384 d +0.82 pct 88.9
+   real, D photos not shown in round 27: 17 and 6 photos, d +0.54, percentile 86.3 -> not held; peers 443 d +0.50 pct 84.2, 429 d +0.06 pct 65.4, 384 d +0.09 pct 67.8
+   null: 21 and 8 photos, d +0.50, percentile 72.1 -> not held; peers 443 d +0.47 pct 68.9, 429 d +0.28 pct 54.1, 384 d +0.17 pct 43.2; distinctive no
+   null, all D photos: 97 and 18 photos, d +0.34, percentile 71.7 -> not held; peers 443 d +0.37 pct 76.0, 429 d +0.09 pct 33.8, 384 d +0.13 pct 37.5
+   null, D photos not shown in round 27: 18 and 5 photos, d +0.36, percentile 49.6 -> not held; peers 443 d +0.61 pct 69.5, 429 d +0.50 pct 60.0, 384 d +0.30 pct 43.8
+F_s2 #1. splits "yes, facing the camera": How much of the photo does the dog's head fill?  answers: head and shoulders close-up, head fills a large part of the frame; much of the body shown, head medium or small; no dog visible; most active: head and shoulders close-up, head fills a large part of the frame; least active: much of the body shown, head medium or small
+   real: 42 and 42 photos, d +0.80, percentile 94.1 -> not held; peers 443 d -0.03 pct 50.0, 429 d +0.35 pct 75.6, 384 d +0.88 pct 95.3; distinctive no
+   real, all D photos: 51 and 64 photos, d +0.92, percentile 95.1 -> held; peers 443 d +0.34 pct 75.0, 429 d +0.53 pct 83.2, 384 d +0.82 pct 93.4
+   real, D photos not shown in round 27: 32 and 34 photos, d +0.97, percentile 96.1 -> held; peers 443 d +0.34 pct 71.1, 429 d +0.61 pct 84.4, 384 d +1.00 pct 96.7
+   null: 42 and 42 photos, d +0.01, percentile 57.0 -> not held; peers 443 d +0.00 pct 54.5, 429 d -0.10 pct 33.2, 384 d -0.04 pct 45.1; distinctive no
+   null, all D photos: 51 and 64 photos, d +0.01, percentile 47.5 -> not held; peers 443 d +0.03 pct 51.8, 429 d -0.01 pct 41.4, 384 d +0.01 pct 45.5
+   null, D photos not shown in round 27: 30 and 37 photos, d +0.04, percentile 62.1 -> not held; peers 443 d +0.03 pct 60.0, 429 d -0.13 pct 31.8, 384 d -0.04 pct 44.7
+F_s2 #2. splits "no, in profile or turned away": Is the dog large in the frame, or small within a wide scene?  answers: dog large, filling much of the frame; dog small within a wide scene (landscape, field, room); no dog visible; most active: dog large, filling much of the frame; least active: dog small within a wide scene (landscape, field, room)
+   real: 22 and 7 photos, d +0.87, percentile 91.4 -> not held; peers 443 d +0.60 pct 81.8, 429 d +0.74 pct 86.1, 384 d +0.22 pct 62.1; distinctive no
+   real, all D photos: 98 and 17 photos, d +1.34, percentile 99.8 -> held; peers 443 d +1.11 pct 96.1, 429 d +1.17 pct 97.7, 384 d +0.82 pct 87.3
+   real, D photos not shown in round 27: 18 and 5 photos, d +0.82, percentile 90.2 -> not held; peers 443 d +0.84 pct 90.8, 429 d +0.66 pct 83.6, 384 d +0.16 pct 59.6
+   null: 22 and 7 photos, d +0.57, percentile 81.6 -> not held; peers 443 d +0.52 pct 80.1, 429 d +0.28 pct 62.5, 384 d +0.20 pct 53.5; distinctive no
+   null, all D photos: 98 and 17 photos, d +0.37, percentile 79.5 -> not held; peers 443 d +0.39 pct 82.2, 429 d +0.08 pct 38.1, 384 d +0.12 pct 44.5
+   null, D photos not shown in round 27: 19 and 4 photos -> too few
+F_s3 #1. splits "yes, facing the camera": How is the facing dog framed in the photo?  answers: close-up: head and maybe shoulders fill most of the frame; body visible: much of the dog's body shown, head a modest part of the frame; dog small in a wider scene; no dog visible; most active: close-up: head and maybe shoulders fill most of the frame; least active: dog small in a wider scene
+   real: 42 and 7 photos, d +1.81, percentile 99.4 -> held; peers 443 d +1.44 pct 93.8, 429 d +1.36 pct 91.2, 384 d +1.29 pct 89.5; distinctive no
+   real, all D photos: 51 and 15 photos, d +1.59, percentile 99.4 -> held; peers 443 d +1.38 pct 96.9, 429 d +1.33 pct 94.7, 384 d +1.09 pct 90.2
+   real, D photos not shown in round 27: 32 and 6 photos, d +1.98, percentile 99.6 -> held; peers 443 d +1.78 pct 98.0, 429 d +1.52 pct 92.8, 384 d +1.43 pct 89.5
+   null: 42 and 7 photos, d +0.39, percentile 81.6 -> not held; peers 443 d +0.27 pct 72.7, 429 d -0.15 pct 31.6, 384 d +0.11 pct 58.0; distinctive no
+   null, all D photos: 51 and 15 photos, d +0.39, percentile 80.1 -> not held; peers 443 d +0.36 pct 77.7, 429 d +0.04 pct 36.9, 384 d +0.15 pct 52.3
+   null, D photos not shown in round 27: 30 and 6 photos, d +0.31, percentile 72.1 -> not held; peers 443 d +0.33 pct 72.5, 429 d -0.22 pct 25.2, 384 d +0.05 pct 50.4
+F_s3 #2. splits "no, in profile or turned away": How large is the dog's head in the photo?  answers: large: head covers more than about a tenth of the photo; small: dog is small in a wide scene such as a landscape; dog only partly in frame or cut off at the edge; no dog visible; most active: large: head covers more than about a tenth of the photo; least active: small: dog is small in a wide scene such as a landscape
+   real: 21 and 7 photos, d +0.92, percentile 92.0 -> not held; peers 443 d +0.63 pct 81.4, 429 d +0.80 pct 88.7, 384 d +0.23 pct 60.4; distinctive no
+   real, all D photos: 95 and 16 photos, d +1.32, percentile 99.4 -> held; peers 443 d +1.14 pct 96.3, 429 d +1.13 pct 95.7, 384 d +0.80 pct 85.7
+   real, D photos not shown in round 27: 17 and 5 photos, d +0.88, percentile 91.2 -> not held; peers 443 d +0.86 pct 90.6, 429 d +0.74 pct 85.7, 384 d +0.17 pct 56.8
+   null: 21 and 7 photos, d +0.68, percentile 84.4 -> not held; peers 443 d +0.61 pct 81.6, 429 d +0.38 pct 68.6, 384 d +0.24 pct 53.7; distinctive no
+   null, all D photos: 95 and 16 photos, d +0.44, percentile 89.5 -> not held; peers 443 d +0.51 pct 93.4, 429 d +0.20 pct 61.3, 384 d +0.16 pct 56.8
+   null, D photos not shown in round 27: 18 and 4 photos -> too few
+R_s1 #1. splits "Large close-up (head fills a big part of the frame)": Is the dog's head raised and alert with its eyes open and looking at the camera, or lowered, resting or sleeping?  answers: head raised, eyes open, looking at the camera; head lowered, resting on the ground, looking down or eyes closed; no dog face visible; most active: head raised, eyes open, looking at the camera; least active: head lowered, resting on the ground, looking down or eyes closed
+   real: 38 and 11 photos, d +0.97, percentile 96.7 -> held; peers 443 d +0.55 pct 76.0, 429 d +0.76 pct 89.5, 384 d +0.83 pct 92.6; distinctive no
+   real, all D photos: 89 and 23 photos, d +0.74, percentile 93.8 -> not held; peers 443 d +0.73 pct 93.2, 429 d +0.65 pct 89.1, 384 d +0.60 pct 85.5
+   real, D photos not shown in round 27: 29 and 10 photos, d +1.01, percentile 96.5 -> held; peers 443 d +0.74 pct 86.3, 429 d +0.89 pct 93.0, 384 d +0.85 pct 91.2
+   null: 38 and 11 photos, d -0.35, percentile 25.6 -> not held; peers 443 d -0.52 pct 10.4, 429 d +0.15 pct 85.0, 384 d +0.12 pct 82.6; distinctive no
+   null, all D photos: 89 and 23 photos, d -0.42, percentile 3.9 -> not held; peers 443 d -0.47 pct 2.0, 429 d +0.03 pct 58.2, 384 d -0.10 pct 35.0
+   null, D photos not shown in round 27: 27 and 9 photos, d -0.45, percentile 19.5 -> not held; peers 443 d -0.36 pct 28.1, 429 d -0.08 pct 60.5, 384 d -0.23 pct 43.4
+R_s1 #2. splits "Large close-up (head fills a big part of the frame)": Does the dog's face have contrasting color markings (such as a white blaze, or tricolor or tan points), or is it one uniform color?  answers: contrasting markings (blaze, tricolor, or tan points); one uniform color; no dog face visible; most active: contrasting markings (blaze, tricolor, or tan points); least active: one uniform color
+   real: 23 and 26 photos, d +0.17, percentile 71.5 -> not held; peers 443 d -0.02 pct 41.8, 429 d +0.41 pct 94.7, 384 d +0.34 pct 90.2; distinctive no
+   real, all D photos: 59 and 54 photos, d +0.10, percentile 65.2 -> not held; peers 443 d +0.18 pct 89.1, 429 d +0.01 pct 30.3, 384 d -0.11 pct 4.1
+   real, D photos not shown in round 27: 18 and 21 photos, d +0.17, percentile 72.1 -> not held; peers 443 d -0.24 pct 24.6, 429 d +0.29 pct 84.8, 384 d +0.41 pct 93.6
+   null: 23 and 26 photos, d +0.12, percentile 85.4 -> not held; peers 443 d -0.02 pct 65.0, 429 d +0.23 pct 93.2, 384 d +0.24 pct 93.8; distinctive no
+   null, all D photos: 59 and 54 photos, d +0.04, percentile 68.9 -> not held; peers 443 d +0.07 pct 80.3, 429 d +0.12 pct 90.8, 384 d +0.04 pct 69.3
+   null, D photos not shown in round 27: 15 and 21 photos, d +0.28, percentile 90.6 -> not held; peers 443 d +0.06 pct 74.4, 429 d +0.25 pct 88.5, 384 d +0.25 pct 88.7
+R_s2 #1. splits "Large close-up (head fills a big part of the frame)": Are the dog's eyes open and looking toward the camera?  answers: yes, eyes open and looking at the camera; eyes closed, hidden, or looking down or away; no dog face visible; most active: yes, eyes open and looking at the camera; least active: eyes closed, hidden, or looking down or away
+   real: 35 and 14 photos, d +0.98, percentile 96.7 -> held; peers 443 d +0.95 pct 95.5, 429 d +1.25 pct 99.8, 384 d +1.11 pct 99.2; distinctive no
+   real, all D photos: 75 and 38 photos, d +0.87, percentile 94.1 -> not held; peers 443 d +1.02 pct 98.2, 429 d +1.14 pct 99.4, 384 d +0.82 pct 92.0
+   real, D photos not shown in round 27: 30 and 9 photos, d +1.25, percentile 98.2 -> held; peers 443 d +1.14 pct 96.5, 429 d +1.26 pct 98.4, 384 d +1.29 pct 99.2
+   null: 35 and 14 photos, d -0.36, percentile 10.5 -> not held; peers 443 d -0.07 pct 39.1, 429 d -0.28 pct 16.4, 384 d -0.39 pct 9.2; distinctive no
+   null, all D photos: 75 and 38 photos, d -0.26, percentile 4.7 -> not held; peers 443 d -0.04 pct 22.7, 429 d -0.06 pct 21.1, 384 d -0.16 pct 12.7
+   null, D photos not shown in round 27: 27 and 9 photos, d -0.38, percentile 14.6 -> not held; peers 443 d -0.32 pct 18.6, 429 d -0.31 pct 19.1, 384 d -0.26 pct 22.9
+R_s2 #2. splits "Large close-up (head fills a big part of the frame)": How is the dog holding its head?  answers: head raised and upright; head lowered, bowed, or resting on the ground or a surface; no dog head visible; most active: head raised and upright; least active: head lowered, bowed, or resting on the ground or a surface
+   real: 38 and 11 photos, d +0.97, percentile 96.7 -> held; peers 443 d +0.55 pct 76.0, 429 d +0.76 pct 89.5, 384 d +0.83 pct 92.6; distinctive no
+   real, all D photos: 91 and 23 photos, d +0.75, percentile 93.9 -> not held; peers 443 d +0.74 pct 93.2, 429 d +0.70 pct 90.8, 384 d +0.64 pct 88.7
+   real, D photos not shown in round 27: 29 and 10 photos, d +1.01, percentile 96.5 -> held; peers 443 d +0.74 pct 86.3, 429 d +0.89 pct 93.0, 384 d +0.85 pct 91.2
+   null: 38 and 11 photos, d -0.35, percentile 25.6 -> not held; peers 443 d -0.52 pct 10.4, 429 d +0.15 pct 85.0, 384 d +0.12 pct 82.6; distinctive no
+   null, all D photos: 91 and 23 photos, d -0.30, percentile 7.6 -> not held; peers 443 d -0.38 pct 4.1, 429 d +0.05 pct 56.6, 384 d -0.05 pct 38.5
+   null, D photos not shown in round 27: 27 and 9 photos, d -0.45, percentile 19.5 -> not held; peers 443 d -0.36 pct 28.1, 429 d -0.08 pct 60.5, 384 d -0.23 pct 43.4
+R_s3 #1. splits "Large close-up (head fills a big part of the frame)": Is the dog's head held up and alert, with its eyes open, or is it lowered, resting on something, or asleep?  answers: head up and alert, eyes open; head lowered, resting on the ground, or asleep; can't tell / no dog head visible; most active: head up and alert, eyes open; least active: head lowered, resting on the ground, or asleep
+   real: 38 and 11 photos, d +0.97, percentile 96.7 -> held; peers 443 d +0.55 pct 76.0, 429 d +0.76 pct 89.5, 384 d +0.83 pct 92.6; distinctive no
+   real, all D photos: 91 and 22 photos, d +0.71, percentile 92.4 -> not held; peers 443 d +0.71 pct 92.6, 429 d +0.65 pct 89.1, 384 d +0.60 pct 86.1
+   real, D photos not shown in round 27: 29 and 10 photos, d +1.01, percentile 96.5 -> held; peers 443 d +0.74 pct 86.3, 429 d +0.89 pct 93.0, 384 d +0.85 pct 91.2
+   null: 38 and 11 photos, d -0.35, percentile 25.6 -> not held; peers 443 d -0.52 pct 10.4, 429 d +0.15 pct 85.0, 384 d +0.12 pct 82.6; distinctive no
+   null, all D photos: 91 and 22 photos, d -0.33, percentile 6.8 -> not held; peers 443 d -0.41 pct 3.1, 429 d +0.08 pct 63.1, 384 d -0.02 pct 47.1
+   null, D photos not shown in round 27: 27 and 9 photos, d -0.45, percentile 19.5 -> not held; peers 443 d -0.36 pct 28.1, 429 d -0.08 pct 60.5, 384 d -0.23 pct 43.4
+R_s3 #2. splits "Large close-up (head fills a big part of the frame)": Where is the dog looking?  answers: straight at the camera; down at the ground or eyes closed; off to the side; dog's eyes not visible; most active: straight at the camera; least active: down at the ground or eyes closed
+   real: 35 and 4 photos -> too few; distinctive no
+   real, all D photos: 75 and 14 photos, d +1.07, percentile 96.5 -> held; peers 443 d +1.15 pct 97.9, 429 d +1.16 pct 98.0, 384 d +0.91 pct 91.6
+   real, D photos not shown in round 27: 30 and 3 photos -> too few
+   null: 35 and 4 photos -> too few; distinctive no
+   null, all D photos: 75 and 14 photos, d -0.49, percentile 3.7 -> not held; peers 443 d -0.29 pct 12.9, 429 d -0.14 pct 24.2, 384 d -0.35 pct 8.2
+   null, D photos not shown in round 27: 27 and 3 photos -> too few
+tally F: real held 1, not held 5, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+tally R: real held 4, not held 1, too few 1; null held 0, not held 5, too few 1 (of 6 new predictions)
+
+== mixed4b:418  layer mixed4b (512 channels), 124 photos of T, 116 photos of D, answer batches on D failed after a retry: 0 of 10
+peers: mixed4b:434 (r 0.952), mixed4b:443 (r 0.894), mixed4b:409 (r 0.893)
+earlier predictions:
+   P1 (s1). How much of the photo does the main animal take up?  answers: Head/face close-up filling most of the frame; Whole animal at medium size, clearly visible; Animal small or far away in the scene; No animal in the photo; most active: Whole animal at medium size, clearly visible; least active: Head/face close-up filling most of the frame
+      T: 88 and 30 photos, d +0.65, percentile 95.7 -> held; peers 434 d +0.32 pct 80.5 rho 0.835 z +2.76, 443 d -0.45 pct 23.4 rho 0.529 z +5.35, 409 d -0.95 pct 4.5 rho 0.349 z +6.64 -> own
+   P2 (s1). Is the main animal's whole body, including legs, visible in the photo?  answers: Yes, the full body with legs is visible; No, only the head or head and shoulders; No animal in the photo; most active: Yes, the full body with legs is visible; least active: No, only the head or head and shoulders
+      T: 82 and 40 photos, d +0.45, percentile 91.6 -> not held; peers 434 d +0.10 pct 71.7 rho 0.835 z +3.15, 443 d -0.42 pct 24.0 rho 0.541 z +4.68, 409 d -0.86 pct 3.1 rho 0.369 z +6.04 -> differs (peer 409)
+   P3 (s1). Which way is the main animal's face pointing?  answers: Toward the camera; Sideways or in profile; Away or face hidden; No animal in the photo; most active: Toward the camera; least active: Away or face hidden
+      T: too few
+   P4 (s1). Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?  answers: Eyes open and alert; Eyes closed, curled up or sleeping; Eyes not visible or no animal; most active: Eyes open and alert; least active: Eyes closed, curled up or sleeping
+      T: 107 and 9 photos, d +0.90, percentile 98.0 -> held; peers 434 d +0.88 pct 97.9 rho 0.821 z +0.07, 443 d +0.15 pct 58.6 rho 0.518 z +2.20, 409 d +0.20 pct 62.1 rho 0.336 z +1.73 -> shared (peer 434)
+   P5 (s2). How is the main animal framed in the photo?  answers: Whole or most of body visible, animal fills a moderate part of the frame; Close-up of head/face filling most of the frame; Animal small or distant in the frame; No animal; most active: Whole or most of body visible, animal fills a moderate part of the frame; least active: Close-up of head/face filling most of the frame
+      T: 86 and 32 photos, d +0.60, percentile 95.1 -> held; peers 434 d +0.23 pct 76.2 rho 0.835 z +3.15, 443 d -0.43 pct 23.2 rho 0.529 z +5.16, 409 d -0.91 pct 4.9 rho 0.349 z +6.39 -> own
+   P6 (s2). Is the main animal's face turned toward the camera with eyes open?  answers: Yes, facing camera with eyes open; No, turned away, in profile, or eyes closed; No animal visible; most active: Yes, facing camera with eyes open; least active: No, turned away, in profile, or eyes closed
+      T: 79 and 44 photos, d +0.93, percentile 97.1 -> held; peers 434 d +1.01 pct 99.0 rho 0.833 z -0.75, 443 d +0.94 pct 98.0 rho 0.540 z -0.09, 409 d +0.92 pct 96.7 rho 0.364 z +0.04 -> shared (peer 434)
+   P7 (s2). What is the main animal's posture?  answers: Standing, sitting upright, or running; Lying curled up or asleep; Only the head is visible; No animal; most active: Standing, sitting upright, or running; least active: Only the head is visible
+      T: 77 and 29 photos, d +0.79, percentile 97.5 -> held; peers 434 d +0.36 pct 82.4 rho 0.825 z +3.40, 443 d -0.42 pct 24.8 rho 0.541 z +5.81, 409 d -0.86 pct 6.2 rho 0.337 z +6.60 -> own
+   P8 (s2). Is the animal's mouth open with its tongue visible while the whole body is in view?  answers: Yes, mouth open/tongue out and body in view; Mouth closed with body in view; Body not in view (head only) or no animal; most active: Yes, mouth open/tongue out and body in view; least active: Body not in view (head only) or no animal
+      T: 24 and 38 photos, d +1.13, percentile 99.4 -> held; peers 434 d +0.87 pct 94.5 rho 0.834 z +1.73, 443 d +0.22 pct 63.1 rho 0.458 z +3.37, 409 d -0.24 pct 25.8 rho 0.236 z +4.26 -> own
+   P9 (s3). How is the main animal framed in the photo?  answers: Close-up of head/face only; Whole body visible and fairly large in frame; Whole body visible but small/distant; No animal visible; most active: Whole body visible and fairly large in frame; least active: Close-up of head/face only
+      T: 84 and 35 photos, d +0.51, percentile 92.0 -> not held; peers 434 d +0.19 pct 76.0 rho 0.833 z +2.79, 443 d -0.41 pct 25.2 rho 0.529 z +4.73, 409 d -0.88 pct 4.9 rho 0.351 z +6.09 -> differs (peer 409)
+   P10 (s3). Are the animal's legs/paws visible in the photo?  answers: Yes, legs clearly visible; No, only head/upper body visible; No animal visible; most active: Yes, legs clearly visible; least active: No, only head/upper body visible
+      T: 85 and 38 photos, d +0.48, percentile 92.4 -> not held; peers 434 d +0.13 pct 71.1 rho 0.833 z +3.04, 443 d -0.41 pct 23.4 rho 0.540 z +4.73, 409 d -0.84 pct 4.5 rho 0.364 z +5.98 -> differs (peer 409)
+   P11 (s3). Is the animal facing the camera with both eyes open and visible?  answers: Yes, facing camera with eyes open; No (side view, facing away, or eyes closed); No animal visible; most active: Yes, facing camera with eyes open; least active: No (side view, facing away, or eyes closed)
+      T: 78 and 45 photos, d +0.96, percentile 97.5 -> held; peers 434 d +1.06 pct 99.2 rho 0.833 z -0.86, 443 d +0.96 pct 97.3 rho 0.540 z +0.03, 409 d +0.90 pct 96.1 rho 0.364 z +0.31 -> shared (peer 434)
+   P12 (s3). What is the animal's posture?  answers: Standing, running or sitting upright; Lying down with head raised; Curled up or asleep; No animal or posture not visible; most active: Standing, running or sitting upright; least active: Curled up or asleep
+      T: 66 and 6 photos, d +1.35, percentile 97.5 -> held; peers 434 d +1.15 pct 93.9 rho 0.876 z +0.93, 443 d +0.53 pct 71.5 rho 0.769 z +2.81, 409 d +0.51 pct 69.5 rho 0.696 z +2.51 -> own
+trigger F: P4, shared, peer mixed4b:434 (similar unit 1)
+   "Eyes open and alert" (107 photos of T): more [1814, 9373, 2713], less [7226, 2716, 8739]
+   "Eyes closed, curled up or sleeping" (9 photos of T): more [3337, 1688, 1811], less [1817, 9377, 3338]
+   re-check on D, real: 107 and 3 photos -> too few
+   re-check on D, null: 107 and 3 photos -> too few
+trigger R: P8, own
+   "Yes, mouth open/tongue out and body in view" (24 photos of T): most [3478, 1684, 2352], least [3039, 1146, 3333]
+   "Body not in view (head only) or no animal" (38 photos of T): most [2713, 3032, 3470], least [3473, 7172, 1686]
+   re-check on D, real: 20 and 24 photos, d +1.26, percentile 99.8 -> held; peers 434 d +0.72 pct 89.5, 443 d -0.02 pct 53.9, 409 d -0.61 pct 17.4
+   re-check on D, null: 20 and 24 photos, d +0.29, percentile 88.5 -> not held; peers 434 d -0.12 pct 31.2, 443 d +0.13 pct 67.2, 409 d +0.31 pct 91.6
+F_s1 #1. splits "Eyes open and alert": How much of the main animal's body is shown?  answers: Head/face close-up filling most of the frame; Head and most or all of the body visible; No animal visible; most active: Head and most or all of the body visible; least active: Head/face close-up filling most of the frame
+   real: 87 and 20 photos, d +0.95, percentile 97.7 -> held; peers 434 d +0.56 pct 80.7, 443 d -0.49 pct 21.7, 409 d -1.00 pct 5.7; distinctive yes
+   real, all D photos: 94 and 22 photos, d +0.82, percentile 95.9 -> held; peers 434 d +0.54 pct 81.6, 443 d -0.53 pct 18.0, 409 d -0.91 pct 4.3
+   real, D photos not shown in round 27: 67 and 17 photos, d +0.82, percentile 96.1 -> held; peers 434 d +0.53 pct 81.1, 443 d -0.37 pct 28.7, 409 d -0.92 pct 6.2
+   null: 87 and 20 photos, d -0.16, percentile 46.3 -> not held; peers 434 d -0.43 pct 8.8, 443 d -0.06 pct 62.1, 409 d +0.11 pct 85.4; distinctive no
+   null, all D photos: 94 and 22 photos, d -0.09, percentile 54.1 -> not held; peers 434 d -0.32 pct 14.3, 443 d -0.04 pct 63.9, 409 d +0.14 pct 90.2
+   null, D photos not shown in round 27: 67 and 18 photos, d -0.14, percentile 50.4 -> not held; peers 434 d -0.41 pct 9.8, 443 d -0.07 pct 61.3, 409 d +0.04 pct 78.7
+F_s1 #2. splits "Eyes open and alert": How many animals are prominent in the photo?  answers: Exactly one animal; Two or more animals; No animal visible; most active: Exactly one animal; least active: Two or more animals
+   real: 91 and 16 photos, d -0.08, percentile 55.1 -> not held; peers 434 d -0.34 pct 27.7, 443 d +0.13 pct 75.8, 409 d +0.40 pct 94.3; distinctive no
+   real, all D photos: 98 and 18 photos, d +0.01, percentile 58.4 -> not held; peers 434 d -0.17 pct 40.4, 443 d +0.23 pct 81.6, 409 d +0.47 pct 96.1
+   real, D photos not shown in round 27: 71 and 13 photos, d -0.35, percentile 31.6 -> not held; peers 434 d -0.55 pct 11.9, 443 d -0.08 pct 61.1, 409 d +0.16 pct 87.7
+   null: 91 and 16 photos, d +0.28, percentile 86.3 -> not held; peers 434 d +0.21 pct 77.5, 443 d -0.01 pct 45.5, 409 d +0.08 pct 59.4; distinctive no
+   null, all D photos: 98 and 18 photos, d +0.18, percentile 75.4 -> not held; peers 434 d +0.10 pct 62.9, 443 d -0.05 pct 40.4, 409 d +0.06 pct 56.1
+   null, D photos not shown in round 27: 72 and 13 photos, d +0.05, percentile 60.0 -> not held; peers 434 d +0.08 pct 65.8, 443 d +0.04 pct 59.4, 409 d +0.10 pct 69.3
+F_s2 #1. splits "Eyes open and alert": How much of the dog's body is shown?  answers: Whole body or most of body visible at medium size; Only the head or head and shoulders, filling the frame; Animal small or far away; No animal; most active: Whole body or most of body visible at medium size; least active: Only the head or head and shoulders, filling the frame
+   real: 77 and 25 photos, d +0.70, percentile 95.5 -> held; peers 434 d +0.26 pct 73.0, 443 d -0.41 pct 26.8, 409 d -0.96 pct 4.1; distinctive yes
+   real, all D photos: 81 and 27 photos, d +0.62, percentile 94.3 -> not held; peers 434 d +0.30 pct 75.0, 443 d -0.43 pct 23.4, 409 d -0.88 pct 3.7
+   real, D photos not shown in round 27: 58 and 22 photos, d +0.51, percentile 90.6 -> not held; peers 434 d +0.16 pct 69.3, 443 d -0.30 pct 35.5, 409 d -0.92 pct 4.5
+   null: 77 and 25 photos, d +0.01, percentile 71.1 -> not held; peers 434 d -0.16 pct 35.2, 443 d -0.11 pct 43.4, 409 d -0.00 pct 69.9; distinctive no
+   null, all D photos: 81 and 27 photos, d +0.05, percentile 79.5 -> not held; peers 434 d -0.12 pct 43.4, 443 d -0.13 pct 39.8, 409 d +0.00 pct 71.7
+   null, D photos not shown in round 27: 57 and 23 photos, d +0.04, percentile 76.2 -> not held; peers 434 d -0.12 pct 43.0, 443 d -0.12 pct 42.4, 409 d -0.07 pct 54.9
+F_s2 #2. splits "Eyes open and alert": How many animals are prominent in the photo?  answers: Exactly one animal; Two or more animals; No animal; most active: Exactly one animal; least active: Two or more animals
+   real: 91 and 16 photos, d -0.08, percentile 55.1 -> not held; peers 434 d -0.34 pct 27.7, 443 d +0.13 pct 75.8, 409 d +0.40 pct 94.3; distinctive no
+   real, all D photos: 98 and 18 photos, d +0.01, percentile 58.4 -> not held; peers 434 d -0.17 pct 40.4, 443 d +0.23 pct 81.6, 409 d +0.47 pct 96.1
+   real, D photos not shown in round 27: 71 and 13 photos, d -0.35, percentile 31.6 -> not held; peers 434 d -0.55 pct 11.9, 443 d -0.08 pct 61.1, 409 d +0.16 pct 87.7
+   null: 91 and 16 photos, d +0.28, percentile 86.3 -> not held; peers 434 d +0.21 pct 77.5, 443 d -0.01 pct 45.5, 409 d +0.08 pct 59.4; distinctive no
+   null, all D photos: 98 and 18 photos, d +0.18, percentile 75.4 -> not held; peers 434 d +0.10 pct 62.9, 443 d -0.05 pct 40.4, 409 d +0.06 pct 56.1
+   null, D photos not shown in round 27: 72 and 13 photos, d +0.05, percentile 60.0 -> not held; peers 434 d +0.08 pct 65.8, 443 d +0.04 pct 59.4, 409 d +0.10 pct 69.3
+F_s3 #1. splits "Eyes open and alert": How is the alert animal framed in the photo?  answers: Whole or most of a single animal visible at medium size; Close-up of head/face filling most of the frame; Animal small or distant, or no animal; most active: Whole or most of a single animal visible at medium size; least active: Close-up of head/face filling most of the frame
+   real: 79 and 23 photos, d +0.82, percentile 96.1 -> held; peers 434 d +0.38 pct 74.6, 443 d -0.47 pct 22.1, 409 d -1.02 pct 4.3; distinctive yes
+   real, all D photos: 83 and 25 photos, d +0.74, percentile 95.5 -> held; peers 434 d +0.41 pct 77.0, 443 d -0.48 pct 18.9, 409 d -0.92 pct 3.7
+   real, D photos not shown in round 27: 60 and 20 photos, d +0.66, percentile 93.9 -> not held; peers 434 d +0.30 pct 72.5, 443 d -0.37 pct 29.5, 409 d -0.97 pct 4.3
+   null: 79 and 23 photos, d -0.03, percentile 55.3 -> not held; peers 434 d -0.19 pct 23.0, 443 d +0.01 pct 64.1, 409 d +0.07 pct 76.0; distinctive no
+   null, all D photos: 83 and 25 photos, d +0.02, percentile 66.2 -> not held; peers 434 d -0.14 pct 29.5, 443 d -0.01 pct 58.8, 409 d +0.08 pct 79.1
+   null, D photos not shown in round 27: 59 and 21 photos, d -0.00, percentile 61.1 -> not held; peers 434 d -0.15 pct 31.2, 443 d +0.02 pct 66.8, 409 d +0.01 pct 63.5
+F_s3 #2. splits "Eyes open and alert": How many animals are prominent in the photo?  answers: Exactly one main animal; Two or more animals together; No animal clearly visible; most active: Exactly one main animal; least active: Two or more animals together
+   real: 91 and 16 photos, d -0.08, percentile 55.1 -> not held; peers 434 d -0.34 pct 27.7, 443 d +0.13 pct 75.8, 409 d +0.40 pct 94.3; distinctive no
+   real, all D photos: 98 and 18 photos, d +0.01, percentile 58.4 -> not held; peers 434 d -0.17 pct 40.4, 443 d +0.23 pct 81.6, 409 d +0.47 pct 96.1
+   real, D photos not shown in round 27: 71 and 13 photos, d -0.35, percentile 31.6 -> not held; peers 434 d -0.55 pct 11.9, 443 d -0.08 pct 61.1, 409 d +0.16 pct 87.7
+   null: 91 and 16 photos, d +0.28, percentile 86.3 -> not held; peers 434 d +0.21 pct 77.5, 443 d -0.01 pct 45.5, 409 d +0.08 pct 59.4; distinctive no
+   null, all D photos: 98 and 18 photos, d +0.18, percentile 75.4 -> not held; peers 434 d +0.10 pct 62.9, 443 d -0.05 pct 40.4, 409 d +0.06 pct 56.1
+   null, D photos not shown in round 27: 72 and 13 photos, d +0.05, percentile 60.0 -> not held; peers 434 d +0.08 pct 65.8, 443 d +0.04 pct 59.4, 409 d +0.10 pct 69.3
+R_s1 #1. splits "Yes, mouth open/tongue out and body in view": Is the animal standing or sitting upright and facing the camera with eyes open?  answers: Yes, upright and facing the camera with eyes open; No, lying down, fighting, running, or eyes closed; No animal visible; most active: Yes, upright and facing the camera with eyes open; least active: No, lying down, fighting, running, or eyes closed
+   real: 10 and 10 photos, d +1.19, percentile 94.9 -> not held; peers 434 d +0.80 pct 73.2, 443 d +1.36 pct 98.4, 409 d +1.21 pct 95.7; distinctive no
+   real, all D photos: 63 and 53 photos, d +0.40, percentile 81.2 -> not held; peers 434 d +0.60 pct 94.3, 443 d +0.55 pct 91.6, 409 d +0.56 pct 92.0
+   real, D photos not shown in round 27: 6 and 8 photos, d +1.44, percentile 97.7 -> held; peers 434 d +0.96 pct 78.1, 443 d +1.38 pct 95.5, 409 d +1.27 pct 92.6
+   null: 10 and 10 photos, d +0.40, percentile 64.6 -> not held; peers 434 d +0.75 pct 88.3, 443 d +0.65 pct 83.0, 409 d +0.58 pct 78.1; distinctive no
+   null, all D photos: 63 and 53 photos, d +0.31, percentile 96.9 -> held; peers 434 d +0.32 pct 97.3, 443 d +0.09 pct 61.5, 409 d +0.12 pct 68.4
+   null, D photos not shown in round 27: 7 and 8 photos, d +0.76, percentile 74.0 -> not held; peers 434 d +1.16 pct 96.5, 443 d +0.73 pct 71.3, 409 d +0.79 pct 76.2
+R_s1 #2. splits "Body not in view (head only) or no animal": How is the animal's head shown?  answers: Head held upright with neck/chest or shoulders also visible; Tight close-up of the face filling the frame, or head resting/lowered; No animal visible; most active: Head held upright with neck/chest or shoulders also visible; least active: Tight close-up of the face filling the frame, or head resting/lowered
+   real: 7 and 17 photos, d +1.53, percentile 99.2 -> held; peers 434 d +1.09 pct 90.4, 443 d +0.10 pct 38.7, 409 d +0.07 pct 35.9; distinctive yes
+   real, all D photos: 87 and 29 photos, d +1.04, percentile 99.0 -> held; peers 434 d +0.91 pct 96.7, 443 d +0.25 pct 63.9, 409 d -0.10 pct 29.5
+   real, D photos not shown in round 27: 7 and 14 photos, d +1.43, percentile 98.6 -> held; peers 434 d +1.10 pct 91.8, 443 d +0.31 pct 50.2, 409 d +0.29 pct 48.8
+   null: 7 and 17 photos, d +0.55, percentile 83.0 -> not held; peers 434 d +0.57 pct 84.2, 443 d +0.52 pct 80.1, 409 d +0.38 pct 70.1; distinctive no
+   null, all D photos: 87 and 29 photos, d -0.01, percentile 55.5 -> not held; peers 434 d +0.07 pct 70.9, 443 d -0.01 pct 53.7, 409 d +0.08 pct 73.0
+   null, D photos not shown in round 27: 7 and 16 photos, d +0.57, percentile 83.6 -> not held; peers 434 d +0.59 pct 85.0, 443 d +0.52 pct 80.3, 409 d +0.35 pct 67.0
+R_s2 #1. splits "Yes, mouth open/tongue out and body in view": Is the animal looking at the camera with its eyes open?  answers: Yes, looking at the camera with eyes open; Eyes open but looking elsewhere or face hard to see; Eyes closed or squinting (yawning, fighting, sleeping); No animal visible; most active: Yes, looking at the camera with eyes open; least active: Eyes closed or squinting (yawning, fighting, sleeping)
+   real: 15 and 2 photos -> too few; distinctive no
+   real, all D photos: 72 and 6 photos, d +1.17, percentile 92.2 -> not held; peers 434 d +1.42 pct 98.4, 443 d +1.34 pct 96.7, 409 d +1.07 pct 89.8
+   real, D photos not shown in round 27: 9 and 2 photos -> too few
+   null: 15 and 2 photos -> too few; distinctive no
+   null, all D photos: 72 and 6 photos, d +0.13, percentile 60.2 -> not held; peers 434 d +0.19 pct 66.0, 443 d -0.39 pct 13.5, 409 d -0.13 pct 32.4
+   null, D photos not shown in round 27: 10 and 2 photos -> too few
+R_s2 #2. splits "Body not in view (head only) or no animal": How is the animal's head shown?  answers: Head held upright, facing the camera, with neck/chest also visible; Tight close-up where the face fills the frame; Head resting on the ground or shown in profile; No animal visible; most active: Head held upright, facing the camera, with neck/chest also visible; least active: Tight close-up where the face fills the frame
+   real: 6 and 14 photos, d +1.63, percentile 99.6 -> held; peers 434 d +1.20 pct 92.6, 443 d +0.33 pct 55.5, 409 d +0.05 pct 38.3; distinctive yes
+   real, all D photos: 67 and 15 photos, d +1.43, percentile 99.6 -> held; peers 434 d +1.11 pct 96.1, 443 d +0.10 pct 49.2, 409 d -0.53 pct 13.3
+   real, D photos not shown in round 27: 6 and 11 photos, d +1.51, percentile 99.2 -> held; peers 434 d +1.20 pct 93.8, 443 d +0.63 pct 70.7, 409 d +0.32 pct 51.4
+   null: 6 and 14 photos, d +0.85, percentile 97.3 -> held; peers 434 d +0.73 pct 93.6, 443 d +0.41 pct 72.3, 409 d +0.37 pct 71.1; distinctive no
+   null, all D photos: 67 and 15 photos, d +0.42, percentile 97.3 -> held; peers 434 d +0.29 pct 88.9, 443 d +0.18 pct 78.1, 409 d +0.22 pct 82.2
+   null, D photos not shown in round 27: 6 and 13 photos, d +0.87, percentile 98.0 -> held; peers 434 d +0.75 pct 94.3, 443 d +0.41 pct 72.7, 409 d +0.34 pct 65.6
+R_s3 #1. splits "Yes, mouth open/tongue out and body in view": Is the animal looking toward the camera with both eyes open?  answers: Yes, looking toward the camera with eyes open; No, eyes closed, face turned away or hidden; No animal visible; most active: Yes, looking toward the camera with eyes open; least active: No, eyes closed, face turned away or hidden
+   real: 15 and 5 photos, d +1.72, percentile 98.8 -> held; peers 434 d +1.37 pct 95.7, 443 d +1.25 pct 91.6, 409 d +1.03 pct 84.4; distinctive no
+   real, all D photos: 73 and 43 photos, d +0.84, percentile 95.9 -> held; peers 434 d +0.84 pct 95.5, 443 d +0.87 pct 97.3, 409 d +0.74 pct 93.2
+   real, D photos not shown in round 27: 9 and 5 photos, d +1.68, percentile 99.0 -> held; peers 434 d +1.46 pct 95.9, 443 d +1.29 pct 89.8, 409 d +1.13 pct 86.5
+   null: 15 and 5 photos, d +0.45, percentile 57.2 -> not held; peers 434 d +0.64 pct 75.4, 443 d +0.38 pct 52.3, 409 d +0.70 pct 77.5; distinctive no
+   null, all D photos: 73 and 43 photos, d +0.34, percentile 94.1 -> not held; peers 434 d +0.40 pct 97.7, 443 d +0.07 pct 51.6, 409 d +0.13 pct 64.1
+   null, D photos not shown in round 27: 10 and 5 photos, d +0.48, percentile 59.4 -> not held; peers 434 d +0.67 pct 74.6, 443 d +0.22 pct 38.3, 409 d +0.53 pct 63.5
+R_s3 #2. splits "Body not in view (head only) or no animal": How much of the frame does the animal's head take up?  answers: Tight close-up, head fills most of the frame; Head plus chest or upper body visible, animal at moderate size; No animal visible; most active: Head plus chest or upper body visible, animal at moderate size; least active: Tight close-up, head fills most of the frame
+   real: 8 and 16 photos, d +1.15, percentile 98.4 -> held; peers 434 d +0.52 pct 71.7, 443 d -0.08 pct 30.9, 409 d -0.54 pct 11.3; distinctive yes
+   real, all D photos: 99 and 17 photos, d +1.04, percentile 98.2 -> held; peers 434 d +0.63 pct 84.4, 443 d -0.24 pct 30.9, 409 d -0.84 pct 6.8
+   real, D photos not shown in round 27: 8 and 13 photos, d +1.02, percentile 96.3 -> held; peers 434 d +0.52 pct 71.5, 443 d +0.12 pct 42.8, 409 d -0.37 pct 14.6
+   null: 8 and 16 photos, d +0.10, percentile 70.5 -> not held; peers 434 d +0.06 pct 65.8, 443 d +0.33 pct 86.7, 409 d +0.25 pct 80.5; distinctive no
+   null, all D photos: 99 and 17 photos, d +0.13, percentile 83.4 -> not held; peers 434 d -0.01 pct 60.0, 443 d +0.14 pct 85.2, 409 d +0.21 pct 90.4
+   null, D photos not shown in round 27: 8 and 15 photos, d +0.13, percentile 71.9 -> not held; peers 434 d +0.09 pct 68.4, 443 d +0.33 pct 87.1, 409 d +0.22 pct 78.7
+tally F: real held 3, not held 3, too few 0; null held 0, not held 6, too few 0 (of 6 new predictions)
+tally R: real held 4, not held 1, too few 1; null held 1, not held 4, too few 1 (of 6 new predictions)

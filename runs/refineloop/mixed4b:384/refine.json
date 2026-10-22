@@ -1,0 +1,304 @@
+{
+ "F_s2": {
+  "key": "F_s2",
+  "notes": [
+   "1.1: Norfolk terrier close-up, tongue out, sitting by potted plants, no person",
+   "1.2: corgi puppy head resting on floor, large ears, close-up, no person",
+   "1.3: close-up of a Brittany spaniel's head in profile, short coat, no person",
+   "1.4: papillon puppy held against a person's magenta sweater, hand visible",
+   "1.5: Yorkshire terrier lying against a person, dark, long silky hair",
+   "1.6: Afghan hound with long silky hair, person's hand and leash visible",
+   "2.1: dingo walking on red dirt, whole body small, no person",
+   "2.2: Appenzeller lying on a blue studio backdrop, no person",
+   "2.3: Rottweiler lying on grass with a toy, no person",
+   "2.4: Appenzeller trotting on a forest path, mouth open",
+   "2.5: black-and-white photo of papillon lying between a person's legs",
+   "2.6: white kuvasz lying in deep snow on a mountain slope"
+  ],
+  "predictions": [
+   {
+    "question": "Is any part of a person (hand, arm, body, leash holder) visible in the photo?",
+    "answers": [
+     "No person visible",
+     "Only a small part such as a hand or leash",
+     "A person's body or clothing clearly visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "What is the dog's coat like around its head?",
+    "answers": [
+     "Short or smooth coat",
+     "Medium or wiry coat",
+     "Long, silky or flowing hair",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8935abe633f483db613dbe72b698cdfee6ed245587277ba394e5f7ae1959d707",
+  "texts": [
+   "{\"notes\": [\"1.1: Norfolk terrier close-up, tongue out, sitting by potted plants, no person\", \"1.2: corgi puppy head resting on floor, large ears, close-up, no person\", \"1.3: close-up of a Brittany spaniel's head in profile, short coat, no person\", \"1.4: papillon puppy held against a person's magenta sweater, hand visible\", \"1.5: Yorkshire terrier lying against a person, dark, long silky hair\", \"1.6: Afghan hound with long silky hair, person's hand and leash visible\", \"2.1: dingo walking on red dirt, whole body small, no person\", \"2.2: Appenzeller lying on a blue studio backdrop, no person\", \"2.3: Rottweiler lying on grass with a toy, no person\", \"2.4: Appenzeller trotting on a forest path, mouth open\", \"2.5: black-and-white photo of papillon lying between a person's legs\", \"2.6: white kuvasz lying in deep snow on a mountain slope\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"Is any part of a person (hand, arm, body, leash holder) visible in the photo?\", \"answers\": [\"No person visible\", \"Only a small part such as a hand or leash\", \"A person's body or clothing clearly visible\", \"No dog visible\"], \"most_active\": \"No person visible\", \"least_active\": \"A person's body or clothing clearly visible\"}, {\"splits\": \"More than about a quarter of the photo\", \"question\": \"What is the dog's coat like around its head?\", \"answers\": [\"Short or smooth coat\", \"Medium or wiry coat\", \"Long, silky or flowing hair\", \"No dog visible\"], \"most_active\": \"Short or smooth coat\", \"least_active\": \"Long, silky or flowing hair\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Norfolk terrier close-up, tongue out, sitting by potted plants, no person\", \"1.2: corgi puppy head resting on floor, large ears, close-up, no person\", \"1.3: close-up of a Brittany spaniel's head in profile, short coat, no person\", \"1.4: papillon puppy held against a person's magenta sweater, hand visible\", \"1.5: Yorkshire terrier lying against a person, dark, long silky hair\", \"1.6: Afghan hound with long silky hair, person's hand and leash visible\", \"2.1: dingo walking on red dirt, whole body small, no person\", \"2.2: Appenzeller lying on a blue studio backdrop, no person\", \"2.3: Rottweiler lying on grass with a toy, no person\", \"2.4: Appenzeller trotting on a forest path, mouth open\", \"2.5: black-and-white photo of papillon lying between a person's legs\", \"2.6: white kuvasz lying in deep snow on a mountain slope\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"Is any part of a person (hand, arm, body, leash holder) visible in the photo?\", \"answers\": [\"No person visible\", \"Only a small part such as a hand or leash\", \"A person's body or clothing clearly visible\", \"No dog visible\"], \"most_active\": \"No person visible\", \"least_active\": \"A person's body or clothing clearly visible\"}, {\"splits\": \"More than about a quarter of the photo\", \"question\": \"What is the dog's coat like around its head?\", \"answers\": [\"Short or smooth coat\", \"Medium or wiry coat\", \"Long, silky or flowing hair\", \"No dog visible\"], \"most_active\": \"Short or smooth coat\", \"least_active\": \"Long, silky or flowing hair\"}]}",
+  "valid": true
+ },
+ "F_s3": {
+  "key": "F_s3",
+  "notes": [
+   "1.1 Norfolk terrier, close-up, wiry tan coat, tongue out, garden pots behind",
+   "1.2 Corgi puppy head resting on floor, short smooth coat, big ears",
+   "1.3 Brittany spaniel head close-up, short white and brown coat, looking down",
+   "1.4 Papillon puppy held by a person, long fluffy black and white fur",
+   "1.5 Yorkshire terrier lying down, long silky dark hair, dim photo",
+   "1.6 Afghan hound head, very long flowing blond hair",
+   "2.1 Dingo walking in dry scrub, short tan coat",
+   "2.2 Appenzeller lying on a blue backdrop, short smooth tricolor coat",
+   "2.3 Rottweiler lying on grass with a toy, short smooth black coat",
+   "2.4 Appenzeller trotting on a forest path, short coat, in motion",
+   "2.5 Papillon lying between a person's feet, fluffy fur, black and white photo, small in frame",
+   "2.6 Kuvasz lying in deep snow, fluffy white coat, mountains behind"
+  ],
+  "predictions": [
+   {
+    "question": "How long and fluffy is the dog's fur on its head and ears?",
+    "answers": [
+     "short and smooth or short wiry",
+     "medium length",
+     "long, silky or fluffy hair",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "What is the dog's coat like?",
+    "answers": [
+     "short, smooth, close-lying coat",
+     "long, fluffy or shaggy coat",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8935abe633f483db613dbe72b698cdfee6ed245587277ba394e5f7ae1959d707",
+  "texts": [
+   "{\"notes\": [\"1.1 Norfolk terrier, close-up, wiry tan coat, tongue out, garden pots behind\", \"1.2 Corgi puppy head resting on floor, short smooth coat, big ears\", \"1.3 Brittany spaniel head close-up, short white and brown coat, looking down\", \"1.4 Papillon puppy held by a person, long fluffy black and white fur\", \"1.5 Yorkshire terrier lying down, long silky dark hair, dim photo\", \"1.6 Afghan hound head, very long flowing blond hair\", \"2.1 Dingo walking in dry scrub, short tan coat\", \"2.2 Appenzeller lying on a blue backdrop, short smooth tricolor coat\", \"2.3 Rottweiler lying on grass with a toy, short smooth black coat\", \"2.4 Appenzeller trotting on a forest path, short coat, in motion\", \"2.5 Papillon lying between a person's feet, fluffy fur, black and white photo, small in frame\", \"2.6 Kuvasz lying in deep snow, fluffy white coat, mountains behind\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"How long and fluffy is the dog's fur on its head and ears?\", \"answers\": [\"short and smooth or short wiry\", \"medium length\", \"long, silky or fluffy hair\", \"no dog visible\"], \"most_active\": \"short and smooth or short wiry\", \"least_active\": \"long, silky or fluffy hair\"}, {\"splits\": \"Less than a tenth\", \"question\": \"What is the dog's coat like?\", \"answers\": [\"short, smooth, close-lying coat\", \"long, fluffy or shaggy coat\", \"no dog visible\"], \"most_active\": \"short, smooth, close-lying coat\", \"least_active\": \"long, fluffy or shaggy coat\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1 Norfolk terrier, close-up, wiry tan coat, tongue out, garden pots behind\", \"1.2 Corgi puppy head resting on floor, short smooth coat, big ears\", \"1.3 Brittany spaniel head close-up, short white and brown coat, looking down\", \"1.4 Papillon puppy held by a person, long fluffy black and white fur\", \"1.5 Yorkshire terrier lying down, long silky dark hair, dim photo\", \"1.6 Afghan hound head, very long flowing blond hair\", \"2.1 Dingo walking in dry scrub, short tan coat\", \"2.2 Appenzeller lying on a blue backdrop, short smooth tricolor coat\", \"2.3 Rottweiler lying on grass with a toy, short smooth black coat\", \"2.4 Appenzeller trotting on a forest path, short coat, in motion\", \"2.5 Papillon lying between a person's feet, fluffy fur, black and white photo, small in frame\", \"2.6 Kuvasz lying in deep snow, fluffy white coat, mountains behind\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"How long and fluffy is the dog's fur on its head and ears?\", \"answers\": [\"short and smooth or short wiry\", \"medium length\", \"long, silky or fluffy hair\", \"no dog visible\"], \"most_active\": \"short and smooth or short wiry\", \"least_active\": \"long, silky or fluffy hair\"}, {\"splits\": \"Less than a tenth\", \"question\": \"What is the dog's coat like?\", \"answers\": [\"short, smooth, close-lying coat\", \"long, fluffy or shaggy coat\", \"no dog visible\"], \"most_active\": \"short, smooth, close-lying coat\", \"least_active\": \"long, fluffy or shaggy coat\"}]}",
+  "valid": true
+ },
+ "F_s1": {
+  "key": "F_s1",
+  "notes": [
+   "1.1: shaggy tan Norfolk terrier, panting, sitting in a garden near flower pots, no person",
+   "1.2: corgi puppy lying with its chin on the floor, big ears, smooth short coat, no person",
+   "1.3: close crop of a short-coated brown and white Brittany head looking down, no person",
+   "1.4: fluffy long-haired papillon held by a person in a magenta top, with a hand visible",
+   "1.5: long silky-haired Yorkie lying against a person, dark image",
+   "1.6: Afghan hound with long flowing silky hair, a person's hand and leash visible",
+   "2.1: short-coated dingo walking on dry ground, side view",
+   "2.2: short-coated Appenzeller lying on a blue backdrop",
+   "2.3: short-coated Rottweiler lying on grass holding a toy",
+   "2.4: Appenzeller trotting in a forest with its tongue out",
+   "2.5: small fluffy papillon lying between a person's legs, black and white photo",
+   "2.6: fluffy white kuvasz lying in deep snow, small in a mountain scene"
+  ],
+  "predictions": [
+   {
+    "question": "How long and silky or fluffy is the dog's coat?",
+    "answers": [
+     "short or smooth coat",
+     "medium or wiry coat",
+     "long, silky or fluffy flowing hair",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   },
+   {
+    "question": "Is a person or part of a person (hand, arm, body, clothing) visible with the dog?",
+    "answers": [
+     "no person visible",
+     "yes, a person or part of one is visible",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8935abe633f483db613dbe72b698cdfee6ed245587277ba394e5f7ae1959d707",
+  "texts": [
+   "{\"notes\": [\"1.1: shaggy tan Norfolk terrier, panting, sitting in a garden near flower pots, no person\", \"1.2: corgi puppy lying with its chin on the floor, big ears, smooth short coat, no person\", \"1.3: close crop of a short-coated brown and white Brittany head looking down, no person\", \"1.4: fluffy long-haired papillon held by a person in a magenta top, with a hand visible\", \"1.5: long silky-haired Yorkie lying against a person, dark image\", \"1.6: Afghan hound with long flowing silky hair, a person's hand and leash visible\", \"2.1: short-coated dingo walking on dry ground, side view\", \"2.2: short-coated Appenzeller lying on a blue backdrop\", \"2.3: short-coated Rottweiler lying on grass holding a toy\", \"2.4: Appenzeller trotting in a forest with its tongue out\", \"2.5: small fluffy papillon lying between a person's legs, black and white photo\", \"2.6: fluffy white kuvasz lying in deep snow, small in a mountain scene\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"How long and silky or fluffy is the dog's coat?\", \"answers\": [\"short or smooth coat\", \"medium or wiry coat\", \"long, silky or fluffy flowing hair\", \"no dog visible\"], \"most_active\": \"short or smooth coat\", \"least_active\": \"long, silky or fluffy flowing hair\"}, {\"splits\": \"More than about a quarter of the photo\", \"question\": \"Is a person or part of a person (hand, arm, body, clothing) visible with the dog?\", \"answers\": [\"no person visible\", \"yes, a person or part of one is visible\", \"no dog visible\"], \"most_active\": \"no person visible\", \"least_active\": \"yes, a person or part of one is visible\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: shaggy tan Norfolk terrier, panting, sitting in a garden near flower pots, no person\", \"1.2: corgi puppy lying with its chin on the floor, big ears, smooth short coat, no person\", \"1.3: close crop of a short-coated brown and white Brittany head looking down, no person\", \"1.4: fluffy long-haired papillon held by a person in a magenta top, with a hand visible\", \"1.5: long silky-haired Yorkie lying against a person, dark image\", \"1.6: Afghan hound with long flowing silky hair, a person's hand and leash visible\", \"2.1: short-coated dingo walking on dry ground, side view\", \"2.2: short-coated Appenzeller lying on a blue backdrop\", \"2.3: short-coated Rottweiler lying on grass holding a toy\", \"2.4: Appenzeller trotting in a forest with its tongue out\", \"2.5: small fluffy papillon lying between a person's legs, black and white photo\", \"2.6: fluffy white kuvasz lying in deep snow, small in a mountain scene\"], \"predictions\": [{\"splits\": \"More than about a quarter of the photo\", \"question\": \"How long and silky or fluffy is the dog's coat?\", \"answers\": [\"short or smooth coat\", \"medium or wiry coat\", \"long, silky or fluffy flowing hair\", \"no dog visible\"], \"most_active\": \"short or smooth coat\", \"least_active\": \"long, silky or fluffy flowing hair\"}, {\"splits\": \"More than about a quarter of the photo\", \"question\": \"Is a person or part of a person (hand, arm, body, clothing) visible with the dog?\", \"answers\": [\"no person visible\", \"yes, a person or part of one is visible\", \"no dog visible\"], \"most_active\": \"no person visible\", \"least_active\": \"yes, a person or part of one is visible\"}]}",
+  "valid": true
+ },
+ "R_s2": {
+  "key": "R_s2",
+  "notes": [
+   "1.1: Corgi lying on grass, close frontal face looking at the camera, both eyes open, mouth open. Highest activity.",
+   "1.2: Kuvasz head close-up, frontal, both eyes looking at the camera, tongue out.",
+   "1.3: Yorkie lying on turf in black and white, face toward the camera, mouth open.",
+   "1.4: Husky lying down chewing a bone, head bowed, eyes looking down and not at the camera.",
+   "1.5: Black Tibetan mastiff puppy asleep on grass, face buried, eyes not visible.",
+   "1.6: Dark Lhasa held behind a fence, face dark and hair-covered, eyes hard to see.",
+   "2.1: Eskimo dog standing, frontal face looking straight at the camera, mouth open, face fairly large.",
+   "2.2: Appenzeller standing, frontal face looking at the camera, both eyes visible.",
+   "2.3: Silky terrier seen from above, face looking up at the camera, eyes visible.",
+   "2.4: Yorkie standing in profile, looking sideways and away from the camera.",
+   "2.5: Small terrier far away in snow, face tiny.",
+   "2.6: Appenzeller running toward the camera, small in a wide shot, face tiny."
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog's face looking straight at the camera, with both eyes clearly visible and large enough to see easily?",
+    "answers": [
+     "Yes, a clear frontal face looking at the camera",
+     "Face turned sideways or away, or too small or distant to see the eyes",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 1
+   },
+   {
+    "question": "Are the dog's eyes open and looking toward the camera?",
+    "answers": [
+     "Eyes open, looking at the camera",
+     "Eyes closed, looking down or away, or hidden",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 1,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6814f4a35b8f76d7883352715fd9623ef30feb40926318a9e43dd5e333baf40e",
+  "texts": [
+   "{\"notes\": [\"1.1: Corgi lying on grass, close frontal face looking at the camera, both eyes open, mouth open. Highest activity.\", \"1.2: Kuvasz head close-up, frontal, both eyes looking at the camera, tongue out.\", \"1.3: Yorkie lying on turf in black and white, face toward the camera, mouth open.\", \"1.4: Husky lying down chewing a bone, head bowed, eyes looking down and not at the camera.\", \"1.5: Black Tibetan mastiff puppy asleep on grass, face buried, eyes not visible.\", \"1.6: Dark Lhasa held behind a fence, face dark and hair-covered, eyes hard to see.\", \"2.1: Eskimo dog standing, frontal face looking straight at the camera, mouth open, face fairly large.\", \"2.2: Appenzeller standing, frontal face looking at the camera, both eyes visible.\", \"2.3: Silky terrier seen from above, face looking up at the camera, eyes visible.\", \"2.4: Yorkie standing in profile, looking sideways and away from the camera.\", \"2.5: Small terrier far away in snow, face tiny.\", \"2.6: Appenzeller running toward the camera, small in a wide shot, face tiny.\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog's face looking straight at the camera, with both eyes clearly visible and large enough to see easily?\", \"answers\": [\"Yes, a clear frontal face looking at the camera\", \"Face turned sideways or away, or too small or distant to see the eyes\", \"No dog visible\"], \"most_active\": \"Yes, a clear frontal face looking at the camera\", \"least_active\": \"Face turned sideways or away, or too small or distant to see the eyes\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"Eyes open, looking at the camera\", \"Eyes closed, looking down or away, or hidden\", \"No dog visible\"], \"most_active\": \"Eyes open, looking at the camera\", \"least_active\": \"Eyes closed, looking down or away, or hidden\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Corgi lying on grass, close frontal face looking at the camera, both eyes open, mouth open. Highest activity.\", \"1.2: Kuvasz head close-up, frontal, both eyes looking at the camera, tongue out.\", \"1.3: Yorkie lying on turf in black and white, face toward the camera, mouth open.\", \"1.4: Husky lying down chewing a bone, head bowed, eyes looking down and not at the camera.\", \"1.5: Black Tibetan mastiff puppy asleep on grass, face buried, eyes not visible.\", \"1.6: Dark Lhasa held behind a fence, face dark and hair-covered, eyes hard to see.\", \"2.1: Eskimo dog standing, frontal face looking straight at the camera, mouth open, face fairly large.\", \"2.2: Appenzeller standing, frontal face looking at the camera, both eyes visible.\", \"2.3: Silky terrier seen from above, face looking up at the camera, eyes visible.\", \"2.4: Yorkie standing in profile, looking sideways and away from the camera.\", \"2.5: Small terrier far away in snow, face tiny.\", \"2.6: Appenzeller running toward the camera, small in a wide shot, face tiny.\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog's face looking straight at the camera, with both eyes clearly visible and large enough to see easily?\", \"answers\": [\"Yes, a clear frontal face looking at the camera\", \"Face turned sideways or away, or too small or distant to see the eyes\", \"No dog visible\"], \"most_active\": \"Yes, a clear frontal face looking at the camera\", \"least_active\": \"Face turned sideways or away, or too small or distant to see the eyes\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"Eyes open, looking at the camera\", \"Eyes closed, looking down or away, or hidden\", \"No dog visible\"], \"most_active\": \"Eyes open, looking at the camera\", \"least_active\": \"Eyes closed, looking down or away, or hidden\"}]}",
+  "valid": true
+ },
+ "R_s1": {
+  "key": "R_s1",
+  "notes": [
+   "1.1: Pembroke corgi lying on grass, close-up face looking straight at the camera, both eyes clearly visible, mouth open (100%).",
+   "1.2: White kuvasz head-on close-up portrait, eyes looking at the camera, tongue out (82%).",
+   "1.3: Black-and-white photo of a Yorkshire terrier lying on artificial grass, facing the camera, eyes visible (74%).",
+   "1.4: Husky lying down chewing a bone, head lowered, eyes downcast and not looking at the camera (16%).",
+   "1.5: Black Tibetan mastiff puppy curled up asleep on grass, face buried, eyes not visible (4%).",
+   "1.6: Shaggy dark Lhasa held by a hand inside a pen, eyes hidden by fur, low-contrast face (14%).",
+   "2.1: Eskimo dog standing on a path, facing the camera with both eyes looking at the lens, mouth open (88%).",
+   "2.2: Appenzeller standing on gravel, head-on face looking at the camera, eyes visible (70%).",
+   "2.3: Silky terrier seen from above, looking up into the camera with eyes visible (59%).",
+   "2.4: Yorkshire terrier in a harness standing on a rock in profile, looking sideways away from the camera (1%).",
+   "2.5: Small terrier walking through snow, tiny in the frame, face small (2%).",
+   "2.6: Appenzeller running toward the camera on a path, small in the frame, eyes barely resolvable (5%)."
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog looking straight into the camera with both eyes clearly visible and large enough to make out?",
+    "answers": [
+     "Yes, clear eye contact with the camera, both eyes visible",
+     "Face toward camera but eyes small or hard to make out",
+     "Profile, looking away or eyes not visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   },
+   {
+    "question": "Are the dog's eyes open and looking toward the camera?",
+    "answers": [
+     "Eyes open and looking at the camera",
+     "Eyes open but looking elsewhere or down",
+     "Eyes closed, hidden by fur, or face not visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6814f4a35b8f76d7883352715fd9623ef30feb40926318a9e43dd5e333baf40e",
+  "texts": [
+   "{\"notes\": [\"1.1: Pembroke corgi lying on grass, close-up face looking straight at the camera, both eyes clearly visible, mouth open (100%).\", \"1.2: White kuvasz head-on close-up portrait, eyes looking at the camera, tongue out (82%).\", \"1.3: Black-and-white photo of a Yorkshire terrier lying on artificial grass, facing the camera, eyes visible (74%).\", \"1.4: Husky lying down chewing a bone, head lowered, eyes downcast and not looking at the camera (16%).\", \"1.5: Black Tibetan mastiff puppy curled up asleep on grass, face buried, eyes not visible (4%).\", \"1.6: Shaggy dark Lhasa held by a hand inside a pen, eyes hidden by fur, low-contrast face (14%).\", \"2.1: Eskimo dog standing on a path, facing the camera with both eyes looking at the lens, mouth open (88%).\", \"2.2: Appenzeller standing on gravel, head-on face looking at the camera, eyes visible (70%).\", \"2.3: Silky terrier seen from above, looking up into the camera with eyes visible (59%).\", \"2.4: Yorkshire terrier in a harness standing on a rock in profile, looking sideways away from the camera (1%).\", \"2.5: Small terrier walking through snow, tiny in the frame, face small (2%).\", \"2.6: Appenzeller running toward the camera on a path, small in the frame, eyes barely resolvable (5%).\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog looking straight into the camera with both eyes clearly visible and large enough to make out?\", \"answers\": [\"Yes, clear eye contact with the camera, both eyes visible\", \"Face toward camera but eyes small or hard to make out\", \"Profile, looking away or eyes not visible\", \"No dog visible\"], \"most_active\": \"Yes, clear eye contact with the camera, both eyes visible\", \"least_active\": \"Profile, looking away or eyes not visible\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"Eyes open and looking at the camera\", \"Eyes open but looking elsewhere or down\", \"Eyes closed, hidden by fur, or face not visible\", \"No dog visible\"], \"most_active\": \"Eyes open and looking at the camera\", \"least_active\": \"Eyes closed, hidden by fur, or face not visible\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Pembroke corgi lying on grass, close-up face looking straight at the camera, both eyes clearly visible, mouth open (100%).\", \"1.2: White kuvasz head-on close-up portrait, eyes looking at the camera, tongue out (82%).\", \"1.3: Black-and-white photo of a Yorkshire terrier lying on artificial grass, facing the camera, eyes visible (74%).\", \"1.4: Husky lying down chewing a bone, head lowered, eyes downcast and not looking at the camera (16%).\", \"1.5: Black Tibetan mastiff puppy curled up asleep on grass, face buried, eyes not visible (4%).\", \"1.6: Shaggy dark Lhasa held by a hand inside a pen, eyes hidden by fur, low-contrast face (14%).\", \"2.1: Eskimo dog standing on a path, facing the camera with both eyes looking at the lens, mouth open (88%).\", \"2.2: Appenzeller standing on gravel, head-on face looking at the camera, eyes visible (70%).\", \"2.3: Silky terrier seen from above, looking up into the camera with eyes visible (59%).\", \"2.4: Yorkshire terrier in a harness standing on a rock in profile, looking sideways away from the camera (1%).\", \"2.5: Small terrier walking through snow, tiny in the frame, face small (2%).\", \"2.6: Appenzeller running toward the camera on a path, small in the frame, eyes barely resolvable (5%).\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog looking straight into the camera with both eyes clearly visible and large enough to make out?\", \"answers\": [\"Yes, clear eye contact with the camera, both eyes visible\", \"Face toward camera but eyes small or hard to make out\", \"Profile, looking away or eyes not visible\", \"No dog visible\"], \"most_active\": \"Yes, clear eye contact with the camera, both eyes visible\", \"least_active\": \"Profile, looking away or eyes not visible\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking toward the camera?\", \"answers\": [\"Eyes open and looking at the camera\", \"Eyes open but looking elsewhere or down\", \"Eyes closed, hidden by fur, or face not visible\", \"No dog visible\"], \"most_active\": \"Eyes open and looking at the camera\", \"least_active\": \"Eyes closed, hidden by fur, or face not visible\"}]}",
+  "valid": true
+ },
+ "R_s3": {
+  "key": "R_s3",
+  "notes": [
+   "1.1: Pembroke corgi lying on grass, face close and frontal, both eyes looking at camera, mouth open",
+   "1.2: white kuvasz close-up head portrait, frontal, eyes on camera, tongue out",
+   "1.3: Yorkshire terrier lying on artificial grass, black-and-white photo, face frontal toward camera",
+   "1.4: husky lying down chewing a bone, head lowered, eyes on the bone not the camera",
+   "1.5: black Tibetan mastiff puppy asleep on grass, face buried and eyes closed",
+   "1.6: shaggy Lhasa held up by a hand inside a pen, face dark and obscured by hair",
+   "2.1: Eskimo dog standing on a path, face frontal looking at camera, mouth open",
+   "2.2: Appenzeller standing on gravel, head and chest close, frontal gaze at camera",
+   "2.3: silky terrier on a floor seen from above, looking up at camera, eyes visible",
+   "2.4: Yorkshire terrier in a harness standing on rocks, head in profile looking away",
+   "2.5: small terrier walking through snow, tiny in frame, far away",
+   "2.6: Appenzeller running on a path, small in frame, whole body visible"
+  ],
+  "predictions": [
+   {
+    "question": "Is the dog's face turned toward the camera with both eyes clearly visible and looking at the viewer?",
+    "answers": [
+     "Yes, frontal with both eyes looking at camera",
+     "Partly turned or eyes not clearly visible",
+     "Profile or face turned away",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 1
+   },
+   {
+    "question": "Are the dog's eyes open and looking at the camera?",
+    "answers": [
+     "Eyes open, looking at the camera",
+     "Eyes open but looking elsewhere (e.g. at a toy or food)",
+     "Eyes closed or face hidden",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2,
+    "splits": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6814f4a35b8f76d7883352715fd9623ef30feb40926318a9e43dd5e333baf40e",
+  "texts": [
+   "{\"notes\": [\"1.1: Pembroke corgi lying on grass, face close and frontal, both eyes looking at camera, mouth open\", \"1.2: white kuvasz close-up head portrait, frontal, eyes on camera, tongue out\", \"1.3: Yorkshire terrier lying on artificial grass, black-and-white photo, face frontal toward camera\", \"1.4: husky lying down chewing a bone, head lowered, eyes on the bone not the camera\", \"1.5: black Tibetan mastiff puppy asleep on grass, face buried and eyes closed\", \"1.6: shaggy Lhasa held up by a hand inside a pen, face dark and obscured by hair\", \"2.1: Eskimo dog standing on a path, face frontal looking at camera, mouth open\", \"2.2: Appenzeller standing on gravel, head and chest close, frontal gaze at camera\", \"2.3: silky terrier on a floor seen from above, looking up at camera, eyes visible\", \"2.4: Yorkshire terrier in a harness standing on rocks, head in profile looking away\", \"2.5: small terrier walking through snow, tiny in frame, far away\", \"2.6: Appenzeller running on a path, small in frame, whole body visible\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog's face turned toward the camera with both eyes clearly visible and looking at the viewer?\", \"answers\": [\"Yes, frontal with both eyes looking at camera\", \"Partly turned or eyes not clearly visible\", \"Profile or face turned away\", \"No dog visible\"], \"most_active\": \"Yes, frontal with both eyes looking at camera\", \"least_active\": \"Profile or face turned away\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking at the camera?\", \"answers\": [\"Eyes open, looking at the camera\", \"Eyes open but looking elsewhere (e.g. at a toy or food)\", \"Eyes closed or face hidden\", \"No dog visible\"], \"most_active\": \"Eyes open, looking at the camera\", \"least_active\": \"Eyes closed or face hidden\"}]}"
+  ],
+  "text": "{\"notes\": [\"1.1: Pembroke corgi lying on grass, face close and frontal, both eyes looking at camera, mouth open\", \"1.2: white kuvasz close-up head portrait, frontal, eyes on camera, tongue out\", \"1.3: Yorkshire terrier lying on artificial grass, black-and-white photo, face frontal toward camera\", \"1.4: husky lying down chewing a bone, head lowered, eyes on the bone not the camera\", \"1.5: black Tibetan mastiff puppy asleep on grass, face buried and eyes closed\", \"1.6: shaggy Lhasa held up by a hand inside a pen, face dark and obscured by hair\", \"2.1: Eskimo dog standing on a path, face frontal looking at camera, mouth open\", \"2.2: Appenzeller standing on gravel, head and chest close, frontal gaze at camera\", \"2.3: silky terrier on a floor seen from above, looking up at camera, eyes visible\", \"2.4: Yorkshire terrier in a harness standing on rocks, head in profile looking away\", \"2.5: small terrier walking through snow, tiny in frame, far away\", \"2.6: Appenzeller running on a path, small in frame, whole body visible\"], \"predictions\": [{\"splits\": \"Standing, walking, running or jumping\", \"question\": \"Is the dog's face turned toward the camera with both eyes clearly visible and looking at the viewer?\", \"answers\": [\"Yes, frontal with both eyes looking at camera\", \"Partly turned or eyes not clearly visible\", \"Profile or face turned away\", \"No dog visible\"], \"most_active\": \"Yes, frontal with both eyes looking at camera\", \"least_active\": \"Profile or face turned away\"}, {\"splits\": \"Sitting, lying or posing still\", \"question\": \"Are the dog's eyes open and looking at the camera?\", \"answers\": [\"Eyes open, looking at the camera\", \"Eyes open but looking elsewhere (e.g. at a toy or food)\", \"Eyes closed or face hidden\", \"No dog visible\"], \"most_active\": \"Eyes open, looking at the camera\", \"least_active\": \"Eyes closed or face hidden\"}]}",
+  "valid": true
+ }
+}
