@@ -1,0 +1,168 @@
+{
+ "s2": {
+  "key": "s2",
+  "explanation": "Responds to a single real, full-size road vehicle seen whole in side or three-quarter profile, with body and wheels visible, parked or driving on pavement in daylight. It is strongest when the body is red or orange: red wagon, fire engines, orange moving van, red pickup and red jeep score highest. It is weak for toys, models and cakes, for close-up crops or interior views, for night scenes, and for cluttered scenes with many small vehicles. Compared with similar units, it prefers red/orange vehicle bodies in full side view and dislikes pale-blue or blue vehicles and partial or interior views.",
+  "predictions": [
+   {
+    "question": "Is the main vehicle a real full-size vehicle, or a toy, model or cake?",
+    "answers": [
+     "real full-size vehicle",
+     "toy, model or cake",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What color is the body of the main vehicle?",
+    "answers": [
+     "red or orange",
+     "white, silver or gray",
+     "blue, green or other color",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How much of the main vehicle is shown?",
+    "answers": [
+     "whole vehicle from the side or three-quarter view, wheels visible",
+     "cropped close-up, front-only view or interior",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?",
+    "answers": [
+     "one dominant vehicle",
+     "many vehicles with none dominant",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3db99f33086416cf3eb3022e09ffd86b8d10b7bb01bdf677ae41fd46cc4ba023",
+  "texts": [
+   "{\"explanation\": \"Responds to a single real, full-size road vehicle seen whole in side or three-quarter profile, with body and wheels visible, parked or driving on pavement in daylight. It is strongest when the body is red or orange: red wagon, fire engines, orange moving van, red pickup and red jeep score highest. It is weak for toys, models and cakes, for close-up crops or interior views, for night scenes, and for cluttered scenes with many small vehicles. Compared with similar units, it prefers red/orange vehicle bodies in full side view and dislikes pale-blue or blue vehicles and partial or interior views.\", \"predictions\": [{\"question\": \"Is the main vehicle a real full-size vehicle, or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model or cake\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model or cake\"}, {\"question\": \"What color is the body of the main vehicle?\", \"answers\": [\"red or orange\", \"white, silver or gray\", \"blue, green or other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"blue, green or other color\"}, {\"question\": \"How much of the main vehicle is shown?\", \"answers\": [\"whole vehicle from the side or three-quarter view, wheels visible\", \"cropped close-up, front-only view or interior\", \"no vehicle visible\"], \"most_active\": \"whole vehicle from the side or three-quarter view, wheels visible\", \"least_active\": \"cropped close-up, front-only view or interior\"}, {\"question\": \"Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?\", \"answers\": [\"one dominant vehicle\", \"many vehicles with none dominant\", \"no vehicle visible\"], \"most_active\": \"one dominant vehicle\", \"least_active\": \"many vehicles with none dominant\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a single real, full-size road vehicle seen whole in side or three-quarter profile, with body and wheels visible, parked or driving on pavement in daylight. It is strongest when the body is red or orange: red wagon, fire engines, orange moving van, red pickup and red jeep score highest. It is weak for toys, models and cakes, for close-up crops or interior views, for night scenes, and for cluttered scenes with many small vehicles. Compared with similar units, it prefers red/orange vehicle bodies in full side view and dislikes pale-blue or blue vehicles and partial or interior views.\", \"predictions\": [{\"question\": \"Is the main vehicle a real full-size vehicle, or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model or cake\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model or cake\"}, {\"question\": \"What color is the body of the main vehicle?\", \"answers\": [\"red or orange\", \"white, silver or gray\", \"blue, green or other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"blue, green or other color\"}, {\"question\": \"How much of the main vehicle is shown?\", \"answers\": [\"whole vehicle from the side or three-quarter view, wheels visible\", \"cropped close-up, front-only view or interior\", \"no vehicle visible\"], \"most_active\": \"whole vehicle from the side or three-quarter view, wheels visible\", \"least_active\": \"cropped close-up, front-only view or interior\"}, {\"question\": \"Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?\", \"answers\": [\"one dominant vehicle\", \"many vehicles with none dominant\", \"no vehicle visible\"], \"most_active\": \"one dominant vehicle\", \"least_active\": \"many vehicles with none dominant\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a single real, full-size road vehicle seen whole from the side or front three-quarter angle, with its body and wheels clearly visible, usually parked on pavement in daylight. Red or orange bodywork (red wagons, fire engines, the orange moving van, the red pickup) adds to its activity. Its activity is low for toys, models and cakes, for interior or cargo-area views, for tight crops of the hood or front, for cluttered scenes with several vehicles (buses in a depot, cars on a carrier) and for vehicles blocked by people or darkness. Unlike similar units, it prefers clean full-profile shots (the classic pickup, moving van and jeep) over front close-ups, interiors and crowded vehicle scenes.",
+  "predictions": [
+   {
+    "question": "How is the main vehicle framed?",
+    "answers": [
+     "whole vehicle in side or three-quarter view with wheels visible",
+     "cropped close-up, front-only, or interior view",
+     "many vehicles crowded together with no single clear one",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the vehicle real and full-size, or a toy, model or cake?",
+    "answers": [
+     "real full-size vehicle",
+     "toy, model, Lego or cake",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main color of the main vehicle's body?",
+    "answers": [
+     "red or orange",
+     "other color",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Are people, other objects or darkness hiding much of the main vehicle?",
+    "answers": [
+     "no, the vehicle is clearly visible",
+     "yes, much of it is hidden",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3db99f33086416cf3eb3022e09ffd86b8d10b7bb01bdf677ae41fd46cc4ba023",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single real, full-size road vehicle seen whole from the side or front three-quarter angle, with its body and wheels clearly visible, usually parked on pavement in daylight. Red or orange bodywork (red wagons, fire engines, the orange moving van, the red pickup) adds to its activity. Its activity is low for toys, models and cakes, for interior or cargo-area views, for tight crops of the hood or front, for cluttered scenes with several vehicles (buses in a depot, cars on a carrier) and for vehicles blocked by people or darkness. Unlike similar units, it prefers clean full-profile shots (the classic pickup, moving van and jeep) over front close-ups, interiors and crowded vehicle scenes.\", \"predictions\": [{\"question\": \"How is the main vehicle framed?\", \"answers\": [\"whole vehicle in side or three-quarter view with wheels visible\", \"cropped close-up, front-only, or interior view\", \"many vehicles crowded together with no single clear one\", \"no vehicle visible\"], \"most_active\": \"whole vehicle in side or three-quarter view with wheels visible\", \"least_active\": \"cropped close-up, front-only, or interior view\"}, {\"question\": \"Is the vehicle real and full-size, or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, Lego or cake\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model, Lego or cake\"}, {\"question\": \"What is the main color of the main vehicle's body?\", \"answers\": [\"red or orange\", \"other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}, {\"question\": \"Are people, other objects or darkness hiding much of the main vehicle?\", \"answers\": [\"no, the vehicle is clearly visible\", \"yes, much of it is hidden\", \"no vehicle visible\"], \"most_active\": \"no, the vehicle is clearly visible\", \"least_active\": \"yes, much of it is hidden\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single real, full-size road vehicle seen whole from the side or front three-quarter angle, with its body and wheels clearly visible, usually parked on pavement in daylight. Red or orange bodywork (red wagons, fire engines, the orange moving van, the red pickup) adds to its activity. Its activity is low for toys, models and cakes, for interior or cargo-area views, for tight crops of the hood or front, for cluttered scenes with several vehicles (buses in a depot, cars on a carrier) and for vehicles blocked by people or darkness. Unlike similar units, it prefers clean full-profile shots (the classic pickup, moving van and jeep) over front close-ups, interiors and crowded vehicle scenes.\", \"predictions\": [{\"question\": \"How is the main vehicle framed?\", \"answers\": [\"whole vehicle in side or three-quarter view with wheels visible\", \"cropped close-up, front-only, or interior view\", \"many vehicles crowded together with no single clear one\", \"no vehicle visible\"], \"most_active\": \"whole vehicle in side or three-quarter view with wheels visible\", \"least_active\": \"cropped close-up, front-only, or interior view\"}, {\"question\": \"Is the vehicle real and full-size, or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, Lego or cake\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model, Lego or cake\"}, {\"question\": \"What is the main color of the main vehicle's body?\", \"answers\": [\"red or orange\", \"other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}, {\"question\": \"Are people, other objects or darkness hiding much of the main vehicle?\", \"answers\": [\"no, the vehicle is clearly visible\", \"yes, much of it is hidden\", \"no vehicle visible\"], \"most_active\": \"no, the vehicle is clearly visible\", \"least_active\": \"yes, much of it is hidden\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds to a single real, full-size road vehicle (car, wagon, fire engine, van, pickup) shown whole in side or three-quarter view, with its body and wheels clearly visible, standing on pavement. It is strongest for red or orange bodies and boxy or older styling. It is weak for toys, models and cakes, for interiors or cropped front close-ups, for scenes where people dominate, and for scenes of many small or distant vehicles such as buses in a depot or cars on a carrier. Compared with the similar units, it prefers the full side profile with wheels over front or detail close-ups.",
+  "predictions": [
+   {
+    "question": "How is the main vehicle framed?",
+    "answers": [
+     "whole vehicle in side or three-quarter view with wheels visible",
+     "cropped close-up of front, interior or part of the vehicle",
+     "several small or distant vehicles, none dominant",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the vehicle a real full-size vehicle or a toy, model or cake?",
+    "answers": [
+     "real full-size vehicle",
+     "toy, model, cake or drawing",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main color of the main vehicle's body?",
+    "answers": [
+     "red or orange",
+     "white, silver or gray",
+     "other color",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Do people or objects other than the vehicle take up a large part of the photo?",
+    "answers": [
+     "no, the vehicle clearly dominates",
+     "yes, people or other objects are as prominent as the vehicle",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3db99f33086416cf3eb3022e09ffd86b8d10b7bb01bdf677ae41fd46cc4ba023",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single real, full-size road vehicle (car, wagon, fire engine, van, pickup) shown whole in side or three-quarter view, with its body and wheels clearly visible, standing on pavement. It is strongest for red or orange bodies and boxy or older styling. It is weak for toys, models and cakes, for interiors or cropped front close-ups, for scenes where people dominate, and for scenes of many small or distant vehicles such as buses in a depot or cars on a carrier. Compared with the similar units, it prefers the full side profile with wheels over front or detail close-ups.\", \"predictions\": [{\"question\": \"How is the main vehicle framed?\", \"answers\": [\"whole vehicle in side or three-quarter view with wheels visible\", \"cropped close-up of front, interior or part of the vehicle\", \"several small or distant vehicles, none dominant\", \"no vehicle visible\"], \"most_active\": \"whole vehicle in side or three-quarter view with wheels visible\", \"least_active\": \"cropped close-up of front, interior or part of the vehicle\"}, {\"question\": \"Is the vehicle a real full-size vehicle or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, cake or drawing\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model, cake or drawing\"}, {\"question\": \"What is the main color of the main vehicle's body?\", \"answers\": [\"red or orange\", \"white, silver or gray\", \"other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}, {\"question\": \"Do people or objects other than the vehicle take up a large part of the photo?\", \"answers\": [\"no, the vehicle clearly dominates\", \"yes, people or other objects are as prominent as the vehicle\", \"no vehicle visible\"], \"most_active\": \"no, the vehicle clearly dominates\", \"least_active\": \"yes, people or other objects are as prominent as the vehicle\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single real, full-size road vehicle (car, wagon, fire engine, van, pickup) shown whole in side or three-quarter view, with its body and wheels clearly visible, standing on pavement. It is strongest for red or orange bodies and boxy or older styling. It is weak for toys, models and cakes, for interiors or cropped front close-ups, for scenes where people dominate, and for scenes of many small or distant vehicles such as buses in a depot or cars on a carrier. Compared with the similar units, it prefers the full side profile with wheels over front or detail close-ups.\", \"predictions\": [{\"question\": \"How is the main vehicle framed?\", \"answers\": [\"whole vehicle in side or three-quarter view with wheels visible\", \"cropped close-up of front, interior or part of the vehicle\", \"several small or distant vehicles, none dominant\", \"no vehicle visible\"], \"most_active\": \"whole vehicle in side or three-quarter view with wheels visible\", \"least_active\": \"cropped close-up of front, interior or part of the vehicle\"}, {\"question\": \"Is the vehicle a real full-size vehicle or a toy, model or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, cake or drawing\", \"no vehicle visible\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"toy, model, cake or drawing\"}, {\"question\": \"What is the main color of the main vehicle's body?\", \"answers\": [\"red or orange\", \"white, silver or gray\", \"other color\", \"no vehicle visible\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}, {\"question\": \"Do people or objects other than the vehicle take up a large part of the photo?\", \"answers\": [\"no, the vehicle clearly dominates\", \"yes, people or other objects are as prominent as the vehicle\", \"no vehicle visible\"], \"most_active\": \"no, the vehicle clearly dominates\", \"least_active\": \"yes, people or other objects are as prominent as the vehicle\"}]}",
+  "valid": true
+ }
+}

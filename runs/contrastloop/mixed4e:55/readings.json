@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame.",
+   "evidence": "Frontal face with both eyes visible (d +0.59, 99th percentile), large head (d +0.46, 96th) and upright ears (d +0.35, 99th) all held. Orange or reddish fur color did not (d +0.07, 69th), so color is not part of the selectivity.",
+   "missing_data": "A direct comparison of frontal faces with profile or hidden faces on the same animals, since every tested contrast was against photos with no face or animal visible, which leaves face orientation and plain animal presence partly confounded.",
+   "confidence": 0.72
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9fbf17565b2e5cf0db892df87d2472f1f700c6b25118fec5d52fe4354f851ed9",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame.\",\n \"evidence\": \"Frontal face with both eyes visible (d +0.59, 99th percentile), large head (d +0.46, 96th) and upright ears (d +0.35, 99th) all held. Orange or reddish fur color did not (d +0.07, 69th), so color is not part of the selectivity.\",\n \"missing_data\": \"A direct comparison of frontal faces with profile or hidden faces on the same animals, since every tested contrast was against photos with no face or animal visible, which leaves face orientation and plain animal presence partly confounded.\",\n \"confidence\": 0.72}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame.\",\n \"evidence\": \"Frontal face with both eyes visible (d +0.59, 99th percentile), large head (d +0.46, 96th) and upright ears (d +0.35, 99th) all held. Orange or reddish fur color did not (d +0.07, 69th), so color is not part of the selectivity.\",\n \"missing_data\": \"A direct comparison of frontal faces with profile or hidden faces on the same animals, since every tested contrast was against photos with no face or animal visible, which leaves face orientation and plain animal presence partly confounded.\",\n \"confidence\": 0.72}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver.",
+   "evidence": "Large head versus small or distant head (d +0.81, 96th percentile) and upright pointed ears versus no visible ears (d +0.37, 98th percentile) both held. The orange-with-white-markings prediction fell short (91st percentile), and the frontal-gaze prediction could not be tested because only 2 photos had a hidden face.",
+   "missing_data": "Enough photos with the face hidden, in profile, or eyes closed to test whether frontal gaze matters beyond head size and ears, plus color-matched comparisons such as orange versus gray foxes.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "58a6f11595a9798018ff3aaa6b7b4a58d9ec1422a49de2ab6919de46cfd2d0d1",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver.\",\n \"evidence\": \"Large head versus small or distant head (d +0.81, 96th percentile) and upright pointed ears versus no visible ears (d +0.37, 98th percentile) both held. The orange-with-white-markings prediction fell short (91st percentile), and the frontal-gaze prediction could not be tested because only 2 photos had a hidden face.\",\n \"missing_data\": \"Enough photos with the face hidden, in profile, or eyes closed to test whether frontal gaze matters beyond head size and ears, plus color-matched comparisons such as orange versus gray foxes.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver.\",\n \"evidence\": \"Large head versus small or distant head (d +0.81, 96th percentile) and upright pointed ears versus no visible ears (d +0.37, 98th percentile) both held. The orange-with-white-markings prediction fell short (91st percentile), and the frontal-gaze prediction could not be tested because only 2 photos had a hidden face.\",\n \"missing_data\": \"Enough photos with the face hidden, in profile, or eyes closed to test whether frontal gaze matters beyond head size and ears, plus color-matched comparisons such as orange versus gray foxes.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature.",
+   "evidence": "The frontal open-eyed face prediction held most strongly (d +0.59, 99th percentile), and upright visible ears also held (d +0.35, 98th percentile). Face size (d +0.10, 86th) and orange/white coloring (d +0.24, 91st) did not reach the 95th percentile, so neither is a distinguishing driver.",
+   "missing_data": "A comparison of frontal open-eyed faces against profile or closed-eye faces (the middle answer), to tell gaze/eye visibility apart from simple face presence, plus tests on non-mammal or bare-skinned frontal faces.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70cc02e033eab1fa58c2193d14b2ac25e526dc49dcd861c38652b2635277a132",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature.\",\n \"evidence\": \"The frontal open-eyed face prediction held most strongly (d +0.59, 99th percentile), and upright visible ears also held (d +0.35, 98th percentile). Face size (d +0.10, 86th) and orange/white coloring (d +0.24, 91st) did not reach the 95th percentile, so neither is a distinguishing driver.\",\n \"missing_data\": \"A comparison of frontal open-eyed faces against profile or closed-eye faces (the middle answer), to tell gaze/eye visibility apart from simple face presence, plus tests on non-mammal or bare-skinned frontal faces.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature.\",\n \"evidence\": \"The frontal open-eyed face prediction held most strongly (d +0.59, 99th percentile), and upright visible ears also held (d +0.35, 98th percentile). Face size (d +0.10, 86th) and orange/white coloring (d +0.24, 91st) did not reach the 95th percentile, so neither is a distinguishing driver.\",\n \"missing_data\": \"A comparison of frontal open-eyed faces against profile or closed-eye faces (the middle answer), to tell gaze/eye visibility apart from simple face presence, plus tests on non-mammal or bare-skinned frontal faces.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "cannot_tell",
+  "explanation": "The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes.",
+   "evidence": "Head size went the wrong way (d -0.27, percentile 18) and upright ears gave no effect (percentile 74). Orange face with white markings came closest but still fell short (d +0.25, percentile 91), and the frontal-face prediction could not be tested because only 2 photos had a hidden face.",
+   "missing_data": "More photos with hidden faces, profile views, or eyes closed, to test frontal face against hidden face, plus more orange-faced and other-colored faces to test the color effect.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "357f9aa5529012ddde5c60200b219db4c4160618bedbc1ff4dbaa76d5ba6967d",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes.\",\n \"evidence\": \"Head size went the wrong way (d -0.27, percentile 18) and upright ears gave no effect (percentile 74). Orange face with white markings came closest but still fell short (d +0.25, percentile 91), and the frontal-face prediction could not be tested because only 2 photos had a hidden face.\",\n \"missing_data\": \"More photos with hidden faces, profile views, or eyes closed, to test frontal face against hidden face, plus more orange-faced and other-colored faces to test the color effect.\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes.\",\n \"evidence\": \"Head size went the wrong way (d -0.27, percentile 18) and upright ears gave no effect (percentile 74). Orange face with white markings came closest but still fell short (d +0.25, percentile 91), and the frontal-face prediction could not be tested because only 2 photos had a hidden face.\",\n \"missing_data\": \"More photos with hidden faces, profile views, or eyes closed, to test frontal face against hidden face, plus more orange-faced and other-colored faces to test the color effect.\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one",
+  "explanation": "The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically.",
+   "evidence": "Within classes, the face-related predictions failed: frontal open eyes gave d -0.27 (percentile 5, if anything the reverse), and face size and upright ears showed no effect. Orange/ginger with white came closest to holding (d +0.25, percentile 91).",
+   "missing_data": "Within-class comparisons of orange versus non-orange fur when the face is hidden or the photo shows only the body, and the unit's activity on orange non-animal objects.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b8bee6baa467c2848b095bf41e395da0d36acce6bd4e4884a8222728a0028f40",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically.\", \"evidence\": \"Within classes, the face-related predictions failed: frontal open eyes gave d -0.27 (percentile 5, if anything the reverse), and face size and upright ears showed no effect. Orange/ginger with white came closest to holding (d +0.25, percentile 91).\", \"missing_data\": \"Within-class comparisons of orange versus non-orange fur when the face is hidden or the photo shows only the body, and the unit's activity on orange non-animal objects.\", \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically.\", \"evidence\": \"Within classes, the face-related predictions failed: frontal open eyes gave d -0.27 (percentile 5, if anything the reverse), and face size and upright ears showed no effect. Orange/ginger with white came closest to holding (d +0.25, percentile 91).\", \"missing_data\": \"Within-class comparisons of orange versus non-orange fur when the face is hidden or the photo shows only the body, and the unit's activity on orange non-animal objects.\", \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one",
+  "explanation": "The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face.",
+   "evidence": "The face-visibility and head-size predictions reversed within classes: the unit was more active on photos with no visible face or head (d -0.27 and -0.37, percentiles 5 and 3), so a frontal face is not what drives it. Upright ears and orange fur made no reliable difference (percentiles 67 and 79), which leaves only the shared set of furry-mammal classes as support for the category.",
+   "missing_data": "The unit's activity across classes, including non-top classes, plus within-class tests of fur texture or body visibility and of hidden-face poses such as curled-up or eating animals.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "32aaaba5f91181775ac8dbde4193dc9178336ba67a573adf2ad9c4da81c56a11",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face.\",\n \"evidence\": \"The face-visibility and head-size predictions reversed within classes: the unit was more active on photos with no visible face or head (d -0.27 and -0.37, percentiles 5 and 3), so a frontal face is not what drives it. Upright ears and orange fur made no reliable difference (percentiles 67 and 79), which leaves only the shared set of furry-mammal classes as support for the category.\",\n \"missing_data\": \"The unit's activity across classes, including non-top classes, plus within-class tests of fur texture or body visibility and of hidden-face poses such as curled-up or eating animals.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face.\",\n \"evidence\": \"The face-visibility and head-size predictions reversed within classes: the unit was more active on photos with no visible face or head (d -0.27 and -0.37, percentiles 5 and 3), so a frontal face is not what drives it. Upright ears and orange fur made no reliable difference (percentiles 67 and 79), which leaves only the shared set of furry-mammal classes as support for the category.\",\n \"missing_data\": \"The unit's activity across classes, including non-top classes, plus within-class tests of fur texture or body visibility and of hidden-face poses such as curled-up or eating animals.\",\n \"confidence\": 0.35}\n```",
+  "valid": true
+ }
+}

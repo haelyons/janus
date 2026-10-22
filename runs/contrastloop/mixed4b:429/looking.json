@@ -1,0 +1,169 @@
+{
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a dog's face seen straight on, with both eyes looking directly at the camera, especially when the face is large in the frame (head-and-shoulders portraits). Activity drops when the dog's head is turned to profile or the dog looks away (corgi puppy looking up, Appenzeller, Labrador and Blenheim looking aside), when the dog is small or distant in the frame, or when the face is hidden. Similar units prefer the turned-away and profile heads, so direct frontal eye contact is what is particular to this unit.",
+  "predictions": [
+   {
+    "question": "Is the dog's face turned straight toward the camera with both eyes looking at the viewer?",
+    "answers": [
+     "Yes, frontal and looking at camera",
+     "Partly turned or looking away",
+     "Profile or face not visible",
+     "No dog in photo"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How much of the photo does the dog's head take up?",
+    "answers": [
+     "Large (head fills a big part of the frame)",
+     "Medium",
+     "Small (dog distant or whole body small)",
+     "No dog head visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Are both of the dog's eyes clearly visible and open?",
+    "answers": [
+     "Both clearly visible and open",
+     "Only one visible, or eyes closed or squinting",
+     "Neither visible / no dog"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?",
+    "answers": [
+     "Head-and-chest portrait",
+     "Whole body shown",
+     "No dog"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c065c1118692246a48f8830487ea9f886c684ea0ca4efdf12b1a0928b7c175",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a dog's face seen straight on, with both eyes looking directly at the camera, especially when the face is large in the frame (head-and-shoulders portraits). Activity drops when the dog's head is turned to profile or the dog looks away (corgi puppy looking up, Appenzeller, Labrador and Blenheim looking aside), when the dog is small or distant in the frame, or when the face is hidden. Similar units prefer the turned-away and profile heads, so direct frontal eye contact is what is particular to this unit.\", \"predictions\": [{\"question\": \"Is the dog's face turned straight toward the camera with both eyes looking at the viewer?\", \"answers\": [\"Yes, frontal and looking at camera\", \"Partly turned or looking away\", \"Profile or face not visible\", \"No dog in photo\"], \"most_active\": \"Yes, frontal and looking at camera\", \"least_active\": \"Profile or face not visible\"}, {\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"Large (head fills a big part of the frame)\", \"Medium\", \"Small (dog distant or whole body small)\", \"No dog head visible\"], \"most_active\": \"Large (head fills a big part of the frame)\", \"least_active\": \"Small (dog distant or whole body small)\"}, {\"question\": \"Are both of the dog's eyes clearly visible and open?\", \"answers\": [\"Both clearly visible and open\", \"Only one visible, or eyes closed or squinting\", \"Neither visible / no dog\"], \"most_active\": \"Both clearly visible and open\", \"least_active\": \"Neither visible / no dog\"}, {\"question\": \"Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?\", \"answers\": [\"Head-and-chest portrait\", \"Whole body shown\", \"No dog\"], \"most_active\": \"Head-and-chest portrait\", \"least_active\": \"Whole body shown\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a dog's face seen straight on, with both eyes looking directly at the camera, especially when the face is large in the frame (head-and-shoulders portraits). Activity drops when the dog's head is turned to profile or the dog looks away (corgi puppy looking up, Appenzeller, Labrador and Blenheim looking aside), when the dog is small or distant in the frame, or when the face is hidden. Similar units prefer the turned-away and profile heads, so direct frontal eye contact is what is particular to this unit.\", \"predictions\": [{\"question\": \"Is the dog's face turned straight toward the camera with both eyes looking at the viewer?\", \"answers\": [\"Yes, frontal and looking at camera\", \"Partly turned or looking away\", \"Profile or face not visible\", \"No dog in photo\"], \"most_active\": \"Yes, frontal and looking at camera\", \"least_active\": \"Profile or face not visible\"}, {\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"Large (head fills a big part of the frame)\", \"Medium\", \"Small (dog distant or whole body small)\", \"No dog head visible\"], \"most_active\": \"Large (head fills a big part of the frame)\", \"least_active\": \"Small (dog distant or whole body small)\"}, {\"question\": \"Are both of the dog's eyes clearly visible and open?\", \"answers\": [\"Both clearly visible and open\", \"Only one visible, or eyes closed or squinting\", \"Neither visible / no dog\"], \"most_active\": \"Both clearly visible and open\", \"least_active\": \"Neither visible / no dog\"}, {\"question\": \"Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?\", \"answers\": [\"Head-and-chest portrait\", \"Whole body shown\", \"No dog\"], \"most_active\": \"Head-and-chest portrait\", \"least_active\": \"Whole body shown\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds to a single dog's face seen head-on: the muzzle points at the camera, both eyes are symmetric and visible, and the dog makes eye contact with the viewer. Activity is high for frontal portraits of any breed (corgi, German shepherd, Maltese, Irish terrier, beagle, kuvasz) and much lower when the head is in profile, turned away or tilted up, or when the scene contains several dogs or small, side-on full bodies. The similar units prefer side-turned or three-quarter heads (corgi looking up, Blenheim, Labrador, Appenzeller), so the frontal, eye-contact geometry is what is particular to this unit.",
+  "predictions": [
+   {
+    "question": "Which way is the dog's head facing relative to the camera?",
+    "answers": [
+     "straight at the camera (frontal)",
+     "three-quarter turn",
+     "side profile or turned away",
+     "no dog head visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog looking directly into the camera?",
+    "answers": [
+     "yes, eye contact",
+     "no, looking elsewhere",
+     "dog's eyes not visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "How many dogs are visible in the photo?",
+    "answers": [
+     "one",
+     "two or more",
+     "none"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the dog's head level, or tilted noticeably up or down?",
+    "answers": [
+     "level",
+     "tilted up or down",
+     "no dog head visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c065c1118692246a48f8830487ea9f886c684ea0ca4efdf12b1a0928b7c175",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single dog's face seen head-on: the muzzle points at the camera, both eyes are symmetric and visible, and the dog makes eye contact with the viewer. Activity is high for frontal portraits of any breed (corgi, German shepherd, Maltese, Irish terrier, beagle, kuvasz) and much lower when the head is in profile, turned away or tilted up, or when the scene contains several dogs or small, side-on full bodies. The similar units prefer side-turned or three-quarter heads (corgi looking up, Blenheim, Labrador, Appenzeller), so the frontal, eye-contact geometry is what is particular to this unit.\", \"predictions\": [{\"question\": \"Which way is the dog's head facing relative to the camera?\", \"answers\": [\"straight at the camera (frontal)\", \"three-quarter turn\", \"side profile or turned away\", \"no dog head visible\"], \"most_active\": \"straight at the camera (frontal)\", \"least_active\": \"side profile or turned away\"}, {\"question\": \"Is the dog looking directly into the camera?\", \"answers\": [\"yes, eye contact\", \"no, looking elsewhere\", \"dog's eyes not visible\"], \"most_active\": \"yes, eye contact\", \"least_active\": \"no, looking elsewhere\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"one\", \"two or more\", \"none\"], \"most_active\": \"one\", \"least_active\": \"two or more\"}, {\"question\": \"Is the dog's head level, or tilted noticeably up or down?\", \"answers\": [\"level\", \"tilted up or down\", \"no dog head visible\"], \"most_active\": \"level\", \"least_active\": \"tilted up or down\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single dog's face seen head-on: the muzzle points at the camera, both eyes are symmetric and visible, and the dog makes eye contact with the viewer. Activity is high for frontal portraits of any breed (corgi, German shepherd, Maltese, Irish terrier, beagle, kuvasz) and much lower when the head is in profile, turned away or tilted up, or when the scene contains several dogs or small, side-on full bodies. The similar units prefer side-turned or three-quarter heads (corgi looking up, Blenheim, Labrador, Appenzeller), so the frontal, eye-contact geometry is what is particular to this unit.\", \"predictions\": [{\"question\": \"Which way is the dog's head facing relative to the camera?\", \"answers\": [\"straight at the camera (frontal)\", \"three-quarter turn\", \"side profile or turned away\", \"no dog head visible\"], \"most_active\": \"straight at the camera (frontal)\", \"least_active\": \"side profile or turned away\"}, {\"question\": \"Is the dog looking directly into the camera?\", \"answers\": [\"yes, eye contact\", \"no, looking elsewhere\", \"dog's eyes not visible\"], \"most_active\": \"yes, eye contact\", \"least_active\": \"no, looking elsewhere\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"one\", \"two or more\", \"none\"], \"most_active\": \"one\", \"least_active\": \"two or more\"}, {\"question\": \"Is the dog's head level, or tilted noticeably up or down?\", \"answers\": [\"level\", \"tilted up or down\", \"no dog head visible\"], \"most_active\": \"level\", \"least_active\": \"tilted up or down\"}]}",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "Responds to a dog's face seen straight on, with the dog looking directly at the camera so both eyes and the nose face the viewer, especially when the face is fairly large in the frame. Activity drops when the head is turned, in profile, or gazing off to the side, or when the face is small or hidden. That turned-head case is exactly where the similar units win: Blenheim, Appenzeller, Labrador, the yawning Maltese and the corgi puppy looking up. This unit beats the similar units on direct-gaze faces such as the Irish terrier, German shepherd, beagle, dingo and kuvasz.",
+  "predictions": [
+   {
+    "question": "Is the dog looking directly at the camera?",
+    "answers": [
+     "yes, eyes meet the camera",
+     "head or gaze turned away or to the side",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's face seen from the front, at an angle, or in profile?",
+    "answers": [
+     "frontal",
+     "three-quarter view",
+     "profile or back of head",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How much of the photo does the dog's face fill?",
+    "answers": [
+     "large (close-up of the head)",
+     "medium (whole dog, face clearly visible)",
+     "small (dog far away)",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How many dogs are in the photo?",
+    "answers": [
+     "one",
+     "two or more",
+     "none"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c065c1118692246a48f8830487ea9f886c684ea0ca4efdf12b1a0928b7c175",
+  "texts": [
+   "{\"explanation\": \"Responds to a dog's face seen straight on, with the dog looking directly at the camera so both eyes and the nose face the viewer, especially when the face is fairly large in the frame. Activity drops when the head is turned, in profile, or gazing off to the side, or when the face is small or hidden. That turned-head case is exactly where the similar units win: Blenheim, Appenzeller, Labrador, the yawning Maltese and the corgi puppy looking up. This unit beats the similar units on direct-gaze faces such as the Irish terrier, German shepherd, beagle, dingo and kuvasz.\", \"predictions\": [{\"question\": \"Is the dog looking directly at the camera?\", \"answers\": [\"yes, eyes meet the camera\", \"head or gaze turned away or to the side\", \"no dog face visible\"], \"most_active\": \"yes, eyes meet the camera\", \"least_active\": \"no dog face visible\"}, {\"question\": \"Is the dog's face seen from the front, at an angle, or in profile?\", \"answers\": [\"frontal\", \"three-quarter view\", \"profile or back of head\", \"no dog face visible\"], \"most_active\": \"frontal\", \"least_active\": \"profile or back of head\"}, {\"question\": \"How much of the photo does the dog's face fill?\", \"answers\": [\"large (close-up of the head)\", \"medium (whole dog, face clearly visible)\", \"small (dog far away)\", \"no dog face visible\"], \"most_active\": \"large (close-up of the head)\", \"least_active\": \"small (dog far away)\"}, {\"question\": \"How many dogs are in the photo?\", \"answers\": [\"one\", \"two or more\", \"none\"], \"most_active\": \"one\", \"least_active\": \"two or more\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a dog's face seen straight on, with the dog looking directly at the camera so both eyes and the nose face the viewer, especially when the face is fairly large in the frame. Activity drops when the head is turned, in profile, or gazing off to the side, or when the face is small or hidden. That turned-head case is exactly where the similar units win: Blenheim, Appenzeller, Labrador, the yawning Maltese and the corgi puppy looking up. This unit beats the similar units on direct-gaze faces such as the Irish terrier, German shepherd, beagle, dingo and kuvasz.\", \"predictions\": [{\"question\": \"Is the dog looking directly at the camera?\", \"answers\": [\"yes, eyes meet the camera\", \"head or gaze turned away or to the side\", \"no dog face visible\"], \"most_active\": \"yes, eyes meet the camera\", \"least_active\": \"no dog face visible\"}, {\"question\": \"Is the dog's face seen from the front, at an angle, or in profile?\", \"answers\": [\"frontal\", \"three-quarter view\", \"profile or back of head\", \"no dog face visible\"], \"most_active\": \"frontal\", \"least_active\": \"profile or back of head\"}, {\"question\": \"How much of the photo does the dog's face fill?\", \"answers\": [\"large (close-up of the head)\", \"medium (whole dog, face clearly visible)\", \"small (dog far away)\", \"no dog face visible\"], \"most_active\": \"large (close-up of the head)\", \"least_active\": \"small (dog far away)\"}, {\"question\": \"How many dogs are in the photo?\", \"answers\": [\"one\", \"two or more\", \"none\"], \"most_active\": \"one\", \"least_active\": \"two or more\"}]}",
+  "valid": true
+ }
+}

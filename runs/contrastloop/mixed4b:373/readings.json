@@ -1,0 +1,120 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle.",
+   "evidence": "Only the framing prediction held (whole side/three-quarter view vs. close-up/front/interior, d +0.48, 96th percentile). Real-vs-toy (63rd), red/orange color (83rd) and occlusion (81st) were positive but not distinctive for this unit, and the occlusion and toy comparisons had very small groups (6 and 9 photos).",
+   "missing_data": "More photos of toys, models and occluded vehicles, and photos of non-vehicle objects in a side-profile view, to tell whether the unit codes vehicle profile shape in particular or whole-object framing in general.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1fba31d268a948d1bbadb81272eb01b05324d3a48ed721f349fcb7ad79efe44a",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle.\",\n \"evidence\": \"Only the framing prediction held (whole side/three-quarter view vs. close-up/front/interior, d +0.48, 96th percentile). Real-vs-toy (63rd), red/orange color (83rd) and occlusion (81st) were positive but not distinctive for this unit, and the occlusion and toy comparisons had very small groups (6 and 9 photos).\",\n \"missing_data\": \"More photos of toys, models and occluded vehicles, and photos of non-vehicle objects in a side-profile view, to tell whether the unit codes vehicle profile shape in particular or whole-object framing in general.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle.\",\n \"evidence\": \"Only the framing prediction held (whole side/three-quarter view vs. close-up/front/interior, d +0.48, 96th percentile). Real-vs-toy (63rd), red/orange color (83rd) and occlusion (81st) were positive but not distinctive for this unit, and the occlusion and toy comparisons had very small groups (6 and 9 photos).\",\n \"missing_data\": \"More photos of toys, models and occluded vehicles, and photos of non-vehicle objects in a side-profile view, to tell whether the unit codes vehicle profile shape in particular or whole-object framing in general.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors.",
+   "evidence": "Only the whole-vehicle side-view prediction held (d +0.51, 97th percentile). The red/orange color preference (d +0.18, 75th percentile) and the real-versus-toy distinction (d +0.27, 63rd percentile) did not hold, so color and realism appear secondary or absent.",
+   "missing_data": "More photos of toys or models and of crowded multi-vehicle scenes, since those had too few examples, plus color comparisons that hold viewpoint constant.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "af8408b3143c3aa0b81f493496566bb6d261a58da2f906c003b96a232e710988",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors.\",\n \"evidence\": \"Only the whole-vehicle side-view prediction held (d +0.51, 97th percentile). The red/orange color preference (d +0.18, 75th percentile) and the real-versus-toy distinction (d +0.27, 63rd percentile) did not hold, so color and realism appear secondary or absent.\",\n \"missing_data\": \"More photos of toys or models and of crowded multi-vehicle scenes, since those had too few examples, plus color comparisons that hold viewpoint constant.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors.\",\n \"evidence\": \"Only the whole-vehicle side-view prediction held (d +0.51, 97th percentile). The red/orange color preference (d +0.18, 75th percentile) and the real-versus-toy distinction (d +0.27, 63rd percentile) did not hold, so color and realism appear secondary or absent.\",\n \"missing_data\": \"More photos of toys or models and of crowded multi-vehicle scenes, since those had too few examples, plus color comparisons that hold viewpoint constant.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it.",
+   "evidence": "Predictions on framing (d +0.48, 96th percentile) and on the vehicle dominating the scene (d +0.86, 99th percentile) held, while preferences for red/orange bodies (75th) and real vehicles over toys or models (63rd, only 9 toy photos) did not, so color and realness are not supported as distinct drivers.",
+   "missing_data": "More photos of toys, models and cakes shown whole in side view, and more photos of many small or distant vehicles, to separate the whole-vehicle-profile shape from real full-size vehicles.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0560c9af887bdd90c34e366f2ab737818e27f2e65d6bd4f5ca1a9b3b1bfc5097",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it.\",\n \"evidence\": \"Predictions on framing (d +0.48, 96th percentile) and on the vehicle dominating the scene (d +0.86, 99th percentile) held, while preferences for red/orange bodies (75th) and real vehicles over toys or models (63rd, only 9 toy photos) did not, so color and realness are not supported as distinct drivers.\",\n \"missing_data\": \"More photos of toys, models and cakes shown whole in side view, and more photos of many small or distant vehicles, to separate the whole-vehicle-profile shape from real full-size vehicles.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it.\",\n \"evidence\": \"Predictions on framing (d +0.48, 96th percentile) and on the vehicle dominating the scene (d +0.86, 99th percentile) held, while preferences for red/orange bodies (75th) and real vehicles over toys or models (63rd, only 9 toy photos) did not, so color and realness are not supported as distinct drivers.\",\n \"missing_data\": \"More photos of toys, models and cakes shown whole in side view, and more photos of many small or distant vehicles, to separate the whole-vehicle-profile shape from real full-size vehicles.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity.",
+   "evidence": "All four predictions failed: framing (d -0.04, 57th percentile), real vs toy (d +0.10, 55th), red/orange body (d -0.13, 13th) and clear visibility (d +0.20, 47th). The red/orange prediction even went slightly the wrong way, so the explanation's details are not supported beyond the class-level preference for vehicles.",
+   "missing_data": "Activity on non-vehicle classes and on more within-class contrasts (e.g., background, texture, specific parts such as wheels or grilles), plus larger samples for the rare answers (only 9 toys and 6 occluded photos).",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f92ee176fb700d4b4d3caaf6a0a92621b17dc69c273e8597fa608a31790bc1e3",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity.\",\n \"evidence\": \"All four predictions failed: framing (d -0.04, 57th percentile), real vs toy (d +0.10, 55th), red/orange body (d -0.13, 13th) and clear visibility (d +0.20, 47th). The red/orange prediction even went slightly the wrong way, so the explanation's details are not supported beyond the class-level preference for vehicles.\",\n \"missing_data\": \"Activity on non-vehicle classes and on more within-class contrasts (e.g., background, texture, specific parts such as wheels or grilles), plus larger samples for the rare answers (only 9 toys and 6 occluded photos).\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity.\",\n \"evidence\": \"All four predictions failed: framing (d -0.04, 57th percentile), real vs toy (d +0.10, 55th), red/orange body (d -0.13, 13th) and clear visibility (d +0.20, 47th). The red/orange prediction even went slightly the wrong way, so the explanation's details are not supported beyond the class-level preference for vehicles.\",\n \"missing_data\": \"Activity on non-vehicle classes and on more within-class contrasts (e.g., background, texture, specific parts such as wheels or grilles), plus larger samples for the rare answers (only 9 toys and 6 occluded photos).\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one",
+  "explanation": "The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy.",
+   "evidence": "Within its top classes, being real rather than toy (d +0.10, pct 55) and showing the whole vehicle in side view (d +0.03, pct 67) made essentially no difference. The color prediction reversed: red/orange bodies were less active than blue/green ones (d -0.32, pct 3)."
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4646de124eda5825b508d6c015bd4a5b1de344ab49e60a9e0fd5fc6b76e70508",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy.\",\n \"evidence\": \"Within its top classes, being real rather than toy (d +0.10, pct 55) and showing the whole vehicle in side view (d +0.03, pct 67) made essentially no difference. The color prediction reversed: red/orange bodies were less active than blue/green ones (d -0.32, pct 3).\"}\n ,\"missing_data\": \"Activations across all classes, including non-vehicle ones, to confirm that vehicle category is what drives it. A color test with blue/green as the predicted most-active answer, to see whether that reversal is a real preference.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy.\",\n \"evidence\": \"Within its top classes, being real rather than toy (d +0.10, pct 55) and showing the whole vehicle in side view (d +0.03, pct 67) made essentially no difference. The color prediction reversed: red/orange bodies were less active than blue/green ones (d -0.32, pct 3).\"}\n ,\"missing_data\": \"Activations across all classes, including non-vehicle ones, to confirm that vehicle category is what drives it. A color test with blue/green as the predicted most-active answer, to see whether that reversal is a real preference.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity.",
+   "evidence": "All four within-class predictions failed. Framing (d -0.04) and real versus toy (d +0.10) showed essentially no effect, and red or orange bodies (d -0.32, percentile 3) and the vehicle dominating the scene (d -0.32, percentile 11) went opposite to the prediction. Only the vehicle theme of the top 24 classes supports a vehicle-related unit.",
+   "missing_data": "The list of the 24 top classes with their mean activations, and tests of other within-class features such as other colors, background or vehicle type, to find what actually varies the response.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "90deee6a1ca72601b83276a5ec786aeab99d2cf15ce3c97a4642f59c7bd20087",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity.\",\n \"evidence\": \"All four within-class predictions failed. Framing (d -0.04) and real versus toy (d +0.10) showed essentially no effect, and red or orange bodies (d -0.32, percentile 3) and the vehicle dominating the scene (d -0.32, percentile 11) went opposite to the prediction. Only the vehicle theme of the top 24 classes supports a vehicle-related unit.\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, and tests of other within-class features such as other colors, background or vehicle type, to find what actually varies the response.\",\n \"confidence\": 0.4}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity.\",\n \"evidence\": \"All four within-class predictions failed. Framing (d -0.04) and real versus toy (d +0.10) showed essentially no effect, and red or orange bodies (d -0.32, percentile 3) and the vehicle dominating the scene (d -0.32, percentile 11) went opposite to the prediction. Only the vehicle theme of the top 24 classes supports a vehicle-related unit.\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, and tests of other within-class features such as other colors, background or vehicle type, to find what actually varies the response.\",\n \"confidence\": 0.4}",
+  "valid": true
+ }
+}

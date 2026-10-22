@@ -1,0 +1,122 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to dogs, with higher activity on larger, closer, frontal, still views of the dog's head. That preference appears to be shared by most units in its layer rather than being distinctive to this one.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dogs, with higher activity on larger, closer, frontal, still views of the dog's head. That preference appears to be shared by most units in its layer rather than being distinctive to this one.",
+   "evidence": "All four predictions went in the predicted direction with sizeable effects (d +0.44 to +1.02, largest for head size). But every percentile was between 70 and 86, below the 95 needed, so the claim that this unit is unusually specific to frontal face close-ups did not hold.",
+   "missing_data": "Activity on non-dog classes and on matched close-up vs. full-body photos, compared with the similar units, to show what, if anything, sets this unit apart from its layer.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "00d54f8a9eaa52f7453fa5a857e7b5f28c7f0ca08ce4af285697f7aa35eed3d1",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, with higher activity on larger, closer, frontal, still views of the dog's head. That preference appears to be shared by most units in its layer rather than being distinctive to this one.\",\n \"evidence\": \"All four predictions went in the predicted direction with sizeable effects (d +0.44 to +1.02, largest for head size). But every percentile was between 70 and 86, below the 95 needed, so the claim that this unit is unusually specific to frontal face close-ups did not hold.\",\n \"missing_data\": \"Activity on non-dog classes and on matched close-up vs. full-body photos, compared with the similar units, to show what, if anything, sets this unit apart from its layer.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, with higher activity on larger, closer, frontal, still views of the dog's head. That preference appears to be shared by most units in its layer rather than being distinctive to this one.\",\n \"evidence\": \"All four predictions went in the predicted direction with sizeable effects (d +0.44 to +1.02, largest for head size). But every percentile was between 70 and 86, below the 95 needed, so the claim that this unit is unusually specific to frontal face close-ups did not hold.\",\n \"missing_data\": \"Activity on non-dog classes and on matched close-up vs. full-body photos, compared with the similar units, to show what, if anything, sets this unit apart from its layer.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit seems to respond to dogs, and somewhat more to large, frontal, still dog heads than to small, profile, whole-body or moving dogs. These framing preferences appear to be shared with many other units in the layer rather than specific to this one.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit seems to respond to dogs, and somewhat more to large, frontal, still dog heads than to small, profile, whole-body or moving dogs. These framing preferences appear to be shared with many other units in the layer rather than specific to this one.",
+   "evidence": "All four predictions went in the predicted direction with moderate-to-large effects (d +0.50 to +0.92, largest for head size and body visibility). But none reached the 95th percentile (70–90), so the close-up frontal portrait preference does not set this unit apart from its layer.",
+   "missing_data": "Activity on non-dog classes and on dog head close-ups versus other animal face close-ups, to show whether the unit is specific to dogs or to faces in general. Its tuning on the dog-face property that actually separates it from neighbouring units (such as breed, fur texture or muzzle shape) would also help.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bb5613418fb7e25d61cd117f7f5c46243aae420c61ac16992357b0079019673a",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit seems to respond to dogs, and somewhat more to large, frontal, still dog heads than to small, profile, whole-body or moving dogs. These framing preferences appear to be shared with many other units in the layer rather than specific to this one.\",\n \"evidence\": \"All four predictions went in the predicted direction with moderate-to-large effects (d +0.50 to +0.92, largest for head size and body visibility). But none reached the 95th percentile (70–90), so the close-up frontal portrait preference does not set this unit apart from its layer.\",\n \"missing_data\": \"Activity on non-dog classes and on dog head close-ups versus other animal face close-ups, to show whether the unit is specific to dogs or to faces in general. Its tuning on the dog-face property that actually separates it from neighbouring units (such as breed, fur texture or muzzle shape) would also help.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit seems to respond to dogs, and somewhat more to large, frontal, still dog heads than to small, profile, whole-body or moving dogs. These framing preferences appear to be shared with many other units in the layer rather than specific to this one.\",\n \"evidence\": \"All four predictions went in the predicted direction with moderate-to-large effects (d +0.50 to +0.92, largest for head size and body visibility). But none reached the 95th percentile (70–90), so the close-up frontal portrait preference does not set this unit apart from its layer.\",\n \"missing_data\": \"Activity on non-dog classes and on dog head close-ups versus other animal face close-ups, to show whether the unit is specific to dogs or to faces in general. Its tuning on the dog-face property that actually separates it from neighbouring units (such as breed, fur texture or muzzle shape) would also help.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to dogs, and somewhat more to close, still, head-and-chest views where the dog's head fills much of the frame. This framing preference is real but not distinctive for its layer.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dogs, and somewhat more to close, still, head-and-chest views where the dog's head fills much of the frame. This framing preference is real but not distinctive for its layer.",
+   "evidence": "All four predictions went the predicted way (head size d +0.92, head-and-chest d +0.73, still pose d +0.57), but none reached the 95th percentile (82, 90, 93), so many other units show the same close-up bias. Facing the camera head-on barely mattered (d +0.26, 68th percentile), so the frontal-portrait part of the explanation is not supported.",
+   "missing_data": "Activity on non-dog classes and on non-dog close-up faces (cats, people), to tell whether the unit is dog-specific or a general close-up-face or texture unit. Also which breeds are among the top 24 classes.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "eef7eb4f5ccf40b959d5b9bf744a47892cfb4f43da9b4f92b598d14ddc65b1e1",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, and somewhat more to close, still, head-and-chest views where the dog's head fills much of the frame. This framing preference is real but not distinctive for its layer.\",\n \"evidence\": \"All four predictions went the predicted way (head size d +0.92, head-and-chest d +0.73, still pose d +0.57), but none reached the 95th percentile (82, 90, 93), so many other units show the same close-up bias. Facing the camera head-on barely mattered (d +0.26, 68th percentile), so the frontal-portrait part of the explanation is not supported.\",\n \"missing_data\": \"Activity on non-dog classes and on non-dog close-up faces (cats, people), to tell whether the unit is dog-specific or a general close-up-face or texture unit. Also which breeds are among the top 24 classes.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, and somewhat more to close, still, head-and-chest views where the dog's head fills much of the frame. This framing preference is real but not distinctive for its layer.\",\n \"evidence\": \"All four predictions went the predicted way (head size d +0.92, head-and-chest d +0.73, still pose d +0.57), but none reached the 95th percentile (82, 90, 93), so many other units show the same close-up bias. Facing the camera head-on barely mattered (d +0.26, 68th percentile), so the frontal-portrait part of the explanation is not supported.\",\n \"missing_data\": \"Activity on non-dog classes and on non-dog close-up faces (cats, people), to tell whether the unit is dog-specific or a general close-up-face or texture unit. Also which breeds are among the top 24 classes.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit responds to dog photos, but none of the proposed within-dog distinctions (head size in frame, frontal gaze, head-only framing, stillness) explain its activity, so what drives it among dog classes remains unknown.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit responds to dog photos, but none of the proposed within-dog distinctions (head size in frame, frontal gaze, head-only framing, stillness) explain its activity, so what drives it among dog classes remains unknown.",
+   "evidence": "All four predictions failed with adequate sample sizes on both sides (percentiles 12–62). Large-head photos were if anything slightly less active than small-head ones (d -0.34), contradicting the portrait-close-up account.",
+   "missing_data": "Within-class activity comparisons on other attributes (breed or coat texture, color, background, lighting), plus how the unit responds to non-dog images, would most change the answer.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5aa79ad13b64d91ad3094ea3379ae3ae8fcb7a1721adffdedac9b6dc12382973",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit responds to dog photos, but none of the proposed within-dog distinctions (head size in frame, frontal gaze, head-only framing, stillness) explain its activity, so what drives it among dog classes remains unknown.\",\n \"evidence\": \"All four predictions failed with adequate sample sizes on both sides (percentiles 12–62). Large-head photos were if anything slightly less active than small-head ones (d -0.34), contradicting the portrait-close-up account.\",\n \"missing_data\": \"Within-class activity comparisons on other attributes (breed or coat texture, color, background, lighting), plus how the unit responds to non-dog images, would most change the answer.\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit responds to dog photos, but none of the proposed within-dog distinctions (head size in frame, frontal gaze, head-only framing, stillness) explain its activity, so what drives it among dog classes remains unknown.\",\n \"evidence\": \"All four predictions failed with adequate sample sizes on both sides (percentiles 12–62). Large-head photos were if anything slightly less active than small-head ones (d -0.34), contradicting the portrait-close-up account.\",\n \"missing_data\": \"Within-class activity comparisons on other attributes (breed or coat texture, color, background, lighting), plus how the unit responds to non-dog images, would most change the answer.\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on dog photo classes (e.g., beagle, Pembroke), but the proposed refinement to frontal close-up dog faces is not supported; within-class activity does not track head size, face orientation, motion or body visibility.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on dog photo classes (e.g., beagle, Pembroke), but the proposed refinement to frontal close-up dog faces is not supported; within-class activity does not track head size, face orientation, motion or body visibility.",
+   "evidence": "All four predictions failed, with d values slightly negative (-0.25 to -0.07) and percentiles of 13–42, so none of the face-framing or pose features explain variation within a class. What does drive it is not shown by this data.",
+   "missing_data": "Per-class average activity across all classes, including non-dog classes, to tell whether the unit is selective for dogs, a dog subgroup or something else, plus tests of other within-class features such as fur color/texture, background or lighting.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a20e5f5679e6d68c7983abc14fe5f0b50d5b90362d719b7cd3b5fb334dab68be",
+  "texts": [
+   "{\"class\": \"cannot_tell\", \"explanation\": \"The unit is most active on dog photo classes (e.g., beagle, Pembroke), but the proposed refinement to frontal close-up dog faces is not supported; within-class activity does not track head size, face orientation, motion or body visibility.\", \"evidence\": \"All four predictions failed, with d values slightly negative (-0.25 to -0.07) and percentiles of 13–42, so none of the face-framing or pose features explain variation within a class. What does drive it is not shown by this data.\", \"missing_data\": \"Per-class average activity across all classes, including non-dog classes, to tell whether the unit is selective for dogs, a dog subgroup or something else, plus tests of other within-class features such as fur color/texture, background or lighting.\", \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\", \"explanation\": \"The unit is most active on dog photo classes (e.g., beagle, Pembroke), but the proposed refinement to frontal close-up dog faces is not supported; within-class activity does not track head size, face orientation, motion or body visibility.\", \"evidence\": \"All four predictions failed, with d values slightly negative (-0.25 to -0.07) and percentiles of 13–42, so none of the face-framing or pose features explain variation within a class. What does drive it is not shown by this data.\", \"missing_data\": \"Per-class average activity across all classes, including non-dog classes, to tell whether the unit is selective for dogs, a dog subgroup or something else, plus tests of other within-class features such as fur color/texture, background or lighting.\", \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on dog classes, but what drives it within those classes is unclear; it is not the close-up, frontal dog face described.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on dog classes, but what drives it within those classes is unclear; it is not the close-up, frontal dog face described.",
+   "evidence": "All four predictions failed. Head size (d -0.34, 12th percentile) and still pose (d -0.19, 13th percentile) leaned slightly the opposite way, toward smaller heads and moving dogs, while facing the camera (d +0.21) and head-and-chest framing (d +0.02) showed little effect.",
+   "missing_data": "Top-activating photos and per-class mean activations, plus tests of the reversed hypothesis (small, whole-body, active dogs or background/scene context), to see whether a coherent within-class feature exists.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "669d0802057bb4be571c2312fc18b68a64366bdaeaa2a7038952e1051f326d5e",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on dog classes, but what drives it within those classes is unclear; it is not the close-up, frontal dog face described.\",\n \"evidence\": \"All four predictions failed. Head size (d -0.34, 12th percentile) and still pose (d -0.19, 13th percentile) leaned slightly the opposite way, toward smaller heads and moving dogs, while facing the camera (d +0.21) and head-and-chest framing (d +0.02) showed little effect.\",\n \"missing_data\": \"Top-activating photos and per-class mean activations, plus tests of the reversed hypothesis (small, whole-body, active dogs or background/scene context), to see whether a coherent within-class feature exists.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on dog classes, but what drives it within those classes is unclear; it is not the close-up, frontal dog face described.\",\n \"evidence\": \"All four predictions failed. Head size (d -0.34, 12th percentile) and still pose (d -0.19, 13th percentile) leaned slightly the opposite way, toward smaller heads and moving dogs, while facing the camera (d +0.21) and head-and-chest framing (d +0.02) showed little effect.\",\n \"missing_data\": \"Top-activating photos and per-class mean activations, plus tests of the reversed hypothesis (small, whole-body, active dogs or background/scene context), to see whether a coherent within-class feature exists.\",\n \"confidence\": 0.55}\n```",
+  "valid": true
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to the face and body of a light-colored (white, cream or pale tan) fluffy dog that fills much of the photo and faces the camera, with dark eyes and nose visible. It is strongest on close or medium shots of small white long-haired dogs such as Maltese, Westies and Dandie Dinmonts. Activity drops sharply when the dog is small in a wide scene (far-off kuvasz, dog in a show backdrop, dog on autumn leaves). It is also weaker for dark or wiry-coated dogs. Compared with the similar units, it stays high for close-up frontal faces even of non-terrier canids (wolf, corgi, close-up kuvasz). It is low when the dog is distant.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog take up?",
+    "answers": [
+     "Dog fills most of the frame (close-up)",
+     "Dog takes up a moderate part of the frame",
+     "Dog is small in a wide scene",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's face turned toward the camera with both eyes and the nose clearly visible?",
+    "answers": [
+     "Yes, facing the camera",
+     "Partly turned or partly hidden",
+     "Face turned away or not visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What is the main color of the dog's coat?",
+    "answers": [
+     "White or cream",
+     "Light tan or golden",
+     "Dark brown, black, or mostly dark",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What does the dog's fur look like?",
+    "answers": [
+     "Long, soft and fluffy",
+     "Short or smooth",
+     "Coarse and wiry",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ca13383f453a0b1d7a268b02f540b845f544d44987f3ba5a5c78e5a7c508db",
+  "texts": [
+   "{\"explanation\": \"The unit responds to the face and body of a light-colored (white, cream or pale tan) fluffy dog that fills much of the photo and faces the camera, with dark eyes and nose visible. It is strongest on close or medium shots of small white long-haired dogs such as Maltese, Westies and Dandie Dinmonts. Activity drops sharply when the dog is small in a wide scene (far-off kuvasz, dog in a show backdrop, dog on autumn leaves). It is also weaker for dark or wiry-coated dogs. Compared with the similar units, it stays high for close-up frontal faces even of non-terrier canids (wolf, corgi, close-up kuvasz). It is low when the dog is distant.\", \"predictions\": [{\"question\": \"How much of the photo does the dog take up?\", \"answers\": [\"Dog fills most of the frame (close-up)\", \"Dog takes up a moderate part of the frame\", \"Dog is small in a wide scene\", \"No dog visible\"], \"most_active\": \"Dog fills most of the frame (close-up)\", \"least_active\": \"Dog is small in a wide scene\"}, {\"question\": \"Is the dog's face turned toward the camera with both eyes and the nose clearly visible?\", \"answers\": [\"Yes, facing the camera\", \"Partly turned or partly hidden\", \"Face turned away or not visible\", \"No dog visible\"], \"most_active\": \"Yes, facing the camera\", \"least_active\": \"Face turned away or not visible\"}, {\"question\": \"What is the main color of the dog's coat?\", \"answers\": [\"White or cream\", \"Light tan or golden\", \"Dark brown, black, or mostly dark\", \"No dog visible\"], \"most_active\": \"White or cream\", \"least_active\": \"Dark brown, black, or mostly dark\"}, {\"question\": \"What does the dog's fur look like?\", \"answers\": [\"Long, soft and fluffy\", \"Short or smooth\", \"Coarse and wiry\", \"No dog visible\"], \"most_active\": \"Long, soft and fluffy\", \"least_active\": \"Coarse and wiry\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to the face and body of a light-colored (white, cream or pale tan) fluffy dog that fills much of the photo and faces the camera, with dark eyes and nose visible. It is strongest on close or medium shots of small white long-haired dogs such as Maltese, Westies and Dandie Dinmonts. Activity drops sharply when the dog is small in a wide scene (far-off kuvasz, dog in a show backdrop, dog on autumn leaves). It is also weaker for dark or wiry-coated dogs. Compared with the similar units, it stays high for close-up frontal faces even of non-terrier canids (wolf, corgi, close-up kuvasz). It is low when the dog is distant.\", \"predictions\": [{\"question\": \"How much of the photo does the dog take up?\", \"answers\": [\"Dog fills most of the frame (close-up)\", \"Dog takes up a moderate part of the frame\", \"Dog is small in a wide scene\", \"No dog visible\"], \"most_active\": \"Dog fills most of the frame (close-up)\", \"least_active\": \"Dog is small in a wide scene\"}, {\"question\": \"Is the dog's face turned toward the camera with both eyes and the nose clearly visible?\", \"answers\": [\"Yes, facing the camera\", \"Partly turned or partly hidden\", \"Face turned away or not visible\", \"No dog visible\"], \"most_active\": \"Yes, facing the camera\", \"least_active\": \"Face turned away or not visible\"}, {\"question\": \"What is the main color of the dog's coat?\", \"answers\": [\"White or cream\", \"Light tan or golden\", \"Dark brown, black, or mostly dark\", \"No dog visible\"], \"most_active\": \"White or cream\", \"least_active\": \"Dark brown, black, or mostly dark\"}, {\"question\": \"What does the dog's fur look like?\", \"answers\": [\"Long, soft and fluffy\", \"Short or smooth\", \"Coarse and wiry\", \"No dog visible\"], \"most_active\": \"Long, soft and fluffy\", \"least_active\": \"Coarse and wiry\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds mostly to a large, close-up, front-facing dog face, especially one with light-colored (white or cream) fluffy fur and clearly visible dark eyes and nose. Activity is highest when the face fills much of the frame and looks toward the camera, whether the dog is a Maltese, a kuvasz head shot or a wolf. Activity drops sharply when the dog is small in a wide scene (a distant kuvasz in fog, a Leonberg or a Dandie standing full-body with a person) and is lower for dark reddish-brown wiry faces. Compared with similar units, this unit prefers close frontal face crops over full-body views.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's head take up?",
+    "answers": [
+     "more than a third of the photo",
+     "between a tenth and a third",
+     "less than a tenth",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's face turned toward the camera with both eyes and the nose clearly visible?",
+    "answers": [
+     "yes, facing the camera",
+     "partly turned or in profile",
+     "face not visible or turned away",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What is the main color of the fur on the dog's face?",
+    "answers": [
+     "white or cream",
+     "golden or light tan",
+     "reddish-brown, dark brown or black",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's whole body shown standing in a wide scene, such as outdoors or posed with a person?",
+    "answers": [
+     "yes, full body in a wide scene",
+     "no, mostly head or upper body",
+     "no dog visible"
+    ],
+    "most": 1,
+    "least": 0
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ca13383f453a0b1d7a268b02f540b845f544d44987f3ba5a5c78e5a7c508db",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to a large, close-up, front-facing dog face, especially one with light-colored (white or cream) fluffy fur and clearly visible dark eyes and nose. Activity is highest when the face fills much of the frame and looks toward the camera, whether the dog is a Maltese, a kuvasz head shot or a wolf. Activity drops sharply when the dog is small in a wide scene (a distant kuvasz in fog, a Leonberg or a Dandie standing full-body with a person) and is lower for dark reddish-brown wiry faces. Compared with similar units, this unit prefers close frontal face crops over full-body views.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"more than a third of the photo\", \"between a tenth and a third\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a third of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"Is the dog's face turned toward the camera with both eyes and the nose clearly visible?\", \"answers\": [\"yes, facing the camera\", \"partly turned or in profile\", \"face not visible or turned away\", \"no dog visible\"], \"most_active\": \"yes, facing the camera\", \"least_active\": \"face not visible or turned away\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"white or cream\", \"golden or light tan\", \"reddish-brown, dark brown or black\", \"no dog face visible\"], \"most_active\": \"white or cream\", \"least_active\": \"reddish-brown, dark brown or black\"}, {\"question\": \"Is the dog's whole body shown standing in a wide scene, such as outdoors or posed with a person?\", \"answers\": [\"yes, full body in a wide scene\", \"no, mostly head or upper body\", \"no dog visible\"], \"most_active\": \"no, mostly head or upper body\", \"least_active\": \"yes, full body in a wide scene\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to a large, close-up, front-facing dog face, especially one with light-colored (white or cream) fluffy fur and clearly visible dark eyes and nose. Activity is highest when the face fills much of the frame and looks toward the camera, whether the dog is a Maltese, a kuvasz head shot or a wolf. Activity drops sharply when the dog is small in a wide scene (a distant kuvasz in fog, a Leonberg or a Dandie standing full-body with a person) and is lower for dark reddish-brown wiry faces. Compared with similar units, this unit prefers close frontal face crops over full-body views.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"more than a third of the photo\", \"between a tenth and a third\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a third of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"Is the dog's face turned toward the camera with both eyes and the nose clearly visible?\", \"answers\": [\"yes, facing the camera\", \"partly turned or in profile\", \"face not visible or turned away\", \"no dog visible\"], \"most_active\": \"yes, facing the camera\", \"least_active\": \"face not visible or turned away\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"white or cream\", \"golden or light tan\", \"reddish-brown, dark brown or black\", \"no dog face visible\"], \"most_active\": \"white or cream\", \"least_active\": \"reddish-brown, dark brown or black\"}, {\"question\": \"Is the dog's whole body shown standing in a wide scene, such as outdoors or posed with a person?\", \"answers\": [\"yes, full body in a wide scene\", \"no, mostly head or upper body\", \"no dog visible\"], \"most_active\": \"no, mostly head or upper body\", \"least_active\": \"yes, full body in a wide scene\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a close-up, front-facing dog face, mostly when it fills much of the photo and the dark eyes and nose stand out as distinct spots on a light (white, cream or grey) furred face. It responds most to light fluffy small dogs and to wolf, kuvasz and Appenzeller faces looking at the camera. It is weak when the dog is small or far away in the scene, seen whole-body at a distance, or when the face is uniformly reddish-brown, so the eyes and nose have little contrast. Compared with the similar units, it prefers large, frontal, high-contrast faces over the dog's overall body, coat texture or distant views.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's face take up?",
+    "answers": [
+     "More than about a quarter of the photo",
+     "A noticeable part but less than a quarter",
+     "A small part (dog is far away or small in the scene)",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's face turned toward the camera so that both eyes and the nose are visible?",
+    "answers": [
+     "Yes, facing the camera",
+     "No, side view, turned away, or eyes hidden",
+     "No dog in the photo"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What color is the fur around the dog's eyes and nose?",
+    "answers": [
+     "White, cream or light grey",
+     "Tan, golden or mixed light and dark",
+     "Reddish-brown, dark brown or black",
+     "No dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Do the dog's dark eyes and dark nose stand out clearly as distinct dark spots on its face?",
+    "answers": [
+     "Yes, clearly contrasting",
+     "Somewhat, or partly hidden",
+     "No, low contrast or not visible",
+     "No dog in the photo"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70ca13383f453a0b1d7a268b02f540b845f544d44987f3ba5a5c78e5a7c508db",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a close-up, front-facing dog face, mostly when it fills much of the photo and the dark eyes and nose stand out as distinct spots on a light (white, cream or grey) furred face. It responds most to light fluffy small dogs and to wolf, kuvasz and Appenzeller faces looking at the camera. It is weak when the dog is small or far away in the scene, seen whole-body at a distance, or when the face is uniformly reddish-brown, so the eyes and nose have little contrast. Compared with the similar units, it prefers large, frontal, high-contrast faces over the dog's overall body, coat texture or distant views.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"More than about a quarter of the photo\", \"A noticeable part but less than a quarter\", \"A small part (dog is far away or small in the scene)\", \"No dog face visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"A small part (dog is far away or small in the scene)\"}, {\"question\": \"Is the dog's face turned toward the camera so that both eyes and the nose are visible?\", \"answers\": [\"Yes, facing the camera\", \"No, side view, turned away, or eyes hidden\", \"No dog in the photo\"], \"most_active\": \"Yes, facing the camera\", \"least_active\": \"No, side view, turned away, or eyes hidden\"}, {\"question\": \"What color is the fur around the dog's eyes and nose?\", \"answers\": [\"White, cream or light grey\", \"Tan, golden or mixed light and dark\", \"Reddish-brown, dark brown or black\", \"No dog face visible\"], \"most_active\": \"White, cream or light grey\", \"least_active\": \"Reddish-brown, dark brown or black\"}, {\"question\": \"Do the dog's dark eyes and dark nose stand out clearly as distinct dark spots on its face?\", \"answers\": [\"Yes, clearly contrasting\", \"Somewhat, or partly hidden\", \"No, low contrast or not visible\", \"No dog in the photo\"], \"most_active\": \"Yes, clearly contrasting\", \"least_active\": \"No, low contrast or not visible\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a close-up, front-facing dog face, mostly when it fills much of the photo and the dark eyes and nose stand out as distinct spots on a light (white, cream or grey) furred face. It responds most to light fluffy small dogs and to wolf, kuvasz and Appenzeller faces looking at the camera. It is weak when the dog is small or far away in the scene, seen whole-body at a distance, or when the face is uniformly reddish-brown, so the eyes and nose have little contrast. Compared with the similar units, it prefers large, frontal, high-contrast faces over the dog's overall body, coat texture or distant views.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's face take up?\", \"answers\": [\"More than about a quarter of the photo\", \"A noticeable part but less than a quarter\", \"A small part (dog is far away or small in the scene)\", \"No dog face visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"A small part (dog is far away or small in the scene)\"}, {\"question\": \"Is the dog's face turned toward the camera so that both eyes and the nose are visible?\", \"answers\": [\"Yes, facing the camera\", \"No, side view, turned away, or eyes hidden\", \"No dog in the photo\"], \"most_active\": \"Yes, facing the camera\", \"least_active\": \"No, side view, turned away, or eyes hidden\"}, {\"question\": \"What color is the fur around the dog's eyes and nose?\", \"answers\": [\"White, cream or light grey\", \"Tan, golden or mixed light and dark\", \"Reddish-brown, dark brown or black\", \"No dog face visible\"], \"most_active\": \"White, cream or light grey\", \"least_active\": \"Reddish-brown, dark brown or black\"}, {\"question\": \"Do the dog's dark eyes and dark nose stand out clearly as distinct dark spots on its face?\", \"answers\": [\"Yes, clearly contrasting\", \"Somewhat, or partly hidden\", \"No, low contrast or not visible\", \"No dog in the photo\"], \"most_active\": \"Yes, clearly contrasting\", \"least_active\": \"No, low contrast or not visible\"}]}",
+  "valid": true
+ }
+}

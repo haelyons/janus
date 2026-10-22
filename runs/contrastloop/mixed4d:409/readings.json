@@ -1,0 +1,122 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a vehicle (especially a car or pickup) seen in side or three-quarter profile, with the long body and both wheels visible. It extends more weakly to other side-profile subjects such as a tanker truck or a standing animal.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a vehicle (especially a car or pickup) seen in side or three-quarter profile, with the long body and both wheels visible. It extends more weakly to other side-profile subjects such as a tanker truck or a standing animal.",
+   "evidence": "The viewing-angle prediction held strongly: d +0.89 at the 99th percentile across 85 vs 28 photos. The red/orange color preference was positive but did not reach significance (d +0.43, 92nd percentile).",
+   "missing_data": "Enough toy/model and multi-vehicle photos to test predictions 2 and 3, plus more side-profile non-vehicle subjects (animals) to see how strongly they drive the unit compared with cars.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "659867bd82833458d75af3e3559ff95e46dce05e5fc2d9a7efcc21f77698371a",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a vehicle (especially a car or pickup) seen in side or three-quarter profile, with the long body and both wheels visible. It extends more weakly to other side-profile subjects such as a tanker truck or a standing animal.\",\n \"evidence\": \"The viewing-angle prediction held strongly: d +0.89 at the 99th percentile across 85 vs 28 photos. The red/orange color preference was positive but did not reach significance (d +0.43, 92nd percentile).\",\n \"missing_data\": \"Enough toy/model and multi-vehicle photos to test predictions 2 and 3, plus more side-profile non-vehicle subjects (animals) to see how strongly they drive the unit compared with cars.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a vehicle (especially a car or pickup) seen in side or three-quarter profile, with the long body and both wheels visible. It extends more weakly to other side-profile subjects such as a tanker truck or a standing animal.\",\n \"evidence\": \"The viewing-angle prediction held strongly: d +0.89 at the 99th percentile across 85 vs 28 photos. The red/orange color preference was positive but did not reach significance (d +0.43, 92nd percentile).\",\n \"missing_data\": \"Enough toy/model and multi-vehicle photos to test predictions 2 and 3, plus more side-profile non-vehicle subjects (animals) to see how strongly they drive the unit compared with cars.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a single whole road vehicle seen from the side or in three-quarter view, an elongated body in profile, with weaker activity when no vehicle exterior is visible.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a single whole road vehicle seen from the side or in three-quarter view, an elongated body in profile, with weaker activity when no vehicle exterior is visible.",
+   "evidence": "Only the viewpoint prediction held (d +0.39, 98th percentile). Era (87th) and red color (93rd, d +0.45) leaned the predicted way but fell short, and low car body versus tall boxy body went the wrong way (d -0.17), so body shape and era are not supported.",
+   "missing_data": "Within-class comparisons of side-view versus front or rear views of the same vehicles, plus non-vehicle elongated objects in profile such as animals and trains, to test whether the unit is vehicle-specific or about profile shape in general.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8cd4eaa17ca3cbf5b5218d46d40efcb30929dcb8d6a007f29fe92e1801bc3be5",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single whole road vehicle seen from the side or in three-quarter view, an elongated body in profile, with weaker activity when no vehicle exterior is visible.\",\n \"evidence\": \"Only the viewpoint prediction held (d +0.39, 98th percentile). Era (87th) and red color (93rd, d +0.45) leaned the predicted way but fell short, and low car body versus tall boxy body went the wrong way (d -0.17), so body shape and era are not supported.\",\n \"missing_data\": \"Within-class comparisons of side-view versus front or rear views of the same vehicles, plus non-vehicle elongated objects in profile such as animals and trains, to test whether the unit is vehicle-specific or about profile shape in general.\",\n \"confidence\": 0.55}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single whole road vehicle seen from the side or in three-quarter view, an elongated body in profile, with weaker activity when no vehicle exterior is visible.\",\n \"evidence\": \"Only the viewpoint prediction held (d +0.39, 98th percentile). Era (87th) and red color (93rd, d +0.45) leaned the predicted way but fell short, and low car body versus tall boxy body went the wrong way (d -0.17), so body shape and era are not supported.\",\n \"missing_data\": \"Within-class comparisons of side-view versus front or rear views of the same vehicles, plus non-vehicle elongated objects in profile such as animals and trains, to test whether the unit is vehicle-specific or about profile shape in general.\",\n \"confidence\": 0.55}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a single long-bodied vehicle seen whole from the side or front three-quarter and filling the frame, with a weaker extension to other long horizontal bodies in side profile, such as ibex. It does not respond to vehicles as such, and the evidence does not show a preference for 1950s–80s styling.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a single long-bodied vehicle seen whole from the side or front three-quarter and filling the frame, with a weaker extension to other long horizontal bodies in side profile, such as ibex. It does not respond to vehicles as such, and the evidence does not show a preference for 1950s–80s styling.",
+   "evidence": "The viewpoint and framing prediction held (d +0.37, 98th percentile). Vehicle presence alone gave essentially no difference (real vehicle vs no vehicle d +0.02; car vs no vehicle d -0.01), and the era prediction failed (85th percentile), so the shape and framing drive the response rather than vehicle identity or era.",
+   "missing_data": "Activations broken down by what the no-vehicle photos show (ibex and other side-profile animals vs other content), and a test of side-profile framing on non-vehicle objects.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a89b3696adec5433c724f9287839e8157895d94078bd456bcd6e0dc47144b576",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a single long-bodied vehicle seen whole from the side or front three-quarter and filling the frame, with a weaker extension to other long horizontal bodies in side profile, such as ibex. It does not respond to vehicles as such, and the evidence does not show a preference for 1950s–80s styling.\",\n \"evidence\": \"The viewpoint and framing prediction held (d +0.37, 98th percentile). Vehicle presence alone gave essentially no difference (real vehicle vs no vehicle d +0.02; car vs no vehicle d -0.01), and the era prediction failed (85th percentile), so the shape and framing drive the response rather than vehicle identity or era.\",\n \"missing_data\": \"Activations broken down by what the no-vehicle photos show (ibex and other side-profile animals vs other content), and a test of side-profile framing on non-vehicle objects.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a single long-bodied vehicle seen whole from the side or front three-quarter and filling the frame, with a weaker extension to other long horizontal bodies in side profile, such as ibex. It does not respond to vehicles as such, and the evidence does not show a preference for 1950s–80s styling.\",\n \"evidence\": \"The viewpoint and framing prediction held (d +0.37, 98th percentile). Vehicle presence alone gave essentially no difference (real vehicle vs no vehicle d +0.02; car vs no vehicle d -0.01), and the era prediction failed (85th percentile), so the shape and framing drive the response rather than vehicle identity or era.\",\n \"missing_data\": \"Activations broken down by what the no-vehicle photos show (ibex and other side-profile animals vs other content), and a test of side-profile framing on non-vehicle objects.\",\n \"confidence\": 0.6}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit plausibly responds to single real road vehicles (cars, pickups) seen in side or three-quarter profile, possibly extending to other side-profile subjects like animals, but the within-class tests did not confirm the specific features proposed.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit plausibly responds to single real road vehicles (cars, pickups) seen in side or three-quarter profile, possibly extending to other side-profile subjects like animals, but the within-class tests did not confirm the specific features proposed.",
+   "evidence": "Viewing angle (d +0.25, 88th percentile) and red color (d +0.23, 83rd percentile) showed only weak, non-significant effects within classes, and the toy-vs-real and single-vs-crowded predictions had too few contrasting photos to test.",
+   "missing_data": "More photos with toys/models and crowded multi-vehicle scenes within the top classes, plus activity on non-vehicle side-profile subjects, to test whether profile view or real-vehicle identity drives the unit beyond class identity.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "88a617f10346836d3cebc210f00c3164654441b150671bb065ede4bc189bc102",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit plausibly responds to single real road vehicles (cars, pickups) seen in side or three-quarter profile, possibly extending to other side-profile subjects like animals, but the within-class tests did not confirm the specific features proposed.\",\n \"evidence\": \"Viewing angle (d +0.25, 88th percentile) and red color (d +0.23, 83rd percentile) showed only weak, non-significant effects within classes, and the toy-vs-real and single-vs-crowded predictions had too few contrasting photos to test.\",\n \"missing_data\": \"More photos with toys/models and crowded multi-vehicle scenes within the top classes, plus activity on non-vehicle side-profile subjects, to test whether profile view or real-vehicle identity drives the unit beyond class identity.\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit plausibly responds to single real road vehicles (cars, pickups) seen in side or three-quarter profile, possibly extending to other side-profile subjects like animals, but the within-class tests did not confirm the specific features proposed.\",\n \"evidence\": \"Viewing angle (d +0.25, 88th percentile) and red color (d +0.23, 83rd percentile) showed only weak, non-significant effects within classes, and the toy-vs-real and single-vs-crowded predictions had too few contrasting photos to test.\",\n \"missing_data\": \"More photos with toys/models and crowded multi-vehicle scenes within the top classes, plus activity on non-vehicle side-profile subjects, to test whether profile view or real-vehicle identity drives the unit beyond class identity.\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit's top classes are mostly road vehicles, which suggests a class-level vehicle preference, but none of the proposed within-class features (classic era, side-on whole view, low car-like body, red color) accounts for its activity.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit's top classes are mostly road vehicles, which suggests a class-level vehicle preference, but none of the proposed within-class features (classic era, side-on whole view, low car-like body, red color) accounts for its activity.",
+   "evidence": "All four predictions failed. Even the contrasts against photos with no vehicle at all came out near zero (d -0.10, -0.01, +0.13), and the low-body vs tall-boxy contrast went the wrong way (d -0.23, percentile 12).",
+   "missing_data": "The list of the 24 top classes with their mean activations, plus within-class tests of other visual features such as pavement or road texture, horizontal edges, or wheels, to show what drives activity beyond class identity.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a520b1d7f9257efbe0a0e788d9cacffe3f546cd7f657ce2f3a43be942b36e8d6",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit's top classes are mostly road vehicles, which suggests a class-level vehicle preference, but none of the proposed within-class features (classic era, side-on whole view, low car-like body, red color) accounts for its activity.\",\n \"evidence\": \"All four predictions failed. Even the contrasts against photos with no vehicle at all came out near zero (d -0.10, -0.01, +0.13), and the low-body vs tall-boxy contrast went the wrong way (d -0.23, percentile 12).\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, plus within-class tests of other visual features such as pavement or road texture, horizontal edges, or wheels, to show what drives activity beyond class identity.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit's top classes are mostly road vehicles, which suggests a class-level vehicle preference, but none of the proposed within-class features (classic era, side-on whole view, low car-like body, red color) accounts for its activity.\",\n \"evidence\": \"All four predictions failed. Even the contrasts against photos with no vehicle at all came out near zero (d -0.10, -0.01, +0.13), and the low-body vs tall-boxy contrast went the wrong way (d -0.23, percentile 12).\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, plus within-class tests of other visual features such as pavement or road texture, horizontal edges, or wheels, to show what drives activity beyond class identity.\",\n \"confidence\": 0.3}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit appears to respond at the class level to road-vehicle categories such as cars, wagons and trucks, with a weaker extension to ibex-like long horizontal bodies on legs. Within those classes it does not track the specific features proposed: whole side or three-quarter view, 1950s–80s boxy styling, real versus toy, or car versus bus.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit appears to respond at the class level to road-vehicle categories such as cars, wagons and trucks, with a weaker extension to ibex-like long horizontal bodies on legs. Within those classes it does not track the specific features proposed: whole side or three-quarter view, 1950s–80s boxy styling, real versus toy, or car versus bus.",
+   "evidence": "All four within-class predictions failed, with d between -0.10 and +0.01 and percentiles of 20–77. So once class differences are removed, the unit's activity does not follow viewpoint, era, realism or vehicle type; the vehicle-class reading rests only on which classes were most active, not on these tests.",
+   "missing_data": "The list of the 24 most-active classes with their mean activations, and a comparison against non-vehicle classes, to confirm the class-level vehicle and ibex selectivity and find what drives variation within a class.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "124416a994f11b4eb252c43608c2a1d0d925bf202a129ab43b7b69dfedb37c83",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond at the class level to road-vehicle categories such as cars, wagons and trucks, with a weaker extension to ibex-like long horizontal bodies on legs. Within those classes it does not track the specific features proposed: whole side or three-quarter view, 1950s–80s boxy styling, real versus toy, or car versus bus.\",\n \"evidence\": \"All four within-class predictions failed, with d between -0.10 and +0.01 and percentiles of 20–77. So once class differences are removed, the unit's activity does not follow viewpoint, era, realism or vehicle type; the vehicle-class reading rests only on which classes were most active, not on these tests.\",\n \"missing_data\": \"The list of the 24 most-active classes with their mean activations, and a comparison against non-vehicle classes, to confirm the class-level vehicle and ibex selectivity and find what drives variation within a class.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit appears to respond at the class level to road-vehicle categories such as cars, wagons and trucks, with a weaker extension to ibex-like long horizontal bodies on legs. Within those classes it does not track the specific features proposed: whole side or three-quarter view, 1950s–80s boxy styling, real versus toy, or car versus bus.\",\n \"evidence\": \"All four within-class predictions failed, with d between -0.10 and +0.01 and percentiles of 20–77. So once class differences are removed, the unit's activity does not follow viewpoint, era, realism or vehicle type; the vehicle-class reading rests only on which classes were most active, not on these tests.\",\n \"missing_data\": \"The list of the 24 most-active classes with their mean activations, and a comparison against non-vehicle classes, to confirm the class-level vehicle and ibex selectivity and find what drives variation within a class.\",\n \"confidence\": 0.35}\n```",
+  "valid": true
+ }
+}

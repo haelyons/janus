@@ -1,0 +1,795 @@
+{
+ "unit": "mixed4b:373",
+ "layer": "mixed4b",
+ "chan": 373,
+ "m": 512,
+ "n_looked": 122,
+ "n": 118,
+ "classes": [
+  436,
+  555,
+  864,
+  817,
+  867,
+  586,
+  656,
+  654,
+  866,
+  407,
+  569,
+  779,
+  717,
+  734,
+  479,
+  675,
+  661,
+  609,
+  627,
+  803,
+  511,
+  757,
+  561,
+  751
+ ],
+ "class_names": [
+  "beach wagon",
+  "fire engine",
+  "tow truck",
+  "sports car",
+  "trailer truck",
+  "half track",
+  "minivan",
+  "minibus",
+  "tractor",
+  "ambulance",
+  "garbage truck",
+  "school bus",
+  "pickup",
+  "police van",
+  "car wheel",
+  "moving van",
+  "Model T",
+  "jeep",
+  "limousine",
+  "snowplow",
+  "convertible",
+  "recreational vehicle",
+  "forklift",
+  "racer"
+ ],
+ "peers": [
+  {
+   "chan": 491,
+   "unit": "mixed4b:491",
+   "corr": 0.7514048205955767
+  },
+  {
+   "chan": 209,
+   "unit": "mixed4b:209",
+   "corr": 0.7481201631713373
+  },
+  {
+   "chan": 217,
+   "unit": "mixed4b:217",
+   "corr": 0.7310192140694302
+  }
+ ],
+ "D": [
+  950,
+  951,
+  953,
+  954,
+  956,
+  957,
+  958,
+  1561,
+  1562,
+  1564,
+  1565,
+  1567,
+  1610,
+  1613,
+  1616,
+  1794,
+  1795,
+  1796,
+  1798,
+  1799,
+  3806,
+  3807,
+  3808,
+  4321,
+  4327,
+  4328,
+  4600,
+  4603,
+  4604,
+  4606,
+  4609,
+  4731,
+  4732,
+  4737,
+  4738,
+  5142,
+  5143,
+  5146,
+  5147,
+  5149,
+  5381,
+  5382,
+  5384,
+  5385,
+  5386,
+  5387,
+  5388,
+  6030,
+  6033,
+  6034,
+  6037,
+  6680,
+  6681,
+  6682,
+  6684,
+  6688,
+  6689,
+  6770,
+  6771,
+  6776,
+  6777,
+  6890,
+  6892,
+  6894,
+  6895,
+  6896,
+  6897,
+  6898,
+  6899,
+  7000,
+  7001,
+  7003,
+  7004,
+  7005,
+  7007,
+  7150,
+  7152,
+  7155,
+  7156,
+  7190,
+  7191,
+  7196,
+  7197,
+  7199,
+  7470,
+  7471,
+  7473,
+  7474,
+  7475,
+  7476,
+  7478,
+  7479,
+  7706,
+  7707,
+  7709,
+  7831,
+  7836,
+  7837,
+  7838,
+  7839,
+  7893,
+  7894,
+  8450,
+  8451,
+  8452,
+  8453,
+  8454,
+  8455,
+  8456,
+  8459,
+  9121,
+  9122,
+  9123,
+  9125,
+  9126,
+  9127,
+  9820,
+  9822,
+  9824,
+  9825,
+  9828,
+  9829
+ ],
+ "T": [
+  952,
+  955,
+  959,
+  1560,
+  1563,
+  1566,
+  1568,
+  1569,
+  1611,
+  1612,
+  1614,
+  1615,
+  1617,
+  1618,
+  1619,
+  1790,
+  1791,
+  1792,
+  1793,
+  1797,
+  3800,
+  3801,
+  3802,
+  3803,
+  3804,
+  3805,
+  3809,
+  4320,
+  4322,
+  4323,
+  4324,
+  4325,
+  4326,
+  4329,
+  4601,
+  4602,
+  4605,
+  4607,
+  4608,
+  4730,
+  4733,
+  4734,
+  4735,
+  4736,
+  4739,
+  5140,
+  5141,
+  5144,
+  5145,
+  5148,
+  5380,
+  5383,
+  5389,
+  6031,
+  6032,
+  6035,
+  6036,
+  6038,
+  6039,
+  6683,
+  6685,
+  6686,
+  6687,
+  6772,
+  6773,
+  6774,
+  6775,
+  6778,
+  6779,
+  6891,
+  6893,
+  7002,
+  7006,
+  7008,
+  7009,
+  7151,
+  7153,
+  7154,
+  7157,
+  7158,
+  7159,
+  7192,
+  7193,
+  7194,
+  7195,
+  7198,
+  7472,
+  7477,
+  7700,
+  7701,
+  7702,
+  7703,
+  7704,
+  7705,
+  7708,
+  7830,
+  7832,
+  7833,
+  7834,
+  7835,
+  7890,
+  7891,
+  7892,
+  7895,
+  7896,
+  7897,
+  7898,
+  7899,
+  8457,
+  8458,
+  9120,
+  9124,
+  9128,
+  9129,
+  9821,
+  9823,
+  9826,
+  9827
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "How is the main vehicle framed?",
+   "answers": [
+    "whole vehicle in side or three-quarter view with wheels visible",
+    "cropped close-up, front-only, or interior view",
+    "many vehicles crowded together with no single clear one",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Is the vehicle real and full-size, or a toy, model or cake?",
+   "answers": [
+    "real full-size vehicle",
+    "toy, model, Lego or cake",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "What is the main color of the main vehicle's body?",
+   "answers": [
+    "red or orange",
+    "other color",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Are people, other objects or darkness hiding much of the main vehicle?",
+   "answers": [
+    "no, the vehicle is clearly visible",
+    "yes, much of it is hidden",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Is the main vehicle a real full-size vehicle, or a toy, model or cake?",
+   "answers": [
+    "real full-size vehicle",
+    "toy, model or cake",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "What color is the body of the main vehicle?",
+   "answers": [
+    "red or orange",
+    "white, silver or gray",
+    "blue, green or other color",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "How much of the main vehicle is shown?",
+   "answers": [
+    "whole vehicle from the side or three-quarter view, wheels visible",
+    "cropped close-up, front-only view or interior",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?",
+   "answers": [
+    "one dominant vehicle",
+    "many vehicles with none dominant",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "How is the main vehicle framed?",
+   "answers": [
+    "whole vehicle in side or three-quarter view with wheels visible",
+    "cropped close-up of front, interior or part of the vehicle",
+    "several small or distant vehicles, none dominant",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Is the vehicle a real full-size vehicle or a toy, model or cake?",
+   "answers": [
+    "real full-size vehicle",
+    "toy, model, cake or drawing",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "What is the main color of the main vehicle's body?",
+   "answers": [
+    "red or orange",
+    "white, silver or gray",
+    "other color",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Do people or objects other than the vehicle take up a large part of the photo?",
+   "answers": [
+    "no, the vehicle clearly dominates",
+    "yes, people or other objects are as prominent as the vehicle",
+    "no vehicle visible"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "The unit responds to a single real, full-size road vehicle seen whole from the side or front three-quarter angle, with its body and wheels clearly visible, usually parked on pavement in daylight. Red or orange bodywork (red wagons, fire engines, the orange moving van, the red pickup) adds to its activity. Its activity is low for toys, models and cakes, for interior or cargo-area views, for tight crops of the hood or front, for cluttered scenes with several vehicles (buses in a depot, cars on a carrier) and for vehicles blocked by people or darkness. Unlike similar units, it prefers clean full-profile shots (the classic pickup, moving van and jeep) over front close-ups, interiors and crowded vehicle scenes.",
+   "predictions": [
+    {
+     "question": "How is the main vehicle framed?",
+     "answers": [
+      "whole vehicle in side or three-quarter view with wheels visible",
+      "cropped close-up, front-only, or interior view",
+      "many vehicles crowded together with no single clear one",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 0,
+     "real": {
+      "n_hi": 90,
+      "n_lo": 25,
+      "d": 0.48097878634006375,
+      "pct": 95.8984375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 90,
+      "n_lo": 25,
+      "d": -0.038466232345780435,
+      "pct": 57.2265625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the vehicle real and full-size, or a toy, model or cake?",
+     "answers": [
+      "real full-size vehicle",
+      "toy, model, Lego or cake",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 1,
+     "real": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.26662774813715945,
+      "pct": 63.28125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.09604400345155766,
+      "pct": 55.078125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main color of the main vehicle's body?",
+     "answers": [
+      "red or orange",
+      "other color",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 2,
+     "real": {
+      "n_hi": 34,
+      "n_lo": 83,
+      "d": 0.24523828780565782,
+      "pct": 83.203125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 34,
+      "n_lo": 83,
+      "d": -0.13082900062112432,
+      "pct": 13.28125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are people, other objects or darkness hiding much of the main vehicle?",
+     "answers": [
+      "no, the vehicle is clearly visible",
+      "yes, much of it is hidden",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 3,
+     "real": {
+      "n_hi": 112,
+      "n_lo": 6,
+      "d": 0.4123773166750163,
+      "pct": 80.859375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 112,
+      "n_lo": 6,
+      "d": 0.20036412853224514,
+      "pct": 46.6796875,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "Responds to a single real, full-size road vehicle seen whole in side or three-quarter profile, with body and wheels visible, parked or driving on pavement in daylight. It is strongest when the body is red or orange: red wagon, fire engines, orange moving van, red pickup and red jeep score highest. It is weak for toys, models and cakes, for close-up crops or interior views, for night scenes, and for cluttered scenes with many small vehicles. Compared with similar units, it prefers red/orange vehicle bodies in full side view and dislikes pale-blue or blue vehicles and partial or interior views.",
+   "predictions": [
+    {
+     "question": "Is the main vehicle a real full-size vehicle, or a toy, model or cake?",
+     "answers": [
+      "real full-size vehicle",
+      "toy, model or cake",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 4,
+     "real": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.26662774813715945,
+      "pct": 63.28125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.09604400345155766,
+      "pct": 55.078125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What color is the body of the main vehicle?",
+     "answers": [
+      "red or orange",
+      "white, silver or gray",
+      "blue, green or other color",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 5,
+     "real": {
+      "n_hi": 34,
+      "n_lo": 45,
+      "d": 0.18250263386819812,
+      "pct": 75.390625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 34,
+      "n_lo": 45,
+      "d": -0.32487549044900027,
+      "pct": 2.734375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How much of the main vehicle is shown?",
+     "answers": [
+      "whole vehicle from the side or three-quarter view, wheels visible",
+      "cropped close-up, front-only view or interior",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 6,
+     "real": {
+      "n_hi": 91,
+      "n_lo": 27,
+      "d": 0.5067739004018119,
+      "pct": 97.0703125,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 91,
+      "n_lo": 27,
+      "d": 0.03308581503224469,
+      "pct": 66.6015625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?",
+     "answers": [
+      "one dominant vehicle",
+      "many vehicles with none dominant",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 7,
+     "real": {
+      "n_hi": 115,
+      "n_lo": 3,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     },
+     "null": {
+      "n_hi": 115,
+      "n_lo": 3,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "The unit responds to a single real, full-size road vehicle (car, wagon, fire engine, van, pickup) shown whole in side or three-quarter view, with its body and wheels clearly visible, standing on pavement. It is strongest for red or orange bodies and boxy or older styling. It is weak for toys, models and cakes, for interiors or cropped front close-ups, for scenes where people dominate, and for scenes of many small or distant vehicles such as buses in a depot or cars on a carrier. Compared with the similar units, it prefers the full side profile with wheels over front or detail close-ups.",
+   "predictions": [
+    {
+     "question": "How is the main vehicle framed?",
+     "answers": [
+      "whole vehicle in side or three-quarter view with wheels visible",
+      "cropped close-up of front, interior or part of the vehicle",
+      "several small or distant vehicles, none dominant",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 8,
+     "real": {
+      "n_hi": 90,
+      "n_lo": 25,
+      "d": 0.48097878634006375,
+      "pct": 95.8984375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 90,
+      "n_lo": 25,
+      "d": -0.038466232345780435,
+      "pct": 57.2265625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the vehicle a real full-size vehicle or a toy, model or cake?",
+     "answers": [
+      "real full-size vehicle",
+      "toy, model, cake or drawing",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 9,
+     "real": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.26662774813715945,
+      "pct": 63.28125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 109,
+      "n_lo": 9,
+      "d": 0.09604400345155766,
+      "pct": 55.078125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main color of the main vehicle's body?",
+     "answers": [
+      "red or orange",
+      "white, silver or gray",
+      "other color",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 10,
+     "real": {
+      "n_hi": 34,
+      "n_lo": 45,
+      "d": 0.18250263386819812,
+      "pct": 75.390625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 34,
+      "n_lo": 45,
+      "d": -0.32487549044900027,
+      "pct": 2.734375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Do people or objects other than the vehicle take up a large part of the photo?",
+     "answers": [
+      "no, the vehicle clearly dominates",
+      "yes, people or other objects are as prominent as the vehicle",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 11,
+     "real": {
+      "n_hi": 107,
+      "n_lo": 11,
+      "d": 0.8626170598117677,
+      "pct": 99.0234375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 107,
+      "n_lo": 11,
+      "d": -0.3153821700084695,
+      "pct": 11.1328125,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle framed?\nAnswers: whole vehicle in side or three-quarter view with wheels visible; cropped close-up, front-only, or interior view; many vehicles crowded together with no single clear one; no vehicle visible\nPredicted most active: whole vehicle in side or three-quarter view with wheels visible. Predicted least active: cropped close-up, front-only, or interior view.\nResult: 90 and 25 photos, d +0.48, percentile 96: held.\n\nPrediction 2. Is the vehicle real and full-size, or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model, Lego or cake; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model, Lego or cake.\nResult: 109 and 9 photos, d +0.27, percentile 63: did not hold.\n\nPrediction 3. What is the main color of the main vehicle's body?\nAnswers: red or orange; other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: other color.\nResult: 34 and 83 photos, d +0.25, percentile 83: did not hold.\n\nPrediction 4. Are people, other objects or darkness hiding much of the main vehicle?\nAnswers: no, the vehicle is clearly visible; yes, much of it is hidden; no vehicle visible\nPredicted most active: no, the vehicle is clearly visible. Predicted least active: yes, much of it is hidden.\nResult: 112 and 6 photos, d +0.41, percentile 81: did not hold.",
+  "real_s2": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the main vehicle a real full-size vehicle, or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model or cake; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model or cake.\nResult: 109 and 9 photos, d +0.27, percentile 63: did not hold.\n\nPrediction 2. What color is the body of the main vehicle?\nAnswers: red or orange; white, silver or gray; blue, green or other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: blue, green or other color.\nResult: 34 and 45 photos, d +0.18, percentile 75: did not hold.\n\nPrediction 3. How much of the main vehicle is shown?\nAnswers: whole vehicle from the side or three-quarter view, wheels visible; cropped close-up, front-only view or interior; no vehicle visible\nPredicted most active: whole vehicle from the side or three-quarter view, wheels visible. Predicted least active: cropped close-up, front-only view or interior.\nResult: 91 and 27 photos, d +0.51, percentile 97: held.\n\nPrediction 4. Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?\nAnswers: one dominant vehicle; many vehicles with none dominant; no vehicle visible\nPredicted most active: one dominant vehicle. Predicted least active: many vehicles with none dominant.\nResult: 115 and 3 photos: too few to check (each needs at least 5).",
+  "real_s3": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle framed?\nAnswers: whole vehicle in side or three-quarter view with wheels visible; cropped close-up of front, interior or part of the vehicle; several small or distant vehicles, none dominant; no vehicle visible\nPredicted most active: whole vehicle in side or three-quarter view with wheels visible. Predicted least active: cropped close-up of front, interior or part of the vehicle.\nResult: 90 and 25 photos, d +0.48, percentile 96: held.\n\nPrediction 2. Is the vehicle a real full-size vehicle or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model, cake or drawing; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model, cake or drawing.\nResult: 109 and 9 photos, d +0.27, percentile 63: did not hold.\n\nPrediction 3. What is the main color of the main vehicle's body?\nAnswers: red or orange; white, silver or gray; other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: other color.\nResult: 34 and 45 photos, d +0.18, percentile 75: did not hold.\n\nPrediction 4. Do people or objects other than the vehicle take up a large part of the photo?\nAnswers: no, the vehicle clearly dominates; yes, people or other objects are as prominent as the vehicle; no vehicle visible\nPredicted most active: no, the vehicle clearly dominates. Predicted least active: yes, people or other objects are as prominent as the vehicle.\nResult: 107 and 11 photos, d +0.86, percentile 99: held.",
+  "null_s1": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle framed?\nAnswers: whole vehicle in side or three-quarter view with wheels visible; cropped close-up, front-only, or interior view; many vehicles crowded together with no single clear one; no vehicle visible\nPredicted most active: whole vehicle in side or three-quarter view with wheels visible. Predicted least active: cropped close-up, front-only, or interior view.\nResult: 90 and 25 photos, d -0.04, percentile 57: did not hold.\n\nPrediction 2. Is the vehicle real and full-size, or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model, Lego or cake; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model, Lego or cake.\nResult: 109 and 9 photos, d +0.10, percentile 55: did not hold.\n\nPrediction 3. What is the main color of the main vehicle's body?\nAnswers: red or orange; other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: other color.\nResult: 34 and 83 photos, d -0.13, percentile 13: did not hold.\n\nPrediction 4. Are people, other objects or darkness hiding much of the main vehicle?\nAnswers: no, the vehicle is clearly visible; yes, much of it is hidden; no vehicle visible\nPredicted most active: no, the vehicle is clearly visible. Predicted least active: yes, much of it is hidden.\nResult: 112 and 6 photos, d +0.20, percentile 47: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the main vehicle a real full-size vehicle, or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model or cake; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model or cake.\nResult: 109 and 9 photos, d +0.10, percentile 55: did not hold.\n\nPrediction 2. What color is the body of the main vehicle?\nAnswers: red or orange; white, silver or gray; blue, green or other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: blue, green or other color.\nResult: 34 and 45 photos, d -0.32, percentile 3: did not hold.\n\nPrediction 3. How much of the main vehicle is shown?\nAnswers: whole vehicle from the side or three-quarter view, wheels visible; cropped close-up, front-only view or interior; no vehicle visible\nPredicted most active: whole vehicle from the side or three-quarter view, wheels visible. Predicted least active: cropped close-up, front-only view or interior.\nResult: 91 and 27 photos, d +0.03, percentile 67: did not hold.\n\nPrediction 4. Is there one clearly dominant vehicle, or many similar-sized vehicles crowding the scene?\nAnswers: one dominant vehicle; many vehicles with none dominant; no vehicle visible\nPredicted most active: one dominant vehicle. Predicted least active: many vehicles with none dominant.\nResult: 115 and 3 photos: too few to check (each needs at least 5).",
+  "null_s3": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle framed?\nAnswers: whole vehicle in side or three-quarter view with wheels visible; cropped close-up of front, interior or part of the vehicle; several small or distant vehicles, none dominant; no vehicle visible\nPredicted most active: whole vehicle in side or three-quarter view with wheels visible. Predicted least active: cropped close-up of front, interior or part of the vehicle.\nResult: 90 and 25 photos, d -0.04, percentile 57: did not hold.\n\nPrediction 2. Is the vehicle a real full-size vehicle or a toy, model or cake?\nAnswers: real full-size vehicle; toy, model, cake or drawing; no vehicle visible\nPredicted most active: real full-size vehicle. Predicted least active: toy, model, cake or drawing.\nResult: 109 and 9 photos, d +0.10, percentile 55: did not hold.\n\nPrediction 3. What is the main color of the main vehicle's body?\nAnswers: red or orange; white, silver or gray; other color; no vehicle visible\nPredicted most active: red or orange. Predicted least active: other color.\nResult: 34 and 45 photos, d -0.32, percentile 3: did not hold.\n\nPrediction 4. Do people or objects other than the vehicle take up a large part of the photo?\nAnswers: no, the vehicle clearly dominates; yes, people or other objects are as prominent as the vehicle; no vehicle visible\nPredicted most active: no, the vehicle clearly dominates. Predicted least active: yes, people or other objects are as prominent as the vehicle.\nResult: 107 and 11 photos, d -0.32, percentile 11: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 4,
+   "not held": 7,
+   "too few": 1
+  },
+  "null": {
+   "held": 0,
+   "not held": 11,
+   "too few": 1
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one",
+   "explanation": "The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle."
+  },
+  "real_s2": {
+   "class": "one",
+   "explanation": "The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it."
+  },
+  "null_s1": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity."
+  },
+  "null_s2": {
+   "class": "one",
+   "explanation": "The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy."
+  },
+  "null_s3": {
+   "class": "one",
+   "explanation": "The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity."
+  }
+ }
+}

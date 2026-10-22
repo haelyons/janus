@@ -1,0 +1,787 @@
+{
+ "unit": "mixed5a:719",
+ "layer": "mixed5a",
+ "chan": 719,
+ "m": 832,
+ "n_looked": 123,
+ "n": 117,
+ "classes": [
+  679,
+  893,
+  496,
+  597,
+  767,
+  710,
+  741,
+  714,
+  684,
+  636,
+  723,
+  630,
+  591,
+  533,
+  692,
+  443,
+  488,
+  885,
+  584,
+  709,
+  464,
+  446,
+  658,
+  772
+ ],
+ "class_names": [
+  "necklace",
+  "wallet",
+  "Christmas stocking",
+  "holster",
+  "rubber eraser",
+  "pencil sharpener",
+  "prayer rug",
+  "pick",
+  "ocarina",
+  "mailbag",
+  "pinwheel",
+  "Loafer",
+  "handkerchief",
+  "dishrag",
+  "packet",
+  "bib",
+  "chain",
+  "velvet",
+  "hair slide",
+  "pencil box",
+  "buckle",
+  "binder",
+  "mitten",
+  "safety pin"
+ ],
+ "peers": [
+  {
+   "chan": 695,
+   "unit": "mixed5a:695",
+   "corr": 0.7008658265052448
+  },
+  {
+   "chan": 685,
+   "unit": "mixed5a:685",
+   "corr": 0.6903650295121715
+  },
+  {
+   "chan": 736,
+   "unit": "mixed5a:736",
+   "corr": 0.6770641447330512
+  }
+ ],
+ "D": [
+  521,
+  523,
+  524,
+  525,
+  526,
+  527,
+  528,
+  529,
+  802,
+  803,
+  805,
+  1190,
+  1192,
+  1193,
+  1197,
+  1198,
+  1600,
+  1602,
+  1603,
+  1606,
+  1608,
+  2201,
+  2203,
+  2204,
+  2205,
+  2206,
+  2209,
+  2640,
+  2642,
+  2646,
+  2647,
+  2648,
+  2649,
+  2682,
+  2684,
+  2685,
+  2952,
+  2955,
+  2957,
+  2959,
+  3170,
+  3172,
+  3173,
+  3174,
+  3178,
+  3190,
+  3192,
+  3195,
+  3197,
+  3198,
+  3199,
+  3760,
+  3761,
+  3762,
+  3763,
+  3766,
+  3767,
+  4290,
+  4293,
+  4294,
+  4610,
+  4612,
+  4615,
+  4616,
+  4618,
+  4619,
+  5003,
+  5005,
+  5006,
+  5007,
+  5008,
+  5009,
+  5391,
+  5393,
+  5395,
+  5398,
+  6210,
+  6211,
+  6216,
+  6217,
+  6570,
+  6572,
+  6577,
+  6579,
+  6742,
+  6743,
+  6748,
+  6790,
+  6793,
+  6795,
+  6797,
+  6799,
+  7080,
+  7082,
+  7083,
+  7087,
+  7088,
+  7089,
+  7160,
+  7163,
+  7164,
+  7165,
+  7166,
+  7167,
+  7860,
+  7862,
+  7864,
+  7865,
+  7866,
+  7868,
+  8870,
+  8871,
+  8875,
+  8877,
+  8878,
+  9571,
+  9572,
+  9573,
+  9574,
+  9575,
+  9576,
+  9577,
+  9578
+ ],
+ "T": [
+  520,
+  522,
+  800,
+  801,
+  804,
+  806,
+  807,
+  808,
+  809,
+  1191,
+  1194,
+  1195,
+  1196,
+  1199,
+  1601,
+  1604,
+  1605,
+  1607,
+  1609,
+  2200,
+  2202,
+  2207,
+  2208,
+  2641,
+  2643,
+  2644,
+  2645,
+  2680,
+  2681,
+  2683,
+  2686,
+  2687,
+  2688,
+  2689,
+  2950,
+  2951,
+  2953,
+  2954,
+  2956,
+  2958,
+  3171,
+  3175,
+  3176,
+  3177,
+  3179,
+  3191,
+  3193,
+  3194,
+  3196,
+  3764,
+  3765,
+  3768,
+  3769,
+  4291,
+  4292,
+  4295,
+  4296,
+  4297,
+  4298,
+  4299,
+  4611,
+  4613,
+  4614,
+  4617,
+  5000,
+  5001,
+  5002,
+  5004,
+  5390,
+  5392,
+  5394,
+  5396,
+  5397,
+  5399,
+  6212,
+  6213,
+  6214,
+  6215,
+  6218,
+  6219,
+  6571,
+  6573,
+  6574,
+  6575,
+  6576,
+  6578,
+  6740,
+  6741,
+  6744,
+  6745,
+  6746,
+  6747,
+  6749,
+  6791,
+  6792,
+  6794,
+  6796,
+  6798,
+  7081,
+  7084,
+  7085,
+  7086,
+  7161,
+  7162,
+  7168,
+  7169,
+  7861,
+  7863,
+  7867,
+  7869,
+  8872,
+  8873,
+  8874,
+  8876,
+  8879,
+  9570,
+  9579
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?",
+   "answers": [
+    "Yes, prominent sparkling metal or jewels",
+    "Only small or plain metal parts",
+    "No metal or jewel decoration"
+   ]
+  },
+  {
+   "question": "Does the object have a bow, ribbon, or flower-shaped ornament on it?",
+   "answers": [
+    "Yes, a clear bow, ribbon or flower ornament",
+    "No such ornament"
+   ]
+  },
+  {
+   "question": "Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?",
+   "answers": [
+    "Single object, close up, plain background",
+    "Single object in a busy setting",
+    "Many items or a cluttered scene"
+   ]
+  },
+  {
+   "question": "What kind of decoration covers the object's surface?",
+   "answers": [
+    "Separate attached ornaments such as charms, jewels, bows or hanging chains",
+    "Knitted, woven or embroidered pattern",
+    "Printed graphics or text",
+    "Plain, no decoration"
+   ]
+  },
+  {
+   "question": "Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?",
+   "answers": [
+    "yes, prominent",
+    "small or minor metal ornament only",
+    "none"
+   ]
+  },
+  {
+   "question": "Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?",
+   "answers": [
+    "yes, elaborate motifs",
+    "simple or plain surface",
+    "no clear main object"
+   ]
+  },
+  {
+   "question": "How is the object presented?",
+   "answers": [
+    "single item or set on a plain background",
+    "single item in a natural or busy setting",
+    "many items crowded together, such as a store rack"
+   ]
+  },
+  {
+   "question": "Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?",
+   "answers": [
+    "yes, dangling ornaments visible",
+    "no"
+   ]
+  },
+  {
+   "question": "Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?",
+   "answers": [
+    "Yes, prominent",
+    "Yes, small or minor",
+    "No"
+   ]
+  },
+  {
+   "question": "Is the main object shown by itself, laid out on a plain light or white background like a product photo?",
+   "answers": [
+    "Yes, plain light background",
+    "Plain dark or colored background",
+    "No, busy or cluttered scene (store, worn by a person, many items)"
+   ]
+  },
+  {
+   "question": "Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?",
+   "answers": [
+    "Yes, an ornate or detailed motif",
+    "Only simple shapes or stripes",
+    "No decoration, plain surface"
+   ]
+  },
+  {
+   "question": "What is the main object's surface mostly made of?",
+   "answers": [
+    "Metal, gems or glossy material",
+    "Leather",
+    "Fabric, knit or felt",
+    "Other or not visible"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "Responds to small ornate decorative accents on accessories, especially jewelry-like metalwork: gold or silver pieces with rhinestones or gems, bows, ribbons and flower-shaped ornaments, and dangling chains or cords. Activity is highest when one such ornamented object is shown clearly and close up, and lower in cluttered scenes or on plain, unornamented items. Compared with similar units, it prefers sparkling metallic or jeweled floral and bow ornaments (brooch, buckle, necklace, hair bow) over embroidered or knitted pattern textures (skull loafer, knitted mitten) and printed graphics (binder).",
+   "predictions": [
+    {
+     "question": "Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?",
+     "answers": [
+      "Yes, prominent sparkling metal or jewels",
+      "Only small or plain metal parts",
+      "No metal or jewel decoration"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 0,
+     "real": {
+      "n_hi": 17,
+      "n_lo": 60,
+      "d": 0.22639878339764205,
+      "pct": 81.1298076923077,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 17,
+      "n_lo": 60,
+      "d": -0.21153118065237425,
+      "pct": 11.658653846153847,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Does the object have a bow, ribbon, or flower-shaped ornament on it?",
+     "answers": [
+      "Yes, a clear bow, ribbon or flower ornament",
+      "No such ornament"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 1,
+     "real": {
+      "n_hi": 19,
+      "n_lo": 98,
+      "d": 0.36292603349987357,
+      "pct": 89.78365384615384,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 19,
+      "n_lo": 98,
+      "d": 0.0948150294355224,
+      "pct": 76.80288461538461,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?",
+     "answers": [
+      "Single object, close up, plain background",
+      "Single object in a busy setting",
+      "Many items or a cluttered scene"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 2,
+     "real": {
+      "n_hi": 56,
+      "n_lo": 18,
+      "d": 0.04308748343001694,
+      "pct": 65.5048076923077,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 56,
+      "n_lo": 18,
+      "d": -0.5399002165710398,
+      "pct": 2.5240384615384617,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What kind of decoration covers the object's surface?",
+     "answers": [
+      "Separate attached ornaments such as charms, jewels, bows or hanging chains",
+      "Knitted, woven or embroidered pattern",
+      "Printed graphics or text",
+      "Plain, no decoration"
+     ],
+     "most": 0,
+     "least": 3,
+     "question_index": 3,
+     "real": {
+      "n_hi": 19,
+      "n_lo": 42,
+      "d": 0.0565006502689286,
+      "pct": 51.44230769230769,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 19,
+      "n_lo": 42,
+      "d": 0.09185650708524386,
+      "pct": 62.98076923076923,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "The unit responds to ornamental, jewelry-like adornment. Its strongest responses are to gold or metal pieces with bows, flowers, rhinestones or gems: a bow brooch with earrings, a jeweled flower buckle, a gold leaf necklace and a butterfly hair slide. It also responds to pendants hanging on cords and to objects with decorative motifs worked into the surface, such as a snakeskin wallet with a metal plaque, embossed leather, and printed or appliquéd stockings. Activity is highest when one such decorated item is shown clearly as a product, often on a plain background. It is low for plain undecorated items and for cluttered scenes with many objects, such as a store rack of holsters. Compared with the similar units, it is particular to sparkly metal or gem jewelry and dangling ornaments rather than skulls, knit textures or printed graphics.",
+   "predictions": [
+    {
+     "question": "Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?",
+     "answers": [
+      "yes, prominent",
+      "small or minor metal ornament only",
+      "none"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 4,
+     "real": {
+      "n_hi": 14,
+      "n_lo": 70,
+      "d": 0.38812859831082697,
+      "pct": 91.10576923076923,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 14,
+      "n_lo": 70,
+      "d": 0.03034374926117544,
+      "pct": 51.80288461538461,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?",
+     "answers": [
+      "yes, elaborate motifs",
+      "simple or plain surface",
+      "no clear main object"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 5,
+     "real": {
+      "n_hi": 50,
+      "n_lo": 2,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     },
+     "null": {
+      "n_hi": 50,
+      "n_lo": 2,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     }
+    },
+    {
+     "question": "How is the object presented?",
+     "answers": [
+      "single item or set on a plain background",
+      "single item in a natural or busy setting",
+      "many items crowded together, such as a store rack"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 58,
+      "n_lo": 14,
+      "d": 0.32740284440487266,
+      "pct": 84.13461538461539,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 58,
+      "n_lo": 14,
+      "d": -0.4361631605541241,
+      "pct": 8.89423076923077,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?",
+     "answers": [
+      "yes, dangling ornaments visible",
+      "no"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 7,
+     "real": {
+      "n_hi": 17,
+      "n_lo": 100,
+      "d": 0.10513780818882368,
+      "pct": 51.80288461538461,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 17,
+      "n_lo": 100,
+      "d": 0.11134031881347947,
+      "pct": 76.5625,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "The unit responds mainly to ornate jewelry-like ornamentation: shiny gold or silver metalwork set with rhinestones or gems, formed into bows, flowers or filigree. Examples are brooches, earring sets, a jeweled flower buckle and a gold necklace. It also responds, more weakly, to a decorative motif on an object's surface, such as a tooled or embossed leather design or a printed Santa. Activity is highest for a single item laid out as a product shot on a plain light background. It drops for cluttered scenes, items on hangers, and plain objects with no ornament. Compared with the similar units, it is particular in preferring sparkly metallic jewelry and gems over textile or knit patterns, embroidered motifs and printed graphics.",
+   "predictions": [
+    {
+     "question": "Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?",
+     "answers": [
+      "Yes, prominent",
+      "Yes, small or minor",
+      "No"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 8,
+     "real": {
+      "n_hi": 15,
+      "n_lo": 68,
+      "d": 0.3695443499169619,
+      "pct": 91.10576923076923,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 15,
+      "n_lo": 68,
+      "d": -0.06385845871898113,
+      "pct": 36.17788461538461,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the main object shown by itself, laid out on a plain light or white background like a product photo?",
+     "answers": [
+      "Yes, plain light background",
+      "Plain dark or colored background",
+      "No, busy or cluttered scene (store, worn by a person, many items)"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 9,
+     "real": {
+      "n_hi": 37,
+      "n_lo": 60,
+      "d": 0.4305215156739222,
+      "pct": 94.59134615384616,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 37,
+      "n_lo": 60,
+      "d": -0.4566562440087713,
+      "pct": 0.4807692307692308,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?",
+     "answers": [
+      "Yes, an ornate or detailed motif",
+      "Only simple shapes or stripes",
+      "No decoration, plain surface"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 10,
+     "real": {
+      "n_hi": 53,
+      "n_lo": 33,
+      "d": 0.45178119450756665,
+      "pct": 93.02884615384616,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 53,
+      "n_lo": 33,
+      "d": 0.3746120429408133,
+      "pct": 97.95673076923077,
+      "outcome": "held"
+     }
+    },
+    {
+     "question": "What is the main object's surface mostly made of?",
+     "answers": [
+      "Metal, gems or glossy material",
+      "Leather",
+      "Fabric, knit or felt",
+      "Other or not visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 11,
+     "real": {
+      "n_hi": 30,
+      "n_lo": 45,
+      "d": 0.04407565159002322,
+      "pct": 52.28365384615385,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 30,
+      "n_lo": 45,
+      "d": -0.007572572180842083,
+      "pct": 46.03365384615385,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?\nAnswers: Yes, prominent sparkling metal or jewels; Only small or plain metal parts; No metal or jewel decoration\nPredicted most active: Yes, prominent sparkling metal or jewels. Predicted least active: No metal or jewel decoration.\nResult: 17 and 60 photos, d +0.23, percentile 81: did not hold.\n\nPrediction 2. Does the object have a bow, ribbon, or flower-shaped ornament on it?\nAnswers: Yes, a clear bow, ribbon or flower ornament; No such ornament\nPredicted most active: Yes, a clear bow, ribbon or flower ornament. Predicted least active: No such ornament.\nResult: 19 and 98 photos, d +0.36, percentile 90: did not hold.\n\nPrediction 3. Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?\nAnswers: Single object, close up, plain background; Single object in a busy setting; Many items or a cluttered scene\nPredicted most active: Single object, close up, plain background. Predicted least active: Many items or a cluttered scene.\nResult: 56 and 18 photos, d +0.04, percentile 66: did not hold.\n\nPrediction 4. What kind of decoration covers the object's surface?\nAnswers: Separate attached ornaments such as charms, jewels, bows or hanging chains; Knitted, woven or embroidered pattern; Printed graphics or text; Plain, no decoration\nPredicted most active: Separate attached ornaments such as charms, jewels, bows or hanging chains. Predicted least active: Plain, no decoration.\nResult: 19 and 42 photos, d +0.06, percentile 51: did not hold.",
+  "real_s2": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?\nAnswers: yes, prominent; small or minor metal ornament only; none\nPredicted most active: yes, prominent. Predicted least active: none.\nResult: 14 and 70 photos, d +0.39, percentile 91: did not hold.\n\nPrediction 2. Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?\nAnswers: yes, elaborate motifs; simple or plain surface; no clear main object\nPredicted most active: yes, elaborate motifs. Predicted least active: no clear main object.\nResult: 50 and 2 photos: too few to check (each needs at least 5).\n\nPrediction 3. How is the object presented?\nAnswers: single item or set on a plain background; single item in a natural or busy setting; many items crowded together, such as a store rack\nPredicted most active: single item or set on a plain background. Predicted least active: many items crowded together, such as a store rack.\nResult: 58 and 14 photos, d +0.33, percentile 84: did not hold.\n\nPrediction 4. Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?\nAnswers: yes, dangling ornaments visible; no\nPredicted most active: yes, dangling ornaments visible. Predicted least active: no.\nResult: 17 and 100 photos, d +0.11, percentile 52: did not hold.",
+  "real_s3": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?\nAnswers: Yes, prominent; Yes, small or minor; No\nPredicted most active: Yes, prominent. Predicted least active: No.\nResult: 15 and 68 photos, d +0.37, percentile 91: did not hold.\n\nPrediction 2. Is the main object shown by itself, laid out on a plain light or white background like a product photo?\nAnswers: Yes, plain light background; Plain dark or colored background; No, busy or cluttered scene (store, worn by a person, many items)\nPredicted most active: Yes, plain light background. Predicted least active: No, busy or cluttered scene (store, worn by a person, many items).\nResult: 37 and 60 photos, d +0.43, percentile 95: did not hold.\n\nPrediction 3. Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?\nAnswers: Yes, an ornate or detailed motif; Only simple shapes or stripes; No decoration, plain surface\nPredicted most active: Yes, an ornate or detailed motif. Predicted least active: No decoration, plain surface.\nResult: 53 and 33 photos, d +0.45, percentile 93: did not hold.\n\nPrediction 4. What is the main object's surface mostly made of?\nAnswers: Metal, gems or glossy material; Leather; Fabric, knit or felt; Other or not visible\nPredicted most active: Metal, gems or glossy material. Predicted least active: Fabric, knit or felt.\nResult: 30 and 45 photos, d +0.04, percentile 52: did not hold.",
+  "null_s1": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?\nAnswers: Yes, prominent sparkling metal or jewels; Only small or plain metal parts; No metal or jewel decoration\nPredicted most active: Yes, prominent sparkling metal or jewels. Predicted least active: No metal or jewel decoration.\nResult: 17 and 60 photos, d -0.21, percentile 12: did not hold.\n\nPrediction 2. Does the object have a bow, ribbon, or flower-shaped ornament on it?\nAnswers: Yes, a clear bow, ribbon or flower ornament; No such ornament\nPredicted most active: Yes, a clear bow, ribbon or flower ornament. Predicted least active: No such ornament.\nResult: 19 and 98 photos, d +0.09, percentile 77: did not hold.\n\nPrediction 3. Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?\nAnswers: Single object, close up, plain background; Single object in a busy setting; Many items or a cluttered scene\nPredicted most active: Single object, close up, plain background. Predicted least active: Many items or a cluttered scene.\nResult: 56 and 18 photos, d -0.54, percentile 3: did not hold.\n\nPrediction 4. What kind of decoration covers the object's surface?\nAnswers: Separate attached ornaments such as charms, jewels, bows or hanging chains; Knitted, woven or embroidered pattern; Printed graphics or text; Plain, no decoration\nPredicted most active: Separate attached ornaments such as charms, jewels, bows or hanging chains. Predicted least active: Plain, no decoration.\nResult: 19 and 42 photos, d +0.09, percentile 63: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?\nAnswers: yes, prominent; small or minor metal ornament only; none\nPredicted most active: yes, prominent. Predicted least active: none.\nResult: 14 and 70 photos, d +0.03, percentile 52: did not hold.\n\nPrediction 2. Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?\nAnswers: yes, elaborate motifs; simple or plain surface; no clear main object\nPredicted most active: yes, elaborate motifs. Predicted least active: no clear main object.\nResult: 50 and 2 photos: too few to check (each needs at least 5).\n\nPrediction 3. How is the object presented?\nAnswers: single item or set on a plain background; single item in a natural or busy setting; many items crowded together, such as a store rack\nPredicted most active: single item or set on a plain background. Predicted least active: many items crowded together, such as a store rack.\nResult: 58 and 14 photos, d -0.44, percentile 9: did not hold.\n\nPrediction 4. Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?\nAnswers: yes, dangling ornaments visible; no\nPredicted most active: yes, dangling ornaments visible. Predicted least active: no.\nResult: 17 and 100 photos, d +0.11, percentile 77: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 117 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?\nAnswers: Yes, prominent; Yes, small or minor; No\nPredicted most active: Yes, prominent. Predicted least active: No.\nResult: 15 and 68 photos, d -0.06, percentile 36: did not hold.\n\nPrediction 2. Is the main object shown by itself, laid out on a plain light or white background like a product photo?\nAnswers: Yes, plain light background; Plain dark or colored background; No, busy or cluttered scene (store, worn by a person, many items)\nPredicted most active: Yes, plain light background. Predicted least active: No, busy or cluttered scene (store, worn by a person, many items).\nResult: 37 and 60 photos, d -0.46, percentile 0: did not hold.\n\nPrediction 3. Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?\nAnswers: Yes, an ornate or detailed motif; Only simple shapes or stripes; No decoration, plain surface\nPredicted most active: Yes, an ornate or detailed motif. Predicted least active: No decoration, plain surface.\nResult: 53 and 33 photos, d +0.37, percentile 98: held.\n\nPrediction 4. What is the main object's surface mostly made of?\nAnswers: Metal, gems or glossy material; Leather; Fabric, knit or felt; Other or not visible\nPredicted most active: Metal, gems or glossy material. Predicted least active: Fabric, knit or felt.\nResult: 30 and 45 photos, d -0.01, percentile 46: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 0,
+   "not held": 11,
+   "too few": 1
+  },
+  "null": {
+   "held": 1,
+   "not held": 10,
+   "too few": 1
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "cannot_tell",
+   "explanation": "The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear."
+  },
+  "real_s2": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials."
+  },
+  "null_s1": {
+   "class": "cannot_tell",
+   "explanation": "The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted."
+  },
+  "null_s2": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity."
+  },
+  "null_s3": {
+   "class": "one",
+   "explanation": "The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots."
+  }
+ }
+}

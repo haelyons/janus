@@ -1,0 +1,122 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible.",
+   "evidence": "All three gaze and pose predictions held after removing class differences: direct gaze vs. no face d +1.64 (98th percentile), frontal vs. profile d +1.24 (97th), large vs. small face d +1.20 (95th). Dog count did not matter (d +0.35, 73rd percentile), so the unit tracks how the face is presented, not how many dogs there are.",
+   "missing_data": "A separate comparison of frontal pose with averted gaze against frontal pose with direct gaze, plus non-dog frontal faces (cats, humans), would show whether eye contact or frontal pose drives the unit and whether it is specific to dogs.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1aa512b4dd95f40a20e6a682d454e0eb7c63dd9f16863c0e7f8efd2c786793ca",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible.\",\n \"evidence\": \"All three gaze and pose predictions held after removing class differences: direct gaze vs. no face d +1.64 (98th percentile), frontal vs. profile d +1.24 (97th), large vs. small face d +1.20 (95th). Dog count did not matter (d +0.35, 73rd percentile), so the unit tracks how the face is presented, not how many dogs there are.\",\n \"missing_data\": \"A separate comparison of frontal pose with averted gaze against frontal pose with direct gaze, plus non-dog frontal faces (cats, humans), would show whether eye contact or frontal pose drives the unit and whether it is specific to dogs.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible.\",\n \"evidence\": \"All three gaze and pose predictions held after removing class differences: direct gaze vs. no face d +1.64 (98th percentile), frontal vs. profile d +1.24 (97th), large vs. small face d +1.20 (95th). Dog count did not matter (d +0.35, 73rd percentile), so the unit tracks how the face is presented, not how many dogs there are.\",\n \"missing_data\": \"A separate comparison of frontal pose with averted gaze against frontal pose with direct gaze, plus non-dog frontal faces (cats, humans), would show whether eye contact or frontal pose drives the unit and whether it is specific to dogs.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame.",
+   "evidence": "The eye-visibility, frontal-gaze and head-size predictions all held (d +1.64, +1.28, +1.18; percentiles 99, 97, 96). The portrait-vs-whole-body prediction was weaker (d +0.56, percentile 84), which suggests the unit tracks visible frontal eyes and face size rather than photo framing as such.",
+   "missing_data": "Controlled comparisons that hold head size fixed and vary only gaze direction (frontal vs. turned), plus tests on non-dog frontal faces such as cats or humans, to tell whether the unit is dog-specific.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e9a4d56662e59ddde5e94f746ff2ad14fbc7537674edadb42b97e7de99265da8",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame.\",\n \"evidence\": \"The eye-visibility, frontal-gaze and head-size predictions all held (d +1.64, +1.28, +1.18; percentiles 99, 97, 96). The portrait-vs-whole-body prediction was weaker (d +0.56, percentile 84), which suggests the unit tracks visible frontal eyes and face size rather than photo framing as such.\",\n \"missing_data\": \"Controlled comparisons that hold head size fixed and vary only gaze direction (frontal vs. turned), plus tests on non-dog frontal faces such as cats or humans, to tell whether the unit is dog-specific.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame.\",\n \"evidence\": \"The eye-visibility, frontal-gaze and head-size predictions all held (d +1.64, +1.28, +1.18; percentiles 99, 97, 96). The portrait-vs-whole-body prediction was weaker (d +0.56, percentile 84), which suggests the unit tracks visible frontal eyes and face size rather than photo framing as such.\",\n \"missing_data\": \"Controlled comparisons that hold head size fixed and vary only gaze direction (frontal vs. turned), plus tests on non-dog frontal faces such as cats or humans, to tell whether the unit is dog-specific.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed.",
+   "evidence": "Three predictions held: frontal vs. profile heads (d +1.24, 97th percentile), eye contact vs. looking elsewhere (d +0.88, 99th) and level vs. tilted heads (d +0.58, 97th) all separate activity strongly. The single-dog vs. multiple-dog contrast did not hold (73rd percentile, only 8 multi-dog photos), so the number of dogs is not shown to matter beyond the face geometry.",
+   "missing_data": "Photos of frontal faces of non-dog animals or people with eye contact, to test whether the unit is specific to dogs, plus more multi-dog photos to settle the effect of dog count.",
+   "confidence": 0.8
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2871e9b89df61517358366984737accf3d418d7dfb0b1a644a02d4dae512cbc2",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed.\",\n \"evidence\": \"Three predictions held: frontal vs. profile heads (d +1.24, 97th percentile), eye contact vs. looking elsewhere (d +0.88, 99th) and level vs. tilted heads (d +0.58, 97th) all separate activity strongly. The single-dog vs. multiple-dog contrast did not hold (73rd percentile, only 8 multi-dog photos), so the number of dogs is not shown to matter beyond the face geometry.\",\n \"missing_data\": \"Photos of frontal faces of non-dog animals or people with eye contact, to test whether the unit is specific to dogs, plus more multi-dog photos to settle the effect of dog count.\",\n \"confidence\": 0.8}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed.\",\n \"evidence\": \"Three predictions held: frontal vs. profile heads (d +1.24, 97th percentile), eye contact vs. looking elsewhere (d +0.88, 99th) and level vs. tilted heads (d +0.58, 97th) all separate activity strongly. The single-dog vs. multiple-dog contrast did not hold (73rd percentile, only 8 multi-dog photos), so the number of dogs is not shown to matter beyond the face geometry.\",\n \"missing_data\": \"Photos of frontal faces of non-dog animals or people with eye contact, to test whether the unit is specific to dogs, plus more multi-dog photos to settle the effect of dog count.\",\n \"confidence\": 0.8}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head.",
+   "evidence": "Eye contact versus looking elsewhere was the only prediction that held (d +0.31, 96th percentile). Frontal versus profile head orientation went the wrong way (d -0.33, 14th percentile), so frontal head geometry is not the driver; the one-dog and level-head predictions were weak and did not hold.",
+   "missing_data": "Photos that separate gaze from head pose, such as a turned head with eyes on the camera versus a frontal head looking away, plus non-dog animals making eye contact, to test whether the unit is specific to dogs.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c6355330b9c2adf7301c93791dfb4abcc48c2437e6363da93ec41c4ce608bc8c",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head.\",\n \"evidence\": \"Eye contact versus looking elsewhere was the only prediction that held (d +0.31, 96th percentile). Frontal versus profile head orientation went the wrong way (d -0.33, 14th percentile), so frontal head geometry is not the driver; the one-dog and level-head predictions were weak and did not hold.\",\n \"missing_data\": \"Photos that separate gaze from head pose, such as a turned head with eyes on the camera versus a frontal head looking away, plus non-dog animals making eye contact, to test whether the unit is specific to dogs.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head.\",\n \"evidence\": \"Eye contact versus looking elsewhere was the only prediction that held (d +0.31, 96th percentile). Frontal versus profile head orientation went the wrong way (d -0.33, 14th percentile), so frontal head geometry is not the driver; the one-dog and level-head predictions were weak and did not hold.\",\n \"missing_data\": \"Photos that separate gaze from head pose, such as a turned head with eyes on the camera versus a frontal head looking away, plus non-dog animals making eye contact, to test whether the unit is specific to dogs.\",\n \"confidence\": 0.5}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one",
+  "explanation": "Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector.",
+   "evidence": "Three predictions came out reversed. Activity was lower for frontal eye contact (d -0.42), large heads (d -0.42) and both eyes visible (d -0.71), which puts this unit among the lowest 4-5% of its layer on each, while the portrait-versus-whole-body question gave only a weak reversal (d -0.19, percentile 27).",
+   "missing_data": "Activations on new photos split by head angle and dog size separately, to tell whether turned-away heads or small, distant dogs drive the unit, and to check that non-dog content isn't contributing.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5a6734ba89b5eef71fa9560613c6bab0bbf5591d1a1696d140bd2757f2f75499",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector.\",\n \"evidence\": \"Three predictions came out reversed. Activity was lower for frontal eye contact (d -0.42), large heads (d -0.42) and both eyes visible (d -0.71), which puts this unit among the lowest 4-5% of its layer on each, while the portrait-versus-whole-body question gave only a weak reversal (d -0.19, percentile 27).\",\n \"missing_data\": \"Activations on new photos split by head angle and dog size separately, to tell whether turned-away heads or small, distant dogs drive the unit, and to check that non-dog content isn't contributing.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector.\",\n \"evidence\": \"Three predictions came out reversed. Activity was lower for frontal eye contact (d -0.42), large heads (d -0.42) and both eyes visible (d -0.71), which puts this unit among the lowest 4-5% of its layer on each, while the portrait-versus-whole-body question gave only a weak reversal (d -0.19, percentile 27).\",\n \"missing_data\": \"Activations on new photos split by head angle and dog size separately, to tell whether turned-away heads or small, distant dogs drive the unit, and to check that non-dog content isn't contributing.\",\n \"confidence\": 0.55}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response.",
+   "evidence": "All four predictions failed, and three reversed. Direct-gaze faces scored below no-face photos (d -0.65), frontal scored below profile (d -0.33), and close-up faces scored below small, distant dogs (d -0.64, percentile 1).",
+   "missing_data": "Testing the reversed hypothesis directly would most change the answer: whole-body or distant dogs versus head close-ups, plus non-dog images, to see whether the unit tracks dogs, body shape or background scene.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2e2cc6d0252957a20b81fcdb7b803521c137192cbdead1ef060cce6f777a314c",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response.\",\n \"evidence\": \"All four predictions failed, and three reversed. Direct-gaze faces scored below no-face photos (d -0.65), frontal scored below profile (d -0.33), and close-up faces scored below small, distant dogs (d -0.64, percentile 1).\",\n \"missing_data\": \"Testing the reversed hypothesis directly would most change the answer: whole-body or distant dogs versus head close-ups, plus non-dog images, to see whether the unit tracks dogs, body shape or background scene.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response.\",\n \"evidence\": \"All four predictions failed, and three reversed. Direct-gaze faces scored below no-face photos (d -0.65), frontal scored below profile (d -0.33), and close-up faces scored below small, distant dogs (d -0.64, percentile 1).\",\n \"missing_data\": \"Testing the reversed hypothesis directly would most change the answer: whole-body or distant dogs versus head close-ups, plus non-dog images, to see whether the unit tracks dogs, body shape or background scene.\",\n \"confidence\": 0.3}\n```",
+  "valid": true
+ }
+}

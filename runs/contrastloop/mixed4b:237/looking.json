@@ -1,0 +1,169 @@
+{
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to the exterior body of a single real road vehicle (car, pickup, ambulance or fire truck) seen whole from the side or three-quarter front, with the hood, cab windshield and side windows clearly outlined. It is strongest for boxy or classic vehicles, often red, parked on pavement. It is weak for interiors and cargo areas, toy models, tractors and other farm-style machines, cluttered scenes with several vehicles, and photos where people dominate or cover the car. Compared with similar units, it prefers clean side-profile road vehicles such as fire engines, police vans and school buses over tractors, convertibles full of people and odd utility bodies.",
+  "predictions": [
+   {
+    "question": "How is the main vehicle shown?",
+    "answers": [
+     "whole exterior, side or three-quarter view",
+     "whole exterior, straight front or rear view",
+     "partial, crowded or cut-off exterior",
+     "interior or cargo area, or no vehicle"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?",
+    "answers": [
+     "yes, real road vehicle",
+     "toy, model, tractor or other non-road machine",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the dominant body color of the main vehicle?",
+    "answers": [
+     "red",
+     "other single color",
+     "multicolor or heavily decorated",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Do people take up a large part of the photo or cover the vehicle?",
+    "answers": [
+     "no people or only small background people",
+     "people prominent or covering the vehicle",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "64a746c18214308b9fc2c6a68032357c0f2bad01f01b5ab693e467b6cdb1a2b5",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to the exterior body of a single real road vehicle (car, pickup, ambulance or fire truck) seen whole from the side or three-quarter front, with the hood, cab windshield and side windows clearly outlined. It is strongest for boxy or classic vehicles, often red, parked on pavement. It is weak for interiors and cargo areas, toy models, tractors and other farm-style machines, cluttered scenes with several vehicles, and photos where people dominate or cover the car. Compared with similar units, it prefers clean side-profile road vehicles such as fire engines, police vans and school buses over tractors, convertibles full of people and odd utility bodies.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"whole exterior, side or three-quarter view\", \"whole exterior, straight front or rear view\", \"partial, crowded or cut-off exterior\", \"interior or cargo area, or no vehicle\"], \"most_active\": \"whole exterior, side or three-quarter view\", \"least_active\": \"interior or cargo area, or no vehicle\"}, {\"question\": \"Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?\", \"answers\": [\"yes, real road vehicle\", \"toy, model, tractor or other non-road machine\", \"no vehicle visible\"], \"most_active\": \"yes, real road vehicle\", \"least_active\": \"toy, model, tractor or other non-road machine\"}, {\"question\": \"What is the dominant body color of the main vehicle?\", \"answers\": [\"red\", \"other single color\", \"multicolor or heavily decorated\", \"no vehicle visible\"], \"most_active\": \"red\", \"least_active\": \"multicolor or heavily decorated\"}, {\"question\": \"Do people take up a large part of the photo or cover the vehicle?\", \"answers\": [\"no people or only small background people\", \"people prominent or covering the vehicle\", \"no vehicle visible\"], \"most_active\": \"no people or only small background people\", \"least_active\": \"people prominent or covering the vehicle\"}]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to the exterior body of a single real road vehicle (car, pickup, ambulance or fire truck) seen whole from the side or three-quarter front, with the hood, cab windshield and side windows clearly outlined. It is strongest for boxy or classic vehicles, often red, parked on pavement. It is weak for interiors and cargo areas, toy models, tractors and other farm-style machines, cluttered scenes with several vehicles, and photos where people dominate or cover the car. Compared with similar units, it prefers clean side-profile road vehicles such as fire engines, police vans and school buses over tractors, convertibles full of people and odd utility bodies.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"whole exterior, side or three-quarter view\", \"whole exterior, straight front or rear view\", \"partial, crowded or cut-off exterior\", \"interior or cargo area, or no vehicle\"], \"most_active\": \"whole exterior, side or three-quarter view\", \"least_active\": \"interior or cargo area, or no vehicle\"}, {\"question\": \"Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?\", \"answers\": [\"yes, real road vehicle\", \"toy, model, tractor or other non-road machine\", \"no vehicle visible\"], \"most_active\": \"yes, real road vehicle\", \"least_active\": \"toy, model, tractor or other non-road machine\"}, {\"question\": \"What is the dominant body color of the main vehicle?\", \"answers\": [\"red\", \"other single color\", \"multicolor or heavily decorated\", \"no vehicle visible\"], \"most_active\": \"red\", \"least_active\": \"multicolor or heavily decorated\"}, {\"question\": \"Do people take up a large part of the photo or cover the vehicle?\", \"answers\": [\"no people or only small background people\", \"people prominent or covering the vehicle\", \"no vehicle visible\"], \"most_active\": \"no people or only small background people\", \"least_active\": \"people prominent or covering the vehicle\"}]}\n```",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds to a whole, enclosed road vehicle (car, pickup, truck cab, or fire engine) seen side-on or from the front three-quarter angle, so the body side, wheels and windshield/cab are all clearly visible. It is strongest for boxy cabs with a distinct hood, such as classic pickups, fire engines and snowplow trucks. It is weaker for rear views, interiors, partial or cluttered views, scenes dominated by people, open vehicles like tractors and convertibles, and toys.",
+  "predictions": [
+   {
+    "question": "From which side is the main vehicle seen?",
+    "answers": [
+     "front or front three-quarter, side visible",
+     "pure side profile",
+     "rear or rear three-quarter",
+     "interior view or no vehicle"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "Is a single complete vehicle, wheels to roof, the clear main subject?",
+    "answers": [
+     "yes, one complete vehicle dominates",
+     "vehicle partly cut off or among many vehicles",
+     "no full vehicle visible (interior, close-up of part, or none)"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Do people take up a noticeable part of the photo?",
+    "answers": [
+     "no people or only tiny distant ones",
+     "people clearly visible but small relative to the vehicle",
+     "people prominent, covering or rivaling the vehicle"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What kind of body does the main vehicle have?",
+    "answers": [
+     "enclosed cab with hood and windshield (car, pickup, truck, fire engine)",
+     "open or exposed (convertible, tractor, open-top)",
+     "toy or model, or no vehicle"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "64a746c18214308b9fc2c6a68032357c0f2bad01f01b5ab693e467b6cdb1a2b5",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a whole, enclosed road vehicle (car, pickup, truck cab, or fire engine) seen side-on or from the front three-quarter angle, so the body side, wheels and windshield/cab are all clearly visible. It is strongest for boxy cabs with a distinct hood, such as classic pickups, fire engines and snowplow trucks. It is weaker for rear views, interiors, partial or cluttered views, scenes dominated by people, open vehicles like tractors and convertibles, and toys.\", \"predictions\": [{\"question\": \"From which side is the main vehicle seen?\", \"answers\": [\"front or front three-quarter, side visible\", \"pure side profile\", \"rear or rear three-quarter\", \"interior view or no vehicle\"], \"most_active\": \"front or front three-quarter, side visible\", \"least_active\": \"interior view or no vehicle\"}, {\"question\": \"Is a single complete vehicle, wheels to roof, the clear main subject?\", \"answers\": [\"yes, one complete vehicle dominates\", \"vehicle partly cut off or among many vehicles\", \"no full vehicle visible (interior, close-up of part, or none)\"], \"most_active\": \"yes, one complete vehicle dominates\", \"least_active\": \"no full vehicle visible (interior, close-up of part, or none)\"}, {\"question\": \"Do people take up a noticeable part of the photo?\", \"answers\": [\"no people or only tiny distant ones\", \"people clearly visible but small relative to the vehicle\", \"people prominent, covering or rivaling the vehicle\"], \"most_active\": \"no people or only tiny distant ones\", \"least_active\": \"people prominent, covering or rivaling the vehicle\"}, {\"question\": \"What kind of body does the main vehicle have?\", \"answers\": [\"enclosed cab with hood and windshield (car, pickup, truck, fire engine)\", \"open or exposed (convertible, tractor, open-top)\", \"toy or model, or no vehicle\"], \"most_active\": \"enclosed cab with hood and windshield (car, pickup, truck, fire engine)\", \"least_active\": \"open or exposed (convertible, tractor, open-top)\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a whole, enclosed road vehicle (car, pickup, truck cab, or fire engine) seen side-on or from the front three-quarter angle, so the body side, wheels and windshield/cab are all clearly visible. It is strongest for boxy cabs with a distinct hood, such as classic pickups, fire engines and snowplow trucks. It is weaker for rear views, interiors, partial or cluttered views, scenes dominated by people, open vehicles like tractors and convertibles, and toys.\", \"predictions\": [{\"question\": \"From which side is the main vehicle seen?\", \"answers\": [\"front or front three-quarter, side visible\", \"pure side profile\", \"rear or rear three-quarter\", \"interior view or no vehicle\"], \"most_active\": \"front or front three-quarter, side visible\", \"least_active\": \"interior view or no vehicle\"}, {\"question\": \"Is a single complete vehicle, wheels to roof, the clear main subject?\", \"answers\": [\"yes, one complete vehicle dominates\", \"vehicle partly cut off or among many vehicles\", \"no full vehicle visible (interior, close-up of part, or none)\"], \"most_active\": \"yes, one complete vehicle dominates\", \"least_active\": \"no full vehicle visible (interior, close-up of part, or none)\"}, {\"question\": \"Do people take up a noticeable part of the photo?\", \"answers\": [\"no people or only tiny distant ones\", \"people clearly visible but small relative to the vehicle\", \"people prominent, covering or rivaling the vehicle\"], \"most_active\": \"no people or only tiny distant ones\", \"least_active\": \"people prominent, covering or rivaling the vehicle\"}, {\"question\": \"What kind of body does the main vehicle have?\", \"answers\": [\"enclosed cab with hood and windshield (car, pickup, truck, fire engine)\", \"open or exposed (convertible, tractor, open-top)\", \"toy or model, or no vehicle\"], \"most_active\": \"enclosed cab with hood and windshield (car, pickup, truck, fire engine)\", \"least_active\": \"open or exposed (convertible, tractor, open-top)\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a single real, full-size road vehicle (car, pickup, van, truck) shown whole from a side or three-quarter view, with its body, windshield/cab and wheels clearly outlined and parked on pavement. It responds most to classic and red vehicles (red pickup, fire engine, red station wagon). Activity drops for interior views, toys, front-on close-ups, cluttered scenes with several vehicles or people, and odd vehicle types such as tractors. Unlike the similar units, it stays strong for boxy cab vehicles (fire engine, snowplow truck, locomotive cab, police van) and is weak for tractors and for convertibles full of people.",
+  "predictions": [
+   {
+    "question": "How is the main vehicle shown?",
+    "answers": [
+     "one whole vehicle in side or three-quarter view",
+     "whole vehicle seen straight from front or rear",
+     "only part of a vehicle, an interior, or many vehicles crowded together",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What color is the main vehicle's body?",
+    "answers": [
+     "mostly red",
+     "mostly another color",
+     "no vehicle visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Do people take up a large or prominent part of the photo?",
+    "answers": [
+     "yes, people are prominent",
+     "people are small or absent but a vehicle is shown",
+     "no vehicle in photo"
+    ],
+    "most": 1,
+    "least": 0
+   },
+   {
+    "question": "What kind of vehicle is the main one?",
+    "answers": [
+     "real car, pickup, van or truck with an enclosed cab",
+     "tractor, open convertible, or other unusual vehicle",
+     "toy, model or drawing of a vehicle",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "64a746c18214308b9fc2c6a68032357c0f2bad01f01b5ab693e467b6cdb1a2b5",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single real, full-size road vehicle (car, pickup, van, truck) shown whole from a side or three-quarter view, with its body, windshield/cab and wheels clearly outlined and parked on pavement. It responds most to classic and red vehicles (red pickup, fire engine, red station wagon). Activity drops for interior views, toys, front-on close-ups, cluttered scenes with several vehicles or people, and odd vehicle types such as tractors. Unlike the similar units, it stays strong for boxy cab vehicles (fire engine, snowplow truck, locomotive cab, police van) and is weak for tractors and for convertibles full of people.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or three-quarter view\", \"whole vehicle seen straight from front or rear\", \"only part of a vehicle, an interior, or many vehicles crowded together\", \"no vehicle\"], \"most_active\": \"one whole vehicle in side or three-quarter view\", \"least_active\": \"only part of a vehicle, an interior, or many vehicles crowded together\"}, {\"question\": \"What color is the main vehicle's body?\", \"answers\": [\"mostly red\", \"mostly another color\", \"no vehicle visible\"], \"most_active\": \"mostly red\", \"least_active\": \"no vehicle visible\"}, {\"question\": \"Do people take up a large or prominent part of the photo?\", \"answers\": [\"yes, people are prominent\", \"people are small or absent but a vehicle is shown\", \"no vehicle in photo\"], \"most_active\": \"people are small or absent but a vehicle is shown\", \"least_active\": \"yes, people are prominent\"}, {\"question\": \"What kind of vehicle is the main one?\", \"answers\": [\"real car, pickup, van or truck with an enclosed cab\", \"tractor, open convertible, or other unusual vehicle\", \"toy, model or drawing of a vehicle\", \"no vehicle\"], \"most_active\": \"real car, pickup, van or truck with an enclosed cab\", \"least_active\": \"toy, model or drawing of a vehicle\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single real, full-size road vehicle (car, pickup, van, truck) shown whole from a side or three-quarter view, with its body, windshield/cab and wheels clearly outlined and parked on pavement. It responds most to classic and red vehicles (red pickup, fire engine, red station wagon). Activity drops for interior views, toys, front-on close-ups, cluttered scenes with several vehicles or people, and odd vehicle types such as tractors. Unlike the similar units, it stays strong for boxy cab vehicles (fire engine, snowplow truck, locomotive cab, police van) and is weak for tractors and for convertibles full of people.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or three-quarter view\", \"whole vehicle seen straight from front or rear\", \"only part of a vehicle, an interior, or many vehicles crowded together\", \"no vehicle\"], \"most_active\": \"one whole vehicle in side or three-quarter view\", \"least_active\": \"only part of a vehicle, an interior, or many vehicles crowded together\"}, {\"question\": \"What color is the main vehicle's body?\", \"answers\": [\"mostly red\", \"mostly another color\", \"no vehicle visible\"], \"most_active\": \"mostly red\", \"least_active\": \"no vehicle visible\"}, {\"question\": \"Do people take up a large or prominent part of the photo?\", \"answers\": [\"yes, people are prominent\", \"people are small or absent but a vehicle is shown\", \"no vehicle in photo\"], \"most_active\": \"people are small or absent but a vehicle is shown\", \"least_active\": \"yes, people are prominent\"}, {\"question\": \"What kind of vehicle is the main one?\", \"answers\": [\"real car, pickup, van or truck with an enclosed cab\", \"tractor, open convertible, or other unusual vehicle\", \"toy, model or drawing of a vehicle\", \"no vehicle\"], \"most_active\": \"real car, pickup, van or truck with an enclosed cab\", \"least_active\": \"toy, model or drawing of a vehicle\"}]}",
+  "valid": true
+ }
+}

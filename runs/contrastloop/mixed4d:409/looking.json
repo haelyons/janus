@@ -1,0 +1,171 @@
+{
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a single road vehicle with a long, low, car-like body seen whole from the side or in three-quarter view, parked on pavement. It is strongest for older or classic vehicles from about the 1950s to the 1980s, such as a 50s pickup, an old wagon or an old tanker lorry, and somewhat stronger for red bodies. It is weak for tall boxy vehicles like buses, minibuses and ambulances, for modern trucks, for rear views, for cluttered scenes with many vehicles, and for interiors. The ibex response suggests a general sensitivity to an elongated body in side profile.",
+  "predictions": [
+   {
+    "question": "What era does the main vehicle's styling look like?",
+    "answers": [
+     "classic, about 1950s to 1980s",
+     "pre-1940 antique",
+     "modern, 1990s or later",
+     "no real vehicle visible"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "How is the main vehicle shown?",
+    "answers": [
+     "one whole vehicle in side or three-quarter view",
+     "mainly a front or rear view",
+     "partly cut off or among many vehicles",
+     "no vehicle exterior visible"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "What shape is the main vehicle's body?",
+    "answers": [
+     "low car or pickup body",
+     "tall boxy body such as a bus, van or ambulance",
+     "large truck cab with trailer or tank",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main vehicle's dominant body color?",
+    "answers": [
+     "red",
+     "other color",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b9bc0d2a21af31badcbd5d35ca4934f7755de01fd9c5c4396a9d16c2290396ea",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single road vehicle with a long, low, car-like body seen whole from the side or in three-quarter view, parked on pavement. It is strongest for older or classic vehicles from about the 1950s to the 1980s, such as a 50s pickup, an old wagon or an old tanker lorry, and somewhat stronger for red bodies. It is weak for tall boxy vehicles like buses, minibuses and ambulances, for modern trucks, for rear views, for cluttered scenes with many vehicles, and for interiors. The ibex response suggests a general sensitivity to an elongated body in side profile.\", \"predictions\": [{\"question\": \"What era does the main vehicle's styling look like?\", \"answers\": [\"classic, about 1950s to 1980s\", \"pre-1940 antique\", \"modern, 1990s or later\", \"no real vehicle visible\"], \"most_active\": \"classic, about 1950s to 1980s\", \"least_active\": \"no real vehicle visible\"}, {\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or three-quarter view\", \"mainly a front or rear view\", \"partly cut off or among many vehicles\", \"no vehicle exterior visible\"], \"most_active\": \"one whole vehicle in side or three-quarter view\", \"least_active\": \"no vehicle exterior visible\"}, {\"question\": \"What shape is the main vehicle's body?\", \"answers\": [\"low car or pickup body\", \"tall boxy body such as a bus, van or ambulance\", \"large truck cab with trailer or tank\", \"no vehicle\"], \"most_active\": \"low car or pickup body\", \"least_active\": \"tall boxy body such as a bus, van or ambulance\"}, {\"question\": \"What is the main vehicle's dominant body color?\", \"answers\": [\"red\", \"other color\", \"no vehicle\"], \"most_active\": \"red\", \"least_active\": \"no vehicle\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single road vehicle with a long, low, car-like body seen whole from the side or in three-quarter view, parked on pavement. It is strongest for older or classic vehicles from about the 1950s to the 1980s, such as a 50s pickup, an old wagon or an old tanker lorry, and somewhat stronger for red bodies. It is weak for tall boxy vehicles like buses, minibuses and ambulances, for modern trucks, for rear views, for cluttered scenes with many vehicles, and for interiors. The ibex response suggests a general sensitivity to an elongated body in side profile.\", \"predictions\": [{\"question\": \"What era does the main vehicle's styling look like?\", \"answers\": [\"classic, about 1950s to 1980s\", \"pre-1940 antique\", \"modern, 1990s or later\", \"no real vehicle visible\"], \"most_active\": \"classic, about 1950s to 1980s\", \"least_active\": \"no real vehicle visible\"}, {\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or three-quarter view\", \"mainly a front or rear view\", \"partly cut off or among many vehicles\", \"no vehicle exterior visible\"], \"most_active\": \"one whole vehicle in side or three-quarter view\", \"least_active\": \"no vehicle exterior visible\"}, {\"question\": \"What shape is the main vehicle's body?\", \"answers\": [\"low car or pickup body\", \"tall boxy body such as a bus, van or ambulance\", \"large truck cab with trailer or tank\", \"no vehicle\"], \"most_active\": \"low car or pickup body\", \"least_active\": \"tall boxy body such as a bus, van or ambulance\"}, {\"question\": \"What is the main vehicle's dominant body color?\", \"answers\": [\"red\", \"other color\", \"no vehicle\"], \"most_active\": \"red\", \"least_active\": \"no vehicle\"}]}",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to a single real road vehicle, especially a car or pickup, seen in clear side or three-quarter profile. In these views the long horizontal body, side windows and both wheels are visible. It also fires on other side-profile subjects, such as an old tanker truck and a standing ibex. Activity is highest for boxy, classic-looking sedans, wagons and pickups, often red. It drops for front-on views, close-ups, toys and models (Lego, cake, toy truck), cluttered scenes with many vehicles, larger buses or vans, and interiors.",
+  "predictions": [
+   {
+    "question": "From which angle is the main vehicle or animal shown?",
+    "answers": [
+     "side or three-quarter profile with full side and wheels visible",
+     "mostly front-on or rear-on",
+     "close-up or partial view",
+     "no vehicle or animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the main vehicle a real full-size vehicle or a toy, model or cake?",
+    "answers": [
+     "real vehicle",
+     "toy, model, Lego or cake",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "How many vehicles are prominent in the photo?",
+    "answers": [
+     "one clearly dominant vehicle",
+     "several vehicles crowded or stacked",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What color is the main vehicle's body?",
+    "answers": [
+     "red or orange",
+     "other color",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b9bc0d2a21af31badcbd5d35ca4934f7755de01fd9c5c4396a9d16c2290396ea",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a single real road vehicle, especially a car or pickup, seen in clear side or three-quarter profile. In these views the long horizontal body, side windows and both wheels are visible. It also fires on other side-profile subjects, such as an old tanker truck and a standing ibex. Activity is highest for boxy, classic-looking sedans, wagons and pickups, often red. It drops for front-on views, close-ups, toys and models (Lego, cake, toy truck), cluttered scenes with many vehicles, larger buses or vans, and interiors.\", \"predictions\": [{\"question\": \"From which angle is the main vehicle or animal shown?\", \"answers\": [\"side or three-quarter profile with full side and wheels visible\", \"mostly front-on or rear-on\", \"close-up or partial view\", \"no vehicle or animal\"], \"most_active\": \"side or three-quarter profile with full side and wheels visible\", \"least_active\": \"close-up or partial view\"}, {\"question\": \"Is the main vehicle a real full-size vehicle or a toy, model or cake?\", \"answers\": [\"real vehicle\", \"toy, model, Lego or cake\", \"no vehicle\"], \"most_active\": \"real vehicle\", \"least_active\": \"toy, model, Lego or cake\"}, {\"question\": \"How many vehicles are prominent in the photo?\", \"answers\": [\"one clearly dominant vehicle\", \"several vehicles crowded or stacked\", \"no vehicle\"], \"most_active\": \"one clearly dominant vehicle\", \"least_active\": \"several vehicles crowded or stacked\"}, {\"question\": \"What color is the main vehicle's body?\", \"answers\": [\"red or orange\", \"other color\", \"no vehicle\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a single real road vehicle, especially a car or pickup, seen in clear side or three-quarter profile. In these views the long horizontal body, side windows and both wheels are visible. It also fires on other side-profile subjects, such as an old tanker truck and a standing ibex. Activity is highest for boxy, classic-looking sedans, wagons and pickups, often red. It drops for front-on views, close-ups, toys and models (Lego, cake, toy truck), cluttered scenes with many vehicles, larger buses or vans, and interiors.\", \"predictions\": [{\"question\": \"From which angle is the main vehicle or animal shown?\", \"answers\": [\"side or three-quarter profile with full side and wheels visible\", \"mostly front-on or rear-on\", \"close-up or partial view\", \"no vehicle or animal\"], \"most_active\": \"side or three-quarter profile with full side and wheels visible\", \"least_active\": \"close-up or partial view\"}, {\"question\": \"Is the main vehicle a real full-size vehicle or a toy, model or cake?\", \"answers\": [\"real vehicle\", \"toy, model, Lego or cake\", \"no vehicle\"], \"most_active\": \"real vehicle\", \"least_active\": \"toy, model, Lego or cake\"}, {\"question\": \"How many vehicles are prominent in the photo?\", \"answers\": [\"one clearly dominant vehicle\", \"several vehicles crowded or stacked\", \"no vehicle\"], \"most_active\": \"one clearly dominant vehicle\", \"least_active\": \"several vehicles crowded or stacked\"}, {\"question\": \"What color is the main vehicle's body?\", \"answers\": [\"red or orange\", \"other color\", \"no vehicle\"], \"most_active\": \"red or orange\", \"least_active\": \"other color\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "Responds to a single real road vehicle seen whole from the side or front three-quarter, with its long body and wheels filling the frame. It is strongest for boxy 1950s–1980s cars, wagons and trucks shot in a parking lot or on a road. It is weak for crowded scenes with many small vehicles, rear views, toy or model vehicles, very old 1920s–30s hot-rod shapes, and vehicle interiors. It also fires on horned ibex in side profile, possibly because of the long horizontal body on legs.",
+  "predictions": [
+   {
+    "question": "How is the main vehicle shown?",
+    "answers": [
+     "one whole vehicle in side or front three-quarter view filling much of the frame",
+     "one vehicle seen mainly from the rear or front, or heavily cropped",
+     "several vehicles with none dominant, or the vehicle is small in the frame",
+     "no vehicle exterior visible"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "What era does the main vehicle's styling look like?",
+    "answers": [
+     "pre-1945 (1920s-40s, separate fenders, upright grille)",
+     "1950s-1980s classic, boxy body",
+     "modern (1990s or later)",
+     "not applicable / no vehicle"
+    ],
+    "most": 1,
+    "least": 3
+   },
+   {
+    "question": "Is the vehicle a real full-size vehicle or a toy, model, or cake?",
+    "answers": [
+     "real full-size vehicle",
+     "toy, model, Lego or cake",
+     "no vehicle"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the main vehicle a large bus, coach or minibus?",
+    "answers": [
+     "yes, a bus or minibus",
+     "no, a car, wagon or pickup",
+     "no, another vehicle type",
+     "no vehicle"
+    ],
+    "most": 1,
+    "least": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b9bc0d2a21af31badcbd5d35ca4934f7755de01fd9c5c4396a9d16c2290396ea",
+  "texts": [
+   "{\"explanation\": \"Responds to a single real road vehicle seen whole from the side or front three-quarter, with its long body and wheels filling the frame. It is strongest for boxy 1950s–1980s cars, wagons and trucks shot in a parking lot or on a road. It is weak for crowded scenes with many small vehicles, rear views, toy or model vehicles, very old 1920s–30s hot-rod shapes, and vehicle interiors. It also fires on horned ibex in side profile, possibly because of the long horizontal body on legs.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or front three-quarter view filling much of the frame\", \"one vehicle seen mainly from the rear or front, or heavily cropped\", \"several vehicles with none dominant, or the vehicle is small in the frame\", \"no vehicle exterior visible\"], \"most_active\": \"one whole vehicle in side or front three-quarter view filling much of the frame\", \"least_active\": \"no vehicle exterior visible\"}, {\"question\": \"What era does the main vehicle's styling look like?\", \"answers\": [\"pre-1945 (1920s-40s, separate fenders, upright grille)\", \"1950s-1980s classic, boxy body\", \"modern (1990s or later)\", \"not applicable / no vehicle\"], \"most_active\": \"1950s-1980s classic, boxy body\", \"least_active\": \"not applicable / no vehicle\"}, {\"question\": \"Is the vehicle a real full-size vehicle or a toy, model, or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, Lego or cake\", \"no vehicle\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"no vehicle\"}, {\"question\": \"Is the main vehicle a large bus, coach or minibus?\", \"answers\": [\"yes, a bus or minibus\", \"no, a car, wagon or pickup\", \"no, another vehicle type\", \"no vehicle\"], \"most_active\": \"no, a car, wagon or pickup\", \"least_active\": \"no vehicle\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a single real road vehicle seen whole from the side or front three-quarter, with its long body and wheels filling the frame. It is strongest for boxy 1950s–1980s cars, wagons and trucks shot in a parking lot or on a road. It is weak for crowded scenes with many small vehicles, rear views, toy or model vehicles, very old 1920s–30s hot-rod shapes, and vehicle interiors. It also fires on horned ibex in side profile, possibly because of the long horizontal body on legs.\", \"predictions\": [{\"question\": \"How is the main vehicle shown?\", \"answers\": [\"one whole vehicle in side or front three-quarter view filling much of the frame\", \"one vehicle seen mainly from the rear or front, or heavily cropped\", \"several vehicles with none dominant, or the vehicle is small in the frame\", \"no vehicle exterior visible\"], \"most_active\": \"one whole vehicle in side or front three-quarter view filling much of the frame\", \"least_active\": \"no vehicle exterior visible\"}, {\"question\": \"What era does the main vehicle's styling look like?\", \"answers\": [\"pre-1945 (1920s-40s, separate fenders, upright grille)\", \"1950s-1980s classic, boxy body\", \"modern (1990s or later)\", \"not applicable / no vehicle\"], \"most_active\": \"1950s-1980s classic, boxy body\", \"least_active\": \"not applicable / no vehicle\"}, {\"question\": \"Is the vehicle a real full-size vehicle or a toy, model, or cake?\", \"answers\": [\"real full-size vehicle\", \"toy, model, Lego or cake\", \"no vehicle\"], \"most_active\": \"real full-size vehicle\", \"least_active\": \"no vehicle\"}, {\"question\": \"Is the main vehicle a large bus, coach or minibus?\", \"answers\": [\"yes, a bus or minibus\", \"no, a car, wagon or pickup\", \"no, another vehicle type\", \"no vehicle\"], \"most_active\": \"no, a car, wagon or pickup\", \"least_active\": \"no vehicle\"}]}",
+  "valid": true
+ }
+}

@@ -1,0 +1,797 @@
+{
+ "unit": "mixed4b:237",
+ "layer": "mixed4b",
+ "chan": 237,
+ "m": 512,
+ "n_looked": 111,
+ "n": 129,
+ "classes": [
+  436,
+  407,
+  717,
+  656,
+  654,
+  581,
+  468,
+  555,
+  627,
+  609,
+  864,
+  817,
+  511,
+  734,
+  472,
+  547,
+  479,
+  803,
+  874,
+  751,
+  569,
+  661,
+  779,
+  705
+ ],
+ "class_names": [
+  "beach wagon",
+  "ambulance",
+  "pickup",
+  "minivan",
+  "minibus",
+  "grille",
+  "cab",
+  "fire engine",
+  "limousine",
+  "jeep",
+  "tow truck",
+  "sports car",
+  "convertible",
+  "police van",
+  "canoe",
+  "electric locomotive",
+  "car wheel",
+  "snowplow",
+  "trolleybus",
+  "racer",
+  "garbage truck",
+  "Model T",
+  "school bus",
+  "passenger car"
+ ],
+ "peers": [
+  {
+   "chan": 209,
+   "unit": "mixed4b:209",
+   "corr": 0.7029012034756139
+  },
+  {
+   "chan": 373,
+   "unit": "mixed4b:373",
+   "corr": 0.6812216372799449
+  },
+  {
+   "chan": 256,
+   "unit": "mixed4b:256",
+   "corr": 0.6466095648476557
+  }
+ ],
+ "D": [
+  950,
+  951,
+  953,
+  954,
+  956,
+  957,
+  958,
+  1282,
+  1283,
+  1285,
+  1289,
+  1561,
+  1562,
+  1564,
+  1565,
+  1567,
+  1610,
+  1613,
+  1616,
+  1794,
+  1795,
+  1796,
+  1798,
+  1799,
+  1971,
+  1976,
+  1977,
+  3071,
+  3072,
+  3074,
+  3075,
+  3079,
+  4321,
+  4327,
+  4328,
+  4600,
+  4603,
+  4604,
+  4606,
+  4609,
+  4731,
+  4732,
+  4737,
+  4738,
+  4913,
+  4916,
+  4918,
+  4919,
+  5142,
+  5143,
+  5146,
+  5147,
+  5149,
+  5381,
+  5382,
+  5384,
+  5385,
+  5386,
+  5387,
+  5388,
+  5993,
+  5995,
+  5999,
+  6680,
+  6681,
+  6682,
+  6684,
+  6688,
+  6689,
+  6890,
+  6892,
+  6894,
+  6895,
+  6896,
+  6897,
+  6898,
+  6899,
+  7000,
+  7001,
+  7003,
+  7004,
+  7005,
+  7007,
+  7150,
+  7152,
+  7155,
+  7156,
+  7190,
+  7191,
+  7196,
+  7197,
+  7199,
+  7706,
+  7707,
+  7709,
+  7831,
+  7836,
+  7837,
+  7838,
+  7839,
+  7893,
+  7894,
+  8145,
+  8146,
+  8147,
+  9820,
+  9822,
+  9824,
+  9825,
+  9828,
+  9829
+ ],
+ "T": [
+  952,
+  955,
+  959,
+  1280,
+  1281,
+  1284,
+  1286,
+  1287,
+  1288,
+  1560,
+  1563,
+  1566,
+  1568,
+  1569,
+  1611,
+  1612,
+  1614,
+  1615,
+  1617,
+  1618,
+  1619,
+  1790,
+  1791,
+  1792,
+  1793,
+  1797,
+  1970,
+  1972,
+  1973,
+  1974,
+  1975,
+  1978,
+  1979,
+  3070,
+  3073,
+  3076,
+  3077,
+  3078,
+  4320,
+  4322,
+  4323,
+  4324,
+  4325,
+  4326,
+  4329,
+  4601,
+  4602,
+  4605,
+  4607,
+  4608,
+  4730,
+  4733,
+  4734,
+  4735,
+  4736,
+  4739,
+  4910,
+  4911,
+  4912,
+  4914,
+  4915,
+  4917,
+  5140,
+  5141,
+  5144,
+  5145,
+  5148,
+  5380,
+  5383,
+  5389,
+  5990,
+  5991,
+  5992,
+  5994,
+  5996,
+  5997,
+  5998,
+  6683,
+  6685,
+  6686,
+  6687,
+  6891,
+  6893,
+  7002,
+  7006,
+  7008,
+  7009,
+  7151,
+  7153,
+  7154,
+  7157,
+  7158,
+  7159,
+  7192,
+  7193,
+  7194,
+  7195,
+  7198,
+  7700,
+  7701,
+  7702,
+  7703,
+  7704,
+  7705,
+  7708,
+  7830,
+  7832,
+  7833,
+  7834,
+  7835,
+  7890,
+  7891,
+  7892,
+  7895,
+  7896,
+  7897,
+  7898,
+  7899,
+  8140,
+  8141,
+  8142,
+  8143,
+  8144,
+  8148,
+  8149,
+  9821,
+  9823,
+  9826,
+  9827
+ ],
+ "answer_batches": 11,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "How is the main vehicle shown?",
+   "answers": [
+    "one whole vehicle in side or three-quarter view",
+    "whole vehicle seen straight from front or rear",
+    "only part of a vehicle, an interior, or many vehicles crowded together",
+    "no vehicle"
+   ]
+  },
+  {
+   "question": "What color is the main vehicle's body?",
+   "answers": [
+    "mostly red",
+    "mostly another color",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Do people take up a large or prominent part of the photo?",
+   "answers": [
+    "yes, people are prominent",
+    "people are small or absent but a vehicle is shown",
+    "no vehicle in photo"
+   ]
+  },
+  {
+   "question": "What kind of vehicle is the main one?",
+   "answers": [
+    "real car, pickup, van or truck with an enclosed cab",
+    "tractor, open convertible, or other unusual vehicle",
+    "toy, model or drawing of a vehicle",
+    "no vehicle"
+   ]
+  },
+  {
+   "question": "How is the main vehicle shown?",
+   "answers": [
+    "whole exterior, side or three-quarter view",
+    "whole exterior, straight front or rear view",
+    "partial, crowded or cut-off exterior",
+    "interior or cargo area, or no vehicle"
+   ]
+  },
+  {
+   "question": "Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?",
+   "answers": [
+    "yes, real road vehicle",
+    "toy, model, tractor or other non-road machine",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "What is the dominant body color of the main vehicle?",
+   "answers": [
+    "red",
+    "other single color",
+    "multicolor or heavily decorated",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "Do people take up a large part of the photo or cover the vehicle?",
+   "answers": [
+    "no people or only small background people",
+    "people prominent or covering the vehicle",
+    "no vehicle visible"
+   ]
+  },
+  {
+   "question": "From which side is the main vehicle seen?",
+   "answers": [
+    "front or front three-quarter, side visible",
+    "pure side profile",
+    "rear or rear three-quarter",
+    "interior view or no vehicle"
+   ]
+  },
+  {
+   "question": "Is a single complete vehicle, wheels to roof, the clear main subject?",
+   "answers": [
+    "yes, one complete vehicle dominates",
+    "vehicle partly cut off or among many vehicles",
+    "no full vehicle visible (interior, close-up of part, or none)"
+   ]
+  },
+  {
+   "question": "Do people take up a noticeable part of the photo?",
+   "answers": [
+    "no people or only tiny distant ones",
+    "people clearly visible but small relative to the vehicle",
+    "people prominent, covering or rivaling the vehicle"
+   ]
+  },
+  {
+   "question": "What kind of body does the main vehicle have?",
+   "answers": [
+    "enclosed cab with hood and windshield (car, pickup, truck, fire engine)",
+    "open or exposed (convertible, tractor, open-top)",
+    "toy or model, or no vehicle"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "The unit responds to a single real, full-size road vehicle (car, pickup, van, truck) shown whole from a side or three-quarter view, with its body, windshield/cab and wheels clearly outlined and parked on pavement. It responds most to classic and red vehicles (red pickup, fire engine, red station wagon). Activity drops for interior views, toys, front-on close-ups, cluttered scenes with several vehicles or people, and odd vehicle types such as tractors. Unlike the similar units, it stays strong for boxy cab vehicles (fire engine, snowplow truck, locomotive cab, police van) and is weak for tractors and for convertibles full of people.",
+   "predictions": [
+    {
+     "question": "How is the main vehicle shown?",
+     "answers": [
+      "one whole vehicle in side or three-quarter view",
+      "whole vehicle seen straight from front or rear",
+      "only part of a vehicle, an interior, or many vehicles crowded together",
+      "no vehicle"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 0,
+     "real": {
+      "n_hi": 70,
+      "n_lo": 44,
+      "d": 0.46247364268111363,
+      "pct": 98.046875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 70,
+      "n_lo": 44,
+      "d": 0.26187930513500485,
+      "pct": 85.7421875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What color is the main vehicle's body?",
+     "answers": [
+      "mostly red",
+      "mostly another color",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 1,
+     "real": {
+      "n_hi": 30,
+      "n_lo": 5,
+      "d": 0.14990713200108874,
+      "pct": 58.7890625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 30,
+      "n_lo": 5,
+      "d": 0.09869202124130777,
+      "pct": 62.109375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Do people take up a large or prominent part of the photo?",
+     "answers": [
+      "yes, people are prominent",
+      "people are small or absent but a vehicle is shown",
+      "no vehicle in photo"
+     ],
+     "most": 1,
+     "least": 0,
+     "question_index": 2,
+     "real": {
+      "n_hi": 117,
+      "n_lo": 8,
+      "d": 0.4028862979279281,
+      "pct": 90.8203125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 117,
+      "n_lo": 8,
+      "d": 0.4590975090389214,
+      "pct": 94.140625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What kind of vehicle is the main one?",
+     "answers": [
+      "real car, pickup, van or truck with an enclosed cab",
+      "tractor, open convertible, or other unusual vehicle",
+      "toy, model or drawing of a vehicle",
+      "no vehicle"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 3,
+     "real": {
+      "n_hi": 96,
+      "n_lo": 7,
+      "d": 0.7464821763146708,
+      "pct": 95.1171875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 96,
+      "n_lo": 7,
+      "d": 0.6493887219362473,
+      "pct": 89.84375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "The unit responds to the exterior body of a single real road vehicle (car, pickup, ambulance or fire truck) seen whole from the side or three-quarter front, with the hood, cab windshield and side windows clearly outlined. It is strongest for boxy or classic vehicles, often red, parked on pavement. It is weak for interiors and cargo areas, toy models, tractors and other farm-style machines, cluttered scenes with several vehicles, and photos where people dominate or cover the car. Compared with similar units, it prefers clean side-profile road vehicles such as fire engines, police vans and school buses over tractors, convertibles full of people and odd utility bodies.",
+   "predictions": [
+    {
+     "question": "How is the main vehicle shown?",
+     "answers": [
+      "whole exterior, side or three-quarter view",
+      "whole exterior, straight front or rear view",
+      "partial, crowded or cut-off exterior",
+      "interior or cargo area, or no vehicle"
+     ],
+     "most": 0,
+     "least": 3,
+     "question_index": 4,
+     "real": {
+      "n_hi": 63,
+      "n_lo": 5,
+      "d": 0.1648463622199977,
+      "pct": 71.09375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 63,
+      "n_lo": 5,
+      "d": 0.09611352649174279,
+      "pct": 57.8125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?",
+     "answers": [
+      "yes, real road vehicle",
+      "toy, model, tractor or other non-road machine",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 5,
+     "real": {
+      "n_hi": 104,
+      "n_lo": 21,
+      "d": 0.27110867359999935,
+      "pct": 89.6484375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 104,
+      "n_lo": 21,
+      "d": 0.33192795374104744,
+      "pct": 92.7734375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the dominant body color of the main vehicle?",
+     "answers": [
+      "red",
+      "other single color",
+      "multicolor or heavily decorated",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 28,
+      "n_lo": 26,
+      "d": 0.182424505619787,
+      "pct": 76.171875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 28,
+      "n_lo": 26,
+      "d": 0.21387673977339305,
+      "pct": 85.15625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Do people take up a large part of the photo or cover the vehicle?",
+     "answers": [
+      "no people or only small background people",
+      "people prominent or covering the vehicle",
+      "no vehicle visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 7,
+     "real": {
+      "n_hi": 116,
+      "n_lo": 9,
+      "d": 0.42937504614110394,
+      "pct": 91.9921875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 116,
+      "n_lo": 9,
+      "d": 0.3792835290833368,
+      "pct": 94.53125,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "The unit responds to a whole, enclosed road vehicle (car, pickup, truck cab, or fire engine) seen side-on or from the front three-quarter angle, so the body side, wheels and windshield/cab are all clearly visible. It is strongest for boxy cabs with a distinct hood, such as classic pickups, fire engines and snowplow trucks. It is weaker for rear views, interiors, partial or cluttered views, scenes dominated by people, open vehicles like tractors and convertibles, and toys.",
+   "predictions": [
+    {
+     "question": "From which side is the main vehicle seen?",
+     "answers": [
+      "front or front three-quarter, side visible",
+      "pure side profile",
+      "rear or rear three-quarter",
+      "interior view or no vehicle"
+     ],
+     "most": 0,
+     "least": 3,
+     "question_index": 8,
+     "real": {
+      "n_hi": 95,
+      "n_lo": 5,
+      "d": 0.08738198535398234,
+      "pct": 64.0625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 95,
+      "n_lo": 5,
+      "d": 0.03544722950573715,
+      "pct": 52.34375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is a single complete vehicle, wheels to roof, the clear main subject?",
+     "answers": [
+      "yes, one complete vehicle dominates",
+      "vehicle partly cut off or among many vehicles",
+      "no full vehicle visible (interior, close-up of part, or none)"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 9,
+     "real": {
+      "n_hi": 70,
+      "n_lo": 12,
+      "d": 0.9314076501942186,
+      "pct": 99.21875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 70,
+      "n_lo": 12,
+      "d": 0.3732525525154844,
+      "pct": 85.546875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Do people take up a noticeable part of the photo?",
+     "answers": [
+      "no people or only tiny distant ones",
+      "people clearly visible but small relative to the vehicle",
+      "people prominent, covering or rivaling the vehicle"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 10,
+     "real": {
+      "n_hi": 105,
+      "n_lo": 11,
+      "d": 0.12351535133788938,
+      "pct": 83.984375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 105,
+      "n_lo": 11,
+      "d": 0.13466307348743414,
+      "pct": 78.3203125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What kind of body does the main vehicle have?",
+     "answers": [
+      "enclosed cab with hood and windshield (car, pickup, truck, fire engine)",
+      "open or exposed (convertible, tractor, open-top)",
+      "toy or model, or no vehicle"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 11,
+     "real": {
+      "n_hi": 108,
+      "n_lo": 9,
+      "d": 0.23026966385035022,
+      "pct": 84.5703125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 108,
+      "n_lo": 9,
+      "d": 0.13116990856871763,
+      "pct": 62.109375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle shown?\nAnswers: one whole vehicle in side or three-quarter view; whole vehicle seen straight from front or rear; only part of a vehicle, an interior, or many vehicles crowded together; no vehicle\nPredicted most active: one whole vehicle in side or three-quarter view. Predicted least active: only part of a vehicle, an interior, or many vehicles crowded together.\nResult: 70 and 44 photos, d +0.46, percentile 98: held.\n\nPrediction 2. What color is the main vehicle's body?\nAnswers: mostly red; mostly another color; no vehicle visible\nPredicted most active: mostly red. Predicted least active: no vehicle visible.\nResult: 30 and 5 photos, d +0.15, percentile 59: did not hold.\n\nPrediction 3. Do people take up a large or prominent part of the photo?\nAnswers: yes, people are prominent; people are small or absent but a vehicle is shown; no vehicle in photo\nPredicted most active: people are small or absent but a vehicle is shown. Predicted least active: yes, people are prominent.\nResult: 117 and 8 photos, d +0.40, percentile 91: did not hold.\n\nPrediction 4. What kind of vehicle is the main one?\nAnswers: real car, pickup, van or truck with an enclosed cab; tractor, open convertible, or other unusual vehicle; toy, model or drawing of a vehicle; no vehicle\nPredicted most active: real car, pickup, van or truck with an enclosed cab. Predicted least active: toy, model or drawing of a vehicle.\nResult: 96 and 7 photos, d +0.75, percentile 95: held.",
+  "real_s2": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle shown?\nAnswers: whole exterior, side or three-quarter view; whole exterior, straight front or rear view; partial, crowded or cut-off exterior; interior or cargo area, or no vehicle\nPredicted most active: whole exterior, side or three-quarter view. Predicted least active: interior or cargo area, or no vehicle.\nResult: 63 and 5 photos, d +0.16, percentile 71: did not hold.\n\nPrediction 2. Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?\nAnswers: yes, real road vehicle; toy, model, tractor or other non-road machine; no vehicle visible\nPredicted most active: yes, real road vehicle. Predicted least active: toy, model, tractor or other non-road machine.\nResult: 104 and 21 photos, d +0.27, percentile 90: did not hold.\n\nPrediction 3. What is the dominant body color of the main vehicle?\nAnswers: red; other single color; multicolor or heavily decorated; no vehicle visible\nPredicted most active: red. Predicted least active: multicolor or heavily decorated.\nResult: 28 and 26 photos, d +0.18, percentile 76: did not hold.\n\nPrediction 4. Do people take up a large part of the photo or cover the vehicle?\nAnswers: no people or only small background people; people prominent or covering the vehicle; no vehicle visible\nPredicted most active: no people or only small background people. Predicted least active: people prominent or covering the vehicle.\nResult: 116 and 9 photos, d +0.43, percentile 92: did not hold.",
+  "real_s3": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. From which side is the main vehicle seen?\nAnswers: front or front three-quarter, side visible; pure side profile; rear or rear three-quarter; interior view or no vehicle\nPredicted most active: front or front three-quarter, side visible. Predicted least active: interior view or no vehicle.\nResult: 95 and 5 photos, d +0.09, percentile 64: did not hold.\n\nPrediction 2. Is a single complete vehicle, wheels to roof, the clear main subject?\nAnswers: yes, one complete vehicle dominates; vehicle partly cut off or among many vehicles; no full vehicle visible (interior, close-up of part, or none)\nPredicted most active: yes, one complete vehicle dominates. Predicted least active: no full vehicle visible (interior, close-up of part, or none).\nResult: 70 and 12 photos, d +0.93, percentile 99: held.\n\nPrediction 3. Do people take up a noticeable part of the photo?\nAnswers: no people or only tiny distant ones; people clearly visible but small relative to the vehicle; people prominent, covering or rivaling the vehicle\nPredicted most active: no people or only tiny distant ones. Predicted least active: people prominent, covering or rivaling the vehicle.\nResult: 105 and 11 photos, d +0.12, percentile 84: did not hold.\n\nPrediction 4. What kind of body does the main vehicle have?\nAnswers: enclosed cab with hood and windshield (car, pickup, truck, fire engine); open or exposed (convertible, tractor, open-top); toy or model, or no vehicle\nPredicted most active: enclosed cab with hood and windshield (car, pickup, truck, fire engine). Predicted least active: open or exposed (convertible, tractor, open-top).\nResult: 108 and 9 photos, d +0.23, percentile 85: did not hold.",
+  "null_s1": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle shown?\nAnswers: one whole vehicle in side or three-quarter view; whole vehicle seen straight from front or rear; only part of a vehicle, an interior, or many vehicles crowded together; no vehicle\nPredicted most active: one whole vehicle in side or three-quarter view. Predicted least active: only part of a vehicle, an interior, or many vehicles crowded together.\nResult: 70 and 44 photos, d +0.26, percentile 86: did not hold.\n\nPrediction 2. What color is the main vehicle's body?\nAnswers: mostly red; mostly another color; no vehicle visible\nPredicted most active: mostly red. Predicted least active: no vehicle visible.\nResult: 30 and 5 photos, d +0.10, percentile 62: did not hold.\n\nPrediction 3. Do people take up a large or prominent part of the photo?\nAnswers: yes, people are prominent; people are small or absent but a vehicle is shown; no vehicle in photo\nPredicted most active: people are small or absent but a vehicle is shown. Predicted least active: yes, people are prominent.\nResult: 117 and 8 photos, d +0.46, percentile 94: did not hold.\n\nPrediction 4. What kind of vehicle is the main one?\nAnswers: real car, pickup, van or truck with an enclosed cab; tractor, open convertible, or other unusual vehicle; toy, model or drawing of a vehicle; no vehicle\nPredicted most active: real car, pickup, van or truck with an enclosed cab. Predicted least active: toy, model or drawing of a vehicle.\nResult: 96 and 7 photos, d +0.65, percentile 90: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main vehicle shown?\nAnswers: whole exterior, side or three-quarter view; whole exterior, straight front or rear view; partial, crowded or cut-off exterior; interior or cargo area, or no vehicle\nPredicted most active: whole exterior, side or three-quarter view. Predicted least active: interior or cargo area, or no vehicle.\nResult: 63 and 5 photos, d +0.10, percentile 58: did not hold.\n\nPrediction 2. Is the main vehicle a real full-size road car, truck or van (not a toy, model, tractor or farm machine)?\nAnswers: yes, real road vehicle; toy, model, tractor or other non-road machine; no vehicle visible\nPredicted most active: yes, real road vehicle. Predicted least active: toy, model, tractor or other non-road machine.\nResult: 104 and 21 photos, d +0.33, percentile 93: did not hold.\n\nPrediction 3. What is the dominant body color of the main vehicle?\nAnswers: red; other single color; multicolor or heavily decorated; no vehicle visible\nPredicted most active: red. Predicted least active: multicolor or heavily decorated.\nResult: 28 and 26 photos, d +0.21, percentile 85: did not hold.\n\nPrediction 4. Do people take up a large part of the photo or cover the vehicle?\nAnswers: no people or only small background people; people prominent or covering the vehicle; no vehicle visible\nPredicted most active: no people or only small background people. Predicted least active: people prominent or covering the vehicle.\nResult: 116 and 9 photos, d +0.38, percentile 95: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 129 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. From which side is the main vehicle seen?\nAnswers: front or front three-quarter, side visible; pure side profile; rear or rear three-quarter; interior view or no vehicle\nPredicted most active: front or front three-quarter, side visible. Predicted least active: interior view or no vehicle.\nResult: 95 and 5 photos, d +0.04, percentile 52: did not hold.\n\nPrediction 2. Is a single complete vehicle, wheels to roof, the clear main subject?\nAnswers: yes, one complete vehicle dominates; vehicle partly cut off or among many vehicles; no full vehicle visible (interior, close-up of part, or none)\nPredicted most active: yes, one complete vehicle dominates. Predicted least active: no full vehicle visible (interior, close-up of part, or none).\nResult: 70 and 12 photos, d +0.37, percentile 86: did not hold.\n\nPrediction 3. Do people take up a noticeable part of the photo?\nAnswers: no people or only tiny distant ones; people clearly visible but small relative to the vehicle; people prominent, covering or rivaling the vehicle\nPredicted most active: no people or only tiny distant ones. Predicted least active: people prominent, covering or rivaling the vehicle.\nResult: 105 and 11 photos, d +0.13, percentile 78: did not hold.\n\nPrediction 4. What kind of body does the main vehicle have?\nAnswers: enclosed cab with hood and windshield (car, pickup, truck, fire engine); open or exposed (convertible, tractor, open-top); toy or model, or no vehicle\nPredicted most active: enclosed cab with hood and windshield (car, pickup, truck, fire engine). Predicted least active: open or exposed (convertible, tractor, open-top).\nResult: 108 and 9 photos, d +0.13, percentile 62: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 3,
+   "not held": 9,
+   "too few": 0
+  },
+  "null": {
+   "held": 0,
+   "not held": 12,
+   "too few": 0
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models."
+  },
+  "real_s2": {
+   "class": "one_plus_related",
+   "explanation": "The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo."
+  },
+  "null_s1": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses."
+  },
+  "null_s2": {
+   "class": "one",
+   "explanation": "The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color."
+  },
+  "null_s3": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear."
+  }
+ }
+}

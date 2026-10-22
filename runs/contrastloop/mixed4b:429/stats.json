@@ -1,0 +1,797 @@
+{
+ "unit": "mixed4b:429",
+ "layer": "mixed4b",
+ "chan": 429,
+ "m": 512,
+ "n_looked": 119,
+ "n": 121,
+ "classes": [
+  263,
+  235,
+  153,
+  184,
+  248,
+  194,
+  185,
+  157,
+  162,
+  240,
+  201,
+  208,
+  163,
+  255,
+  273,
+  238,
+  213,
+  219,
+  222,
+  156,
+  187,
+  220,
+  204,
+  193
+ ],
+ "class_names": [
+  "Pembroke",
+  "German shepherd",
+  "Maltese dog",
+  "Irish terrier",
+  "Eskimo dog",
+  "Dandie Dinmont",
+  "Norfolk terrier",
+  "papillon",
+  "beagle",
+  "Appenzeller",
+  "silky terrier",
+  "Labrador retriever",
+  "bloodhound",
+  "Leonberg",
+  "dingo",
+  "Greater Swiss Mountain dog",
+  "Irish setter",
+  "cocker spaniel",
+  "kuvasz",
+  "Blenheim spaniel",
+  "Yorkshire terrier",
+  "Sussex spaniel",
+  "Lhasa",
+  "Australian terrier"
+ ],
+ "peers": [
+  {
+   "chan": 443,
+   "unit": "mixed4b:443",
+   "corr": 0.9513642132025033
+  },
+  {
+   "chan": 409,
+   "unit": "mixed4b:409",
+   "corr": 0.9383313664926077
+  },
+  {
+   "chan": 384,
+   "unit": "mixed4b:384",
+   "corr": 0.9168239690230823
+  }
+ ],
+ "D": [
+  50,
+  51,
+  55,
+  56,
+  59,
+  1140,
+  1142,
+  1144,
+  1145,
+  1149,
+  1651,
+  1653,
+  1654,
+  1655,
+  1657,
+  1658,
+  1659,
+  1680,
+  1682,
+  1683,
+  1687,
+  1689,
+  1900,
+  1903,
+  1904,
+  1907,
+  1908,
+  1941,
+  1943,
+  1948,
+  1949,
+  2350,
+  2356,
+  2357,
+  2359,
+  2580,
+  2581,
+  2582,
+  2583,
+  2585,
+  2586,
+  2587,
+  2588,
+  2710,
+  2711,
+  2712,
+  2715,
+  2943,
+  2944,
+  2947,
+  3474,
+  3476,
+  3477,
+  4101,
+  4102,
+  4103,
+  4104,
+  4105,
+  4106,
+  4750,
+  4751,
+  4754,
+  4756,
+  4757,
+  4758,
+  4759,
+  4930,
+  4931,
+  4932,
+  4936,
+  4937,
+  6432,
+  6436,
+  6438,
+  7090,
+  7092,
+  7093,
+  7094,
+  7096,
+  7220,
+  7221,
+  7222,
+  7228,
+  7229,
+  7900,
+  7902,
+  7903,
+  7905,
+  7908,
+  7909,
+  8190,
+  8191,
+  8192,
+  8193,
+  8194,
+  8195,
+  8197,
+  8198,
+  8292,
+  8293,
+  8295,
+  8297,
+  8299,
+  8560,
+  8561,
+  8565,
+  8566,
+  8567,
+  8731,
+  8732,
+  8736,
+  8782,
+  8785,
+  8786,
+  8788,
+  9541,
+  9543,
+  9546,
+  9547
+ ],
+ "T": [
+  52,
+  53,
+  54,
+  57,
+  58,
+  1141,
+  1143,
+  1146,
+  1147,
+  1148,
+  1650,
+  1652,
+  1656,
+  1681,
+  1684,
+  1685,
+  1686,
+  1688,
+  1901,
+  1902,
+  1905,
+  1906,
+  1909,
+  1940,
+  1942,
+  1944,
+  1945,
+  1946,
+  1947,
+  2351,
+  2352,
+  2353,
+  2354,
+  2355,
+  2358,
+  2584,
+  2589,
+  2713,
+  2714,
+  2716,
+  2717,
+  2718,
+  2719,
+  2940,
+  2941,
+  2942,
+  2945,
+  2946,
+  2948,
+  2949,
+  3470,
+  3471,
+  3472,
+  3473,
+  3475,
+  3478,
+  3479,
+  4100,
+  4107,
+  4108,
+  4109,
+  4752,
+  4753,
+  4755,
+  4933,
+  4934,
+  4935,
+  4938,
+  4939,
+  6430,
+  6431,
+  6433,
+  6434,
+  6435,
+  6437,
+  6439,
+  7091,
+  7095,
+  7097,
+  7098,
+  7099,
+  7223,
+  7224,
+  7225,
+  7226,
+  7227,
+  7901,
+  7904,
+  7906,
+  7907,
+  8196,
+  8199,
+  8290,
+  8291,
+  8294,
+  8296,
+  8298,
+  8562,
+  8563,
+  8564,
+  8568,
+  8569,
+  8730,
+  8733,
+  8734,
+  8735,
+  8737,
+  8738,
+  8739,
+  8780,
+  8781,
+  8783,
+  8784,
+  8787,
+  8789,
+  9540,
+  9542,
+  9544,
+  9545,
+  9548,
+  9549
+ ],
+ "answer_batches": 11,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Is the dog's face turned straight toward the camera with both eyes looking at the viewer?",
+   "answers": [
+    "Yes, frontal and looking at camera",
+    "Partly turned or looking away",
+    "Profile or face not visible",
+    "No dog in photo"
+   ]
+  },
+  {
+   "question": "How much of the photo does the dog's head take up?",
+   "answers": [
+    "Large (head fills a big part of the frame)",
+    "Medium",
+    "Small (dog distant or whole body small)",
+    "No dog head visible"
+   ]
+  },
+  {
+   "question": "Are both of the dog's eyes clearly visible and open?",
+   "answers": [
+    "Both clearly visible and open",
+    "Only one visible, or eyes closed or squinting",
+    "Neither visible / no dog"
+   ]
+  },
+  {
+   "question": "Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?",
+   "answers": [
+    "Head-and-chest portrait",
+    "Whole body shown",
+    "No dog"
+   ]
+  },
+  {
+   "question": "Is the dog looking directly at the camera?",
+   "answers": [
+    "yes, eyes meet the camera",
+    "head or gaze turned away or to the side",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "Is the dog's face seen from the front, at an angle, or in profile?",
+   "answers": [
+    "frontal",
+    "three-quarter view",
+    "profile or back of head",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "How much of the photo does the dog's face fill?",
+   "answers": [
+    "large (close-up of the head)",
+    "medium (whole dog, face clearly visible)",
+    "small (dog far away)",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "How many dogs are in the photo?",
+   "answers": [
+    "one",
+    "two or more",
+    "none"
+   ]
+  },
+  {
+   "question": "Which way is the dog's head facing relative to the camera?",
+   "answers": [
+    "straight at the camera (frontal)",
+    "three-quarter turn",
+    "side profile or turned away",
+    "no dog head visible"
+   ]
+  },
+  {
+   "question": "Is the dog looking directly into the camera?",
+   "answers": [
+    "yes, eye contact",
+    "no, looking elsewhere",
+    "dog's eyes not visible"
+   ]
+  },
+  {
+   "question": "How many dogs are visible in the photo?",
+   "answers": [
+    "one",
+    "two or more",
+    "none"
+   ]
+  },
+  {
+   "question": "Is the dog's head level, or tilted noticeably up or down?",
+   "answers": [
+    "level",
+    "tilted up or down",
+    "no dog head visible"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "The unit responds to a dog's face seen straight on, with both eyes looking directly at the camera, especially when the face is large in the frame (head-and-shoulders portraits). Activity drops when the dog's head is turned to profile or the dog looks away (corgi puppy looking up, Appenzeller, Labrador and Blenheim looking aside), when the dog is small or distant in the frame, or when the face is hidden. Similar units prefer the turned-away and profile heads, so direct frontal eye contact is what is particular to this unit.",
+   "predictions": [
+    {
+     "question": "Is the dog's face turned straight toward the camera with both eyes looking at the viewer?",
+     "answers": [
+      "Yes, frontal and looking at camera",
+      "Partly turned or looking away",
+      "Profile or face not visible",
+      "No dog in photo"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 0,
+     "real": {
+      "n_hi": 63,
+      "n_lo": 18,
+      "d": 1.275199259565299,
+      "pct": 97.4609375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 63,
+      "n_lo": 18,
+      "d": -0.4178891898501528,
+      "pct": 4.296875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How much of the photo does the dog's head take up?",
+     "answers": [
+      "Large (head fills a big part of the frame)",
+      "Medium",
+      "Small (dog distant or whole body small)",
+      "No dog head visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 1,
+     "real": {
+      "n_hi": 45,
+      "n_lo": 25,
+      "d": 1.1825964629207497,
+      "pct": 95.703125,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 45,
+      "n_lo": 25,
+      "d": -0.42469928354294056,
+      "pct": 4.1015625,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are both of the dog's eyes clearly visible and open?",
+     "answers": [
+      "Both clearly visible and open",
+      "Only one visible, or eyes closed or squinting",
+      "Neither visible / no dog"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 2,
+     "real": {
+      "n_hi": 79,
+      "n_lo": 11,
+      "d": 1.6439760406632935,
+      "pct": 99.0234375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 79,
+      "n_lo": 11,
+      "d": -0.707468549078769,
+      "pct": 4.6875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?",
+     "answers": [
+      "Head-and-chest portrait",
+      "Whole body shown",
+      "No dog"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 3,
+     "real": {
+      "n_hi": 55,
+      "n_lo": 65,
+      "d": 0.5643943488986118,
+      "pct": 83.984375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 55,
+      "n_lo": 65,
+      "d": -0.1887389725382535,
+      "pct": 27.34375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "Responds to a dog's face seen straight on, with the dog looking directly at the camera so both eyes and the nose face the viewer, especially when the face is fairly large in the frame. Activity drops when the head is turned, in profile, or gazing off to the side, or when the face is small or hidden. That turned-head case is exactly where the similar units win: Blenheim, Appenzeller, Labrador, the yawning Maltese and the corgi puppy looking up. This unit beats the similar units on direct-gaze faces such as the Irish terrier, German shepherd, beagle, dingo and kuvasz.",
+   "predictions": [
+    {
+     "question": "Is the dog looking directly at the camera?",
+     "answers": [
+      "yes, eyes meet the camera",
+      "head or gaze turned away or to the side",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 4,
+     "real": {
+      "n_hi": 63,
+      "n_lo": 7,
+      "d": 1.6375298065665447,
+      "pct": 98.4375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 63,
+      "n_lo": 7,
+      "d": -0.6464704056065504,
+      "pct": 9.5703125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the dog's face seen from the front, at an angle, or in profile?",
+     "answers": [
+      "frontal",
+      "three-quarter view",
+      "profile or back of head",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 5,
+     "real": {
+      "n_hi": 67,
+      "n_lo": 19,
+      "d": 1.2422260894476196,
+      "pct": 97.265625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 67,
+      "n_lo": 19,
+      "d": -0.3341370051661308,
+      "pct": 13.671875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How much of the photo does the dog's face fill?",
+     "answers": [
+      "large (close-up of the head)",
+      "medium (whole dog, face clearly visible)",
+      "small (dog far away)",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 45,
+      "n_lo": 17,
+      "d": 1.1984714010243565,
+      "pct": 95.1171875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 45,
+      "n_lo": 17,
+      "d": -0.6351320884987116,
+      "pct": 1.171875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How many dogs are in the photo?",
+     "answers": [
+      "one",
+      "two or more",
+      "none"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 7,
+     "real": {
+      "n_hi": 113,
+      "n_lo": 8,
+      "d": 0.35338345004160115,
+      "pct": 73.2421875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 113,
+      "n_lo": 8,
+      "d": 0.31843630053538685,
+      "pct": 71.09375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "The unit responds to a single dog's face seen head-on: the muzzle points at the camera, both eyes are symmetric and visible, and the dog makes eye contact with the viewer. Activity is high for frontal portraits of any breed (corgi, German shepherd, Maltese, Irish terrier, beagle, kuvasz) and much lower when the head is in profile, turned away or tilted up, or when the scene contains several dogs or small, side-on full bodies. The similar units prefer side-turned or three-quarter heads (corgi looking up, Blenheim, Labrador, Appenzeller), so the frontal, eye-contact geometry is what is particular to this unit.",
+   "predictions": [
+    {
+     "question": "Which way is the dog's head facing relative to the camera?",
+     "answers": [
+      "straight at the camera (frontal)",
+      "three-quarter turn",
+      "side profile or turned away",
+      "no dog head visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 8,
+     "real": {
+      "n_hi": 67,
+      "n_lo": 19,
+      "d": 1.2422260894476196,
+      "pct": 97.265625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 67,
+      "n_lo": 19,
+      "d": -0.3341370051661308,
+      "pct": 13.671875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the dog looking directly into the camera?",
+     "answers": [
+      "yes, eye contact",
+      "no, looking elsewhere",
+      "dog's eyes not visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 9,
+     "real": {
+      "n_hi": 63,
+      "n_lo": 43,
+      "d": 0.8811725434977615,
+      "pct": 99.21875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 63,
+      "n_lo": 43,
+      "d": 0.312327408250943,
+      "pct": 96.2890625,
+      "outcome": "held"
+     }
+    },
+    {
+     "question": "How many dogs are visible in the photo?",
+     "answers": [
+      "one",
+      "two or more",
+      "none"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 10,
+     "real": {
+      "n_hi": 113,
+      "n_lo": 8,
+      "d": 0.35338345004160115,
+      "pct": 73.2421875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 113,
+      "n_lo": 8,
+      "d": 0.31843630053538685,
+      "pct": 71.09375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the dog's head level, or tilted noticeably up or down?",
+     "answers": [
+      "level",
+      "tilted up or down",
+      "no dog head visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 11,
+     "real": {
+      "n_hi": 87,
+      "n_lo": 32,
+      "d": 0.5763344264366648,
+      "pct": 97.265625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 87,
+      "n_lo": 32,
+      "d": 0.2005242224157476,
+      "pct": 88.0859375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the dog's face turned straight toward the camera with both eyes looking at the viewer?\nAnswers: Yes, frontal and looking at camera; Partly turned or looking away; Profile or face not visible; No dog in photo\nPredicted most active: Yes, frontal and looking at camera. Predicted least active: Profile or face not visible.\nResult: 63 and 18 photos, d +1.28, percentile 97: held.\n\nPrediction 2. How much of the photo does the dog's head take up?\nAnswers: Large (head fills a big part of the frame); Medium; Small (dog distant or whole body small); No dog head visible\nPredicted most active: Large (head fills a big part of the frame). Predicted least active: Small (dog distant or whole body small).\nResult: 45 and 25 photos, d +1.18, percentile 96: held.\n\nPrediction 3. Are both of the dog's eyes clearly visible and open?\nAnswers: Both clearly visible and open; Only one visible, or eyes closed or squinting; Neither visible / no dog\nPredicted most active: Both clearly visible and open. Predicted least active: Neither visible / no dog.\nResult: 79 and 11 photos, d +1.64, percentile 99: held.\n\nPrediction 4. Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?\nAnswers: Head-and-chest portrait; Whole body shown; No dog\nPredicted most active: Head-and-chest portrait. Predicted least active: Whole body shown.\nResult: 55 and 65 photos, d +0.56, percentile 84: did not hold.",
+  "real_s2": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the dog looking directly at the camera?\nAnswers: yes, eyes meet the camera; head or gaze turned away or to the side; no dog face visible\nPredicted most active: yes, eyes meet the camera. Predicted least active: no dog face visible.\nResult: 63 and 7 photos, d +1.64, percentile 98: held.\n\nPrediction 2. Is the dog's face seen from the front, at an angle, or in profile?\nAnswers: frontal; three-quarter view; profile or back of head; no dog face visible\nPredicted most active: frontal. Predicted least active: profile or back of head.\nResult: 67 and 19 photos, d +1.24, percentile 97: held.\n\nPrediction 3. How much of the photo does the dog's face fill?\nAnswers: large (close-up of the head); medium (whole dog, face clearly visible); small (dog far away); no dog face visible\nPredicted most active: large (close-up of the head). Predicted least active: small (dog far away).\nResult: 45 and 17 photos, d +1.20, percentile 95: held.\n\nPrediction 4. How many dogs are in the photo?\nAnswers: one; two or more; none\nPredicted most active: one. Predicted least active: two or more.\nResult: 113 and 8 photos, d +0.35, percentile 73: did not hold.",
+  "real_s3": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Which way is the dog's head facing relative to the camera?\nAnswers: straight at the camera (frontal); three-quarter turn; side profile or turned away; no dog head visible\nPredicted most active: straight at the camera (frontal). Predicted least active: side profile or turned away.\nResult: 67 and 19 photos, d +1.24, percentile 97: held.\n\nPrediction 2. Is the dog looking directly into the camera?\nAnswers: yes, eye contact; no, looking elsewhere; dog's eyes not visible\nPredicted most active: yes, eye contact. Predicted least active: no, looking elsewhere.\nResult: 63 and 43 photos, d +0.88, percentile 99: held.\n\nPrediction 3. How many dogs are visible in the photo?\nAnswers: one; two or more; none\nPredicted most active: one. Predicted least active: two or more.\nResult: 113 and 8 photos, d +0.35, percentile 73: did not hold.\n\nPrediction 4. Is the dog's head level, or tilted noticeably up or down?\nAnswers: level; tilted up or down; no dog head visible\nPredicted most active: level. Predicted least active: tilted up or down.\nResult: 87 and 32 photos, d +0.58, percentile 97: held.",
+  "null_s1": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the dog's face turned straight toward the camera with both eyes looking at the viewer?\nAnswers: Yes, frontal and looking at camera; Partly turned or looking away; Profile or face not visible; No dog in photo\nPredicted most active: Yes, frontal and looking at camera. Predicted least active: Profile or face not visible.\nResult: 63 and 18 photos, d -0.42, percentile 4: did not hold.\n\nPrediction 2. How much of the photo does the dog's head take up?\nAnswers: Large (head fills a big part of the frame); Medium; Small (dog distant or whole body small); No dog head visible\nPredicted most active: Large (head fills a big part of the frame). Predicted least active: Small (dog distant or whole body small).\nResult: 45 and 25 photos, d -0.42, percentile 4: did not hold.\n\nPrediction 3. Are both of the dog's eyes clearly visible and open?\nAnswers: Both clearly visible and open; Only one visible, or eyes closed or squinting; Neither visible / no dog\nPredicted most active: Both clearly visible and open. Predicted least active: Neither visible / no dog.\nResult: 79 and 11 photos, d -0.71, percentile 5: did not hold.\n\nPrediction 4. Is the photo mainly a close portrait of the dog's head and chest, or does it show the dog's whole body?\nAnswers: Head-and-chest portrait; Whole body shown; No dog\nPredicted most active: Head-and-chest portrait. Predicted least active: Whole body shown.\nResult: 55 and 65 photos, d -0.19, percentile 27: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the dog looking directly at the camera?\nAnswers: yes, eyes meet the camera; head or gaze turned away or to the side; no dog face visible\nPredicted most active: yes, eyes meet the camera. Predicted least active: no dog face visible.\nResult: 63 and 7 photos, d -0.65, percentile 10: did not hold.\n\nPrediction 2. Is the dog's face seen from the front, at an angle, or in profile?\nAnswers: frontal; three-quarter view; profile or back of head; no dog face visible\nPredicted most active: frontal. Predicted least active: profile or back of head.\nResult: 67 and 19 photos, d -0.33, percentile 14: did not hold.\n\nPrediction 3. How much of the photo does the dog's face fill?\nAnswers: large (close-up of the head); medium (whole dog, face clearly visible); small (dog far away); no dog face visible\nPredicted most active: large (close-up of the head). Predicted least active: small (dog far away).\nResult: 45 and 17 photos, d -0.64, percentile 1: did not hold.\n\nPrediction 4. How many dogs are in the photo?\nAnswers: one; two or more; none\nPredicted most active: one. Predicted least active: two or more.\nResult: 113 and 8 photos, d +0.32, percentile 71: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 121 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Which way is the dog's head facing relative to the camera?\nAnswers: straight at the camera (frontal); three-quarter turn; side profile or turned away; no dog head visible\nPredicted most active: straight at the camera (frontal). Predicted least active: side profile or turned away.\nResult: 67 and 19 photos, d -0.33, percentile 14: did not hold.\n\nPrediction 2. Is the dog looking directly into the camera?\nAnswers: yes, eye contact; no, looking elsewhere; dog's eyes not visible\nPredicted most active: yes, eye contact. Predicted least active: no, looking elsewhere.\nResult: 63 and 43 photos, d +0.31, percentile 96: held.\n\nPrediction 3. How many dogs are visible in the photo?\nAnswers: one; two or more; none\nPredicted most active: one. Predicted least active: two or more.\nResult: 113 and 8 photos, d +0.32, percentile 71: did not hold.\n\nPrediction 4. Is the dog's head level, or tilted noticeably up or down?\nAnswers: level; tilted up or down; no dog head visible\nPredicted most active: level. Predicted least active: tilted up or down.\nResult: 87 and 32 photos, d +0.20, percentile 88: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 9,
+   "not held": 3,
+   "too few": 0
+  },
+  "null": {
+   "held": 1,
+   "not held": 11,
+   "too few": 0
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame."
+  },
+  "real_s2": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed."
+  },
+  "null_s1": {
+   "class": "one",
+   "explanation": "Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector."
+  },
+  "null_s2": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response."
+  },
+  "null_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head."
+  }
+ }
+}

@@ -1,0 +1,795 @@
+{
+ "unit": "mixed4e:55",
+ "layer": "mixed4e",
+ "chan": 55,
+ "m": 832,
+ "n_looked": 109,
+ "n": 131,
+ "classes": [
+  287,
+  283,
+  157,
+  387,
+  356,
+  281,
+  277,
+  581,
+  333,
+  817,
+  436,
+  278,
+  609,
+  279,
+  468,
+  511,
+  263,
+  152,
+  285,
+  407,
+  359,
+  717,
+  656,
+  627
+ ],
+ "class_names": [
+  "lynx",
+  "Persian cat",
+  "papillon",
+  "lesser panda",
+  "weasel",
+  "tabby",
+  "red fox",
+  "grille",
+  "hamster",
+  "sports car",
+  "beach wagon",
+  "kit fox",
+  "jeep",
+  "Arctic fox",
+  "cab",
+  "convertible",
+  "Pembroke",
+  "Japanese spaniel",
+  "Egyptian cat",
+  "ambulance",
+  "black-footed ferret",
+  "pickup",
+  "minivan",
+  "limousine"
+ ],
+ "peers": [
+  {
+   "chan": 197,
+   "unit": "mixed4e:197",
+   "corr": 0.6374281753848927
+  },
+  {
+   "chan": 24,
+   "unit": "mixed4e:24",
+   "corr": 0.5906270212584847
+  },
+  {
+   "chan": 4,
+   "unit": "mixed4e:4",
+   "corr": 0.5730988929077637
+  }
+ ],
+ "D": [
+  891,
+  892,
+  893,
+  895,
+  897,
+  899,
+  950,
+  951,
+  953,
+  954,
+  956,
+  957,
+  958,
+  1561,
+  1562,
+  1564,
+  1565,
+  1567,
+  1680,
+  1682,
+  1683,
+  1687,
+  1689,
+  1971,
+  1976,
+  1977,
+  2820,
+  2825,
+  2827,
+  2828,
+  3031,
+  3034,
+  3035,
+  3036,
+  3037,
+  3038,
+  3330,
+  3332,
+  3334,
+  3335,
+  3410,
+  3411,
+  3412,
+  3413,
+  3415,
+  3416,
+  3417,
+  3418,
+  3419,
+  3450,
+  3453,
+  3459,
+  3775,
+  3776,
+  3938,
+  3939,
+  4162,
+  4164,
+  4165,
+  4169,
+  4880,
+  4884,
+  4888,
+  4889,
+  5381,
+  5382,
+  5384,
+  5385,
+  5386,
+  5387,
+  5388,
+  5993,
+  5995,
+  5999,
+  6890,
+  6892,
+  6894,
+  6895,
+  6896,
+  6897,
+  6898,
+  6899,
+  7000,
+  7001,
+  7003,
+  7004,
+  7005,
+  7007,
+  7150,
+  7152,
+  7155,
+  7156,
+  7522,
+  7524,
+  7526,
+  7528,
+  7529,
+  7706,
+  7707,
+  7709,
+  7893,
+  7894,
+  8155,
+  8156,
+  8159,
+  9541,
+  9543,
+  9546,
+  9547
+ ],
+ "T": [
+  890,
+  894,
+  896,
+  898,
+  952,
+  955,
+  959,
+  1560,
+  1563,
+  1566,
+  1568,
+  1569,
+  1681,
+  1684,
+  1685,
+  1686,
+  1688,
+  1970,
+  1972,
+  1973,
+  1974,
+  1975,
+  1978,
+  1979,
+  2821,
+  2822,
+  2823,
+  2824,
+  2826,
+  2829,
+  3030,
+  3032,
+  3033,
+  3039,
+  3331,
+  3333,
+  3336,
+  3337,
+  3338,
+  3339,
+  3414,
+  3451,
+  3452,
+  3454,
+  3455,
+  3456,
+  3457,
+  3458,
+  3770,
+  3771,
+  3772,
+  3773,
+  3774,
+  3777,
+  3778,
+  3779,
+  3930,
+  3931,
+  3932,
+  3933,
+  3934,
+  3935,
+  3936,
+  3937,
+  4160,
+  4161,
+  4163,
+  4166,
+  4167,
+  4168,
+  4881,
+  4882,
+  4883,
+  4885,
+  4886,
+  4887,
+  5380,
+  5383,
+  5389,
+  5990,
+  5991,
+  5992,
+  5994,
+  5996,
+  5997,
+  5998,
+  6891,
+  6893,
+  7002,
+  7006,
+  7008,
+  7009,
+  7151,
+  7153,
+  7154,
+  7157,
+  7158,
+  7159,
+  7520,
+  7521,
+  7523,
+  7525,
+  7527,
+  7700,
+  7701,
+  7702,
+  7703,
+  7704,
+  7705,
+  7708,
+  7890,
+  7891,
+  7892,
+  7895,
+  7896,
+  7897,
+  7898,
+  7899,
+  8150,
+  8151,
+  8152,
+  8153,
+  8154,
+  8157,
+  8158,
+  9540,
+  9542,
+  9544,
+  9545,
+  9548,
+  9549
+ ],
+ "answer_batches": 11,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "Is the animal's face visible with both eyes looking toward the camera?",
+   "answers": [
+    "yes, frontal face with both eyes toward camera",
+    "face partly visible (profile, turned away, or eyes closed)",
+    "face not visible or no animal"
+   ]
+  },
+  {
+   "question": "How large is the animal's head in the photo?",
+   "answers": [
+    "large (head fills a big part of the frame)",
+    "medium",
+    "small or distant",
+    "no animal head visible"
+   ]
+  },
+  {
+   "question": "Are both of the animal's ears visible and standing upright?",
+   "answers": [
+    "yes, both upright ears visible",
+    "ears partly visible, folded, or hidden",
+    "no animal"
+   ]
+  },
+  {
+   "question": "What is the main fur color of the animal's face?",
+   "answers": [
+    "orange or reddish-brown",
+    "gray, brown, or tabby",
+    "white or black dominant",
+    "no animal face visible"
+   ]
+  },
+  {
+   "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+   "answers": [
+    "Yes, frontal with both eyes open",
+    "Face visible but in profile, turned away, or eyes closed",
+    "Face not visible, or no animal"
+   ]
+  },
+  {
+   "question": "How large is the animal's face in the photo?",
+   "answers": [
+    "Large (face spans over a quarter of the image width)",
+    "Small (animal is distant or the face is tiny)",
+    "No animal face visible"
+   ]
+  },
+  {
+   "question": "Are the animal's ears clearly visible, upright and pointed on both sides of the head?",
+   "answers": [
+    "Yes, both upright and visible",
+    "Ears partly visible, folded, or flattened",
+    "Ears not visible, or no animal"
+   ]
+  },
+  {
+   "question": "Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?",
+   "answers": [
+    "Yes, orange/ginger with white",
+    "Other fur colors (gray, brown, black, plain white)",
+    "No animal face visible"
+   ]
+  },
+  {
+   "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+   "answers": [
+    "Yes, frontal face with both eyes visible",
+    "Face partly visible (profile, turned away, or eyes closed)",
+    "Face hidden or not visible",
+    "No animal in photo"
+   ]
+  },
+  {
+   "question": "How large is the animal's head in the photo?",
+   "answers": [
+    "Large (more than about a quarter of the image width)",
+    "Medium",
+    "Small or distant",
+    "No animal head visible"
+   ]
+  },
+  {
+   "question": "Are the animal's ears visible and standing upright and pointed?",
+   "answers": [
+    "Yes, upright pointed ears visible",
+    "Ears visible but floppy, rounded, or folded",
+    "Ears not visible or no animal"
+   ]
+  },
+  {
+   "question": "Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?",
+   "answers": [
+    "Yes, orange/ginger with white facial markings",
+    "Other fur colors on the face",
+    "Face not visible or no animal"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "The unit responds to a close, front-facing face of a furry mammal such as a fox, cat, lynx, red panda or papillon. It is most active when both eyes look at the camera, the upright ears are visible and the head is large in the frame. Fox-like orange or reddish fur helps further. Activity drops sharply when the face is hidden (eating, curled up asleep, hanging upside down), seen in profile, or small and distant in the scene. This face dependence is what separates it from similar units, which stay active on hidden-face cats and foxes.",
+   "predictions": [
+    {
+     "question": "Is the animal's face visible with both eyes looking toward the camera?",
+     "answers": [
+      "yes, frontal face with both eyes toward camera",
+      "face partly visible (profile, turned away, or eyes closed)",
+      "face not visible or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 0,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 54,
+      "d": 0.5881042003112273,
+      "pct": 99.39903846153847,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 54,
+      "d": -0.2746055734066544,
+      "pct": 4.6875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How large is the animal's head in the photo?",
+     "answers": [
+      "large (head fills a big part of the frame)",
+      "medium",
+      "small or distant",
+      "no animal head visible"
+     ],
+     "most": 0,
+     "least": 3,
+     "question_index": 1,
+     "real": {
+      "n_hi": 31,
+      "n_lo": 54,
+      "d": 0.4561793628108323,
+      "pct": 96.27403846153847,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 31,
+      "n_lo": 54,
+      "d": -0.3654424387040135,
+      "pct": 3.125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are both of the animal's ears visible and standing upright?",
+     "answers": [
+      "yes, both upright ears visible",
+      "ears partly visible, folded, or hidden",
+      "no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 2,
+     "real": {
+      "n_hi": 42,
+      "n_lo": 52,
+      "d": 0.34756829348227836,
+      "pct": 98.5576923076923,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 42,
+      "n_lo": 52,
+      "d": 0.07214794840793212,
+      "pct": 67.0673076923077,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main fur color of the animal's face?",
+     "answers": [
+      "orange or reddish-brown",
+      "gray, brown, or tabby",
+      "white or black dominant",
+      "no animal face visible"
+     ],
+     "most": 0,
+     "least": 3,
+     "question_index": 3,
+     "real": {
+      "n_hi": 25,
+      "n_lo": 54,
+      "d": 0.07276930220494758,
+      "pct": 68.99038461538461,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 25,
+      "n_lo": 54,
+      "d": 0.12197093884288386,
+      "pct": 78.96634615384616,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "The unit responds to a close, front-facing face of a furry mammal (fox, red panda, lynx, cat, papillon) with both eyes open and looking toward the camera, and upright pointed ears framing it. Orange or ginger fur with white face markings helps. Activity drops sharply when the face is hidden (eating, curled up, hanging away), turned to a profile, has closed eyes, or is small and distant in the frame. Similar units still respond to these hidden-face or body-only photos, so the visible open-eyed frontal face is what is particular to this unit.",
+   "predictions": [
+    {
+     "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+     "answers": [
+      "Yes, frontal with both eyes open",
+      "Face visible but in profile, turned away, or eyes closed",
+      "Face not visible, or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 4,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 54,
+      "d": 0.5881042003112273,
+      "pct": 99.39903846153847,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 54,
+      "d": -0.2746055734066544,
+      "pct": 4.6875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How large is the animal's face in the photo?",
+     "answers": [
+      "Large (face spans over a quarter of the image width)",
+      "Small (animal is distant or the face is tiny)",
+      "No animal face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 5,
+     "real": {
+      "n_hi": 52,
+      "n_lo": 54,
+      "d": 0.09516484714696674,
+      "pct": 85.69711538461539,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 52,
+      "n_lo": 54,
+      "d": -0.04879467151606566,
+      "pct": 35.81730769230769,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are the animal's ears clearly visible, upright and pointed on both sides of the head?",
+     "answers": [
+      "Yes, both upright and visible",
+      "Ears partly visible, folded, or flattened",
+      "Ears not visible, or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 55,
+      "d": 0.34501561687581284,
+      "pct": 97.83653846153847,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 55,
+      "d": 0.021000711507148488,
+      "pct": 53.60576923076923,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?",
+     "answers": [
+      "Yes, orange/ginger with white",
+      "Other fur colors (gray, brown, black, plain white)",
+      "No animal face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 7,
+     "real": {
+      "n_hi": 22,
+      "n_lo": 54,
+      "d": 0.23705706684934819,
+      "pct": 91.22596153846153,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 22,
+      "n_lo": 54,
+      "d": 0.25208040781286717,
+      "pct": 91.46634615384616,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "Responds to the face of a furry mammal (fox, cat, lynx, red panda, small dog) seen from the front and looking toward the camera, with both eyes and erect pointed ears visible, especially when the head is large in the frame. Activity is strongest for orange or ginger faces with white markings, such as a fox staring at the camera or a red panda. Activity is weak when the face is hidden, turned to profile, buried (eating, curled up asleep), or small and distant. The similar units stay active on these hidden-face or distant photos, which this unit does not.",
+   "predictions": [
+    {
+     "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+     "answers": [
+      "Yes, frontal face with both eyes visible",
+      "Face partly visible (profile, turned away, or eyes closed)",
+      "Face hidden or not visible",
+      "No animal in photo"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 8,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 2,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 2,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     }
+    },
+    {
+     "question": "How large is the animal's head in the photo?",
+     "answers": [
+      "Large (more than about a quarter of the image width)",
+      "Medium",
+      "Small or distant",
+      "No animal head visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 9,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 14,
+      "d": 0.8067464349976952,
+      "pct": 96.03365384615384,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 14,
+      "d": -0.26975854325160026,
+      "pct": 17.908653846153847,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are the animal's ears visible and standing upright and pointed?",
+     "answers": [
+      "Yes, upright pointed ears visible",
+      "Ears visible but floppy, rounded, or folded",
+      "Ears not visible or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 10,
+     "real": {
+      "n_hi": 38,
+      "n_lo": 55,
+      "d": 0.36633452099075403,
+      "pct": 98.4375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 38,
+      "n_lo": 55,
+      "d": 0.09020032624057508,
+      "pct": 74.39903846153847,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?",
+     "answers": [
+      "Yes, orange/ginger with white facial markings",
+      "Other fur colors on the face",
+      "Face not visible or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 11,
+     "real": {
+      "n_hi": 22,
+      "n_lo": 54,
+      "d": 0.23705706684934819,
+      "pct": 91.22596153846153,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 22,
+      "n_lo": 54,
+      "d": 0.25208040781286717,
+      "pct": 91.46634615384616,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face visible with both eyes looking toward the camera?\nAnswers: yes, frontal face with both eyes toward camera; face partly visible (profile, turned away, or eyes closed); face not visible or no animal\nPredicted most active: yes, frontal face with both eyes toward camera. Predicted least active: face not visible or no animal.\nResult: 38 and 54 photos, d +0.59, percentile 99: held.\n\nPrediction 2. How large is the animal's head in the photo?\nAnswers: large (head fills a big part of the frame); medium; small or distant; no animal head visible\nPredicted most active: large (head fills a big part of the frame). Predicted least active: no animal head visible.\nResult: 31 and 54 photos, d +0.46, percentile 96: held.\n\nPrediction 3. Are both of the animal's ears visible and standing upright?\nAnswers: yes, both upright ears visible; ears partly visible, folded, or hidden; no animal\nPredicted most active: yes, both upright ears visible. Predicted least active: no animal.\nResult: 42 and 52 photos, d +0.35, percentile 99: held.\n\nPrediction 4. What is the main fur color of the animal's face?\nAnswers: orange or reddish-brown; gray, brown, or tabby; white or black dominant; no animal face visible\nPredicted most active: orange or reddish-brown. Predicted least active: no animal face visible.\nResult: 25 and 54 photos, d +0.07, percentile 69: did not hold.",
+  "real_s2": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face turned toward the camera with both eyes open and visible?\nAnswers: Yes, frontal with both eyes open; Face visible but in profile, turned away, or eyes closed; Face not visible, or no animal\nPredicted most active: Yes, frontal with both eyes open. Predicted least active: Face not visible, or no animal.\nResult: 38 and 54 photos, d +0.59, percentile 99: held.\n\nPrediction 2. How large is the animal's face in the photo?\nAnswers: Large (face spans over a quarter of the image width); Small (animal is distant or the face is tiny); No animal face visible\nPredicted most active: Large (face spans over a quarter of the image width). Predicted least active: No animal face visible.\nResult: 52 and 54 photos, d +0.10, percentile 86: did not hold.\n\nPrediction 3. Are the animal's ears clearly visible, upright and pointed on both sides of the head?\nAnswers: Yes, both upright and visible; Ears partly visible, folded, or flattened; Ears not visible, or no animal\nPredicted most active: Yes, both upright and visible. Predicted least active: Ears not visible, or no animal.\nResult: 38 and 55 photos, d +0.35, percentile 98: held.\n\nPrediction 4. Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?\nAnswers: Yes, orange/ginger with white; Other fur colors (gray, brown, black, plain white); No animal face visible\nPredicted most active: Yes, orange/ginger with white. Predicted least active: No animal face visible.\nResult: 22 and 54 photos, d +0.24, percentile 91: did not hold.",
+  "real_s3": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face turned toward the camera with both eyes open and visible?\nAnswers: Yes, frontal face with both eyes visible; Face partly visible (profile, turned away, or eyes closed); Face hidden or not visible; No animal in photo\nPredicted most active: Yes, frontal face with both eyes visible. Predicted least active: Face hidden or not visible.\nResult: 38 and 2 photos: too few to check (each needs at least 5).\n\nPrediction 2. How large is the animal's head in the photo?\nAnswers: Large (more than about a quarter of the image width); Medium; Small or distant; No animal head visible\nPredicted most active: Large (more than about a quarter of the image width). Predicted least active: Small or distant.\nResult: 38 and 14 photos, d +0.81, percentile 96: held.\n\nPrediction 3. Are the animal's ears visible and standing upright and pointed?\nAnswers: Yes, upright pointed ears visible; Ears visible but floppy, rounded, or folded; Ears not visible or no animal\nPredicted most active: Yes, upright pointed ears visible. Predicted least active: Ears not visible or no animal.\nResult: 38 and 55 photos, d +0.37, percentile 98: held.\n\nPrediction 4. Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?\nAnswers: Yes, orange/ginger with white facial markings; Other fur colors on the face; Face not visible or no animal\nPredicted most active: Yes, orange/ginger with white facial markings. Predicted least active: Face not visible or no animal.\nResult: 22 and 54 photos, d +0.24, percentile 91: did not hold.",
+  "null_s1": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face visible with both eyes looking toward the camera?\nAnswers: yes, frontal face with both eyes toward camera; face partly visible (profile, turned away, or eyes closed); face not visible or no animal\nPredicted most active: yes, frontal face with both eyes toward camera. Predicted least active: face not visible or no animal.\nResult: 38 and 54 photos, d -0.27, percentile 5: did not hold.\n\nPrediction 2. How large is the animal's head in the photo?\nAnswers: large (head fills a big part of the frame); medium; small or distant; no animal head visible\nPredicted most active: large (head fills a big part of the frame). Predicted least active: no animal head visible.\nResult: 31 and 54 photos, d -0.37, percentile 3: did not hold.\n\nPrediction 3. Are both of the animal's ears visible and standing upright?\nAnswers: yes, both upright ears visible; ears partly visible, folded, or hidden; no animal\nPredicted most active: yes, both upright ears visible. Predicted least active: no animal.\nResult: 42 and 52 photos, d +0.07, percentile 67: did not hold.\n\nPrediction 4. What is the main fur color of the animal's face?\nAnswers: orange or reddish-brown; gray, brown, or tabby; white or black dominant; no animal face visible\nPredicted most active: orange or reddish-brown. Predicted least active: no animal face visible.\nResult: 25 and 54 photos, d +0.12, percentile 79: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face turned toward the camera with both eyes open and visible?\nAnswers: Yes, frontal with both eyes open; Face visible but in profile, turned away, or eyes closed; Face not visible, or no animal\nPredicted most active: Yes, frontal with both eyes open. Predicted least active: Face not visible, or no animal.\nResult: 38 and 54 photos, d -0.27, percentile 5: did not hold.\n\nPrediction 2. How large is the animal's face in the photo?\nAnswers: Large (face spans over a quarter of the image width); Small (animal is distant or the face is tiny); No animal face visible\nPredicted most active: Large (face spans over a quarter of the image width). Predicted least active: No animal face visible.\nResult: 52 and 54 photos, d -0.05, percentile 36: did not hold.\n\nPrediction 3. Are the animal's ears clearly visible, upright and pointed on both sides of the head?\nAnswers: Yes, both upright and visible; Ears partly visible, folded, or flattened; Ears not visible, or no animal\nPredicted most active: Yes, both upright and visible. Predicted least active: Ears not visible, or no animal.\nResult: 38 and 55 photos, d +0.02, percentile 54: did not hold.\n\nPrediction 4. Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?\nAnswers: Yes, orange/ginger with white; Other fur colors (gray, brown, black, plain white); No animal face visible\nPredicted most active: Yes, orange/ginger with white. Predicted least active: No animal face visible.\nResult: 22 and 54 photos, d +0.25, percentile 91: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 131 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 832 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. Is the animal's face turned toward the camera with both eyes open and visible?\nAnswers: Yes, frontal face with both eyes visible; Face partly visible (profile, turned away, or eyes closed); Face hidden or not visible; No animal in photo\nPredicted most active: Yes, frontal face with both eyes visible. Predicted least active: Face hidden or not visible.\nResult: 38 and 2 photos: too few to check (each needs at least 5).\n\nPrediction 2. How large is the animal's head in the photo?\nAnswers: Large (more than about a quarter of the image width); Medium; Small or distant; No animal head visible\nPredicted most active: Large (more than about a quarter of the image width). Predicted least active: Small or distant.\nResult: 38 and 14 photos, d -0.27, percentile 18: did not hold.\n\nPrediction 3. Are the animal's ears visible and standing upright and pointed?\nAnswers: Yes, upright pointed ears visible; Ears visible but floppy, rounded, or folded; Ears not visible or no animal\nPredicted most active: Yes, upright pointed ears visible. Predicted least active: Ears not visible or no animal.\nResult: 38 and 55 photos, d +0.09, percentile 74: did not hold.\n\nPrediction 4. Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?\nAnswers: Yes, orange/ginger with white facial markings; Other fur colors on the face; Face not visible or no animal\nPredicted most active: Yes, orange/ginger with white facial markings. Predicted least active: Face not visible or no animal.\nResult: 22 and 54 photos, d +0.25, percentile 91: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 7,
+   "not held": 4,
+   "too few": 1
+  },
+  "null": {
+   "held": 0,
+   "not held": 11,
+   "too few": 1
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one",
+   "explanation": "The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame."
+  },
+  "real_s2": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver."
+  },
+  "null_s1": {
+   "class": "one",
+   "explanation": "The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face."
+  },
+  "null_s2": {
+   "class": "one",
+   "explanation": "The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically."
+  },
+  "null_s3": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes."
+  }
+ }
+}

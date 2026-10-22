@@ -1,0 +1,164 @@
+{
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds mainly to ornate jewelry-like ornamentation: shiny gold or silver metalwork set with rhinestones or gems, formed into bows, flowers or filigree. Examples are brooches, earring sets, a jeweled flower buckle and a gold necklace. It also responds, more weakly, to a decorative motif on an object's surface, such as a tooled or embossed leather design or a printed Santa. Activity is highest for a single item laid out as a product shot on a plain light background. It drops for cluttered scenes, items on hangers, and plain objects with no ornament. Compared with the similar units, it is particular in preferring sparkly metallic jewelry and gems over textile or knit patterns, embroidered motifs and printed graphics.",
+  "predictions": [
+   {
+    "question": "Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?",
+    "answers": [
+     "Yes, prominent",
+     "Yes, small or minor",
+     "No"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the main object shown by itself, laid out on a plain light or white background like a product photo?",
+    "answers": [
+     "Yes, plain light background",
+     "Plain dark or colored background",
+     "No, busy or cluttered scene (store, worn by a person, many items)"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?",
+    "answers": [
+     "Yes, an ornate or detailed motif",
+     "Only simple shapes or stripes",
+     "No decoration, plain surface"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What is the main object's surface mostly made of?",
+    "answers": [
+     "Metal, gems or glossy material",
+     "Leather",
+     "Fabric, knit or felt",
+     "Other or not visible"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1ab2820331de2d18ed8b2f4bb188b96b368fef4043b2a32989e6fac6919d9c37",
+  "texts": [
+   "{\"explanation\": \"The unit responds mainly to ornate jewelry-like ornamentation: shiny gold or silver metalwork set with rhinestones or gems, formed into bows, flowers or filigree. Examples are brooches, earring sets, a jeweled flower buckle and a gold necklace. It also responds, more weakly, to a decorative motif on an object's surface, such as a tooled or embossed leather design or a printed Santa. Activity is highest for a single item laid out as a product shot on a plain light background. It drops for cluttered scenes, items on hangers, and plain objects with no ornament. Compared with the similar units, it is particular in preferring sparkly metallic jewelry and gems over textile or knit patterns, embroidered motifs and printed graphics.\", \"predictions\": [{\"question\": \"Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?\", \"answers\": [\"Yes, prominent\", \"Yes, small or minor\", \"No\"], \"most_active\": \"Yes, prominent\", \"least_active\": \"No\"}, {\"question\": \"Is the main object shown by itself, laid out on a plain light or white background like a product photo?\", \"answers\": [\"Yes, plain light background\", \"Plain dark or colored background\", \"No, busy or cluttered scene (store, worn by a person, many items)\"], \"most_active\": \"Yes, plain light background\", \"least_active\": \"No, busy or cluttered scene (store, worn by a person, many items)\"}, {\"question\": \"Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?\", \"answers\": [\"Yes, an ornate or detailed motif\", \"Only simple shapes or stripes\", \"No decoration, plain surface\"], \"most_active\": \"Yes, an ornate or detailed motif\", \"least_active\": \"No decoration, plain surface\"}, {\"question\": \"What is the main object's surface mostly made of?\", \"answers\": [\"Metal, gems or glossy material\", \"Leather\", \"Fabric, knit or felt\", \"Other or not visible\"], \"most_active\": \"Metal, gems or glossy material\", \"least_active\": \"Fabric, knit or felt\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mainly to ornate jewelry-like ornamentation: shiny gold or silver metalwork set with rhinestones or gems, formed into bows, flowers or filigree. Examples are brooches, earring sets, a jeweled flower buckle and a gold necklace. It also responds, more weakly, to a decorative motif on an object's surface, such as a tooled or embossed leather design or a printed Santa. Activity is highest for a single item laid out as a product shot on a plain light background. It drops for cluttered scenes, items on hangers, and plain objects with no ornament. Compared with the similar units, it is particular in preferring sparkly metallic jewelry and gems over textile or knit patterns, embroidered motifs and printed graphics.\", \"predictions\": [{\"question\": \"Does the photo show shiny metal jewelry-like ornamentation (gold or silver metalwork, rhinestones, gems, beads)?\", \"answers\": [\"Yes, prominent\", \"Yes, small or minor\", \"No\"], \"most_active\": \"Yes, prominent\", \"least_active\": \"No\"}, {\"question\": \"Is the main object shown by itself, laid out on a plain light or white background like a product photo?\", \"answers\": [\"Yes, plain light background\", \"Plain dark or colored background\", \"No, busy or cluttered scene (store, worn by a person, many items)\"], \"most_active\": \"Yes, plain light background\", \"least_active\": \"No, busy or cluttered scene (store, worn by a person, many items)\"}, {\"question\": \"Does the object carry a decorative figure or motif such as a bow, flower, tooled or embossed design, or picture on its surface?\", \"answers\": [\"Yes, an ornate or detailed motif\", \"Only simple shapes or stripes\", \"No decoration, plain surface\"], \"most_active\": \"Yes, an ornate or detailed motif\", \"least_active\": \"No decoration, plain surface\"}, {\"question\": \"What is the main object's surface mostly made of?\", \"answers\": [\"Metal, gems or glossy material\", \"Leather\", \"Fabric, knit or felt\", \"Other or not visible\"], \"most_active\": \"Metal, gems or glossy material\", \"least_active\": \"Fabric, knit or felt\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "Responds to small ornate decorative accents on accessories, especially jewelry-like metalwork: gold or silver pieces with rhinestones or gems, bows, ribbons and flower-shaped ornaments, and dangling chains or cords. Activity is highest when one such ornamented object is shown clearly and close up, and lower in cluttered scenes or on plain, unornamented items. Compared with similar units, it prefers sparkling metallic or jeweled floral and bow ornaments (brooch, buckle, necklace, hair bow) over embroidered or knitted pattern textures (skull loafer, knitted mitten) and printed graphics (binder).",
+  "predictions": [
+   {
+    "question": "Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?",
+    "answers": [
+     "Yes, prominent sparkling metal or jewels",
+     "Only small or plain metal parts",
+     "No metal or jewel decoration"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Does the object have a bow, ribbon, or flower-shaped ornament on it?",
+    "answers": [
+     "Yes, a clear bow, ribbon or flower ornament",
+     "No such ornament"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?",
+    "answers": [
+     "Single object, close up, plain background",
+     "Single object in a busy setting",
+     "Many items or a cluttered scene"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What kind of decoration covers the object's surface?",
+    "answers": [
+     "Separate attached ornaments such as charms, jewels, bows or hanging chains",
+     "Knitted, woven or embroidered pattern",
+     "Printed graphics or text",
+     "Plain, no decoration"
+    ],
+    "most": 0,
+    "least": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1ab2820331de2d18ed8b2f4bb188b96b368fef4043b2a32989e6fac6919d9c37",
+  "texts": [
+   "```json\n{\"explanation\": \"Responds to small ornate decorative accents on accessories, especially jewelry-like metalwork: gold or silver pieces with rhinestones or gems, bows, ribbons and flower-shaped ornaments, and dangling chains or cords. Activity is highest when one such ornamented object is shown clearly and close up, and lower in cluttered scenes or on plain, unornamented items. Compared with similar units, it prefers sparkling metallic or jeweled floral and bow ornaments (brooch, buckle, necklace, hair bow) over embroidered or knitted pattern textures (skull loafer, knitted mitten) and printed graphics (binder).\", \"predictions\": [{\"question\": \"Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?\", \"answers\": [\"Yes, prominent sparkling metal or jewels\", \"Only small or plain metal parts\", \"No metal or jewel decoration\"], \"most_active\": \"Yes, prominent sparkling metal or jewels\", \"least_active\": \"No metal or jewel decoration\"}, {\"question\": \"Does the object have a bow, ribbon, or flower-shaped ornament on it?\", \"answers\": [\"Yes, a clear bow, ribbon or flower ornament\", \"No such ornament\"], \"most_active\": \"Yes, a clear bow, ribbon or flower ornament\", \"least_active\": \"No such ornament\"}, {\"question\": \"Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?\", \"answers\": [\"Single object, close up, plain background\", \"Single object in a busy setting\", \"Many items or a cluttered scene\"], \"most_active\": \"Single object, close up, plain background\", \"least_active\": \"Many items or a cluttered scene\"}, {\"question\": \"What kind of decoration covers the object's surface?\", \"answers\": [\"Separate attached ornaments such as charms, jewels, bows or hanging chains\", \"Knitted, woven or embroidered pattern\", \"Printed graphics or text\", \"Plain, no decoration\"], \"most_active\": \"Separate attached ornaments such as charms, jewels, bows or hanging chains\", \"least_active\": \"Plain, no decoration\"}]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Responds to small ornate decorative accents on accessories, especially jewelry-like metalwork: gold or silver pieces with rhinestones or gems, bows, ribbons and flower-shaped ornaments, and dangling chains or cords. Activity is highest when one such ornamented object is shown clearly and close up, and lower in cluttered scenes or on plain, unornamented items. Compared with similar units, it prefers sparkling metallic or jeweled floral and bow ornaments (brooch, buckle, necklace, hair bow) over embroidered or knitted pattern textures (skull loafer, knitted mitten) and printed graphics (binder).\", \"predictions\": [{\"question\": \"Does the main object have shiny metallic or jeweled decoration (gold or silver metal, rhinestones, gems, metal clasps)?\", \"answers\": [\"Yes, prominent sparkling metal or jewels\", \"Only small or plain metal parts\", \"No metal or jewel decoration\"], \"most_active\": \"Yes, prominent sparkling metal or jewels\", \"least_active\": \"No metal or jewel decoration\"}, {\"question\": \"Does the object have a bow, ribbon, or flower-shaped ornament on it?\", \"answers\": [\"Yes, a clear bow, ribbon or flower ornament\", \"No such ornament\"], \"most_active\": \"Yes, a clear bow, ribbon or flower ornament\", \"least_active\": \"No such ornament\"}, {\"question\": \"Is the object shown alone and close up against a plain background, or among many items in a cluttered scene?\", \"answers\": [\"Single object, close up, plain background\", \"Single object in a busy setting\", \"Many items or a cluttered scene\"], \"most_active\": \"Single object, close up, plain background\", \"least_active\": \"Many items or a cluttered scene\"}, {\"question\": \"What kind of decoration covers the object's surface?\", \"answers\": [\"Separate attached ornaments such as charms, jewels, bows or hanging chains\", \"Knitted, woven or embroidered pattern\", \"Printed graphics or text\", \"Plain, no decoration\"], \"most_active\": \"Separate attached ornaments such as charms, jewels, bows or hanging chains\", \"least_active\": \"Plain, no decoration\"}]}\n```",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to ornamental, jewelry-like adornment. Its strongest responses are to gold or metal pieces with bows, flowers, rhinestones or gems: a bow brooch with earrings, a jeweled flower buckle, a gold leaf necklace and a butterfly hair slide. It also responds to pendants hanging on cords and to objects with decorative motifs worked into the surface, such as a snakeskin wallet with a metal plaque, embossed leather, and printed or appliquéd stockings. Activity is highest when one such decorated item is shown clearly as a product, often on a plain background. It is low for plain undecorated items and for cluttered scenes with many objects, such as a store rack of holsters. Compared with the similar units, it is particular to sparkly metal or gem jewelry and dangling ornaments rather than skulls, knit textures or printed graphics.",
+  "predictions": [
+   {
+    "question": "Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?",
+    "answers": [
+     "yes, prominent",
+     "small or minor metal ornament only",
+     "none"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?",
+    "answers": [
+     "yes, elaborate motifs",
+     "simple or plain surface",
+     "no clear main object"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How is the object presented?",
+    "answers": [
+     "single item or set on a plain background",
+     "single item in a natural or busy setting",
+     "many items crowded together, such as a store rack"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?",
+    "answers": [
+     "yes, dangling ornaments visible",
+     "no"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1ab2820331de2d18ed8b2f4bb188b96b368fef4043b2a32989e6fac6919d9c37",
+  "texts": [
+   "{\"explanation\": \"The unit responds to ornamental, jewelry-like adornment. Its strongest responses are to gold or metal pieces with bows, flowers, rhinestones or gems: a bow brooch with earrings, a jeweled flower buckle, a gold leaf necklace and a butterfly hair slide. It also responds to pendants hanging on cords and to objects with decorative motifs worked into the surface, such as a snakeskin wallet with a metal plaque, embossed leather, and printed or appliquéd stockings. Activity is highest when one such decorated item is shown clearly as a product, often on a plain background. It is low for plain undecorated items and for cluttered scenes with many objects, such as a store rack of holsters. Compared with the similar units, it is particular to sparkly metal or gem jewelry and dangling ornaments rather than skulls, knit textures or printed graphics.\", \"predictions\": [{\"question\": \"Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?\", \"answers\": [\"yes, prominent\", \"small or minor metal ornament only\", \"none\"], \"most_active\": \"yes, prominent\", \"least_active\": \"none\"}, {\"question\": \"Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?\", \"answers\": [\"yes, elaborate motifs\", \"simple or plain surface\", \"no clear main object\"], \"most_active\": \"yes, elaborate motifs\", \"least_active\": \"no clear main object\"}, {\"question\": \"How is the object presented?\", \"answers\": [\"single item or set on a plain background\", \"single item in a natural or busy setting\", \"many items crowded together, such as a store rack\"], \"most_active\": \"single item or set on a plain background\", \"least_active\": \"many items crowded together, such as a store rack\"}, {\"question\": \"Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?\", \"answers\": [\"yes, dangling ornaments visible\", \"no\"], \"most_active\": \"yes, dangling ornaments visible\", \"least_active\": \"no\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to ornamental, jewelry-like adornment. Its strongest responses are to gold or metal pieces with bows, flowers, rhinestones or gems: a bow brooch with earrings, a jeweled flower buckle, a gold leaf necklace and a butterfly hair slide. It also responds to pendants hanging on cords and to objects with decorative motifs worked into the surface, such as a snakeskin wallet with a metal plaque, embossed leather, and printed or appliquéd stockings. Activity is highest when one such decorated item is shown clearly as a product, often on a plain background. It is low for plain undecorated items and for cluttered scenes with many objects, such as a store rack of holsters. Compared with the similar units, it is particular to sparkly metal or gem jewelry and dangling ornaments rather than skulls, knit textures or printed graphics.\", \"predictions\": [{\"question\": \"Does the photo show jewelry-like metal or gem ornaments, such as a brooch, pendant, rhinestones, gold chains or a jeweled clasp?\", \"answers\": [\"yes, prominent\", \"small or minor metal ornament only\", \"none\"], \"most_active\": \"yes, prominent\", \"least_active\": \"none\"}, {\"question\": \"Does the main object carry decorative motifs such as bows, flowers, embossed or tooled pictures, or appliqué shapes?\", \"answers\": [\"yes, elaborate motifs\", \"simple or plain surface\", \"no clear main object\"], \"most_active\": \"yes, elaborate motifs\", \"least_active\": \"no clear main object\"}, {\"question\": \"How is the object presented?\", \"answers\": [\"single item or set on a plain background\", \"single item in a natural or busy setting\", \"many items crowded together, such as a store rack\"], \"most_active\": \"single item or set on a plain background\", \"least_active\": \"many items crowded together, such as a store rack\"}, {\"question\": \"Does anything dangle or hang from a chain, cord or loop, such as pendants, drops or charms?\", \"answers\": [\"yes, dangling ornaments visible\", \"no\"], \"most_active\": \"yes, dangling ornaments visible\", \"least_active\": \"no\"}]}",
+  "valid": true
+ }
+}

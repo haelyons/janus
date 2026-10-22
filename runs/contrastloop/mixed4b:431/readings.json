@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to dog-like animals (dogs, wolves, meerkats), most strongly when one animal is shown large in the frame with much of its body visible rather than small in the scene. Head direction, pose, and the presence of people or other animals do not appear to matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dog-like animals (dogs, wolves, meerkats), most strongly when one animal is shown large in the frame with much of its body visible rather than small in the scene. Head direction, pose, and the presence of people or other animals do not appear to matter.",
+   "evidence": "Prediction 1 pointed the right way (d +0.70) but only reached the 84th percentile, so framing gives a moderate effect that is not specific to this unit. Head direction went the opposite way (d -0.35), and the one-animal, active-pose and no-person predictions showed essentially no effect.",
+   "missing_data": "Activity on non-canine classes and on photos outside the top 24 classes, to test whether the unit is selective for canids beyond class differences, plus a comparison of frontal and profile heads with framing held fixed.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1fdc5559e8445c43314a958891baa6eaac46eb8721c5bd1993b550f0be098aed",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to dog-like animals (dogs, wolves, meerkats), most strongly when one animal is shown large in the frame with much of its body visible rather than small in the scene. Head direction, pose, and the presence of people or other animals do not appear to matter.\",\n \"evidence\": \"Prediction 1 pointed the right way (d +0.70) but only reached the 84th percentile, so framing gives a moderate effect that is not specific to this unit. Head direction went the opposite way (d -0.35), and the one-animal, active-pose and no-person predictions showed essentially no effect.\",\n \"missing_data\": \"Activity on non-canine classes and on photos outside the top 24 classes, to test whether the unit is selective for canids beyond class differences, plus a comparison of frontal and profile heads with framing held fixed.\",\n \"confidence\": 0.4}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to dog-like animals (dogs, wolves, meerkats), most strongly when one animal is shown large in the frame with much of its body visible rather than small in the scene. Head direction, pose, and the presence of people or other animals do not appear to matter.\",\n \"evidence\": \"Prediction 1 pointed the right way (d +0.70) but only reached the 84th percentile, so framing gives a moderate effect that is not specific to this unit. Head direction went the opposite way (d -0.35), and the one-animal, active-pose and no-person predictions showed essentially no effect.\",\n \"missing_data\": \"Activity on non-canine classes and on photos outside the top 24 classes, to test whether the unit is selective for canids beyond class differences, plus a comparison of frontal and profile heads with framing held fixed.\",\n \"confidence\": 0.4}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, meerkats), probably more strongly when the animal is shown large in the frame. The specific claims about head pose, activity and absence of people are not supported.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, meerkats), probably more strongly when the animal is shown large in the frame. The specific claims about head pose, activity and absence of people are not supported.",
+   "evidence": "Within-class tests did not confirm pose (d -0.31, opposite sign), activity (d -0.13) or absence of a person (d -0.07). Framing came closest (d +0.70, 84th percentile, only 12 small-animal photos), so the dog category itself is the main signal left standing, alongside the top classes.",
+   "missing_data": "Activations on non-dog classes and on images of dog-like animals outside the top 24 classes, to check how broad the category is, plus a larger set of small-in-scene photos to test the framing effect.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "91a6375050475ae606117a664f2a36c313d039fab8a9ca318314c9f7cfd2d3bb",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, meerkats), probably more strongly when the animal is shown large in the frame. The specific claims about head pose, activity and absence of people are not supported.\",\n \"evidence\": \"Within-class tests did not confirm pose (d -0.31, opposite sign), activity (d -0.13) or absence of a person (d -0.07). Framing came closest (d +0.70, 84th percentile, only 12 small-animal photos), so the dog category itself is the main signal left standing, alongside the top classes.\",\n \"missing_data\": \"Activations on non-dog classes and on images of dog-like animals outside the top 24 classes, to check how broad the category is, plus a larger set of small-in-scene photos to test the framing effect.\",\n \"confidence\": 0.5}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, meerkats), probably more strongly when the animal is shown large in the frame. The specific claims about head pose, activity and absence of people are not supported.\",\n \"evidence\": \"Within-class tests did not confirm pose (d -0.31, opposite sign), activity (d -0.13) or absence of a person (d -0.07). Framing came closest (d +0.70, 84th percentile, only 12 small-animal photos), so the dog category itself is the main signal left standing, alongside the top classes.\",\n \"missing_data\": \"Activations on non-dog classes and on images of dog-like animals outside the top 24 classes, to check how broad the category is, plus a larger set of small-in-scene photos to test the framing effect.\",\n \"confidence\": 0.5}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats, somewhat more when much of the body fills the frame. Head pose, motion, vocalizing and setting do not matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats, somewhat more when much of the body fills the frame. Head pose, motion, vocalizing and setting do not matter.",
+   "evidence": "None of the four predictions held. The largest effect was whole-body versus small-in-scene (d +0.70), but it was only at the 84th percentile, so many units share it. The predicted preference for profile or raised heads came out reversed (d -0.31), and motion and setting had near-zero effects.",
+   "missing_data": "The list of the 24 top classes and how strongly the unit responds to them versus non-furry or non-animal classes, which would show whether the selectivity is about animal category rather than within-class features.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cddbc6469d9185f7008bfebabee0b9670885c9ff512d558ec874784d1cdb3459",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats, somewhat more when much of the body fills the frame. Head pose, motion, vocalizing and setting do not matter.\",\n \"evidence\": \"None of the four predictions held. The largest effect was whole-body versus small-in-scene (d +0.70), but it was only at the 84th percentile, so many units share it. The predicted preference for profile or raised heads came out reversed (d -0.31), and motion and setting had near-zero effects.\",\n \"missing_data\": \"The list of the 24 top classes and how strongly the unit responds to them versus non-furry or non-animal classes, which would show whether the selectivity is about animal category rather than within-class features.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats, somewhat more when much of the body fills the frame. Head pose, motion, vocalizing and setting do not matter.\",\n \"evidence\": \"None of the four predictions held. The largest effect was whole-body versus small-in-scene (d +0.70), but it was only at the 84th percentile, so many units share it. The predicted preference for profile or raised heads came out reversed (d -0.31), and motion and setting had near-zero effects.\",\n \"missing_data\": \"The list of the 24 top classes and how strongly the unit responds to them versus non-furry or non-animal classes, which would show whether the selectivity is about animal category rather than within-class features.\",\n \"confidence\": 0.4}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit appears to respond to dog-like animals (dogs, wolves, meerkats) as a category, but none of the proposed within-class refinements (framing/size, head orientation, solitary vs. with people, active pose) explain its activity.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit appears to respond to dog-like animals (dogs, wolves, meerkats) as a category, but none of the proposed within-class refinements (framing/size, head orientation, solitary vs. with people, active pose) explain its activity.",
+   "evidence": "All four predictions failed with near-zero effects after removing class differences (d between -0.09 and +0.08, percentiles 34–72), so the claimed preferences for profile heads, full-body framing and solitary active animals are not supported beyond the class-level selectivity for dog-like animals.",
+   "missing_data": "Activation comparisons across classes (dog breeds vs. other animals vs. non-animals) and tests of other within-class features such as texture, fur color, background or specific body parts like ears or legs.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f6084ad3188b1d23123a499501abacedd8ff7e2bd9f04e3ffb4fb646260562f4",
+  "texts": [
+   "{\"class\": \"cannot_tell\", \"explanation\": \"The unit appears to respond to dog-like animals (dogs, wolves, meerkats) as a category, but none of the proposed within-class refinements (framing/size, head orientation, solitary vs. with people, active pose) explain its activity.\", \"evidence\": \"All four predictions failed with near-zero effects after removing class differences (d between -0.09 and +0.08, percentiles 34–72), so the claimed preferences for profile heads, full-body framing and solitary active animals are not supported beyond the class-level selectivity for dog-like animals.\", \"missing_data\": \"Activation comparisons across classes (dog breeds vs. other animals vs. non-animals) and tests of other within-class features such as texture, fur color, background or specific body parts like ears or legs.\", \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\", \"explanation\": \"The unit appears to respond to dog-like animals (dogs, wolves, meerkats) as a category, but none of the proposed within-class refinements (framing/size, head orientation, solitary vs. with people, active pose) explain its activity.\", \"evidence\": \"All four predictions failed with near-zero effects after removing class differences (d between -0.09 and +0.08, percentiles 34–72), so the claimed preferences for profile heads, full-body framing and solitary active animals are not supported beyond the class-level selectivity for dog-like animals.\", \"missing_data\": \"Activation comparisons across classes (dog breeds vs. other animals vs. non-animals) and tests of other within-class features such as texture, fur color, background or specific body parts like ears or legs.\", \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit likely responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats. None of the proposed within-class refinements (whole body, head pose, setting, motion) could be confirmed, so beyond that broad category its preference is unclear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit likely responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats. None of the proposed within-class refinements (whole body, head pose, setting, motion) could be confirmed, so beyond that broad category its preference is unclear.",
+   "evidence": "All four predictions failed (percentiles 72, 73, 28 and 88), with small effects (d from -0.03 to +0.12) except a weaker trend toward animals in motion or vocalizing (d +0.29, but only 13 photos). The class-level preference for furry animals comes only from the explanation's observations, which were not tested here.",
+   "missing_data": "Activations across a wider range of classes beyond the top 24 would show whether the unit is about furry mammals, fur texture or something else. A larger sample of motion or vocalizing photos would test the one weak trend.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "931c7ae875d11007f1c6a9a6569d65c7647d344db9732dab3fd9b259b574de88",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit likely responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats. None of the proposed within-class refinements (whole body, head pose, setting, motion) could be confirmed, so beyond that broad category its preference is unclear.\",\n \"evidence\": \"All four predictions failed (percentiles 72, 73, 28 and 88), with small effects (d from -0.03 to +0.12) except a weaker trend toward animals in motion or vocalizing (d +0.29, but only 13 photos). The class-level preference for furry animals comes only from the explanation's observations, which were not tested here.\",\n \"missing_data\": \"Activations across a wider range of classes beyond the top 24 would show whether the unit is about furry mammals, fur texture or something else. A larger sample of motion or vocalizing photos would test the one weak trend.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit likely responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats. None of the proposed within-class refinements (whole body, head pose, setting, motion) could be confirmed, so beyond that broad category its preference is unclear.\",\n \"evidence\": \"All four predictions failed (percentiles 72, 73, 28 and 88), with small effects (d from -0.03 to +0.12) except a weaker trend toward animals in motion or vocalizing (d +0.29, but only 13 photos). The class-level preference for furry animals comes only from the explanation's observations, which were not tested here.\",\n \"missing_data\": \"Activations across a wider range of classes beyond the top 24 would show whether the unit is about furry mammals, fur texture or something else. A larger sample of motion or vocalizing photos would test the one weak trend.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, plus meerkats as a looser extension) at the category level. Within those classes it shows no clear preference for head pose, framing, activity, or the absence of people.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, plus meerkats as a looser extension) at the category level. Within those classes it shows no clear preference for head pose, framing, activity, or the absence of people.",
+   "evidence": "All four within-class predictions failed (percentiles 30–74, |d| ≤ 0.12), so the claimed modulation by profile/upward head, body-filling framing, active pose and no-person scenes did not survive testing. What remains is only the class-level selectivity in the explanation's list of top classes, which centres on canids with meerkats as a related outlier.",
+   "missing_data": "Activations across all classes, including non-canid mammals, to confirm canid selectivity; and tests of other within-class features such as fur texture, coat colour or background.",
+   "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dddbc8a7dc93446389bbd92f8b32b5973967d736b5c432dee7d2c7f344e95634",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, plus meerkats as a looser extension) at the category level. Within those classes it shows no clear preference for head pose, framing, activity, or the absence of people.\",\n \"evidence\": \"All four within-class predictions failed (percentiles 30–74, |d| ≤ 0.12), so the claimed modulation by profile/upward head, body-filling framing, active pose and no-person scenes did not survive testing. What remains is only the class-level selectivity in the explanation's list of top classes, which centres on canids with meerkats as a related outlier.\",\n \"missing_data\": \"Activations across all classes, including non-canid mammals, to confirm canid selectivity; and tests of other within-class features such as fur texture, coat colour or background.\",\n \"confidence\": 0.5}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, plus meerkats as a looser extension) at the category level. Within those classes it shows no clear preference for head pose, framing, activity, or the absence of people.\",\n \"evidence\": \"All four within-class predictions failed (percentiles 30–74, |d| ≤ 0.12), so the claimed modulation by profile/upward head, body-filling framing, active pose and no-person scenes did not survive testing. What remains is only the class-level selectivity in the explanation's list of top classes, which centres on canids with meerkats as a related outlier.\",\n \"missing_data\": \"Activations across all classes, including non-canid mammals, to confirm canid selectivity; and tests of other within-class features such as fur texture, coat colour or background.\",\n \"confidence\": 0.5}",
+  "valid": true
+ }
+}

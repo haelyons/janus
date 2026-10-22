@@ -780,3 +780,39 @@ horizontal position, lighting, tint, tilt, sharpness. Asked for every round-25 u
 - So the generic question set finds it; the table format loses it (one-vs-rest against a frontal majority), and the
   reviser reads only high positive entries: it ignores "left: 0.0th" in the real table and names "right" from a
   chance 97.7 in the null one.
+
+## Round 27: predictions from contrasts, checked blind on other photos (`tools/contrastloop.py`)
+
+No earlier readings. Per unit, an agent sees photos of its 4 top classes from most to least active, and, for the 3
+channels of its layer with the most similar class profile, the photos on which they disagree most (relative to each
+one's class average). It writes up to 4 signed predictions (question, answers, most- and least-active answer); 3
+samples. A blind agent answers them for the other half of the photos of the unit's 24 top classes (crc32 split,
+117-131 photos). A prediction holds when the unit's within-class d (most minus least) is at the 95th percentile of
+its layer or above. Then an agent sees its explanation with the outcomes (real, or answers shuffled within class)
+and says what the unit responds to. `runs/contrastloop/`; judged as round 24, 384 with 431's reference.
+
+    unit     peers (class-profile r)            held real/null  judge real/null  real readings
+    4b:431   443 .88, 409 .84, 429 .83           0/12   0/12     1.33  1.00      dog-like animals, large in frame
+    4b:443   409 .96, 429 .95, 418 .89           7/12   0/12     1.67  1.00      close-up dog face toward camera
+    4b:429   443 .95, 409 .94, 384 .92           9/12   1/12     1.00  2.00      frontal dog face, eye contact
+    4b:384   409 .93, 429 .92, 443 .89           0/12   0/12     2.00  1.00      dogs; framing shared by the layer
+    4d:409   417 .76, 454 .68, 452 .68           3/10   0/10     3.00  2.00      whole vehicle, side or 3/4 view
+    4b:237   209 .70, 373 .68, 256 .65           3/12   0/12     2.00  2.00      whole road vehicle
+    4b:373   491 .75, 209 .75, 217 .73           4/11   0/11     2.33  2.00      whole vehicle side-on, wheels visible
+    4e:55    197 .64, 24 .59, 4 .57              7/11   0/11     2.00  1.00      frontal furry face, upright ears
+    5a:719   695 .70, 685 .69, 736 .68           0/11   1/11     1.67  1.33      ornaments, bows (cannot_tell)
+
+- Held: 4 (no control has a direction prediction), 5 (calibration: real 33 of 103 checkable predictions hold, null 2
+  of 103). Failed: 1-3 (0 of 108 predictions mention left or right), 6 (direction named 0 of 12, real and null), 7
+  (443 1.67, 429 1.00), 8 (237 2.0, 373 2.33).
+- The check is well calibrated and the readers use it: 384's readings say its framing preference "is shared by most
+  units" (70th-90th percentile); null readings mostly say cannot_tell.
+- The oriented units' peers are each other (431's include 443 and 429), so the mirror twin was in front of the agent.
+  It found the axis, not the sign: "head turned to profile" against "facing the camera" was 431's main prediction in
+  3 of 3 samples, and failed at d -0.31 (26th): profile pools the side 431 prefers with the side it avoids. 443 and
+  429 hold on "frontal" at the 97th-99.8th and get the same reading; what separates them is never asked.
+- Without CP readings to start from, part-level content is lost: within-class contrasts of car photos are about
+  whole car against crop, so "window" and "wheel" (round 25: 5.0 and 4.67) become "whole vehicle" (2.0, 2.33).
+- So contrasts plus signed predictions give measured, calibrated hypotheses about how activity varies, but one pass
+  stops at the first axis that holds. Splitting a held or failed answer further, and asking what separates a unit
+  from a peer that holds on the same prediction, is the missing step.

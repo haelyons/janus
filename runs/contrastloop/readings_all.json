@@ -1,0 +1,74 @@
+{
+ "mixed4b:431": {
+  "real_s1": "The unit responds to dog-like animals (dogs, wolves, meerkats), most strongly when one animal is shown large in the frame with much of its body visible rather than small in the scene. Head direction, pose, and the presence of people or other animals do not appear to matter.",
+  "real_s2": "The unit responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats, somewhat more when much of the body fills the frame. Head pose, motion, vocalizing and setting do not matter.",
+  "real_s3": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, meerkats), probably more strongly when the animal is shown large in the frame. The specific claims about head pose, activity and absence of people are not supported.",
+  "null_s1": "The unit appears to respond to dog-like animals (dogs, wolves, meerkats) as a category, but none of the proposed within-class refinements (framing/size, head orientation, solitary vs. with people, active pose) explain its activity.",
+  "null_s2": "The unit likely responds broadly to medium-sized furry mammals such as dogs, wolves and meerkats. None of the proposed within-class refinements (whole body, head pose, setting, motion) could be confirmed, so beyond that broad category its preference is unclear.",
+  "null_s3": "The unit responds to dogs and dog-like mammals (terriers, hounds, mountain dogs, spaniels, wolves, plus meerkats as a looser extension) at the category level. Within those classes it shows no clear preference for head pose, framing, activity, or the absence of people."
+ },
+ "mixed4b:443": {
+  "real_s1": "The unit responds to a large, close-up, front-facing dog face in which the dark eyes and nose stand out as distinct, high-contrast spots.",
+  "real_s2": "The unit responds to a large, close-up dog face turned toward the camera, with the eyes and nose clearly visible; coat color and fur texture matter little.",
+  "real_s3": "The unit responds to a large, close-up dog face looking toward the camera, with both eyes and the nose visible, regardless of fur color.",
+  "null_s1": "The unit is active on dog-related photo classes (light fluffy small dogs, wolf, kuvasz, Appenzeller). Within those classes, none of the proposed visual features explains its activity: face size, frontal pose, fur color and eye/nose contrast all fail.",
+  "null_s2": "The unit most likely responds to certain dog breeds at the class level, plausibly small light-coated long-haired breeds such as Maltese, Westies and Dandie Dinmonts. Within a breed, it does not track the dog filling the frame, facing the camera, a pale coat or fluffy fur.",
+  "null_s3": "The unit seems to respond to dogs at the level of breed or class, mainly fluffy, long-coated dogs such as Maltese, kuvasz, Leonberg and Dandie Dinmont, with weaker responses to related canids such as wolves. How the dog is framed, how it is posed and its face color do not appear to matter."
+ },
+ "mixed4b:429": {
+  "real_s1": "The unit responds to a dog's face seen frontally with both eyes open and looking at the camera, and it is strongest when the head is large in the frame.",
+  "real_s2": "The unit responds to a dog's face seen straight on and looking directly at the camera, most strongly when the face is large in the frame. Activity drops when the head is turned or in profile, when the face is small, or when no face is visible.",
+  "real_s3": "The unit responds to a dog's face seen head-on and level, with the muzzle pointing at the camera and the eyes meeting the viewer, regardless of breed.",
+  "null_s1": "Among its top dog-breed classes, the unit responds most to dogs whose faces are not engaging the camera: heads turned to profile or away, eyes hidden or not visible, and heads that are small in the frame. It is not a frontal eye-contact detector.",
+  "null_s2": "The unit is most active on dog-breed classes, but within those classes it does not favour large, frontal, camera-facing dog faces. If anything it leans toward smaller or turned-away dogs and photos where no face shows, which suggests a whole-dog or scene-level response rather than a face response.",
+  "null_s3": "The unit responds to a dog that is looking directly at the camera (making eye contact with the viewer), whatever the exact angle of its head."
+ },
+ "mixed4b:384": {
+  "real_s1": "The unit seems to respond to dogs, and somewhat more to large, frontal, still dog heads than to small, profile, whole-body or moving dogs. These framing preferences appear to be shared with many other units in the layer rather than specific to this one.",
+  "real_s2": "The unit responds to dogs, with higher activity on larger, closer, frontal, still views of the dog's head. That preference appears to be shared by most units in its layer rather than being distinctive to this one.",
+  "real_s3": "The unit responds to dogs, and somewhat more to close, still, head-and-chest views where the dog's head fills much of the frame. This framing preference is real but not distinctive for its layer.",
+  "null_s1": "The unit responds to dog photos, but none of the proposed within-dog distinctions (head size in frame, frontal gaze, head-only framing, stillness) explain its activity, so what drives it among dog classes remains unknown.",
+  "null_s2": "The unit is most active on dog photo classes (e.g., beagle, Pembroke), but the proposed refinement to frontal close-up dog faces is not supported; within-class activity does not track head size, face orientation, motion or body visibility.",
+  "null_s3": "The unit is most active on dog classes, but what drives it within those classes is unclear; it is not the close-up, frontal dog face described."
+ },
+ "mixed4d:409": {
+  "real_s1": "The unit responds to a single whole road vehicle seen from the side or in three-quarter view, an elongated body in profile, with weaker activity when no vehicle exterior is visible.",
+  "real_s2": "The unit responds to a vehicle (especially a car or pickup) seen in side or three-quarter profile, with the long body and both wheels visible. It extends more weakly to other side-profile subjects such as a tanker truck or a standing animal.",
+  "real_s3": "The unit responds to a single long-bodied vehicle seen whole from the side or front three-quarter and filling the frame, with a weaker extension to other long horizontal bodies in side profile, such as ibex. It does not respond to vehicles as such, and the evidence does not show a preference for 1950s–80s styling.",
+  "null_s1": "The unit's top classes are mostly road vehicles, which suggests a class-level vehicle preference, but none of the proposed within-class features (classic era, side-on whole view, low car-like body, red color) accounts for its activity.",
+  "null_s2": "The unit plausibly responds to single real road vehicles (cars, pickups) seen in side or three-quarter profile, possibly extending to other side-profile subjects like animals, but the within-class tests did not confirm the specific features proposed.",
+  "null_s3": "The unit appears to respond at the class level to road-vehicle categories such as cars, wagons and trucks, with a weaker extension to ibex-like long horizontal bodies on legs. Within those classes it does not track the specific features proposed: whole side or three-quarter view, 1950s–80s boxy styling, real versus toy, or car versus bus."
+ },
+ "mixed4b:237": {
+  "real_s1": "The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models.",
+  "real_s2": "The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show.",
+  "real_s3": "The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo.",
+  "null_s1": "The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses.",
+  "null_s2": "The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color.",
+  "null_s3": "The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear."
+ },
+ "mixed4b:373": {
+  "real_s1": "The unit responds to a single road vehicle shown whole in side or three-quarter view with its wheels visible, as opposed to cropped, front-only or interior views of a vehicle.",
+  "real_s2": "The unit responds to a whole road vehicle seen from the side or in three-quarter view, with its body and wheels visible, as opposed to cropped close-ups, front-only views or interiors.",
+  "real_s3": "The unit responds to a single road vehicle that dominates the photo, shown whole in side or three-quarter view with its body and wheels visible, rather than cropped front, interior or detail close-ups or scenes where people or other objects compete with it.",
+  "null_s1": "The unit is most active on photos of road vehicles (the top classes include pickups, moving vans, jeeps, fire engines and wagons), but none of the proposed within-class features explains its activity.",
+  "null_s2": "The unit appears to respond to road vehicles as a category (cars, trucks, vans, fire engines and similar). None of the finer preferences in the description hold up, including red/orange color, side view, or real versus toy.",
+  "null_s3": "The unit most likely responds to road vehicles in general (cars, vans, trucks, fire engines) at the level of photo class. None of the finer preferences in the description hold: framing, real versus toy, red color and the vehicle dominating the scene do not explain its activity."
+ },
+ "mixed4e:55": {
+  "real_s1": "The unit responds to a close, front-facing face of a furry mammal (fox, cat, lynx, red panda, small dog), most strongly when both eyes face the camera, upright ears are visible and the head is large in the frame.",
+  "real_s2": "The unit responds to a frontal, open-eyed face of a furry mammal (fox, red panda, lynx, cat, papillon) looking at the camera, with upright pointed ears framing it as a weaker supporting feature.",
+  "real_s3": "The unit responds to a close-up, prominent head of a furry mammal such as a fox, cat, lynx or red panda, with its upright pointed ears visible, filling a large part of the frame. Orange or ginger coloring does not appear to be a distinctive driver.",
+  "null_s1": "The unit likely responds to fox- and cat-like furry mammals (fox, cat, lynx, red panda, papillon) in general, probably driven by fur or body texture rather than by a front-facing face.",
+  "null_s2": "The unit most likely responds to orange or ginger fur with white markings on mammals such as foxes, red pandas and ginger cats, not to a frontal, open-eyed face specifically.",
+  "null_s3": "The unit seems to respond to furry mammals such as foxes, red pandas and cats, perhaps most to orange or ginger faces, but none of the specific face features were confirmed within those classes."
+ },
+ "mixed5a:719": {
+  "real_s1": "The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear.",
+  "real_s2": "The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items.",
+  "real_s3": "The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials.",
+  "null_s1": "The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.",
+  "null_s2": "The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.",
+  "null_s3": "The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots."
+ }
+}

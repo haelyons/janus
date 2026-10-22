@@ -1,0 +1,168 @@
+{
+ "s1": {
+  "key": "s1",
+  "explanation": "The unit responds to a close, front-facing face of a furry mammal such as a fox, cat, lynx, red panda or papillon. It is most active when both eyes look at the camera, the upright ears are visible and the head is large in the frame. Fox-like orange or reddish fur helps further. Activity drops sharply when the face is hidden (eating, curled up asleep, hanging upside down), seen in profile, or small and distant in the scene. This face dependence is what separates it from similar units, which stay active on hidden-face cats and foxes.",
+  "predictions": [
+   {
+    "question": "Is the animal's face visible with both eyes looking toward the camera?",
+    "answers": [
+     "yes, frontal face with both eyes toward camera",
+     "face partly visible (profile, turned away, or eyes closed)",
+     "face not visible or no animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How large is the animal's head in the photo?",
+    "answers": [
+     "large (head fills a big part of the frame)",
+     "medium",
+     "small or distant",
+     "no animal head visible"
+    ],
+    "most": 0,
+    "least": 3
+   },
+   {
+    "question": "Are both of the animal's ears visible and standing upright?",
+    "answers": [
+     "yes, both upright ears visible",
+     "ears partly visible, folded, or hidden",
+     "no animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "What is the main fur color of the animal's face?",
+    "answers": [
+     "orange or reddish-brown",
+     "gray, brown, or tabby",
+     "white or black dominant",
+     "no animal face visible"
+    ],
+    "most": 0,
+    "least": 3
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c2b79a497f6dd56447c6cb438d1059249566fbd978566cc1e29938c8aa16480",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a close, front-facing face of a furry mammal such as a fox, cat, lynx, red panda or papillon. It is most active when both eyes look at the camera, the upright ears are visible and the head is large in the frame. Fox-like orange or reddish fur helps further. Activity drops sharply when the face is hidden (eating, curled up asleep, hanging upside down), seen in profile, or small and distant in the scene. This face dependence is what separates it from similar units, which stay active on hidden-face cats and foxes.\", \"predictions\": [{\"question\": \"Is the animal's face visible with both eyes looking toward the camera?\", \"answers\": [\"yes, frontal face with both eyes toward camera\", \"face partly visible (profile, turned away, or eyes closed)\", \"face not visible or no animal\"], \"most_active\": \"yes, frontal face with both eyes toward camera\", \"least_active\": \"face not visible or no animal\"}, {\"question\": \"How large is the animal's head in the photo?\", \"answers\": [\"large (head fills a big part of the frame)\", \"medium\", \"small or distant\", \"no animal head visible\"], \"most_active\": \"large (head fills a big part of the frame)\", \"least_active\": \"no animal head visible\"}, {\"question\": \"Are both of the animal's ears visible and standing upright?\", \"answers\": [\"yes, both upright ears visible\", \"ears partly visible, folded, or hidden\", \"no animal\"], \"most_active\": \"yes, both upright ears visible\", \"least_active\": \"no animal\"}, {\"question\": \"What is the main fur color of the animal's face?\", \"answers\": [\"orange or reddish-brown\", \"gray, brown, or tabby\", \"white or black dominant\", \"no animal face visible\"], \"most_active\": \"orange or reddish-brown\", \"least_active\": \"no animal face visible\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a close, front-facing face of a furry mammal such as a fox, cat, lynx, red panda or papillon. It is most active when both eyes look at the camera, the upright ears are visible and the head is large in the frame. Fox-like orange or reddish fur helps further. Activity drops sharply when the face is hidden (eating, curled up asleep, hanging upside down), seen in profile, or small and distant in the scene. This face dependence is what separates it from similar units, which stay active on hidden-face cats and foxes.\", \"predictions\": [{\"question\": \"Is the animal's face visible with both eyes looking toward the camera?\", \"answers\": [\"yes, frontal face with both eyes toward camera\", \"face partly visible (profile, turned away, or eyes closed)\", \"face not visible or no animal\"], \"most_active\": \"yes, frontal face with both eyes toward camera\", \"least_active\": \"face not visible or no animal\"}, {\"question\": \"How large is the animal's head in the photo?\", \"answers\": [\"large (head fills a big part of the frame)\", \"medium\", \"small or distant\", \"no animal head visible\"], \"most_active\": \"large (head fills a big part of the frame)\", \"least_active\": \"no animal head visible\"}, {\"question\": \"Are both of the animal's ears visible and standing upright?\", \"answers\": [\"yes, both upright ears visible\", \"ears partly visible, folded, or hidden\", \"no animal\"], \"most_active\": \"yes, both upright ears visible\", \"least_active\": \"no animal\"}, {\"question\": \"What is the main fur color of the animal's face?\", \"answers\": [\"orange or reddish-brown\", \"gray, brown, or tabby\", \"white or black dominant\", \"no animal face visible\"], \"most_active\": \"orange or reddish-brown\", \"least_active\": \"no animal face visible\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "Responds to the face of a furry mammal (fox, cat, lynx, red panda, small dog) seen from the front and looking toward the camera, with both eyes and erect pointed ears visible, especially when the head is large in the frame. Activity is strongest for orange or ginger faces with white markings, such as a fox staring at the camera or a red panda. Activity is weak when the face is hidden, turned to profile, buried (eating, curled up asleep), or small and distant. The similar units stay active on these hidden-face or distant photos, which this unit does not.",
+  "predictions": [
+   {
+    "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+    "answers": [
+     "Yes, frontal face with both eyes visible",
+     "Face partly visible (profile, turned away, or eyes closed)",
+     "Face hidden or not visible",
+     "No animal in photo"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How large is the animal's head in the photo?",
+    "answers": [
+     "Large (more than about a quarter of the image width)",
+     "Medium",
+     "Small or distant",
+     "No animal head visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Are the animal's ears visible and standing upright and pointed?",
+    "answers": [
+     "Yes, upright pointed ears visible",
+     "Ears visible but floppy, rounded, or folded",
+     "Ears not visible or no animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?",
+    "answers": [
+     "Yes, orange/ginger with white facial markings",
+     "Other fur colors on the face",
+     "Face not visible or no animal"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c2b79a497f6dd56447c6cb438d1059249566fbd978566cc1e29938c8aa16480",
+  "texts": [
+   "```json\n{\"explanation\": \"Responds to the face of a furry mammal (fox, cat, lynx, red panda, small dog) seen from the front and looking toward the camera, with both eyes and erect pointed ears visible, especially when the head is large in the frame. Activity is strongest for orange or ginger faces with white markings, such as a fox staring at the camera or a red panda. Activity is weak when the face is hidden, turned to profile, buried (eating, curled up asleep), or small and distant. The similar units stay active on these hidden-face or distant photos, which this unit does not.\", \"predictions\": [{\"question\": \"Is the animal's face turned toward the camera with both eyes open and visible?\", \"answers\": [\"Yes, frontal face with both eyes visible\", \"Face partly visible (profile, turned away, or eyes closed)\", \"Face hidden or not visible\", \"No animal in photo\"], \"most_active\": \"Yes, frontal face with both eyes visible\", \"least_active\": \"Face hidden or not visible\"}, {\"question\": \"How large is the animal's head in the photo?\", \"answers\": [\"Large (more than about a quarter of the image width)\", \"Medium\", \"Small or distant\", \"No animal head visible\"], \"most_active\": \"Large (more than about a quarter of the image width)\", \"least_active\": \"Small or distant\"}, {\"question\": \"Are the animal's ears visible and standing upright and pointed?\", \"answers\": [\"Yes, upright pointed ears visible\", \"Ears visible but floppy, rounded, or folded\", \"Ears not visible or no animal\"], \"most_active\": \"Yes, upright pointed ears visible\", \"least_active\": \"Ears not visible or no animal\"}, {\"question\": \"Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?\", \"answers\": [\"Yes, orange/ginger with white facial markings\", \"Other fur colors on the face\", \"Face not visible or no animal\"], \"most_active\": \"Yes, orange/ginger with white facial markings\", \"least_active\": \"Face not visible or no animal\"}]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Responds to the face of a furry mammal (fox, cat, lynx, red panda, small dog) seen from the front and looking toward the camera, with both eyes and erect pointed ears visible, especially when the head is large in the frame. Activity is strongest for orange or ginger faces with white markings, such as a fox staring at the camera or a red panda. Activity is weak when the face is hidden, turned to profile, buried (eating, curled up asleep), or small and distant. The similar units stay active on these hidden-face or distant photos, which this unit does not.\", \"predictions\": [{\"question\": \"Is the animal's face turned toward the camera with both eyes open and visible?\", \"answers\": [\"Yes, frontal face with both eyes visible\", \"Face partly visible (profile, turned away, or eyes closed)\", \"Face hidden or not visible\", \"No animal in photo\"], \"most_active\": \"Yes, frontal face with both eyes visible\", \"least_active\": \"Face hidden or not visible\"}, {\"question\": \"How large is the animal's head in the photo?\", \"answers\": [\"Large (more than about a quarter of the image width)\", \"Medium\", \"Small or distant\", \"No animal head visible\"], \"most_active\": \"Large (more than about a quarter of the image width)\", \"least_active\": \"Small or distant\"}, {\"question\": \"Are the animal's ears visible and standing upright and pointed?\", \"answers\": [\"Yes, upright pointed ears visible\", \"Ears visible but floppy, rounded, or folded\", \"Ears not visible or no animal\"], \"most_active\": \"Yes, upright pointed ears visible\", \"least_active\": \"Ears not visible or no animal\"}, {\"question\": \"Is the animal's face orange, ginger, or reddish-brown with white markings around the muzzle or eyes?\", \"answers\": [\"Yes, orange/ginger with white facial markings\", \"Other fur colors on the face\", \"Face not visible or no animal\"], \"most_active\": \"Yes, orange/ginger with white facial markings\", \"least_active\": \"Face not visible or no animal\"}]}\n```",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to a close, front-facing face of a furry mammal (fox, red panda, lynx, cat, papillon) with both eyes open and looking toward the camera, and upright pointed ears framing it. Orange or ginger fur with white face markings helps. Activity drops sharply when the face is hidden (eating, curled up, hanging away), turned to a profile, has closed eyes, or is small and distant in the frame. Similar units still respond to these hidden-face or body-only photos, so the visible open-eyed frontal face is what is particular to this unit.",
+  "predictions": [
+   {
+    "question": "Is the animal's face turned toward the camera with both eyes open and visible?",
+    "answers": [
+     "Yes, frontal with both eyes open",
+     "Face visible but in profile, turned away, or eyes closed",
+     "Face not visible, or no animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How large is the animal's face in the photo?",
+    "answers": [
+     "Large (face spans over a quarter of the image width)",
+     "Small (animal is distant or the face is tiny)",
+     "No animal face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Are the animal's ears clearly visible, upright and pointed on both sides of the head?",
+    "answers": [
+     "Yes, both upright and visible",
+     "Ears partly visible, folded, or flattened",
+     "Ears not visible, or no animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?",
+    "answers": [
+     "Yes, orange/ginger with white",
+     "Other fur colors (gray, brown, black, plain white)",
+     "No animal face visible"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c2b79a497f6dd56447c6cb438d1059249566fbd978566cc1e29938c8aa16480",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a close, front-facing face of a furry mammal (fox, red panda, lynx, cat, papillon) with both eyes open and looking toward the camera, and upright pointed ears framing it. Orange or ginger fur with white face markings helps. Activity drops sharply when the face is hidden (eating, curled up, hanging away), turned to a profile, has closed eyes, or is small and distant in the frame. Similar units still respond to these hidden-face or body-only photos, so the visible open-eyed frontal face is what is particular to this unit.\", \"predictions\": [{\"question\": \"Is the animal's face turned toward the camera with both eyes open and visible?\", \"answers\": [\"Yes, frontal with both eyes open\", \"Face visible but in profile, turned away, or eyes closed\", \"Face not visible, or no animal\"], \"most_active\": \"Yes, frontal with both eyes open\", \"least_active\": \"Face not visible, or no animal\"}, {\"question\": \"How large is the animal's face in the photo?\", \"answers\": [\"Large (face spans over a quarter of the image width)\", \"Small (animal is distant or the face is tiny)\", \"No animal face visible\"], \"most_active\": \"Large (face spans over a quarter of the image width)\", \"least_active\": \"No animal face visible\"}, {\"question\": \"Are the animal's ears clearly visible, upright and pointed on both sides of the head?\", \"answers\": [\"Yes, both upright and visible\", \"Ears partly visible, folded, or flattened\", \"Ears not visible, or no animal\"], \"most_active\": \"Yes, both upright and visible\", \"least_active\": \"Ears not visible, or no animal\"}, {\"question\": \"Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?\", \"answers\": [\"Yes, orange/ginger with white\", \"Other fur colors (gray, brown, black, plain white)\", \"No animal face visible\"], \"most_active\": \"Yes, orange/ginger with white\", \"least_active\": \"No animal face visible\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a close, front-facing face of a furry mammal (fox, red panda, lynx, cat, papillon) with both eyes open and looking toward the camera, and upright pointed ears framing it. Orange or ginger fur with white face markings helps. Activity drops sharply when the face is hidden (eating, curled up, hanging away), turned to a profile, has closed eyes, or is small and distant in the frame. Similar units still respond to these hidden-face or body-only photos, so the visible open-eyed frontal face is what is particular to this unit.\", \"predictions\": [{\"question\": \"Is the animal's face turned toward the camera with both eyes open and visible?\", \"answers\": [\"Yes, frontal with both eyes open\", \"Face visible but in profile, turned away, or eyes closed\", \"Face not visible, or no animal\"], \"most_active\": \"Yes, frontal with both eyes open\", \"least_active\": \"Face not visible, or no animal\"}, {\"question\": \"How large is the animal's face in the photo?\", \"answers\": [\"Large (face spans over a quarter of the image width)\", \"Small (animal is distant or the face is tiny)\", \"No animal face visible\"], \"most_active\": \"Large (face spans over a quarter of the image width)\", \"least_active\": \"No animal face visible\"}, {\"question\": \"Are the animal's ears clearly visible, upright and pointed on both sides of the head?\", \"answers\": [\"Yes, both upright and visible\", \"Ears partly visible, folded, or flattened\", \"Ears not visible, or no animal\"], \"most_active\": \"Yes, both upright and visible\", \"least_active\": \"Ears not visible, or no animal\"}, {\"question\": \"Is the animal's face orange or ginger with white markings (e.g., white muzzle, cheeks, or eyebrows)?\", \"answers\": [\"Yes, orange/ginger with white\", \"Other fur colors (gray, brown, black, plain white)\", \"No animal face visible\"], \"most_active\": \"Yes, orange/ginger with white\", \"least_active\": \"No animal face visible\"}]}",
+  "valid": true
+ }
+}

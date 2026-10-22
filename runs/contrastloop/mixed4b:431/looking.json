@@ -1,0 +1,169 @@
+{
+ "s3": {
+  "key": "s3",
+  "explanation": "Responds to a dog or dog-like mammal (terriers, hounds, Swiss mountain dogs, spaniels, wolves, meerkats) seen at medium scale, with much of the body visible and the animal dominating the frame. It is strongest when the head is turned in profile or raised upward (a hound gazing up, a wolf howling, a terrier bounding through snow). Compared with similar units, it is weaker on tight frontal face close-ups looking at the camera, and weak when the animal is small in the scene or shares it with a person.",
+  "predictions": [
+   {
+    "question": "Which way is the animal's head facing?",
+    "answers": [
+     "In profile or tilted upward, away from the camera",
+     "Facing the camera",
+     "No animal head visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "How is the main animal framed in the photo?",
+    "answers": [
+     "Most of its body is visible and it fills a large part of the frame",
+     "Tight close-up of the head or face only",
+     "The animal is small within a larger scene",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is a person visible in the photo along with the animal?",
+    "answers": [
+     "No person, only the animal",
+     "A person is visible",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the animal doing something active, such as running, howling, or raising its head to look upward?",
+    "answers": [
+     "Yes, an active pose or motion",
+     "No, resting, sitting, or lying while looking ahead",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8559f87a2a151cffdd7f1d183bca462e1da7accf71107b4b72e043b5f2718ada",
+  "texts": [
+   "{\"explanation\": \"Responds to a dog or dog-like mammal (terriers, hounds, Swiss mountain dogs, spaniels, wolves, meerkats) seen at medium scale, with much of the body visible and the animal dominating the frame. It is strongest when the head is turned in profile or raised upward (a hound gazing up, a wolf howling, a terrier bounding through snow). Compared with similar units, it is weaker on tight frontal face close-ups looking at the camera, and weak when the animal is small in the scene or shares it with a person.\", \"predictions\": [{\"question\": \"Which way is the animal's head facing?\", \"answers\": [\"In profile or tilted upward, away from the camera\", \"Facing the camera\", \"No animal head visible\"], \"most_active\": \"In profile or tilted upward, away from the camera\", \"least_active\": \"Facing the camera\"}, {\"question\": \"How is the main animal framed in the photo?\", \"answers\": [\"Most of its body is visible and it fills a large part of the frame\", \"Tight close-up of the head or face only\", \"The animal is small within a larger scene\", \"No animal\"], \"most_active\": \"Most of its body is visible and it fills a large part of the frame\", \"least_active\": \"The animal is small within a larger scene\"}, {\"question\": \"Is a person visible in the photo along with the animal?\", \"answers\": [\"No person, only the animal\", \"A person is visible\", \"No animal\"], \"most_active\": \"No person, only the animal\", \"least_active\": \"A person is visible\"}, {\"question\": \"Is the animal doing something active, such as running, howling, or raising its head to look upward?\", \"answers\": [\"Yes, an active pose or motion\", \"No, resting, sitting, or lying while looking ahead\", \"No animal\"], \"most_active\": \"Yes, an active pose or motion\", \"least_active\": \"No, resting, sitting, or lying while looking ahead\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a dog or dog-like mammal (terriers, hounds, Swiss mountain dogs, spaniels, wolves, meerkats) seen at medium scale, with much of the body visible and the animal dominating the frame. It is strongest when the head is turned in profile or raised upward (a hound gazing up, a wolf howling, a terrier bounding through snow). Compared with similar units, it is weaker on tight frontal face close-ups looking at the camera, and weak when the animal is small in the scene or shares it with a person.\", \"predictions\": [{\"question\": \"Which way is the animal's head facing?\", \"answers\": [\"In profile or tilted upward, away from the camera\", \"Facing the camera\", \"No animal head visible\"], \"most_active\": \"In profile or tilted upward, away from the camera\", \"least_active\": \"Facing the camera\"}, {\"question\": \"How is the main animal framed in the photo?\", \"answers\": [\"Most of its body is visible and it fills a large part of the frame\", \"Tight close-up of the head or face only\", \"The animal is small within a larger scene\", \"No animal\"], \"most_active\": \"Most of its body is visible and it fills a large part of the frame\", \"least_active\": \"The animal is small within a larger scene\"}, {\"question\": \"Is a person visible in the photo along with the animal?\", \"answers\": [\"No person, only the animal\", \"A person is visible\", \"No animal\"], \"most_active\": \"No person, only the animal\", \"least_active\": \"A person is visible\"}, {\"question\": \"Is the animal doing something active, such as running, howling, or raising its head to look upward?\", \"answers\": [\"Yes, an active pose or motion\", \"No, resting, sitting, or lying while looking ahead\", \"No animal\"], \"most_active\": \"Yes, an active pose or motion\", \"least_active\": \"No, resting, sitting, or lying while looking ahead\"}]}",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to a medium-sized, mostly whole furry animal (dogs, wolves, meerkats), especially one with tan or brown fur, seen at mid-distance. It is most active when the head is turned, raised or in profile, as with the howling wolf, the redbone looking up, and the Swiss dog with its head turned. It is weaker on tight face close-ups, straight-on frontal faces, and animals that are small in a cluttered scene or with people. Compared with similar units, it prefers head-raised or profile poses, where the others prefer frontal faces.",
+  "predictions": [
+   {
+    "question": "How much of the animal is shown and how large is it in the frame?",
+    "answers": [
+     "Most or all of the body, filling a good part of the frame",
+     "Only the head or face as a close-up",
+     "Animal is small in a larger scene",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Which way is the animal's head pointing relative to the camera?",
+    "answers": [
+     "Turned to the side, in profile, or raised upward",
+     "Looking straight at the camera",
+     "Head not visible or no animal"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is there a person or indoor furniture in the photo along with the animal?",
+    "answers": [
+     "Yes, a person or indoor furniture is visible",
+     "No, the animal is outdoors on natural ground with no people",
+     "No animal visible"
+    ],
+    "most": 1,
+    "least": 0
+   },
+   {
+    "question": "Is the animal in motion or vocalizing (running, jumping, howling with mouth wide open)?",
+    "answers": [
+     "Yes, active motion or vocalizing",
+     "No, sitting, lying or standing still",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8559f87a2a151cffdd7f1d183bca462e1da7accf71107b4b72e043b5f2718ada",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a medium-sized, mostly whole furry animal (dogs, wolves, meerkats), especially one with tan or brown fur, seen at mid-distance. It is most active when the head is turned, raised or in profile, as with the howling wolf, the redbone looking up, and the Swiss dog with its head turned. It is weaker on tight face close-ups, straight-on frontal faces, and animals that are small in a cluttered scene or with people. Compared with similar units, it prefers head-raised or profile poses, where the others prefer frontal faces.\", \"predictions\": [{\"question\": \"How much of the animal is shown and how large is it in the frame?\", \"answers\": [\"Most or all of the body, filling a good part of the frame\", \"Only the head or face as a close-up\", \"Animal is small in a larger scene\", \"No animal visible\"], \"most_active\": \"Most or all of the body, filling a good part of the frame\", \"least_active\": \"Animal is small in a larger scene\"}, {\"question\": \"Which way is the animal's head pointing relative to the camera?\", \"answers\": [\"Turned to the side, in profile, or raised upward\", \"Looking straight at the camera\", \"Head not visible or no animal\"], \"most_active\": \"Turned to the side, in profile, or raised upward\", \"least_active\": \"Looking straight at the camera\"}, {\"question\": \"Is there a person or indoor furniture in the photo along with the animal?\", \"answers\": [\"Yes, a person or indoor furniture is visible\", \"No, the animal is outdoors on natural ground with no people\", \"No animal visible\"], \"most_active\": \"No, the animal is outdoors on natural ground with no people\", \"least_active\": \"Yes, a person or indoor furniture is visible\"}, {\"question\": \"Is the animal in motion or vocalizing (running, jumping, howling with mouth wide open)?\", \"answers\": [\"Yes, active motion or vocalizing\", \"No, sitting, lying or standing still\", \"No animal visible\"], \"most_active\": \"Yes, active motion or vocalizing\", \"least_active\": \"No, sitting, lying or standing still\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a medium-sized, mostly whole furry animal (dogs, wolves, meerkats), especially one with tan or brown fur, seen at mid-distance. It is most active when the head is turned, raised or in profile, as with the howling wolf, the redbone looking up, and the Swiss dog with its head turned. It is weaker on tight face close-ups, straight-on frontal faces, and animals that are small in a cluttered scene or with people. Compared with similar units, it prefers head-raised or profile poses, where the others prefer frontal faces.\", \"predictions\": [{\"question\": \"How much of the animal is shown and how large is it in the frame?\", \"answers\": [\"Most or all of the body, filling a good part of the frame\", \"Only the head or face as a close-up\", \"Animal is small in a larger scene\", \"No animal visible\"], \"most_active\": \"Most or all of the body, filling a good part of the frame\", \"least_active\": \"Animal is small in a larger scene\"}, {\"question\": \"Which way is the animal's head pointing relative to the camera?\", \"answers\": [\"Turned to the side, in profile, or raised upward\", \"Looking straight at the camera\", \"Head not visible or no animal\"], \"most_active\": \"Turned to the side, in profile, or raised upward\", \"least_active\": \"Looking straight at the camera\"}, {\"question\": \"Is there a person or indoor furniture in the photo along with the animal?\", \"answers\": [\"Yes, a person or indoor furniture is visible\", \"No, the animal is outdoors on natural ground with no people\", \"No animal visible\"], \"most_active\": \"No, the animal is outdoors on natural ground with no people\", \"least_active\": \"Yes, a person or indoor furniture is visible\"}, {\"question\": \"Is the animal in motion or vocalizing (running, jumping, howling with mouth wide open)?\", \"answers\": [\"Yes, active motion or vocalizing\", \"No, sitting, lying or standing still\", \"No animal visible\"], \"most_active\": \"Yes, active motion or vocalizing\", \"least_active\": \"No, sitting, lying or standing still\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "Responds to a single dog-like animal (also meerkats) whose head and much of its body are clearly visible and fill a good part of the frame, such as a dog running, standing or sitting. It fires more when the animal's head is raised or turned to profile (a hound looking up, a wolf howling, a terrier running) than when the face looks straight at the camera. Similar units prefer frontal faces. Activity drops for tight head-only crops, for animals that are small in the scene or shown with people, and for groups of animals.",
+  "predictions": [
+   {
+    "question": "How much of the animal is visible and how large is it in the photo?",
+    "answers": [
+     "Head and most of the body visible, animal fills a large part of the frame",
+     "Tight crop showing mainly the head or face",
+     "Animal is small in the scene",
+     "No animal visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Which way is the main animal's head pointing?",
+    "answers": [
+     "Raised or turned sideways (profile, looking up, howling)",
+     "Facing straight toward the camera",
+     "Head looking down or not visible",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "How many animals are in the photo, and is a person present?",
+    "answers": [
+     "One animal, no person",
+     "One animal with a person",
+     "Two or more animals",
+     "No animal"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the animal in an active pose (running, jumping, howling, alert upright stance)?",
+    "answers": [
+     "Yes, active or alert pose",
+     "No, lying or resting calmly",
+     "Can't tell or no animal"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "8559f87a2a151cffdd7f1d183bca462e1da7accf71107b4b72e043b5f2718ada",
+  "texts": [
+   "{\"explanation\": \"Responds to a single dog-like animal (also meerkats) whose head and much of its body are clearly visible and fill a good part of the frame, such as a dog running, standing or sitting. It fires more when the animal's head is raised or turned to profile (a hound looking up, a wolf howling, a terrier running) than when the face looks straight at the camera. Similar units prefer frontal faces. Activity drops for tight head-only crops, for animals that are small in the scene or shown with people, and for groups of animals.\", \"predictions\": [{\"question\": \"How much of the animal is visible and how large is it in the photo?\", \"answers\": [\"Head and most of the body visible, animal fills a large part of the frame\", \"Tight crop showing mainly the head or face\", \"Animal is small in the scene\", \"No animal visible\"], \"most_active\": \"Head and most of the body visible, animal fills a large part of the frame\", \"least_active\": \"Animal is small in the scene\"}, {\"question\": \"Which way is the main animal's head pointing?\", \"answers\": [\"Raised or turned sideways (profile, looking up, howling)\", \"Facing straight toward the camera\", \"Head looking down or not visible\", \"No animal\"], \"most_active\": \"Raised or turned sideways (profile, looking up, howling)\", \"least_active\": \"Facing straight toward the camera\"}, {\"question\": \"How many animals are in the photo, and is a person present?\", \"answers\": [\"One animal, no person\", \"One animal with a person\", \"Two or more animals\", \"No animal\"], \"most_active\": \"One animal, no person\", \"least_active\": \"One animal with a person\"}, {\"question\": \"Is the animal in an active pose (running, jumping, howling, alert upright stance)?\", \"answers\": [\"Yes, active or alert pose\", \"No, lying or resting calmly\", \"Can't tell or no animal\"], \"most_active\": \"Yes, active or alert pose\", \"least_active\": \"No, lying or resting calmly\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a single dog-like animal (also meerkats) whose head and much of its body are clearly visible and fill a good part of the frame, such as a dog running, standing or sitting. It fires more when the animal's head is raised or turned to profile (a hound looking up, a wolf howling, a terrier running) than when the face looks straight at the camera. Similar units prefer frontal faces. Activity drops for tight head-only crops, for animals that are small in the scene or shown with people, and for groups of animals.\", \"predictions\": [{\"question\": \"How much of the animal is visible and how large is it in the photo?\", \"answers\": [\"Head and most of the body visible, animal fills a large part of the frame\", \"Tight crop showing mainly the head or face\", \"Animal is small in the scene\", \"No animal visible\"], \"most_active\": \"Head and most of the body visible, animal fills a large part of the frame\", \"least_active\": \"Animal is small in the scene\"}, {\"question\": \"Which way is the main animal's head pointing?\", \"answers\": [\"Raised or turned sideways (profile, looking up, howling)\", \"Facing straight toward the camera\", \"Head looking down or not visible\", \"No animal\"], \"most_active\": \"Raised or turned sideways (profile, looking up, howling)\", \"least_active\": \"Facing straight toward the camera\"}, {\"question\": \"How many animals are in the photo, and is a person present?\", \"answers\": [\"One animal, no person\", \"One animal with a person\", \"Two or more animals\", \"No animal\"], \"most_active\": \"One animal, no person\", \"least_active\": \"One animal with a person\"}, {\"question\": \"Is the animal in an active pose (running, jumping, howling, alert upright stance)?\", \"answers\": [\"Yes, active or alert pose\", \"No, lying or resting calmly\", \"Can't tell or no animal\"], \"most_active\": \"Yes, active or alert pose\", \"least_active\": \"No, lying or resting calmly\"}]}",
+  "valid": true
+ }
+}

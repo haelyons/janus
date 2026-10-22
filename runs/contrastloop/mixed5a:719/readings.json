@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear.",
+   "evidence": "All four predictions failed: d values were small and positive (+0.04 to +0.36), with percentiles from 51 to 90. The strongest, bow/ribbon/flower ornament (d +0.36, pct 90) and jeweled metal (d +0.23, pct 81), point in the predicted direction but stay below the 95th-percentile bar, and close-up framing and decoration type show essentially no effect.",
+   "missing_data": "Per-class average activations across the 24 top classes, plus held-out tests contrasting those classes, would show whether the unit is mainly selecting object categories (e.g., jewelry and hair accessories) rather than within-class ornament features.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "fd79420863b74617cae28d609b7130d1a62f0e9cb8c38b1f20cfca57d3b05d46",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear.\",\n \"evidence\": \"All four predictions failed: d values were small and positive (+0.04 to +0.36), with percentiles from 51 to 90. The strongest, bow/ribbon/flower ornament (d +0.36, pct 90) and jeweled metal (d +0.23, pct 81), point in the predicted direction but stay below the 95th-percentile bar, and close-up framing and decoration type show essentially no effect.\",\n \"missing_data\": \"Per-class average activations across the 24 top classes, plus held-out tests contrasting those classes, would show whether the unit is mainly selecting object categories (e.g., jewelry and hair accessories) rather than within-class ornament features.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may weakly prefer small attached ornaments on accessories, such as bows, ribbons, flowers or sparkling metal and jewels, but none of the specific predictions held, so its selectivity within its top classes is unclear.\",\n \"evidence\": \"All four predictions failed: d values were small and positive (+0.04 to +0.36), with percentiles from 51 to 90. The strongest, bow/ribbon/flower ornament (d +0.36, pct 90) and jeweled metal (d +0.23, pct 81), point in the predicted direction but stay below the 95th-percentile bar, and close-up framing and decoration type show essentially no effect.\",\n \"missing_data\": \"Per-class average activations across the 24 top classes, plus held-out tests contrasting those classes, would show whether the unit is mainly selecting object categories (e.g., jewelry and hair accessories) rather than within-class ornament features.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items.",
+   "evidence": "The jewelry and plain-background presentation predictions went in the predicted direction with moderate effects (d +0.39 at the 91st percentile, and d +0.33 at the 84th percentile), but neither reached the 95th percentile. The dangling-ornament prediction was near chance (d +0.11, 52nd percentile), and the decorative-motif test could not be checked.",
+   "missing_data": "Activations on a broader set of photos outside the top classes, including jewelry versus non-jewelry decorated items, and enough photos without a clear main object to test the motif prediction.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "fef70945429c0cbf01f09f6f5e8f540f744d087b2d2963eddab8fa7262d0472b",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items.\",\n \"evidence\": \"The jewelry and plain-background presentation predictions went in the predicted direction with moderate effects (d +0.39 at the 91st percentile, and d +0.33 at the 84th percentile), but neither reached the 95th percentile. The dangling-ornament prediction was near chance (d +0.11, 52nd percentile), and the decorative-motif test could not be checked.\",\n \"missing_data\": \"Activations on a broader set of photos outside the top classes, including jewelry versus non-jewelry decorated items, and enough photos without a clear main object to test the motif prediction.\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond most to decorative jewelry-like ornamentation, meaning metal or gem adornments such as brooches, buckles and necklaces. It responds more weakly to decorated surfaces on single product-style items.\",\n \"evidence\": \"The jewelry and plain-background presentation predictions went in the predicted direction with moderate effects (d +0.39 at the 91st percentile, and d +0.33 at the 84th percentile), but neither reached the 95th percentile. The dangling-ornament prediction was near chance (d +0.11, 52nd percentile), and the decorative-motif test could not be checked.\",\n \"missing_data\": \"Activations on a broader set of photos outside the top classes, including jewelry versus non-jewelry decorated items, and enough photos without a clear main object to test the motif prediction.\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials.",
+   "evidence": "Ornate motif (d +0.45, 93rd percentile), plain light product background (d +0.43, 95th) and jewelry-like ornament (d +0.37, 91st) all trend in the predicted direction but narrowly miss the threshold. Surface material shows no effect (d +0.04, 52nd percentile), which contradicts the claimed preference for metal and gems over fabric.",
+   "missing_data": "Within-class comparisons that cross the factors: ornate versus plain items of the same material, and the same ornate item on a plain versus a cluttered background, with more photos to see whether these near-threshold effects are real.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7b71efc3ea35824784c92cfc5bae9964efb7048680d5c4f1fa5ba13eee8a4161",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials.\", \"evidence\": \"Ornate motif (d +0.45, 93rd percentile), plain light product background (d +0.43, 95th) and jewelry-like ornament (d +0.37, 91st) all trend in the predicted direction but narrowly miss the threshold. Surface material shows no effect (d +0.04, 52nd percentile), which contradicts the claimed preference for metal and gems over fabric.\", \"missing_data\": \"Within-class comparisons that cross the factors: ornate versus plain items of the same material, and the same ornate item on a plain versus a cluttered background, with more photos to see whether these near-threshold effects are real.\", \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit seems to respond to ornate decorative ornamentation on an object, such as bows, flowers, filigree or embossed motifs, mostly when the item is shown alone as a product shot on a plain light background. It does not appear to prefer shiny metal or gems over other materials.\", \"evidence\": \"Ornate motif (d +0.45, 93rd percentile), plain light product background (d +0.43, 95th) and jewelry-like ornament (d +0.37, 91st) all trend in the predicted direction but narrowly miss the threshold. Surface material shows no effect (d +0.04, 52nd percentile), which contradicts the claimed preference for metal and gems over fabric.\", \"missing_data\": \"Within-class comparisons that cross the factors: ornate versus plain items of the same material, and the same ornate item on a plain versus a cluttered background, with more photos to see whether these near-threshold effects are real.\", \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.",
+   "evidence": "All four predictions failed: metallic/jeweled decoration (d -0.21, 12th percentile), bows/flowers (d +0.09, 77th) and attached ornaments vs plain (d +0.09, 63rd) show no preference. The clutter prediction reversed strongly (d -0.54, 3rd percentile), favouring busy multi-item scenes.",
+   "missing_data": "The list of the 24 top classes and example top-activating photos, plus a direct test of whether many items, clutter or repeated small objects drive the unit, would most change this answer.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "acdfc19cd93effaf3f7234a944d353c6fb4f811598ab9d310e241ce4a5d3c13a",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.\",\n \"evidence\": \"All four predictions failed: metallic/jeweled decoration (d -0.21, 12th percentile), bows/flowers (d +0.09, 77th) and attached ornaments vs plain (d +0.09, 63rd) show no preference. The clutter prediction reversed strongly (d -0.54, 3rd percentile), favouring busy multi-item scenes.\",\n \"missing_data\": \"The list of the 24 top classes and example top-activating photos, plus a direct test of whether many items, clutter or repeated small objects drive the unit, would most change this answer.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.\",\n \"evidence\": \"All four predictions failed: metallic/jeweled decoration (d -0.21, 12th percentile), bows/flowers (d +0.09, 77th) and attached ornaments vs plain (d +0.09, 63rd) show no preference. The clutter prediction reversed strongly (d -0.54, 3rd percentile), favouring busy multi-item scenes.\",\n \"missing_data\": \"The list of the 24 top classes and example top-activating photos, plus a direct test of whether many items, clutter or repeated small objects drive the unit, would most change this answer.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.",
+   "evidence": "The jewelry prediction gave d +0.03 (percentile 52) and the dangling-ornament prediction gave d +0.11 (percentile 77), so neither held. The presentation prediction went the wrong way, with crowded scenes slightly higher (d -0.44, percentile 9), and the decorative-motif prediction had too few photos to check.",
+   "missing_data": "Activity on the decorative-motif question with more photos in the 'no clear main object' group, or a comparison of decorated against plain items within the same class, plus tests of other features such as texture or crowded repeated patterns.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0f327d5cefce7f2e62b3adb1dc0431c6036356fab8fc8d7e51b7970d0c62d0c4",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.\",\n \"evidence\": \"The jewelry prediction gave d +0.03 (percentile 52) and the dangling-ornament prediction gave d +0.11 (percentile 77), so neither held. The presentation prediction went the wrong way, with crowded scenes slightly higher (d -0.44, percentile 9), and the decorative-motif prediction had too few photos to check.\",\n \"missing_data\": \"Activity on the decorative-motif question with more photos in the 'no clear main object' group, or a comparison of decorated against plain items within the same class, plus tests of other features such as texture or crowded repeated patterns.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.\",\n \"evidence\": \"The jewelry prediction gave d +0.03 (percentile 52) and the dangling-ornament prediction gave d +0.11 (percentile 77), so neither held. The presentation prediction went the wrong way, with crowded scenes slightly higher (d -0.44, percentile 9), and the decorative-motif prediction had too few photos to check.\",\n \"missing_data\": \"Activity on the decorative-motif question with more photos in the 'no clear main object' group, or a comparison of decorated against plain items within the same class, plus tests of other features such as texture or crowded repeated patterns.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots.",
+   "evidence": "Only the motif prediction held (d +0.37, 98th percentile). The metal/jewelry and material predictions were near zero (percentiles 36 and 46), and the plain-light-background prediction was reversed (d -0.46, percentile 0), so the unit is more active in cluttered or worn scenes.",
+   "missing_data": "Comparisons within classes of motif types (printed graphics vs. embroidery vs. metalwork) and of cluttered vs. isolated scenes with the motif held fixed, to tell whether the preference for busy scenes is real or just reflects having more ornament.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2746d1e96aedaf8a892eeadb72ef652a0ecc825473c2af00f1f55d27b42a6562",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots.\",\n \"evidence\": \"Only the motif prediction held (d +0.37, 98th percentile). The metal/jewelry and material predictions were near zero (percentiles 36 and 46), and the plain-light-background prediction was reversed (d -0.46, percentile 0), so the unit is more active in cluttered or worn scenes.\",\n \"missing_data\": \"Comparisons within classes of motif types (printed graphics vs. embroidery vs. metalwork) and of cluttered vs. isolated scenes with the motif held fixed, to tell whether the preference for busy scenes is real or just reflects having more ornament.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots.\",\n \"evidence\": \"Only the motif prediction held (d +0.37, 98th percentile). The metal/jewelry and material predictions were near zero (percentiles 36 and 46), and the plain-light-background prediction was reversed (d -0.46, percentile 0), so the unit is more active in cluttered or worn scenes.\",\n \"missing_data\": \"Comparisons within classes of motif types (printed graphics vs. embroidery vs. metalwork) and of cluttered vs. isolated scenes with the motif held fixed, to tell whether the preference for busy scenes is real or just reflects having more ornament.\",\n \"confidence\": 0.55}\n```",
+  "valid": true
+ }
+}

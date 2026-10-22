@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a large, close-up, front-facing dog face in which the dark eyes and nose stand out as distinct, high-contrast spots.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a large, close-up, front-facing dog face in which the dark eyes and nose stand out as distinct, high-contrast spots.",
+   "evidence": "Face size (d +1.40), frontal pose (d +1.26) and eye/nose contrast (d +1.28) all held at the 99th percentile, while light versus dark fur color did not (d +0.16, 76th percentile). The contrast of the facial features matters, not the fur color.",
+   "missing_data": "Photos with frontal close-up faces of non-dog animals or humans with high-contrast eyes and nose, to test whether the unit is specific to dogs or responds to any frontal face pattern.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "70e95b375e5fb5822428833a15b5c22aea37a6b6bb3dba90bb4c4d5a00643d45",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up, front-facing dog face in which the dark eyes and nose stand out as distinct, high-contrast spots.\",\n \"evidence\": \"Face size (d +1.40), frontal pose (d +1.26) and eye/nose contrast (d +1.28) all held at the 99th percentile, while light versus dark fur color did not (d +0.16, 76th percentile). The contrast of the facial features matters, not the fur color.\",\n \"missing_data\": \"Photos with frontal close-up faces of non-dog animals or humans with high-contrast eyes and nose, to test whether the unit is specific to dogs or responds to any frontal face pattern.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up, front-facing dog face in which the dark eyes and nose stand out as distinct, high-contrast spots.\",\n \"evidence\": \"Face size (d +1.40), frontal pose (d +1.26) and eye/nose contrast (d +1.28) all held at the 99th percentile, while light versus dark fur color did not (d +0.16, 76th percentile). The contrast of the facial features matters, not the fur color.\",\n \"missing_data\": \"Photos with frontal close-up faces of non-dog animals or humans with high-contrast eyes and nose, to test whether the unit is specific to dogs or responds to any frontal face pattern.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a large, close-up dog face turned toward the camera, with the eyes and nose clearly visible; coat color and fur texture matter little.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a large, close-up dog face turned toward the camera, with the eyes and nose clearly visible; coat color and fur texture matter little.",
+   "evidence": "Framing (d +1.61, 98th percentile) and frontal face (d +1.65, 100th percentile) predictions held strongly, while white coat (d +0.18, 88th) and fluffy fur (d +0.06, 55th) did not, so the 'white fluffy dog' part of the explanation is not supported.",
+   "missing_data": "Activity on frontal close-up faces of non-dog animals or humans, to tell whether the unit is dog-specific or responds to faces in general; and how much the framing and frontal-face answers overlap.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "de5e522c64b9e14febb5b3f9f802f024f08ca5372a361a1aef510952c96e869c",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face turned toward the camera, with the eyes and nose clearly visible; coat color and fur texture matter little.\",\n \"evidence\": \"Framing (d +1.61, 98th percentile) and frontal face (d +1.65, 100th percentile) predictions held strongly, while white coat (d +0.18, 88th) and fluffy fur (d +0.06, 55th) did not, so the 'white fluffy dog' part of the explanation is not supported.\",\n \"missing_data\": \"Activity on frontal close-up faces of non-dog animals or humans, to tell whether the unit is dog-specific or responds to faces in general; and how much the framing and frontal-face answers overlap.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face turned toward the camera, with the eyes and nose clearly visible; coat color and fur texture matter little.\",\n \"evidence\": \"Framing (d +1.61, 98th percentile) and frontal face (d +1.65, 100th percentile) predictions held strongly, while white coat (d +0.18, 88th) and fluffy fur (d +0.06, 55th) did not, so the 'white fluffy dog' part of the explanation is not supported.\",\n \"missing_data\": \"Activity on frontal close-up faces of non-dog animals or humans, to tell whether the unit is dog-specific or responds to faces in general; and how much the framing and frontal-face answers overlap.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a large, close-up dog face looking toward the camera, with both eyes and the nose visible, regardless of fur color.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a large, close-up dog face looking toward the camera, with both eyes and the nose visible, regardless of fur color.",
+   "evidence": "Frontal faces beat turned-away faces (d +1.70, percentile 100), and heads filling more than a third of the photo beat small heads (d +1.33, percentile 98). Fur color made no difference (d 0.00, percentile 40), and full-body versus head-only views gave only a modest, below-threshold difference (d +0.58, percentile 85).",
+   "missing_data": "Close-up frontal faces of non-dog animals (cats, bears, foxes) or of people, to see whether the unit is specific to dogs or responds to any frontal mammal face.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "4a71af586faaed32fcb87c419619f15cd685287bca385756c746d1e2c39b9e63",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face looking toward the camera, with both eyes and the nose visible, regardless of fur color.\",\n \"evidence\": \"Frontal faces beat turned-away faces (d +1.70, percentile 100), and heads filling more than a third of the photo beat small heads (d +1.33, percentile 98). Fur color made no difference (d 0.00, percentile 40), and full-body versus head-only views gave only a modest, below-threshold difference (d +0.58, percentile 85).\",\n \"missing_data\": \"Close-up frontal faces of non-dog animals (cats, bears, foxes) or of people, to see whether the unit is specific to dogs or responds to any frontal mammal face.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face looking toward the camera, with both eyes and the nose visible, regardless of fur color.\",\n \"evidence\": \"Frontal faces beat turned-away faces (d +1.70, percentile 100), and heads filling more than a third of the photo beat small heads (d +1.33, percentile 98). Fur color made no difference (d 0.00, percentile 40), and full-body versus head-only views gave only a modest, below-threshold difference (d +0.58, percentile 85).\",\n \"missing_data\": \"Close-up frontal faces of non-dog animals (cats, bears, foxes) or of people, to see whether the unit is specific to dogs or responds to any frontal mammal face.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit is active on dog-related photo classes (light fluffy small dogs, wolf, kuvasz, Appenzeller). Within those classes, none of the proposed visual features explains its activity: face size, frontal pose, fur color and eye/nose contrast all fail.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is active on dog-related photo classes (light fluffy small dogs, wolf, kuvasz, Appenzeller). Within those classes, none of the proposed visual features explains its activity: face size, frontal pose, fur color and eye/nose contrast all fail.",
+   "evidence": "All four within-class predictions failed, with d between -0.09 and +0.09 and percentiles of 30-80, below the 95 cutoff. Face size and eye/nose contrast even went slightly in the opposite direction, so the 'close-up, high-contrast, frontal face' account is not supported beyond class identity.",
+   "missing_data": "Activity across classes (which dog breeds or other classes drive it most) and tests of other within-class features such as coat texture, background or body parts. These would show whether it is a breed/class detector or tracks some feature not yet tested.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "802061f11637dab017421f94c0755a449ef91f1ac2b62558091036938837319f",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is active on dog-related photo classes (light fluffy small dogs, wolf, kuvasz, Appenzeller). Within those classes, none of the proposed visual features explains its activity: face size, frontal pose, fur color and eye/nose contrast all fail.\",\n \"evidence\": \"All four within-class predictions failed, with d between -0.09 and +0.09 and percentiles of 30-80, below the 95 cutoff. Face size and eye/nose contrast even went slightly in the opposite direction, so the 'close-up, high-contrast, frontal face' account is not supported beyond class identity.\",\n \"missing_data\": \"Activity across classes (which dog breeds or other classes drive it most) and tests of other within-class features such as coat texture, background or body parts. These would show whether it is a breed/class detector or tracks some feature not yet tested.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is active on dog-related photo classes (light fluffy small dogs, wolf, kuvasz, Appenzeller). Within those classes, none of the proposed visual features explains its activity: face size, frontal pose, fur color and eye/nose contrast all fail.\",\n \"evidence\": \"All four within-class predictions failed, with d between -0.09 and +0.09 and percentiles of 30-80, below the 95 cutoff. Face size and eye/nose contrast even went slightly in the opposite direction, so the 'close-up, high-contrast, frontal face' account is not supported beyond class identity.\",\n \"missing_data\": \"Activity across classes (which dog breeds or other classes drive it most) and tests of other within-class features such as coat texture, background or body parts. These would show whether it is a breed/class detector or tracks some feature not yet tested.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond to dogs at the level of breed or class, mainly fluffy, long-coated dogs such as Maltese, kuvasz, Leonberg and Dandie Dinmont, with weaker responses to related canids such as wolves. How the dog is framed, how it is posed and its face color do not appear to matter.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond to dogs at the level of breed or class, mainly fluffy, long-coated dogs such as Maltese, kuvasz, Leonberg and Dandie Dinmont, with weaker responses to related canids such as wolves. How the dog is framed, how it is posed and its face color do not appear to matter.",
+   "evidence": "All four within-class predictions (head size, frontal face, fur color, full-body versus close-up) failed, with d near zero (-0.25 to +0.01) and percentiles of 32 to 50. So the face-crop story does not explain variation once class is removed, and the selectivity seen in the examples likely comes from which dog classes are in the top 24.",
+   "missing_data": "The list of the 24 top classes with their mean activations, and the activation on non-dog classes, would show whether the unit is a general dog detector or specific to a fur texture or breed group.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0aa172d4c501717f45bd4e1e96ed19fc7690b8e6fff79a850aebc332dd33778e",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to dogs at the level of breed or class, mainly fluffy, long-coated dogs such as Maltese, kuvasz, Leonberg and Dandie Dinmont, with weaker responses to related canids such as wolves. How the dog is framed, how it is posed and its face color do not appear to matter.\",\n \"evidence\": \"All four within-class predictions (head size, frontal face, fur color, full-body versus close-up) failed, with d near zero (-0.25 to +0.01) and percentiles of 32 to 50. So the face-crop story does not explain variation once class is removed, and the selectivity seen in the examples likely comes from which dog classes are in the top 24.\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, and the activation on non-dog classes, would show whether the unit is a general dog detector or specific to a fur texture or breed group.\",\n \"confidence\": 0.4}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit seems to respond to dogs at the level of breed or class, mainly fluffy, long-coated dogs such as Maltese, kuvasz, Leonberg and Dandie Dinmont, with weaker responses to related canids such as wolves. How the dog is framed, how it is posed and its face color do not appear to matter.\",\n \"evidence\": \"All four within-class predictions (head size, frontal face, fur color, full-body versus close-up) failed, with d near zero (-0.25 to +0.01) and percentiles of 32 to 50. So the face-crop story does not explain variation once class is removed, and the selectivity seen in the examples likely comes from which dog classes are in the top 24.\",\n \"missing_data\": \"The list of the 24 top classes with their mean activations, and the activation on non-dog classes, would show whether the unit is a general dog detector or specific to a fur texture or breed group.\",\n \"confidence\": 0.4}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one",
+  "explanation": "The unit most likely responds to certain dog breeds at the class level, plausibly small light-coated long-haired breeds such as Maltese, Westies and Dandie Dinmonts. Within a breed, it does not track the dog filling the frame, facing the camera, a pale coat or fluffy fur.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit most likely responds to certain dog breeds at the class level, plausibly small light-coated long-haired breeds such as Maltese, Westies and Dandie Dinmonts. Within a breed, it does not track the dog filling the frame, facing the camera, a pale coat or fluffy fur.",
+   "evidence": "All four within-class predictions failed, and two leaned the opposite way: the unit was somewhat more active for dogs small in a wide scene (d -0.32) and for dark coats (d -0.24). Face orientation and fur texture showed no effect (d -0.08 and +0.03), so only the class-level breed selectivity from the original observations still stands, and these tests did not check it.",
+   "missing_data": "Activity compared across classes (white fluffy breeds versus other dogs versus non-dog classes) without removing class differences, plus the 24 top-class list, to test whether the breed preference is real.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0cbcb89dc59858288bdb7c3066a3e1cb6bca38267ff2dff6243bda57734aa1ee",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to certain dog breeds at the class level, plausibly small light-coated long-haired breeds such as Maltese, Westies and Dandie Dinmonts. Within a breed, it does not track the dog filling the frame, facing the camera, a pale coat or fluffy fur.\",\n \"evidence\": \"All four within-class predictions failed, and two leaned the opposite way: the unit was somewhat more active for dogs small in a wide scene (d -0.32) and for dark coats (d -0.24). Face orientation and fur texture showed no effect (d -0.08 and +0.03), so only the class-level breed selectivity from the original observations still stands, and these tests did not check it.\",\n \"missing_data\": \"Activity compared across classes (white fluffy breeds versus other dogs versus non-dog classes) without removing class differences, plus the 24 top-class list, to test whether the breed preference is real.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to certain dog breeds at the class level, plausibly small light-coated long-haired breeds such as Maltese, Westies and Dandie Dinmonts. Within a breed, it does not track the dog filling the frame, facing the camera, a pale coat or fluffy fur.\",\n \"evidence\": \"All four within-class predictions failed, and two leaned the opposite way: the unit was somewhat more active for dogs small in a wide scene (d -0.32) and for dark coats (d -0.24). Face orientation and fur texture showed no effect (d -0.08 and +0.03), so only the class-level breed selectivity from the original observations still stands, and these tests did not check it.\",\n \"missing_data\": \"Activity compared across classes (white fluffy breeds versus other dogs versus non-dog classes) without removing class differences, plus the 24 top-class list, to test whether the breed preference is real.\",\n \"confidence\": 0.35}\n```",
+  "valid": true
+ }
+}

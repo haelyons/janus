@@ -1,0 +1,122 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo.",
+   "evidence": "Only the completeness prediction held strongly (d +0.93, 99th percentile); viewing angle, people and body type (enclosed vs open) showed weak, non-selective effects (64th–85th percentile).",
+   "missing_data": "Activity on complete non-road vehicles or other whole compact objects, to tell whether it codes for whole vehicles specifically or whole framed objects generally.",
+   "confidence": 0.6
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "78835f30126da74f3503c4e0b0e4fbb878ed3df0707b43c3071c34d4f0a90ddf",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo.\",\n \"evidence\": \"Only the completeness prediction held strongly (d +0.93, 99th percentile); viewing angle, people and body type (enclosed vs open) showed weak, non-selective effects (64th–85th percentile).\",\n \"missing_data\": \"Activity on complete non-road vehicles or other whole compact objects, to tell whether it codes for whole vehicles specifically or whole framed objects generally.\",\n \"confidence\": 0.6}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single complete road vehicle (car, pickup, truck, fire engine) shown whole, wheels to roof, as the clear main subject of the photo.\",\n \"evidence\": \"Only the completeness prediction held strongly (d +0.93, 99th percentile); viewing angle, people and body type (enclosed vs open) showed weak, non-selective effects (64th–85th percentile).\",\n \"missing_data\": \"Activity on complete non-road vehicles or other whole compact objects, to tell whether it codes for whole vehicles specifically or whole framed objects generally.\",\n \"confidence\": 0.6}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models.",
+   "evidence": "Whole side or three-quarter view beat partial, interior or crowded views (d +0.46, 98th percentile), and real enclosed-cab vehicles beat toys or models (d +0.75, 95th percentile). The claimed preference for red did not hold (59th percentile), and prominent people only weakly reduced activity (91st percentile, just short of the 95 threshold).",
+   "missing_data": "More photos of toys, tractors and convertibles (only 7 photos in the least-active group for prediction 4), and a direct comparison of boxy-cab vehicles such as fire engines and locomotives against ordinary cars.",
+   "confidence": 0.65
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "856fac165e0bfce81984f7775c163ddf844d8f894fc786889c8fe2cb8d19000c",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models.\",\n \"evidence\": \"Whole side or three-quarter view beat partial, interior or crowded views (d +0.46, 98th percentile), and real enclosed-cab vehicles beat toys or models (d +0.75, 95th percentile). The claimed preference for red did not hold (59th percentile), and prominent people only weakly reduced activity (91st percentile, just short of the 95 threshold).\",\n \"missing_data\": \"More photos of toys, tractors and convertibles (only 7 photos in the least-active group for prediction 4), and a direct comparison of boxy-cab vehicles such as fire engines and locomotives against ordinary cars.\",\n \"confidence\": 0.65}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a single real, whole road vehicle with an enclosed cab (car, pickup, van, truck), best when shown in side or three-quarter view. It responds less to partial views, interiors, crowded scenes, and toys or models.\",\n \"evidence\": \"Whole side or three-quarter view beat partial, interior or crowded views (d +0.46, 98th percentile), and real enclosed-cab vehicles beat toys or models (d +0.75, 95th percentile). The claimed preference for red did not hold (59th percentile), and prominent people only weakly reduced activity (91st percentile, just short of the 95 threshold).\",\n \"missing_data\": \"More photos of toys, tractors and convertibles (only 7 photos in the least-active group for prediction 4), and a direct comparison of boxy-cab vehicles such as fire engines and locomotives against ordinary cars.\",\n \"confidence\": 0.65}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one_plus_related",
+  "explanation": "The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show.",
+   "evidence": "All four predictions pointed the right way (d +0.16 to +0.43), but none reached the 95th percentile, and the strongest (no prominent people, 92nd percentile) rests on only 9 contrast photos. So within-class differences add little; the vehicle theme comes mainly from which classes drive the unit, as described by the explainer.",
+   "missing_data": "The actual list of the 24 top classes with their mean activations, plus activations on non-vehicle classes. These would show whether the unit is selective for road vehicles over tractors, toys and other machines.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0ee7d184bdec293273b7b1e76b0ad30da0b0d033fd3b3a72b9cd5bba514a116f",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show.\",\n \"evidence\": \"All four predictions pointed the right way (d +0.16 to +0.43), but none reached the 95th percentile, and the strongest (no prominent people, 92nd percentile) rests on only 9 contrast photos. So within-class differences add little; the vehicle theme comes mainly from which classes drive the unit, as described by the explainer.\",\n \"missing_data\": \"The actual list of the 24 top classes with their mean activations, plus activations on non-vehicle classes. These would show whether the unit is selective for road vehicles over tractors, toys and other machines.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit most likely responds to motor vehicles in general (cars, trucks, vans, fire engines, buses), with related machines like tractors and toy vehicles also in its top classes. The specific refinements in the explanation (side view, real road vehicle, red, unobstructed by people) are not supported beyond what most units show.\",\n \"evidence\": \"All four predictions pointed the right way (d +0.16 to +0.43), but none reached the 95th percentile, and the strongest (no prominent people, 92nd percentile) rests on only 9 contrast photos. So within-class differences add little; the vehicle theme comes mainly from which classes drive the unit, as described by the explainer.\",\n \"missing_data\": \"The actual list of the 24 top classes with their mean activations, plus activations on non-vehicle classes. These would show whether the unit is selective for road vehicles over tractors, toys and other machines.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses.",
+   "evidence": "Real enclosed-cab vehicles beat toys/models (d +0.65, 90th percentile) and vehicle-without-prominent-people beat people-prominent scenes (d +0.46, 94th percentile); whole side/three-quarter view beat partial/crowded views only modestly (d +0.26, 86th). None of the four predictions reached the 95th percentile, and redness showed no effect (d +0.10, 62nd), so the color and viewpoint parts of the explanation are unsupported.",
+   "missing_data": "More photos of toys, people-dominated scenes and non-vehicle classes (only 5–8 photos in those groups), plus a comparison within vehicle photos of real cars against tractors and convertibles, to tell whether the unit is selective among vehicles or responds to vehicles in general.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2cbde12e0bd1abde9a51b3ae9a6f531ac2d2b61cbfd48dd3d91364ded5531d5c",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses.\",\n \"evidence\": \"Real enclosed-cab vehicles beat toys/models (d +0.65, 90th percentile) and vehicle-without-prominent-people beat people-prominent scenes (d +0.46, 94th percentile); whole side/three-quarter view beat partial/crowded views only modestly (d +0.26, 86th). None of the four predictions reached the 95th percentile, and redness showed no effect (d +0.10, 62nd), so the color and viewpoint parts of the explanation are unsupported.\",\n \"missing_data\": \"More photos of toys, people-dominated scenes and non-vehicle classes (only 5–8 photos in those groups), plus a comparison within vehicle photos of real cars against tractors and convertibles, to tell whether the unit is selective among vehicles or responds to vehicles in general.\",\n \"confidence\": 0.45}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to real, full-size road vehicles with an enclosed cab (cars, pickups, vans, trucks, including boxy ones like fire engines), most strongly when one whole vehicle is clearly shown with few prominent people. Toys, models and drawings, crowded or partial views, and people-dominated scenes give weaker responses.\",\n \"evidence\": \"Real enclosed-cab vehicles beat toys/models (d +0.65, 90th percentile) and vehicle-without-prominent-people beat people-prominent scenes (d +0.46, 94th percentile); whole side/three-quarter view beat partial/crowded views only modestly (d +0.26, 86th). None of the four predictions reached the 95th percentile, and redness showed no effect (d +0.10, 62nd), so the color and viewpoint parts of the explanation are unsupported.\",\n \"missing_data\": \"More photos of toys, people-dominated scenes and non-vehicle classes (only 5–8 photos in those groups), plus a comparison within vehicle photos of real cars against tractors and convertibles, to tell whether the unit is selective among vehicles or responds to vehicles in general.\",\n \"confidence\": 0.45}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear.",
+   "evidence": "All four predictions failed (percentiles 52, 86, 78, 62). The strongest, a complete single vehicle versus no full vehicle (d +0.37), still fell short, and several contrasts rested on small groups (5–12 photos).",
+   "missing_data": "Tests of other within-class features (e.g., color such as red, specific textures or parts like grilles/wheels, background type) and of activity on non-vehicle classes with similar boxy shapes, with larger contrast groups.",
+   "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dc3a22f667bd128627001d1dfa6c65c482b70cb6d0192fa59dd7b532334a0618",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear.\",\n \"evidence\": \"All four predictions failed (percentiles 52, 86, 78, 62). The strongest, a complete single vehicle versus no full vehicle (d +0.37), still fell short, and several contrasts rested on small groups (5–12 photos).\",\n \"missing_data\": \"Tests of other within-class features (e.g., color such as red, specific textures or parts like grilles/wheels, background type) and of activity on non-vehicle classes with similar boxy shapes, with larger contrast groups.\",\n \"confidence\": 0.55}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on road-vehicle photo classes (cars, pickups, trucks, fire engines), but within those classes none of the proposed visual properties (viewing angle, completeness, people, enclosed body) explains its variation, so what drives it beyond class membership is unclear.\",\n \"evidence\": \"All four predictions failed (percentiles 52, 86, 78, 62). The strongest, a complete single vehicle versus no full vehicle (d +0.37), still fell short, and several contrasts rested on small groups (5–12 photos).\",\n \"missing_data\": \"Tests of other within-class features (e.g., color such as red, specific textures or parts like grilles/wheels, background type) and of activity on non-vehicle classes with similar boxy shapes, with larger contrast groups.\",\n \"confidence\": 0.55}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "one",
+  "explanation": "The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color.",
+   "evidence": "The two predictions about real road vehicle versus toy or tractor (d +0.33, 93rd percentile) and about people covering the vehicle (d +0.38, 95th percentile) came close to holding. The predictions about side or three-quarter view (58th percentile) and red color (85th percentile) clearly failed, so the finer details of the explanation are not supported.",
+   "missing_data": "Activity on photos outside the top 24 classes, including non-vehicle classes, and a larger sample of toy, tractor and occluded vehicles, would show whether this is a general road-vehicle detector.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "77ccbc9acfeb2ec9906a9c02594475d5a3407f430d8e0919aa23cf15715134e9",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color.\",\n \"evidence\": \"The two predictions about real road vehicle versus toy or tractor (d +0.33, 93rd percentile) and about people covering the vehicle (d +0.38, 95th percentile) came close to holding. The predictions about side or three-quarter view (58th percentile) and red color (85th percentile) clearly failed, so the finer details of the explanation are not supported.\",\n \"missing_data\": \"Activity on photos outside the top 24 classes, including non-vehicle classes, and a larger sample of toy, tractor and occluded vehicles, would show whether this is a general road-vehicle detector.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to real full-size road vehicles (cars, trucks, vans, emergency vehicles) seen clearly and not hidden by people. It does not appear to depend on viewing angle or body color.\",\n \"evidence\": \"The two predictions about real road vehicle versus toy or tractor (d +0.33, 93rd percentile) and about people covering the vehicle (d +0.38, 95th percentile) came close to holding. The predictions about side or three-quarter view (58th percentile) and red color (85th percentile) clearly failed, so the finer details of the explanation are not supported.\",\n \"missing_data\": \"Activity on photos outside the top 24 classes, including non-vehicle classes, and a larger sample of toy, tractor and occluded vehicles, would show whether this is a general road-vehicle detector.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ }
+}

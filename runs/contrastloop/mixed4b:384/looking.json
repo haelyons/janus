@@ -1,0 +1,171 @@
+{
+ "s2": {
+  "key": "s2",
+  "explanation": "The unit responds to a large, close-up, frontal view of a dog's face, with the dog looking toward the camera and both eyes and the nose visible, as in head-and-shoulders portraits. Its activity drops sharply when the dog is small in the frame, shown full-body, seen in profile or looking away, or running or jumping. This is clearest in the beagle and Pembroke classes. Similar units still respond to side-on or full-body dogs, such as the dingo, the standing beagle and the corgi puppy looking away. This unit does not, so it is particular to frontal face close-ups.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's head take up?",
+    "answers": [
+     "head fills a large part (close-up portrait)",
+     "head is moderate, upper body visible",
+     "head is small, whole body visible",
+     "no dog head visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's face turned toward the camera so both eyes are clearly visible?",
+    "answers": [
+     "frontal, looking at camera",
+     "partly turned or looking away",
+     "profile or face hidden",
+     "no dog"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog running, jumping or otherwise in motion?",
+    "answers": [
+     "still (sitting, lying or standing calmly)",
+     "in motion",
+     "no dog"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Are the dog's legs and paws all visible in the photo?",
+    "answers": [
+     "no, mostly head and chest",
+     "partly",
+     "yes, the full body with legs",
+     "no dog"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d0df44fa89942ed4a796530d1e6391f49769cc49a479f8f0c10f8e8731ff316d",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a large, close-up, frontal view of a dog's face, with the dog looking toward the camera and both eyes and the nose visible, as in head-and-shoulders portraits. Its activity drops sharply when the dog is small in the frame, shown full-body, seen in profile or looking away, or running or jumping. This is clearest in the beagle and Pembroke classes. Similar units still respond to side-on or full-body dogs, such as the dingo, the standing beagle and the corgi puppy looking away. This unit does not, so it is particular to frontal face close-ups.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"head fills a large part (close-up portrait)\", \"head is moderate, upper body visible\", \"head is small, whole body visible\", \"no dog head visible\"], \"most_active\": \"head fills a large part (close-up portrait)\", \"least_active\": \"head is small, whole body visible\"}, {\"question\": \"Is the dog's face turned toward the camera so both eyes are clearly visible?\", \"answers\": [\"frontal, looking at camera\", \"partly turned or looking away\", \"profile or face hidden\", \"no dog\"], \"most_active\": \"frontal, looking at camera\", \"least_active\": \"profile or face hidden\"}, {\"question\": \"Is the dog running, jumping or otherwise in motion?\", \"answers\": [\"still (sitting, lying or standing calmly)\", \"in motion\", \"no dog\"], \"most_active\": \"still (sitting, lying or standing calmly)\", \"least_active\": \"in motion\"}, {\"question\": \"Are the dog's legs and paws all visible in the photo?\", \"answers\": [\"no, mostly head and chest\", \"partly\", \"yes, the full body with legs\", \"no dog\"], \"most_active\": \"no, mostly head and chest\", \"least_active\": \"yes, the full body with legs\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a large, close-up, frontal view of a dog's face, with the dog looking toward the camera and both eyes and the nose visible, as in head-and-shoulders portraits. Its activity drops sharply when the dog is small in the frame, shown full-body, seen in profile or looking away, or running or jumping. This is clearest in the beagle and Pembroke classes. Similar units still respond to side-on or full-body dogs, such as the dingo, the standing beagle and the corgi puppy looking away. This unit does not, so it is particular to frontal face close-ups.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"head fills a large part (close-up portrait)\", \"head is moderate, upper body visible\", \"head is small, whole body visible\", \"no dog head visible\"], \"most_active\": \"head fills a large part (close-up portrait)\", \"least_active\": \"head is small, whole body visible\"}, {\"question\": \"Is the dog's face turned toward the camera so both eyes are clearly visible?\", \"answers\": [\"frontal, looking at camera\", \"partly turned or looking away\", \"profile or face hidden\", \"no dog\"], \"most_active\": \"frontal, looking at camera\", \"least_active\": \"profile or face hidden\"}, {\"question\": \"Is the dog running, jumping or otherwise in motion?\", \"answers\": [\"still (sitting, lying or standing calmly)\", \"in motion\", \"no dog\"], \"most_active\": \"still (sitting, lying or standing calmly)\", \"least_active\": \"in motion\"}, {\"question\": \"Are the dog's legs and paws all visible in the photo?\", \"answers\": [\"no, mostly head and chest\", \"partly\", \"yes, the full body with legs\", \"no dog\"], \"most_active\": \"no, mostly head and chest\", \"least_active\": \"yes, the full body with legs\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "The unit responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and the dog looking toward the camera, like a portrait or headshot. Activity is weak when the dog is small in the frame, seen whole-body, in profile, or moving. The similar units respond more to full-body shots, such as the beagle standing on grass, the dingo lying down and the corgi puppy in profile.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's head take up?",
+    "answers": [
+     "More than about a quarter of the photo",
+     "Between about a tenth and a quarter",
+     "Less than about a tenth",
+     "No dog head visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Which way is the main dog's face turned relative to the camera?",
+    "answers": [
+     "Facing the camera head-on with both eyes visible",
+     "Three-quarter or profile view",
+     "Face turned away or not visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How much of the main dog's body is visible in the photo?",
+    "answers": [
+     "Mostly head and chest only",
+     "Whole body including legs visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main dog doing?",
+    "answers": [
+     "Sitting, lying or posing still",
+     "Standing, walking, running or jumping",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d0df44fa89942ed4a796530d1e6391f49769cc49a479f8f0c10f8e8731ff316d",
+  "texts": [
+   "{\"explanation\": \"The unit responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and the dog looking toward the camera, like a portrait or headshot. Activity is weak when the dog is small in the frame, seen whole-body, in profile, or moving. The similar units respond more to full-body shots, such as the beagle standing on grass, the dingo lying down and the corgi puppy in profile.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"More than about a quarter of the photo\", \"Between about a tenth and a quarter\", \"Less than about a tenth\", \"No dog head visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"Less than about a tenth\"}, {\"question\": \"Which way is the main dog's face turned relative to the camera?\", \"answers\": [\"Facing the camera head-on with both eyes visible\", \"Three-quarter or profile view\", \"Face turned away or not visible\"], \"most_active\": \"Facing the camera head-on with both eyes visible\", \"least_active\": \"Face turned away or not visible\"}, {\"question\": \"How much of the main dog's body is visible in the photo?\", \"answers\": [\"Mostly head and chest only\", \"Whole body including legs visible\", \"No dog visible\"], \"most_active\": \"Mostly head and chest only\", \"least_active\": \"Whole body including legs visible\"}, {\"question\": \"What is the main dog doing?\", \"answers\": [\"Sitting, lying or posing still\", \"Standing, walking, running or jumping\", \"No dog visible\"], \"most_active\": \"Sitting, lying or posing still\", \"least_active\": \"Standing, walking, running or jumping\"}]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and the dog looking toward the camera, like a portrait or headshot. Activity is weak when the dog is small in the frame, seen whole-body, in profile, or moving. The similar units respond more to full-body shots, such as the beagle standing on grass, the dingo lying down and the corgi puppy in profile.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"More than about a quarter of the photo\", \"Between about a tenth and a quarter\", \"Less than about a tenth\", \"No dog head visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"Less than about a tenth\"}, {\"question\": \"Which way is the main dog's face turned relative to the camera?\", \"answers\": [\"Facing the camera head-on with both eyes visible\", \"Three-quarter or profile view\", \"Face turned away or not visible\"], \"most_active\": \"Facing the camera head-on with both eyes visible\", \"least_active\": \"Face turned away or not visible\"}, {\"question\": \"How much of the main dog's body is visible in the photo?\", \"answers\": [\"Mostly head and chest only\", \"Whole body including legs visible\", \"No dog visible\"], \"most_active\": \"Mostly head and chest only\", \"least_active\": \"Whole body including legs visible\"}, {\"question\": \"What is the main dog doing?\", \"answers\": [\"Sitting, lying or posing still\", \"Standing, walking, running or jumping\", \"No dog visible\"], \"most_active\": \"Sitting, lying or posing still\", \"least_active\": \"Standing, walking, running or jumping\"}]}",
+  "valid": true
+ },
+ "s1": {
+  "key": "s1",
+  "explanation": "Responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and looking toward the camera (portrait-style head shots, any breed). Activity drops sharply when the dog is small in the frame, seen whole-body, in profile or looking away, or running or jumping. The similar units, by contrast, stay active for full-body or distant dogs such as the dingo, the standing beagle and the corgi puppy.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the (largest) dog's head take up?",
+    "answers": [
+     "More than about a quarter of the photo",
+     "Between a tenth and a quarter",
+     "Less than a tenth",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Which way is the dog's face pointed relative to the camera?",
+    "answers": [
+     "Straight at the camera, both eyes visible",
+     "Three-quarter view",
+     "Profile, looking away or face hidden",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How much of the dog's body is visible in the photo?",
+    "answers": [
+     "Mostly head and chest only",
+     "Whole body visible",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "Is the dog running, jumping or otherwise in motion?",
+    "answers": [
+     "Still (sitting, lying or posing)",
+     "Walking or standing in a stride",
+     "Running, jumping or playing",
+     "No dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d0df44fa89942ed4a796530d1e6391f49769cc49a479f8f0c10f8e8731ff316d",
+  "texts": [
+   "{\"explanation\": \"Responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and looking toward the camera (portrait-style head shots, any breed). Activity drops sharply when the dog is small in the frame, seen whole-body, in profile or looking away, or running or jumping. The similar units, by contrast, stay active for full-body or distant dogs such as the dingo, the standing beagle and the corgi puppy.\", \"predictions\": [{\"question\": \"How much of the photo does the (largest) dog's head take up?\", \"answers\": [\"More than about a quarter of the photo\", \"Between a tenth and a quarter\", \"Less than a tenth\", \"No dog visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"Less than a tenth\"}, {\"question\": \"Which way is the dog's face pointed relative to the camera?\", \"answers\": [\"Straight at the camera, both eyes visible\", \"Three-quarter view\", \"Profile, looking away or face hidden\", \"No dog visible\"], \"most_active\": \"Straight at the camera, both eyes visible\", \"least_active\": \"Profile, looking away or face hidden\"}, {\"question\": \"How much of the dog's body is visible in the photo?\", \"answers\": [\"Mostly head and chest only\", \"Whole body visible\", \"No dog visible\"], \"most_active\": \"Mostly head and chest only\", \"least_active\": \"Whole body visible\"}, {\"question\": \"Is the dog running, jumping or otherwise in motion?\", \"answers\": [\"Still (sitting, lying or posing)\", \"Walking or standing in a stride\", \"Running, jumping or playing\", \"No dog visible\"], \"most_active\": \"Still (sitting, lying or posing)\", \"least_active\": \"Running, jumping or playing\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a close-up, frontal dog face that fills much of the frame, with both eyes and the muzzle clearly visible and looking toward the camera (portrait-style head shots, any breed). Activity drops sharply when the dog is small in the frame, seen whole-body, in profile or looking away, or running or jumping. The similar units, by contrast, stay active for full-body or distant dogs such as the dingo, the standing beagle and the corgi puppy.\", \"predictions\": [{\"question\": \"How much of the photo does the (largest) dog's head take up?\", \"answers\": [\"More than about a quarter of the photo\", \"Between a tenth and a quarter\", \"Less than a tenth\", \"No dog visible\"], \"most_active\": \"More than about a quarter of the photo\", \"least_active\": \"Less than a tenth\"}, {\"question\": \"Which way is the dog's face pointed relative to the camera?\", \"answers\": [\"Straight at the camera, both eyes visible\", \"Three-quarter view\", \"Profile, looking away or face hidden\", \"No dog visible\"], \"most_active\": \"Straight at the camera, both eyes visible\", \"least_active\": \"Profile, looking away or face hidden\"}, {\"question\": \"How much of the dog's body is visible in the photo?\", \"answers\": [\"Mostly head and chest only\", \"Whole body visible\", \"No dog visible\"], \"most_active\": \"Mostly head and chest only\", \"least_active\": \"Whole body visible\"}, {\"question\": \"Is the dog running, jumping or otherwise in motion?\", \"answers\": [\"Still (sitting, lying or posing)\", \"Walking or standing in a stride\", \"Running, jumping or playing\", \"No dog visible\"], \"most_active\": \"Still (sitting, lying or posing)\", \"least_active\": \"Running, jumping or playing\"}]}",
+  "valid": true
+ }
+}
