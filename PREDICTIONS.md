@@ -525,3 +525,12 @@ the one its least-active answer names, if that names exactly one; else none. Pre
    fewer than real.
 7. 443 and 429: mean judge of real readings at least 2.5 (round 26B: 1.33 each).
 8. 4b:237 and 373: mean judge of real readings at least 4.
+
+# Round 27, post hoc A: the predictions scored for each unit's peers (no new calls)
+(sealed 2026-10-22, after round 27's results, before this analysis exists)
+
+The same d (most minus least active answer, within class, on the same checked photos and real answers) for each of
+the unit's 3 peers, with each peer's percentile in the layer. A held prediction is shared when at least one peer is
+also at the 95th percentile or above.
+A1. For 443 and 429 together, at least half of the held predictions are shared.
+A2. Over the 5 controls, fewer than half of the held predictions are shared.
