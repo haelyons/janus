@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals.",
+   "evidence": "Medium-size whole animal versus head close-up held (d +0.65, 96th percentile), and alert versus asleep held more strongly (d +0.90, 98th percentile). Full body with legs visible pointed the same way but fell just short (d +0.45, 92nd percentile), and facing direction could not be checked because only 4 photos showed the face turned away.",
+   "missing_data": "More photos of animals facing away or in profile, to test whether facing the camera matters, and photos of whole animals at medium size outside the top 24 classes, to see whether the framing preference holds beyond dog and fox classes.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "f29b20ce94f3edf5d39bea1ef1f3cc2c18966ccda1f4d3f1ba24d13d7ac785f2",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals.\",\n \"evidence\": \"Medium-size whole animal versus head close-up held (d +0.65, 96th percentile), and alert versus asleep held more strongly (d +0.90, 98th percentile). Full body with legs visible pointed the same way but fell just short (d +0.45, 92nd percentile), and facing direction could not be checked because only 4 photos showed the face turned away.\",\n \"missing_data\": \"More photos of animals facing away or in profile, to test whether facing the camera matters, and photos of whole animals at medium size outside the top 24 classes, to see whether the framing preference holds beyond dog and fox classes.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals.\",\n \"evidence\": \"Medium-size whole animal versus head close-up held (d +0.65, 96th percentile), and alert versus asleep held more strongly (d +0.90, 98th percentile). Full body with legs visible pointed the same way but fell just short (d +0.45, 92nd percentile), and facing direction could not be checked because only 4 photos showed the face turned away.\",\n \"missing_data\": \"More photos of animals facing away or in profile, to test whether facing the camera matters, and photos of whole animals at medium size outside the top 24 classes, to see whether the framing preference holds beyond dog and fox classes.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep.",
+   "evidence": "All four predictions held after removing class differences: framing (d +0.60, 95th percentile), facing the camera (d +0.93, 97th), upright posture versus head only (d +0.79, 97th) and full body with open mouth versus head only (d +1.13, 99th). Framing held only at the threshold, but the posture and full-body contrasts against head-only photos are strong and say the same thing.",
+   "missing_data": "Activity on non-canid animals (cats, other mammals) framed the same way, to tell whether the unit is about canids or about any compact, whole, camera-facing animal figure; also a direct comparison of open versus closed mouth with the body in view.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "92c488fe055ab4051acf47cbc00ce047cf47042211157f14ccb2da6b59970a72",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep.\",\n \"evidence\": \"All four predictions held after removing class differences: framing (d +0.60, 95th percentile), facing the camera (d +0.93, 97th), upright posture versus head only (d +0.79, 97th) and full body with open mouth versus head only (d +1.13, 99th). Framing held only at the threshold, but the posture and full-body contrasts against head-only photos are strong and say the same thing.\",\n \"missing_data\": \"Activity on non-canid animals (cats, other mammals) framed the same way, to tell whether the unit is about canids or about any compact, whole, camera-facing animal figure; also a direct comparison of open versus closed mouth with the body in view.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep.\",\n \"evidence\": \"All four predictions held after removing class differences: framing (d +0.60, 95th percentile), facing the camera (d +0.93, 97th), upright posture versus head only (d +0.79, 97th) and full body with open mouth versus head only (d +1.13, 99th). Framing held only at the threshold, but the posture and full-body contrasts against head-only photos are strong and say the same thing.\",\n \"missing_data\": \"Activity on non-canid animals (cats, other mammals) framed the same way, to tell whether the unit is about canids or about any compact, whole, camera-facing animal figure; also a direct comparison of open versus closed mouth with the body in view.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one_plus_related",
+  "explanation": "The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness.",
+   "evidence": "Facing the camera with eyes open (d +0.96, percentile 97) and upright versus curled/asleep posture (d +1.35, percentile 97, though only 6 asleep photos) both held. Whole-body versus head close-up framing (d +0.51) and legs visible (d +0.48) both fell just short at percentile 92.",
+   "missing_data": "More photos of curled-up or sleeping animals, and photos that separate facing direction from framing (for example frontal head close-ups compared with frontal whole-body shots), to tell whether the gaze effect is independent of the body-size effect.",
+   "confidence": 0.62
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "42e0b9f3dbb843abf9781a59923cf2331bf29510c30de430b779a825d9f9a20e",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness.\",\n \"evidence\": \"Facing the camera with eyes open (d +0.96, percentile 97) and upright versus curled/asleep posture (d +1.35, percentile 97, though only 6 asleep photos) both held. Whole-body versus head close-up framing (d +0.51) and legs visible (d +0.48) both fell just short at percentile 92.\",\n \"missing_data\": \"More photos of curled-up or sleeping animals, and photos that separate facing direction from framing (for example frontal head close-ups compared with frontal whole-body shots), to tell whether the gaze effect is independent of the body-size effect.\",\n \"confidence\": 0.62}"
+  ],
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness.\",\n \"evidence\": \"Facing the camera with eyes open (d +0.96, percentile 97) and upright versus curled/asleep posture (d +1.35, percentile 97, though only 6 asleep photos) both held. Whole-body versus head close-up framing (d +0.51) and legs visible (d +0.48) both fell just short at percentile 92.\",\n \"missing_data\": \"More photos of curled-up or sleeping animals, and photos that separate facing direction from framing (for example frontal head close-ups compared with frontal whole-body shots), to tell whether the gaze effect is independent of the body-size effect.\",\n \"confidence\": 0.62}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones.",
+   "evidence": "All four predictions failed on 124 new photos. Framing (d -0.14, percentile 22) and head-only versus full body (d -0.01, percentile 33) even trended against the claimed preference for whole-body views over head close-ups, and face toward camera was only weakly positive (d +0.17, percentile 82).",
+   "missing_data": "Activity on photos outside the top 24 classes, to test whether the unit selects for canids at all, plus new questions on other within-class features such as fur color or texture, background, or lighting.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0524442660a0782c858ad01ff9db22c573240549cfddb6e40cb0c3cad0d6c680",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones.\",\n \"evidence\": \"All four predictions failed on 124 new photos. Framing (d -0.14, percentile 22) and head-only versus full body (d -0.01, percentile 33) even trended against the claimed preference for whole-body views over head close-ups, and face toward camera was only weakly positive (d +0.17, percentile 82).\",\n \"missing_data\": \"Activity on photos outside the top 24 classes, to test whether the unit selects for canids at all, plus new questions on other within-class features such as fur color or texture, background, or lighting.\",\n \"confidence\": 0.35}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones.\",\n \"evidence\": \"All four predictions failed on 124 new photos. Framing (d -0.14, percentile 22) and head-only versus full body (d -0.01, percentile 33) even trended against the claimed preference for whole-body views over head close-ups, and face toward camera was only weakly positive (d +0.17, percentile 82).\",\n \"missing_data\": \"Activity on photos outside the top 24 classes, to test whether the unit selects for canids at all, plus new questions on other within-class features such as fur color or texture, background, or lighting.\",\n \"confidence\": 0.35}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity.",
+   "evidence": "All four predictions failed. Framing and leg visibility had essentially zero effect (d -0.08 and +0.01, percentiles 30 and 37), while facing the camera and upright posture showed only weak, non-selective trends (d +0.22 and +0.29, percentiles 84 and 82, the posture result resting on just 6 curled-up photos).",
+   "missing_data": "Per-class activation rankings, to show whether the unit prefers corgi/fox-type classes specifically or canids broadly, plus tests of other within-class features such as coat color (red/orange fur), texture, or background.",
+   "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "84ad1f2837f04e0c338ae2bca3beae90397576921093949625a384db049c6b85",
+  "texts": [
+   "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity.\",\n \"evidence\": \"All four predictions failed. Framing and leg visibility had essentially zero effect (d -0.08 and +0.01, percentiles 30 and 37), while facing the camera and upright posture showed only weak, non-selective trends (d +0.22 and +0.29, percentiles 84 and 82, the posture result resting on just 6 curled-up photos).\",\n \"missing_data\": \"Per-class activation rankings, to show whether the unit prefers corgi/fox-type classes specifically or canids broadly, plus tests of other within-class features such as coat color (red/orange fur), texture, or background.\",\n \"confidence\": 0.3}"
+  ],
+  "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity.\",\n \"evidence\": \"All four predictions failed. Framing and leg visibility had essentially zero effect (d -0.08 and +0.01, percentiles 30 and 37), while facing the camera and upright posture showed only weak, non-selective trends (d +0.22 and +0.29, percentiles 84 and 82, the posture result resting on just 6 curled-up photos).\",\n \"missing_data\": \"Per-class activation rankings, to show whether the unit prefers corgi/fox-type classes specifically or canids broadly, plus tests of other within-class features such as coat color (red/orange fur), texture, or background.\",\n \"confidence\": 0.3}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "cannot_tell",
+  "explanation": "The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail.",
+   "evidence": "The three testable predictions all failed with slightly negative d (percentiles 31, 12 and 57). Whole-animal photos were if anything a little weaker than head close-ups, the opposite of the claim, and facing direction had too few photos to test.",
+   "missing_data": "The full list of the 24 top classes with per-class mean activations, and tests of other within-class factors such as fur colour or texture, background, or number of animals.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "febf1f94bd8cd29a9db8018c5b82072491d798b49338d8e656d8bd17bc2fede9",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail.\",\n \"evidence\": \"The three testable predictions all failed with slightly negative d (percentiles 31, 12 and 57). Whole-animal photos were if anything a little weaker than head close-ups, the opposite of the claim, and facing direction had too few photos to test.\",\n \"missing_data\": \"The full list of the 24 top classes with per-class mean activations, and tests of other within-class factors such as fur colour or texture, background, or number of animals.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail.\",\n \"evidence\": \"The three testable predictions all failed with slightly negative d (percentiles 31, 12 and 57). Whole-animal photos were if anything a little weaker than head close-ups, the opposite of the claim, and facing direction had too few photos to test.\",\n \"missing_data\": \"The full list of the 24 top classes with per-class mean activations, and tests of other within-class factors such as fur colour or texture, background, or number of animals.\",\n \"confidence\": 0.35}\n```",
+  "valid": true
+ }
+}

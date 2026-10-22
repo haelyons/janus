@@ -1,0 +1,799 @@
+{
+ "unit": "mixed4b:418",
+ "layer": "mixed4b",
+ "chan": 418,
+ "m": 512,
+ "n_looked": 116,
+ "n": 124,
+ "classes": [
+  240,
+  263,
+  277,
+  193,
+  157,
+  273,
+  184,
+  153,
+  279,
+  185,
+  194,
+  222,
+  235,
+  230,
+  264,
+  175,
+  192,
+  248,
+  232,
+  278,
+  196,
+  238,
+  378,
+  167
+ ],
+ "class_names": [
+  "Appenzeller",
+  "Pembroke",
+  "red fox",
+  "Australian terrier",
+  "papillon",
+  "dingo",
+  "Irish terrier",
+  "Maltese dog",
+  "Arctic fox",
+  "Norfolk terrier",
+  "Dandie Dinmont",
+  "kuvasz",
+  "German shepherd",
+  "Shetland sheepdog",
+  "Cardigan",
+  "otterhound",
+  "cairn",
+  "Eskimo dog",
+  "Border collie",
+  "kit fox",
+  "miniature schnauzer",
+  "Greater Swiss Mountain dog",
+  "capuchin",
+  "English foxhound"
+ ],
+ "peers": [
+  {
+   "chan": 434,
+   "unit": "mixed4b:434",
+   "corr": 0.9515935476700421
+  },
+  {
+   "chan": 443,
+   "unit": "mixed4b:443",
+   "corr": 0.8939189810906772
+  },
+  {
+   "chan": 409,
+   "unit": "mixed4b:409",
+   "corr": 0.8926128729372583
+  }
+ ],
+ "D": [
+  50,
+  51,
+  55,
+  56,
+  59,
+  1140,
+  1142,
+  1144,
+  1145,
+  1149,
+  1680,
+  1682,
+  1683,
+  1687,
+  1689,
+  1770,
+  1771,
+  1773,
+  1774,
+  1776,
+  1777,
+  1779,
+  1810,
+  1812,
+  1815,
+  1818,
+  2350,
+  2356,
+  2357,
+  2359,
+  2710,
+  2711,
+  2712,
+  2715,
+  2943,
+  2944,
+  2947,
+  3031,
+  3034,
+  3035,
+  3036,
+  3037,
+  3038,
+  3330,
+  3332,
+  3334,
+  3335,
+  3410,
+  3411,
+  3412,
+  3413,
+  3415,
+  3416,
+  3417,
+  3418,
+  3419,
+  3474,
+  3476,
+  3477,
+  4760,
+  4764,
+  4767,
+  4768,
+  4930,
+  4931,
+  4932,
+  4936,
+  4937,
+  5350,
+  5353,
+  5354,
+  5355,
+  5356,
+  5357,
+  5359,
+  5424,
+  5429,
+  7171,
+  7173,
+  7175,
+  7177,
+  7178,
+  7220,
+  7221,
+  7222,
+  7228,
+  7229,
+  8190,
+  8191,
+  8192,
+  8193,
+  8194,
+  8195,
+  8197,
+  8198,
+  8690,
+  8691,
+  8692,
+  8694,
+  8696,
+  8697,
+  8731,
+  8732,
+  8736,
+  8782,
+  8785,
+  8786,
+  8788,
+  9370,
+  9372,
+  9376,
+  9378,
+  9541,
+  9543,
+  9546,
+  9547
+ ],
+ "T": [
+  52,
+  53,
+  54,
+  57,
+  58,
+  1141,
+  1143,
+  1146,
+  1147,
+  1148,
+  1681,
+  1684,
+  1685,
+  1686,
+  1688,
+  1772,
+  1775,
+  1778,
+  1811,
+  1813,
+  1814,
+  1816,
+  1817,
+  1819,
+  2351,
+  2352,
+  2353,
+  2354,
+  2355,
+  2358,
+  2713,
+  2714,
+  2716,
+  2717,
+  2718,
+  2719,
+  2940,
+  2941,
+  2942,
+  2945,
+  2946,
+  2948,
+  2949,
+  3030,
+  3032,
+  3033,
+  3039,
+  3331,
+  3333,
+  3336,
+  3337,
+  3338,
+  3339,
+  3414,
+  3470,
+  3471,
+  3472,
+  3473,
+  3475,
+  3478,
+  3479,
+  4761,
+  4762,
+  4763,
+  4765,
+  4766,
+  4769,
+  4933,
+  4934,
+  4935,
+  4938,
+  4939,
+  5351,
+  5352,
+  5358,
+  5420,
+  5421,
+  5422,
+  5423,
+  5425,
+  5426,
+  5427,
+  5428,
+  7170,
+  7172,
+  7174,
+  7176,
+  7179,
+  7223,
+  7224,
+  7225,
+  7226,
+  7227,
+  8196,
+  8199,
+  8693,
+  8695,
+  8698,
+  8699,
+  8730,
+  8733,
+  8734,
+  8735,
+  8737,
+  8738,
+  8739,
+  8780,
+  8781,
+  8783,
+  8784,
+  8787,
+  8789,
+  9371,
+  9373,
+  9374,
+  9375,
+  9377,
+  9379,
+  9540,
+  9542,
+  9544,
+  9545,
+  9548,
+  9549
+ ],
+ "answer_batches": 11,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "How much of the photo does the main animal take up?",
+   "answers": [
+    "Head/face close-up filling most of the frame",
+    "Whole animal at medium size, clearly visible",
+    "Animal small or far away in the scene",
+    "No animal in the photo"
+   ]
+  },
+  {
+   "question": "Is the main animal's whole body, including legs, visible in the photo?",
+   "answers": [
+    "Yes, the full body with legs is visible",
+    "No, only the head or head and shoulders",
+    "No animal in the photo"
+   ]
+  },
+  {
+   "question": "Which way is the main animal's face pointing?",
+   "answers": [
+    "Toward the camera",
+    "Sideways or in profile",
+    "Away or face hidden",
+    "No animal in the photo"
+   ]
+  },
+  {
+   "question": "Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?",
+   "answers": [
+    "Eyes open and alert",
+    "Eyes closed, curled up or sleeping",
+    "Eyes not visible or no animal"
+   ]
+  },
+  {
+   "question": "How is the main animal framed in the photo?",
+   "answers": [
+    "Whole or most of body visible, animal fills a moderate part of the frame",
+    "Close-up of head/face filling most of the frame",
+    "Animal small or distant in the frame",
+    "No animal"
+   ]
+  },
+  {
+   "question": "Is the main animal's face turned toward the camera with eyes open?",
+   "answers": [
+    "Yes, facing camera with eyes open",
+    "No, turned away, in profile, or eyes closed",
+    "No animal visible"
+   ]
+  },
+  {
+   "question": "What is the main animal's posture?",
+   "answers": [
+    "Standing, sitting upright, or running",
+    "Lying curled up or asleep",
+    "Only the head is visible",
+    "No animal"
+   ]
+  },
+  {
+   "question": "Is the animal's mouth open with its tongue visible while the whole body is in view?",
+   "answers": [
+    "Yes, mouth open/tongue out and body in view",
+    "Mouth closed with body in view",
+    "Body not in view (head only) or no animal"
+   ]
+  },
+  {
+   "question": "How is the main animal framed in the photo?",
+   "answers": [
+    "Close-up of head/face only",
+    "Whole body visible and fairly large in frame",
+    "Whole body visible but small/distant",
+    "No animal visible"
+   ]
+  },
+  {
+   "question": "Are the animal's legs/paws visible in the photo?",
+   "answers": [
+    "Yes, legs clearly visible",
+    "No, only head/upper body visible",
+    "No animal visible"
+   ]
+  },
+  {
+   "question": "Is the animal facing the camera with both eyes open and visible?",
+   "answers": [
+    "Yes, facing camera with eyes open",
+    "No (side view, facing away, or eyes closed)",
+    "No animal visible"
+   ]
+  },
+  {
+   "question": "What is the animal's posture?",
+   "answers": [
+    "Standing, running or sitting upright",
+    "Lying down with head raised",
+    "Curled up or asleep",
+    "No animal or posture not visible"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "The unit responds to a whole small-to-medium animal (dogs, foxes, monkeys) seen at a middle distance, centred and facing the camera with an alert, open-eyed face. Typical high cases are a fox or dog standing, sitting or running toward the viewer with its full body in frame. It is weak when the face fills the frame (head close-ups of kuvasz, German shepherd or Appenzeller). It is also weak when the animal is small or distant in the scene, turned away, or curled up asleep. Similar units prefer the head close-ups that this unit ignores.",
+   "predictions": [
+    {
+     "question": "How much of the photo does the main animal take up?",
+     "answers": [
+      "Head/face close-up filling most of the frame",
+      "Whole animal at medium size, clearly visible",
+      "Animal small or far away in the scene",
+      "No animal in the photo"
+     ],
+     "most": 1,
+     "least": 0,
+     "question_index": 0,
+     "real": {
+      "n_hi": 88,
+      "n_lo": 30,
+      "d": 0.6501240162829528,
+      "pct": 95.703125,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 88,
+      "n_lo": 30,
+      "d": -0.09378231594448219,
+      "pct": 31.4453125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the main animal's whole body, including legs, visible in the photo?",
+     "answers": [
+      "Yes, the full body with legs is visible",
+      "No, only the head or head and shoulders",
+      "No animal in the photo"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 1,
+     "real": {
+      "n_hi": 82,
+      "n_lo": 40,
+      "d": 0.4470158989833956,
+      "pct": 91.6015625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 82,
+      "n_lo": 40,
+      "d": -0.17736556518107144,
+      "pct": 12.5,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Which way is the main animal's face pointing?",
+     "answers": [
+      "Toward the camera",
+      "Sideways or in profile",
+      "Away or face hidden",
+      "No animal in the photo"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 2,
+     "real": {
+      "n_hi": 88,
+      "n_lo": 4,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     },
+     "null": {
+      "n_hi": 88,
+      "n_lo": 4,
+      "d": null,
+      "pct": null,
+      "outcome": "too few"
+     }
+    },
+    {
+     "question": "Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?",
+     "answers": [
+      "Eyes open and alert",
+      "Eyes closed, curled up or sleeping",
+      "Eyes not visible or no animal"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 3,
+     "real": {
+      "n_hi": 107,
+      "n_lo": 9,
+      "d": 0.8965749515605442,
+      "pct": 98.046875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 107,
+      "n_lo": 9,
+      "d": -0.08844740932222715,
+      "pct": 56.640625,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "Responds to a whole small-to-medium canid-like animal (dog, fox) seen at medium distance, with the full body or most of it in frame and the face turned toward the camera with eyes open. It is strongest when the animal is a compact, centered figure with its face clearly visible (Arctic fox, Maltese, corgis, running terriers). It is weak for tight head close-ups (Appenzeller, kuvasz and German shepherd portraits), for tiny or distant animals, and for animals turned away or curled up asleep. Similar units prefer the head close-ups that this unit ignores.",
+   "predictions": [
+    {
+     "question": "How is the main animal framed in the photo?",
+     "answers": [
+      "Whole or most of body visible, animal fills a moderate part of the frame",
+      "Close-up of head/face filling most of the frame",
+      "Animal small or distant in the frame",
+      "No animal"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 4,
+     "real": {
+      "n_hi": 86,
+      "n_lo": 32,
+      "d": 0.6036931720005871,
+      "pct": 95.1171875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 86,
+      "n_lo": 32,
+      "d": -0.13777108116658948,
+      "pct": 22.0703125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the main animal's face turned toward the camera with eyes open?",
+     "answers": [
+      "Yes, facing camera with eyes open",
+      "No, turned away, in profile, or eyes closed",
+      "No animal visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 5,
+     "real": {
+      "n_hi": 79,
+      "n_lo": 44,
+      "d": 0.926887700766385,
+      "pct": 97.0703125,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 79,
+      "n_lo": 44,
+      "d": 0.17381426153924714,
+      "pct": 82.421875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main animal's posture?",
+     "answers": [
+      "Standing, sitting upright, or running",
+      "Lying curled up or asleep",
+      "Only the head is visible",
+      "No animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 77,
+      "n_lo": 29,
+      "d": 0.7942959159669193,
+      "pct": 97.4609375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 77,
+      "n_lo": 29,
+      "d": -0.010828189812234537,
+      "pct": 33.0078125,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the animal's mouth open with its tongue visible while the whole body is in view?",
+     "answers": [
+      "Yes, mouth open/tongue out and body in view",
+      "Mouth closed with body in view",
+      "Body not in view (head only) or no animal"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 7,
+     "real": {
+      "n_hi": 24,
+      "n_lo": 38,
+      "d": 1.131006088539331,
+      "pct": 99.4140625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 24,
+      "n_lo": 38,
+      "d": -0.2183370726116513,
+      "pct": 17.1875,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "Responds to a whole, alert dog or fox (or a similar fluffy mammal) seen at a medium distance. The animal fills a good part of the frame, its full body and legs are visible, and its face looks toward the camera. Activity is high for corgis, foxes and terriers standing, running or sitting while facing the viewer. It is weak for tight head close-ups, which the similar units prefer (kuvasz, German shepherd and Appenzeller face shots). It is also weak for tiny, distant or side-on animals and for animals curled up asleep.",
+   "predictions": [
+    {
+     "question": "How is the main animal framed in the photo?",
+     "answers": [
+      "Close-up of head/face only",
+      "Whole body visible and fairly large in frame",
+      "Whole body visible but small/distant",
+      "No animal visible"
+     ],
+     "most": 1,
+     "least": 0,
+     "question_index": 8,
+     "real": {
+      "n_hi": 84,
+      "n_lo": 35,
+      "d": 0.5118812737476791,
+      "pct": 91.9921875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 84,
+      "n_lo": 35,
+      "d": -0.0754651663647526,
+      "pct": 29.6875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Are the animal's legs/paws visible in the photo?",
+     "answers": [
+      "Yes, legs clearly visible",
+      "No, only head/upper body visible",
+      "No animal visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 9,
+     "real": {
+      "n_hi": 85,
+      "n_lo": 38,
+      "d": 0.47526923711065294,
+      "pct": 92.3828125,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 85,
+      "n_lo": 38,
+      "d": 0.012516778959632864,
+      "pct": 36.5234375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the animal facing the camera with both eyes open and visible?",
+     "answers": [
+      "Yes, facing camera with eyes open",
+      "No (side view, facing away, or eyes closed)",
+      "No animal visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 10,
+     "real": {
+      "n_hi": 78,
+      "n_lo": 45,
+      "d": 0.9647452060431229,
+      "pct": 97.4609375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 78,
+      "n_lo": 45,
+      "d": 0.2181907584099103,
+      "pct": 84.375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the animal's posture?",
+     "answers": [
+      "Standing, running or sitting upright",
+      "Lying down with head raised",
+      "Curled up or asleep",
+      "No animal or posture not visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 11,
+     "real": {
+      "n_hi": 66,
+      "n_lo": 6,
+      "d": 1.3459406705750498,
+      "pct": 97.4609375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 66,
+      "n_lo": 6,
+      "d": 0.2924831311138792,
+      "pct": 82.421875,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the main animal take up?\nAnswers: Head/face close-up filling most of the frame; Whole animal at medium size, clearly visible; Animal small or far away in the scene; No animal in the photo\nPredicted most active: Whole animal at medium size, clearly visible. Predicted least active: Head/face close-up filling most of the frame.\nResult: 88 and 30 photos, d +0.65, percentile 96: held.\n\nPrediction 2. Is the main animal's whole body, including legs, visible in the photo?\nAnswers: Yes, the full body with legs is visible; No, only the head or head and shoulders; No animal in the photo\nPredicted most active: Yes, the full body with legs is visible. Predicted least active: No, only the head or head and shoulders.\nResult: 82 and 40 photos, d +0.45, percentile 92: did not hold.\n\nPrediction 3. Which way is the main animal's face pointing?\nAnswers: Toward the camera; Sideways or in profile; Away or face hidden; No animal in the photo\nPredicted most active: Toward the camera. Predicted least active: Away or face hidden.\nResult: 88 and 4 photos: too few to check (each needs at least 5).\n\nPrediction 4. Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?\nAnswers: Eyes open and alert; Eyes closed, curled up or sleeping; Eyes not visible or no animal\nPredicted most active: Eyes open and alert. Predicted least active: Eyes closed, curled up or sleeping.\nResult: 107 and 9 photos, d +0.90, percentile 98: held.",
+  "real_s2": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main animal framed in the photo?\nAnswers: Whole or most of body visible, animal fills a moderate part of the frame; Close-up of head/face filling most of the frame; Animal small or distant in the frame; No animal\nPredicted most active: Whole or most of body visible, animal fills a moderate part of the frame. Predicted least active: Close-up of head/face filling most of the frame.\nResult: 86 and 32 photos, d +0.60, percentile 95: held.\n\nPrediction 2. Is the main animal's face turned toward the camera with eyes open?\nAnswers: Yes, facing camera with eyes open; No, turned away, in profile, or eyes closed; No animal visible\nPredicted most active: Yes, facing camera with eyes open. Predicted least active: No, turned away, in profile, or eyes closed.\nResult: 79 and 44 photos, d +0.93, percentile 97: held.\n\nPrediction 3. What is the main animal's posture?\nAnswers: Standing, sitting upright, or running; Lying curled up or asleep; Only the head is visible; No animal\nPredicted most active: Standing, sitting upright, or running. Predicted least active: Only the head is visible.\nResult: 77 and 29 photos, d +0.79, percentile 97: held.\n\nPrediction 4. Is the animal's mouth open with its tongue visible while the whole body is in view?\nAnswers: Yes, mouth open/tongue out and body in view; Mouth closed with body in view; Body not in view (head only) or no animal\nPredicted most active: Yes, mouth open/tongue out and body in view. Predicted least active: Body not in view (head only) or no animal.\nResult: 24 and 38 photos, d +1.13, percentile 99: held.",
+  "real_s3": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main animal framed in the photo?\nAnswers: Close-up of head/face only; Whole body visible and fairly large in frame; Whole body visible but small/distant; No animal visible\nPredicted most active: Whole body visible and fairly large in frame. Predicted least active: Close-up of head/face only.\nResult: 84 and 35 photos, d +0.51, percentile 92: did not hold.\n\nPrediction 2. Are the animal's legs/paws visible in the photo?\nAnswers: Yes, legs clearly visible; No, only head/upper body visible; No animal visible\nPredicted most active: Yes, legs clearly visible. Predicted least active: No, only head/upper body visible.\nResult: 85 and 38 photos, d +0.48, percentile 92: did not hold.\n\nPrediction 3. Is the animal facing the camera with both eyes open and visible?\nAnswers: Yes, facing camera with eyes open; No (side view, facing away, or eyes closed); No animal visible\nPredicted most active: Yes, facing camera with eyes open. Predicted least active: No (side view, facing away, or eyes closed).\nResult: 78 and 45 photos, d +0.96, percentile 97: held.\n\nPrediction 4. What is the animal's posture?\nAnswers: Standing, running or sitting upright; Lying down with head raised; Curled up or asleep; No animal or posture not visible\nPredicted most active: Standing, running or sitting upright. Predicted least active: Curled up or asleep.\nResult: 66 and 6 photos, d +1.35, percentile 97: held.",
+  "null_s1": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the main animal take up?\nAnswers: Head/face close-up filling most of the frame; Whole animal at medium size, clearly visible; Animal small or far away in the scene; No animal in the photo\nPredicted most active: Whole animal at medium size, clearly visible. Predicted least active: Head/face close-up filling most of the frame.\nResult: 88 and 30 photos, d -0.09, percentile 31: did not hold.\n\nPrediction 2. Is the main animal's whole body, including legs, visible in the photo?\nAnswers: Yes, the full body with legs is visible; No, only the head or head and shoulders; No animal in the photo\nPredicted most active: Yes, the full body with legs is visible. Predicted least active: No, only the head or head and shoulders.\nResult: 82 and 40 photos, d -0.18, percentile 12: did not hold.\n\nPrediction 3. Which way is the main animal's face pointing?\nAnswers: Toward the camera; Sideways or in profile; Away or face hidden; No animal in the photo\nPredicted most active: Toward the camera. Predicted least active: Away or face hidden.\nResult: 88 and 4 photos: too few to check (each needs at least 5).\n\nPrediction 4. Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?\nAnswers: Eyes open and alert; Eyes closed, curled up or sleeping; Eyes not visible or no animal\nPredicted most active: Eyes open and alert. Predicted least active: Eyes closed, curled up or sleeping.\nResult: 107 and 9 photos, d -0.09, percentile 57: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main animal framed in the photo?\nAnswers: Whole or most of body visible, animal fills a moderate part of the frame; Close-up of head/face filling most of the frame; Animal small or distant in the frame; No animal\nPredicted most active: Whole or most of body visible, animal fills a moderate part of the frame. Predicted least active: Close-up of head/face filling most of the frame.\nResult: 86 and 32 photos, d -0.14, percentile 22: did not hold.\n\nPrediction 2. Is the main animal's face turned toward the camera with eyes open?\nAnswers: Yes, facing camera with eyes open; No, turned away, in profile, or eyes closed; No animal visible\nPredicted most active: Yes, facing camera with eyes open. Predicted least active: No, turned away, in profile, or eyes closed.\nResult: 79 and 44 photos, d +0.17, percentile 82: did not hold.\n\nPrediction 3. What is the main animal's posture?\nAnswers: Standing, sitting upright, or running; Lying curled up or asleep; Only the head is visible; No animal\nPredicted most active: Standing, sitting upright, or running. Predicted least active: Only the head is visible.\nResult: 77 and 29 photos, d -0.01, percentile 33: did not hold.\n\nPrediction 4. Is the animal's mouth open with its tongue visible while the whole body is in view?\nAnswers: Yes, mouth open/tongue out and body in view; Mouth closed with body in view; Body not in view (head only) or no animal\nPredicted most active: Yes, mouth open/tongue out and body in view. Predicted least active: Body not in view (head only) or no animal.\nResult: 24 and 38 photos, d -0.22, percentile 17: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 124 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How is the main animal framed in the photo?\nAnswers: Close-up of head/face only; Whole body visible and fairly large in frame; Whole body visible but small/distant; No animal visible\nPredicted most active: Whole body visible and fairly large in frame. Predicted least active: Close-up of head/face only.\nResult: 84 and 35 photos, d -0.08, percentile 30: did not hold.\n\nPrediction 2. Are the animal's legs/paws visible in the photo?\nAnswers: Yes, legs clearly visible; No, only head/upper body visible; No animal visible\nPredicted most active: Yes, legs clearly visible. Predicted least active: No, only head/upper body visible.\nResult: 85 and 38 photos, d +0.01, percentile 37: did not hold.\n\nPrediction 3. Is the animal facing the camera with both eyes open and visible?\nAnswers: Yes, facing camera with eyes open; No (side view, facing away, or eyes closed); No animal visible\nPredicted most active: Yes, facing camera with eyes open. Predicted least active: No (side view, facing away, or eyes closed).\nResult: 78 and 45 photos, d +0.22, percentile 84: did not hold.\n\nPrediction 4. What is the animal's posture?\nAnswers: Standing, running or sitting upright; Lying down with head raised; Curled up or asleep; No animal or posture not visible\nPredicted most active: Standing, running or sitting upright. Predicted least active: Curled up or asleep.\nResult: 66 and 6 photos, d +0.29, percentile 82: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 8,
+   "not held": 3,
+   "too few": 1
+  },
+  "null": {
+   "held": 0,
+   "not held": 11,
+   "too few": 1
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one",
+   "explanation": "The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals."
+  },
+  "real_s2": {
+   "class": "one",
+   "explanation": "Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep."
+  },
+  "real_s3": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness."
+  },
+  "null_s1": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail."
+  },
+  "null_s2": {
+   "class": "cannot_tell",
+   "explanation": "The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones."
+  },
+  "null_s3": {
+   "class": "cannot_tell",
+   "explanation": "The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity."
+  }
+ }
+}

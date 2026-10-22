@@ -1,0 +1,799 @@
+{
+ "unit": "mixed4b:409",
+ "layer": "mixed4b",
+ "chan": 409,
+ "m": 512,
+ "n_looked": 122,
+ "n": 118,
+ "classes": [
+  153,
+  248,
+  263,
+  240,
+  194,
+  201,
+  222,
+  235,
+  162,
+  269,
+  387,
+  238,
+  157,
+  187,
+  185,
+  208,
+  264,
+  220,
+  255,
+  273,
+  179,
+  184,
+  170,
+  165
+ ],
+ "class_names": [
+  "Maltese dog",
+  "Eskimo dog",
+  "Pembroke",
+  "Appenzeller",
+  "Dandie Dinmont",
+  "silky terrier",
+  "kuvasz",
+  "German shepherd",
+  "beagle",
+  "timber wolf",
+  "lesser panda",
+  "Greater Swiss Mountain dog",
+  "papillon",
+  "Yorkshire terrier",
+  "Norfolk terrier",
+  "Labrador retriever",
+  "Cardigan",
+  "Sussex spaniel",
+  "Leonberg",
+  "dingo",
+  "Staffordshire bullterrier",
+  "Irish terrier",
+  "Irish wolfhound",
+  "black-and-tan coonhound"
+ ],
+ "peers": [
+  {
+   "chan": 443,
+   "unit": "mixed4b:443",
+   "corr": 0.9574603504307159
+  },
+  {
+   "chan": 429,
+   "unit": "mixed4b:429",
+   "corr": 0.9383313664926077
+  },
+  {
+   "chan": 384,
+   "unit": "mixed4b:384",
+   "corr": 0.9246178364255501
+  }
+ ],
+ "D": [
+  50,
+  51,
+  55,
+  56,
+  59,
+  771,
+  774,
+  775,
+  777,
+  778,
+  779,
+  891,
+  892,
+  893,
+  895,
+  897,
+  899,
+  1100,
+  1101,
+  1102,
+  1103,
+  1104,
+  1140,
+  1142,
+  1144,
+  1145,
+  1149,
+  1651,
+  1653,
+  1654,
+  1655,
+  1657,
+  1658,
+  1659,
+  1680,
+  1682,
+  1683,
+  1687,
+  1689,
+  1770,
+  1771,
+  1773,
+  1774,
+  1776,
+  1777,
+  1779,
+  1900,
+  1903,
+  1904,
+  1907,
+  1908,
+  1941,
+  1943,
+  1948,
+  1949,
+  2350,
+  2356,
+  2357,
+  2359,
+  2710,
+  2711,
+  2712,
+  2715,
+  2943,
+  2944,
+  2947,
+  3474,
+  3476,
+  3477,
+  4641,
+  4644,
+  4645,
+  4646,
+  4647,
+  4649,
+  4750,
+  4751,
+  4754,
+  4756,
+  4757,
+  4758,
+  4759,
+  4930,
+  4931,
+  4932,
+  4936,
+  4937,
+  6432,
+  6436,
+  6438,
+  6780,
+  6783,
+  6784,
+  6785,
+  6787,
+  6789,
+  7220,
+  7221,
+  7222,
+  7228,
+  7229,
+  8190,
+  8191,
+  8192,
+  8193,
+  8194,
+  8195,
+  8197,
+  8198,
+  8292,
+  8293,
+  8295,
+  8297,
+  8299,
+  8782,
+  8785,
+  8786,
+  8788,
+  9541,
+  9543,
+  9546,
+  9547
+ ],
+ "T": [
+  52,
+  53,
+  54,
+  57,
+  58,
+  770,
+  772,
+  773,
+  776,
+  890,
+  894,
+  896,
+  898,
+  1105,
+  1106,
+  1107,
+  1108,
+  1109,
+  1141,
+  1143,
+  1146,
+  1147,
+  1148,
+  1650,
+  1652,
+  1656,
+  1681,
+  1684,
+  1685,
+  1686,
+  1688,
+  1772,
+  1775,
+  1778,
+  1901,
+  1902,
+  1905,
+  1906,
+  1909,
+  1940,
+  1942,
+  1944,
+  1945,
+  1946,
+  1947,
+  2351,
+  2352,
+  2353,
+  2354,
+  2355,
+  2358,
+  2713,
+  2714,
+  2716,
+  2717,
+  2718,
+  2719,
+  2940,
+  2941,
+  2942,
+  2945,
+  2946,
+  2948,
+  2949,
+  3470,
+  3471,
+  3472,
+  3473,
+  3475,
+  3478,
+  3479,
+  4640,
+  4642,
+  4643,
+  4648,
+  4752,
+  4753,
+  4755,
+  4933,
+  4934,
+  4935,
+  4938,
+  4939,
+  6430,
+  6431,
+  6433,
+  6434,
+  6435,
+  6437,
+  6439,
+  6781,
+  6782,
+  6786,
+  6788,
+  7223,
+  7224,
+  7225,
+  7226,
+  7227,
+  8196,
+  8199,
+  8290,
+  8291,
+  8294,
+  8296,
+  8298,
+  8780,
+  8781,
+  8783,
+  8784,
+  8787,
+  8789,
+  9540,
+  9542,
+  9544,
+  9545,
+  9548,
+  9549
+ ],
+ "answer_batches": 10,
+ "failed_batches": [],
+ "questions": [
+  {
+   "question": "How much of the photo does the dog's head take up?",
+   "answers": [
+    "No dog visible",
+    "Head is small (dog far away or whole body shown small)",
+    "Medium (whole dog fills much of the frame)",
+    "Large close-up (head fills a big part of the frame)"
+   ]
+  },
+  {
+   "question": "How many dogs are visible in the photo?",
+   "answers": [
+    "None",
+    "One",
+    "Two or more"
+   ]
+  },
+  {
+   "question": "What is the main color of the fur on the dog's face?",
+   "answers": [
+    "No dog face visible",
+    "White, cream or light tan",
+    "Mixed (e.g. black-and-tan or black-and-white)",
+    "Mostly dark (black, dark gray or dark brown)"
+   ]
+  },
+  {
+   "question": "Is the dog's face clearly seen facing the camera, with nothing in front of it?",
+   "answers": [
+    "No dog visible",
+    "Yes, face clear and facing the camera",
+    "Face turned away, in profile, or partly blocked by objects"
+   ]
+  },
+  {
+   "question": "How much of the photo does the (largest) dog's head take up?",
+   "answers": [
+    "more than a quarter of the photo",
+    "between a tenth and a quarter",
+    "less than a tenth",
+    "no dog visible"
+   ]
+  },
+  {
+   "question": "How many dogs are visible in the photo?",
+   "answers": [
+    "exactly one",
+    "two or more",
+    "none"
+   ]
+  },
+  {
+   "question": "What is the main color of the fur on the dog's face?",
+   "answers": [
+    "white or cream",
+    "tan or light brown",
+    "black, dark brown or gray",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?",
+   "answers": [
+    "yes, fully visible",
+    "partly hidden, turned away or in profile",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "How much of the photo does the largest dog's head take up?",
+   "answers": [
+    "more than a quarter of the photo",
+    "between a tenth and a quarter",
+    "less than a tenth",
+    "no dog visible"
+   ]
+  },
+  {
+   "question": "How many dogs are visible in the photo?",
+   "answers": [
+    "exactly one",
+    "two or more",
+    "none"
+   ]
+  },
+  {
+   "question": "What is the main color of the most prominent dog's face?",
+   "answers": [
+    "mostly white or cream",
+    "tan, brown or mixed with white",
+    "mostly black, grey or dark",
+    "no dog face visible"
+   ]
+  },
+  {
+   "question": "Is the most prominent dog's face turned toward the camera with both eyes visible?",
+   "answers": [
+    "yes, facing the camera",
+    "no, in profile or turned away",
+    "no dog face visible"
+   ]
+  }
+ ],
+ "samples": {
+  "s1": {
+   "valid": true,
+   "explanation": "Responds to a single dog's head and face seen large and close-up, especially one looking toward the camera. It is strongest for light-colored (white, cream, tan) fluffy or soft fur on the face, as in the Maltese, yellow Labrador, corgi and dingo photos. Activity drops when the dog is small in the frame, seen whole-body at a distance, partly hidden, or shown with other dogs. Compared with the similar units, this unit favors pale or tan soft-coated faces and close head shots. It responds less to dark, wiry or wolf-like and German-shepherd-like faces.",
+   "predictions": [
+    {
+     "question": "How much of the photo does the dog's head take up?",
+     "answers": [
+      "No dog visible",
+      "Head is small (dog far away or whole body shown small)",
+      "Medium (whole dog fills much of the frame)",
+      "Large close-up (head fills a big part of the frame)"
+     ],
+     "most": 3,
+     "least": 1,
+     "question_index": 0,
+     "real": {
+      "n_hi": 47,
+      "n_lo": 16,
+      "d": 1.7185946564800838,
+      "pct": 99.609375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 47,
+      "n_lo": 16,
+      "d": -0.14542925920430455,
+      "pct": 27.9296875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How many dogs are visible in the photo?",
+     "answers": [
+      "None",
+      "One",
+      "Two or more"
+     ],
+     "most": 1,
+     "least": 2,
+     "question_index": 1,
+     "real": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.5958185848114524,
+      "pct": 93.5546875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.014473209717345044,
+      "pct": 42.96875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main color of the fur on the dog's face?",
+     "answers": [
+      "No dog face visible",
+      "White, cream or light tan",
+      "Mixed (e.g. black-and-tan or black-and-white)",
+      "Mostly dark (black, dark gray or dark brown)"
+     ],
+     "most": 1,
+     "least": 3,
+     "question_index": 2,
+     "real": {
+      "n_hi": 43,
+      "n_lo": 17,
+      "d": 0.2488804397388823,
+      "pct": 81.0546875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 43,
+      "n_lo": 17,
+      "d": -0.47612026204373187,
+      "pct": 1.171875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the dog's face clearly seen facing the camera, with nothing in front of it?",
+     "answers": [
+      "No dog visible",
+      "Yes, face clear and facing the camera",
+      "Face turned away, in profile, or partly blocked by objects"
+     ],
+     "most": 1,
+     "least": 2,
+     "question_index": 3,
+     "real": {
+      "n_hi": 65,
+      "n_lo": 48,
+      "d": 1.06710470511833,
+      "pct": 97.8515625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 65,
+      "n_lo": 48,
+      "d": -0.2861792552925473,
+      "pct": 15.234375,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s2": {
+   "valid": true,
+   "explanation": "Responds to a single dog's face seen large and close-up, strongest when the face fur is white, cream or light (Maltese, yellow Lab, pale corgi or dingo faces). Activity drops when the dog is small or far away, when several dogs share the frame, or when the face is dark, gray or partly hidden (German shepherd, wolf, black Staffordshire).",
+   "predictions": [
+    {
+     "question": "How much of the photo does the (largest) dog's head take up?",
+     "answers": [
+      "more than a quarter of the photo",
+      "between a tenth and a quarter",
+      "less than a tenth",
+      "no dog visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 4,
+     "real": {
+      "n_hi": 36,
+      "n_lo": 30,
+      "d": 1.449918575071249,
+      "pct": 99.21875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 36,
+      "n_lo": 30,
+      "d": -0.47337650080089005,
+      "pct": 6.0546875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How many dogs are visible in the photo?",
+     "answers": [
+      "exactly one",
+      "two or more",
+      "none"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 5,
+     "real": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.5958185848114524,
+      "pct": 93.5546875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.014473209717345044,
+      "pct": 42.96875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main color of the fur on the dog's face?",
+     "answers": [
+      "white or cream",
+      "tan or light brown",
+      "black, dark brown or gray",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 6,
+     "real": {
+      "n_hi": 27,
+      "n_lo": 43,
+      "d": 0.1343198772016568,
+      "pct": 71.2890625,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 27,
+      "n_lo": 43,
+      "d": -0.12086487561346196,
+      "pct": 30.859375,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?",
+     "answers": [
+      "yes, fully visible",
+      "partly hidden, turned away or in profile",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 7,
+     "real": {
+      "n_hi": 66,
+      "n_lo": 47,
+      "d": 1.0882425559476663,
+      "pct": 97.8515625,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 66,
+      "n_lo": 47,
+      "d": -0.28079478508348554,
+      "pct": 13.4765625,
+      "outcome": "not held"
+     }
+    }
+   ]
+  },
+  "s3": {
+   "valid": true,
+   "explanation": "Responds to a close-up of a single dog's head filling much of the frame, especially fluffy or light/white-furred faces (Maltese, cream Labrador, corgi). Activity drops when the dog is small or distant, when several dogs are present, or when the face is dark (German shepherd, Staffordshire, wolf). Compared with similar units, it prefers light, soft faces and close portraits over dark, hound-like or wolf-like faces.",
+   "predictions": [
+    {
+     "question": "How much of the photo does the largest dog's head take up?",
+     "answers": [
+      "more than a quarter of the photo",
+      "between a tenth and a quarter",
+      "less than a tenth",
+      "no dog visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 8,
+     "real": {
+      "n_hi": 36,
+      "n_lo": 30,
+      "d": 1.449918575071249,
+      "pct": 99.21875,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 36,
+      "n_lo": 30,
+      "d": -0.47337650080089005,
+      "pct": 6.0546875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "How many dogs are visible in the photo?",
+     "answers": [
+      "exactly one",
+      "two or more",
+      "none"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 9,
+     "real": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.5958185848114524,
+      "pct": 93.5546875,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 100,
+      "n_lo": 13,
+      "d": 0.014473209717345044,
+      "pct": 42.96875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "What is the main color of the most prominent dog's face?",
+     "answers": [
+      "mostly white or cream",
+      "tan, brown or mixed with white",
+      "mostly black, grey or dark",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 2,
+     "question_index": 10,
+     "real": {
+      "n_hi": 23,
+      "n_lo": 35,
+      "d": 0.06489316364605607,
+      "pct": 59.375,
+      "outcome": "not held"
+     },
+     "null": {
+      "n_hi": 23,
+      "n_lo": 35,
+      "d": -0.13308176488487045,
+      "pct": 37.3046875,
+      "outcome": "not held"
+     }
+    },
+    {
+     "question": "Is the most prominent dog's face turned toward the camera with both eyes visible?",
+     "answers": [
+      "yes, facing the camera",
+      "no, in profile or turned away",
+      "no dog face visible"
+     ],
+     "most": 0,
+     "least": 1,
+     "question_index": 11,
+     "real": {
+      "n_hi": 70,
+      "n_lo": 43,
+      "d": 1.1077317619987292,
+      "pct": 98.4375,
+      "outcome": "held"
+     },
+     "null": {
+      "n_hi": 70,
+      "n_lo": 43,
+      "d": -0.16882102097186466,
+      "pct": 32.03125,
+      "outcome": "not held"
+     }
+    }
+   ]
+  }
+ },
+ "results": {
+  "real_s1": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the dog's head take up?\nAnswers: No dog visible; Head is small (dog far away or whole body shown small); Medium (whole dog fills much of the frame); Large close-up (head fills a big part of the frame)\nPredicted most active: Large close-up (head fills a big part of the frame). Predicted least active: Head is small (dog far away or whole body shown small).\nResult: 47 and 16 photos, d +1.72, percentile 100: held.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: None; One; Two or more\nPredicted most active: One. Predicted least active: Two or more.\nResult: 100 and 13 photos, d +0.60, percentile 94: did not hold.\n\nPrediction 3. What is the main color of the fur on the dog's face?\nAnswers: No dog face visible; White, cream or light tan; Mixed (e.g. black-and-tan or black-and-white); Mostly dark (black, dark gray or dark brown)\nPredicted most active: White, cream or light tan. Predicted least active: Mostly dark (black, dark gray or dark brown).\nResult: 43 and 17 photos, d +0.25, percentile 81: did not hold.\n\nPrediction 4. Is the dog's face clearly seen facing the camera, with nothing in front of it?\nAnswers: No dog visible; Yes, face clear and facing the camera; Face turned away, in profile, or partly blocked by objects\nPredicted most active: Yes, face clear and facing the camera. Predicted least active: Face turned away, in profile, or partly blocked by objects.\nResult: 65 and 48 photos, d +1.07, percentile 98: held.",
+  "real_s2": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the (largest) dog's head take up?\nAnswers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible\nPredicted most active: more than a quarter of the photo. Predicted least active: less than a tenth.\nResult: 36 and 30 photos, d +1.45, percentile 99: held.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: exactly one; two or more; none\nPredicted most active: exactly one. Predicted least active: two or more.\nResult: 100 and 13 photos, d +0.60, percentile 94: did not hold.\n\nPrediction 3. What is the main color of the fur on the dog's face?\nAnswers: white or cream; tan or light brown; black, dark brown or gray; no dog face visible\nPredicted most active: white or cream. Predicted least active: black, dark brown or gray.\nResult: 27 and 43 photos, d +0.13, percentile 71: did not hold.\n\nPrediction 4. Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?\nAnswers: yes, fully visible; partly hidden, turned away or in profile; no dog face visible\nPredicted most active: yes, fully visible. Predicted least active: partly hidden, turned away or in profile.\nResult: 66 and 47 photos, d +1.09, percentile 98: held.",
+  "real_s3": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the largest dog's head take up?\nAnswers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible\nPredicted most active: more than a quarter of the photo. Predicted least active: less than a tenth.\nResult: 36 and 30 photos, d +1.45, percentile 99: held.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: exactly one; two or more; none\nPredicted most active: exactly one. Predicted least active: two or more.\nResult: 100 and 13 photos, d +0.60, percentile 94: did not hold.\n\nPrediction 3. What is the main color of the most prominent dog's face?\nAnswers: mostly white or cream; tan, brown or mixed with white; mostly black, grey or dark; no dog face visible\nPredicted most active: mostly white or cream. Predicted least active: mostly black, grey or dark.\nResult: 23 and 35 photos, d +0.06, percentile 59: did not hold.\n\nPrediction 4. Is the most prominent dog's face turned toward the camera with both eyes visible?\nAnswers: yes, facing the camera; no, in profile or turned away; no dog face visible\nPredicted most active: yes, facing the camera. Predicted least active: no, in profile or turned away.\nResult: 70 and 43 photos, d +1.11, percentile 98: held.",
+  "null_s1": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the dog's head take up?\nAnswers: No dog visible; Head is small (dog far away or whole body shown small); Medium (whole dog fills much of the frame); Large close-up (head fills a big part of the frame)\nPredicted most active: Large close-up (head fills a big part of the frame). Predicted least active: Head is small (dog far away or whole body shown small).\nResult: 47 and 16 photos, d -0.15, percentile 28: did not hold.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: None; One; Two or more\nPredicted most active: One. Predicted least active: Two or more.\nResult: 100 and 13 photos, d +0.01, percentile 43: did not hold.\n\nPrediction 3. What is the main color of the fur on the dog's face?\nAnswers: No dog face visible; White, cream or light tan; Mixed (e.g. black-and-tan or black-and-white); Mostly dark (black, dark gray or dark brown)\nPredicted most active: White, cream or light tan. Predicted least active: Mostly dark (black, dark gray or dark brown).\nResult: 43 and 17 photos, d -0.48, percentile 1: did not hold.\n\nPrediction 4. Is the dog's face clearly seen facing the camera, with nothing in front of it?\nAnswers: No dog visible; Yes, face clear and facing the camera; Face turned away, in profile, or partly blocked by objects\nPredicted most active: Yes, face clear and facing the camera. Predicted least active: Face turned away, in profile, or partly blocked by objects.\nResult: 65 and 48 photos, d -0.29, percentile 15: did not hold.",
+  "null_s2": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the (largest) dog's head take up?\nAnswers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible\nPredicted most active: more than a quarter of the photo. Predicted least active: less than a tenth.\nResult: 36 and 30 photos, d -0.47, percentile 6: did not hold.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: exactly one; two or more; none\nPredicted most active: exactly one. Predicted least active: two or more.\nResult: 100 and 13 photos, d +0.01, percentile 43: did not hold.\n\nPrediction 3. What is the main color of the fur on the dog's face?\nAnswers: white or cream; tan or light brown; black, dark brown or gray; no dog face visible\nPredicted most active: white or cream. Predicted least active: black, dark brown or gray.\nResult: 27 and 43 photos, d -0.12, percentile 31: did not hold.\n\nPrediction 4. Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?\nAnswers: yes, fully visible; partly hidden, turned away or in profile; no dog face visible\nPredicted most active: yes, fully visible. Predicted least active: partly hidden, turned away or in profile.\nResult: 66 and 47 photos, d -0.28, percentile 13: did not hold.",
+  "null_s3": "The predictions were then checked on new photos: 118 photos of the 24 photo classes on which the unit is most active on average, none of them among the photos looked at. Someone who never saw the unit's activity answered each question about each photo. For each prediction: the number of photos given each of the two answers it compares, and d, how much more active the unit is on the photos given the predicted most-active answer than on those given the predicted least-active answer, after removing the differences between classes, in standard deviations, with this unit's percentile among all 512 units of its layer on the same photos and answers. A prediction held when that percentile is at least 95.\n\nPrediction 1. How much of the photo does the largest dog's head take up?\nAnswers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible\nPredicted most active: more than a quarter of the photo. Predicted least active: less than a tenth.\nResult: 36 and 30 photos, d -0.47, percentile 6: did not hold.\n\nPrediction 2. How many dogs are visible in the photo?\nAnswers: exactly one; two or more; none\nPredicted most active: exactly one. Predicted least active: two or more.\nResult: 100 and 13 photos, d +0.01, percentile 43: did not hold.\n\nPrediction 3. What is the main color of the most prominent dog's face?\nAnswers: mostly white or cream; tan, brown or mixed with white; mostly black, grey or dark; no dog face visible\nPredicted most active: mostly white or cream. Predicted least active: mostly black, grey or dark.\nResult: 23 and 35 photos, d -0.13, percentile 37: did not hold.\n\nPrediction 4. Is the most prominent dog's face turned toward the camera with both eyes visible?\nAnswers: yes, facing the camera; no, in profile or turned away; no dog face visible\nPredicted most active: yes, facing the camera. Predicted least active: no, in profile or turned away.\nResult: 70 and 43 photos, d -0.17, percentile 32: did not hold."
+ },
+ "tally": {
+  "real": {
+   "held": 6,
+   "not held": 6,
+   "too few": 0
+  },
+  "null": {
+   "held": 0,
+   "not held": 12,
+   "too few": 0
+  }
+ },
+ "readings": {
+  "real_s1": {
+   "class": "one",
+   "explanation": "The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color."
+  },
+  "real_s2": {
+   "class": "one",
+   "explanation": "The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter."
+  },
+  "real_s3": {
+   "class": "one",
+   "explanation": "The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter."
+  },
+  "null_s1": {
+   "class": "one",
+   "explanation": "The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed."
+  },
+  "null_s2": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden."
+  },
+  "null_s3": {
+   "class": "one",
+   "explanation": "The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views."
+  }
+ }
+}

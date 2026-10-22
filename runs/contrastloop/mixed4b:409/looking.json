@@ -1,0 +1,170 @@
+{
+ "s1": {
+  "key": "s1",
+  "explanation": "Responds to a single dog's head and face seen large and close-up, especially one looking toward the camera. It is strongest for light-colored (white, cream, tan) fluffy or soft fur on the face, as in the Maltese, yellow Labrador, corgi and dingo photos. Activity drops when the dog is small in the frame, seen whole-body at a distance, partly hidden, or shown with other dogs. Compared with the similar units, this unit favors pale or tan soft-coated faces and close head shots. It responds less to dark, wiry or wolf-like and German-shepherd-like faces.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the dog's head take up?",
+    "answers": [
+     "No dog visible",
+     "Head is small (dog far away or whole body shown small)",
+     "Medium (whole dog fills much of the frame)",
+     "Large close-up (head fills a big part of the frame)"
+    ],
+    "most": 3,
+    "least": 1
+   },
+   {
+    "question": "How many dogs are visible in the photo?",
+    "answers": [
+     "None",
+     "One",
+     "Two or more"
+    ],
+    "most": 1,
+    "least": 2
+   },
+   {
+    "question": "What is the main color of the fur on the dog's face?",
+    "answers": [
+     "No dog face visible",
+     "White, cream or light tan",
+     "Mixed (e.g. black-and-tan or black-and-white)",
+     "Mostly dark (black, dark gray or dark brown)"
+    ],
+    "most": 1,
+    "least": 3
+   },
+   {
+    "question": "Is the dog's face clearly seen facing the camera, with nothing in front of it?",
+    "answers": [
+     "No dog visible",
+     "Yes, face clear and facing the camera",
+     "Face turned away, in profile, or partly blocked by objects"
+    ],
+    "most": 1,
+    "least": 2
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10fdebdeff10d7ab512aed02e018e92e801e147f09135c9783817b1055b90d32",
+  "texts": [
+   "{\"explanation\": \"Responds to a single dog's head and face seen large and close-up, especially one looking toward the camera. It is strongest for light-colored (white, cream, tan) fluffy or soft fur on the face, as in the Maltese, yellow Labrador, corgi and dingo photos. Activity drops when the dog is small in the frame, seen whole-body at a distance, partly hidden, or shown with other dogs. Compared with the similar units, this unit favors pale or tan soft-coated faces and close head shots. It responds less to dark, wiry or wolf-like and German-shepherd-like faces.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"No dog visible\", \"Head is small (dog far away or whole body shown small)\", \"Medium (whole dog fills much of the frame)\", \"Large close-up (head fills a big part of the frame)\"], \"most_active\": \"Large close-up (head fills a big part of the frame)\", \"least_active\": \"Head is small (dog far away or whole body shown small)\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"None\", \"One\", \"Two or more\"], \"most_active\": \"One\", \"least_active\": \"Two or more\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"No dog face visible\", \"White, cream or light tan\", \"Mixed (e.g. black-and-tan or black-and-white)\", \"Mostly dark (black, dark gray or dark brown)\"], \"most_active\": \"White, cream or light tan\", \"least_active\": \"Mostly dark (black, dark gray or dark brown)\"}, {\"question\": \"Is the dog's face clearly seen facing the camera, with nothing in front of it?\", \"answers\": [\"No dog visible\", \"Yes, face clear and facing the camera\", \"Face turned away, in profile, or partly blocked by objects\"], \"most_active\": \"Yes, face clear and facing the camera\", \"least_active\": \"Face turned away, in profile, or partly blocked by objects\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a single dog's head and face seen large and close-up, especially one looking toward the camera. It is strongest for light-colored (white, cream, tan) fluffy or soft fur on the face, as in the Maltese, yellow Labrador, corgi and dingo photos. Activity drops when the dog is small in the frame, seen whole-body at a distance, partly hidden, or shown with other dogs. Compared with the similar units, this unit favors pale or tan soft-coated faces and close head shots. It responds less to dark, wiry or wolf-like and German-shepherd-like faces.\", \"predictions\": [{\"question\": \"How much of the photo does the dog's head take up?\", \"answers\": [\"No dog visible\", \"Head is small (dog far away or whole body shown small)\", \"Medium (whole dog fills much of the frame)\", \"Large close-up (head fills a big part of the frame)\"], \"most_active\": \"Large close-up (head fills a big part of the frame)\", \"least_active\": \"Head is small (dog far away or whole body shown small)\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"None\", \"One\", \"Two or more\"], \"most_active\": \"One\", \"least_active\": \"Two or more\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"No dog face visible\", \"White, cream or light tan\", \"Mixed (e.g. black-and-tan or black-and-white)\", \"Mostly dark (black, dark gray or dark brown)\"], \"most_active\": \"White, cream or light tan\", \"least_active\": \"Mostly dark (black, dark gray or dark brown)\"}, {\"question\": \"Is the dog's face clearly seen facing the camera, with nothing in front of it?\", \"answers\": [\"No dog visible\", \"Yes, face clear and facing the camera\", \"Face turned away, in profile, or partly blocked by objects\"], \"most_active\": \"Yes, face clear and facing the camera\", \"least_active\": \"Face turned away, in profile, or partly blocked by objects\"}]}",
+  "valid": true
+ },
+ "s3": {
+  "key": "s3",
+  "explanation": "Responds to a close-up of a single dog's head filling much of the frame, especially fluffy or light/white-furred faces (Maltese, cream Labrador, corgi). Activity drops when the dog is small or distant, when several dogs are present, or when the face is dark (German shepherd, Staffordshire, wolf). Compared with similar units, it prefers light, soft faces and close portraits over dark, hound-like or wolf-like faces.",
+  "predictions": [
+   {
+    "question": "How much of the photo does the largest dog's head take up?",
+    "answers": [
+     "more than a quarter of the photo",
+     "between a tenth and a quarter",
+     "less than a tenth",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How many dogs are visible in the photo?",
+    "answers": [
+     "exactly one",
+     "two or more",
+     "none"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main color of the most prominent dog's face?",
+    "answers": [
+     "mostly white or cream",
+     "tan, brown or mixed with white",
+     "mostly black, grey or dark",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the most prominent dog's face turned toward the camera with both eyes visible?",
+    "answers": [
+     "yes, facing the camera",
+     "no, in profile or turned away",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10fdebdeff10d7ab512aed02e018e92e801e147f09135c9783817b1055b90d32",
+  "texts": [
+   "{\"explanation\": \"Responds to a close-up of a single dog's head filling much of the frame, especially fluffy or light/white-furred faces (Maltese, cream Labrador, corgi). Activity drops when the dog is small or distant, when several dogs are present, or when the face is dark (German shepherd, Staffordshire, wolf). Compared with similar units, it prefers light, soft faces and close portraits over dark, hound-like or wolf-like faces.\", \"predictions\": [{\"question\": \"How much of the photo does the largest dog's head take up?\", \"answers\": [\"more than a quarter of the photo\", \"between a tenth and a quarter\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a quarter of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"exactly one\", \"two or more\", \"none\"], \"most_active\": \"exactly one\", \"least_active\": \"two or more\"}, {\"question\": \"What is the main color of the most prominent dog's face?\", \"answers\": [\"mostly white or cream\", \"tan, brown or mixed with white\", \"mostly black, grey or dark\", \"no dog face visible\"], \"most_active\": \"mostly white or cream\", \"least_active\": \"mostly black, grey or dark\"}, {\"question\": \"Is the most prominent dog's face turned toward the camera with both eyes visible?\", \"answers\": [\"yes, facing the camera\", \"no, in profile or turned away\", \"no dog face visible\"], \"most_active\": \"yes, facing the camera\", \"least_active\": \"no, in profile or turned away\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a close-up of a single dog's head filling much of the frame, especially fluffy or light/white-furred faces (Maltese, cream Labrador, corgi). Activity drops when the dog is small or distant, when several dogs are present, or when the face is dark (German shepherd, Staffordshire, wolf). Compared with similar units, it prefers light, soft faces and close portraits over dark, hound-like or wolf-like faces.\", \"predictions\": [{\"question\": \"How much of the photo does the largest dog's head take up?\", \"answers\": [\"more than a quarter of the photo\", \"between a tenth and a quarter\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a quarter of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"exactly one\", \"two or more\", \"none\"], \"most_active\": \"exactly one\", \"least_active\": \"two or more\"}, {\"question\": \"What is the main color of the most prominent dog's face?\", \"answers\": [\"mostly white or cream\", \"tan, brown or mixed with white\", \"mostly black, grey or dark\", \"no dog face visible\"], \"most_active\": \"mostly white or cream\", \"least_active\": \"mostly black, grey or dark\"}, {\"question\": \"Is the most prominent dog's face turned toward the camera with both eyes visible?\", \"answers\": [\"yes, facing the camera\", \"no, in profile or turned away\", \"no dog face visible\"], \"most_active\": \"yes, facing the camera\", \"least_active\": \"no, in profile or turned away\"}]}",
+  "valid": true
+ },
+ "s2": {
+  "key": "s2",
+  "explanation": "Responds to a single dog's face seen large and close-up, strongest when the face fur is white, cream or light (Maltese, yellow Lab, pale corgi or dingo faces). Activity drops when the dog is small or far away, when several dogs share the frame, or when the face is dark, gray or partly hidden (German shepherd, wolf, black Staffordshire).",
+  "predictions": [
+   {
+    "question": "How much of the photo does the (largest) dog's head take up?",
+    "answers": [
+     "more than a quarter of the photo",
+     "between a tenth and a quarter",
+     "less than a tenth",
+     "no dog visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "How many dogs are visible in the photo?",
+    "answers": [
+     "exactly one",
+     "two or more",
+     "none"
+    ],
+    "most": 0,
+    "least": 1
+   },
+   {
+    "question": "What is the main color of the fur on the dog's face?",
+    "answers": [
+     "white or cream",
+     "tan or light brown",
+     "black, dark brown or gray",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 2
+   },
+   {
+    "question": "Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?",
+    "answers": [
+     "yes, fully visible",
+     "partly hidden, turned away or in profile",
+     "no dog face visible"
+    ],
+    "most": 0,
+    "least": 1
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "10fdebdeff10d7ab512aed02e018e92e801e147f09135c9783817b1055b90d32",
+  "texts": [
+   "{\"explanation\": \"Responds to a single dog's face seen large and close-up, strongest when the face fur is white, cream or light (Maltese, yellow Lab, pale corgi or dingo faces). Activity drops when the dog is small or far away, when several dogs share the frame, or when the face is dark, gray or partly hidden (German shepherd, wolf, black Staffordshire).\", \"predictions\": [{\"question\": \"How much of the photo does the (largest) dog's head take up?\", \"answers\": [\"more than a quarter of the photo\", \"between a tenth and a quarter\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a quarter of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"exactly one\", \"two or more\", \"none\"], \"most_active\": \"exactly one\", \"least_active\": \"two or more\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"white or cream\", \"tan or light brown\", \"black, dark brown or gray\", \"no dog face visible\"], \"most_active\": \"white or cream\", \"least_active\": \"black, dark brown or gray\"}, {\"question\": \"Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?\", \"answers\": [\"yes, fully visible\", \"partly hidden, turned away or in profile\", \"no dog face visible\"], \"most_active\": \"yes, fully visible\", \"least_active\": \"partly hidden, turned away or in profile\"}]}"
+  ],
+  "text": "{\"explanation\": \"Responds to a single dog's face seen large and close-up, strongest when the face fur is white, cream or light (Maltese, yellow Lab, pale corgi or dingo faces). Activity drops when the dog is small or far away, when several dogs share the frame, or when the face is dark, gray or partly hidden (German shepherd, wolf, black Staffordshire).\", \"predictions\": [{\"question\": \"How much of the photo does the (largest) dog's head take up?\", \"answers\": [\"more than a quarter of the photo\", \"between a tenth and a quarter\", \"less than a tenth\", \"no dog visible\"], \"most_active\": \"more than a quarter of the photo\", \"least_active\": \"less than a tenth\"}, {\"question\": \"How many dogs are visible in the photo?\", \"answers\": [\"exactly one\", \"two or more\", \"none\"], \"most_active\": \"exactly one\", \"least_active\": \"two or more\"}, {\"question\": \"What is the main color of the fur on the dog's face?\", \"answers\": [\"white or cream\", \"tan or light brown\", \"black, dark brown or gray\", \"no dog face visible\"], \"most_active\": \"white or cream\", \"least_active\": \"black, dark brown or gray\"}, {\"question\": \"Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?\", \"answers\": [\"yes, fully visible\", \"partly hidden, turned away or in profile\", \"no dog face visible\"], \"most_active\": \"yes, fully visible\", \"least_active\": \"partly hidden, turned away or in profile\"}]}",
+  "valid": true
+ }
+}

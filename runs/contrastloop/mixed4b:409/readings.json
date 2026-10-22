@@ -1,0 +1,122 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "class": "one",
+  "explanation": "The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color.",
+   "evidence": "Head size in the frame held strongly (d +1.72, percentile 100) and a clear, camera-facing face also held (d +1.07, percentile 98). The light-versus-dark fur prediction failed (d +0.25, percentile 81), and one dog versus several came close but fell short (d +0.60, percentile 94).",
+   "missing_data": "Controlled comparisons of frontal versus profile faces at the same head size would help, to see whether the two held effects are separate. Close-up faces of other animals, such as cats and wolves, would show whether the unit is specific to dogs.",
+   "confidence": 0.72
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d3b91a3346e820cdcb9ec06d4baf2ab94dabb94a42518a06649d065c64f7199a",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color.\",\n \"evidence\": \"Head size in the frame held strongly (d +1.72, percentile 100) and a clear, camera-facing face also held (d +1.07, percentile 98). The light-versus-dark fur prediction failed (d +0.25, percentile 81), and one dog versus several came close but fell short (d +0.60, percentile 94).\",\n \"missing_data\": \"Controlled comparisons of frontal versus profile faces at the same head size would help, to see whether the two held effects are separate. Close-up faces of other animals, such as cats and wolves, would show whether the unit is specific to dogs.\",\n \"confidence\": 0.72}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color.\",\n \"evidence\": \"Head size in the frame held strongly (d +1.72, percentile 100) and a clear, camera-facing face also held (d +1.07, percentile 98). The light-versus-dark fur prediction failed (d +0.25, percentile 81), and one dog versus several came close but fell short (d +0.60, percentile 94).\",\n \"missing_data\": \"Controlled comparisons of frontal versus profile faces at the same head size would help, to see whether the two held effects are separate. Close-up faces of other animals, such as cats and wolves, would show whether the unit is specific to dogs.\",\n \"confidence\": 0.72}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "class": "one",
+  "explanation": "The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.",
+   "evidence": "Head size (d +1.45, 99th percentile) and a fully visible face (d +1.09, 98th percentile) both held. Light versus dark face fur had almost no effect (d +0.13, 71st percentile), and one dog versus several fell just short (d +0.60, 94th percentile, with only 13 multi-dog photos).",
+   "missing_data": "Close-up frontal faces of non-dog animals such as cats, foxes or bears, which would show whether the unit is specific to dogs, plus more photos with several dogs to settle the dog-count effect.",
+   "confidence": 0.7
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "156329b43a1a42eb657a99858a05777a536708594b35db638424cbf87dcbbe75",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.\",\n \"evidence\": \"Head size (d +1.45, 99th percentile) and a fully visible face (d +1.09, 98th percentile) both held. Light versus dark face fur had almost no effect (d +0.13, 71st percentile), and one dog versus several fell just short (d +0.60, 94th percentile, with only 13 multi-dog photos).\",\n \"missing_data\": \"Close-up frontal faces of non-dog animals such as cats, foxes or bears, which would show whether the unit is specific to dogs, plus more photos with several dogs to settle the dog-count effect.\",\n \"confidence\": 0.7}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.\",\n \"evidence\": \"Head size (d +1.45, 99th percentile) and a fully visible face (d +1.09, 98th percentile) both held. Light versus dark face fur had almost no effect (d +0.13, 71st percentile), and one dog versus several fell just short (d +0.60, 94th percentile, with only 13 multi-dog photos).\",\n \"missing_data\": \"Close-up frontal faces of non-dog animals such as cats, foxes or bears, which would show whether the unit is specific to dogs, plus more photos with several dogs to settle the dog-count effect.\",\n \"confidence\": 0.7}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "class": "one",
+  "explanation": "The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter.",
+   "evidence": "Head size (d +1.45, 99th percentile) and facing the camera (d +1.11, 98th percentile) both held strongly, while light versus dark face color showed essentially no effect (d +0.06, 59th percentile). Single versus multiple dogs was positive but just missed the threshold (d +0.60, 94th percentile), which fits a preference for one large face rather than a separate number effect.",
+   "missing_data": "Photos of close-up frontal faces of non-dog animals such as cats and wolves, or of humans, would show whether the unit is specific to dogs or responds to any large frontal face. Head-size results controlled for whether the face points at the camera would separate those two effects.",
+   "confidence": 0.75
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "83ebc81442c52ba8a8bc9e99dd1744061b5f2038aff573c8bd7bd90a72eaee41",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter.\",\n \"evidence\": \"Head size (d +1.45, 99th percentile) and facing the camera (d +1.11, 98th percentile) both held strongly, while light versus dark face color showed essentially no effect (d +0.06, 59th percentile). Single versus multiple dogs was positive but just missed the threshold (d +0.60, 94th percentile), which fits a preference for one large face rather than a separate number effect.\",\n \"missing_data\": \"Photos of close-up frontal faces of non-dog animals such as cats and wolves, or of humans, would show whether the unit is specific to dogs or responds to any large frontal face. Head-size results controlled for whether the face points at the camera would separate those two effects.\",\n \"confidence\": 0.75}"
+  ],
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter.\",\n \"evidence\": \"Head size (d +1.45, 99th percentile) and facing the camera (d +1.11, 98th percentile) both held strongly, while light versus dark face color showed essentially no effect (d +0.06, 59th percentile). Single versus multiple dogs was positive but just missed the threshold (d +0.60, 94th percentile), which fits a preference for one large face rather than a separate number effect.\",\n \"missing_data\": \"Photos of close-up frontal faces of non-dog animals such as cats and wolves, or of humans, would show whether the unit is specific to dogs or responds to any large frontal face. Head-size results controlled for whether the face points at the camera would separate those two effects.\",\n \"confidence\": 0.75}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "class": "one",
+  "explanation": "The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed.",
+   "evidence": "All four predictions failed. The fur-color prediction reversed strongly (d -0.48, 1st percentile), so dark faces drove the unit more than pale ones. Head size, number of dogs and facing the camera showed no effect or slightly reversed ones (d -0.15, +0.01, -0.29).",
+   "missing_data": "Activity on non-dog classes and a direct test of dark versus light fur within the same breed would show whether the unit codes dogs in general or dark fur or texture specifically.",
+   "confidence": 0.45
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5cb8dc469d817e8a0ada5cb7a694cec9ca5f148a82ab741381302b3667628ae1",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed.\",\n \"evidence\": \"All four predictions failed. The fur-color prediction reversed strongly (d -0.48, 1st percentile), so dark faces drove the unit more than pale ones. Head size, number of dogs and facing the camera showed no effect or slightly reversed ones (d -0.15, +0.01, -0.29).\",\n \"missing_data\": \"Activity on non-dog classes and a direct test of dark versus light fur within the same breed would show whether the unit codes dogs in general or dark fur or texture specifically.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed.\",\n \"evidence\": \"All four predictions failed. The fur-color prediction reversed strongly (d -0.48, 1st percentile), so dark faces drove the unit more than pale ones. Head size, number of dogs and facing the camera showed no effect or slightly reversed ones (d -0.15, +0.01, -0.29).\",\n \"missing_data\": \"Activity on non-dog classes and a direct test of dark versus light fur within the same breed would show whether the unit codes dogs in general or dark fur or texture specifically.\",\n \"confidence\": 0.45}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "class": "cannot_tell",
+  "explanation": "The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden.",
+  "parsed": {
+   "class": "cannot_tell",
+   "explanation": "The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden.",
+   "evidence": "All four predictions failed. Head size reversed (d -0.47, percentile 6) and full-face visibility reversed (d -0.28, percentile 13), while dog count (d +0.01) and face fur color (d -0.12) showed no effect.",
+   "missing_data": "Top-activating photos within each class, compared with low-activating ones, plus tests of whole-body or scene features (e.g., the dog's full body visible, background, pose), would show what drives the within-class variation.",
+   "confidence": 0.35
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "51267d9706ce6867ff91a5ffe0ca0dd7b9b570c9dc46ab9000ee2af71f6a5ec0",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden.\",\n \"evidence\": \"All four predictions failed. Head size reversed (d -0.47, percentile 6) and full-face visibility reversed (d -0.28, percentile 13), while dog count (d +0.01) and face fur color (d -0.12) showed no effect.\",\n \"missing_data\": \"Top-activating photos within each class, compared with low-activating ones, plus tests of whole-body or scene features (e.g., the dog's full body visible, background, pose), would show what drives the within-class variation.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden.\",\n \"evidence\": \"All four predictions failed. Head size reversed (d -0.47, percentile 6) and full-face visibility reversed (d -0.28, percentile 13), while dog count (d +0.01) and face fur color (d -0.12) showed no effect.\",\n \"missing_data\": \"Top-activating photos within each class, compared with low-activating ones, plus tests of whole-body or scene features (e.g., the dog's full body visible, background, pose), would show what drives the within-class variation.\",\n \"confidence\": 0.35}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "class": "one",
+  "explanation": "The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views.",
+   "evidence": "None of the four predictions held (percentiles 6–43). The head-size prediction reversed, with d -0.47 at the 6th percentile, so the unit is more active when the dog's head takes up less of the frame. Number of dogs, face color and face orientation showed essentially no effect.",
+   "missing_data": "Direct tests of whole-body versus head-only framing and of dog size in the frame, plus the identities of the top classes, to confirm that dogs as a category are what drives the unit.",
+   "confidence": 0.4
+  },
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "92fa03baea7eae670322fc1a823a43194b894d66e3827c5fcad1e317361d4a82",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views.\",\n \"evidence\": \"None of the four predictions held (percentiles 6–43). The head-size prediction reversed, with d -0.47 at the 6th percentile, so the unit is more active when the dog's head takes up less of the frame. Number of dogs, face color and face orientation showed essentially no effect.\",\n \"missing_data\": \"Direct tests of whole-body versus head-only framing and of dog size in the frame, plus the identities of the top classes, to confirm that dogs as a category are what drives the unit.\",\n \"confidence\": 0.4}\n```"
+  ],
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views.\",\n \"evidence\": \"None of the four predictions held (percentiles 6–43). The head-size prediction reversed, with d -0.47 at the 6th percentile, so the unit is more active when the dog's head takes up less of the frame. Number of dogs, face color and face orientation showed essentially no effect.\",\n \"missing_data\": \"Direct tests of whole-body versus head-only framing and of dog size in the frame, plus the identities of the top classes, to confirm that dogs as a category are what drives the unit.\",\n \"confidence\": 0.4}\n```",
+  "valid": true
+ }
+}

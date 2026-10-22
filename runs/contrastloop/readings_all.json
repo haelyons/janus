@@ -70,5 +70,21 @@
   "null_s1": "The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items than on single close-up objects against plain backgrounds, which is the opposite of what was predicted.",
   "null_s2": "The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features (jewelry-like metal or gems, dangling ornaments, a single item on a plain background) predicts its activity.",
   "null_s3": "The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatever the material. It does not specifically prefer shiny metal jewelry or clean product shots."
+ },
+ "mixed4b:409": {
+  "real_s1": "The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is, not by fur color.",
+  "real_s2": "The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.",
+  "real_s3": "The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does not appear to matter.",
+  "null_s1": "The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camera-facing faces the description claimed.",
+  "null_s2": "The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its activity within those classes; if anything it leans toward dogs seen smaller or with the face partly turned or hidden.",
+  "null_s3": "The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it leans toward photos where the dog's head is small, such as whole-body or more distant views."
+ },
+ "mixed4b:418": {
+  "real_s1": "The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, and responds weakly to close-ups and to sleeping or curled-up animals.",
+  "real_s2": "Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it is weak for head-only close-ups, distant animals, and animals turned away or asleep.",
+  "real_s3": "The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curled up asleep. Whether the whole body is shown and fairly large in the frame matters somewhat, but less than gaze and alertness.",
+  "null_s1": "The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its activity: framing, whole-body visibility and alert versus sleeping posture all fail.",
+  "null_s2": "The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its activity. Framing, face orientation, posture and mouth state do not distinguish its stronger responses from its weaker ones.",
+  "null_s3": "The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed framing or pose features (whole body, visible legs, facing the camera, upright posture) explains its activity."
  }
 }

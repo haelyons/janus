@@ -447,3 +447,103 @@ real_s3  one  The unit seems to respond to ornate decorative ornamentation on an
 null_s1  cannot_tell  The ornament description is not supported. The only notable signal is that, within its top classes, the unit is more active on cluttered scenes with many items
 null_s2  cannot_tell  The unit is most active on a set of 24 classes that seem to involve decorated accessories and adornment, but within those classes none of the proposed features
 null_s3  one  The unit responds to ornate or detailed decorative motifs on an object's surface, such as bows, flowers, tooled or embossed designs, or printed pictures, whatev
+
+== mixed4b:409  layer mixed4b (512 channels), 122 photos looked at, 118 photos checked, answer batches failed after a retry: 0 of 10
+classes: Maltese dog (153), Eskimo dog (248), Pembroke (263), Appenzeller (240), Dandie Dinmont (194), silky terrier (201), kuvasz (222), German shepherd (235), beagle (162), timber wolf (269), lesser panda (387), Greater Swiss Mountain dog (238), papillon (157), Yorkshire terrier (187), Norfolk terrier (185), Labrador retriever (208), Cardigan (264), Sussex spaniel (220), Leonberg (255), dingo (273), Staffordshire bullterrier (179), Irish terrier (184), Irish wolfhound (170), black-and-tan coonhound (165)
+peers: mixed4b:443 (r 0.957), mixed4b:429 (r 0.938), mixed4b:384 (r 0.925)
+s1  Responds to a single dog's head and face seen large and close-up, especially one looking toward the camera. It is strongest for light-colored (white, cream, tan
+   P1. How much of the photo does the dog's head take up?  answers: No dog visible; Head is small (dog far away or whole body shown small); Medium (whole dog fills much of the frame); Large close-up (head fills a big part of the frame); most active: Large close-up (head fills a big part of the frame); least active: Head is small (dog far away or whole body shown small)
+      real: 47 and 16 photos, d +1.72, percentile 99.6 -> held
+      null: 47 and 16 photos, d -0.15, percentile 27.9 -> not held
+   P2. How many dogs are visible in the photo?  answers: None; One; Two or more; most active: One; least active: Two or more
+      real: 100 and 13 photos, d +0.60, percentile 93.6 -> not held
+      null: 100 and 13 photos, d +0.01, percentile 43.0 -> not held
+   P3. What is the main color of the fur on the dog's face?  answers: No dog face visible; White, cream or light tan; Mixed (e.g. black-and-tan or black-and-white); Mostly dark (black, dark gray or dark brown); most active: White, cream or light tan; least active: Mostly dark (black, dark gray or dark brown)
+      real: 43 and 17 photos, d +0.25, percentile 81.1 -> not held
+      null: 43 and 17 photos, d -0.48, percentile 1.2 -> not held
+   P4. Is the dog's face clearly seen facing the camera, with nothing in front of it?  answers: No dog visible; Yes, face clear and facing the camera; Face turned away, in profile, or partly blocked by objects; most active: Yes, face clear and facing the camera; least active: Face turned away, in profile, or partly blocked by objects
+      real: 65 and 48 photos, d +1.07, percentile 97.9 -> held
+      null: 65 and 48 photos, d -0.29, percentile 15.2 -> not held
+s2  Responds to a single dog's face seen large and close-up, strongest when the face fur is white, cream or light (Maltese, yellow Lab, pale corgi or dingo faces).
+   P1. How much of the photo does the (largest) dog's head take up?  answers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible; most active: more than a quarter of the photo; least active: less than a tenth
+      real: 36 and 30 photos, d +1.45, percentile 99.2 -> held
+      null: 36 and 30 photos, d -0.47, percentile 6.1 -> not held
+   P2. How many dogs are visible in the photo?  answers: exactly one; two or more; none; most active: exactly one; least active: two or more
+      real: 100 and 13 photos, d +0.60, percentile 93.6 -> not held
+      null: 100 and 13 photos, d +0.01, percentile 43.0 -> not held
+   P3. What is the main color of the fur on the dog's face?  answers: white or cream; tan or light brown; black, dark brown or gray; no dog face visible; most active: white or cream; least active: black, dark brown or gray
+      real: 27 and 43 photos, d +0.13, percentile 71.3 -> not held
+      null: 27 and 43 photos, d -0.12, percentile 30.9 -> not held
+   P4. Is the dog's whole face clearly visible, with both eyes and the nose unobstructed?  answers: yes, fully visible; partly hidden, turned away or in profile; no dog face visible; most active: yes, fully visible; least active: partly hidden, turned away or in profile
+      real: 66 and 47 photos, d +1.09, percentile 97.9 -> held
+      null: 66 and 47 photos, d -0.28, percentile 13.5 -> not held
+s3  Responds to a close-up of a single dog's head filling much of the frame, especially fluffy or light/white-furred faces (Maltese, cream Labrador, corgi). Activit
+   P1. How much of the photo does the largest dog's head take up?  answers: more than a quarter of the photo; between a tenth and a quarter; less than a tenth; no dog visible; most active: more than a quarter of the photo; least active: less than a tenth
+      real: 36 and 30 photos, d +1.45, percentile 99.2 -> held
+      null: 36 and 30 photos, d -0.47, percentile 6.1 -> not held
+   P2. How many dogs are visible in the photo?  answers: exactly one; two or more; none; most active: exactly one; least active: two or more
+      real: 100 and 13 photos, d +0.60, percentile 93.6 -> not held
+      null: 100 and 13 photos, d +0.01, percentile 43.0 -> not held
+   P3. What is the main color of the most prominent dog's face?  answers: mostly white or cream; tan, brown or mixed with white; mostly black, grey or dark; no dog face visible; most active: mostly white or cream; least active: mostly black, grey or dark
+      real: 23 and 35 photos, d +0.06, percentile 59.4 -> not held
+      null: 23 and 35 photos, d -0.13, percentile 37.3 -> not held
+   P4. Is the most prominent dog's face turned toward the camera with both eyes visible?  answers: yes, facing the camera; no, in profile or turned away; no dog face visible; most active: yes, facing the camera; least active: no, in profile or turned away
+      real: 70 and 43 photos, d +1.11, percentile 98.4 -> held
+      null: 70 and 43 photos, d -0.17, percentile 32.0 -> not held
+outcomes: real held 6, not held 6, too few 0; null held 0, not held 12, too few 0 (of 12 predictions)
+real_s1  one  The unit responds to a large, close-up dog face that looks toward the camera and is not blocked by anything. It is driven by how big and how frontal the face is
+real_s2  one  The unit responds to a single dog's face seen large, close-up and frontally, with both eyes and the nose clearly visible. Fur color does not appear to matter.
+real_s3  one  The unit responds to a close-up, frontal portrait of a dog's face: a dog head that fills a large part of the frame and looks toward the camera. Fur color does n
+null_s1  one  The unit responds to dogs, since its most active classes are dog breeds. Within those classes it prefers darker or mixed face fur, not the pale, close-up, camer
+null_s2  cannot_tell  The unit seems tied to dog photos (its top classes include light-faced breeds), but none of the proposed close-up, light-faced, single-dog features explain its
+null_s3  one  The unit appears to respond to dogs in general. Within dog classes it does not prefer close-up, light-furred, frontal single-dog portraits, and if anything it l
+
+== mixed4b:418  layer mixed4b (512 channels), 116 photos looked at, 124 photos checked, answer batches failed after a retry: 0 of 11
+classes: Appenzeller (240), Pembroke (263), red fox (277), Australian terrier (193), papillon (157), dingo (273), Irish terrier (184), Maltese dog (153), Arctic fox (279), Norfolk terrier (185), Dandie Dinmont (194), kuvasz (222), German shepherd (235), Shetland sheepdog (230), Cardigan (264), otterhound (175), cairn (192), Eskimo dog (248), Border collie (232), kit fox (278), miniature schnauzer (196), Greater Swiss Mountain dog (238), capuchin (378), English foxhound (167)
+peers: mixed4b:434 (r 0.952), mixed4b:443 (r 0.894), mixed4b:409 (r 0.893)
+s1  The unit responds to a whole small-to-medium animal (dogs, foxes, monkeys) seen at a middle distance, centred and facing the camera with an alert, open-eyed fac
+   P1. How much of the photo does the main animal take up?  answers: Head/face close-up filling most of the frame; Whole animal at medium size, clearly visible; Animal small or far away in the scene; No animal in the photo; most active: Whole animal at medium size, clearly visible; least active: Head/face close-up filling most of the frame
+      real: 88 and 30 photos, d +0.65, percentile 95.7 -> held
+      null: 88 and 30 photos, d -0.09, percentile 31.4 -> not held
+   P2. Is the main animal's whole body, including legs, visible in the photo?  answers: Yes, the full body with legs is visible; No, only the head or head and shoulders; No animal in the photo; most active: Yes, the full body with legs is visible; least active: No, only the head or head and shoulders
+      real: 82 and 40 photos, d +0.45, percentile 91.6 -> not held
+      null: 82 and 40 photos, d -0.18, percentile 12.5 -> not held
+   P3. Which way is the main animal's face pointing?  answers: Toward the camera; Sideways or in profile; Away or face hidden; No animal in the photo; most active: Toward the camera; least active: Away or face hidden
+      real: 88 and 4 photos -> too few
+      null: 88 and 4 photos -> too few
+   P4. Are the main animal's eyes open, with the animal alert, or is it curled up or asleep?  answers: Eyes open and alert; Eyes closed, curled up or sleeping; Eyes not visible or no animal; most active: Eyes open and alert; least active: Eyes closed, curled up or sleeping
+      real: 107 and 9 photos, d +0.90, percentile 98.0 -> held
+      null: 107 and 9 photos, d -0.09, percentile 56.6 -> not held
+s2  Responds to a whole small-to-medium canid-like animal (dog, fox) seen at medium distance, with the full body or most of it in frame and the face turned toward t
+   P1. How is the main animal framed in the photo?  answers: Whole or most of body visible, animal fills a moderate part of the frame; Close-up of head/face filling most of the frame; Animal small or distant in the frame; No animal; most active: Whole or most of body visible, animal fills a moderate part of the frame; least active: Close-up of head/face filling most of the frame
+      real: 86 and 32 photos, d +0.60, percentile 95.1 -> held
+      null: 86 and 32 photos, d -0.14, percentile 22.1 -> not held
+   P2. Is the main animal's face turned toward the camera with eyes open?  answers: Yes, facing camera with eyes open; No, turned away, in profile, or eyes closed; No animal visible; most active: Yes, facing camera with eyes open; least active: No, turned away, in profile, or eyes closed
+      real: 79 and 44 photos, d +0.93, percentile 97.1 -> held
+      null: 79 and 44 photos, d +0.17, percentile 82.4 -> not held
+   P3. What is the main animal's posture?  answers: Standing, sitting upright, or running; Lying curled up or asleep; Only the head is visible; No animal; most active: Standing, sitting upright, or running; least active: Only the head is visible
+      real: 77 and 29 photos, d +0.79, percentile 97.5 -> held
+      null: 77 and 29 photos, d -0.01, percentile 33.0 -> not held
+   P4. Is the animal's mouth open with its tongue visible while the whole body is in view?  answers: Yes, mouth open/tongue out and body in view; Mouth closed with body in view; Body not in view (head only) or no animal; most active: Yes, mouth open/tongue out and body in view; least active: Body not in view (head only) or no animal
+      real: 24 and 38 photos, d +1.13, percentile 99.4 -> held
+      null: 24 and 38 photos, d -0.22, percentile 17.2 -> not held
+s3  Responds to a whole, alert dog or fox (or a similar fluffy mammal) seen at a medium distance. The animal fills a good part of the frame, its full body and legs
+   P1. How is the main animal framed in the photo?  answers: Close-up of head/face only; Whole body visible and fairly large in frame; Whole body visible but small/distant; No animal visible; most active: Whole body visible and fairly large in frame; least active: Close-up of head/face only
+      real: 84 and 35 photos, d +0.51, percentile 92.0 -> not held
+      null: 84 and 35 photos, d -0.08, percentile 29.7 -> not held
+   P2. Are the animal's legs/paws visible in the photo?  answers: Yes, legs clearly visible; No, only head/upper body visible; No animal visible; most active: Yes, legs clearly visible; least active: No, only head/upper body visible
+      real: 85 and 38 photos, d +0.48, percentile 92.4 -> not held
+      null: 85 and 38 photos, d +0.01, percentile 36.5 -> not held
+   P3. Is the animal facing the camera with both eyes open and visible?  answers: Yes, facing camera with eyes open; No (side view, facing away, or eyes closed); No animal visible; most active: Yes, facing camera with eyes open; least active: No (side view, facing away, or eyes closed)
+      real: 78 and 45 photos, d +0.96, percentile 97.5 -> held
+      null: 78 and 45 photos, d +0.22, percentile 84.4 -> not held
+   P4. What is the animal's posture?  answers: Standing, running or sitting upright; Lying down with head raised; Curled up or asleep; No animal or posture not visible; most active: Standing, running or sitting upright; least active: Curled up or asleep
+      real: 66 and 6 photos, d +1.35, percentile 97.5 -> held
+      null: 66 and 6 photos, d +0.29, percentile 82.4 -> not held
+outcomes: real held 8, not held 3, too few 1; null held 0, not held 11, too few 1 (of 12 predictions)
+real_s1  one  The unit responds to a whole, alert, open-eyed small-to-medium animal (dogs, foxes, monkeys) shown at medium size in the frame rather than as a head close-up, a
+real_s2  one  Responds to a whole small-to-medium dog or fox seen at medium distance, with the body mostly in frame and the face turned toward the camera with eyes open; it i
+real_s3  one_plus_related  The unit responds to an alert dog or fox (or similar fluffy mammal) that faces the camera with its eyes open, standing, running or sitting upright, and not curl
+null_s1  cannot_tell  The unit is most active on photos of small-to-medium mammals such as dogs, foxes and monkeys. Within those classes, none of the proposed factors explains its ac
+null_s2  cannot_tell  The unit likely responds to small-to-medium dogs and foxes, which are the classes it is most active on, but no within-class feature tested here explains its act
+null_s3  cannot_tell  The unit is most active on photos of dog and fox classes (corgis, foxes, terriers and similar fluffy mammals), but within those classes none of the proposed fra
