@@ -534,3 +534,26 @@ the unit's 3 peers, with each peer's percentile in the layer. A held prediction 
 also at the 95th percentile or above.
 A1. For 443 and 429 together, at least half of the held predictions are shared.
 A2. Over the 5 controls, fewer than half of the held predictions are shared.
+
+# Round 28: conditional refinements, family-aware (F) against refinement alone (R) (tools/refineloop.py)
+(sealed 2026-10-22, before refineloop.py exists, and before 4b:409 and 418 have round-27 outputs)
+
+Stage A: 4b:409 and 4b:418 (hard controls: dog-head units, peers of the oriented units, not oriented in 23B: 0.8th,
+79.7th) go through round 27's tool unchanged. Stage B, per unit (431, 443, 429, 384, 409, 418): every round-27
+prediction is scored on T for the unit and its 3 peers. Arm F picks the unit's strongest prediction that held and is
+shared with a peer (else the one on which it differs most from a peer, |z| >= 2) and shows photos within each of its
+two answers on which the unit and that peer disagree, with the peer table; arm R picks the unit's best prediction and
+shows the unit's most and least active photos within each answer. 3 samples per arm write up to 2 conditional
+predictions, each splitting one answer. Checked on D (never shown to the refining agent): within photos given the
+split answer, the unit's d at the 95th percentile of its layer or above. Distinctive: held, and some peer below the
+50th. No prompt to the refining agents mentions direction; the blind answerer is told left and right are as seen.
+Direction prediction and favoured side: round 27's rule on the refinements (question, most- and least-active answer);
+an answer naming a side with "its", "his", "her", "their", "own" or "'s" before it is side-ambiguous (not counted for
+either side). Sides as seen in the image (round 13's labels); preferred: 431, 443 right; 429, 384 left.
+1. Arm F writes a direction refinement for at least 3 of the 4 oriented units.
+2. Arm F: a held direction refinement favouring the preferred side for at least 2 of the 4 oriented units, and no
+   held one favouring the other side.
+3. Arm F gets item 2's held, correct-side refinement for more oriented units than arm R.
+4. No held direction refinement for 4b:409 (either arm); at most one across 409 and 418.
+5. Calibration on D, all checkable refinements of both arms pooled: null holds at most 10%; real at least 3 times null.
+6. Of held refinements, the share that is distinctive is higher in arm F than in arm R.
