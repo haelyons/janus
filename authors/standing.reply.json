@@ -1,0 +1,77 @@
+{
+ "prompt": "An image classification network trained on ImageNet has units (single neurons) that respond to features of photos. To find out what a unit responds to, someone who never sees the unit's activity answers questions about ordinary photos, and the answers are compared with the unit's activity among photos of the same class. Questions written from a description of the unit tend to cover only what the description mentions.\n\nWe want a fixed set of extra questions, asked for every unit whatever its description: about ways in which photos of the same class commonly differ that the network's training treats as irrelevant to the class, for example the variations used in standard training-data augmentation. Write 8 such questions, about the photo's main subject or the photo as a whole. Each must be answerable by looking at a small photo, and needs 2 to 5 short answers that do not overlap, so that every photo fits exactly one of them; include an answer for photos to which the question does not apply. Reply with only JSON: {\"questions\": [{\"question\": \"...\", \"answers\": [\"...\", \"...\"]}]}",
+ "reply": "{\"questions\": [{\"question\": \"Which way is the main subject facing or pointing?\", \"answers\": [\"left\", \"right\", \"toward or away from the camera\", \"no clear facing direction or no single main subject\"]}, {\"question\": \"How much of the photo does the main subject take up?\", \"answers\": [\"less than a quarter\", \"a quarter to three quarters\", \"more than three quarters\", \"no single main subject\"]}, {\"question\": \"Is the main subject cut off by an edge of the photo?\", \"answers\": [\"fully inside the photo\", \"partly cut off\", \"no single main subject\"]}, {\"question\": \"Where is the center of the main subject left to right?\", \"answers\": [\"left third\", \"middle third\", \"right third\", \"no single main subject\"]}, {\"question\": \"How brightly lit is the main subject?\", \"answers\": [\"dark\", \"medium\", \"bright\", \"no single main subject\"]}, {\"question\": \"Does the photo have an overall color tint?\", \"answers\": [\"no noticeable tint\", \"warm (yellow, orange or red) tint\", \"cool (blue or green) tint\", \"black and white or nearly colorless\"]}, {\"question\": \"Are the horizon or the main straight lines in the photo tilted?\", \"answers\": [\"level\", \"noticeably tilted\", \"no horizon or straight lines visible\"]}, {\"question\": \"How sharp is the main subject?\", \"answers\": [\"sharp\", \"slightly blurry\", \"very blurry\", \"no single main subject\"]}]}",
+ "questions": [
+  {
+   "question": "Which way is the main subject facing or pointing?",
+   "answers": [
+    "left",
+    "right",
+    "toward or away from the camera",
+    "no clear facing direction or no single main subject"
+   ]
+  },
+  {
+   "question": "How much of the photo does the main subject take up?",
+   "answers": [
+    "less than a quarter",
+    "a quarter to three quarters",
+    "more than three quarters",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Is the main subject cut off by an edge of the photo?",
+   "answers": [
+    "fully inside the photo",
+    "partly cut off",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Where is the center of the main subject left to right?",
+   "answers": [
+    "left third",
+    "middle third",
+    "right third",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "How brightly lit is the main subject?",
+   "answers": [
+    "dark",
+    "medium",
+    "bright",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Does the photo have an overall color tint?",
+   "answers": [
+    "no noticeable tint",
+    "warm (yellow, orange or red) tint",
+    "cool (blue or green) tint",
+    "black and white or nearly colorless"
+   ]
+  },
+  {
+   "question": "Are the horizon or the main straight lines in the photo tilted?",
+   "answers": [
+    "level",
+    "noticeably tilted",
+    "no horizon or straight lines visible"
+   ]
+  },
+  {
+   "question": "How sharp is the main subject?",
+   "answers": [
+    "sharp",
+    "slightly blurry",
+    "very blurry",
+    "no single main subject"
+   ]
+  }
+ ],
+ "prompt_sha256": "72ae26cc9b5959684a0d27e8c36f8fcf05931bd7307ac1c437a41a032b83f0ff"
+}
