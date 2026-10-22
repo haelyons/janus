@@ -816,3 +816,18 @@ and says what the unit responds to. `runs/contrastloop/`; judged as round 24, 38
 - So contrasts plus signed predictions give measured, calibrated hypotheses about how activity varies, but one pass
   stops at the first axis that holds. Splitting a held or failed answer further, and asking what separates a unit
   from a peer that holds on the same prediction, is the missing step.
+
+### Round 27, post hoc A: the predictions scored for each unit's peers (`tools/r27_peers.py`, no calls)
+
+The same d on the same photos and real answers, for each unit's 3 class-profile peers. `runs/contrastloop/
+peers_posthoc.txt`. A held prediction is shared when a peer is also at the 95th percentile or above.
+
+    held, shared / all: 443 7/7, 429 8/9, 4d:409 3/3, 237 2/3, 373 4/4, 4e:55 1/7; 431, 384, 719 none held
+
+- A1 held (443 + 429: 15 of 16 shared). A2 failed (controls 10 of 17): the car units share their "whole vehicle,
+  side view" predictions with car peers too. Only 4e:55's are its own (6 of 7).
+- So a layer percentile tests a unit against the whole layer and a held prediction often describes the family.
+  Against peers, the oriented units do stand out where the layer percentile hides it. 431's failed "profile vs
+  frontal" is d -0.31 (31st) but its peers 443, 409, 429 are at -0.78 to -1.01 (0th-4th): of the four, 431 alone
+  hardly drops on profiles. 384's "frontal" is at the 68th-70th while 443 and 429 are at 98th-99th. The units that
+  prefer one side differ from their family on exactly the axis whose sides the agent pooled.
