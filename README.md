@@ -908,3 +908,24 @@ The facing row, "left" against "right":
 - Caveat: the standing set has a facing question because flips are standard augmentation. It was written in 26B by
   an agent told only "what training treats as irrelevant", but after direction was this project's target. A feature
   off the set's axes would not be found this way.
+
+## Round 29B: a final reading that sees the checks on new photos (`tools/finalread.py`)
+
+Per unit and per valid real-table reading of round 29, an agent sees the same D table, that reading's explanation
+and picked rows, and each picked row's check on T ("held" or "did not hold", with T's d and percentiles), then says
+what the unit responds to and lists the rows it is confident describe the unit. Arm "null" shows the same picks with
+their checks on T answers shuffled within class (round 29's T_null). 36 text-only calls, one at a time, none failed.
+`runs/finalread/`, checks in `r29b_check.txt`.
+
+- Held: 1 (each oriented unit keeps its preferred-side facing row in 3 of 3 real samples), 2 (409 keeps no facing
+  row in any real sample; its explanations now describe size, not direction), 3 (null: no oriented unit keeps a
+  facing row in any of 12 samples), 4 (real: picks that did not hold kept 0 of 30, picks that held kept 31 of 32).
+- The final reader does what a rule would: keep a row if and only if it held. It adds little judgment beyond that.
+- It also adds rows it was never shown a check for (8 additions, all at 93 or above on D). Round 29's every arm
+  checks those on T: 4 held (409 rows 6 and 8, 443 row 2, 384 row 4), 4 did not (409 row 7, 384 rows 6, 7, 8 in a
+  null sample). The size rows it adds for 409 are at 89 to 98 for its peers, so they describe the family. The
+  "confident" list is therefore not fully backed by checks.
+- Caveat: round 29's "truth" for the sides is round 23B's blind facing labels with a mirror check, the same kind of
+  measurement as the method, so rounds 29 and 29B are a strong replication, not an independent validation. Zoom In
+  gives the grouping of these units, not their sides; it also draws 409 and 418 in the mirrored dog-head circuit,
+  which our measurement does not support.

@@ -1,0 +1,99 @@
+{
+ "unit": "mixed4b:429",
+ "real_s1": {
+  "valid": true,
+  "explanation": "The unit is most clearly weakest for dogs facing or pointing to the right. Head-on (toward or away from the camera) and left-facing dogs both drive it more strongly, and this held on new photos. The extra preference for frontal over left-facing dogs did not replicate. The preference for sharp over slightly blurry subjects also fell below the threshold on new photos, so neither is reliable. The preference for larger, frame-filling subjects is shared with similar units. One similar unit also reaches the 100th percentile on the right-facing contrast, so the effect is partly shared within the layer, but it is the most robust feature of this unit.",
+  "rows": [
+   4,
+   1
+  ],
+  "picked": [
+   4,
+   19,
+   1,
+   2
+  ],
+  "held": [
+   4,
+   1
+  ]
+ },
+ "real_s2": {
+  "valid": true,
+  "explanation": "Within these dog classes, the unit fires most when the dog faces toward or away from the camera, which usually means a frontal face view, rather than being seen in profile. Among profile views it clearly prefers dogs facing left over dogs facing right, and right-facing dogs give the weakest response. It also responds less when there is no clear single subject or facing direction. The left-over-right preference and the frontal-over-no-direction preference held strongly on new photos and are fairly specific to this unit. The frontal-over-right preference also held, though one similar unit shares it. Sharpness did not hold up on new photos. Larger, closer subjects also raise the response, but the similar units share that preference, so it is not particular to this unit.",
+  "rows": [
+   4,
+   1,
+   6
+  ],
+  "picked": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "held": [
+   4,
+   1,
+   6
+  ]
+ },
+ "real_s3": {
+  "valid": true,
+  "explanation": "This unit responds most to dogs facing toward or away from the camera, seen frontally rather than in profile. It is weakest for right-facing profiles and for photos with no clear facing direction. It responds more to left-facing than right-facing profiles, and this asymmetry is particular to this unit, since its similar units do not share it. The frontal preference is partly shared with similar units. A preference for large, sharp, frame-filling subjects appears too, but it is weaker, shared with similar units, and the sharpness effect did not hold on new photos.",
+  "rows": [
+   4,
+   1,
+   6
+  ],
+  "picked": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "held": [
+   4,
+   1,
+   6
+  ]
+ },
+ "null_s1": {
+  "valid": true,
+  "explanation": "This unit fires within dog breed classes and most likely prefers dogs facing toward or away from the camera over dogs seen in profile. That preference was strong in the original photos (row 4, percentile 100). On new photos it was much weaker (d +0.29, percentile 94), just under the threshold, so it is not reliable. The left-over-right difference and the sharpness preference did not replicate at all. The unit also responds more when the dog takes up a substantial part of the frame (rows 7 and 8), but similar units share that strongly, so it is not particular to this unit. Overall, no feature specific to this unit is confirmed.",
+  "rows": [],
+  "picked": [
+   4,
+   19,
+   1,
+   2
+  ],
+  "held": []
+ },
+ "null_s2": {
+  "valid": true,
+  "explanation": "This unit's distinctive-looking preferences did not hold up on new photos. The frontal/rear-facing preference over right-facing (row 4) weakened to d +0.29 at the 94th percentile, which is close but not unusual, and that similar unit 3 matched (97th percentile). Sharpness (row 19), left-over-right (row 1) and facing the camera over no clear direction (row 6) all disappeared or reversed. The other strong rows are mostly shared with similar units. These are subject size (rows 7 and 8, which favor medium-to-large dogs over small ones) and facing toward or away from the camera over left (row 2). The most that can be said is that the unit, like its neighbors, is broadly more active for large, prominent dogs, perhaps facing the camera. Nothing in the table is reliably particular to this unit.",
+  "rows": [],
+  "picked": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "held": []
+ },
+ "null_s3": {
+  "valid": true,
+  "explanation": "This unit responds to dogs seen frontally, facing toward or away from the camera, rather than in profile. This is clearest against right-facing dogs. In the new photos this held only weakly: d +0.29 at the 94th percentile, just short of the 95 cutoff. The unit also prefers a subject that takes up a substantial part of the frame rather than a small one. That preference is shared with similar units, so it is not particular to this unit. The other claimed specifics did not replicate: sharp versus slightly blurry, left versus right profiles, and frontal versus no clear facing direction. They were likely noise in the first sample.",
+  "rows": [
+   4
+  ],
+  "picked": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "held": []
+ }
+}

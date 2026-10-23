@@ -1,0 +1,100 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to dogs and wolf-like canids that are large in the frame. The animal is usually centered, partly cut off by the frame edge, and in sharp focus. Its most reliable distinctive trait is weaker activity when the animal faces left than when it faces toward or away from the camera. This held strongly on the new photos (d +1.05, 99th percentile). The right-versus-left difference did not replicate, so the asymmetry is really about left-facing versus frontal views, not left versus right. The preference for large, close subjects (rows 7 and 8) is strong, but similar units share it. The weaker trends were preferences for scenes without straight lines or horizons and for subjects facing right over those with no clear facing direction. Neither reached the 95th percentile on the new photos.",
+  "rows": [
+   2,
+   7,
+   8
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e4c451b254fd40f2da6c5ca36cb3086454d2ed2a8da31fb9b15a4e456e9066aa",
+  "texts": [
+   "{\"explanation\": \"The unit responds to dogs and wolf-like canids that are large in the frame. The animal is usually centered, partly cut off by the frame edge, and in sharp focus. Its most reliable distinctive trait is weaker activity when the animal faces left than when it faces toward or away from the camera. This held strongly on the new photos (d +1.05, 99th percentile). The right-versus-left difference did not replicate, so the asymmetry is really about left-facing versus frontal views, not left versus right. The preference for large, close subjects (rows 7 and 8) is strong, but similar units share it. The weaker trends were preferences for scenes without straight lines or horizons and for subjects facing right over those with no clear facing direction. Neither reached the 95th percentile on the new photos.\", \"rows\": [2, 7, 8]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to dogs and wolf-like canids that are large in the frame. The animal is usually centered, partly cut off by the frame edge, and in sharp focus. Its most reliable distinctive trait is weaker activity when the animal faces left than when it faces toward or away from the camera. This held strongly on the new photos (d +1.05, 99th percentile). The right-versus-left difference did not replicate, so the asymmetry is really about left-facing versus frontal views, not left versus right. The preference for large, close subjects (rows 7 and 8) is strong, but similar units share it. The weaker trends were preferences for scenes without straight lines or horizons and for subjects facing right over those with no clear facing direction. Neither reached the 95th percentile on the new photos.\", \"rows\": [2, 7, 8]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds most to dogs and dog-like animals (wolves, dingo, lesser panda) that are large and close in the frame. It is strongest when the animal fills most of the photo, and weakest when the animal is small in a wider scene. Related tendencies follow from close framing: the animal is often cut off by the edges, sharp, centered, and shown against a background with no horizon or straight lines. It is also weaker when there is no clear single subject or facing direction. The left/right facing asymmetry did not hold on new photos (d +0.02). The 'no lines' preference and the 'right over no clear direction' preference weakened to just under the 95th-percentile cutoff on new photos. The strong preference for large subjects is partly shared with similar units, but it is the most reliable description of this unit.",
+  "rows": [
+   7,
+   8,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "31be1353e1d7b9b0434024890383483f00f5c0105f2c665d923c6e98e8795528",
+  "texts": [
+   "{\"explanation\": \"The unit responds most to dogs and dog-like animals (wolves, dingo, lesser panda) that are large and close in the frame. It is strongest when the animal fills most of the photo, and weakest when the animal is small in a wider scene. Related tendencies follow from close framing: the animal is often cut off by the edges, sharp, centered, and shown against a background with no horizon or straight lines. It is also weaker when there is no clear single subject or facing direction. The left/right facing asymmetry did not hold on new photos (d +0.02). The 'no lines' preference and the 'right over no clear direction' preference weakened to just under the 95th-percentile cutoff on new photos. The strong preference for large subjects is partly shared with similar units, but it is the most reliable description of this unit.\", \"rows\": [7, 8, 6]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most to dogs and dog-like animals (wolves, dingo, lesser panda) that are large and close in the frame. It is strongest when the animal fills most of the photo, and weakest when the animal is small in a wider scene. Related tendencies follow from close framing: the animal is often cut off by the edges, sharp, centered, and shown against a background with no horizon or straight lines. It is also weaker when there is no clear single subject or facing direction. The left/right facing asymmetry did not hold on new photos (d +0.02). The 'no lines' preference and the 'right over no clear direction' preference weakened to just under the 95th-percentile cutoff on new photos. The strong preference for large subjects is partly shared with similar units, but it is the most reliable description of this unit.\", \"rows\": [7, 8, 6]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds most to dogs and dog-like animals shown large and close up. Activity is clearly higher when the animal fills a quarter or more of the frame, and highest when it fills most of it. It is weak for small or distant subjects. This size preference is the strongest and most reliable signal (rows 7 and 8, d +1.4 to +1.9), although similar units share it. There are weaker hints that it prefers subjects that are sharp, centered, cropped by the frame, and set against organic backgrounds without straight lines. The apparent preference for right-facing or camera-facing animals over left-facing ones did not replicate on new photos (row 1 fell to d +0.02). The no-straight-lines preference fell below the cutoff (percentile 92). So the direction and line effects are not reliable features of this unit.",
+  "rows": [
+   7,
+   8
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "20b5b7642b4ca8583c0bc453879bcd8b7da86090a5a268378d2715bf03ce7aad",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds most to dogs and dog-like animals shown large and close up. Activity is clearly higher when the animal fills a quarter or more of the frame, and highest when it fills most of it. It is weak for small or distant subjects. This size preference is the strongest and most reliable signal (rows 7 and 8, d +1.4 to +1.9), although similar units share it. There are weaker hints that it prefers subjects that are sharp, centered, cropped by the frame, and set against organic backgrounds without straight lines. The apparent preference for right-facing or camera-facing animals over left-facing ones did not replicate on new photos (row 1 fell to d +0.02). The no-straight-lines preference fell below the cutoff (percentile 92). So the direction and line effects are not reliable features of this unit.\", \"rows\": [7, 8]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds most to dogs and dog-like animals shown large and close up. Activity is clearly higher when the animal fills a quarter or more of the frame, and highest when it fills most of it. It is weak for small or distant subjects. This size preference is the strongest and most reliable signal (rows 7 and 8, d +1.4 to +1.9), although similar units share it. There are weaker hints that it prefers subjects that are sharp, centered, cropped by the frame, and set against organic backgrounds without straight lines. The apparent preference for right-facing or camera-facing animals over left-facing ones did not replicate on new photos (row 1 fell to d +0.02). The no-straight-lines preference fell below the cutoff (percentile 92). So the direction and line effects are not reliable features of this unit.\", \"rows\": [7, 8]}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "This unit responds to dogs and wolf-like canids, most strongly when the animal is large in the frame. It is clearly weaker when the subject takes up less than a quarter of the photo. That size preference is the most reliable finding, and the similar units largely share it, so it is not specific to this unit. There are weaker hints that it prefers subjects that are cut off by the frame edge, centered and sharp. The apparent preference against left-facing animals and against scenes with straight lines or horizons did not hold on new photos, so no trait particular to this unit is established.",
+  "rows": [
+   7,
+   8
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0f85e3f506b400b64b537577716a843b3049aa1d032cf7dcddd6ef93e267fefd",
+  "texts": [
+   "{\"explanation\": \"This unit responds to dogs and wolf-like canids, most strongly when the animal is large in the frame. It is clearly weaker when the subject takes up less than a quarter of the photo. That size preference is the most reliable finding, and the similar units largely share it, so it is not specific to this unit. There are weaker hints that it prefers subjects that are cut off by the frame edge, centered and sharp. The apparent preference against left-facing animals and against scenes with straight lines or horizons did not hold on new photos, so no trait particular to this unit is established.\", \"rows\": [7, 8]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to dogs and wolf-like canids, most strongly when the animal is large in the frame. It is clearly weaker when the subject takes up less than a quarter of the photo. That size preference is the most reliable finding, and the similar units largely share it, so it is not specific to this unit. There are weaker hints that it prefers subjects that are cut off by the frame edge, centered and sharp. The apparent preference against left-facing animals and against scenes with straight lines or horizons did not hold on new photos, so no trait particular to this unit is established.\", \"rows\": [7, 8]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds to dogs and dog-like animals (wolves, dingo, lesser panda) and is strongest when the animal is large and close in the frame. It is weakest when the subject takes up less than a quarter of the photo (rows 7 and 8, with large effects). This size preference is shared with the most similar units, so it is not specific to this unit. The other apparent preferences did not replicate on new photos: facing right rather than left actually reversed, and no visible horizon over level lines and right over no clear facing direction were both ordinary for the layer. Those preferences, and the other facing-direction, cropping, sharpness and lighting rows, are best treated as noise from small groups.",
+  "rows": [
+   7,
+   8
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5b80de1b9e055d8e6047b628011237fb8b25e300a7fe4f260fcc1fb9f000000a",
+  "texts": [
+   "{\"explanation\": \"The unit responds to dogs and dog-like animals (wolves, dingo, lesser panda) and is strongest when the animal is large and close in the frame. It is weakest when the subject takes up less than a quarter of the photo (rows 7 and 8, with large effects). This size preference is shared with the most similar units, so it is not specific to this unit. The other apparent preferences did not replicate on new photos: facing right rather than left actually reversed, and no visible horizon over level lines and right over no clear facing direction were both ordinary for the layer. Those preferences, and the other facing-direction, cropping, sharpness and lighting rows, are best treated as noise from small groups.\", \"rows\": [7, 8]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to dogs and dog-like animals (wolves, dingo, lesser panda) and is strongest when the animal is large and close in the frame. It is weakest when the subject takes up less than a quarter of the photo (rows 7 and 8, with large effects). This size preference is shared with the most similar units, so it is not specific to this unit. The other apparent preferences did not replicate on new photos: facing right rather than left actually reversed, and no visible horizon over level lines and right over no clear facing direction were both ordinary for the layer. Those preferences, and the other facing-direction, cropping, sharpness and lighting rows, are best treated as noise from small groups.\", \"rows\": [7, 8]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit's clearest preference is for photos where the main subject, usually a dog or dog-like animal, is large and close-up, filling a quarter or more of the frame and often cut off by the edges. It responds weakly when the subject is small or distant. Similar units share this size preference, so it is not unique to this unit. The other effects in the table, such as a right- or toward-camera facing bias and a preference for scenes without straight lines or horizons, did not hold up on new photos. They should be treated as noise.",
+  "rows": [
+   7,
+   8
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1c17c0fcbd8f0784a513987707bdb7c74246f20144f03522350373b21db63d6f",
+  "texts": [
+   "{\"explanation\": \"The unit's clearest preference is for photos where the main subject, usually a dog or dog-like animal, is large and close-up, filling a quarter or more of the frame and often cut off by the edges. It responds weakly when the subject is small or distant. Similar units share this size preference, so it is not unique to this unit. The other effects in the table, such as a right- or toward-camera facing bias and a preference for scenes without straight lines or horizons, did not hold up on new photos. They should be treated as noise.\", \"rows\": [7, 8]}"
+  ],
+  "text": "{\"explanation\": \"The unit's clearest preference is for photos where the main subject, usually a dog or dog-like animal, is large and close-up, filling a quarter or more of the frame and often cut off by the edges. It responds weakly when the subject is small or distant. Similar units share this size preference, so it is not unique to this unit. The other effects in the table, such as a right- or toward-camera facing bias and a preference for scenes without straight lines or horizons, did not hold up on new photos. They should be treated as noise.\", \"rows\": [7, 8]}",
+  "valid": true
+ }
+}
