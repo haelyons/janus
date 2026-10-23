@@ -602,3 +602,46 @@ identically. Direction row and preferred sides as round 29.
 3. Null: the oriented units' direction row is among the final rows in at most 3 of their 12 samples.
 4. Real, all units: of picked rows that did not hold on T, at most 20% are kept; of picked rows that held, at least
    80% are kept.
+
+# Round 30: blind transfer of the round-29 method to unseen units (tools/r30_run.py, r30_check.py)
+(sealed 2026-10-23, after the units were drawn and before any of their answers, readings or intervention profiles)
+Method unchanged: round 29's pairtable (questions, prompts, scoring) and round 20's openmethod readings (bare, Q0
+"what one thing", F1 "no nouns"; one sample each), run by tools/r30_run.py with outputs under runs/r30a, runs/r30b.
+References (authors/round30_candidates.json, tools/r30_refs.py): Nick Cammarata's audited car-circuit labels, Zoom In
+(4a dog heads), Distill Equivariance figures; units mentioned anywhere in rounds 1-29 excluded. A blind agent mapped
+each label, with no unit name, to the 8 questions (authors/round30_mapping.reply.json; it read only the brief).
+Units drawn by tools/r30_select.py (seed crc32("round30")), authors/round30_selection.json:
+30A zoomin_4a 4a:222, 234, 308, 325 (facing, side not stated); nick_inside 5a:160, 5a:23, 5b:573, 5b:907 (each
+"side view": left or right more than toward or away); nick_outside 4a:259, 4b:169, 4e:756; equiv_variants 4b:391;
+equiv_human_animal 4d:427 (its label maps to no question, so it is outside too); anchors 4b:431, 4b:409.
+30B random: 4b:12, 4c:33, 4d:503, 4d:508, 5a:88, 5b:551.
+Intervention reference: min over strata of the mirror retention percentile (runs/rangeprofile, and runs/r30a/
+rangeprofile for 4a and 5b): sensitive <= 2.5, insensitive >= 10 (cut-offs set on round 29's 6 units: oriented
+0.0-1.4, 409 15.4, 418 5.7). A "left/right row": Q1 left against right, or Q4 left third against right third.
+1. Anchors (30A): 431's right-over-left facing row is picked and held on T in at least 2 of 3 agent samples; 409 has
+   no held left/right row in any picking arm (agent real, agent null, rule).
+2. Zoom In 4a: at least 2 of the 4 have exactly one held facing side among every-arm rows on T, with no violation of
+   234 = 308, 325 = 222 and 308 != 222 among those.
+3. nick_inside: at least 2 of 4 have a held row matching the mapped reference in at least 2 of 3 agent samples.
+4. Calibration (30A): agent null picks held <= 15%, shuffled-T held over agent and rule picks <= 10%, agent real held
+   rate at least twice the null rate.
+5. Mirror control (30A and 30B, units with a profile): mirror-insensitive units have no held left/right row in any
+   picking arm; at least half of mirror-sensitive units have a held left/right row among every-arm rows.
+6. Outside (nick_outside and equiv_variants, 4 units): a reference keyword (from the blind mapping) appears in at
+   least one bare/Q0/F1 reading for at least 3 of 4, and in an agent table explanation for fewer units than that.
+7. Unjustified side claims recur: at least one 30A unit with no held left/right row has an agent explanation that
+   names a side.
+8. Attribution (r30_check.py tree, every-arm rows on T first): among inside units with mapped relations (zoomin_4a,
+   nick_inside) that are not successes, at most 1 is "interpretation: missed".
+9. Calibration (30B): as item 4, on the random units.
+10. Random (30B): at least 3 of 6 have a held, distinctive agent pick in at least 2 of 3 samples. (Nick's essay
+   expects the original InceptionV1's last layer to be the least legible; recorded per unit, not tested: our measure
+   is not legibility.)
+Next step, fixed now: if most non-success inside units fail on measurement (did not replicate, too few photos, low on
+both halves), work on measurement (answer agreement with round 29 on the 510 shared photos, photos per class); if most
+are "interpretation: missed", replace the agent's choice by the rule and limit prose to held rows; if bare/Q0/F1 name
+the outside references for at least 3 of 4 units and the table explanations for at most 1, build a proposal stage
+from looks (readings into questions, checked the same way); if neither names them, a proposal stage from the network
+(inputs and readers). Item 7 true makes round 29B's final reading the default reporting layer.
+Calls: 30A 298 (163 answer, 90 reading, 45 bare; finalread up to 90 more), 30B 166 (112, 36, 18). Run one at a time,
+30A then 30B, each after a usage check.

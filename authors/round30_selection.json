@@ -1,0 +1,335 @@
+{
+ "seed": 1755216412,
+ "pool_sizes": {
+  "nick_inside": 40,
+  "nick_outside": 49,
+  "equiv_variants": 3,
+  "equiv_human_animal": 2
+ },
+ "strata": {
+  "zoomin_4a": [
+   "mixed4a:222",
+   "mixed4a:234",
+   "mixed4a:308",
+   "mixed4a:325"
+  ],
+  "nick_inside": [
+   "mixed5a:160",
+   "mixed5a:23",
+   "mixed5b:573",
+   "mixed5b:907"
+  ],
+  "nick_outside": [
+   "mixed4a:259",
+   "mixed4b:169",
+   "mixed4e:756"
+  ],
+  "equiv_variants": [
+   "mixed4b:391"
+  ],
+  "equiv_human_animal": [
+   "mixed4d:427"
+  ],
+  "anchors": [
+   "mixed4b:431",
+   "mixed4b:409"
+  ],
+  "random": [
+   "mixed4b:12",
+   "mixed4c:33",
+   "mixed4d:503",
+   "mixed4d:508",
+   "mixed5a:88",
+   "mixed5b:551"
+  ]
+ },
+ "references": {
+  "mixed4a:222": {
+   "unit": "mixed4a:222",
+   "source": "zoomin_4a",
+   "label": "Detects dog heads in one orientation. It belongs to two mirrored pathways of units, one detecting dog heads facing to the left and the other dog heads facing to the right; which of the two this unit belongs to is not stated. Detects dog snouts or heads in one orientation; another unit is a horizontally flipped version of it. Which way this unit faces is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left"
+     ],
+     "less": [
+      "right"
+     ],
+     "either": true
+    }
+   ],
+   "keywords": [
+    "dog",
+    "head",
+    "snout",
+    "facing"
+   ]
+  },
+  "mixed4a:234": {
+   "unit": "mixed4a:234",
+   "source": "zoomin_4a",
+   "label": "Detects dog heads in one orientation. It belongs to two mirrored pathways of units, one detecting dog heads facing to the left and the other dog heads facing to the right; which of the two this unit belongs to is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left"
+     ],
+     "less": [
+      "right"
+     ],
+     "either": true
+    }
+   ],
+   "keywords": [
+    "dog",
+    "head",
+    "facing",
+    "orientation"
+   ]
+  },
+  "mixed4a:308": {
+   "unit": "mixed4a:308",
+   "source": "zoomin_4a",
+   "label": "Detects dog heads in one orientation. It belongs to two mirrored pathways of units, one detecting dog heads facing to the left and the other dog heads facing to the right; which of the two this unit belongs to is not stated. Detects dog snouts or heads in one orientation; another unit is a horizontally flipped version of it. Which way this unit faces is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left"
+     ],
+     "less": [
+      "right"
+     ],
+     "either": true
+    }
+   ],
+   "keywords": [
+    "dog",
+    "head",
+    "snout",
+    "facing"
+   ]
+  },
+  "mixed4a:325": {
+   "unit": "mixed4a:325",
+   "source": "zoomin_4a",
+   "label": "Detects dog heads in one orientation. It belongs to two mirrored pathways of units, one detecting dog heads facing to the left and the other dog heads facing to the right; which of the two this unit belongs to is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left"
+     ],
+     "less": [
+      "right"
+     ],
+     "either": true
+    }
+   ],
+   "keywords": [
+    "dog",
+    "head",
+    "facing",
+    "orientation"
+   ]
+  },
+  "mixed5a:160": {
+   "unit": "mixed5a:160",
+   "source": "nick_car_circuit",
+   "label": "side-on marked vehicle flank / police-car-livery dete",
+   "truncated": true,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left",
+      "right"
+     ],
+     "less": [
+      "toward or away from the camera"
+     ],
+     "either": false
+    }
+   ],
+   "keywords": [
+    "police",
+    "car",
+    "vehicle",
+    "livery",
+    "markings"
+   ]
+  },
+  "mixed5a:23": {
+   "unit": "mixed5a:23",
+   "source": "nick_car_circuit",
+   "label": "side-view land vehicle body / chassis",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left",
+      "right"
+     ],
+     "less": [
+      "toward or away from the camera"
+     ],
+     "either": false
+    }
+   ],
+   "keywords": [
+    "vehicle",
+    "chassis",
+    "body",
+    "side"
+   ]
+  },
+  "mixed5b:573": {
+   "unit": "mixed5b:573",
+   "source": "nick_car_circuit",
+   "label": "pale side-on body with dark windows/stripe/base, espe",
+   "truncated": true,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left",
+      "right"
+     ],
+     "less": [
+      "toward or away from the camera"
+     ],
+     "either": false
+    }
+   ],
+   "keywords": [
+    "vehicle",
+    "pale",
+    "windows",
+    "stripe",
+    "side"
+   ]
+  },
+  "mixed5b:907": {
+   "unit": "mixed5b:907",
+   "source": "nick_car_circuit",
+   "label": "side-view wheeled / spoked thin-frame assembly",
+   "truncated": false,
+   "examined": false,
+   "relations": [
+    {
+     "question": 1,
+     "more": [
+      "left",
+      "right"
+     ],
+     "less": [
+      "toward or away from the camera"
+     ],
+     "either": false
+    }
+   ],
+   "keywords": [
+    "wheel",
+    "spokes",
+    "bicycle",
+    "frame"
+   ]
+  },
+  "mixed4a:259": {
+   "unit": "mixed4a:259",
+   "source": "nick_car_circuit",
+   "label": "rounded cup/pot/container rim, often terracotta/red",
+   "truncated": false,
+   "examined": false,
+   "relations": [],
+   "keywords": [
+    "cup",
+    "pot",
+    "rim",
+    "terracotta",
+    "container"
+   ]
+  },
+  "mixed4b:169": {
+   "unit": "mixed4b:169",
+   "source": "nick_car_circuit",
+   "label": "isolated nested square/rectangular insert or display",
+   "truncated": true,
+   "examined": false,
+   "relations": [],
+   "keywords": [
+    "square",
+    "rectangular",
+    "display",
+    "nested",
+    "insert"
+   ]
+  },
+  "mixed4e:756": {
+   "unit": "mixed4e:756",
+   "source": "nick_car_circuit",
+   "label": "boxy light-colored van/ambulance/RV side-front with d",
+   "truncated": true,
+   "examined": false,
+   "relations": [],
+   "keywords": [
+    "van",
+    "ambulance",
+    "rv",
+    "vehicle",
+    "boxy"
+   ]
+  },
+  "mixed4b:391": {
+   "unit": "mixed4b:391",
+   "source": "equiv_variants",
+   "label": "Detects dog heads. It belongs to a set of dog-head units that come in variants of the same feature, such as short-snouted versus long-snouted dogs, or a human versus a dog version; which variant this unit is is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [],
+   "keywords": [
+    "dog",
+    "head",
+    "snout"
+   ]
+  },
+  "mixed4d:427": {
+   "unit": "mixed4d:427",
+   "source": "equiv_human_animal",
+   "label": "Detects a human beside an animal. Another unit is its horizontally flipped version: one responds to the human on one side and the animal on the other, its counterpart to the reverse arrangement. Which arrangement this unit prefers is not stated.",
+   "truncated": false,
+   "examined": false,
+   "relations": [],
+   "keywords": [
+    "human",
+    "animal",
+    "person",
+    "beside"
+   ]
+  }
+ },
+ "anchors": {
+  "mixed4b:431": {
+   "side": "right"
+  },
+  "mixed4b:409": {
+   "side": null
+  }
+ },
+ "random_also_referenced": {}
+}
