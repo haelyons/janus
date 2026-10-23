@@ -1,0 +1,107 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds most to dog photos where the dog faces the camera head-on, rather than in profile. It is especially weak for dogs facing right, and somewhat weaker for left-facing ones. It also prefers a large dog that fills much of the frame and is sharply in focus. The frontal-facing and sharpness preferences look most particular to this unit. The subject-size preference is shared with similar units.",
+  "rows": [
+   4,
+   19,
+   1,
+   2
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d1509e228fb09f17dc5971eb48573583dafd244249607e4ff15f0a8ff7a65d8a",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds most to dog photos where the dog faces the camera head-on, rather than in profile. It is especially weak for dogs facing right, and somewhat weaker for left-facing ones. It also prefers a large dog that fills much of the frame and is sharply in focus. The frontal-facing and sharpness preferences look most particular to this unit. The subject-size preference is shared with similar units.\", \"rows\": [4, 19, 1, 2]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds most to dog photos where the dog faces the camera head-on, rather than in profile. It is especially weak for dogs facing right, and somewhat weaker for left-facing ones. It also prefers a large dog that fills much of the frame and is sharply in focus. The frontal-facing and sharpness preferences look most particular to this unit. The subject-size preference is shared with similar units.\", \"rows\": [4, 19, 1, 2]}\n```",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds most to dog photos where the dog faces the camera (frontal or rear view) rather than in profile, especially when it is not facing right. It prefers close, sharp, reasonably large subjects that are often partly cut off, on plain backgrounds without straight lines. It is weakest for small, slightly blurry dogs turned to the right. Size and framing preferences are largely shared with similar units. Frontal-versus-profile orientation, particularly the left-versus-right asymmetry, and sharpness are more particular to this unit.",
+  "rows": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d1509e228fb09f17dc5971eb48573583dafd244249607e4ff15f0a8ff7a65d8a",
+  "texts": [
+   "{\"explanation\": \"The unit responds most to dog photos where the dog faces the camera (frontal or rear view) rather than in profile, especially when it is not facing right. It prefers close, sharp, reasonably large subjects that are often partly cut off, on plain backgrounds without straight lines. It is weakest for small, slightly blurry dogs turned to the right. Size and framing preferences are largely shared with similar units. Frontal-versus-profile orientation, particularly the left-versus-right asymmetry, and sharpness are more particular to this unit.\", \"rows\": [4, 19, 1, 6]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most to dog photos where the dog faces the camera (frontal or rear view) rather than in profile, especially when it is not facing right. It prefers close, sharp, reasonably large subjects that are often partly cut off, on plain backgrounds without straight lines. It is weakest for small, slightly blurry dogs turned to the right. Size and framing preferences are largely shared with similar units. Frontal-versus-profile orientation, particularly the left-versus-right asymmetry, and sharpness are more particular to this unit.\", \"rows\": [4, 19, 1, 6]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "This unit responds most to dogs facing toward or away from the camera, seen frontally rather than in profile. It is weakest when the dog faces right. It also prefers a large, sharply focused subject that fills much of the frame and is often cut off by the edges. Preferring frontal, frame-filling subjects is partly shared with similar units. A sharply focused subject and a weaker response to right-facing than left-facing profiles are more particular to this unit.",
+  "rows": [
+   4,
+   19,
+   1,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d1509e228fb09f17dc5971eb48573583dafd244249607e4ff15f0a8ff7a65d8a",
+  "texts": [
+   "{\"explanation\": \"This unit responds most to dogs facing toward or away from the camera, seen frontally rather than in profile. It is weakest when the dog faces right. It also prefers a large, sharply focused subject that fills much of the frame and is often cut off by the edges. Preferring frontal, frame-filling subjects is partly shared with similar units. A sharply focused subject and a weaker response to right-facing than left-facing profiles are more particular to this unit.\", \"rows\": [4, 19, 1, 6]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds most to dogs facing toward or away from the camera, seen frontally rather than in profile. It is weakest when the dog faces right. It also prefers a large, sharply focused subject that fills much of the frame and is often cut off by the edges. Preferring frontal, frame-filling subjects is partly shared with similar units. A sharply focused subject and a weaker response to right-facing than left-facing profiles are more particular to this unit.\", \"rows\": [4, 19, 1, 6]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "Within these dog-heavy classes, the unit responds most to photos where the dog fills a large part of the frame (more than a quarter of the image) and is centered. It responds more weakly when the dog is small in the scene. It also leans toward brightly lit subjects with neutral or warm color rather than a cool blue or green tint. The subject-size and tint preferences are largely shared with the similar units. The brightness preference is somewhat more particular to this unit, though one similar unit also shows it.",
+  "rows": [
+   7,
+   8,
+   12
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a264407e7ede83aafbed419b4fed40803c2a5cf23d4fe823beb31fa1fc0580dc",
+  "texts": [
+   "```json\n{\"explanation\": \"Within these dog-heavy classes, the unit responds most to photos where the dog fills a large part of the frame (more than a quarter of the image) and is centered. It responds more weakly when the dog is small in the scene. It also leans toward brightly lit subjects with neutral or warm color rather than a cool blue or green tint. The subject-size and tint preferences are largely shared with the similar units. The brightness preference is somewhat more particular to this unit, though one similar unit also shows it.\", \"rows\": [7, 8, 12]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Within these dog-heavy classes, the unit responds most to photos where the dog fills a large part of the frame (more than a quarter of the image) and is centered. It responds more weakly when the dog is small in the scene. It also leans toward brightly lit subjects with neutral or warm color rather than a cool blue or green tint. The subject-size and tint preferences are largely shared with the similar units. The brightness preference is somewhat more particular to this unit, though one similar unit also shows it.\", \"rows\": [7, 8, 12]}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds to dog breeds, mostly terriers, spaniels and other small-to-medium dogs, when the dog fills a substantial part of the frame, from about a quarter to all of the photo. It is weak when the dog is small in the scene. It also leans toward brightly lit, centered subjects and away from cool blue or green tints. The subject-size and tint effects are largely shared with similar units. Brightness and centering are only partly shared, so those are the more distinctive cues, but they are weaker.",
+  "rows": [
+   7,
+   12,
+   11
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a264407e7ede83aafbed419b4fed40803c2a5cf23d4fe823beb31fa1fc0580dc",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to dog breeds, mostly terriers, spaniels and other small-to-medium dogs, when the dog fills a substantial part of the frame, from about a quarter to all of the photo. It is weak when the dog is small in the scene. It also leans toward brightly lit, centered subjects and away from cool blue or green tints. The subject-size and tint effects are largely shared with similar units. Brightness and centering are only partly shared, so those are the more distinctive cues, but they are weaker.\", \"rows\": [7, 12, 11]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to dog breeds, mostly terriers, spaniels and other small-to-medium dogs, when the dog fills a substantial part of the frame, from about a quarter to all of the photo. It is weak when the dog is small in the scene. It also leans toward brightly lit, centered subjects and away from cool blue or green tints. The subject-size and tint effects are largely shared with similar units. Brightness and centering are only partly shared, so those are the more distinctive cues, but they are weaker.\", \"rows\": [7, 12, 11]}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "This unit responds most to dogs that fill a large part of the frame, whether a quarter to three quarters or more than three quarters of it. It responds weakly when the dog is small in the scene. It also fires somewhat more for brightly lit, centered subjects and less for photos with a cool blue or green tint. The size preference is the strongest effect, but the similar units share much of it. The tint effect is mostly shared with the similar units, so it is not specific to this unit. The bright-lighting preference is the most distinctive cue, since one of the three similar units does not show it.",
+  "rows": [
+   7,
+   8,
+   12
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a264407e7ede83aafbed419b4fed40803c2a5cf23d4fe823beb31fa1fc0580dc",
+  "texts": [
+   "```json\n{\"explanation\": \"This unit responds most to dogs that fill a large part of the frame, whether a quarter to three quarters or more than three quarters of it. It responds weakly when the dog is small in the scene. It also fires somewhat more for brightly lit, centered subjects and less for photos with a cool blue or green tint. The size preference is the strongest effect, but the similar units share much of it. The tint effect is mostly shared with the similar units, so it is not specific to this unit. The bright-lighting preference is the most distinctive cue, since one of the three similar units does not show it.\", \"rows\": [7, 8, 12]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"This unit responds most to dogs that fill a large part of the frame, whether a quarter to three quarters or more than three quarters of it. It responds weakly when the dog is small in the scene. It also fires somewhat more for brightly lit, centered subjects and less for photos with a cool blue or green tint. The size preference is the strongest effect, but the similar units share much of it. The tint effect is mostly shared with the similar units, so it is not specific to this unit. The bright-lighting preference is the most distinctive cue, since one of the three similar units does not show it.\", \"rows\": [7, 8, 12]}\n```",
+  "valid": true
+ }
+}

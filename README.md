@@ -864,3 +864,47 @@ time (`run1.log`, `run2.log`).
     signal was in front of the agent and was not named, as in round 27.
 - So the mechanism gets the family right (which predictions are shared, which unit departs) but leaves discovery to
   an agent that does not describe a mirror difference unprompted. A blind answerer does answer it when asked (26B).
+
+## Round 29: a fixed question set answered blind, every answer pair compared, rows read by an agent (`tools/pairtable.py`)
+
+Measurement first, agent second. The 8 standing questions of 26B (unchanged) were answered blind, with round 28's
+left/right convention, for all 570 photos of the 6 units' 24 top classes (48 calls, none failed; one pass shared by
+all units). Per unit, on D, every two answers of a question given to at least 5 photos each are compared within
+class. Each row is written with the answer the unit is more active on first, with the unit's percentile in its
+layer and its 3 peers' percentiles (17 to 26 rows). An agent reads the table only, with no photos and no word about
+direction. It says what the unit responds to and picks up to 4 rows it expects to hold on T and to be particular to
+the unit. That is 3 samples on the real table and 3 on a table from D answers shuffled within class (36 text-only
+calls). A fixed rule also picks rows: those at the 95th percentile or above, by the unit's percentile minus its
+peers' mean, top 4. Everything is checked on T. Calls ran one at a time. OpenCode was tried for the implementer and
+tester but its Go usage limit was exceeded, so both were Claude agents again. `runs/pairtable/`, checks in
+`r29_check.txt`.
+
+The facing row, "left" against "right":
+
+    unit     D: favours, pct (peers)        agent picks it   T: pct (peers)              held  distinctive
+    4b:431   right 99.4 (99.8, 95.5, 53.9)  3 of 3           97.9 (82.2, 24.4, 0.4)      yes   yes
+    4b:443   right 99.8 (99.6, 18.4, 45.5)  3 of 3           99.0 (53.5, 0.4, 70.3)      yes   yes
+    4b:429   left  98.2 (0.2, 8.6, 99.8)    3 of 3           99.6 (0.6, 53.1, 99.8)      yes   yes
+    4b:384   left  99.8 (47.5, 99.4, 0.8)   3 of 3           99.8 (47.3, 99.6, 0.2)      yes   yes
+    4b:409   right 98.6 (99.8, 7.4, 0.0)    3 of 3           60.7 (99.2, 0.2, 0.0)       no    -
+    4b:418   left  84.6 (80.7, 0.0, 5.9)    0 of 3           53.5 (36.3, 0.4, 46.3)      no    -
+
+- Held: 2 (the agent's real-table picks give a held, correct-side direction row for all 4 oriented units; none on
+  the wrong side in any arm), 3 (no held direction row for either control), 4 (picked rows held on T: agent real 32
+  of 62, agent null 9 of 64), 5 (shuffled T answers: 7 of 160), 6 (distinctive among held: agent real 21 of 32,
+  every D row at 95 or above 8 of 16), 7 (the fixed rule also gets all 4).
+- Failed: 1. On D, 409's facing row is at 98.6 for "right" (n 17 and 21). It does not replicate on T (60.7), so the
+  held-out check, not the table, keeps the control clean.
+- Every real-table explanation for the 4 oriented units names the correct side ("weakest when the animal faces
+  left", 443; "especially weak for dogs facing right", 429). All 3 for 409 also claim a left/right asymmetry
+  "particular to this unit", which is false by T. The agent's prose inherits D's noise; only checked rows are
+  trustworthy.
+- Null holds come from the agent picking real structure that survived the shuffle by chance. 384's shuffled table
+  still had left over right at 94.3; all 3 null samples picked it and it held on real T. The others are 443's row
+  11 and 418's medium-size row, also held for the real arm.
+- Against rounds 27 and 28, the agent named no side in 0 of 72 refinements when it had to find the axis by looking.
+  Given a generic, blind-answered measurement table with peers, it picks the side for all 4 oriented units. The
+  agent's role shrinks to choosing among measured rows.
+- Caveat: the standing set has a facing question because flips are standard augmentation. It was written in 26B by
+  an agent told only "what training treats as irrelevant", but after direction was this project's target. A feature
+  off the set's axes would not be found this way.

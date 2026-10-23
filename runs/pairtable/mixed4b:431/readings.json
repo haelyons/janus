@@ -1,0 +1,108 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit is weaker on these mostly dog and other furry-animal photos when the main subject faces or points left, or sits in the left third of the frame. It is stronger when the subject faces right, faces toward or away from the camera, or is centred. In short, it disfavours leftward orientation and position. The similar units largely share this directional bias, so little here is clearly unique to this unit. The rows with the largest samples and strongest effects are the safest bets.",
+  "rows": [
+   1,
+   2,
+   11,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ac5f1f5376839c36c7c791f0bf6639eade025d91c6730b20b6d65a5149523b5a",
+  "texts": [
+   "{\"explanation\": \"The unit is weaker on these mostly dog and other furry-animal photos when the main subject faces or points left, or sits in the left third of the frame. It is stronger when the subject faces right, faces toward or away from the camera, or is centred. In short, it disfavours leftward orientation and position. The similar units largely share this directional bias, so little here is clearly unique to this unit. The rows with the largest samples and strongest effects are the safest bets.\", \"rows\": [1, 2, 11, 3]}"
+  ],
+  "text": "{\"explanation\": \"The unit is weaker on these mostly dog and other furry-animal photos when the main subject faces or points left, or sits in the left third of the frame. It is stronger when the subject faces right, faces toward or away from the camera, or is centred. In short, it disfavours leftward orientation and position. The similar units largely share this directional bias, so little here is clearly unique to this unit. The rows with the largest samples and strongest effects are the safest bets.\", \"rows\": [1, 2, 11, 3]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds to furry dogs and similar long-haired mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly weaker when the subject faces or points left, or sits in the left third of the frame. It is about equally active for right-facing, camera-facing and no-clear-direction subjects, so this is a left-facing suppression rather than a preference for any one direction. Size, framing, warm tint and plain backgrounds have only mild effects, and those are shared with similar units. The left-direction effect is the strongest signal, though similar units partly share it.",
+  "rows": [
+   1,
+   2,
+   3,
+   11
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ac5f1f5376839c36c7c791f0bf6639eade025d91c6730b20b6d65a5149523b5a",
+  "texts": [
+   "{\"explanation\": \"The unit responds to furry dogs and similar long-haired mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly weaker when the subject faces or points left, or sits in the left third of the frame. It is about equally active for right-facing, camera-facing and no-clear-direction subjects, so this is a left-facing suppression rather than a preference for any one direction. Size, framing, warm tint and plain backgrounds have only mild effects, and those are shared with similar units. The left-direction effect is the strongest signal, though similar units partly share it.\", \"rows\": [1, 2, 3, 11]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to furry dogs and similar long-haired mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly weaker when the subject faces or points left, or sits in the left third of the frame. It is about equally active for right-facing, camera-facing and no-clear-direction subjects, so this is a left-facing suppression rather than a preference for any one direction. Size, framing, warm tint and plain backgrounds have only mild effects, and those are shared with similar units. The left-direction effect is the strongest signal, though similar units partly share it.\", \"rows\": [1, 2, 3, 11]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds to furry, long-haired dogs and similar mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly less active when the main subject faces or points left. It is about equally active for subjects facing right, facing toward or away from the camera, or with no clear direction. It is also somewhat weaker when the subject sits in the left third of the frame. The left-facing dip is the strongest and most distinctive signal, but the similar units partly share it.",
+  "rows": [
+   1,
+   2,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ac5f1f5376839c36c7c791f0bf6639eade025d91c6730b20b6d65a5149523b5a",
+  "texts": [
+   "{\"explanation\": \"The unit responds to furry, long-haired dogs and similar mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly less active when the main subject faces or points left. It is about equally active for subjects facing right, facing toward or away from the camera, or with no clear direction. It is also somewhat weaker when the subject sits in the left third of the frame. The left-facing dip is the strongest and most distinctive signal, but the similar units partly share it.\", \"rows\": [1, 2, 3]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to furry, long-haired dogs and similar mammals (terriers, spaniels, wolves, Persian cat, lesser panda). Within those classes it is clearly less active when the main subject faces or points left. It is about equally active for subjects facing right, facing toward or away from the camera, or with no clear direction. It is also somewhat weaker when the subject sits in the left third of the frame. The left-facing dip is the strongest and most distinctive signal, but the similar units partly share it.\", \"rows\": [1, 2, 3]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit is most active on furry animals, mostly dogs, plus wolves, meerkats, pandas and cats. Within those classes it responds more when the subject faces toward or away from the camera than when it faces right. It also favors sharp, in-focus subjects over slightly blurry ones. It is somewhat stronger for subjects that are fully in frame and evenly lit. Its response is higher on the few photos with a cool blue or green tint, but that comes from only 5 photos.",
+  "rows": [
+   4,
+   24,
+   16,
+   20
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "47cf1db06a41d55c6be08a6b2fc6eeee0df39c69320e4083473e08d81c292353",
+  "texts": [
+   "{\"explanation\": \"The unit is most active on furry animals, mostly dogs, plus wolves, meerkats, pandas and cats. Within those classes it responds more when the subject faces toward or away from the camera than when it faces right. It also favors sharp, in-focus subjects over slightly blurry ones. It is somewhat stronger for subjects that are fully in frame and evenly lit. Its response is higher on the few photos with a cool blue or green tint, but that comes from only 5 photos.\", \"rows\": [4, 24, 16, 20]}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active on furry animals, mostly dogs, plus wolves, meerkats, pandas and cats. Within those classes it responds more when the subject faces toward or away from the camera than when it faces right. It also favors sharp, in-focus subjects over slightly blurry ones. It is somewhat stronger for subjects that are fully in frame and evenly lit. Its response is higher on the few photos with a cool blue or green tint, but that comes from only 5 photos.\", \"rows\": [4, 24, 16, 20]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "Within its preferred furry-animal classes (dogs, wolves, meerkats, lesser pandas), this unit fires more when the subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It shows some preference for photos with a cool blue or green tint, but that rests on only 5 photos. Placement, size and horizon tilt make little difference.",
+  "rows": [
+   4,
+   24,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "47cf1db06a41d55c6be08a6b2fc6eeee0df39c69320e4083473e08d81c292353",
+  "texts": [
+   "{\"explanation\": \"Within its preferred furry-animal classes (dogs, wolves, meerkats, lesser pandas), this unit fires more when the subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It shows some preference for photos with a cool blue or green tint, but that rests on only 5 photos. Placement, size and horizon tilt make little difference.\", \"rows\": [4, 24, 16]}"
+  ],
+  "text": "{\"explanation\": \"Within its preferred furry-animal classes (dogs, wolves, meerkats, lesser pandas), this unit fires more when the subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It shows some preference for photos with a cool blue or green tint, but that rests on only 5 photos. Placement, size and horizon tilt make little difference.\", \"rows\": [4, 24, 16]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "Within its preferred classes (mostly furry dogs and similar animals), this unit fires more when the main subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It is somewhat higher for photos with a cool blue or green tint, compared with warm-tinted or colorless ones. The tint effect rests on only 5 photos, so it is less certain. Subject size, position and horizon tilt make little difference.",
+  "rows": [
+   4,
+   24,
+   16,
+   20
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "47cf1db06a41d55c6be08a6b2fc6eeee0df39c69320e4083473e08d81c292353",
+  "texts": [
+   "```json\n{\"explanation\": \"Within its preferred classes (mostly furry dogs and similar animals), this unit fires more when the main subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It is somewhat higher for photos with a cool blue or green tint, compared with warm-tinted or colorless ones. The tint effect rests on only 5 photos, so it is less certain. Subject size, position and horizon tilt make little difference.\", \"rows\": [4, 24, 16, 20]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Within its preferred classes (mostly furry dogs and similar animals), this unit fires more when the main subject faces toward or away from the camera than when it faces right. It also fires more when the subject is sharp rather than slightly blurry. It is somewhat higher for photos with a cool blue or green tint, compared with warm-tinted or colorless ones. The tint effect rests on only 5 photos, so it is less certain. Subject size, position and horizon tilt make little difference.\", \"rows\": [4, 24, 16, 20]}\n```",
+  "valid": true
+ }
+}
