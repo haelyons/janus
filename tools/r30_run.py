@@ -8,12 +8,14 @@ Steps:
   (SAMPLES patched to (1,), WORKERS to 1); no simulation and no scores.
 - profile: tools/rangeprofile.py main for --layers (the intervention profile; GPU/CPU only, no Claude calls).
 --dry prints, for pairtable and bare, the photos, answer batches and Claude calls a run would make, and makes none.
+--workers N: up to N calls in flight in this process (default 1). Only how many calls run at once changes: every
+call's content is built by the same code, and each cache is written by one thread of one process after each call.
 Phases (so a usage limit cannot cut a long run): answers --part k/n (a slice of pairtable's own answer batches over
 the whole union, built as answer_pass builds them), tables --part k/n (run_unit for a slice of units, only once every
 batch is cached), bare --part k/n; then the unchanged pairtable step, which finds everything cached, makes no call
 and writes the report. A part exits 1 when any of its calls is left uncached; rerunning it redoes only those.
 
-usage: python -I tools/r30_run.py --stage a|b --step pairtable|finalread|bare [--dry]
+usage: python -I tools/r30_run.py --stage a|b --step pairtable|finalread|bare [--dry] [--workers N]
        python -I tools/r30_run.py --stage a|b --step answers|tables|bare --part k/n
        python -I tools/r30_run.py --stage a --step profile --layers mixed4a
 """
@@ -80,6 +82,18 @@ def dry_pairtable(uf):
     if old.exists():
         seen = {i for r in json.loads(old.read_text()).values() for i in r['photos']}
         print(f'photos also answered in round 29: {len(seen & set(P))}')
+
+
+def set_workers(n):
+    """proploop.cached_calls runs up to proploop.WORKERS threads, read at call time; pairtable.main, finalread.main
+    and prep set it to 1 before their first call, so it is set to n again at every cached_calls"""
+    import proploop
+    orig = proploop.cached_calls
+
+    def cached_calls(*a, **k):
+        proploop.WORKERS = n
+        return orig(*a, **k)
+    proploop.cached_calls = cached_calls
 
 
 def run_pairtable(stage, uf):
@@ -171,10 +185,10 @@ def run_finalread(stage, uf):
     finalread.main()
 
 
-def run_bare(stage, uf, dry, part=None):
+def run_bare(stage, uf, dry, part=None, workers=1):
     import bundlemax
     import openmethod as om
-    om.SAMPLES, om.WORKERS = (1,), 1
+    om.SAMPLES, om.WORKERS = (1,), workers
     units = [om.parse_unit(s) for s in json.loads(uf.read_text())]
     if part:
         units = part_slice(units, part)
@@ -237,8 +251,11 @@ def main():
     ap.add_argument('--part', help="k/n: the k-th of n slices (answers: answer batches; tables, bare: units)")
     ap.add_argument('--layers', default='mixed4a')
     ap.add_argument('--dry', action='store_true')
+    ap.add_argument('--workers', type=int, default=1)
     a = ap.parse_args()
     uf = units_file(a.stage)
+    if a.workers > 1:
+        set_workers(a.workers)
     if a.step == 'pairtable':
         return dry_pairtable(uf) if a.dry else run_pairtable(a.stage, uf)
     if a.step == 'answers':
@@ -248,7 +265,7 @@ def main():
     if a.step == 'finalread':
         return run_finalread(a.stage, uf)
     if a.step == 'bare':
-        return run_bare(a.stage, uf, a.dry, a.part)
+        return run_bare(a.stage, uf, a.dry, a.part, a.workers)
     return run_profile(a.stage, a.layers)
 
 

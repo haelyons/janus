@@ -645,3 +645,17 @@ from looks (readings into questions, checked the same way); if neither names the
 (inputs and readers). Item 7 true makes round 29B's final reading the default reporting layer.
 Calls: 30A 298 (163 answer, 90 reading, 45 bare; finalread up to 90 more), 30B 166 (112, 36, 18). Run one at a time,
 30A then 30B, each after a usage check.
+
+# Round 30F: round 29B's final reading on round 30's units (tools/finalread.py via r30_run.py, r30f_check.py)
+(sealed 2026-10-23, after round 30A's results and before any round-30 final reading or any 30B call)
+Round 30A item 7 held, so by the sealed rule the final reading is the default reporting layer: tools/finalread.py,
+unchanged, on 30A and 30B (36 + 90 calls, under the round's call budget). Calls now run up to 3 at a time per process
+(r30_run.py --workers; contents unchanged). 30B's mixed5b mirror profile is runs/r30a/rangeprofile/mixed5b.csv,
+copied to runs/r30b/rangeprofile (it covers every channel of the layer).
+F1. Real (each stage): the final reading keeps at least 80% of picks that held on T and at most 20% of picks that did
+    not (29B: 31/32 and 0/30).
+F2. Real (each stage): at most 2 kept rows across all samples are left/right rows that did not hold on T (every arm).
+    In 30A this covers the 6 units whose table prose named a facing side with no held row.
+F3. Null (each stage): at most 20% of picks are kept.
+Recorded, not predicted: unchecked additions and their T outcome; left/right words in final explanations (a word
+count cannot tell a claim from a retraction).
