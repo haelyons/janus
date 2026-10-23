@@ -587,3 +587,18 @@ comparing one side with "toward or away" or "no clear" are not direction rows.
 6. Of rows held on T, the share distinctive is higher for the agent's real picks than for every real-table row at
    the 95th or above on D.
 7. The rule (real table) gets item 2's held, preferred-side direction row for at least 3 of the 4 oriented units.
+
+# Round 29B: a final reading that sees the checks on new photos (tools/finalread.py)
+(sealed 2026-10-23, after round 29's results, before finalread.py exists)
+
+Per unit and per valid real-table reading of round 29 (s1-s3): an agent sees the same D table, that reading's
+explanation and picked rows, and the picked rows' checks on T, then says what the unit responds to and lists the
+table rows it is confident describe the unit (structured: row numbers). Arm "real": the checks on T's real answers.
+Arm "null": the same picks, with their checks on T's answers shuffled within class (round 29's T_null), presented
+identically. Direction row and preferred sides as round 29.
+1. Real: for each of the 4 oriented units, the preferred-side direction row is among the final rows in at least 2 of
+   3 samples.
+2. Real: 4b:409's direction row (did not hold on T) is among the final rows in none of its 3 samples.
+3. Null: the oriented units' direction row is among the final rows in at most 3 of their 12 samples.
+4. Real, all units: of picked rows that did not hold on T, at most 20% are kept; of picked rows that held, at least
+   80% are kept.
