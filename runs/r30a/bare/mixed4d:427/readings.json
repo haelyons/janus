@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4d:427",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "00bf1eb4f2031a3aa147985c13f5ab978e17cbb4d8aa519ff91bd8c488f234e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to dogs, especially furry pet dogs, often near people. It responds more weakly to related things such as another furry animal held by a person and a plush toy dog.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to dogs, especially furry pet dogs, often near people. It responds more weakly to related things such as another furry animal held by a person and a plush toy dog.",
+   "evidence": "17 of the 20 top photos contain a dog of many breeds and sizes. The exceptions are a furry animal held by a person (#4), a plush dog beside a doll (#15) and a toy-store scene with children (#12). Random photos with no dogs stay at 1-4.",
+   "missing_data": "Photos of dogs with no people, and people with no dogs or with other pets, would show whether the unit is about dogs or about people with pets. This matters because several red boxes fall on people or background next to the dog.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs, especially furry pet dogs, often near people. It responds more weakly to related things such as another furry animal held by a person and a plush toy dog.\",\n \"evidence\": \"17 of the 20 top photos contain a dog of many breeds and sizes. The exceptions are a furry animal held by a person (#4), a plush dog beside a doll (#15) and a toy-store scene with children (#12). Random photos with no dogs stay at 1-4.\",\n \"missing_data\": \"Photos of dogs with no people, and people with no dogs or with other pets, would show whether the unit is about dogs or about people with pets. This matters because several red boxes fall on people or background next to the dog.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs, especially furry pet dogs, often near people. It responds more weakly to related things such as another furry animal held by a person and a plush toy dog.\",\n \"evidence\": \"17 of the 20 top photos contain a dog of many breeds and sizes. The exceptions are a furry animal held by a person (#4), a plush dog beside a doll (#15) and a toy-store scene with children (#12). Random photos with no dogs stay at 1-4.\",\n \"missing_data\": \"Photos of dogs with no people, and people with no dogs or with other pets, would show whether the unit is about dogs or about people with pets. This matters because several red boxes fall on people or background next to the dog.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4d:427",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "00bf1eb4f2031a3aa147985c13f5ab978e17cbb4d8aa519ff91bd8c488f234e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to dogs, especially furry dog heads and bodies. It responds more weakly to related furry or animal-like things such as a monkey and stuffed animal toys.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to dogs, especially furry dog heads and bodies. It responds more weakly to related furry or animal-like things such as a monkey and stuffed animal toys.",
+   "evidence": "Nearly all top-20 images contain dogs of many breeds, and most red boxes sit on or next to the dog. The non-dog top images are a monkey (#4, 9), a doll holding a plush dog (#15, 8) and a toy store full of stuffed animals (#12, 8), while random images score 1-4, highest for feathered birds.",
+   "missing_data": "Activations on cats and other furry mammals, and on stuffed toys without real dogs, would show whether the unit means dogs specifically or furry animals in general.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs, especially furry dog heads and bodies. It responds more weakly to related furry or animal-like things such as a monkey and stuffed animal toys.\",\n \"evidence\": \"Nearly all top-20 images contain dogs of many breeds, and most red boxes sit on or next to the dog. The non-dog top images are a monkey (#4, 9), a doll holding a plush dog (#15, 8) and a toy store full of stuffed animals (#12, 8), while random images score 1-4, highest for feathered birds.\",\n \"missing_data\": \"Activations on cats and other furry mammals, and on stuffed toys without real dogs, would show whether the unit means dogs specifically or furry animals in general.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to dogs, especially furry dog heads and bodies. It responds more weakly to related furry or animal-like things such as a monkey and stuffed animal toys.\",\n \"evidence\": \"Nearly all top-20 images contain dogs of many breeds, and most red boxes sit on or next to the dog. The non-dog top images are a monkey (#4, 9), a doll holding a plush dog (#15, 8) and a toy store full of stuffed animals (#12, 8), while random images score 1-4, highest for feathered birds.\",\n \"missing_data\": \"Activations on cats and other furry mammals, and on stuffed toys without real dogs, would show whether the unit means dogs specifically or furry animals in general.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4d:427",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "00bf1eb4f2031a3aa147985c13f5ab978e17cbb4d8aa519ff91bd8c488f234e4",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to soft, fine-grained, shaggy fibrous texture, typically in warm tan, brown or cream tones and often where that fuzzy texture meets a smoother region. It also responds more weakly to related soft, plush-looking surfaces and to the surroundings next to such textured masses.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to soft, fine-grained, shaggy fibrous texture, typically in warm tan, brown or cream tones and often where that fuzzy texture meets a smoother region. It also responds more weakly to related soft, plush-looking surfaces and to the surroundings next to such textured masses.",
+   "evidence": "All 20 top images contain prominent regions of dense, tufted, hair-like texture, and most red boxes sit on or at the edge of those regions. A few boxes fall on adjacent grainy ground, and the random images, which lack this texture, score 1-4; the highest of those (4) contain fine speckled or mottled feathery patterns.",
+   "missing_data": "Per-pixel activation maps and tests on isolated fuzzy textures, both with and without warm coloring, would show whether the unit encodes the texture itself or a broader learned category that the texture usually co-occurs with.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to soft, fine-grained, shaggy fibrous texture, typically in warm tan, brown or cream tones and often where that fuzzy texture meets a smoother region. It also responds more weakly to related soft, plush-looking surfaces and to the surroundings next to such textured masses.\",\n \"evidence\": \"All 20 top images contain prominent regions of dense, tufted, hair-like texture, and most red boxes sit on or at the edge of those regions. A few boxes fall on adjacent grainy ground, and the random images, which lack this texture, score 1-4; the highest of those (4) contain fine speckled or mottled feathery patterns.\",\n \"missing_data\": \"Per-pixel activation maps and tests on isolated fuzzy textures, both with and without warm coloring, would show whether the unit encodes the texture itself or a broader learned category that the texture usually co-occurs with.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to soft, fine-grained, shaggy fibrous texture, typically in warm tan, brown or cream tones and often where that fuzzy texture meets a smoother region. It also responds more weakly to related soft, plush-looking surfaces and to the surroundings next to such textured masses.\",\n \"evidence\": \"All 20 top images contain prominent regions of dense, tufted, hair-like texture, and most red boxes sit on or at the edge of those regions. A few boxes fall on adjacent grainy ground, and the random images, which lack this texture, score 1-4; the highest of those (4) contain fine speckled or mottled feathery patterns.\",\n \"missing_data\": \"Per-pixel activation maps and tests on isolated fuzzy textures, both with and without warm coloring, would show whether the unit encodes the texture itself or a broader learned category that the texture usually co-occurs with.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

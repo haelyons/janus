@@ -1,0 +1,75 @@
+{
+ "bare_s1": {
+  "unit": "mixed5b:907",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "4ea2a4927d81ba035ab55d61191b6a423766335360987d9f5c2407548990e2e0",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to several unrelated things. The clearest clusters are farm and vintage vehicles (tractors, a horse cart, a Model T, a go-kart) and ocarinas, mixed with scattered objects such as a gymnast, a rug, a desk, animal heads and textured fruit.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to several unrelated things. The clearest clusters are farm and vintage vehicles (tractors, a horse cart, a Model T, a go-kart) and ocarinas, mixed with scattered objects such as a gymnast, a rug, a desk, animal heads and textured fruit.",
+   "evidence": "Four of the top nine images are tractors or carts, and two of the top 20 are ocarinas. The rest share no visible theme (a lobster toy, a gila monster, a child in a dishwasher, a llama, a custard apple), and random images still reach activations of 3-4 (a cat, an obelisk).",
+   "missing_data": "A larger set of top-activating images, or feature visualizations and segmentation by concept, would show whether a hidden shared feature (e.g., a texture or a color pattern) links the clusters.",
+   "confidence": 0.55
+  },
+  "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to several unrelated things. The clearest clusters are farm and vintage vehicles (tractors, a horse cart, a Model T, a go-kart) and ocarinas, mixed with scattered objects such as a gymnast, a rug, a desk, animal heads and textured fruit.\",\n \"evidence\": \"Four of the top nine images are tractors or carts, and two of the top 20 are ocarinas. The rest share no visible theme (a lobster toy, a gila monster, a child in a dishwasher, a llama, a custard apple), and random images still reach activations of 3-4 (a cat, an obelisk).\",\n \"missing_data\": \"A larger set of top-activating images, or feature visualizations and segmentation by concept, would show whether a hidden shared feature (e.g., a texture or a color pattern) links the clusters.\",\n \"confidence\": 0.55}",
+  "texts": [
+   "{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to several unrelated things. The clearest clusters are farm and vintage vehicles (tractors, a horse cart, a Model T, a go-kart) and ocarinas, mixed with scattered objects such as a gymnast, a rug, a desk, animal heads and textured fruit.\",\n \"evidence\": \"Four of the top nine images are tractors or carts, and two of the top 20 are ocarinas. The rest share no visible theme (a lobster toy, a gila monster, a child in a dishwasher, a llama, a custard apple), and random images still reach activations of 3-4 (a cat, an obelisk).\",\n \"missing_data\": \"A larger set of top-activating images, or feature visualizations and segmentation by concept, would show whether a hidden shared feature (e.g., a texture or a color pattern) links the clusters.\",\n \"confidence\": 0.55}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed5b:907",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "4ea2a4927d81ba035ab55d61191b6a423766335360987d9f5c2407548990e2e0",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit seems to respond to several unconnected things. One recurring theme is old or farm-style vehicles (tractors, a horse cart, a Model T, a go-kart), but the other top images are unrelated: ocarinas, a lobster toy, a gila monster, a rug, a desk, a water cooler, a llama, a dog's eye and custard apples.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit seems to respond to several unconnected things. One recurring theme is old or farm-style vehicles (tractors, a horse cart, a Model T, a go-kart), but the other top images are unrelated: ocarinas, a lobster toy, a gila monster, a rug, a desk, a water cooler, a llama, a dog's eye and custard apples.",
+   "evidence": "About 5 of the top 20 are wheeled vehicles; the rest share no clear object, texture or color, and the red boxes fall on unrelated parts (a child's dress, a dog's eye, an empty wall above a desk). Random images also reach moderate activations (3-4 on a cat and an obelisk), so the selectivity is weak.",
+   "missing_data": "More top-activating examples beyond the top 20, plus feature-visualization or ablation results, to check whether a vehicle or wheel component dominates.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to respond to several unconnected things. One recurring theme is old or farm-style vehicles (tractors, a horse cart, a Model T, a go-kart), but the other top images are unrelated: ocarinas, a lobster toy, a gila monster, a rug, a desk, a water cooler, a llama, a dog's eye and custard apples.\",\n \"evidence\": \"About 5 of the top 20 are wheeled vehicles; the rest share no clear object, texture or color, and the red boxes fall on unrelated parts (a child's dress, a dog's eye, an empty wall above a desk). Random images also reach moderate activations (3-4 on a cat and an obelisk), so the selectivity is weak.\",\n \"missing_data\": \"More top-activating examples beyond the top 20, plus feature-visualization or ablation results, to check whether a vehicle or wheel component dominates.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit seems to respond to several unconnected things. One recurring theme is old or farm-style vehicles (tractors, a horse cart, a Model T, a go-kart), but the other top images are unrelated: ocarinas, a lobster toy, a gila monster, a rug, a desk, a water cooler, a llama, a dog's eye and custard apples.\",\n \"evidence\": \"About 5 of the top 20 are wheeled vehicles; the rest share no clear object, texture or color, and the red boxes fall on unrelated parts (a child's dress, a dog's eye, an empty wall above a desk). Random images also reach moderate activations (3-4 on a cat and an obelisk), so the selectivity is weak.\",\n \"missing_data\": \"More top-activating examples beyond the top 20, plus feature-visualization or ablation results, to check whether a vehicle or wheel component dominates.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed5b:907",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "4ea2a4927d81ba035ab55d61191b6a423766335360987d9f5c2407548990e2e0",
+  "valid": true,
+  "class": "one",
+  "explanation": "Tentatively, the unit responds to small, roughly round dark spots or blotches set against a lighter surrounding surface, often repeated as dotted or mottled patterns. It also seems to respond to isolated high-contrast dark-on-light circular marks.",
+  "parsed": {
+   "class": "one",
+   "explanation": "Tentatively, the unit responds to small, roughly round dark spots or blotches set against a lighter surrounding surface, often repeated as dotted or mottled patterns. It also seems to respond to isolated high-contrast dark-on-light circular marks.",
+   "evidence": "Several boxed regions contain dark rounded marks on a paler ground (#2, #5, #6, #10, #11, #16, #18, #19), but others show little clear spotting (#1, #3, #12, #13), and the top activations are flat (10 to 7). Random images mostly score 0 to 1, though some reach 3 to 4 without obvious spotting (#7, #8).",
+   "missing_data": "Synthetic tests varying dot size, density and contrast, plus tighter crops around the boxed regions, would show whether this is a real spot or blotch detector or something else.",
+   "confidence": 0.3
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Tentatively, the unit responds to small, roughly round dark spots or blotches set against a lighter surrounding surface, often repeated as dotted or mottled patterns. It also seems to respond to isolated high-contrast dark-on-light circular marks.\",\n \"evidence\": \"Several boxed regions contain dark rounded marks on a paler ground (#2, #5, #6, #10, #11, #16, #18, #19), but others show little clear spotting (#1, #3, #12, #13), and the top activations are flat (10 to 7). Random images mostly score 0 to 1, though some reach 3 to 4 without obvious spotting (#7, #8).\",\n \"missing_data\": \"Synthetic tests varying dot size, density and contrast, plus tighter crops around the boxed regions, would show whether this is a real spot or blotch detector or something else.\",\n \"confidence\": 0.3}\n```",
+  "texts": [
+   "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit may respond weakly to small, rounded, high-contrast spots or ring shapes (dark circular blobs, punched holes, round outlines) within mid-sized textured regions. However, this pattern is tentative, and the unit may be polysemantic.\",\n \"evidence\": \"Many top boxes contain round dark spots or ring outlines (#2, #5, #10, #11, #16, #18, #19, and the circular forms in #3, #9, #14, #15). But several equally strong examples (#1, #8, #12, #13) show no such structure, top activations are flat (10 to 7), and random images reach 3 to 4.\"\n \"missing_data\": \"Feature visualizations or activations on controlled stimuli, such as isolated circles or spots versus flat textures, plus more top examples with tighter localization.\",\n \"confidence\": 0.3}\n```",
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"Tentatively, the unit responds to small, roughly round dark spots or blotches set against a lighter surrounding surface, often repeated as dotted or mottled patterns. It also seems to respond to isolated high-contrast dark-on-light circular marks.\",\n \"evidence\": \"Several boxed regions contain dark rounded marks on a paler ground (#2, #5, #6, #10, #11, #16, #18, #19), but others show little clear spotting (#1, #3, #12, #13), and the top activations are flat (10 to 7). Random images mostly score 0 to 1, though some reach 3 to 4 without obvious spotting (#7, #8).\",\n \"missing_data\": \"Synthetic tests varying dot size, density and contrast, plus tighter crops around the boxed regions, would show whether this is a real spot or blotch detector or something else.\",\n \"confidence\": 0.3}\n```"
+  ],
+  "attempts": 2
+ }
+}

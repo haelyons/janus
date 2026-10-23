@@ -1,0 +1,110 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit prefers dog and dog-like photos (plus a few birds) where the main subject is sharply in focus, and it is clearly weaker when the subject is slightly blurry. It also has a facing-direction bias: it is less active when the subject faces right than when it faces left or toward the camera. It is weakest on photos with no single clear subject, but that preference is shared with the similar units. There are weaker hints that it likes small subjects and cool-tinted photos.",
+  "rows": [
+   31,
+   1,
+   4,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c7c183ebb9524a488ddd03c2e2c39647b694e4cfa3377f8f80df96c32a603e",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit prefers dog and dog-like photos (plus a few birds) where the main subject is sharply in focus, and it is clearly weaker when the subject is slightly blurry. It also has a facing-direction bias: it is less active when the subject faces right than when it faces left or toward the camera. It is weakest on photos with no single clear subject, but that preference is shared with the similar units. There are weaker hints that it likes small subjects and cool-tinted photos.\", \"rows\": [31, 1, 4, 3]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit prefers dog and dog-like photos (plus a few birds) where the main subject is sharply in focus, and it is clearly weaker when the subject is slightly blurry. It also has a facing-direction bias: it is less active when the subject faces right than when it faces left or toward the camera. It is weakest on photos with no single clear subject, but that preference is shared with the similar units. There are weaker hints that it likes small subjects and cool-tinted photos.\", \"rows\": [31, 1, 4, 3]}\n```",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds to dogs and similar animals, mostly canids, that are photographed sharply and stand as a clear single subject. Within classes it is most active when the animal is in sharp focus. It is also more active when the animal faces left or toward or away from the camera, and less active when it faces right. It is weakest when there is no single main subject. The facing-direction preference is not shared by its similar units, so it is the most particular feature. The sharpness preference is strong and based on many photos, though one similar unit partly shares it.",
+  "rows": [
+   31,
+   1,
+   4,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c7c183ebb9524a488ddd03c2e2c39647b694e4cfa3377f8f80df96c32a603e",
+  "texts": [
+   "{\"explanation\": \"The unit responds to dogs and similar animals, mostly canids, that are photographed sharply and stand as a clear single subject. Within classes it is most active when the animal is in sharp focus. It is also more active when the animal faces left or toward or away from the camera, and less active when it faces right. It is weakest when there is no single main subject. The facing-direction preference is not shared by its similar units, so it is the most particular feature. The sharpness preference is strong and based on many photos, though one similar unit partly shares it.\", \"rows\": [31, 1, 4, 3]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to dogs and similar animals, mostly canids, that are photographed sharply and stand as a clear single subject. Within classes it is most active when the animal is in sharp focus. It is also more active when the animal faces left or toward or away from the camera, and less active when it faces right. It is weakest when there is no single main subject. The facing-direction preference is not shared by its similar units, so it is the most particular feature. The sharpness preference is strong and based on many photos, though one similar unit partly shares it.\", \"rows\": [31, 1, 4, 3]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds to dog-like canids and similar animals (terriers, foxes, sheepdogs) when they are sharp and in focus. It is clearly weaker on slightly blurry subjects. It also has a facing-direction preference: it is weaker when the subject faces right than when it faces left or toward or away from the camera. Like its similar units, it is weak when there is no single main subject, so that pattern is shared rather than particular to this unit.",
+  "rows": [
+   31,
+   1,
+   4,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3c7c183ebb9524a488ddd03c2e2c39647b694e4cfa3377f8f80df96c32a603e",
+  "texts": [
+   "{\"explanation\": \"The unit responds to dog-like canids and similar animals (terriers, foxes, sheepdogs) when they are sharp and in focus. It is clearly weaker on slightly blurry subjects. It also has a facing-direction preference: it is weaker when the subject faces right than when it faces left or toward or away from the camera. Like its similar units, it is weak when there is no single main subject, so that pattern is shared rather than particular to this unit.\", \"rows\": [31, 1, 4, 3]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to dog-like canids and similar animals (terriers, foxes, sheepdogs) when they are sharp and in focus. It is clearly weaker on slightly blurry subjects. It also has a facing-direction preference: it is weaker when the subject faces right than when it faces left or toward or away from the camera. Like its similar units, it is weak when there is no single main subject, so that pattern is shared rather than particular to this unit.\", \"rows\": [31, 1, 4, 3]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds mostly to dogs (terriers, shepherds, spitz types, foxes) and a few colorful birds. Within these classes it shows no strong preference for any visual property; no row reaches the unusual 95th percentile. The clearest weak trend is higher activity when there is a single clear, well-defined main subject: an animal facing a direction, placed anywhere in the frame, fully inside the photo and sharp. Activity is lower for cluttered photos with no single main subject. It also leans slightly toward photos without strong straight lines or horizons.",
+  "rows": [
+   20,
+   6,
+   21,
+   29
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "342a652ec88cec99314ba91a1804a282b5aea6588ac9f1aeebafbaf5df765bb2",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to dogs (terriers, shepherds, spitz types, foxes) and a few colorful birds. Within these classes it shows no strong preference for any visual property; no row reaches the unusual 95th percentile. The clearest weak trend is higher activity when there is a single clear, well-defined main subject: an animal facing a direction, placed anywhere in the frame, fully inside the photo and sharp. Activity is lower for cluttered photos with no single main subject. It also leans slightly toward photos without strong straight lines or horizons.\", \"rows\": [20, 6, 21, 29]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to dogs (terriers, shepherds, spitz types, foxes) and a few colorful birds. Within these classes it shows no strong preference for any visual property; no row reaches the unusual 95th percentile. The clearest weak trend is higher activity when there is a single clear, well-defined main subject: an animal facing a direction, placed anywhere in the frame, fully inside the photo and sharp. Activity is lower for cluttered photos with no single main subject. It also leans slightly toward photos without strong straight lines or horizons.\", \"rows\": [20, 6, 21, 29]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "This unit responds weakly to dogs and foxes (plus jacamar and bee eater), favouring photos with one clear, well-defined main subject over cluttered or multi-subject scenes. Within classes it is a bit more active when one animal is centred or offset and fully framed, faces the camera or to the side, and sits against natural backgrounds with no strong straight lines. None of the effects reaches the layer's 95th percentile, so its preferences beyond class identity are mild. The strongest of them is a single main subject versus none, and the similar units do not share it.",
+  "rows": [
+   20,
+   6,
+   21,
+   29
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "342a652ec88cec99314ba91a1804a282b5aea6588ac9f1aeebafbaf5df765bb2",
+  "texts": [
+   "{\"explanation\": \"This unit responds weakly to dogs and foxes (plus jacamar and bee eater), favouring photos with one clear, well-defined main subject over cluttered or multi-subject scenes. Within classes it is a bit more active when one animal is centred or offset and fully framed, faces the camera or to the side, and sits against natural backgrounds with no strong straight lines. None of the effects reaches the layer's 95th percentile, so its preferences beyond class identity are mild. The strongest of them is a single main subject versus none, and the similar units do not share it.\", \"rows\": [20, 6, 21, 29]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds weakly to dogs and foxes (plus jacamar and bee eater), favouring photos with one clear, well-defined main subject over cluttered or multi-subject scenes. Within classes it is a bit more active when one animal is centred or offset and fully framed, faces the camera or to the side, and sits against natural backgrounds with no strong straight lines. None of the effects reaches the layer's 95th percentile, so its preferences beyond class identity are mild. The strongest of them is a single main subject versus none, and the similar units do not share it.\", \"rows\": [20, 6, 21, 29]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit responds to dogs and other canids (foxes, dingoes, herding and terrier breeds) and colorful birds when the photo shows one clear, sharp, well-lit main subject. It responds less when there is no single main subject. None of the rows is unusual for its layer (the highest is at the 94th percentile), so the unit has no strong preference about framing. The clearest signals are a single centered or off-center subject versus a scattered scene, a subject facing the camera, and natural scenes without straight lines.",
+  "rows": [
+   20,
+   6,
+   21,
+   29
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "342a652ec88cec99314ba91a1804a282b5aea6588ac9f1aeebafbaf5df765bb2",
+  "texts": [
+   "{\"explanation\": \"The unit responds to dogs and other canids (foxes, dingoes, herding and terrier breeds) and colorful birds when the photo shows one clear, sharp, well-lit main subject. It responds less when there is no single main subject. None of the rows is unusual for its layer (the highest is at the 94th percentile), so the unit has no strong preference about framing. The clearest signals are a single centered or off-center subject versus a scattered scene, a subject facing the camera, and natural scenes without straight lines.\", \"rows\": [20, 6, 21, 29]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to dogs and other canids (foxes, dingoes, herding and terrier breeds) and colorful birds when the photo shows one clear, sharp, well-lit main subject. It responds less when there is no single main subject. None of the rows is unusual for its layer (the highest is at the 94th percentile), so the unit has no strong preference about framing. The clearest signals are a single centered or off-center subject versus a scattered scene, a subject facing the camera, and natural scenes without straight lines.\", \"rows\": [20, 6, 21, 29]}",
+  "valid": true
+ }
+}

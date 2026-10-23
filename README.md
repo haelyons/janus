@@ -929,3 +929,39 @@ their checks on T answers shuffled within class (round 29's T_null). 36 text-onl
   measurement as the method, so rounds 29 and 29B are a strong replication, not an independent validation. Zoom In
   gives the grouping of these units, not their sides; it also draws 409 and 418 in the mirrored dog-head circuit,
   which our measurement does not support.
+
+## Round 30A: the round-29 method, unchanged, on 15 units it has never seen (`tools/r30_run.py`, `r30_check.py`)
+
+Sealed in PREDICTIONS.md before any data. References come from outside this project: Zoom In's 4a dog-head pathways
+(which units share a facing, not which side), the Distill Equivariance flip pairs (4a:222/308, 4d:427/429), and
+Nick Cammarata's audited car-circuit labels, mapped blind to the 8 questions. 298 calls in phases, one at a time, none
+failed (at most one more lost when a phase was stopped for usage and resumed). `runs/r30a/`, check in
+`r30_check.txt`.
+
+- Held: 1 (431 keeps its right row in 2 of 3 samples; 409 no left/right row), 2 (Zoom In 4a: 222 left, 234 right,
+  308 right, 325 none; 234 = 308 and the flip pair 222 != 308 both hold; 325 = 222 untestable), 4 (calibration: real
+  42/154 held, null 19/159, shuffled T 31/376), 5 (no mirror-insensitive unit has a held left/right row; 4 of 6
+  mirror-sensitive units do: 222, 234, 308, 431; not 907, 427), 6 (bare/Q0/F1 name the outside reference for 259,
+  169, 756; table explanations for 756, 391), 7, 8 (no "interpretation: missed").
+- Failed: 3 (car-circuit "side view" units 5a:160, 5a:23, 5b:573, 5b:907: 0 of 4).
+- First independent check of the side measurement: the 4a facing sides agree with Zoom In's pathway grouping and the
+  Equivariance flip pair. Neither source says which side is which, so only the consistency is tested.
+- Side view on cars: no stable within-class effect on either half. 160's D row "right over left" (99.2) is d -0.20
+  on T; 573 and 907 lean the other way on D (frontal over side, 97.4 and 89.9) and flip sign on T; 23 is flat on
+  both. Either the labels describe what the top photos are (cars seen side-on) rather than a preference within
+  cars, or Q1 ("which way does it face") measures vehicle viewpoint poorly. Nothing here separates the two: the
+  mirror profile cannot test side against frontal.
+- Check errata (the sealed output stands; corrected reading by hand from `stats.json`): the cause tree treats any
+  Q1 relation naming left or right as a left/right relation, so 160 and 23 got "reference not supported ... by the
+  intervention", but side-vs-frontal is mirror-symmetric; read "unresolved: low on both halves". 573 and 907 got
+  "too few photos", because the tree collects only rows pointing the reference's way and theirs point the other
+  way; read the same. All four are measurement-type, as the sealed attribution says.
+- Unjustified claims: agent prose names a facing side with no held left/right row for 325 (left), 160, 259, 756
+  (right), 409 (left, 2 of 3) and 427 (left); 160, 259, 756 and 409 are mirror-insensitive. The held-out check stays
+  clean (item 5); the prose does not, as with 409 in round 29.
+- 427 (human beside animal, mirror 0.38) is a near miss rather than a missing candidate: "left over right" is +0.53
+  (94.5) on D and +0.40 (89.6) on T, its flip partner 429 is at 14 and 13, and "toward over right" held (99.4).
+- Answer agreement with round 29 on the 510 shared photos: Q1 88%, Q2 85%, Q3 89%, Q4 90%, Q5 84%, Q6 80%, Q7 81%,
+  Q8 84%.
+- Sealed next step: the non-success inside units fail on measurement, so measurement comes next; item 7 makes
+  round 29B's final reading the default reporting layer.

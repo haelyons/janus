@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4e:756",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "4e3f47f419da783202e2df3d6087d9a176de2e3abea635c9a4726f29677c2950",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to vehicle windows, especially the side or cab windows of trucks, vans, buses and fire engines. It also responds more weakly to similar framed windows on related structures such as trains, a tugboat cabin and cars.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to vehicle windows, especially the side or cab windows of trucks, vans, buses and fire engines. It also responds more weakly to similar framed windows on related structures such as trains, a tugboat cabin and cars.",
+   "evidence": "In all 20 top images the red box sits on a vehicle window or cab window, with fire trucks and utility vans scoring highest (10 and 8). Among the random images, the boats on trailers with cabin windows reach 5 while unrelated scenes score 0-2.",
+   "missing_data": "Activations on building windows or isolated window-like rectangles, to separate 'vehicle window' from 'window in general'.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to vehicle windows, especially the side or cab windows of trucks, vans, buses and fire engines. It also responds more weakly to similar framed windows on related structures such as trains, a tugboat cabin and cars.\",\n \"evidence\": \"In all 20 top images the red box sits on a vehicle window or cab window, with fire trucks and utility vans scoring highest (10 and 8). Among the random images, the boats on trailers with cabin windows reach 5 while unrelated scenes score 0-2.\",\n \"missing_data\": \"Activations on building windows or isolated window-like rectangles, to separate 'vehicle window' from 'window in general'.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to vehicle windows, especially the side or cab windows of trucks, vans, buses and fire engines. It also responds more weakly to similar framed windows on related structures such as trains, a tugboat cabin and cars.\",\n \"evidence\": \"In all 20 top images the red box sits on a vehicle window or cab window, with fire trucks and utility vans scoring highest (10 and 8). Among the random images, the boats on trailers with cabin windows reach 5 while unrelated scenes score 0-2.\",\n \"missing_data\": \"Activations on building windows or isolated window-like rectangles, to separate 'vehicle window' from 'window in general'.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4e:756",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "4e3f47f419da783202e2df3d6087d9a176de2e3abea635c9a4726f29677c2950",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit detects the side or cab window of a vehicle, the glazed driver/passenger window area on trucks, vans, buses, cars, trains and boats.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit detects the side or cab window of a vehicle, the glazed driver/passenger window area on trucks, vans, buses, cars, trains and boats.",
+   "evidence": "In all 20 top photos the red box sits on a vehicle's side or cab window, including the train cab (#9) and tugboat wheelhouse (#12), and larger boxy vehicles score highest. Among the random photos, only the boats with cabin windows reach a notable activation (5); scenes without vehicles score 0-2.",
+   "missing_data": "Activations on building windows or windows seen without a vehicle body, and on vehicles seen from angles where windows are hidden, would show whether it encodes 'window' generally or 'vehicle window' specifically.",
+   "confidence": 0.72
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects the side or cab window of a vehicle, the glazed driver/passenger window area on trucks, vans, buses, cars, trains and boats.\",\n \"evidence\": \"In all 20 top photos the red box sits on a vehicle's side or cab window, including the train cab (#9) and tugboat wheelhouse (#12), and larger boxy vehicles score highest. Among the random photos, only the boats with cabin windows reach a notable activation (5); scenes without vehicles score 0-2.\",\n \"missing_data\": \"Activations on building windows or windows seen without a vehicle body, and on vehicles seen from angles where windows are hidden, would show whether it encodes 'window' generally or 'vehicle window' specifically.\",\n \"confidence\": 0.72}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit detects the side or cab window of a vehicle, the glazed driver/passenger window area on trucks, vans, buses, cars, trains and boats.\",\n \"evidence\": \"In all 20 top photos the red box sits on a vehicle's side or cab window, including the train cab (#9) and tugboat wheelhouse (#12), and larger boxy vehicles score highest. Among the random photos, only the boats with cabin windows reach a notable activation (5); scenes without vehicles score 0-2.\",\n \"missing_data\": \"Activations on building windows or windows seen without a vehicle body, and on vehicles seen from angles where windows are hidden, would show whether it encodes 'window' generally or 'vehicle window' specifically.\",\n \"confidence\": 0.72}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4e:756",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "4e3f47f419da783202e2df3d6087d9a176de2e3abea635c9a4726f29677c2950",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a dark, glossy, roughly rectangular pane with rounded corners, set into a smooth, brightly or uniformly painted panel and seen from the side, usually near the upper front of a large boxy form.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a dark, glossy, roughly rectangular pane with rounded corners, set into a smooth, brightly or uniformly painted panel and seen from the side, usually near the upper front of a large boxy form.",
+   "evidence": "In all 20 top photos the red box falls on such a dark framed pane inside a light or colored glossy surface. Among the random photos, only the one with similar dark panes in pale boxy shells scores moderately (5), and the rest score 0-2.",
+   "missing_data": "Photos with dark framed panes set in flat walls or other non-glossy surfaces, plus versions of the top photos with the pane area masked out, would show whether the pane alone drives the response or whether the surrounding painted body matters.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one\", \"explanation\": \"The unit responds to a dark, glossy, roughly rectangular pane with rounded corners, set into a smooth, brightly or uniformly painted panel and seen from the side, usually near the upper front of a large boxy form.\", \"evidence\": \"In all 20 top photos the red box falls on such a dark framed pane inside a light or colored glossy surface. Among the random photos, only the one with similar dark panes in pale boxy shells scores moderately (5), and the rest score 0-2.\", \"missing_data\": \"Photos with dark framed panes set in flat walls or other non-glossy surfaces, plus versions of the top photos with the pane area masked out, would show whether the pane alone drives the response or whether the surrounding painted body matters.\", \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one\", \"explanation\": \"The unit responds to a dark, glossy, roughly rectangular pane with rounded corners, set into a smooth, brightly or uniformly painted panel and seen from the side, usually near the upper front of a large boxy form.\", \"evidence\": \"In all 20 top photos the red box falls on such a dark framed pane inside a light or colored glossy surface. Among the random photos, only the one with similar dark panes in pale boxy shells scores moderately (5), and the rest score 0-2.\", \"missing_data\": \"Photos with dark framed panes set in flat walls or other non-glossy surfaces, plus versions of the top photos with the pane area masked out, would show whether the pane alone drives the response or whether the surrounding painted body matters.\", \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ }
+}

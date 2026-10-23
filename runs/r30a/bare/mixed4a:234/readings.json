@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4a:234",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "6b88b6bac73ab7d8a01ded778b7d83c1eeddb8f815b157909783ed16758c51f8",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the snout/muzzle region of dog faces (the nose and mouth area), with weaker responses to similar muzzle regions on other furry mammals.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the snout/muzzle region of dog faces (the nose and mouth area), with weaker responses to similar muzzle regions on other furry mammals.",
+   "evidence": "18 of the top 20 are dogs of many breeds with the box on the nose/muzzle, while #12 (otter) and #17 (squirrel monkey) are animal faces at slightly lower activation (8). Random images stay low (1-3), except the Tibetan mastiff at 4, which fits a dog-face detector.",
+   "missing_data": "Activations on dog faces where the muzzle is hidden or cropped out, compared with isolated dog noses, plus more non-dog animal faces (cats, bears), to tell muzzle shape apart from dog identity.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the snout/muzzle region of dog faces (the nose and mouth area), with weaker responses to similar muzzle regions on other furry mammals.\",\n \"evidence\": \"18 of the top 20 are dogs of many breeds with the box on the nose/muzzle, while #12 (otter) and #17 (squirrel monkey) are animal faces at slightly lower activation (8). Random images stay low (1-3), except the Tibetan mastiff at 4, which fits a dog-face detector.\",\n \"missing_data\": \"Activations on dog faces where the muzzle is hidden or cropped out, compared with isolated dog noses, plus more non-dog animal faces (cats, bears), to tell muzzle shape apart from dog identity.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the snout/muzzle region of dog faces (the nose and mouth area), with weaker responses to similar muzzle regions on other furry mammals.\",\n \"evidence\": \"18 of the top 20 are dogs of many breeds with the box on the nose/muzzle, while #12 (otter) and #17 (squirrel monkey) are animal faces at slightly lower activation (8). Random images stay low (1-3), except the Tibetan mastiff at 4, which fits a dog-face detector.\",\n \"missing_data\": \"Activations on dog faces where the muzzle is hidden or cropped out, compared with isolated dog noses, plus more non-dog animal faces (cats, bears), to tell muzzle shape apart from dog identity.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4a:234",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "6b88b6bac73ab7d8a01ded778b7d83c1eeddb8f815b157909783ed16758c51f8",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the snout and muzzle region of dog faces, around the nose, mouth and eyes, especially in small and medium fluffy breeds. It also responds, more weakly, to similar furry mammal faces with a muzzle.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the snout and muzzle region of dog faces, around the nose, mouth and eyes, especially in small and medium fluffy breeds. It also responds, more weakly, to similar furry mammal faces with a muzzle.",
+   "evidence": "18 of the top 20 photos are dog faces with the box on the nose or muzzle, while an otter (#12, 8) and a squirrel monkey (#17, 8) rank just below the top dogs. Random photos score 1-3, except a front-facing Tibetan mastiff at 4.",
+   "missing_data": "Activations on many non-dog mammal faces (cats, bears, foxes) and on dogs seen from behind or with faces hidden, to tell whether it is dog-specific or a general furry-muzzle detector.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the snout and muzzle region of dog faces, around the nose, mouth and eyes, especially in small and medium fluffy breeds. It also responds, more weakly, to similar furry mammal faces with a muzzle.\",\n \"evidence\": \"18 of the top 20 photos are dog faces with the box on the nose or muzzle, while an otter (#12, 8) and a squirrel monkey (#17, 8) rank just below the top dogs. Random photos score 1-3, except a front-facing Tibetan mastiff at 4.\",\n \"missing_data\": \"Activations on many non-dog mammal faces (cats, bears, foxes) and on dogs seen from behind or with faces hidden, to tell whether it is dog-specific or a general furry-muzzle detector.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the snout and muzzle region of dog faces, around the nose, mouth and eyes, especially in small and medium fluffy breeds. It also responds, more weakly, to similar furry mammal faces with a muzzle.\",\n \"evidence\": \"18 of the top 20 photos are dog faces with the box on the nose or muzzle, while an otter (#12, 8) and a squirrel monkey (#17, 8) rank just below the top dogs. Random photos score 1-3, except a front-facing Tibetan mastiff at 4.\",\n \"missing_data\": \"Activations on many non-dog mammal faces (cats, bears, foxes) and on dogs seen from behind or with faces hidden, to tell whether it is dog-specific or a general furry-muzzle detector.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4a:234",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "6b88b6bac73ab7d8a01ded778b7d83c1eeddb8f815b157909783ed16758c51f8",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a small, dark, glossy rounded spot at the tip of a forward-protruding region covered in soft, fine-strand texture. A pair of smaller dark spots often sits symmetrically above it, and a lighter area or opening often sits below it.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a small, dark, glossy rounded spot at the tip of a forward-protruding region covered in soft, fine-strand texture. A pair of smaller dark spots often sits symmetrically above it, and a lighter area or opening often sits below it.",
+   "evidence": "All 20 top crops center on this same configuration (a dark rounded tip set in fine, fibrous texture) across many colors and textures, and activations stay at 8-10. Random photos without the arrangement score 1-3; the highest random score (4) is a photo with dense long-strand texture and a similar central dark arrangement.",
+   "missing_data": "Activations on images that copy the dark-tip-in-fine-texture arrangement without being living subjects (e.g., synthetic or textile patterns), plus partial versions (texture only, or dark spot only), would show which part drives the response.",
+   "confidence": 0.82
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a small, dark, glossy rounded spot at the tip of a forward-protruding region covered in soft, fine-strand texture. A pair of smaller dark spots often sits symmetrically above it, and a lighter area or opening often sits below it.\",\n \"evidence\": \"All 20 top crops center on this same configuration (a dark rounded tip set in fine, fibrous texture) across many colors and textures, and activations stay at 8-10. Random photos without the arrangement score 1-3; the highest random score (4) is a photo with dense long-strand texture and a similar central dark arrangement.\",\n \"missing_data\": \"Activations on images that copy the dark-tip-in-fine-texture arrangement without being living subjects (e.g., synthetic or textile patterns), plus partial versions (texture only, or dark spot only), would show which part drives the response.\",\n \"confidence\": 0.82}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a small, dark, glossy rounded spot at the tip of a forward-protruding region covered in soft, fine-strand texture. A pair of smaller dark spots often sits symmetrically above it, and a lighter area or opening often sits below it.\",\n \"evidence\": \"All 20 top crops center on this same configuration (a dark rounded tip set in fine, fibrous texture) across many colors and textures, and activations stay at 8-10. Random photos without the arrangement score 1-3; the highest random score (4) is a photo with dense long-strand texture and a similar central dark arrangement.\",\n \"missing_data\": \"Activations on images that copy the dark-tip-in-fine-texture arrangement without being living subjects (e.g., synthetic or textile patterns), plus partial versions (texture only, or dark spot only), would show which part drives the response.\",\n \"confidence\": 0.82}\n```"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to furry animals, mostly dogs plus some wolves, cats, meerkats and lesser pandas. Within a class, it is more active when the animal faces right or toward the camera than when it faces left. This left/right preference is shared with the most similar units (rows 1 and 2), so it is not specific to this unit. What looks more particular to it is a modest preference for brightly lit subjects (row 7), where the similar units show little effect. Sharpness and subject size have only weak effects.",
+  "rows": [
+   1,
+   7
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2211d6371c46c444814abdd4a84aa5815290928db2f863e36853f65fdc2fa685",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to furry animals, mostly dogs plus some wolves, cats, meerkats and lesser pandas. Within a class, it is more active when the animal faces right or toward the camera than when it faces left. This left/right preference is shared with the most similar units (rows 1 and 2), so it is not specific to this unit. What looks more particular to it is a modest preference for brightly lit subjects (row 7), where the similar units show little effect. Sharpness and subject size have only weak effects.\", \"rows\": [1, 7]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to furry animals, mostly dogs plus some wolves, cats, meerkats and lesser pandas. Within a class, it is more active when the animal faces right or toward the camera than when it faces left. This left/right preference is shared with the most similar units (rows 1 and 2), so it is not specific to this unit. What looks more particular to it is a modest preference for brightly lit subjects (row 7), where the similar units show little effect. Sharpness and subject size have only weak effects.\", \"rows\": [1, 7]}\n```",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds to furry animals, mostly dogs and dog-like mammals (terriers, spaniels, wolves, meerkats, lesser pandas), along with a few odd classes such as lab coat and sax. It is least active when the subject faces left, and more active when the subject faces right or toward the camera. Similar units share this leftward suppression, so it is not particular to this unit. What sets this unit apart is a modest preference for brightly lit subjects, which the similar units lack. It also shows weak preferences for sharp, untinted subjects.",
+  "rows": [
+   7
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2211d6371c46c444814abdd4a84aa5815290928db2f863e36853f65fdc2fa685",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to furry animals, mostly dogs and dog-like mammals (terriers, spaniels, wolves, meerkats, lesser pandas), along with a few odd classes such as lab coat and sax. It is least active when the subject faces left, and more active when the subject faces right or toward the camera. Similar units share this leftward suppression, so it is not particular to this unit. What sets this unit apart is a modest preference for brightly lit subjects, which the similar units lack. It also shows weak preferences for sharp, untinted subjects.\", \"rows\": [7]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to furry animals, mostly dogs and dog-like mammals (terriers, spaniels, wolves, meerkats, lesser pandas), along with a few odd classes such as lab coat and sax. It is least active when the subject faces left, and more active when the subject faces right or toward the camera. Similar units share this leftward suppression, so it is not particular to this unit. What sets this unit apart is a modest preference for brightly lit subjects, which the similar units lack. It also shows weak preferences for sharp, untinted subjects.\", \"rows\": [7]}\n```",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds to furry, long-haired animals, mostly dogs plus wolves, Persian cat, lesser panda and meerkat. Its response depends on head and body orientation: it is weaker when the subject faces left than when it faces right or toward the camera. That left-versus-right preference is largely shared with its similar units. What sets this unit apart is a mild preference for brightly lit, sharp subjects, which the similar units do not show.",
+  "rows": [
+   1,
+   7
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2211d6371c46c444814abdd4a84aa5815290928db2f863e36853f65fdc2fa685",
+  "texts": [
+   "{\"explanation\": \"The unit responds to furry, long-haired animals, mostly dogs plus wolves, Persian cat, lesser panda and meerkat. Its response depends on head and body orientation: it is weaker when the subject faces left than when it faces right or toward the camera. That left-versus-right preference is largely shared with its similar units. What sets this unit apart is a mild preference for brightly lit, sharp subjects, which the similar units do not show.\", \"rows\": [1, 7]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to furry, long-haired animals, mostly dogs plus wolves, Persian cat, lesser panda and meerkat. Its response depends on head and body orientation: it is weaker when the subject faces left than when it faces right or toward the camera. That left-versus-right preference is largely shared with its similar units. What sets this unit apart is a mild preference for brightly lit, sharp subjects, which the similar units do not show.\", \"rows\": [1, 7]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds mostly to furry dogs and similar animals (terriers, spaniels, wolves, Shih-Tzu, Persian cat, lesser panda, meerkat), especially long-haired faces. Within these classes it is weakly more active when the subject faces the camera rather than in profile, when the photo has a cool blue or green tint rather than a warm one, when no straight lines or horizon are visible (close natural or fur-filled scenes), and when the subject is slightly soft. None of these effects reaches the unusual range, so all choices are tentative. I picked rows where the similar units are low, so the pattern looks particular to this unit.",
+  "rows": [
+   9,
+   11,
+   2,
+   14
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7e68f54d5abdbd7ad24ef9de896e23224ecb3af47d1db6c3f8ba731119a1b256",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to furry dogs and similar animals (terriers, spaniels, wolves, Shih-Tzu, Persian cat, lesser panda, meerkat), especially long-haired faces. Within these classes it is weakly more active when the subject faces the camera rather than in profile, when the photo has a cool blue or green tint rather than a warm one, when no straight lines or horizon are visible (close natural or fur-filled scenes), and when the subject is slightly soft. None of these effects reaches the unusual range, so all choices are tentative. I picked rows where the similar units are low, so the pattern looks particular to this unit.\", \"rows\": [9, 11, 2, 14]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to furry dogs and similar animals (terriers, spaniels, wolves, Shih-Tzu, Persian cat, lesser panda, meerkat), especially long-haired faces. Within these classes it is weakly more active when the subject faces the camera rather than in profile, when the photo has a cool blue or green tint rather than a warm one, when no straight lines or horizon are visible (close natural or fur-filled scenes), and when the subject is slightly soft. None of these effects reaches the unusual range, so all choices are tentative. I picked rows where the similar units are low, so the pattern looks particular to this unit.\", \"rows\": [9, 11, 2, 14]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds mostly to furry dog-like and fluffy animals: terriers, spaniels, wolves, spitz breeds, a Persian cat, a lesser panda and a meerkat. No row reaches the 95th percentile, so within those classes no question answers clearly change its response. The strongest unit-specific tendencies are higher activity when the subject faces the camera rather than in profile, when the photo has a cool tint, and when the subject is slightly blurry. Each of these rests on small or moderate effects, and the cool-tint and left-facing groups are small.",
+  "rows": [
+   2,
+   15,
+   9,
+   11
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7e68f54d5abdbd7ad24ef9de896e23224ecb3af47d1db6c3f8ba731119a1b256",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to furry dog-like and fluffy animals: terriers, spaniels, wolves, spitz breeds, a Persian cat, a lesser panda and a meerkat. No row reaches the 95th percentile, so within those classes no question answers clearly change its response. The strongest unit-specific tendencies are higher activity when the subject faces the camera rather than in profile, when the photo has a cool tint, and when the subject is slightly blurry. Each of these rests on small or moderate effects, and the cool-tint and left-facing groups are small.\", \"rows\": [2, 15, 9, 11]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to furry dog-like and fluffy animals: terriers, spaniels, wolves, spitz breeds, a Persian cat, a lesser panda and a meerkat. No row reaches the 95th percentile, so within those classes no question answers clearly change its response. The strongest unit-specific tendencies are higher activity when the subject faces the camera rather than in profile, when the photo has a cool tint, and when the subject is slightly blurry. Each of these rests on small or moderate effects, and the cool-tint and left-facing groups are small.\", \"rows\": [2, 15, 9, 11]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit responds mainly to furry, fluffy animals: long-haired and shaggy dogs (terriers, spaniels, Shih-Tzu, Maltese, keeshond), wolves, Persian cats, meerkats and lesser pandas. Within these classes it is somewhat more active when the animal faces the camera rather than in profile, especially rather than facing left. It is also more active when the animal fills a moderate rather than very large part of the frame, when the photo has a cool rather than warm tint, and when the subject is slightly soft or blurry. None of these effects is strongly unusual for the layer. The most distinctive ones, where similar units are low, are frontal facing, cool tint and slight blur.",
+  "rows": [
+   2,
+   15,
+   11,
+   9
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7e68f54d5abdbd7ad24ef9de896e23224ecb3af47d1db6c3f8ba731119a1b256",
+  "texts": [
+   "{\"explanation\": \"The unit responds mainly to furry, fluffy animals: long-haired and shaggy dogs (terriers, spaniels, Shih-Tzu, Maltese, keeshond), wolves, Persian cats, meerkats and lesser pandas. Within these classes it is somewhat more active when the animal faces the camera rather than in profile, especially rather than facing left. It is also more active when the animal fills a moderate rather than very large part of the frame, when the photo has a cool rather than warm tint, and when the subject is slightly soft or blurry. None of these effects is strongly unusual for the layer. The most distinctive ones, where similar units are low, are frontal facing, cool tint and slight blur.\", \"rows\": [2, 15, 11, 9]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mainly to furry, fluffy animals: long-haired and shaggy dogs (terriers, spaniels, Shih-Tzu, Maltese, keeshond), wolves, Persian cats, meerkats and lesser pandas. Within these classes it is somewhat more active when the animal faces the camera rather than in profile, especially rather than facing left. It is also more active when the animal fills a moderate rather than very large part of the frame, when the photo has a cool rather than warm tint, and when the subject is slightly soft or blurry. None of these effects is strongly unusual for the layer. The most distinctive ones, where similar units are low, are frontal facing, cool tint and slight blur.\", \"rows\": [2, 15, 11, 9]}",
+  "valid": true
+ }
+}

@@ -1,0 +1,4442 @@
+{
+ "unit": "mixed5b:907",
+ "layer": "mixed5b",
+ "chan": 907,
+ "m": 1024,
+ "classes": [
+  866,
+  994,
+  532,
+  684,
+  603,
+  741,
+  33,
+  4,
+  661,
+  547,
+  116,
+  122,
+  730,
+  956,
+  36,
+  290,
+  993,
+  816,
+  921,
+  919,
+  59,
+  736,
+  719,
+  692
+ ],
+ "class_names": [
+  "tractor",
+  "stinkhorn",
+  "dining table",
+  "ocarina",
+  "horse cart",
+  "prayer rug",
+  "loggerhead",
+  "hammerhead",
+  "Model T",
+  "electric locomotive",
+  "chiton",
+  "American lobster",
+  "plow",
+  "custard apple",
+  "terrapin",
+  "jaguar",
+  "gyromitra",
+  "spindle",
+  "book jacket",
+  "street sign",
+  "vine snake",
+  "pool table",
+  "piggy bank",
+  "packet"
+ ],
+ "peers": [
+  {
+   "chan": 135,
+   "unit": "mixed5b:135",
+   "corr": 0.25903730775877437
+  },
+  {
+   "chan": 14,
+   "unit": "mixed5b:14",
+   "corr": 0.22756486943646684
+  },
+  {
+   "chan": 451,
+   "unit": "mixed5b:451",
+   "corr": 0.21982262244706505
+  }
+ ],
+ "D": [
+  602,
+  631,
+  635,
+  636,
+  639,
+  691,
+  692,
+  693,
+  694,
+  696,
+  697,
+  698,
+  910,
+  912,
+  913,
+  915,
+  916,
+  917,
+  1052,
+  1054,
+  1057,
+  1058,
+  1282,
+  1283,
+  1285,
+  1289,
+  1741,
+  1742,
+  1744,
+  2640,
+  2642,
+  2646,
+  2647,
+  2648,
+  2649,
+  4061,
+  4062,
+  4063,
+  4064,
+  4067,
+  4135,
+  4139,
+  4240,
+  4244,
+  4248,
+  4792,
+  4793,
+  4794,
+  4796,
+  4797,
+  4798,
+  5003,
+  5005,
+  5006,
+  5007,
+  5008,
+  5009,
+  6050,
+  6051,
+  6052,
+  6053,
+  6054,
+  6680,
+  6681,
+  6682,
+  6684,
+  6688,
+  6689,
+  6742,
+  6743,
+  6748,
+  6930,
+  6932,
+  6935,
+  7470,
+  7471,
+  7473,
+  7474,
+  7475,
+  7476,
+  7478,
+  7479,
+  8350,
+  8351,
+  8352,
+  8354,
+  8355,
+  8357,
+  8572,
+  8573,
+  8576,
+  8577,
+  8578,
+  8579,
+  8771,
+  8772,
+  8774,
+  8775,
+  8776,
+  8778,
+  8801,
+  8803,
+  8807,
+  8809,
+  9412,
+  9418,
+  9851,
+  9853,
+  9855,
+  9856
+ ],
+ "T": [
+  600,
+  601,
+  603,
+  604,
+  605,
+  606,
+  607,
+  608,
+  609,
+  630,
+  632,
+  633,
+  634,
+  637,
+  638,
+  690,
+  695,
+  699,
+  911,
+  914,
+  918,
+  919,
+  1050,
+  1051,
+  1053,
+  1055,
+  1056,
+  1059,
+  1280,
+  1281,
+  1284,
+  1286,
+  1287,
+  1288,
+  1740,
+  1743,
+  1745,
+  1746,
+  1747,
+  1748,
+  1749,
+  2641,
+  2643,
+  2644,
+  2645,
+  4060,
+  4065,
+  4066,
+  4068,
+  4069,
+  4130,
+  4131,
+  4132,
+  4133,
+  4134,
+  4136,
+  4137,
+  4138,
+  4241,
+  4242,
+  4243,
+  4245,
+  4246,
+  4247,
+  4249,
+  4790,
+  4791,
+  4795,
+  4799,
+  5000,
+  5001,
+  5002,
+  5004,
+  6055,
+  6056,
+  6057,
+  6058,
+  6059,
+  6683,
+  6685,
+  6686,
+  6687,
+  6740,
+  6741,
+  6744,
+  6745,
+  6746,
+  6747,
+  6749,
+  6931,
+  6933,
+  6934,
+  6936,
+  6937,
+  6938,
+  6939,
+  7472,
+  7477,
+  8353,
+  8356,
+  8358,
+  8359,
+  8570,
+  8571,
+  8574,
+  8575,
+  8770,
+  8773,
+  8777,
+  8779,
+  8800,
+  8802,
+  8804,
+  8805,
+  8806,
+  8808,
+  9410,
+  9411,
+  9413,
+  9414,
+  9415,
+  9416,
+  9417,
+  9419,
+  9850,
+  9852,
+  9854,
+  9857,
+  9858,
+  9859
+ ],
+ "questions": [
+  {
+   "question": "Which way is the main subject facing or pointing?",
+   "answers": [
+    "left",
+    "right",
+    "toward or away from the camera",
+    "no clear facing direction or no single main subject"
+   ]
+  },
+  {
+   "question": "How much of the photo does the main subject take up?",
+   "answers": [
+    "less than a quarter",
+    "a quarter to three quarters",
+    "more than three quarters",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Is the main subject cut off by an edge of the photo?",
+   "answers": [
+    "fully inside the photo",
+    "partly cut off",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Where is the center of the main subject left to right?",
+   "answers": [
+    "left third",
+    "middle third",
+    "right third",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "How brightly lit is the main subject?",
+   "answers": [
+    "dark",
+    "medium",
+    "bright",
+    "no single main subject"
+   ]
+  },
+  {
+   "question": "Does the photo have an overall color tint?",
+   "answers": [
+    "no noticeable tint",
+    "warm (yellow, orange or red) tint",
+    "cool (blue or green) tint",
+    "black and white or nearly colorless"
+   ]
+  },
+  {
+   "question": "Are the horizon or the main straight lines in the photo tilted?",
+   "answers": [
+    "level",
+    "noticeably tilted",
+    "no horizon or straight lines visible"
+   ]
+  },
+  {
+   "question": "How sharp is the main subject?",
+   "answers": [
+    "sharp",
+    "slightly blurry",
+    "very blurry",
+    "no single main subject"
+   ]
+  }
+ ],
+ "tables": {
+  "real": [
+   {
+    "row": 1,
+    "q": 0,
+    "first": 1,
+    "second": 0,
+    "n_first": 29,
+    "n_second": 23,
+    "d": 0.12021014662838611,
+    "pct": 59.27734375,
+    "peer_pct": [
+     51.26953125,
+     79.4921875,
+     83.88671875
+    ],
+    "gap": -12.272135416666671
+   },
+   {
+    "row": 2,
+    "q": 0,
+    "first": 2,
+    "second": 0,
+    "n_first": 33,
+    "n_second": 23,
+    "d": 0.36117387366001846,
+    "pct": 89.94140625,
+    "peer_pct": [
+     78.80859375,
+     94.62890625,
+     80.2734375
+    ],
+    "gap": 5.37109375
+   },
+   {
+    "row": 3,
+    "q": 0,
+    "first": 0,
+    "second": 3,
+    "n_first": 23,
+    "n_second": 25,
+    "d": 0.3281334982030529,
+    "pct": 85.05859375,
+    "peer_pct": [
+     15.91796875,
+     0.9765625,
+     65.72265625
+    ],
+    "gap": 57.51953125
+   },
+   {
+    "row": 4,
+    "q": 0,
+    "first": 2,
+    "second": 1,
+    "n_first": 33,
+    "n_second": 29,
+    "d": 0.20284911258179747,
+    "pct": 82.8125,
+    "peer_pct": [
+     78.125,
+     75.0,
+     24.70703125
+    ],
+    "gap": 23.53515625
+   },
+   {
+    "row": 5,
+    "q": 0,
+    "first": 1,
+    "second": 3,
+    "n_first": 29,
+    "n_second": 25,
+    "d": 0.42763877241348336,
+    "pct": 90.52734375,
+    "peer_pct": [
+     16.89453125,
+     12.01171875,
+     94.23828125
+    ],
+    "gap": 49.479166666666664
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "n_first": 33,
+    "n_second": 25,
+    "d": 0.7431831447983988,
+    "pct": 99.51171875,
+    "peer_pct": [
+     39.0625,
+     31.640625,
+     92.67578125
+    ],
+    "gap": 45.052083333333336
+   },
+   {
+    "row": 7,
+    "q": 1,
+    "first": 1,
+    "second": 0,
+    "n_first": 61,
+    "n_second": 8,
+    "d": 0.2321758943136605,
+    "pct": 66.11328125,
+    "peer_pct": [
+     52.24609375,
+     86.71875,
+     80.078125
+    ],
+    "gap": -6.901041666666671
+   },
+   {
+    "row": 8,
+    "q": 1,
+    "first": 2,
+    "second": 0,
+    "n_first": 24,
+    "n_second": 8,
+    "d": 0.1526482447074185,
+    "pct": 57.71484375,
+    "peer_pct": [
+     75.1953125,
+     90.625,
+     92.578125
+    ],
+    "gap": -28.41796875
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 0,
+    "second": 3,
+    "n_first": 8,
+    "n_second": 17,
+    "d": 0.13994376896365696,
+    "pct": 65.52734375,
+    "peer_pct": [
+     16.2109375,
+     1.3671875,
+     40.8203125
+    ],
+    "gap": 46.06119791666667
+   },
+   {
+    "row": 10,
+    "q": 1,
+    "first": 1,
+    "second": 2,
+    "n_first": 61,
+    "n_second": 24,
+    "d": 0.10043776696003374,
+    "pct": 65.72265625,
+    "peer_pct": [
+     14.2578125,
+     42.08984375,
+     10.15625
+    ],
+    "gap": 43.5546875
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 1,
+    "second": 3,
+    "n_first": 61,
+    "n_second": 17,
+    "d": 0.3901878683254795,
+    "pct": 93.65234375,
+    "peer_pct": [
+     7.51953125,
+     2.63671875,
+     87.20703125
+    ],
+    "gap": 61.197916666666664
+   },
+   {
+    "row": 12,
+    "q": 1,
+    "first": 2,
+    "second": 3,
+    "n_first": 24,
+    "n_second": 17,
+    "d": 0.34024753774551764,
+    "pct": 83.0078125,
+    "peer_pct": [
+     35.64453125,
+     6.640625,
+     98.6328125
+    ],
+    "gap": 36.03515625
+   },
+   {
+    "row": 13,
+    "q": 2,
+    "first": 1,
+    "second": 0,
+    "n_first": 61,
+    "n_second": 32,
+    "d": 0.12272797593694211,
+    "pct": 69.3359375,
+    "peer_pct": [
+     93.5546875,
+     84.1796875,
+     72.4609375
+    ],
+    "gap": -14.0625
+   },
+   {
+    "row": 14,
+    "q": 2,
+    "first": 0,
+    "second": 2,
+    "n_first": 32,
+    "n_second": 17,
+    "d": 0.2754138911651421,
+    "pct": 79.1015625,
+    "peer_pct": [
+     2.05078125,
+     0.68359375,
+     78.3203125
+    ],
+    "gap": 52.08333333333333
+   },
+   {
+    "row": 15,
+    "q": 2,
+    "first": 1,
+    "second": 2,
+    "n_first": 61,
+    "n_second": 17,
+    "d": 0.3896512162981635,
+    "pct": 93.5546875,
+    "peer_pct": [
+     22.4609375,
+     5.46875,
+     92.7734375
+    ],
+    "gap": 53.3203125
+   },
+   {
+    "row": 16,
+    "q": 3,
+    "first": 1,
+    "second": 3,
+    "n_first": 85,
+    "n_second": 19,
+    "d": 0.3801484297108339,
+    "pct": 95.21484375,
+    "peer_pct": [
+     2.9296875,
+     3.22265625,
+     94.23828125
+    ],
+    "gap": 61.751302083333336
+   },
+   {
+    "row": 17,
+    "q": 4,
+    "first": 2,
+    "second": 1,
+    "n_first": 17,
+    "n_second": 74,
+    "d": 0.26897362404889585,
+    "pct": 75.9765625,
+    "peer_pct": [
+     84.27734375,
+     32.12890625,
+     90.234375
+    ],
+    "gap": 7.096354166666671
+   },
+   {
+    "row": 18,
+    "q": 4,
+    "first": 1,
+    "second": 3,
+    "n_first": 74,
+    "n_second": 16,
+    "d": 0.2407301170576439,
+    "pct": 82.421875,
+    "peer_pct": [
+     1.85546875,
+     1.66015625,
+     81.54296875
+    ],
+    "gap": 54.06901041666667
+   },
+   {
+    "row": 19,
+    "q": 4,
+    "first": 2,
+    "second": 3,
+    "n_first": 17,
+    "n_second": 16,
+    "d": 0.45555562562422647,
+    "pct": 87.890625,
+    "peer_pct": [
+     32.12890625,
+     6.54296875,
+     94.04296875
+    ],
+    "gap": 43.65234375
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "n_first": 48,
+    "n_second": 38,
+    "d": 0.34672428134240124,
+    "pct": 94.3359375,
+    "peer_pct": [
+     48.2421875,
+     51.7578125,
+     85.7421875
+    ],
+    "gap": 32.421875
+   },
+   {
+    "row": 21,
+    "q": 5,
+    "first": 0,
+    "second": 2,
+    "n_first": 48,
+    "n_second": 22,
+    "d": 0.05623918088365989,
+    "pct": 66.69921875,
+    "peer_pct": [
+     70.21484375,
+     73.73046875,
+     48.4375
+    ],
+    "gap": 2.5716145833333286
+   },
+   {
+    "row": 22,
+    "q": 5,
+    "first": 2,
+    "second": 1,
+    "n_first": 22,
+    "n_second": 38,
+    "d": 0.2783975271286814,
+    "pct": 82.421875,
+    "peer_pct": [
+     28.61328125,
+     27.24609375,
+     85.15625
+    ],
+    "gap": 35.416666666666664
+   },
+   {
+    "row": 23,
+    "q": 6,
+    "first": 0,
+    "second": 1,
+    "n_first": 50,
+    "n_second": 17,
+    "d": 0.14407025357889444,
+    "pct": 77.63671875,
+    "peer_pct": [
+     36.5234375,
+     25.9765625,
+     18.359375
+    ],
+    "gap": 50.68359375
+   },
+   {
+    "row": 24,
+    "q": 6,
+    "first": 0,
+    "second": 2,
+    "n_first": 50,
+    "n_second": 43,
+    "d": 0.08555265280669187,
+    "pct": 65.625,
+    "peer_pct": [
+     66.89453125,
+     88.96484375,
+     58.203125
+    ],
+    "gap": -5.729166666666671
+   },
+   {
+    "row": 25,
+    "q": 6,
+    "first": 2,
+    "second": 1,
+    "n_first": 43,
+    "n_second": 17,
+    "d": 0.07792020410002973,
+    "pct": 68.06640625,
+    "peer_pct": [
+     29.19921875,
+     6.640625,
+     16.2109375
+    ],
+    "gap": 50.71614583333333
+   },
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "n_first": 67,
+    "n_second": 24,
+    "d": 0.5616660533397881,
+    "pct": 99.51171875,
+    "peer_pct": [
+     90.52734375,
+     82.51953125,
+     86.1328125
+    ],
+    "gap": 13.118489583333329
+   },
+   {
+    "row": 27,
+    "q": 7,
+    "first": 0,
+    "second": 3,
+    "n_first": 67,
+    "n_second": 19,
+    "d": 0.5466319357427457,
+    "pct": 98.92578125,
+    "peer_pct": [
+     9.1796875,
+     9.375,
+     97.265625
+    ],
+    "gap": 60.319010416666664
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "n_first": 19,
+    "n_second": 24,
+    "d": 0.04442796485148986,
+    "pct": 60.546875,
+    "peer_pct": [
+     98.33984375,
+     98.14453125,
+     27.24609375
+    ],
+    "gap": -14.029947916666671
+   }
+  ],
+  "null": [
+   {
+    "row": 1,
+    "q": 0,
+    "first": 0,
+    "second": 1,
+    "n_first": 23,
+    "n_second": 29,
+    "d": 0.1705249302381629,
+    "pct": 71.58203125,
+    "peer_pct": [
+     87.01171875,
+     27.05078125,
+     63.18359375
+    ],
+    "gap": 12.5
+   },
+   {
+    "row": 2,
+    "q": 0,
+    "first": 0,
+    "second": 2,
+    "n_first": 23,
+    "n_second": 33,
+    "d": 0.07171349089546014,
+    "pct": 58.30078125,
+    "peer_pct": [
+     33.59375,
+     62.109375,
+     14.84375
+    ],
+    "gap": 21.451822916666664
+   },
+   {
+    "row": 3,
+    "q": 0,
+    "first": 3,
+    "second": 0,
+    "n_first": 25,
+    "n_second": 23,
+    "d": 0.13518473606149037,
+    "pct": 74.609375,
+    "peer_pct": [
+     43.75,
+     33.984375,
+     70.21484375
+    ],
+    "gap": 25.29296875
+   },
+   {
+    "row": 4,
+    "q": 0,
+    "first": 2,
+    "second": 1,
+    "n_first": 33,
+    "n_second": 29,
+    "d": 0.13194229955222705,
+    "pct": 73.14453125,
+    "peer_pct": [
+     97.75390625,
+     15.13671875,
+     88.96484375
+    ],
+    "gap": 5.859375
+   },
+   {
+    "row": 5,
+    "q": 0,
+    "first": 3,
+    "second": 1,
+    "n_first": 25,
+    "n_second": 29,
+    "d": 0.2639445423405875,
+    "pct": 87.40234375,
+    "peer_pct": [
+     89.35546875,
+     16.6015625,
+     77.734375
+    ],
+    "gap": 26.171875
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 3,
+    "second": 2,
+    "n_first": 25,
+    "n_second": 33,
+    "d": 0.20711761459572664,
+    "pct": 79.8828125,
+    "peer_pct": [
+     29.1015625,
+     50.0,
+     36.03515625
+    ],
+    "gap": 41.50390625
+   },
+   {
+    "row": 7,
+    "q": 1,
+    "first": 1,
+    "second": 0,
+    "n_first": 61,
+    "n_second": 8,
+    "d": 0.2028639207135533,
+    "pct": 60.9375,
+    "peer_pct": [
+     55.37109375,
+     80.95703125,
+     89.0625
+    ],
+    "gap": -14.192708333333329
+   },
+   {
+    "row": 8,
+    "q": 1,
+    "first": 2,
+    "second": 0,
+    "n_first": 24,
+    "n_second": 8,
+    "d": 0.28717329005430614,
+    "pct": 70.99609375,
+    "peer_pct": [
+     34.375,
+     55.6640625,
+     98.92578125
+    ],
+    "gap": 8.0078125
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 3,
+    "second": 0,
+    "n_first": 17,
+    "n_second": 8,
+    "d": 0.706762681962477,
+    "pct": 95.99609375,
+    "peer_pct": [
+     48.4375,
+     65.33203125,
+     98.33984375
+    ],
+    "gap": 25.29296875
+   },
+   {
+    "row": 10,
+    "q": 1,
+    "first": 2,
+    "second": 1,
+    "n_first": 24,
+    "n_second": 61,
+    "d": 0.018315196059896763,
+    "pct": 55.46875,
+    "peer_pct": [
+     18.5546875,
+     5.2734375,
+     62.59765625
+    ],
+    "gap": 26.66015625
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 3,
+    "second": 1,
+    "n_first": 17,
+    "n_second": 61,
+    "d": 0.4313735832065589,
+    "pct": 94.7265625,
+    "peer_pct": [
+     40.52734375,
+     17.08984375,
+     71.2890625
+    ],
+    "gap": 51.7578125
+   },
+   {
+    "row": 12,
+    "q": 1,
+    "first": 3,
+    "second": 2,
+    "n_first": 17,
+    "n_second": 24,
+    "d": 0.46674526618107076,
+    "pct": 94.23828125,
+    "peer_pct": [
+     67.67578125,
+     71.6796875,
+     62.890625
+    ],
+    "gap": 26.82291666666667
+   },
+   {
+    "row": 13,
+    "q": 2,
+    "first": 1,
+    "second": 0,
+    "n_first": 61,
+    "n_second": 32,
+    "d": 0.2501891416443892,
+    "pct": 87.890625,
+    "peer_pct": [
+     13.28125,
+     68.359375,
+     68.5546875
+    ],
+    "gap": 37.825520833333336
+   },
+   {
+    "row": 14,
+    "q": 2,
+    "first": 2,
+    "second": 0,
+    "n_first": 17,
+    "n_second": 32,
+    "d": 0.6810649721625471,
+    "pct": 99.0234375,
+    "peer_pct": [
+     24.4140625,
+     40.33203125,
+     85.9375
+    ],
+    "gap": 48.795572916666664
+   },
+   {
+    "row": 15,
+    "q": 2,
+    "first": 2,
+    "second": 1,
+    "n_first": 17,
+    "n_second": 61,
+    "d": 0.3716048672665217,
+    "pct": 92.87109375,
+    "peer_pct": [
+     61.23046875,
+     27.63671875,
+     70.5078125
+    ],
+    "gap": 39.74609375
+   },
+   {
+    "row": 16,
+    "q": 3,
+    "first": 3,
+    "second": 1,
+    "n_first": 19,
+    "n_second": 85,
+    "d": 0.3830492260026144,
+    "pct": 94.62890625,
+    "peer_pct": [
+     43.5546875,
+     21.09375,
+     80.859375
+    ],
+    "gap": 46.126302083333336
+   },
+   {
+    "row": 17,
+    "q": 4,
+    "first": 1,
+    "second": 2,
+    "n_first": 74,
+    "n_second": 17,
+    "d": 0.1209825040403993,
+    "pct": 64.0625,
+    "peer_pct": [
+     89.55078125,
+     97.75390625,
+     57.8125
+    ],
+    "gap": -17.64322916666667
+   },
+   {
+    "row": 18,
+    "q": 4,
+    "first": 3,
+    "second": 1,
+    "n_first": 16,
+    "n_second": 74,
+    "d": 0.31847342032493015,
+    "pct": 90.234375,
+    "peer_pct": [
+     25.29296875,
+     33.10546875,
+     85.9375
+    ],
+    "gap": 42.122395833333336
+   },
+   {
+    "row": 19,
+    "q": 4,
+    "first": 3,
+    "second": 2,
+    "n_first": 16,
+    "n_second": 17,
+    "d": 0.3881826201831273,
+    "pct": 86.81640625,
+    "peer_pct": [
+     66.50390625,
+     90.8203125,
+     77.5390625
+    ],
+    "gap": 8.528645833333329
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "n_first": 48,
+    "n_second": 38,
+    "d": 0.0851485428682513,
+    "pct": 63.96484375,
+    "peer_pct": [
+     26.26953125,
+     34.66796875,
+     9.375
+    ],
+    "gap": 40.52734375
+   },
+   {
+    "row": 21,
+    "q": 5,
+    "first": 2,
+    "second": 0,
+    "n_first": 22,
+    "n_second": 48,
+    "d": 0.1886616105255596,
+    "pct": 77.44140625,
+    "peer_pct": [
+     38.4765625,
+     78.61328125,
+     78.7109375
+    ],
+    "gap": 12.174479166666671
+   },
+   {
+    "row": 22,
+    "q": 5,
+    "first": 2,
+    "second": 1,
+    "n_first": 22,
+    "n_second": 38,
+    "d": 0.280268663461962,
+    "pct": 86.71875,
+    "peer_pct": [
+     16.89453125,
+     69.43359375,
+     38.671875
+    ],
+    "gap": 45.052083333333336
+   },
+   {
+    "row": 23,
+    "q": 6,
+    "first": 0,
+    "second": 1,
+    "n_first": 50,
+    "n_second": 17,
+    "d": 0.1895323705902565,
+    "pct": 80.859375,
+    "peer_pct": [
+     44.62890625,
+     36.42578125,
+     95.21484375
+    ],
+    "gap": 22.102864583333336
+   },
+   {
+    "row": 24,
+    "q": 6,
+    "first": 0,
+    "second": 2,
+    "n_first": 50,
+    "n_second": 43,
+    "d": 0.15877693413545968,
+    "pct": 83.0078125,
+    "peer_pct": [
+     22.94921875,
+     85.7421875,
+     97.16796875
+    ],
+    "gap": 14.388020833333329
+   },
+   {
+    "row": 25,
+    "q": 6,
+    "first": 2,
+    "second": 1,
+    "n_first": 43,
+    "n_second": 17,
+    "d": 0.057657694190027496,
+    "pct": 63.57421875,
+    "peer_pct": [
+     66.11328125,
+     9.08203125,
+     68.1640625
+    ],
+    "gap": 15.787760416666664
+   },
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "n_first": 67,
+    "n_second": 24,
+    "d": 0.29643598306966157,
+    "pct": 92.1875,
+    "peer_pct": [
+     41.2109375,
+     86.81640625,
+     72.4609375
+    ],
+    "gap": 25.35807291666667
+   },
+   {
+    "row": 27,
+    "q": 7,
+    "first": 3,
+    "second": 0,
+    "n_first": 19,
+    "n_second": 67,
+    "d": 0.31435270190663117,
+    "pct": 91.30859375,
+    "peer_pct": [
+     51.07421875,
+     18.1640625,
+     73.046875
+    ],
+    "gap": 43.880208333333336
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "n_first": 19,
+    "n_second": 24,
+    "d": 0.6246160874631018,
+    "pct": 99.4140625,
+    "peer_pct": [
+     42.08984375,
+     54.00390625,
+     89.0625
+    ],
+    "gap": 37.6953125
+   }
+  ]
+ },
+ "readings": {
+  "real_s1": {
+   "valid": true,
+   "explanation": "Within its top classes, this unit responds most to a single, sharply focused main subject, especially one facing toward or away from the camera. It is weaker on blurry subjects and on cluttered scenes with no single main subject. It also prefers photos without a warm color tint and subjects that fill a moderate part of the frame. The sharpness and facing-the-camera effects are the most particular to it, since its similar units do not share them strongly.",
+   "rows": [
+    26,
+    6,
+    20,
+    11
+   ]
+  },
+  "real_s2": {
+   "valid": true,
+   "explanation": "The unit prefers photos with a clear, sharply focused single main subject, especially one facing toward or away from the camera, such as a vehicle or animal seen head-on. It is less active on blurry subjects, on scenes without a single main subject, and on warm-tinted photos. Its preference for sharpness and for head-on subjects is stronger than that of its similar units. Its dislike of scenes with no main subject is partly shared with them.",
+   "rows": [
+    26,
+    6,
+    20,
+    11
+   ]
+  },
+  "real_s3": {
+   "valid": true,
+   "explanation": "This unit responds most to sharp, well-defined single subjects, especially ones facing toward or away from the camera. It responds less to blurry subjects and to cluttered scenes with no single main subject. It also leans slightly toward photos without a warm color cast. Sharpness and the frontal/rear-facing orientation are what set it apart from its similar units; the general preference for having a single main subject is partly shared with them.",
+   "rows": [
+    26,
+    6,
+    20
+   ]
+  },
+  "null_s1": {
+   "valid": true,
+   "explanation": "This unit is most active on photos that lack a single main subject, such as cluttered scenes, multiple objects, or textured surfaces and patterns. It is less active when one isolated, well-framed object sits fully inside the frame, and especially when that subject is small or slightly blurry. Facing direction, lighting and color tint have only weak effects.",
+   "rows": [
+    14,
+    9,
+    28,
+    11
+   ]
+  },
+  "null_s2": {
+   "valid": true,
+   "explanation": "This unit is most active on photos that have no single main subject, such as cluttered scenes, multiple objects, or textured or patterned surfaces (prayer rugs, tables, piles of things). It is least active on clear, isolated, fully framed single subjects, especially small or blurry ones. The 'no single main subject' contrasts are strong across several questions, and the similar units do not share them, so they are specific to this unit. Weaker secondary leanings are toward sharp subjects and a cool tint.",
+   "rows": [
+    14,
+    9,
+    28,
+    11
+   ]
+  },
+  "null_s3": {
+   "valid": true,
+   "explanation": "The unit is most active on photos with no single main subject: cluttered, multi-object or textured scenes, such as patterned prayer rugs, piles of fruit or fungi, and arrays of parts, rather than one isolated, well-framed object. Every answer that indicates 'no single main subject' comes out higher than the alternatives across the framing, cut-off, position and sharpness questions. Similar units mostly do not share this, since their percentiles on these rows are well below 95. There is a weaker preference for sharp over slightly blurry subjects and for subjects that are partly cut off.",
+   "rows": [
+    14,
+    28,
+    9,
+    11
+   ]
+  }
+ },
+ "picks": {
+  "real_s1": [
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 26,
+     "q": 7,
+     "first": 0,
+     "second": 1,
+     "n_first": 67,
+     "n_second": 24,
+     "d": 0.5616660533397881,
+     "pct": 99.51171875,
+     "peer_pct": [
+      90.52734375,
+      82.51953125,
+      86.1328125
+     ],
+     "gap": 13.118489583333329
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.009238081804286154,
+     "pct": 37.59765625,
+     "peer_pct": [
+      54.19921875,
+      89.16015625,
+      42.3828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.061563738469409275,
+     "pct": 36.81640625,
+     "peer_pct": [
+      87.6953125,
+      69.82421875,
+      80.76171875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 6,
+     "q": 0,
+     "first": 2,
+     "second": 3,
+     "n_first": 33,
+     "n_second": 25,
+     "d": 0.7431831447983988,
+     "pct": 99.51171875,
+     "peer_pct": [
+      39.0625,
+      31.640625,
+      92.67578125
+     ],
+     "gap": 45.052083333333336
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": -0.08952396083797681,
+     "pct": 32.8125,
+     "peer_pct": [
+      32.71484375,
+      85.7421875,
+      67.48046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": 0.25012778493639426,
+     "pct": 89.94140625,
+     "peer_pct": [
+      88.76953125,
+      40.625,
+      31.73828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "no noticeable tint",
+    "second_answer": "warm (yellow, orange or red) tint",
+    "D": {
+     "row": 20,
+     "q": 5,
+     "first": 0,
+     "second": 1,
+     "n_first": 48,
+     "n_second": 38,
+     "d": 0.34672428134240124,
+     "pct": 94.3359375,
+     "peer_pct": [
+      48.2421875,
+      51.7578125,
+      85.7421875
+     ],
+     "gap": 32.421875
+    },
+    "T": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.1982740079790098,
+     "pct": 16.50390625,
+     "peer_pct": [
+      68.45703125,
+      81.73828125,
+      85.64453125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.09398039225400168,
+     "pct": 31.73828125,
+     "peer_pct": [
+      31.4453125,
+      8.203125,
+      29.78515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 1,
+    "second": 3,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "a quarter to three quarters",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 1,
+     "second": 3,
+     "n_first": 61,
+     "n_second": 17,
+     "d": 0.3901878683254795,
+     "pct": 93.65234375,
+     "peer_pct": [
+      7.51953125,
+      2.63671875,
+      87.20703125
+     ],
+     "gap": 61.197916666666664
+    },
+    "T": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.1754767056083776,
+     "pct": 70.1171875,
+     "peer_pct": [
+      31.25,
+      61.5234375,
+      73.53515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.2205601593008746,
+     "pct": 82.12890625,
+     "peer_pct": [
+      74.51171875,
+      54.78515625,
+      13.37890625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "real_s2": [
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 26,
+     "q": 7,
+     "first": 0,
+     "second": 1,
+     "n_first": 67,
+     "n_second": 24,
+     "d": 0.5616660533397881,
+     "pct": 99.51171875,
+     "peer_pct": [
+      90.52734375,
+      82.51953125,
+      86.1328125
+     ],
+     "gap": 13.118489583333329
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.009238081804286154,
+     "pct": 37.59765625,
+     "peer_pct": [
+      54.19921875,
+      89.16015625,
+      42.3828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.061563738469409275,
+     "pct": 36.81640625,
+     "peer_pct": [
+      87.6953125,
+      69.82421875,
+      80.76171875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 6,
+     "q": 0,
+     "first": 2,
+     "second": 3,
+     "n_first": 33,
+     "n_second": 25,
+     "d": 0.7431831447983988,
+     "pct": 99.51171875,
+     "peer_pct": [
+      39.0625,
+      31.640625,
+      92.67578125
+     ],
+     "gap": 45.052083333333336
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": -0.08952396083797681,
+     "pct": 32.8125,
+     "peer_pct": [
+      32.71484375,
+      85.7421875,
+      67.48046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": 0.25012778493639426,
+     "pct": 89.94140625,
+     "peer_pct": [
+      88.76953125,
+      40.625,
+      31.73828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "no noticeable tint",
+    "second_answer": "warm (yellow, orange or red) tint",
+    "D": {
+     "row": 20,
+     "q": 5,
+     "first": 0,
+     "second": 1,
+     "n_first": 48,
+     "n_second": 38,
+     "d": 0.34672428134240124,
+     "pct": 94.3359375,
+     "peer_pct": [
+      48.2421875,
+      51.7578125,
+      85.7421875
+     ],
+     "gap": 32.421875
+    },
+    "T": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.1982740079790098,
+     "pct": 16.50390625,
+     "peer_pct": [
+      68.45703125,
+      81.73828125,
+      85.64453125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.09398039225400168,
+     "pct": 31.73828125,
+     "peer_pct": [
+      31.4453125,
+      8.203125,
+      29.78515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 1,
+    "second": 3,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "a quarter to three quarters",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 1,
+     "second": 3,
+     "n_first": 61,
+     "n_second": 17,
+     "d": 0.3901878683254795,
+     "pct": 93.65234375,
+     "peer_pct": [
+      7.51953125,
+      2.63671875,
+      87.20703125
+     ],
+     "gap": 61.197916666666664
+    },
+    "T": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.1754767056083776,
+     "pct": 70.1171875,
+     "peer_pct": [
+      31.25,
+      61.5234375,
+      73.53515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.2205601593008746,
+     "pct": 82.12890625,
+     "peer_pct": [
+      74.51171875,
+      54.78515625,
+      13.37890625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "real_s3": [
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 26,
+     "q": 7,
+     "first": 0,
+     "second": 1,
+     "n_first": 67,
+     "n_second": 24,
+     "d": 0.5616660533397881,
+     "pct": 99.51171875,
+     "peer_pct": [
+      90.52734375,
+      82.51953125,
+      86.1328125
+     ],
+     "gap": 13.118489583333329
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.009238081804286154,
+     "pct": 37.59765625,
+     "peer_pct": [
+      54.19921875,
+      89.16015625,
+      42.3828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.061563738469409275,
+     "pct": 36.81640625,
+     "peer_pct": [
+      87.6953125,
+      69.82421875,
+      80.76171875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 6,
+     "q": 0,
+     "first": 2,
+     "second": 3,
+     "n_first": 33,
+     "n_second": 25,
+     "d": 0.7431831447983988,
+     "pct": 99.51171875,
+     "peer_pct": [
+      39.0625,
+      31.640625,
+      92.67578125
+     ],
+     "gap": 45.052083333333336
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": -0.08952396083797681,
+     "pct": 32.8125,
+     "peer_pct": [
+      32.71484375,
+      85.7421875,
+      67.48046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": 0.25012778493639426,
+     "pct": 89.94140625,
+     "peer_pct": [
+      88.76953125,
+      40.625,
+      31.73828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "no noticeable tint",
+    "second_answer": "warm (yellow, orange or red) tint",
+    "D": {
+     "row": 20,
+     "q": 5,
+     "first": 0,
+     "second": 1,
+     "n_first": 48,
+     "n_second": 38,
+     "d": 0.34672428134240124,
+     "pct": 94.3359375,
+     "peer_pct": [
+      48.2421875,
+      51.7578125,
+      85.7421875
+     ],
+     "gap": 32.421875
+    },
+    "T": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.1982740079790098,
+     "pct": 16.50390625,
+     "peer_pct": [
+      68.45703125,
+      81.73828125,
+      85.64453125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.09398039225400168,
+     "pct": 31.73828125,
+     "peer_pct": [
+      31.4453125,
+      8.203125,
+      29.78515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "null_s1": [
+   {
+    "row": 14,
+    "q": 2,
+    "first": 2,
+    "second": 0,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "no single main subject",
+    "second_answer": "fully inside the photo",
+    "D": {
+     "row": 14,
+     "q": 2,
+     "first": 2,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 32,
+     "d": 0.6810649721625471,
+     "pct": 99.0234375,
+     "peer_pct": [
+      24.4140625,
+      40.33203125,
+      85.9375
+     ],
+     "gap": 48.795572916666664
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.04923214052028078,
+     "pct": 56.8359375,
+     "peer_pct": [
+      80.078125,
+      39.16015625,
+      52.44140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.053485477763938735,
+     "pct": 54.1015625,
+     "peer_pct": [
+      70.01953125,
+      82.32421875,
+      86.23046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 3,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 9,
+     "q": 1,
+     "first": 3,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 8,
+     "d": 0.706762681962477,
+     "pct": 95.99609375,
+     "peer_pct": [
+      48.4375,
+      65.33203125,
+      98.33984375
+     ],
+     "gap": 25.29296875
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": -0.3756621804155117,
+     "pct": 17.3828125,
+     "peer_pct": [
+      70.41015625,
+      53.22265625,
+      73.046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": 0.31074996368128666,
+     "pct": 76.953125,
+     "peer_pct": [
+      58.59375,
+      49.609375,
+      75.78125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "no single main subject",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 28,
+     "q": 7,
+     "first": 3,
+     "second": 1,
+     "n_first": 19,
+     "n_second": 24,
+     "d": 0.6246160874631018,
+     "pct": 99.4140625,
+     "peer_pct": [
+      42.08984375,
+      54.00390625,
+      89.0625
+     ],
+     "gap": 37.6953125
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.41979469632915783,
+     "pct": 8.69140625,
+     "peer_pct": [
+      67.08984375,
+      59.9609375,
+      31.0546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.24794734033705995,
+     "pct": 16.50390625,
+     "peer_pct": [
+      70.01953125,
+      59.08203125,
+      91.40625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 3,
+    "second": 1,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "a quarter to three quarters",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 3,
+     "second": 1,
+     "n_first": 17,
+     "n_second": 61,
+     "d": 0.4313735832065589,
+     "pct": 94.7265625,
+     "peer_pct": [
+      40.52734375,
+      17.08984375,
+      71.2890625
+     ],
+     "gap": 51.7578125
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.1754767056083776,
+     "pct": 29.78515625,
+     "peer_pct": [
+      68.65234375,
+      38.37890625,
+      26.3671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.2205601593008746,
+     "pct": 17.7734375,
+     "peer_pct": [
+      25.390625,
+      45.1171875,
+      86.5234375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "null_s2": [
+   {
+    "row": 14,
+    "q": 2,
+    "first": 2,
+    "second": 0,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "no single main subject",
+    "second_answer": "fully inside the photo",
+    "D": {
+     "row": 14,
+     "q": 2,
+     "first": 2,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 32,
+     "d": 0.6810649721625471,
+     "pct": 99.0234375,
+     "peer_pct": [
+      24.4140625,
+      40.33203125,
+      85.9375
+     ],
+     "gap": 48.795572916666664
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.04923214052028078,
+     "pct": 56.8359375,
+     "peer_pct": [
+      80.078125,
+      39.16015625,
+      52.44140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.053485477763938735,
+     "pct": 54.1015625,
+     "peer_pct": [
+      70.01953125,
+      82.32421875,
+      86.23046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 3,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 9,
+     "q": 1,
+     "first": 3,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 8,
+     "d": 0.706762681962477,
+     "pct": 95.99609375,
+     "peer_pct": [
+      48.4375,
+      65.33203125,
+      98.33984375
+     ],
+     "gap": 25.29296875
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": -0.3756621804155117,
+     "pct": 17.3828125,
+     "peer_pct": [
+      70.41015625,
+      53.22265625,
+      73.046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": 0.31074996368128666,
+     "pct": 76.953125,
+     "peer_pct": [
+      58.59375,
+      49.609375,
+      75.78125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "no single main subject",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 28,
+     "q": 7,
+     "first": 3,
+     "second": 1,
+     "n_first": 19,
+     "n_second": 24,
+     "d": 0.6246160874631018,
+     "pct": 99.4140625,
+     "peer_pct": [
+      42.08984375,
+      54.00390625,
+      89.0625
+     ],
+     "gap": 37.6953125
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.41979469632915783,
+     "pct": 8.69140625,
+     "peer_pct": [
+      67.08984375,
+      59.9609375,
+      31.0546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.24794734033705995,
+     "pct": 16.50390625,
+     "peer_pct": [
+      70.01953125,
+      59.08203125,
+      91.40625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 3,
+    "second": 1,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "a quarter to three quarters",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 3,
+     "second": 1,
+     "n_first": 17,
+     "n_second": 61,
+     "d": 0.4313735832065589,
+     "pct": 94.7265625,
+     "peer_pct": [
+      40.52734375,
+      17.08984375,
+      71.2890625
+     ],
+     "gap": 51.7578125
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.1754767056083776,
+     "pct": 29.78515625,
+     "peer_pct": [
+      68.65234375,
+      38.37890625,
+      26.3671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.2205601593008746,
+     "pct": 17.7734375,
+     "peer_pct": [
+      25.390625,
+      45.1171875,
+      86.5234375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "null_s3": [
+   {
+    "row": 14,
+    "q": 2,
+    "first": 2,
+    "second": 0,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "no single main subject",
+    "second_answer": "fully inside the photo",
+    "D": {
+     "row": 14,
+     "q": 2,
+     "first": 2,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 32,
+     "d": 0.6810649721625471,
+     "pct": 99.0234375,
+     "peer_pct": [
+      24.4140625,
+      40.33203125,
+      85.9375
+     ],
+     "gap": 48.795572916666664
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.04923214052028078,
+     "pct": 56.8359375,
+     "peer_pct": [
+      80.078125,
+      39.16015625,
+      52.44140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.053485477763938735,
+     "pct": 54.1015625,
+     "peer_pct": [
+      70.01953125,
+      82.32421875,
+      86.23046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "no single main subject",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 28,
+     "q": 7,
+     "first": 3,
+     "second": 1,
+     "n_first": 19,
+     "n_second": 24,
+     "d": 0.6246160874631018,
+     "pct": 99.4140625,
+     "peer_pct": [
+      42.08984375,
+      54.00390625,
+      89.0625
+     ],
+     "gap": 37.6953125
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.41979469632915783,
+     "pct": 8.69140625,
+     "peer_pct": [
+      67.08984375,
+      59.9609375,
+      31.0546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.24794734033705995,
+     "pct": 16.50390625,
+     "peer_pct": [
+      70.01953125,
+      59.08203125,
+      91.40625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 3,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 9,
+     "q": 1,
+     "first": 3,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 8,
+     "d": 0.706762681962477,
+     "pct": 95.99609375,
+     "peer_pct": [
+      48.4375,
+      65.33203125,
+      98.33984375
+     ],
+     "gap": 25.29296875
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": -0.3756621804155117,
+     "pct": 17.3828125,
+     "peer_pct": [
+      70.41015625,
+      53.22265625,
+      73.046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": 0.31074996368128666,
+     "pct": 76.953125,
+     "peer_pct": [
+      58.59375,
+      49.609375,
+      75.78125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 3,
+    "second": 1,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "a quarter to three quarters",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 3,
+     "second": 1,
+     "n_first": 17,
+     "n_second": 61,
+     "d": 0.4313735832065589,
+     "pct": 94.7265625,
+     "peer_pct": [
+      40.52734375,
+      17.08984375,
+      71.2890625
+     ],
+     "gap": 51.7578125
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.1754767056083776,
+     "pct": 29.78515625,
+     "peer_pct": [
+      68.65234375,
+      38.37890625,
+      26.3671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 73,
+     "d": -0.2205601593008746,
+     "pct": 17.7734375,
+     "peer_pct": [
+      25.390625,
+      45.1171875,
+      86.5234375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "rule_real": [
+   {
+    "row": 16,
+    "q": 3,
+    "first": 1,
+    "second": 3,
+    "question": "Where is the center of the main subject left to right?",
+    "first_answer": "middle third",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 16,
+     "q": 3,
+     "first": 1,
+     "second": 3,
+     "n_first": 85,
+     "n_second": 19,
+     "d": 0.3801484297108339,
+     "pct": 95.21484375,
+     "peer_pct": [
+      2.9296875,
+      3.22265625,
+      94.23828125
+     ],
+     "gap": 61.751302083333336
+    },
+    "T": {
+     "n_first": 98,
+     "n_second": 14,
+     "d": 0.353856627632162,
+     "pct": 88.671875,
+     "peer_pct": [
+      29.78515625,
+      56.640625,
+      59.47265625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 98,
+     "n_second": 14,
+     "d": 0.25489750463278316,
+     "pct": 87.3046875,
+     "peer_pct": [
+      46.484375,
+      55.6640625,
+      19.53125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 27,
+    "q": 7,
+    "first": 0,
+    "second": 3,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 27,
+     "q": 7,
+     "first": 0,
+     "second": 3,
+     "n_first": 67,
+     "n_second": 19,
+     "d": 0.5466319357427457,
+     "pct": 98.92578125,
+     "peer_pct": [
+      9.1796875,
+      9.375,
+      97.265625
+     ],
+     "gap": 60.319010416666664
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 14,
+     "d": 0.3902260253194422,
+     "pct": 90.234375,
+     "peer_pct": [
+      30.2734375,
+      67.1875,
+      63.8671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 14,
+     "d": 0.23628877795796882,
+     "pct": 85.3515625,
+     "peer_pct": [
+      67.28515625,
+      59.375,
+      20.8984375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 6,
+     "q": 0,
+     "first": 2,
+     "second": 3,
+     "n_first": 33,
+     "n_second": 25,
+     "d": 0.7431831447983988,
+     "pct": 99.51171875,
+     "peer_pct": [
+      39.0625,
+      31.640625,
+      92.67578125
+     ],
+     "gap": 45.052083333333336
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": -0.08952396083797681,
+     "pct": 32.8125,
+     "peer_pct": [
+      32.71484375,
+      85.7421875,
+      67.48046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": 0.25012778493639426,
+     "pct": 89.94140625,
+     "peer_pct": [
+      88.76953125,
+      40.625,
+      31.73828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 26,
+     "q": 7,
+     "first": 0,
+     "second": 1,
+     "n_first": 67,
+     "n_second": 24,
+     "d": 0.5616660533397881,
+     "pct": 99.51171875,
+     "peer_pct": [
+      90.52734375,
+      82.51953125,
+      86.1328125
+     ],
+     "gap": 13.118489583333329
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.009238081804286154,
+     "pct": 37.59765625,
+     "peer_pct": [
+      54.19921875,
+      89.16015625,
+      42.3828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.061563738469409275,
+     "pct": 36.81640625,
+     "peer_pct": [
+      87.6953125,
+      69.82421875,
+      80.76171875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "rule_null": [
+   {
+    "row": 14,
+    "q": 2,
+    "first": 2,
+    "second": 0,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "no single main subject",
+    "second_answer": "fully inside the photo",
+    "D": {
+     "row": 14,
+     "q": 2,
+     "first": 2,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 32,
+     "d": 0.6810649721625471,
+     "pct": 99.0234375,
+     "peer_pct": [
+      24.4140625,
+      40.33203125,
+      85.9375
+     ],
+     "gap": 48.795572916666664
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.04923214052028078,
+     "pct": 56.8359375,
+     "peer_pct": [
+      80.078125,
+      39.16015625,
+      52.44140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 40,
+     "d": 0.053485477763938735,
+     "pct": 54.1015625,
+     "peer_pct": [
+      70.01953125,
+      82.32421875,
+      86.23046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "no single main subject",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 28,
+     "q": 7,
+     "first": 3,
+     "second": 1,
+     "n_first": 19,
+     "n_second": 24,
+     "d": 0.6246160874631018,
+     "pct": 99.4140625,
+     "peer_pct": [
+      42.08984375,
+      54.00390625,
+      89.0625
+     ],
+     "gap": 37.6953125
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.41979469632915783,
+     "pct": 8.69140625,
+     "peer_pct": [
+      67.08984375,
+      59.9609375,
+      31.0546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.24794734033705995,
+     "pct": 16.50390625,
+     "peer_pct": [
+      70.01953125,
+      59.08203125,
+      91.40625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 3,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "no single main subject",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 9,
+     "q": 1,
+     "first": 3,
+     "second": 0,
+     "n_first": 17,
+     "n_second": 8,
+     "d": 0.706762681962477,
+     "pct": 95.99609375,
+     "peer_pct": [
+      48.4375,
+      65.33203125,
+      98.33984375
+     ],
+     "gap": 25.29296875
+    },
+    "T": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": -0.3756621804155117,
+     "pct": 17.3828125,
+     "peer_pct": [
+      70.41015625,
+      53.22265625,
+      73.046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 13,
+     "n_second": 16,
+     "d": 0.31074996368128666,
+     "pct": 76.953125,
+     "peer_pct": [
+      58.59375,
+      49.609375,
+      75.78125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ],
+  "every": [
+   {
+    "row": 1,
+    "q": 0,
+    "first": 1,
+    "second": 0,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "right",
+    "second_answer": "left",
+    "D": {
+     "row": 1,
+     "q": 0,
+     "first": 1,
+     "second": 0,
+     "n_first": 29,
+     "n_second": 23,
+     "d": 0.12021014662838611,
+     "pct": 59.27734375,
+     "peer_pct": [
+      51.26953125,
+      79.4921875,
+      83.88671875
+     ],
+     "gap": -12.272135416666671
+    },
+    "T": {
+     "n_first": 23,
+     "n_second": 31,
+     "d": -0.23059085114065536,
+     "pct": 16.6015625,
+     "peer_pct": [
+      59.375,
+      2.5390625,
+      87.59765625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 23,
+     "n_second": 31,
+     "d": 0.04369870409783409,
+     "pct": 60.7421875,
+     "peer_pct": [
+      55.76171875,
+      63.96484375,
+      45.5078125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 2,
+    "q": 0,
+    "first": 2,
+    "second": 0,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "left",
+    "D": {
+     "row": 2,
+     "q": 0,
+     "first": 2,
+     "second": 0,
+     "n_first": 33,
+     "n_second": 23,
+     "d": 0.36117387366001846,
+     "pct": 89.94140625,
+     "peer_pct": [
+      78.80859375,
+      94.62890625,
+      80.2734375
+     ],
+     "gap": 5.37109375
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 31,
+     "d": -0.3698202753678853,
+     "pct": 3.515625,
+     "peer_pct": [
+      35.83984375,
+      35.546875,
+      81.25
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 31,
+     "d": 0.006437956645226562,
+     "pct": 54.296875,
+     "peer_pct": [
+      93.84765625,
+      77.9296875,
+      55.078125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 3,
+    "q": 0,
+    "first": 0,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "left",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 3,
+     "q": 0,
+     "first": 0,
+     "second": 3,
+     "n_first": 23,
+     "n_second": 25,
+     "d": 0.3281334982030529,
+     "pct": 85.05859375,
+     "peer_pct": [
+      15.91796875,
+      0.9765625,
+      65.72265625
+     ],
+     "gap": 57.51953125
+    },
+    "T": {
+     "n_first": 31,
+     "n_second": 25,
+     "d": 0.27007675904990897,
+     "pct": 84.9609375,
+     "peer_pct": [
+      45.41015625,
+      89.55078125,
+      35.3515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 31,
+     "n_second": 25,
+     "d": 0.2529732453039946,
+     "pct": 89.35546875,
+     "peer_pct": [
+      38.37890625,
+      15.33203125,
+      28.3203125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 4,
+    "q": 0,
+    "first": 2,
+    "second": 1,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "right",
+    "D": {
+     "row": 4,
+     "q": 0,
+     "first": 2,
+     "second": 1,
+     "n_first": 33,
+     "n_second": 29,
+     "d": 0.20284911258179747,
+     "pct": 82.8125,
+     "peer_pct": [
+      78.125,
+      75.0,
+      24.70703125
+     ],
+     "gap": 23.53515625
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 23,
+     "d": -0.11215355574740095,
+     "pct": 31.15234375,
+     "peer_pct": [
+      24.21875,
+      98.73046875,
+      34.5703125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 23,
+     "d": -0.037131888103004246,
+     "pct": 41.796875,
+     "peer_pct": [
+      89.55078125,
+      63.37890625,
+      61.81640625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 5,
+    "q": 0,
+    "first": 1,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "right",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 5,
+     "q": 0,
+     "first": 1,
+     "second": 3,
+     "n_first": 29,
+     "n_second": 25,
+     "d": 0.42763877241348336,
+     "pct": 90.52734375,
+     "peer_pct": [
+      16.89453125,
+      12.01171875,
+      94.23828125
+     ],
+     "gap": 49.479166666666664
+    },
+    "T": {
+     "n_first": 23,
+     "n_second": 25,
+     "d": 0.025734697678611227,
+     "pct": 48.2421875,
+     "peer_pct": [
+      55.95703125,
+      23.046875,
+      78.22265625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 23,
+     "n_second": 25,
+     "d": 0.26838683410073966,
+     "pct": 87.890625,
+     "peer_pct": [
+      44.82421875,
+      25.0,
+      26.85546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 6,
+    "q": 0,
+    "first": 2,
+    "second": 3,
+    "question": "Which way is the main subject facing or pointing?",
+    "first_answer": "toward or away from the camera",
+    "second_answer": "no clear facing direction or no single main subject",
+    "D": {
+     "row": 6,
+     "q": 0,
+     "first": 2,
+     "second": 3,
+     "n_first": 33,
+     "n_second": 25,
+     "d": 0.7431831447983988,
+     "pct": 99.51171875,
+     "peer_pct": [
+      39.0625,
+      31.640625,
+      92.67578125
+     ],
+     "gap": 45.052083333333336
+    },
+    "T": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": -0.08952396083797681,
+     "pct": 32.8125,
+     "peer_pct": [
+      32.71484375,
+      85.7421875,
+      67.48046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 51,
+     "n_second": 25,
+     "d": 0.25012778493639426,
+     "pct": 89.94140625,
+     "peer_pct": [
+      88.76953125,
+      40.625,
+      31.73828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 7,
+    "q": 1,
+    "first": 1,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "a quarter to three quarters",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 7,
+     "q": 1,
+     "first": 1,
+     "second": 0,
+     "n_first": 61,
+     "n_second": 8,
+     "d": 0.2321758943136605,
+     "pct": 66.11328125,
+     "peer_pct": [
+      52.24609375,
+      86.71875,
+      80.078125
+     ],
+     "gap": -6.901041666666671
+    },
+    "T": {
+     "n_first": 73,
+     "n_second": 16,
+     "d": -0.16413828279157877,
+     "pct": 25.9765625,
+     "peer_pct": [
+      66.40625,
+      73.046875,
+      95.703125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 73,
+     "n_second": 16,
+     "d": 0.5070169000005148,
+     "pct": 95.60546875,
+     "peer_pct": [
+      81.73828125,
+      51.46484375,
+      43.9453125
+     ],
+     "outcome": "held",
+     "distinctive": true
+    }
+   },
+   {
+    "row": 8,
+    "q": 1,
+    "first": 2,
+    "second": 0,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "more than three quarters",
+    "second_answer": "less than a quarter",
+    "D": {
+     "row": 8,
+     "q": 1,
+     "first": 2,
+     "second": 0,
+     "n_first": 24,
+     "n_second": 8,
+     "d": 0.1526482447074185,
+     "pct": 57.71484375,
+     "peer_pct": [
+      75.1953125,
+      90.625,
+      92.578125
+     ],
+     "gap": -28.41796875
+    },
+    "T": {
+     "n_first": 28,
+     "n_second": 16,
+     "d": 0.1631172236082984,
+     "pct": 73.2421875,
+     "peer_pct": [
+      84.375,
+      65.72265625,
+      95.703125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 28,
+     "n_second": 16,
+     "d": 0.42816110986913763,
+     "pct": 94.04296875,
+     "peer_pct": [
+      72.16796875,
+      66.11328125,
+      65.4296875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 9,
+    "q": 1,
+    "first": 0,
+    "second": 3,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "less than a quarter",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 9,
+     "q": 1,
+     "first": 0,
+     "second": 3,
+     "n_first": 8,
+     "n_second": 17,
+     "d": 0.13994376896365696,
+     "pct": 65.52734375,
+     "peer_pct": [
+      16.2109375,
+      1.3671875,
+      40.8203125
+     ],
+     "gap": 46.06119791666667
+    },
+    "T": {
+     "n_first": 16,
+     "n_second": 13,
+     "d": 0.3756621804155117,
+     "pct": 82.51953125,
+     "peer_pct": [
+      29.4921875,
+      46.6796875,
+      26.85546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 16,
+     "n_second": 13,
+     "d": -0.31074996368128666,
+     "pct": 22.94921875,
+     "peer_pct": [
+      41.30859375,
+      50.29296875,
+      24.12109375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 10,
+    "q": 1,
+    "first": 1,
+    "second": 2,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "a quarter to three quarters",
+    "second_answer": "more than three quarters",
+    "D": {
+     "row": 10,
+     "q": 1,
+     "first": 1,
+     "second": 2,
+     "n_first": 61,
+     "n_second": 24,
+     "d": 0.10043776696003374,
+     "pct": 65.72265625,
+     "peer_pct": [
+      14.2578125,
+      42.08984375,
+      10.15625
+     ],
+     "gap": 43.5546875
+    },
+    "T": {
+     "n_first": 73,
+     "n_second": 28,
+     "d": -0.31701334086921407,
+     "pct": 3.80859375,
+     "peer_pct": [
+      15.234375,
+      60.83984375,
+      54.8828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 73,
+     "n_second": 28,
+     "d": 0.157063505455419,
+     "pct": 71.484375,
+     "peer_pct": [
+      70.703125,
+      30.46875,
+      19.140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 11,
+    "q": 1,
+    "first": 1,
+    "second": 3,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "a quarter to three quarters",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 11,
+     "q": 1,
+     "first": 1,
+     "second": 3,
+     "n_first": 61,
+     "n_second": 17,
+     "d": 0.3901878683254795,
+     "pct": 93.65234375,
+     "peer_pct": [
+      7.51953125,
+      2.63671875,
+      87.20703125
+     ],
+     "gap": 61.197916666666664
+    },
+    "T": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.1754767056083776,
+     "pct": 70.1171875,
+     "peer_pct": [
+      31.25,
+      61.5234375,
+      73.53515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 73,
+     "n_second": 13,
+     "d": 0.2205601593008746,
+     "pct": 82.12890625,
+     "peer_pct": [
+      74.51171875,
+      54.78515625,
+      13.37890625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 12,
+    "q": 1,
+    "first": 2,
+    "second": 3,
+    "question": "How much of the photo does the main subject take up?",
+    "first_answer": "more than three quarters",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 12,
+     "q": 1,
+     "first": 2,
+     "second": 3,
+     "n_first": 24,
+     "n_second": 17,
+     "d": 0.34024753774551764,
+     "pct": 83.0078125,
+     "peer_pct": [
+      35.64453125,
+      6.640625,
+      98.6328125
+     ],
+     "gap": 36.03515625
+    },
+    "T": {
+     "n_first": 28,
+     "n_second": 13,
+     "d": 0.5591516623734959,
+     "pct": 95.8984375,
+     "peer_pct": [
+      53.80859375,
+      55.2734375,
+      79.1015625
+     ],
+     "outcome": "held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 28,
+     "n_second": 13,
+     "d": 0.0824238746666093,
+     "pct": 69.82421875,
+     "peer_pct": [
+      60.15625,
+      64.84375,
+      19.140625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 13,
+    "q": 2,
+    "first": 1,
+    "second": 0,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "partly cut off",
+    "second_answer": "fully inside the photo",
+    "D": {
+     "row": 13,
+     "q": 2,
+     "first": 1,
+     "second": 0,
+     "n_first": 61,
+     "n_second": 32,
+     "d": 0.12272797593694211,
+     "pct": 69.3359375,
+     "peer_pct": [
+      93.5546875,
+      84.1796875,
+      72.4609375
+     ],
+     "gap": -14.0625
+    },
+    "T": {
+     "n_first": 76,
+     "n_second": 40,
+     "d": 0.2915571390770968,
+     "pct": 95.8984375,
+     "peer_pct": [
+      92.48046875,
+      75.9765625,
+      88.8671875
+     ],
+     "outcome": "held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 76,
+     "n_second": 40,
+     "d": 0.30848900880476443,
+     "pct": 97.265625,
+     "peer_pct": [
+      86.5234375,
+      69.23828125,
+      67.28515625
+     ],
+     "outcome": "held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 14,
+    "q": 2,
+    "first": 0,
+    "second": 2,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "fully inside the photo",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 14,
+     "q": 2,
+     "first": 0,
+     "second": 2,
+     "n_first": 32,
+     "n_second": 17,
+     "d": 0.2754138911651421,
+     "pct": 79.1015625,
+     "peer_pct": [
+      2.05078125,
+      0.68359375,
+      78.3203125
+     ],
+     "gap": 52.08333333333333
+    },
+    "T": {
+     "n_first": 40,
+     "n_second": 14,
+     "d": -0.04923214052028078,
+     "pct": 43.06640625,
+     "peer_pct": [
+      19.82421875,
+      60.7421875,
+      47.4609375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 40,
+     "n_second": 14,
+     "d": -0.053485477763938735,
+     "pct": 45.80078125,
+     "peer_pct": [
+      29.8828125,
+      17.578125,
+      13.671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 15,
+    "q": 2,
+    "first": 1,
+    "second": 2,
+    "question": "Is the main subject cut off by an edge of the photo?",
+    "first_answer": "partly cut off",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 15,
+     "q": 2,
+     "first": 1,
+     "second": 2,
+     "n_first": 61,
+     "n_second": 17,
+     "d": 0.3896512162981635,
+     "pct": 93.5546875,
+     "peer_pct": [
+      22.4609375,
+      5.46875,
+      92.7734375
+     ],
+     "gap": 53.3203125
+    },
+    "T": {
+     "n_first": 76,
+     "n_second": 14,
+     "d": 0.2423079747016581,
+     "pct": 80.2734375,
+     "peer_pct": [
+      46.97265625,
+      78.22265625,
+      76.46484375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 76,
+     "n_second": 14,
+     "d": 0.25153952121368245,
+     "pct": 87.5,
+     "peer_pct": [
+      59.765625,
+      30.46875,
+      17.7734375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 16,
+    "q": 3,
+    "first": 1,
+    "second": 3,
+    "question": "Where is the center of the main subject left to right?",
+    "first_answer": "middle third",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 16,
+     "q": 3,
+     "first": 1,
+     "second": 3,
+     "n_first": 85,
+     "n_second": 19,
+     "d": 0.3801484297108339,
+     "pct": 95.21484375,
+     "peer_pct": [
+      2.9296875,
+      3.22265625,
+      94.23828125
+     ],
+     "gap": 61.751302083333336
+    },
+    "T": {
+     "n_first": 98,
+     "n_second": 14,
+     "d": 0.353856627632162,
+     "pct": 88.671875,
+     "peer_pct": [
+      29.78515625,
+      56.640625,
+      59.47265625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 98,
+     "n_second": 14,
+     "d": 0.25489750463278316,
+     "pct": 87.3046875,
+     "peer_pct": [
+      46.484375,
+      55.6640625,
+      19.53125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 17,
+    "q": 4,
+    "first": 2,
+    "second": 1,
+    "question": "How brightly lit is the main subject?",
+    "first_answer": "bright",
+    "second_answer": "medium",
+    "D": {
+     "row": 17,
+     "q": 4,
+     "first": 2,
+     "second": 1,
+     "n_first": 17,
+     "n_second": 74,
+     "d": 0.26897362404889585,
+     "pct": 75.9765625,
+     "peer_pct": [
+      84.27734375,
+      32.12890625,
+      90.234375
+     ],
+     "gap": 7.096354166666671
+    },
+    "T": {
+     "n_first": 18,
+     "n_second": 100,
+     "d": -0.2303011338794635,
+     "pct": 16.6015625,
+     "peer_pct": [
+      13.4765625,
+      80.2734375,
+      63.671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 18,
+     "n_second": 100,
+     "d": -0.07559167289706992,
+     "pct": 46.6796875,
+     "peer_pct": [
+      85.3515625,
+      38.0859375,
+      61.5234375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 18,
+    "q": 4,
+    "first": 1,
+    "second": 3,
+    "question": "How brightly lit is the main subject?",
+    "first_answer": "medium",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 18,
+     "q": 4,
+     "first": 1,
+     "second": 3,
+     "n_first": 74,
+     "n_second": 16,
+     "d": 0.2407301170576439,
+     "pct": 82.421875,
+     "peer_pct": [
+      1.85546875,
+      1.66015625,
+      81.54296875
+     ],
+     "gap": 54.06901041666667
+    },
+    "T": {
+     "n_first": 100,
+     "n_second": 9,
+     "d": 0.45595503574678437,
+     "pct": 89.16015625,
+     "peer_pct": [
+      50.78125,
+      20.1171875,
+      49.8046875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 100,
+     "n_second": 9,
+     "d": -0.2886914144781088,
+     "pct": 21.77734375,
+     "peer_pct": [
+      79.00390625,
+      48.828125,
+      12.98828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 19,
+    "q": 4,
+    "first": 2,
+    "second": 3,
+    "question": "How brightly lit is the main subject?",
+    "first_answer": "bright",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 19,
+     "q": 4,
+     "first": 2,
+     "second": 3,
+     "n_first": 17,
+     "n_second": 16,
+     "d": 0.45555562562422647,
+     "pct": 87.890625,
+     "peer_pct": [
+      32.12890625,
+      6.54296875,
+      94.04296875
+     ],
+     "gap": 43.65234375
+    },
+    "T": {
+     "n_first": 18,
+     "n_second": 9,
+     "d": 0.2076943618138576,
+     "pct": 61.81640625,
+     "peer_pct": [
+      24.12109375,
+      44.53125,
+      58.7890625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 18,
+     "n_second": 9,
+     "d": -0.3390218277855994,
+     "pct": 26.85546875,
+     "peer_pct": [
+      90.72265625,
+      38.0859375,
+      20.41015625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 20,
+    "q": 5,
+    "first": 0,
+    "second": 1,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "no noticeable tint",
+    "second_answer": "warm (yellow, orange or red) tint",
+    "D": {
+     "row": 20,
+     "q": 5,
+     "first": 0,
+     "second": 1,
+     "n_first": 48,
+     "n_second": 38,
+     "d": 0.34672428134240124,
+     "pct": 94.3359375,
+     "peer_pct": [
+      48.2421875,
+      51.7578125,
+      85.7421875
+     ],
+     "gap": 32.421875
+    },
+    "T": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.1982740079790098,
+     "pct": 16.50390625,
+     "peer_pct": [
+      68.45703125,
+      81.73828125,
+      85.64453125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 58,
+     "n_second": 45,
+     "d": -0.09398039225400168,
+     "pct": 31.73828125,
+     "peer_pct": [
+      31.4453125,
+      8.203125,
+      29.78515625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 21,
+    "q": 5,
+    "first": 0,
+    "second": 2,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "no noticeable tint",
+    "second_answer": "cool (blue or green) tint",
+    "D": {
+     "row": 21,
+     "q": 5,
+     "first": 0,
+     "second": 2,
+     "n_first": 48,
+     "n_second": 22,
+     "d": 0.05623918088365989,
+     "pct": 66.69921875,
+     "peer_pct": [
+      70.21484375,
+      73.73046875,
+      48.4375
+     ],
+     "gap": 2.5716145833333286
+    },
+    "T": {
+     "n_first": 58,
+     "n_second": 22,
+     "d": -0.2828497188412671,
+     "pct": 10.7421875,
+     "peer_pct": [
+      42.96875,
+      12.59765625,
+      86.5234375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 58,
+     "n_second": 22,
+     "d": 0.027590846922116177,
+     "pct": 47.8515625,
+     "peer_pct": [
+      87.79296875,
+      52.5390625,
+      28.3203125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 22,
+    "q": 5,
+    "first": 2,
+    "second": 1,
+    "question": "Does the photo have an overall color tint?",
+    "first_answer": "cool (blue or green) tint",
+    "second_answer": "warm (yellow, orange or red) tint",
+    "D": {
+     "row": 22,
+     "q": 5,
+     "first": 2,
+     "second": 1,
+     "n_first": 22,
+     "n_second": 38,
+     "d": 0.2783975271286814,
+     "pct": 82.421875,
+     "peer_pct": [
+      28.61328125,
+      27.24609375,
+      85.15625
+     ],
+     "gap": 35.416666666666664
+    },
+    "T": {
+     "n_first": 22,
+     "n_second": 45,
+     "d": 0.09224755350687709,
+     "pct": 64.94140625,
+     "peer_pct": [
+      68.9453125,
+      95.5078125,
+      41.9921875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 22,
+     "n_second": 45,
+     "d": -0.11632416150462545,
+     "pct": 39.453125,
+     "peer_pct": [
+      3.90625,
+      12.20703125,
+      55.56640625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 23,
+    "q": 6,
+    "first": 0,
+    "second": 1,
+    "question": "Are the horizon or the main straight lines in the photo tilted?",
+    "first_answer": "level",
+    "second_answer": "noticeably tilted",
+    "D": {
+     "row": 23,
+     "q": 6,
+     "first": 0,
+     "second": 1,
+     "n_first": 50,
+     "n_second": 17,
+     "d": 0.14407025357889444,
+     "pct": 77.63671875,
+     "peer_pct": [
+      36.5234375,
+      25.9765625,
+      18.359375
+     ],
+     "gap": 50.68359375
+    },
+    "T": {
+     "n_first": 50,
+     "n_second": 15,
+     "d": 0.034265838170064844,
+     "pct": 52.83203125,
+     "peer_pct": [
+      32.8125,
+      24.4140625,
+      34.66796875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 50,
+     "n_second": 15,
+     "d": 0.12592106662048566,
+     "pct": 54.8828125,
+     "peer_pct": [
+      86.42578125,
+      40.91796875,
+      92.08984375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 24,
+    "q": 6,
+    "first": 0,
+    "second": 2,
+    "question": "Are the horizon or the main straight lines in the photo tilted?",
+    "first_answer": "level",
+    "second_answer": "no horizon or straight lines visible",
+    "D": {
+     "row": 24,
+     "q": 6,
+     "first": 0,
+     "second": 2,
+     "n_first": 50,
+     "n_second": 43,
+     "d": 0.08555265280669187,
+     "pct": 65.625,
+     "peer_pct": [
+      66.89453125,
+      88.96484375,
+      58.203125
+     ],
+     "gap": -5.729166666666671
+    },
+    "T": {
+     "n_first": 50,
+     "n_second": 65,
+     "d": -0.0250822934974162,
+     "pct": 38.37890625,
+     "peer_pct": [
+      62.59765625,
+      47.4609375,
+      29.296875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 50,
+     "n_second": 65,
+     "d": 0.09640473796633912,
+     "pct": 75.1953125,
+     "peer_pct": [
+      75.09765625,
+      50.48828125,
+      89.74609375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 25,
+    "q": 6,
+    "first": 2,
+    "second": 1,
+    "question": "Are the horizon or the main straight lines in the photo tilted?",
+    "first_answer": "no horizon or straight lines visible",
+    "second_answer": "noticeably tilted",
+    "D": {
+     "row": 25,
+     "q": 6,
+     "first": 2,
+     "second": 1,
+     "n_first": 43,
+     "n_second": 17,
+     "d": 0.07792020410002973,
+     "pct": 68.06640625,
+     "peer_pct": [
+      29.19921875,
+      6.640625,
+      16.2109375
+     ],
+     "gap": 50.71614583333333
+    },
+    "T": {
+     "n_first": 65,
+     "n_second": 15,
+     "d": 0.06013236897310459,
+     "pct": 58.69140625,
+     "peer_pct": [
+      25.29296875,
+      18.84765625,
+      41.6015625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 65,
+     "n_second": 15,
+     "d": 0.04014205150384228,
+     "pct": 44.43359375,
+     "peer_pct": [
+      84.47265625,
+      42.28515625,
+      89.2578125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 26,
+    "q": 7,
+    "first": 0,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 26,
+     "q": 7,
+     "first": 0,
+     "second": 1,
+     "n_first": 67,
+     "n_second": 24,
+     "d": 0.5616660533397881,
+     "pct": 99.51171875,
+     "peer_pct": [
+      90.52734375,
+      82.51953125,
+      86.1328125
+     ],
+     "gap": 13.118489583333329
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.009238081804286154,
+     "pct": 37.59765625,
+     "peer_pct": [
+      54.19921875,
+      89.16015625,
+      42.3828125
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 27,
+     "d": -0.061563738469409275,
+     "pct": 36.81640625,
+     "peer_pct": [
+      87.6953125,
+      69.82421875,
+      80.76171875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 27,
+    "q": 7,
+    "first": 0,
+    "second": 3,
+    "question": "How sharp is the main subject?",
+    "first_answer": "sharp",
+    "second_answer": "no single main subject",
+    "D": {
+     "row": 27,
+     "q": 7,
+     "first": 0,
+     "second": 3,
+     "n_first": 67,
+     "n_second": 19,
+     "d": 0.5466319357427457,
+     "pct": 98.92578125,
+     "peer_pct": [
+      9.1796875,
+      9.375,
+      97.265625
+     ],
+     "gap": 60.319010416666664
+    },
+    "T": {
+     "n_first": 87,
+     "n_second": 14,
+     "d": 0.3902260253194422,
+     "pct": 90.234375,
+     "peer_pct": [
+      30.2734375,
+      67.1875,
+      63.8671875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 87,
+     "n_second": 14,
+     "d": 0.23628877795796882,
+     "pct": 85.3515625,
+     "peer_pct": [
+      67.28515625,
+      59.375,
+      20.8984375
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   },
+   {
+    "row": 28,
+    "q": 7,
+    "first": 3,
+    "second": 1,
+    "question": "How sharp is the main subject?",
+    "first_answer": "no single main subject",
+    "second_answer": "slightly blurry",
+    "D": {
+     "row": 28,
+     "q": 7,
+     "first": 3,
+     "second": 1,
+     "n_first": 19,
+     "n_second": 24,
+     "d": 0.04442796485148986,
+     "pct": 60.546875,
+     "peer_pct": [
+      98.33984375,
+      98.14453125,
+      27.24609375
+     ],
+     "gap": -14.029947916666671
+    },
+    "T": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.41979469632915783,
+     "pct": 8.69140625,
+     "peer_pct": [
+      67.08984375,
+      59.9609375,
+      31.0546875
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    },
+    "T_null": {
+     "n_first": 14,
+     "n_second": 27,
+     "d": -0.24794734033705995,
+     "pct": 16.50390625,
+     "peer_pct": [
+      70.01953125,
+      59.08203125,
+      91.40625
+     ],
+     "outcome": "not held",
+     "distinctive": false
+    }
+   }
+  ]
+ },
+ "tally": {
+  "real_s1": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "real_s2": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "real_s3": {
+   "real": {
+    "held": 0,
+    "not held": 3,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 3,
+    "too few": 0
+   }
+  },
+  "null_s1": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "null_s2": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "null_s3": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "rule_real": {
+   "real": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 4,
+    "too few": 0
+   }
+  },
+  "rule_null": {
+   "real": {
+    "held": 0,
+    "not held": 3,
+    "too few": 0
+   },
+   "null": {
+    "held": 0,
+    "not held": 3,
+    "too few": 0
+   }
+  },
+  "every": {
+   "real": {
+    "held": 2,
+    "not held": 26,
+    "too few": 0
+   },
+   "null": {
+    "held": 2,
+    "not held": 26,
+    "too few": 0
+   }
+  }
+ }
+}

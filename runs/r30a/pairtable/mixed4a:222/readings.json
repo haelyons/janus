@@ -1,0 +1,110 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit is mostly selective for the dog and wild-canid classes, and within those classes it shows one clear extra preference: it is much weaker when the main subject faces or points to the right. Its activity is highest for left-facing, frontal, or directionless subjects and drops for right-facing ones. Left versus right gives d +0.97 at the 100th percentile, while the similar units sit at 0, 32 and 0, so this preference belongs to this unit and is not shared with them. It also fires somewhat more on warm-tinted photos and on sharp, close-up subjects, but those effects are more ordinary for this layer.",
+  "rows": [
+   1,
+   5,
+   4,
+   2
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "49259ccd31cbc2940a29376b5bffaac907c2d502edc653841fac6ed6f3eb6a6a",
+  "texts": [
+   "{\"explanation\": \"The unit is mostly selective for the dog and wild-canid classes, and within those classes it shows one clear extra preference: it is much weaker when the main subject faces or points to the right. Its activity is highest for left-facing, frontal, or directionless subjects and drops for right-facing ones. Left versus right gives d +0.97 at the 100th percentile, while the similar units sit at 0, 32 and 0, so this preference belongs to this unit and is not shared with them. It also fires somewhat more on warm-tinted photos and on sharp, close-up subjects, but those effects are more ordinary for this layer.\", \"rows\": [1, 5, 4, 2]}"
+  ],
+  "text": "{\"explanation\": \"The unit is mostly selective for the dog and wild-canid classes, and within those classes it shows one clear extra preference: it is much weaker when the main subject faces or points to the right. Its activity is highest for left-facing, frontal, or directionless subjects and drops for right-facing ones. Left versus right gives d +0.97 at the 100th percentile, while the similar units sit at 0, 32 and 0, so this preference belongs to this unit and is not shared with them. It also fires somewhat more on warm-tinted photos and on sharp, close-up subjects, but those effects are more ordinary for this layer.\", \"rows\": [1, 5, 4, 2]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit is selective for the main subject's facing direction. Within the same classes, it is most active when the subject (mostly dogs and canids) faces or points left. Its response is lowest when the subject faces right, and frontal or no-clear-direction views fall in between. The similar units do not share this left-versus-right preference. There is also a weaker preference for warm-tinted photos. Framing, sharpness and lighting effects are typical for this layer.",
+  "rows": [
+   1,
+   5,
+   2,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "49259ccd31cbc2940a29376b5bffaac907c2d502edc653841fac6ed6f3eb6a6a",
+  "texts": [
+   "{\"explanation\": \"The unit is selective for the main subject's facing direction. Within the same classes, it is most active when the subject (mostly dogs and canids) faces or points left. Its response is lowest when the subject faces right, and frontal or no-clear-direction views fall in between. The similar units do not share this left-versus-right preference. There is also a weaker preference for warm-tinted photos. Framing, sharpness and lighting effects are typical for this layer.\", \"rows\": [1, 5, 2, 13]}"
+  ],
+  "text": "{\"explanation\": \"The unit is selective for the main subject's facing direction. Within the same classes, it is most active when the subject (mostly dogs and canids) faces or points left. Its response is lowest when the subject faces right, and frontal or no-clear-direction views fall in between. The similar units do not share this left-versus-right preference. There is also a weaker preference for warm-tinted photos. Framing, sharpness and lighting effects are typical for this layer.\", \"rows\": [1, 5, 2, 13]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit fires less when the main subject faces or points to the right. Its activity is highest on photos where the subject faces left, faces toward or away from the camera, or has no clear facing direction. It is lowest on right-facing photos. The left-versus-right difference is large (d +0.97) and particular to this unit, since the similar units sit far below the 95th percentile on it. The unit also has a weaker preference for photos with a warm tint over untinted ones.",
+  "rows": [
+   1,
+   5,
+   2,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "49259ccd31cbc2940a29376b5bffaac907c2d502edc653841fac6ed6f3eb6a6a",
+  "texts": [
+   "{\"explanation\": \"The unit fires less when the main subject faces or points to the right. Its activity is highest on photos where the subject faces left, faces toward or away from the camera, or has no clear facing direction. It is lowest on right-facing photos. The left-versus-right difference is large (d +0.97) and particular to this unit, since the similar units sit far below the 95th percentile on it. The unit also has a weaker preference for photos with a warm tint over untinted ones.\", \"rows\": [1, 5, 2, 13]}"
+  ],
+  "text": "{\"explanation\": \"The unit fires less when the main subject faces or points to the right. Its activity is highest on photos where the subject faces left, faces toward or away from the camera, or has no clear facing direction. It is lowest on right-facing photos. The left-versus-right difference is large (d +0.97) and particular to this unit, since the similar units sit far below the 95th percentile on it. The unit also has a weaker preference for photos with a warm tint over untinted ones.\", \"rows\": [1, 5, 2, 13]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit prefers dog-like and canid animals and balls shown with the subject facing left in profile, rather than facing right or toward the camera. It responds more under medium, neutral lighting than under bright light or a cool blue/green tint. It is somewhat higher when the subject is large, cut off by the frame, or off-center to the right. The facing-left preference and the dislike of cool tints and bright light appear particular to this unit, since the similar units sit low on those rows.",
+  "rows": [
+   2,
+   1,
+   14,
+   12
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3c2c34a77e051a5180556c735a28b2aa548aa018fef9dc2e699846dcde320737",
+  "texts": [
+   "{\"explanation\": \"The unit prefers dog-like and canid animals and balls shown with the subject facing left in profile, rather than facing right or toward the camera. It responds more under medium, neutral lighting than under bright light or a cool blue/green tint. It is somewhat higher when the subject is large, cut off by the frame, or off-center to the right. The facing-left preference and the dislike of cool tints and bright light appear particular to this unit, since the similar units sit low on those rows.\", \"rows\": [2, 1, 14, 12]}"
+  ],
+  "text": "{\"explanation\": \"The unit prefers dog-like and canid animals and balls shown with the subject facing left in profile, rather than facing right or toward the camera. It responds more under medium, neutral lighting than under bright light or a cool blue/green tint. It is somewhat higher when the subject is large, cut off by the frame, or off-center to the right. The facing-left preference and the dislike of cool tints and bright light appear particular to this unit, since the similar units sit low on those rows.\", \"rows\": [2, 1, 14, 12]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit is most active on dogs, canids and balls, and within those classes it fires a little more when the subject faces or points left rather than right or toward the camera. It also prefers medium, untinted lighting over bright or blue/green-tinted photos, and its center is somewhat to the right of the frame. These effects are modest. Facing left and color tint are the most distinctive, since the similar units are not high on those rows.",
+  "rows": [
+   2,
+   1,
+   14,
+   12
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3c2c34a77e051a5180556c735a28b2aa548aa018fef9dc2e699846dcde320737",
+  "texts": [
+   "{\"explanation\": \"The unit is most active on dogs, canids and balls, and within those classes it fires a little more when the subject faces or points left rather than right or toward the camera. It also prefers medium, untinted lighting over bright or blue/green-tinted photos, and its center is somewhat to the right of the frame. These effects are modest. Facing left and color tint are the most distinctive, since the similar units are not high on those rows.\", \"rows\": [2, 1, 14, 12]}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active on dogs, canids and balls, and within those classes it fires a little more when the subject faces or points left rather than right or toward the camera. It also prefers medium, untinted lighting over bright or blue/green-tinted photos, and its center is somewhat to the right of the frame. These effects are modest. Facing left and color tint are the most distinctive, since the similar units are not high on those rows.\", \"rows\": [2, 1, 14, 12]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "This unit is most active on dogs, wolves and foxes (canids), along with a few balls. Within those classes, it responds more to subjects that face or point to the left than to ones facing right or toward the camera. It also prefers subjects that are moderately lit rather than brightly lit, and photos without a cool blue or green tint. Its activity tends to be higher when the subject fills more of the frame, is partly cut off, or sits off-center to the right, but these effects are weak.",
+  "rows": [
+   2,
+   1,
+   12,
+   14
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "3c2c34a77e051a5180556c735a28b2aa548aa018fef9dc2e699846dcde320737",
+  "texts": [
+   "{\"explanation\": \"This unit is most active on dogs, wolves and foxes (canids), along with a few balls. Within those classes, it responds more to subjects that face or point to the left than to ones facing right or toward the camera. It also prefers subjects that are moderately lit rather than brightly lit, and photos without a cool blue or green tint. Its activity tends to be higher when the subject fills more of the frame, is partly cut off, or sits off-center to the right, but these effects are weak.\", \"rows\": [2, 1, 12, 14]}"
+  ],
+  "text": "{\"explanation\": \"This unit is most active on dogs, wolves and foxes (canids), along with a few balls. Within those classes, it responds more to subjects that face or point to the left than to ones facing right or toward the camera. It also prefers subjects that are moderately lit rather than brightly lit, and photos without a cool blue or green tint. Its activity tends to be higher when the subject fills more of the frame, is partly cut off, or sits off-center to the right, but these effects are weak.\", \"rows\": [2, 1, 12, 14]}",
+  "valid": true
+ }
+}

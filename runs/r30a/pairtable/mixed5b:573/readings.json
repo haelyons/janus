@@ -1,0 +1,109 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "Within its preferred classes (mostly dog breeds such as mountain dogs, collies and corgis, plus large animals and buses), this unit responds most clearly to photos that are not tilted. It is much less active when the horizon or main straight lines are noticeably tilted, compared with both level scenes and scenes with no straight lines. It also leans toward subjects facing toward or away from the camera, but the similar units share that preference. It mildly prefers medium over bright lighting on the subject, and subjects fully inside the frame.",
+  "rows": [
+   33,
+   31,
+   22,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2fc90462e3e37eaa2964aa4494662f5f25e5888d74f2dcc9ff7953d85a1286ca",
+  "texts": [
+   "{\"explanation\": \"Within its preferred classes (mostly dog breeds such as mountain dogs, collies and corgis, plus large animals and buses), this unit responds most clearly to photos that are not tilted. It is much less active when the horizon or main straight lines are noticeably tilted, compared with both level scenes and scenes with no straight lines. It also leans toward subjects facing toward or away from the camera, but the similar units share that preference. It mildly prefers medium over bright lighting on the subject, and subjects fully inside the frame.\", \"rows\": [33, 31, 22, 13]}"
+  ],
+  "text": "{\"explanation\": \"Within its preferred classes (mostly dog breeds such as mountain dogs, collies and corgis, plus large animals and buses), this unit responds most clearly to photos that are not tilted. It is much less active when the horizon or main straight lines are noticeably tilted, compared with both level scenes and scenes with no straight lines. It also leans toward subjects facing toward or away from the camera, but the similar units share that preference. It mildly prefers medium over bright lighting on the subject, and subjects fully inside the frame.\", \"rows\": [33, 31, 22, 13]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "Within its preferred classes (mostly dogs, plus bovids, buses and similar), the unit is suppressed when the photo's horizon or main straight lines are noticeably tilted. It responds more to level scenes, and even to scenes with no lines at all, than to tilted ones. The tilt effect is strongest for this unit, while the similar units show it more weakly. The unit also tends to prefer subjects facing toward or away from the camera, but the similar units share that. It mildly prefers medium over bright lighting and subjects fully inside the frame.",
+  "rows": [
+   33,
+   31,
+   22,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2fc90462e3e37eaa2964aa4494662f5f25e5888d74f2dcc9ff7953d85a1286ca",
+  "texts": [
+   "```json\n{\"explanation\": \"Within its preferred classes (mostly dogs, plus bovids, buses and similar), the unit is suppressed when the photo's horizon or main straight lines are noticeably tilted. It responds more to level scenes, and even to scenes with no lines at all, than to tilted ones. The tilt effect is strongest for this unit, while the similar units show it more weakly. The unit also tends to prefer subjects facing toward or away from the camera, but the similar units share that. It mildly prefers medium over bright lighting and subjects fully inside the frame.\", \"rows\": [33, 31, 22, 13]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Within its preferred classes (mostly dogs, plus bovids, buses and similar), the unit is suppressed when the photo's horizon or main straight lines are noticeably tilted. It responds more to level scenes, and even to scenes with no lines at all, than to tilted ones. The tilt effect is strongest for this unit, while the similar units show it more weakly. The unit also tends to prefer subjects facing toward or away from the camera, but the similar units share that. It mildly prefers medium over bright lighting and subjects fully inside the frame.\", \"rows\": [33, 31, 22, 13]}\n```",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit fires more on photos whose scene is level or has no strong lines, and much less on photos with noticeably tilted horizons or lines. Its tilt penalty (rows 31 and 33) is stronger than in similar units. It shares with those units a preference for subjects facing toward or away from the camera, and for level over line-free scenes. More weakly, it prefers medium over bright lighting on the subject, and subjects that sit fully inside the frame.",
+  "rows": [
+   31,
+   33,
+   22
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2fc90462e3e37eaa2964aa4494662f5f25e5888d74f2dcc9ff7953d85a1286ca",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit fires more on photos whose scene is level or has no strong lines, and much less on photos with noticeably tilted horizons or lines. Its tilt penalty (rows 31 and 33) is stronger than in similar units. It shares with those units a preference for subjects facing toward or away from the camera, and for level over line-free scenes. More weakly, it prefers medium over bright lighting on the subject, and subjects that sit fully inside the frame.\", \"rows\": [31, 33, 22]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit fires more on photos whose scene is level or has no strong lines, and much less on photos with noticeably tilted horizons or lines. Its tilt penalty (rows 31 and 33) is stronger than in similar units. It shares with those units a preference for subjects facing toward or away from the camera, and for level over line-free scenes. More weakly, it prefers medium over bright lighting on the subject, and subjects that sit fully inside the frame.\", \"rows\": [31, 33, 22]}\n```",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds to photos that contain one clear, single main subject, mostly the animals of its top classes (dogs, bison, hippos and similar). Its activity drops sharply on cluttered or multi-object photos with no single main subject. Beyond that shared preference, it holds up even when the subject is small in the frame, slightly blurry, or facing sideways. It is also somewhat higher on photos with no strong straight lines or horizon, such as natural or organic scenes, than on photos with tilted lines.",
+  "rows": [
+   9,
+   36,
+   5,
+   33
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "08ccac30a357f01bdc1727d148bca62ec66cfea391087d36075cb55984b97cf7",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to photos that contain one clear, single main subject, mostly the animals of its top classes (dogs, bison, hippos and similar). Its activity drops sharply on cluttered or multi-object photos with no single main subject. Beyond that shared preference, it holds up even when the subject is small in the frame, slightly blurry, or facing sideways. It is also somewhat higher on photos with no strong straight lines or horizon, such as natural or organic scenes, than on photos with tilted lines.\", \"rows\": [9, 36, 5, 33]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to photos that contain one clear, single main subject, mostly the animals of its top classes (dogs, bison, hippos and similar). Its activity drops sharply on cluttered or multi-object photos with no single main subject. Beyond that shared preference, it holds up even when the subject is small in the frame, slightly blurry, or facing sideways. It is also somewhat higher on photos with no strong straight lines or horizon, such as natural or organic scenes, than on photos with tilted lines.\", \"rows\": [9, 36, 5, 33]}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit is most active for photos of a single clear animal or object, mostly dogs and other large mammals, and least active for scenes with no single main subject. Its distinctive traits are a preference for subjects with a clear facing direction, including small or distant ones, slightly blurry ones and ones facing right, and for scenes without tilted straight lines, such as natural settings, over scenes with tilted lines.",
+  "rows": [
+   9,
+   36,
+   5,
+   33
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "08ccac30a357f01bdc1727d148bca62ec66cfea391087d36075cb55984b97cf7",
+  "texts": [
+   "{\"explanation\": \"The unit is most active for photos of a single clear animal or object, mostly dogs and other large mammals, and least active for scenes with no single main subject. Its distinctive traits are a preference for subjects with a clear facing direction, including small or distant ones, slightly blurry ones and ones facing right, and for scenes without tilted straight lines, such as natural settings, over scenes with tilted lines.\", \"rows\": [9, 36, 5, 33]}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active for photos of a single clear animal or object, mostly dogs and other large mammals, and least active for scenes with no single main subject. Its distinctive traits are a preference for subjects with a clear facing direction, including small or distant ones, slightly blurry ones and ones facing right, and for scenes without tilted straight lines, such as natural settings, over scenes with tilted lines.\", \"rows\": [9, 36, 5, 33]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit responds to a single clear subject, typically an animal such as a dog, bison or swan, or a vehicle, as opposed to scenes with no single main subject. It fires most when the subject is small in the frame or fills nearly all of it, when the subject is facing sideways (left or right), and when the scene is natural with no horizon or tilted straight lines. Where the subject sits left to right, lighting and color tint matter little. The preference for small subjects, sideways-facing subjects and line-free scenes is mostly not shared by the similar units.",
+  "rows": [
+   9,
+   36,
+   5,
+   33
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "08ccac30a357f01bdc1727d148bca62ec66cfea391087d36075cb55984b97cf7",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to a single clear subject, typically an animal such as a dog, bison or swan, or a vehicle, as opposed to scenes with no single main subject. It fires most when the subject is small in the frame or fills nearly all of it, when the subject is facing sideways (left or right), and when the scene is natural with no horizon or tilted straight lines. Where the subject sits left to right, lighting and color tint matter little. The preference for small subjects, sideways-facing subjects and line-free scenes is mostly not shared by the similar units.\", \"rows\": [9, 36, 5, 33]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to a single clear subject, typically an animal such as a dog, bison or swan, or a vehicle, as opposed to scenes with no single main subject. It fires most when the subject is small in the frame or fills nearly all of it, when the subject is facing sideways (left or right), and when the scene is natural with no horizon or tilted straight lines. Where the subject sits left to right, lighting and color tint matter little. The preference for small subjects, sideways-facing subjects and line-free scenes is mostly not shared by the similar units.\", \"rows\": [9, 36, 5, 33]}\n```",
+  "valid": true
+ }
+}

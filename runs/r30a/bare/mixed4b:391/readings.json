@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:391",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "7f6604d3d82c54ac0405172146c254583b1825ce1ee3bffde69dfe3a2e50c3b0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to human faces, most strongly to the central face region around the eyes and nose. It also responds more weakly to face-like non-human figures such as dolls and painted portraits.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to human faces, most strongly to the central face region around the eyes and nose. It also responds more weakly to face-like non-human figures such as dolls and painted portraits.",
+   "evidence": "All 20 top photos have the red box on a human face (eyes/nose area), including faces of children, adults and people in hats or helmets, while dolls (#15, #16) and a painting (#10) still score 7. Among the random photos, the ones with people's faces score higher (baby 4, rope workers 5, woman 3), while objects, animals and scenes without faces score 0-2.",
+   "missing_data": "Activations on non-human animal faces and on face drawings or cartoons, to tell whether it is specific to human faces or responds to any face-like pattern.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to human faces, most strongly to the central face region around the eyes and nose. It also responds more weakly to face-like non-human figures such as dolls and painted portraits.\",\n \"evidence\": \"All 20 top photos have the red box on a human face (eyes/nose area), including faces of children, adults and people in hats or helmets, while dolls (#15, #16) and a painting (#10) still score 7. Among the random photos, the ones with people's faces score higher (baby 4, rope workers 5, woman 3), while objects, animals and scenes without faces score 0-2.\",\n \"missing_data\": \"Activations on non-human animal faces and on face drawings or cartoons, to tell whether it is specific to human faces or responds to any face-like pattern.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to human faces, most strongly to the central face region around the eyes and nose. It also responds more weakly to face-like non-human figures such as dolls and painted portraits.\",\n \"evidence\": \"All 20 top photos have the red box on a human face (eyes/nose area), including faces of children, adults and people in hats or helmets, while dolls (#15, #16) and a painting (#10) still score 7. Among the random photos, the ones with people's faces score higher (baby 4, rope workers 5, woman 3), while objects, animals and scenes without faces score 0-2.\",\n \"missing_data\": \"Activations on non-human animal faces and on face drawings or cartoons, to tell whether it is specific to human faces or responds to any face-like pattern.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:391",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "7f6604d3d82c54ac0405172146c254583b1825ce1ee3bffde69dfe3a2e50c3b0",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to human faces, especially the eye/central face region of frontal faces, including doll and painted faces.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to human faces, especially the eye/central face region of frontal faces, including doll and painted faces.",
+   "evidence": "All 20 top images have the box on a face (mostly around eyes/nose), including dolls (#15, #16) and a painting (#10); random images without faces score 0-2, while those with people/faces (baby #2, people #5, #10) score 3-5.",
+   "missing_data": "Activations on non-human faces (animal faces) and on isolated eyes or face-like patterns would clarify whether it is human-face-specific or a general eye detector.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to human faces, especially the eye/central face region of frontal faces, including doll and painted faces.\",\n \"evidence\": \"All 20 top images have the box on a face (mostly around eyes/nose), including dolls (#15, #16) and a painting (#10); random images without faces score 0-2, while those with people/faces (baby #2, people #5, #10) score 3-5.\",\n \"missing_data\": \"Activations on non-human faces (animal faces) and on isolated eyes or face-like patterns would clarify whether it is human-face-specific or a general eye detector.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to human faces, especially the eye/central face region of frontal faces, including doll and painted faces.\",\n \"evidence\": \"All 20 top images have the box on a face (mostly around eyes/nose), including dolls (#15, #16) and a painting (#10); random images without faces score 0-2, while those with people/faces (baby #2, people #5, #10) score 3-5.\",\n \"missing_data\": \"Activations on non-human faces (animal faces) and on isolated eyes or face-like patterns would clarify whether it is human-face-specific or a general eye detector.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:391",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "7f6604d3d82c54ac0405172146c254583b1825ce1ee3bffde69dfe3a2e50c3b0",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a compact, roughly front-facing arrangement of two small dark rounded spots side by side, above a central vertical ridge and a horizontal curved band, all within a smooth, warm-toned oval patch. It responds most strongly at the upper-middle part of that arrangement, where the paired dark spots sit.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a compact, roughly front-facing arrangement of two small dark rounded spots side by side, above a central vertical ridge and a horizontal curved band, all within a smooth, warm-toned oval patch. It responds most strongly at the upper-middle part of that arrangement, where the paired dark spots sit.",
+   "evidence": "All 20 top images, including painted, glossy and synthetic renderings, are boxed on this same paired-spot-over-ridge layout on smooth warm-toned surfaces. Random images lacking it score 0–2, while the few that contain smaller or turned versions reach only 3–5.",
+   "missing_data": "Activations on images that keep the spatial layout but change texture and color (for example cartoon or geometric versions), and on side-on or partly hidden versions, would show how much depends on layout versus surface tone.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a compact, roughly front-facing arrangement of two small dark rounded spots side by side, above a central vertical ridge and a horizontal curved band, all within a smooth, warm-toned oval patch. It responds most strongly at the upper-middle part of that arrangement, where the paired dark spots sit.\",\n \"evidence\": \"All 20 top images, including painted, glossy and synthetic renderings, are boxed on this same paired-spot-over-ridge layout on smooth warm-toned surfaces. Random images lacking it score 0–2, while the few that contain smaller or turned versions reach only 3–5.\",\n \"missing_data\": \"Activations on images that keep the spatial layout but change texture and color (for example cartoon or geometric versions), and on side-on or partly hidden versions, would show how much depends on layout versus surface tone.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one\",\n \"explanation\": \"The unit responds to a compact, roughly front-facing arrangement of two small dark rounded spots side by side, above a central vertical ridge and a horizontal curved band, all within a smooth, warm-toned oval patch. It responds most strongly at the upper-middle part of that arrangement, where the paired dark spots sit.\",\n \"evidence\": \"All 20 top images, including painted, glossy and synthetic renderings, are boxed on this same paired-spot-over-ridge layout on smooth warm-toned surfaces. Random images lacking it score 0–2, while the few that contain smaller or turned versions reach only 3–5.\",\n \"missing_data\": \"Activations on images that keep the spatial layout but change texture and color (for example cartoon or geometric versions), and on side-on or partly hidden versions, would show how much depends on layout versus surface tone.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ }
+}

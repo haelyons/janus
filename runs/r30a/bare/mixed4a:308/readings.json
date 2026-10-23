@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4a:308",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "de46cea6ff0a867629c14e2eb5cdc0acdc73b4fe96dc24d56952958133ebb1f0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the snout/muzzle region of canid faces (dogs, wolves, foxes), the tapering eye-to-nose area, and more weakly to similar pointed snout-like shapes on other animals (badger, bear, cattle) and long, thin shorebird bills.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the snout/muzzle region of canid faces (dogs, wolves, foxes), the tapering eye-to-nose area, and more weakly to similar pointed snout-like shapes on other animals (badger, bear, cattle) and long, thin shorebird bills.",
+   "evidence": "Most of the top 20 are dogs, wolves and foxes with the box on the muzzle or eye-nose region, while #4, #12 and #18 box sandpiper bills and #5, #15 and #19 box ox, badger and bear snouts at activations 7-8. Random images stay at 1-4, including dog faces (#2 at 1, #5 at 4), so the unit is selective but the response is not purely about dogs.",
+   "missing_data": "Activation-ranked samples across intermediate levels, or tests on isolated muzzles versus bills, would show whether the bird beaks reflect the same tapering-snout feature or a separate one.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the snout/muzzle region of canid faces (dogs, wolves, foxes), the tapering eye-to-nose area, and more weakly to similar pointed snout-like shapes on other animals (badger, bear, cattle) and long, thin shorebird bills.\", \"evidence\": \"Most of the top 20 are dogs, wolves and foxes with the box on the muzzle or eye-nose region, while #4, #12 and #18 box sandpiper bills and #5, #15 and #19 box ox, badger and bear snouts at activations 7-8. Random images stay at 1-4, including dog faces (#2 at 1, #5 at 4), so the unit is selective but the response is not purely about dogs.\", \"missing_data\": \"Activation-ranked samples across intermediate levels, or tests on isolated muzzles versus bills, would show whether the bird beaks reflect the same tapering-snout feature or a separate one.\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to the snout/muzzle region of canid faces (dogs, wolves, foxes), the tapering eye-to-nose area, and more weakly to similar pointed snout-like shapes on other animals (badger, bear, cattle) and long, thin shorebird bills.\", \"evidence\": \"Most of the top 20 are dogs, wolves and foxes with the box on the muzzle or eye-nose region, while #4, #12 and #18 box sandpiper bills and #5, #15 and #19 box ox, badger and bear snouts at activations 7-8. Random images stay at 1-4, including dog faces (#2 at 1, #5 at 4), so the unit is selective but the response is not purely about dogs.\", \"missing_data\": \"Activation-ranked samples across intermediate levels, or tests on isolated muzzles versus bills, would show whether the bird beaks reflect the same tapering-snout feature or a separate one.\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4a:308",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "de46cea6ff0a867629c14e2eb5cdc0acdc73b4fe96dc24d56952958133ebb1f0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to the muzzle and snout of canids (dogs, wolves, foxes), centered on the eye-to-nose region. It also responds more weakly to similar tapering facial protrusions on other animals, such as shorebird bills, badger and bear snouts, and an ox head.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to the muzzle and snout of canids (dogs, wolves, foxes), centered on the eye-to-nose region. It also responds more weakly to similar tapering facial protrusions on other animals, such as shorebird bills, badger and bear snouts, and an ox head.",
+   "evidence": "Most top activations (7–10) have red boxes on dog, wolf, fox or husky muzzles, with the strongest on dogs. The weaker top hits are long sandpiper bills (#4, #12, #18) and other mammal snouts (#5, #15, #19), while random photos, including a dog and a sloth face, stay at 1–4.",
+   "missing_data": "Activations on non-canid long-snouted animals and on canid faces seen front-on versus in profile would show whether it encodes canid identity or just an elongated snout shape.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the muzzle and snout of canids (dogs, wolves, foxes), centered on the eye-to-nose region. It also responds more weakly to similar tapering facial protrusions on other animals, such as shorebird bills, badger and bear snouts, and an ox head.\",\n \"evidence\": \"Most top activations (7–10) have red boxes on dog, wolf, fox or husky muzzles, with the strongest on dogs. The weaker top hits are long sandpiper bills (#4, #12, #18) and other mammal snouts (#5, #15, #19), while random photos, including a dog and a sloth face, stay at 1–4.\",\n \"missing_data\": \"Activations on non-canid long-snouted animals and on canid faces seen front-on versus in profile would show whether it encodes canid identity or just an elongated snout shape.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to the muzzle and snout of canids (dogs, wolves, foxes), centered on the eye-to-nose region. It also responds more weakly to similar tapering facial protrusions on other animals, such as shorebird bills, badger and bear snouts, and an ox head.\",\n \"evidence\": \"Most top activations (7–10) have red boxes on dog, wolf, fox or husky muzzles, with the strongest on dogs. The weaker top hits are long sandpiper bills (#4, #12, #18) and other mammal snouts (#5, #15, #19), while random photos, including a dog and a sloth face, stay at 1–4.\",\n \"missing_data\": \"Activations on non-canid long-snouted animals and on canid faces seen front-on versus in profile would show whether it encodes canid identity or just an elongated snout shape.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4a:308",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "de46cea6ff0a867629c14e2eb5cdc0acdc73b4fe96dc24d56952958133ebb1f0",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a tapering, wedge-shaped protrusion that narrows to a point capped by a small dark rounded tip, usually with a small dark spot set back from it and contrasting light-dark fur-like texture around it. Weaker responses come from thinner, longer pointed forms ending in a sharp dark tip.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a tapering, wedge-shaped protrusion that narrows to a point capped by a small dark rounded tip, usually with a small dark spot set back from it and contrasting light-dark fur-like texture around it. Weaker responses come from thinner, longer pointed forms ending in a sharp dark tip.",
+   "evidence": "Nearly all top-20 boxes sit on a converging pointed form with a dark terminal blob (#1-3, #6-11, #13, #15), and the long thin dark-tipped forms (#4, #12, #18) score somewhat lower at 7-8. Random photos stay at 1-4, even ones with similar textures but no clear pointed taper in profile (#2 random scored only 1).",
+   "missing_data": "Synthetic or abstract stimuli with isolated dark-tipped tapering wedges, without surrounding texture, would show whether the shape alone drives the unit.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a tapering, wedge-shaped protrusion that narrows to a point capped by a small dark rounded tip, usually with a small dark spot set back from it and contrasting light-dark fur-like texture around it. Weaker responses come from thinner, longer pointed forms ending in a sharp dark tip.\",\n \"evidence\": \"Nearly all top-20 boxes sit on a converging pointed form with a dark terminal blob (#1-3, #6-11, #13, #15), and the long thin dark-tipped forms (#4, #12, #18) score somewhat lower at 7-8. Random photos stay at 1-4, even ones with similar textures but no clear pointed taper in profile (#2 random scored only 1).\",\n \"missing_data\": \"Synthetic or abstract stimuli with isolated dark-tipped tapering wedges, without surrounding texture, would show whether the shape alone drives the unit.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a tapering, wedge-shaped protrusion that narrows to a point capped by a small dark rounded tip, usually with a small dark spot set back from it and contrasting light-dark fur-like texture around it. Weaker responses come from thinner, longer pointed forms ending in a sharp dark tip.\",\n \"evidence\": \"Nearly all top-20 boxes sit on a converging pointed form with a dark terminal blob (#1-3, #6-11, #13, #15), and the long thin dark-tipped forms (#4, #12, #18) score somewhat lower at 7-8. Random photos stay at 1-4, even ones with similar textures but no clear pointed taper in profile (#2 random scored only 1).\",\n \"missing_data\": \"Synthetic or abstract stimuli with isolated dark-tipped tapering wedges, without surrounding texture, would show whether the shape alone drives the unit.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ }
+}

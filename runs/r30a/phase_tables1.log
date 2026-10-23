@@ -1,0 +1,465 @@
+answers: 1950 photos, batches failed after a retry: 0 of 163
+== mixed4a:222
+mixed4a:222 readings.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4a:222  layer mixed4a (508 channels), 131 photos looked at (D), 109 photos checked (T); table rows: real 19, null 19
+classes: dingo (273), Pembroke (263), kit fox (278), Walker hound (166), Eskimo dog (248), papillon (157), red wolf (271), badger (362), beagle (162), albatross (146), Cardigan (264), timber wolf (269), Shetland sheepdog (230), Madagascar cat (383), rugby ball (768), Rottweiler (234), red fox (277), Labrador retriever (208), soccer ball (805), Appenzeller (240), malamute (249), Afghan hound (160), English foxhound (167), Maltese dog (153)
+peers: mixed4a:308 (r 0.733), mixed4a:274 (r 0.699), mixed4a:254 (r 0.680)
+real table:
+   Row 1. Q1 "left" (29) more than "right" (23): d +0.97, pct 99.6; similar units 0.2, 31.9, 0.4; gap +88.8
+   Row 2. Q1 "left" (29) more than "toward or away from the camera" (74): d +0.32, pct 94.9; similar units 15.2, 13.8, 26.6; gap +76.4
+   Row 3. Q1 "no clear facing direction or no single main subject" (5) more than "left" (29): d +0.01, pct 63.2; similar units 90.7, 73.6, 50.8; gap -8.5
+   Row 4. Q1 "toward or away from the camera" (74) more than "right" (23): d +0.69, pct 93.1; similar units 0.8, 74.0, 3.1; gap +67.1
+   Row 5. Q1 "no clear facing direction or no single main subject" (5) more than "right" (23): d +1.22, pct 99.6; similar units 15.4, 66.9, 3.1; gap +71.1
+   Row 6. Q1 "no clear facing direction or no single main subject" (5) more than "toward or away from the camera" (74): d +0.33, pct 83.9; similar units 73.0, 57.1, 38.6; gap +27.6
+   Row 7. Q2 "a quarter to three quarters" (80) more than "less than a quarter" (8): d +0.67, pct 73.0; similar units 87.6, 69.7, 18.5; gap +14.4
+   Row 8. Q2 "more than three quarters" (40) more than "less than a quarter" (8): d +0.85, pct 66.7; similar units 53.3, 68.9, 12.6; gap +21.8
+   Row 9. Q2 "more than three quarters" (40) more than "a quarter to three quarters" (80): d +0.26, pct 65.4; similar units 22.6, 76.8, 7.9; gap +29.6
+   Row 10. Q3 "partly cut off" (94) more than "fully inside the photo" (34): d +0.44, pct 77.2; similar units 35.2, 44.9, 11.4; gap +46.7
+   Row 11. Q4 "middle third" (112) more than "right third" (11): d +0.10, pct 40.2; similar units 87.6, 35.6, 41.3; gap -14.7
+   Row 12. Q5 "bright" (26) more than "medium" (100): d +0.18, pct 80.7; similar units 76.0, 44.3, 78.3; gap +14.5
+   Row 13. Q6 "warm (yellow, orange or red) tint" (37) more than "no noticeable tint" (85): d +0.32, pct 95.7; similar units 5.3, 40.7, 8.9; gap +77.4
+   Row 14. Q6 "no noticeable tint" (85) more than "cool (blue or green) tint" (9): d +0.25, pct 58.9; similar units 75.0, 60.2, 13.0; gap +9.4
+   Row 15. Q6 "warm (yellow, orange or red) tint" (37) more than "cool (blue or green) tint" (9): d +0.53, pct 92.3; similar units 27.4, 51.0, 2.4; gap +65.4
+   Row 16. Q7 "noticeably tilted" (5) more than "level" (23): d +0.27, pct 54.1; similar units 40.6, 45.9, 13.0; gap +21.0
+   Row 17. Q7 "no horizon or straight lines visible" (103) more than "level" (23): d +0.08, pct 47.2; similar units 77.0, 93.3, 15.0; gap -14.5
+   Row 18. Q7 "noticeably tilted" (5) more than "no horizon or straight lines visible" (103): d +0.18, pct 54.1; similar units 27.8, 22.0, 34.8; gap +25.9
+   Row 19. Q8 "sharp" (108) more than "slightly blurry" (20): d +0.65, pct 85.4; similar units 72.6, 73.4, 6.5; gap +34.6
+real_s1  rows [1, 5, 4, 2]  The unit is mostly selective for the dog and wild-canid classes, and within those classes it shows one clear extra preference: it is much weaker when the main subject faces or points to the right. Its
+real_s2  rows [1, 5, 2, 13]  The unit is selective for the main subject's facing direction. Within the same classes, it is most active when the subject (mostly dogs and canids) faces or points left. Its response is lowest when th
+real_s3  rows [1, 5, 2, 13]  The unit fires less when the main subject faces or points to the right. Its activity is highest on photos where the subject faces left, faces toward or away from the camera, or has no clear facing dir
+null_s1  rows [2, 1, 14, 12]  The unit prefers dog-like and canid animals and balls shown with the subject facing left in profile, rather than facing right or toward the camera. It responds more under medium, neutral lighting than
+null_s2  rows [2, 1, 14, 12]  The unit is most active on dogs, canids and balls, and within those classes it fires a little more when the subject faces or points left rather than right or toward the camera. It also prefers medium,
+null_s3  rows [2, 1, 12, 14]  This unit is most active on dogs, wolves and foxes (canids), along with a few balls. Within those classes, it responds more to subjects that face or point to the left than to ones facing right or towa
+real_s1: 4 rows
+   Row 1. Q1 "left" more than "right": D pct 99.6; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 5. Q1 "no clear facing direction or no single main subject" more than "right": D pct 99.6; T 14 and 22 photos, d +0.12, pct 65.4 -> not held, distinctive no; T_null not held
+   Row 4. Q1 "toward or away from the camera" more than "right": D pct 93.1; T 49 and 22 photos, d +0.50, pct 94.3 -> not held, distinctive no; T_null not held
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 94.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+real_s2: 4 rows
+   Row 1. Q1 "left" more than "right": D pct 99.6; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 5. Q1 "no clear facing direction or no single main subject" more than "right": D pct 99.6; T 14 and 22 photos, d +0.12, pct 65.4 -> not held, distinctive no; T_null not held
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 94.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 13. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 95.7; T 34 and 64 photos, d -0.23, pct 18.1 -> not held, distinctive no; T_null not held
+real_s3: 4 rows
+   Row 1. Q1 "left" more than "right": D pct 99.6; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 5. Q1 "no clear facing direction or no single main subject" more than "right": D pct 99.6; T 14 and 22 photos, d +0.12, pct 65.4 -> not held, distinctive no; T_null not held
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 94.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 13. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 95.7; T 34 and 64 photos, d -0.23, pct 18.1 -> not held, distinctive no; T_null not held
+null_s1: 4 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 91.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 1. Q1 "left" more than "right": D pct 91.3; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 14. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 94.7; T 64 and 10 photos, d -0.33, pct 2.4 -> not held, distinctive no; T_null held
+   Row 12. Q5 "medium" more than "bright": D pct 94.1; T 78 and 24 photos, d -0.06, pct 22.8 -> not held, distinctive no; T_null not held
+null_s2: 4 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 91.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 1. Q1 "left" more than "right": D pct 91.3; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 14. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 94.7; T 64 and 10 photos, d -0.33, pct 2.4 -> not held, distinctive no; T_null held
+   Row 12. Q5 "medium" more than "bright": D pct 94.1; T 78 and 24 photos, d -0.06, pct 22.8 -> not held, distinctive no; T_null not held
+null_s3: 4 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 91.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 1. Q1 "left" more than "right": D pct 91.3; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 12. Q5 "medium" more than "bright": D pct 94.1; T 78 and 24 photos, d -0.06, pct 22.8 -> not held, distinctive no; T_null not held
+   Row 14. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 94.7; T 64 and 10 photos, d -0.33, pct 2.4 -> not held, distinctive no; T_null held
+rule_real: 3 rows
+   Row 1. Q1 "left" more than "right": D pct 99.6; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 13. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 95.7; T 34 and 64 photos, d -0.23, pct 18.1 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "no clear facing direction or no single main subject" more than "right": D pct 99.6; T 14 and 22 photos, d +0.12, pct 65.4 -> not held, distinctive no; T_null not held
+rule_null: 0 rows
+every: 19 rows
+   Row 1. Q1 "left" more than "right": D pct 99.6; T 24 and 22 photos, d +0.83, pct 99.4 -> held, distinctive yes; T_null not held
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 94.9; T 24 and 49 photos, d +0.53, pct 97.8 -> held, distinctive yes; T_null not held
+   Row 3. Q1 "no clear facing direction or no single main subject" more than "left": D pct 63.2; T 14 and 24 photos, d -0.76, pct 0.6 -> not held, distinctive no; T_null not held
+   Row 4. Q1 "toward or away from the camera" more than "right": D pct 93.1; T 49 and 22 photos, d +0.50, pct 94.3 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "no clear facing direction or no single main subject" more than "right": D pct 99.6; T 14 and 22 photos, d +0.12, pct 65.4 -> not held, distinctive no; T_null not held
+   Row 6. Q1 "no clear facing direction or no single main subject" more than "toward or away from the camera": D pct 83.9; T 14 and 49 photos, d -0.41, pct 22.2 -> not held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 73.0; T 60 and 5 photos, d +0.54, pct 67.3 -> not held, distinctive no; T_null not held
+   Row 8. Q2 "more than three quarters" more than "less than a quarter": D pct 66.7; T 38 and 5 photos, d +0.04, pct 31.1 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 65.4; T 38 and 60 photos, d -0.47, pct 8.1 -> not held, distinctive no; T_null not held
+   Row 10. Q3 "partly cut off" more than "fully inside the photo": D pct 77.2; T 79 and 24 photos, d -0.19, pct 21.7 -> not held, distinctive no; T_null not held
+   Row 11. Q4 "middle third" more than "right third": D pct 40.2; T 87 and 10 photos, d +0.28, pct 67.5 -> not held, distinctive no; T_null not held
+   Row 12. Q5 "bright" more than "medium": D pct 80.7; T 24 and 78 photos, d +0.06, pct 77.0 -> not held, distinctive no; T_null not held
+   Row 13. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 95.7; T 34 and 64 photos, d -0.23, pct 18.1 -> not held, distinctive no; T_null not held
+   Row 14. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 58.9; T 64 and 10 photos, d -0.33, pct 2.4 -> not held, distinctive no; T_null held
+   Row 15. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 92.3; T 34 and 10 photos, d -0.56, pct 0.8 -> not held, distinctive no; T_null not held
+   Row 16. Q7 "noticeably tilted" more than "level": D pct 54.1; T 5 and 27 photos, d -0.45, pct 26.4 -> not held, distinctive no; T_null not held
+   Row 17. Q7 "no horizon or straight lines visible" more than "level": D pct 47.2; T 77 and 27 photos, d -0.38, pct 14.6 -> not held, distinctive no; T_null not held
+   Row 18. Q7 "noticeably tilted" more than "no horizon or straight lines visible": D pct 54.1; T 5 and 77 photos, d -0.04, pct 51.2 -> not held, distinctive no; T_null not held
+   Row 19. Q8 "sharp" more than "slightly blurry": D pct 85.4; T 89 and 12 photos, d +0.31, pct 46.1 -> not held, distinctive no; T_null not held
+tally real_s1: real held 2, not held 2, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s2: real held 2, not held 2, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s3: real held 2, not held 2, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s1: real held 2, not held 2, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally null_s2: real held 2, not held 2, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally null_s3: real held 2, not held 2, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally rule_real: real held 1, not held 2, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally rule_null: real held 0, not held 0, too few 0; null held 0, not held 0, too few 0 (of 0 rows)
+tally every: real held 2, not held 17, too few 0; null held 1, not held 18, too few 0 (of 19 rows)
+== mixed4a:234
+mixed4a:234 readings.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4a:234  layer mixed4a (508 channels), 102 photos looked at (D), 138 photos checked (T); table rows: real 12, null 12
+classes: Maltese dog (153), Dandie Dinmont (194), Shih-Tzu (155), West Highland white terrier (203), Pekinese (154), silky terrier (201), kuvasz (222), Blenheim spaniel (156), Lhasa (204), Yorkshire terrier (187), Saint Bernard (247), Sealyham terrier (190), Japanese spaniel (152), papillon (157), redbone (168), Greater Swiss Mountain dog (238), meerkat (299), Labrador retriever (208), lesser panda (387), Eskimo dog (248), black-and-tan coonhound (165), otterhound (175), bull mastiff (243), American Staffordshire terrier (180)
+peers: mixed4a:368 (r 0.728), mixed4a:395 (r 0.722), mixed4a:299 (r 0.696)
+real table:
+   Row 1. Q1 "right" (17) more than "left" (17): d +1.30, pct 99.8; similar units 80.9, 80.3, 88.4; gap +16.6
+   Row 2. Q1 "toward or away from the camera" (67) more than "left" (17): d +0.78, pct 97.4; similar units 97.8, 93.5, 95.7; gap +1.8
+   Row 3. Q1 "right" (17) more than "toward or away from the camera" (67): d +0.36, pct 91.5; similar units 3.1, 10.6, 10.2; gap +83.5
+   Row 4. Q2 "a quarter to three quarters" (42) more than "less than a quarter" (5): d +0.69, pct 73.2; similar units 95.3, 97.8, 97.2; gap -23.6
+   Row 5. Q2 "more than three quarters" (54) more than "less than a quarter" (5): d +1.13, pct 88.2; similar units 93.7, 99.8, 98.8; gap -9.3
+   Row 6. Q2 "more than three quarters" (54) more than "a quarter to three quarters" (42): d +0.29, pct 83.7; similar units 80.5, 91.3, 90.6; gap -3.8
+   Row 7. Q3 "partly cut off" (87) more than "fully inside the photo" (14): d +0.51, pct 79.3; similar units 79.7, 94.5, 82.5; gap -6.2
+   Row 8. Q4 "middle third" (90) more than "right third" (7): d +1.06, pct 99.4; similar units 57.7, 83.1, 85.0; gap +24.1
+   Row 9. Q5 "medium" (77) more than "bright" (24): d +0.13, pct 62.8; similar units 51.2, 47.2, 74.8; gap +5.1
+   Row 10. Q6 "no noticeable tint" (51) more than "warm (yellow, orange or red) tint" (45): d +0.15, pct 64.2; similar units 55.9, 27.0, 24.0; gap +28.5
+   Row 11. Q7 "level" (27) more than "no horizon or straight lines visible" (74): d +0.01, pct 53.5; similar units 3.1, 0.0, 1.0; gap +52.2
+   Row 12. Q8 "sharp" (80) more than "slightly blurry" (21): d +0.44, pct 83.1; similar units 88.6, 93.3, 99.2; gap -10.6
+real_s1  rows [1, 8, 3]  This unit responds to small fluffy or long-haired dogs (toy breeds, terriers, spaniels) and similar furry animals. Within those classes it is most active when the subject faces or points to the image'
+real_s2  rows [1, 8, 3]  This unit responds to small, fluffy, long-haired dogs (toy terriers, spaniels, Maltese and similar breeds) when the animal is facing or pointing to the right, or toward or away from the camera, rather
+real_s3  rows [1, 3, 8]  The unit responds to small, fluffy, long-haired toy dogs and similar furry faces, and it fires more when the animal faces right rather than left. A right-facing subject is distinctive for this unit co
+null_s1  rows [6, 9, 10]  The unit responds most to small, long-haired toy and terrier breeds (Maltese, Shih-Tzu, Dandie Dinmont, Westie, Pekinese, Lhasa), with fluffy fur as the common feature. Within those classes it is more
+null_s2  rows [6, 9, 10]  The unit responds most to small, long-haired toy and terrier dogs (Maltese, Shih-Tzu, Dandie Dinmont, Westie, Pekinese) and related furry animals. Within these classes it is more active when the anima
+null_s3  rows [6, 9, 10]  The unit is most active on small fluffy, long-haired toy and terrier breeds (Maltese, Shih-Tzu, Lhasa, Yorkshire terrier and similar). Within those classes it prefers a medium-framed subject, one taki
+real_s1: 3 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 21 and 22 photos, d +1.20, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 8. Q4 "middle third" more than "right third": D pct 99.4; T 110 and 10 photos, d -0.04, pct 41.9 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 91.5; T 21 and 86 photos, d +0.17, pct 75.8 -> not held, distinctive no; T_null not held
+real_s2: 3 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 21 and 22 photos, d +1.20, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 8. Q4 "middle third" more than "right third": D pct 99.4; T 110 and 10 photos, d -0.04, pct 41.9 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 91.5; T 21 and 86 photos, d +0.17, pct 75.8 -> not held, distinctive no; T_null not held
+real_s3: 3 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 21 and 22 photos, d +1.20, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 91.5; T 21 and 86 photos, d +0.17, pct 75.8 -> not held, distinctive no; T_null not held
+   Row 8. Q4 "middle third" more than "right third": D pct 99.4; T 110 and 10 photos, d -0.04, pct 41.9 -> not held, distinctive no; T_null not held
+null_s1: 3 rows
+   Row 6. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 97.6; T 76 and 48 photos, d -0.53, pct 8.9 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 99.0; T 99 and 30 photos, d -0.02, pct 28.5 -> not held, distinctive no; T_null not held
+   Row 10. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 94.5; T 53 and 73 photos, d -0.16, pct 28.7 -> not held, distinctive no; T_null not held
+null_s2: 3 rows
+   Row 6. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 97.6; T 76 and 48 photos, d -0.53, pct 8.9 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 99.0; T 99 and 30 photos, d -0.02, pct 28.5 -> not held, distinctive no; T_null not held
+   Row 10. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 94.5; T 53 and 73 photos, d -0.16, pct 28.7 -> not held, distinctive no; T_null not held
+null_s3: 3 rows
+   Row 6. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 97.6; T 76 and 48 photos, d -0.53, pct 8.9 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 99.0; T 99 and 30 photos, d -0.02, pct 28.5 -> not held, distinctive no; T_null not held
+   Row 10. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 94.5; T 53 and 73 photos, d -0.16, pct 28.7 -> not held, distinctive no; T_null not held
+rule_real: 3 rows
+   Row 8. Q4 "middle third" more than "right third": D pct 99.4; T 110 and 10 photos, d -0.04, pct 41.9 -> not held, distinctive no; T_null not held
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 21 and 22 photos, d +1.20, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 2. Q1 "toward or away from the camera" more than "left": D pct 97.4; T 86 and 22 photos, d +1.08, pct 99.8 -> held, distinctive no; T_null not held
+rule_null: 2 rows
+   Row 9. Q5 "medium" more than "bright": D pct 99.0; T 99 and 30 photos, d -0.02, pct 28.5 -> not held, distinctive no; T_null not held
+   Row 6. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 97.6; T 76 and 48 photos, d -0.53, pct 8.9 -> not held, distinctive no; T_null not held
+every: 12 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 21 and 22 photos, d +1.20, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 2. Q1 "toward or away from the camera" more than "left": D pct 97.4; T 86 and 22 photos, d +1.08, pct 99.8 -> held, distinctive no; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 91.5; T 21 and 86 photos, d +0.17, pct 75.8 -> not held, distinctive no; T_null not held
+   Row 4. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 73.2; T 76 and 8 photos, d +0.83, pct 80.9 -> not held, distinctive no; T_null held
+   Row 5. Q2 "more than three quarters" more than "less than a quarter": D pct 88.2; T 48 and 8 photos, d +1.20, pct 86.2 -> not held, distinctive no; T_null held
+   Row 6. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 83.7; T 48 and 76 photos, d +0.53, pct 90.9 -> not held, distinctive no; T_null not held
+   Row 7. Q3 "partly cut off" more than "fully inside the photo": D pct 79.3; T 105 and 26 photos, d +0.59, pct 81.9 -> not held, distinctive no; T_null not held
+   Row 8. Q4 "middle third" more than "right third": D pct 99.4; T 110 and 10 photos, d -0.04, pct 41.9 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 62.8; T 99 and 30 photos, d -0.02, pct 28.5 -> not held, distinctive no; T_null not held
+   Row 10. Q6 "no noticeable tint" more than "warm (yellow, orange or red) tint": D pct 64.2; T 73 and 53 photos, d +0.16, pct 71.1 -> not held, distinctive no; T_null not held
+   Row 11. Q7 "level" more than "no horizon or straight lines visible": D pct 53.5; T 37 and 85 photos, d -0.16, pct 18.3 -> not held, distinctive no; T_null not held
+   Row 12. Q8 "sharp" more than "slightly blurry": D pct 83.1; T 100 and 28 photos, d +0.58, pct 93.7 -> not held, distinctive no; T_null held
+tally real_s1: real held 1, not held 2, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally real_s2: real held 1, not held 2, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally real_s3: real held 1, not held 2, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally null_s1: real held 0, not held 3, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally null_s2: real held 0, not held 3, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally null_s3: real held 0, not held 3, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally rule_real: real held 2, not held 1, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally rule_null: real held 0, not held 2, too few 0; null held 0, not held 2, too few 0 (of 2 rows)
+tally every: real held 2, not held 10, too few 0; null held 3, not held 9, too few 0 (of 12 rows)
+== mixed4a:308
+mixed4a:308 readings.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4a:308  layer mixed4a (508 channels), 131 photos looked at (D), 109 photos checked (T); table rows: real 21, null 21
+classes: dingo (273), Appenzeller (240), timber wolf (269), lesser panda (387), red-backed sandpiper (140), redshank (141), red wolf (271), borzoi (169), hyena (276), Cardigan (264), soccer ball (805), Saluki (176), maillot tank suit (639), badger (362), English foxhound (167), Italian greyhound (171), black stork (128), Eskimo dog (248), Pembroke (263), standard schnauzer (198), grey fox (280), red fox (277), kit fox (278), gazelle (353)
+peers: mixed4a:222 (r 0.733), mixed4a:274 (r 0.691), mixed4a:254 (r 0.663)
+real table:
+   Row 1. Q1 "right" (34) more than "left" (24): d +0.84, pct 99.8; similar units 0.0, 82.5, 93.7; gap +41.1
+   Row 2. Q1 "toward or away from the camera" (66) more than "left" (24): d +0.46, pct 84.8; similar units 1.4, 73.0, 63.6; gap +38.8
+   Row 3. Q1 "no clear facing direction or no single main subject" (7) more than "left" (24): d +0.06, pct 56.1; similar units 28.7, 13.2, 26.4; gap +33.3
+   Row 4. Q1 "right" (34) more than "toward or away from the camera" (66): d +0.37, pct 98.2; similar units 3.7, 55.9, 94.1; gap +47.0
+   Row 5. Q1 "right" (34) more than "no clear facing direction or no single main subject" (7): d +0.81, pct 92.5; similar units 5.1, 96.3, 88.2; gap +29.3
+   Row 6. Q1 "toward or away from the camera" (66) more than "no clear facing direction or no single main subject" (7): d +0.40, pct 65.2; similar units 28.9, 95.1, 79.5; gap -2.7
+   Row 7. Q2 "a quarter to three quarters" (79) more than "less than a quarter" (15): d +0.65, pct 88.2; similar units 68.1, 51.2, 32.1; gap +37.7
+   Row 8. Q2 "more than three quarters" (33) more than "less than a quarter" (15): d +0.59, pct 60.6; similar units 57.1, 61.2, 14.0; gap +16.5
+   Row 9. Q2 "a quarter to three quarters" (79) more than "more than three quarters" (33): d +0.03, pct 63.8; similar units 49.0, 29.9, 90.6; gap +7.3
+   Row 10. Q3 "partly cut off" (86) more than "fully inside the photo" (41): d +0.23, pct 51.6; similar units 52.0, 31.1, 25.4; gap +15.4
+   Row 11. Q4 "middle third" (114) more than "left third" (6): d +0.87, pct 95.7; similar units 89.2, 99.2, 42.5; gap +18.7
+   Row 12. Q4 "right third" (7) more than "left third" (6): d +0.55, pct 85.4; similar units 93.7, 99.8, 45.9; gap +5.6
+   Row 13. Q4 "middle third" (114) more than "right third" (7): d +0.45, pct 77.6; similar units 35.4, 20.1, 47.6; gap +43.2
+   Row 14. Q5 "medium" (99) more than "bright" (27): d +0.05, pct 47.8; similar units 4.3, 21.1, 5.1; gap +37.7
+   Row 15. Q6 "no noticeable tint" (77) more than "warm (yellow, orange or red) tint" (42): d +0.37, pct 90.2; similar units 28.9, 91.3, 78.0; gap +24.1
+   Row 16. Q6 "no noticeable tint" (77) more than "cool (blue or green) tint" (11): d +0.86, pct 98.2; similar units 65.4, 68.3, 28.1; gap +44.3
+   Row 17. Q6 "warm (yellow, orange or red) tint" (42) more than "cool (blue or green) tint" (11): d +0.59, pct 83.7; similar units 74.0, 36.6, 22.8; gap +39.2
+   Row 18. Q7 "level" (29) more than "noticeably tilted" (7): d +0.23, pct 68.7; similar units 54.7, 83.7, 75.8; gap -2.7
+   Row 19. Q7 "no horizon or straight lines visible" (95) more than "level" (29): d +0.41, pct 96.7; similar units 66.7, 82.9, 21.7; gap +39.6
+   Row 20. Q7 "no horizon or straight lines visible" (95) more than "noticeably tilted" (7): d +0.53, pct 88.6; similar units 62.4, 94.9, 56.3; gap +17.4
+   Row 21. Q8 "sharp" (101) more than "slightly blurry" (26): d +0.67, pct 93.3; similar units 71.7, 92.3, 37.6; gap +26.1
+real_s1  rows [1, 4, 16, 11]  The unit responds to canids and similar animals (foxes, wolves, dogs, hyenas, lesser pandas, shorebirds). Within these classes it is most active when the subject faces or points to the right. It also
+real_s2  rows [1, 4, 16, 19]  The unit responds to dog-like canids and similar mammals (foxes, wolves, dingoes, hounds) and to some shorebirds. Within those classes it fires most when the main subject faces or points to the right,
+real_s3  rows [1, 4, 16, 19]  The unit prefers canid- and fox-like animals (dogs, wolves, foxes, hyena, lesser panda) that face or point to the right. It responds most to right-facing subjects compared with left-facing ones. It al
+null_s1  rows [13, 16, 15, 9]  The unit responds to canids and other tawny or reddish mammals such as foxes, wolves, dingos and hounds, plus a few shore birds. Within these classes, no photo property stands out strongly; none of th
+null_s2  rows [13, 16, 15, 9]  The unit responds to canids and other tawny-coated mammals: wild and domestic dogs, foxes, hyena, red panda, plus a few birds and a soccer ball. Within these classes no photo property stands out stron
+null_s3  rows [13, 16, 15, 9]  No row reaches the 95th percentile, so this unit has no strong distinctive photo-property preference on these canid- and fox-heavy classes. It mostly responds to the class content itself (dogs, wolves
+real_s1: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 36 and 19 photos, d +1.02, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 98.2; T 36 and 43 photos, d +0.42, pct 99.2 -> held, distinctive yes; T_null not held
+   Row 16. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 98.2; T 51 and 12 photos, d +0.86, pct 99.0 -> held, distinctive yes; T_null not held
+   Row 11. Q4 "middle third" more than "left third": D pct 95.7; T 83 and 7 photos, d -0.72, pct 1.8 -> not held, distinctive no; T_null not held
+real_s2: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 36 and 19 photos, d +1.02, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 98.2; T 36 and 43 photos, d +0.42, pct 99.2 -> held, distinctive yes; T_null not held
+   Row 16. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 98.2; T 51 and 12 photos, d +0.86, pct 99.0 -> held, distinctive yes; T_null not held
+   Row 19. Q7 "no horizon or straight lines visible" more than "level": D pct 96.7; T 72 and 30 photos, d -0.08, pct 33.1 -> not held, distinctive no; T_null not held
+real_s3: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 36 and 19 photos, d +1.02, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 98.2; T 36 and 43 photos, d +0.42, pct 99.2 -> held, distinctive yes; T_null not held
+   Row 16. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 98.2; T 51 and 12 photos, d +0.86, pct 99.0 -> held, distinctive yes; T_null not held
+   Row 19. Q7 "no horizon or straight lines visible" more than "level": D pct 96.7; T 72 and 30 photos, d -0.08, pct 33.1 -> not held, distinctive no; T_null not held
+null_s1: 4 rows
+   Row 13. Q4 "right third" more than "middle third": D pct 92.9; T 9 and 83 photos, d -0.51, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 16. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 93.1; T 12 and 51 photos, d -0.86, pct 0.8 -> not held, distinctive no; T_null held
+   Row 15. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 85.6; T 44 and 51 photos, d -0.31, pct 14.0 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 83.9; T 22 and 72 photos, d +0.25, pct 64.8 -> not held, distinctive no; T_null not held
+null_s2: 4 rows
+   Row 13. Q4 "right third" more than "middle third": D pct 92.9; T 9 and 83 photos, d -0.51, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 16. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 93.1; T 12 and 51 photos, d -0.86, pct 0.8 -> not held, distinctive no; T_null held
+   Row 15. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 85.6; T 44 and 51 photos, d -0.31, pct 14.0 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 83.9; T 22 and 72 photos, d +0.25, pct 64.8 -> not held, distinctive no; T_null not held
+null_s3: 4 rows
+   Row 13. Q4 "right third" more than "middle third": D pct 92.9; T 9 and 83 photos, d -0.51, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 16. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 93.1; T 12 and 51 photos, d -0.86, pct 0.8 -> not held, distinctive no; T_null held
+   Row 15. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 85.6; T 44 and 51 photos, d -0.31, pct 14.0 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 83.9; T 22 and 72 photos, d +0.25, pct 64.8 -> not held, distinctive no; T_null not held
+rule_real: 4 rows
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 98.2; T 36 and 43 photos, d +0.42, pct 99.2 -> held, distinctive yes; T_null not held
+   Row 16. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 98.2; T 51 and 12 photos, d +0.86, pct 99.0 -> held, distinctive yes; T_null not held
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 36 and 19 photos, d +1.02, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 19. Q7 "no horizon or straight lines visible" more than "level": D pct 96.7; T 72 and 30 photos, d -0.08, pct 33.1 -> not held, distinctive no; T_null not held
+rule_null: 0 rows
+every: 21 rows
+   Row 1. Q1 "right" more than "left": D pct 99.8; T 36 and 19 photos, d +1.02, pct 99.8 -> held, distinctive yes; T_null not held
+   Row 2. Q1 "toward or away from the camera" more than "left": D pct 84.8; T 43 and 19 photos, d +0.73, pct 96.7 -> held, distinctive yes; T_null not held
+   Row 3. Q1 "no clear facing direction or no single main subject" more than "left": D pct 56.1; T 11 and 19 photos, d +0.41, pct 91.3 -> not held, distinctive no; T_null not held
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 98.2; T 36 and 43 photos, d +0.42, pct 99.2 -> held, distinctive yes; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 92.5; T 36 and 11 photos, d +0.76, pct 95.9 -> held, distinctive no; T_null not held
+   Row 6. Q1 "toward or away from the camera" more than "no clear facing direction or no single main subject": D pct 65.2; T 43 and 11 photos, d +0.41, pct 58.5 -> not held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 88.2; T 72 and 7 photos, d +0.70, pct 82.9 -> not held, distinctive no; T_null not held
+   Row 8. Q2 "more than three quarters" more than "less than a quarter": D pct 60.6; T 22 and 7 photos, d +0.83, pct 78.7 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 63.8; T 72 and 22 photos, d -0.25, pct 35.0 -> not held, distinctive no; T_null not held
+   Row 10. Q3 "partly cut off" more than "fully inside the photo": D pct 51.6; T 67 and 35 photos, d +0.27, pct 68.1 -> not held, distinctive no; T_null not held
+   Row 11. Q4 "middle third" more than "left third": D pct 95.7; T 83 and 7 photos, d -0.72, pct 1.8 -> not held, distinctive no; T_null not held
+   Row 12. Q4 "right third" more than "left third": D pct 85.4; T 9 and 7 photos, d -1.13, pct 0.6 -> not held, distinctive no; T_null not held
+   Row 13. Q4 "middle third" more than "right third": D pct 77.6; T 83 and 9 photos, d +0.51, pct 81.9 -> not held, distinctive no; T_null not held
+   Row 14. Q5 "medium" more than "bright": D pct 47.8; T 73 and 25 photos, d -0.02, pct 28.9 -> not held, distinctive no; T_null not held
+   Row 15. Q6 "no noticeable tint" more than "warm (yellow, orange or red) tint": D pct 90.2; T 51 and 44 photos, d +0.31, pct 85.8 -> not held, distinctive no; T_null not held
+   Row 16. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 98.2; T 51 and 12 photos, d +0.86, pct 99.0 -> held, distinctive yes; T_null not held
+   Row 17. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 83.7; T 44 and 12 photos, d +0.55, pct 92.7 -> not held, distinctive no; T_null not held
+   Row 18. Q7 "level" more than "noticeably tilted": D pct 68.7; T 30 and 7 photos, d +0.15, pct 67.3 -> not held, distinctive no; T_null not held
+   Row 19. Q7 "no horizon or straight lines visible" more than "level": D pct 96.7; T 72 and 30 photos, d -0.08, pct 33.1 -> not held, distinctive no; T_null not held
+   Row 20. Q7 "no horizon or straight lines visible" more than "noticeably tilted": D pct 88.6; T 72 and 7 photos, d +0.06, pct 51.4 -> not held, distinctive no; T_null not held
+   Row 21. Q8 "sharp" more than "slightly blurry": D pct 93.3; T 88 and 13 photos, d +0.09, pct 30.9 -> not held, distinctive no; T_null not held
+tally real_s1: real held 3, not held 1, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s2: real held 3, not held 1, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s3: real held 3, not held 1, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s1: real held 0, not held 4, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally null_s2: real held 0, not held 4, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally null_s3: real held 0, not held 4, too few 0; null held 1, not held 3, too few 0 (of 4 rows)
+tally rule_real: real held 3, not held 1, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally rule_null: real held 0, not held 0, too few 0; null held 0, not held 0, too few 0 (of 0 rows)
+tally every: real held 5, not held 16, too few 0; null held 0, not held 21, too few 0 (of 21 rows)
+== mixed4a:325
+mixed4a:325 readings.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed4a:325  layer mixed4a (508 channels), 116 photos looked at (D), 124 photos checked (T); table rows: real 14, null 14
+classes: Maltese dog (153), Lhasa (204), Dandie Dinmont (194), Blenheim spaniel (156), Old English sheepdog (229), German shepherd (235), kuvasz (222), Pembroke (263), Tibetan terrier (200), beagle (162), Appenzeller (240), Lakeland terrier (189), Shih-Tzu (155), Irish terrier (184), Pekinese (154), papillon (157), Eskimo dog (248), Gordon setter (214), silky terrier (201), Greater Swiss Mountain dog (238), Saint Bernard (247), Leonberg (255), cairn (192), Irish setter (213)
+peers: mixed4a:287 (r 0.885), mixed4a:227 (r 0.862), mixed4a:388 (r 0.841)
+real table:
+   Row 1. Q1 "left" (21) more than "right" (14): d +0.49, pct 93.9; similar units 40.7, 31.9, 9.6; gap +66.5
+   Row 2. Q1 "toward or away from the camera" (77) more than "left" (21): d +0.49, pct 93.1; similar units 97.4, 84.3, 95.3; gap +0.8
+   Row 3. Q1 "toward or away from the camera" (77) more than "right" (14): d +0.81, pct 96.5; similar units 94.1, 74.2, 67.9; gap +17.7
+   Row 4. Q2 "a quarter to three quarters" (61) more than "less than a quarter" (10): d +0.75, pct 85.6; similar units 99.2, 90.7, 38.4; gap +9.5
+   Row 5. Q2 "more than three quarters" (42) more than "less than a quarter" (10): d +0.95, pct 81.7; similar units 97.4, 83.1, 51.2; gap +4.5
+   Row 6. Q2 "more than three quarters" (42) more than "a quarter to three quarters" (61): d +0.27, pct 65.7; similar units 91.9, 51.4, 55.5; gap -0.5
+   Row 7. Q3 "partly cut off" (83) more than "fully inside the photo" (30): d +0.23, pct 53.3; similar units 67.1, 61.0, 31.9; gap +0.0
+   Row 8. Q4 "right third" (7) more than "middle third" (101): d +0.30, pct 83.5; similar units 21.9, 34.4, 69.7; gap +41.5
+   Row 9. Q5 "medium" (84) more than "bright" (25): d +0.20, pct 83.5; similar units 82.7, 23.8, 66.5; gap +25.8
+   Row 10. Q6 "warm (yellow, orange or red) tint" (38) more than "no noticeable tint" (70): d +0.16, pct 72.8; similar units 33.3, 17.3, 49.4; gap +39.5
+   Row 11. Q6 "no noticeable tint" (70) more than "cool (blue or green) tint" (5): d +0.45, pct 81.7; similar units 77.2, 69.9, 31.9; gap +22.0
+   Row 12. Q6 "warm (yellow, orange or red) tint" (38) more than "cool (blue or green) tint" (5): d +0.82, pct 95.3; similar units 78.7, 51.8, 32.5; gap +40.9
+   Row 13. Q7 "no horizon or straight lines visible" (81) more than "level" (32): d +0.27, pct 88.0; similar units 90.9, 51.4, 86.6; gap +11.7
+   Row 14. Q8 "sharp" (88) more than "slightly blurry" (25): d +0.59, pct 92.3; similar units 95.9, 78.7, 99.8; gap +0.9
+real_s1  rows [1, 3, 12, 8]  The unit responds to dog breeds with long, fluffy or shaggy coats (Maltese, Lhasa, Shih-Tzu, sheepdogs, spaniels, setters) when the dog is facing the camera or turned to the left rather than to the ri
+real_s2  rows [1, 3, 12]  The unit responds to fluffy, long-haired dogs (Maltese, Lhasa, Shih-Tzu, Old English sheepdog and similar breeds) shown large, close-up and sharp. Within these classes it is most active when the dog f
+real_s3  rows [1, 3, 12, 9]  The unit responds to fluffy and long-haired dogs, such as Maltese, Lhasa, Shih-Tzu and Old English sheepdog. It is most active when the dog faces the camera head-on and fills much of the frame. Among
+null_s1  rows [2]  This unit responds to dogs, mostly long-haired toy breeds and terriers, that are shown in profile, especially facing left, rather than facing the camera. The unit is more active on left-facing dogs th
+null_s2  rows [2, 3]  This unit responds to dogs, especially long-haired and terrier-type breeds, more strongly when the dog is shown in profile, facing sideways, and particularly facing left, than when it faces toward or
+null_s3  rows [2, 3]  The unit responds to dogs, mostly fluffy, long-haired small and medium breeds such as Maltese, Lhasa, Shih-Tzu, Tibetan terrier and Pekinese. Within those classes it is most active when the dog is see
+real_s1: 4 rows
+   Row 1. Q1 "left" more than "right": D pct 93.9; T 21 and 16 photos, d -0.15, pct 55.5 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "toward or away from the camera" more than "right": D pct 96.5; T 82 and 16 photos, d +0.62, pct 95.1 -> held, distinctive no; T_null not held
+   Row 12. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 95.3; T 46 and 11 photos, d +0.71, pct 81.3 -> not held, distinctive no; T_null not held
+   Row 8. Q4 "right third" more than "middle third": D pct 83.5; T 7 and 107 photos, d -0.59, pct 11.4 -> not held, distinctive no; T_null not held
+real_s2: 3 rows
+   Row 1. Q1 "left" more than "right": D pct 93.9; T 21 and 16 photos, d -0.15, pct 55.5 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "toward or away from the camera" more than "right": D pct 96.5; T 82 and 16 photos, d +0.62, pct 95.1 -> held, distinctive no; T_null not held
+   Row 12. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 95.3; T 46 and 11 photos, d +0.71, pct 81.3 -> not held, distinctive no; T_null not held
+real_s3: 4 rows
+   Row 1. Q1 "left" more than "right": D pct 93.9; T 21 and 16 photos, d -0.15, pct 55.5 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "toward or away from the camera" more than "right": D pct 96.5; T 82 and 16 photos, d +0.62, pct 95.1 -> held, distinctive no; T_null not held
+   Row 12. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 95.3; T 46 and 11 photos, d +0.71, pct 81.3 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 83.5; T 90 and 28 photos, d +0.08, pct 47.6 -> not held, distinctive no; T_null not held
+null_s1: 1 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 98.6; T 21 and 82 photos, d -0.71, pct 7.3 -> not held, distinctive no; T_null not held
+null_s2: 2 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 98.6; T 21 and 82 photos, d -0.71, pct 7.3 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 85.6; T 16 and 82 photos, d -0.62, pct 4.7 -> not held, distinctive no; T_null not held
+null_s3: 2 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 98.6; T 21 and 82 photos, d -0.71, pct 7.3 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "right" more than "toward or away from the camera": D pct 85.6; T 16 and 82 photos, d -0.62, pct 4.7 -> not held, distinctive no; T_null not held
+rule_real: 2 rows
+   Row 12. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 95.3; T 46 and 11 photos, d +0.71, pct 81.3 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "toward or away from the camera" more than "right": D pct 96.5; T 82 and 16 photos, d +0.62, pct 95.1 -> held, distinctive no; T_null not held
+rule_null: 1 rows
+   Row 2. Q1 "left" more than "toward or away from the camera": D pct 98.6; T 21 and 82 photos, d -0.71, pct 7.3 -> not held, distinctive no; T_null not held
+every: 14 rows
+   Row 1. Q1 "left" more than "right": D pct 93.9; T 21 and 16 photos, d -0.15, pct 55.5 -> not held, distinctive no; T_null not held
+   Row 2. Q1 "toward or away from the camera" more than "left": D pct 93.1; T 82 and 21 photos, d +0.71, pct 92.5 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "toward or away from the camera" more than "right": D pct 96.5; T 82 and 16 photos, d +0.62, pct 95.1 -> held, distinctive no; T_null not held
+   Row 4. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 85.6; T 59 and 12 photos, d +0.70, pct 75.0 -> not held, distinctive no; T_null not held
+   Row 5. Q2 "more than three quarters" more than "less than a quarter": D pct 81.7; T 50 and 12 photos, d +1.34, pct 94.3 -> not held, distinctive no; T_null not held
+   Row 6. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 65.7; T 50 and 59 photos, d +0.56, pct 87.4 -> not held, distinctive no; T_null not held
+   Row 7. Q3 "partly cut off" more than "fully inside the photo": D pct 53.3; T 89 and 32 photos, d +0.78, pct 86.8 -> not held, distinctive no; T_null not held
+   Row 8. Q4 "right third" more than "middle third": D pct 83.5; T 7 and 107 photos, d -0.59, pct 11.4 -> not held, distinctive no; T_null not held
+   Row 9. Q5 "medium" more than "bright": D pct 83.5; T 90 and 28 photos, d +0.08, pct 47.6 -> not held, distinctive no; T_null not held
+   Row 10. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 72.8; T 46 and 61 photos, d -0.40, pct 7.3 -> not held, distinctive no; T_null not held
+   Row 11. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 81.7; T 61 and 11 photos, d +1.00, pct 95.9 -> held, distinctive yes; T_null not held
+   Row 12. Q6 "warm (yellow, orange or red) tint" more than "cool (blue or green) tint": D pct 95.3; T 46 and 11 photos, d +0.71, pct 81.3 -> not held, distinctive no; T_null not held
+   Row 13. Q7 "no horizon or straight lines visible" more than "level": D pct 88.0; T 74 and 37 photos, d +0.54, pct 97.0 -> held, distinctive no; T_null not held
+   Row 14. Q8 "sharp" more than "slightly blurry": D pct 92.3; T 92 and 29 photos, d +0.58, pct 84.1 -> not held, distinctive no; T_null not held
+tally real_s1: real held 1, not held 3, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s2: real held 1, not held 2, too few 0; null held 0, not held 3, too few 0 (of 3 rows)
+tally real_s3: real held 1, not held 3, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s1: real held 0, not held 1, too few 0; null held 0, not held 1, too few 0 (of 1 rows)
+tally null_s2: real held 0, not held 2, too few 0; null held 0, not held 2, too few 0 (of 2 rows)
+tally null_s3: real held 0, not held 2, too few 0; null held 0, not held 2, too few 0 (of 2 rows)
+tally rule_real: real held 1, not held 1, too few 0; null held 0, not held 2, too few 0 (of 2 rows)
+tally rule_null: real held 0, not held 1, too few 0; null held 0, not held 1, too few 0 (of 1 rows)
+tally every: real held 3, not held 11, too few 0; null held 0, not held 14, too few 0 (of 14 rows)
+== mixed5a:160
+mixed5a:160 readings.json ['real_s1', 'real_s2', 'real_s3', 'null_s1', 'null_s2', 'null_s3']
+== mixed5a:160  layer mixed5a (832 channels), 111 photos looked at (D), 129 photos checked (T); table rows: real 28, null 28
+classes: beach wagon (436), ambulance (407), fire engine (555), police van (734), minibus (654), redshank (141), grille (581), minivan (656), impala (352), trolleybus (874), dowitcher (142), red-backed sandpiper (140), ruddy turnstone (139), garbage truck (569), tow truck (864), sports car (817), oystercatcher (143), bicycle-built-for-two (444), jeep (609), trailer truck (867), cab (468), school bus (779), redbone (168), black stork (128)
+peers: mixed5a:175 (r 0.534), mixed5a:84 (r 0.510), mixed5a:282 (r 0.504)
+real table:
+   Row 1. Q1 "right" (34) more than "left" (42): d +0.58, pct 99.2; similar units 40.5, 85.0, 58.2; gap +37.9
+   Row 2. Q1 "toward or away from the camera" (23) more than "left" (42): d +0.40, pct 85.7; similar units 5.9, 80.4, 26.0; gap +48.3
+   Row 3. Q1 "left" (42) more than "no clear facing direction or no single main subject" (12): d +0.35, pct 73.4; similar units 88.1, 85.5, 65.1; gap -6.1
+   Row 4. Q1 "right" (34) more than "toward or away from the camera" (23): d +0.23, pct 74.4; similar units 89.4, 46.2, 76.6; gap +3.7
+   Row 5. Q1 "right" (34) more than "no clear facing direction or no single main subject" (12): d +0.94, pct 97.8; similar units 79.4, 88.9, 68.1; gap +19.0
+   Row 6. Q1 "toward or away from the camera" (23) more than "no clear facing direction or no single main subject" (12): d +0.80, pct 92.4; similar units 46.2, 88.2, 46.9; gap +32.0
+   Row 7. Q2 "a quarter to three quarters" (58) more than "less than a quarter" (14): d +0.65, pct 95.1; similar units 75.5, 76.0, 71.9; gap +20.6
+   Row 8. Q2 "more than three quarters" (25) more than "less than a quarter" (14): d +0.28, pct 55.4; similar units 33.3, 58.3, 21.2; gap +17.8
+   Row 9. Q2 "less than a quarter" (14) more than "no single main subject" (14): d +0.25, pct 72.8; similar units 81.5, 72.4, 71.3; gap -2.2
+   Row 10. Q2 "a quarter to three quarters" (58) more than "more than three quarters" (25): d +0.33, pct 89.3; similar units 88.8, 58.3, 95.0; gap +8.6
+   Row 11. Q2 "a quarter to three quarters" (58) more than "no single main subject" (14): d +0.84, pct 96.5; similar units 89.4, 85.6, 82.3; gap +10.7
+   Row 12. Q2 "more than three quarters" (25) more than "no single main subject" (14): d +0.46, pct 75.1; similar units 62.0, 77.3, 37.0; gap +16.3
+   Row 13. Q3 "partly cut off" (67) more than "fully inside the photo" (30): d +0.16, pct 59.6; similar units 39.4, 30.5, 23.9; gap +28.3
+   Row 14. Q3 "fully inside the photo" (30) more than "no single main subject" (14): d +0.56, pct 88.9; similar units 84.6, 85.6, 81.6; gap +5.0
+   Row 15. Q3 "partly cut off" (67) more than "no single main subject" (14): d +0.69, pct 90.5; similar units 84.4, 83.5, 62.3; gap +13.8
+   Row 16. Q4 "middle third" (92) more than "no single main subject" (14): d +0.62, pct 89.9; similar units 82.3, 87.1, 69.4; gap +10.3
+   Row 17. Q5 "medium" (67) more than "bright" (32): d +0.20, pct 82.5; similar units 92.7, 59.7, 85.0; gap +3.3
+   Row 18. Q5 "medium" (67) more than "no single main subject" (11): d +0.63, pct 90.7; similar units 92.3, 95.9, 88.1; gap -1.4
+   Row 19. Q5 "bright" (32) more than "no single main subject" (11): d +0.38, pct 71.0; similar units 74.9, 86.4, 60.9; gap -3.0
+   Row 20. Q6 "no noticeable tint" (71) more than "warm (yellow, orange or red) tint" (24): d +0.28, pct 81.5; similar units 50.7, 14.9, 68.3; gap +36.9
+   Row 21. Q6 "no noticeable tint" (71) more than "cool (blue or green) tint" (13): d +0.08, pct 41.9; similar units 31.7, 8.2, 35.3; gap +16.9
+   Row 22. Q6 "cool (blue or green) tint" (13) more than "warm (yellow, orange or red) tint" (24): d +0.20, pct 76.0; similar units 65.6, 65.9, 71.0; gap +8.5
+   Row 23. Q7 "level" (72) more than "noticeably tilted" (11): d +0.69, pct 95.3; similar units 94.2, 44.8, 97.5; gap +16.5
+   Row 24. Q7 "no horizon or straight lines visible" (28) more than "level" (72): d +0.02, pct 51.0; similar units 8.4, 87.0, 11.7; gap +15.3
+   Row 25. Q7 "no horizon or straight lines visible" (28) more than "noticeably tilted" (11): d +0.64, pct 93.4; similar units 81.7, 64.1, 94.6; gap +13.3
+   Row 26. Q8 "sharp" (84) more than "slightly blurry" (13): d +0.69, pct 98.4; similar units 82.8, 34.3, 82.3; gap +32.0
+   Row 27. Q8 "sharp" (84) more than "no single main subject" (14): d +0.73, pct 94.4; similar units 84.7, 84.0, 71.9; gap +14.1
+   Row 28. Q8 "slightly blurry" (13) more than "no single main subject" (14): d +0.06, pct 54.0; similar units 70.6, 84.9, 46.0; gap -13.2
+real_s1  rows [1, 5, 26, 7]  The unit responds to vehicles and wading birds (and similar elongated subjects) seen in side view facing or pointing right, framed at medium size (filling a quarter to three quarters of the photo), sh
+real_s2  rows [1, 5, 26, 11]  The unit responds to vehicles and wading birds shown side-on, especially facing right. It is most active when one clear, sharp main subject sits in the middle of the frame, fills a moderate share of i
+real_s3  rows [1, 5, 26, 7]  The unit responds to vehicles and wading birds, the classes it is most active on. Within those classes it is most active when a single, sharp, level main subject faces or points to the right and fills
+null_s1  rows [21, 12, 10, 20]  The unit responds to vehicles (cars, vans, trucks, buses) and shorebirds. Within those classes it is somewhat more active when the subject is large and fills the frame (more than three quarters, often
+null_s2  rows [20, 23, 21, 8]  The unit responds to vehicles (cars, vans, trucks, buses) and shorebirds. Within those classes it is somewhat more active when the subject is large and fills the frame. It also responds more to photos
+null_s3  rows [8, 12, 21, 19]  The unit responds mostly to vehicles (vans, buses, emergency trucks, cars, grilles) and some wading shorebirds. Within those classes, the composition effects are weak and none reach the 95th percentil
+real_s1: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.2; T 56 and 34 photos, d -0.20, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 97.8; T 56 and 12 photos, d +0.83, pct 95.0 -> not held, distinctive no; T_null not held
+   Row 26. Q8 "sharp" more than "slightly blurry": D pct 98.4; T 109 and 8 photos, d +0.95, pct 99.3 -> held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 95.1; T 70 and 10 photos, d +0.55, pct 84.3 -> not held, distinctive no; T_null not held
+real_s2: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.2; T 56 and 34 photos, d -0.20, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 97.8; T 56 and 12 photos, d +0.83, pct 95.0 -> not held, distinctive no; T_null not held
+   Row 26. Q8 "sharp" more than "slightly blurry": D pct 98.4; T 109 and 8 photos, d +0.95, pct 99.3 -> held, distinctive no; T_null not held
+   Row 11. Q2 "a quarter to three quarters" more than "no single main subject": D pct 96.5; T 70 and 10 photos, d +0.90, pct 96.5 -> held, distinctive no; T_null not held
+real_s3: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.2; T 56 and 34 photos, d -0.20, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 97.8; T 56 and 12 photos, d +0.83, pct 95.0 -> not held, distinctive no; T_null not held
+   Row 26. Q8 "sharp" more than "slightly blurry": D pct 98.4; T 109 and 8 photos, d +0.95, pct 99.3 -> held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 95.1; T 70 and 10 photos, d +0.55, pct 84.3 -> not held, distinctive no; T_null not held
+null_s1: 4 rows
+   Row 21. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 85.6; T 11 and 86 photos, d -0.34, pct 24.0 -> not held, distinctive no; T_null not held
+   Row 12. Q2 "more than three quarters" more than "no single main subject": D pct 85.1; T 39 and 10 photos, d +0.76, pct 91.7 -> not held, distinctive no; T_null not held
+   Row 10. Q2 "more than three quarters" more than "a quarter to three quarters": D pct 81.1; T 39 and 70 photos, d -0.09, pct 28.0 -> not held, distinctive no; T_null not held
+   Row 20. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 92.5; T 27 and 86 photos, d -0.19, pct 26.2 -> not held, distinctive no; T_null not held
+null_s2: 4 rows
+   Row 20. Q6 "warm (yellow, orange or red) tint" more than "no noticeable tint": D pct 92.5; T 27 and 86 photos, d -0.19, pct 26.2 -> not held, distinctive no; T_null not held
+   Row 23. Q7 "level" more than "noticeably tilted": D pct 93.1; T 102 and 8 photos, d +0.39, pct 71.8 -> not held, distinctive no; T_null not held
+   Row 21. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 85.6; T 11 and 86 photos, d -0.34, pct 24.0 -> not held, distinctive no; T_null not held
+   Row 8. Q2 "more than three quarters" more than "less than a quarter": D pct 87.9; T 39 and 10 photos, d +0.45, pct 67.1 -> not held, distinctive no; T_null not held
+null_s3: 4 rows
+   Row 8. Q2 "more than three quarters" more than "less than a quarter": D pct 87.9; T 39 and 10 photos, d +0.45, pct 67.1 -> not held, distinctive no; T_null not held
+   Row 12. Q2 "more than three quarters" more than "no single main subject": D pct 85.1; T 39 and 10 photos, d +0.76, pct 91.7 -> not held, distinctive no; T_null not held
+   Row 21. Q6 "cool (blue or green) tint" more than "no noticeable tint": D pct 85.6; T 11 and 86 photos, d -0.34, pct 24.0 -> not held, distinctive no; T_null not held
+   Row 19. Q5 "bright" more than "no single main subject": D pct 85.3; T 38 and 9 photos, d +0.79, pct 92.2 -> not held, distinctive no; T_null not held
+rule_real: 4 rows
+   Row 1. Q1 "right" more than "left": D pct 99.2; T 56 and 34 photos, d -0.20, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 26. Q8 "sharp" more than "slightly blurry": D pct 98.4; T 109 and 8 photos, d +0.95, pct 99.3 -> held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 95.1; T 70 and 10 photos, d +0.55, pct 84.3 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 97.8; T 56 and 12 photos, d +0.83, pct 95.0 -> not held, distinctive no; T_null not held
+rule_null: 0 rows
+every: 28 rows
+   Row 1. Q1 "right" more than "left": D pct 99.2; T 56 and 34 photos, d -0.20, pct 17.9 -> not held, distinctive no; T_null not held
+   Row 2. Q1 "toward or away from the camera" more than "left": D pct 85.7; T 27 and 34 photos, d -0.50, pct 10.9 -> not held, distinctive no; T_null not held
+   Row 3. Q1 "left" more than "no clear facing direction or no single main subject": D pct 73.4; T 34 and 12 photos, d +1.07, pct 98.3 -> held, distinctive no; T_null not held
+   Row 4. Q1 "right" more than "toward or away from the camera": D pct 74.4; T 56 and 27 photos, d +0.22, pct 72.1 -> not held, distinctive no; T_null not held
+   Row 5. Q1 "right" more than "no clear facing direction or no single main subject": D pct 97.8; T 56 and 12 photos, d +0.83, pct 95.0 -> not held, distinctive no; T_null not held
+   Row 6. Q1 "toward or away from the camera" more than "no clear facing direction or no single main subject": D pct 92.4; T 27 and 12 photos, d +0.75, pct 94.0 -> not held, distinctive no; T_null not held
+   Row 7. Q2 "a quarter to three quarters" more than "less than a quarter": D pct 95.1; T 70 and 10 photos, d +0.55, pct 84.3 -> not held, distinctive no; T_null not held
+   Row 8. Q2 "more than three quarters" more than "less than a quarter": D pct 55.4; T 39 and 10 photos, d +0.45, pct 67.1 -> not held, distinctive no; T_null not held
+   Row 9. Q2 "less than a quarter" more than "no single main subject": D pct 72.8; T 10 and 10 photos, d +0.41, pct 83.3 -> not held, distinctive no; T_null not held
+   Row 10. Q2 "a quarter to three quarters" more than "more than three quarters": D pct 89.3; T 70 and 39 photos, d +0.09, pct 71.9 -> not held, distinctive no; T_null not held
+   Row 11. Q2 "a quarter to three quarters" more than "no single main subject": D pct 96.5; T 70 and 10 photos, d +0.90, pct 96.5 -> held, distinctive no; T_null not held
+   Row 12. Q2 "more than three quarters" more than "no single main subject": D pct 75.1; T 39 and 10 photos, d +0.76, pct 91.7 -> not held, distinctive no; T_null not held
+   Row 13. Q3 "partly cut off" more than "fully inside the photo": D pct 59.6; T 82 and 37 photos, d +0.14, pct 59.5 -> not held, distinctive no; T_null not held
+   Row 14. Q3 "fully inside the photo" more than "no single main subject": D pct 88.9; T 37 and 10 photos, d +0.72, pct 93.0 -> not held, distinctive no; T_null not held
+   Row 15. Q3 "partly cut off" more than "no single main subject": D pct 90.5; T 82 and 10 photos, d +0.88, pct 95.8 -> held, distinctive no; T_null not held
+   Row 16. Q4 "middle third" more than "no single main subject": D pct 89.9; T 105 and 12 photos, d +0.87, pct 96.3 -> held, distinctive no; T_null not held
+   Row 17. Q5 "medium" more than "bright": D pct 82.5; T 81 and 38 photos, d -0.11, pct 32.8 -> not held, distinctive no; T_null not held
+   Row 18. Q5 "medium" more than "no single main subject": D pct 90.7; T 81 and 9 photos, d +0.89, pct 96.2 -> held, distinctive no; T_null not held
+   Row 19. Q5 "bright" more than "no single main subject": D pct 71.0; T 38 and 9 photos, d +0.79, pct 92.2 -> not held, distinctive no; T_null not held
+   Row 20. Q6 "no noticeable tint" more than "warm (yellow, orange or red) tint": D pct 81.5; T 86 and 27 photos, d +0.19, pct 73.7 -> not held, distinctive no; T_null not held
+   Row 21. Q6 "no noticeable tint" more than "cool (blue or green) tint": D pct 41.9; T 86 and 11 photos, d +0.34, pct 75.8 -> not held, distinctive no; T_null not held
+   Row 22. Q6 "cool (blue or green) tint" more than "warm (yellow, orange or red) tint": D pct 76.0; T 11 and 27 photos, d -0.13, pct 44.8 -> not held, distinctive no; T_null not held
+   Row 23. Q7 "level" more than "noticeably tilted": D pct 95.3; T 102 and 8 photos, d +0.39, pct 71.8 -> not held, distinctive no; T_null not held
+   Row 24. Q7 "no horizon or straight lines visible" more than "level": D pct 51.0; T 19 and 102 photos, d -0.54, pct 3.8 -> not held, distinctive no; T_null not held
+   Row 25. Q7 "no horizon or straight lines visible" more than "noticeably tilted": D pct 93.4; T 19 and 8 photos, d -0.20, pct 29.8 -> not held, distinctive no; T_null not held
+   Row 26. Q8 "sharp" more than "slightly blurry": D pct 98.4; T 109 and 8 photos, d +0.95, pct 99.3 -> held, distinctive no; T_null not held
+   Row 27. Q8 "sharp" more than "no single main subject": D pct 94.4; T 109 and 12 photos, d +0.91, pct 97.1 -> held, distinctive no; T_null not held
+   Row 28. Q8 "slightly blurry" more than "no single main subject": D pct 54.0; T 8 and 12 photos, d +0.02, pct 44.7 -> not held, distinctive no; T_null not held
+tally real_s1: real held 1, not held 3, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s2: real held 2, not held 2, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally real_s3: real held 1, not held 3, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s1: real held 0, not held 4, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s2: real held 0, not held 4, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally null_s3: real held 0, not held 4, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally rule_real: real held 1, not held 3, too few 0; null held 0, not held 4, too few 0 (of 4 rows)
+tally rule_null: real held 0, not held 0, too few 0; null held 0, not held 0, too few 0 (of 0 rows)
+tally every: real held 7, not held 21, too few 0; null held 0, not held 28, too few 0 (of 28 rows)
+tables part 1/3: readings not cached []

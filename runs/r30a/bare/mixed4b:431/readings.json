@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:431",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the fur of dogs, especially on the head, ears and neck/chest. It responds more weakly to the fur of other furry mammals such as wild canids, hyenas, monkeys, hamsters, squirrels and minks.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the fur of dogs, especially on the head, ears and neck/chest. It responds more weakly to the fur of other furry mammals such as wild canids, hyenas, monkeys, hamsters, squirrels and minks.",
+   "evidence": "Most top activations (13 of 20) are dogs, with boxes on furry head, ear or chest regions; the rest are other furry mammals (dhole, proboscis monkey, hyena, capuchin, hamster, squirrel, mink) at slightly lower values. Random non-mammal images score low (0-4).",
+   "missing_data": "Activations on furry mammals that are not dogs (cats, bears, rabbits) and on fur-like textures that are not animals (fleece, rugs) would show whether it encodes dogs specifically or mammal fur texture in general.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the fur of dogs, especially on the head, ears and neck/chest. It responds more weakly to the fur of other furry mammals such as wild canids, hyenas, monkeys, hamsters, squirrels and minks.\",\n \"evidence\": \"Most top activations (13 of 20) are dogs, with boxes on furry head, ear or chest regions; the rest are other furry mammals (dhole, proboscis monkey, hyena, capuchin, hamster, squirrel, mink) at slightly lower values. Random non-mammal images score low (0-4).\",\n \"missing_data\": \"Activations on furry mammals that are not dogs (cats, bears, rabbits) and on fur-like textures that are not animals (fleece, rugs) would show whether it encodes dogs specifically or mammal fur texture in general.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the fur of dogs, especially on the head, ears and neck/chest. It responds more weakly to the fur of other furry mammals such as wild canids, hyenas, monkeys, hamsters, squirrels and minks.\",\n \"evidence\": \"Most top activations (13 of 20) are dogs, with boxes on furry head, ear or chest regions; the rest are other furry mammals (dhole, proboscis monkey, hyena, capuchin, hamster, squirrel, mink) at slightly lower values. Random non-mammal images score low (0-4).\",\n \"missing_data\": \"Activations on furry mammals that are not dogs (cats, bears, rabbits) and on fur-like textures that are not animals (fleece, rugs) would show whether it encodes dogs specifically or mammal fur texture in general.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:431",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to furry mammal fur and coat texture, mostly on dogs' heads, ears and shoulders. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, hamster, squirrel and mink.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to furry mammal fur and coat texture, mostly on dogs' heads, ears and shoulders. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, hamster, squirrel and mink.",
+   "evidence": "Most top activations (9 to 10) are dogs, with the red boxes on furry ears, cheeks and necks, and the non-dog animals in the top 20 are all furry mammals. The random photos (fish, crocodile, beetle, objects, flowers) score low, at 0 to 4.",
+   "missing_data": "Activations on non-mammal furry or fuzzy textures (plush toys, fur coats, wool) and on hairless or short-coated dogs would show whether the unit tracks fur texture or dog/mammal identity.",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, mostly on dogs' heads, ears and shoulders. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, hamster, squirrel and mink.\",\n \"evidence\": \"Most top activations (9 to 10) are dogs, with the red boxes on furry ears, cheeks and necks, and the non-dog animals in the top 20 are all furry mammals. The random photos (fish, crocodile, beetle, objects, flowers) score low, at 0 to 4.\",\n \"missing_data\": \"Activations on non-mammal furry or fuzzy textures (plush toys, fur coats, wool) and on hairless or short-coated dogs would show whether the unit tracks fur texture or dog/mammal identity.\",\n \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to furry mammal fur and coat texture, mostly on dogs' heads, ears and shoulders. It also fires more weakly on other furry mammals such as a dhole, hyena, monkeys, hamster, squirrel and mink.\",\n \"evidence\": \"Most top activations (9 to 10) are dogs, with the red boxes on furry ears, cheeks and necks, and the non-dog animals in the top 20 are all furry mammals. The random photos (fish, crocodile, beetle, objects, flowers) score low, at 0 to 4.\",\n \"missing_data\": \"Activations on non-mammal furry or fuzzy textures (plush toys, fur coats, wool) and on hairless or short-coated dogs would show whether the unit tracks fur texture or dog/mammal identity.\",\n \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:431",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "7af09547a1f327ad22e5f8658c33c5b445fd7ef0fac5462a0b7e052b5fc983ef",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to soft, densely packed, fine-strand texture, mostly in warm brown, tan or grey tones, with smooth shading. It peaks where such a textured patch sits along a gently curved edge or fold.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to soft, densely packed, fine-strand texture, mostly in warm brown, tan or grey tones, with smooth shading. It peaks where such a textured patch sits along a gently curved edge or fold.",
+   "evidence": "All 20 top-activating boxes fall on matte, fine-grained, strand-like texture with soft tonal gradients, across many color variants from orange-tan to black and grey. Random images that lack this texture, such as smooth, glossy, scaly or hard-edged surfaces, score only 0-4.",
+   "missing_data": "Images with similar soft strand texture in an unrelated context, such as fabric or synthetic material, would show whether the texture alone drives the unit or whether the surrounding layout matters.",
+   "confidence": 0.75
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to soft, densely packed, fine-strand texture, mostly in warm brown, tan or grey tones, with smooth shading. It peaks where such a textured patch sits along a gently curved edge or fold.\",\n \"evidence\": \"All 20 top-activating boxes fall on matte, fine-grained, strand-like texture with soft tonal gradients, across many color variants from orange-tan to black and grey. Random images that lack this texture, such as smooth, glossy, scaly or hard-edged surfaces, score only 0-4.\",\n \"missing_data\": \"Images with similar soft strand texture in an unrelated context, such as fabric or synthetic material, would show whether the texture alone drives the unit or whether the surrounding layout matters.\",\n \"confidence\": 0.75}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to soft, densely packed, fine-strand texture, mostly in warm brown, tan or grey tones, with smooth shading. It peaks where such a textured patch sits along a gently curved edge or fold.\",\n \"evidence\": \"All 20 top-activating boxes fall on matte, fine-grained, strand-like texture with soft tonal gradients, across many color variants from orange-tan to black and grey. Random images that lack this texture, such as smooth, glossy, scaly or hard-edged surfaces, score only 0-4.\",\n \"missing_data\": \"Images with similar soft strand texture in an unrelated context, such as fabric or synthetic material, would show whether the texture alone drives the unit or whether the surrounding layout matters.\",\n \"confidence\": 0.75}\n```"
+  ],
+  "attempts": 1
+ }
+}

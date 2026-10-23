@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4a:222",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "9f8f3c2793aa252338a44954e6f0a8ffd418dfa49832e89044e7eb0664710afd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "Responds to the snout/muzzle region of mammal faces, especially the elongated muzzles of dogs, foxes, wolves and antelopes, with weaker extension to other pointed animal faces like a bird beak and a meerkat snout.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "Responds to the snout/muzzle region of mammal faces, especially the elongated muzzles of dogs, foxes, wolves and antelopes, with weaker extension to other pointed animal faces like a bird beak and a meerkat snout.",
+   "evidence": "Nearly all top-20 boxes center on an animal's muzzle/nose-eye area (gazelle #1, dogs #2-8, fox #10, antelopes #18-19). Weaker hits are on a sandpiper beak (#9), meerkat snout (#13) and red panda face (#16), while random non-animal images score 0-2 (the shorebirds score 2).",
+   "missing_data": "Activation maps on isolated muzzles versus whole heads and bodies, and on non-animal pointed shapes, to separate 'muzzle' from a general 'animal face' or 'pointed protrusion' feature; also an explanation for the outliers #12 and #14 (a leg/ground and a woman's feet).",
+   "confidence": 0.7
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the snout/muzzle region of mammal faces, especially the elongated muzzles of dogs, foxes, wolves and antelopes, with weaker extension to other pointed animal faces like a bird beak and a meerkat snout.\", \"evidence\": \"Nearly all top-20 boxes center on an animal's muzzle/nose-eye area (gazelle #1, dogs #2-8, fox #10, antelopes #18-19). Weaker hits are on a sandpiper beak (#9), meerkat snout (#13) and red panda face (#16), while random non-animal images score 0-2 (the shorebirds score 2).\", \"missing_data\": \"Activation maps on isolated muzzles versus whole heads and bodies, and on non-animal pointed shapes, to separate 'muzzle' from a general 'animal face' or 'pointed protrusion' feature; also an explanation for the outliers #12 and #14 (a leg/ground and a woman's feet).\", \"confidence\": 0.7}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"Responds to the snout/muzzle region of mammal faces, especially the elongated muzzles of dogs, foxes, wolves and antelopes, with weaker extension to other pointed animal faces like a bird beak and a meerkat snout.\", \"evidence\": \"Nearly all top-20 boxes center on an animal's muzzle/nose-eye area (gazelle #1, dogs #2-8, fox #10, antelopes #18-19). Weaker hits are on a sandpiper beak (#9), meerkat snout (#13) and red panda face (#16), while random non-animal images score 0-2 (the shorebirds score 2).\", \"missing_data\": \"Activation maps on isolated muzzles versus whole heads and bodies, and on non-animal pointed shapes, to separate 'muzzle' from a general 'animal face' or 'pointed protrusion' feature; also an explanation for the outliers #12 and #14 (a leg/ground and a woman's feet).\", \"confidence\": 0.7}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4a:222",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "9f8f3c2793aa252338a44954e6f0a8ffd418dfa49832e89044e7eb0664710afd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to the snout or muzzle region of mammal faces, especially elongated canid and antelope muzzles (dogs, fox, gazelle, hartebeest). It responds more weakly to other pointed facial protrusions such as a bird's beak and a meerkat's nose.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to the snout or muzzle region of mammal faces, especially elongated canid and antelope muzzles (dogs, fox, gazelle, hartebeest). It responds more weakly to other pointed facial protrusions such as a bird's beak and a meerkat's nose.",
+   "evidence": "The red boxes in 17 of the top 20 photos sit on the nose and muzzle of dogs, foxes, antelopes, a meerkat and a red panda, and #9 boxes a sandpiper's bill. Outliers are rare and weak (#12 dog legs, #14 a woman's feet), and random images stay at 0-2, with long-billed shorebirds reaching only 2.",
+   "missing_data": "Controlled crops comparing a muzzle alone with the eyes and ears alone, plus frontal versus profile faces and non-animal pointed shapes, would show whether the unit codes the snout itself or the whole face.",
+   "confidence": 0.7
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the snout or muzzle region of mammal faces, especially elongated canid and antelope muzzles (dogs, fox, gazelle, hartebeest). It responds more weakly to other pointed facial protrusions such as a bird's beak and a meerkat's nose.\",\n \"evidence\": \"The red boxes in 17 of the top 20 photos sit on the nose and muzzle of dogs, foxes, antelopes, a meerkat and a red panda, and #9 boxes a sandpiper's bill. Outliers are rare and weak (#12 dog legs, #14 a woman's feet), and random images stay at 0-2, with long-billed shorebirds reaching only 2.\",\n \"missing_data\": \"Controlled crops comparing a muzzle alone with the eyes and ears alone, plus frontal versus profile faces and non-animal pointed shapes, would show whether the unit codes the snout itself or the whole face.\",\n \"confidence\": 0.7}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to the snout or muzzle region of mammal faces, especially elongated canid and antelope muzzles (dogs, fox, gazelle, hartebeest). It responds more weakly to other pointed facial protrusions such as a bird's beak and a meerkat's nose.\",\n \"evidence\": \"The red boxes in 17 of the top 20 photos sit on the nose and muzzle of dogs, foxes, antelopes, a meerkat and a red panda, and #9 boxes a sandpiper's bill. Outliers are rare and weak (#12 dog legs, #14 a woman's feet), and random images stay at 0-2, with long-billed shorebirds reaching only 2.\",\n \"missing_data\": \"Controlled crops comparing a muzzle alone with the eyes and ears alone, plus frontal versus profile faces and non-animal pointed shapes, would show whether the unit codes the snout itself or the whole face.\",\n \"confidence\": 0.7}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4a:222",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "9f8f3c2793aa252338a44954e6f0a8ffd418dfa49832e89044e7eb0664710afd",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to a tapering, wedge-shaped protrusion that narrows to a small dark rounded tip, usually with a small dark spot set just above or behind it, on smooth warm tan, cream or two-toned surfaces. Weaker responses extend to other elongated, pointed tapering forms, including thin dark ones without the tip-and-spot arrangement.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to a tapering, wedge-shaped protrusion that narrows to a small dark rounded tip, usually with a small dark spot set just above or behind it, on smooth warm tan, cream or two-toned surfaces. Weaker responses extend to other elongated, pointed tapering forms, including thin dark ones without the tip-and-spot arrangement.",
+   "evidence": "Most of the top 20 boxes sit on a narrowing pointed form with a dark endpoint and a nearby dark spot (#1-8, #10, #11, #13, #15, #16, #18-20), and #9 is a thinner pointed taper at activation 6. Random images without such tapered pointed forms score 0-2, and the weaker hits #12, #14 and #17 fall on less clearly matching regions, so those may be noise.",
+   "missing_data": "Activations on isolated tapered shapes with and without the dark tip and spot, and on similar shapes rendered in cool or unusual colors, to separate shape from color and texture.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a tapering, wedge-shaped protrusion that narrows to a small dark rounded tip, usually with a small dark spot set just above or behind it, on smooth warm tan, cream or two-toned surfaces. Weaker responses extend to other elongated, pointed tapering forms, including thin dark ones without the tip-and-spot arrangement.\",\n \"evidence\": \"Most of the top 20 boxes sit on a narrowing pointed form with a dark endpoint and a nearby dark spot (#1-8, #10, #11, #13, #15, #16, #18-20), and #9 is a thinner pointed taper at activation 6. Random images without such tapered pointed forms score 0-2, and the weaker hits #12, #14 and #17 fall on less clearly matching regions, so those may be noise.\",\n \"missing_data\": \"Activations on isolated tapered shapes with and without the dark tip and spot, and on similar shapes rendered in cool or unusual colors, to separate shape from color and texture.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to a tapering, wedge-shaped protrusion that narrows to a small dark rounded tip, usually with a small dark spot set just above or behind it, on smooth warm tan, cream or two-toned surfaces. Weaker responses extend to other elongated, pointed tapering forms, including thin dark ones without the tip-and-spot arrangement.\",\n \"evidence\": \"Most of the top 20 boxes sit on a narrowing pointed form with a dark endpoint and a nearby dark spot (#1-8, #10, #11, #13, #15, #16, #18-20), and #9 is a thinner pointed taper at activation 6. Random images without such tapered pointed forms score 0-2, and the weaker hits #12, #14 and #17 fall on less clearly matching regions, so those may be noise.\",\n \"missing_data\": \"Activations on isolated tapered shapes with and without the dark tip and spot, and on similar shapes rendered in cool or unusual colors, to separate shape from color and texture.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ }
+}

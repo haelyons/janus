@@ -1,0 +1,104 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to vehicles (buses, trucks, cars, locomotives) whose front points to the right of the frame. It is much more active for right-facing subjects than for left-facing, head-on/rear views, or scenes with no single subject. It also prefers sharp, level, well-framed subjects, but similar units share that preference. The right-facing preference is what sets this unit apart.",
+  "rows": [
+   4,
+   1,
+   5
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d19a17333fc6f1b28fe0752c091c5653cbd05e8789ddfcb1a5c3c0de2295b6f8",
+  "texts": [
+   "{\"explanation\": \"The unit responds to vehicles (buses, trucks, cars, locomotives) whose front points to the right of the frame. It is much more active for right-facing subjects than for left-facing, head-on/rear views, or scenes with no single subject. It also prefers sharp, level, well-framed subjects, but similar units share that preference. The right-facing preference is what sets this unit apart.\", \"rows\": [4, 1, 5]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to vehicles (buses, trucks, cars, locomotives) whose front points to the right of the frame. It is much more active for right-facing subjects than for left-facing, head-on/rear views, or scenes with no single subject. It also prefers sharp, level, well-framed subjects, but similar units share that preference. The right-facing preference is what sets this unit apart.\", \"rows\": [4, 1, 5]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "This unit responds to vehicles (buses, trucks, vans, cars, locomotives) shown facing or pointing to the right. It is clearly more active for right-facing subjects than for left-facing, head-on/away, or no-clear-direction subjects. Its preference for sharp, level, well-framed subjects is weaker and largely shared with similar units. The right-facing orientation preference is what sets it apart.",
+  "rows": [
+   1,
+   4,
+   5
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d19a17333fc6f1b28fe0752c091c5653cbd05e8789ddfcb1a5c3c0de2295b6f8",
+  "texts": [
+   "{\"explanation\": \"This unit responds to vehicles (buses, trucks, vans, cars, locomotives) shown facing or pointing to the right. It is clearly more active for right-facing subjects than for left-facing, head-on/away, or no-clear-direction subjects. Its preference for sharp, level, well-framed subjects is weaker and largely shared with similar units. The right-facing orientation preference is what sets it apart.\", \"rows\": [1, 4, 5]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to vehicles (buses, trucks, vans, cars, locomotives) shown facing or pointing to the right. It is clearly more active for right-facing subjects than for left-facing, head-on/away, or no-clear-direction subjects. Its preference for sharp, level, well-framed subjects is weaker and largely shared with similar units. The right-facing orientation preference is what sets it apart.\", \"rows\": [1, 4, 5]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "This unit responds to vehicles (buses, trucks, vans, locomotives and similar) shown side-on and facing or pointing to the right. It fires much more for right-facing subjects than for left-facing, head-on/rear, or directionless views. It is somewhat higher for sharp, level, well-framed single subjects, but its similar units share that preference. The right-facing direction preference is what stands out most for this unit.",
+  "rows": [
+   1,
+   4,
+   5
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d19a17333fc6f1b28fe0752c091c5653cbd05e8789ddfcb1a5c3c0de2295b6f8",
+  "texts": [
+   "{\"explanation\": \"This unit responds to vehicles (buses, trucks, vans, locomotives and similar) shown side-on and facing or pointing to the right. It fires much more for right-facing subjects than for left-facing, head-on/rear, or directionless views. It is somewhat higher for sharp, level, well-framed single subjects, but its similar units share that preference. The right-facing direction preference is what stands out most for this unit.\", \"rows\": [1, 4, 5]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to vehicles (buses, trucks, vans, locomotives and similar) shown side-on and facing or pointing to the right. It fires much more for right-facing subjects than for left-facing, head-on/rear, or directionless views. It is somewhat higher for sharp, level, well-framed single subjects, but its similar units share that preference. The right-facing direction preference is what stands out most for this unit.\", \"rows\": [1, 4, 5]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "This unit responds to vehicles (buses, trucks, emergency and utility vehicles) that look small and distant, taking up less than a quarter of the frame, rather than close-ups that fill the photo. It is also somewhat more active for whole vehicles fully inside the frame, for brightly lit subjects, and for slightly blurry subjects, but those effects are weak. The small-subject preference is partly shared with similar unit 1 (96th percentile on row 8), but it is strongest here.",
+  "rows": [
+   7,
+   8,
+   9
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2ec347d393e640810bed875157d06fa42fda384d0773c805644343214d881b9f",
+  "texts": [
+   "{\"explanation\": \"This unit responds to vehicles (buses, trucks, emergency and utility vehicles) that look small and distant, taking up less than a quarter of the frame, rather than close-ups that fill the photo. It is also somewhat more active for whole vehicles fully inside the frame, for brightly lit subjects, and for slightly blurry subjects, but those effects are weak. The small-subject preference is partly shared with similar unit 1 (96th percentile on row 8), but it is strongest here.\", \"rows\": [7, 8, 9]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to vehicles (buses, trucks, emergency and utility vehicles) that look small and distant, taking up less than a quarter of the frame, rather than close-ups that fill the photo. It is also somewhat more active for whole vehicles fully inside the frame, for brightly lit subjects, and for slightly blurry subjects, but those effects are weak. The small-subject preference is partly shared with similar unit 1 (96th percentile on row 8), but it is strongest here.\", \"rows\": [7, 8, 9]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "Within its vehicle classes, this unit is most active when the vehicle is small in the frame (less than a quarter of the photo), meaning a distant or wide view of a bus, truck or car with lots of surrounding street or scenery. It is less active on close-ups where the vehicle fills the frame. It is also somewhat more active when the subject is brightly lit and slightly blurry, and least active when there is no single main subject. The small-subject preference is strongest. Its contrast against frame-filling subjects (row 8) is shared with a similar unit, so rows 7 and 9 are what set this unit apart.",
+  "rows": [
+   7,
+   9,
+   21
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2ec347d393e640810bed875157d06fa42fda384d0773c805644343214d881b9f",
+  "texts": [
+   "{\"explanation\": \"Within its vehicle classes, this unit is most active when the vehicle is small in the frame (less than a quarter of the photo), meaning a distant or wide view of a bus, truck or car with lots of surrounding street or scenery. It is less active on close-ups where the vehicle fills the frame. It is also somewhat more active when the subject is brightly lit and slightly blurry, and least active when there is no single main subject. The small-subject preference is strongest. Its contrast against frame-filling subjects (row 8) is shared with a similar unit, so rows 7 and 9 are what set this unit apart.\", \"rows\": [7, 9, 21]}"
+  ],
+  "text": "{\"explanation\": \"Within its vehicle classes, this unit is most active when the vehicle is small in the frame (less than a quarter of the photo), meaning a distant or wide view of a bus, truck or car with lots of surrounding street or scenery. It is less active on close-ups where the vehicle fills the frame. It is also somewhat more active when the subject is brightly lit and slightly blurry, and least active when there is no single main subject. The small-subject preference is strongest. Its contrast against frame-filling subjects (row 8) is shared with a similar unit, so rows 7 and 9 are what set this unit apart.\", \"rows\": [7, 9, 21]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "This unit responds to vehicles, including buses, trucks, emergency vehicles, rail cars and vans, when they appear small in the frame. It is clearly more active when the main subject takes up less than a quarter of the photo than when the subject fills more of the frame or there is no single subject. That pattern is mostly particular to this unit, because the similar units are only at the 95th percentile or above on one of those comparisons (row 8, similar unit 1). The unit also leans weakly toward brightly lit, slightly blurry and fully visible subjects, which fits distant vehicles seen within a wider scene.",
+  "rows": [
+   8,
+   9,
+   7
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "2ec347d393e640810bed875157d06fa42fda384d0773c805644343214d881b9f",
+  "texts": [
+   "{\"explanation\": \"This unit responds to vehicles, including buses, trucks, emergency vehicles, rail cars and vans, when they appear small in the frame. It is clearly more active when the main subject takes up less than a quarter of the photo than when the subject fills more of the frame or there is no single subject. That pattern is mostly particular to this unit, because the similar units are only at the 95th percentile or above on one of those comparisons (row 8, similar unit 1). The unit also leans weakly toward brightly lit, slightly blurry and fully visible subjects, which fits distant vehicles seen within a wider scene.\", \"rows\": [8, 9, 7]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to vehicles, including buses, trucks, emergency vehicles, rail cars and vans, when they appear small in the frame. It is clearly more active when the main subject takes up less than a quarter of the photo than when the subject fills more of the frame or there is no single subject. That pattern is mostly particular to this unit, because the similar units are only at the 95th percentile or above on one of those comparisons (row 8, similar unit 1). The unit also leans weakly toward brightly lit, slightly blurry and fully visible subjects, which fits distant vehicles seen within a wider scene.\", \"rows\": [8, 9, 7]}",
+  "valid": true
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:409",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "a3a53bc33247d511afc31a08f33c2b021746aa30d18fea57ab2bd5e77910e649",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to the nose/muzzle area of dog faces seen roughly front-on, with weaker responses to similar snouts on other furry mammals.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to the nose/muzzle area of dog faces seen roughly front-on, with weaker responses to similar snouts on other furry mammals.",
+   "evidence": "The top 13 photos are all dogs, with the red box on the dark nose and muzzle in each (activations 8-10). Lower down, a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) also fire on the same nose/mouth region, while the random photos with no such animals stay at 0-1.",
+   "missing_data": "Activations on other animals' snouts (cats, bears, cattle) and on dog photos with the nose hidden or seen from the side, to tell a dog-specific detector apart from a general mammal-muzzle detector.",
+   "confidence": 0.8
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the nose/muzzle area of dog faces seen roughly front-on, with weaker responses to similar snouts on other furry mammals.\",\n \"evidence\": \"The top 13 photos are all dogs, with the red box on the dark nose and muzzle in each (activations 8-10). Lower down, a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) also fire on the same nose/mouth region, while the random photos with no such animals stay at 0-1.\",\n \"missing_data\": \"Activations on other animals' snouts (cats, bears, cattle) and on dog photos with the nose hidden or seen from the side, to tell a dog-specific detector apart from a general mammal-muzzle detector.\",\n \"confidence\": 0.8}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to the nose/muzzle area of dog faces seen roughly front-on, with weaker responses to similar snouts on other furry mammals.\",\n \"evidence\": \"The top 13 photos are all dogs, with the red box on the dark nose and muzzle in each (activations 8-10). Lower down, a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) also fire on the same nose/mouth region, while the random photos with no such animals stay at 0-1.\",\n \"missing_data\": \"Activations on other animals' snouts (cats, bears, cattle) and on dog photos with the nose hidden or seen from the side, to tell a dog-specific detector apart from a general mammal-muzzle detector.\",\n \"confidence\": 0.8}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:409",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "a3a53bc33247d511afc31a08f33c2b021746aa30d18fea57ab2bd5e77910e649",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds to dog snouts (the dark nose and muzzle region, viewed head-on), with weaker responses to similar snouts on other mammals.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds to dog snouts (the dark nose and muzzle region, viewed head-on), with weaker responses to similar snouts on other mammals.",
+   "evidence": "In the top 13 images the red box sits on a dog's nose or muzzle, and the remaining top images are mostly dogs too, with a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) close behind. The random images, none of which contain a mammal snout, all score 0-1.",
+   "missing_data": "Close-up photos of cat or bear noses and of isolated dark round blobs, to check whether the unit needs a whole muzzle or just a dark nose shape.",
+   "confidence": 0.85
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog snouts (the dark nose and muzzle region, viewed head-on), with weaker responses to similar snouts on other mammals.\",\n \"evidence\": \"In the top 13 images the red box sits on a dog's nose or muzzle, and the remaining top images are mostly dogs too, with a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) close behind. The random images, none of which contain a mammal snout, all score 0-1.\",\n \"missing_data\": \"Close-up photos of cat or bear noses and of isolated dark round blobs, to check whether the unit needs a whole muzzle or just a dark nose shape.\",\n \"confidence\": 0.85}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds to dog snouts (the dark nose and muzzle region, viewed head-on), with weaker responses to similar snouts on other mammals.\",\n \"evidence\": \"In the top 13 images the red box sits on a dog's nose or muzzle, and the remaining top images are mostly dogs too, with a fox (8), red panda (7), squirrel monkey (7) and maned wolf (7) close behind. The random images, none of which contain a mammal snout, all score 0-1.\",\n \"missing_data\": \"Close-up photos of cat or bear noses and of isolated dark round blobs, to check whether the unit needs a whole muzzle or just a dark nose shape.\",\n \"confidence\": 0.85}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:409",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "a3a53bc33247d511afc31a08f33c2b021746aa30d18fea57ab2bd5e77910e649",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a small, dark, rounded, slightly glossy blob at the center of a bilaterally symmetric, front-facing arrangement: two smaller dark spots sit above it, soft fine-grained fibrous texture surrounds it, and a pink or dark opening often appears just below.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a small, dark, rounded, slightly glossy blob at the center of a bilaterally symmetric, front-facing arrangement: two smaller dark spots sit above it, soft fine-grained fibrous texture surrounds it, and a pink or dark opening often appears just below.",
+   "evidence": "In all 20 top images the box lands on this same central dark blob framed by fibrous texture, whatever the overall coloring (black, white, tan or reddish). The 10 random images, which have no such symmetric dark-centered fibrous arrangement, all score 0-1.",
+   "missing_data": "Images with an isolated dark glossy blob on fibrous texture but no symmetric arrangement, or the same arrangement viewed from the side, would show whether the blob alone drives the unit or the whole frontal configuration does.",
+   "confidence": 0.85
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a small, dark, rounded, slightly glossy blob at the center of a bilaterally symmetric, front-facing arrangement: two smaller dark spots sit above it, soft fine-grained fibrous texture surrounds it, and a pink or dark opening often appears just below.\",\n \"evidence\": \"In all 20 top images the box lands on this same central dark blob framed by fibrous texture, whatever the overall coloring (black, white, tan or reddish). The 10 random images, which have no such symmetric dark-centered fibrous arrangement, all score 0-1.\",\n \"missing_data\": \"Images with an isolated dark glossy blob on fibrous texture but no symmetric arrangement, or the same arrangement viewed from the side, would show whether the blob alone drives the unit or the whole frontal configuration does.\",\n \"confidence\": 0.85}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a small, dark, rounded, slightly glossy blob at the center of a bilaterally symmetric, front-facing arrangement: two smaller dark spots sit above it, soft fine-grained fibrous texture surrounds it, and a pink or dark opening often appears just below.\",\n \"evidence\": \"In all 20 top images the box lands on this same central dark blob framed by fibrous texture, whatever the overall coloring (black, white, tan or reddish). The 10 random images, which have no such symmetric dark-centered fibrous arrangement, all score 0-1.\",\n \"missing_data\": \"Images with an isolated dark glossy blob on fibrous texture but no symmetric arrangement, or the same arrangement viewed from the side, would show whether the blob alone drives the unit or the whole frontal configuration does.\",\n \"confidence\": 0.85}\n```"
+  ],
+  "attempts": 1
+ }
+}

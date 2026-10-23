@@ -1,0 +1,110 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to photos with one clear, distinct main object, typically a vehicle or boat seen whole or mostly whole at moderate size, against a background. It is much less active on cluttered or crowded scenes with no single main subject. Facing direction barely matters as long as there is an object. It prefers subjects that occupy a moderate or small part of the frame and sit fully inside it, with medium lighting and neutral or cool color. Some of these effects, such as cut-off and sharpness versus no main subject, are shared with similar units. The selected rows are the ones where the similar units stay below the 95th percentile.",
+  "rows": [
+   11,
+   23,
+   6,
+   15
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98daa24904de7454ac20b52eb1c27ff85e6a8e6a1d34b99ea6dc9d5b9bbdc109",
+  "texts": [
+   "{\"explanation\": \"The unit responds to photos with one clear, distinct main object, typically a vehicle or boat seen whole or mostly whole at moderate size, against a background. It is much less active on cluttered or crowded scenes with no single main subject. Facing direction barely matters as long as there is an object. It prefers subjects that occupy a moderate or small part of the frame and sit fully inside it, with medium lighting and neutral or cool color. Some of these effects, such as cut-off and sharpness versus no main subject, are shared with similar units. The selected rows are the ones where the similar units stay below the 95th percentile.\", \"rows\": [11, 23, 6, 15]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to photos with one clear, distinct main object, typically a vehicle or boat seen whole or mostly whole at moderate size, against a background. It is much less active on cluttered or crowded scenes with no single main subject. Facing direction barely matters as long as there is an object. It prefers subjects that occupy a moderate or small part of the frame and sit fully inside it, with medium lighting and neutral or cool color. Some of these effects, such as cut-off and sharpness versus no main subject, are shared with similar units. The selected rows are the ones where the similar units stay below the 95th percentile.\", \"rows\": [11, 23, 6, 15]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds most strongly to photos with a single, clearly defined main object, usually a vehicle or boat seen whole or mostly whole at moderate size, as opposed to cluttered scenes with no single main subject. Activity is higher when the subject is smaller and fully inside the frame, has a clear facing direction (any direction), is evenly lit at medium brightness, and has no warm tint. The strongest unique signal is the contrast between a distinct object and scenes with no single subject.",
+  "rows": [
+   11,
+   23,
+   6,
+   3
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98daa24904de7454ac20b52eb1c27ff85e6a8e6a1d34b99ea6dc9d5b9bbdc109",
+  "texts": [
+   "{\"explanation\": \"The unit responds most strongly to photos with a single, clearly defined main object, usually a vehicle or boat seen whole or mostly whole at moderate size, as opposed to cluttered scenes with no single main subject. Activity is higher when the subject is smaller and fully inside the frame, has a clear facing direction (any direction), is evenly lit at medium brightness, and has no warm tint. The strongest unique signal is the contrast between a distinct object and scenes with no single subject.\", \"rows\": [11, 23, 6, 3]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most strongly to photos with a single, clearly defined main object, usually a vehicle or boat seen whole or mostly whole at moderate size, as opposed to cluttered scenes with no single main subject. Activity is higher when the subject is smaller and fully inside the frame, has a clear facing direction (any direction), is evenly lit at medium brightness, and has no warm tint. The strongest unique signal is the contrast between a distinct object and scenes with no single subject.\", \"rows\": [11, 23, 6, 3]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "This unit responds to photos with one clear, well-defined main subject, typically a vehicle or boat that is moderately sized, sharp and fully or mostly in frame. It is much less active on cluttered scenes with no single main subject. It is somewhat more active when the subject is small or medium in the frame rather than filling it, and on neutral or cool-toned, evenly lit photos rather than warm-tinted ones. The subject's facing direction (left, right or toward the camera) matters little, as long as there is a single subject.",
+  "rows": [
+   11,
+   23,
+   3,
+   15
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "98daa24904de7454ac20b52eb1c27ff85e6a8e6a1d34b99ea6dc9d5b9bbdc109",
+  "texts": [
+   "{\"explanation\": \"This unit responds to photos with one clear, well-defined main subject, typically a vehicle or boat that is moderately sized, sharp and fully or mostly in frame. It is much less active on cluttered scenes with no single main subject. It is somewhat more active when the subject is small or medium in the frame rather than filling it, and on neutral or cool-toned, evenly lit photos rather than warm-tinted ones. The subject's facing direction (left, right or toward the camera) matters little, as long as there is a single subject.\", \"rows\": [11, 23, 3, 15]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds to photos with one clear, well-defined main subject, typically a vehicle or boat that is moderately sized, sharp and fully or mostly in frame. It is much less active on cluttered scenes with no single main subject. It is somewhat more active when the subject is small or medium in the frame rather than filling it, and on neutral or cool-toned, evenly lit photos rather than warm-tinted ones. The subject's facing direction (left, right or toward the camera) matters little, as long as there is a single subject.\", \"rows\": [11, 23, 3, 15]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit prefers vehicles and boats (minibuses, wagons, jeeps, sailboats, canoes) seen in side view facing or pointing left. It is weaker when the subject faces right or has no clear direction. It also leans toward subjects of medium size, a quarter to three quarters of the frame, and somewhat toward slightly blurry subjects. The left-facing preference is the most distinctive part, since the similar units do not share it strongly.",
+  "rows": [
+   1,
+   3,
+   2,
+   10
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9b1d76053397aec478b66a809387f7394af93b641230bb635e8f7d0b9036862d",
+  "texts": [
+   "{\"explanation\": \"The unit prefers vehicles and boats (minibuses, wagons, jeeps, sailboats, canoes) seen in side view facing or pointing left. It is weaker when the subject faces right or has no clear direction. It also leans toward subjects of medium size, a quarter to three quarters of the frame, and somewhat toward slightly blurry subjects. The left-facing preference is the most distinctive part, since the similar units do not share it strongly.\", \"rows\": [1, 3, 2, 10]}"
+  ],
+  "text": "{\"explanation\": \"The unit prefers vehicles and boats (minibuses, wagons, jeeps, sailboats, canoes) seen in side view facing or pointing left. It is weaker when the subject faces right or has no clear direction. It also leans toward subjects of medium size, a quarter to three quarters of the frame, and somewhat toward slightly blurry subjects. The left-facing preference is the most distinctive part, since the similar units do not share it strongly.\", \"rows\": [1, 3, 2, 10]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit's top classes are mostly vehicles and boats (minibus, beach wagon, trimaran, jeep, minivan, ambulance and so on). Within those classes it is somewhat more active when the main subject faces or points left, especially compared with facing right. It also leans toward slightly blurry subjects and subjects that fill a moderate part of the frame (a quarter to three quarters) rather than nearly all of it. The left-facing preference is the most distinctive signal, and the similar units do not share it.",
+  "rows": [
+   1,
+   3,
+   2,
+   29
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9b1d76053397aec478b66a809387f7394af93b641230bb635e8f7d0b9036862d",
+  "texts": [
+   "{\"explanation\": \"The unit's top classes are mostly vehicles and boats (minibus, beach wagon, trimaran, jeep, minivan, ambulance and so on). Within those classes it is somewhat more active when the main subject faces or points left, especially compared with facing right. It also leans toward slightly blurry subjects and subjects that fill a moderate part of the frame (a quarter to three quarters) rather than nearly all of it. The left-facing preference is the most distinctive signal, and the similar units do not share it.\", \"rows\": [1, 3, 2, 29]}"
+  ],
+  "text": "{\"explanation\": \"The unit's top classes are mostly vehicles and boats (minibus, beach wagon, trimaran, jeep, minivan, ambulance and so on). Within those classes it is somewhat more active when the main subject faces or points left, especially compared with facing right. It also leans toward slightly blurry subjects and subjects that fill a moderate part of the frame (a quarter to three quarters) rather than nearly all of it. The left-facing preference is the most distinctive signal, and the similar units do not share it.\", \"rows\": [1, 3, 2, 29]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit responds to vehicles and boats seen side-on and facing or pointing left, rather than right or with no clear direction. It also tends to be more active when the subject fills a moderate part of the frame (a quarter to three quarters) and when the subject is slightly blurry, as in motion shots of cars and boats. The left-facing preference is the most distinctive feature, since the similar units are not unusual on it.",
+  "rows": [
+   1,
+   3,
+   2,
+   29
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9b1d76053397aec478b66a809387f7394af93b641230bb635e8f7d0b9036862d",
+  "texts": [
+   "{\"explanation\": \"The unit responds to vehicles and boats seen side-on and facing or pointing left, rather than right or with no clear direction. It also tends to be more active when the subject fills a moderate part of the frame (a quarter to three quarters) and when the subject is slightly blurry, as in motion shots of cars and boats. The left-facing preference is the most distinctive feature, since the similar units are not unusual on it.\", \"rows\": [1, 3, 2, 29]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to vehicles and boats seen side-on and facing or pointing left, rather than right or with no clear direction. It also tends to be more active when the subject fills a moderate part of the frame (a quarter to three quarters) and when the subject is slightly blurry, as in motion shots of cars and boats. The left-facing preference is the most distinctive feature, since the similar units are not unusual on it.\", \"rows\": [1, 3, 2, 29]}",
+  "valid": true
+ }
+}
