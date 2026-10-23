@@ -659,3 +659,51 @@ F2. Real (each stage): at most 2 kept rows across all samples are left/right row
 F3. Null (each stage): at most 20% of picks are kept.
 Recorded, not predicted: unchecked additions and their T outcome; left/right words in final explanations (a word
 count cannot tell a claim from a retraction).
+
+# Round 31A: measurement, an open VLM answerer and ten times the photos (tools/vlm_answer.py, r31_validate.py,
+# r31_photos.py, r31_tables.py; r31_check.py)
+(sealed 2026-10-24, after round 30's results and before any VLM answer, new photo or new table exists; the tools are
+being written from frozen specs by claim-blind authors and tested by separate spec-only testers)
+Why: round 30's diagnostics (tools/r30_measure.py) found the table underpowered at about 110 photos per half (rows at
+95+ on D keep their sign on T 87% of the time but reach 95 only 36%), and position rows near noise.
+Step 1, validation (no Claude calls). Photos: every photo Claude answered in rounds 29, 30A, 30B (Claude rows merged
+r29, r30b, r30a; the last wins). Candidates, each through tools/vlm_answer.py unchanged, one photo per prompt:
+Qwen/Qwen3-VL-32B-Instruct, Qwen/Qwen2.5-VL-7B-Instruct, Qwen/Qwen3-VL-8B-Instruct, OpenGVLab/InternVL3_5-8B
+(a candidate that does not load in vLLM is dropped and reported). Selection: on the calibration half (r31_validate
+half 0), the highest mean over the 8 questions of agreement with Claude; ties by list order. Benchmark: Claude
+against Claude, rounds 29 and 30A on the photos answered in both.
+V1. Selected model, confirmation half: per-question agreement with Claude at least the benchmark minus 5 points on
+    at least 6 of 8 questions, Q1 (facing) and Q2 (size) among them.
+V2. Tables (r31_validate unit_compare, all photos, units of rounds 29, 30A, 30B): Pearson r of d, Claude answers
+    against the selected model's, at least 0.8 x the same r for Claude r29 against Claude r30a answers (round-29
+    units, photos answered in both).
+V3. With the selected model's answers, the facing row for each oriented round-29 unit's side (4b:431 and 443 right
+    over left, 429 and 384 left over right) is at 95 or above on D for at least 3 of the 4.
+Step 2 runs only if V1, V2 and V3 hold. Otherwise the round stops and reports.
+Step 2, ten times the photos. Units: authors/round31_units.json (rounds 29, 30A and 30B, 25 units). Classes:
+authors/round31_classes.json (308, the union of their top-24 classes on the old pool). 100 photos per class from the
+ImageNet train mirror benjamin-paine/imagenet-1k-256x256 (centre square, Lanczos to 256; our crop224 then gives the
+old pool's field of view), via tools/r31_photos.py; values on the same InceptionV1 weights; answers by the selected
+model; tables by tools/r31_tables.py (rule and every arms, no readings, no Claude calls). Classes and peers stay those
+of the old pool.
+P1. Power: over all units' every-arm rows at 95 or above on D, at least 50% are at 95 or above on T (old pool 36%);
+    with T answers shuffled within class, at most 10%.
+P2. Split-half r of d (every-arm rows, D against T, all units pooled) at least 0.70 (old 0.48); Q4 (position) rows
+    alone at least 0.30 (old 0.09).
+P3. Oriented units: 4b:431 and 443 have a held "right over left" facing row, 429 and 384 a held "left over right"
+    (every arm), all 4; 409 and 418 have no held left-against-right facing row.
+P4. Zoom In 4a: all of 222, 234, 308, 325 have exactly one held facing side (every arm), with 234 = 308, 325 = 222
+    and 308 != 222.
+P5. Car side view (5a:160, 5a:23, 5b:573, 5b:907): at most 1 of 4 has a held row with "left" or "right" over
+    "toward or away from the camera" (the within-class reference stays unsupported with ten times the photos).
+P6. Random units (30B): at least 3 of 6 have a held row that is distinctive (every arm) (round 30B's agent picks: 1).
+Recorded, not predicted: 4b:12's position row; 4d:427's facing rows; the count of held rows per unit, old pool
+against new.
+Next step, fixed now: if P1 and P2 hold, the large pool with the VLM answerer becomes the default measurement and
+round 31B (below) runs on it; if they fail, the noise is in the answers rather than the sample, and the next round
+studies answer reliability (repeat answers per photo) first.
+Registered next task, round 31B (not sealed yet): a proposal stage from looks. The bare/Q0/F1 readings of a unit are
+turned by a tool-less agent into a few unit-specific yes/no or multiple-choice photo questions (for example "is there
+small text in the photo?"), answered blind by the validated answerer on the unit's photos, and checked with the same
+pairwise table on D and T. Aimed at the units whose content the 8 standing questions cannot ask about (30B's random
+units, the car parts).
