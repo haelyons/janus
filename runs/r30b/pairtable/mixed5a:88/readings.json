@@ -1,0 +1,107 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "This unit responds to colored, tinted images whose subject fills a large part of the frame. Its activity is lowest on black-and-white or nearly colorless photos and higher whenever the photo has a noticeable warm or cool color cast. It is also more active when the main subject takes up a substantial part of the frame rather than being small, but the similar units share that size preference. The color-tint preference, especially the low response to colorless photos, is what sets this unit apart.",
+  "rows": [
+   18,
+   22,
+   23,
+   20
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cbc1b814f6142039751ed0ac4689ca8b6b1ba172c7eeaa5978e960da79c07a63",
+  "texts": [
+   "```json\n{\"explanation\": \"This unit responds to colored, tinted images whose subject fills a large part of the frame. Its activity is lowest on black-and-white or nearly colorless photos and higher whenever the photo has a noticeable warm or cool color cast. It is also more active when the main subject takes up a substantial part of the frame rather than being small, but the similar units share that size preference. The color-tint preference, especially the low response to colorless photos, is what sets this unit apart.\", \"rows\": [18, 22, 23, 20]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"This unit responds to colored, tinted images whose subject fills a large part of the frame. Its activity is lowest on black-and-white or nearly colorless photos and higher whenever the photo has a noticeable warm or cool color cast. It is also more active when the main subject takes up a substantial part of the frame rather than being small, but the similar units share that size preference. The color-tint preference, especially the low response to colorless photos, is what sets this unit apart.\", \"rows\": [18, 22, 23, 20]}\n```",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to large, close-up subjects that fill much of the frame, and is notably weak on small or distant subjects. It also responds to strongly colored photos and is especially suppressed by black-and-white or nearly colorless images. Colored tints, warm or cool, raise its activity relative to neutral photos. The low response to colorless photos is what sets it apart most clearly from its similar units, which share the subject-size preference.",
+  "rows": [
+   22,
+   23,
+   20,
+   18
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cbc1b814f6142039751ed0ac4689ca8b6b1ba172c7eeaa5978e960da79c07a63",
+  "texts": [
+   "{\"explanation\": \"The unit responds to large, close-up subjects that fill much of the frame, and is notably weak on small or distant subjects. It also responds to strongly colored photos and is especially suppressed by black-and-white or nearly colorless images. Colored tints, warm or cool, raise its activity relative to neutral photos. The low response to colorless photos is what sets it apart most clearly from its similar units, which share the subject-size preference.\", \"rows\": [22, 23, 20, 18]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to large, close-up subjects that fill much of the frame, and is notably weak on small or distant subjects. It also responds to strongly colored photos and is especially suppressed by black-and-white or nearly colorless images. Colored tints, warm or cool, raise its activity relative to neutral photos. The low response to colorless photos is what sets it apart most clearly from its similar units, which share the subject-size preference.\", \"rows\": [22, 23, 20, 18]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds most to large, prominent subjects (mostly patterned animals such as snakes and big cats, plus some machines) that fill much of the frame and are often cut off by its edges. It is distinctive in preferring photos with a noticeable color cast, either warm or cool, over neutral photos, and especially over black-and-white or nearly colorless ones. This points to sensitivity to saturated color. The subject-size preference is shared with similar units, but the color-tint preference is more particular to this unit.",
+  "rows": [
+   18,
+   22,
+   23,
+   19
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "cbc1b814f6142039751ed0ac4689ca8b6b1ba172c7eeaa5978e960da79c07a63",
+  "texts": [
+   "{\"explanation\": \"The unit responds most to large, prominent subjects (mostly patterned animals such as snakes and big cats, plus some machines) that fill much of the frame and are often cut off by its edges. It is distinctive in preferring photos with a noticeable color cast, either warm or cool, over neutral photos, and especially over black-and-white or nearly colorless ones. This points to sensitivity to saturated color. The subject-size preference is shared with similar units, but the color-tint preference is more particular to this unit.\", \"rows\": [18, 22, 23, 19]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most to large, prominent subjects (mostly patterned animals such as snakes and big cats, plus some machines) that fill much of the frame and are often cut off by its edges. It is distinctive in preferring photos with a noticeable color cast, either warm or cool, over neutral photos, and especially over black-and-white or nearly colorless ones. This points to sensitivity to saturated color. The subject-size preference is shared with similar units, but the color-tint preference is more particular to this unit.\", \"rows\": [18, 22, 23, 19]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit prefers subjects facing or pointing left, such as an animal's head or a train's front aimed to the left of the frame. It fires more on these than on subjects facing right or toward or away from the camera. It is also somewhat more active when the subject is partly cut off by the photo's edge. The left-facing preference against toward/away photos is distinctive, since the similar units score low on that row. Left versus right is shared with similar unit 2, so it is less particular to this unit.",
+  "rows": [
+   2,
+   10,
+   1
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c77d983affb54a94dc8b9d2c41623bf57c9216b024873492f22c7cefaac010ba",
+  "texts": [
+   "{\"explanation\": \"The unit prefers subjects facing or pointing left, such as an animal's head or a train's front aimed to the left of the frame. It fires more on these than on subjects facing right or toward or away from the camera. It is also somewhat more active when the subject is partly cut off by the photo's edge. The left-facing preference against toward/away photos is distinctive, since the similar units score low on that row. Left versus right is shared with similar unit 2, so it is less particular to this unit.\", \"rows\": [2, 10, 1]}"
+  ],
+  "text": "{\"explanation\": \"The unit prefers subjects facing or pointing left, such as an animal's head or a train's front aimed to the left of the frame. It fires more on these than on subjects facing right or toward or away from the camera. It is also somewhat more active when the subject is partly cut off by the photo's edge. The left-facing preference against toward/away photos is distinctive, since the similar units score low on that row. Left versus right is shared with similar unit 2, so it is less particular to this unit.\", \"rows\": [2, 10, 1]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "This unit responds most to subjects that face or point to the left (such as animals, snakes, trains, and ships oriented leftward). It is clearly weaker for subjects facing right or facing toward/away from the camera. It also responds somewhat more when the subject is partly cut off by the photo edge. The left-vs-toward/away contrast is particular to this unit, since the similar units sit at low percentiles there. Left-vs-right is partly shared with one similar unit.",
+  "rows": [
+   2,
+   10,
+   1
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c77d983affb54a94dc8b9d2c41623bf57c9216b024873492f22c7cefaac010ba",
+  "texts": [
+   "{\"explanation\": \"This unit responds most to subjects that face or point to the left (such as animals, snakes, trains, and ships oriented leftward). It is clearly weaker for subjects facing right or facing toward/away from the camera. It also responds somewhat more when the subject is partly cut off by the photo edge. The left-vs-toward/away contrast is particular to this unit, since the similar units sit at low percentiles there. Left-vs-right is partly shared with one similar unit.\", \"rows\": [2, 10, 1]}"
+  ],
+  "text": "{\"explanation\": \"This unit responds most to subjects that face or point to the left (such as animals, snakes, trains, and ships oriented leftward). It is clearly weaker for subjects facing right or facing toward/away from the camera. It also responds somewhat more when the subject is partly cut off by the photo edge. The left-vs-toward/away contrast is particular to this unit, since the similar units sit at low percentiles there. Left-vs-right is partly shared with one similar unit.\", \"rows\": [2, 10, 1]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds most strongly when the main subject (often an animal such as a snake or big cat, or a vehicle) faces or points to the left, especially compared with subjects facing the camera. It also prefers subjects that are partly cut off by the photo's edge, as in close or tightly framed views. It is somewhat more active on medium-lit, level-lined scenes.",
+  "rows": [
+   2,
+   10,
+   1
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c77d983affb54a94dc8b9d2c41623bf57c9216b024873492f22c7cefaac010ba",
+  "texts": [
+   "Candidates: Row 2 (98, similar 23,51,40), Row 1 (96, but similar unit 2 at 96 — shared), Row 10 (97, similar 49,87,47). Row 25 at 87 maybe.\n\n{\"explanation\": \"The unit responds most strongly when the main subject (often an animal such as a snake or big cat, or a vehicle) faces or points to the left, especially compared with subjects facing the camera. It also prefers subjects that are partly cut off by the photo's edge, as in close or tightly framed views. It is somewhat more active on medium-lit, level-lined scenes.\", \"rows\": [2, 10, 1]}"
+  ],
+  "text": "Candidates: Row 2 (98, similar 23,51,40), Row 1 (96, but similar unit 2 at 96 — shared), Row 10 (97, similar 49,87,47). Row 25 at 87 maybe.\n\n{\"explanation\": \"The unit responds most strongly when the main subject (often an animal such as a snake or big cat, or a vehicle) faces or points to the left, especially compared with subjects facing the camera. It also prefers subjects that are partly cut off by the photo's edge, as in close or tightly framed views. It is somewhat more active on medium-lit, level-lined scenes.\", \"rows\": [2, 10, 1]}",
+  "valid": true
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit is more active on photos with one clearly defined main object, typically a vehicle or boat shown whole or mostly whole at moderate size, than on cluttered scenes with no single main subject. On new photos this contrast kept its direction but weakened to roughly the 81st–90th percentile, so it is not distinctive for this layer. The other strong original effects are either shared with similar units or rest on few photos: the fully-inside-the-frame preference (row 13), the small-subject preference (rows 8–9) and the cool-over-warm tint preference (row 27). None of them is reliably particular to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d03166f19aaef2bb62a1f339458d497e87ab53239f63e5feaacc5d255b4bbe04",
+  "texts": [
+   "{\"explanation\": \"The unit is more active on photos with one clearly defined main object, typically a vehicle or boat shown whole or mostly whole at moderate size, than on cluttered scenes with no single main subject. On new photos this contrast kept its direction but weakened to roughly the 81st–90th percentile, so it is not distinctive for this layer. The other strong original effects are either shared with similar units or rest on few photos: the fully-inside-the-frame preference (row 13), the small-subject preference (rows 8–9) and the cool-over-warm tint preference (row 27). None of them is reliably particular to this unit.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is more active on photos with one clearly defined main object, typically a vehicle or boat shown whole or mostly whole at moderate size, than on cluttered scenes with no single main subject. On new photos this contrast kept its direction but weakened to roughly the 81st–90th percentile, so it is not distinctive for this layer. The other strong original effects are either shared with similar units or rest on few photos: the fully-inside-the-frame preference (row 13), the small-subject preference (rows 8–9) and the cool-over-warm tint preference (row 27). None of them is reliably particular to this unit.\", \"rows\": []}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit is mostly tied to the vehicle and boat classes it prefers. In the original photos, within those classes, it was clearly less active on cluttered photos with no single main subject. That held for every question about the subject: its size, position, lighting, sharpness, facing direction and whether it is cut off. On new photos the effect kept the same sign but was much weaker (percentiles 84 to 90, with only 8 no-subject photos), so none of the four picked rows held. Other effects are less reliable still. These are a preference for subjects fully inside the frame, small subjects, and cool rather than warm tints. They rest on few photos, are shared by similar units, or were not retested. Facing direction and left-right position make no difference. Overall, a single clear main subject seems to help slightly, but no row is reliable enough to count as particular to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "379c97aaecda090ca321e345647928c94bee3d534a28faffc1d740a5b1cd8f11",
+  "texts": [
+   "{\"explanation\": \"The unit is mostly tied to the vehicle and boat classes it prefers. In the original photos, within those classes, it was clearly less active on cluttered photos with no single main subject. That held for every question about the subject: its size, position, lighting, sharpness, facing direction and whether it is cut off. On new photos the effect kept the same sign but was much weaker (percentiles 84 to 90, with only 8 no-subject photos), so none of the four picked rows held. Other effects are less reliable still. These are a preference for subjects fully inside the frame, small subjects, and cool rather than warm tints. They rest on few photos, are shared by similar units, or were not retested. Facing direction and left-right position make no difference. Overall, a single clear main subject seems to help slightly, but no row is reliable enough to count as particular to this unit.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is mostly tied to the vehicle and boat classes it prefers. In the original photos, within those classes, it was clearly less active on cluttered photos with no single main subject. That held for every question about the subject: its size, position, lighting, sharpness, facing direction and whether it is cut off. On new photos the effect kept the same sign but was much weaker (percentiles 84 to 90, with only 8 no-subject photos), so none of the four picked rows held. Other effects are less reliable still. These are a preference for subjects fully inside the frame, small subjects, and cool rather than warm tints. They rest on few photos, are shared by similar units, or were not retested. Facing direction and left-right position make no difference. Overall, a single clear main subject seems to help slightly, but no row is reliable enough to count as particular to this unit.\", \"rows\": []}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit fires most on vehicles and boats (vans, cars, boats, carriages) and other big single objects. In the original sample it was much less active on cluttered photos with no single main subject. On new photos that contrast pointed the same way but was weaker (d ≈ 0.3) and not unusual for the layer, so it is a mild, generic preference rather than something particular to this unit. The more distinctive signals involve the framing and colour of the object. The unit prefers objects shown whole and small within the frame over objects that are cropped or fill the frame. It also prefers cool-toned photos over warm-toned ones. The whole-versus-cropped effect is partly shared with a similar unit. These rows are still tentative: none were retested, and some rest on few photos (8 for the small-object answer).",
+  "rows": [
+   13,
+   8,
+   27
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0ee0f6cb61e8945b3102463ce17f4bb2f52c99378b2fdf066d429ca7fb56a4cb",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit fires most on vehicles and boats (vans, cars, boats, carriages) and other big single objects. In the original sample it was much less active on cluttered photos with no single main subject. On new photos that contrast pointed the same way but was weaker (d ≈ 0.3) and not unusual for the layer, so it is a mild, generic preference rather than something particular to this unit. The more distinctive signals involve the framing and colour of the object. The unit prefers objects shown whole and small within the frame over objects that are cropped or fill the frame. It also prefers cool-toned photos over warm-toned ones. The whole-versus-cropped effect is partly shared with a similar unit. These rows are still tentative: none were retested, and some rest on few photos (8 for the small-object answer).\", \"rows\": [13, 8, 27]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit fires most on vehicles and boats (vans, cars, boats, carriages) and other big single objects. In the original sample it was much less active on cluttered photos with no single main subject. On new photos that contrast pointed the same way but was weaker (d ≈ 0.3) and not unusual for the layer, so it is a mild, generic preference rather than something particular to this unit. The more distinctive signals involve the framing and colour of the object. The unit prefers objects shown whole and small within the frame over objects that are cropped or fill the frame. It also prefers cool-toned photos over warm-toned ones. The whole-versus-cropped effect is partly shared with a similar unit. These rows are still tentative: none were retested, and some rest on few photos (8 for the small-object answer).\", \"rows\": [13, 8, 27]}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit is a broad, weak detector of photos that contain a distinct single object, usually a vehicle or boat, as opposed to scenes with no single main subject. On new photos this contrast kept its direction, with d of +0.3 to +0.5. It was only moderately unusual for the layer (80th–90th percentile), so it is not particular to this unit. The other signals have small groups or are shared with similar units, and none was tested on new photos. These include higher activity for smaller subjects and subjects fully inside the frame, and lower activity for a warm tint. None of them can be stated with confidence.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "13a8d2bc228a4a316257dd44d3cdb3f4b93c99cc7b27374ce5ca620d1baac8ac",
+  "texts": [
+   "{\"explanation\": \"The unit is a broad, weak detector of photos that contain a distinct single object, usually a vehicle or boat, as opposed to scenes with no single main subject. On new photos this contrast kept its direction, with d of +0.3 to +0.5. It was only moderately unusual for the layer (80th–90th percentile), so it is not particular to this unit. The other signals have small groups or are shared with similar units, and none was tested on new photos. These include higher activity for smaller subjects and subjects fully inside the frame, and lower activity for a warm tint. None of them can be stated with confidence.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is a broad, weak detector of photos that contain a distinct single object, usually a vehicle or boat, as opposed to scenes with no single main subject. On new photos this contrast kept its direction, with d of +0.3 to +0.5. It was only moderately unusual for the layer (80th–90th percentile), so it is not particular to this unit. The other signals have small groups or are shared with similar units, and none was tested on new photos. These include higher activity for smaller subjects and subjects fully inside the frame, and lower activity for a warm tint. None of them can be stated with confidence.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "Within its top classes (mostly vehicles and boats), the unit tends to be more active when the photo has one distinct main object than when it shows a cluttered scene with no single main subject. In the original photos this contrast was unusually strong for the layer (rows 3, 6, 11, 15, 20, 23, 30). On the 116 new photos it kept the same direction but shrank by roughly half (d about 0.3 to 0.5, percentiles 81 to 90), and none of the four tested rows reached the 95th percentile. Only 8 new photos had no main subject, so that test was weak. It is still not established that this is unusually strong or specific to this unit. Other hints are less reliable: a preference for small subjects that fit fully inside the frame (rows 7 to 9 and 13) and for cool rather than warm tint (row 27). They rest on few photos, were not tested on new photos, and some are shared with similar units (row 13 similar unit 99, row 27 similar unit 94). Facing direction, left-to-right position, lighting level, tilt and sharpness show no effect particular to this unit. No row can be named with confidence.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b8b50b2e6613d92db46d93883d222bb06500d5e138c88641228335b224973f81",
+  "texts": [
+   "```json\n{\"explanation\": \"Within its top classes (mostly vehicles and boats), the unit tends to be more active when the photo has one distinct main object than when it shows a cluttered scene with no single main subject. In the original photos this contrast was unusually strong for the layer (rows 3, 6, 11, 15, 20, 23, 30). On the 116 new photos it kept the same direction but shrank by roughly half (d about 0.3 to 0.5, percentiles 81 to 90), and none of the four tested rows reached the 95th percentile. Only 8 new photos had no main subject, so that test was weak. It is still not established that this is unusually strong or specific to this unit. Other hints are less reliable: a preference for small subjects that fit fully inside the frame (rows 7 to 9 and 13) and for cool rather than warm tint (row 27). They rest on few photos, were not tested on new photos, and some are shared with similar units (row 13 similar unit 99, row 27 similar unit 94). Facing direction, left-to-right position, lighting level, tilt and sharpness show no effect particular to this unit. No row can be named with confidence.\", \"rows\": []}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"Within its top classes (mostly vehicles and boats), the unit tends to be more active when the photo has one distinct main object than when it shows a cluttered scene with no single main subject. In the original photos this contrast was unusually strong for the layer (rows 3, 6, 11, 15, 20, 23, 30). On the 116 new photos it kept the same direction but shrank by roughly half (d about 0.3 to 0.5, percentiles 81 to 90), and none of the four tested rows reached the 95th percentile. Only 8 new photos had no main subject, so that test was weak. It is still not established that this is unusually strong or specific to this unit. Other hints are less reliable: a preference for small subjects that fit fully inside the frame (rows 7 to 9 and 13) and for cool rather than warm tint (row 27). They rest on few photos, were not tested on new photos, and some are shared with similar units (row 13 similar unit 99, row 27 similar unit 94). Facing direction, left-to-right position, lighting level, tilt and sharpness show no effect particular to this unit. No row can be named with confidence.\", \"rows\": []}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit is weakly more active on photos with one clear, sharp main subject, usually a vehicle or boat, than on cluttered scenes with no single subject. This effect was very strong in the original photos (99th-100th percentile). On new photos it kept the same direction but weakened to the 80th-88th percentile, so it is real but not distinctive for this unit. It may also prefer subjects that are small or fully inside the frame, and cool rather than warm tints. However, those differences rest on few photos or are shared with similar units. Facing direction and left-right position make little difference. None of the rows is clearly both reliable and particular to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9c0164a4a61107abaffecb9599a58bfc68c888cda11084eb538a586d7fd363d0",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit is weakly more active on photos with one clear, sharp main subject, usually a vehicle or boat, than on cluttered scenes with no single subject. This effect was very strong in the original photos (99th-100th percentile). On new photos it kept the same direction but weakened to the 80th-88th percentile, so it is real but not distinctive for this unit. It may also prefer subjects that are small or fully inside the frame, and cool rather than warm tints. However, those differences rest on few photos or are shared with similar units. Facing direction and left-right position make little difference. None of the rows is clearly both reliable and particular to this unit.\", \"rows\": []}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit is weakly more active on photos with one clear, sharp main subject, usually a vehicle or boat, than on cluttered scenes with no single subject. This effect was very strong in the original photos (99th-100th percentile). On new photos it kept the same direction but weakened to the 80th-88th percentile, so it is real but not distinctive for this unit. It may also prefer subjects that are small or fully inside the frame, and cool rather than warm tints. However, those differences rest on few photos or are shared with similar units. Facing direction and left-right position make little difference. None of the rows is clearly both reliable and particular to this unit.\", \"rows\": []}\n```",
+  "valid": true
+ }
+}

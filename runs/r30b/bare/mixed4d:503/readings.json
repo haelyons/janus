@@ -1,0 +1,74 @@
+{
+ "Q0_s1": {
+  "unit": "mixed4d:503",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "09063d487c73f8db002f3906d522a81a9b0604e69c5dc1a1725c7c8a3cbf0b74",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to bright, pale, mostly untextured surfaces such as white fabric, white-painted objects, sails, tent canvas and light screens, regardless of what the object is.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to bright, pale, mostly untextured surfaces such as white fabric, white-painted objects, sails, tent canvas and light screens, regardless of what the object is.",
+   "evidence": "Most top boxes land on white or pale areas: white trousers, cradle bedding, a sail, a yurt, a tractor cab, a T-shirt, toilet paper and a white headboard. In the random set a white towel and a church reach 5, while saturated green or textured animal scenes score 0-2; the red bodice (#13) and red cart (#8) are the main exceptions.",
+   "missing_data": "Activations on controlled patches of plain white versus other uniform colors and textures, plus more mid-range examples, would show whether it codes brightness/whiteness or smooth man-made surfaces more generally.",
+   "confidence": 0.5
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to bright, pale, mostly untextured surfaces such as white fabric, white-painted objects, sails, tent canvas and light screens, regardless of what the object is.\",\n \"evidence\": \"Most top boxes land on white or pale areas: white trousers, cradle bedding, a sail, a yurt, a tractor cab, a T-shirt, toilet paper and a white headboard. In the random set a white towel and a church reach 5, while saturated green or textured animal scenes score 0-2; the red bodice (#13) and red cart (#8) are the main exceptions.\",\n \"missing_data\": \"Activations on controlled patches of plain white versus other uniform colors and textures, plus more mid-range examples, would show whether it codes brightness/whiteness or smooth man-made surfaces more generally.\",\n \"confidence\": 0.5}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to bright, pale, mostly untextured surfaces such as white fabric, white-painted objects, sails, tent canvas and light screens, regardless of what the object is.\",\n \"evidence\": \"Most top boxes land on white or pale areas: white trousers, cradle bedding, a sail, a yurt, a tractor cab, a T-shirt, toilet paper and a white headboard. In the random set a white towel and a church reach 5, while saturated green or textured animal scenes score 0-2; the red bodice (#13) and red cart (#8) are the main exceptions.\",\n \"missing_data\": \"Activations on controlled patches of plain white versus other uniform colors and textures, plus more mid-range examples, would show whether it codes brightness/whiteness or smooth man-made surfaces more generally.\",\n \"confidence\": 0.5}\n```"
+  ],
+  "attempts": 1
+ },
+ "bare_s1": {
+  "unit": "mixed4d:503",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "09063d487c73f8db002f3906d522a81a9b0604e69c5dc1a1725c7c8a3cbf0b74",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to pale, smooth, mostly white surfaces on man-made objects, such as white fabric, white-painted structures, paper and screens. It responds more weakly to other man-made indoor or household surfaces like wooden furniture and glass cabinets.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to pale, smooth, mostly white surfaces on man-made objects, such as white fabric, white-painted structures, paper and screens. It responds more weakly to other man-made indoor or household surfaces like wooden furniture and glass cabinets.",
+   "evidence": "Most top boxes fall on white or light regions: white trousers, bedding, a sail, a yurt, paper towels, white T-shirts, a white tractor cab and a white headboard. Among the random photos, the white towel and man-made scenes (church, bus, lamp) score 4-5, while green or furry natural scenes (grass, snake, cat, hares) score 0-1; a few top hits (the red dress at #13, the wooden chair at #9) don't fit cleanly.",
+   "missing_data": "Controlled tests that separate whiteness and brightness from man-made texture, for example white natural objects like snow or white animals versus colored man-made surfaces, plus activation maps for the random photos.",
+   "confidence": 0.45
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to pale, smooth, mostly white surfaces on man-made objects, such as white fabric, white-painted structures, paper and screens. It responds more weakly to other man-made indoor or household surfaces like wooden furniture and glass cabinets.\",\n \"evidence\": \"Most top boxes fall on white or light regions: white trousers, bedding, a sail, a yurt, paper towels, white T-shirts, a white tractor cab and a white headboard. Among the random photos, the white towel and man-made scenes (church, bus, lamp) score 4-5, while green or furry natural scenes (grass, snake, cat, hares) score 0-1; a few top hits (the red dress at #13, the wooden chair at #9) don't fit cleanly.\",\n \"missing_data\": \"Controlled tests that separate whiteness and brightness from man-made texture, for example white natural objects like snow or white animals versus colored man-made surfaces, plus activation maps for the random photos.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to pale, smooth, mostly white surfaces on man-made objects, such as white fabric, white-painted structures, paper and screens. It responds more weakly to other man-made indoor or household surfaces like wooden furniture and glass cabinets.\",\n \"evidence\": \"Most top boxes fall on white or light regions: white trousers, bedding, a sail, a yurt, paper towels, white T-shirts, a white tractor cab and a white headboard. Among the random photos, the white towel and man-made scenes (church, bus, lamp) score 4-5, while green or furry natural scenes (grass, snake, cat, hares) score 0-1; a few top hits (the red dress at #13, the wooden chair at #9) don't fit cleanly.\",\n \"missing_data\": \"Controlled tests that separate whiteness and brightness from man-made texture, for example white natural objects like snow or white animals versus colored man-made surfaces, plus activation maps for the random photos.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4d:503",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "09063d487c73f8db002f3906d522a81a9b0604e69c5dc1a1725c7c8a3cbf0b74",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to bright, pale, low-texture surface patches, often with soft folds or a few straight edges or panel boundaries crossing them. It responds more weakly to other smooth, uniform-colored panels such as saturated red or warm mid-tone flat regions.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to bright, pale, low-texture surface patches, often with soft folds or a few straight edges or panel boundaries crossing them. It responds more weakly to other smooth, uniform-colored panels such as saturated red or warm mid-tone flat regions.",
+   "evidence": "Most boxed regions in the top 20 are near-white or light gray smooth areas with gentle shading or thin edges (#1, #2, #10, #11, #12, #14, #15, #19), while a few are uniform non-white panels (#8, #9, #13). The random photos are fairly high (4-5) when they contain pale, soft regions (#2, #4) and near zero for busy, saturated, highly textured images (#5, #8, #9), but the high baseline means the unit is broadly tuned.",
+   "missing_data": "Synthetic or patch-level tests that vary brightness, saturation, texture and edge content separately, plus activations across the full range rather than only the top images.",
+   "confidence": 0.35
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to bright, pale, low-texture surface patches, often with soft folds or a few straight edges or panel boundaries crossing them. It responds more weakly to other smooth, uniform-colored panels such as saturated red or warm mid-tone flat regions.\",\n \"evidence\": \"Most boxed regions in the top 20 are near-white or light gray smooth areas with gentle shading or thin edges (#1, #2, #10, #11, #12, #14, #15, #19), while a few are uniform non-white panels (#8, #9, #13). The random photos are fairly high (4-5) when they contain pale, soft regions (#2, #4) and near zero for busy, saturated, highly textured images (#5, #8, #9), but the high baseline means the unit is broadly tuned.\",\n \"missing_data\": \"Synthetic or patch-level tests that vary brightness, saturation, texture and edge content separately, plus activations across the full range rather than only the top images.\",\n \"confidence\": 0.35}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to bright, pale, low-texture surface patches, often with soft folds or a few straight edges or panel boundaries crossing them. It responds more weakly to other smooth, uniform-colored panels such as saturated red or warm mid-tone flat regions.\",\n \"evidence\": \"Most boxed regions in the top 20 are near-white or light gray smooth areas with gentle shading or thin edges (#1, #2, #10, #11, #12, #14, #15, #19), while a few are uniform non-white panels (#8, #9, #13). The random photos are fairly high (4-5) when they contain pale, soft regions (#2, #4) and near zero for busy, saturated, highly textured images (#5, #8, #9), but the high baseline means the unit is broadly tuned.\",\n \"missing_data\": \"Synthetic or patch-level tests that vary brightness, saturation, texture and edge content separately, plus activations across the full range rather than only the top images.\",\n \"confidence\": 0.35}\n```"
+  ],
+  "attempts": 1
+ }
+}

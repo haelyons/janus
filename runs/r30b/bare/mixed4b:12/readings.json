@@ -1,0 +1,75 @@
+{
+ "bare_s1": {
+  "unit": "mixed4b:12",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "0d08a6b8f2c343c334b0c487841ced24deda06be3c025531c366f80c75cc45de",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to small text in a photo, especially handwritten or cursive signatures and photographer watermarks, plus weaker responses to printed labels and other small bright, high-contrast marks.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to small text in a photo, especially handwritten or cursive signatures and photographer watermarks, plus weaker responses to printed labels and other small bright, high-contrast marks.",
+   "evidence": "Most top boxes sit on text: the signature in #2, watermarks in #3, #10 and #14, corner text in #6 and #7, handwritten notes in #15 and #19, and labels in #1 and #4. A few boxes (#9 lamp base, #11 plumes, #12, #17, #20) land on small bright, high-contrast spots rather than text, and random photos still reach 2–5, so the unit is only moderately selective.",
+   "missing_data": "Activations on matched images with and without the watermark or text overlay, and the full activation distribution, would show whether text is the true driver or just high-contrast fine detail.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to small text in a photo, especially handwritten or cursive signatures and photographer watermarks, plus weaker responses to printed labels and other small bright, high-contrast marks.\", \"evidence\": \"Most top boxes sit on text: the signature in #2, watermarks in #3, #10 and #14, corner text in #6 and #7, handwritten notes in #15 and #19, and labels in #1 and #4. A few boxes (#9 lamp base, #11 plumes, #12, #17, #20) land on small bright, high-contrast spots rather than text, and random photos still reach 2–5, so the unit is only moderately selective.\", \"missing_data\": \"Activations on matched images with and without the watermark or text overlay, and the full activation distribution, would show whether text is the true driver or just high-contrast fine detail.\", \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit responds mainly to small text in a photo, especially handwritten or cursive signatures and photographer watermarks, plus weaker responses to printed labels and other small bright, high-contrast marks.\", \"evidence\": \"Most top boxes sit on text: the signature in #2, watermarks in #3, #10 and #14, corner text in #6 and #7, handwritten notes in #15 and #19, and labels in #1 and #4. A few boxes (#9 lamp base, #11 plumes, #12, #17, #20) land on small bright, high-contrast spots rather than text, and random photos still reach 2–5, so the unit is only moderately selective.\", \"missing_data\": \"Activations on matched images with and without the watermark or text overlay, and the full activation distribution, would show whether text is the true driver or just high-contrast fine detail.\", \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4b:12",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "0d08a6b8f2c343c334b0c487841ced24deda06be3c025531c366f80c75cc45de",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit mainly responds to small text, especially handwritten or cursive script such as photographer signatures, watermarks and handwritten labels. It responds more weakly to other fine, thin, curvy high-contrast strokes such as feathers, cables and bright lamp edges.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit mainly responds to small text, especially handwritten or cursive script such as photographer signatures, watermarks and handwritten labels. It responds more weakly to other fine, thin, curvy high-contrast strokes such as feathers, cables and bright lamp edges.",
+   "evidence": "Most top boxes sit on small script: the jug logo (#1), signature or watermark corners (#2, #3, #10, #13, #14), product label text (#4, #5), and handwritten 'Bagel' and 'Plastic' (#15, #19). A few boxes (#9 lamp base, #11 plume, #12, #17, #20) land on non-text thin bright strokes, and random photos still reach 2–5, so the unit is only moderately selective.",
+   "missing_data": "Activation maps on images with controlled text (printed vs. cursive, varying size) and on text-free images with fine strokes, to see whether text or stroke texture is the core feature.",
+   "confidence": 0.6
+  },
+  "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to small text, especially handwritten or cursive script such as photographer signatures, watermarks and handwritten labels. It responds more weakly to other fine, thin, curvy high-contrast strokes such as feathers, cables and bright lamp edges.\",\n \"evidence\": \"Most top boxes sit on small script: the jug logo (#1), signature or watermark corners (#2, #3, #10, #13, #14), product label text (#4, #5), and handwritten 'Bagel' and 'Plastic' (#15, #19). A few boxes (#9 lamp base, #11 plume, #12, #17, #20) land on non-text thin bright strokes, and random photos still reach 2–5, so the unit is only moderately selective.\",\n \"missing_data\": \"Activation maps on images with controlled text (printed vs. cursive, varying size) and on text-free images with fine strokes, to see whether text or stroke texture is the core feature.\",\n \"confidence\": 0.6}",
+  "texts": [
+   "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly responds to small text, especially handwritten or cursive script such as photographer signatures, watermarks and handwritten labels. It responds more weakly to other fine, thin, curvy high-contrast strokes such as feathers, cables and bright lamp edges.\",\n \"evidence\": \"Most top boxes sit on small script: the jug logo (#1), signature or watermark corners (#2, #3, #10, #13, #14), product label text (#4, #5), and handwritten 'Bagel' and 'Plastic' (#15, #19). A few boxes (#9 lamp base, #11 plume, #12, #17, #20) land on non-text thin bright strokes, and random photos still reach 2–5, so the unit is only moderately selective.\",\n \"missing_data\": \"Activation maps on images with controlled text (printed vs. cursive, varying size) and on text-free images with fine strokes, to see whether text or stroke texture is the core feature.\",\n \"confidence\": 0.6}"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4b:12",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "0d08a6b8f2c343c334b0c487841ced24deda06be3c025531c366f80c75cc45de",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds mainly to small, thin, dark curvy stroke marks, like handwritten or printed lettering, set against a plainer, lower-contrast surround. It also responds more weakly to other small, fine, high-contrast squiggly or curly detail.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds mainly to small, thin, dark curvy stroke marks, like handwritten or printed lettering, set against a plainer, lower-contrast surround. It also responds more weakly to other small, fine, high-contrast squiggly or curly detail.",
+   "evidence": "About two-thirds of the top boxes (#1, #2, #3, #4, #6, #7, #10, #14, #15, #19) sit on small lettering, cursive marks or corner signatures, often tiny and off-center. Several others (#9, #11, #12, #17, #20) land on small, bright or curly fine-detail patches with no lettering, and random images still reach 2-5, so the unit is only moderately selective.",
+   "missing_data": "Activation maps on isolated text at different sizes and fonts, and on non-text fine-squiggle textures, would show whether lettering-like strokes are the real driver or just the most common instance of fine curvy detail.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to small, thin, dark curvy stroke marks, like handwritten or printed lettering, set against a plainer, lower-contrast surround. It also responds more weakly to other small, fine, high-contrast squiggly or curly detail.\",\n \"evidence\": \"About two-thirds of the top boxes (#1, #2, #3, #4, #6, #7, #10, #14, #15, #19) sit on small lettering, cursive marks or corner signatures, often tiny and off-center. Several others (#9, #11, #12, #17, #20) land on small, bright or curly fine-detail patches with no lettering, and random images still reach 2-5, so the unit is only moderately selective.\",\n \"missing_data\": \"Activation maps on isolated text at different sizes and fonts, and on non-text fine-squiggle textures, would show whether lettering-like strokes are the real driver or just the most common instance of fine curvy detail.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to small, thin, dark, curving strokes of handwritten or printed script on a lighter surface, such as signatures, watermarks and short labels. It responds more weakly to other fine, high-contrast squiggly line detail with a similar texture.\",\n \"evidence\": \"Most boxed regions sit on small lettering or cursive marks, often in a corner (#1, #2, #3, #4, #6, #7, #10, #14, #15, #16, #19). The remaining boxes (#9, #11, #12, #13, #17, #18, #20) cover thin, wispy, high-contrast line detail without legible characters, and the random photos with no such marks still reach moderate values of 2-5.\"\n \"missing_data\": \"Synthetic tests would help most: isolated small script, versus non-character squiggles of the same stroke width, varied in contrast and size. Activation maps for the random photos would show what drives their moderate baseline.\",\n \"confidence\": 0.65}\n```",
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds mainly to small, thin, dark curvy stroke marks, like handwritten or printed lettering, set against a plainer, lower-contrast surround. It also responds more weakly to other small, fine, high-contrast squiggly or curly detail.\",\n \"evidence\": \"About two-thirds of the top boxes (#1, #2, #3, #4, #6, #7, #10, #14, #15, #19) sit on small lettering, cursive marks or corner signatures, often tiny and off-center. Several others (#9, #11, #12, #17, #20) land on small, bright or curly fine-detail patches with no lettering, and random images still reach 2-5, so the unit is only moderately selective.\",\n \"missing_data\": \"Activation maps on isolated text at different sizes and fonts, and on non-text fine-squiggle textures, would show whether lettering-like strokes are the real driver or just the most common instance of fine curvy detail.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 2
+ }
+}

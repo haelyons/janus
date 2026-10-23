@@ -1,0 +1,38 @@
+unit                 rows  r(D,T)  r(D,Tnull)  D>=95 held on T  median min n | kurtosis D T  top5 share D T
+r29 mixed4b:384        21  +0.70   -0.41        3 /  8          11      |  2.1  2.0   0.15 0.15
+r29 mixed4b:409        17  +0.68   -0.17        3 /  7          17      |  2.7  2.4   0.21 0.19
+r29 mixed4b:418        26  +0.16   -0.01        1 /  3          10      |  2.3  2.7   0.19 0.21
+r29 mixed4b:429        19  +0.81   -0.41        3 /  6          12      |  2.1  2.4   0.16 0.18
+r29 mixed4b:431        24  +0.52   +0.53        2 /  4           8      |  2.5  2.5   0.24 0.18
+r29 mixed4b:443        19  +0.54   -0.77        4 /  7           9      |  2.2  2.2   0.18 0.18
+r30a mixed4a:222       19  +0.54   +0.18        1 /  3          11      |  3.2  3.1   0.24 0.28
+r30a mixed4a:234       12  +0.69   +0.44        2 /  3          17      |  3.2  2.3   0.32 0.17
+r30a mixed4a:259       31  +0.04   -0.00        1 /  2          14      |  3.9  2.8   0.33 0.21
+r30a mixed4a:308       21  +0.21   +0.07        3 /  5          15      |  3.0  3.4   0.21 0.29
+r30a mixed4a:325       14  +0.58   +0.01        1 /  2          18      |  3.6  2.9   0.26 0.25
+r30a mixed4b:169       31  +0.05   +0.13        0 /  0          10      |  3.4  3.6   0.28 0.27
+r30a mixed4b:391       33  +0.36   -0.27        0 /  4          11      |  3.1  3.1   0.25 0.28
+r30a mixed4b:409       14  +0.84   -0.10        4 /  7          18      |  2.7  2.4   0.21 0.19
+r30a mixed4b:431       15  +0.55   +0.25        1 /  1          11      |  2.5  2.5   0.24 0.18
+r30a mixed4d:427       33  +0.34   -0.48        2 /  7           8      |  2.9  2.7   0.25 0.24
+r30a mixed4e:756       31  -0.03   +0.13        2 /  4          13      |  2.9  3.0   0.24 0.25
+r30a mixed5a:160       28  +0.59   -0.06        2 /  6          14      |  4.4  3.1   0.33 0.24
+r30a mixed5a:23        31  +0.19   +0.47        0 / 13          19      |  3.1  2.4   0.24 0.20
+r30a mixed5b:573       36  +0.00   -0.42        0 /  5          12      |  3.3  3.2   0.25 0.25
+r30a mixed5b:907       28  +0.25   +0.14        0 /  4          19      |  3.8  3.6   0.32 0.28
+all rows 503: r(D,T) +0.48, r(D,Tnull) -0.11
+  Q1 facing    rows 114  r(D,T) +0.52  r(D,Tnull) -0.01
+  Q2 size      rows  85  r(D,T) +0.70  r(D,Tnull) -0.30
+  Q3 cut off   rows  39  r(D,T) +0.42  r(D,Tnull) -0.15
+  Q4 position  rows  61  r(D,T) +0.09  r(D,Tnull) -0.02
+  Q5 light     rows  39  r(D,T) +0.21  r(D,Tnull) +0.08
+  Q6 tint      rows  73  r(D,T) +0.27  r(D,Tnull) -0.31
+  Q7 tilt      rows  49  r(D,T) +0.42  r(D,Tnull) -0.06
+  Q8 blur      rows  43  r(D,T) +0.39  r(D,Tnull) +0.04
+rows by D percentile (every arm, rows with a T and T_null value):
+D >= 95                                  n  98: T same sign 0.87 (null 0.47); T >= 95 0.36 (null 0.03); T >= 90 0.50; median T pct 90
+D 90-95                                  n  49: T same sign 0.80 (null 0.49); T >= 95 0.18 (null 0.00); T >= 90 0.33; median T pct 83
+D 75-90                                  n 136: T same sign 0.71 (null 0.55); T >= 95 0.14 (null 0.04); T >= 90 0.24; median T pct 74
+D < 75                                   n 200: T same sign 0.62 (null 0.56); T >= 95 0.12 (null 0.06); T >= 90 0.20; median T pct 60
+D >= 95, second answer a "none" answer   n  26: T same sign 0.96 (null 0.77); T >= 95 0.19 (null 0.00); T >= 90 0.42; median T pct 89
+D >= 95, two real answers                n  72: T same sign 0.83 (null 0.36); T >= 95 0.42 (null 0.04); T >= 90 0.53; median T pct 92

@@ -1,0 +1,72 @@
+{
+ "bare_s1": {
+  "unit": "mixed4c:33",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "20961909ce452800fcb22ba5a3a0193530b50bb53bc613fcbe01305986e48371",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit seems to respond to rows of small repeated elements along a line or edge, such as beads, dots, teeth, notches and serrations, with weaker responses to other fine-textured edges.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit seems to respond to rows of small repeated elements along a line or edge, such as beads, dots, teeth, notches and serrations, with weaker responses to other fine-textured edges.",
+   "evidence": "Several top boxes land on this pattern: the bead necklace (#12), ruler tick marks (#8), the bridge's string of lights (#5), the alligator's tooth row (#4), castle crenellations (#7), drilled brake-disc holes (#9), screw threads (#19) and the scalloped embroidered border (#20); others (#1 butterfly, #10 van, #16 helmet) fit only loosely. Random photos still reach 2–5, so the unit is fairly broadly active and not highly selective.",
+   "missing_data": "Activation maps at higher resolution and responses to controlled stimuli: isolated dotted or serrated lines versus plain edges and uniform textures.",
+   "confidence": 0.4
+  },
+  "text": "{\"class\": \"one_plus_related\", \"explanation\": \"The unit seems to respond to rows of small repeated elements along a line or edge, such as beads, dots, teeth, notches and serrations, with weaker responses to other fine-textured edges.\", \"evidence\": \"Several top boxes land on this pattern: the bead necklace (#12), ruler tick marks (#8), the bridge's string of lights (#5), the alligator's tooth row (#4), castle crenellations (#7), drilled brake-disc holes (#9), screw threads (#19) and the scalloped embroidered border (#20); others (#1 butterfly, #10 van, #16 helmet) fit only loosely. Random photos still reach 2–5, so the unit is fairly broadly active and not highly selective.\", \"missing_data\": \"Activation maps at higher resolution and responses to controlled stimuli: isolated dotted or serrated lines versus plain edges and uniform textures.\", \"confidence\": 0.4}",
+  "texts": [
+   "{\"class\": \"one_plus_related\", \"explanation\": \"The unit seems to respond to rows of small repeated elements along a line or edge, such as beads, dots, teeth, notches and serrations, with weaker responses to other fine-textured edges.\", \"evidence\": \"Several top boxes land on this pattern: the bead necklace (#12), ruler tick marks (#8), the bridge's string of lights (#5), the alligator's tooth row (#4), castle crenellations (#7), drilled brake-disc holes (#9), screw threads (#19) and the scalloped embroidered border (#20); others (#1 butterfly, #10 van, #16 helmet) fit only loosely. Random photos still reach 2–5, so the unit is fairly broadly active and not highly selective.\", \"missing_data\": \"Activation maps at higher resolution and responses to controlled stimuli: isolated dotted or serrated lines versus plain edges and uniform textures.\", \"confidence\": 0.4}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed4c:33",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "20961909ce452800fcb22ba5a3a0193530b50bb53bc613fcbe01305986e48371",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit most likely responds to a row of small repeated elements along a line or edge, such as beads, dots, ticks, teeth, serrations or crenellations, which gives a dotted, beaded or toothed texture band.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit most likely responds to a row of small repeated elements along a line or edge, such as beads, dots, ticks, teeth, serrations or crenellations, which gives a dotted, beaded or toothed texture band.",
+   "evidence": "Many top boxes land on rows of repeated elements: ruler tick marks, brake-rotor holes, a necklace's beads, castle battlements, alligator teeth and scales, bridge light rows, bolt threads, a doormat's bristle edge and a cross-stitch border. Some boxes (butterfly, van, helmet) are ambiguous, and random photos still reach 2-5, so selectivity is only moderate."
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to a row of small repeated elements along a line or edge, such as beads, dots, ticks, teeth, serrations or crenellations, which gives a dotted, beaded or toothed texture band.\",\n \"evidence\": \"Many top boxes land on rows of repeated elements: ruler tick marks, brake-rotor holes, a necklace's beads, castle battlements, alligator teeth and scales, bridge light rows, bolt threads, a doormat's bristle edge and a cross-stitch border. Some boxes (butterfly, van, helmet) are ambiguous, and random photos still reach 2-5, so selectivity is only moderate.\"},\n \"missing_data\": \"Synthetic tests (dotted vs. solid lines, varying spacing) or segmentation masks of the active regions would show whether the unit is tuned to periodic small-element arrays or to generic fine texture.\",\n \"confidence\": 0.45}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit most likely responds to a row of small repeated elements along a line or edge, such as beads, dots, ticks, teeth, serrations or crenellations, which gives a dotted, beaded or toothed texture band.\",\n \"evidence\": \"Many top boxes land on rows of repeated elements: ruler tick marks, brake-rotor holes, a necklace's beads, castle battlements, alligator teeth and scales, bridge light rows, bolt threads, a doormat's bristle edge and a cross-stitch border. Some boxes (butterfly, van, helmet) are ambiguous, and random photos still reach 2-5, so selectivity is only moderate.\"},\n \"missing_data\": \"Synthetic tests (dotted vs. solid lines, varying spacing) or segmentation masks of the active regions would show whether the unit is tuned to periodic small-element arrays or to generic fine texture.\",\n \"confidence\": 0.45}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed4c:33",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "20961909ce452800fcb22ba5a3a0193530b50bb53bc613fcbe01305986e48371",
+  "valid": true,
+  "class": "one",
+  "explanation": "The unit responds to a row of small, evenly spaced repeated elements along a line or edge, such as dots, beads, tick marks, teeth or zigzag notches, giving a periodic, dotted or serrated contour.",
+  "parsed": {
+   "class": "one",
+   "explanation": "The unit responds to a row of small, evenly spaced repeated elements along a line or edge, such as dots, beads, tick marks, teeth or zigzag notches, giving a periodic, dotted or serrated contour.",
+   "evidence": "Most top boxes sit on such rows: evenly spaced tick marks (#8), a ring of drilled holes (#9), a beaded strand (#12), a jagged serrated edge (#4), a dotted line of lights (#5), notched tops (#7), screw threading (#19) and a zigzag border (#20). Random images sit at a moderate 2-5, and a few top boxes (#10, #16, #18) show no clear periodic edge, so the pattern is only moderately selective.",
+   "missing_data": "Synthetic tests that vary spacing and regularity (dotted vs. solid lines, periodic vs. irregular textures), plus finer-grained activation maps to confirm the unclear top cases.",
+   "confidence": 0.55
+  },
+  "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a row of small, evenly spaced repeated elements along a line or edge, such as dots, beads, tick marks, teeth or zigzag notches, giving a periodic, dotted or serrated contour.\",\n \"evidence\": \"Most top boxes sit on such rows: evenly spaced tick marks (#8), a ring of drilled holes (#9), a beaded strand (#12), a jagged serrated edge (#4), a dotted line of lights (#5), notched tops (#7), screw threading (#19) and a zigzag border (#20). Random images sit at a moderate 2-5, and a few top boxes (#10, #16, #18) show no clear periodic edge, so the pattern is only moderately selective.\",\n \"missing_data\": \"Synthetic tests that vary spacing and regularity (dotted vs. solid lines, periodic vs. irregular textures), plus finer-grained activation maps to confirm the unclear top cases.\",\n \"confidence\": 0.55}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit responds to a row of small, evenly spaced repeated elements along a line or edge, such as dots, beads, tick marks, teeth or zigzag notches, giving a periodic, dotted or serrated contour.\",\n \"evidence\": \"Most top boxes sit on such rows: evenly spaced tick marks (#8), a ring of drilled holes (#9), a beaded strand (#12), a jagged serrated edge (#4), a dotted line of lights (#5), notched tops (#7), screw threading (#19) and a zigzag border (#20). Random images sit at a moderate 2-5, and a few top boxes (#10, #16, #18) show no clear periodic edge, so the pattern is only moderately selective.\",\n \"missing_data\": \"Synthetic tests that vary spacing and regularity (dotted vs. solid lines, periodic vs. irregular textures), plus finer-grained activation maps to confirm the unclear top cases.\",\n \"confidence\": 0.55}\n```"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "This unit fires on small, roundish, glossy objects such as beetles, ladybugs, buckeyes, acorns, espresso and cups, and on dark liquids. Within those classes it responds most when the subject faces or points to the right, and more when the subject sits fully inside the frame rather than being cut off. Those orientation and framing preferences are unusual for its layer, and the similar units show them only weakly. Brightness and color-tint effects are moderate and partly shared with the similar units.",
+  "rows": [
+   1,
+   4,
+   13,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bb5724765e5514d646398074d2e0202d36d1c760d922dfb564466724484aef0f",
+  "texts": [
+   "{\"explanation\": \"This unit fires on small, roundish, glossy objects such as beetles, ladybugs, buckeyes, acorns, espresso and cups, and on dark liquids. Within those classes it responds most when the subject faces or points to the right, and more when the subject sits fully inside the frame rather than being cut off. Those orientation and framing preferences are unusual for its layer, and the similar units show them only weakly. Brightness and color-tint effects are moderate and partly shared with the similar units.\", \"rows\": [1, 4, 13, 16]}"
+  ],
+  "text": "{\"explanation\": \"This unit fires on small, roundish, glossy objects such as beetles, ladybugs, buckeyes, acorns, espresso and cups, and on dark liquids. Within those classes it responds most when the subject faces or points to the right, and more when the subject sits fully inside the frame rather than being cut off. Those orientation and framing preferences are unusual for its layer, and the similar units show them only weakly. Brightness and color-tint effects are moderate and partly shared with the similar units.\", \"rows\": [1, 4, 13, 16]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds to small dark, glossy, rounded objects such as beetles, spiders, ticks, ladybugs, acorns, buckeyes, coffee and espresso cups. Within these classes it prefers subjects in profile facing or pointing to the right, rather than to the left or toward or away from the camera. It is also somewhat more active when the subject sits fully inside the frame rather than cut off by an edge. Rows 1 and 4 (right-facing) are at the 97th percentile, and none of the similar units reach 95 there, so this direction preference is particular to this unit. Row 13 (fully inside the frame) is at 94 with low similar-unit values, which makes it a plausible extra.",
+  "rows": [
+   4,
+   1,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bb5724765e5514d646398074d2e0202d36d1c760d922dfb564466724484aef0f",
+  "texts": [
+   "{\"explanation\": \"The unit responds to small dark, glossy, rounded objects such as beetles, spiders, ticks, ladybugs, acorns, buckeyes, coffee and espresso cups. Within these classes it prefers subjects in profile facing or pointing to the right, rather than to the left or toward or away from the camera. It is also somewhat more active when the subject sits fully inside the frame rather than cut off by an edge. Rows 1 and 4 (right-facing) are at the 97th percentile, and none of the similar units reach 95 there, so this direction preference is particular to this unit. Row 13 (fully inside the frame) is at 94 with low similar-unit values, which makes it a plausible extra.\", \"rows\": [4, 1, 13]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to small dark, glossy, rounded objects such as beetles, spiders, ticks, ladybugs, acorns, buckeyes, coffee and espresso cups. Within these classes it prefers subjects in profile facing or pointing to the right, rather than to the left or toward or away from the camera. It is also somewhat more active when the subject sits fully inside the frame rather than cut off by an edge. Rows 1 and 4 (right-facing) are at the 97th percentile, and none of the similar units reach 95 there, so this direction preference is particular to this unit. Row 13 (fully inside the frame) is at 94 with low similar-unit values, which makes it a plausible extra.\", \"rows\": [4, 1, 13]}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit's top classes are small, dark, rounded objects: beetles, ticks, spiders, snails, acorns, buckeyes, espresso, cups and bowls. Within those classes, the clearest pattern is a preference for subjects facing or pointing right, which is likely an orientation-selective response, perhaps to the asymmetric profile of a beetle's or cup's shape. Its similar units do not share this. It also responds somewhat more when the subject is fully inside the frame rather than cut off, which suggests sensitivity to a complete object outline.",
+  "rows": [
+   1,
+   4,
+   13,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bb5724765e5514d646398074d2e0202d36d1c760d922dfb564466724484aef0f",
+  "texts": [
+   "{\"explanation\": \"The unit's top classes are small, dark, rounded objects: beetles, ticks, spiders, snails, acorns, buckeyes, espresso, cups and bowls. Within those classes, the clearest pattern is a preference for subjects facing or pointing right, which is likely an orientation-selective response, perhaps to the asymmetric profile of a beetle's or cup's shape. Its similar units do not share this. It also responds somewhat more when the subject is fully inside the frame rather than cut off, which suggests sensitivity to a complete object outline.\", \"rows\": [1, 4, 13, 16]}"
+  ],
+  "text": "{\"explanation\": \"The unit's top classes are small, dark, rounded objects: beetles, ticks, spiders, snails, acorns, buckeyes, espresso, cups and bowls. Within those classes, the clearest pattern is a preference for subjects facing or pointing right, which is likely an orientation-selective response, perhaps to the asymmetric profile of a beetle's or cup's shape. Its similar units do not share this. It also responds somewhat more when the subject is fully inside the frame rather than cut off, which suggests sensitivity to a complete object outline.\", \"rows\": [1, 4, 13, 16]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds to sharply focused small objects such as beetles, spiders, cups and fruit that sit fully inside the frame, often small and off-center, in scenes with tilted lines or no straight lines at all. It is a little stronger in cool-tinted photos than in warm ones. It is weaker on blurry subjects, subjects cut off by the frame edge, and level scenes with clear horizontal lines.",
+  "rows": [
+   13,
+   34,
+   31,
+   32
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23858541c4da9061fecd09dceedf63f553fd54224f444f9cdc8deed1bcab6c69",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to sharply focused small objects such as beetles, spiders, cups and fruit that sit fully inside the frame, often small and off-center, in scenes with tilted lines or no straight lines at all. It is a little stronger in cool-tinted photos than in warm ones. It is weaker on blurry subjects, subjects cut off by the frame edge, and level scenes with clear horizontal lines.\", \"rows\": [13, 34, 31, 32]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to sharply focused small objects such as beetles, spiders, cups and fruit that sit fully inside the frame, often small and off-center, in scenes with tilted lines or no straight lines at all. It is a little stronger in cool-tinted photos than in warm ones. It is weaker on blurry subjects, subjects cut off by the frame edge, and level scenes with clear horizontal lines.\", \"rows\": [13, 34, 31, 32]}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds to small, dark, glossy objects and creatures such as beetles, ladybugs, spiders, ticks, coffee and espresso, acorns and cameras. Within these classes it is somewhat more active when the subject is sharply focused and fully inside the frame rather than blurred or cut off. It is also more active when the subject is small or off-center, when the scene has a cooler tint rather than a warm one, and when lines are tilted or absent rather than level. None of these rows is strongly shared with the most similar units.",
+  "rows": [
+   13,
+   34,
+   31,
+   28
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23858541c4da9061fecd09dceedf63f553fd54224f444f9cdc8deed1bcab6c69",
+  "texts": [
+   "{\"explanation\": \"The unit responds to small, dark, glossy objects and creatures such as beetles, ladybugs, spiders, ticks, coffee and espresso, acorns and cameras. Within these classes it is somewhat more active when the subject is sharply focused and fully inside the frame rather than blurred or cut off. It is also more active when the subject is small or off-center, when the scene has a cooler tint rather than a warm one, and when lines are tilted or absent rather than level. None of these rows is strongly shared with the most similar units.\", \"rows\": [13, 34, 31, 28]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to small, dark, glossy objects and creatures such as beetles, ladybugs, spiders, ticks, coffee and espresso, acorns and cameras. Within these classes it is somewhat more active when the subject is sharply focused and fully inside the frame rather than blurred or cut off. It is also more active when the subject is small or off-center, when the scene has a cooler tint rather than a warm one, and when lines are tilted or absent rather than level. None of these rows is strongly shared with the most similar units.\", \"rows\": [13, 34, 31, 28]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit responds most to small, dark, glossy objects such as beetles, spiders, ticks, coffee and espresso, and to cups and bowls. Within these classes it is more active when the subject is sharp, fully inside the frame, and fairly small. It also responds more to tilted or absent straight lines and to cooler color tints, and less to warm-tinted photos. These preferences are modest, and none is shared strongly by the similar units.",
+  "rows": [
+   13,
+   31,
+   34,
+   28
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "23858541c4da9061fecd09dceedf63f553fd54224f444f9cdc8deed1bcab6c69",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds most to small, dark, glossy objects such as beetles, spiders, ticks, coffee and espresso, and to cups and bowls. Within these classes it is more active when the subject is sharp, fully inside the frame, and fairly small. It also responds more to tilted or absent straight lines and to cooler color tints, and less to warm-tinted photos. These preferences are modest, and none is shared strongly by the similar units.\", \"rows\": [13, 31, 34, 28]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds most to small, dark, glossy objects such as beetles, spiders, ticks, coffee and espresso, and to cups and bowls. Within these classes it is more active when the subject is sharp, fully inside the frame, and fairly small. It also responds more to tilted or absent straight lines and to cooler color tints, and less to warm-tinted photos. These preferences are modest, and none is shared strongly by the similar units.\", \"rows\": [13, 31, 34, 28]}\n```",
+  "valid": true
+ }
+}

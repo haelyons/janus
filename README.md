@@ -965,3 +965,47 @@ failed (at most one more lost when a phase was stopped for usage and resumed). `
   Q8 84%.
 - Sealed next step: the non-success inside units fail on measurement, so measurement comes next; item 7 makes
   round 29B's final reading the default reporting layer.
+
+## Round 30F: the final reading (round 29B) on round 30's units (`tools/r30f_check.py`)
+
+Sealed before any final reading. `tools/finalread.py` unchanged, 90 calls on 30A and 36 on 30B, 3 at a time
+(`r30_run.py --workers`), none failed. Checks in `runs/r30a/r30f_check.txt` and `runs/r30b/r30f_check.txt`.
+
+- All held in both stages. F1: real picks that held are kept 42/42 (30A) and 6/6 (30B); picks that did not hold are
+  kept 3/113 and 6/65. F2: no kept left/right row that failed on T. F3: null picks kept 9/155 and 6/71.
+- The 6 units whose table prose named a facing side with no held row: the final explanations now retract it ("the
+  apparent preference for vehicles facing right did not replicate", 756; "reversed on new photos", 160) or state only
+  a held row (325 and 427, "toward or away over right", held at 95 or above). One hedged leftover: 259 s2, "weaker
+  tendencies toward right-facing".
+- Unchecked additions again: 9 on 30A (4 held on T), 15 on 30B (9 held). The confident list stays partly unbacked.
+
+## Round 30B: six random units (`r30_check.py --stage b`)
+
+166 calls, none failed (30B mixed5b mirror profile copied from 30A's, which covers the whole layer). Check in
+`runs/r30b/r30_check.txt`.
+
+- Failed: 9 (calibration: real 6/54 held, null 4/62, shuffled T 1/148; real is 1.7x null, under the 2x bar), 10 (a
+  held, distinctive pick in 2 of 3 samples for 1 of 6 units, 5b:551; predicted at least 3), 5 for 30B (4b:12, mirror
+  11.1, has a held position row "right third over left third" in both rule arms; no random unit is mirror-sensitive).
+- Only 5b:551 has something that holds: a clear, sharp, large main subject over "no single main subject" (peers low).
+- Bare readings name content the 8 questions cannot ask about: small text and photographer signatures (4b:12), rows
+  of small repeated elements along an edge (4c:33), pale smooth surfaces (4d:503), round glossy discs (4d:508),
+  mottled snake-skin patterns (5a:88), furry heads plus gadgets (5b:551). The standing questions are nuisance
+  variables; on random units the missing candidates dominate.
+- Rare answers drive picks: 503's and 88's agents picked "dark" and "black and white" rows (at least 5 photos on D),
+  which have too few photos on T to check.
+
+## Round 30, measurement diagnostics (`tools/r30_measure.py`, no calls)
+
+The sealed next step after 30A. Every-arm rows of rounds 29 and 30A (21 units, 503 rows), d on D against d on T.
+Output in `runs/r30a/r30_measure.txt`.
+
+- The table replicates better than "held" says. Rows at 95 or above on D keep their sign on T 87% of the time (47%
+  against answers shuffled within class) but reach 95 again only 36% (3%); their median on T is the 90th percentile.
+  With about 110 photos per half, the 95 bar on T misses most real but moderate effects.
+- Split-half correlation of d over all rows +0.48 (shuffled -0.11). By question: size +0.70, facing +0.52, cut off
+  +0.42, tilt +0.42, blur +0.39, tint +0.27, light +0.21, position +0.09. Position rows carry almost no signal.
+- Rows against a "none" answer ("no single main subject", "no clear facing direction") are 27% of D-high rows and
+  restate one fact across questions (5a:23: 10 of its 13 D-high rows; they keep their sign on T at the 81st-92nd).
+- Not heavy tails: within-class residual kurtosis 2.0-4.4, the 5 largest photos at most 33% of the variance.
+- The car side-view rows are different: they flip sign between halves (160, 573, 907) or are flat (23).

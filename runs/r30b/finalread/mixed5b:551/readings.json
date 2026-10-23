@@ -1,0 +1,98 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit is more active when the photo has a single clear main subject than when it has no single main subject. It fires more when that subject fills much of the frame and is sharp, compared with cluttered or subject-less scenes. This contrast held up on new photos for subject size (row 12) and sharpness (row 33). The original data also showed weaker preferences for well-lit, centered subjects and neutral color. The color-tint preference did not replicate. The brightness preference fell just short on the new photos, so it is less certain.",
+  "rows": [
+   12,
+   33,
+   11,
+   18,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "1b28c4ed071a174df532fe2b349eb4d357b8060227debb3061eac65f8133008a",
+  "texts": [
+   "{\"explanation\": \"The unit is more active when the photo has a single clear main subject than when it has no single main subject. It fires more when that subject fills much of the frame and is sharp, compared with cluttered or subject-less scenes. This contrast held up on new photos for subject size (row 12) and sharpness (row 33). The original data also showed weaker preferences for well-lit, centered subjects and neutral color. The color-tint preference did not replicate. The brightness preference fell just short on the new photos, so it is less certain.\", \"rows\": [12, 33, 11, 18, 6]}"
+  ],
+  "text": "{\"explanation\": \"The unit is more active when the photo has a single clear main subject than when it has no single main subject. It fires more when that subject fills much of the frame and is sharp, compared with cluttered or subject-less scenes. This contrast held up on new photos for subject size (row 12) and sharpness (row 33). The original data also showed weaker preferences for well-lit, centered subjects and neutral color. The color-tint preference did not replicate. The brightness preference fell just short on the new photos, so it is less certain.\", \"rows\": [12, 33, 11, 18, 6]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds most to photos with a single clear main subject: a well-defined camera, dog, gadget or spider that fills much of the frame and is sharply rendered. It responds least to cluttered scenes with no single main subject. That contrast held on new photos at the 99th percentile for both subject size (row 12) and sharpness (row 33). The similar units mostly do not share it. The apparent preference for untinted over warm-tinted photos (row 23) vanished on new photos. The bright-vs-dark lighting effect (row 21) weakened below the threshold. Neither should be relied on. Related contrasts against 'no single main subject' or 'no clear facing direction' (rows 3, 5, 6, 11, 18) are consistent with the same single-subject preference.",
+  "rows": [
+   12,
+   33,
+   11,
+   18,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "dd71ee931067b8839aaa070bbe195f501bfb91949b2554cabcb08cfcb0c7514a",
+  "texts": [
+   "{\"explanation\": \"The unit responds most to photos with a single clear main subject: a well-defined camera, dog, gadget or spider that fills much of the frame and is sharply rendered. It responds least to cluttered scenes with no single main subject. That contrast held on new photos at the 99th percentile for both subject size (row 12) and sharpness (row 33). The similar units mostly do not share it. The apparent preference for untinted over warm-tinted photos (row 23) vanished on new photos. The bright-vs-dark lighting effect (row 21) weakened below the threshold. Neither should be relied on. Related contrasts against 'no single main subject' or 'no clear facing direction' (rows 3, 5, 6, 11, 18) are consistent with the same single-subject preference.\", \"rows\": [12, 33, 11, 18, 6]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most to photos with a single clear main subject: a well-defined camera, dog, gadget or spider that fills much of the frame and is sharply rendered. It responds least to cluttered scenes with no single main subject. That contrast held on new photos at the 99th percentile for both subject size (row 12) and sharpness (row 33). The similar units mostly do not share it. The apparent preference for untinted over warm-tinted photos (row 23) vanished on new photos. The bright-vs-dark lighting effect (row 21) weakened below the threshold. Neither should be relied on. Related contrasts against 'no single main subject' or 'no clear facing direction' (rows 3, 5, 6, 11, 18) are consistent with the same single-subject preference.\", \"rows\": [12, 33, 11, 18, 6]}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds weakly to photos with no single main subject, such as cluttered or diffuse scenes. It responds more strongly to photos with one clear subject, especially when that subject is sharp and fills much of the frame. This contrast is the stable, unit-specific signal. It held on new photos for size (row 12) and sharpness (row 33), and similar units do not share it. The apparent preferences for bright lighting and untinted color did not replicate. Facing direction, tilt, cropping and horizontal position beyond the 'no single subject' contrast matter little.",
+  "rows": [
+   12,
+   33,
+   11,
+   18,
+   6
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bc5869b6f4800681541c27b575619ef59a28ea7b05a0646492c3174c4279666c",
+  "texts": [
+   "{\"explanation\": \"The unit responds weakly to photos with no single main subject, such as cluttered or diffuse scenes. It responds more strongly to photos with one clear subject, especially when that subject is sharp and fills much of the frame. This contrast is the stable, unit-specific signal. It held on new photos for size (row 12) and sharpness (row 33), and similar units do not share it. The apparent preferences for bright lighting and untinted color did not replicate. Facing direction, tilt, cropping and horizontal position beyond the 'no single subject' contrast matter little.\", \"rows\": [12, 33, 11, 18, 6]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds weakly to photos with no single main subject, such as cluttered or diffuse scenes. It responds more strongly to photos with one clear subject, especially when that subject is sharp and fills much of the frame. This contrast is the stable, unit-specific signal. It held on new photos for size (row 12) and sharpness (row 33), and similar units do not share it. The apparent preferences for bright lighting and untinted color did not replicate. Facing direction, tilt, cropping and horizontal position beyond the 'no single subject' contrast matter little.\", \"rows\": [12, 33, 11, 18, 6]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "No reliable property of the photo explains this unit beyond the photo classes it prefers (cameras, long-haired small dogs, gadgets and similar). The first table hinted at a preference for a single sharp, bright, untinted, frame-filling subject over scenes with no single main subject. None of that held on new photos. The 'no single main subject' contrasts reversed sign. The bright-versus-dark and untinted-versus-warm differences fell to ordinary levels. The remaining unusual rows rest on very small groups of 5 to 10 photos, such as 'no clear facing direction' and 'right third', and look like the same unstable effects. I am not confident that any row describes this unit specifically.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "c746833c8e59e767d262b852333839eb50894a82899397817d08043495447d31",
+  "texts": [
+   "```json\n{\"explanation\": \"No reliable property of the photo explains this unit beyond the photo classes it prefers (cameras, long-haired small dogs, gadgets and similar). The first table hinted at a preference for a single sharp, bright, untinted, frame-filling subject over scenes with no single main subject. None of that held on new photos. The 'no single main subject' contrasts reversed sign. The bright-versus-dark and untinted-versus-warm differences fell to ordinary levels. The remaining unusual rows rest on very small groups of 5 to 10 photos, such as 'no clear facing direction' and 'right third', and look like the same unstable effects. I am not confident that any row describes this unit specifically.\", \"rows\": []}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"No reliable property of the photo explains this unit beyond the photo classes it prefers (cameras, long-haired small dogs, gadgets and similar). The first table hinted at a preference for a single sharp, bright, untinted, frame-filling subject over scenes with no single main subject. None of that held on new photos. The 'no single main subject' contrasts reversed sign. The bright-versus-dark and untinted-versus-warm differences fell to ordinary levels. The remaining unusual rows rest on very small groups of 5 to 10 photos, such as 'no clear facing direction' and 'right third', and look like the same unstable effects. I am not confident that any row describes this unit specifically.\", \"rows\": []}\n```",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "None of the photo properties in the table reliably describes this unit. The most striking original effects were the preference for a single, sharp, well-filled main subject over photos with no single main subject. These reversed on new photos (d about -0.4, percentiles 10–13). They depended on only 5–10 photos per answer, so they were likely noise. The bright-over-dark effect disappeared (percentile 62). The preference for untinted over warm-tinted photos weakened to percentile 83, so it is at most a mild tendency. Facing direction, tilt, cropping and horizontal position showed no consistent effect. The unit's response is probably driven by the content of its preferred classes rather than by any of these framing, lighting or color properties.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "67c4ea5116795dbfbe5b83e37da6a0a3bddde37ae2404de3194badd1e6a5d77d",
+  "texts": [
+   "{\"explanation\": \"None of the photo properties in the table reliably describes this unit. The most striking original effects were the preference for a single, sharp, well-filled main subject over photos with no single main subject. These reversed on new photos (d about -0.4, percentiles 10–13). They depended on only 5–10 photos per answer, so they were likely noise. The bright-over-dark effect disappeared (percentile 62). The preference for untinted over warm-tinted photos weakened to percentile 83, so it is at most a mild tendency. Facing direction, tilt, cropping and horizontal position showed no consistent effect. The unit's response is probably driven by the content of its preferred classes rather than by any of these framing, lighting or color properties.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"None of the photo properties in the table reliably describes this unit. The most striking original effects were the preference for a single, sharp, well-filled main subject over photos with no single main subject. These reversed on new photos (d about -0.4, percentiles 10–13). They depended on only 5–10 photos per answer, so they were likely noise. The bright-over-dark effect disappeared (percentile 62). The preference for untinted over warm-tinted photos weakened to percentile 83, so it is at most a mild tendency. Facing direction, tilt, cropping and horizontal position showed no consistent effect. The unit's response is probably driven by the content of its preferred classes rather than by any of these framing, lighting or color properties.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit is most active across a group of object and animal classes (cameras, projectors, small long-haired dogs, gadgets, spiders), and none of the photo properties asked about clearly explains its activity within those classes. In the first sample it seemed to prefer photos with a single, large, bright, sharp main subject over photos with no single subject or dark photos. Those comparisons rested on only 5 to 10 photos, and on new photos they disappeared or reversed (rows 12 and 33 went negative, row 21 went to about zero). Its preference for untinted over warm-tinted photos rested on large groups but weakened to the 83rd percentile on new photos, so it is at most a mild tendency. No row is established well enough to call it particular to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "b5f613c2dc4c23a178c787c911588f044b7e1e7cdd72df9cc89e5e18cb564d21",
+  "texts": [
+   "{\"explanation\": \"The unit is most active across a group of object and animal classes (cameras, projectors, small long-haired dogs, gadgets, spiders), and none of the photo properties asked about clearly explains its activity within those classes. In the first sample it seemed to prefer photos with a single, large, bright, sharp main subject over photos with no single subject or dark photos. Those comparisons rested on only 5 to 10 photos, and on new photos they disappeared or reversed (rows 12 and 33 went negative, row 21 went to about zero). Its preference for untinted over warm-tinted photos rested on large groups but weakened to the 83rd percentile on new photos, so it is at most a mild tendency. No row is established well enough to call it particular to this unit.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active across a group of object and animal classes (cameras, projectors, small long-haired dogs, gadgets, spiders), and none of the photo properties asked about clearly explains its activity within those classes. In the first sample it seemed to prefer photos with a single, large, bright, sharp main subject over photos with no single subject or dark photos. Those comparisons rested on only 5 to 10 photos, and on new photos they disappeared or reversed (rows 12 and 33 went negative, row 21 went to about zero). Its preference for untinted over warm-tinted photos rested on large groups but weakened to the 83rd percentile on new photos, so it is at most a mild tendency. No row is established well enough to call it particular to this unit.\", \"rows\": []}",
+  "valid": true
+ }
+}

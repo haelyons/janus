@@ -1,0 +1,109 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit is weaker when the main subject faces or points left, or sits in the left third of the frame. It is relatively stronger for subjects facing the camera, for centered or right-placed subjects, and for scenes with no single main subject. It also responds weakly to black-and-white or nearly colorless photos, and somewhat to blur. Overall it seems to encode a left-facing/left-placed signal that suppresses it.",
+  "rows": [
+   3,
+   2,
+   15,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad591829830bf26453bd09bf78bb02251c8c5302853a28914b330e5339d7746d",
+  "texts": [
+   "{\"explanation\": \"The unit is weaker when the main subject faces or points left, or sits in the left third of the frame. It is relatively stronger for subjects facing the camera, for centered or right-placed subjects, and for scenes with no single main subject. It also responds weakly to black-and-white or nearly colorless photos, and somewhat to blur. Overall it seems to encode a left-facing/left-placed signal that suppresses it.\", \"rows\": [3, 2, 15, 13]}"
+  ],
+  "text": "{\"explanation\": \"The unit is weaker when the main subject faces or points left, or sits in the left third of the frame. It is relatively stronger for subjects facing the camera, for centered or right-placed subjects, and for scenes with no single main subject. It also responds weakly to black-and-white or nearly colorless photos, and somewhat to blur. Overall it seems to encode a left-facing/left-placed signal that suppresses it.\", \"rows\": [3, 2, 15, 13]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit is weaker on photos where the main subject faces or points to the left, or sits in the left third of the frame. It is more active when the subject faces the camera, has no clear facing direction, or is centered or on the right. It also responds somewhat less to black-and-white images and to blurry subjects, but similar units share those effects. The left-facing and left-position suppression is what is particular to this unit.",
+  "rows": [
+   2,
+   3,
+   15,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad591829830bf26453bd09bf78bb02251c8c5302853a28914b330e5339d7746d",
+  "texts": [
+   "{\"explanation\": \"The unit is weaker on photos where the main subject faces or points to the left, or sits in the left third of the frame. It is more active when the subject faces the camera, has no clear facing direction, or is centered or on the right. It also responds somewhat less to black-and-white images and to blurry subjects, but similar units share those effects. The left-facing and left-position suppression is what is particular to this unit.\", \"rows\": [2, 3, 15, 13]}"
+  ],
+  "text": "{\"explanation\": \"The unit is weaker on photos where the main subject faces or points to the left, or sits in the left third of the frame. It is more active when the subject faces the camera, has no clear facing direction, or is centered or on the right. It also responds somewhat less to black-and-white images and to blurry subjects, but similar units share those effects. The left-facing and left-position suppression is what is particular to this unit.\", \"rows\": [2, 3, 15, 13]}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "This unit is notably less active when the main subject faces, points or sits toward the left. It is lower on left-facing subjects than on subjects facing the camera, facing right, or with no clear direction. It is also lower when the subject's center lies in the left third of the frame. It is somewhat weaker on black-and-white photos and on blurry subjects, but similar units share those effects. So it is mostly a leftward-orientation suppression, roughly a preference for subjects that are not left-oriented or left-placed.",
+  "rows": [
+   3,
+   2,
+   15,
+   13
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ad591829830bf26453bd09bf78bb02251c8c5302853a28914b330e5339d7746d",
+  "texts": [
+   "{\"explanation\": \"This unit is notably less active when the main subject faces, points or sits toward the left. It is lower on left-facing subjects than on subjects facing the camera, facing right, or with no clear direction. It is also lower when the subject's center lies in the left third of the frame. It is somewhat weaker on black-and-white photos and on blurry subjects, but similar units share those effects. So it is mostly a leftward-orientation suppression, roughly a preference for subjects that are not left-oriented or left-placed.\", \"rows\": [3, 2, 15, 13]}"
+  ],
+  "text": "{\"explanation\": \"This unit is notably less active when the main subject faces, points or sits toward the left. It is lower on left-facing subjects than on subjects facing the camera, facing right, or with no clear direction. It is also lower when the subject's center lies in the left third of the frame. It is somewhat weaker on black-and-white photos and on blurry subjects, but similar units share those effects. So it is mostly a leftward-orientation suppression, roughly a preference for subjects that are not left-oriented or left-placed.\", \"rows\": [3, 2, 15, 13]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit fires most on photos with a single clear main subject, centered or placed to the right, that faces toward or away from the camera. It is weak when there is no single main subject and weakest when the subject sits in the left third. The clearest signals are the toward/away-from-camera facing direction compared with no clear subject, and centered placement compared with left placement. The right-third rows rest on very few photos, so they are less reliable.",
+  "rows": [
+   6,
+   13,
+   2,
+   18
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "465a844d9053dddaa83c09463cc640db59783da7baba84bc133c2114f27c7503",
+  "texts": [
+   "{\"explanation\": \"The unit fires most on photos with a single clear main subject, centered or placed to the right, that faces toward or away from the camera. It is weak when there is no single main subject and weakest when the subject sits in the left third. The clearest signals are the toward/away-from-camera facing direction compared with no clear subject, and centered placement compared with left placement. The right-third rows rest on very few photos, so they are less reliable.\", \"rows\": [6, 13, 2, 18]}"
+  ],
+  "text": "{\"explanation\": \"The unit fires most on photos with a single clear main subject, centered or placed to the right, that faces toward or away from the camera. It is weak when there is no single main subject and weakest when the subject sits in the left third. The clearest signals are the toward/away-from-camera facing direction compared with no clear subject, and centered placement compared with left placement. The right-third rows rest on very few photos, so they are less reliable.\", \"rows\": [6, 13, 2, 18]}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit seems to prefer photos with one clear main subject over photos without one. It responds most to subjects that face toward or away from the camera and that sit in the middle or right of the frame, and least to subjects on the left. Row 6 is unusual for this unit and none of the similar units shares it. Row 13 is also particular to this unit. Rows 16 and 18 are strong as well, but a similar unit is high on each and the right-third group has only 6 photos, so they are less reliable and less particular. Row 2 is borderline at percentile 93.",
+  "rows": [
+   6,
+   13,
+   2
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "465a844d9053dddaa83c09463cc640db59783da7baba84bc133c2114f27c7503",
+  "texts": [
+   "{\"explanation\": \"The unit seems to prefer photos with one clear main subject over photos without one. It responds most to subjects that face toward or away from the camera and that sit in the middle or right of the frame, and least to subjects on the left. Row 6 is unusual for this unit and none of the similar units shares it. Row 13 is also particular to this unit. Rows 16 and 18 are strong as well, but a similar unit is high on each and the right-third group has only 6 photos, so they are less reliable and less particular. Row 2 is borderline at percentile 93.\", \"rows\": [6, 13, 2]}"
+  ],
+  "text": "{\"explanation\": \"The unit seems to prefer photos with one clear main subject over photos without one. It responds most to subjects that face toward or away from the camera and that sit in the middle or right of the frame, and least to subjects on the left. Row 6 is unusual for this unit and none of the similar units shares it. Row 13 is also particular to this unit. Rows 16 and 18 are strong as well, but a similar unit is high on each and the right-third group has only 6 photos, so they are less reliable and less particular. Row 2 is borderline at percentile 93.\", \"rows\": [6, 13, 2]}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "Within its top classes, the unit responds more strongly when a single main subject is clearly present and faces toward or away from the camera, rather than when there is no single subject. It is weakest when the subject sits in the left third of the frame. Its response to right-third subjects is shared with similar units, so it is less specific to this unit. Lighting, tint and tilt have little effect.",
+  "rows": [
+   6,
+   13,
+   2,
+   17
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "465a844d9053dddaa83c09463cc640db59783da7baba84bc133c2114f27c7503",
+  "texts": [
+   "{\"explanation\": \"Within its top classes, the unit responds more strongly when a single main subject is clearly present and faces toward or away from the camera, rather than when there is no single subject. It is weakest when the subject sits in the left third of the frame. Its response to right-third subjects is shared with similar units, so it is less specific to this unit. Lighting, tint and tilt have little effect.\", \"rows\": [6, 13, 2, 17]}"
+  ],
+  "text": "{\"explanation\": \"Within its top classes, the unit responds more strongly when a single main subject is clearly present and faces toward or away from the camera, rather than when there is no single subject. It is weakest when the subject sits in the left third of the frame. Its response to right-third subjects is shared with similar units, so it is less specific to this unit. Lighting, tint and tilt have little effect.\", \"rows\": [6, 13, 2, 17]}",
+  "valid": true
+ }
+}

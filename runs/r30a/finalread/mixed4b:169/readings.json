@@ -1,0 +1,80 @@
+{
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds mostly to the photo classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remote controls). Within these classes, none of the measured photo properties (facing direction, framing, subject size, position, lighting, color tint, tilt, sharpness) reliably changes its activity. No row in the original table reached the 95th percentile. All four picked rows failed on new photos. The cool-tint effect even reversed strongly. The apparent effects were noise, so no attribute-level preference can be confidently assigned.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "bf0cbfc88d828ed818ecaccecb73b24235077b443585069dfecae7f6c03680e0",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to the photo classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remote controls). Within these classes, none of the measured photo properties (facing direction, framing, subject size, position, lighting, color tint, tilt, sharpness) reliably changes its activity. No row in the original table reached the 95th percentile. All four picked rows failed on new photos. The cool-tint effect even reversed strongly. The apparent effects were noise, so no attribute-level preference can be confidently assigned.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to the photo classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remote controls). Within these classes, none of the measured photo properties (facing direction, framing, subject size, position, lighting, color tint, tilt, sharpness) reliably changes its activity. No row in the original table reached the 95th percentile. All four picked rows failed on new photos. The cool-tint effect even reversed strongly. The apparent effects were noise, so no attribute-level preference can be confidently assigned.\", \"rows\": []}",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The unit responds to the classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, pay-phones, projectors, remotes). Within those classes, none of the photo properties asked about clearly changes its activity. No contrast in the original table reached the 95th percentile. The four rows that looked most promising (whole object inside the frame, moderate size, cool tint, centered rather than right) all failed on new photos, and the cool-tint effect reversed to the bottom of the layer. The other differences, such as stronger response to sharp photos, centered subjects and right-facing subjects, are small, often shared with similar units, and likely noise.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0933ee255769498a73a5f665adc0f7a58524f5e6ba4ba88d1c8815d193cd092a",
+  "texts": [
+   "{\"explanation\": \"The unit responds to the classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, pay-phones, projectors, remotes). Within those classes, none of the photo properties asked about clearly changes its activity. No contrast in the original table reached the 95th percentile. The four rows that looked most promising (whole object inside the frame, moderate size, cool tint, centered rather than right) all failed on new photos, and the cool-tint effect reversed to the bottom of the layer. The other differences, such as stronger response to sharp photos, centered subjects and right-facing subjects, are small, often shared with similar units, and likely noise.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to the classes it is most active on: vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, pay-phones, projectors, remotes). Within those classes, none of the photo properties asked about clearly changes its activity. No contrast in the original table reached the 95th percentile. The four rows that looked most promising (whole object inside the frame, moderate size, cool tint, centered rather than right) all failed on new photos, and the cool-tint effect reversed to the bottom of the layer. The other differences, such as stronger response to sharp photos, centered subjects and right-facing subjects, are small, often shared with similar units, and likely noise.\", \"rows\": []}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds mostly to the photo class. Its top classes are vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes, stopwatches). Within those classes, none of the questions asked picks out a reliable preference. No row reached the 95th percentile on the original photos. All three rows picked for checking (subject fully in frame, cool tint, moderate subject size) reversed sign on the new photos, and the cool-tint row fell to the 0th percentile. The middle-third over right-third preference (rows 16 and 18) rests on only 9 to 10 photos per small group and is partly shared with similar units. No row can be trusted to describe this unit specifically.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e3a1cb0faeb497ee4560cd84baf868104090fb8a990db6f562c1bb31f15074c3",
+  "texts": [
+   "{\"explanation\": \"The unit responds mostly to the photo class. Its top classes are vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes, stopwatches). Within those classes, none of the questions asked picks out a reliable preference. No row reached the 95th percentile on the original photos. All three rows picked for checking (subject fully in frame, cool tint, moderate subject size) reversed sign on the new photos, and the cool-tint row fell to the 0th percentile. The middle-third over right-third preference (rows 16 and 18) rests on only 9 to 10 photos per small group and is partly shared with similar units. No row can be trusted to describe this unit specifically.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mostly to the photo class. Its top classes are vehicles (cars, vans, trucks, buses, emergency vehicles, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes, stopwatches). Within those classes, none of the questions asked picks out a reliable preference. No row reached the 95th percentile on the original photos. All three rows picked for checking (subject fully in frame, cool tint, moderate subject size) reversed sign on the new photos, and the cool-tint row fell to the 0th percentile. The middle-third over right-third preference (rows 16 and 18) rests on only 9 to 10 photos per small group and is partly shared with similar units. No row can be trusted to describe this unit specifically.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit responds mainly to man-made vehicles and boxy devices: cars, vans, trucks, buses, fire engines and ambulances, plus cameras, radios, projectors, pay-phones and remotes. None of the photo properties asked about clearly modulates it beyond class identity. No original contrast reached the 95th percentile. The four rows that looked most promising (whole-object framing, cool tint, moderate size, not off to the right) all failed on new photos, and the cool-tint effect even reversed. So any apparent preferences for framing, size, position, tint, lighting or sharpness are weak and unreliable.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6f2ff2ca291e2f72ad0c45de6490e56bc27ddd9dc986a652cee503eebe7d0cdb",
+  "texts": [
+   "{\"explanation\": \"The unit responds mainly to man-made vehicles and boxy devices: cars, vans, trucks, buses, fire engines and ambulances, plus cameras, radios, projectors, pay-phones and remotes. None of the photo properties asked about clearly modulates it beyond class identity. No original contrast reached the 95th percentile. The four rows that looked most promising (whole-object framing, cool tint, moderate size, not off to the right) all failed on new photos, and the cool-tint effect even reversed. So any apparent preferences for framing, size, position, tint, lighting or sharpness are weak and unreliable.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds mainly to man-made vehicles and boxy devices: cars, vans, trucks, buses, fire engines and ambulances, plus cameras, radios, projectors, pay-phones and remotes. None of the photo properties asked about clearly modulates it beyond class identity. No original contrast reached the 95th percentile. The four rows that looked most promising (whole-object framing, cool tint, moderate size, not off to the right) all failed on new photos, and the cool-tint effect even reversed. So any apparent preferences for framing, size, position, tint, lighting or sharpness are weak and unreliable.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds most to vehicles (cars, vans, trucks, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes). Within those classes none of the questions asked picks out a clear preference. No row reaches the 95th percentile. The three strongest candidates (subject fully inside the frame, cool tint, moderate subject size) all fell to chance on new photos, and the cool-tint effect reversed sign. The remaining moderately high rows, such as centered versus right-third subjects, are equally high or higher in similar units, so they are not particular to this unit. Its within-class activity is best described as not explained by framing, color, lighting, orientation or sharpness.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "e7a2f011bd11db2fcf357118bc545d5b175381b332fb526334abe339d22ce3bf",
+  "texts": [
+   "{\"explanation\": \"The unit responds most to vehicles (cars, vans, trucks, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes). Within those classes none of the questions asked picks out a clear preference. No row reaches the 95th percentile. The three strongest candidates (subject fully inside the frame, cool tint, moderate subject size) all fell to chance on new photos, and the cool-tint effect reversed sign. The remaining moderately high rows, such as centered versus right-third subjects, are equally high or higher in similar units, so they are not particular to this unit. Its within-class activity is best described as not explained by framing, color, lighting, orientation or sharpness.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds most to vehicles (cars, vans, trucks, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, remotes). Within those classes none of the questions asked picks out a clear preference. No row reaches the 95th percentile. The three strongest candidates (subject fully inside the frame, cool tint, moderate subject size) all fell to chance on new photos, and the cool-tint effect reversed sign. The remaining moderately high rows, such as centered versus right-third subjects, are equally high or higher in similar units, so they are not particular to this unit. Its within-class activity is best described as not explained by framing, color, lighting, orientation or sharpness.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit is most active on vehicles (cars, trucks, vans, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, stopwatches, remote controls). Within those classes, none of the questions about composition, framing, lighting, tint, tilt or sharpness clearly sets it apart. No row reached the 95th percentile on the original photos. All four rows picked as the strongest candidates (full framing, cool tint, subject position, moderate subject size) fell to ordinary percentiles on new photos, and the cool-tint effect reversed sign. The unit is best described by its class selectivity alone, with no reliable within-class preference among the properties asked about.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "7e5fd950a8d99bd9f319120bc045a16660fc955e87c64c27adb18caa45ea1e9e",
+  "texts": [
+   "{\"explanation\": \"The unit is most active on vehicles (cars, trucks, vans, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, stopwatches, remote controls). Within those classes, none of the questions about composition, framing, lighting, tint, tilt or sharpness clearly sets it apart. No row reached the 95th percentile on the original photos. All four rows picked as the strongest candidates (full framing, cool tint, subject position, moderate subject size) fell to ordinary percentiles on new photos, and the cool-tint effect reversed sign. The unit is best described by its class selectivity alone, with no reliable within-class preference among the properties asked about.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active on vehicles (cars, trucks, vans, buses, locomotives) and boxy man-made devices (cameras, radios, projectors, pay-phones, stopwatches, remote controls). Within those classes, none of the questions about composition, framing, lighting, tint, tilt or sharpness clearly sets it apart. No row reached the 95th percentile on the original photos. All four rows picked as the strongest candidates (full framing, cool tint, subject position, moderate subject size) fell to ordinary percentiles on new photos, and the cool-tint effect reversed sign. The unit is best described by its class selectivity alone, with no reliable within-class preference among the properties asked about.\", \"rows\": []}",
+  "valid": true
+ }
+}

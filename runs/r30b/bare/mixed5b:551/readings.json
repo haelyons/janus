@@ -1,0 +1,74 @@
+{
+ "bare_s1": {
+  "unit": "mixed5b:551",
+  "reading": "bare_s1",
+  "arm": "bare",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "content_sha256": "0a3942fba89db1e55de3df2c1dd7998bfc01de752ca3d46d271420cdacb1b146",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds mainly to furry animal heads and bodies (dogs, chimp, sloth bear, red panda, mastiff), and about as strongly to unrelated man-made objects such as a corkscrew, joystick, iron, old camera and parachute.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds mainly to furry animal heads and bodies (dogs, chimp, sloth bear, red panda, mastiff), and about as strongly to unrelated man-made objects such as a corkscrew, joystick, iron, old camera and parachute.",
+   "evidence": "The three top-ranked images (activation 10) are a corkscrew, a joystick and an iron, tied with a chimp, while about half of the top 20 are dogs or other furry mammals and the rest are unconnected things (custard apple, lobster, eraser, monument, embers). The random photos mostly stay low (0-2), and the highest are a furry animal and a gramophone at 4, which fits a mix of a fur/animal-face feature and a separate object feature.",
+   "missing_data": "Activations for more images per candidate concept (many dogs and furry animals vs. many small metal gadgets), plus feature visualizations or patch-level ablations, would show whether there is one shared visual cue such as a central rounded textured blob.",
+   "confidence": 0.5
+  },
+  "text": "{\"class\": \"unrelated\", \"explanation\": \"The unit responds mainly to furry animal heads and bodies (dogs, chimp, sloth bear, red panda, mastiff), and about as strongly to unrelated man-made objects such as a corkscrew, joystick, iron, old camera and parachute.\", \"evidence\": \"The three top-ranked images (activation 10) are a corkscrew, a joystick and an iron, tied with a chimp, while about half of the top 20 are dogs or other furry mammals and the rest are unconnected things (custard apple, lobster, eraser, monument, embers). The random photos mostly stay low (0-2), and the highest are a furry animal and a gramophone at 4, which fits a mix of a fur/animal-face feature and a separate object feature.\", \"missing_data\": \"Activations for more images per candidate concept (many dogs and furry animals vs. many small metal gadgets), plus feature visualizations or patch-level ablations, would show whether there is one shared visual cue such as a central rounded textured blob.\", \"confidence\": 0.5}",
+  "texts": [
+   "{\"class\": \"unrelated\", \"explanation\": \"The unit responds mainly to furry animal heads and bodies (dogs, chimp, sloth bear, red panda, mastiff), and about as strongly to unrelated man-made objects such as a corkscrew, joystick, iron, old camera and parachute.\", \"evidence\": \"The three top-ranked images (activation 10) are a corkscrew, a joystick and an iron, tied with a chimp, while about half of the top 20 are dogs or other furry mammals and the rest are unconnected things (custard apple, lobster, eraser, monument, embers). The random photos mostly stay low (0-2), and the highest are a furry animal and a gramophone at 4, which fits a mix of a fur/animal-face feature and a separate object feature.\", \"missing_data\": \"Activations for more images per candidate concept (many dogs and furry animals vs. many small metal gadgets), plus feature visualizations or patch-level ablations, would show whether there is one shared visual cue such as a central rounded textured blob.\", \"confidence\": 0.5}"
+  ],
+  "attempts": 1
+ },
+ "Q0_s1": {
+  "unit": "mixed5b:551",
+  "reading": "Q0_s1",
+  "arm": "Q0",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "82fc80b3765f41d21415edd529f6c63fd3462ba8c4cc6b751969fd3895c9be67",
+  "content_sha256": "0a3942fba89db1e55de3df2c1dd7998bfc01de752ca3d46d271420cdacb1b146",
+  "valid": true,
+  "class": "unrelated",
+  "explanation": "The unit responds to several unrelated things: furry animal faces and bodies (dogs, chimpanzee, sloth bear, red panda) and assorted man-made gadgets (corkscrew, joystick base, clothes iron, old camera), plus scattered extras like a lobster, a custard apple and a parachute.",
+  "parsed": {
+   "class": "unrelated",
+   "explanation": "The unit responds to several unrelated things: furry animal faces and bodies (dogs, chimpanzee, sloth bear, red panda) and assorted man-made gadgets (corkscrew, joystick base, clothes iron, old camera), plus scattered extras like a lobster, a custard apple and a parachute.",
+   "evidence": "The three strongest images (activation 10) are a corkscrew, a joystick and an iron, while most of the 8-9 range is dark or furry mammal faces. No single visual feature (shape, texture or colour) connects these groups, and random images reach a moderate 4 on a gramophone and a furry animal.",
+   "missing_data": "More top-activating examples, and activations on controlled sets (animal faces versus metallic or plastic gadgets), would show whether there are truly two separate features or one hidden low-level feature.",
+   "confidence": 0.6
+  },
+  "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to several unrelated things: furry animal faces and bodies (dogs, chimpanzee, sloth bear, red panda) and assorted man-made gadgets (corkscrew, joystick base, clothes iron, old camera), plus scattered extras like a lobster, a custard apple and a parachute.\",\n \"evidence\": \"The three strongest images (activation 10) are a corkscrew, a joystick and an iron, while most of the 8-9 range is dark or furry mammal faces. No single visual feature (shape, texture or colour) connects these groups, and random images reach a moderate 4 on a gramophone and a furry animal.\",\n \"missing_data\": \"More top-activating examples, and activations on controlled sets (animal faces versus metallic or plastic gadgets), would show whether there are truly two separate features or one hidden low-level feature.\",\n \"confidence\": 0.6}\n```",
+  "texts": [
+   "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit responds to several unrelated things: furry animal faces and bodies (dogs, chimpanzee, sloth bear, red panda) and assorted man-made gadgets (corkscrew, joystick base, clothes iron, old camera), plus scattered extras like a lobster, a custard apple and a parachute.\",\n \"evidence\": \"The three strongest images (activation 10) are a corkscrew, a joystick and an iron, while most of the 8-9 range is dark or furry mammal faces. No single visual feature (shape, texture or colour) connects these groups, and random images reach a moderate 4 on a gramophone and a furry animal.\",\n \"missing_data\": \"More top-activating examples, and activations on controlled sets (animal faces versus metallic or plastic gadgets), would show whether there are truly two separate features or one hidden low-level feature.\",\n \"confidence\": 0.6}\n```"
+  ],
+  "attempts": 1
+ },
+ "F1_s1": {
+  "unit": "mixed5b:551",
+  "reading": "F1_s1",
+  "arm": "F1",
+  "sample": 1,
+  "model": "claude-opus-5-5",
+  "system_prompt_sha256": "e5319808a0fa9b47b021cf0adebc923db09633f7d06df148a50fcd494775db25",
+  "content_sha256": "0a3942fba89db1e55de3df2c1dd7998bfc01de752ca3d46d271420cdacb1b146",
+  "valid": true,
+  "class": "one_plus_related",
+  "explanation": "The unit responds most to a compact, roughly round mass in the middle of the frame with dense fine texture (fuzzy or tufted surfaces, often with a pair of small dark spots and soft fringes) that stands out sharply from its surroundings. It also responds, a little less, to rounded glossy or metallic forms with bright highlights and strong local light-dark contrast.",
+  "parsed": {
+   "class": "one_plus_related",
+   "explanation": "The unit responds most to a compact, roughly round mass in the middle of the frame with dense fine texture (fuzzy or tufted surfaces, often with a pair of small dark spots and soft fringes) that stands out sharply from its surroundings. It also responds, a little less, to rounded glossy or metallic forms with bright highlights and strong local light-dark contrast.",
+   "evidence": "Many top boxes sit on rounded, furry, high-contrast masses with small dark spots near the center, while others sit on smooth bulbous or scaly surfaces with specular glints. Random photos score low except a fuzzy rounded blob and a dark rounded glossy form (both 4), which fits this texture-and-shape pattern.",
+   "missing_data": "Activations on controlled stimuli that separate fine fuzzy texture from rounded silhouette and specular highlights, plus more mid-range examples (activations 4-7).",
+   "confidence": 0.4
+  },
+  "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most to a compact, roughly round mass in the middle of the frame with dense fine texture (fuzzy or tufted surfaces, often with a pair of small dark spots and soft fringes) that stands out sharply from its surroundings. It also responds, a little less, to rounded glossy or metallic forms with bright highlights and strong local light-dark contrast.\",\n \"evidence\": \"Many top boxes sit on rounded, furry, high-contrast masses with small dark spots near the center, while others sit on smooth bulbous or scaly surfaces with specular glints. Random photos score low except a fuzzy rounded blob and a dark rounded glossy form (both 4), which fits this texture-and-shape pattern.\",\n \"missing_data\": \"Activations on controlled stimuli that separate fine fuzzy texture from rounded silhouette and specular highlights, plus more mid-range examples (activations 4-7).\",\n \"confidence\": 0.4}\n```",
+  "texts": [
+   "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit responds most to a compact, roughly round mass in the middle of the frame with dense fine texture (fuzzy or tufted surfaces, often with a pair of small dark spots and soft fringes) that stands out sharply from its surroundings. It also responds, a little less, to rounded glossy or metallic forms with bright highlights and strong local light-dark contrast.\",\n \"evidence\": \"Many top boxes sit on rounded, furry, high-contrast masses with small dark spots near the center, while others sit on smooth bulbous or scaly surfaces with specular glints. Random photos score low except a fuzzy rounded blob and a dark rounded glossy form (both 4), which fits this texture-and-shape pattern.\",\n \"missing_data\": \"Activations on controlled stimuli that separate fine fuzzy texture from rounded silhouette and specular highlights, plus more mid-range examples (activations 4-7).\",\n \"confidence\": 0.4}\n```"
+  ],
+  "attempts": 1
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "The unit responds to people wearing clothing or headwear (caps, coats, suits, swimwear, hats), and is somewhat more active when the subject is cropped by the photo's edges than when it is fully inside the frame. That cropping preference replicated on new photos (d +0.50, percentile 94, just under the bar), but the most similar unit shows it about as strongly (92), so it is only partly particular to this unit. The claimed preference for a frame-filling subject did not replicate (d -0.09 on new photos), so it is not a reliable feature. Facing the camera (row 2) is shared with the similar units. The centered-subject preference (row 16) rests on very few right-third photos and could not be checked. Color-tint, tilt and sharpness differences are weak or shared.",
+  "rows": [
+   10
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "9fd50ad208b1dd9f853b7d34df2f71482bb8791d269b299f1d3b95726f399adf",
+  "texts": [
+   "{\"explanation\": \"The unit responds to people wearing clothing or headwear (caps, coats, suits, swimwear, hats), and is somewhat more active when the subject is cropped by the photo's edges than when it is fully inside the frame. That cropping preference replicated on new photos (d +0.50, percentile 94, just under the bar), but the most similar unit shows it about as strongly (92), so it is only partly particular to this unit. The claimed preference for a frame-filling subject did not replicate (d -0.09 on new photos), so it is not a reliable feature. Facing the camera (row 2) is shared with the similar units. The centered-subject preference (row 16) rests on very few right-third photos and could not be checked. Color-tint, tilt and sharpness differences are weak or shared.\", \"rows\": [10]}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to people wearing clothing or headwear (caps, coats, suits, swimwear, hats), and is somewhat more active when the subject is cropped by the photo's edges than when it is fully inside the frame. That cropping preference replicated on new photos (d +0.50, percentile 94, just under the bar), but the most similar unit shows it about as strongly (92), so it is only partly particular to this unit. The claimed preference for a frame-filling subject did not replicate (d -0.09 on new photos), so it is not a reliable feature. Facing the camera (row 2) is shared with the similar units. The centered-subject preference (row 16) rests on very few right-third photos and could not be checked. Color-tint, tilt and sharpness differences are weak or shared.\", \"rows\": [10]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "The unit responds to clothing and accessories on people, such as hats, coats, swimwear and neckwear, when the subject is cropped by the photo's edges, as in close or tight framings. The cropped-versus-fully-inside preference is the most reliable effect. It reached the 96th percentile on the original photos and the 94th on new photos, just under the cutoff, and it is weaker in one of the similar units. The apparent preference for subjects filling more than three quarters of the frame did not replicate (d -0.09 on new photos), so it should not be relied on. The preferences for subjects facing the camera, centered placement and warm rather than cool tint mostly reach high percentiles in similar units too, so they look shared with those units rather than particular to this one.",
+  "rows": [
+   10
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "31a069be295cab5aef4e746a012d014bdd04d5b91937fd5b719a5e33f8d7f9d2",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit responds to clothing and accessories on people, such as hats, coats, swimwear and neckwear, when the subject is cropped by the photo's edges, as in close or tight framings. The cropped-versus-fully-inside preference is the most reliable effect. It reached the 96th percentile on the original photos and the 94th on new photos, just under the cutoff, and it is weaker in one of the similar units. The apparent preference for subjects filling more than three quarters of the frame did not replicate (d -0.09 on new photos), so it should not be relied on. The preferences for subjects facing the camera, centered placement and warm rather than cool tint mostly reach high percentiles in similar units too, so they look shared with those units rather than particular to this one.\", \"rows\": [10]}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit responds to clothing and accessories on people, such as hats, coats, swimwear and neckwear, when the subject is cropped by the photo's edges, as in close or tight framings. The cropped-versus-fully-inside preference is the most reliable effect. It reached the 96th percentile on the original photos and the 94th on new photos, just under the cutoff, and it is weaker in one of the similar units. The apparent preference for subjects filling more than three quarters of the frame did not replicate (d -0.09 on new photos), so it should not be relied on. The preferences for subjects facing the camera, centered placement and warm rather than cool tint mostly reach high percentiles in similar units too, so they look shared with those units rather than particular to this one.\", \"rows\": [10]}\n```",
+  "valid": true
+ },
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "The most reliable thing about this unit is that it is more active when the clothed or accessorized person or garment is cropped by the photo's edges than when it sits fully inside the frame. This effect replicated on new photos (d +0.50, 94th percentile) after +0.69 in the original set, so it is close to the unusual threshold. It is partly shared with its similar units, especially similar units 1 and 2. The fill-the-frame preference (row 7) did not replicate (d -0.09 on new photos), so a large subject size is not what drives the unit. The cropping effect is better described as a preference for close or partial views than for sheer size. The other high rows are shared with similar units or rest on small groups, so they do not reliably describe what is particular to this unit. These are the preference for subjects facing toward or away from the camera, for centered subjects over right-third ones, and for warm over cool tint.",
+  "rows": [
+   10
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "a0f55a536547deb70865c40d915a0cc8bf0a8612e1ef09d887a436a5d823a654",
+  "texts": [
+   "{\"explanation\": \"The most reliable thing about this unit is that it is more active when the clothed or accessorized person or garment is cropped by the photo's edges than when it sits fully inside the frame. This effect replicated on new photos (d +0.50, 94th percentile) after +0.69 in the original set, so it is close to the unusual threshold. It is partly shared with its similar units, especially similar units 1 and 2. The fill-the-frame preference (row 7) did not replicate (d -0.09 on new photos), so a large subject size is not what drives the unit. The cropping effect is better described as a preference for close or partial views than for sheer size. The other high rows are shared with similar units or rest on small groups, so they do not reliably describe what is particular to this unit. These are the preference for subjects facing toward or away from the camera, for centered subjects over right-third ones, and for warm over cool tint.\", \"rows\": [10]}"
+  ],
+  "text": "{\"explanation\": \"The most reliable thing about this unit is that it is more active when the clothed or accessorized person or garment is cropped by the photo's edges than when it sits fully inside the frame. This effect replicated on new photos (d +0.50, 94th percentile) after +0.69 in the original set, so it is close to the unusual threshold. It is partly shared with its similar units, especially similar units 1 and 2. The fill-the-frame preference (row 7) did not replicate (d -0.09 on new photos), so a large subject size is not what drives the unit. The cropping effect is better described as a preference for close or partial views than for sheer size. The other high rows are shared with similar units or rest on small groups, so they do not reliably describe what is particular to this unit. These are the preference for subjects facing toward or away from the camera, for centered subjects over right-third ones, and for warm over cool tint.\", \"rows\": [10]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit responds to photos of worn clothing and headwear: caps, coats, suits, swimwear, hats and gowns, mostly shown on people. Within those classes, none of the photo properties asked about gives a reliable signal particular to this unit. The original table suggested a preference for frame-filling, edge-cropped, centered subjects. On new photos, the frame-filling and cropping preferences reversed sharply (percentiles 4 and 12), so those were chance. The centering row could not be checked. Facing the camera (row 2) is at the 96th percentile, but the similar units are at 87 to 95 on it, so it is shared rather than specific. Its other rows, like the warm-versus-cool tint rows, are modest and also largely shared. This unit seems to be driven mainly by which class the photo shows.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6aeea1eaccea81b50d8b966fb118c9326d3d5988a16a5d8a9e74d2dbfda3db7a",
+  "texts": [
+   "{\"explanation\": \"The unit responds to photos of worn clothing and headwear: caps, coats, suits, swimwear, hats and gowns, mostly shown on people. Within those classes, none of the photo properties asked about gives a reliable signal particular to this unit. The original table suggested a preference for frame-filling, edge-cropped, centered subjects. On new photos, the frame-filling and cropping preferences reversed sharply (percentiles 4 and 12), so those were chance. The centering row could not be checked. Facing the camera (row 2) is at the 96th percentile, but the similar units are at 87 to 95 on it, so it is shared rather than specific. Its other rows, like the warm-versus-cool tint rows, are modest and also largely shared. This unit seems to be driven mainly by which class the photo shows.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit responds to photos of worn clothing and headwear: caps, coats, suits, swimwear, hats and gowns, mostly shown on people. Within those classes, none of the photo properties asked about gives a reliable signal particular to this unit. The original table suggested a preference for frame-filling, edge-cropped, centered subjects. On new photos, the frame-filling and cropping preferences reversed sharply (percentiles 4 and 12), so those were chance. The centering row could not be checked. Facing the camera (row 2) is at the 96th percentile, but the similar units are at 87 to 95 on it, so it is shared rather than specific. Its other rows, like the warm-versus-cool tint rows, are modest and also largely shared. This unit seems to be driven mainly by which class the photo shows.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit is most active on photos of worn clothing and headwear (caps, coats, suits, swimwear, hats, gowns), so it most likely tracks garments or accessories on people. None of the photo properties asked about reliably describe what is particular to it. The fill-the-frame (row 7) and cut-off (row 10) preferences reversed on new photos, landing at the 4th and 12th percentiles, so they were noise. The facing-the-camera (row 2) and centered-subject (row 16) effects reach the 95th percentile, but similar units reach it too, so they are shared rather than specific to this unit. The other rows are below the 95th percentile.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "0396cdf9902d8526c8125cfcd81b86063cca53f9753f03fbe0744da85d0e0bce",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit is most active on photos of worn clothing and headwear (caps, coats, suits, swimwear, hats, gowns), so it most likely tracks garments or accessories on people. None of the photo properties asked about reliably describe what is particular to it. The fill-the-frame (row 7) and cut-off (row 10) preferences reversed on new photos, landing at the 4th and 12th percentiles, so they were noise. The facing-the-camera (row 2) and centered-subject (row 16) effects reach the 95th percentile, but similar units reach it too, so they are shared rather than specific to this unit. The other rows are below the 95th percentile.\", \"rows\": []}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit is most active on photos of worn clothing and headwear (caps, coats, suits, swimwear, hats, gowns), so it most likely tracks garments or accessories on people. None of the photo properties asked about reliably describe what is particular to it. The fill-the-frame (row 7) and cut-off (row 10) preferences reversed on new photos, landing at the 4th and 12th percentiles, so they were noise. The facing-the-camera (row 2) and centered-subject (row 16) effects reach the 95th percentile, but similar units reach it too, so they are shared rather than specific to this unit. The other rows are below the 95th percentile.\", \"rows\": []}\n```",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "The unit is most active on photos of worn clothing and head or body accessories, such as caps, coats, suits, swimwear, hats and gowns, usually shown on a person. Within those classes, none of the photo properties tested clearly sets it apart. The apparent preference for frame-filling, edge-cropped subjects (rows 7 and 10) reversed on new photos, so it was a sampling artifact. The remaining strong rows are either shared with similar units or not unusual for this layer: frontal facing (row 2) and central placement (row 16) are shared, and warm versus cool tint (row 25) is below the 95th percentile. Those patterns reflect what this group of clothing-tuned units has in common, not something specific to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "6e720d928293304fc7a965d1bfa18dc6b983f80bf65f58b168bb4e7c24806135",
+  "texts": [
+   "```json\n{\"explanation\": \"The unit is most active on photos of worn clothing and head or body accessories, such as caps, coats, suits, swimwear, hats and gowns, usually shown on a person. Within those classes, none of the photo properties tested clearly sets it apart. The apparent preference for frame-filling, edge-cropped subjects (rows 7 and 10) reversed on new photos, so it was a sampling artifact. The remaining strong rows are either shared with similar units or not unusual for this layer: frontal facing (row 2) and central placement (row 16) are shared, and warm versus cool tint (row 25) is below the 95th percentile. Those patterns reflect what this group of clothing-tuned units has in common, not something specific to this unit.\", \"rows\": []}\n```"
+  ],
+  "text": "```json\n{\"explanation\": \"The unit is most active on photos of worn clothing and head or body accessories, such as caps, coats, suits, swimwear, hats and gowns, usually shown on a person. Within those classes, none of the photo properties tested clearly sets it apart. The apparent preference for frame-filling, edge-cropped subjects (rows 7 and 10) reversed on new photos, so it was a sampling artifact. The remaining strong rows are either shared with similar units or not unusual for this layer: frontal facing (row 2) and central placement (row 16) are shared, and warm versus cool tint (row 25) is below the 95th percentile. Those patterns reflect what this group of clothing-tuned units has in common, not something specific to this unit.\", \"rows\": []}\n```",
+  "valid": true
+ }
+}

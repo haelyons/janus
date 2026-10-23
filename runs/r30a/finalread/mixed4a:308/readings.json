@@ -1,0 +1,92 @@
+{
+ "real_s2": {
+  "key": "real_s2",
+  "explanation": "Among its top classes (mostly canids such as foxes, wolves, dingoes and hounds, plus a few other mammals, shorebirds and odd items like soccer balls), this unit is most active when the main subject faces or points to the right. Its response is weaker for subjects facing toward or away from the camera and weakest for left-facing subjects. The rightward preference held strongly on new photos and is not shared by the similar units. It is also more active on photos with no noticeable color tint than on cool blue or green tinted ones, and this also held on new photos. The preference for scenes without straight lines or a horizon did not hold on new photos.",
+  "rows": [
+   1,
+   4,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "d099045df27669c3d603182f20991f040f118b40612b1ac39c38c071a4784997",
+  "texts": [
+   "{\"explanation\": \"Among its top classes (mostly canids such as foxes, wolves, dingoes and hounds, plus a few other mammals, shorebirds and odd items like soccer balls), this unit is most active when the main subject faces or points to the right. Its response is weaker for subjects facing toward or away from the camera and weakest for left-facing subjects. The rightward preference held strongly on new photos and is not shared by the similar units. It is also more active on photos with no noticeable color tint than on cool blue or green tinted ones, and this also held on new photos. The preference for scenes without straight lines or a horizon did not hold on new photos.\", \"rows\": [1, 4, 16]}"
+  ],
+  "text": "{\"explanation\": \"Among its top classes (mostly canids such as foxes, wolves, dingoes and hounds, plus a few other mammals, shorebirds and odd items like soccer balls), this unit is most active when the main subject faces or points to the right. Its response is weaker for subjects facing toward or away from the camera and weakest for left-facing subjects. The rightward preference held strongly on new photos and is not shared by the similar units. It is also more active on photos with no noticeable color tint than on cool blue or green tinted ones, and this also held on new photos. The preference for scenes without straight lines or a horizon did not hold on new photos.\", \"rows\": [1, 4, 16]}",
+  "valid": true
+ },
+ "real_s1": {
+  "key": "real_s1",
+  "explanation": "Within its top classes (canids such as foxes, wolves and dogs, plus hyenas, lesser pandas and shorebirds), the unit responds most to subjects that face or point to the right. It is clearly weaker for left-facing subjects and somewhat weaker for subjects facing toward or away from the camera. This rightward preference is particular to this unit: the similar units do not show it. The unit is also weaker on photos with a cool (blue or green) tint than on untinted ones, and this held on new photos. The preference for centered subjects over subjects in the left third reversed on new photos, so it is not reliable.",
+  "rows": [
+   1,
+   4,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "86194aea3f6c7300339399ec0d9c87e770823419deb45236d22f4c36dee0dbd3",
+  "texts": [
+   "{\"explanation\": \"Within its top classes (canids such as foxes, wolves and dogs, plus hyenas, lesser pandas and shorebirds), the unit responds most to subjects that face or point to the right. It is clearly weaker for left-facing subjects and somewhat weaker for subjects facing toward or away from the camera. This rightward preference is particular to this unit: the similar units do not show it. The unit is also weaker on photos with a cool (blue or green) tint than on untinted ones, and this held on new photos. The preference for centered subjects over subjects in the left third reversed on new photos, so it is not reliable.\", \"rows\": [1, 4, 16]}"
+  ],
+  "text": "{\"explanation\": \"Within its top classes (canids such as foxes, wolves and dogs, plus hyenas, lesser pandas and shorebirds), the unit responds most to subjects that face or point to the right. It is clearly weaker for left-facing subjects and somewhat weaker for subjects facing toward or away from the camera. This rightward preference is particular to this unit: the similar units do not show it. The unit is also weaker on photos with a cool (blue or green) tint than on untinted ones, and this held on new photos. The preference for centered subjects over subjects in the left third reversed on new photos, so it is not reliable.\", \"rows\": [1, 4, 16]}",
+  "valid": true
+ },
+ "real_s3": {
+  "key": "real_s3",
+  "explanation": "Among its top classes (mostly canids and fox-like mammals, plus a few birds and other animals), this unit is driven most by the main subject facing or pointing to the right. It is much more active for right-facing subjects than for left-facing ones, and more active for right-facing than for camera-facing subjects. Both effects are at the top of the layer, its similar units do not share them, and both held on new photos. It is also less active when the photo has a cool (blue or green) tint than when it is untinted, and this replicated at the 99th percentile. The preference for scenes with no straight lines or horizon did not replicate. Centering and sharpness effects are suggestive but were not tested.",
+  "rows": [
+   1,
+   4,
+   16
+  ],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "5c0b73fcde704e9b04a688364aa8eb1ce7b1062005e54092f36a74864eaaa06b",
+  "texts": [
+   "{\"explanation\": \"Among its top classes (mostly canids and fox-like mammals, plus a few birds and other animals), this unit is driven most by the main subject facing or pointing to the right. It is much more active for right-facing subjects than for left-facing ones, and more active for right-facing than for camera-facing subjects. Both effects are at the top of the layer, its similar units do not share them, and both held on new photos. It is also less active when the photo has a cool (blue or green) tint than when it is untinted, and this replicated at the 99th percentile. The preference for scenes with no straight lines or horizon did not replicate. Centering and sharpness effects are suggestive but were not tested.\", \"rows\": [1, 4, 16]}"
+  ],
+  "text": "{\"explanation\": \"Among its top classes (mostly canids and fox-like mammals, plus a few birds and other animals), this unit is driven most by the main subject facing or pointing to the right. It is much more active for right-facing subjects than for left-facing ones, and more active for right-facing than for camera-facing subjects. Both effects are at the top of the layer, its similar units do not share them, and both held on new photos. It is also less active when the photo has a cool (blue or green) tint than when it is untinted, and this replicated at the 99th percentile. The preference for scenes with no straight lines or horizon did not replicate. Centering and sharpness effects are suggestive but were not tested.\", \"rows\": [1, 4, 16]}",
+  "valid": true
+ },
+ "null_s1": {
+  "key": "null_s1",
+  "explanation": "The unit is most active on canids and canid-like animals (foxes, wolves, wild and domestic dogs, hyenas, lesser pandas), plus a few birds and a soccer ball. Within these classes, the original photos suggested it preferred right-facing, centered, untinted subjects. None of these preferences held on new photos. The rightward-facing effect nearly disappeared (rows 1 and 4). The centering effect weakened to ordinary levels (row 11). The tint effect reversed: cool-tinted photos were favored (row 16). The other unusual rows were not retested, so they are not reliable either: the preference for photos with no horizon or straight lines (row 19) and for sharp subjects (row 21). Beyond its class selectivity, no particular within-class property can be confidently attributed to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "eb2c9e87c2126cf6d2aa63b85c0cf7729ba8555f3b0a1115ef77a4e9cc8b7bde",
+  "texts": [
+   "{\"explanation\": \"The unit is most active on canids and canid-like animals (foxes, wolves, wild and domestic dogs, hyenas, lesser pandas), plus a few birds and a soccer ball. Within these classes, the original photos suggested it preferred right-facing, centered, untinted subjects. None of these preferences held on new photos. The rightward-facing effect nearly disappeared (rows 1 and 4). The centering effect weakened to ordinary levels (row 11). The tint effect reversed: cool-tinted photos were favored (row 16). The other unusual rows were not retested, so they are not reliable either: the preference for photos with no horizon or straight lines (row 19) and for sharp subjects (row 21). Beyond its class selectivity, no particular within-class property can be confidently attributed to this unit.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active on canids and canid-like animals (foxes, wolves, wild and domestic dogs, hyenas, lesser pandas), plus a few birds and a soccer ball. Within these classes, the original photos suggested it preferred right-facing, centered, untinted subjects. None of these preferences held on new photos. The rightward-facing effect nearly disappeared (rows 1 and 4). The centering effect weakened to ordinary levels (row 11). The tint effect reversed: cool-tinted photos were favored (row 16). The other unusual rows were not retested, so they are not reliable either: the preference for photos with no horizon or straight lines (row 19) and for sharp subjects (row 21). Beyond its class selectivity, no particular within-class property can be confidently attributed to this unit.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s3": {
+  "key": "null_s3",
+  "explanation": "This unit responds most to canid and fox-like mammals (dogs, wolves, foxes, hyena, lesser panda), plus a few birds, a soccer ball and swimsuits. On the original photos it looked like it preferred right-facing subjects, untinted color, no straight lines and sharp focus. None of these held on new photos. The right-facing effect dropped to the 66th and 77th percentile. The tint effect reversed (2nd percentile), and the horizon effect vanished (25th percentile). The remaining unusual rows (centered rather than left-third subjects, sharpness) rest on very few photos or sit just below the threshold, and they were not confirmed. So no image property beyond the class preference can be reliably attributed to this unit.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "56ed93a10b778900919709d3d974e3d1394313abf343a136206b900da0797900",
+  "texts": [
+   "{\"explanation\": \"This unit responds most to canid and fox-like mammals (dogs, wolves, foxes, hyena, lesser panda), plus a few birds, a soccer ball and swimsuits. On the original photos it looked like it preferred right-facing subjects, untinted color, no straight lines and sharp focus. None of these held on new photos. The right-facing effect dropped to the 66th and 77th percentile. The tint effect reversed (2nd percentile), and the horizon effect vanished (25th percentile). The remaining unusual rows (centered rather than left-third subjects, sharpness) rest on very few photos or sit just below the threshold, and they were not confirmed. So no image property beyond the class preference can be reliably attributed to this unit.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"This unit responds most to canid and fox-like mammals (dogs, wolves, foxes, hyena, lesser panda), plus a few birds, a soccer ball and swimsuits. On the original photos it looked like it preferred right-facing subjects, untinted color, no straight lines and sharp focus. None of these held on new photos. The right-facing effect dropped to the 66th and 77th percentile. The tint effect reversed (2nd percentile), and the horizon effect vanished (25th percentile). The remaining unusual rows (centered rather than left-third subjects, sharpness) rest on very few photos or sit just below the threshold, and they were not confirmed. So no image property beyond the class preference can be reliably attributed to this unit.\", \"rows\": []}",
+  "valid": true
+ },
+ "null_s2": {
+  "key": "null_s2",
+  "explanation": "The unit is most active on canids and dog-like mammals (wolves, foxes, dingoes, hounds, terriers, hyenas, lesser panda), with weaker responses to a few shorebirds and other classes such as soccer balls and swimsuits. Within these classes, none of the photo properties asked about is a reliable driver of its activity. The rightward-facing preference was the strongest effect on the original photos, but it nearly vanished on new photos. The same happened to the preferences for untinted photos and for backgrounds without straight lines, and the tint effect actually reversed. Row 11 (subject centered rather than in the left third) is above the 95th percentile, but it rests on only 6 left-third photos and a similar unit shows it as well. The unit's selectivity therefore appears to be about class content (canid-like animals) rather than any of these questions.",
+  "rows": [],
+  "model": "claude-opus-5-5",
+  "system_prompt": "",
+  "content_sha256": "ffec6a0dca2a2bf3870ef8c743513ea8c81ddb3869d503c94ad279ba3fb01117",
+  "texts": [
+   "{\"explanation\": \"The unit is most active on canids and dog-like mammals (wolves, foxes, dingoes, hounds, terriers, hyenas, lesser panda), with weaker responses to a few shorebirds and other classes such as soccer balls and swimsuits. Within these classes, none of the photo properties asked about is a reliable driver of its activity. The rightward-facing preference was the strongest effect on the original photos, but it nearly vanished on new photos. The same happened to the preferences for untinted photos and for backgrounds without straight lines, and the tint effect actually reversed. Row 11 (subject centered rather than in the left third) is above the 95th percentile, but it rests on only 6 left-third photos and a similar unit shows it as well. The unit's selectivity therefore appears to be about class content (canid-like animals) rather than any of these questions.\", \"rows\": []}"
+  ],
+  "text": "{\"explanation\": \"The unit is most active on canids and dog-like mammals (wolves, foxes, dingoes, hounds, terriers, hyenas, lesser panda), with weaker responses to a few shorebirds and other classes such as soccer balls and swimsuits. Within these classes, none of the photo properties asked about is a reliable driver of its activity. The rightward-facing preference was the strongest effect on the original photos, but it nearly vanished on new photos. The same happened to the preferences for untinted photos and for backgrounds without straight lines, and the tint effect actually reversed. Row 11 (subject centered rather than in the left third) is above the 95th percentile, but it rests on only 6 left-third photos and a similar unit shows it as well. The unit's selectivity therefore appears to be about class content (canid-like animals) rather than any of these questions.\", \"rows\": []}",
+  "valid": true
+ }
+}
