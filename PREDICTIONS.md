@@ -557,3 +557,33 @@ either side). Sides as seen in the image (round 13's labels); preferred: 431, 44
 4. No held direction refinement for 4b:409 (either arm); at most one across 409 and 418.
 5. Calibration on D, all checkable refinements of both arms pooled: null holds at most 10%; real at least 3 times null.
 6. Of held refinements, the share that is distinctive is higher in arm F than in arm R.
+
+# Round 29: a fixed question set answered blind, every answer pair compared, rows read by an agent (tools/pairtable.py)
+(sealed 2026-10-23, before pairtable.py exists)
+
+Units: round 28's (431, 443, 429, 384 oriented; 409, 418 hard controls). The 8 standing questions of round 26B
+(written once, for every unit, from "what training treats as irrelevant") are answered blind for every photo of the
+units' 24 top classes, with round 28's left/right convention. On D (round 27's split), every two answers of a
+question given to at least 5 photos each are compared within class; each row is written with the answer the unit is
+more active on first, with the unit's percentile in its layer and its 3 similar units' percentiles. An agent reads
+the table (no photos; no prompt mentions direction), says what the unit responds to and picks up to 4 rows expected
+to hold on T and to be particular to the unit; 3 samples on the real table, 3 on a table from D answers shuffled
+within class. A fixed rule picks from each table: rows at the 95th percentile or above, by unit percentile minus the
+peers' mean percentile, top 4. Every row of the real table is also checked on T ("every"). A row holds on T when
+the unit's d with the same answer first is at the 95th percentile or above; distinctive: held, and some similar unit
+below the 50th on T. Null check on T: answers shuffled within class (seed crc32(unit)).
+
+Direction row: the facing question (Q1) with first and second answers "left" and "right", either order; it favours
+its first answer. Sides as seen in the image (round 13's labels); preferred: 431, 443 right; 429, 384 left. Rows
+comparing one side with "toward or away" or "no clear" are not direction rows.
+1. On D, the real table's direction row favours the preferred side at the 95th percentile or above for at least 3 of
+   the 4 oriented units; for neither control is the direction row at the 95th or above (either side).
+2. Agent, real table: for at least 3 of the 4 oriented units, some sample picks the direction row favouring the
+   preferred side and it holds on T. No held direction row favouring the other side in any arm.
+3. No held direction row on T for 409 or 418 in any picking arm (agent real, agent null, rule real, rule null).
+4. Picked rows held on T, pooled over units: agent real at least twice agent null; agent null at most 15%.
+5. Calibration: over all rows picked by the agent and the rule (real and null tables), at most 10% hold on the
+   shuffled T answers.
+6. Of rows held on T, the share distinctive is higher for the agent's real picks than for every real-table row at
+   the 95th or above on D.
+7. The rule (real table) gets item 2's held, preferred-side direction row for at least 3 of the 4 oriented units.
