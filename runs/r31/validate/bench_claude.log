@@ -1,0 +1,20 @@
+a: claude:runs/pairtable/answers.json
+b: claude:runs/r30a/pairtable/answers.json
+half all: photos a 570, b 1950, both 510
+Q1. Which way is the main subject facing or pointing?  n 510, agree 447, rate 0.876 -> AT_LEAST_0.8; None in a 0, in b 0
+Q2. How much of the photo does the main subject take up?  n 510, agree 432, rate 0.847 -> AT_LEAST_0.8; None in a 0, in b 0
+Q3. Is the main subject cut off by an edge of the photo?  n 510, agree 456, rate 0.894 -> AT_LEAST_0.8; None in a 0, in b 0
+Q4. Where is the center of the main subject left to right?  n 510, agree 459, rate 0.900 -> AT_LEAST_0.8; None in a 0, in b 0
+Q5. How brightly lit is the main subject?  n 510, agree 429, rate 0.841 -> AT_LEAST_0.8; None in a 0, in b 0
+Q6. Does the photo have an overall color tint?  n 510, agree 406, rate 0.796 -> BELOW_0.8; None in a 0, in b 0
+Q7. Are the horizon or the main straight lines in the photo tilted?  n 510, agree 415, rate 0.814 -> AT_LEAST_0.8; None in a 0, in b 0
+Q8. How sharp is the main subject?  n 510, agree 429, rate 0.841 -> AT_LEAST_0.8; None in a 0, in b 0
+== mixed4b:431  D 109, T 131; rows of a's table 24, matched in b's 15
+== mixed4b:443  D 114, T 126; rows of a's table 19, matched in b's 14
+== mixed4b:429  D 119, T 121; rows of a's table 19, matched in b's 12
+== mixed4b:384  D 103, T 107; rows of a's table 21, matched in b's 14
+== mixed4b:409  D 122, T 118; rows of a's table 17, matched in b's 14
+== mixed4b:418  D 101, T 109; rows of a's table 23, matched in b's 21
+tables: 90 matched rows over 6 units; r(d) 0.879 -> AT_LEAST_0.8; r(pct) 0.598 -> BELOW_0.8; both pct >= 95 or both below 0.900 -> AT_LEAST_0.8
+T checks: 123 rows; same outcome 0.878 -> AT_LEAST_0.8; held with a 0.228, held with b 0.252
+report -> /home/hal/dev/interp/janus/runs/r31/validate/bench_claude.json

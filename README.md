@@ -1009,3 +1009,22 @@ Output in `runs/r30a/r30_measure.txt`.
   restate one fact across questions (5a:23: 10 of its 13 D-high rows; they keep their sign on T at the 81st-92nd).
 - Not heavy tails: within-class residual kurtosis 2.0-4.4, the 5 largest photos at most 33% of the variance.
 - The car side-view rows are different: they flip sign between halves (160, 573, 907) or are flat (23).
+
+## Round 31A: an open VLM as the answerer, validated against Claude (`tools/vlm_answer.py`, `r31_validate.py`, `r31_check.py`)
+
+Sealed before any answer. Four tools from frozen specs, each by a claim-blind author with separate spec-only tests
+(174 pass). The 3,080 photos Claude answered in rounds 29-30 were answered by open VLMs on Lambda H100s (vLLM 0.11.0;
+the boxes' driver is CUDA 12.8). Check in `runs/r31/validate/r31_check_validate.txt`.
+
+- Candidates: Qwen3-VL-8B answered 3080/3080; Qwen2.5-VL-7B 11/3080 (its replies do not parse); Qwen3-VL-32B did not
+  load (no memory left for the cache) and InternVL3.5-8B did not load (processor error). Qwen3-VL-8B is selected.
+- V1 failed: agreement with Claude is far below Claude against Claude on every question (confirmation half, model
+  against benchmark): facing 0.63/0.88, size 0.65/0.85, cut off 0.31/0.89, position 0.74/0.90, light 0.66/0.84,
+  tint 0.63/0.80, tilt 0.46/0.81, blur 0.75/0.84.
+- V2 failed: table d correlation 0.50 against 0.88 for Claude against Claude (bar 0.70).
+- V3 held: with the VLM's answers, all four oriented units' facing rows are at 99 or above on D.
+- By the seal, step 2 (ten times the photos) did not run. Its photo pool was built in parallel and kept (30,800
+  ImageNet-train photos of the 308 classes, InceptionV1 values; `runs/r31/pool/`, gitignored, checksums in
+  `remote.sha256`). The facing signal survives a weaker answerer; most other questions do not.
+- The validation half split is not independent of D/T (crc32 is affine, so the "r31:" prefix only flips parity per
+  name length); V1 needs only disjoint photo sets, and V2/V3 use all photos.

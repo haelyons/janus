@@ -1,0 +1,6 @@
+calibration half, mean agreement with Claude: {"Qwen3-VL-8B-Instruct": 0.595} -> selected Qwen3-VL-8B-Instruct
+V1. confirmation half, per question (model, benchmark): [(0.634, 0.876), (0.653, 0.847), (0.307, 0.894), (0.744, 0.9), (0.66, 0.841), (0.633, 0.796), (0.458, 0.814), (0.754, 0.841)] within 5 points: [False, False, False, False, False, False, False, False] -> False
+V2. table r(d): model 0.49768413368856934, Claude against Claude 0.8789361105150809; bar 0.7031488884120648 -> False
+V3. oriented units, preferred-side facing row percentile on D: {"mixed4b:431": 99.609375, "mixed4b:443": 99.609375, "mixed4b:429": 99.21875, "mixed4b:384": 99.8046875} -> True
+recorded: Qwen3-VL-8B-Instruct: h1 rates [0.634, 0.653, 0.307, 0.744, 0.66, 0.633, 0.458, 0.754]; r(d) all 0.49768413368856934; photos {'a': 3080, 'b': 3080, 'both': 3080}
+step 2: not run
