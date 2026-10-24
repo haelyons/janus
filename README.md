@@ -1028,3 +1028,14 @@ the boxes' driver is CUDA 12.8). Check in `runs/r31/validate/r31_check_validate.
   `remote.sha256`). The facing signal survives a weaker answerer; most other questions do not.
 - The validation half split is not independent of D/T (crc32 is affine, so the "r31:" prefix only flips parity per
   name length); V1 needs only disjoint photo sets, and V2/V3 use all photos.
+
+## Round 31A2: Qwen3-VL-32B with tensor parallelism (post-hoc addendum, `tools/r31_tp.py`)
+
+The 32B candidate that did not load in 31A, run unchanged through `tools/vlm_answer.py` with tensor parallel 4 on
+8 x A100 (two copies, half the photos each). 3062/3080 valid. Same sealed rules: it beats the 8B on the calibration
+half (mean agreement 0.68 against 0.60) and is selected.
+- V1 failed: confirmation half, model against Claude-vs-Claude: facing 0.74/0.88, size 0.68/0.85, cut off 0.71/0.89,
+  position 0.68/0.90, light 0.69/0.84, tint 0.72/0.80, tilt 0.49/0.81, blur 0.70/0.84.
+- V2 failed: table d correlation 0.59 against 0.88 (bar 0.70). V3 held (facing rows 98-100).
+- Step 2 not run. A larger model closes part of the gap (cut off 0.31 to 0.71, r 0.50 to 0.59) but no question
+  comes within 5 points of Claude's own repeatability. Box time about 20 minutes.

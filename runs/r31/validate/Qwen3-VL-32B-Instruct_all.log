@@ -1,0 +1,39 @@
+a: claude:runs/pairtable/answers.json claude:runs/r30b/pairtable/answers.json claude:runs/r30a/pairtable/answers.json
+b: vlm:runs/r31/answers/val_Qwen3-VL-32B-Instruct.json
+half all: photos a 3080, b 3062, both 3062
+Q1. Which way is the main subject facing or pointing?  n 3062, agree 2254, rate 0.736 -> BELOW_0.8; None in a 0, in b 0
+Q2. How much of the photo does the main subject take up?  n 3062, agree 2096, rate 0.685 -> BELOW_0.8; None in a 0, in b 0
+Q3. Is the main subject cut off by an edge of the photo?  n 3062, agree 2188, rate 0.715 -> BELOW_0.8; None in a 0, in b 0
+Q4. Where is the center of the main subject left to right?  n 3062, agree 2069, rate 0.676 -> BELOW_0.8; None in a 0, in b 0
+Q5. How brightly lit is the main subject?  n 3062, agree 2107, rate 0.688 -> BELOW_0.8; None in a 0, in b 0
+Q6. Does the photo have an overall color tint?  n 3062, agree 2233, rate 0.729 -> BELOW_0.8; None in a 0, in b 0
+Q7. Are the horizon or the main straight lines in the photo tilted?  n 3062, agree 1470, rate 0.480 -> BELOW_0.8; None in a 0, in b 0
+Q8. How sharp is the main subject?  n 3062, agree 2150, rate 0.702 -> BELOW_0.8; None in a 0, in b 0
+== mixed4b:431  D 109, T 131; rows of a's table 15, matched in b's 15
+== mixed4b:443  D 113, T 126; rows of a's table 14, matched in b's 11
+== mixed4b:429  D 118, T 121; rows of a's table 12, matched in b's 11
+== mixed4b:384  D 118, T 121; rows of a's table 17, matched in b's 14
+== mixed4b:409  D 121, T 118; rows of a's table 14, matched in b's 9
+== mixed4b:418  D 115, T 124; rows of a's table 24, matched in b's 21
+== mixed4a:222  D 131, T 109; rows of a's table 19, matched in b's 17
+== mixed4a:234  D 101, T 138; rows of a's table 10, matched in b's 9
+== mixed4a:308  D 130, T 109; rows of a's table 21, matched in b's 19
+== mixed4a:325  D 115, T 124; rows of a's table 14, matched in b's 13
+== mixed5a:160  D 110, T 129; rows of a's table 28, matched in b's 23
+== mixed5a:23  D 121, T 116; rows of a's table 31, matched in b's 29
+== mixed5b:573  D 112, T 125; rows of a's table 36, matched in b's 19
+== mixed5b:907  D 109, T 126; rows of a's table 28, matched in b's 23
+== mixed4a:259  D 114, T 126; rows of a's table 31, matched in b's 26
+== mixed4b:169  D 112, T 128; rows of a's table 31, matched in b's 29
+== mixed4e:756  D 113, T 127; rows of a's table 31, matched in b's 28
+== mixed4b:391  D 127, T 113; rows of a's table 33, matched in b's 20
+== mixed4d:427  D 127, T 112; rows of a's table 26, matched in b's 18
+== mixed4b:12  D 119, T 121; rows of a's table 33, matched in b's 29
+== mixed4c:33  D 122, T 116; rows of a's table 33, matched in b's 18
+== mixed4d:503  D 127, T 113; rows of a's table 30, matched in b's 23
+== mixed4d:508  D 126, T 114; rows of a's table 36, matched in b's 24
+== mixed5a:88  D 109, T 128; rows of a's table 27, matched in b's 24
+== mixed5b:551  D 121, T 119; rows of a's table 36, matched in b's 20
+tables: 492 matched rows over 25 units; r(d) 0.585 -> BELOW_0.8; r(pct) 0.388 -> BELOW_0.8; both pct >= 95 or both below 0.815 -> AT_LEAST_0.8
+T checks: 630 rows; same outcome 0.698 -> BELOW_0.8; held with a 0.133, held with b 0.117
+report -> /home/hal/dev/interp/janus/runs/r31/validate/Qwen3-VL-32B-Instruct_all.json
