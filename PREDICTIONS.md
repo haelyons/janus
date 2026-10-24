@@ -707,3 +707,13 @@ turned by a tool-less agent into a few unit-specific yes/no or multiple-choice p
 small text in the photo?"), answered blind by the validated answerer on the unit's photos, and checked with the same
 pairwise table on D and T. Aimed at the units whose content the 8 standing questions cannot ask about (30B's random
 units, the car parts).
+
+# Round 31A2: Qwen3-VL-32B, which did not load in 31A, run again with more GPU memory (addendum, post hoc)
+(written 2026-10-24, after 31A's results and before any 32B answer exists)
+31A's verdict stands as recorded (Qwen3-VL-8B selected; V1, V2 failed; step 2 not run). This addendum was decided
+after seeing it, so it is a second attempt, not part of 31A's seal. Change: only the GPU layout. tools/vlm_answer.py
+runs unchanged through tools/r31_tp.py, which adds tensor_parallel_size=4 to vllm.LLM (8 x A100 40 GB: two copies of
+the model, each answering half of the 3,080 validation photos; outputs merged). Prompt, sampling and parsing as in
+31A. Everything else uses 31A's sealed rules unchanged: selection between the candidates that answered (Qwen3-VL-8B,
+Qwen3-VL-32B) by mean calibration-half agreement; V1, V2, V3 for the selected model; step 2 and P1-P6 only if all
+three hold, with the photo pool already built (runs/r31/pool) and step 2's answers sharded the same way.
