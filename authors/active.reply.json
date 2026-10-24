@@ -1,0 +1,42 @@
+[
+ {
+  "text": "Before answering, you may run experiments: write your own texts and see this unit's activation on every token, marked \u00abtoken|activation\u00bb on the same 0-10 scale as the data above. You must make at least 1 and at most 3 requests before your final answer, with at most 5 texts per request. A request is a reply containing only one JSON object of this form: {\"hypotheses\": [\"...\", \"...\"], \"show\": [{\"text\": \"...\", \"target\": \"the token being tested\", \"predictions\": [\"high\" or \"low\", one per hypothesis]}]}. Results come back with every token's activation on the same 0-10 scale. Use experiments to discriminate, not confirm: first list two or more genuinely competing hypotheses (e.g., a specific word vs. its broader category, surface form vs. meaning, the token itself vs. its preceding context), then design texts where they predict different outcomes. Include minimal pairs that change one feature while holding everything else fixed, and test at least one case your favored hypothesis predicts low, to check whether the unit is narrower or broader than you think. Watch for activation on tokens other than your target, since that often reveals the true trigger. Revise your hypotheses between requests based on surprises. When finished, reply with the final answer in the format described below instead of a request.",
+  "cost_usd": 0.015899999999999997,
+  "usage": {
+   "input_tokens": 2,
+   "cache_creation_input_tokens": 984,
+   "cache_read_input_tokens": 0,
+   "output_tokens": 401,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+   },
+   "service_tier": "standard",
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 984,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "inference_geo": "global",
+   "iterations": [
+    {
+     "input_tokens": 2,
+     "output_tokens": 401,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 984,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 984
+     },
+     "type": "message"
+    }
+   ],
+   "speed": "standard",
+   "fallback_credit": null
+  },
+  "is_error": false,
+  "ms": 4960
+ }
+]

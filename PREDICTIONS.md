@@ -717,3 +717,54 @@ the model, each answering half of the 3,080 validation photos; outputs merged). 
 31A. Everything else uses 31A's sealed rules unchanged: selection between the candidates that answered (Qwen3-VL-8B,
 Qwen3-VL-32B) by mean calibration-half agreement; V1, V2, V3 for the selected model; step 2 and P1-P6 only if all
 three hold, with the photo pool already built (runs/r31/pool) and step 2's answers sharded the same way.
+
+# Round 32: basis control and joint-answer control (no calls; tools/r32_basis.py, tools/r32_check.py)
+(written 2026-10-24, before tools/r32_basis.py exists or has run)
+Question: is what the pairwise table finds specific to the network's channels, or would any direction in the same
+space show it? Per layer of the 25 round-31 units (7 layers): the 25 units ("selected"), 40 channels drawn at random
+("channel"), and 40 random unit-norm directions in channel space ("direction", spatial max of the projected map). Each
+candidate gets pairtable's every-arm check on its own 24 classes among the 308 answered classes, with the merged
+Claude answers (rounds 29, 30B, 30A). Same rules for every group (held: T pct >= 95 among the layer's channels and
+d > 0). Joint control (selected units): each row's contrast refitted with all 8 questions' answers in one least-squares
+fit, then checked on T the same way.
+B1. Privileged basis: the share of channels with at least one held row exceeds the share of directions by 0.10 or
+    more, and channels' held-row counts exceed directions' (one-sided Mann-Whitney, p < 0.05).
+B2. Channels have more held rows per candidate than directions in at least 5 of the 7 layers.
+B3. The selected units are not typical channels: their share with a held distinctive row is at least 0.20 above the
+    random channels'.
+B4. Sanity: each group's mean held rows with within-class permuted answers is at most half the channels' mean held
+    rows.
+K.  Expected from the ReLU alone, recorded as a sanity check, not evidence: median excess kurtosis of channels above
+    directions in at least 6 of 7 layers.
+J1. Joint control: at least 3 of the 4 oriented 4b units (431, 443 right; 429, 384 left) have their facing row held on
+    T both plainly and jointly.
+Recorded: how many of the selected units' held rows survive the joint fit, and which are lost.
+Reading fixed now: if B1 fails, readability by this table is not specific to channels, "neurons are clean" gets no
+support from it, and random directions become a required control in every later round (OLMo included). If B1 holds,
+the table finds structure that is aligned with channels more than with random directions.
+
+# Round 33 (pilot): experiments on text units, OLMo-2-1124-7B and planted (tools/run_text_arms.py, bank/olmo_units.py)
+(written 2026-10-24, before any round-33 tool has run, any OLMo activation exists or any session)
+Question (the full round, later): does an agent that runs its own experiments (writes texts, sees the unit's
+activation on every token) end with a more predictive explanation than one that only reads the card, and is that
+from choosing the experiments rather than from seeing more data? This pilot only checks the plumbing and whether
+agents use the experiments. 4 cards x 4 arms x 1 sample, empty system prompt, claude-opus-5-5:
+- cards: U-421 (planted sail_lag, field: the hidden-context card, near chance in every earlier arm); U-733 (planted
+  repeat_cap: a repeated capitalised word, whose strongest examples are mostly names); the first 2 usable neurons of
+  OLMo-2-1124-7B (base) in olmo_units.draw_units order (seed 33, layers 4-27, MLP hidden activation), cards built
+  mechanically from Pile-10k.
+- arms: A0 (card only); F2_pool (card + 15 more natural windows); P1_active (card + an offer of 1-3 requests of up to
+  5 self-written texts; offer paragraph written blind from authors/brief_active.md); Y1_yoked (card + exactly the
+  texts and results of the P1 session for that card, not chosen by the subject).
+- scores: held-out turn (20 items, as every earlier round); explanation-only simulator (a fresh session sees only
+  the turn-1 explanation and predicts activation 0-10 on 40 test tokens stratified across the activation range;
+  Spearman rho).
+Q1. Plumbing: all 16 sessions saved, and all 16 simulator replies give at least 36 of 40 predictions.
+Q2. Agents use the experiments: P1_active makes 2 or more requests on average.
+Recorded, not predicted (n = 4 cards, no comparison is powered): held-out accuracy and simulator rho per arm and card;
+whether P1 or Y1 mentions repetition on U-733 or distant context on U-421; discriminating probe texts (predictions
+differ across hypotheses).
+Next step, fixed now: if Q1 and Q2 hold, the full round is sealed before it runs, with more cards (planted cards
+built to mislead, real neurons, and random directions in the same MLP space as the basis control), 3 samples per arm,
+and the comparison P1 against Y1 as the primary test. If Q2 fails, the offer is the problem and the full round is
+not run as designed.

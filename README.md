@@ -1039,3 +1039,32 @@ half (mean agreement 0.68 against 0.60) and is selected.
 - V2 failed: table d correlation 0.59 against 0.88 (bar 0.70). V3 held (facing rows 98-100).
 - Step 2 not run. A larger model closes part of the gap (cut off 0.31 to 0.71, r 0.50 to 0.59) but no question
   comes within 5 points of Claude's own repeatability. Box time about 20 minutes.
+
+## Round 32: basis control and joint-answer control (`tools/r32_basis.py`, claim-blind author; `r32_check.py`)
+
+No calls. Per layer of the 25 round-31 units (7 layers): the 25 units, 40 random channels and 40 random unit-norm
+directions in channel space (spatial max of the projected map), each with pairtable's every-arm check on its own 24
+classes among the 308 answered classes (Claude answers, rounds 29/30A/30B). Tests by a separate blind tester: 103
+pass. `runs/r32/` (`basis.json`, `report.txt`, `r32_check.txt`, `posthoc_rates.txt`).
+
+    group      share>=1 held  mean held  mean held (null)  D95 rows held on T  (null)
+    selected   0.96           3.48       1.12              0.30                0.045
+    channel    0.80           2.68       1.45              0.18                0.051
+    direction  0.73           1.97       1.06              0.12                0.036
+
+- B1 failed: channels 0.80 against directions 0.73 with a held row (sealed margin 0.10), though the counts differ
+  (Mann-Whitney p 0.001). B2 held: channels ahead of directions in all 7 layers. B3 failed (selected 0.72 against
+  channels 0.59 with a held distinctive row; margin 0.20). K failed: channels' kurtosis is not higher (3 of 7).
+- B4 failed, and that is my check's error, not the tool's: the every arm checks every row (about 30 per candidate),
+  and within-class permuted answers hold at about 4-5% per row, so 1-1.5 null rows per candidate are chance. The
+  bar (half the channels' mean) was set without that rate. Post hoc, per row (table above): rows at 95+ on D hold on
+  T for 18% of channels' rows and 12% of directions' (null 4-5%). Excess over null per candidate: channels 1.23,
+  directions 0.91.
+- Reading: the table's structure is partly aligned with channels (a random direction keeps about three quarters of a
+  random channel's excess over chance, and two thirds of its replication rate), but random directions are far from
+  unreadable. This table gives weak support to "neurons are clean" as a claim about the neuron basis.
+- J1 held: the four oriented 4b units keep their facing row with all eight questions in one fit (joint T percentile
+  97.9-99.8). Joint control overall: 30 of the selected units' 87 held rows survive. Most losses involve the answer
+  "no single main subject", which several questions share (one property counted many times; 4e:756 loses all 13
+  such rows), or blur and size, which co-vary with facing. Zoom In 4a: 222, 234, 308 keep their left/right row;
+  325 loses its facing row (joint 91.7).
