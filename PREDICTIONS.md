@@ -768,3 +768,18 @@ Next step, fixed now: if Q1 and Q2 hold, the full round is sealed before it runs
 built to mislead, real neurons, and random directions in the same MLP space as the basis control), 3 samples per arm,
 and the comparison P1 against Y1 as the primary test. If Q2 fails, the offer is the problem and the full round is
 not run as designed.
+
+# Round 33 full: experiments on text units (written 2026-10-25, after the pilot, before any full-round session)
+Changes from the pilot, decided from it: simulator excerpts now show 240 tokens before the marked token (the same
+tokens and truth as before; the pilot's 48-token items stay in bank/KEY_*_pilot.json). Cards (14): planted U-862
+(paren_year, new), U-518 (num_plural, new), U-733, U-421; OLMo neurons O-848, O-142, O-975, O-293 (draw order 3-6),
+O-290, O-158; random directions in the same MLP space O-111, O-981, O-425, O-540 (draw order 1-4). Arms A0, F2_pool,
+P1_active, Y1_yoked; 2 samples per card (pilot cards: samples 2 and 3, the pilot's sample 1 not counted); per card the
+mean over the two samples. Run one card at a time (all arms, then the simulator), so any stop leaves whole cards.
+Primary question: does choosing the experiments help, beyond seeing their results?
+F1. P1 beats Y1 on simulator rho: mean difference >= 0.05 and P1 ahead on 9 or more of 14 cards. (The pilot points
+    the other way; I expect this to fail.)
+F2. On the 4 planted cards, P1's held-out accuracy beats A0's by 0.10 or more on average.
+F3. Agent-chosen texts are better data than random natural windows: Y1's held-out beats F2's by 0.05 or more on average.
+F4. Basis control: A0's simulator rho on the 6 neurons is 0.10 or more above its rho on the 4 random directions.
+Evaluated only when all 14 cards are complete (tools/r33f_check.py); before that, per-card cells are recorded only.
