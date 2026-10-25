@@ -1,0 +1,104 @@
+{
+ "arm": "Y1_yoked",
+ "card": "U-733",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "She graduated from Ohio State University in 2010.",
+  "She graduated from a large state university in 2010.",
+  "The weather was cold. Then it snowed again.",
+  "My grandmother always hated March because of the winds.",
+  "var x = new StringBuilder(); x.Append(\"hi\");",
+  "My father died in March several years ago. My sister dreads« March|8». Over the years she has lost a father, a husband, and several close friends in« March|9».",
+  "The Marne ZIP code 49435 also serves areas in the central part of Tallmadge Township. The city of Walker is to the east, and the« Walker|8»/Grand Rapids ZIP code 49544 serves the eastern parts of« Tall|9»madge« Township|10».",
+  "He earned a Ph.D in organizational psychology from Boston College and a JD from the Santa Clara University School of Law.",
+  "The New York Civil Liberties Union sent a letter to the New« York|9» State Education Department.",
+  "The dog ran into the yard. Later the dog barked, and then the dog slept.",
+  "He studied at Boston College. Years later he returned to« Boston|9»« College|8» to teach.",
+  "Then he left. Then he came back. Then he left again.",
+  "She visited Kieran on Monday, and« Kier|9»an was grumpy."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires on a proper noun or name token (person, place, institution, month, code identifier) when it repeats an entity already mentioned earlier in the context. This looks like an induction or copying unit for names.\",\n \"evidence\": \"Text 1 and Text 8 have first mentions of Boston College or Ohio State and stay silent, while Text 11's second 'Boston College', Text 13's second 'Kieran' and the repeated 'March', 'York' and 'Tallmadge Township' all fire at 8-10. Repeated common words ('dog' in Text 10, 'Then' in Text 12) stay silent, so this is specific to names and not repetition in general.\",\n \"missing_data\": \"Repeated capitalized non-name words and repeated rare common nouns would test whether the trigger is 'named entity' or 'rare/capitalized token'. Activations across first versus second mentions in long contexts would also help.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.035224,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2832,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 628,
+    "output_tokens_details": {
+     "thinking_tokens": 300
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2832,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 628,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2832,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2832
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7779
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0812064,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2850,
+    "cache_read_input_tokens": 2832,
+    "output_tokens": 1130,
+    "output_tokens_details": {
+     "thinking_tokens": 840
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2850,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 1130,
+      "cache_read_input_tokens": 2832,
+      "cache_creation_input_tokens": 2850,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2850
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 12163
+  }
+ ]
+}

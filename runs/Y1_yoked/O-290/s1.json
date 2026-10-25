@@ -1,0 +1,101 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-290",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "The event is next week. There will be food and« music|1» for everyone.",
+  "The event was last week. There was food and music for everyone.",
+  "We haven't decided yet,« but|1»« the|1»« team|1»« may|3»« add|1» more features later.",
+  "We decided last year, and the team« added|1» more features later.",
+  "If you need help with the setup,« I|4»« can|4» walk you through it.",
+  "Nothing is final yet. There« may|1»« also|2»« be|2»« some|2»« changes|1» to the« schedule|1», officials said.",
+  "Nothing is final yet. Officials said some« changes|1» to the« schedule|1»« may|2»« also|2» follow.",
+  "If demand is high, the company said the product could be released in« Europe|1»« too|1».",
+  "The company said the product was released in Europe too.",
+  "If anyone is interested,« I|3»«'d|2»« be|2»« happy|2»« to|3» share the code«,|1»« and|2»« I|6»« can|3» send« it|1»« by|1»« email|1»."
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the subject and modal or future auxiliary that open a clause about a prospective, possible or offered future event ('There may/will be', 'the team said ... could', 'I can/I'd', 'ill let you know'). It peaks on the subject or existential 'there' just before the modal.\",\n \"evidence\": \"Minimal pairs show the effect: future/possible versions activate ('There will be' 1, 'the team may add' 3, 'I can walk you through' 4) while past-tense counterparts are near zero (Texts 2, 4, 9). The strongest examples are all 'There will/may be' or offers like 'I can set you up'; weaker mid-range hits on descriptive lists (villa flooring, mummies) are a minor, less related extension.\",\n \"missing_data\": \"Contexts with a modal but no future or possibility meaning (e.g., deontic 'you must', habitual 'would'), and future events stated without a modal (e.g., 'is scheduled to'), to separate modality from futurity.\",\n \"confidence\": 0.72}",
+   "cost_usd": 0.040852,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4198,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 363,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4198,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 363,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4198,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4198
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5486
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0722858,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3106,
+    "cache_read_input_tokens": 3849,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3106,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 3849,
+      "cache_creation_input_tokens": 3106,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3106
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 2954
+  }
+ ]
+}

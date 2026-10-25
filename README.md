@@ -1068,3 +1068,31 @@ pass. `runs/r32/` (`basis.json`, `report.txt`, `r32_check.txt`, `posthoc_rates.t
   "no single main subject", which several questions share (one property counted many times; 4e:756 loses all 13
   such rows), or blur and size, which co-vary with facing. Zoom In 4a: 222, 234, 308 keep their left/right row;
   325 loses its facing row (joint 91.7).
+
+## Round 33 pilot: experiments on text units (`tools/run_text_arms.py`, `bank/olmo_units.py`, claim-blind authors)
+
+4 cards x 4 arms x 1 sample, empty system prompt; blind testers: 96 tests (olmo_units) pass, 57 (run_text_arms) pass on
+a late-binding copy (the tool binds `measure` as a default argument). OLMo-2-1124-7B base, MLP hidden activation, over
+Pile-10k (activations in Git LFS, `runs/r33/olmo_acts/`). `runs/r33/r33_check.txt`.
+
+    card                          A0          F2_pool     P1_active   Y1_yoked    (held-out / simulator rho)
+    U-733 planted repeat_cap      0.75 0.71   0.75 0.57   0.85 0.34   0.85 0.39
+    U-421 planted sail_lag        0.70 0.59   0.65 0.58   0.50 0.58   0.65 0.60
+    O-290 OLMo L25:n4883          0.60 0.61   0.65 0.60   0.70 0.57   0.70 0.59
+    O-158 OLMo L13:n6257          0.85 0.64   0.85 0.58   0.85 0.59   0.90 0.67
+    mean                          0.73 0.64   0.73 0.58   0.73 0.52   0.78 0.56
+
+- Q1 held (16/16 sessions, 16/16 simulator replies complete). Q2 held: P1 made 2.75 requests on average; 32 of 45
+  probe texts were discriminating (the hypotheses predicted different outcomes).
+- U-733: P1's experiments found the planted rule ("a name already mentioned earlier in the document"; A0 and F2:
+  "capitalised names"). Y1, shown the same experiments without choosing them, found it too. On held-out, first
+  mentions of names (near misses) went from 0.29 (A0) to 0.86 (P1).
+- U-421: P1 inferred that the trigger depends on context outside the window, but not sailing; its held-out fell to
+  0.50 (it then predicted most punctuation fires).
+- OLMo neurons: O-290 reads as subjects and modals opening a forward-looking clause ("I can", "there may"); O-158 as
+  the separator inside a pair in a list of pairs ("(2,2)", "23-24"). Arms agree; experiments sharpen near misses on
+  O-290 (0.50 to 0.83) but not novel surfaces (0.2 everywhere).
+- No sign that choosing the experiments helps: Y1 matches or beats P1 on every card. The simulator score is flawed for
+  context-dependent rules: its excerpts show 48 tokens before the token, so the correct "repeated name" reading
+  cannot be applied and scores below the broader wrong one (U-733: 0.34 against 0.71). It needs longer excerpts, or
+  items where the context needed is visible, before the full round.

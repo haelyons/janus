@@ -1,0 +1,100 @@
+{
+ "arm": "Y1_yoked",
+ "card": "U-421",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "We went to the store, bought some milk, and came home. It was raining.",
+  "The total was 3,450 dollars and the ratio was 2.5 to 1 overall",
+  "def f(a, b):\n    return a.b + c.d",
+  "We went to the store; we bought milk: then we came home and slept",
+  "Dr. Smith met Mr. Jones at 5 p.m. near the U.S. border",
+  "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+  "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city.",
+  "No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+  "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city. The school, which opened in 1890, has been expanded twice. Its library, once small, now holds thousands of books. The market, held every Saturday, sells fruit, vegetables, cheese, and bread. Visitors come from far away, especially in summer. The river, wide and slow, is popular with anglers. A bridge, rebuilt in 1950, connects the two halves of town. The council, elected every four years, manages roads, parks, and housing. Local businesses, mostly family-owned, form the backbone of the economy. Tourism, however, has grown in importance. Hotels, cafes, and shops line the main street. The museum, housed in an old mill, tells the story of the town. Every year, in September, a festival is held. Music, dancing, and food fill the streets. Children, parents, and grandparents all take part. In the evening, fireworks light up the sky. The next morning, life returns to normal, and the cycle begins again. Choosing this town is choosing quality, community, and one of the best festivals in the region."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on clause- and sentence-boundary punctuation (commas and periods ending a clause or list item) in running prose. It appears gated by some document-level context, such as position deep in a long document, rather than by the punctuation alone.\",\n \"evidence\": \"Every marked token in the top and middle examples is a ',' or '.' at a clause or list boundary, and nothing else is ever marked. However, Texts 6 and 8 reproduce Examples 1 and 3 nearly verbatim and get no activation at all, nor does the long Text 9, so the local text is not sufficient to trigger it.\",\n \"missing_data\": \"Activations for the original examples with their full preceding document context, or with the same sentences placed at varied token positions, to find what gates the unit (position, document length, or genre).\",\n \"confidence\": 0.45}\n```",
+   "cost_usd": 0.044092,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3713,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 719,
+    "output_tokens_details": {
+     "thinking_tokens": 429
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3713,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 719,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3713,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3713
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8981
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0828586,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3091,
+    "cache_read_input_tokens": 3713,
+    "output_tokens": 664,
+    "output_tokens_details": {
+     "thinking_tokens": 374
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3091,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 664,
+      "cache_read_input_tokens": 3713,
+      "cache_creation_input_tokens": 3091,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3091
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8089
+  }
+ ]
+}

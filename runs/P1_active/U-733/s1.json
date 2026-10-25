@@ -1,0 +1,369 @@
+{
+ "arm": "P1_active",
+ "card": "U-733",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on capitalized tokens that are part of a proper name or named entity (institutions, places, months, identifiers)",
+    "Unit fires on any capitalized word token regardless of whether it is a name",
+    "Unit fires specifically on head nouns of institution/place names (University, Township, School)"
+   ],
+   "show": [
+    {
+     "text": "She graduated from Ohio State University in 2010.",
+     "target": " University",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She graduated from a large state university in 2010.",
+     "target": " university",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The weather was cold. Then it snowed again.",
+     "target": " Then",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "My grandmother always hated March because of the winds.",
+     "target": " March",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "var x = new StringBuilder(); x.Append(\"hi\");",
+     "target": "Builder",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit needs longer document context; fires on capitalized name tokens deep in a document",
+    "Unit fires on repeated mentions of a proper noun already seen earlier in the document",
+    "Unit is essentially unpredictable / responds to idiosyncratic token-context combos"
+   ],
+   "show": [
+    {
+     "text": "My father died in March several years ago. My sister dreads March. Over the years she has lost a father, a husband, and several close friends in March.",
+     "target": " March",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The Marne ZIP code 49435 also serves areas in the central part of Tallmadge Township. The city of Walker is to the east, and the Walker/Grand Rapids ZIP code 49544 serves the eastern parts of Tallmadge Township.",
+     "target": " Township",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "He earned a Ph.D in organizational psychology from Boston College and a JD from the Santa Clara University School of Law.",
+     "target": " College",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The New York Civil Liberties Union sent a letter to the New York State Education Department.",
+     "target": " York",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on repeated mentions of a capitalized proper noun already seen in the document",
+    "Unit fires on any repeated token/word (induction/copying), including lowercase common nouns",
+    "Unit fires on repeated capitalized tokens regardless of name status"
+   ],
+   "show": [
+    {
+     "text": "The dog ran into the yard. Later the dog barked, and then the dog slept.",
+     "target": " dog",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "He studied at Boston College. Years later he returned to Boston College to teach.",
+     "target": " College",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Then he left. Then he came back. Then he left again.",
+     "target": " Then",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She visited Kieran on Monday, and Kieran was grumpy.",
+     "target": "an",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "She graduated from Ohio State University in 2010.",
+  "She graduated from a large state university in 2010.",
+  "The weather was cold. Then it snowed again.",
+  "My grandmother always hated March because of the winds.",
+  "var x = new StringBuilder(); x.Append(\"hi\");",
+  "My father died in March several years ago. My sister dreads« March|8». Over the years she has lost a father, a husband, and several close friends in« March|9».",
+  "The Marne ZIP code 49435 also serves areas in the central part of Tallmadge Township. The city of Walker is to the east, and the« Walker|8»/Grand Rapids ZIP code 49544 serves the eastern parts of« Tall|9»madge« Township|10».",
+  "He earned a Ph.D in organizational psychology from Boston College and a JD from the Santa Clara University School of Law.",
+  "The New York Civil Liberties Union sent a letter to the New« York|9» State Education Department.",
+  "The dog ran into the yard. Later the dog barked, and then the dog slept.",
+  "He studied at Boston College. Years later he returned to« Boston|9»« College|8» to teach.",
+  "Then he left. Then he came back. Then he left again.",
+  "She visited Kieran on Monday, and« Kier|9»an was grumpy."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on capitalized tokens that are part of a proper name or named entity (institutions, places, months, identifiers)\", \"Unit fires on any capitalized word token regardless of whether it is a name\", \"Unit fires specifically on head nouns of institution/place names (University, Township, School)\"], \"show\": [{\"text\": \"She graduated from Ohio State University in 2010.\", \"target\": \" University\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She graduated from a large state university in 2010.\", \"target\": \" university\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"The weather was cold. Then it snowed again.\", \"target\": \" Then\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"My grandmother always hated March because of the winds.\", \"target\": \" March\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"var x = new StringBuilder(); x.Append(\\\"hi\\\");\", \"target\": \"Builder\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.030904,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2722,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 456,
+    "output_tokens_details": {
+     "thinking_tokens": 108
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2722,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 456,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2722,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2722
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5734
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit needs longer document context; fires on capitalized name tokens deep in a document\", \"Unit fires on repeated mentions of a proper noun already seen earlier in the document\", \"Unit is essentially unpredictable / responds to idiosyncratic token-context combos\"], \"show\": [{\"text\": \"My father died in March several years ago. My sister dreads March. Over the years she has lost a father, a husband, and several close friends in March.\", \"target\": \" March\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The Marne ZIP code 49435 also serves areas in the central part of Tallmadge Township. The city of Walker is to the east, and the Walker/Grand Rapids ZIP code 49544 serves the eastern parts of Tallmadge Township.\", \"target\": \" Township\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"He earned a Ph.D in organizational psychology from Boston College and a JD from the Santa Clara University School of Law.\", \"target\": \" College\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The New York Civil Liberties Union sent a letter to the New York State Education Department.\", \"target\": \" York\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.0458524,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 581,
+    "cache_read_input_tokens": 2722,
+    "output_tokens": 487,
+    "output_tokens_details": {
+     "thinking_tokens": 72
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 581,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 487,
+      "cache_read_input_tokens": 2722,
+      "cache_creation_input_tokens": 581,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 581
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5401
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on repeated mentions of a capitalized proper noun already seen in the document\", \"Unit fires on any repeated token/word (induction/copying), including lowercase common nouns\", \"Unit fires on repeated capitalized tokens regardless of name status\"], \"show\": [{\"text\": \"The dog ran into the yard. Later the dog barked, and then the dog slept.\", \"target\": \" dog\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"He studied at Boston College. Years later he returned to Boston College to teach.\", \"target\": \" College\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Then he left. Then he came back. Then he left again.\", \"target\": \" Then\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"She visited Kieran on Monday, and Kieran was grumpy.\", \"target\": \"an\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.060405,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 737,
+    "cache_read_input_tokens": 3303,
+    "output_tokens": 399,
+    "output_tokens_details": {
+     "thinking_tokens": 85
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 737,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 399,
+      "cache_read_input_tokens": 3303,
+      "cache_creation_input_tokens": 737,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 737
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5119
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on the tokens of a proper name (person, place, institution, month, or code identifier) when that name has already appeared earlier in the same document. It looks like a copy or induction signal specific to named entities.\",\n \"evidence\": \"Every name I tested stayed silent at its first mention and fired at 8-10 when repeated: March, Tallmadge Township, Walker, New York, Boston College, and Kieran. Repeated common nouns (\\\"dog\\\") and repeated capitalized function words (\\\"Then\\\") stayed silent.\",\n \"missing_data\": \"I did not see the earlier context of the top examples, so I couldn't confirm that each name had been mentioned before. It's also untested whether the unit needs capitalization or a true named entity, for example a repeated lowercase brand or a rare technical term.\",\n \"confidence\": 0.8}",
+   "cost_usd": 0.07227700000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 541,
+    "cache_read_input_tokens": 4040,
+    "output_tokens": 336,
+    "output_tokens_details": {
+     "thinking_tokens": 48
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 541,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 336,
+      "cache_read_input_tokens": 4040,
+      "cache_creation_input_tokens": 541,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 541
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4755
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1087092,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2560,
+    "cache_read_input_tokens": 4581,
+    "output_tokens": 751,
+    "output_tokens_details": {
+     "thinking_tokens": 461
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2560,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 751,
+      "cache_read_input_tokens": 4581,
+      "cache_creation_input_tokens": 2560,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2560
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8165
+  }
+ ]
+}

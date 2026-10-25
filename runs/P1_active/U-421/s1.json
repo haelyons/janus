@@ -1,0 +1,327 @@
+{
+ "arm": "P1_active",
+ "card": "U-421",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on any comma or period token in running prose (sentence/clause punctuation generally)",
+    "Unit fires only on clause/sentence-boundary punctuation, not on punctuation inside numbers, abbreviations, or code",
+    "Unit fires on punctuation-like boundary tokens broadly, including semicolons, colons, and newlines"
+   ],
+   "show": [
+    {
+     "text": "We went to the store, bought some milk, and came home. It was raining.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The total was 3,450 dollars and the ratio was 2.5 to 1 overall",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "def f(a, b):\n    return a.b + c.d",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "We went to the store; we bought milk: then we came home and slept",
+     "target": ";",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Dr. Smith met Mr. Jones at 5 p.m. near the U.S. border",
+     "target": ".",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on commas/periods only after a long stretch of preceding context (position-dependent)",
+    "Unit fires on commas/periods in formal/descriptive or commercial-informational prose regardless of length",
+    "Unit fires on punctuation only in specific registers like reviews/policies"
+   ],
+   "show": [
+    {
+     "text": "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+     "target": ",",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+     "target": ",",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on commas/periods only far into a long document (depends on token position/long context)",
+    "Unit's top activations depend on specific document-level context not reproducible here; punctuation never fires in short probes"
+   ],
+   "show": [
+    {
+     "text": "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city. The school, which opened in 1890, has been expanded twice. Its library, once small, now holds thousands of books. The market, held every Saturday, sells fruit, vegetables, cheese, and bread. Visitors come from far away, especially in summer. The river, wide and slow, is popular with anglers. A bridge, rebuilt in 1950, connects the two halves of town. The council, elected every four years, manages roads, parks, and housing. Local businesses, mostly family-owned, form the backbone of the economy. Tourism, however, has grown in importance. Hotels, cafes, and shops line the main street. The museum, housed in an old mill, tells the story of the town. Every year, in September, a festival is held. Music, dancing, and food fill the streets. Children, parents, and grandparents all take part. In the evening, fireworks light up the sky. The next morning, life returns to normal, and the cycle begins again. Choosing this town is choosing quality, community, and one of the best festivals in the region.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We went to the store, bought some milk, and came home. It was raining.",
+  "The total was 3,450 dollars and the ratio was 2.5 to 1 overall",
+  "def f(a, b):\n    return a.b + c.d",
+  "We went to the store; we bought milk: then we came home and slept",
+  "Dr. Smith met Mr. Jones at 5 p.m. near the U.S. border",
+  "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+  "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city.",
+  "No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+  "The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city. The school, which opened in 1890, has been expanded twice. Its library, once small, now holds thousands of books. The market, held every Saturday, sells fruit, vegetables, cheese, and bread. Visitors come from far away, especially in summer. The river, wide and slow, is popular with anglers. A bridge, rebuilt in 1950, connects the two halves of town. The council, elected every four years, manages roads, parks, and housing. Local businesses, mostly family-owned, form the backbone of the economy. Tourism, however, has grown in importance. Hotels, cafes, and shops line the main street. The museum, housed in an old mill, tells the story of the town. Every year, in September, a festival is held. Music, dancing, and food fill the streets. Children, parents, and grandparents all take part. In the evening, fireworks light up the sky. The next morning, life returns to normal, and the cycle begins again. Choosing this town is choosing quality, community, and one of the best festivals in the region."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on any comma or period token in running prose (sentence/clause punctuation generally)\", \"Unit fires only on clause/sentence-boundary punctuation, not on punctuation inside numbers, abbreviations, or code\", \"Unit fires on punctuation-like boundary tokens broadly, including semicolons, colons, and newlines\"], \"show\": [{\"text\": \"We went to the store, bought some milk, and came home. It was raining.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The total was 3,450 dollars and the ratio was 2.5 to 1 overall\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"def f(a, b):\\n    return a.b + c.d\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"We went to the store; we bought milk: then we came home and slept\", \"target\": \";\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"Dr. Smith met Mr. Jones at 5 p.m. near the U.S. border\", \"target\": \".\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.03516,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3219,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 470,
+    "output_tokens_details": {
+     "thinking_tokens": 74
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3219,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 470,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3219,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3219
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5804
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on commas/periods only after a long stretch of preceding context (position-dependent)\", \"Unit fires on commas/periods in formal/descriptive or commercial-informational prose regardless of length\", \"Unit fires on punctuation only in specific registers like reviews/policies\"], \"show\": [{\"text\": \"Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.\", \"target\": \",\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.\", \"target\": \",\", \"predictions\": [\"low\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.0513398,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 630,
+    "cache_read_input_tokens": 3219,
+    "output_tokens": 524,
+    "output_tokens_details": {
+     "thinking_tokens": 86
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 630,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 524,
+      "cache_read_input_tokens": 3219,
+      "cache_creation_input_tokens": 630,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 630
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6436
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on commas/periods only far into a long document (depends on token position/long context)\", \"Unit's top activations depend on specific document-level context not reproducible here; punctuation never fires in short probes\"], \"show\": [{\"text\": \"The history of the town is long and varied. It was founded in the twelfth century by monks who settled near the river. Over the following centuries, it grew into a busy market town, attracting traders from across the region. The church, built in stone, still stands today. In the meantime, as the mayor pointed out, the population has continued to grow, and new houses have been built on the edge of town. Many residents work locally, while others commute to the city. The school, which opened in 1890, has been expanded twice. Its library, once small, now holds thousands of books. The market, held every Saturday, sells fruit, vegetables, cheese, and bread. Visitors come from far away, especially in summer. The river, wide and slow, is popular with anglers. A bridge, rebuilt in 1950, connects the two halves of town. The council, elected every four years, manages roads, parks, and housing. Local businesses, mostly family-owned, form the backbone of the economy. Tourism, however, has grown in importance. Hotels, cafes, and shops line the main street. The museum, housed in an old mill, tells the story of the town. Every year, in September, a festival is held. Music, dancing, and food fill the streets. Children, parents, and grandparents all take part. In the evening, fireworks light up the sky. The next morning, life returns to normal, and the cycle begins again. Choosing this town is choosing quality, community, and one of the best festivals in the region.\", \"target\": \",\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.0711736,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 796,
+    "cache_read_input_tokens": 3849,
+    "output_tokens": 634,
+    "output_tokens_details": {
+     "thinking_tokens": 75
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 796,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 634,
+      "cache_read_input_tokens": 3849,
+      "cache_creation_input_tokens": 796,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 796
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7725
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"In the recorded documents, the unit fires on sentence- and clause-level punctuation (commas and periods) in running prose. Commas and periods both fire, and the topic or register makes no clear difference. The trigger only appears to work when something outside the visible window is also present, such as deep document position or long preceding context.\",\n \"evidence\": \"Every marked token in both the top and mid-range examples is a comma or period, across ads, news, reviews, privacy policies, history and fiction. However, none of my probes activated it at all: not simple sentences, not verbatim copies of the top examples (SeaArk, Blackjack), and not a long ~300-token comma-heavy passage.\",\n \"missing_data\": \"The token positions and full preceding context of the dataset examples, or probes run thousands of tokens deep, to find out what context gates the punctuation response.\",\n \"confidence\": 0.45}",
+   "cost_usd": 0.0897226,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1103,
+    "cache_read_input_tokens": 4645,
+    "output_tokens": 439,
+    "output_tokens_details": {
+     "thinking_tokens": 139
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1103,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 439,
+      "cache_read_input_tokens": 4645,
+      "cache_creation_input_tokens": 1103,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1103
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6118
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1244922,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2813,
+    "cache_read_input_tokens": 5748,
+    "output_tokens": 555,
+    "output_tokens_details": {
+     "thinking_tokens": 265
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2813,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 555,
+      "cache_read_input_tokens": 5748,
+      "cache_creation_input_tokens": 2813,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2813
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6650
+  }
+ ]
+}
