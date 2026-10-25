@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "U-862",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on four-digit year tokens (roughly 1900-2015) wherever a calendar year is written, e.g. in legal citations, birth/death dates, publication dates, and parenthetical dates.\",\n \"evidence\": \"Every marked token in all 12 examples is a year (1919, 1966, 1990, 2014, the 1980 in '1980s', the year argument in a Java LocalDate constructor), and nearby numbers such as volume numbers, page numbers, days, and months stay unmarked. The format and genre vary widely (court cases, bios, chemistry refs, code), but the year is the constant.\",\n \"missing_data\": \"Middle-range and weak activations would show whether the unit also responds more weakly to other numbers or date parts, or to years outside the modern range (e.g. 1600s, 2050), which would push the class toward one_plus_related.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.024228,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2255,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 309,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2255,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 309,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2255,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2255
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4551
+  },
+  {
+   "text": "{\"predictions\": [\n{\"id\": 1, \"fires\": false},\n{\"id\": 2, \"fires\": true},\n{\"id\": 3, \"fires\": true},\n{\"id\": 4, \"fires\": true},\n{\"id\": 5, \"fires\": true},\n{\"id\": 6, \"fires\": true},\n{\"id\": 7, \"fires\": true},\n{\"id\": 8, \"fires\": false},\n{\"id\": 9, \"fires\": true},\n{\"id\": 10, \"fires\": false},\n{\"id\": 11, \"fires\": true},\n{\"id\": 12, \"fires\": false},\n{\"id\": 13, \"fires\": false},\n{\"id\": 14, \"fires\": true},\n{\"id\": 15, \"fires\": true},\n{\"id\": 16, \"fires\": true},\n{\"id\": 17, \"fires\": false},\n{\"id\": 18, \"fires\": true},\n{\"id\": 19, \"fires\": true},\n{\"id\": 20, \"fires\": true}\n]}",
+   "cost_usd": 0.0573052,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2995,
+    "cache_read_input_tokens": 1906,
+    "output_tokens": 436,
+    "output_tokens_details": {
+     "thinking_tokens": 144
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2995,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 436,
+      "cache_read_input_tokens": 1906,
+      "cache_creation_input_tokens": 2995,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2995
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4398
+  }
+ ]
+}

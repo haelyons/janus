@@ -1,0 +1,359 @@
+{
+ "arm": "P1_active",
+ "card": "U-518",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on the noun right after any numeral (number-noun head), regardless of meaning",
+    "Fires only when the number is a count or quantity of the noun, not on a noun after a non-quantity digit such as a chemical formula or a year",
+    "Fires on any plural noun, even with no number before it"
+   ],
+   "show": [
+    {
+     "text": "She bought 7 apples at the market.",
+     "target": "apples",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She bought some apples at the market.",
+     "target": "apples",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "She bought seven apples at the market.",
+     "target": "apples",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The H2O molecule is bent.",
+     "target": "molecule",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The meeting lasted 45 minutes and then we left.",
+     "target": "minutes",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on the word right after a standalone digit number, whatever the semantics",
+    "Fires only when the number counts or measures the following noun"
+   ],
+   "show": [
+    {
+     "text": "Rising CO2 emissions worry scientists.",
+     "target": "emissions",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Turn to page 12 now and read.",
+     "target": "now",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In 2019 researchers found nothing.",
+     "target": "researchers",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "He scored 3 goals in the game.",
+     "target": "goals",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "He scored three goals in the game.",
+     "target": "goals",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on whatever word directly follows a digit, but only if it is a noun",
+    "Fires on the head noun of a digit-led phrase, even when an adjective comes in between"
+   ],
+   "show": [
+    {
+     "text": "We saw 3 big dogs outside.",
+     "target": "big",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "We saw 3 big dogs outside.",
+     "target": "dogs",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The 4 of them left early.",
+     "target": "of",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "She bought 7« apples|10» at the market.",
+  "She bought some apples at the market.",
+  "She bought seven apples at the market.",
+  "The H2O molecule is bent.",
+  "The meeting lasted 45« minutes|9» and then we left.",
+  "Rising CO2« emissions|8» worry scientists.",
+  "Turn to page 12 now and read.",
+  "In 2019« researchers|8» found nothing.",
+  "He scored 3« goals|8» in the game.",
+  "He scored three goals in the game.",
+  "We saw 3 big dogs outside.",
+  "We saw 3 big dogs outside.",
+  "The 4 of them left early."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on the noun right after any numeral (number-noun head), regardless of meaning\", \"Fires only when the number is a count or quantity of the noun, not on a noun after a non-quantity digit such as a chemical formula or a year\", \"Fires on any plural noun, even with no number before it\"], \"show\": [{\"text\": \"She bought 7 apples at the market.\", \"target\": \"apples\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She bought some apples at the market.\", \"target\": \"apples\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"She bought seven apples at the market.\", \"target\": \"apples\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The H2O molecule is bent.\", \"target\": \"molecule\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The meeting lasted 45 minutes and then we left.\", \"target\": \"minutes\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.0278,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2489,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 394,
+    "output_tokens_details": {
+     "thinking_tokens": 65
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2489,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 394,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2489,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2489
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5345
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on the word right after a standalone digit number, whatever the semantics\", \"Fires only when the number counts or measures the following noun\"], \"show\": [{\"text\": \"Rising CO2 emissions worry scientists.\", \"target\": \"emissions\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Turn to page 12 now and read.\", \"target\": \"now\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"In 2019 researchers found nothing.\", \"target\": \"researchers\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"He scored 3 goals in the game.\", \"target\": \"goals\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"He scored three goals in the game.\", \"target\": \"goals\", \"predictions\": [\"low\", \"high\"]}]}",
+   "cost_usd": 0.0393298,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 507,
+    "cache_read_input_tokens": 2489,
+    "output_tokens": 348,
+    "output_tokens_details": {
+     "thinking_tokens": 84
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 507,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 348,
+      "cache_read_input_tokens": 2489,
+      "cache_creation_input_tokens": 507,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 507
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4734
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on whatever word directly follows a digit, but only if it is a noun\", \"Fires on the head noun of a digit-led phrase, even when an adjective comes in between\"], \"show\": [{\"text\": \"We saw 3 big dogs outside.\", \"target\": \"big\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"We saw 3 big dogs outside.\", \"target\": \"dogs\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"The 4 of them left early.\", \"target\": \"of\", \"predictions\": [\"low\", \"low\"]}]}",
+   "cost_usd": 0.049221,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 467,
+    "cache_read_input_tokens": 2996,
+    "output_tokens": 277,
+    "output_tokens_details": {
+     "thinking_tokens": 86
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 467,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 277,
+      "cache_read_input_tokens": 2996,
+      "cache_creation_input_tokens": 467,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 467
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3619
+  },
+  {
+   "text": "{\"class\": \"one\", \"explanation\": \"Fires on a noun that comes directly after a number written in digits ('7 apples', '45 minutes', '2019 researchers', 'CO2 emissions'). It does not depend on whether the number is a count, a year or part of a formula.\", \"evidence\": \"Spelled-out numbers gave nothing ('seven apples', 'three goals'), and neither did a non-noun after a digit ('12 now', '4 of'). An adjective in between ('3 big dogs') killed it, while non-quantity digits still fired ('2019 researchers', 'CO2 emissions').\", \"missing_data\": \"Testing digit + verb/adjective outputs more broadly and why 'H2O molecule' stayed low (tokenization of digit inside word).\", \"confidence\": 0.8}",
+   "cost_usd": 0.058629600000000004,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 345,
+    "cache_read_input_tokens": 3463,
+    "output_tokens": 297,
+    "output_tokens_details": {
+     "thinking_tokens": 33
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 345,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 297,
+      "cache_read_input_tokens": 3463,
+      "cache_creation_input_tokens": 345,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 345
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4123
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0905672,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2590,
+    "cache_read_input_tokens": 3808,
+    "output_tokens": 522,
+    "output_tokens_details": {
+     "thinking_tokens": 232
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2590,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 522,
+      "cache_read_input_tokens": 3808,
+      "cache_creation_input_tokens": 2590,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2590
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4787
+  }
+ ]
+}

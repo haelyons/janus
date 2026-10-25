@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "U-862",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on any four-digit year token, regardless of context",
+    "Fires on any four-digit number, whether or not it is a year",
+    "Fires only on years inside citation or date contexts such as parentheses or 'born'"
+   ],
+   "show": [
+    {
+     "text": "The warehouse holds 1987 boxes of paper and 2450 crates.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She moved to Paris in 1987 and never looked back.",
+     "target": "1987",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The password is 3721 and the room number is 1450.",
+     "target": "3721",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In the year 1850 the town was founded, and by 2020 it had grown.",
+     "target": "1850",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "He was 45 years old in March, 12 days after the event.",
+     "target": "45",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on years in full dates (Month Day, Year) or legal/scholarly citations",
+    "Needs a longer, document-like context before the year fires",
+    "Fires on years written inside parentheses"
+   ],
+   "show": [
+    {
+     "text": "John Smith (born March 9, 1953 in Orange, New Jersey) is an American composer.",
+     "target": "1953",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "See Davidson v. Gardner, 370 F.2d 803 (6th Cir. 1966); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir. 1965).",
+     "target": "1966",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The gallery, which had been a fixture of the Chelsea art scene for over a decade and hosted dozens of emerging artists from around the country, finally closed in 2015, leaving many curators without a home.",
+     "target": "2015",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Smith was elected mayor (1987) and served two terms.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The meeting was held on December 17, 2001 at the town hall.",
+     "target": "2001",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on four-digit years inside an open parenthesis only",
+    "Fires on any number inside an open parenthesis",
+    "Fires on years inside any enclosing bracket"
+   ],
+   "show": [
+    {
+     "text": "The warehouse holds many boxes (3721 in total) and crates.",
+     "target": "3721",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Smith was elected mayor [1987] and served two terms.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The team (which closed in 2015) moved on.",
+     "target": "2015",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The recipe needs flour (45 grams) and sugar.",
+     "target": "45",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "He said \"it ended in 1987\" and left.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The warehouse holds 1987 boxes of paper and 2450 crates.",
+  "She moved to Paris in 1987 and never looked back.",
+  "The password is 3721 and the room number is 1450.",
+  "In the year 1850 the town was founded, and by 2020 it had grown.",
+  "He was 45 years old in March, 12 days after the event.",
+  "John Smith (born March 9,« 1953|10» in Orange, New Jersey) is an American composer.",
+  "See Davidson v. Gardner, 370 F.2d 803 (6th Cir.« 1966|10»); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir.« 1965|10»).",
+  "The gallery, which had been a fixture of the Chelsea art scene for over a decade and hosted dozens of emerging artists from around the country, finally closed in 2015, leaving many curators without a home.",
+  "Smith was elected mayor («1987|10») and served two terms.",
+  "The meeting was held on December 17, 2001 at the town hall.",
+  "The warehouse holds many boxes (3721 in total) and crates.",
+  "Smith was elected mayor [1987] and served two terms.",
+  "The team (which closed in« 2015|9») moved on.",
+  "The recipe needs flour (45 grams) and sugar.",
+  "He said \"it ended in 1987\" and left."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on any four-digit year token, regardless of context\", \"Fires on any four-digit number, whether or not it is a year\", \"Fires only on years inside citation or date contexts such as parentheses or 'born'\"], \"show\": [{\"text\": \"The warehouse holds 1987 boxes of paper and 2450 crates.\", \"target\": \"1987\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"She moved to Paris in 1987 and never looked back.\", \"target\": \"1987\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The password is 3721 and the room number is 1450.\", \"target\": \"3721\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"In the year 1850 the town was founded, and by 2020 it had grown.\", \"target\": \"1850\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"He was 45 years old in March, 12 days after the event.\", \"target\": \"45\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.028828,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2655,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 379,
+    "output_tokens_details": {
+     "thinking_tokens": 39
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2655,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 379,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2655,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2655
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4814
+  },
+  {
+   "text": "Nothing was marked in any of the five texts, so even plain years like \"in 1987\" stayed below 1. The unit may need a full date or citation format, or a longer document-like context. Next I'll test those directly.\n\n{\"hypotheses\": [\"Fires on years in full dates (Month Day, Year) or legal/scholarly citations\", \"Needs a longer, document-like context before the year fires\", \"Fires on years written inside parentheses\"], \"show\": [{\"text\": \"John Smith (born March 9, 1953 in Orange, New Jersey) is an American composer.\", \"target\": \"1953\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"See Davidson v. Gardner, 370 F.2d 803 (6th Cir. 1966); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir. 1965).\", \"target\": \"1966\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"The gallery, which had been a fixture of the Chelsea art scene for over a decade and hosted dozens of emerging artists from around the country, finally closed in 2015, leaving many curators without a home.\", \"target\": \"2015\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Smith was elected mayor (1987) and served two terms.\", \"target\": \"1987\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The meeting was held on December 17, 2001 at the town hall.\", \"target\": \"2001\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.047375,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 525,
+    "cache_read_input_tokens": 2655,
+    "output_tokens": 690,
+    "output_tokens_details": {
+     "thinking_tokens": 186
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 525,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 690,
+      "cache_read_input_tokens": 2655,
+      "cache_creation_input_tokens": 525,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 525
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7927
+  },
+  {
+   "text": "Every hit is a year inside an open parenthesis, and the same years outside parentheses stay silent. My last test checks whether non-year numbers in parentheses fire, and whether brackets or quotes behave like parentheses.\n\n{\"hypotheses\": [\"Fires on four-digit years inside an open parenthesis only\", \"Fires on any number inside an open parenthesis\", \"Fires on years inside any enclosing bracket\"], \"show\": [{\"text\": \"The warehouse holds many boxes (3721 in total) and crates.\", \"target\": \"3721\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Smith was elected mayor [1987] and served two terms.\", \"target\": \"1987\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The team (which closed in 2015) moved on.\", \"target\": \"2015\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The recipe needs flour (45 grams) and sugar.\", \"target\": \"45\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"He said \\\"it ended in 1987\\\" and left.\", \"target\": \"1987\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.068471,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 953,
+    "cache_read_input_tokens": 3180,
+    "output_tokens": 641,
+    "output_tokens_details": {
+     "thinking_tokens": 252
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 953,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 641,
+      "cache_read_input_tokens": 3180,
+      "cache_creation_input_tokens": 953,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 953
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5931
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on a four-digit year token that sits inside an open round parenthesis. Examples include citation years like '(6th Cir. 1966)', birth or death dates like '(born March 9, 1953', and parenthetical asides like '(which closed in 2015)'.\",\n \"evidence\": \"Years in parentheses consistently scored 9-10, including '(1987)', '(Cir. 1966)' and '(which closed in 2015)'. The same years outside parentheses ('moved to Paris in 1987', 'December 17, 2001 at the town hall'), in square brackets ('[1987]') or in quotes stayed below 1, as did non-year numbers in parentheses ('3721', '45').\",\n \"missing_data\": \"Tests of years deeply nested or far from the open parenthesis, and of years written with fewer or more than four digits (e.g., '(AD 476)'), would refine the boundary.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.0820136,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 780,
+    "cache_read_input_tokens": 4133,
+    "output_tokens": 323,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 780,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 323,
+      "cache_read_input_tokens": 4133,
+      "cache_creation_input_tokens": 780,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 780
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4066
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1169162,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2663,
+    "cache_read_input_tokens": 4913,
+    "output_tokens": 630,
+    "output_tokens_details": {
+     "thinking_tokens": 340
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2663,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 630,
+      "cache_read_input_tokens": 4913,
+      "cache_creation_input_tokens": 2663,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2663
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5928
+  }
+ ]
+}

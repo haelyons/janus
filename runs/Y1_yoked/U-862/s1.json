@@ -1,0 +1,106 @@
+{
+ "arm": "Y1_yoked",
+ "card": "U-862",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "The warehouse holds 1987 boxes of paper and 2015 crates of nails.",
+  "She moved to Paris in 1987 and stayed there for years.",
+  "The invoice total was 4532 dollars, paid by card number ending 7781.",
+  "The battle took place in 1453 when the city fell.",
+  "We met in the spring of '87 and again in the eighties.",
+  "Robert Max Ross (August 5,« 1933|10» – September 15,« 2009|10») ran as a Republican candidate for governor in 1972.",
+  "See Davidson v. Gardner, 370 F.2d 803 (6th Cir.« 1966|10»); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir.« 1965|10»).",
+  "New Move To open Hunting In Zambia (posted December 17,« 2001|9») In a move that appears to signal a reopening.",
+  "The gallery Mixed Greens (which closed in« 2015|9»), believes that the art world frowns upon flipping.",
+  "LocalDate localDate = new LocalDate(« 2014|9» , 12 , 31 );",
+  "The team scored many points (about 4532 in total) during the season.",
+  "The team won the title (in« 1987|9») during the season.",
+  "The team won the title [in 1987] during the season.",
+  "The team won the title — in 1987 — during the season.",
+  "Smith («1987|9») argued that the model was wrong."
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one\", \"explanation\": \"The unit fires on four-digit year tokens that sit inside an open round parenthesis. Examples include citation years like (6th Cir. 1966), birth/death dates like (August 5, 1933 – ...), parenthetical asides like (which closed in 2015), and code like LocalDate(2014.\", \"evidence\": \"Years fire at 9-10 inside parentheses (Texts 6-10, 12, 15), but the same years get nothing in running text ('moved to Paris in 1987', 'in 1453', 'governor in 1972'), in brackets or dashes (Texts 13-14), or as non-year numbers inside parentheses ('about 4532', Text 11). Text 1's non-year 1987/2015 outside parentheses also gets nothing.\", \"missing_data\": \"Two tests would help. First, whether bare-text years in date formats like 'March 5, 1987' fire outside parentheses. Second, whether year-like numbers that are not years (e.g. '(page 1987)') fire inside parentheses.\", \"confidence\": 0.85}",
+   "cost_usd": 0.037087999999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2820,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 726,
+    "output_tokens_details": {
+     "thinking_tokens": 369
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2820,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 726,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2820,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2820
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8659
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.07306,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3064,
+    "cache_read_input_tokens": 2820,
+    "output_tokens": 544,
+    "output_tokens_details": {
+     "thinking_tokens": 254
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3064,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 544,
+      "cache_read_input_tokens": 2820,
+      "cache_creation_input_tokens": 3064,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3064
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4984
+  }
+ ]
+}

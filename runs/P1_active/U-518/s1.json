@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "U-518",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on the noun immediately following a numeral (the counted/measured noun)",
+    "Unit fires on plural nouns in general, regardless of a preceding number",
+    "Unit fires on any token right after a digit, whether or not it is a noun"
+   ],
+   "show": [
+    {
+     "text": "She bought 12 apples at the market yesterday.",
+     "target": "apples",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She bought some apples at the market yesterday.",
+     "target": "apples",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She bought twelve apples at the market yesterday.",
+     "target": "apples",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The meeting is at 12 and lasts an hour.",
+     "target": "and",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We waited 45 minutes for the 3 buses to arrive.",
+     "target": "minutes",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on the first token after a digit numeral when that token begins a noun phrase (adjective or noun)",
+    "Unit fires only on the head noun counted by a digit numeral, even if an adjective intervenes",
+    "Unit fires on the token after a digit only if it is a noun, including singular nouns and non-count uses"
+   ],
+   "show": [
+    {
+     "text": "She bought 12 large apples at the market.",
+     "target": "large / apples",
+     "predictions": [
+      "high on large",
+      "high on apples",
+      "low"
+     ]
+    },
+    {
+     "text": "He scored 1 goal in the final.",
+     "target": "goal",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The room number is 12 apples street, oddly.",
+     "target": "apples",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Version 3 fixed the bug in the parser.",
+     "target": "fixed",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Approximately 135 of the students attended.",
+     "target": "of / students",
+     "predictions": [
+      "low",
+      "high on students",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on a noun directly after a digit numeral greater than 1 (plural count), not after 1",
+    "Unit fires on plural-form nouns directly after any digit, regardless of numeric value",
+    "Unit fires on any noun directly after a digit, but singular 'goal' was a fluke"
+   ],
+   "show": [
+    {
+     "text": "He scored 3 goals in the final.",
+     "target": "goals",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "He scored 1 goals in the final.",
+     "target": "goals",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The farmer owns 5 sheep and a dog.",
+     "target": "sheep",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Add 2 kg of flour to the bowl.",
+     "target": "kg",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "He scored 3 goal in the final.",
+     "target": "goal",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "She bought 12« apples|10» at the market yesterday.",
+  "She bought some apples at the market yesterday.",
+  "She bought twelve apples at the market yesterday.",
+  "The meeting is at 12 and lasts an hour.",
+  "We waited 45« minutes|10» for the 3« buses|8» to arrive.",
+  "She bought 12 large apples at the market.",
+  "He scored 1 goal in the final.",
+  "The room number is 12« apples|8» street, oddly.",
+  "Version 3 fixed the bug in the parser.",
+  "Approximately 135 of the students attended.",
+  "He scored 3« goals|10» in the final.",
+  "He scored 1« goals|9» in the final.",
+  "The farmer owns 5 sheep and a dog.",
+  "Add 2 kg of flour to the bowl.",
+  "He scored 3 goal in the final."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the noun immediately following a numeral (the counted/measured noun)\", \"Unit fires on plural nouns in general, regardless of a preceding number\", \"Unit fires on any token right after a digit, whether or not it is a noun\"], \"show\": [{\"text\": \"She bought 12 apples at the market yesterday.\", \"target\": \"apples\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She bought some apples at the market yesterday.\", \"target\": \"apples\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"She bought twelve apples at the market yesterday.\", \"target\": \"apples\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The meeting is at 12 and lasts an hour.\", \"target\": \"and\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"We waited 45 minutes for the 3 buses to arrive.\", \"target\": \"minutes\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.02806,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2489,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 407,
+    "output_tokens_details": {
+     "thinking_tokens": 72
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2489,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 407,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2489,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2489
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4945
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the first token after a digit numeral when that token begins a noun phrase (adjective or noun)\", \"Unit fires only on the head noun counted by a digit numeral, even if an adjective intervenes\", \"Unit fires on the token after a digit only if it is a noun, including singular nouns and non-count uses\"], \"show\": [{\"text\": \"She bought 12 large apples at the market.\", \"target\": \"large / apples\", \"predictions\": [\"high on large\", \"high on apples\", \"low\"]}, {\"text\": \"He scored 1 goal in the final.\", \"target\": \"goal\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The room number is 12 apples street, oddly.\", \"target\": \"apples\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Version 3 fixed the bug in the parser.\", \"target\": \"fixed\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"Approximately 135 of the students attended.\", \"target\": \"of / students\", \"predictions\": [\"low\", \"high on students\", \"low\"]}]}",
+   "cost_usd": 0.041333800000000004,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 545,
+    "cache_read_input_tokens": 2489,
+    "output_tokens": 420,
+    "output_tokens_details": {
+     "thinking_tokens": 64
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 545,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 420,
+      "cache_read_input_tokens": 2489,
+      "cache_creation_input_tokens": 545,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 545
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5631
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on a noun directly after a digit numeral greater than 1 (plural count), not after 1\", \"Unit fires on plural-form nouns directly after any digit, regardless of numeric value\", \"Unit fires on any noun directly after a digit, but singular 'goal' was a fluke\"], \"show\": [{\"text\": \"He scored 3 goals in the final.\", \"target\": \"goals\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"He scored 1 goals in the final.\", \"target\": \"goals\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The farmer owns 5 sheep and a dog.\", \"target\": \"sheep\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Add 2 kg of flour to the bowl.\", \"target\": \"kg\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"He scored 3 goal in the final.\", \"target\": \"goal\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.0559286,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 539,
+    "cache_read_input_tokens": 3034,
+    "output_tokens": 483,
+    "output_tokens_details": {
+     "thinking_tokens": 145
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 539,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 483,
+      "cache_read_input_tokens": 3034,
+      "cache_creation_input_tokens": 539,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 539
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4955
+  },
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on a plural-marked noun (an -s form) that comes directly after a digit numeral, such as '12 apples', '45 minutes' or '1950 establishments'. It responds to the surface plural form, not to the meaning of the count.\",\n \"evidence\": \"In my tests it fired on '12 apples', '3 goals' and even ungrammatical '1 goals' and '12 apples street'. It stayed silent for 'twelve apples', 'some apples', '12 large apples', '1 goal', '3 goal', '5 sheep' and '2 kg', so it needs both a digit right before the noun and an -s plural ending.\",\n \"missing_data\": \"Irregular -s-final words after digits (like the 'TeO2 glass' example) and number words written with hyphens or commas, such as '1,000 people'.\",\n \"confidence\": 0.85}\n```",
+   "cost_usd": 0.0689192,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 605,
+    "cache_read_input_tokens": 3573,
+    "output_tokens": 371,
+    "output_tokens_details": {
+     "thinking_tokens": 69
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 605,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 371,
+      "cache_read_input_tokens": 3573,
+      "cache_creation_input_tokens": 605,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 605
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4661
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1033828,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2664,
+    "cache_read_input_tokens": 4178,
+    "output_tokens": 615,
+    "output_tokens_details": {
+     "thinking_tokens": 325
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2664,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 615,
+      "cache_read_input_tokens": 4178,
+      "cache_creation_input_tokens": 2664,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2664
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7211
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "U-518",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"Fires on the noun right after a number (cardinal or numeric token), meaning the counted unit or thing being quantified (e.g., '3 items', '30 yards', '135 students', '19 years').\",\n \"evidence\": \"Nearly every peak is a noun right after a numeral (items, statements, results, seconds, yards, students, banks, links, years, questions). Edge cases like 'TeO2 glass', 'Class 10 results' and '1950 establishments' still follow a numeric token, which fits a 'noun after a number' reading.\",\n \"missing_data\": \"Mid-range and low activations would help, such as nouns after spelled-out numbers ('three items'), nouns after non-numeric quantifiers ('several items'), and nouns after numbers that aren't counts (years, model numbers).\",\n \"confidence\": 0.82}",
+   "cost_usd": 0.02248,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2089,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 288,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2089,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 288,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2089,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2089
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3915
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.05876,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2927,
+    "cache_read_input_tokens": 1740,
+    "output_tokens": 625,
+    "output_tokens_details": {
+     "thinking_tokens": 335
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2927,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 625,
+      "cache_read_input_tokens": 1740,
+      "cache_creation_input_tokens": 2927,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2927
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6136
+  }
+ ]
+}

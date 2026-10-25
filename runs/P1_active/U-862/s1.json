@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "U-862",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on any 4-digit year token (1900-2099) regardless of context",
+    "Fires on any 4-digit number, year or not",
+    "Fires only on years in citation/date contexts (after month/day or in parentheses)"
+   ],
+   "show": [
+    {
+     "text": "The warehouse holds 1987 boxes of paper and 2015 crates of nails.",
+     "target": "1987",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She moved to Paris in 1987 and stayed there for years.",
+     "target": "1987",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The invoice total was 4532 dollars, paid by card number ending 7781.",
+     "target": "4532",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The battle took place in 1453 when the city fell.",
+     "target": "1453",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We met in the spring of '87 and again in the eighties.",
+     "target": "87",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on years inside parentheses or after a month-day date (citation/biographical date formats)",
+    "Fires on years only in long documents; short sentences can't trigger it",
+    "Fires on a year that comes right before a closing parenthesis or comma"
+   ],
+   "show": [
+    {
+     "text": "Robert Max Ross (August 5, 1933 – September 15, 2009) ran as a Republican candidate for governor in 1972.",
+     "target": "1933",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "See Davidson v. Gardner, 370 F.2d 803 (6th Cir. 1966); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir. 1965).",
+     "target": "1966",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "New Move To open Hunting In Zambia (posted December 17, 2001) In a move that appears to signal a reopening.",
+     "target": "2001",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The gallery Mixed Greens (which closed in 2015), believes that the art world frowns upon flipping.",
+     "target": "2015",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "LocalDate localDate = new LocalDate( 2014 , 12 , 31 );",
+     "target": "2014",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a year inside an open parenthesis",
+    "Fires on any number inside an open parenthesis",
+    "Fires on years inside any bracketing (parentheses, square brackets, dashes)"
+   ],
+   "show": [
+    {
+     "text": "The team scored many points (about 4532 in total) during the season.",
+     "target": "4532",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The team won the title (in 1987) during the season.",
+     "target": "1987",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The team won the title [in 1987] during the season.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The team won the title — in 1987 — during the season.",
+     "target": "1987",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Smith (1987) argued that the model was wrong.",
+     "target": "1987",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The warehouse holds 1987 boxes of paper and 2015 crates of nails.",
+  "She moved to Paris in 1987 and stayed there for years.",
+  "The invoice total was 4532 dollars, paid by card number ending 7781.",
+  "The battle took place in 1453 when the city fell.",
+  "We met in the spring of '87 and again in the eighties.",
+  "Robert Max Ross (August 5,« 1933|10» – September 15,« 2009|10») ran as a Republican candidate for governor in 1972.",
+  "See Davidson v. Gardner, 370 F.2d 803 (6th Cir.« 1966|10»); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir.« 1965|10»).",
+  "New Move To open Hunting In Zambia (posted December 17,« 2001|9») In a move that appears to signal a reopening.",
+  "The gallery Mixed Greens (which closed in« 2015|9»), believes that the art world frowns upon flipping.",
+  "LocalDate localDate = new LocalDate(« 2014|9» , 12 , 31 );",
+  "The team scored many points (about 4532 in total) during the season.",
+  "The team won the title (in« 1987|9») during the season.",
+  "The team won the title [in 1987] during the season.",
+  "The team won the title — in 1987 — during the season.",
+  "Smith («1987|9») argued that the model was wrong."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on any 4-digit year token (1900-2099) regardless of context\", \"Fires on any 4-digit number, year or not\", \"Fires only on years in citation/date contexts (after month/day or in parentheses)\"], \"show\": [{\"text\": \"The warehouse holds 1987 boxes of paper and 2015 crates of nails.\", \"target\": \"1987\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"She moved to Paris in 1987 and stayed there for years.\", \"target\": \"1987\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The invoice total was 4532 dollars, paid by card number ending 7781.\", \"target\": \"4532\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The battle took place in 1453 when the city fell.\", \"target\": \"1453\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"We met in the spring of '87 and again in the eighties.\", \"target\": \"87\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.029127999999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2655,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 394,
+    "output_tokens_details": {
+     "thinking_tokens": 45
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2655,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 394,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2655,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2655
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5061
+  },
+  {
+   "text": "The unit did not fire on any of these texts, not even on \"in 1987\". So the trigger is narrower than \"any year\". Next I'll try close copies of the dataset contexts.\n\n{\"hypotheses\": [\"Fires on years inside parentheses or after a month-day date (citation/biographical date formats)\", \"Fires on years only in long documents; short sentences can't trigger it\", \"Fires on a year that comes right before a closing parenthesis or comma\"], \"show\": [{\"text\": \"Robert Max Ross (August 5, 1933 – September 15, 2009) ran as a Republican candidate for governor in 1972.\", \"target\": \"1933\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"See Davidson v. Gardner, 370 F.2d 803 (6th Cir. 1966); Dvorak v. Celebrezze, 345 F.2d 894 (10th Cir. 1965).\", \"target\": \"1966\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"New Move To open Hunting In Zambia (posted December 17, 2001) In a move that appears to signal a reopening.\", \"target\": \"2001\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"The gallery Mixed Greens (which closed in 2015), believes that the art world frowns upon flipping.\", \"target\": \"2015\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"LocalDate localDate = new LocalDate( 2014 , 12 , 31 );\", \"target\": \"2014\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.047503000000000004,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 546,
+    "cache_read_input_tokens": 2655,
+    "output_tokens": 673,
+    "output_tokens_details": {
+     "thinking_tokens": 152
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 546,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 673,
+      "cache_read_input_tokens": 2655,
+      "cache_creation_input_tokens": 546,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 546
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7101
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a year inside an open parenthesis\", \"Fires on any number inside an open parenthesis\", \"Fires on years inside any bracketing (parentheses, square brackets, dashes)\"], \"show\": [{\"text\": \"The team scored many points (about 4532 in total) during the season.\", \"target\": \"4532\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The team won the title (in 1987) during the season.\", \"target\": \"1987\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The team won the title [in 1987] during the season.\", \"target\": \"1987\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The team won the title — in 1987 — during the season.\", \"target\": \"1987\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"Smith (1987) argued that the model was wrong.\", \"target\": \"1987\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.0642112,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 959,
+    "cache_read_input_tokens": 3201,
+    "output_tokens": 419,
+    "output_tokens_details": {
+     "thinking_tokens": 102
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 959,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 419,
+      "cache_read_input_tokens": 3201,
+      "cache_creation_input_tokens": 959,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 959
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4960
+  },
+  {
+   "text": "The results confirm the parenthesis hypothesis cleanly. Years inside parentheses fire (9–10). The same year with square brackets, dashes, or no brackets gives 0, and a non-year number inside parentheses also gives 0.\n\n{\"class\": \"one\",\n \"explanation\": \"Fires on a four-digit year token (e.g., 1933, 1987, 2014) when it appears inside an open round parenthesis, such as legal citations '(6th Cir. 1966)', life dates '(August 5, 1933 – …)', '(which closed in 2015)', 'Smith (1987)', or 'LocalDate(2014, …)'.\",\n \"evidence\": \"Every year inside parentheses fired at 9-10, while the identical '1987' outside parentheses, in square brackets, or between dashes was 0, and 'in 1972' after a closing parenthesis was 0. A non-year number inside parentheses ('about 4532') was also 0, so both the year form and the round parenthesis are required.\",\n \"missing_data\": \"Whether years in nested or very long parentheticals, or non-year 4-digit numbers that look like years (e.g., '(page 1987)'), still fire.\",\n \"confidence\": 0.85}",
+   "cost_usd": 0.0774832,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 553,
+    "cache_read_input_tokens": 4160,
+    "output_tokens": 400,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 553,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 400,
+      "cache_read_input_tokens": 4160,
+      "cache_creation_input_tokens": 553,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 553
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5002
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1134018,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2740,
+    "cache_read_input_tokens": 4713,
+    "output_tokens": 652,
+    "output_tokens_details": {
+     "thinking_tokens": 362
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2740,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 652,
+      "cache_read_input_tokens": 4713,
+      "cache_creation_input_tokens": 2740,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2740
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6780
+  }
+ ]
+}
