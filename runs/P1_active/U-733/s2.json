@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "U-733",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on capitalized tokens that are part of proper names/titles (named entity meaning)",
+    "Fires on any capitalized word token regardless of meaning (surface capitalization)",
+    "Fires on lowercase words that are part of a named entity too (meaning, not case)"
+   ],
+   "show": [
+    {
+     "text": "She moved to Boston College last year to study psychology.",
+     "target": "College",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She moved to boston college last year to study psychology.",
+     "target": "college",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The Cat sat on The Mat and Then it Slept quietly.",
+     "target": "Cat",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "My grandmother died in March and we still grieve in March every year.",
+     "target": "March",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The soldiers march across the field every morning.",
+     "target": "march",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a token that repeats an earlier occurrence in the context (induction/copy), any word",
+    "Fires only on repeated capitalized/proper-noun tokens",
+    "Fires on proper nouns specifically in months/dates"
+   ],
+   "show": [
+    {
+     "text": "She studied at Boston College. Later she taught at Boston College too.",
+     "target": "College (second)",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The soldiers march across the field. Then the soldiers march back home.",
+     "target": "march (second)",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "I bought a purple umbrella yesterday, and today I lost the purple umbrella.",
+     "target": "umbrella (second)",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "My friend Zorvak called. Later Zorvak came over for dinner.",
+     "target": "Zorvak (second)",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We met in April and married in June.",
+     "target": "June",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a repeated capitalized proper-name token when the preceding token also matches the earlier occurrence (induction copying of names)",
+    "Fires on any repeated capitalized proper noun regardless of preceding context",
+    "Fires on any repeated capitalized word, even non-names"
+   ],
+   "show": [
+    {
+     "text": "My friend Zorvak called. Later my friend Zorvak came over.",
+     "target": "Zorvak (second)",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We drove to Denver on Monday. On Friday we left Denver early.",
+     "target": "Denver (second)",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Apples are tasty. Apples are also healthy.",
+     "target": "Apples (second)",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "He works for Microsoft now. Before that, he worked for Microsoft in Seattle.",
+     "target": "Microsoft (second)",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The Golden Gate Bridge is famous. Tourists love the Golden Gate Bridge.",
+     "target": "Gate (second)",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "She moved to Boston College last year to study psychology.",
+  "She moved to boston college last year to study psychology.",
+  "The Cat sat on The Mat and Then it Slept quietly.",
+  "My grandmother died in March and we still grieve in« March|9» every year.",
+  "The soldiers march across the field every morning.",
+  "She studied at Boston College. Later she taught at« Boston|8»« College|9» too.",
+  "The soldiers march across the field. Then the soldiers march back home.",
+  "I bought a purple umbrella yesterday, and today I lost the purple umbrella.",
+  "My friend Zorvak called. Later Zorvak came over for dinner.",
+  "We met in April and married in June.",
+  "My friend Zorvak called. Later my friend Zorvak came over.",
+  "We drove to Denver on Monday. On Friday we left« Denver|9» early.",
+  "Apples are tasty. Apples are also healthy.",
+  "He works for Microsoft now. Before that, he worked for« Microsoft|9» in Seattle.",
+  "The Golden Gate Bridge is famous. Tourists love the« Golden|10»« Gate|8»« Bridge|8»."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on capitalized tokens that are part of proper names/titles (named entity meaning)\", \"Fires on any capitalized word token regardless of meaning (surface capitalization)\", \"Fires on lowercase words that are part of a named entity too (meaning, not case)\"], \"show\": [{\"text\": \"She moved to Boston College last year to study psychology.\", \"target\": \"College\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She moved to boston college last year to study psychology.\", \"target\": \"college\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The Cat sat on The Mat and Then it Slept quietly.\", \"target\": \"Cat\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"My grandmother died in March and we still grieve in March every year.\", \"target\": \"March\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The soldiers march across the field every morning.\", \"target\": \"march\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.033024,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2722,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 562,
+    "output_tokens_details": {
+     "thinking_tokens": 221
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2722,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 562,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2722,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2722
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6442
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a token that repeats an earlier occurrence in the context (induction/copy), any word\", \"Fires only on repeated capitalized/proper-noun tokens\", \"Fires on proper nouns specifically in months/dates\"], \"show\": [{\"text\": \"She studied at Boston College. Later she taught at Boston College too.\", \"target\": \"College (second)\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The soldiers march across the field. Then the soldiers march back home.\", \"target\": \"march (second)\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"I bought a purple umbrella yesterday, and today I lost the purple umbrella.\", \"target\": \"umbrella (second)\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"My friend Zorvak called. Later Zorvak came over for dinner.\", \"target\": \"Zorvak (second)\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We met in April and married in June.\", \"target\": \"June\", \"predictions\": [\"low\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.052972399999999996,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 696,
+    "cache_read_input_tokens": 2722,
+    "output_tokens": 691,
+    "output_tokens_details": {
+     "thinking_tokens": 328
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 696,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 691,
+      "cache_read_input_tokens": 2722,
+      "cache_creation_input_tokens": 696,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 696
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8112
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a repeated capitalized proper-name token when the preceding token also matches the earlier occurrence (induction copying of names)\", \"Fires on any repeated capitalized proper noun regardless of preceding context\", \"Fires on any repeated capitalized word, even non-names\"], \"show\": [{\"text\": \"My friend Zorvak called. Later my friend Zorvak came over.\", \"target\": \"Zorvak (second)\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"We drove to Denver on Monday. On Friday we left Denver early.\", \"target\": \"Denver (second)\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"Apples are tasty. Apples are also healthy.\", \"target\": \"Apples (second)\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"He works for Microsoft now. Before that, he worked for Microsoft in Seattle.\", \"target\": \"Microsoft (second)\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The Golden Gate Bridge is famous. Tourists love the Golden Gate Bridge.\", \"target\": \"Gate (second)\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.074584,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 849,
+    "cache_read_input_tokens": 3418,
+    "output_tokens": 706,
+    "output_tokens_details": {
+     "thinking_tokens": 296
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 849,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 706,
+      "cache_read_input_tokens": 3418,
+      "cache_creation_input_tokens": 849,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 849
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7604
+  },
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires on capitalized proper-name tokens (places, institutions, months, people, code identifiers) when that name is being repeated, i.e. it already appeared earlier in the context. It acts like an induction/copy unit for names.\",\n \"evidence\": \"A first mention never fired (Boston College, March, Denver, Microsoft), but the second mention fired at 8-10, even with different preceding words (Denver). Repeated lowercase words (march, umbrella) and a repeated capitalized common noun (Apples) stayed at 0; the top examples are full of repeated names (March, Tallmadge Township, New York, Kieran, Abstracts, TimeSpan).\"\n,\"missing_data\": \"Why the repeated invented name 'Zorvak' did not fire, possibly because of subword tokenization, and whether first mentions of very famous names in longer documents ever fire.\",\n \"confidence\": 0.75}\n```",
+   "cost_usd": 0.0909414,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 896,
+    "cache_read_input_tokens": 4267,
+    "output_tokens": 416,
+    "output_tokens_details": {
+     "thinking_tokens": 99
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 896,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 416,
+      "cache_read_input_tokens": 4267,
+      "cache_creation_input_tokens": 896,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 896
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5144
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.12949,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2640,
+    "cache_read_input_tokens": 5163,
+    "output_tokens": 819,
+    "output_tokens_details": {
+     "thinking_tokens": 529
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2640,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 819,
+      "cache_read_input_tokens": 5163,
+      "cache_creation_input_tokens": 2640,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2640
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7702
+  }
+ ]
+}

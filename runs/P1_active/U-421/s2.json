@@ -1,0 +1,327 @@
+{
+ "arm": "P1_active",
+ "card": "U-421",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on any comma or period token in running prose, regardless of role",
+    "Unit fires on clause/sentence boundary punctuation broadly (including semicolons, colons, question marks, exclamation)",
+    "Unit fires only on commas/periods ending a clause, not on commas inside numbers or abbreviations"
+   ],
+   "show": [
+    {
+     "text": "We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!",
+     "target": ";",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The total was 9,821 dollars and the version is 3.5 for Mr. Smith and Dr. Jones in the U.S. today",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "def f(a, b):\n    return a.b + c[1, 2]",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The cat sat on the mat and the dog slept by the door and nobody said anything at all",
+     "target": "and",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on commas/periods only after substantial preceding prose context (position/context-dependent)",
+    "Unit fires on commas/periods only in specific genres (commercial/legal/narrative web text)",
+    "Unit fires on punctuation following a complete clause, needing natural real-world style text"
+   ],
+   "show": [
+    {
+     "text": "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. The company also signed a contract with Pakistan, but the government terminated this project. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We are the sole owners of the information collected on this site. We only have access to information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone. We will use your information to respond to you, regarding the reason you contacted us. Unless you ask us not to, we may contact you via email in the future.",
+     "target": ".",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "In the meantime, as Capt. Wilcockson pointed out, the Americans have been steadily accumulating experience in long-range flying, and the British firms have been left behind.",
+     "target": ",",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on commas/periods only deep into a long document (token position effect)",
+    "Unit's apparent activations cannot be reproduced and reflect something not visible in the text"
+   ],
+   "show": [
+    {
+     "text": "The history of the region is long and complicated. Settlers arrived in the early years, and they built farms along the river. Over time, the farms grew into villages, and the villages grew into towns. Trade developed with neighboring areas, and roads were built to connect them. In the winter, the river froze, and travel became difficult. In the summer, however, boats carried goods up and down the valley. The townspeople built churches, schools, and markets. Many families lived there for generations, and some still do today. The local economy depended on agriculture, fishing, and later on manufacturing. Factories were built near the water, and workers moved in from the countryside. Wages were low, and conditions were hard, but the work was steady. By the middle of the century, the population had doubled. New houses were built, and old ones were torn down. The railway arrived, and with it came new opportunities. Merchants opened shops, and banks lent money to young businesses. The town council debated taxes, roads, and water supply. Some residents complained, while others praised the progress. Newspapers reported on every meeting, and readers argued in the letters pages. In the following decades, the factories began to close. Jobs were lost, and many young people left. The town shrank, but it did not disappear. Tourists began to visit, drawn by the old buildings and the scenery. Restaurants opened, and hotels were renovated. Today, the town is quiet, but it is not forgotten. Visitors walk along the river, and they read the plaques on the walls. Choosing this town is choosing history, quiet streets, and one of the best views in the valley.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!",
+  "We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!",
+  "The total was 9,821 dollars and the version is 3.5 for Mr. Smith and Dr. Jones in the U.S. today",
+  "def f(a, b):\n    return a.b + c[1, 2]",
+  "The cat sat on the mat and the dog slept by the door and nobody said anything at all",
+  "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. The company also signed a contract with Pakistan, but the government terminated this project. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+  "We are the sole owners of the information collected on this site. We only have access to information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone. We will use your information to respond to you, regarding the reason you contacted us. Unless you ask us not to, we may contact you via email in the future.",
+  "In the meantime, as Capt. Wilcockson pointed out, the Americans have been steadily accumulating experience in long-range flying, and the British firms have been left behind.",
+  "The history of the region is long and complicated. Settlers arrived in the early years, and they built farms along the river. Over time, the farms grew into villages, and the villages grew into towns. Trade developed with neighboring areas, and roads were built to connect them. In the winter, the river froze, and travel became difficult. In the summer, however, boats carried goods up and down the valley. The townspeople built churches, schools, and markets. Many families lived there for generations, and some still do today. The local economy depended on agriculture, fishing, and later on manufacturing. Factories were built near the water, and workers moved in from the countryside. Wages were low, and conditions were hard, but the work was steady. By the middle of the century, the population had doubled. New houses were built, and old ones were torn down. The railway arrived, and with it came new opportunities. Merchants opened shops, and banks lent money to young businesses. The town council debated taxes, roads, and water supply. Some residents complained, while others praised the progress. Newspapers reported on every meeting, and readers argued in the letters pages. In the following decades, the factories began to close. Jobs were lost, and many young people left. The town shrank, but it did not disappear. Tourists began to visit, drawn by the old buildings and the scenery. Restaurants opened, and hotels were renovated. Today, the town is quiet, but it is not forgotten. Visitors walk along the river, and they read the plaques on the walls. Choosing this town is choosing history, quiet streets, and one of the best views in the valley."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on any comma or period token in running prose, regardless of role\", \"Unit fires on clause/sentence boundary punctuation broadly (including semicolons, colons, question marks, exclamation)\", \"Unit fires only on commas/periods ending a clause, not on commas inside numbers or abbreviations\"], \"show\": [{\"text\": \"We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"We visited the museum, and then we went home. It was late; everyone was tired: nobody spoke. Was it worth it? Yes!\", \"target\": \";\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The total was 9,821 dollars and the version is 3.5 for Mr. Smith and Dr. Jones in the U.S. today\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"def f(a, b):\\n    return a.b + c[1, 2]\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The cat sat on the mat and the dog slept by the door and nobody said anything at all\", \"target\": \"and\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.03726,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3219,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 575,
+    "output_tokens_details": {
+     "thinking_tokens": 130
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3219,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 575,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3219,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3219
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6960
+  },
+  {
+   "text": "No marks at all, not even on the commas. Maybe the unit needs a longer run of prose before it starts firing. I'll test longer passages.\n\n{\"hypotheses\": [\"Unit fires on commas/periods only after substantial preceding prose context (position/context-dependent)\", \"Unit fires on commas/periods only in specific genres (commercial/legal/narrative web text)\", \"Unit fires on punctuation following a complete clause, needing natural real-world style text\"], \"show\": [{\"text\": \"Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. The company also signed a contract with Pakistan, but the government terminated this project. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"We are the sole owners of the information collected on this site. We only have access to information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone. We will use your information to respond to you, regarding the reason you contacted us. Unless you ask us not to, we may contact you via email in the future.\", \"target\": \".\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"In the meantime, as Capt. Wilcockson pointed out, the Americans have been steadily accumulating experience in long-range flying, and the British firms have been left behind.\", \"target\": \",\", \"predictions\": [\"low\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.056659799999999996,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 795,
+    "cache_read_input_tokens": 3219,
+    "output_tokens": 619,
+    "output_tokens_details": {
+     "thinking_tokens": 68
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 795,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 619,
+      "cache_read_input_tokens": 3219,
+      "cache_creation_input_tokens": 795,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 795
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6691
+  },
+  {
+   "text": "Still nothing, even on text almost identical to the top examples. That suggests the trigger depends on deep document position or long context. I'll try one long document.\n\n{\"hypotheses\": [\"Unit fires on commas/periods only deep into a long document (token position effect)\", \"Unit's apparent activations cannot be reproduced and reflect something not visible in the text\"], \"show\": [{\"text\": \"The history of the region is long and complicated. Settlers arrived in the early years, and they built farms along the river. Over time, the farms grew into villages, and the villages grew into towns. Trade developed with neighboring areas, and roads were built to connect them. In the winter, the river froze, and travel became difficult. In the summer, however, boats carried goods up and down the valley. The townspeople built churches, schools, and markets. Many families lived there for generations, and some still do today. The local economy depended on agriculture, fishing, and later on manufacturing. Factories were built near the water, and workers moved in from the countryside. Wages were low, and conditions were hard, but the work was steady. By the middle of the century, the population had doubled. New houses were built, and old ones were torn down. The railway arrived, and with it came new opportunities. Merchants opened shops, and banks lent money to young businesses. The town council debated taxes, roads, and water supply. Some residents complained, while others praised the progress. Newspapers reported on every meeting, and readers argued in the letters pages. In the following decades, the factories began to close. Jobs were lost, and many young people left. The town shrank, but it did not disappear. Tourists began to visit, drawn by the old buildings and the scenery. Restaurants opened, and hotels were renovated. Today, the town is quiet, but it is not forgotten. Visitors walk along the river, and they read the plaques on the walls. Choosing this town is choosing history, quiet streets, and one of the best views in the valley.\", \"target\": \",\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.0802466,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 956,
+    "cache_read_input_tokens": 4014,
+    "output_tokens": 756,
+    "output_tokens_details": {
+     "thinking_tokens": 116
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 956,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 756,
+      "cache_read_input_tokens": 4014,
+      "cache_creation_input_tokens": 956,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 956
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10217
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"In the recorded data the unit fires on clause- and sentence-boundary punctuation (commas and periods) in running prose, and the strength looks driven by document context rather than by the punctuation mark itself.\",\n \"evidence\": \"Every marked token in the top and middle examples is a comma or period, across ads, privacy policies, history, forums and transcripts, with no other token types marked. However, all three probes produced zero activation everywhere, including a near-verbatim copy of the top examples and a long comma-dense document, so the punctuation description is not experimentally confirmed and the actual trigger is unknown.\",\n \"missing_data\": \"The full original documents, including tokens far before the windows shown, would most change this answer, since the true trigger seems to lie in context not visible here; a check that the probe setup matches the recording setup would also matter.\",\n \"confidence\": 0.35}",
+   "cost_usd": 0.0989406,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1268,
+    "cache_read_input_tokens": 4970,
+    "output_tokens": 377,
+    "output_tokens_details": {
+     "thinking_tokens": 82
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1268,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 377,
+      "cache_read_input_tokens": 4970,
+      "cache_creation_input_tokens": 1268,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1268
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5098
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1324922,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2751,
+    "cache_read_input_tokens": 6238,
+    "output_tokens": 514,
+    "output_tokens_details": {
+     "thinking_tokens": 224
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2751,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 514,
+      "cache_read_input_tokens": 6238,
+      "cache_creation_input_tokens": 2751,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2751
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4928
+  }
+ ]
+}

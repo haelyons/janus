@@ -1,0 +1,103 @@
+{
+ "arm": "Y1_yoked",
+ "card": "U-733",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "She studied chemistry at Boston College before moving to the University of Chicago.",
+  "She studied chemistry at a boston college before moving to a university in chicago.",
+  "The dog ran across the Field and then slept.",
+  "My mother always dreads March because it is cold.",
+  "public class UserAccountManager { public DateTime CreatedAt { get; set; } }",
+  "The New York Civil Liberties Union sent a letter to the New« York|8» State Education Department. Later, the New« York|9» City council and the New« York|9» Times commented.",
+  "He served on the Boards of Directors of the Bay Area Executive Council, Pacific Graduate School of Psychology, the Forensic Expert Witness Association, and the Bay« Area|9» Organizational Development Network. He earned a Ph.D from Boston College and a JD from the Santa Clara University« School|8» of Law.",
+  "We went for a walk in the morning. The weather was fine and the birds were singing. We talked about our plans for the summer and the books we had read. After lunch we drove to the coast and sat on the sand for hours. In the evening we ate dinner with friends and told stories late into the night. The next day we studied at Boston College and visited the University of Chicago.",
+  "I bought a green umbrella yesterday. Today the green umbrella broke in the wind.",
+  "I met Zorbalt Quennick yesterday. Today Zorbalt Quennick called me again.",
+  "I met Zorbalt Quennick yesterday. Today Zorbalt called me again.",
+  "I visited Lake Tahoe last year. This year we skipped the trip."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on a token that repeats a name or capitalized term already seen earlier in the same document, such as a recurring place, institution, month or identifier piece, where the model can copy what follows from the earlier mention. It behaves like an induction or repeated-entity detector and does not fire on first mentions.\",\n \"evidence\": \"First mentions stay silent while later repeats fire: the first 'March', 'New York' and 'Bay Area' are unmarked but later ones are marked, and 'Boston College' is silent in Texts 1, 7 and 8 where it is not repeated. Top examples like 'Tallmadge Township', 'Kier(an)', 'Mexican', '(Sociological) Abstracts' and 'TimeSpan' are also repeats of earlier tokens.\",\n \"missing_data\": \"Why repeats of an invented name ('Zorbalt Quennick') and a common noun phrase ('green umbrella') stay silent. Tests varying repeat distance, familiar versus novel names, and lowercase versus capitalized repeats would settle whether it needs real-world entities or capitalization.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.045568,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2925,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1108,
+    "output_tokens_details": {
+     "thinking_tokens": 712
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2925,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 1108,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2925,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2925
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 13103
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.09090899999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3330,
+    "cache_read_input_tokens": 2925,
+    "output_tokens": 905,
+    "output_tokens_details": {
+     "thinking_tokens": 615
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3330,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 905,
+      "cache_read_input_tokens": 2925,
+      "cache_creation_input_tokens": 3330,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3330
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8989
+  }
+ ]
+}

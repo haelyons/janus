@@ -1,0 +1,354 @@
+{
+ "arm": "P1_active",
+ "card": "U-733",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on capitalized tokens inside multi-word proper names (institutions, places, organizations)",
+    "Fires on any capitalized word not at sentence start, whether or not it is part of a name",
+    "Fires on any token of a named entity, capitalized or not"
+   ],
+   "show": [
+    {
+     "text": "She studied chemistry at Boston College before moving to the University of Chicago.",
+     "target": "College",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She studied chemistry at a boston college before moving to a university in chicago.",
+     "target": "college",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The dog ran across the Field and then slept.",
+     "target": "Field",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "My mother always dreads March because it is cold.",
+     "target": "March",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "public class UserAccountManager { public DateTime CreatedAt { get; set; } }",
+     "target": "Account",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on capitalized name tokens only when the same name/token has appeared earlier in the document (repetition)",
+    "Fires on capitalized name tokens only far into a long document (position-dependent)",
+    "Fires on name tokens in lists of multiple organizations/places"
+   ],
+   "show": [
+    {
+     "text": "The New York Civil Liberties Union sent a letter to the New York State Education Department. Later, the New York City council and the New York Times commented.",
+     "target": "York",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "He served on the Boards of Directors of the Bay Area Executive Council, Pacific Graduate School of Psychology, the Forensic Expert Witness Association, and the Bay Area Organizational Development Network. He earned a Ph.D from Boston College and a JD from the Santa Clara University School of Law.",
+     "target": "College",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We went for a walk in the morning. The weather was fine and the birds were singing. We talked about our plans for the summer and the books we had read. After lunch we drove to the coast and sat on the sand for hours. In the evening we ate dinner with friends and told stories late into the night. The next day we studied at Boston College and visited the University of Chicago.",
+     "target": "College",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a repeated occurrence of a capitalized/name token that appeared earlier in the context (induction-like copying of names)",
+    "Fires on any repeated token, including ordinary lowercase words"
+   ],
+   "show": [
+    {
+     "text": "I bought a green umbrella yesterday. Today the green umbrella broke in the wind.",
+     "target": "umbrella",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "I met Zorbalt Quennick yesterday. Today Zorbalt Quennick called me again.",
+     "target": "Quennick",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "I met Zorbalt Quennick yesterday. Today Zorbalt called me again.",
+     "target": "Zorbalt",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "I visited Lake Tahoe last year. This year we skipped the trip.",
+     "target": "Tahoe",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "She studied chemistry at Boston College before moving to the University of Chicago.",
+  "She studied chemistry at a boston college before moving to a university in chicago.",
+  "The dog ran across the Field and then slept.",
+  "My mother always dreads March because it is cold.",
+  "public class UserAccountManager { public DateTime CreatedAt { get; set; } }",
+  "The New York Civil Liberties Union sent a letter to the New« York|8» State Education Department. Later, the New« York|9» City council and the New« York|9» Times commented.",
+  "He served on the Boards of Directors of the Bay Area Executive Council, Pacific Graduate School of Psychology, the Forensic Expert Witness Association, and the Bay« Area|9» Organizational Development Network. He earned a Ph.D from Boston College and a JD from the Santa Clara University« School|8» of Law.",
+  "We went for a walk in the morning. The weather was fine and the birds were singing. We talked about our plans for the summer and the books we had read. After lunch we drove to the coast and sat on the sand for hours. In the evening we ate dinner with friends and told stories late into the night. The next day we studied at Boston College and visited the University of Chicago.",
+  "I bought a green umbrella yesterday. Today the green umbrella broke in the wind.",
+  "I met Zorbalt Quennick yesterday. Today Zorbalt Quennick called me again.",
+  "I met Zorbalt Quennick yesterday. Today Zorbalt called me again.",
+  "I visited Lake Tahoe last year. This year we skipped the trip."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on capitalized tokens inside multi-word proper names (institutions, places, organizations)\", \"Fires on any capitalized word not at sentence start, whether or not it is part of a name\", \"Fires on any token of a named entity, capitalized or not\"], \"show\": [{\"text\": \"She studied chemistry at Boston College before moving to the University of Chicago.\", \"target\": \"College\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She studied chemistry at a boston college before moving to a university in chicago.\", \"target\": \"college\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The dog ran across the Field and then slept.\", \"target\": \"Field\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"My mother always dreads March because it is cold.\", \"target\": \"March\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"public class UserAccountManager { public DateTime CreatedAt { get; set; } }\", \"target\": \"Account\", \"predictions\": [\"low\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.031324,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2722,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 477,
+    "output_tokens_details": {
+     "thinking_tokens": 123
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2722,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 477,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2722,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2722
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5571
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on capitalized name tokens only when the same name/token has appeared earlier in the document (repetition)\", \"Fires on capitalized name tokens only far into a long document (position-dependent)\", \"Fires on name tokens in lists of multiple organizations/places\"], \"show\": [{\"text\": \"The New York Civil Liberties Union sent a letter to the New York State Education Department. Later, the New York City council and the New York Times commented.\", \"target\": \"York\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"He served on the Boards of Directors of the Bay Area Executive Council, Pacific Graduate School of Psychology, the Forensic Expert Witness Association, and the Bay Area Organizational Development Network. He earned a Ph.D from Boston College and a JD from the Santa Clara University School of Law.\", \"target\": \"College\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"We went for a walk in the morning. The weather was fine and the birds were singing. We talked about our plans for the summer and the books we had read. After lunch we drove to the coast and sat on the sand for hours. In the evening we ate dinner with friends and told stories late into the night. The next day we studied at Boston College and visited the University of Chicago.\", \"target\": \"College\", \"predictions\": [\"low\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.0485044,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 625,
+    "cache_read_input_tokens": 2722,
+    "output_tokens": 581,
+    "output_tokens_details": {
+     "thinking_tokens": 135
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 625,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 581,
+      "cache_read_input_tokens": 2722,
+      "cache_creation_input_tokens": 625,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 625
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6522
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a repeated occurrence of a capitalized/name token that appeared earlier in the context (induction-like copying of names)\", \"Fires on any repeated token, including ordinary lowercase words\"], \"show\": [{\"text\": \"I bought a green umbrella yesterday. Today the green umbrella broke in the wind.\", \"target\": \"umbrella\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"I met Zorbalt Quennick yesterday. Today Zorbalt Quennick called me again.\", \"target\": \"Quennick\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"I met Zorbalt Quennick yesterday. Today Zorbalt called me again.\", \"target\": \"Zorbalt\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"I visited Lake Tahoe last year. This year we skipped the trip.\", \"target\": \"Tahoe\", \"predictions\": [\"low\", \"low\"]}]}",
+   "cost_usd": 0.06831380000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 888,
+    "cache_read_input_tokens": 3347,
+    "output_tokens": 601,
+    "output_tokens_details": {
+     "thinking_tokens": 281
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 888,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 601,
+      "cache_read_input_tokens": 3347,
+      "cache_creation_input_tokens": 888,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 888
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7249
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"The unit fires on words inside multi-word proper names and title-case terms (York in 'New York', Area in 'Bay Area', School, Township, University) when that name or word already appeared earlier in the same text. It acts like a copy or induction signal for repeated name parts.\",\n \"evidence\": \"A first mention of 'Boston College' got nothing, but repeats fired: 'New York' (8-9 on each repeat after the first), 'Bay Area' on its second mention (9), and 'School' after 'Graduate School' had appeared (8); most top examples are similar repeats (March, Tallmadge Township, Kieran, Abstracts, TimeSpan, CopyInterface). It is narrower than plain repetition: a repeated 'umbrella' stayed silent, and so did repeated made-up names ('Zorbalt Quennick') and the first 'Boston College' in the long text.\",\n \"missing_data\": \"I could not explain why 'Boston College' fired in the original data, possibly an earlier mention outside the window, or why a repeated made-up name stayed silent. Tests of repeated real versus made-up names and of single-word versus multi-word names would settle it.\",\n \"confidence\": 0.5}",
+   "cost_usd": 0.0871848,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 756,
+    "cache_read_input_tokens": 4235,
+    "output_tokens": 598,
+    "output_tokens_details": {
+     "thinking_tokens": 189
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 756,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 598,
+      "cache_read_input_tokens": 4235,
+      "cache_creation_input_tokens": 756,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 756
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7563
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.124415,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2822,
+    "cache_read_input_tokens": 4991,
+    "output_tokens": 682,
+    "output_tokens_details": {
+     "thinking_tokens": 392
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2822,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 682,
+      "cache_read_input_tokens": 4991,
+      "cache_creation_input_tokens": 2822,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2822
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6763
+  }
+ ]
+}

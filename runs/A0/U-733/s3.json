@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "U-733",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"one\", \"explanation\": \"The unit fires on capitalized, word-initial tokens inside proper names and title-case phrases that appear mid-sentence, such as place names, institutions, people, months, species names and Title Case headings. This extends to PascalCase identifiers in code.\", \"evidence\": \"The peaks fall on 'Township', 'Tall(madge)', 'Rapids', 'Boston College', 'University', 'New York', 'Phot(obacterium)', 'Kier(an)', 'Mexican', 'March', 'Sociological Abstracts' and 'Trainer' in a Title Case heading. In code it peaks on 'TimeSpan' and 'CopyInterface', while lowercase words and the sentence-initial 'According' get almost nothing.\"}, \"missing_data\": \"Mid-range examples and activations on lowercase or sentence-initial capitalized tokens would show whether the unit encodes capitalization itself or named-entity membership.\", \"confidence\": 0.6}",
+   "cost_usd": 0.031163999999999997,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 2322,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 629,
+    "output_tokens_details": {
+     "thinking_tokens": 298
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2322,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 629,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 2322,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2322
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7278
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0675924,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2851,
+    "cache_read_input_tokens": 2322,
+    "output_tokens": 657,
+    "output_tokens_details": {
+     "thinking_tokens": 367
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2851,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 657,
+      "cache_read_input_tokens": 2322,
+      "cache_creation_input_tokens": 2851,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2851
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6272
+  }
+ ]
+}

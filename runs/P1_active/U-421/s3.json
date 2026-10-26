@@ -1,0 +1,339 @@
+{
+ "arm": "P1_active",
+ "card": "U-421",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on any comma or period token in prose (punctuation marking clause/sentence/list boundaries)",
+    "Fires only on commas/periods that end a clause or sentence (syntactic boundary), not on non-boundary uses like decimals or abbreviations",
+    "Fires on any punctuation token, including semicolons, colons, question marks"
+   ],
+   "show": [
+    {
+     "text": "We sell boats, motors, and trailers. Our service is excellent.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The price is 3.5 dollars and the version is 2.0 today",
+     "target": ".",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We sell boats; we also sell motors: big ones! Why not?",
+     "target": ";",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "def f(a, b):\n    return a.b + c[1, 2]",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "the boat and the motor and the trailer are here and we sell them",
+     "target": "and",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on commas/periods only after substantial preceding prose context (position/context-length dependent)",
+    "Fires on commas/periods in specific registers (promotional/policy/narrative prose) regardless of length",
+    "Fires on punctuation following specific content like named entities or clause-final nouns"
+   ],
+   "show": [
+    {
+     "text": "The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly.\n\nChoosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+     "target": ",",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The first powership, which can supply 144 MW power, went into service at the beginning of 2010 off the shore near Basra in south-eastern Iraq, and the second powership is on its way to the same place. The company also signed a contract with Pakistan, but the Pakistani government terminated this project. This case is now being heard in court, and a decision is expected soon.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+     "target": ",",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on commas/periods only far into a long document (depends on position or amount of context)",
+    "Fires on commas/periods only given some specific document-level feature that is not length",
+    "Unit is effectively silent on constructed text"
+   ],
+   "show": [
+    {
+     "text": "Welcome to our company website. We have been building aluminum boats for over forty years, and our family business has grown from a small shop into one of the leading manufacturers in the region. Every boat we build is welded by hand, inspected by our team, and tested on the water before it leaves the factory. Our customers include fishermen, hunters, families, and commercial operators, and each of them expects a boat that will last for decades. We take that expectation seriously. Our engineers design each hull with care, our welders train for years, and our sales staff know every model inside and out. When you call us, you will speak to a real person, not a machine. When you visit our showroom, you will see the boats up close, and you can ask any question you like. We believe that a good boat is the result of good people, good materials, and good process. That is why we use only marine-grade aluminum, stainless hardware, and premium coatings. We also offer a wide range of options, from trolling motors to livewells, from rod lockers to custom consoles. With so many choices, you can build exactly the boat you need. Our dealers are located across the country, and many of them have worked with us for decades. They understand our products, they share our values, and they will help you find the right boat. After the sale, our service department is ready to help with maintenance, repairs, and upgrades. The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We sell boats, motors, and trailers. Our service is excellent.",
+  "The price is 3.5 dollars and the version is 2.0 today",
+  "We sell boats; we also sell motors: big ones! Why not?",
+  "def f(a, b):\n    return a.b + c[1, 2]",
+  "the boat and the motor and the trailer are here and we sell them",
+  "The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly.\n\nChoosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+  "Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.",
+  "The first powership, which can supply 144 MW power, went into service at the beginning of 2010 off the shore near Basra in south-eastern Iraq, and the second powership is on its way to the same place. The company also signed a contract with Pakistan, but the Pakistani government terminated this project. This case is now being heard in court, and a decision is expected soon.",
+  "No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.",
+  "Welcome to our company website. We have been building aluminum boats for over forty years, and our family business has grown from a small shop into one of the leading manufacturers in the region. Every boat we build is welded by hand, inspected by our team, and tested on the water before it leaves the factory. Our customers include fishermen, hunters, families, and commercial operators, and each of them expects a boat that will last for decades. We take that expectation seriously. Our engineers design each hull with care, our welders train for years, and our sales staff know every model inside and out. When you call us, you will speak to a real person, not a machine. When you visit our showroom, you will see the boats up close, and you can ask any question you like. We believe that a good boat is the result of good people, good materials, and good process. That is why we use only marine-grade aluminum, stainless hardware, and premium coatings. We also offer a wide range of options, from trolling motors to livewells«,|5» from rod lockers to custom consoles«.|5» With so many choices«,|4» you can build exactly the boat you need. Our dealers are located across the country, and many of them have worked with us for decades. They understand our products, they share our values, and they will help you find the right boat. After the sale, our service department is ready to help with maintenance, repairs, and upgrades. The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on any comma or period token in prose (punctuation marking clause/sentence/list boundaries)\", \"Fires only on commas/periods that end a clause or sentence (syntactic boundary), not on non-boundary uses like decimals or abbreviations\", \"Fires on any punctuation token, including semicolons, colons, question marks\"], \"show\": [{\"text\": \"We sell boats, motors, and trailers. Our service is excellent.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The price is 3.5 dollars and the version is 2.0 today\", \"target\": \".\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"We sell boats; we also sell motors: big ones! Why not?\", \"target\": \";\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"def f(a, b):\\n    return a.b + c[1, 2]\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"the boat and the motor and the trailer are here and we sell them\", \"target\": \"and\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.034820000000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3219,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 453,
+    "output_tokens_details": {
+     "thinking_tokens": 72
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3219,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 453,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3219,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3219
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5613
+  },
+  {
+   "text": "Nothing reached 1 on any of the five texts. That includes the plain prose commas and periods in Text 1, which my main hypothesis predicted would be high. My guess is that the unit needs more running context, since the dataset examples were all deep inside long passages. Next I'll test longer texts that closely mimic the top examples.\n\n{\"hypotheses\": [\"Fires on commas/periods only after substantial preceding prose context (position/context-length dependent)\", \"Fires on commas/periods in specific registers (promotional/policy/narrative prose) regardless of length\", \"Fires on punctuation following specific content like named entities or clause-final nouns\"], \"show\": [{\"text\": \"The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly.\\n\\nChoosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.\", \"target\": \",\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The first powership, which can supply 144 MW power, went into service at the beginning of 2010 off the shore near Basra in south-eastern Iraq, and the second powership is on its way to the same place. The company also signed a contract with Pakistan, but the Pakistani government terminated this project. This case is now being heard in court, and a decision is expected soon.\", \"target\": \",\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"No points accumulated on your card if you play Blackjack. You could play 8 hours a day and still have 0 points. There is no program, but play on the slots for 20 min, and you will have enough for a drink.\", \"target\": \",\", \"predictions\": [\"low\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.05525580000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 602,
+    "cache_read_input_tokens": 3219,
+    "output_tokens": 748,
+    "output_tokens_details": {
+     "thinking_tokens": 92
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 602,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 748,
+      "cache_read_input_tokens": 3219,
+      "cache_creation_input_tokens": 602,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 602
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7728
+  },
+  {
+   "text": "Again nothing reached 1, even on near-copies of the top two examples. Note that Text 3 dropped \"supply\" from the original window and swapped \"in now\" for \"is now\"; Text 4 shortened \"min,\" and is not word-for-word. So the unit is not just reacting to these sentences. It seems to depend on something these short texts lack, most likely a long preceding document context. For my last request I'll test that with one long passage.\n\n{\"hypotheses\": [\"Fires on commas/periods only far into a long document (depends on position or amount of context)\", \"Fires on commas/periods only given some specific document-level feature that is not length\", \"Unit is effectively silent on constructed text\"], \"show\": [{\"text\": \"Welcome to our company website. We have been building aluminum boats for over forty years, and our family business has grown from a small shop into one of the leading manufacturers in the region. Every boat we build is welded by hand, inspected by our team, and tested on the water before it leaves the factory. Our customers include fishermen, hunters, families, and commercial operators, and each of them expects a boat that will last for decades. We take that expectation seriously. Our engineers design each hull with care, our welders train for years, and our sales staff know every model inside and out. When you call us, you will speak to a real person, not a machine. When you visit our showroom, you will see the boats up close, and you can ask any question you like. We believe that a good boat is the result of good people, good materials, and good process. That is why we use only marine-grade aluminum, stainless hardware, and premium coatings. We also offer a wide range of options, from trolling motors to livewells, from rod lockers to custom consoles. With so many choices, you can build exactly the boat you need. Our dealers are located across the country, and many of them have worked with us for decades. They understand our products, they share our values, and they will help you find the right boat. After the sale, our service department is ready to help with maintenance, repairs, and upgrades. The boat is another added plus to owning a SeaArk. With a wide array of options and accessories, this makes it possible to fit the need of the customer exactly. Choosing SeaArk is choosing quality workmanship, personal customer service, and one of the best warranties offered in the aluminum boat industry.\", \"target\": \",\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.082332,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1107,
+    "cache_read_input_tokens": 3821,
+    "output_tokens": 872,
+    "output_tokens_details": {
+     "thinking_tokens": 129
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1107,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 872,
+      "cache_read_input_tokens": 3821,
+      "cache_creation_input_tokens": 1107,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1107
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 11291
+  },
+  {
+   "text": "{\"class\": \"one\",\n \"explanation\": \"The unit fires on commas and periods at clause, list-item and sentence boundaries in running prose, and it seems to fire only when a substantial amount of document text comes before them.\",\n \"evidence\": \"All the marked tokens in the dataset examples are commas and periods in prose. My short tests, including near-copies of the top examples, gave nothing at 1 or above, while a ~300-word passage gave activation 4–5 on a few commas and periods partway through (none on the later SeaArk sentence), so the unit is sparse and depends on context in a way I could not pin down.\",\n \"missing_data\": \"Exact copies of the full original documents and long texts that vary length and register, to find what makes it fire on particular punctuation tokens.\",\n \"confidence\": 0.5}",
+   "cost_usd": 0.1022416,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1396,
+    "cache_read_input_tokens": 4928,
+    "output_tokens": 387,
+    "output_tokens_details": {
+     "thinking_tokens": 125
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1396,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 387,
+      "cache_read_input_tokens": 4928,
+      "cache_creation_input_tokens": 1396,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1396
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5019
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1396504,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2761,
+    "cache_read_input_tokens": 6324,
+    "output_tokens": 702,
+    "output_tokens_details": {
+     "thinking_tokens": 412
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2761,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 702,
+      "cache_read_input_tokens": 6324,
+      "cache_creation_input_tokens": 2761,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2761
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7830
+  }
+ ]
+}
