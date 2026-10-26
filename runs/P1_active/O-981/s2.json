@@ -1,0 +1,284 @@
+{
+ "arm": "P1_active",
+ "card": "O-981",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on the token that completes a predictable multi-word phrase or compound (e.g., 'real estate', 'collective pitch', 'overhead')",
+    "Unit fires on content tokens late in long, dense sentences regardless of predictability",
+    "Unit fires on the head noun ending a list item"
+   ],
+   "show": [
+    {
+     "text": "At LuxuryProperty.com we offer a bespoke property finder service for all your real estate needs in Dubai.",
+     "target": "estate",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We sell estate.",
+     "target": "estate",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "A freelancer has to pay for health insurance, has to factor in time for accounting, and has all of the overhead to supply their own equipment.",
+     "target": "overhead",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The overhead is high.",
+     "target": "overhead",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "With the rotor spinning at top speed, the collective pitch control was moved from zero to maximum lift.",
+     "target": "pitch",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires broadly on tokens deep inside long, information-dense sentences (context build-up)",
+    "Unit fires on key domain terms (nouns) that are predictable from preceding context"
+   ],
+   "show": [
+    {
+     "text": "The cat sat on the mat and then it went to sleep in the warm sun near the old wooden fence by the garden.",
+     "target": "fence",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Neuroimaging data may aid legal experts in assessing how impulse-control disorders affect behavior.",
+     "target": "assessing",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Experts assessing.",
+     "target": "assessing",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "I am trying to get better at writing good code for my solutions. Please give me your suggestions.",
+     "target": "Please",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Please give me your suggestions.",
+     "target": "Please",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "At« Luxury|2»Property.com we« offer|1»« a|2»« bespoke|2»« property|1»« finder|3»« service|1»« for|2»« all|2»« your|6»« real|5»« estate|9»« needs|2» in Dubai«.|1»",
+  "We« sell|1»« estate|4»«.|1»",
+  "A« freelancer|1»« has|1» to« pay|3»« for|2»« health|5»« insurance|1»,« has|3»« to|2» factor« in|4»« time|2»« for|4»« accounting|2»«,|4»« and|3»« has|3»« all|1»« of|3»« the|5»« overhead|7»« to|1»« supply|1»« their|1» own« equipment|1»«.|2»",
+  "The« overhead|1»« is|3»« high|2»«.|1»",
+  "With the rotor spinning« at|1»« top|1» speed, the« collective|1»« pitch|5»« control|5»« was|7»« moved|7»« from|3»« zero|4»« to|3»« maximum|5»« lift|4».",
+  "The« cat|3» sat on« the|1»« mat|1»« and|4»« then|2»« it|2» went to sleep in« the|1» warm« sun|1»« near|1»« the|1»« old|1»« wooden|1»« fence|3» by« the|1»« garden|2».",
+  "Neuroim«aging|2»« data|4» may« aid|3»« legal|5»« experts|3»« in|3»« assessing|8»« how|6»« impulse|2»«-control|3» disorders« affect|3»« behavior|2».",
+  "Experts« assessing|1».",
+  "I« am|1» trying to« get|2» better« at|3»« writing|2»« good|2»« code|2» for my solutions«.|3»« Please|8»« give|4»« me|5»« your|5» suggestions«.|2»",
+  "Please give« me|1»« your|2» suggestions«.|2»"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the token that completes a predictable multi-word phrase or compound (e.g., 'real estate', 'collective pitch', 'overhead')\", \"Unit fires on content tokens late in long, dense sentences regardless of predictability\", \"Unit fires on the head noun ending a list item\"], \"show\": [{\"text\": \"At LuxuryProperty.com we offer a bespoke property finder service for all your real estate needs in Dubai.\", \"target\": \"estate\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We sell estate.\", \"target\": \"estate\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"A freelancer has to pay for health insurance, has to factor in time for accounting, and has all of the overhead to supply their own equipment.\", \"target\": \"overhead\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The overhead is high.\", \"target\": \"overhead\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"With the rotor spinning at top speed, the collective pitch control was moved from zero to maximum lift.\", \"target\": \"pitch\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.063632,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6453,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 600,
+    "output_tokens_details": {
+     "thinking_tokens": 202
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6453,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 600,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6453,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6453
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6681
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires broadly on tokens deep inside long, information-dense sentences (context build-up)\", \"Unit fires on key domain terms (nouns) that are predictable from preceding context\"], \"show\": [{\"text\": \"The cat sat on the mat and then it went to sleep in the warm sun near the old wooden fence by the garden.\", \"target\": \"fence\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Neuroimaging data may aid legal experts in assessing how impulse-control disorders affect behavior.\", \"target\": \"assessing\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Experts assessing.\", \"target\": \"assessing\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"I am trying to get better at writing good code for my solutions. Please give me your suggestions.\", \"target\": \"Please\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Please give me your suggestions.\", \"target\": \"Please\", \"predictions\": [\"low\", \"low\"]}]}",
+   "cost_usd": 0.0814466,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 996,
+    "cache_read_input_tokens": 6453,
+    "output_tokens": 427,
+    "output_tokens_details": {
+     "thinking_tokens": 92
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 996,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 427,
+      "cache_read_input_tokens": 6453,
+      "cache_creation_input_tokens": 996,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 996
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5050
+  },
+  {
+   "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"A diffuse, context-dependent unit: its activation builds across long, information-dense sentences and peaks on a pivotal content word (often a verb or the head of a predicate, e.g. 'assessing', 'Please', 'was moved', 'overhead', 'estate'), but I found no single lexical or semantic trigger.\",\n \"evidence\": \"The same word fires strongly only with preceding context: 'assessing' scored 8 in the full sentence and 1 alone; 'Please' scored 8 after a setup sentence and 0 alone; 'overhead' scored 7 in the full list and 1 alone. A bland long sentence ('cat… fence') stayed low (max 4), so length alone does not drive it, and the top examples span unrelated domains such as math, law, real estate and aviation.\"\n ,\"missing_data\": \"Systematic tests that vary context length and density while holding the target fixed, plus comparisons of verbs vs. nouns and clause-onset vs. mid-clause positions.\",\n \"confidence\": 0.35}\n```",
+   "cost_usd": 0.0985364,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 758,
+    "cache_read_input_tokens": 7449,
+    "output_tokens": 476,
+    "output_tokens_details": {
+     "thinking_tokens": 112
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 758,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 476,
+      "cache_read_input_tokens": 7449,
+      "cache_creation_input_tokens": 758,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 758
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5978
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1339058,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2849,
+    "cache_read_input_tokens": 8207,
+    "output_tokens": 546,
+    "output_tokens_details": {
+     "thinking_tokens": 256
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2849,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 546,
+      "cache_read_input_tokens": 8207,
+      "cache_creation_input_tokens": 2849,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2849
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5486
+  }
+ ]
+}

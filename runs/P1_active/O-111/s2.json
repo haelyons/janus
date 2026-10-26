@@ -1,0 +1,371 @@
+{
+ "arm": "P1_active",
+ "card": "O-111",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "H1: fires on a non-final piece of a familiar multi-token word/name/term, where the next token is nearly certain (e.g., big-end->ian, JSESSION->ID)",
+    "H2: fires on rare/technical vocabulary in general, regardless of whether the word is complete"
+   ],
+   "show": [
+    {
+     "text": "The bytes are stored in big-endian order.",
+     "target": "-end",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The bytes are stored in big order.",
+     "target": "big",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "We visited Marrakesh last spring.",
+     "target": "akes",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The coloratura soprano sang beautifully.",
+     "target": "atura",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She used a hypodermic needle and a stethoscope.",
+     "target": "hypodermic",
+     "predictions": [
+      "high if split mid-word",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "H1: fires on a token whose continuation completes a fixed multi-token name/term, both inside words and across words (Attached->Storage)",
+    "H2: only fires on mid-word subword pieces"
+   ],
+   "show": [
+    {
+     "text": "We bought a Network Attached Storage device.",
+     "target": "Attached",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Open drive.google.com/file/d/abc to view it.",
+     "target": "/file",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Map data comes from openstreetmap contributors.",
+     "target": "street",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "There was a fight at the Schlägerei downtown.",
+     "target": "gere",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The cookie JSESSIONID was found.",
+     "target": "SESSION",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "H1: fires on interior pieces of fixed, recognizable multi-token names/terms (esp. technical/proper), predicting a determined completion",
+    "H2: fires broadly on any token preceding a highly predictable next token, including common phrases"
+   ],
+   "show": [
+    {
+     "text": "He moved to the United States of America.",
+     "target": "States",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Once upon a time there was a king.",
+     "target": "upon",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We used Visual Studio Code and Microsoft Excel.",
+     "target": "Studio",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The blorvish attached tremble device broke.",
+     "target": "attached",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Use the Model View Controller pattern in Ruby on Rails.",
+     "target": "View",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The bytes are stored in big«-end|5»ian order.",
+  "The bytes are stored in big order.",
+  "We visited Marr«akes|6»h last spring.",
+  "The« color|1»«atura|3»« sopr|2»«ano|2»« sang|3»« beautifully|2».",
+  "She used a hypodermic needle and a steth«oscope|1».",
+  "We bought a« Network|1»« Attached|6»« Storage|6»« device|1».",
+  "Open drive.google.com«/file|7»«/d|1»«/|1»«abc|1» to view« it|1».",
+  "Map data comes« from|1» open«street|7»«map|2»« contributors|3».",
+  "There was a fight« at|1» the Schlä«gere|8»i downtown.",
+  "The« cookie|3»« J|3»«SESSION|6»«ID|1» was found.",
+  "He moved to the United« States|1»« of|1»« America|1».",
+  "Once upon a« time|1» there« was|1» a king.",
+  "We used Visual« Studio|1»« Code|2» and Microsoft« Excel|2».",
+  "The bl«or|3»vish attached tremble device broke.",
+  "Use the Model« View|1»« Controller|4»« pattern|1»« in|1»« Ruby|3»« on|2»« Rails|2»."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on a non-final piece of a familiar multi-token word/name/term, where the next token is nearly certain (e.g., big-end->ian, JSESSION->ID)\", \"H2: fires on rare/technical vocabulary in general, regardless of whether the word is complete\"], \"show\": [{\"text\": \"The bytes are stored in big-endian order.\", \"target\": \"-end\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"The bytes are stored in big order.\", \"target\": \"big\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"We visited Marrakesh last spring.\", \"target\": \"akes\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"The coloratura soprano sang beautifully.\", \"target\": \"atura\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"She used a hypodermic needle and a stethoscope.\", \"target\": \"hypodermic\", \"predictions\": [\"high if split mid-word\", \"high\"]}]}",
+   "cost_usd": 0.050296,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4751,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 614,
+    "output_tokens_details": {
+     "thinking_tokens": 286
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4751,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 614,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4751,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4751
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6701
+  },
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on a token whose continuation completes a fixed multi-token name/term, both inside words and across words (Attached->Storage)\", \"H2: only fires on mid-word subword pieces\"], \"show\": [{\"text\": \"We bought a Network Attached Storage device.\", \"target\": \"Attached\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Open drive.google.com/file/d/abc to view it.\", \"target\": \"/file\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Map data comes from openstreetmap contributors.\", \"target\": \"street\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"There was a fight at the Schlägerei downtown.\", \"target\": \"gere\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"The cookie JSESSIONID was found.\", \"target\": \"SESSION\", \"predictions\": [\"high\", \"high\"]}]}",
+   "cost_usd": 0.0658302,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 766,
+    "cache_read_input_tokens": 4751,
+    "output_tokens": 422,
+    "output_tokens_details": {
+     "thinking_tokens": 120
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 766,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 422,
+      "cache_read_input_tokens": 4751,
+      "cache_creation_input_tokens": 766,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 766
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4879
+  },
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on interior pieces of fixed, recognizable multi-token names/terms (esp. technical/proper), predicting a determined completion\", \"H2: fires broadly on any token preceding a highly predictable next token, including common phrases\"], \"show\": [{\"text\": \"He moved to the United States of America.\", \"target\": \"States\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Once upon a time there was a king.\", \"target\": \"upon\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"We used Visual Studio Code and Microsoft Excel.\", \"target\": \"Studio\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"The blorvish attached tremble device broke.\", \"target\": \"attached\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"Use the Model View Controller pattern in Ruby on Rails.\", \"target\": \"View\", \"predictions\": [\"high\", \"high\"]}]}",
+   "cost_usd": 0.0791896,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 620,
+    "cache_read_input_tokens": 5517,
+    "output_tokens": 364,
+    "output_tokens_details": {
+     "thinking_tokens": 53
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 620,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 364,
+      "cache_read_input_tokens": 5517,
+      "cache_creation_input_tokens": 620,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 620
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4454
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires mainly on interior subword pieces of rare or specialized words and names that are split into several tokens (Schlä|gere|i, big-|end|ian, Marr|akes|h, J|SESSION|ID, open|street|map), where the rest of the word is strongly constrained. It fires more weakly on component words inside fixed technical multi-word terms (Network Attached Storage, Model View Controller, drive.google.com/file).\",\n \"evidence\": \"My test texts reproduced the strong activations on mid-word pieces (gere 8, /file 7, street 7, akes 6, SESSION 6) and on 'Attached' 6. Common predictable phrases stayed near zero ('United States of America', 'Once upon a time', 'Visual Studio'), and the nonce word 'blorvish' got only a 3 on 'or'.\",\n \"missing_data\": \"Whether activation tracks how predictable the completion is, or just how rare or technical the word is, for example by comparing a famous rare word with an equally rare but obscure split word.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.09335299999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 550,
+    "cache_read_input_tokens": 6137,
+    "output_tokens": 426,
+    "output_tokens_details": {
+     "thinking_tokens": 52
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 550,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 426,
+      "cache_read_input_tokens": 6137,
+      "cache_creation_input_tokens": 550,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 550
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4986
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.13238239999999998,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2907,
+    "cache_read_input_tokens": 6687,
+    "output_tokens": 721,
+    "output_tokens_details": {
+     "thinking_tokens": 431
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2907,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 721,
+      "cache_read_input_tokens": 6687,
+      "cache_creation_input_tokens": 2907,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2907
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7211
+  }
+ ]
+}

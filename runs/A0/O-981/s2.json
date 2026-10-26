@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "O-981",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit fires diffusely across most tokens. Its peaks land on varied tokens with no shared meaning: 'overhead', 'assessing', 'Please', 'estate', 'pitch', 'will make', 'lambda', the '2' in x^2, 'ethically', '1992' and 'Tavares'. At most there is a loose tendency to peak on the predictable completion of a multi-token phrase ('real estate', 'collective pitch', 'Carlos Tavares', '199→2').\",\n \"evidence\": \"Top examples come from unrelated domains (freelance pay, neuroethics, Java, Dubai property, gyroplanes, LaTeX math, legal citations, car-industry news), and the peak tokens share no lexical or semantic category. Many surrounding tokens also sit at 2-5, so the activation looks broad rather than selective.\",\n \"missing_data\": \"Per-token activations over full documents, plus a comparison against next-token predictability or position in the sentence, would show whether this is a generic phrase-completion signal or just dense noise.\",\n \"confidence\": 0.35}",
+   "cost_usd": 0.064052,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6053,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 781,
+    "output_tokens_details": {
+     "thinking_tokens": 401
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6053,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 781,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6053,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6053
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9267
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1067746,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3152,
+    "cache_read_input_tokens": 6053,
+    "output_tokens": 814,
+    "output_tokens_details": {
+     "thinking_tokens": 524
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3152,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 814,
+      "cache_read_input_tokens": 6053,
+      "cache_creation_input_tokens": 3152,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3152
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8288
+  }
+ ]
+}

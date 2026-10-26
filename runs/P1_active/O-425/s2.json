@@ -1,0 +1,290 @@
+{
+ "arm": "P1_active",
+ "card": "O-425",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on the century+decade prefix token of a year (200/201) specifically in a date context (after month/day)",
+    "Fires on any token '200'/'201' regardless of context (e.g., quantities)",
+    "Fires on the first token of any 4-digit year, including 19xx and 202x"
+   ],
+   "show": [
+    {
+     "text": "Posted on Monday, June 14, 2007 by admin",
+     "target": "200",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The warehouse holds 2007 boxes of apples.",
+     "target": "200",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Posted on Monday, June 14, 1997 by admin",
+     "target": "199",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Posted on Monday, June 14, 2023 by admin",
+     "target": "202",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "In 2009 the company moved to Berlin.",
+     "target": "200",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on '200'/'201' year prefix in a dateline/header timestamp context (blog post date, file header)",
+    "Fires on '200'/'201' year after any month-day sequence, even in running prose",
+    "Requires weekday/posted-style header formatting"
+   ],
+   "show": [
+    {
+     "text": "// Created: 15/04/2016\n// Copyright: (c) John Smith",
+     "target": "201",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She said that on June 14, 2007 she had moved to Berlin with her family.",
+     "target": "200",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Thursday, March 5, 2015\n\nVW Up facelift",
+     "target": "201",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Copyright (C) 2005-2010 Example Corp. All rights reserved.",
+     "target": "200",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Thursday, March 5, 2021\n\nVW Up facelift",
+     "target": "202",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "Posted« on|1» Monday, June 14, «200|8»7 by admin",
+  "The warehouse holds 200«7|2»« boxes|1»« of|1» apples.",
+  "Posted« on|1» Monday, June 14, «199|1»7 by admin",
+  "Posted« on|1» Monday, June 14, 2023 by admin",
+  "In 2009 the company moved to Berlin.",
+  "//« Created|2»: «15|1»/«04|1»/«201|9»6«\n|1»«//|1» Copyright«:|1» (c) John Smith",
+  "She said that« on|1»« June|1» 14, «200|7»7 she had moved to Berlin with her family.",
+  "Thursday, March 5, «201|8»5\n\nV«W|1» Up« fac|1»«el|1»«ift|1»",
+  "Copyright (C) «200|8»5-201«0|1» Example Corp. All rights reserved.",
+  "Thursday, March 5, 2021\n\nVW Up« fac|1»«el|1»«ift|1»"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on the century+decade prefix token of a year (200/201) specifically in a date context (after month/day)\", \"Fires on any token '200'/'201' regardless of context (e.g., quantities)\", \"Fires on the first token of any 4-digit year, including 19xx and 202x\"], \"show\": [{\"text\": \"Posted on Monday, June 14, 2007 by admin\", \"target\": \"200\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The warehouse holds 2007 boxes of apples.\", \"target\": \"200\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Posted on Monday, June 14, 1997 by admin\", \"target\": \"199\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"Posted on Monday, June 14, 2023 by admin\", \"target\": \"202\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"In 2009 the company moved to Berlin.\", \"target\": \"200\", \"predictions\": [\"low\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.039048,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3725,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 462,
+    "output_tokens_details": {
+     "thinking_tokens": 113
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3725,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 462,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3725,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3725
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5293
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on '200'/'201' year prefix in a dateline/header timestamp context (blog post date, file header)\", \"Fires on '200'/'201' year after any month-day sequence, even in running prose\", \"Requires weekday/posted-style header formatting\"], \"show\": [{\"text\": \"// Created: 15/04/2016\\n// Copyright: (c) John Smith\", \"target\": \"201\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"She said that on June 14, 2007 she had moved to Berlin with her family.\", \"target\": \"200\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Thursday, March 5, 2015\\n\\nVW Up facelift\", \"target\": \"201\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Copyright (C) 2005-2010 Example Corp. All rights reserved.\", \"target\": \"200\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"Thursday, March 5, 2021\\n\\nVW Up facelift\", \"target\": \"202\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.053337,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 626,
+    "cache_read_input_tokens": 3725,
+    "output_tokens": 426,
+    "output_tokens_details": {
+     "thinking_tokens": 52
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 626,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 426,
+      "cache_read_input_tokens": 3725,
+      "cache_creation_input_tokens": 626,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 626
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4803
+  },
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"This unit fires on the year-prefix token '200' or '201' (the 2000s and 2010s) when it starts a year inside a date or timestamp, such as a blog dateline, a 'Created:' file header or a copyright line.\",\n \"evidence\": \"The top examples are all '200|201' in datelines and code headers. In tests, 'June 14, 2007', '15/04/2016' and 'Copyright (C) 2005' scored 7–9, while '1997' scored 1, '2021/2023' scored 0, bare prose 'In 2009' scored 0 and the quantity '2007 boxes' put only 2 on the following token.\"\n ,\"missing_data\": \"I don't know why middle-range examples fire on articles like 'the'/'a' (about 5). Weak, more variable secondary activations would help explain that, as would tests of '200' after month-only dates (e.g. 'March 2009').\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.0695152,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 669,
+    "cache_read_input_tokens": 4351,
+    "output_tokens": 497,
+    "output_tokens_details": {
+     "thinking_tokens": 171
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 669,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 497,
+      "cache_read_input_tokens": 4351,
+      "cache_creation_input_tokens": 669,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 669
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6454
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1034872,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2494,
+    "cache_read_input_tokens": 5020,
+    "output_tokens": 650,
+    "output_tokens_details": {
+     "thinking_tokens": 360
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2494,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 650,
+      "cache_read_input_tokens": 5020,
+      "cache_creation_input_tokens": 2494,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2494
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6691
+  }
+ ]
+}

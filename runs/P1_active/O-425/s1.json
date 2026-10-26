@@ -1,0 +1,290 @@
+{
+ "arm": "P1_active",
+ "card": "O-425",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on the century-prefix token ('200'/'201') of a four-digit year in a date context",
+    "Fires on any multi-digit number token that begins a larger number, regardless of date context",
+    "Fires on year-prefix tokens even outside a date header, e.g. in prose 'in 2015'"
+   ],
+   "show": [
+    {
+     "text": "Wednesday, March 12, 2014\n\nOnline Solitaire",
+     "target": "201",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The warehouse holds 2014 boxes of solitaire cards.",
+     "target": "201",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In 2014 the company moved its headquarters to Ohio.",
+     "target": "201",
+     "predictions": [
+      "medium",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Created: 15/04/1998 by the author",
+     "target": "199",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Thursday, March 5, 2021 at 9:31 AM",
+     "target": "202",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on '200'/'201' prefix only in a full date (day/month + year)",
+    "Fires on any year token following a month+day date pattern, with 202x tokenized differently",
+    "Secondary: fires on determiner 'the/a' after a preposition/verb opening a noun phrase"
+   ],
+   "show": [
+    {
+     "text": "Posted on August 3, 2009 by admin",
+     "target": "200",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Copyright (C) 2015-2020 Cisco",
+     "target": "201",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The year 2015 was a good one for us.",
+     "target": "201",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Monday, June 1, 1999\n\nNew post",
+     "target": "199",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Gmail is one of the popular services, written by the author for a user.",
+     "target": "the",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "Wednesday, March 12, «201|8»4\n\n«Online|2»« Sol|1»«itaire|1»",
+  "The warehouse holds «201|1»«4|2»« boxes|1»« of|1» solitaire cards.",
+  "In 2014 the company moved« its|1» headquarters to« Ohio|1».",
+  "Created«:|2» «15|1»/«04|1»/199«8|1» by« the|5» author",
+  "Thursday, March 5, 2021« at|1» 9:31 AM",
+  "Posted« on|1» August 3, «200|8»9 by« admin|1»",
+  "Copyright (C) «201|8»5-202«0|1» Cisco",
+  "The year 2015 was« a|5» good one for us.",
+  "Monday, June 1, «199|1»9«\n\n|1»«New|1» post",
+  "G«mail|1» is one of« the|5» popular« services|1», written by the author for a user."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on the century-prefix token ('200'/'201') of a four-digit year in a date context\", \"Fires on any multi-digit number token that begins a larger number, regardless of date context\", \"Fires on year-prefix tokens even outside a date header, e.g. in prose 'in 2015'\"], \"show\": [{\"text\": \"Wednesday, March 12, 2014\\n\\nOnline Solitaire\", \"target\": \"201\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The warehouse holds 2014 boxes of solitaire cards.\", \"target\": \"201\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"In 2014 the company moved its headquarters to Ohio.\", \"target\": \"201\", \"predictions\": [\"medium\", \"high\", \"high\"]}, {\"text\": \"Created: 15/04/1998 by the author\", \"target\": \"199\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Thursday, March 5, 2021 at 9:31 AM\", \"target\": \"202\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.039328,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3725,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 476,
+    "output_tokens_details": {
+     "thinking_tokens": 111
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3725,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 476,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3725,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3725
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5480
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on '200'/'201' prefix only in a full date (day/month + year)\", \"Fires on any year token following a month+day date pattern, with 202x tokenized differently\", \"Secondary: fires on determiner 'the/a' after a preposition/verb opening a noun phrase\"], \"show\": [{\"text\": \"Posted on August 3, 2009 by admin\", \"target\": \"200\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"Copyright (C) 2015-2020 Cisco\", \"target\": \"201\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"The year 2015 was a good one for us.\", \"target\": \"201\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"Monday, June 1, 1999\\n\\nNew post\", \"target\": \"199\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Gmail is one of the popular services, written by the author for a user.\", \"target\": \"the\", \"predictions\": [\"low\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.054205,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 677,
+    "cache_read_input_tokens": 3725,
+    "output_tokens": 435,
+    "output_tokens_details": {
+     "thinking_tokens": 92
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 677,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 435,
+      "cache_read_input_tokens": 3725,
+      "cache_creation_input_tokens": 677,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 677
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5181
+  },
+  {
+   "text": "{\"class\": \"unrelated\",\n \"explanation\": \"The strongest firing is on the '200'/'201' century-prefix token of a 2000s–2010s year inside a date or copyright stamp (e.g. 'March 12, 2014', 'Copyright (C) 2015'). Separately, the unit fires moderately (~5) on some determiners ('the', 'a', 'an') that open a noun phrase, such as 'one of the', 'was a', 'by the'.\",\n \"evidence\": \"In my tests, date and copyright years scored 8 ('August 3, 2009', '(C) 2015'). Prose years stayed low ('In 2014', 'The year 2015', '2014 boxes'), as did other centuries (1998/1999 ≤1, 2021 ~0), while determiners in the middle examples and my probes ('the author', 'one of the', 'was a') reached 5.\",\n \"missing_data\": \"Two things are untested: whether ordinary determiners can ever reach top-level activation, and why '202x' years don't fire (likely a different tokenization). Either result could reveal a shared underlying feature.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.0711334,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 604,
+    "cache_read_input_tokens": 4402,
+    "output_tokens": 560,
+    "output_tokens_details": {
+     "thinking_tokens": 182
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 604,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 560,
+      "cache_read_input_tokens": 4402,
+      "cache_creation_input_tokens": 604,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 604
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6918
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1039466,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2557,
+    "cache_read_input_tokens": 5006,
+    "output_tokens": 567,
+    "output_tokens_details": {
+     "thinking_tokens": 277
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2557,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 567,
+      "cache_read_input_tokens": 5006,
+      "cache_creation_input_tokens": 2557,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2557
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5487
+  }
+ ]
+}

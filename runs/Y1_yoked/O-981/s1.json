@@ -1,0 +1,105 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-981",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "We« offer|1»« a|2»« bespoke|3»« property|3»« finder|1»« service|1»« for|3»« all|2»« your|7»« real|6»« estate|10»« needs|3»« in|1» Dubai«.|2»",
+  "We« offer|1»« a|2»« bespoke|3»« property|3»« finder|1»« service|1»« for|3»« all|2»« your|7»« housing|6»« needs|2»« in|1» Dubai«.|2»",
+  "The« company|1»« named|1» former« Renault|1»« executive|1» Carlos« T|1»ava«res|8»« as|5»« its|3»« next|2»« chief|2»« executive|3»«.|2»",
+  "A« freelancer|1»« has|1» to« pay|3»« for|2»« health|5»« insurance|1»,« has|3»« to|2» factor« in|4»« time|2»« for|4»« accounting|2»«,|4»« and|3»« has|3»« all|1»« of|3»« the|5»« overhead|7»« to|1»« supply|1»« their|1» own« equipment|1»«.|2»",
+  "The« freelancer|1» has the« overhead|2».",
+  "Your« real|2»« estate|1»«.|2»",
+  "Yesterday« I|1»« met|1» Carlos« T|1»avares«.|2»",
+  "With the rotor spinning« at|1»« top|1» speed, the« collective|1»« pitch|5»« control|5»« was|7»« moved|7»« from|3»« zero|4»« to|3»« maximum|5»« lift|4».",
+  "After many long« discussions|1» with the board, the shareholders,« and|1» the« unions|3»« over|2» several months«,|2» the old factory was« finally|1» sold.",
+  "Please give« me|1»« your|2» suggestions«.|2»",
+  "The board« named|2» Carlos« T|1»ava«res|6»« as|3»« its|2»« next|2»« chief|2»« executive|2»«.|2»",
+  "In« a|1»« move|1»« that|2» may help secure« the|1»« new|2» funding« from|1» Dong«f|4»«eng|2»,« Pe|1»«ugeot|1» last« week|1» met« with|1» former« Renault|2» No.«2|2» Carlos« T|1»ava«res|3»« at|3»« a|2» hotel in« Paris|1»«.|3»",
+  "We handle« all|1»« your|2»« plumbing|5»« needs|1»«.|1»",
+  "In our« long|2»-established family« business|1»,« serving|1»« clients|3»« across|3» the region since« |1»«195|1»2, we handle« plumbing|3»«.|2»"
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the key slot word inside a stock, formulaic phrase, at the point where the rest of the phrase becomes predictable, such as 'all your real estate needs', 'has all of the overhead', 'named Carlos Tavares as its next chief executive', 'collective pitch control was moved' and 'Please give me your suggestions'. The response grows when a long run of parallel or buildup context comes before that word.\",\n \"evidence\": \"Peaks fall on 'estate/housing/plumbing' in 'all your ___ needs' (10, 6, 5), 'overhead', 'Tavares' before 'as its next chief executive', and 'pitch' in 'collective pitch control'. The same names or words outside the formula stay weak: 'Your real estate.' scores 1-2, 'met Carlos Tavares' scores ~0, 'met with ... Tavares at a hotel' scores 3, and 'The freelancer has the overhead.' scores 2.\",\n \"missing_data\": \"Formulaic phrases with no preceding buildup, and long buildups that end in non-formulaic words, would separate phrase predictability from accumulated context length. Some examples (the lambda/LaTeX and court-citation ones) are not clearly explained by this account.\",\n \"confidence\": 0.35}\n```",
+   "cost_usd": 0.07592399999999999,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 7062,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 971,
+    "output_tokens_details": {
+     "thinking_tokens": 527
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 7062,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 971,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 7062,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 7062
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 12255
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.11968839999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3342,
+    "cache_read_input_tokens": 7062,
+    "output_tokens": 780,
+    "output_tokens_details": {
+     "thinking_tokens": 490
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3342,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 780,
+      "cache_read_input_tokens": 7062,
+      "cache_creation_input_tokens": 3342,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3342
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7441
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+{
+ "arm": "P1_active",
+ "card": "O-981",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on the second word of a familiar multi-word compound or name (real estate, collective pitch, Carlos Tavares)",
+    "Unit fires on tokens late in a long build-up list or clause, regardless of compound status",
+    "Unit fires on the 'payoff' word of an enumerated list item"
+   ],
+   "show": [
+    {
+     "text": "We offer a bespoke property finder service for all your real estate needs in Dubai.",
+     "target": "estate",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "We offer a bespoke property finder service for all your housing needs in Dubai.",
+     "target": "housing",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The company named former Renault executive Carlos Tavares as its next chief executive.",
+     "target": "Tavares",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "A freelancer has to pay for health insurance, has to factor in time for accounting, and has all of the overhead to supply their own equipment.",
+     "target": "overhead",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The freelancer has the overhead.",
+     "target": "overhead",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on the head noun completing an argument noun phrase, boosted by long preceding context",
+    "Unit fires on surname tokens / multi-token completions specifically",
+    "Unit fires on content after possessive 'your'/'the' determiners"
+   ],
+   "show": [
+    {
+     "text": "Your real estate.",
+     "target": "estate",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Yesterday I met Carlos Tavares.",
+     "target": "Tavares",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "With the rotor spinning at top speed, the collective pitch control was moved from zero to maximum lift.",
+     "target": "pitch",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "After many long discussions with the board, the shareholders, and the unions over several months, the old factory was finally sold.",
+     "target": "factory",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Please give me your suggestions.",
+     "target": "Please",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on a noun that fills a slot in a frame expecting a following role/purpose phrase (named X as..., all your X needs, X was moved from..)",
+    "Unit is a diffuse context-length/density unit, peaking in long, information-dense sentences regardless of frame"
+   ],
+   "show": [
+    {
+     "text": "The board named Carlos Tavares as its next chief executive.",
+     "target": "Tavares",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In a move that may help secure the new funding from Dongfeng, Peugeot last week met with former Renault No.2 Carlos Tavares at a hotel in Paris.",
+     "target": "Tavares",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We handle all your plumbing needs.",
+     "target": "plumbing",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In our long-established family business, serving clients across the region since 1952, we handle plumbing.",
+     "target": "plumbing",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We« offer|1»« a|2»« bespoke|3»« property|3»« finder|1»« service|1»« for|3»« all|2»« your|7»« real|6»« estate|10»« needs|3»« in|1» Dubai«.|2»",
+  "We« offer|1»« a|2»« bespoke|3»« property|3»« finder|1»« service|1»« for|3»« all|2»« your|7»« housing|6»« needs|2»« in|1» Dubai«.|2»",
+  "The« company|1»« named|1» former« Renault|1»« executive|1» Carlos« T|1»ava«res|8»« as|5»« its|3»« next|2»« chief|2»« executive|3»«.|2»",
+  "A« freelancer|1»« has|1» to« pay|3»« for|2»« health|5»« insurance|1»,« has|3»« to|2» factor« in|4»« time|2»« for|4»« accounting|2»«,|4»« and|3»« has|3»« all|1»« of|3»« the|5»« overhead|7»« to|1»« supply|1»« their|1» own« equipment|1»«.|2»",
+  "The« freelancer|1» has the« overhead|2».",
+  "Your« real|2»« estate|1»«.|2»",
+  "Yesterday« I|1»« met|1» Carlos« T|1»avares«.|2»",
+  "With the rotor spinning« at|1»« top|1» speed, the« collective|1»« pitch|5»« control|5»« was|7»« moved|7»« from|3»« zero|4»« to|3»« maximum|5»« lift|4».",
+  "After many long« discussions|1» with the board, the shareholders,« and|1» the« unions|3»« over|2» several months«,|2» the old factory was« finally|1» sold.",
+  "Please give« me|1»« your|2» suggestions«.|2»",
+  "The board« named|2» Carlos« T|1»ava«res|6»« as|3»« its|2»« next|2»« chief|2»« executive|2»«.|2»",
+  "In« a|1»« move|1»« that|2» may help secure« the|1»« new|2» funding« from|1» Dong«f|4»«eng|2»,« Pe|1»«ugeot|1» last« week|1» met« with|1» former« Renault|2» No.«2|2» Carlos« T|1»ava«res|3»« at|3»« a|2» hotel in« Paris|1»«.|3»",
+  "We handle« all|1»« your|2»« plumbing|5»« needs|1»«.|1»",
+  "In our« long|2»-established family« business|1»,« serving|1»« clients|3»« across|3» the region since« |1»«195|1»2, we handle« plumbing|3»«.|2»"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the second word of a familiar multi-word compound or name (real estate, collective pitch, Carlos Tavares)\", \"Unit fires on tokens late in a long build-up list or clause, regardless of compound status\", \"Unit fires on the 'payoff' word of an enumerated list item\"], \"show\": [{\"text\": \"We offer a bespoke property finder service for all your real estate needs in Dubai.\", \"target\": \"estate\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"We offer a bespoke property finder service for all your housing needs in Dubai.\", \"target\": \"housing\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"The company named former Renault executive Carlos Tavares as its next chief executive.\", \"target\": \"Tavares\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"A freelancer has to pay for health insurance, has to factor in time for accounting, and has all of the overhead to supply their own equipment.\", \"target\": \"overhead\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"The freelancer has the overhead.\", \"target\": \"overhead\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.065232,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6453,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 680,
+    "output_tokens_details": {
+     "thinking_tokens": 276
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 6453,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 680,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 6453,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 6453
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7588
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the head noun completing an argument noun phrase, boosted by long preceding context\", \"Unit fires on surname tokens / multi-token completions specifically\", \"Unit fires on content after possessive 'your'/'the' determiners\"], \"show\": [{\"text\": \"Your real estate.\", \"target\": \"estate\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"Yesterday I met Carlos Tavares.\", \"target\": \"Tavares\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"With the rotor spinning at top speed, the collective pitch control was moved from zero to maximum lift.\", \"target\": \"pitch\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"After many long discussions with the board, the shareholders, and the unions over several months, the old factory was finally sold.\", \"target\": \"factory\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Please give me your suggestions.\", \"target\": \"Please\", \"predictions\": [\"low\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.0877506,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1114,
+    "cache_read_input_tokens": 6453,
+    "output_tokens": 615,
+    "output_tokens_details": {
+     "thinking_tokens": 262
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1114,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 615,
+      "cache_read_input_tokens": 6453,
+      "cache_creation_input_tokens": 1114,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1114
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7038
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on a noun that fills a slot in a frame expecting a following role/purpose phrase (named X as..., all your X needs, X was moved from..)\", \"Unit is a diffuse context-length/density unit, peaking in long, information-dense sentences regardless of frame\"], \"show\": [{\"text\": \"The board named Carlos Tavares as its next chief executive.\", \"target\": \"Tavares\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"In a move that may help secure the new funding from Dongfeng, Peugeot last week met with former Renault No.2 Carlos Tavares at a hotel in Paris.\", \"target\": \"Tavares\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"We handle all your plumbing needs.\", \"target\": \"plumbing\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"In our long-established family business, serving clients across the region since 1952, we handle plumbing.\", \"target\": \"plumbing\", \"predictions\": [\"low\", \"high\"]}]}",
+   "cost_usd": 0.10636799999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 871,
+    "cache_read_input_tokens": 7567,
+    "output_tokens": 506,
+    "output_tokens_details": {
+     "thinking_tokens": 164
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 871,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 506,
+      "cache_read_input_tokens": 7567,
+      "cache_creation_input_tokens": 871,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 871
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6162
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Diffuse unit that peaks on a noun or name filling the key slot of a set construction, where a role or purpose phrase is expected next (e.g. 'all your [real estate] needs', 'named [Tavares] as its next…', 'the collective [pitch] control was moved'). It is weaker on surrounding function words, and its response grows with how dense and committed the context is.\",\n \"evidence\": \"'named Carlos Tavares as' gave 6, but 'met Carlos Tavares' gave 0. 'all your plumbing/housing/real estate needs' gave 5-10, while a bare 'Your real estate.' and 'we handle plumbing' were low, as was 'has the overhead' in a short sentence (2 vs 7 in the long list frame).\",\n \"missing_data\": \"More minimal pairs isolating the frame from sentence length, and an explanation of outliers such as 'Please' in the Java post and the math exponent/lambda tokens.\",\n \"confidence\": 0.35}\n```",
+   "cost_usd": 0.1233676,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 832,
+    "cache_read_input_tokens": 8438,
+    "output_tokens": 432,
+    "output_tokens_details": {
+     "thinking_tokens": 82
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 832,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 432,
+      "cache_read_input_tokens": 8438,
+      "cache_creation_input_tokens": 832,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 832
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6054
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1608776,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2805,
+    "cache_read_input_tokens": 9270,
+    "output_tokens": 660,
+    "output_tokens_details": {
+     "thinking_tokens": 370
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2805,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 660,
+      "cache_read_input_tokens": 9270,
+      "cache_creation_input_tokens": 2805,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2805
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7058
+  }
+ ]
+}

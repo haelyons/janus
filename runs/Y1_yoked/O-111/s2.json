@@ -1,0 +1,106 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-111",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "The bytes are stored in big«-end|5»ian order.",
+  "The bytes are stored in big order.",
+  "We visited Marr«akes|6»h last spring.",
+  "The« color|1»«atura|3»« sopr|2»«ano|2»« sang|3»« beautifully|2».",
+  "She used a hypodermic needle and a steth«oscope|1».",
+  "We bought a« Network|1»« Attached|6»« Storage|6»« device|1».",
+  "Open drive.google.com«/file|7»«/d|1»«/|1»«abc|1» to view« it|1».",
+  "Map data comes« from|1» open«street|7»«map|2»« contributors|3».",
+  "There was a fight« at|1» the Schlä«gere|8»i downtown.",
+  "The« cookie|3»« J|3»«SESSION|6»«ID|1» was found.",
+  "He moved to the United« States|1»« of|1»« America|1».",
+  "Once upon a« time|1» there« was|1» a king.",
+  "We used Visual« Studio|1»« Code|2» and Microsoft« Excel|2».",
+  "The bl«or|3»vish attached tremble device broke.",
+  "Use the Model« View|1»« Controller|4»« pattern|1»« in|1»« Ruby|3»« on|2»« Rails|2»."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the middle or continuation token of a familiar multi-token term or name, once the earlier pieces make the completion predictable. Examples are Schlä-«gere»-i, Marr-«akes»-h, big-«end»-ian, open«street»map, J«SESSION»ID, Network «Attached» Storage, drive.google.com«/file», color«atura» and McLA«UGHL»IN.\",\n \"evidence\": \"Every top example peaks inside a known fixed compound, word or URL rather than on its first piece. Controls show it depends on context: 'big order' is silent while 'big-endian' fires, and 'attached' is silent in the nonsense phrase 'blorvish attached tremble device' but strong in 'Network Attached Storage'.\",\n \"missing_data\": \"Controls comparing the same word in a familiar compound versus alone, plus rare or invented compounds, would show whether familiarity or predictability is what drives it, and whether the first token ever fires strongly.\",\n \"confidence\": 0.65}\n```",
+   "cost_usd": 0.052267999999999995,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4880,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 661,
+    "output_tokens_details": {
+     "thinking_tokens": 303
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4880,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 661,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4880,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4880
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7617
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.09332,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3140,
+    "cache_read_input_tokens": 4880,
+    "output_tokens": 747,
+    "output_tokens_details": {
+     "thinking_tokens": 457
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3140,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 747,
+      "cache_read_input_tokens": 4880,
+      "cache_creation_input_tokens": 3140,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3140
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7423
+  }
+ ]
+}

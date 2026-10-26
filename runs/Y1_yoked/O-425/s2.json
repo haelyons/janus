@@ -1,0 +1,101 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-425",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "Posted« on|1» Monday, June 14, «200|8»7 by admin",
+  "The warehouse holds 200«7|2»« boxes|1»« of|1» apples.",
+  "Posted« on|1» Monday, June 14, «199|1»7 by admin",
+  "Posted« on|1» Monday, June 14, 2023 by admin",
+  "In 2009 the company moved to Berlin.",
+  "//« Created|2»: «15|1»/«04|1»/«201|9»6«\n|1»«//|1» Copyright«:|1» (c) John Smith",
+  "She said that« on|1»« June|1» 14, «200|7»7 she had moved to Berlin with her family.",
+  "Thursday, March 5, «201|8»5\n\nV«W|1» Up« fac|1»«el|1»«ift|1»",
+  "Copyright (C) «200|8»5-201«0|1» Example Corp. All rights reserved.",
+  "Thursday, March 5, 2021\n\nVW Up« fac|1»«el|1»«ift|1»"
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the century/decade prefix token ('200', '201') of a year written in the 2000s–2010s inside a date (blog post datelines, file 'Created:' headers, copyright lines). It also fires weakly and diffusely on determiners/mid-sentence tokens in ordinary prose.\",\n \"evidence\": \"Top examples all peak at 9-10 on '200'/'201' in dates; the probes show 2023, 2009 written as a single token, and 1997 ('199') barely fire, while '2007 boxes' (non-date) fires only 2. Mid-range examples peak at about 5 on 'the'/'a'/'an' with no date present, which is a weaker secondary behavior.\",\n \"missing_data\": \"Probes of '200'/'201' in date contexts written without a weekday or month, and of other split years such as 2020s tokenizations, to separate the year-prefix response from a broader date-context response.\",\n \"confidence\": 0.8}",
+   "cost_usd": 0.036604,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3737,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 335,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3737,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 335,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3737,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3737
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4557
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0755216,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2678,
+    "cache_read_input_tokens": 3388,
+    "output_tokens": 840,
+    "output_tokens_details": {
+     "thinking_tokens": 550
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2678,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 840,
+      "cache_read_input_tokens": 3388,
+      "cache_creation_input_tokens": 2678,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2678
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9385
+  }
+ ]
+}

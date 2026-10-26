@@ -1,0 +1,48 @@
+{
+ "arm": "F2_pool",
+ "card": "O-111",
+ "sample": 1,
+ "explanation": "The unit fires most on a continuation token inside a fixed multi-token term or name, where the next piece is highly predictable: 'Schlä-gere-i', 'Network Attached Storage', 'drive.google.com/file', 'Marr-akes-h', 'micro-channels', 'color-atura', 'big-end-ian', 'open-street-map', 'McLaUG-HL-IN', 'JSESSION-ID', 'x-aml'. It also fires weakly and diffusely on content words in technical text and domain-specific nouns (lasers, 'helical', 'bundle', medical terms).",
+ "replies": [
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"act\": 6}, {\"id\": 2, \"act\": 1}, {\"id\": 3, \"act\": 7}, {\"id\": 4, \"act\": 0}, {\"id\": 5, \"act\": 1}, {\"id\": 6, \"act\": 7}, {\"id\": 7, \"act\": 6}, {\"id\": 8, \"act\": 6}, {\"id\": 9, \"act\": 0}, {\"id\": 10, \"act\": 4}, {\"id\": 11, \"act\": 7}, {\"id\": 12, \"act\": 9}, {\"id\": 13, \"act\": 8}, {\"id\": 14, \"act\": 8}, {\"id\": 15, \"act\": 3}, {\"id\": 16, \"act\": 2}, {\"id\": 17, \"act\": 2}, {\"id\": 18, \"act\": 6}, {\"id\": 19, \"act\": 6}, {\"id\": 20, \"act\": 6}, {\"id\": 21, \"act\": 2}, {\"id\": 22, \"act\": 6}, {\"id\": 23, \"act\": 4}, {\"id\": 24, \"act\": 3}, {\"id\": 25, \"act\": 1}, {\"id\": 26, \"act\": 1}, {\"id\": 27, \"act\": 1}, {\"id\": 28, \"act\": 1}, {\"id\": 29, \"act\": 3}, {\"id\": 30, \"act\": 7}, {\"id\": 31, \"act\": 6}, {\"id\": 32, \"act\": 4}, {\"id\": 33, \"act\": 0}, {\"id\": 34, \"act\": 1}, {\"id\": 35, \"act\": 4}, {\"id\": 36, \"act\": 7}, {\"id\": 37, \"act\": 3}, {\"id\": 38, \"act\": 2}, {\"id\": 39, \"act\": 1}, {\"id\": 40, \"act\": 1}]}",
+   "cost_usd": 0.107696,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 12036,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 570,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 12036,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 570,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 12036,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 12036
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4795
+  }
+ ]
+}

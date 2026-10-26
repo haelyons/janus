@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "O-111",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on a mid-word/mid-compound token of a well-known multi-token term, where the completion is highly predictable (e.g. Schlä-gere-i, Network Attached [Storage], big-end[ian])",
+    "Fires on rare or technical subword fragments regardless of how predictable the completion is",
+    "Fires on specific domain terms (computing/storage/web identifiers)"
+   ],
+   "show": [
+    {
+     "text": "The police broke up a Schlägerei outside the bar last night.",
+     "target": "gere",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We bought a new Network Attached Storage device for the office.",
+     "target": " Attached",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We bought a new network attached printer for the office.",
+     "target": " attached",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The bytes are stored in big-endian order on this machine.",
+     "target": "-end",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She spent her holiday in Marrakesh and then flew to Casablanca.",
+     "target": "akes",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on the non-final piece of a multi-token word/name when the remaining completion is near-certain (within-word prediction)",
+    "Fires on any token where the next token is highly predictable, including across word boundaries in fixed phrases",
+    "Fires on rare/foreign subword fragments regardless of predictability"
+   ],
+   "show": [
+    {
+     "text": "The river flows through Mississippi and Louisiana.",
+     "target": "iss",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "He was born in the United States of America in 1950.",
+     "target": " of",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Arnold Schwarzenegger starred in the movie.",
+     "target": "zen",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The word antidisestablishmentarianism is very long.",
+     "target": "establishment",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The zxqv blorft wimplegrath sat on the table.",
+     "target": "imple",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on interior pieces of multi-token words/identifiers (subword continuation), stronger for recognizable rare terms",
+    "Fires specifically on the token completing the recognizable stem of a known rare term (predictable completion)",
+    "Fires on technical/foreign vocabulary as whole words"
+   ],
+   "show": [
+    {
+     "text": "Set the JSESSIONID cookie before redirecting.",
+     "target": "SESSION",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Fluid moves through the microchannels by capillary action.",
+     "target": "channels",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "She is a coloratura soprano with a bright voice.",
+     "target": "atura",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The soprano sang with a bright voice.",
+     "target": " soprano",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Open the settings.xaml file in the editor.",
+     "target": "aml",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The police broke up a Sch«lä|1»«gere|9»i« outside|1» the« bar|1» last night.",
+  "We bought a new« Network|1»« Attached|6»« Storage|6»« device|1» for the« office|1».",
+  "We bought a new« network|1»« attached|2»« printer|3» for the« office|1».",
+  "The bytes are stored in big«-end|5»ian order on this« machine|2».",
+  "She spent« her|1»« holiday|3»« in|1» Marr«akes|7»h and then flew to Casablanca.",
+  "The« river|1» flows« through|1» Mississippi and Louisiana.",
+  "He was« born|1» in the United« States|1» of« America|1» in 195«0|1».",
+  "Arnold Schwarzen«eg|3»ger« starred|3»« in|2» the« movie|1».",
+  "The word antidisestablishmentarianism« is|1» very long.",
+  "The zx«qv|4» blorft w«imple|1»gr«ath|1»« sat|1» on the« table|2».",
+  "Set the J«SESSION|6»«ID|1»« cookie|3»« before|1»« redirect|2»ing.",
+  "Fluid moves« through|1» the« micro|2»«channels|4»« by|1»« cap|1»«illary|2»« action|3».",
+  "She is a« color|1»«atura|3»« sopr|1»«ano|1»« with|1» a« bright|1»« voice|1».",
+  "The« sopr|1»«ano|1»« sang|3»« with|1» a« bright|2»« voice|1».",
+  "Open the« settings|1»«.xaml|1»« file|3» in the editor."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on a mid-word/mid-compound token of a well-known multi-token term, where the completion is highly predictable (e.g. Schlä-gere-i, Network Attached [Storage], big-end[ian])\", \"Fires on rare or technical subword fragments regardless of how predictable the completion is\", \"Fires on specific domain terms (computing/storage/web identifiers)\"], \"show\": [{\"text\": \"The police broke up a Schlägerei outside the bar last night.\", \"target\": \"gere\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We bought a new Network Attached Storage device for the office.\", \"target\": \" Attached\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"We bought a new network attached printer for the office.\", \"target\": \" attached\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The bytes are stored in big-endian order on this machine.\", \"target\": \"-end\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She spent her holiday in Marrakesh and then flew to Casablanca.\", \"target\": \"akes\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.050596,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4751,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 629,
+    "output_tokens_details": {
+     "thinking_tokens": 237
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4751,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 629,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4751,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4751
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7050
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on the non-final piece of a multi-token word/name when the remaining completion is near-certain (within-word prediction)\", \"Fires on any token where the next token is highly predictable, including across word boundaries in fixed phrases\", \"Fires on rare/foreign subword fragments regardless of predictability\"], \"show\": [{\"text\": \"The river flows through Mississippi and Louisiana.\", \"target\": \"iss\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"He was born in the United States of America in 1950.\", \"target\": \" of\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Arnold Schwarzenegger starred in the movie.\", \"target\": \"zen\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The word antidisestablishmentarianism is very long.\", \"target\": \"establishment\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The zxqv blorft wimplegrath sat on the table.\", \"target\": \"imple\", \"predictions\": [\"low\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.0692022,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 845,
+    "cache_read_input_tokens": 4751,
+    "output_tokens": 544,
+    "output_tokens_details": {
+     "thinking_tokens": 187
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 845,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 544,
+      "cache_read_input_tokens": 4751,
+      "cache_creation_input_tokens": 845,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 845
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6582
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on interior pieces of multi-token words/identifiers (subword continuation), stronger for recognizable rare terms\", \"Fires specifically on the token completing the recognizable stem of a known rare term (predictable completion)\", \"Fires on technical/foreign vocabulary as whole words\"], \"show\": [{\"text\": \"Set the JSESSIONID cookie before redirecting.\", \"target\": \"SESSION\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Fluid moves through the microchannels by capillary action.\", \"target\": \"channels\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"She is a coloratura soprano with a bright voice.\", \"target\": \"atura\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The soprano sang with a bright voice.\", \"target\": \" soprano\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"Open the settings.xaml file in the editor.\", \"target\": \"aml\", \"predictions\": [\"high\", \"high\", \"high\"]}]}",
+   "cost_usd": 0.0861934,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 742,
+    "cache_read_input_tokens": 5596,
+    "output_tokens": 496,
+    "output_tokens_details": {
+     "thinking_tokens": 144
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 742,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 496,
+      "cache_read_input_tokens": 5596,
+      "cache_creation_input_tokens": 742,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 742
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5249
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires on the interior or continuation subword pieces of rare multi-token words, names and identifiers, such as Schlä-gere-i, Marr-akes-h, big-end-ian, J-SESSION-ID and Schwarzen-eg-ger. It peaks where the term is recognizable and its completion is predictable, and gives weaker spillover onto nearby content words.\",\n \"evidence\": \"Every top example peaks inside a fragmented rare or technical/foreign term, and tests reproduced this: gere 9, akes 7, -end 5, SESSION 6. Fixed phrases across word boundaries stay low ('of' in United States of America), as do whole-word tokens (soprano 1), while gibberish fragments respond only moderately (qv 4).\",\n \"missing_data\": \"Systematic tests separating the predictability of the completion from token rarity, plus checks of whether the first, middle or final piece of the word gets the most activation (Network Attached Storage and xxxxxxxx don't fit the subword pattern cleanly).\",\n \"confidence\": 0.55}\n```",
+   "cost_usd": 0.102869,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 739,
+    "cache_read_input_tokens": 6338,
+    "output_tokens": 474,
+    "output_tokens_details": {
+     "thinking_tokens": 96
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 739,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 474,
+      "cache_read_input_tokens": 6338,
+      "cache_creation_input_tokens": 739,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 739
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5692
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1425204,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2955,
+    "cache_read_input_tokens": 7077,
+    "output_tokens": 729,
+    "output_tokens_details": {
+     "thinking_tokens": 439
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2955,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 729,
+      "cache_read_input_tokens": 7077,
+      "cache_creation_input_tokens": 2955,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2955
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7238
+  }
+ ]
+}

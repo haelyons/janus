@@ -1,0 +1,106 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-111",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "The police broke up a Sch«lä|1»«gere|9»i« outside|1» the« bar|1» last night.",
+  "We bought a new« Network|1»« Attached|6»« Storage|6»« device|1» for the« office|1».",
+  "We bought a new« network|1»« attached|2»« printer|3» for the« office|1».",
+  "The bytes are stored in big«-end|5»ian order on this« machine|2».",
+  "She spent« her|1»« holiday|3»« in|1» Marr«akes|7»h and then flew to Casablanca.",
+  "The« river|1» flows« through|1» Mississippi and Louisiana.",
+  "He was« born|1» in the United« States|1» of« America|1» in 195«0|1».",
+  "Arnold Schwarzen«eg|3»ger« starred|3»« in|2» the« movie|1».",
+  "The word antidisestablishmentarianism« is|1» very long.",
+  "The zx«qv|4» blorft w«imple|1»gr«ath|1»« sat|1» on the« table|2».",
+  "Set the J«SESSION|6»«ID|1»« cookie|3»« before|1»« redirect|2»ing.",
+  "Fluid moves« through|1» the« micro|2»«channels|4»« by|1»« cap|1»«illary|2»« action|3».",
+  "She is a« color|1»«atura|3»« sopr|1»«ano|1»« with|1» a« bright|1»« voice|1».",
+  "The« sopr|1»«ano|1»« sang|3»« with|1» a« bright|2»« voice|1».",
+  "Open the« settings|1»«.xaml|1»« file|3» in the editor."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on interior or continuation pieces of rare, multi-token words, names and technical compounds, at the point where the rest of the term is being completed. Examples include 'Schlä|gere|i', 'Marr|akes|h', 'big-|end|ian', 'J|SESSION|ID', 'Mc|LAUGHL|IN', 'Network |Attached| Storage', 'color|atura', 'micro|channels' and 'x|aml'.\",\n \"evidence\": \"Nearly every peak (8-10) falls on a middle fragment of a rare foreign word, proper name or fixed technical phrase, and the pattern holds in the new texts (Schlägerei 9, Marrakesh 7, big-endian 5, Schwarzenegger 3). Common words and ordinary multi-word phrases ('United States of America', 'Mississippi') stay near zero, and the more generic 'network attached printer' drops to 2-3.\",\n \"missing_data\": \"Per-token tokenization data, to check whether activation tracks being mid-word in a rare term rather than how predictable the completion is. More long rare words that are split into tokens (antidisestablishmentarianism unexpectedly showed nothing) would also help.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.053556,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5001,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 677,
+    "output_tokens_details": {
+     "thinking_tokens": 243
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5001,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 677,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5001,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5001
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8093
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.09426019999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3156,
+    "cache_read_input_tokens": 5001,
+    "output_tokens": 722,
+    "output_tokens_details": {
+     "thinking_tokens": 432
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3156,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 722,
+      "cache_read_input_tokens": 5001,
+      "cache_creation_input_tokens": 3156,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3156
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7018
+  }
+ ]
+}
