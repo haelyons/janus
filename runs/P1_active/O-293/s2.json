@@ -1,0 +1,389 @@
+{
+ "arm": "P1_active",
+ "card": "O-293",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on continuation tokens inside a multi-token name or fixed phrase (the middle or later pieces of a known entity)",
+    "Fires on any word-piece continuation token (subword fragment), regardless of whether it belongs to a known entity",
+    "Fires specifically on the second token of a capitalized proper noun"
+   ],
+   "show": [
+    {
+     "text": "The protein NF-kappaB regulates inflammation in many cells.",
+     "target": "B",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She listened to Chance The Rapper all afternoon.",
+     "target": "The",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The unbelievably long antidisestablishmentarianism debate continued.",
+     "target": "establishment",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Elderly patients struggle with activities of daily living after surgery.",
+     "target": "living",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "We drove past the field of oilseed rape near the village.",
+     "target": "seed",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a name/term that reappears in a variant spelling or casing (different tokenization) from an earlier mention in the context",
+    "Fires on continuation tokens of multi-token names regardless of earlier mentions",
+    "Fires on misspellings in general, even without an earlier mention"
+   ],
+   "show": [
+    {
+     "text": "We bought shelving from elfa last year. The Elfa system fit our closet perfectly.",
+     "target": "fa",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We bought shelving from Elfa last year. The Elfa system fit our closet perfectly.",
+     "target": "fa",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Officer LeFlore was found at the scene. Later, Sgt. Leflore's family spoke to reporters.",
+     "target": "ef",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The storm brought thunder and lightening across the valley.",
+     "target": "ening",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The upgrade called SegWit was activated. Supporters of Segwit celebrated.",
+     "target": "wit",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a re-mention of an earlier term in a different spelling/casing/tokenization (variant form of the same entity)",
+    "Fires on any re-mention of an earlier name, even in identical form",
+    "Fires on any capitalization change of a word, even a common word or unrelated entity"
+   ],
+   "show": [
+    {
+     "text": "I visited Mashhad in spring. The shrine in Meshed was crowded.",
+     "target": "ed",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Officer LeFlore was found at the scene. Later, Sgt. LeFlore's family spoke to reporters.",
+     "target": "Flore",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We grow oilseed rape here. The oil seed rape harvest was large.",
+     "target": "seed",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Officer LeFlore was found at the scene. Later, Sgt. Lefevre's family spoke to reporters.",
+     "target": "ef",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The cat sat on the mat. THE CAT then slept.",
+     "target": "CAT",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The protein NF-kappa«B|1» regulates inflammation in many cells.",
+  "She listened to Chance The Rapper all afternoon.",
+  "The unbelievably long antidisestablishmentarianism debate continued.",
+  "Elderly patients struggle with activities of daily living after surgery.",
+  "We drove past the field of oilseed rape near the village.",
+  "We bought shelving from elfa last year. The« El|3»«fa|4» system fit our closet perfectly.",
+  "We bought shelving from Elfa last year. The Elfa system fit our closet perfectly.",
+  "Officer LeFlore was found at the scene. Later, Sgt. L«ef|9»«lore|3»'s family spoke to reporters.",
+  "The storm brought thunder and lightening across the valley.",
+  "The upgrade called SegWit was activated. Supporters of Seg«wit|5» celebrated.",
+  "I visited Mash«had|1» in spring. The shrine in« Mesh|2»«ed|1» was crowded.",
+  "Officer LeFlore was found at the scene. Later, Sgt. LeF«lore|1»'s family spoke to reporters.",
+  "We grow oilseed rape here. The oil« seed|2»« rape|1» harvest was large.",
+  "Officer LeFlore was found at the scene. Later, Sgt. L«ef|9»«ev|1»re's family spoke to reporters.",
+  "The cat sat on the mat. THE CAT then slept."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on continuation tokens inside a multi-token name or fixed phrase (the middle or later pieces of a known entity)\", \"Fires on any word-piece continuation token (subword fragment), regardless of whether it belongs to a known entity\", \"Fires specifically on the second token of a capitalized proper noun\"], \"show\": [{\"text\": \"The protein NF-kappaB regulates inflammation in many cells.\", \"target\": \"B\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"She listened to Chance The Rapper all afternoon.\", \"target\": \"The\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"The unbelievably long antidisestablishmentarianism debate continued.\", \"target\": \"establishment\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Elderly patients struggle with activities of daily living after surgery.\", \"target\": \"living\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"We drove past the field of oilseed rape near the village.\", \"target\": \"seed\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.041444,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3677,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 601,
+    "output_tokens_details": {
+     "thinking_tokens": 229
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3677,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 601,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3677,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3677
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6896
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a name/term that reappears in a variant spelling or casing (different tokenization) from an earlier mention in the context\", \"Fires on continuation tokens of multi-token names regardless of earlier mentions\", \"Fires on misspellings in general, even without an earlier mention\"], \"show\": [{\"text\": \"We bought shelving from elfa last year. The Elfa system fit our closet perfectly.\", \"target\": \"fa\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We bought shelving from Elfa last year. The Elfa system fit our closet perfectly.\", \"target\": \"fa\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Officer LeFlore was found at the scene. Later, Sgt. Leflore's family spoke to reporters.\", \"target\": \"ef\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The storm brought thunder and lightening across the valley.\", \"target\": \"ening\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The upgrade called SegWit was activated. Supporters of Segwit celebrated.\", \"target\": \"wit\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.0640834,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 751,
+    "cache_read_input_tokens": 3677,
+    "output_tokens": 794,
+    "output_tokens_details": {
+     "thinking_tokens": 391
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 751,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 794,
+      "cache_read_input_tokens": 3677,
+      "cache_creation_input_tokens": 751,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 751
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8456
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a re-mention of an earlier term in a different spelling/casing/tokenization (variant form of the same entity)\", \"Fires on any re-mention of an earlier name, even in identical form\", \"Fires on any capitalization change of a word, even a common word or unrelated entity\"], \"show\": [{\"text\": \"I visited Mashhad in spring. The shrine in Meshed was crowded.\", \"target\": \"ed\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"Officer LeFlore was found at the scene. Later, Sgt. LeFlore's family spoke to reporters.\", \"target\": \"Flore\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"We grow oilseed rape here. The oil seed rape harvest was large.\", \"target\": \"seed\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"Officer LeFlore was found at the scene. Later, Sgt. Lefevre's family spoke to reporters.\", \"target\": \"ef\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The cat sat on the mat. THE CAT then slept.\", \"target\": \"CAT\", \"predictions\": [\"low\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.081817,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1004,
+    "cache_read_input_tokens": 4428,
+    "output_tokens": 440,
+    "output_tokens_details": {
+     "thinking_tokens": 30
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1004,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 440,
+      "cache_read_input_tokens": 4428,
+      "cache_creation_input_tokens": 1004,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1004
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5507
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"Fires when a name or term seen earlier in the text comes back in a different spelling, casing or tokenization (elfa→Elfa, LeFlore→Leflore, SegWit→Segwit). It peaks on the subword token where the new form diverges from the earlier one, and gives weaker activation to rarer multi-token names and odd spellings without an earlier mention.\", \"evidence\": \"An identical repeat (LeFlore→LeFlore) and an identical-case Elfa→Elfa barely activate (0-1), while case variants hit 4-9. 'Lef' in 'Lefevre' after 'LeFlore' also hits 9, so the unit responds to the divergent subword prefix itself rather than confirming the same entity; variants like Meshed and oil seed rape were weaker (1-2).\", \"missing_data\": \"Top examples showing whether the earlier mention is always present in the context; tests on common words (not names) re-tokenized differently.\", \"confidence\": 0.7}",
+   "cost_usd": 0.09871540000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 667,
+    "cache_read_input_tokens": 5432,
+    "output_tokens": 523,
+    "output_tokens_details": {
+     "thinking_tokens": 184
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 667,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 523,
+      "cache_read_input_tokens": 5432,
+      "cache_creation_input_tokens": 667,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 667
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6901
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1378552,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2893,
+    "cache_read_input_tokens": 6099,
+    "output_tokens": 738,
+    "output_tokens_details": {
+     "thinking_tokens": 448
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2893,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 738,
+      "cache_read_input_tokens": 6099,
+      "cache_creation_input_tokens": 2893,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2893
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8043
+  }
+ ]
+}

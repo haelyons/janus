@@ -1,0 +1,290 @@
+{
+ "arm": "P1_active",
+ "card": "O-142",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on the plural noun naming the pieces something is split/divided into (division into multiple parts concept)",
+    "Unit fires on any plural count noun after a number/quantifier, regardless of splitting",
+    "Unit fires on words like 'separately/split/into' (the division verb/adverb itself) more than the resulting pieces"
+   ],
+   "show": [
+    {
+     "text": "We decided to split the cake into eight slices.",
+     "target": "slices",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We bought eight slices of cake at the bakery.",
+     "target": "slices",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The manuscript was divided into three volumes for publication.",
+     "target": "volumes",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The three volumes sat on the shelf gathering dust.",
+     "target": "volumes",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Each component can be purchased separately, so you don't need the whole kit.",
+     "target": "separately",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit tracks the concept of a whole being broken into multiple separate smaller parts, strongest when the decomposition is elaborated (longer technical contexts)",
+    "Unit responds to words for separateness/independence (separately, independent, individual) regardless of a whole being split",
+    "Unit responds to plural nouns of parts/components in technical/engineering prose"
+   ],
+   "show": [
+    {
+     "text": "Rather than run one huge query, the job should be split into multiple smaller batches, each processed independently.",
+     "target": "batches",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Rather than run one huge query, the job should be run as a single large batch processed all at once.",
+     "target": "batch",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The two researchers worked independently and never met.",
+     "target": "independently",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The device comprises a housing, a plurality of contacts, and a cover.",
+     "target": "contacts",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The bearing is produced in two parts, a first part contacting the shaft and a second part opposite it.",
+     "target": "parts",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We decided to« split|2» the cake into eight slices.",
+  "We bought eight slices of cake at the bakery.",
+  "The manuscript was« divided|1» into« three|1»« volumes|2»« for|6»« publication|3»«.|4»",
+  "The three« volumes|1»« sat|1» on the shelf gathering dust.",
+  "Each component can« be|1»« purchased|3»« separately|5»,« so|4» you don«'t|1»« need|1» the whole kit«.|1»",
+  "Rather than run one huge query,« the|3» job« should|1»« be|1»« split|10»« into|5»« multiple|8»« smaller|7»« batches|4»«,|1»« each|2»« processed|3»« independently|4»«.|2»",
+  "Rather than run one huge query,« the|3» job« should|1»« be|1»« run|1»« as|4» a« single|1» large batch« processed|2» all at once«.|1»",
+  "The two researchers worked« independently|2»« and|1»« never|1» met«.|2»",
+  "The device comprises a housing, a plurality of contacts, and a cover.",
+  "The bearing is produced in two« parts|5»,« a|2» first part contacting the shaft and« a|1»« second|1» part opposite it."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the plural noun naming the pieces something is split/divided into (division into multiple parts concept)\", \"Unit fires on any plural count noun after a number/quantifier, regardless of splitting\", \"Unit fires on words like 'separately/split/into' (the division verb/adverb itself) more than the resulting pieces\"], \"show\": [{\"text\": \"We decided to split the cake into eight slices.\", \"target\": \"slices\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We bought eight slices of cake at the bakery.\", \"target\": \"slices\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The manuscript was divided into three volumes for publication.\", \"target\": \"volumes\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The three volumes sat on the shelf gathering dust.\", \"target\": \"volumes\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"Each component can be purchased separately, so you don't need the whole kit.\", \"target\": \"separately\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.04086,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4084,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 409,
+    "output_tokens_details": {
+     "thinking_tokens": 41
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4084,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 409,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4084,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4084
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5074
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit tracks the concept of a whole being broken into multiple separate smaller parts, strongest when the decomposition is elaborated (longer technical contexts)\", \"Unit responds to words for separateness/independence (separately, independent, individual) regardless of a whole being split\", \"Unit responds to plural nouns of parts/components in technical/engineering prose\"], \"show\": [{\"text\": \"Rather than run one huge query, the job should be split into multiple smaller batches, each processed independently.\", \"target\": \"batches\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Rather than run one huge query, the job should be run as a single large batch processed all at once.\", \"target\": \"batch\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"The two researchers worked independently and never met.\", \"target\": \"independently\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The device comprises a housing, a plurality of contacts, and a cover.\", \"target\": \"contacts\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The bearing is produced in two parts, a first part contacting the shaft and a second part opposite it.\", \"target\": \"parts\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.0570808,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 606,
+    "cache_read_input_tokens": 4084,
+    "output_tokens": 527,
+    "output_tokens_details": {
+     "thinking_tokens": 114
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 606,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 527,
+      "cache_read_input_tokens": 4084,
+      "cache_creation_input_tokens": 606,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 606
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6744
+  },
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"Fires when a whole is described as being broken into several separate, smaller pieces. It peaks on the split verb and on the words that follow it, such as 'into multiple smaller' and the noun naming the pieces, and also fires on related words like 'separately' and 'in two parts'.\",\n \"evidence\": \"'split into multiple smaller batches' reached 10, while the matched control 'run as a single large batch' stayed at 4 or below, and a plain list ('a plurality of contacts') did not fire at all. 'Produced in two parts' gave 5 and 'purchased separately' gave 5, which fits the top examples (split table into 8 tables, refactor into multiple smaller packages, manufacturing separately).\",\n \"missing_data\": \"More tests on why short everyday splits (cake into slices) fire weakly, and on non-physical splits such as dividing time or dividing a group of people.\",\n \"confidence\": 0.8}\n```",
+   "cost_usd": 0.0715148,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 815,
+    "cache_read_input_tokens": 4690,
+    "output_tokens": 348,
+    "output_tokens_details": {
+     "thinking_tokens": 27
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 815,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 348,
+      "cache_read_input_tokens": 4690,
+      "cache_creation_input_tokens": 815,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 815
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4763
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1081598,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2761,
+    "cache_read_input_tokens": 5505,
+    "output_tokens": 672,
+    "output_tokens_details": {
+     "thinking_tokens": 382
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2761,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 672,
+      "cache_read_input_tokens": 5505,
+      "cache_creation_input_tokens": 2761,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2761
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6230
+  }
+ ]
+}

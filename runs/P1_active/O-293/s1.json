@@ -1,0 +1,278 @@
+{
+ "arm": "P1_active",
+ "card": "O-293",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on a re-mention of an earlier term written with different casing or spelling (variant form of a known term)",
+    "Fires on any middle/continuation token of a multi-token named entity or fixed phrase, regardless of earlier mention"
+   ],
+   "show": [
+    {
+     "text": "We installed the elfa shelving last year. Later we bought more Elfa drawers for the garage.",
+     "target": "fa",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We installed the Elfa shelving last year. Later we bought more Elfa drawers for the garage.",
+     "target": "fa",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Officer LeFlore was found at the scene. Sgt. Leflore's family is grieving.",
+     "target": "ef",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Officer LeFlore was found at the scene. Sgt. LeFlore's family is grieving.",
+     "target": "Fl",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The storm produced thunder and lightening across the valley.",
+     "target": "ening",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on a re-mention of an earlier term written in a variant spelling/casing/hyphenation",
+    "Fires on misspellings/unusual forms regardless of prior mention"
+   ],
+   "show": [
+    {
+     "text": "Lightning struck the tower. The storm produced thunder and lightening across the valley.",
+     "target": "ening",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She sent an email to her boss. Later she deleted the e-mail from her inbox.",
+     "target": "mail",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She sent an e-mail to her boss. Later she deleted the e-mail from her inbox.",
+     "target": "mail",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "She deleted the e-mail from her inbox.",
+     "target": "mail",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The company is called DataStream. Investors love Datastream's new product.",
+     "target": "stream",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We installed the elfa shelving last year. Later we bought more« El|3»«fa|4» drawers for the garage.",
+  "We installed the Elfa shelving last year. Later we bought more Elfa drawers for the garage.",
+  "Officer LeFlore was found at the scene. Sgt. L«ef|7»«lore|2»'s family is grieving.",
+  "Officer LeFlore was found at the scene. Sgt. LeF«lore|1»'s family is grieving.",
+  "The storm produced thunder and lightening across the valley.",
+  "Lightning struck the tower. The storm produced thunder and light«ening|3» across the valley.",
+  "She sent an email to her boss. Later she deleted the« e|1»«-mail|2» from her inbox.",
+  "She sent an e«-mail|1» to her boss. Later she deleted the e-mail from her inbox.",
+  "She deleted the e«-mail|1» from her inbox.",
+  "The company is called DataStream. Investors love Data«stream|4»'s new product."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on a re-mention of an earlier term written with different casing or spelling (variant form of a known term)\", \"Fires on any middle/continuation token of a multi-token named entity or fixed phrase, regardless of earlier mention\"], \"show\": [{\"text\": \"We installed the elfa shelving last year. Later we bought more Elfa drawers for the garage.\", \"target\": \"fa\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"We installed the Elfa shelving last year. Later we bought more Elfa drawers for the garage.\", \"target\": \"fa\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"Officer LeFlore was found at the scene. Sgt. Leflore's family is grieving.\", \"target\": \"ef\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Officer LeFlore was found at the scene. Sgt. LeFlore's family is grieving.\", \"target\": \"Fl\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"The storm produced thunder and lightening across the valley.\", \"target\": \"ening\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.046343999999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3677,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 846,
+    "output_tokens_details": {
+     "thinking_tokens": 470
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3677,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 846,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3677,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3677
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 9112
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on a re-mention of an earlier term written in a variant spelling/casing/hyphenation\", \"Fires on misspellings/unusual forms regardless of prior mention\"], \"show\": [{\"text\": \"Lightning struck the tower. The storm produced thunder and lightening across the valley.\", \"target\": \"ening\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"She sent an email to her boss. Later she deleted the e-mail from her inbox.\", \"target\": \"mail\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"She sent an e-mail to her boss. Later she deleted the e-mail from her inbox.\", \"target\": \"mail\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"She deleted the e-mail from her inbox.\", \"target\": \"mail\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"The company is called DataStream. Investors love Datastream's new product.\", \"target\": \"stream\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.0644034,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1056,
+    "cache_read_input_tokens": 3677,
+    "output_tokens": 443,
+    "output_tokens_details": {
+     "thinking_tokens": 108
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1056,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 443,
+      "cache_read_input_tokens": 3677,
+      "cache_creation_input_tokens": 1056,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1056
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5210
+  },
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on a term that was already mentioned earlier in the text but now appears in a different spelling, casing, spacing or hyphenation (e.g. LeFlore→Leflore, elfa→Elfa, DataStream→Datastream, lightning→lightening). The activation lands on the token where the new form departs from the earlier one.\",\n \"evidence\": \"In minimal pairs it gave 7 for 'Leflore' after 'LeFlore' but 1 for an identical repeat, 4 for 'Elfa' after 'elfa' but 0 for an identical repeat, and 4 for 'Datastream' after 'DataStream'. 'Lightening' scored 0 alone and 3 after 'Lightning'; the dataset shows the same pattern with BIKINI BERLIN→Bikini Berlin, SegWit→Segwit2x and oilseed→oil seed.\",\n \"missing_data\": \"The full contexts for the top examples (NF-kappaB, Chance The Rapper, activities of daily living), to confirm that an earlier variant form (e.g. NF-κB, ADL) appears outside the shown window.\",\n \"confidence\": 0.75}\n```",
+   "cost_usd": 0.079706,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 635,
+    "cache_read_input_tokens": 4733,
+    "output_tokens": 463,
+    "output_tokens_details": {
+     "thinking_tokens": 56
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 635,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 463,
+      "cache_read_input_tokens": 4733,
+      "cache_creation_input_tokens": 635,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 635
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5156
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1173396,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2833,
+    "cache_read_input_tokens": 5368,
+    "output_tokens": 694,
+    "output_tokens_details": {
+     "thinking_tokens": 404
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2833,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 694,
+      "cache_read_input_tokens": 5368,
+      "cache_creation_input_tokens": 2833,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2833
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7426
+  }
+ ]
+}

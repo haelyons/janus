@@ -1,0 +1,101 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-142",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "We decided to« split|2» the cake into eight slices.",
+  "We bought eight slices of cake at the bakery.",
+  "The manuscript was« divided|1» into« three|1»« volumes|2»« for|6»« publication|3»«.|4»",
+  "The three« volumes|1»« sat|1» on the shelf gathering dust.",
+  "Each component can« be|1»« purchased|3»« separately|5»,« so|4» you don«'t|1»« need|1» the whole kit«.|1»",
+  "Rather than run one huge query,« the|3» job« should|1»« be|1»« split|10»« into|5»« multiple|8»« smaller|7»« batches|4»«,|1»« each|2»« processed|3»« independently|4»«.|2»",
+  "Rather than run one huge query,« the|3» job« should|1»« be|1»« run|1»« as|4» a« single|1» large batch« processed|2» all at once«.|1»",
+  "The two researchers worked« independently|2»« and|1»« never|1» met«.|2»",
+  "The device comprises a housing, a plurality of contacts, and a cover.",
+  "The bearing is produced in two« parts|5»,« a|2» first part contacting the shaft and« a|1»« second|1» part opposite it."
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the idea of dividing a whole into multiple separate pieces or parts: it peaks on the plural noun or adverb that names the resulting pieces (\\\"Strings\\\", \\\"tables\\\", \\\"chunks\\\", \\\"separately\\\", \\\"smaller batches/calculations\\\") when the context describes splitting or handling things separately. There is weaker activation on plural part-nouns (\\\"parts\\\", \\\"components\\\", \\\"vols\\\") and on words like \\\"independently\\\" without an explicit splitting frame.\",\n \"evidence\": \"Text 6 (split into multiple smaller batches) reaches 10 and its single-batch counterpart, Text 7, is near zero; Text 1 activates but Text 2 (the same slices, no splitting) does not; Text 10 gets 5 while Text 9 (a plurality of contacts, no division) is silent. The top examples are all about splitting or separating into parts (split into chunks, purchased separately, two parts, sub-projects, multiple smaller packages).\",\n \"missing_data\": \"Contrasts that tell apart division into pieces from plain multiplicity or plural parts, for example 'the parts were assembled into one' vs 'divided into parts', and non-English or more abstract partitioning cases.\",\n \"confidence\": 0.8}",
+   "cost_usd": 0.04208,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4174,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 434,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4174,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 434,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4174,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4174
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5740
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.074205,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3193,
+    "cache_read_input_tokens": 3825,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3193,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 3825,
+      "cache_creation_input_tokens": 3193,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3193
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3029
+  }
+ ]
+}

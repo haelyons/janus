@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "O-848",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\", \"explanation\": \"The unit fires on a word or name segment that is immediately followed by a joining punctuation mark, such as a slash, hyphen, dot or opening parenthesis, inside compounds, URL paths, import paths and code expressions. It is strongest on the first half of slash- or hyphen-joined compounds and on URL or path segments.\", \"evidence\": \"Top tokens are all directly followed by a connector: 'duration'-pressure, extr'usion'/spheronization, '\\\\times'(, /'Events'/, go-open'api'/, 'func'._hook, '/en'/, ':not'(, '.format'(, '/auth'/, '_PAD'(, 'socio'-ecological, '-year'-old and '?v'=. Weaker hits on indentation tabs inside CSS and struct blocks do not fit cleanly, so they may be a related or separate weak effect.\", \"missing_data\": \"Activations on identical tokens with and without a following separator (for example 'duration' before '-' versus before a space) would confirm whether the cue is the upcoming punctuation or the token itself; the full activation distribution would show how common the tab cases are.\", \"confidence\": 0.45}\n```",
+   "cost_usd": 0.045804000000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3537,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 875,
+    "output_tokens_details": {
+     "thinking_tokens": 471
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3537,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 875,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3537,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3537
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10035
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.08561540000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3271,
+    "cache_read_input_tokens": 3537,
+    "output_tokens": 646,
+    "output_tokens_details": {
+     "thinking_tokens": 356
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3271,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 646,
+      "cache_read_input_tokens": 3537,
+      "cache_creation_input_tokens": 3271,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3271
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6311
+  }
+ ]
+}

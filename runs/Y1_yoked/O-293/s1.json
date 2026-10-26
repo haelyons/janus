@@ -1,0 +1,101 @@
+{
+ "arm": "Y1_yoked",
+ "card": "O-293",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "We installed the elfa shelving last year. Later we bought more« El|3»«fa|4» drawers for the garage.",
+  "We installed the Elfa shelving last year. Later we bought more Elfa drawers for the garage.",
+  "Officer LeFlore was found at the scene. Sgt. L«ef|7»«lore|2»'s family is grieving.",
+  "Officer LeFlore was found at the scene. Sgt. LeF«lore|1»'s family is grieving.",
+  "The storm produced thunder and lightening across the valley.",
+  "Lightning struck the tower. The storm produced thunder and light«ening|3» across the valley.",
+  "She sent an email to her boss. Later she deleted the« e|1»«-mail|2» from her inbox.",
+  "She sent an e«-mail|1» to her boss. Later she deleted the e-mail from her inbox.",
+  "She deleted the e«-mail|1» from her inbox.",
+  "The company is called DataStream. Investors love Data«stream|4»'s new product."
+ ],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one\",\n \"explanation\": \"The unit fires on the subword token where a term or name repeated in the context is spelled, cased or tokenized differently from its earlier form (elfa→Elfa, LeFlore→Leflore, Lightning→lightening, email→e-mail, DataStream→Datastream), mostly on the first diverging piece after the shared prefix.\",\n \"evidence\": \"Paired texts show strong activation only when the earlier mention differs in form (Elfa 4 vs 0 when consistent; Leflore 7 vs LeFlore 1; lightening 3 with a prior 'Lightning' vs 0 alone; Datastream 4), and many top examples (Segwit/SegWit2x, Bikini, Meshed, NF-kappaB) fit this pattern of variant or re-tokenized mentions.\"\n ,\"missing_data\": \"The prior context for the top dataset examples, to confirm an earlier variant form is always present, and controls for misspellings with no earlier mention of the term.\",\n \"confidence\": 0.7}\n```",
+   "cost_usd": 0.043160000000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3684,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 684,
+    "output_tokens_details": {
+     "thinking_tokens": 330
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3684,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 684,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3684,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3684
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8268
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0832888,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3052,
+    "cache_read_input_tokens": 3684,
+    "output_tokens": 748,
+    "output_tokens_details": {
+     "thinking_tokens": 458
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3052,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 748,
+      "cache_read_input_tokens": 3684,
+      "cache_creation_input_tokens": 3052,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3052
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7800
+  }
+ ]
+}

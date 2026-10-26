@@ -1,0 +1,379 @@
+{
+ "arm": "P1_active",
+ "card": "O-142",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on the plural noun naming the resulting pieces when a whole is divided into multiple parts (split/divide into N pieces)",
+    "Unit fires on any plural count noun after a quantity word (multiple/several/number of), regardless of division semantics",
+    "Unit fires on the word 'separately/split' itself (separation verbs/adverbs)"
+   ],
+   "show": [
+    {
+     "text": "We decided to split the cake into eight slices for the guests.",
+     "target": "slices",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We bought eight cakes for the guests at the party.",
+     "target": "cakes",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The two brothers walked home separately after school.",
+     "target": "separately",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The program divides the large file into several smaller files before uploading.",
+     "target": "files",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "She has several friends who live in Boston.",
+     "target": "friends",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on decomposition of a task/system/data into multiple smaller units (technical/abstract), not physical food slicing",
+    "Unit fires mainly on the 'smaller X' / plural pieces construction after 'into', any domain",
+    "Unit is driven by 'smaller' comparative indicating breaking down"
+   ],
+   "show": [
+    {
+     "text": "We decided to cut the cake into several smaller pieces for the guests.",
+     "target": "pieces",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "We broke the project into several tasks for the team.",
+     "target": "tasks",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The new house is smaller than the old one.",
+     "target": "smaller",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The textbook is organized into twelve chapters, each covering one topic.",
+     "target": "chapters",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The parts of the engine were manufactured separately and assembled later.",
+     "target": "separately",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit encodes 'treating parts individually rather than as a whole' (separately/individually/split into multiple units)",
+    "Unit specifically keys on the word 'separately'",
+    "Unit responds to any division word including 'together' contrasts"
+   ],
+   "show": [
+    {
+     "text": "Each of the components was tested individually before shipping.",
+     "target": "individually",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "All the components were tested together before shipping.",
+     "target": "together",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The two items can be purchased separately.",
+     "target": "separately",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Instead of one big query, run multiple smaller queries in batches.",
+     "target": "queries",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We decided to« split|2» the cake into eight slices for the guests.",
+  "We bought eight cakes for the guests at the party.",
+  "The two brothers walked home« separately|3»« after|1» school«.|1»",
+  "The program divides the large file« into|1»« several|3»« smaller|5»« files|7»« before|1»« uploading|1».",
+  "She has several friends who live in Boston.",
+  "We decided to cut the cake into« several|1»« smaller|2»« pieces|1»« for|1» the guests.",
+  "We broke the project« into|3»« several|3»« tasks|1»« for|3» the team«.|1»",
+  "The new house is smaller than the old one.",
+  "The textbook is organized into« twelve|1» chapters, each covering one topic.",
+  "The parts of the engine« were|3»« manufactured|3»« separately|10»« and|5» assembled« later|3»«.|4»",
+  "Each of the components was« tested|1»« individually|3»« before|2» shipping«.|2»",
+  "All the components were tested together before shipping.",
+  "The two items can be« purchased|1»« separately|7»«.|3»",
+  "Instead of one« big|1» query,« run|6»« multiple|9»« smaller|10»« queries|8»« in|2»« batches|3»«.|1»"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on the plural noun naming the resulting pieces when a whole is divided into multiple parts (split/divide into N pieces)\", \"Unit fires on any plural count noun after a quantity word (multiple/several/number of), regardless of division semantics\", \"Unit fires on the word 'separately/split' itself (separation verbs/adverbs)\"], \"show\": [{\"text\": \"We decided to split the cake into eight slices for the guests.\", \"target\": \"slices\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"We bought eight cakes for the guests at the party.\", \"target\": \"cakes\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The two brothers walked home separately after school.\", \"target\": \"separately\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The program divides the large file into several smaller files before uploading.\", \"target\": \"files\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"She has several friends who live in Boston.\", \"target\": \"friends\", \"predictions\": [\"low\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.040959999999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4084,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 414,
+    "output_tokens_details": {
+     "thinking_tokens": 50
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4084,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 414,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4084,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4084
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5662
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on decomposition of a task/system/data into multiple smaller units (technical/abstract), not physical food slicing\", \"Unit fires mainly on the 'smaller X' / plural pieces construction after 'into', any domain\", \"Unit is driven by 'smaller' comparative indicating breaking down\"], \"show\": [{\"text\": \"We decided to cut the cake into several smaller pieces for the guests.\", \"target\": \"pieces\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"We broke the project into several tasks for the team.\", \"target\": \"tasks\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The new house is smaller than the old one.\", \"target\": \"smaller\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The textbook is organized into twelve chapters, each covering one topic.\", \"target\": \"chapters\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The parts of the engine were manufactured separately and assembled later.\", \"target\": \"separately\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.054612799999999996,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 575,
+    "cache_read_input_tokens": 4084,
+    "output_tokens": 411,
+    "output_tokens_details": {
+     "thinking_tokens": 43
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 575,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 411,
+      "cache_read_input_tokens": 4084,
+      "cache_creation_input_tokens": 575,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 575
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5013
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit encodes 'treating parts individually rather than as a whole' (separately/individually/split into multiple units)\", \"Unit specifically keys on the word 'separately'\", \"Unit responds to any division word including 'together' contrasts\"], \"show\": [{\"text\": \"Each of the components was tested individually before shipping.\", \"target\": \"individually\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"All the components were tested together before shipping.\", \"target\": \"together\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The two items can be purchased separately.\", \"target\": \"separately\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"Instead of one big query, run multiple smaller queries in batches.\", \"target\": \"queries\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.0670166,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 612,
+    "cache_read_input_tokens": 4659,
+    "output_tokens": 328,
+    "output_tokens_details": {
+     "thinking_tokens": 53
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 612,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 328,
+      "cache_read_input_tokens": 4659,
+      "cache_creation_input_tokens": 612,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 612
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4967
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\", \"explanation\": \"This unit fires when a whole is broken up into multiple separate, smaller units, or when parts are handled one at a time instead of as a whole. It peaks on the plural noun for the pieces (\\\"smaller queries\\\", \\\"tables\\\", \\\"packages\\\") and on \\\"separately\\\".\", \"evidence\": \"\\\"Run multiple smaller queries\\\" reached 10, \\\"parts manufactured separately\\\" reached 10, and \\\"split into smaller files\\\" reached 7. The matched controls \\\"tested together\\\", \\\"several friends\\\" and \\\"bought eight cakes\\\" stayed at 0, and \\\"individually\\\" was weaker at 3.\", \"missing_data\": \"Physical cases like slicing a cake gave only a weak response (1-2) compared with technical or manufacturing contexts, and I haven't found out why.\", \"confidence\": 0.8}",
+   "cost_usd": 0.0777428,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 487,
+    "cache_read_input_tokens": 5271,
+    "output_tokens": 288,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 487,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 288,
+      "cache_read_input_tokens": 5271,
+      "cache_creation_input_tokens": 487,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 487
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4029
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.1147984,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2701,
+    "cache_read_input_tokens": 5758,
+    "output_tokens": 714,
+    "output_tokens_details": {
+     "thinking_tokens": 424
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2701,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 714,
+      "cache_read_input_tokens": 5758,
+      "cache_creation_input_tokens": 2701,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2701
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6658
+  }
+ ]
+}

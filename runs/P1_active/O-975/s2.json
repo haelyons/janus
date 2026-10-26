@@ -1,0 +1,368 @@
+{
+ "arm": "P1_active",
+ "card": "O-975",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on a token that contradicts or is inconsistent with the immediately established context (e.g., 'consumer' in a create_producer function; glGenVertexArrays used for a vbo)",
+    "Unit fires on a content noun that completes a phrase, regardless of consistency"
+   ],
+   "show": [
+    {
+     "text": "    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka producer connection\"\"\"",
+     "target": "producer",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"",
+     "target": "consumer",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "    GLuint vbo;\n    glGenBuffers(1, &vbo);\n    glBindBuffer(GL_ARRAY_BUFFER, vbo);",
+     "target": "Buffers",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "    GLuint vbo;\n    glGenVertexArrays(1, &vbo);\n    glBindBuffer(GL_ARRAY_BUFFER, vbo);",
+     "target": "Arrays",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "I went to the bakery to buy a loaf of bread, and the baker handed me a fresh hammer.",
+     "target": "hammer",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on a token that repeats/continues a phrase seen earlier in the document (induction-like copying)",
+    "Unit fires on semantically inconsistent tokens",
+    "Unit fires on content nouns ending a phrase, context-independent"
+   ],
+   "show": [
+    {
+     "text": "Sentenced to death in Egypt: the pastor was among those named. Officials confirmed the verdict on Tuesday. Sentenced to death in Egypt ... the pastor said nothing.",
+     "target": "Egypt (second)",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Officials confirmed the verdict on Tuesday. Sentenced to death in Egypt ... the pastor said nothing.",
+     "target": "Egypt",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "    GLuint vao;\n    glGenVertexArrays(1, &vao);\n    glBindVertexArray(vao);\n    GLuint vbo;\n    glGenVertexArrays(1, &vbo);",
+     "target": "Arrays (second)",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "    GLuint vao;\n    glGenVertexArrays(1, &vao);\n    glBindVertexArray(vao);\n    GLuint vbo;\n    glGenBuffers(1, &vbo);",
+     "target": "Buffers",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The blue elephant danced quietly near the river. Later that night, the blue elephant danced quietly near the river again.",
+     "target": "river (second)",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Unit fires on a token copied from an earlier parallel passage where it no longer fits (copy-paste error)",
+    "Unit fires on any token repeated from an earlier parallel structure (fits or not)"
+   ],
+   "show": [
+    {
+     "text": "    def _create_consumer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"\n        pass\n\n    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"",
+     "target": "consumer (last)",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "    def _create_consumer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"\n        pass\n\n    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka producer connection\"\"\"",
+     "target": "producer (last)",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "    def _create_consumer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"\n        pass\n\n    def _create_consumer2(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"",
+     "target": "consumer (last)",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Total for apples: 5 apples sold.\nTotal for pears: 7 apples sold.",
+     "target": "apples (second line)",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "    def _create_producer(self,« settings|1»«):\n|1»        \"\"\"Tries to establish a Kafka« producer|1»« connection|1»\"\"\"",
+  "    def _create_producer(self,« settings|1»«):\n|1»        \"\"\"Tries to establish a Kafka« consumer|2»« connection|1»\"\"\"",
+  "   « GLuint|2» v«bo|2»«;\n|1»   « glGen|1»«Buffers|3»(1, &vbo);\n    glBind«Buffer|1»(GL_ARRAY«_BUFFER|1», vbo);",
+  "   « GLuint|2» v«bo|2»«;\n|1»   « glGen|1»Vertex«Arrays|1»(1, &v«bo|2»);\n    glBind«Buffer|1»(GL_ARRAY_BUFFER, vbo);",
+  "I went to the bakery to buy a loaf of bread, and the baker handed me a fresh hammer.",
+  "Sentenced to« death|3» in Egypt: the pastor was among those named.« Officials|1» confirmed the verdict on Tuesday. Sent«enced|1» to« death|1»« in|1»« Egypt|1» ... the« pastor|2» said nothing.",
+  "Officials« confirmed|1» the verdict on Tuesday«.|2» Sentenced« to|1»« death|1» in Egypt ... the pastor said nothing.",
+  "   « GLuint|2» v«ao|1»«;\n|1»    glGenVertex«Arrays|1»(1, &v«ao|1»);\n    glBindVertexArray(vao);\n   « GLuint|1» vbo«;\n|1»«   |1»« glGen|1»Vertex«Arrays|10»(«1|2»«,|2»« &|2»v«bo|3»«);|2»",
+  "   « GLuint|2» v«ao|1»«;\n|1»    glGenVertex«Arrays|1»(1, &v«ao|1»);\n    glBindVertexArray(vao);\n   « GLuint|1» vbo«;\n|1»«   |1»« glGen|1»«Buffers|1»(1, &vbo);",
+  "The blue elephant danced quietly near the river.« Later|1» that night, the blue elephant danced« quietly|1» near the river again«.|1»",
+  "    def _create_consumer(self,« settings|1»):\n        \"\"\"Tries to establish a Kafka« consumer|1»« connection|1»\"\"\"\n       « pass|1»\n\n    def _create_pro«ducer|2»«(self|1»«,|3»« settings|4»«):\n|1»        \"\"\"T«ries|1»« to|1»« establish|1» a Kafka« consumer|6»« connection|5»«\"\"\"|2»",
+  "    def _create_consumer(self,« settings|1»):\n        \"\"\"Tries to establish a Kafka« consumer|1»« connection|1»\"\"\"\n       « pass|1»\n\n    def _create_pro«ducer|2»«(self|1»«,|3»« settings|4»«):\n|1»        \"\"\"T«ries|1»« to|1»« establish|1» a Kafka producer« connection|1»\"\"\"",
+  "    def _create_consumer(self,« settings|1»):\n        \"\"\"Tries to establish a Kafka« consumer|1»« connection|1»\"\"\"\n       « pass|1»\n\n    def _create_consumer«2|1»(self«,|1»« settings|3»):\n        \"\"\"T«ries|1»« to|2»« establish|1»« a|2»« Kafka|1»« consumer|1» connection\"\"\"",
+  "Total for apples«:|1» 5 apples sold«.\n|1»Total for pears«:|1» «7|1» apples« sold|2»."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on a token that contradicts or is inconsistent with the immediately established context (e.g., 'consumer' in a create_producer function; glGenVertexArrays used for a vbo)\", \"Unit fires on a content noun that completes a phrase, regardless of consistency\"], \"show\": [{\"text\": \"    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka producer connection\\\"\\\"\\\"\", \"target\": \"producer\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\", \"target\": \"consumer\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"    GLuint vbo;\\n    glGenBuffers(1, &vbo);\\n    glBindBuffer(GL_ARRAY_BUFFER, vbo);\", \"target\": \"Buffers\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"    GLuint vbo;\\n    glGenVertexArrays(1, &vbo);\\n    glBindBuffer(GL_ARRAY_BUFFER, vbo);\", \"target\": \"Arrays\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"I went to the bakery to buy a loaf of bread, and the baker handed me a fresh hammer.\", \"target\": \"hammer\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.048156000000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4341,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 671,
+    "output_tokens_details": {
+     "thinking_tokens": 181
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4341,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 671,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4341,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4341
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7291
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on a token that repeats/continues a phrase seen earlier in the document (induction-like copying)\", \"Unit fires on semantically inconsistent tokens\", \"Unit fires on content nouns ending a phrase, context-independent\"], \"show\": [{\"text\": \"Sentenced to death in Egypt: the pastor was among those named. Officials confirmed the verdict on Tuesday. Sentenced to death in Egypt ... the pastor said nothing.\", \"target\": \"Egypt (second)\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Officials confirmed the verdict on Tuesday. Sentenced to death in Egypt ... the pastor said nothing.\", \"target\": \"Egypt\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"    GLuint vao;\\n    glGenVertexArrays(1, &vao);\\n    glBindVertexArray(vao);\\n    GLuint vbo;\\n    glGenVertexArrays(1, &vbo);\", \"target\": \"Arrays (second)\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"    GLuint vao;\\n    glGenVertexArrays(1, &vao);\\n    glBindVertexArray(vao);\\n    GLuint vbo;\\n    glGenBuffers(1, &vbo);\", \"target\": \"Buffers\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"The blue elephant danced quietly near the river. Later that night, the blue elephant danced quietly near the river again.\", \"target\": \"river (second)\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.07299620000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1017,
+    "cache_read_input_tokens": 4341,
+    "output_tokens": 791,
+    "output_tokens_details": {
+     "thinking_tokens": 240
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1017,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 791,
+      "cache_read_input_tokens": 4341,
+      "cache_creation_input_tokens": 1017,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1017
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8850
+  },
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on a token copied from an earlier parallel passage where it no longer fits (copy-paste error)\", \"Unit fires on any token repeated from an earlier parallel structure (fits or not)\"], \"show\": [{\"text\": \"    def _create_consumer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\\n        pass\\n\\n    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\", \"target\": \"consumer (last)\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"    def _create_consumer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\\n        pass\\n\\n    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka producer connection\\\"\\\"\\\"\", \"target\": \"producer (last)\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"    def _create_consumer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\\n        pass\\n\\n    def _create_consumer2(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\", \"target\": \"consumer (last)\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"Total for apples: 5 apples sold.\\nTotal for pears: 7 apples sold.\", \"target\": \"apples (second line)\", \"predictions\": [\"high\", \"high\"]}]}",
+   "cost_usd": 0.09892780000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1278,
+    "cache_read_input_tokens": 5358,
+    "output_tokens": 731,
+    "output_tokens_details": {
+     "thinking_tokens": 195
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1278,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 731,
+      "cache_read_input_tokens": 5358,
+      "cache_creation_input_tokens": 1278,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1278
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7085
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires most strongly on a token that looks copied from an earlier, parallel passage but is wrong for its new context: a copy-paste inconsistency, such as a Kafka 'consumer' docstring inside _create_producer, or glGenVertexArrays applied to a vbo. It also fires weakly and diffusely on ordinary content tokens in prose.\",\n \"evidence\": \"With an earlier consumer function present, 'consumer' inside _create_producer reached 6. The correct 'producer' and a consistent repeated 'consumer' both stayed at or below 1, and plain phrase repetition (elephant/river) stayed low; repeating glGenVertexArrays for a vbo reproduced 10, while glGenBuffers gave 1.\",\n \"missing_data\": \"I have no prose test where a copy-paste error triggers it strongly (the apples/pears test peaked at only 2). The prose top examples (daylight, Egypt, scholarships) are still unexplained by this account.\",\n \"confidence\": 0.55}",
+   "cost_usd": 0.11939100000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1210,
+    "cache_read_input_tokens": 6636,
+    "output_tokens": 472,
+    "output_tokens_details": {
+     "thinking_tokens": 114
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1210,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 472,
+      "cache_read_input_tokens": 6636,
+      "cache_creation_input_tokens": 1210,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1210
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6081
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1529162,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2860,
+    "cache_read_input_tokens": 7846,
+    "output_tokens": 453,
+    "output_tokens_details": {
+     "thinking_tokens": 163
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2860,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 453,
+      "cache_read_input_tokens": 7846,
+      "cache_creation_input_tokens": 2860,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2860
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4959
+  }
+ ]
+}

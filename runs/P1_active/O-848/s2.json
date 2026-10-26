@@ -1,0 +1,377 @@
+{
+ "arm": "P1_active",
+ "card": "O-848",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on a path/identifier segment right after a separator ('/', '.', ':', '_') in URLs, imports, or code",
+    "Fires on the second piece of a compound or hyphenated term in prose, e.g. 'duration-pressure' or 'socio-ecological'",
+    "Fires broadly on any token that continues a structured multi-part expression"
+   ],
+   "show": [
+    {
+     "text": "See https://github.com/en/categories/writing for details.",
+     "target": "/en",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Such duration-pressure combinations were tested carefully.",
+     "target": "duration",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "import \"github.com/go-openapi/errors\"",
+     "target": "api",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "The cat sat on the mat and looked out the window.",
+     "target": "window",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "div.rails:not(:first-child) { right: 0; }",
+     "target": ":not",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on code/URL tokens that follow a punctuation separator ('.', '/', ':', '_', '\\')",
+    "Fires only on URL/path segments, not on code method calls"
+   ],
+   "show": [
+    {
+     "text": "String s2 = sdf.format(todt); Date d = sdf.parse(s1);",
+     "target": ".format",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "$$ \\vec v_1 \\times(p_1-O) = \\vec v_2 \\times(p_2-O) $$",
+     "target": "\\times",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Visit http://channel9.msdn.com/Events/Build/2014 now.",
+     "target": "/Events",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "if not hasattr(func, '_hook'):\n    func._hook = []\n    func._hook.append(add)",
+     "target": "func",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Fine granules were made by the extrusion/spheronization method.",
+     "target": "usion",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on the first path segment after a URL's domain ('.com/X')",
+    "Fires on a token that starts a new parallel or repeated structural unit, like the 2nd occurrence of a pattern"
+   ],
+   "show": [
+    {
+     "text": "Go to https://example.com/Products/list today.",
+     "target": "Products",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Go to https://example.org/Products/list today.",
+     "target": "Products",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "x = foo(a)\n    foo.bar = 1\n    foo.baz = 2",
+     "target": "foo",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "See https://www.googleapis.com/auth/drive here.",
+     "target": "auth",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The red car and the blue car and the green car.",
+     "target": "car",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "See https://github«.com|2»/en/categories/writing for details.",
+  "Such duration-pressure combinations were tested carefully.",
+  "import \"«github|1»«.com|1»/go-open«api|3»/errors\"",
+  "The cat sat on the mat and looked out the window.",
+  "div.rails«:not|5»(:«first|1»«-child|1») { right: 0; }",
+  "String s2 = sdf.format(todt); Date d =« sdf|1»«.parse|1»(s1);",
+  "$$ \\vec v_1 \\times(p_1-O) = \\vec v_2 \\«times|2»(p_2-O) $$",
+  "Visit http://channel9.msdn«.com|1»/«Events|7»/Build/2014 now.",
+  "if not hasattr(func, '_hook'):\n   « func|6»._hook = []\n   « func|3»._hook.append(add)",
+  "Fine granules were made by the extrusion/spheronization method.",
+  "Go to https://example.com/Products/list today.",
+  "Go to https://example.org/Products/list today.",
+  "x = foo(a)\n   « foo|1»«.bar|1» = 1\n   « foo|2».baz = 2",
+  "See https://www.googleapis.com«/auth|4»/drive here.",
+  "The red car and the blue car and the green car."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on a path/identifier segment right after a separator ('/', '.', ':', '_') in URLs, imports, or code\", \"Fires on the second piece of a compound or hyphenated term in prose, e.g. 'duration-pressure' or 'socio-ecological'\", \"Fires broadly on any token that continues a structured multi-part expression\"], \"show\": [{\"text\": \"See https://github.com/en/categories/writing for details.\", \"target\": \"/en\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"Such duration-pressure combinations were tested carefully.\", \"target\": \"duration\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"import \\\"github.com/go-openapi/errors\\\"\", \"target\": \"api\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"The cat sat on the mat and looked out the window.\", \"target\": \"window\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"div.rails:not(:first-child) { right: 0; }\", \"target\": \":not\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.041944,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3937,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 522,
+    "output_tokens_details": {
+     "thinking_tokens": 152
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3937,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 522,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3937,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3937
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6068
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on code/URL tokens that follow a punctuation separator ('.', '/', ':', '_', '\\\\')\", \"Fires only on URL/path segments, not on code method calls\"], \"show\": [{\"text\": \"String s2 = sdf.format(todt); Date d = sdf.parse(s1);\", \"target\": \".format\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"$$ \\\\vec v_1 \\\\times(p_1-O) = \\\\vec v_2 \\\\times(p_2-O) $$\", \"target\": \"\\\\times\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Visit http://channel9.msdn.com/Events/Build/2014 now.\", \"target\": \"/Events\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"if not hasattr(func, '_hook'):\\n    func._hook = []\\n    func._hook.append(add)\", \"target\": \"func\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Fine granules were made by the extrusion/spheronization method.\", \"target\": \"usion\", \"predictions\": [\"low\", \"low\"]}]}",
+   "cost_usd": 0.05643140000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 678,
+    "cache_read_input_tokens": 3937,
+    "output_tokens": 413,
+    "output_tokens_details": {
+     "thinking_tokens": 43
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 678,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 413,
+      "cache_read_input_tokens": 3937,
+      "cache_creation_input_tokens": 678,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 678
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4436
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on the first path segment after a URL's domain ('.com/X')\", \"Fires on a token that starts a new parallel or repeated structural unit, like the 2nd occurrence of a pattern\"], \"show\": [{\"text\": \"Go to https://example.com/Products/list today.\", \"target\": \"Products\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Go to https://example.org/Products/list today.\", \"target\": \"Products\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"x = foo(a)\\n    foo.bar = 1\\n    foo.baz = 2\", \"target\": \"foo\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"See https://www.googleapis.com/auth/drive here.\", \"target\": \"auth\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"The red car and the blue car and the green car.\", \"target\": \"car\", \"predictions\": [\"low\", \"high\"]}]}",
+   "cost_usd": 0.0718024,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 634,
+    "cache_read_input_tokens": 4615,
+    "output_tokens": 468,
+    "output_tokens_details": {
+     "thinking_tokens": 156
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 634,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 468,
+      "cache_read_input_tokens": 4615,
+      "cache_creation_input_tokens": 634,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 634
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5710
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly fires on path or identifier segments in real, well-known URLs, import paths and code that come right after a separator ('.com/Events', 'googleapis.com/auth', 'go-openapi', 'help.github.com/en', ':not', 'func._hook'). It plausibly tracks a familiar or memorized continuation in technical strings, with weaker, scattered firing on code tokens and on a few compound words in scientific prose ('extrusion', 'duration-pressure', 'socio-ecological').\",\n \"evidence\": \"In my tests, real-world paths fired strongly ('/Events' 7, '/auth' 4, ':not' 5, 'func' 6), but a generic 'example.com/Products' gave 0. The prose compounds ('duration-pressure', 'extrusion') gave 0 outside their original context, and plain prose ('the green car') stayed at 0.\",\n \"missing_data\": \"Matched pairs of familiar vs. made-up URL and API paths, plus longer original scientific contexts for the prose compounds, to tell memorized continuation apart from generic segment position.\",\n \"confidence\": 0.35}\n```",
+   "cost_usd": 0.0900202,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 619,
+    "cache_read_input_tokens": 5249,
+    "output_tokens": 610,
+    "output_tokens_details": {
+     "thinking_tokens": 210
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 619,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 610,
+      "cache_read_input_tokens": 5249,
+      "cache_creation_input_tokens": 619,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 619
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6949
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1246138,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3008,
+    "cache_read_input_tokens": 5868,
+    "output_tokens": 467,
+    "output_tokens_details": {
+     "thinking_tokens": 177
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3008,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 467,
+      "cache_read_input_tokens": 5868,
+      "cache_creation_input_tokens": 3008,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3008
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4571
+  }
+ ]
+}

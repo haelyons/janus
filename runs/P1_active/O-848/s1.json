@@ -1,0 +1,359 @@
+{
+ "arm": "P1_active",
+ "card": "O-848",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "fires on a word/segment that is immediately followed by a joining separator (hyphen, slash, paren) inside a compound or path",
+    "fires on path/URL segments generally, regardless of what follows",
+    "fires on scientific compound nouns (X-Y relationship)"
+   ],
+   "show": [
+    {
+     "text": "We measured the duration-pressure relationship in each pipette.",
+     "target": "duration",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We measured the duration and pressure relationship in each pipette.",
+     "target": "duration",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "See https://example.com/docs/guide for details.",
+     "target": "docs",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The farmer-owned cooperative sold input/output devices.",
+     "target": "farmer",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The 16-year-old boy used extrusion/spheronization daily.",
+     "target": "extrusion",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "fires on a token that repeats an earlier compound/phrase (induction / copying of prior context)",
+    "fires on first-element of compound regardless of repetition"
+   ],
+   "show": [
+    {
+     "text": "Duration-pressure combinations could be defined. Such duration-pressure combinations were different.",
+     "target": "second duration",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Duration-pressure combinations could be defined. Such temperature-pressure combinations were different.",
+     "target": "temperature",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "import \"github.com/go-openapi/errors\"\nimport \"github.com/go-openapi/strfmt\"",
+     "target": "second openapi",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The cat sat on the mat near the door. Later, the cat sat on the mat again.",
+     "target": "second cat/sat",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "fires on a technical token immediately followed by a structural separator (/ - . ( :) in code/paths/compounds, boosted by repetition",
+    "fires mainly on repetition/copying of earlier technical spans"
+   ],
+   "show": [
+    {
+     "text": "from /usr/lib/debug/lib/ld.so loading symbols",
+     "target": "debug",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "div.rails:not(:first-child) { right: 0; }",
+     "target": "not",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "String s2 = sdf.format(todt); Date d = sdf.parse(s1);",
+     "target": "format",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "the socio-ecological systems of the tundra",
+     "target": "socio",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "We measured the duration-pressure relationship in each pipette.",
+  "We measured the duration and pressure relationship in each pipette.",
+  "See https://example.com«/docs|2»«/g|1»uide for details.",
+  "The farmer-owned cooperative sold input/output devices.",
+  "The 16-year-old boy used extrusion/spheronization daily.",
+  "Duration-pressure combinations could be defined. Such« duration|3»-pressure combinations were different.",
+  "Duration-pressure combinations could be defined. Such« temperature|1»-pressure combinations were different.",
+  "import \"«github|1»«.com|1»/go-open«api|3»/errors\"\nimport \"github«.com|1»/go-open«api|4»/strfmt\"",
+  "The cat sat on the mat near the door. Later, the cat sat on the« mat|1» again.",
+  "from /«usr|1»/lib«/debug|1»/lib/ld.so loading symbols",
+  "div.rails«:not|5»(:«first|1»«-child|1») { right: 0; }",
+  "String s2 = sdf.format(todt); Date d =« sdf|1»«.parse|1»(s1);",
+  "the socio-ecological systems of the tundra"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"fires on a word/segment that is immediately followed by a joining separator (hyphen, slash, paren) inside a compound or path\", \"fires on path/URL segments generally, regardless of what follows\", \"fires on scientific compound nouns (X-Y relationship)\"], \"show\": [{\"text\": \"We measured the duration-pressure relationship in each pipette.\", \"target\": \"duration\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"We measured the duration and pressure relationship in each pipette.\", \"target\": \"duration\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"See https://example.com/docs/guide for details.\", \"target\": \"docs\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The farmer-owned cooperative sold input/output devices.\", \"target\": \"farmer\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The 16-year-old boy used extrusion/spheronization daily.\", \"target\": \"extrusion\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.045884,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3937,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 719,
+    "output_tokens_details": {
+     "thinking_tokens": 365
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3937,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 719,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3937,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3937
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8287
+  },
+  {
+   "text": "{\"hypotheses\": [\"fires on a token that repeats an earlier compound/phrase (induction / copying of prior context)\", \"fires on first-element of compound regardless of repetition\"], \"show\": [{\"text\": \"Duration-pressure combinations could be defined. Such duration-pressure combinations were different.\", \"target\": \"second duration\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Duration-pressure combinations could be defined. Such temperature-pressure combinations were different.\", \"target\": \"temperature\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"import \\\"github.com/go-openapi/errors\\\"\\nimport \\\"github.com/go-openapi/strfmt\\\"\", \"target\": \"second openapi\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"The cat sat on the mat near the door. Later, the cat sat on the mat again.\", \"target\": \"second cat/sat\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.0636834,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 867,
+    "cache_read_input_tokens": 3937,
+    "output_tokens": 503,
+    "output_tokens_details": {
+     "thinking_tokens": 191
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 867,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 503,
+      "cache_read_input_tokens": 3937,
+      "cache_creation_input_tokens": 867,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 867
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6000
+  },
+  {
+   "text": "{\"hypotheses\": [\"fires on a technical token immediately followed by a structural separator (/ - . ( :) in code/paths/compounds, boosted by repetition\", \"fires mainly on repetition/copying of earlier technical spans\"], \"show\": [{\"text\": \"from /usr/lib/debug/lib/ld.so loading symbols\", \"target\": \"debug\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"div.rails:not(:first-child) { right: 0; }\", \"target\": \"not\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"String s2 = sdf.format(todt); Date d = sdf.parse(s1);\", \"target\": \"format\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"the socio-ecological systems of the tundra\", \"target\": \"socio\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.0779962,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 692,
+    "cache_read_input_tokens": 4804,
+    "output_tokens": 390,
+    "output_tokens_details": {
+     "thinking_tokens": 111
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 692,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 390,
+      "cache_read_input_tokens": 4804,
+      "cache_creation_input_tokens": 692,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 692
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4996
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"Fires weakly and diffusely on the first part of a joined technical token, such as a path or URL segment, a CSS pseudo-selector, a method name, or the first word of a hyphen/slash compound, when it sits right before a separator like / - ( or ..\",\n \"evidence\": \"The strongest cases are of this kind (duration-pressure, extrusion/spheronization, go-openapi/, :not(, /en/, func.). In my tests ':not(' reached 5 and 'openapi/' reached 3-4, but plain prose compounds (farmer-owned, socio-ecological) gave zero, and repeating 'duration-pressure' lifted 'duration' only from 0 to 3, which suggests a weak, context-dependent effect from repeated spans.\"},\n \"missing_data\": \"More code and path contexts that vary the following separator and how often the span repeats, plus the original long-document contexts, since my short probes never reproduced activations near 10.\",\n \"confidence\": 0.3}\n```",
+   "cost_usd": 0.0907394,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 541,
+    "cache_read_input_tokens": 5496,
+    "output_tokens": 365,
+    "output_tokens_details": {
+     "thinking_tokens": 18
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 541,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 365,
+      "cache_read_input_tokens": 5496,
+      "cache_creation_input_tokens": 541,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 541
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4785
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1242868,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2763,
+    "cache_read_input_tokens": 6037,
+    "output_tokens": 511,
+    "output_tokens_details": {
+     "thinking_tokens": 221
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2763,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 511,
+      "cache_read_input_tokens": 6037,
+      "cache_creation_input_tokens": 2763,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2763
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5105
+  }
+ ]
+}

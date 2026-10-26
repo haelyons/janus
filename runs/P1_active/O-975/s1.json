@@ -1,0 +1,284 @@
+{
+ "arm": "P1_active",
+ "card": "O-975",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "fires on a token that contradicts the local context (e.g. 'consumer' inside create_producer, glGenVertexArrays used for a vbo)",
+    "fires on tokens that repeat or copy an earlier phrase (induction)",
+    "fires on nouns completing a phrase with a highly predictable continuation"
+   ],
+   "show": [
+    {
+     "text": "    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka consumer connection\"\"\"",
+     "target": "consumer",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "    def _create_producer(self, settings):\n        \"\"\"Tries to establish a Kafka producer connection\"\"\"",
+     "target": "producer",
+     "predictions": [
+      "low",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "    GLuint vbo;\n    glGenVertexArrays(1, &vbo);",
+     "target": "Arrays",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "    GLuint vbo;\n    glGenBuffers(1, &vbo);",
+     "target": "Buffers",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "I went to the store to buy some bread. When I got to the store I bought some milk.",
+     "target": "milk",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "fires on a content noun that heads a long, information-dense phrase (e.g. 'in Egypt', 'in containers', 'scholarships to')",
+    "fires on prepositional-phrase objects that end a predicate (location or setting)"
+   ],
+   "show": [
+    {
+     "text": "Mark Basseley Youssef was among the seven sentenced on charges linked to the anti-Islam film.\n\nSentenced to death in Egypt ... Mark Basseley Youssef aka Nakoula",
+     "target": "Egypt",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "I have exposed servers running in containers to the host machine before so not sure what's going on.",
+     "target": "containers",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "ESA has provided $700,000 in scholarships to 230 female and minority students since 2007.",
+     "target": "scholarships",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "In patients in the VIEW studies, most fellow eyes had evidence of AMD.",
+     "target": "studies",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "I'm going to have to remember what I know in the daylight: there have been moments.",
+     "target": "daylight",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "    def _create_producer(self,« settings|1»«):\n|1»        \"\"\"Tries to establish a Kafka« consumer|2»« connection|1»\"\"\"",
+  "    def _create_producer(self,« settings|1»«):\n|1»        \"\"\"Tries to establish a Kafka« producer|1»« connection|1»\"\"\"",
+  "   « GLuint|2» v«bo|2»«;\n|1»   « glGen|1»Vertex«Arrays|1»(1, &v«bo|2»«);|1»",
+  "   « GLuint|2» v«bo|2»«;\n|1»   « glGen|1»«Buffers|3»(1, &vbo);",
+  "I went to the store to buy some bread. When I got to the store I bought« some|1» milk.",
+  "Mark Basseley Youssef was among the seven sentenced on charges« linked|1» to the« anti|1»-Islam« film|1»«.\n\n|1»Sentenced to« death|4»« in|1» Egypt ... Mark Basse«ley|1» Youssef aka Nakou«la|4»",
+  "I have exposed servers« running|1»« in|1» containers to the host machine« before|1» so not sure what's going on«.|1»",
+  "ESA has provided $700,000 in scholarships to 230 female and minority students« since|1»« |1»«200|1»«7|2»«.|1»",
+  "In patients« in|1» the VIEW« studies|1», most fellow« eyes|1»« had|1» evidence of AMD«.|2»",
+  "I'm going to« have|1»« to|1» remember what I know« in|1» the daylight:« there|1»« have|2»« been|1» moments."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"fires on a token that contradicts the local context (e.g. 'consumer' inside create_producer, glGenVertexArrays used for a vbo)\", \"fires on tokens that repeat or copy an earlier phrase (induction)\", \"fires on nouns completing a phrase with a highly predictable continuation\"], \"show\": [{\"text\": \"    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka consumer connection\\\"\\\"\\\"\", \"target\": \"consumer\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"    def _create_producer(self, settings):\\n        \\\"\\\"\\\"Tries to establish a Kafka producer connection\\\"\\\"\\\"\", \"target\": \"producer\", \"predictions\": [\"low\", \"high\", \"high\"]}, {\"text\": \"    GLuint vbo;\\n    glGenVertexArrays(1, &vbo);\", \"target\": \"Arrays\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"    GLuint vbo;\\n    glGenBuffers(1, &vbo);\", \"target\": \"Buffers\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"I went to the store to buy some bread. When I got to the store I bought some milk.\", \"target\": \"milk\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.050556000000000004,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4341,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 791,
+    "output_tokens_details": {
+     "thinking_tokens": 347
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4341,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 791,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4341,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4341
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8934
+  },
+  {
+   "text": "{\"hypotheses\": [\"fires on a content noun that heads a long, information-dense phrase (e.g. 'in Egypt', 'in containers', 'scholarships to')\", \"fires on prepositional-phrase objects that end a predicate (location or setting)\"], \"show\": [{\"text\": \"Mark Basseley Youssef was among the seven sentenced on charges linked to the anti-Islam film.\\n\\nSentenced to death in Egypt ... Mark Basseley Youssef aka Nakoula\", \"target\": \"Egypt\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"I have exposed servers running in containers to the host machine before so not sure what's going on.\", \"target\": \"containers\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"ESA has provided $700,000 in scholarships to 230 female and minority students since 2007.\", \"target\": \"scholarships\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"In patients in the VIEW studies, most fellow eyes had evidence of AMD.\", \"target\": \"studies\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"I'm going to have to remember what I know in the daylight: there have been moments.\", \"target\": \"daylight\", \"predictions\": [\"high\", \"high\"]}]}",
+   "cost_usd": 0.0703242,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1068,
+    "cache_read_input_tokens": 4341,
+    "output_tokens": 517,
+    "output_tokens_details": {
+     "thinking_tokens": 101
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1068,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 517,
+      "cache_read_input_tokens": 4341,
+      "cache_creation_input_tokens": 1068,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1068
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5563
+  },
+  {
+   "text": "```json\n{\"class\": \"cannot_tell\",\n \"explanation\": \"The unit spikes on a single content token in otherwise unrelated contexts: a noun in code or prose ('consumer', 'VIP', 'scholarships', 'Egypt', 'studies', 'daylight', 'containers'), API name pieces ('Arrays', 'STR'), and occasionally a newline or verb. It looks like a diffuse unit whose peaks depend on long document context, with no single lexical or semantic trigger I could identify.\",\n \"evidence\": \"The top examples share no topic or form. When I recreated their local windows (the Kafka docstring, the glGen code, 'death in Egypt', 'servers running in containers', 'VIEW studies', 'in the daylight'), every target stayed at 1-4 instead of reaching 8-10, and a clash-with-context hypothesis (consumer vs. producer) made only a 1-point difference.\",\n \"missing_data\": \"Full-document contexts for the top examples, plus position-in-document and attention-head analyses, to tell whether the peaks come from long-range context, token position, or something else.\",\n \"confidence\": 0.3}\n```",
+   "cost_usd": 0.08785000000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 851,
+    "cache_read_input_tokens": 5409,
+    "output_tokens": 481,
+    "output_tokens_details": {
+     "thinking_tokens": 97
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 851,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 481,
+      "cache_read_input_tokens": 5409,
+      "cache_creation_input_tokens": 851,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 851
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6366
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.12111000000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2869,
+    "cache_read_input_tokens": 6260,
+    "output_tokens": 452,
+    "output_tokens_details": {
+     "thinking_tokens": 162
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2869,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 452,
+      "cache_read_input_tokens": 6260,
+      "cache_creation_input_tokens": 2869,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2869
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4833
+  }
+ ]
+}

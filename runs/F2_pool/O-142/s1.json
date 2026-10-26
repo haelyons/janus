@@ -1,0 +1,106 @@
+{
+ "arm": "F2_pool",
+ "card": "O-142",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [
+  "….MultiRule::class.simpleName ?: \"\"\n\nclass MultiRuleCollector : Collector<MultiRule> {\n    override val items = mutableListOf<MultiRule>()\n\n    override fun visit(file: KtFile) {\n        val visitor = MultiRuleVisitor()\n        file.accept(visitor)\n\n        if (visitor.containsMultiRule) {\n            items…",
+  "… wrapped error, this will always return\n// false unless the error itself happens to match this msg.\nfunc Contains(err error, msg string) bool {\n\treturn len(GetAll(err, msg)) > 0\n}\n\n// ContainsType checks if the given error contains an error with\n// the same concrete type as v.…",
+  "…, by providing needed purchasing power to allow needy customers to buy from waiting businesses.\n\nDuring his premiership, Aberhart campaigned for and instituted several anti-poverty and debt relief programs, and other governmental reforms, such as consolidation of Alberta's« numerous|4»« small|5» school« districts|3» into centralized school divisions, and natural resources conservation. His attempts at…",
+  "An efficient hybrid algorithm for the two-machine no-wait flow shop problem with« separ|2»«able|3» setup times and single server\n\nContents:\n\nWe consider the two-machine no-wait flow shop problem with« separ|1»«able|3» setup times and single server side constraints, and makespan as the performance measure…",
+  "…« origins|1» of policing, chief officers have regularly associated to discuss and share policing issues. Although ACPO as now recognised was formed in 1948, records of prior bodies go back« to|1» the early 1900s. The UK retains a« decentral|3»«ised|3»« model|1»« of|1» policing« based|1»« around|1»« the|1» settlement which emerged from the Royal Commission on the…",
+  "… budget but not sure of the quality\n\nDon't know if this plan would work for you, but-\nMaybe hire out the initial tilling to someone with the proper sized equipment.\nUse your own« smaller|1»« equipment|1» on a \"st«agger|2»«ed|2»«\"|2»« timeline|3»« as|2» different crops are harvested« to|1» \"«maint|1»«ain|1»\" tillage.\n\nYou need…",
+  "…();\n    }\n    else if (width < 769 && $(window).width() > 769) {\n        location.reload();\n    }\n});​\n\nLive DEMO \nIt could be made with one if statement, but I preferred« splitting|7»« it|1»« into|4»« two|5»« so|3» it'll be« easier|1»« to|1»« follow|1».\n\n",
+  "…êmicas, entrevistas com exilados, busca em acervos jornalísticos e pessoais, oferecendo entrevistas a meios de comunicação, produzindo filmes para redes sociais, cruzando dados« dispers|6»«os|6», disponibilizando material audiovisual para uso público, publicando livros…",
+  "… recycle something, emphasizing a lack of environmentalist behavior. Afterward, participants' attitudes toward being an environmentalist/conservationist were re-measured. Those with strong initial/prior attitudes toward the environment were not really affected by the salient manipulation. Those with weak prior attitudes, however, were affected. At the…",
+  "…ImageFromCurrentImageContext();\n    UIGraphicsEndImageContext();\n    return outputImage;\n}\n\n\n@interface ORKTintedImageCacheKey : NSObject\n\n- (instancetype)initWithImage:(UIImage *)image tintColor:(UIColor *)tintColor scale:(CGFloat)scale;\n\n@property (nonatomic, readonly) UIImage *image;\n@property (nonatomic, readonly)…",
+  "…asty was carried out in three patients, dilatation of severe stenotic pulmonary artery was done in one patient simultaneously with pulmonary valvotomy. Central shunt operation was added in one patient with the pulmonary artery which was unable to be reconstructed. Last two patients underwent intrapulmonary artery reconstruction with the rolled per…",
+  "… i add multiple columns to a table in a single query execution, using alter table?\n\nA:\n\nNo,you can't add multiple columns in single query execution. SQLite supports a limited subset of ALTER TABLE.therefore you have« to|1»« add|1» them« one|4» by« one|8».\nsee documentation at sqlite\n\n",
+  "… telecommunications lines. Accordingly, each telecommunications line terminates on a patch panel 12 in an organized manner. In small patch systems, all telecommunications lines may terminate on the patch panels of the same rack. In larger patch systems,« multiple|1»« racks|2»« may|1» be« used|4»«.|1» Interconnections between the various telecommunications lines are made using patch cords 20…",
+  "… which there are« multiple|2» attributes with respect to the presence information.\nHowever, the known solutions are not widely in use. Typically the known solutions provide only a partial solution i.e. the solution is only for the mobile terminal or the network side. Additionally, the solutions are not implemented by mobile terminal vendors or deployed by telecom operators…",
+  "… role of the different data sets in constraining them.'\nauthor:\n- 'Christine A. Aidala'\n- Frank Ellinghaus\n- Rodolfo Sassot\n- 'Joseph P. Seele'\n- Marco Stratmann\ntitle: Global Analysis of Fragment…"
+ ],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"Responds to the idea of dividing something into multiple separate parts or pieces, firing most strongly on the plural noun naming the resulting parts (e.g. 'Strings', 'tables', 'packages', 'chunks', 'calculations') and on words like 'split', 'separately', 'into', and 'smaller'. It also fires more weakly on related notions of plurality, separateness, or decentralization ('separable', 'decentralised', 'dispersos', 'one by one', 'staggered').\",\n \"evidence\": \"Top examples all describe splitting or separating a whole into parts ('split into chunks', 'splitting the table into 8 tables', 'refactor the package into multiple smaller packages', 'number of sub-projects', 'in two parts', 'purchased separately'). Unrelated texts (Kotlin collector, Go errors, medical, author list) show no activation, and partial cases like 'separable setup times', 'decentralised model', and 'consolidation of numerous small districts' get moderate activation.\",\n \"missing_data\": \"Text about merging or combining parts without any division, to see whether plain plurality or composition is enough to drive the unit, versus the act of division specifically.\",\n \"confidence\": 0.82}",
+   "cost_usd": 0.053096,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5586,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 420,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5586,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 420,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5586,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5586
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5460
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": true}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": true}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.0853914,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3179,
+    "cache_read_input_tokens": 5237,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3179,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 5237,
+      "cache_creation_input_tokens": 3179,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3179
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3130
+  }
+ ]
+}
