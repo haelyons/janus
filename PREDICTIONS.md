@@ -783,3 +783,24 @@ F2. On the 4 planted cards, P1's held-out accuracy beats A0's by 0.10 or more on
 F3. Agent-chosen texts are better data than random natural windows: Y1's held-out beats F2's by 0.05 or more on average.
 F4. Basis control: A0's simulator rho on the 6 neurons is 0.10 or more above its rho on the 4 random directions.
 Evaluated only when all 14 cards are complete (tools/r33f_check.py); before that, per-card cells are recorded only.
+
+# Round 34: one meaning across many forms, in OLMo-2 7B (tools/r34_record.py, tools/r34_analyze.py, r34_check.py)
+(written 2026-10-27, before any round-34 tool exists or has run)
+Stimuli: 32 forms written blind (authors/brief_r34_stimuli.md), each in four parallel versions that differ only in
+the event: postponed (target), cancelled, moved earlier, flight delayed. Forms vary hedges (I think, AFAIK, IIRC),
+questions, reported speech, voice, wording, register. A Codex judge (independent model) keeps only forms whose
+versions are parallel and faithful. Read at a fixed suffix token appended to every sentence ("\n", as token ids);
+also at the sentence's own last token (recorded only). Forms split in half by crc32: units and directions are chosen
+on one half and tested on the other.
+P1. Some MLP layer 8-23 classifies held-out forms' postponed versions against the rest with its top-10 neurons
+    (nearest centroid) at balanced accuracy >= 0.90.
+P2. Early layers (0-3) do at least 0.15 worse than the best of 8-23 (meaning is assembled, not read off the input).
+P3. The meaning is not neuron-sparse: in layers 8-23 the median share of the hidden-space concept direction carried by
+    its top 1% of neurons is below 0.5.
+P4. The 8 neurons selected for the target at the best layer, read from Pile cards (A0 arm), are mostly not about the
+    event: a Codex judge labels at most 2 of 8 readings "event_meaning" (others: lexical, structural, other).
+P5. Attention writes carry at least half of the final-layer separation (the readout token must import the content
+    from earlier positions).
+P6. A single residual-stream direction separates held-out forms with AUC >= 0.95 in some layer 8-23.
+Recorded: per layer accuracies for k = 1, 10, 100; meaning vs form variance shares of the top units; accuracies for
+stance and speech act (hedged vs plain, question vs assertion) as their own targets.
