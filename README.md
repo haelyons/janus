@@ -1118,7 +1118,7 @@ sittings; one stop came from the monthly spend limit (its sessions were not save
   0.025.
 - F4 held: A0 reads neurons better than random directions (simulator rho 0.64 against 0.48), but the gap rests on one
   direction (O-981, rho -0.06); two directions read as well as the best neurons (O-111 0.68, O-425 0.76).
-- Post hoc, on held-out (not the sealed metric): P1 - Y1 +0.032, P1 ahead on 9 cards, tied 3, behind 2. Choosing may
+- Post hoc, on held-out (not the sealed metric): P1 - Y1 +0.033, P1 ahead on 9 cards, tied 3, behind 2. Choosing may
   add a little to held-out; the sealed test on simulator rho does not show it.
 - The simulator score barely separates arms (0.55-0.59), and still penalises the correct context reading on U-733
   (P1 0.33 against A0 0.67) even with 240-token excerpts. As a measure of "found the feature" it is weak; held-out
