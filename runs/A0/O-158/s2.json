@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "O-158",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires mainly on separator tokens (commas, hyphens, pipes, spaces) that sit between the two items of a paired or coordinate structure, such as the comma in (x, y) coordinates, the hyphen in node pairs like 23-24, or matrix and table cell separators. It also fires more weakly on relational connectors that link two roles in formulaic text, such as 'for' in legal 'for defendant/appellee' lines, 'in' in stack traces, and '#define' after an include guard.\",\n \"evidence\": \"The strongest activations are on the hyphen in '23-24' (10), the commas in 'opt.roi(2,2)' (9), '(v_3, v_2)' (9) and SVG path coordinates (8), and on separators in a 0/1 matrix and a table. The mid-range examples are dominated by 'for' before party roles in legal citations and 'in' in traceback lines.\",\n \"missing_data\": \"Activations on non-maximal tokens across full documents, to check whether separators that do not join a pair (for example in prose lists) also fire.\",\n \"confidence\": 0.55}",
+   "cost_usd": 0.036227999999999996,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3570,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 383,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3570,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 383,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3570,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3570
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5424
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.0680242,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3167,
+    "cache_read_input_tokens": 3221,
+    "output_tokens": 290,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3167,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 290,
+      "cache_read_input_tokens": 3221,
+      "cache_creation_input_tokens": 3167,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3167
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 3172
+  }
+ ]
+}

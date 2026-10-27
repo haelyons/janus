@@ -1,0 +1,371 @@
+{
+ "arm": "P1_active",
+ "card": "O-158",
+ "sample": 3,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "H1: fires on the separator token (comma/hyphen) inside coordinate/number pairs, regardless of repetition",
+    "H2: fires on the connector token in a repeated template, growing with later repetitions (structure, not punctuation)"
+   ],
+   "show": [
+    {
+     "text": "Points: (1,2), (3,4), (5,6), (7,8), (9,10)",
+     "target": ",",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The point (7,8) is fixed.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Edges 1-2, 2-3, 3-4, 4-5 and 5-6 are connected.",
+     "target": "-",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "John Smith for plaintiff. Mary Jones for defendant. Bob Lee for intervenor. Ann Wu for respondent.",
+     "target": "for",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Men need to learn to become more like women.",
+     "target": "like",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "H1: fires on the relational connector between two items (pair-forming token like '-', 'for', 'in') once the pattern has repeated",
+    "H2: fires on any token in a repeated template that predicts/copies from earlier occurrences (induction-like), not specifically connectors"
+   ],
+   "show": [
+    {
+     "text": "cat dog bird fish. cat dog bird fish. cat dog bird fish.",
+     "target": "dog",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Paris is in France. Rome is in Italy. Berlin is in Germany. Madrid is in Spain.",
+     "target": "in",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Edges A-B, B-C, C-D, D-E.",
+     "target": "-",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Edge 3-4 is long.",
+     "target": "-",
+     "predictions": [
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "red apple, green apple, yellow apple, blue apple",
+     "target": "apple",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "H1: fires on the separator within a list of index pairs (node/edge pairs like 2-3, (v2,v1), (2,2)), stronger later in the list",
+    "H2: fires on any hyphen between numbers (ranges, dates) in lists"
+   ],
+   "show": [
+    {
+     "text": "Pages 10-12, 15-18, 20-25, 30-35 were read.",
+     "target": "-",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Dates: 2001-02, 2003-04, 2005-06, 2007-08.",
+     "target": "-",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Pairs (1, 2), (2, 1), (2, 3), (3, 2) form the relation.",
+     "target": ",",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Score was 3-2, then 4-2, then 5-3, then 6-3.",
+     "target": "-",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Nodes 21 to 22, 21 to 23, 23 to 24 and 23 to 25 are linked.",
+     "target": "to",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "Points: (1,2«),|1» (3,4«),|1» (5«,|1»6), (7«,|1»8), (9«,|1»10«)|1»",
+  "The point (7,8) is fixed.",
+  "Edges 1-2, 2«-|5»3, «3|1»«-|7»4, «4|1»«-|7»5 and «5|1»«-|7»6 are« connected|1».",
+  "John« Smith|1» for plaintiff. Mary Jones« for|3»« defendant|1». Bob Lee« for|2» intervenor. Ann Wu« for|3»« respondent|1».",
+  "Men need to learn to become more like women.",
+  "cat dog bird fish. cat dog bird fish«.|1» cat dog bird fish.",
+  "Paris is in France. Rome is in Italy. Berlin is in Germany. Madrid is« in|1» Spain.",
+  "Edges A-B, B-C,« C|1»-D,« D|4»«-E|1»«.|1»",
+  "Edge 3-4 is long.",
+  "red apple, green apple, yellow apple, blue apple",
+  "Pages 10-12, 15-18, 20-25, 30-35 were read.",
+  "Dates: 2001-02, 2003«-|1»04, 2005«-|1»06, 2007«-|1»08.",
+  "Pairs (1, 2), (2«,|3» 1), (2«,|1» 3), (3«,|7» 2) form the« relation|1»«.|1»",
+  "Score was 3-2, then 4«-|2»2, then 5«-|4»3, then «6|1»«-|6»3.",
+  "Nodes 21 to 22, 21 to 23, 23« to|4»« |2»24 and 23« to|2»« |2»25 are linked."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on the separator token (comma/hyphen) inside coordinate/number pairs, regardless of repetition\", \"H2: fires on the connector token in a repeated template, growing with later repetitions (structure, not punctuation)\"], \"show\": [{\"text\": \"Points: (1,2), (3,4), (5,6), (7,8), (9,10)\", \"target\": \",\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"The point (7,8) is fixed.\", \"target\": \",\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Edges 1-2, 2-3, 3-4, 4-5 and 5-6 are connected.\", \"target\": \"-\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"John Smith for plaintiff. Mary Jones for defendant. Bob Lee for intervenor. Ann Wu for respondent.\", \"target\": \"for\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"Men need to learn to become more like women.\", \"target\": \"like\", \"predictions\": [\"low\", \"low\"]}]}",
+   "cost_usd": 0.042587999999999994,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3970,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 541,
+    "output_tokens_details": {
+     "thinking_tokens": 182
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3970,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 541,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3970,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3970
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6428
+  },
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on the relational connector between two items (pair-forming token like '-', 'for', 'in') once the pattern has repeated\", \"H2: fires on any token in a repeated template that predicts/copies from earlier occurrences (induction-like), not specifically connectors\"], \"show\": [{\"text\": \"cat dog bird fish. cat dog bird fish. cat dog bird fish.\", \"target\": \"dog\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"Paris is in France. Rome is in Italy. Berlin is in Germany. Madrid is in Spain.\", \"target\": \"in\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Edges A-B, B-C, C-D, D-E.\", \"target\": \"-\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Edge 3-4 is long.\", \"target\": \"-\", \"predictions\": [\"low\", \"low\"]}, {\"text\": \"red apple, green apple, yellow apple, blue apple\", \"target\": \"apple\", \"predictions\": [\"low\", \"high\"]}]}",
+   "cost_usd": 0.057977999999999995,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 790,
+    "cache_read_input_tokens": 3970,
+    "output_tokens": 413,
+    "output_tokens_details": {
+     "thinking_tokens": 60
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 790,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 413,
+      "cache_read_input_tokens": 3970,
+      "cache_creation_input_tokens": 790,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 790
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5203
+  },
+  {
+   "text": "{\"hypotheses\": [\"H1: fires on the separator within a list of index pairs (node/edge pairs like 2-3, (v2,v1), (2,2)), stronger later in the list\", \"H2: fires on any hyphen between numbers (ranges, dates) in lists\"], \"show\": [{\"text\": \"Pages 10-12, 15-18, 20-25, 30-35 were read.\", \"target\": \"-\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Dates: 2001-02, 2003-04, 2005-06, 2007-08.\", \"target\": \"-\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Pairs (1, 2), (2, 1), (2, 3), (3, 2) form the relation.\", \"target\": \",\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"Score was 3-2, then 4-2, then 5-3, then 6-3.\", \"target\": \"-\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Nodes 21 to 22, 21 to 23, 23 to 24 and 23 to 25 are linked.\", \"target\": \"to\", \"predictions\": [\"high\", \"low\"]}]}",
+   "cost_usd": 0.07350599999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 595,
+    "cache_read_input_tokens": 4760,
+    "output_tokens": 490,
+    "output_tokens_details": {
+     "thinking_tokens": 107
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 595,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 490,
+      "cache_read_input_tokens": 4760,
+      "cache_creation_input_tokens": 595,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 595
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6272
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the connector token that joins two items in a repeated list of pairs, such as the '-' in '23-24', the ',' in '(3, 2)', or 'to' in '23 to 24'. Activation grows with each later repetition of the pattern, and weaker extensions cover other repeated linking slots like 'for' in legal counsel listings ('for defendant') and 'in' in traceback lines.\",\n \"evidence\": \"In my tests the first item of a list stayed near zero and later ones rose: 'Edges 1-2, 2-3, 3-4…' went 0→5→7→7, and the pair commas in '(2, 1)…(3, 2)' reached 7. A single pair ('Edge 3-4', 'point (7,8)'), page ranges, plain repeated words and repeated 'is in' sentences stayed low, while repeated 'X for party' lines reached 3.\",\n \"missing_data\": \"Why page ranges (10-12…) stayed silent while scores and node pairs fired, i.e. whether it needs small or matching numbers or relational semantics, and longer non-numeric relation lists.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.08920099999999999,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 746,
+    "cache_read_input_tokens": 5355,
+    "output_tokens": 432,
+    "output_tokens_details": {
+     "thinking_tokens": 28
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 746,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 432,
+      "cache_read_input_tokens": 5355,
+      "cache_creation_input_tokens": 746,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 746
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5590
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": true}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": true}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.12175719999999998,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2870,
+    "cache_read_input_tokens": 6101,
+    "output_tokens": 418,
+    "output_tokens_details": {
+     "thinking_tokens": 128
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2870,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 418,
+      "cache_read_input_tokens": 6101,
+      "cache_creation_input_tokens": 2870,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2870
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4994
+  }
+ ]
+}

@@ -1096,3 +1096,33 @@ Pile-10k (activations in Git LFS, `runs/r33/olmo_acts/`). `runs/r33/r33_check.tx
   context-dependent rules: its excerpts show 48 tokens before the token, so the correct "repeated name" reading
   cannot be applied and scores below the broader wrong one (U-733: 0.34 against 0.71). It needs longer excerpts, or
   items where the context needed is visible, before the full round.
+
+## Round 33 full: experiments on text units, 14 cards (`tools/r33f_check.py`)
+
+14 cards (4 planted built to mislead, 6 OLMo-2 7B neurons, 4 random directions in the same MLP space) x 4 arms x 2
+samples; simulator excerpts 240 tokens before the marked token. Per card: mean of the two samples. Run in three
+sittings; one stop came from the monthly spend limit (its sessions were not saved and were rerun).
+`runs/r33/r33f_check.txt`, `r33f_posthoc.txt`.
+
+    arm         held-out  simulator rho
+    A0          0.721     0.588
+    F2_pool     0.723     0.560
+    P1_active   0.780     0.561
+    Y1_yoked    0.748     0.548
+
+- F1 failed, as expected from the pilot: choosing the experiments does not raise simulator rho over seeing them
+  (P1 - Y1 +0.013, P1 ahead on 8 of 14, sign test p 0.40).
+- F2 held: on the 4 planted cards, experiments raise held-out by 0.11 over the card alone (U-862 paren_year +0.25:
+  experiments find that years fire only inside parentheses).
+- F3 failed: the experiments' texts, shown to a subject who did not choose them, beat random natural windows by only
+  0.025.
+- F4 held: A0 reads neurons better than random directions (simulator rho 0.64 against 0.48), but the gap rests on one
+  direction (O-981, rho -0.06); two directions read as well as the best neurons (O-111 0.68, O-425 0.76).
+- Post hoc, on held-out (not the sealed metric): P1 - Y1 +0.032, P1 ahead on 9 cards, tied 3, behind 2. Choosing may
+  add a little to held-out; the sealed test on simulator rho does not show it.
+- The simulator score barely separates arms (0.55-0.59), and still penalises the correct context reading on U-733
+  (P1 0.33 against A0 0.67) even with 240-token excerpts. As a measure of "found the feature" it is weak; held-out
+  items with near misses separate arms more.
+- Reading: experiments help (+0.06 held-out over the card alone, larger on misleading planted cards), but most of the
+  gain comes from seeing what the experiments show, not from having designed them; random directions in OLMo's MLP
+  space are often as readable as neurons by these measures.

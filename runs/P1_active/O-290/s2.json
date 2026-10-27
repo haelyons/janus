@@ -1,0 +1,383 @@
+{
+ "arm": "P1_active",
+ "card": "O-290",
+ "sample": 2,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Fires on the subject token (There/I/we) when the next word is a modal or future auxiliary (will/may/can/could), i.e., predicting an upcoming modal",
+    "Fires on existential 'there' or first-person subjects generally, regardless of what follows",
+    "Fires on modal verbs themselves (may/will/can)"
+   ],
+   "show": [
+    {
+     "text": "The festival is next week. There will be food trucks and live music.",
+     "target": "There",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The festival was last week. There were food trucks and live music.",
+     "target": "There",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "If you need help, I can set up an account for you.",
+     "target": "I",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "Yesterday I went to the store and bought some milk.",
+     "target": "I",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The review may include bridges and dams, the document says.",
+     "target": "may",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on subjects/modals in speculative statements about uncertain future possibilities (may/could/might), needing a hedged-future discourse context",
+    "Fires on any future statement with will, regardless of uncertainty",
+    "Fires on existential 'There' in planning/announcement discourse (e.g., interviews about plans)"
+   ],
+   "show": [
+    {
+     "text": "We haven't decided on the rewards yet. There may be special badges, or there may just be extra coins. We're still figuring it out.",
+     "target": "There",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "We decided on the rewards last month. There are special badges and extra coins. Everything is finalized.",
+     "target": "There",
+     "predictions": [
+      "low",
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "If demand is high, the team said the app could be available for Android in the future, too.",
+     "target": "team",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The team said the app is available for Android now.",
+     "target": "team",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "Nobody knows how this will end. It might collapse, or it might grow into something huge. We could see big changes soon.",
+     "target": "might",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on subjects/modals introducing tentative plans or offerings by an organization/speaker (what may be provided/offered), not general predictions",
+    "Fires on any hedged future possibility including predictions about events"
+   ],
+   "show": [
+    {
+     "text": "We're still working on the details, but there may be a beta version for testers, and we might add more features later.",
+     "target": "there",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "Scientists are unsure, but there may be a drought next year, and the river might dry up.",
+     "target": "there",
+     "predictions": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "text": "Brian: We haven't nailed those down yet. There will be rewards, and I can tell you more next week.",
+     "target": "There",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "If you're interested, I can send you a copy, and I'd be happy to help out.",
+     "target": "I",
+     "predictions": [
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The city said the program may include free bus passes and new bike lanes.",
+     "target": "may",
+     "predictions": [
+      "high",
+      "high"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "The festival is next week. There will be food trucks and live« music|1».",
+  "The festival was last week. There were food trucks and live« music|1».",
+  "If you need help,« I|2»« can|2» set up an account for you.",
+  "Yesterday I went to the store and bought some milk.",
+  "The review may include bridges« and|1» dams,« the|1» document says.",
+  "We haven't decided on the rewards yet.« There|3»« may|4»« be|1» special badges, or« there|3»« may|1» just be extra coins.« We|2»«'re|1» still« figuring|1» it out.",
+  "We decided on the rewards last month. There are special badges and extra coins. Everything is finalized.",
+  "If demand is high, the team said the app« could|1» be available for Android in the future«,|1» too.",
+  "The team said the app is available for Android now.",
+  "Nobody knows how this will end. It might collapse, or it might grow into something huge. We could« see|1» big changes soon.",
+  "We're still working on the details, but« there|4»« may|6»« be|3»« a|1» beta« version|4» for« testers|1»«,|2»« and|1»« we|5»« might|4»« add|1» more« features|1» later.",
+  "Scientists are unsure,« but|1»« there|1»« may|3»« be|3»« a|1» drought next year, and the river might dry up.",
+  "Brian: We haven't nailed those down yet.« There|3»« will|1» be« rewards|1»,« and|1»« I|2»« can|2» tell« you|1»« more|1» next week.",
+  "If you're interested,« I|2»« can|3» send you a« copy|1»«,|1»« and|2»« I|5»«'d|3»« be|2»« happy|3»« to|4»« help|1»« out|1».",
+  "The city said the« program|1»« may|5»« include|1»« free|2»« bus|2»« passes|2»« and|1»« new|1»« bike|3»« lanes|3»."
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Fires on the subject token (There/I/we) when the next word is a modal or future auxiliary (will/may/can/could), i.e., predicting an upcoming modal\", \"Fires on existential 'there' or first-person subjects generally, regardless of what follows\", \"Fires on modal verbs themselves (may/will/can)\"], \"show\": [{\"text\": \"The festival is next week. There will be food trucks and live music.\", \"target\": \"There\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The festival was last week. There were food trucks and live music.\", \"target\": \"There\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"If you need help, I can set up an account for you.\", \"target\": \"I\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"Yesterday I went to the store and bought some milk.\", \"target\": \"I\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"The review may include bridges and dams, the document says.\", \"target\": \"may\", \"predictions\": [\"low\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.041832,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4178,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 420,
+    "output_tokens_details": {
+     "thinking_tokens": 67
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 4178,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 420,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 4178,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 4178
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4917
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on subjects/modals in speculative statements about uncertain future possibilities (may/could/might), needing a hedged-future discourse context\", \"Fires on any future statement with will, regardless of uncertainty\", \"Fires on existential 'There' in planning/announcement discourse (e.g., interviews about plans)\"], \"show\": [{\"text\": \"We haven't decided on the rewards yet. There may be special badges, or there may just be extra coins. We're still figuring it out.\", \"target\": \"There\", \"predictions\": [\"high\", \"low\", \"high\"]}, {\"text\": \"We decided on the rewards last month. There are special badges and extra coins. Everything is finalized.\", \"target\": \"There\", \"predictions\": [\"low\", \"low\", \"high\"]}, {\"text\": \"If demand is high, the team said the app could be available for Android in the future, too.\", \"target\": \"team\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The team said the app is available for Android now.\", \"target\": \"team\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"Nobody knows how this will end. It might collapse, or it might grow into something huge. We could see big changes soon.\", \"target\": \"might\", \"predictions\": [\"high\", \"low\", \"low\"]}]}",
+   "cost_usd": 0.058227600000000004,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 568,
+    "cache_read_input_tokens": 4178,
+    "output_tokens": 550,
+    "output_tokens_details": {
+     "thinking_tokens": 139
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 568,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 550,
+      "cache_read_input_tokens": 4178,
+      "cache_creation_input_tokens": 568,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 568
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6940
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on subjects/modals introducing tentative plans or offerings by an organization/speaker (what may be provided/offered), not general predictions\", \"Fires on any hedged future possibility including predictions about events\"], \"show\": [{\"text\": \"We're still working on the details, but there may be a beta version for testers, and we might add more features later.\", \"target\": \"there\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"Scientists are unsure, but there may be a drought next year, and the river might dry up.\", \"target\": \"there\", \"predictions\": [\"low\", \"high\"]}, {\"text\": \"Brian: We haven't nailed those down yet. There will be rewards, and I can tell you more next week.\", \"target\": \"There\", \"predictions\": [\"high\", \"high\"]}, {\"text\": \"If you're interested, I can send you a copy, and I'd be happy to help out.\", \"target\": \"I\", \"predictions\": [\"high\", \"low\"]}, {\"text\": \"The city said the program may include free bus passes and new bike lanes.\", \"target\": \"may\", \"predictions\": [\"high\", \"high\"]}]}",
+   "cost_usd": 0.0744568,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 783,
+    "cache_read_input_tokens": 4746,
+    "output_tokens": 450,
+    "output_tokens_details": {
+     "thinking_tokens": 98
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 783,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 450,
+      "cache_read_input_tokens": 4746,
+      "cache_creation_input_tokens": 783,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 783
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5832
+  },
+  {
+   "text": "{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires on the subject and modal of a hedged statement about what a speaker or organization may provide, offer or do. Typical tokens are 'there may', 'we might', 'I can' and 'I'd be happy to', and the unit spreads weakly onto the things being offered. It is weaker for plain predictions about events and near silent for definite or past statements.\",\n \"evidence\": \"My probes showed this pattern. 'There may be a beta version… we might add' scored 4-6, while the matched drought prediction scored 1-3 and the past/finalized controls scored 0. Offers like 'I'd be happy to help' and 'the program may include' scored 3-5, matching the top examples ('There may', 'the team said the app could', 'I can set you up').\",\n \"missing_data\": \"Longer natural documents, to see why the original examples reached 10 while my short probes peaked around 6.\",\n \"confidence\": 0.6}",
+   "cost_usd": 0.0884666,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 816,
+    "cache_read_input_tokens": 5529,
+    "output_tokens": 318,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 816,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 318,
+      "cache_read_input_tokens": 5529,
+      "cache_creation_input_tokens": 816,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 816
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 4489
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": true}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": false}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": false}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.1232116,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 2715,
+    "cache_read_input_tokens": 6345,
+    "output_tokens": 587,
+    "output_tokens_details": {
+     "thinking_tokens": 297
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 2715,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 587,
+      "cache_read_input_tokens": 6345,
+      "cache_creation_input_tokens": 2715,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2715
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5850
+  }
+ ]
+}

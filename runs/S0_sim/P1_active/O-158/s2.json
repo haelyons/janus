@@ -1,0 +1,48 @@
+{
+ "arm": "P1_active",
+ "card": "O-158",
+ "sample": 2,
+ "explanation": "Fires on the separator inside a pair (the comma or hyphen in '(3,4)', '7-8', SVG coordinate pairs 'x,y') when the pair is part of a repeated list of such pairs. It is weak on the first pair and stronger on later ones; a weaker extension is the linking word in repeated templates such as 'for defendant' or traceback 'line N, in'.",
+ "replies": [
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"act\": 5}, {\"id\": 2, \"act\": 0}, {\"id\": 3, \"act\": 0}, {\"id\": 4, \"act\": 4}, {\"id\": 5, \"act\": 5}, {\"id\": 6, \"act\": 0}, {\"id\": 7, \"act\": 0}, {\"id\": 8, \"act\": 1}, {\"id\": 9, \"act\": 0}, {\"id\": 10, \"act\": 0}, {\"id\": 11, \"act\": 5}, {\"id\": 12, \"act\": 5}, {\"id\": 13, \"act\": 1}, {\"id\": 14, \"act\": 2}, {\"id\": 15, \"act\": 3}, {\"id\": 16, \"act\": 0}, {\"id\": 17, \"act\": 0}, {\"id\": 18, \"act\": 0}, {\"id\": 19, \"act\": 4}, {\"id\": 20, \"act\": 0}, {\"id\": 21, \"act\": 0}, {\"id\": 22, \"act\": 0}, {\"id\": 23, \"act\": 3}, {\"id\": 24, \"act\": 0}, {\"id\": 25, \"act\": 0}, {\"id\": 26, \"act\": 4}, {\"id\": 27, \"act\": 3}, {\"id\": 28, \"act\": 5}, {\"id\": 29, \"act\": 0}, {\"id\": 30, \"act\": 0}, {\"id\": 31, \"act\": 1}, {\"id\": 32, \"act\": 5}, {\"id\": 33, \"act\": 3}, {\"id\": 34, \"act\": 0}, {\"id\": 35, \"act\": 0}, {\"id\": 36, \"act\": 0}, {\"id\": 37, \"act\": 1}, {\"id\": 38, \"act\": 1}, {\"id\": 39, \"act\": 0}, {\"id\": 40, \"act\": 2}]}",
+   "cost_usd": 0.124912,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 14188,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 570,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 14188,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 570,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 14188,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 14188
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5365
+  }
+ ]
+}

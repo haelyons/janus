@@ -1,0 +1,290 @@
+{
+ "arm": "P1_active",
+ "card": "O-540",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [
+  {
+   "hypotheses": [
+    "Unit fires on tokens that continue a well-known memorized phrase or boilerplate (license text, Java imports, product names)",
+    "Unit fires on specific technical/domain content words regardless of predictability",
+    "Unit fires on the second or later part of multi-token compound names (Seuss, IGBT, Tuning)"
+   ],
+   "show": [
+    {
+     "text": "IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED",
+     "target": "INTERRUPTION",
+     "predictions": [
+      "high",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "The storm caused a long business interruption at the bakery downtown last week.",
+     "target": "interruption",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "import javax.swing.border.*;\nimport javax.validation.constraints.*;",
+     "target": "border",
+     "predictions": [
+      "high",
+      "high",
+      "high"
+     ]
+    },
+    {
+     "text": "The fence along the border was painted green, and the constraints on the budget were tight.",
+     "target": "border",
+     "predictions": [
+      "low",
+      "low",
+      "low"
+     ]
+    },
+    {
+     "text": "My kids love reading Dr Seuss books before bed every night.",
+     "target": "Seuss",
+     "predictions": [
+      "high",
+      "low",
+      "high"
+     ]
+    }
+   ]
+  },
+  {
+   "hypotheses": [
+    "Fires on tokens inside memorized verbatim boilerplate/formulaic text (licenses, imports, ebook notices)",
+    "Fires on any highly predictable token, including common idioms and proverbs",
+    "Fires specifically in code/legal/technical contexts"
+   ],
+   "show": [
+    {
+     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+     "target": "adipiscing",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "The quick brown fox jumps over the lazy dog.",
+     "target": "lazy",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "This ebook is licensed for your personal enjoyment only. This ebook may not be re-sold or given away to other people.",
+     "target": "enjoyment",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "This sandwich is made for your personal enjoyment only, so please do not share it with your brother.",
+     "target": "enjoyment",
+     "predictions": [
+      "low",
+      "high",
+      "low"
+     ]
+    },
+    {
+     "text": "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights.",
+     "target": "unalienable",
+     "predictions": [
+      "high",
+      "high",
+      "low"
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  "IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY« CLAIM|5»«;|1» LOSS OF« USE|2», DATA, OR« PROFITS|1»; OR BUSINESS« INTERRUPTION|10») HOWEVER CAUSED",
+  "The storm caused a long business interruption at the bakery downtown last week.",
+  "import« javax|3»«.swing|5»«.border|10»«.*;\n|1»«import|2»« javax|3»«.validation|6»«.constraints|6»«.*|1»«;|1»",
+  "The fence along the« border|1» was« painted|3»« green|1», and the« constraints|1»« on|1» the budget« were|1» tight.",
+  "My kids love« reading|1»« Dr|1»« Se|1»«uss|5»« books|1» before bed every night.",
+  "Lorem ipsum dolor« sit|2»« amet|1»,« consectetur|3»« adipiscing|2»« elit|1», sed do« eiusmod|2»« tempor|1»« incididunt|2» ut« labore|1» et« dolore|1» magna« aliqua|5».",
+  "The quick brown fox jumps over the lazy dog.",
+  "This ebook« is|2»« licensed|3»« for|2»« your|3»« personal|2»« enjoyment|10»« only|2»«.|1»« This|1»« ebook|1»« may|1» not be« re|1»«-s|1»«old|3» or« given|1»« away|3»« to|2»« other|1»« people|1».",
+  "This sandwich is made for« your|1»« personal|2»« enjoyment|5»« only|2»,« so|1» please do not« share|2»« it|2»« with|1»« your|1» brother.",
+  "We hold these truths to be self«-e|1»vid«ent|2», that all men are created equal«,|1» that they« are|1»« endowed|1» by their« Creator|1» with certain unalienable« Rights|1»«.|1»"
+ ],
+ "replies": [
+  {
+   "text": "{\"hypotheses\": [\"Unit fires on tokens that continue a well-known memorized phrase or boilerplate (license text, Java imports, product names)\", \"Unit fires on specific technical/domain content words regardless of predictability\", \"Unit fires on the second or later part of multi-token compound names (Seuss, IGBT, Tuning)\"], \"show\": [{\"text\": \"IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED\", \"target\": \"INTERRUPTION\", \"predictions\": [\"high\", \"low\", \"low\"]}, {\"text\": \"The storm caused a long business interruption at the bakery downtown last week.\", \"target\": \"interruption\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"import javax.swing.border.*;\\nimport javax.validation.constraints.*;\", \"target\": \"border\", \"predictions\": [\"high\", \"high\", \"high\"]}, {\"text\": \"The fence along the border was painted green, and the constraints on the budget were tight.\", \"target\": \"border\", \"predictions\": [\"low\", \"low\", \"low\"]}, {\"text\": \"My kids love reading Dr Seuss books before bed every night.\", \"target\": \"Seuss\", \"predictions\": [\"high\", \"low\", \"high\"]}]}",
+   "cost_usd": 0.060084,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5737,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 709,
+    "output_tokens_details": {
+     "thinking_tokens": 246
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5737,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 709,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5737,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5737
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 7465
+  },
+  {
+   "text": "{\"hypotheses\": [\"Fires on tokens inside memorized verbatim boilerplate/formulaic text (licenses, imports, ebook notices)\", \"Fires on any highly predictable token, including common idioms and proverbs\", \"Fires specifically in code/legal/technical contexts\"], \"show\": [{\"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\", \"target\": \"adipiscing\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"target\": \"lazy\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"This ebook is licensed for your personal enjoyment only. This ebook may not be re-sold or given away to other people.\", \"target\": \"enjoyment\", \"predictions\": [\"high\", \"high\", \"low\"]}, {\"text\": \"This sandwich is made for your personal enjoyment only, so please do not share it with your brother.\", \"target\": \"enjoyment\", \"predictions\": [\"low\", \"high\", \"low\"]}, {\"text\": \"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights.\", \"target\": \"unalienable\", \"predictions\": [\"high\", \"high\", \"low\"]}]}",
+   "cost_usd": 0.0804594,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 1034,
+    "cache_read_input_tokens": 5737,
+    "output_tokens": 547,
+    "output_tokens_details": {
+     "thinking_tokens": 92
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 1034,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 547,
+      "cache_read_input_tokens": 5737,
+      "cache_creation_input_tokens": 1034,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1034
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5394
+  },
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit fires most strongly on content tokens inside stock, copy-pasted boilerplate that appears verbatim across many web and code documents, such as BSD license disclaimers, Smashwords ebook notices, Java/C# import and designer lines, and SQL Tuning Advisor-style product names. It peaks at a key word mid-phrase like INTERRUPTION, enjoyment, border, IContainer or Tuning, and responds weakly to the same words or to other set phrases in ordinary prose.\",\n \"evidence\": \"In my tests the license 'BUSINESS INTERRUPTION' scored 10 while 'business interruption' in a news-style sentence scored 0, and 'javax.swing.border' scored 10 while a fence 'border' scored 1. The ebook notice 'personal enjoyment only' scored 10 versus 5 in a sandwich paraphrase, Lorem ipsum got moderate activation (up to 5), and famous prose such as the pangram (0) and the Declaration (2 or below) barely registered.\",\n \"missing_data\": \"Testing more boilerplate types (cookie and GDPR notices, Apache/GPL headers, copyright footers) against near-verbatim paraphrases would show whether the unit tracks boilerplate templates or only a set of frequent technical and legal tokens.\",\n \"confidence\": 0.6}\n```",
+   "cost_usd": 0.1007376,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 966,
+    "cache_read_input_tokens": 6771,
+    "output_tokens": 559,
+    "output_tokens_details": {
+     "thinking_tokens": 84
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 966,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 559,
+      "cache_read_input_tokens": 6771,
+      "cache_creation_input_tokens": 966,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 966
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6991
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": false}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": true}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.141033,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3439,
+    "cache_read_input_tokens": 7737,
+    "output_tokens": 561,
+    "output_tokens_details": {
+     "thinking_tokens": 271
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3439,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 561,
+      "cache_read_input_tokens": 7737,
+      "cache_creation_input_tokens": 3439,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3439
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 6284
+  }
+ ]
+}
