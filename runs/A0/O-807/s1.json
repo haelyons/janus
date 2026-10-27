@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "O-807",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"one_plus_related\",\n \"explanation\": \"The unit mainly fires on the modifier that opens a specialized technical noun phrase in scientific or patent prose, such as 'tripled' in 'tripled Nd:YAG', 'coating' gases, 'nitriding' source, 'Zintl' materials, 'dissolved' oxygen, 'contaminated' soil and 'single' PLL. Weaker activation spreads diffusely across function words in expository text generally, including code comments, forum answers and news.\",\n \"evidence\": \"Most peak tokens (8 of 12 top examples) are domain-specific qualifiers immediately before a technical head noun. Several peaks don't fit this pattern ('Btw', 'saute', '%)', 'both'), and the low-level activation is broad and noisy.\",\n \"missing_data\": \"Activations on controlled minimal pairs, such as technical versus everyday modifier-noun phrases, plus weaker examples from non-technical text, would show whether the technical-modifier reading holds or the unit is just broadly polysemantic.\",\n \"confidence\": 0.35}\n```",
+   "cost_usd": 0.056948,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5195,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 769,
+    "output_tokens_details": {
+     "thinking_tokens": 394
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 5195,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 769,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 5195,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 5195
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8855
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": false}, {\"id\": 4, \"fires\": false}, {\"id\": 5, \"fires\": true}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": true}, {\"id\": 10, \"fires\": false}, {\"id\": 11, \"fires\": false}, {\"id\": 12, \"fires\": true}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": true}, {\"id\": 17, \"fires\": true}, {\"id\": 18, \"fires\": false}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": true}]}",
+   "cost_usd": 0.098259,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3157,
+    "cache_read_input_tokens": 5195,
+    "output_tokens": 750,
+    "output_tokens_details": {
+     "thinking_tokens": 460
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3157,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 750,
+      "cache_read_input_tokens": 5195,
+      "cache_creation_input_tokens": 3157,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3157
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 8068
+  }
+ ]
+}

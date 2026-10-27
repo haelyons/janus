@@ -1,0 +1,90 @@
+{
+ "arm": "A0",
+ "card": "O-804",
+ "sample": 1,
+ "model": "claude-opus-5-5",
+ "requests": [],
+ "results": [],
+ "replies": [
+  {
+   "text": "```json\n{\"class\": \"unrelated\",\n \"explanation\": \"The unit fires mainly on auxiliary verbs (is/are/was) that start a passive or predicate after a long subject noun phrase in technical or scientific prose, as in 'signals ... are transmitted', 'beams are deflected', 'serotonin was increased' and 'signal x is echoed'. It also fires separately on the first piece of words split into several tokens, such as 'cata|strophic', 'cater|acts', 'metast|asectomy', 'land|ings', 'seat|belts' and 'SO|RE|Ms', and on Italian conditional/subjunctive verbs.\",\n \"evidence\": \"The top activations of 7-10 split between passive auxiliaries in patent and abstract text (Examples 1, 5, 7, 11, 12) and word-initial fragments in unrelated contexts (Examples 2, 4, 6, 8, 9, 10). Mid-range hits are mostly the same 'was/is' auxiliary pattern ('was analysed', 'is consumed').\"\n ,\"missing_data\": \"Activations on many complete passive sentences compared with rare split words in matched contexts, to test whether both patterns reduce to one 'highly predictable continuation' signal.\",\n \"confidence\": 0.45}\n```",
+   "cost_usd": 0.050076,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3891,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 947,
+    "output_tokens_details": {
+     "thinking_tokens": 516
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3891,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 947,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3891,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3891
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 10723
+  },
+  {
+   "text": "{\"predictions\": [{\"id\": 1, \"fires\": true}, {\"id\": 2, \"fires\": false}, {\"id\": 3, \"fires\": true}, {\"id\": 4, \"fires\": true}, {\"id\": 5, \"fires\": false}, {\"id\": 6, \"fires\": false}, {\"id\": 7, \"fires\": false}, {\"id\": 8, \"fires\": true}, {\"id\": 9, \"fires\": false}, {\"id\": 10, \"fires\": true}, {\"id\": 11, \"fires\": true}, {\"id\": 12, \"fires\": false}, {\"id\": 13, \"fires\": false}, {\"id\": 14, \"fires\": false}, {\"id\": 15, \"fires\": true}, {\"id\": 16, \"fires\": false}, {\"id\": 17, \"fires\": false}, {\"id\": 18, \"fires\": true}, {\"id\": 19, \"fires\": false}, {\"id\": 20, \"fires\": false}]}",
+   "cost_usd": 0.08897820000000001,
+   "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 3361,
+    "cache_read_input_tokens": 3891,
+    "output_tokens": 561,
+    "output_tokens_details": {
+     "thinking_tokens": 271
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3361,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 4,
+      "output_tokens": 561,
+      "cache_read_input_tokens": 3891,
+      "cache_creation_input_tokens": 3361,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3361
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "is_error": false,
+   "ms": 5240
+  }
+ ]
+}

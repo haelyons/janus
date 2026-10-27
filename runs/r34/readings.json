@@ -1,0 +1,66 @@
+[
+ {
+  "card": "O-341",
+  "unit": "olmo:L30:n8056",
+  "explanation": "The unit fires on a noun that modifies the next noun in a compound (news→posts, goal→line/posts, health→clinic, finish→line, job→seeker, street→light, trade→hub, mime→multipart), and seems to anticipate the head noun that follows. A weaker extension fires on predicative or passive contexts where a head word is expected next ('form is submitted', 'needs to be invoked', 'as it was uploaded').",
+  "acc": 0.65,
+  "rho": 0.6122733933550732,
+  "parsed": true
+ },
+ {
+  "card": "O-807",
+  "unit": "olmo:L30:n6796",
+  "explanation": "The unit mainly fires on the modifier that opens a specialized technical noun phrase in scientific or patent prose, such as 'tripled' in 'tripled Nd:YAG', 'coating' gases, 'nitriding' source, 'Zintl' materials, 'dissolved' oxygen, 'contaminated' soil and 'single' PLL. Weaker activation spreads diffusely across function words in expository text generally, including code comments, forum answers and news.",
+  "acc": 0.55,
+  "rho": 0.009389069653262316,
+  "parsed": true
+ },
+ {
+  "card": "O-137",
+  "unit": "olmo:L30:n6334",
+  "explanation": "The unit fires diffusely on many function words and content words within a passage rather than on one clear token type. It peaks mid-clause in descriptive narrative, especially text about officials or role-holders (former CP, deputy commissioners, Second Engineer, advocate) and about product releases or availability (vinyl pressings, CD releases, book listings, music purchases).",
+  "acc": 0.75,
+  "rho": 0.6831796445983956,
+  "parsed": true
+ },
+ {
+  "card": "O-804",
+  "unit": "olmo:L30:n5814",
+  "explanation": "The unit fires mainly on auxiliary verbs (is/are/was) that start a passive or predicate after a long subject noun phrase in technical or scientific prose, as in 'signals ... are transmitted', 'beams are deflected', 'serotonin was increased' and 'signal x is echoed'. It also fires separately on the first piece of words split into several tokens, such as 'cata|strophic', 'cater|acts', 'metast|asectomy', 'land|ings', 'seat|belts' and 'SO|RE|Ms', and on Italian conditional/subjunctive verbs.",
+  "acc": 0.7,
+  "rho": 0.6947886258208931,
+  "parsed": true
+ },
+ {
+  "card": "O-356",
+  "unit": "olmo:L30:n2389",
+  "explanation": "The unit seems to fire on modifier words in the middle of multi-word noun phrases, just before the head noun arrives (e.g. 'barely competent [home cook]', 'Arab Gulf [states]', 'food [journalist]', 'City View [Apartments]', 'trunk line [terminals]', 'nearest [house]'), but no single topic or word type explains the pattern.",
+  "acc": 0.85,
+  "rho": 0.2820871494394597,
+  "parsed": true
+ },
+ {
+  "card": "O-403",
+  "unit": "olmo:L30:n6499",
+  "explanation": "Possibly a context unit for business or labor text about what a company, management or union does. Its peaks sit on function words and verbs (how, the, stop, forcing, completed, telling, reason) just before a noun phrase naming an actor or action, rather than on any single token type.",
+  "acc": 0.85,
+  "rho": 0.47161867576623034,
+  "parsed": true
+ },
+ {
+  "card": "O-584",
+  "unit": "olmo:L30:n5655",
+  "explanation": "The unit fires on the token just before a locative/complement 'in' (often a noun or filename in boilerplate like 'See License.txt in the project root', 'class in org...', 'establishments in Indiana', 'error in your SQL'), predicting an upcoming 'in' phrase.",
+  "acc": 0.7,
+  "rho": 0.6601928514441294,
+  "parsed": true
+ },
+ {
+  "card": "O-732",
+  "unit": "olmo:L30:n1650",
+  "explanation": "The unit fires on the content words of titles and headings (book, paper, chapter and section titles), peaking on the final head noun just before the title closes. It also fires more weakly on the last word of ordinary sentences in running prose.",
+  "acc": 0.7,
+  "rho": null,
+  "parsed": false
+ }
+]

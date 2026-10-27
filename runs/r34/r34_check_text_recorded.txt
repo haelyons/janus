@@ -1,0 +1,43 @@
+P1. best acc_10 in layers 8-23: 0.902 (layer 15) -> True
+P2. best acc_10 in layers 0-3: 0.824, gap 0.078 -> False
+P3. median share of the hidden-space direction in the top 1% of neurons, layers 8-23: 0.305 (random direction 0.085) -> True
+P4. selected neurons whose reading names the event meaning: 0 of 8 ['structural', 'structural', 'other', 'structural', 'structural', 'structural', 'structural', 'structural'] -> True
+P5. attention share of the final-layer separation: 0.447 -> False
+P6. best residual-direction AUC in layers 8-23: 0.928 -> False
+recorded: per layer acc_1/acc_10/acc_100, auc hidden/resid, share top 1% (gauss):
+  L00 0.66 0.70 0.76  0.68 0.82  0.221 (0.085)  eta2 top10 0.06/0.69
+  L01 0.48 0.62 0.65  0.64 0.84  0.296 (0.085)  eta2 top10 0.02/0.76
+  L02 0.60 0.64 0.66  0.84 0.92  0.383 (0.085)  eta2 top10 0.02/0.84
+  L03 0.59 0.82 0.84  0.98 0.93  0.259 (0.085)  eta2 top10 0.03/0.84
+  L04 0.72 0.80 0.93  0.88 0.91  0.206 (0.085)  eta2 top10 0.09/0.71
+  L05 0.58 0.73 0.90  0.87 0.90  0.236 (0.085)  eta2 top10 0.08/0.72
+  L06 0.61 0.81 0.82  0.91 0.91  0.238 (0.085)  eta2 top10 0.15/0.60
+  L07 0.69 0.79 0.83  0.89 0.92  0.200 (0.085)  eta2 top10 0.20/0.52
+  L08 0.65 0.75 0.81  0.90 0.93  0.210 (0.085)  eta2 top10 0.21/0.50
+  L09 0.73 0.84 0.93  0.91 0.91  0.301 (0.085)  eta2 top10 0.26/0.46
+  L10 0.77 0.80 0.82  0.91 0.92  0.281 (0.085)  eta2 top10 0.21/0.44
+  L11 0.72 0.78 0.82  0.91 0.93  0.233 (0.085)  eta2 top10 0.26/0.42
+  L12 0.74 0.79 0.89  0.88 0.92  0.498 (0.085)  eta2 top10 0.21/0.48
+  L13 0.70 0.72 0.83  0.91 0.92  0.213 (0.085)  eta2 top10 0.22/0.46
+  L14 0.72 0.85 0.86  0.89 0.91  0.208 (0.085)  eta2 top10 0.22/0.43
+  L15 0.77 0.90 0.87  0.91 0.92  0.256 (0.085)  eta2 top10 0.21/0.47
+  L16 0.71 0.83 0.82  0.91 0.92  0.237 (0.085)  eta2 top10 0.23/0.42
+  L17 0.83 0.83 0.86  0.90 0.92  0.323 (0.085)  eta2 top10 0.25/0.44
+  L18 0.66 0.83 0.85  0.89 0.91  0.308 (0.085)  eta2 top10 0.24/0.49
+  L19 0.71 0.84 0.75  0.87 0.90  0.384 (0.085)  eta2 top10 0.26/0.42
+  L20 0.53 0.79 0.80  0.87 0.90  0.396 (0.085)  eta2 top10 0.20/0.56
+  L21 0.64 0.79 0.77  0.86 0.89  0.362 (0.085)  eta2 top10 0.23/0.53
+  L22 0.64 0.76 0.85  0.84 0.89  0.499 (0.085)  eta2 top10 0.16/0.54
+  L23 0.69 0.75 0.75  0.85 0.90  0.443 (0.085)  eta2 top10 0.22/0.55
+  L24 0.62 0.75 0.80  0.82 0.88  0.496 (0.085)  eta2 top10 0.25/0.47
+  L25 0.80 0.76 0.75  0.85 0.87  0.505 (0.085)  eta2 top10 0.21/0.51
+  L26 0.64 0.77 0.80  0.83 0.89  0.418 (0.085)  eta2 top10 0.18/0.53
+  L27 0.51 0.67 0.76  0.88 0.89  0.420 (0.085)  eta2 top10 0.18/0.50
+  L28 0.74 0.74 0.81  0.86 0.89  0.473 (0.085)  eta2 top10 0.20/0.49
+  L29 0.73 0.86 0.79  0.82 0.89  0.517 (0.085)  eta2 top10 0.23/0.52
+  L30 0.67 0.85 0.84  0.84 0.90  0.599 (0.085)  eta2 top10 0.25/0.49
+  L31 0.62 0.70 0.80  0.81 0.90  0.638 (0.085)  eta2 top10 0.21/0.48
+recorded: best layer 15 selected [{'unit': 6843, 'score': 1.1997910727926253}, {'unit': 2609, 'score': 0.9204532493105156}, {'unit': 6008, 'score': 0.9184434927523307}, {'unit': 3278, 'score': 0.8979431683171655}, {'unit': 7200, 'score': 0.8863296803412075}, {'unit': 8756, 'score': 0.8831065292236093}, {'unit': 631, 'score': 0.8760135312812667}, {'unit': 6704, 'score': 0.8743967898828269}]
+recorded: factor stance (plain vs rest): best acc_10 0.896 at layer 18
+recorded: factor speech_act (assertion vs rest): best acc_10 0.779 at layer 28
+recorded: factor voice (passive vs rest): best acc_10 0.875 at layer 2

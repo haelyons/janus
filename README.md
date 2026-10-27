@@ -1126,3 +1126,28 @@ sittings; one stop came from the monthly spend limit (its sessions were not save
 - Reading: experiments help (+0.06 held-out over the card alone, larger on misleading planted cards), but most of the
   gain comes from seeing what the experiments show, not from having designed them; random directions in OLMo's MLP
   space are often as readable as neurons by these measures.
+
+## Round 34: one meaning across many forms in OLMo-2 7B (`tools/r34_record.py`, `r34_analyze.py`, `r34_check.py`)
+
+32 forms written blind, each in 4 parallel versions (postponed = target, cancelled, moved earlier, flight delayed);
+forms vary hedges (I think, AFAIK, IIRC), questions, reported speech, voice, wording. A Codex judge kept 32/32.
+Tools by claim-blind Claude authors, tests by Codex (no implementation seen). Primary readout: a fixed "\n" token
+after each sentence; units and directions chosen on half the forms, tested on the other half (16 forms, 64
+sentences). `runs/r34/` (`analysis_*.json`, `table_*.txt`, `r34_check.txt`, `readings.json`, `judge_readings.json`).
+
+- P1 failed: the best top-10-neuron classifier in layers 8-23 reaches 0.78 balanced accuracy (layer 11); the best
+  anywhere is 0.84 (layer 30). At the sentence's own last token (recorded only) layer 15 reaches 0.90.
+- P2 failed: layers 0-3 already reach 0.73 at the readout token; the gain to later layers is small (0.06).
+- P3 held: the concept direction in MLP space is not neuron-sparse. Its top 1% of neurons carry a median 30% of it
+  (a random direction: 8.5%), so it is about 3.5 times more concentrated than chance, but mostly spread out.
+- P4 held: the 8 neurons selected for "postponed" (layer 30) read, from Pile cards, as noun-phrase modifiers, auxiliaries
+  after long subjects, the token before "in", title endings, and one diffuse unit; Codex labels 7 structural, 1 other,
+  0 event meaning. (O-732's answer JSON did not parse, so its simulator score is missing; its reading was taken from
+  the reply text for the judge.)
+- P5 held: attention writes carry 55% of the final-layer separation (MLP 45%).
+- P6 failed narrowly: one residual-stream direction separates held-out forms with AUC 0.942 (layer 8-23 best; bar 0.95).
+- Recorded: form is easier to read than meaning. Hedged against plain decodes at 0.91 (layer 14), passive against
+  the rest at 0.85 (layer 0), while the event meaning peaks at 0.84.
+- Reading: the event is linearly decodable (AUC about 0.94) but not by a handful of neurons, and the neurons that best
+  separate it are not about it; at a neutral readout token, OLMo carries the sentence's stance and form more strongly
+  than which event happened. Small test set (16 forms): differences under about 0.06 are within noise.

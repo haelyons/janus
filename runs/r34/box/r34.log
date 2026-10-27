@@ -1,0 +1,59 @@
++ bash /home/ubuntu/olmo_setup.sh
++ cd /home/ubuntu/janus
++ M=/home/ubuntu/models/OLMo-2-1124-7B
++ /home/ubuntu/o/bin/python -I tools/r34_record.py --model /home/ubuntu/models/OLMo-2-1124-7B --stimuli runs/r34/stimuli.json --out /home/ubuntu/r34
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:01,  2.88it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.86it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.88it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  2.90it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  2.92it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.99it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.94it/s]
+suffix '\n' -> ids [198]
+first sentence tokens ['The', 'Ġmeeting', 'Ġwas', 'Ġpostponed', '.', 'Ċ']; text readout '.', suffix readout 'Ċ'
+recorded 50/128
+recorded 100/128
+recorded 128/128
+pre_suffix (128, 32, 4096) float32
+pre_text (128, 32, 4096) float32
+mid_suffix (128, 32, 4096) float32
+mid_text (128, 32, 4096) float32
+post_suffix (128, 32, 4096) float32
+post_text (128, 32, 4096) float32
+hidden_suffix (128, 32, 11008) float32
+hidden_text (128, 32, 11008) float32
+attn_suffix (128,) object
+attn_text (128,) object
+ids (128,) object
+n_text (128,) int64
+tokens (128,) object
+wrote /home/ubuntu/r34/record.npz and /home/ubuntu/r34/sentences.json
++ for R in suffix text
++ /home/ubuntu/o/bin/python -I tools/r34_analyze.py --record /home/ubuntu/r34 --target postponed --readout suffix --out /home/ubuntu/r34/analysis_suffix.json
++ for R in suffix text
++ /home/ubuntu/o/bin/python -I tools/r34_analyze.py --record /home/ubuntu/r34 --target postponed --readout text --out /home/ubuntu/r34/analysis_text.json
++ /home/ubuntu/o/bin/python -I -
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:01,  2.87it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.85it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.87it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  2.89it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  2.90it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.98it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.93it/s]
+extract: 512/10000 documents
+extract: 1008/10000 documents
+extract: 1504/10000 documents
+extract: 2000/10000 documents
+extract: 2512/10000 documents
+extract: 3008/10000 documents
+extract: 3504/10000 documents
+extract: 4000/10000 documents
+extract: 4512/10000 documents
+extract: 5008/10000 documents
+extract: 5504/10000 documents
+extract: 6000/10000 documents
+extract: 6512/10000 documents
+extract: 7008/10000 documents
+extract: 7504/10000 documents
+extract: 8000/10000 documents
+extract: 8512/10000 documents
+extract: 9008/10000 documents
+extract: 9504/10000 documents
+extract: 10000/10000 documents
+olmo:L30:n8056: usable, taken as O-341
+olmo:L30:n6796: usable, taken as O-807
+olmo:L30:n6334: usable, taken as O-137
+olmo:L30:n5814: usable, taken as O-804
+olmo:L30:n2389: usable, taken as O-356
+olmo:L30:n6499: usable, taken as O-403
+olmo:L30:n5655: usable, taken as O-584
+olmo:L30:n1650: usable, taken as O-732
++ touch /home/ubuntu/r34.done
