@@ -804,3 +804,61 @@ P5. Attention writes carry at least half of the final-layer separation (the read
 P6. A single residual-stream direction separates held-out forms with AUC >= 0.95 in some layer 8-23.
 Recorded: per layer accuracies for k = 1, 10, 100; meaning vs form variance shares of the top units; accuracies for
 stance and speech act (hedged vs plain, question vs assertion) as their own targets.
+
+# Round 35: label the unit, blind then revealed (Inception and OLMo, separate sets; tools/r35_*.py)
+(written 2026-10-28, before any round-35 tool exists or has run)
+A human and our agent label the same blind pages. A reveal page per group then shows the origin, the labels, our
+researched explanation and held-out evidence. Two sets that share nothing: Inception (groups of 4 units) and OLMo
+(single units). The tools are mine (presentation and the mechanical rules below); labeller and judges are blind.
+Each set has one sealed JSON behind its reveal pages, hashed in LEDGER.jsonl before the human labels.
+
+Inception. Values: spatial max of the layer output over 10,000 ImageNetV2 photos (runs/proploop cache; mixed3b
+computed the same way). Photos split by crc32("r35:" + name) % 2: 0 = card half (blind pages), 1 = held-out half
+(reveal pages and scoring). 13 groups:
+- explained (3): 3b curves 379, 385, 343, 342 (Curve Detectors' first four; round 17a); 4a dog heads 222, 234, 308,
+  325 (Zoom In's pathways; rounds 30A, 32); 4b oriented dog heads 443, 431, 429, 384 (rounds 23B, 32).
+- named, failed (1): the car-circuit side-view labels 5a:160, 5a:23, 5b:573, 5b:907 (round 30A: not supported).
+- per layer 3b, 4a, 4b, drawn in this order, each excluding every unit already placed in its layer:
+  random neurons: default_rng(crc32("r35:chan:" + layer)).choice(pool, 4, replace=False);
+  cluster (unexplained): a seed channel drawn the same way with "r35:clu:", plus the 3 channels with the highest
+  Pearson correlation with it over card-half photos;
+  random directions: 4 unit-norm standard-normal columns over the layer's channels from "r35:dir:"; value = spatial
+  max of the projection.
+- blind page per group: rows a-d in seeded random order; per row one feature visualisation (lucent, standard
+  parameterisation and transforms, 256 steps, 128 px, seed 0; objective: mean over positions of the layer output
+  dotted with the unit's vector, one-hot for a channel) and the top 5 card-half photos (whole photo, a square outline
+  one third of the side at the argmax position, value 0-10 relative to the strongest shown). Pages coded I01-I13
+  in seeded random order; no IDs, layers or origins. Instructions: authors/r35_brief_img.md.
+- scoring photos per unit (held-out half): the 4 highest; for each, the photo of the same class with the lowest
+  value (near miss), else a random photo below the unit's held-out median.
+- reveal page per group: IDs, layer, origin; agent label (later the human's); our explanation and evidence (none for
+  controls); the 8 scoring photos with values.
+- unit score: a Codex judge sees one unit label and the 8 scoring photos (numbered tiles, seeded order) and picks the
+  4 the label describes; score = share of the 8 classified correctly (chance 0.5); "can't tell" scores 0.5 with no
+  call. Group score: a Codex judge sees the shared line and two sets of 8 held-out photos (each unit's top 2), this
+  group's and its pair's (same layer, next category in the cycle explained, cluster, random neurons, random
+  directions), and picks one (chance 0.5). The failed group has no pair and no group score.
+- agent: Claude (tools/claude_call.py, no tools), one call per blind page, the human's instructions verbatim.
+
+OLMo: round 33's 14 cards (4 planted, 6 neurons, 4 random directions), single units.
+- blind page per card: the card's text as round 33's A0 saw it, marked tokens shaded by activation; coded T01-T14
+  in seeded random order. Instructions: authors/r35_brief_txt.md.
+- reveal page: origin (planted rule; neuron or random direction, with layer), the A0 and P1 labels of the first
+  counted sample with their held-out accuracy and simulator rho, the 20 held-out items with activations.
+- agent labels: round 33's, unchanged (no new calls). Human labels: round 33's simulator (S0_sim, same items, same
+  prompt), one call per card; on planted cards also a Codex judge: does the label state the rule's condition (yes or
+  no), for the human and A0.
+
+Predictions on the agent's labels (Inception); the same on the human's, prefixed H, recorded separately. The human
+is partially blind (has seen some readings in this project's discussions).
+I1. Mean unit score: explained >= random neurons + 0.10.
+I2. Basis: random directions >= random neurons - 0.10.
+I3. A facing side (the word "left" or "right") in at most 2 of the 7 facing units' labels (4b:443, 431, 429, 384;
+    4a:222, 234, 308).
+I4. A shared line other than "nothing in common" for 3 of 3 explained groups, at most 1 of 6 random groups, and at
+    least 2 of 3 clusters.
+I5. Group score: explained 3 of 3; random groups at most 4 of 6.
+O1. Human mean simulator rho over the 14 cards is below A0's (round 33: 0.588).
+O2. Human labels state the planted rule's condition on at most 1 of 4 planted cards.
+O3. Human: random directions' mean simulator rho within 0.10 of the neurons'.
+Recorded: per group and category, labelled share and confidence, unit and group scores, human against agent per unit.
