@@ -1,0 +1,1976 @@
+[
+ {
+  "code": "T01",
+  "card": "U-862",
+  "sample": 1,
+  "origin": "planted rule (exact, over GPT-2 tokens): Fires on a year (1500-2099) inside an open parenthesis on its line.",
+  "labels": {
+   "A0": {
+    "explanation": "Fires on four-digit year tokens (roughly 1900–2015) in many contexts: legal citation parentheticals, birth/death date ranges, publication dates, posting dates, and historical narrative.",
+    "heldout_acc": 0.6,
+    "sim_rho": 0.6190282914478473
+   },
+   "P1_active": {
+    "explanation": "Fires on a four-digit year token (e.g., 1933, 1987, 2014) when it appears inside an open round parenthesis, such as legal citations '(6th Cir. 1966)', life dates '(August 5, 1933 – …)', '(which closed in 2015)', 'Smith (1987)', or 'LocalDate(2014, …)'.",
+    "heldout_acc": 0.85,
+    "sim_rho": 0.6182668790352424
+   }
+  },
+  "card_max": 4.198749491965451,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "nm_paren_number",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.767
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 4.063
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.434
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.698
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.746
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.838
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.673
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "nm_paren_number",
+    "act": 0.0
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.458
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.479
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_paren_number",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "paren_year",
+    "act": 3.602
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "nm_year_outside",
+    "act": 0.0
+   }
+  ]
+ },
+ {
+  "code": "T02",
+  "card": "O-848",
+  "sample": 1,
+  "origin": "OLMo-2 7B MLP neuron, layer 23, index 9996 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires on a word or name segment that is immediately followed by a joining punctuation mark, such as a slash, hyphen, dot or opening parenthesis, inside compounds, URL paths, import paths and code expressions. It is strongest on the first half of slash- or hyphen-joined compounds and on URL or path segments.",
+    "heldout_acc": 0.9,
+    "sim_rho": 0.7006363233919093
+   },
+   "P1_active": {
+    "explanation": "Fires weakly and diffusely on the first part of a joined technical token, such as a path or URL segment, a CSS pseudo-selector, a method name, or the first word of a hyphen/slash compound, when it sits right before a separator like / - ( or ..",
+    "heldout_acc": 0.9,
+    "sim_rho": 0.6610144368365583
+   }
+  },
+  "card_max": 15.375,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.25
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "any",
+    "act": 0.676
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "near",
+    "act": 0.154
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.375
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.938
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "any",
+    "act": 0.033
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.438
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "near",
+    "act": 0.377
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "any",
+    "act": 0.547
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.344
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.219
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "novel",
+    "act": 11.625
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "surface",
+    "act": 5.906
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "near",
+    "act": 0.217
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.531
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "near",
+    "act": 0.648
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "near",
+    "act": 0.527
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "novel",
+    "act": 5.781
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "near",
+    "act": 0.21
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "any",
+    "act": 0.24
+   }
+  ]
+ },
+ {
+  "code": "T03",
+  "card": "O-425",
+  "sample": 1,
+  "origin": "OLMo-2 7B random direction in layer 8's MLP space",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires on the first token of a four-digit year (\"200\"/\"201\") inside a date, especially the date line of a blog post, article, or code header. It is weaker on determiners like \"a\"/\"the\" that come before a noun phrase.",
+    "heldout_acc": 0.65,
+    "sim_rho": 0.7656340286131639
+   },
+   "P1_active": {
+    "explanation": "The strongest firing is on the '200'/'201' century-prefix token of a 2000s–2010s year inside a date or copyright stamp (e.g. 'March 12, 2014', 'Copyright (C) 2015'). Separately, the unit fires moderately (~5) on some determiners ('the', 'a', 'an') that open a noun phrase, such as 'one of the', 'was a', 'by the'.",
+    "heldout_acc": 0.85,
+    "sim_rho": 0.7283780503169318
+   }
+  },
+  "card_max": 0.40292516350746155,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.199
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.311
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "near",
+    "act": -0.033
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.344
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "any",
+    "act": 0.007
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "near",
+    "act": -0.02
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "near",
+    "act": -0.01
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "any",
+    "act": -0.001
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "near",
+    "act": -0.01
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.207
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.338
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.233
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.189
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.318
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "any",
+    "act": -0.072
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.205
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "any",
+    "act": -0.001
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.299
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "near",
+    "act": -0.008
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "near",
+    "act": -0.007
+   }
+  ]
+ },
+ {
+  "code": "T04",
+  "card": "O-290",
+  "sample": 2,
+  "origin": "OLMo-2 7B MLP neuron, layer 25, index 4883 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "Fires on the subject of a clause about future or hypothetical possibilities, mainly existential 'There' (and pronouns like I/we/team) just before a modal or future verb such as will, may, could, can or 'll.",
+    "heldout_acc": 0.6,
+    "sim_rho": 0.6591568185634324
+   },
+   "P1_active": {
+    "explanation": "The unit fires on the subject and modal of a hedged statement about what a speaker or organization may provide, offer or do. Typical tokens are 'there may', 'we might', 'I can' and 'I'd be happy to', and the unit spreads weakly onto the things being offered. It is weaker for plain predictions about events and near silent for definite or past statements.",
+    "heldout_acc": 0.65,
+    "sim_rho": 0.7288358673754176
+   }
+  },
+  "card_max": 12.625,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "near",
+    "act": -0.071
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "surface",
+    "act": 7.125
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "any",
+    "act": -0.022
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.438
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "surface",
+    "act": 5.0
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "surface",
+    "act": 7.281
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "surface",
+    "act": 4.594
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "near",
+    "act": -0.033
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.312
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "near",
+    "act": 0.073
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": 0.151
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "near",
+    "act": 0.038
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "any",
+    "act": -0.475
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.688
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "near",
+    "act": -0.175
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.531
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "novel",
+    "act": 4.906
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "surface",
+    "act": 5.219
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "any",
+    "act": -0.13
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "any",
+    "act": -0.066
+   }
+  ]
+ },
+ {
+  "code": "T05",
+  "card": "U-518",
+  "sample": 1,
+  "origin": "planted rule (exact, over GPT-2 tokens): Fires on a lowercase word ending in s right after a number token.",
+  "labels": {
+   "A0": {
+    "explanation": "Fires on the noun that directly follows a number (cardinal or numeral-like token), i.e. the counted or measured unit in a quantity expression such as \"3 items\", \"30 yards\", or \"135 students\".",
+    "heldout_acc": 0.95,
+    "sim_rho": 0.5885626152464871
+   },
+   "P1_active": {
+    "explanation": "The unit fires on a plural-marked noun (an -s form) that comes directly after a digit numeral, such as '12 apples', '45 minutes' or '1950 establishments'. It responds to the surface plural form, not to the meaning of the count.",
+    "heldout_acc": 0.95,
+    "sim_rho": 0.4440303012500226
+   }
+  },
+  "card_max": 4.198378816162366,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "nm_num_singular",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.381
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_num_singular",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 4.056
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 4.153
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.911
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.955
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.513
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.394
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "nm_num_singular",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.751
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.803
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "nm_plural_no_num",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "num_plural",
+    "act": 3.92
+   }
+  ]
+ },
+ {
+  "code": "T06",
+  "card": "O-981",
+  "sample": 1,
+  "origin": "OLMo-2 7B random direction in layer 23's MLP space",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires weakly and broadly across many tokens in every kind of text, with occasional peaks on content words that complete a phrase or clause. Examples are 'overhead', 'assessing', 'Please', 'estate', 'pitch', 'ethically', 'Tavares', and the exponent in a fraction, but none of these share an obvious lexical or semantic feature.",
+    "heldout_acc": 0.6,
+    "sim_rho": -0.11790443135429217
+   },
+   "P1_active": {
+    "explanation": "Diffuse unit that peaks on a noun or name filling the key slot of a set construction, where a role or purpose phrase is expected next (e.g. 'all your [real estate] needs', 'named [Tavares] as its next…', 'the collective [pitch] control was moved'). It is weaker on surrounding function words, and its response grows with how dense and committed the context is.",
+    "heldout_acc": 0.7,
+    "sim_rho": -0.1903527495632283
+   }
+  },
+  "card_max": 1.4109535217285156,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.773
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.43
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.502
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "any",
+    "act": -0.049
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "near",
+    "act": -0.122
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "any",
+    "act": 0.045
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.456
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "any",
+    "act": -0.244
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.611
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.447
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": -0.012
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "near",
+    "act": -0.039
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "near",
+    "act": -0.063
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.451
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "any",
+    "act": -0.014
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.809
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "near",
+    "act": 0.002
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.455
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.565
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "near",
+    "act": 0.068
+   }
+  ]
+ },
+ {
+  "code": "T07",
+  "card": "O-111",
+  "sample": 1,
+  "origin": "OLMo-2 7B random direction in layer 7's MLP space",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires most on a token that continues a fixed multi-token word or term, where the earlier pieces make that token highly predictable (e.g. Schläg-«gere»-i, Network «Attached» Storage, drive.google.com«/file», Marr«akes»h, micro«channels», color«atura», big-«end»ian, open«street»map, x«aml», McLaug«HL»in, J«SESSION»ID). Weaker activations spread across domain-specific technical or scientific vocabulary.",
+    "heldout_acc": 0.6,
+    "sim_rho": 0.7237791529670615
+   },
+   "P1_active": {
+    "explanation": "Fires on the interior or continuation subword pieces of rare multi-token words, names and identifiers, such as Schlä-gere-i, Marr-akes-h, big-end-ian, J-SESSION-ID and Schwarzen-eg-ger. It peaks where the term is recognizable and its completion is predictable, and gives weaker spillover onto nearby content words.",
+    "heldout_acc": 0.6,
+    "sim_rho": 0.6244112155229269
+   }
+  },
+  "card_max": 0.1927603781223297,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "any",
+    "act": 0.006
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.066
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "any",
+    "act": -0.015
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "near",
+    "act": -0.007
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.058
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.072
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.064
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "near",
+    "act": -0.025
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.06
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "near",
+    "act": -0.001
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": -0.002
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.095
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.064
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "near",
+    "act": -0.013
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "any",
+    "act": -0.045
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.068
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.073
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "near",
+    "act": -0.031
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "any",
+    "act": 0.002
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.1
+   }
+  ]
+ },
+ {
+  "code": "T08",
+  "card": "O-293",
+  "sample": 1,
+  "origin": "OLMo-2 7B MLP neuron, layer 10, index 3953 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires on continuation tokens inside a multi-token name or fixed term, where earlier pieces strongly predict what follows. Examples are NF-kappa«B», oil«seed» rape, B«ik»ini Berlin, Seg«wit», Chance «The» Rapper, El«ż»bieta, Mesh«ed», activities of daily «living» and El«fa». It also fires weakly on other set phrases and compounds such as non-line «of» sight, amino «termin»us, check«in», e«-mail» and health «care»; many of these hits fall on variant or misspelled forms (light«ening», Sie«gal», loses).",
+    "heldout_acc": 0.75,
+    "sim_rho": 0.6763827267452931
+   },
+   "P1_active": {
+    "explanation": "The unit fires on a term that was already mentioned earlier in the text but now appears in a different spelling, casing, spacing or hyphenation (e.g. LeFlore→Leflore, elfa→Elfa, DataStream→Datastream, lightning→lightening). The activation lands on the token where the new form departs from the earlier one.",
+    "heldout_acc": 0.85,
+    "sim_rho": 0.853074489744687
+   }
+  },
+  "card_max": 2.296875,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "near",
+    "act": -0.002
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "surface",
+    "act": 1.047
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "surface",
+    "act": 1.195
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.793
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "novel",
+    "act": 1.023
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.699
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.895
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "novel",
+    "act": 1.016
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "near",
+    "act": 0.033
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.848
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": 0.045
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "any",
+    "act": -0.002
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "near",
+    "act": 0.006
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "near",
+    "act": -0.002
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.719
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "any",
+    "act": -0.0
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.867
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "any",
+    "act": 0.036
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "any",
+    "act": -0.008
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "near",
+    "act": -0.007
+   }
+  ]
+ },
+ {
+  "code": "T09",
+  "card": "O-540",
+  "sample": 1,
+  "origin": "OLMo-2 7B random direction in layer 12's MLP space",
+  "labels": {
+   "A0": {
+    "explanation": "The unit seems to fire most on tokens that complete a familiar, highly predictable fixed sequence, such as boilerplate, a memorized name or term, or a standard path or acronym. It also gives weak, diffuse activation across ordinary text and code.",
+    "heldout_acc": 0.45,
+    "sim_rho": 0.5281034779435184
+   },
+   "P1_active": {
+    "explanation": "The unit fires most strongly on content tokens inside stock, copy-pasted boilerplate that appears verbatim across many web and code documents, such as BSD license disclaimers, Smashwords ebook notices, Java/C# import and designer lines, and SQL Tuning Advisor-style product names. It peaks at a key word mid-phrase like INTERRUPTION, enjoyment, border, IContainer or Tuning, and responds weakly to the same words or to other set phrases in ordinary prose.",
+    "heldout_acc": 0.75,
+    "sim_rho": 0.541749768930883
+   }
+  },
+  "card_max": 0.26197895407676697,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "any",
+    "act": -0.048
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "near",
+    "act": -0.005
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.134
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.101
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "any",
+    "act": 0.008
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "near",
+    "act": 0.012
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.214
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "near",
+    "act": -0.031
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.102
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "any",
+    "act": -0.027
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": -0.033
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "any",
+    "act": -0.016
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.08
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "near",
+    "act": -0.031
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.204
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.122
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.117
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.08
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "near",
+    "act": -0.081
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.161
+   }
+  ]
+ },
+ {
+  "code": "T10",
+  "card": "U-421",
+  "sample": 2,
+  "origin": "planted rule (exact, over GPT-2 tokens): Fires on , . ; when 3+ sailing words appeared 48-512 tokens back and none in the last 48; scales with that count.",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires on clause- and list-boundary punctuation in running prose, mainly commas and sentence-ending periods. It is strongest on commas that separate list items or clauses.",
+    "heldout_acc": 0.6,
+    "sim_rho": 0.5590886967966203
+   },
+   "P1_active": {
+    "explanation": "In the recorded data the unit fires on clause- and sentence-boundary punctuation (commas and periods) in running prose, and the strength looks driven by document context rather than by the punctuation mark itself.",
+    "heldout_acc": 0.7,
+    "sim_rho": 0.5729119096726052
+   }
+  },
+  "card_max": 4.193034987308573,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.354
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "lagged",
+    "act": 3.575
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "lagged",
+    "act": 4.006
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.356
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.479
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.607
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.292
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.07
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "nm_punct",
+    "act": 0.0
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "lagged",
+    "act": 1.375
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "lagged",
+    "act": 2.146
+   }
+  ]
+ },
+ {
+  "code": "T11",
+  "card": "O-158",
+  "sample": 2,
+  "origin": "OLMo-2 7B MLP neuron, layer 13, index 6257 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires mainly on separator tokens (commas, hyphens, pipes, spaces) that sit between the two items of a paired or coordinate structure, such as the comma in (x, y) coordinates, the hyphen in node pairs like 23-24, or matrix and table cell separators. It also fires more weakly on relational connectors that link two roles in formulaic text, such as 'for' in legal 'for defendant/appellee' lines, 'in' in stack traces, and '#define' after an include guard.",
+    "heldout_acc": 0.85,
+    "sim_rho": 0.6850670023045917
+   },
+   "P1_active": {
+    "explanation": "Fires on the separator inside a pair (the comma or hyphen in '(3,4)', '7-8', SVG coordinate pairs 'x,y') when the pair is part of a repeated list of such pairs. It is weak on the first pair and stronger on later ones; a weaker extension is the linking word in repeated templates such as 'for defendant' or traceback 'line N, in'.",
+    "heldout_acc": 0.85,
+    "sim_rho": 0.5908008796738842
+   }
+  },
+  "card_max": 1.0625,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "near",
+    "act": -0.034
+   },
+   {
+    "id": 2,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.57
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.363
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.324
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "near",
+    "act": 0.012
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "near",
+    "act": -0.036
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "near",
+    "act": 0.026
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.598
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.656
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "any",
+    "act": -0.007
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "near",
+    "act": -0.0
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "near",
+    "act": 0.022
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "any",
+    "act": -0.001
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.484
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.566
+   },
+   {
+    "id": 16,
+    "fires": false,
+    "tag": "any",
+    "act": -0.056
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.559
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.396
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.512
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "any",
+    "act": -0.133
+   }
+  ]
+ },
+ {
+  "code": "T12",
+  "card": "U-733",
+  "sample": 2,
+  "origin": "planted rule (exact, over GPT-2 tokens): Fires on a capitalised word (4+ letters, mid-sentence) that already appeared as a token in the previous 200 tokens.",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires on capitalized words mid-sentence that belong to proper names or title-like phrases, such as institution, place, organization and database names, especially the head or later words like University, School, Township, York and Rapids. It responds more weakly to other capitalized mid-sentence tokens, including CamelCase code identifiers (TimeSpan, CopyInterface), a heading word (Trainer) and adjectives like Mexican.",
+    "heldout_acc": 0.75,
+    "sim_rho": 0.6949615780637515
+   },
+   "P1_active": {
+    "explanation": "Fires on capitalized proper-name tokens (places, institutions, months, people, code identifiers) when that name is being repeated, i.e. it already appeared earlier in the context. It acts like an induction/copy unit for names.",
+    "heldout_acc": 0.95,
+    "sim_rho": 0.3947643662932945
+   }
+  },
+  "card_max": 4.197204423227082,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "nm_repeat_lower",
+    "act": 0.0
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.486
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "nm_repeat_lower",
+    "act": 0.0
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.934
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.584
+   },
+   {
+    "id": 8,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 9,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 10,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.425
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.643
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.445
+   },
+   {
+    "id": 14,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 15,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.795
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.619
+   },
+   {
+    "id": 17,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.978
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "repeat_cap",
+    "act": 3.399
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "nm_first_cap",
+    "act": 0.0
+   },
+   {
+    "id": 20,
+    "fires": false,
+    "tag": "nm_repeat_lower",
+    "act": 0.0
+   }
+  ]
+ },
+ {
+  "code": "T13",
+  "card": "O-975",
+  "sample": 1,
+  "origin": "OLMo-2 7B MLP neuron, layer 16, index 6481 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "The unit fires most on a scattered set of content words that complete a phrase, and no single feature clearly ties them together. Two code peaks hint at detecting code that contradicts its context, but the prose peaks do not fit that idea.",
+    "heldout_acc": 0.75,
+    "sim_rho": 0.2903498925636811
+   },
+   "P1_active": {
+    "explanation": "The unit spikes on a single content token in otherwise unrelated contexts: a noun in code or prose ('consumer', 'VIP', 'scholarships', 'Egypt', 'studies', 'daylight', 'containers'), API name pieces ('Arrays', 'STR'), and occasionally a newline or verb. It looks like a diffuse unit whose peaks depend on long document context, with no single lexical or semantic trigger I could identify.",
+    "heldout_acc": 0.7,
+    "sim_rho": 0.3205483228901243
+   }
+  },
+  "card_max": 0.625,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "near",
+    "act": 0.001
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "near",
+    "act": -0.006
+   },
+   {
+    "id": 3,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.2
+   },
+   {
+    "id": 4,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.196
+   },
+   {
+    "id": 5,
+    "fires": false,
+    "tag": "any",
+    "act": -0.021
+   },
+   {
+    "id": 6,
+    "fires": false,
+    "tag": "near",
+    "act": -0.006
+   },
+   {
+    "id": 7,
+    "fires": false,
+    "tag": "near",
+    "act": -0.035
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.19
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.207
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "any",
+    "act": 0.008
+   },
+   {
+    "id": 11,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.243
+   },
+   {
+    "id": 12,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.197
+   },
+   {
+    "id": 13,
+    "fires": false,
+    "tag": "any",
+    "act": -0.0
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.218
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "near",
+    "act": -0.003
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.221
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "any",
+    "act": -0.015
+   },
+   {
+    "id": 18,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.248
+   },
+   {
+    "id": 19,
+    "fires": false,
+    "tag": "near",
+    "act": -0.009
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.216
+   }
+  ]
+ },
+ {
+  "code": "T14",
+  "card": "O-142",
+  "sample": 1,
+  "origin": "OLMo-2 7B MLP neuron, layer 11, index 2798 (drawn at random)",
+  "labels": {
+   "A0": {
+    "explanation": "The unit responds to the idea of dividing a whole into multiple separate parts. It fires most on the plural noun that names the resulting pieces, such as \"Strings\" in SplitStringToTwoStrings, \"tables\", \"packages\", \"chunks\", \"calculations\" and \"parts\".",
+    "heldout_acc": 0.9,
+    "sim_rho": 0.8305373901631539
+   },
+   "P1_active": {
+    "explanation": "This unit fires when a whole is broken up into multiple separate, smaller units, or when parts are handled one at a time instead of as a whole. It peaks on the plural noun for the pieces (\"smaller queries\", \"tables\", \"packages\") and on \"separately\".",
+    "heldout_acc": 0.95,
+    "sim_rho": 0.8511988267002696
+   }
+  },
+  "card_max": 2.59375,
+  "heldout": [
+   {
+    "id": 1,
+    "fires": false,
+    "tag": "near",
+    "act": -0.007
+   },
+   {
+    "id": 2,
+    "fires": false,
+    "tag": "near",
+    "act": -0.0
+   },
+   {
+    "id": 3,
+    "fires": false,
+    "tag": "near",
+    "act": -0.006
+   },
+   {
+    "id": 4,
+    "fires": false,
+    "tag": "near",
+    "act": 0.001
+   },
+   {
+    "id": 5,
+    "fires": true,
+    "tag": "surface",
+    "act": 1.008
+   },
+   {
+    "id": 6,
+    "fires": true,
+    "tag": "surface",
+    "act": 1.57
+   },
+   {
+    "id": 7,
+    "fires": true,
+    "tag": "novel",
+    "act": 1.141
+   },
+   {
+    "id": 8,
+    "fires": true,
+    "tag": "novel",
+    "act": 1.023
+   },
+   {
+    "id": 9,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.859
+   },
+   {
+    "id": 10,
+    "fires": false,
+    "tag": "near",
+    "act": -0.015
+   },
+   {
+    "id": 11,
+    "fires": false,
+    "tag": "any",
+    "act": 0.008
+   },
+   {
+    "id": 12,
+    "fires": false,
+    "tag": "near",
+    "act": -0.042
+   },
+   {
+    "id": 13,
+    "fires": true,
+    "tag": "novel",
+    "act": 0.992
+   },
+   {
+    "id": 14,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.859
+   },
+   {
+    "id": 15,
+    "fires": false,
+    "tag": "any",
+    "act": -0.001
+   },
+   {
+    "id": 16,
+    "fires": true,
+    "tag": "novel",
+    "act": 1.117
+   },
+   {
+    "id": 17,
+    "fires": false,
+    "tag": "any",
+    "act": -0.0
+   },
+   {
+    "id": 18,
+    "fires": false,
+    "tag": "any",
+    "act": -0.058
+   },
+   {
+    "id": 19,
+    "fires": true,
+    "tag": "surface",
+    "act": 0.844
+   },
+   {
+    "id": 20,
+    "fires": true,
+    "tag": "surface",
+    "act": 1.07
+   }
+  ]
+ }
+]
