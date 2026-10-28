@@ -4,7 +4,7 @@ lucent, standard parameterisation and transforms, 256 steps, 128 px, torch seed 
 over positions of the layer output dotted with the unit's vector (one-hot for a channel, the same as lucent's channel
 objective). Resumable: a unit whose png exists is skipped.
 
-usage: python -I tools/r35_render.py   (writes runs/r35/img/vis/<layer>_<unit>.png)
+usage: python -I tools/r35_render.py [shard/n]   (writes runs/r35/img/vis/<layer>_<unit>.png; on CUDA when available)
 """
 import json
 import sys
@@ -33,7 +33,8 @@ def dot(layer, vec):
     v = torch.tensor(vec, dtype=torch.float32).view(1, -1, 1, 1)
 
     def inner(model):
-        return -(model(layer) * v).sum(1).mean()
+        a = model(layer)
+        return -(a * v.to(a.device)).sum(1).mean()
     return inner
 
 
@@ -46,13 +47,15 @@ def vec_of(u):
 
 
 def main():
+    shard, nshard = (int(x) for x in (sys.argv[1] if len(sys.argv) > 1 else '0/1').split('/'))
     torch.set_num_threads(4)
-    model = load_model(proploop.WEIGHTS)
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    model = load_model(proploop.WEIGHTS).to(device)
     (OUT / 'vis').mkdir(parents=True, exist_ok=True)
     units = [u for g in json.loads((OUT / 'groups.json').read_text())['groups'] for u in g['units']]
     for n, u in enumerate(units):
         p = OUT / 'vis' / f'{u["name"].replace(":", "_")}.png'
-        if p.exists():
+        if p.exists() or n % nshard != shard:
             continue
         torch.manual_seed(0)
         im = render.render_vis(model, dot(u['layer'], vec_of(u)), thresholds=(256,), show_image=False,

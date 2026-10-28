@@ -58,6 +58,7 @@ def blind(g):
             x = L + (k + 1) * (T + P)
             im.paste(photo(i, T), (x, y))
             s, h = T / 224, 224 / 3 / 2
+            x0, y0 = min(max(x0, h), 224 - h), min(max(y0, h), 224 - h)  # keep the square inside the photo
             d.rectangle([x + (x0 - h) * s, y + (y0 - h) * s, x + (x0 + h) * s, y + (y0 + h) * s], outline=MARK, width=2)
             d.text((x + 2, y + T + 3), f'{10 * vals[k] / vals[0]:.1f}', font=font(14), fill=INK)
     return im
