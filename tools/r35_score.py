@@ -56,7 +56,7 @@ def codex(prompt, img, cache):
         return json.loads(cache.read_text())
     out = cache.with_suffix('.txt')
     subprocess.run(['codex', 'exec', '--skip-git-repo-check', '--ephemeral', '-s', 'read-only', '-C', str(cache.parent),
-                    '-o', str(out), '-i', str(img), prompt], stdin=subprocess.DEVNULL, capture_output=True,
+                    '-o', str(out), prompt, '-i', str(img)], stdin=subprocess.DEVNULL, capture_output=True,
                    timeout=900, check=True)
     text = out.read_text()
     m = re.findall(r'\{[^{}]*\}', text)
