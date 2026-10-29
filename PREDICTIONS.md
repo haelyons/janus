@@ -862,3 +862,49 @@ O1. Human mean simulator rho over the 14 cards is below A0's (round 33: 0.588).
 O2. Human labels state the planted rule's condition on at most 1 of 4 planted cards.
 O3. Human: random directions' mean simulator rho within 0.10 of the neurons'.
 Recorded: per group and category, labelled share and confidence, unit and group scores, human against agent per unit.
+
+# Round 36: watch OLMo-2 neurons grow across training checkpoints (tools/r36_*.py)
+(written 2026-10-29, before any round-36 tool exists or has run; checkpoint list runs/r36/checkpoints.json)
+Question: on neurons nobody picked, do top contexts form early and grow outward from a retained origin (the essay's
+"trace back to the same local origin... grow out... in a particular order"), or churn and settle late (what the
+essay's own 346k ConvNeXt training map shows on random units)? Mechanical; no labels except P11.
+Models: OLMo-2-1124-7B (primary; 27 stage1 checkpoints from step 150, 4 stage2-ingredient1, main = the stage2 soup,
+then -SFT, -DPO, -Instruct) and OLMo-2-0425-1B (replication; stage1 from step 0, 19 + 4 + main + 3).
+Pool: Pile-10k (raw/pile), 10,000 documents, each the first 256 ids of tokenizer(text, add_special_tokens=True);
+valid positions are >= 1 and not special ids. One forward per document batch, bf16.
+Units, per layer l, drawn once per model: 32 MLP neurons default_rng(crc32("r36:<repo>:L<l>")).choice(width, 32,
+replace=False) and 8 random directions (unit-norm standard normal over the width, from "r36:dir:<repo>:L<l>");
+activation = entry of, or dot with, the input of layers[l].mlp.down_proj. Recorded for all neurons: top 32 and
+bottom 32 documents by per-document max and min (value, document, position), token mean and std; for drawn units:
+per-document max, min and their positions over all 10,000 documents, and per-token values on documents 0-999.
+Definitions, per unit u and checkpoint t in the training sequence S (stage1, stage2, main; post-training kept apart):
+- d_t(u): per-document max (positive pole). T_t(u): top 16 documents of d_t (ties to the lower document index).
+  f = main. J(t, t') = |T_t & T_t'| / 16. rho_t = Spearman(d_t, d_f) over the 10,000 documents.
+- settling step s(u): the earliest t in S with J(t', f) >= 0.5 for every t' in S at or after t.
+- core: t0(u) = the earliest t in S before f with J(t, next t) >= 0.5; C(u) = T_t0(u). No such t: no core (counted).
+- retention r(u): median over C(u) of the percentile of d_f(u) at that document among the 10,000. Null r0(u): the same
+  with C(v), v the next drawn unit of the same kind in the same layer (cyclic).
+- width w_t(u): number of documents with d_t >= 0.5 x max d_t (undefined if max <= 0).
+- order o(u): over x in T_f \ C (needs >= 5 and non-constant e), Spearman(e(x), delta(x)); e(x) = the earliest t in S
+  from which x stays in u's top 64; delta(x) = 1 - cos(z(x), mean of z over C), z = main's MLP input (residual after
+  attention) at u's layer and the document's argmax position (argmax at f for x, at t0 for C), z-scored per dimension
+  over the tokens of documents 0-199.
+Predictions (7B, neurons, all layers pooled, medians over units; my odds in brackets):
+P1. Early churn: median J(step 5000, f) < 0.25. (0.6)
+P2. Late settling: median s(u) is at or after step 99000 (about 10% of stage1). (0.55)
+P3. Origin retained: median r(u) >= 0.95 and >= median r0(u) + 0.20. (0.55)
+P4. Narrowing, not branching: among neurons with a core, more than half have w_f < w_t0. (0.55)
+P5. No outward order: median o(u) <= 0.10 (the essay predicts clearly positive). (0.65)
+P6. Basis: neurons' median r(u) exceeds random directions' by >= 0.05. (0.5)
+P7. Post-training keeps neurons: median rho(main vs Instruct) >= 0.90 and median J(main, Instruct) >= 0.5. (0.75)
+P8. The stage2 anneal (50B tokens) moves top sets at least as much as the last 330k stage1 steps (1.4T tokens):
+    median J(step 928646, main) <= median J(step 600000, step 928646). (0.5)
+P9. Early layers settle first: median s(u) for layers 0-7 earlier than for layers 24-31. (0.7)
+P10. 1B replication: P1 (at step 10000, the same 21B tokens), P3, P4 and P5 come out the same way; and at step 0
+     (random init) median J(step 0, f) <= 1/16. (0.6)
+P11. Meaning-level origin (if Codex usage allows; 48 7B neurons with a core, default_rng(crc32("r36:p11"))): a Codex
+     judge sees two sets of 8 contexts (15 ids each side of the argmax) and answers same / related / unrelated, blind
+     to which is which; pairs are C(u) vs T_f(u) and the null C(u) vs T_f(v), v as in r0, in seeded order. Real pairs
+     same-or-related >= 60%, null <= 20%. (0.6)
+Recorded: the same for the negative pole and for directions; per-layer curves; token-level Pearson with f on
+documents 0-999; a trajectory page per 24 seeded 7B neurons (top 3 contexts per checkpoint; presentation only).
