@@ -1,0 +1,125 @@
+<title>OLMo Neuron Trajectories</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif&display=swap">
+<style>
+/* Layout: a lab notebook. Neuron picker on top, then one long timeline table per neuron, one row per checkpoint. */
+:root {
+  --bg: #f3f5f7; --surface: #ffffff; --fg: #17202b; --muted: #5b6878; --line: #d8dee6;
+  --accent: #1f5fa8; --mark: #ffe08a; --mark-fg: #17202b; --keep: #2f8a5b; --bar: #c9d6e6;
+  --display: "Instrument Serif", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11161d; --surface: #18202a; --fg: #e6ebf1; --muted: #93a1b2; --line: #2a3542;
+  --accent: #7fb2ee; --mark: #6b5414; --mark-fg: #fff3cf; --keep: #63c08f; --bar: #2c4a6e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11161d; --surface: #18202a; --fg: #e6ebf1; --muted: #93a1b2; --line: #2a3542;
+  --accent: #7fb2ee; --mark: #6b5414; --mark-fg: #fff3cf; --keep: #63c08f; --bar: #2c4a6e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font: 400 clamp(30px, 5vw, 44px)/1.1 var(--display); margin: 0 0 8px; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 68ch; margin: 0 0 20px; }
+.lede b { color: var(--fg); font-weight: 500; }
+.picker { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+.picker button { font: 500 12.5px var(--mono); padding: 5px 9px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--fg); border-radius: 4px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.picker button:hover { border-color: var(--accent); }
+.picker button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin-bottom: 12px; }
+.head h2 { font: 400 28px/1.2 var(--display); margin: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 12px var(--mono); padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted);
+  background: var(--surface); white-space: nowrap; }
+.chip b { color: var(--fg); font-weight: 600; }
+.legend { font-size: 13px; color: var(--muted); margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.legend .k { color: var(--keep); font-weight: 600; }
+.legend mark { background: var(--mark); color: var(--mark-fg); padding: 0 3px; border-radius: 2px; }
+.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; min-width: 760px; }
+th, td { text-align: left; vertical-align: top; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+th { font: 600 11px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  position: sticky; top: 0; background: var(--surface); }
+td.step { font: 500 12.5px var(--mono); white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.step small { display: block; color: var(--muted); font-weight: 400; }
+td.step .tag { display: inline-block; margin-top: 3px; font: 600 10.5px var(--body); letter-spacing: .05em;
+  text-transform: uppercase; color: var(--accent); }
+td.j { width: 92px; font: 12px var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); }
+.bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 4px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+td.ctx { font: 12.5px/1.45 var(--mono); min-width: 0; }
+.c { display: flex; gap: 8px; padding: 2px 0; }
+.c .v { flex: none; width: 64px; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.c .t { min-width: 0; white-space: pre-wrap; word-break: break-word; }
+.c .t mark { background: var(--mark); color: var(--mark-fg); padding: 0 2px; border-radius: 2px; }
+.c .d { flex: none; width: 10px; color: var(--keep); font-weight: 600; }
+tr.phase td { background: var(--bg); font: 600 11px var(--body); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); padding: 6px 10px; }
+.note { color: var(--muted); font-size: 13px; max-width: 75ch; margin-top: 18px; }
+</style>
+
+<div class="wrap">
+  <h1>OLMo Neuron Trajectories</h1>
+  <p class="lede">24 MLP neurons of OLMo-2 7B, drawn at random (round 36, not picked by anyone). Each row is one
+    training checkpoint: the three Pile documents where the neuron fired hardest, cut to 12 tokens each side of the
+    peak. <b>Overlap with final</b> is the share of that checkpoint's top 16 documents that are also in the final base
+    model's top 16.</p>
+  <div class="picker" id="picker" role="toolbar" aria-label="Choose a neuron"></div>
+  <div class="head"><h2 id="title"></h2><div class="facts" id="facts"></div></div>
+  <p class="legend"><span><mark>token</mark> where the neuron peaked in that document</span>
+    <span><span class="k">●</span> document is also in the final model's top 16</span></p>
+  <div class="tablebox"><table>
+    <thead><tr><th>Checkpoint</th><th>Overlap with final</th><th>Top 3 documents (peak value, context)</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <p class="note">Core: the first checkpoint whose top 16 keeps at least half its documents at the next checkpoint.
+    Settles: the first checkpoint after which overlap with final never drops below 0.5. Core retention: median
+    percentile, under the final model, of the core's documents (null: another neuron's core). Values are the MLP
+    activation before the down projection; early checkpoints run on a much larger scale.</p>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const PHASE = { stage1: 'Pretraining (stage 1)', stage2: 'Anneal (stage 2, one of three soup ingredients)',
+  main: 'Final base model (soup of three anneals)', SFT: 'Post-training', DPO: null, Instruct: null };
+const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const vis = s => esc(s).replace(/\n/g, '↵');
+function fmt(v) { const a = Math.abs(v); return a >= 100 ? v.toFixed(0) : a >= 1 ? v.toFixed(2) : v.toFixed(3); }
+function show(id) {
+  const n = DATA.find(x => x.id === id) || DATA[0];
+  document.querySelectorAll('#picker button').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === n.id));
+  document.getElementById('title').textContent = `Layer ${n.layer} · neuron ${n.index.toLocaleString()}`;
+  const st = i => i == null ? 'none' : n.rows[i].step;
+  const pc = x => x == null ? 'n/a' : (100 * x).toFixed(0) + '%';
+  document.getElementById('facts').innerHTML =
+    `<span class="chip">core <b>${esc(st(n.t0))}</b></span>` +
+    `<span class="chip">settles <b>${esc(st(n.s))}</b></span>` +
+    `<span class="chip">core retention <b>${pc(n.r)}</b> (null ${pc(n.r0)})</span>` +
+    (n.o == null ? '' : `<span class="chip">order ρ <b>${n.o.toFixed(2)}</b></span>`);
+  let html = '', last = null;
+  n.rows.forEach((r, i) => {
+    if (r.phase !== last && PHASE[r.phase] !== null) html += `<tr class="phase"><td colspan="3">${PHASE[r.phase]}</td></tr>`;
+    last = r.phase;
+    const tag = (i === n.t0 ? '<span class="tag">core</span> ' : '') + (i === n.s ? '<span class="tag">settles</span>' : '');
+    const ctx = r.ctx.map(c => `<div class="c"><span class="v">${fmt(c.v)}</span><span class="d">${c.fin ? '●' : ''}</span>` +
+      `<span class="t">${vis(c.l)}<mark>${vis(c.m)}</mark>${vis(c.r)}</span></div>`).join('');
+    html += `<tr><td class="step">${esc(r.step)}${r.tok ? `<small>${r.tok} tokens</small>` : ''}${tag ? '<br>' + tag : ''}</td>` +
+      `<td class="j">${r.J.toFixed(2)}<div class="bar"><i style="width:${100 * r.J}%"></i></div></td><td class="ctx">${ctx}</td></tr>`;
+  });
+  document.getElementById('rows').innerHTML = html;
+}
+const pk = document.getElementById('picker');
+DATA.forEach(n => {
+  const b = document.createElement('button');
+  b.id = 'pick-' + n.id; b.dataset.id = n.id; b.textContent = `L${n.layer}:${n.index}`;
+  b.addEventListener('click', () => { location.hash = n.id; });
+  pk.appendChild(b);
+});
+const route = () => show(location.hash.slice(1));
+window.addEventListener('hashchange', route);
+route();
+</script>

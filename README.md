@@ -1151,3 +1151,47 @@ sentences). `runs/r34/` (`analysis_*.json`, `table_*.txt`, `r34_check.txt`, `rea
 - Reading: the event is linearly decodable (AUC about 0.94) but not by a handful of neurons, and the neurons that best
   separate it are not about it; at a neutral readout token, OLMo carries the sentence's stance and form more strongly
   than which event happened. Small test set (16 forms): differences under about 0.06 are within noise.
+
+## Round 36: neuron growth across OLMo-2 training checkpoints (`tools/r36_record.py`, `r36_analyze.py`, `r36_p11.py`)
+
+OLMo-2 7B at 35 checkpoints (27 stage 1 from step 150, 4 of the stage-2 ingredient 1, main, SFT, DPO, Instruct) and
+OLMo-2 1B at step 0 onward, over the first 256 tokens of 10,000 Pile documents. Per layer, 32 seeded neurons and 8
+seeded random directions (MLP down-projection input). Definitions and predictions sealed before any tool existed
+(PREDICTIONS.md, round 36). Codex wrote the recorder test from the spec alone and an independent analysis from the sealed
+definitions; both analyses agree on every verdict and on every per-unit number except one direction's o (a top-64 tie).
+Compute: 5 Lambda boxes for the main run plus one A10 for the 1B amendment, about $14. `runs/r36/` (`check_*.txt`,
+`metrics_*.json`, `p11/`, `pages/trajectories.html`).
+
+- P1 held: at step 5000 the median neuron's top 16 documents share none with the final model's (median J 0).
+- P2 held: the median neuron settles (top-16 overlap with the final at least 0.5 from then on) only at the last
+  stage-1 checkpoint, step 928,646. Median overlap with the final is 0.06 at step 70,000, 0.25 at 400,000 and 0.44 at
+  800,000. Rank correlation over all documents rises earlier: 0.23 at step 10,000, 0.51 at 400,000.
+- P3 failed: median core retention is 0.715 (null 0.538). Every neuron has a core, but 631 of 1024 cores are found at
+  steps 600-900, where checkpoints are 100-150 steps apart and the "overlap with the next checkpoint" test is easy to
+  pass. Those cores are kept no better than chance (r 0.56-0.63 against null 0.53-0.55). Post hoc, by when the core
+  forms: steps 2,000-7,000 give r 0.79-0.86, steps 10,000-50,000 give 0.90-0.96, and later ones 0.98-1.00.
+- P4 held: 83% of cores narrow (fewer documents above half the maximum at the end than at the core).
+- P5 held narrowly: the order in which documents join the top 64 barely follows distance from the core (median o 0.096).
+- P6 failed: random directions keep their cores almost perfectly (r 0.997) and better than neurons do. Most direction
+  cores form late (171 of 256 at step 7,000 or later), so this mainly repeats the timing effect above.
+- P7 failed: Instruct against main has median rank correlation 0.85 (bar 0.90); top-16 overlap 0.62 held.
+  SFT gives 0.87 and 0.69.
+- P8 failed: the anneal and soup move the top 16 less (J 0.62 from step 928,646 to main) than the last 328,646 steps
+  of stage 1 do (J 0.38).
+- P9 failed: early and late layers settle at the same point (both medians at the end of stage 1).
+- P11 failed: a Codex judge rated a neuron's core and its final top contexts as the same or related pattern in 13 of
+  48 pairs (27%; bar 60%), and a control neuron's final contexts in 4 of 48 (8%).
+- 1B (P10): the sealed run is void. The HF `main` of OLMo-2-0425-1B lies outside the published lineage. Its weights
+  correlate about 0 with stage-1 final, all three stage-2 ingredients and Instruct (Instruct against ingredient 3: 0.995),
+  its value distributions differ (not a permutation), and its recordings correlate 0.15-0.18 with every other
+  checkpoint. The model card says the 1B was not merged; stage 2 is ingredient 3 alone. As sealed (f = main,
+  ingredient 1), P10 failed with J 0 everywhere. Amended before recording ingredient 3 (ledger `amend_round36_1B`;
+  f = ingredient 3 final): P1 held (J 0 at step 10,000), P3 held (r 0.980, null 0.565), P4 held (57%), step 0 held,
+  P5 failed (o 0.142). So P10 failed. The 1B's first checkpoint after step 300 is step 10,000, so it has no
+  step-600 cores. By core time it shows the same gradient as the 7B: step 0 gives 0.50, steps 10,000-50,000 give
+  0.75-0.86, and step 100,000 or later 0.96-1.00.
+- Reading: in OLMo-2 a neuron's strongest documents are not fixed early. Its final top 16 assembles over the whole of
+  pretraining and is only half in place at the last stage-1 checkpoint. Post-training keeps most of it (rank
+  correlation about 0.85). Whether an early "core" survives depends on when it forms: cores from the first thousand
+  steps are not kept, cores from step 10,000 onward mostly are. In meaning, a core is usually unrelated to the final
+  top contexts. Random directions behave like neurons here, so nothing in this round singles out the neuron basis.
