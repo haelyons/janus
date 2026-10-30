@@ -10,7 +10,7 @@ mkdir -p ~/r36/out ~/ck
    [ -f ~/r36/out/$K.npz ] && continue
    while [ $(ls ~/ck/*.ok 2>/dev/null | wc -l) -ge 2 ]; do sleep 5; done
    for try in 1 2 3; do
-     ~/o/bin/hf download $R --revision $V --local-dir ~/ck/$K --include "*.safetensors" "*.json" < /dev/null > ~/ck/$K.dl.log 2>&1 && { touch ~/ck/$K.ok; break; }
+     ~/o/bin/hf download $R --revision $V --local-dir ~/ck/$K --include "*.safetensors" "*.bin" "*.json" < /dev/null > ~/ck/$K.dl.log 2>&1 && { touch ~/ck/$K.ok; break; }
      sleep 30
    done
    [ -f ~/ck/$K.ok ] || touch ~/ck/$K.fail

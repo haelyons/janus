@@ -9,6 +9,7 @@ documents (ties to the lower document index); J = overlap / 16; settling s, core
 usage: python -I tools/r36_analyze.py triples --model 7B          writes runs/r36/triples_7B.npy for r36_record reps
        python -I tools/r36_analyze.py metrics --model 7B [--reps runs/r36/reps_7B.npz]
                                                                     writes runs/r36/metrics_7B.json, prints the checks
+--tag T reads runs/r36/checkpoints<T>.json instead and adds T to every file name written or read (triples, metrics).
 """
 import argparse
 import json
@@ -22,20 +23,21 @@ J_ = Path(__file__).resolve().parent.parent
 R = J_ / 'runs/r36'
 BASE = {'7B': 'allenai/OLMo-2-1124-7B', '1B': 'allenai/OLMo-2-0425-1B'}
 TOP, TOP_E = 16, 64
+TAG = ''
 
 
 def sequence(model):
-    seq = json.loads((R / 'checkpoints.json').read_text())[BASE[model]]
+    seq = json.loads((R / f'checkpoints{TAG}.json').read_text())[BASE[model]]
     S = [c for c in seq if c['phase'] in ('stage1', 'stage2', 'main')]
     post = {c['phase']: c for c in seq if c['phase'] in ('SFT', 'DPO', 'Instruct')}
     return S, post
 
 
-def load(model, pole):
+def load(model, pole, with_post=True):
     """names, S, post, d[t] arrays [D, U] (S then post order), argmax positions likewise"""
     S, post = sequence(model)
     d, pos = [], []
-    for c in S + list(post.values()):
+    for c in S + (list(post.values()) if with_post else []):
         z = np.load(R / 'out' / f'{c["key"]}.npz')
         if pole == '+':
             d.append(z['u_max']), pos.append(z['u_argmax'])
@@ -98,7 +100,7 @@ def entry(tops, x):
 
 
 def cmd_triples(model):
-    names, S, post, d, pos = load(model, '+')
+    names, S, post, d, pos = load(model, '+', with_post=False)
     nS, f = len(S), len(S) - 1
     M = unit_metrics(d, nS)
     trip = set()
@@ -111,14 +113,14 @@ def cmd_triples(model):
         for x in m['T'][f]:
             trip.add((l, int(x), int(pos[f, x, u])))
     t = np.array(sorted(trip), np.int64)
-    np.save(R / f'triples_{model}.npy', t)
+    np.save(R / f'triples_{model}{TAG}.npy', t)
     print('triples', len(t))
 
 
 def order(d, pos, names, M, reps, nS):
     """o(u) per unit (None when undefined)"""
     f = nS - 1
-    tri = np.load(R / f'triples_{reps[1]}.npy')
+    tri = np.load(R / f'triples_{reps[1]}{TAG}.npy')
     Z = np.load(reps[0])
     idx = {tuple(map(int, r)): i for i, r in enumerate(tri)}
     mean, std = Z['mean'], np.maximum(Z['std'], 1e-6)
@@ -204,7 +206,7 @@ def cmd_metrics(model, reps):
             s['s_median_last_quarter'] = med([r['s'] for r in rows if layer(r) >= nl - nl // 4])
             summ[kind] = s
         res['poles'][pole] = {'summary': summ, 'units': per}
-    (R / f'metrics_{model}.json').write_text(json.dumps(res))
+    (R / f'metrics_{model}{TAG}.json').write_text(json.dumps(res))
     check(model, res, step)
 
 
@@ -246,7 +248,10 @@ def main():
     ap.add_argument('cmd', choices=('triples', 'metrics'))
     ap.add_argument('--model', choices=('7B', '1B'), required=True)
     ap.add_argument('--reps')
+    ap.add_argument('--tag', default='')
     a = ap.parse_args()
+    global TAG
+    TAG = a.tag
     cmd_triples(a.model) if a.cmd == 'triples' else cmd_metrics(a.model, a.reps)
 
 
